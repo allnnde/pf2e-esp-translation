@@ -1,3 +1,12 @@
+## [0.0.4](https://github.com/allnnde/pf2e-esp-translation/compare/v0.0.3...v0.0.4) (2022-12-03)
+
+
+### Bug Fixes
+
+* **monje:** traduccion de su habilidad rafaga de puños ([f3940a7](https://github.com/allnnde/pf2e-esp-translation/commit/f3940a787711b8e38984ef9f7db37b5b11adf267))
+
+
+
 ## [0.0.3](https://github.com/allnnde/pf2e-esp-translation/compare/v0.0.2...v0.0.3) (2022-12-03)
 
 
