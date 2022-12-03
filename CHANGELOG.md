@@ -1,3 +1,12 @@
+## [0.0.6](https://github.com/allnnde/pf2e-esp-translation/compare/v0.0.5...v0.0.6) (2022-12-03)
+
+
+### Bug Fixes
+
+* se agrega la traduccion a la accion de rafaga de golpes ([c001290](https://github.com/allnnde/pf2e-esp-translation/commit/c0012907f4345586962f9afce99e1dce7812ce40))
+
+
+
 ## [0.0.5](https://github.com/allnnde/pf2e-esp-translation/compare/v0.0.4...v0.0.5) (2022-12-03)
 
 
