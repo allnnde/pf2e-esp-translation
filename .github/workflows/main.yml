@@ -18,9 +18,10 @@ jobs:
       uses: TriPSs/conventional-changelog-action@v3
       with:
         github-token: ${{ secrets.github_token }}
-
+        version-file: "module.json"
+        
     - name: test
-      run: echo ' changelog: ${{steps.changelog.outputs.changelog}} changelog: ${{steps.changelog.outputs.changelog}} clean_changelog: ${{steps.changelog.outputs.clean_changelog}} version: ${{steps.changelog.outputs.version}} tag: ${{steps.changelog.outputs.tag}} ' 
+      run: echo changelog ${{steps.changelog.outputs.changelog}} clean_changelog: ${{steps.changelog.outputs.clean_changelog}} version: ${{steps.changelog.outputs.version}} tag: ${{steps.changelog.outputs.tag}}
 
     # Substitute the Manifest and Download URLs in the module.json
     #- name: Substitute Manifest and Download Links For Versioned Ones
