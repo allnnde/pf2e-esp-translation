@@ -1,9 +1,9 @@
 name: Create Release
 
-on: 
-  branches:
-    - main
-
+on:
+  push:
+    branches:
+      - main
 env:
   ZIP_FILENAME: "pf2e_esp"
   PACKAGE_CONTENT: "module.json main.js babele.js lang/ compendium/"
@@ -12,16 +12,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Conventional Changelog Action
-    - id: changelog
-      uses: TriPSs/conventional-changelog-action@v3
-      with:
-        github-token: ${{ secrets.github_token }}
-        version-file: "module.json"
-        
-    - name: test
-      run: echo changelog ${{steps.changelog.outputs.changelog}} clean_changelog: ${{steps.changelog.outputs.clean_changelog}} version: ${{steps.changelog.outputs.version}} tag: ${{steps.changelog.outputs.tag}}
+      - uses: actions/checkout@v2
+
+      - name: Conventional Changelog Action
+        id: changelog
+        uses: TriPSs/conventional-changelog-action@v3
+        with:
+          github-token: ${{ secrets.github_token }}
+          version-file: "module.json"
+
+      - name: test
+        run: echo 'changelog ${{steps.changelog.outputs.changelog}} clean_changelog ${{steps.changelog.outputs.clean_changelog}} version ${{steps.changelog.outputs.version}} tag ${{steps.changelog.outputs.tag}}'
 
     # Substitute the Manifest and Download URLs in the module.json
     #- name: Substitute Manifest and Download Links For Versioned Ones
@@ -32,21 +33,21 @@ jobs:
     #  env:
     #    version: ${{tagName.tag}}
 #
-    ## Create a zip file with all files required by the module to add to the release
-    #- name: Create Artifact
-    #  id: build-zip
-    #  run: zip -r $ZIP_FILENAME.zip $PACKAGE_CONTENT
+## Create a zip file with all files required by the module to add to the release
+#- name: Create Artifact
+#  id: build-zip
+#  run: zip -r $ZIP_FILENAME.zip $PACKAGE_CONTENT
 #
-    ## Create a release for this specific version
-    #- name: Update Release with Files
-    #  id: create_version_release
-    #  uses: ncipollo/release-action@v1
-    #  with:
-    #    allowUpdates: true
-    #    name: ${{tagName.tag}}
-    #    draft: false
-    #    prerelease: false
-    #    token: ${{ secrets.GITHUB_TOKEN }}
-    #    artifacts: './module.json, ./${{env.ZIP_FILENAME}}.zip'
-    #    tag: ${{tagName.tag}}
-    #    body: ${{ github.event.release.body }}
+## Create a release for this specific version
+#- name: Update Release with Files
+#  id: create_version_release
+#  uses: ncipollo/release-action@v1
+#  with:
+#    allowUpdates: true
+#    name: ${{tagName.tag}}
+#    draft: false
+#    prerelease: false
+#    token: ${{ secrets.GITHUB_TOKEN }}
+#    artifacts: './module.json, ./${{env.ZIP_FILENAME}}.zip'
+#    tag: ${{tagName.tag}}
+#    body: ${{ github.event.release.body }}
