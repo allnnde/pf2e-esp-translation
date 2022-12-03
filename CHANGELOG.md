@@ -1,3 +1,12 @@
+## [0.0.5](https://github.com/allnnde/pf2e-esp-translation/compare/v0.0.4...v0.0.5) (2022-12-03)
+
+
+### Bug Fixes
+
+* **monje:** agregada la traduccion del rasgo de clase rafaga de golpes ([5c70cac](https://github.com/allnnde/pf2e-esp-translation/commit/5c70cac32158ce14476ffbe24037512a59838023))
+
+
+
 ## [0.0.4](https://github.com/allnnde/pf2e-esp-translation/compare/v0.0.3...v0.0.4) (2022-12-03)
 
 
