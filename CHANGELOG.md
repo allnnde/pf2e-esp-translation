@@ -1,3 +1,12 @@
+# [0.1.0](https://github.com/allnnde/pf2e-esp-translation/compare/v0.0.7...v0.1.0) (2022-12-04)
+
+
+### Features
+
+* **monje:** se termina la traduccion base del monje junto a traducciones dependientes ([4ddafee](https://github.com/allnnde/pf2e-esp-translation/commit/4ddafee1a9d4ad6ed3d7b050d10c50ce7834dca8))
+
+
+
 ## [0.0.7](https://github.com/allnnde/pf2e-esp-translation/compare/v0.0.6...v0.0.7) (2022-12-03)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **monje:** traduccion de su habilidad rafaga de puños ([f3940a7](https://github.com/allnnde/pf2e-esp-translation/commit/f3940a787711b8e38984ef9f7db37b5b11adf267))
-
-
-
-## [0.0.3](https://github.com/allnnde/pf2e-esp-translation/compare/v0.0.2...v0.0.3) (2022-12-03)
-
-
-### Bug Fixes
-
-* **monje:** traduccion tabla monje ([870f54a](https://github.com/allnnde/pf2e-esp-translation/commit/870f54af9a45cac91d9fcfc5507878e4c4e216a6))
 
 
 
