@@ -1,3 +1,12 @@
+## [0.1.1](https://github.com/allnnde/pf2e-esp-translation/compare/v0.1.0...v0.1.1) (2022-12-04)
+
+
+### Bug Fixes
+
+* **monje:** se argego descripcion de un equipamiento mencionado en la descripcion de los rasgos de monje ([421afae](https://github.com/allnnde/pf2e-esp-translation/commit/421afaecd87125664ac645aecd16b9b0aea0f6b1))
+
+
+
 # [0.1.0](https://github.com/allnnde/pf2e-esp-translation/compare/v0.0.7...v0.1.0) (2022-12-04)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **monje:** agregada la traduccion del rasgo de clase rafaga de golpes ([5c70cac](https://github.com/allnnde/pf2e-esp-translation/commit/5c70cac32158ce14476ffbe24037512a59838023))
-
-
-
-## [0.0.4](https://github.com/allnnde/pf2e-esp-translation/compare/v0.0.3...v0.0.4) (2022-12-03)
-
-
-### Bug Fixes
-
-* **monje:** traduccion de su habilidad rafaga de puños ([f3940a7](https://github.com/allnnde/pf2e-esp-translation/commit/f3940a787711b8e38984ef9f7db37b5b11adf267))
 
 
 
