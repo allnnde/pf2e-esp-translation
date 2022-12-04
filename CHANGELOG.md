@@ -1,3 +1,12 @@
+# [0.2.0](https://github.com/allnnde/pf2e-esp-translation/compare/v0.1.1...v0.2.0) (2022-12-04)
+
+
+### Features
+
+* **Picaro:** primera traduccion ([e680d44](https://github.com/allnnde/pf2e-esp-translation/commit/e680d44202a9ce8d0d5a685c13fda1e05caeefaa))
+
+
+
 ## [0.1.1](https://github.com/allnnde/pf2e-esp-translation/compare/v0.1.0...v0.1.1) (2022-12-04)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * se agrega la traduccion a la accion de rafaga de golpes ([c001290](https://github.com/allnnde/pf2e-esp-translation/commit/c0012907f4345586962f9afce99e1dce7812ce40))
-
-
-
-## [0.0.5](https://github.com/allnnde/pf2e-esp-translation/compare/v0.0.4...v0.0.5) (2022-12-03)
-
-
-### Bug Fixes
-
-* **monje:** agregada la traduccion del rasgo de clase rafaga de golpes ([5c70cac](https://github.com/allnnde/pf2e-esp-translation/commit/5c70cac32158ce14476ffbe24037512a59838023))
 
 
 
