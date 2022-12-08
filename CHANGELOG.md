@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/allnnde/pf2e-esp-translation/compare/v0.2.0...v0.2.1) (2022-12-08)
+
+
+### Bug Fixes
+
+* **foundry:** change metadata in module.json ([f7cfd0b](https://github.com/allnnde/pf2e-esp-translation/commit/f7cfd0bf459936ad28a751d037692fbec1f4e83b))
+
+
+
 # [0.2.0](https://github.com/allnnde/pf2e-esp-translation/compare/v0.1.1...v0.2.0) (2022-12-04)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **monje:** fix references ([643e0fd](https://github.com/allnnde/pf2e-esp-translation/commit/643e0fd8b6b6cb8b322573552a833e31ddec2199))
-
-
-
-## [0.0.6](https://github.com/allnnde/pf2e-esp-translation/compare/v0.0.5...v0.0.6) (2022-12-03)
-
-
-### Bug Fixes
-
-* se agrega la traduccion a la accion de rafaga de golpes ([c001290](https://github.com/allnnde/pf2e-esp-translation/commit/c0012907f4345586962f9afce99e1dce7812ce40))
 
 
 
