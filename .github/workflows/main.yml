@@ -39,3 +39,13 @@ jobs:
           artifacts: "./module.json, ./${{env.ZIP_FILENAME}}.zip"
           tag: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.changelog }}
+
+      - name: Publish to Foundry VTT Repo
+        id: publish_foundry_repo
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}
+        run: npx @ghost-fvtt/foundry-publish
+        env:
+          FVTT_MANIFEST_PATH: 'module.json'
+          FVTT_PACKAGE_ID: ${{ secrets.PACKAGE_ID }}
+          FVTT_USERNAME: ${{ secrets.FVTT_USERNAME }}
+          FVTT_PASSWORD: ${{ secrets.FVTT_PASSWORD }}
