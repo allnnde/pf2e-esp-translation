@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/allnnde/pf2e-esp-translation/compare/v0.2.1...v0.2.2) (2022-12-08)
+
+
+### Bug Fixes
+
+* correcion de zip ([256ee52](https://github.com/allnnde/pf2e-esp-translation/commit/256ee5270efa0f030a0e23f5d5d8ba172fcc3be0))
+
+
+
 ## [0.2.1](https://github.com/allnnde/pf2e-esp-translation/compare/v0.2.0...v0.2.1) (2022-12-08)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * **monje:** se termina la traduccion base del monje junto a traducciones dependientes ([4ddafee](https://github.com/allnnde/pf2e-esp-translation/commit/4ddafee1a9d4ad6ed3d7b050d10c50ce7834dca8))
-
-
-
-## [0.0.7](https://github.com/allnnde/pf2e-esp-translation/compare/v0.0.6...v0.0.7) (2022-12-03)
-
-
-### Bug Fixes
-
-* **monje:** fix references ([643e0fd](https://github.com/allnnde/pf2e-esp-translation/commit/643e0fd8b6b6cb8b322573552a833e31ddec2199))
 
 
 
