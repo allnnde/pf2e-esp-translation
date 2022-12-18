@@ -1,3 +1,13 @@
+## [0.2.3](https://github.com/allnnde/pf2e-esp-translation/compare/v0.2.2...v0.2.3) (2022-12-08)
+
+
+### Bug Fixes
+
+* cambio en el tipo de exportacion y agregado de mappings ([330e4ff](https://github.com/allnnde/pf2e-esp-translation/commit/330e4ff88fb2991b074c7ac90253b655017088d1))
+* **picaro:** se termino la traduccion base del picaro ([927fae9](https://github.com/allnnde/pf2e-esp-translation/commit/927fae957643cedb3300425f3e5da9a8ad0c2142))
+
+
+
 ## [0.2.2](https://github.com/allnnde/pf2e-esp-translation/compare/v0.2.1...v0.2.2) (2022-12-08)
 
 
@@ -31,15 +41,6 @@
 ### Bug Fixes
 
 * **monje:** se argego descripcion de un equipamiento mencionado en la descripcion de los rasgos de monje ([421afae](https://github.com/allnnde/pf2e-esp-translation/commit/421afaecd87125664ac645aecd16b9b0aea0f6b1))
-
-
-
-# [0.1.0](https://github.com/allnnde/pf2e-esp-translation/compare/v0.0.7...v0.1.0) (2022-12-04)
-
-
-### Features
-
-* **monje:** se termina la traduccion base del monje junto a traducciones dependientes ([4ddafee](https://github.com/allnnde/pf2e-esp-translation/commit/4ddafee1a9d4ad6ed3d7b050d10c50ce7834dca8))
 
 
 
