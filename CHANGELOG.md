@@ -1,3 +1,12 @@
+## [0.2.4](https://github.com/allnnde/pf2e-esp-translation/compare/v0.2.3...v0.2.4) (2022-12-18)
+
+
+### Bug Fixes
+
+* fix release donwload file name ([c4458c1](https://github.com/allnnde/pf2e-esp-translation/commit/c4458c117930479e6903cc6048759e1aa59abb9b))
+
+
+
 ## [0.2.3](https://github.com/allnnde/pf2e-esp-translation/compare/v0.2.2...v0.2.3) (2022-12-08)
 
 
@@ -32,15 +41,6 @@
 ### Features
 
 * **Picaro:** primera traduccion ([e680d44](https://github.com/allnnde/pf2e-esp-translation/commit/e680d44202a9ce8d0d5a685c13fda1e05caeefaa))
-
-
-
-## [0.1.1](https://github.com/allnnde/pf2e-esp-translation/compare/v0.1.0...v0.1.1) (2022-12-04)
-
-
-### Bug Fixes
-
-* **monje:** se argego descripcion de un equipamiento mencionado en la descripcion de los rasgos de monje ([421afae](https://github.com/allnnde/pf2e-esp-translation/commit/421afaecd87125664ac645aecd16b9b0aea0f6b1))
 
 
 
