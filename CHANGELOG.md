@@ -1,3 +1,12 @@
+## [0.2.6](https://github.com/allnnde/pf2e-esp-translation/compare/v0.2.5...v0.2.6) (2023-02-17)
+
+
+### Bug Fixes
+
+* **json:** fix re-es.json struncture ([382fa8a](https://github.com/allnnde/pf2e-esp-translation/commit/382fa8a07e375d6d6d8dcc95f7f5e4f712bb0158))
+
+
+
 ## [0.2.5](https://github.com/allnnde/pf2e-esp-translation/compare/v0.2.4...v0.2.5) (2023-02-17)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * correcion de zip ([256ee52](https://github.com/allnnde/pf2e-esp-translation/commit/256ee5270efa0f030a0e23f5d5d8ba172fcc3be0))
-
-
-
-## [0.2.1](https://github.com/allnnde/pf2e-esp-translation/compare/v0.2.0...v0.2.1) (2022-12-08)
-
-
-### Bug Fixes
-
-* **foundry:** change metadata in module.json ([f7cfd0b](https://github.com/allnnde/pf2e-esp-translation/commit/f7cfd0bf459936ad28a751d037692fbec1f4e83b))
 
 
 
