@@ -1,3 +1,12 @@
+## [0.2.5](https://github.com/allnnde/pf2e-esp-translation/compare/v0.2.4...v0.2.5) (2023-02-17)
+
+
+### Bug Fixes
+
+* **babele:** correct module name for load compendium ([8f68f42](https://github.com/allnnde/pf2e-esp-translation/commit/8f68f42dfe543b2b1992b7bb6a16a096177356f5)), closes [#1](https://github.com/allnnde/pf2e-esp-translation/issues/1)
+
+
+
 ## [0.2.4](https://github.com/allnnde/pf2e-esp-translation/compare/v0.2.3...v0.2.4) (2022-12-18)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * **foundry:** change metadata in module.json ([f7cfd0b](https://github.com/allnnde/pf2e-esp-translation/commit/f7cfd0bf459936ad28a751d037692fbec1f4e83b))
-
-
-
-# [0.2.0](https://github.com/allnnde/pf2e-esp-translation/compare/v0.1.1...v0.2.0) (2022-12-04)
-
-
-### Features
-
-* **Picaro:** primera traduccion ([e680d44](https://github.com/allnnde/pf2e-esp-translation/commit/e680d44202a9ce8d0d5a685c13fda1e05caeefaa))
 
 
 
