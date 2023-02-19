@@ -1,0 +1,376 @@
+{
+    "label": "Peligros",
+    "reference": [],
+    "entries": {
+        "Shrieker": {
+            "name": "Shrieker",
+            "description": "<p>Este hongo púrpura de tamaño humano emite un chillido desgarrador cuando se le molesta.</p> <p>Este hongo púrpura de tamaño humano emite un chillido desgarrador cuando se le molesta.",
+            "disable": "<p>@Check[type:Supervivencia|dc:18|name:Desactivar saco de aire|traits:ambiental,hongo] para acercarte con cuidado y cortar el saco de aire de la seta sin desencadenar el shrieker</p>",
+            "reset": "<p>1 minuto</p>"
+        },
+        "Drowning Pit": {
+            "name": "Foso de ahogamiento",
+            "description": "<p>Una trampilla cubre un pozo de 10 pies cuadrados que tiene 30 pies de profundidad y 5 pies de agua en el fondo. Cuatro caños de agua en las paredes se conectan a tanques de agua ocultos. Cada surtidor de agua sale de una pared diferente, a 15 cm de la parte superior del pozo.</p> <p>",
+            "disable": "<p>@Check[type:thievery|dc:18] (entrenado) para sellar cada salida de agua, @Check[type:thievery|dc:22] (entrenado) para abrir la trampilla, o @Check[type:athletics|dc:22] para @UUID[Compendium.pf2e.action-macros.yMTKMnaYSGtDz4wk]{Abrir por la fuerza: Atletismo} la trampilla</p>",
+            "reset": "<p>La trampa puede restablecerse si se vuelve a accionar manualmente la puerta y se rellenan los depósitos de agua; puede restablecerse sin drenar la fosa, pero al hacerlo pierde eficacia</p>",
+            "routine": "<p>(4 acciones) La trampa pierde 1 acción cada turno por cada caño de agua desactivado. En cada una de las acciones de la trampa, un surtidor vierte agua, aumentando la profundidad del agua en 5 pies. Una vez que la fosa está llena de agua, la fosa deja de usar acciones, pero las criaturas en la fosa comienzan a ahogarse.</p>",
+            "stealth": "<p>(entrenado); @Comprobar[tipo:percepción|dc:22|rasgos:acción:buscar] (experto) para descubrir los chorros de agua una vez que se abre la fosa</p>"
+        },
+        "Yellow Mold": {
+            "name": "Moho amarillo",
+            "description": "<p>Esporas venenosas de moho asaltan a las criaturas cercanas.</p>",
+            "disable": "<p>@Check[type:Supervivencia|dc:26|name:Quitar el moho] (experto) para quitar el moho sin desencadenar las esporas</p>",
+            "stealth": "<p>(entrenado)</p>"
+        },
+        "Snowfall": {
+            "name": "Nevadas",
+            "description": "<p>Se ha acumulado nieve suelta y hielo en una superficie alta, como la rama de un árbol o un tejado. Su agarre a la superficie es tenue, y es probable que caiga si la superficie se mueve.</p> <p>La nieve y el hielo sueltos se han acumulado en una superficie alta, como la rama de un árbol o un tejado.",
+            "disable": "<p>@Comprueba[tipo:Supervivencia|dc:19|nombre:Desalojar la nieve con seguridad] (entrenado) para desalojar la nieve con seguridad, o inflige cualquier cantidad de daño de fuego para destruir el peligro sin desencadenarlo</p>",
+            "stealth": "<p>(entrenado)</p>"
+        },
+        "Scythe Blades": {
+            "name": "Cuchillas de guadaña",
+            "description": "<p>Dos cuchillas, cada una oculta en una ranura del techo de 4,5 metros de largo, están conectadas a un cable trampa.",
+            "disable": "<p>@Comprobar[type:Latrocinio|dc:21|name:Desactivar una Hoja] (entrenado) para desactivar cada hoja</p>",
+            "reset": "<p>La trampa se reinicia a los 15 minutos</p>",
+            "stealth": "<p>(entrenado)</p>"
+        },
+        "Gravehall Trap": {
+            "name": "Gravehall Trap",
+            "description": "<p>Cuando una criatura viva cruza el punto medio del túnel atrapado, la magia nigromántica anima parcialmente los cadáveres enterrados en las paredes y el techo.</p> <p>La magia nigromántica anima parcialmente los cadáveres enterrados en las paredes y el techo.",
+            "disable": "<p>@Check[type:thievery|dc:24|name:Disrupt Magical Trigger|traits:action:disable-a-device] (experto) para perturbar el desencadenante mágico antes de que el peligro tire iniciativa, o @Check[type:religion|dc:18|name:Overwhelm the Area with Positive Energy] (entrenado) para abrumar el área con energía positiva e impedir que el peligro use su rutina durante 1 asalto; al tercer chequeo de Religión con éxito, las energías nigrománticas se perturban y el peligro se destruye.</p>",
+            "routine": "<p>(1 acción) Los puños de un muerto viviente asaltan a todas las criaturas de la sala, infligiendo [[/r 4d6[bludgeoning]]] de daño. Las criaturas de la sala deben intentar un @Control[type:reflex|dc:21].</p><\n<hr /><\n<p><strong>Éxito crítico</strong> El objetivo no se ve afectado.</p><\n<p><strong>Éxito</strong> El objetivo recibe la mitad de daño.</p><p><strong>Fallo</strong> El objetivo recibe todo el daño y su Velocidad se reduce en 3 metros (hasta un mínimo de 3 metros) durante 1 ronda.</p><p><strong>Fallo crítico</strong> El objetivo recibe el doble de daño y queda @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilizado} durante 1 ronda.</p>"
+        },
+        "Wheel Of Misery": {
+            "name": "Rueda de la miseria",
+            "description": "<p>Una rueda ornamentada incrustada en una pared -dividida en seis segmentos con runas de colores en cada uno de ellos- está controlada por un sensor mágico que detecta cualquier criatura que se encuentre a menos de 30 metros delante de ella.</p> <p>La rueda está diseñada para detectar a cualquier criatura que se encuentre a menos de 30 metros delante de ella.",
+            "disable": "<p>@Check[type:thievery|dc:26|name:Stop Wheel from Spinning|traits:action:disable-a-device] (experto) en la rueda para que deje de girar, @Check[type:thievery|dc:22|name:Erase Rune|traits:action:disable-a-device] (maestro) para borrar cada runa, o <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4º nivel; contrarrestar DC 22) para contrarrestar cada runa</p>",
+            "reset": "<p>La trampa se desactiva y reinicia si pasa 1 minuto sin que ninguna criatura se mueva dentro del rango de distancia de su sensor</p>",
+            "routine": "<p>(2 acciones) En su iniciativa, la trampa usa su primera acción para girar y luego se detiene. Tira 1d6 para determinar qué segmento está más arriba cuando la rueda deja de girar. La rueda usa su segunda acción para replicar el conjuro listado para ese segmento (3er nivel, DC 24, tirada de ataque de conjuro +14). El objetivo de este conjuro se centra o incluye a la criatura más cercana en el área. Esto aumenta el rango de distancia del hechizo a 100 pies si es necesario. Cualquier hechizo lanzado por esta trampa es arcano.</p><p><strong>1</strong><em>@UUID[Compendium.pf2e.spells-srd.o4lRVTwSxnOOn5vl]{Dormir}</em></p><p><strong>2</strong><em>@UUID[Compendium.pf2e.spells-srd.DCQHaLrYXMI37dvW]{Paralizar}</em></p><p><strong>3</strong><em>@UUID[Compendium.pf2e.spells-srd.9AAkVUCwF6WVNNY2]{Rayo}</em> (línea de 30 metros)</p><p><strong>4</strong><em>@UUID[Compendium.pf2e.spells-srd.VosLNn2M8S7JH67D]{Ceguera}</em></p><p><strong>5</strong><em>@UUID[Compendium.pf2e.spells-srd.f8hRqLJaxBVhF1u0]{Flecha ácida}</em></i></p><p><strong>6</strong><em>@UUID[Compendium.pf2e.spells-srd.J7Y7tl0bbdz7TcCc]{Rayo de debilitamiento}</em></p>",
+            "stealth": "<p>(experto) para detectar el sensor mágico; darse cuenta de que la rueda tiene una DC de 0</p>"
+        },
+        "Insistent Privacy Fence": {
+            "name": "Valla de Privacidad Insistente",
+            "description": "<p>Un tramo de valla es electrificado por una bobina estasiana oculta.</p> <p>",
+            "disable": "<p>@Check[type:thievery|dc:28|name:Disconnect the coil from the fence|traits:electricity,hazard,trap,mechanical] (experto) para desconectar cuidadosamente el Retorcer de la valla o @Check[type:crafting|dc:30|name:Jury-rig a grounding device|traits:electricity,hazard,trap,mechanical] (maestro) para jury-rig un dispositivo de conexión a tierra para anular el Electrizante</p>",
+            "reset": "<p>La trampa se desactiva y se reinicia al cabo de 1 minuto.</p>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Dance Of Death": {
+            "name": "Danzante de la Muerte",
+            "description": "<p>Una inquietante orquesta obliga a todos los que la escuchan a bailar hasta caer rendidos de cansancio.</p>",
+            "disable": "<p>@Check[type:Intimidación|dc:42|name:Asustar a la orquesta|traits:action:desmoralizar] (experto) tres veces para asustar a bailarines y músicos espectrales por igual y evitar que participen en la letal Interpretar, @Check[type:Interpretar|dc:40|nombre:Disrumpir compulsión] (maestro) dos veces para producir una melodía lo suficientemente discordante como para perturbar la compulsión, o @Check[tipo:religión|dc:42|nombre:Desterrar espíritus] (maestro) tres veces para desterrar a los espíritus con oraciones</p>",
+            "reset": "<p>La inquietante orquesta dedica una hora a resintonizar sus fantasmales instrumentos, tras lo cual está lista para comenzar de nuevo su rutina</p>",
+            "routine": "<p>(1 acción, auditivo, encantamiento, incapacitación, ocultismo) La orquesta interpreta una estridente melodía, obligando a todas las criaturas que puedan oírla a gastar acciones bailando. Cada ronda, la criatura debe intentar un @Check[type:will|dc:37]; los resultados de esta salvación modifican el número de acciones que la criatura debe gastar bailando cada ronda. Si esto hace que la criatura gaste más acciones bailando de las que puede usar en su turno, la criatura recibe 10d6 puntos de daño (o el doble en caso de fallo crítico) por moverse más rápido de lo que su cuerpo puede manejar.</p><p><strong>Éxito crítico</strong> La criatura disminuye en 1 el número de acciones que debe gastar bailando.</p><p><strong>Éxito</strong> Sin efecto.</p><p><strong>Fallo</strong> La criatura aumenta las acciones que debe gastar bailando en 1.</p><p><strong>Fallo crítico</strong> La criatura aumenta las acciones que debe gastar bailando en 2.</p>",
+            "stealth": "<p>(maestro)</p>"
+        },
+        "Web Lurker Noose": {
+            "name": "Lazo acechador telaraña",
+            "description": "<p>Una discreta red a la altura de la garganta engancha a una criatura que camina hacia ella.</p> <p>Si la criatura camina hacia ella, se engancha.",
+            "disable": "<p>@Check[type:Supervivencia|dc:18|name:Reordenar las telarañas|traits:mecánico,trampa] (entrenado) o @Check[type:Latrocinio|dc:18|name:Reordenar las telarañas|traits:mecánico,trampa] (experto) para reordenar las telarañas.</p>"
+        },
+        "Hidden Pit": {
+            "name": "Foso escondido",
+            "description": "<p>Una trampilla de madera cubre una fosa de 3 metros cuadrados y 6 metros de profundidad</p> <p>.",
+            "disable": "@Comprobar[tipo:Latrocinio|dc:12|nombre:Quitar la trampilla] para quitar la trampilla",
+            "reset": "<p>Las criaturas aún pueden caer en la trampa, pero la trampilla debe restablecerse manualmente para que la trampa vuelva a estar escondida.</p>",
+            "stealth": "<p>(o 0 si la trampilla está desactivada o rota)</p>"
+        },
+        "Jealous Abjurer": {
+            "name": "Celoso abjurador",
+            "description": "<p>Un espíritu vestido con una túnica se eleva del suelo, señalando con un dedo acusador.</p>",
+            "disable": "<p>@Check[type:arcanos|dc:36|name:Convince the Spirit], @Check[type:naturaleza|dc:36|name:Convince the Spirit], @Check[type:ocultismo|dc:36|name:Convince the Spirit], o @Check[type:religión|dc:36|name:Convince the Spirit] (maestro) para convencer al espíritu de que el conocimiento mágico del objetivo es demasiado grande para jugar con él</p>",
+            "reset": "<p>1 hora</p>",
+            "stealth": "<p>(maestro)</p>"
+        },
+        "Pharaoh's Ward": {
+            "name": "Custodia del faraón",
+            "description": "<p>Una maldición está impregnada en el umbral de una entrada.</p>",
+            "disable": "<p>@Comprobar[tipo:Latrocinio|dc:27|nombre:Quitar el Dintel] (maestría) para quitar trabajosamente el dintel sin desencadenar la magia, o <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispeler Magia}</em> (4º nivel; contrarrestar DC 25) para contrarrestar la runa</p>",
+            "reset": "<p>La trampa se reinicia cuando se cierra la puerta</p>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Green Slime": {
+            "name": "Baba Verde",
+            "description": "<p>Una cáustica película verde se aferra al techo por encima, vigilando a las presas que pasan por debajo de ella.</p> <p>Lo que se ve es una película verde.",
+            "disable": "<p>@Check[type:survival|dc:33|name:Despegar el limo del techo] (experto) para despegar con cuidado el limo del techo sin tocarlo</p>",
+            "reset": "<p>1 hora, mientras el limo se da un festín y luego vuelve a subir lentamente al techo</p>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Plummeting Doom": {
+            "name": "Perdición en picado",
+            "description": "<p>Cuatro espíritus vengativos agarran a los intrusos y los arrojan por el borde de un acantilado cercano de 120 pies de altura.</p> <p>Los espíritus de los intrusos se han convertido en una amenaza para la humanidad.",
+            "disable": "<p>@Check[type:athletics|dc:40|name:Empujar con fuerza a los espíritus hacia atrás] (entrenado) para empujar hacia atrás con tanto vigor que los espíritus teman ser arrojados por el precipicio, o @Check[type:religion|dc:40|name:Sellar a los espíritus] (experto) para sellar temporalmente a los espíritus</p>",
+            "reset": "<p>1 hora</p>",
+            "stealth": "<p>(maestro) escuchar los ecos de un objeto lejano estrellándose contra el suelo</p>"
+        },
+        "Electric Latch Rune": {
+            "name": "Runa de pestillo eléctrico",
+            "description": "<p>Una runa invisible impresa en el picaporte de una puerta libera una poderosa descarga eléctrica.</p> <p>El picaporte de una puerta libera una poderosa descarga eléctrica.",
+            "disable": "<p>@Check[type:Latrocinio|dc:20|name:Rascar la runa|traits:action:disable-a-device] (experto) para rascar la runa sin permitir que fluya la electricidad, o <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2º nivel; contrarrestar DC 18) para contrarrestar la runa</p>",
+            "stealth": "<p>(entrenado)</p>"
+        },
+        "Banshee's Symphony": {
+            "name": "Sinfonía de la banshee",
+            "description": "<p>Un hechizo mágicamente contagioso <em>wail of the banshee</em> se encuentra atrapado en la laringe de un elfo invisible y momificado.</p> <p>Un hechizo mágicamente contagioso <em>wail of the banshee</em> se encuentra atrapado en la laringe de un elfo invisible y momificado.",
+            "disable": "<p>@Check[type:thievery|dc:42|name:Pierce Larynx|traits:action:disable-a-device] (maestro) para perforar la laringe invisible con tanta precisión que la magia se suelta en un hilillo antes de que se active la trampa, @Check[type:thievery|dc:44|name:Deconstruct Larynx|traits:action:disable-a-device] (legendaria) tres veces para deconstruir la laringe mientras la trampa está activa de tal forma que la destroza, o hechizo DC 38 (9º nivel) para contrarrestar el <em>aullido de la banshe</em> antes de que la trampa se active</p>",
+            "reset": "<p>La trampa termina cuando la trampa es incapaz de hacer gritar a una criatura (normalmente porque ninguna criatura falló su salvación en el turno anterior o porque todas las criaturas han tenido éxito crítico en el pasado). Luego se reinicia a lo largo de 24 horas, a medida que un nuevo grito se acumula en la laringe momificada.</p>",
+            "routine": "<p>(1 acción) La trampa usa su acción para obligar a una criatura aleatoria que falló su salvación contra <em>lamento de la banshee</em> el turno pasado a emitir un <em>lamento de la banshee</em> con las mismas estadísticas que el inicial. La criatura emite un lamento aunque esté muerta o no pueda hablar, sin importar lo lejos que esté de la trampa. A diferencia de un lanzamiento del hechizo, la condición drenada de los hechizos <em>aullido de la banshee</em> de esta trampa aumenta los valores de la condición drenada de los objetivos. Una criatura que tenga éxito crítico en cualquiera de sus salvaciones puede seguir siendo afectada por la trampa en rondas futuras, pero no puede ser forzada a lamentarse por la trampa.</p></p>",
+            "stealth": "<p>(legendario)</p>"
+        },
+        "Eternal Flame": {
+            "name": "Llama Eterna",
+            "description": "<p>Un furioso infierno espectral surge de la nada, fortaleciendo a todas las criaturas no muertas en su área. Este fantasma suele surgir de los restos calcinados de un grupo de tres personas que murieron quemadas, ya sea en un terrible accidente o en una ejecución deliberada, y sus almas no vengadas arden de rabia.</p> <p>El fantasma de los muertos vivientes es un infierno espectral.",
+            "disable": "<p>@Check[type:diplomacy|dc:27|name:Calm the Spirit's Furia] (experto) para calmar temporalmente la furia de uno de los tres espíritus, o @Check[type:religion|dc:30|name:Exorcise Spirit] (entrenado) para exorcizar a uno de los espíritus; se requieren tres éxitos totales para desactivar el embrujo</p>",
+            "reset": "<p>Las llamas cesan 1 minuto después de que todos los seres vivos abandonen la zona, pero al cabo de 1 hora, la ira y el dolor se cocinan a fuego lento y el embrujo está listo para desencadenarse de nuevo</p>",
+            "routine": "<p>(1 acción) Llamas fantasmales recorren con furia el área embrujada, infligiendo 4d6 de daño de fuego a cada criatura viva dentro del área (@Check[type:will|dc:23|basic:true]). Los muertos vivientes de la zona quedan envueltos en llamas durante el siguiente asalto. Obtienen el rasgo de fuego e inmunidad al fuego, y todos sus ataques infligen 1d6 puntos de daño de fuego adicionales. Los objetos del área no se ven afectados.</p>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Hampering Web": {
+            "name": "Obstaculizando la telaraña",
+            "description": "<p>Las láminas semitransparentes de telaraña se extienden por la entrada, listas para capturar pequeños insectos o dificultar el paso de criaturas más grandes.</p> <p>",
+            "disable": "<p>@Comprobar[tipo:Supervivencia|dc:17|nombre:Desalojar telaraña] (entrenado) para desalojarla</p>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Hallucination Powder Trap": {
+            "name": "Trampa de polvo alucinógeno",
+            "description": "<p>Un tubo de polvo alucinógeno armado con un explosivo en miniatura se conecta al pomo de una puerta o a un cerrojo similar.</p> <p>El pomo de una puerta o un cerrojo similar se conecta al pomo de una puerta o a un cerrojo similar.",
+            "disable": "<p>@Check[type:Latrocinio|dc:26|name:Desactivar Martillo|traits:action:disable-a-device] (experto) para desactivar el martillo que golpea la tapa de percusión</p>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Summoning Rune": {
+            "name": "Runa de convocación",
+            "description": "<p>Una nube de sensores mágicos invisibles en un radio de 3 metros rodea una runa invisible de la pared o del suelo del tamaño de la criatura que se va a invocar.</p> <p>Se puede invocar una runa invisible de la pared o del suelo.",
+            "disable": "<p>@Check[type:acrobatics|dc:15|name:Approach Rune] para acercarse sin desencadenar la trampa seguido de @Check[type:thievery|dc:17|name:Erase Rune|traits:action:disable-a-device] (entrenado) para borrar la runa, o <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (1er nivel; contrarrestar DC 15) para contrarrestar la runa</p>",
+            "reset": "<p>La trampa se reinicia cada día al amanecer</p>",
+            "stealth": "<p>(entrenado)</p>"
+        },
+        "Second Chance": {
+            "name": "Segunda oportunidad",
+            "description": "<p>Poderosa magia de protección vinculada a un objeto o lugar que trata de retroceder en la edad de una criatura y sus aliados.</p> <p>Magia de protección vinculada a un objeto o lugar que trata de retroceder en la edad de una criatura y sus aliados.",
+            "disable": "<p>@Comprobar[type:Latrocinio|dc:46|name:Desmantelar Hechizo|traits:action:disable-a-device] (legendario) para desmontar el mecanismo una pequeña pieza cada vez, con los ojos cerrados, mientras recuerdas cada recuerdo vívido de la vida en orden, empezando por el recuerdo más antiguo</p>",
+            "stealth": "<p>(legendario)</p>"
+        },
+        "Sportlebore": {
+            "name": "Sportlebore",
+            "description": "<p>Un esportlebore se esconde entre las vituallas de un plato de comida o dentro de un paquete de raciones para el camino.</p> <p>El esportlebore se esconde entre las vituallas de un plato de comida o dentro de un paquete de raciones para el camino.",
+            "disable": "<p>Una criatura que descubra el sportlebore puede sacarlo de la comida en la que está escondido automáticamente como acción Interactuar.</p>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Bottomless Pit": {
+            "name": "Pozo sin fondo",
+            "description": "<p>Una trampilla de hierro cubre un pozo infinitamente profundo de 3 metros cuadrados.</p> <p>",
+            "disable": "<p>@Comprobar[type:Latrocinio|dc:28|name:Quitar trampilla|traits:action:disable-a-device] (entrenado) para quitar la trampilla</p>",
+            "reset": "<p>La trampa sigue haciendo que las criaturas caigan para siempre si caen dentro, pero la trampilla debe restablecerse manualmente para que la trampa vuelva a estar escondida</p>",
+            "stealth": "<p>(o 0 si la trampilla está desactivada o rota) o <i>detectar magia</i></p>"
+        },
+        "Steam Vents": {
+            "name": "Expulsar gases",
+            "description": "<p>Grandes tuberías presurizadas conectadas a un cable trampa están preparadas para liberar una ráfaga de vapor sobre los intrusos.</p> <p>",
+            "disable": "<p>@Check[type:thievery|dc:22|name:Disconnect the trip wire|traits:mechanical,trap,hazard]{Latrocinio (trained)} para desconectar el cable trampa o un @Check[type:crafting|dc:24|name:Reduce the pressure|traits:mechanical,trap,hazard]{Artesanía (expert)} para reducir cuidadosamente la presión y evitar la explosión</p>",
+            "stealth": "<p>(entrenado)</p>"
+        },
+        "Spectral Reflection": {
+            "name": "Reflexión espectral",
+            "description": "<p>El reflejo en el espejo se retuerce y distorsiona sutilmente, y su expresión adquiere una inquietante mueca de malicia.</p> <p>Lo que se ve en el espejo es el reflejo de un hombre que se ha convertido en un monstruo.",
+            "disable": "<p>@Check[type:religion|dc:23|name:Exorcise Spirit] (entrenado) para exorcizar al espíritu, o @Check[type:throvery|dc:23|name:Cover the Mirror|traits:action:disable-a-device] (entrenado) para cubrir rápidamente el espejo</p>",
+            "reset": "<p>El embrujo se vuelve a formar al cabo de 1 minuto, manifestándose en cualquier espejo dentro de su área infundida (ver Especial más abajo).</p>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Brown Mold": {
+            "name": "Moho Marrón",
+            "description": "<p>Este sencillo hongo extrae el calor del aire.",
+            "disable": "<p>@Check[type:Supervivencia|dc:18|name:Eliminar Moho Marrón|traits:ambiental,hongo] (entrenado) para eliminar el moho de forma segura</p>",
+            "reset": "<p>Después de expandirse, el moho marrón no puede volver a crecer durante 1 día</p>",
+            "stealth": "<p>(entrenado)</p>"
+        },
+        "Treacherous Scree": {
+            "name": "Treacherous Scree",
+            "description": "<p>La base de este terreno inclinado parece estable a primera vista, pero las pequeñas rocas que lo cubren están poco compactadas y son propensas a resbalar.</p> <p>La base de este terreno inclinado parece estable a primera vista, pero las pequeñas rocas que lo cubren están poco compactadas y son propensas a resbalar.",
+            "disable": "<p>@Comprobar[type:Supervivencia|dc:20|name:Navegar camino seguro] (entrenado) para navegar por un camino seguro</p>",
+            "stealth": "<p>(entrenado)</p>"
+        },
+        "Poisoned Dart Gallery": {
+            "name": "Galería de dardos envenenados",
+            "description": "<p>Un sinfín de agujeros desde los que lanzar dardos envenenados bordean un largo pasillo con un panel de control oculto en el extremo más alejado.</p> <p>",
+            "disable": "<p>@Check[type:Latrocinio|dc:21|name:Desactivar trampa (panel de control)|traits:action:disable-a-device] (experto) en el panel de control desactiva la trampa.</p>",
+            "reset": "<p>La trampa se desactiva y se reinicia al cabo de 1 minuto.</p>",
+            "routine": "<p>(1 acción) La trampa lanza un dardo contra cada criatura de la galería como 1 acción. Como lanza dardos continuamente, la trampa también puede usar la acción gratuita Andanada continua (ver más abajo) para lanzar dardos a cada criatura durante el turno de esa criatura.</p>",
+            "stealth": "<p>(experto) o @Comprobar[tipo:percepción|dc:31|rasgos:acción:buscar] (maestro) para descubrir el panel de control</p>"
+        },
+        "Darkside Mirror": {
+            "name": "Espejo al lado oscuro",
+            "description": "<p>Un espejo mágico sustituye a los personajes por malvados duplicados espejados de otra dimensión.</p> <p",
+            "disable": "<p>@Check[type:thievery|dc:34|name:Retrieve Creature from Other Dimension|traits:action:disable-a-device] (legendario) para recuperar una criatura de la otra dimensión en los 10 minutos siguientes al cambio (solo es posible si su duplicado en el espejo está muerto), @Check[type:Latrocinio|dc:39|nombre:Inutilizar espejo permanentemente|traits:action:disable-a-device] (maestro) para inutilizar permanentemente el espejo una vez que todos los duplicados del espejo estén muertos, o <em>@UUID[Compendium.pf2e.hechizos-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7º nivel; contrarrestar DC 32) para contrarrestar el espejo durante 1 minuto y evitar reemplazos adicionales durante ese tiempo</p>",
+            "reset": "<p>El espejo está siempre listo para absorber criaturas hacia la otra dimensión. Diez minutos después de que una criatura sea absorbida por el espejo, si un aliado no rescata a la criatura con Latrocinio, ésta alcanza la otra dimensión, donde podría ser capturada o asesinada. En la dimensión del espejo, cuenta como un duplicado del espejo, por lo que los habitantes de la otra dimensión no pueden destruir el espejo de su lado mientras la criatura absorbida esté allí. Estas dimensiones son realidades alternativas, no planos, por lo que ni siquiera rituales como <i>cambio de Plano</i> pueden alcanzarlas.</p>",
+            "routine": "<p>(1 acción) El espejo absorbe a otra criatura reflejada en el espejo y la sustituye por un duplicado del espejo. Los duplicados del espejo atacan por iniciativa propia, usando las mismas estadísticas que la criatura original, pero con un alineamiento maligno (cambiando sólo las habilidades que cambian con el cambio de alineamiento). Un duplicado espejo puede gastar 3 acciones en contacto con el espejo para volver a su dimensión original y Soltar a la criatura que duplicó, pero la mayoría de los duplicados espejo prefieren no hacerlo.</p>",
+            "stealth": "<p>(máster) descubrir que no es un espejo normal</p>"
+        },
+        "Perilous Flash Flood": {
+            "name": "Inundación peligrosa",
+            "description": "<p>Ya se trate de agua que se precipita por las calles arrastrando por el camino residuos peligrosos o de una sustancia menos natural que se desprende de su recipiente, esta inundación implacable golpea todo lo que encuentra a su paso.</p> <p>La inundación es un desastre.",
+            "disable": "<p>Tres chequeos @Check[type:athletics|dc:35|name:Move Barricade], @Check[type:crafting|dc:35|name:Construct Barricade], o @Check[type:survival|dc:35|name:Construct Barricade] para mover o construir barricadas lo suficientemente fuertes como para crear un refugio contra la inundación. Aunque esto crea un lugar seguro donde ponerse, las criaturas que estén fuera del área atrincherada pueden seguir en peligro dependiendo de la naturaleza y el origen de la inundación.</p>",
+            "routine": "<p>(1 acción) La inundación avanza 60 pies, chocando contra todas las criaturas dentro de su área. Cada criatura debe hacer una salvación @Check[type:fortitude|dc:30] mientras las aguas las golpean y las arrastran río abajo. La cantidad y el tipo de daño infligido dependen de la naturaleza de la inundación, y ciertos tipos de inundaciones imponen efectos adicionales. Las turbulentas aguas hacen que las criaturas que se encuentren en el área de la inundación deban intentar un chequeo de @Chequeo[type:atletismo|dc:20|name:Nadar|traits:accion:nadar] para nadar y poder moverse, y aquellos que no tengan éxito en un chequeo de Nadar cada ronda pueden ahogarse.</p><p><strong>Éxito crítico</strong> La criatura no recibe daño.</p><p><strong>Éxito</strong> La criatura recibe la mitad de daño.</p><p><strong>Fallo</strong> La criatura recibe daño completo y es movida 10 pies junto con el agua.</p><p><strong>Fallo Crítico</strong> La criatura recibe doble daño y es movida 20 pies junto con el agua.</p><\n<hr><\n<ul><\n<li><strong>Escorrentía ácida</strong> Esta inundación cáustica disuelve la carne mientras se mueve, infligiendo [[/r {1d12[contundente],(1d12+8)[ácido]}]]{1d12 de daño contundente y 1d12+8 de daño ácido}. Además, inflige [[/r 2d6[persistente, ácido]]] de daño a las criaturas que fallan críticamente sus salvaciones de Fortaleza.</li><li><strong>Olas demoledoras</strong> Esta inundación de agua torrencial inflige [[/r (2d12+10)[contundente]] de daño.</li><li><strong>Rechazo repulsivo</strong> Esta inundación ha recogido objetos contaminados o infectados como aguas residuales o comida podrida. Inflige [[/r (2d12+8)[bludgeoning]]] de daño. Cada criatura expuesta a la inundación debe hacer una salvación @Check[type:fortitude|dc:29], convirtiéndose en @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Enfermo 1} en caso de fallo o @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Enfermo 2} en caso de fallo crítico. Además, las criaturas que entran en contacto con las aguas de la inundación están expuestas a fiebre de inmundicia (@Check[type:fortitude|dc:20]).</li><li><strong>Restos afilados</strong> Las aguas han recogido diversos objetos, algunos de los cuales son especialmente afilados. La inundación inflige [[/r 1d12][bludgeoning]]] de daño y [[/r (1d12+12)[piercing]]] de daño.</li><li><strong>Gusano pegajoso</strong> La sustancia es particularmente pegajosa. Inflige [[/r (2d12+6)[bludgeoning]]] de daño. Además, cada criatura en la inundación debe hacer una salvación @Check[type:reflex|dc:29] al comienzo de su turno cada ronda. Si fallan la tirada de salvación, sufren una penalización de circunstancia de -10 pies a todas sus Velocidades durante 1 asalto. En caso de fallo crítico, quedan @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilizados} durante 1 asalto.</li>\n</ul>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Armageddon Orb": {
+            "name": "Orbe del Armaggedon",
+            "description": "<p>Un rugiente orbe rojo, forjado a partir de una gota de la sangre del dios Rovagug, hace llover fuego del cielo cuando se cumple una condición específica.</p>",
+            "disable": "<p>@Check[type:thievery|dc:48|name:Imbue Thieves' Tools|traits:action:disable-a-device] (legendario) para imbuir herramientas de ladrón con aspectos que representan a Asmodeus y Sarenrae y usarlas para drenar el poder del orbe durante 10 minutos; el personaje que hace este chequeo recibe 5 puntos de daño de fuego cada asalto hasta que el orbe se agota</p>",
+            "stealth": "o <i>detectar magia</i>"
+        },
+        "Web Lurker Deadfall": {
+            "name": "Web Lurker Deadfall",
+            "description": "¡<p>Un cable trampa suelta un montón de rocas que caen sobre todos los objetivos dentro de un cuadrado de 3 metros.</p> <p><strong>Cuidado!",
+            "disable": "<p>Supervivencia (entrenado) o Latrocinio (experto) DC 20 para reorganizar las telarañas.</p>",
+            "stealth": "<p>DC 23</p>"
+        },
+        "Confounding Betrayal": {
+            "name": "Traición confusa",
+            "description": "<p>Los aliados parecen despojarse de sus disfraces y se revelan como monstruos malévolos</p> <p>.",
+            "disable": "<p>@Check[type:deception|dc:28|name:Confound the Haunt] (experto) dos veces para confundir al haunt con tus propios engaños, o @Check[type:occultism|dc:28|name:Elaborar a Ward Against Influence] (entrenado) dos veces para elaborar una protección contra la influencia mental del haunt</p>",
+            "reset": "<p>El embrujo se desactiva 1 minuto después de que todas las criaturas abandonen la zona, pero se restablece inmediatamente después</p>",
+            "routine": "<p>(1 acción, ilusión, incapacitación, ocultismo) La haunt continúa confundiendo los sentidos de las víctimas e inspirándolas a cometer actos violentos entre ellas. Cada criatura en el área del hechizo debe intentar un @Check[type:will|dc:26].</p><p><strong>Éxito Crítico</strong> La criatura no se ve afectada y es temporalmente inmune durante 1 minuto.</p><p><strong>Éxito</strong> La criatura no se ve afectada.</p><p><strong>Fallo</strong> La criatura queda confusa durante 1 asalto.</p><p><strong>Fallo crítico</strong> La criatura queda confusa durante 1 minuto.</p>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Poisoned Lock": {
+            "name": "Cerradura envenenada",
+            "description": "<p>Una espina envenenada con resorte está escondida cerca del ojo de la cerradura. Al desactivar o romper la trampa no se desactiva ni se rompe la cerradura.</p> <p>El veneno no se rompe.",
+            "disable": "<p>@Comprobar[type:Latrocinio|dc:17|name:Desarmar Cerradura Trampa|traits:mecánico,trampa] (entrenado) en el mecanismo de resorte</p>",
+            "stealth": "<p>(entrenado)</p>"
+        },
+        "Bloodthirsty Urge": {
+            "name": "Ansia sanguinaria",
+            "description": "<p>Un objeto atormentado por los ecos de una mente despiadada intenta matar a alguien que se acerca.</p>",
+            "disable": "<p>@Check[type:religion|dc:29|name:Exorcise Spirit] (maestro) para exorcizar al espíritu o @Check[type:diplomacy|dc:31|name:Talk Down the Spirit] (experto) para hablar con él</p>",
+            "stealth": "<p>(entrenado)</p>"
+        },
+        "Frozen Moment": {
+            "name": "Momento congelado",
+            "description": "<p>La magia de protección intenta atrapar a los intrusos o posibles ladrones en un flujo de tiempo interrumpido.</p> <p>La magia de protección intenta atrapar a los intrusos o posibles ladrones en un flujo de tiempo interrumpido.",
+            "disable": "<p>@Check[type:Latrocinio|dc:38|name:Desmontar Componentes de Hechizo|traits:action:disable-a-device] (legendario) para desmontar rápidamente la miríada de componentes del hechizo en una sola intermitencia; o <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (9º nivel; contrarrestar DC 36) para contrarrestar la trampa antes de que se desencadene o para contrarrestar el efecto en una criatura después de que la trampa se desencadene</p>",
+            "stealth": "<p>(maestro)</p>"
+        },
+        "Lava Flume Tube": {
+            "name": "Tubo de canal de lava",
+            "description": "<p>Cuatro canales tallados en la piedra permiten que la lava fluya hacia una sala de 4,5 metros de altura; el suelo puede retirarse para que la lava endurecida caiga en una cámara situada debajo.</p> <p>La lava se ha endurecido y se ha convertido en un material muy resistente.",
+            "disable": "<p>@Check[type:thievery|dc:29|name:Block a Channel|traits:action:disable-a-device] (experto) para bloquear un canal, o @Check[type:thievery|dc:31|name:Soltar Floor Latch|traits:action:disable-a-device] (maestro) para soltar el pestillo del suelo y escapar a la cámara de abajo</p>",
+            "reset": "<p>La trampa se desactiva y se restablece al cabo de 1 hora retirando el suelo, agrietándose y arrojando la lava endurecida (y cualquier criatura atrapada dentro) a la cámara. Las criaturas caen 40 pies, recibiendo daño de caída (típicamente 17 de daño contundente).</p>",
+            "routine": "<p>(4 acciones) La trampa pierde 1 acción por canal desactivado cada turno. En cada acción, un canal diferente escupe lava, infligiendo 4d6 de daño de fuego a cada criatura en un radio de 3 metros del canal (@Check[type:reflex|dc:27|basic:true]), y aumentando la profundidad de la lava en la habitación en 1 pie (4 pies por ronda si todos los canales están activos).</p><p><p>Una criatura que comienza su turno en la lava recibe 8d6 de daño de fuego y queda inmovilizada hasta que Escapa de la lava endurecida (DC 27). La criatura podría asfixiarse si se cubre de lava.</p><p>La lava de la ronda anterior se endurece por completo al comienzo del turno de la trampa, elevando efectivamente el suelo de la habitación. Una vez que la sala está llena de lava, la trampa deja de realizar acciones, pero las criaturas de la sala permanecen atascadas hasta que el suelo se abre y la trampa se reinicia.</p>",
+            "stealth": "<p>(entrenado)</p>"
+        },
+        "Titanic Flytrap": {
+            "name": "Atrapamoscas titánico",
+            "description": "<p>En la superficie, un atrapamoscas titánico parece una mancha de la planta atrapamoscas más común, pero bajo las aguas turbias esconde unas mandíbulas mucho mayores, que alcanzan los 3 metros de diámetro y están reforzadas con ramas leñosas y forradas de pelos paralizantes.</p> <p>",
+            "disable": "<p>@Comprobar[type:Supervivencia|dc:22|name:Engañar los sentidos del atrapamoscas] (entrenado) para engañar el sentido del peso y la presión del atrapamoscas</p>",
+            "reset": "<p>1 hora (o más, después de una comida copiosa)</p>",
+            "stealth": "<p>(entrenado)</p>"
+        },
+        "Quicksand": {
+            "name": "Arenas movedizas",
+            "description": "<p>Una mancha de agua y arena de 4,5 metros de ancho intenta sumergir a las criaturas que la pisan.</p> <p><strong>Cuidado con el agua</strong>.",
+            "disable": "<p>@Check[type:Supervivencia|dc:18|name:Perturbar la superficie con seguridad] (entrenado) para perturbar la superficie</p>",
+            "reset": "<p>El peligro sigue sumergiendo a cualquiera que entre, pero la superficie no vuelve a estar escondida hasta que se asienta en el transcurso de 24 horas</p>",
+            "routine": "<p>(1 acción) En su iniciativa, las Arenas movedizas arrastran hacia abajo a cada criatura que se encuentre en su interior. Una criatura que estaba sumergida hasta la cintura pasa a estar sumergida hasta el cuello, y una criatura que estaba sumergida hasta el cuello es arrastrada hacia abajo y tiene que contener la respiración para evitar la asfixia.</p> <p>Una criatura en las Arenas movedizas puede hacer un chequeo @Check[type:athletics|dc:20|traits:action:swim] de Nadar para subir un Paso si está sumergida hasta el cuello o peor, o para moverse 1,5 m si está sumergida sólo hasta la cintura. En caso de fallo crítico, la criatura es arrastrada un paso hacia abajo.</p><p>Una criatura que Nade fuera de las Arenas movedizas escapa del peligro y queda tendida en un espacio adyacente a la mancha de arenas movedizas. Otras criaturas pueden Prestar ayuda a la criatura, normalmente utilizando una cuerda o ayuda similar, o intentar sacar a la criatura con su propio chequeo @Check[type:athletics|dc:20|name:Aid Another Creature in Arenas movedizas], con los mismos resultados que si la criatura intentara el chequeo.</p>",
+            "stealth": "<p>(entrenado) (o -10 y sin competencia mínima si la superficie está alterada)</p>"
+        },
+        "Spinning Blade Pillar": {
+            "name": "Pilar de cuchilla giratoria",
+            "description": "<p>Un poste metálico con tres afiladas cuchillas giratorias está oculto en el suelo, conectado a placas de activación en hasta ocho baldosas del suelo y a un panel de control oculto a menos de 10 metros.</p> <p>El sistema de activación de las cuchillas está diseñado para que las cuchillas giren con facilidad.",
+            "disable": "<p>@Check[type:thievery|dc:21|name:Disable Pillar|traits:action:disable-a-device] (entrenado) dos veces en el pilar, o @Check[type:thievery|dc:19|name:Disable Trap (Control Panel)|traits:action:disable-a-device] (experto) una vez en el panel de control desactiva toda la trampa. Romper el panel de control impide que nadie desactive la trampa usando el panel de control y evita que la trampa se desactive automáticamente.</p>",
+            "reset": "<p>La trampa se desactiva y se reinicia al cabo de 1 minuto.</p>",
+            "routine": "<p>(3 acciones) La trampa usa su primera acción para hacer un Golpe giratorio contra cada criatura adyacente, su segunda acción para moverse en línea recta en una dirección aleatoria (tira 1d4 para determinar la dirección), y su tercera acción para hacer un Golpe giratorio contra cada criatura adyacente. Esta trampa no tiene penalización por ataque múltiple.</p>",
+            "stealth": "<p>(entrenado) o @Comprobar[tipo:percepción|dc:26|rasgos:acción:buscar] (experto) para descubrir el panel de control</p>"
+        },
+        "Vorpal Executioner": {
+            "name": "Ejecutor vorpalino",
+            "description": "<p>Una hoja de sierra endiabladamente afilada desciende y recorre ranuras en un complejo camino por toda la habitación, intentando decapitar a todo el que se encuentre dentro.</p>",
+            "disable": "<p>@Revisa[type:Latrocinio|dc:41|name:Hoja de sierra de Jame|traits:action:disable-a-device] (experto) en cuatro cruces diferentes para atascar todos los caminos posibles de la hoja de sierra, impidiendo que recorra la sala</p>",
+            "reset": "<p>La trampa se reinicia en el transcurso de la ronda y puede volver a desencadenarse 1 ronda después</p>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Telekinetic Swarm Trap": {
+            "name": "Trampa de plaga telecinética",
+            "description": "<p>Tres decoraciones inocuas infundidas con magia telequinética arrastran objetos y trozos de la propia sala hasta convertirlos en nubes giratorias de escombros que atacan a todas las criaturas de la sala.</p> <p>La magia telequinética es una de las más poderosas del mundo.",
+            "disable": "<p>@Check[type:thievery|dc:27|name:Take Apart Cloud|traits:action:disable-a-device] (experto) para desmontar una nube telequinética, @Check[type:thievery|dc:32|name:Disable Telekinetic Decoration|traits:action:disable-a-device] (maestro) para desactivar cada decoración telequinética, o <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6º nivel; contrarrestar DC 30) para contrarrestar cada decoración telequinética</p>",
+            "reset": "<p>La trampa se desactiva y reinicia 10 minutos después de no tener criaturas objetivo (porque las criaturas se alejaron demasiado o murieron)</p>",
+            "routine": "<p>(9 acciones) Cada decoración usa 3 de las acciones de la trampa cada turno, y la trampa pierde 3 acciones cada turno por cada decoración que se desactive. Un adorno utiliza su primera acción para mover su nube de objetos hasta 200 pies, su segunda acción para hacer que los objetos Golpeen, y su tercera acción para añadir más objetos a la nube, aumentando su daño en 1d12 (hasta un máximo de 4d12+10). Si la nube de una decoración ya está al máximo de daño, no hace nada con su tercera acción.</p> <p>Si la nube de una decoración ha sido destruida, la decoración en su lugar gasta su primera acción para crear una nueva nube de objetos dentro de la habitación (usando el valor de daño inicial) y luego su segunda y tercera acciones para que la nube se mueva y ataque.</p> <p>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Malevolent Mannequins": {
+            "name": "Malevolent Mannequins",
+            "description": "<p>Unos violentos espíritus poseen a tres maniquíes de relojería, y cada uno de ellos arremete contra cualquier criatura que se atreva a acercarse.</p> <p>Un grupo de espíritus violentos posee a tres maniquíes de relojería.",
+            "disable": "<p>@Check[type:thievery|dc:37|name:Jam a mannequin's clockwork mechanisms|traits:clockwork,haunt,mechanical,hazard]{Latrocinio (master)} to jam a mannequin's clockwork mechanisms or a @Check[type:religión|dc:35|name:Exorcizar un espíritu de un maniquí|traits:clockwork,haunt,mechanical,hazard]{Religión (experto)} dos veces para exorcizar un espíritu de un maniquí.</p>",
+            "reset": "<p>El encantamiento se desactiva después de no tener criaturas objetivo y se reinicia, normalmente en el transcurso de 1 ronda, a medida que los maniquíes se mueven a sus posiciones originales. Si un maniquí está a más de 150 pies de su posición original, el encantamiento tarda más en restablecerse, ya que el maniquí retrocede 150 pies cada ronda.</p>",
+            "routine": "<p><strong>Rutina</strong> (9 acciones) Cada uno de los maniquíes utiliza tres de las acciones de la hazaña en cada turno, y la hazaña pierde tres acciones cada turno por cada maniquí incapacitado o destruido. Cada maniquí utiliza su primera acción para dar Zancadas de hasta 15 metros y sus dos acciones restantes para dar Puñetazos de reloj. Cada uno tiene su propia penalización de ataque múltiple independiente.</p>"
+        },
+        "Planar Rift": {
+            "name": "Grieta planaria",
+            "description": "<p>Una grieta intenta atraer a las criaturas a otro plano (el GM elige el plano concreto)</p> <p>La grieta es una abertura en el plano de la Tierra.",
+            "disable": "<p>@Check[type:Latrocinio|dc:33|name:Ensamblar un Sello de Grieta|traits:action:disipar-un-dispositivo] (master) para ensamblar un sello de grieta usando objetos fuertemente conectados a tierra a tu plano, o <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7º nivel; contrarrestar DC 31) para contrarrestar la grieta</p>",
+            "stealth": "<p>(entrenado)</p>"
+        },
+        "Polymorph Trap": {
+            "name": "Trampa de polimorfismo",
+            "description": "<p>Un glifo druídico intenta transformar a un intruso en un animal.</p>",
+            "disable": "<p>@Check[type:Latrocinio|dc:32|name:Drenar Poder del Glifo|traits:action:disable-a-device] (master) para drenar el poder del glifo inofensivamente, o <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6º nivel; contrarrestar DC 30) para contrarrestar el glifo</p>",
+            "stealth": "<p>(entrenado)</p>"
+        },
+        "Slamming Door": {
+            "name": "Portazo",
+            "description": "<p>Paneles sensibles a la presión en el suelo conectan con una losa de piedra oculta en el techo de un pasillo.</p> <p><strong>Cuidado con el suelo</strong>.",
+            "disable": "<p>@Comprobar[type:Latrocinio|dc:15|name:Desactivar panel del suelo] (entrenado) en los paneles del suelo antes de que caiga la losa</p>",
+            "stealth": "<p>(entrenado)</p>"
+        },
+        "Ghostly Choir": {
+            "name": "Coro fantasmal",
+            "description": "<p>Un coro de almas perdidas se eleva desde el suelo, entonando un espeluznante cántico que aterroriza a sus oyentes y amortigua sus cuerpos con muros de sonido.</p> <p><strong>Coro de almas perdidas</strong>.",
+            "disable": "<p>@Check[type:interpretation|dc:28|name:Sing a Different Tune|traits:haunt] (entrenada) para perturbar la resonancia de la canción con otra melodía o @Check[type:religion|dc:28|name:Ritually Silence the Haunt|traits:haunt] (entrenada) para silenciar ritualmente a los espíritus</p>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Fireball Rune": {
+            "name": "Runa de bola de fuego",
+            "description": "<p>Una runa invisible crea un sensor mágico esférico e invisible con un radio de 6 metros.</p> <p><strong>Runa invisible</strong>.",
+            "disable": "<p>@Check[type:Latrocinio|dc:22|name:Borrar la runa] (experto) para borrar la runa sin desencadenar el sensor, o <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (3er nivel; contrarrestar DC 20) para contrarrestar la runa</p>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Grasp Of The Damned": {
+            "name": "Agarre De Los Condenados",
+            "description": "<p>Estos espíritus desesperados son los ecos de personas que cometieron grandes atrocidades en nombre de un dios maligno. Ahora, sólo les queda el conocimiento de que sus almas han sido condenadas, y la inquebrantable creencia de que pueden mejorar su destino proporcionando poderosos sacrificios a sus diabólicos amos.</p> <p>Estos espíritus desesperados son los ecos de personas que cometieron grandes atrocidades en nombre de un dios maligno.",
+            "disable": "<p>@Check[type:religion|dc:46|name:Call For Divine Intervention] (maestro) para inspirar a una deidad a intervenir y contrarrestar el ritual</p>",
+            "reset": "<p>1 día</p>",
+            "stealth": "<p>(maestro)</p>"
+        },
+        "Flensing Blades": {
+            "name": "Flensing Blades",
+            "description": "<p>Un tornado de cristal y acero propulsado espectralmente hace pedazos todo lo que toca.",
+            "disable": "<p>@Check[type:Latrocinio|dc:35|name:Ajustar cuchillas|traits:action:inutilizar-un-dispositivo] (maestro) para ajustar con precisión las cuchillas de modo que se destruyan entre sí, o @Check[type:religión|dc:38|name:Debilitar el embrujo] (experto) para debilitar el embrujo; se necesitan cuatro éxitos para inutilizarlo</p>",
+            "reset": "<p>El embrujo atrae fragmentos dentados de vuelta a su área en el transcurso de una hora, tras la cual puede desencadenarse de nuevo</p>",
+            "routine": "<p>(3 acciones) El tornado de cuchillas utiliza 3 acciones para moverse, recorriendo hasta 30 pies con cada acción e infligiendo 2d10+10 de daño cortante. Cada criatura en su camino debe intentar un @Control[type:reflex|dc:33].</p><p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p><p><strong>Éxito</strong> La criatura recibe la mitad de daño.</p><p><strong>Fallo</strong> La criatura recibe todo el daño más @Localizar[PF2E.DañoPersistente.Sangrar1d10.éxito].</p><p><strong>Fallo Crítico</strong> La criatura recibe el doble de daño y @Localizar[PF2E.DañoPersistente.Sangrar1d10.éxito]. También queda herida 1 (o aumenta su valor de herida en 1, si ya está herida).</p><n<p>Cada chequeo con éxito para desactivar este peligro reduce el movimiento del embrujo en 30 pies, y el cuarto éxito lo desactiva por completo.</p>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Hammer Of Forbiddance": {
+            "name": "Martillo de interdicción",
+            "description": "<p>Un enorme martillo a la entrada de un edificio se balancea hacia abajo para intentar dañar a una criatura que entra en una zona, empujarla hacia atrás e impedir que siga avanzando.</p> <p>",
+            "disable": "<p>@Check[type:Latrocinio|dc:28|name:Evitar que el martillo se balancee|traits:action:disable-a-device] (experto) una vez en el propio martillo y otra en su articulación para evitar que el martillo se balancee</p>",
+            "reset": "<p>La trampa se reinicia en el transcurso de la ronda, y está lista para oscilar de nuevo 1 ronda después.</p>",
+            "stealth": "<p>(experto)</p>"
+        },
+        "Spear Launcher": {
+            "name": "Arrojador de lanzas",
+            "description": "<p>Un enchufe de pared cargado con una lanza se conecta a una baldosa del suelo en un cuadrado de 5 pies.</p> <p>",
+            "disable": "<p>@Comprobar[tipo:Latrocinio|dc:18|nombre:Desactivar Latrocinio] (entrenado) en la baldosa del suelo o en el enchufe de la pared</p>",
+            "stealth": "<p>(entrenado)</p>"
+        }
+    },
+    "mapping": {
+        "description": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details",
+        "target": "system.target.value",
+        "itemsdescription": "items.system.description.value",
+        "items-description": "system.description.value"
+    }
+}
