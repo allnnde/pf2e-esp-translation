@@ -1,3 +1,13 @@
+## [1.0.1](https://github.com/allnnde/pf2e-esp-translation/compare/v1.0.0...v1.0.1) (2023-02-19)
+
+
+### Bug Fixes
+
+* delete incorrect character ([0e0c248](https://github.com/allnnde/pf2e-esp-translation/commit/0e0c2480b7502a2ac9daed52f3a0f05873faa2ef))
+* **json:** remove invalid characters ([b309020](https://github.com/allnnde/pf2e-esp-translation/commit/b309020254c1bbfb9c9ab637f101d6c5257dc4c6))
+
+
+
 # [1.0.0](https://github.com/allnnde/pf2e-esp-translation/compare/v0.3.1...v1.0.0) (2023-02-19)
 
 
@@ -36,15 +46,6 @@
 ### Bug Fixes
 
 * **json:** fix re-es.json struncture ([382fa8a](https://github.com/allnnde/pf2e-esp-translation/commit/382fa8a07e375d6d6d8dcc95f7f5e4f712bb0158))
-
-
-
-## [0.2.5](https://github.com/allnnde/pf2e-esp-translation/compare/v0.2.4...v0.2.5) (2023-02-17)
-
-
-### Bug Fixes
-
-* **babele:** correct module name for load compendium ([8f68f42](https://github.com/allnnde/pf2e-esp-translation/commit/8f68f42dfe543b2b1992b7bb6a16a096177356f5)), closes [#1](https://github.com/allnnde/pf2e-esp-translation/issues/1)
 
 
 
