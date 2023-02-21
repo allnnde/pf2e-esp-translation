@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/allnnde/pf2e-esp-translation/compare/v1.1.0...v1.2.0) (2023-02-21)
+
+
+### Features
+
+* **json:** Add missing files and update some files with manual traductions ([894f572](https://github.com/allnnde/pf2e-esp-translation/commit/894f5725bd586361634be34b1e22430f95bc0a50))
+
+
+
 # [1.1.0](https://github.com/allnnde/pf2e-esp-translation/compare/v1.0.1...v1.1.0) (2023-02-19)
 
 
@@ -37,15 +46,6 @@
 ### Bug Fixes
 
 * add repo link of traductions ([8cdbd5b](https://github.com/allnnde/pf2e-esp-translation/commit/8cdbd5bb367dac0f8db095ffb55100bd50cf9c8d))
-
-
-
-# [0.3.0](https://github.com/allnnde/pf2e-esp-translation/compare/v0.2.6...v0.3.0) (2023-02-19)
-
-
-### Features
-
-* add automatic traduction ([58d1af4](https://github.com/allnnde/pf2e-esp-translation/commit/58d1af482cb520cad07e8fddf5a2090c1a884483))
 
 
 
