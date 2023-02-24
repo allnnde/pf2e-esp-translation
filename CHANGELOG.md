@@ -1,3 +1,12 @@
+## [1.2.4](https://github.com/allnnde/pf2e-esp-translation/compare/v1.2.3...v1.2.4) (2023-02-24)
+
+
+### Bug Fixes
+
+* bad Compendium tags write ([6d9187d](https://github.com/allnnde/pf2e-esp-translation/commit/6d9187dca106de2120b3409e75e6332d64f9386f))
+
+
+
 ## [1.2.3](https://github.com/allnnde/pf2e-esp-translation/compare/v1.2.2...v1.2.3) (2023-02-24)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * **json:** Add missing files and update some files with manual traductions ([894f572](https://github.com/allnnde/pf2e-esp-translation/commit/894f5725bd586361634be34b1e22430f95bc0a50))
-
-
-
-# [1.1.0](https://github.com/allnnde/pf2e-esp-translation/compare/v1.0.1...v1.1.0) (2023-02-19)
-
-
-### Features
-
-* **json:** add general traductions ([8059ad3](https://github.com/allnnde/pf2e-esp-translation/commit/8059ad3720632f0057b1ee3d6c0934801ccd1ccf))
 
 
 
