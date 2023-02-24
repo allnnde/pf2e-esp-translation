@@ -8,7 +8,7 @@
 
 ## About The Project
 
-Traduccion al español del sistema de Pathfinder Segunda edicion para Foundy VTT
+Traduccion no oficial al español del sistema de Pathfinder Segunda edicion para Foundy VTT
 
 <!-- CONTACT -->
 ## Contact
