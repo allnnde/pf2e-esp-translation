@@ -1,3 +1,12 @@
+## [1.2.1](https://github.com/allnnde/pf2e-esp-translation/compare/v1.2.0...v1.2.1) (2023-02-24)
+
+
+### Bug Fixes
+
+* **json:** replase bad resplacemnt tags of automatic traductions ([945fa0d](https://github.com/allnnde/pf2e-esp-translation/commit/945fa0d84444c679ed9185ce85e1ef5fae3946c1))
+
+
+
 # [1.2.0](https://github.com/allnnde/pf2e-esp-translation/compare/v1.1.0...v1.2.0) (2023-02-21)
 
 
@@ -37,15 +46,6 @@
 ### BREAKING CHANGES
 
 * delete "\n" caracter in html text
-
-
-
-## [0.3.1](https://github.com/allnnde/pf2e-esp-translation/compare/v0.3.0...v0.3.1) (2023-02-19)
-
-
-### Bug Fixes
-
-* add repo link of traductions ([8cdbd5b](https://github.com/allnnde/pf2e-esp-translation/commit/8cdbd5bb367dac0f8db095ffb55100bd50cf9c8d))
 
 
 
