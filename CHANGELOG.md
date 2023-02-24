@@ -1,3 +1,12 @@
+## [1.2.2](https://github.com/allnnde/pf2e-esp-translation/compare/v1.2.1...v1.2.2) (2023-02-24)
+
+
+### Bug Fixes
+
+* add [UNOFFICIAL] notifications ([d3488f5](https://github.com/allnnde/pf2e-esp-translation/commit/d3488f5409f577d2427e7d67fb1d3016cf8153e3))
+
+
+
 ## [1.2.1](https://github.com/allnnde/pf2e-esp-translation/compare/v1.2.0...v1.2.1) (2023-02-24)
 
 
@@ -32,20 +41,6 @@
 
 * delete incorrect character ([0e0c248](https://github.com/allnnde/pf2e-esp-translation/commit/0e0c2480b7502a2ac9daed52f3a0f05873faa2ef))
 * **json:** remove invalid characters ([b309020](https://github.com/allnnde/pf2e-esp-translation/commit/b309020254c1bbfb9c9ab637f101d6c5257dc4c6))
-
-
-
-# [1.0.0](https://github.com/allnnde/pf2e-esp-translation/compare/v0.3.1...v1.0.0) (2023-02-19)
-
-
-### Bug Fixes
-
-* delete line break ([f13e4fc](https://github.com/allnnde/pf2e-esp-translation/commit/f13e4fce7657e90070ba6aa47d5b6e9c432aa9a8))
-
-
-### BREAKING CHANGES
-
-* delete "\n" caracter in html text
 
 
 
