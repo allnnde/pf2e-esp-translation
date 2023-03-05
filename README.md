@@ -8,7 +8,7 @@
 
 ## About The Project
 
-Traduccion no oficial al español del sistema de Pathfinder Segunda edicion para Foundy VTT
+Traduccion no oficial al español del sistema de Pathfinder Segunda edicion para Foundy VTT, se ha usado https://github.com/thedaviddelta/lingva-translate para poder hacer la traduccion base
 
 <!-- CONTACT -->
 ## Contact
