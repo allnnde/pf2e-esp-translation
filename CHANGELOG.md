@@ -1,3 +1,12 @@
+## [2.0.1](https://github.com/allnnde/pf2e-esp-translation/compare/v2.0.0...v2.0.1) (2023-03-05)
+
+
+### Bug Fixes
+
+* minor fix ([50fcada](https://github.com/allnnde/pf2e-esp-translation/commit/50fcada7b93e6e0aff2968a8be4d9df589e53986))
+
+
+
 # [2.0.0](https://github.com/allnnde/pf2e-esp-translation/compare/v1.2.4...v2.0.0) (2023-03-05)
 
 
@@ -36,15 +45,6 @@
 ### Bug Fixes
 
 * add [UNOFFICIAL] notifications ([d3488f5](https://github.com/allnnde/pf2e-esp-translation/commit/d3488f5409f577d2427e7d67fb1d3016cf8153e3))
-
-
-
-## [1.2.1](https://github.com/allnnde/pf2e-esp-translation/compare/v1.2.0...v1.2.1) (2023-02-24)
-
-
-### Bug Fixes
-
-* **json:** replase bad resplacemnt tags of automatic traductions ([945fa0d](https://github.com/allnnde/pf2e-esp-translation/commit/945fa0d84444c679ed9185ce85e1ef5fae3946c1))
 
 
 
