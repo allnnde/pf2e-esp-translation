@@ -1,3 +1,12 @@
+## [2.1.2](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.1...v2.1.2) (2023-03-11)
+
+
+### Bug Fixes
+
+* fix "señorita" error in critical hit ([599a960](https://github.com/allnnde/pf2e-esp-translation/commit/599a96071e6fb9aafdd08917ac88c0557380e0cf))
+
+
+
 ## [2.1.1](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.0...v2.1.1) (2023-03-11)
 
 
@@ -36,15 +45,6 @@
 ### BREAKING CHANGES
 
 * use lingva indeed deepl for traduction
-
-
-
-## [1.2.4](https://github.com/allnnde/pf2e-esp-translation/compare/v1.2.3...v1.2.4) (2023-02-24)
-
-
-### Bug Fixes
-
-* bad Compendium tags write ([6d9187d](https://github.com/allnnde/pf2e-esp-translation/commit/6d9187dca106de2120b3409e75e6332d64f9386f))
 
 
 
