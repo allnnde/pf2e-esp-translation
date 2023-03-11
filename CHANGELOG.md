@@ -1,3 +1,12 @@
+## [2.1.1](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.0...v2.1.1) (2023-03-11)
+
+
+### Bug Fixes
+
+* add styles folder to deploy ([c3aa6b6](https://github.com/allnnde/pf2e-esp-translation/commit/c3aa6b616bb058257abbd9301de65ebb483e0366))
+
+
+
 # [2.1.0](https://github.com/allnnde/pf2e-esp-translation/compare/v2.0.1...v2.1.0) (2023-03-11)
 
 
@@ -36,15 +45,6 @@
 ### Bug Fixes
 
 * bad Compendium tags write ([6d9187d](https://github.com/allnnde/pf2e-esp-translation/commit/6d9187dca106de2120b3409e75e6332d64f9386f))
-
-
-
-## [1.2.3](https://github.com/allnnde/pf2e-esp-translation/compare/v1.2.2...v1.2.3) (2023-02-24)
-
-
-### Bug Fixes
-
-* test branch policy ([857413d](https://github.com/allnnde/pf2e-esp-translation/commit/857413d5cfdeff2732a5cf69870538a3924b687b))
 
 
 
