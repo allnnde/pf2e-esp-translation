@@ -1,0 +1,20 @@
+:root {
+    --actor-sheet-aside-background-size: 260px;
+  }
+
+.actor.sheet .crb-style {
+    grid-template-rows: 75px minmax(min-content, max-content) 1fr;
+    grid-template-columns: calc(var(--actor-sheet-aside-background-size) + 10px) 1fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar nav"
+        "sidebar content";
+    grid-auto-flow: initial;
+    grid-auto-rows: initial;
+    grid-auto-columns: initial;
+}
+
+.actor.sheet .crb-style aside{
+    background-size: var(--actor-sheet-aside-background-size) calc(100% - 52px),var(--actor-sheet-aside-background-size) 52px;
+
+}
