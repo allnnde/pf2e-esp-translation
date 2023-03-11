@@ -1,3 +1,12 @@
+# [2.1.0](https://github.com/allnnde/pf2e-esp-translation/compare/v2.0.1...v2.1.0) (2023-03-11)
+
+
+### Features
+
+* add and fix css in character sheet ([da4fb7f](https://github.com/allnnde/pf2e-esp-translation/commit/da4fb7fc000f5a153595a571a593e151a1d75e5a))
+
+
+
 ## [2.0.1](https://github.com/allnnde/pf2e-esp-translation/compare/v2.0.0...v2.0.1) (2023-03-05)
 
 
@@ -36,15 +45,6 @@
 ### Bug Fixes
 
 * test branch policy ([857413d](https://github.com/allnnde/pf2e-esp-translation/commit/857413d5cfdeff2732a5cf69870538a3924b687b))
-
-
-
-## [1.2.2](https://github.com/allnnde/pf2e-esp-translation/compare/v1.2.1...v1.2.2) (2023-02-24)
-
-
-### Bug Fixes
-
-* add [UNOFFICIAL] notifications ([d3488f5](https://github.com/allnnde/pf2e-esp-translation/commit/d3488f5409f577d2427e7d67fb1d3016cf8153e3))
 
 
 
