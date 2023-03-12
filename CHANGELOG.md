@@ -1,3 +1,12 @@
+## [2.1.6](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.5...v2.1.6) (2023-03-12)
+
+
+### Bug Fixes
+
+* ability fix traductions ([c8b55b5](https://github.com/allnnde/pf2e-esp-translation/commit/c8b55b59a80e182a3399c016c41191283f92726d))
+
+
+
 ## [2.1.5](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.4...v2.1.5) (2023-03-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * fix "señorita" error in critical hit ([599a960](https://github.com/allnnde/pf2e-esp-translation/commit/599a96071e6fb9aafdd08917ac88c0557380e0cf))
-
-
-
-## [2.1.1](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.0...v2.1.1) (2023-03-11)
-
-
-### Bug Fixes
-
-* add styles folder to deploy ([c3aa6b6](https://github.com/allnnde/pf2e-esp-translation/commit/c3aa6b616bb058257abbd9301de65ebb483e0366))
 
 
 
