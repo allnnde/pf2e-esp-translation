@@ -1,3 +1,12 @@
+## [2.1.5](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.4...v2.1.5) (2023-03-12)
+
+
+### Bug Fixes
+
+* fix traduction for hp dying and Ethnicity ([de6b08e](https://github.com/allnnde/pf2e-esp-translation/commit/de6b08e3faa972c1d1de41d54580516ebdee4d11))
+
+
+
 ## [2.1.4](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.3...v2.1.4) (2023-03-11)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * add styles folder to deploy ([c3aa6b6](https://github.com/allnnde/pf2e-esp-translation/commit/c3aa6b616bb058257abbd9301de65ebb483e0366))
-
-
-
-# [2.1.0](https://github.com/allnnde/pf2e-esp-translation/compare/v2.0.1...v2.1.0) (2023-03-11)
-
-
-### Features
-
-* add and fix css in character sheet ([da4fb7f](https://github.com/allnnde/pf2e-esp-translation/commit/da4fb7fc000f5a153595a571a593e151a1d75e5a))
 
 
 
