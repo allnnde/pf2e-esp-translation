@@ -1,3 +1,12 @@
+## [2.1.4](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.3...v2.1.4) (2023-03-11)
+
+
+### Bug Fixes
+
+* goblin traductins fix ([75a2062](https://github.com/allnnde/pf2e-esp-translation/commit/75a2062ed32be38f04605ef36c5046fc9570dc9e))
+
+
+
 ## [2.1.3](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.2...v2.1.3) (2023-03-11)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add and fix css in character sheet ([da4fb7f](https://github.com/allnnde/pf2e-esp-translation/commit/da4fb7fc000f5a153595a571a593e151a1d75e5a))
-
-
-
-## [2.0.1](https://github.com/allnnde/pf2e-esp-translation/compare/v2.0.0...v2.0.1) (2023-03-05)
-
-
-### Bug Fixes
-
-* minor fix ([50fcada](https://github.com/allnnde/pf2e-esp-translation/commit/50fcada7b93e6e0aff2968a8be4d9df589e53986))
 
 
 
