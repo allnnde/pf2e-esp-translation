@@ -1,3 +1,12 @@
+## [3.0.1](https://github.com/allnnde/pf2e-esp-translation/compare/v3.0.0...v3.0.1) (2023-03-17)
+
+
+### Bug Fixes
+
+* many fix, for abilities, upper case and labels ([87c287d](https://github.com/allnnde/pf2e-esp-translation/commit/87c287dc3029105cca6242875c8b4a6bba106f30))
+
+
+
 # [3.0.0](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.6...v3.0.0) (2023-03-17)
 
 
@@ -41,15 +50,6 @@
 ### Bug Fixes
 
 * goblin traductins fix ([75a2062](https://github.com/allnnde/pf2e-esp-translation/commit/75a2062ed32be38f04605ef36c5046fc9570dc9e))
-
-
-
-## [2.1.3](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.2...v2.1.3) (2023-03-11)
-
-
-### Bug Fixes
-
-* magus and wizard fix ([503775d](https://github.com/allnnde/pf2e-esp-translation/commit/503775da7b7375e3b01f9167ac117301900da82b))
 
 
 
