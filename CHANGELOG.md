@@ -1,3 +1,22 @@
+# [3.0.0](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.6...v3.0.0) (2023-03-17)
+
+
+### Bug Fixes
+
+* more info in readme ([37bff8f](https://github.com/allnnde/pf2e-esp-translation/commit/37bff8f2b17a3d353c4dc83f515bfe67364ee44d))
+
+
+### Features
+
+* remove babele and compendium reference ([6074d22](https://github.com/allnnde/pf2e-esp-translation/commit/6074d2247f7297ee9ef4d546fc1fafd1abce8f10))
+
+
+### BREAKING CHANGES
+
+* compendium are in another proyect
+
+
+
 ## [2.1.6](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.5...v2.1.6) (2023-03-12)
 
 
@@ -31,15 +50,6 @@
 ### Bug Fixes
 
 * magus and wizard fix ([503775d](https://github.com/allnnde/pf2e-esp-translation/commit/503775da7b7375e3b01f9167ac117301900da82b))
-
-
-
-## [2.1.2](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.1...v2.1.2) (2023-03-11)
-
-
-### Bug Fixes
-
-* fix "señorita" error in critical hit ([599a960](https://github.com/allnnde/pf2e-esp-translation/commit/599a96071e6fb9aafdd08917ac88c0557380e0cf))
 
 
 
