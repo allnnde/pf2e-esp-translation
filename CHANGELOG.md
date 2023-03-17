@@ -1,3 +1,17 @@
+# [3.1.0](https://github.com/allnnde/pf2e-esp-translation/compare/v3.0.2...v3.1.0) (2023-03-17)
+
+
+### Bug Fixes
+
+* actions correct label ([2d4f36d](https://github.com/allnnde/pf2e-esp-translation/commit/2d4f36df4cc113858e4e8b81df90de41ffea48a2))
+
+
+### Features
+
+* upper casa, fix roll texts ([8fab254](https://github.com/allnnde/pf2e-esp-translation/commit/8fab254123efb3092a67d4c853f27e3619a0403c))
+
+
+
 ## [3.0.2](https://github.com/allnnde/pf2e-esp-translation/compare/v3.0.1...v3.0.2) (2023-03-17)
 
 
@@ -41,15 +55,6 @@
 ### Bug Fixes
 
 * ability fix traductions ([c8b55b5](https://github.com/allnnde/pf2e-esp-translation/commit/c8b55b59a80e182a3399c016c41191283f92726d))
-
-
-
-## [2.1.5](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.4...v2.1.5) (2023-03-12)
-
-
-### Bug Fixes
-
-* fix traduction for hp dying and Ethnicity ([de6b08e](https://github.com/allnnde/pf2e-esp-translation/commit/de6b08e3faa972c1d1de41d54580516ebdee4d11))
 
 
 
