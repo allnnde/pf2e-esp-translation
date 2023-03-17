@@ -1,3 +1,12 @@
+## [3.0.2](https://github.com/allnnde/pf2e-esp-translation/compare/v3.0.1...v3.0.2) (2023-03-17)
+
+
+### Bug Fixes
+
+* remove dictionary worth reference ([bab9398](https://github.com/allnnde/pf2e-esp-translation/commit/bab939834af9841a80a546b54aade2c395054b0c))
+
+
+
 ## [3.0.1](https://github.com/allnnde/pf2e-esp-translation/compare/v3.0.0...v3.0.1) (2023-03-17)
 
 
@@ -41,15 +50,6 @@
 ### Bug Fixes
 
 * fix traduction for hp dying and Ethnicity ([de6b08e](https://github.com/allnnde/pf2e-esp-translation/commit/de6b08e3faa972c1d1de41d54580516ebdee4d11))
-
-
-
-## [2.1.4](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.3...v2.1.4) (2023-03-11)
-
-
-### Bug Fixes
-
-* goblin traductins fix ([75a2062](https://github.com/allnnde/pf2e-esp-translation/commit/75a2062ed32be38f04605ef36c5046fc9570dc9e))
 
 
 
