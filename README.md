@@ -8,14 +8,15 @@
 
 ## About The Project
 
-Traduccion no oficial al español del sistema de Pathfinder Segunda edicion para Foundy VTT, se ha usado https://github.com/thedaviddelta/lingva-translate para poder hacer la traduccion base
+Traduccion no oficial al español del sistema de Pathfinder Segunda edicion para Foundy VTT.
 
-<!-- CONTACT -->
-## Contact
+Se ha usado https://github.com/thedaviddelta/lingva-translate para poder hacer la traduccion base del sistema y se continuo con correcciones del mismo
+
+## Estructura del proyecto
+
+lang: carpeta donde estan los json para traducciones del sistema, cualquer cambio aca modifica solo las traducciones del sistema, ficha de personaje, tiradas, etc.
+styles: carpeta con el archivo para la modificacion de los estilos de la interface de usuario en caso de necesitar algun ajuste o alineamiento
 
 ## Nota
-
-De momento solo se esta traducciendo los manuales de jugador basico y avanzado, conforme se vayan liberando los demas manuales en español ira avanzando la traduccion.
-
-Actualmente se esta usando la traduccion creada por el equipo de https://gitlab.com/ashmcleod/foundryvtt-pathfinder-2-es
+La traduccion del los compendios esta en manos del equipo de https://gitlab.com/ashmcleod/foundryvtt-pathfinder-2-es
 
