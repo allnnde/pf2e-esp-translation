@@ -1,3 +1,12 @@
+## [3.1.1](https://github.com/allnnde/pf2e-esp-translation/compare/v3.1.0...v3.1.1) (2023-03-17)
+
+
+### Bug Fixes
+
+* minor fix to actions tab ([84866fb](https://github.com/allnnde/pf2e-esp-translation/commit/84866fbe7133df88c4919439e4ce58a3ef92d6c0))
+
+
+
 # [3.1.0](https://github.com/allnnde/pf2e-esp-translation/compare/v3.0.2...v3.1.0) (2023-03-17)
 
 
@@ -46,15 +55,6 @@
 ### BREAKING CHANGES
 
 * compendium are in another proyect
-
-
-
-## [2.1.6](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.5...v2.1.6) (2023-03-12)
-
-
-### Bug Fixes
-
-* ability fix traductions ([c8b55b5](https://github.com/allnnde/pf2e-esp-translation/commit/c8b55b59a80e182a3399c016c41191283f92726d))
 
 
 
