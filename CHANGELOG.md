@@ -1,3 +1,12 @@
+## [3.1.2](https://github.com/allnnde/pf2e-esp-translation/compare/v3.1.1...v3.1.2) (2023-03-24)
+
+
+### Bug Fixes
+
+* prone correct traduction ([caf14df](https://github.com/allnnde/pf2e-esp-translation/commit/caf14dfa2c1fe8faa6b55b07221791e1d535707a))
+
+
+
 ## [3.1.1](https://github.com/allnnde/pf2e-esp-translation/compare/v3.1.0...v3.1.1) (2023-03-17)
 
 
@@ -36,25 +45,6 @@
 ### Bug Fixes
 
 * many fix, for abilities, upper case and labels ([87c287d](https://github.com/allnnde/pf2e-esp-translation/commit/87c287dc3029105cca6242875c8b4a6bba106f30))
-
-
-
-# [3.0.0](https://github.com/allnnde/pf2e-esp-translation/compare/v2.1.6...v3.0.0) (2023-03-17)
-
-
-### Bug Fixes
-
-* more info in readme ([37bff8f](https://github.com/allnnde/pf2e-esp-translation/commit/37bff8f2b17a3d353c4dc83f515bfe67364ee44d))
-
-
-### Features
-
-* remove babele and compendium reference ([6074d22](https://github.com/allnnde/pf2e-esp-translation/commit/6074d2247f7297ee9ef4d546fc1fafd1abce8f10))
-
-
-### BREAKING CHANGES
-
-* compendium are in another proyect
 
 
 
