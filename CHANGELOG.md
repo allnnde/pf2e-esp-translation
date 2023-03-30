@@ -1,3 +1,17 @@
+# [4.0.0](https://github.com/allnnde/pf2e-esp-translation/compare/v3.1.2...v4.0.0) (2023-03-30)
+
+
+### Features
+
+* New action es json files ([2a75ddb](https://github.com/allnnde/pf2e-esp-translation/commit/2a75ddbceb0f5941e5f0363ea891e6ba789b5998))
+
+
+### BREAKING CHANGES
+
+* add new files to system traducion
+
+
+
 ## [3.1.2](https://github.com/allnnde/pf2e-esp-translation/compare/v3.1.1...v3.1.2) (2023-03-24)
 
 
@@ -36,15 +50,6 @@
 ### Bug Fixes
 
 * remove dictionary worth reference ([bab9398](https://github.com/allnnde/pf2e-esp-translation/commit/bab939834af9841a80a546b54aade2c395054b0c))
-
-
-
-## [3.0.1](https://github.com/allnnde/pf2e-esp-translation/compare/v3.0.0...v3.0.1) (2023-03-17)
-
-
-### Bug Fixes
-
-* many fix, for abilities, upper case and labels ([87c287d](https://github.com/allnnde/pf2e-esp-translation/commit/87c287dc3029105cca6242875c8b4a6bba106f30))
 
 
 
