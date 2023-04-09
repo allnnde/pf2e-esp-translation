@@ -1,3 +1,12 @@
+## [4.2.3](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.2...v4.2.3) (2023-04-09)
+
+
+### Bug Fixes
+
+* minor changes in modules ([8e0d36a](https://github.com/allnnde/pf2e-esp-translation/commit/8e0d36a23f7e9124305f0d744eae24d43bfe8a02))
+
+
+
 ## [4.2.2](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.1...v4.2.2) (2023-04-09)
 
 
@@ -31,20 +40,6 @@
 ### Features
 
 * adapted new files and struture of json (without traduction) ([7a2c2f4](https://github.com/allnnde/pf2e-esp-translation/commit/7a2c2f47108ef7f3c98fa3535e55561507be7812))
-
-
-
-# [4.0.0](https://github.com/allnnde/pf2e-esp-translation/compare/v3.1.2...v4.0.0) (2023-03-30)
-
-
-### Features
-
-* New action es json files ([2a75ddb](https://github.com/allnnde/pf2e-esp-translation/commit/2a75ddbceb0f5941e5f0363ea891e6ba789b5998))
-
-
-### BREAKING CHANGES
-
-* add new files to system traducion
 
 
 
