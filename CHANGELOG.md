@@ -1,3 +1,12 @@
+# [4.2.0](https://github.com/allnnde/pf2e-esp-translation/compare/v4.1.0...v4.2.0) (2023-04-09)
+
+
+### Features
+
+* translate files with new structure ([7fb6771](https://github.com/allnnde/pf2e-esp-translation/commit/7fb67712868f7276eda83091440be48f26049f22))
+
+
+
 # [4.1.0](https://github.com/allnnde/pf2e-esp-translation/compare/v4.0.0...v4.1.0) (2023-04-01)
 
 
@@ -36,20 +45,6 @@
 ### Bug Fixes
 
 * minor fix to actions tab ([84866fb](https://github.com/allnnde/pf2e-esp-translation/commit/84866fbe7133df88c4919439e4ce58a3ef92d6c0))
-
-
-
-# [3.1.0](https://github.com/allnnde/pf2e-esp-translation/compare/v3.0.2...v3.1.0) (2023-03-17)
-
-
-### Bug Fixes
-
-* actions correct label ([2d4f36d](https://github.com/allnnde/pf2e-esp-translation/commit/2d4f36df4cc113858e4e8b81df90de41ffea48a2))
-
-
-### Features
-
-* upper casa, fix roll texts ([8fab254](https://github.com/allnnde/pf2e-esp-translation/commit/8fab254123efb3092a67d4c853f27e3619a0403c))
 
 
 
