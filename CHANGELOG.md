@@ -1,3 +1,12 @@
+## [4.2.5](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.4...v4.2.5) (2023-04-09)
+
+
+### Bug Fixes
+
+* minimum version ([aa9e522](https://github.com/allnnde/pf2e-esp-translation/commit/aa9e52217e7ab4efb1f7b6ec9c87055b9744f348))
+
+
+
 ## [4.2.4](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.3...v4.2.4) (2023-04-09)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * bad traducction ([fdffefb](https://github.com/allnnde/pf2e-esp-translation/commit/fdffefb2917dcbf31fd9e1623e740779151e30ad))
-
-
-
-# [4.2.0](https://github.com/allnnde/pf2e-esp-translation/compare/v4.1.0...v4.2.0) (2023-04-09)
-
-
-### Features
-
-* translate files with new structure ([7fb6771](https://github.com/allnnde/pf2e-esp-translation/commit/7fb67712868f7276eda83091440be48f26049f22))
 
 
 
