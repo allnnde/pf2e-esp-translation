@@ -1,3 +1,12 @@
+## [4.2.8](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.7...v4.2.8) (2023-04-30)
+
+
+### Bug Fixes
+
+* fix errors in equip ([d70c398](https://github.com/allnnde/pf2e-esp-translation/commit/d70c398551bc774ae46bf53066e078b25affb162))
+
+
+
 ## [4.2.7](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.6...v4.2.7) (2023-04-27)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * verified version ([c1a835b](https://github.com/allnnde/pf2e-esp-translation/commit/c1a835b2dd9fb4127479947aa8aec5a6d4448d17))
-
-
-
-## [4.2.3](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.2...v4.2.3) (2023-04-09)
-
-
-### Bug Fixes
-
-* minor changes in modules ([8e0d36a](https://github.com/allnnde/pf2e-esp-translation/commit/8e0d36a23f7e9124305f0d744eae24d43bfe8a02))
 
 
 
