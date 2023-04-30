@@ -1,3 +1,12 @@
+## [4.2.10](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.9...v4.2.10) (2023-04-30)
+
+
+### Bug Fixes
+
+* Combat and Draw fixs ([be9f90d](https://github.com/allnnde/pf2e-esp-translation/commit/be9f90d9bca84f9e6a3d52b94e86dc901a4b8c66))
+
+
+
 ## [4.2.9](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.8...v4.2.9) (2023-04-30)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * bad traductions ([63eba3a](https://github.com/allnnde/pf2e-esp-translation/commit/63eba3a01c64ce45af52ab1a2a0687604d9b397c))
-
-
-
-## [4.2.5](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.4...v4.2.5) (2023-04-09)
-
-
-### Bug Fixes
-
-* minimum version ([aa9e522](https://github.com/allnnde/pf2e-esp-translation/commit/aa9e52217e7ab4efb1f7b6ec9c87055b9744f348))
 
 
 
