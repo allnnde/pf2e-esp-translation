@@ -1,3 +1,12 @@
+## [4.2.12](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.11...v4.2.12) (2023-06-10)
+
+
+### Bug Fixes
+
+* fix "gota" traduction ([4f027b8](https://github.com/allnnde/pf2e-esp-translation/commit/4f027b8b5c9fa9b2d8abb6f0f910f2ba54ebb235))
+
+
+
 ## [4.2.11](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.10...v4.2.11) (2023-05-01)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * fix errors in equip ([d70c398](https://github.com/allnnde/pf2e-esp-translation/commit/d70c398551bc774ae46bf53066e078b25affb162))
-
-
-
-## [4.2.7](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.6...v4.2.7) (2023-04-27)
-
-
-### Bug Fixes
-
-* fix foundy version ([7ce7452](https://github.com/allnnde/pf2e-esp-translation/commit/7ce745263cb265a736fdddfa1d3d741079f63479))
 
 
 
