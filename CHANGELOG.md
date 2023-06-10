@@ -1,3 +1,12 @@
+## [4.2.13](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.12...v4.2.13) (2023-06-10)
+
+
+### Bug Fixes
+
+* fix "fiesta" traduction ([df109a6](https://github.com/allnnde/pf2e-esp-translation/commit/df109a6310f4329546f37667ae54c0a52a27c31e))
+
+
+
 ## [4.2.12](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.11...v4.2.12) (2023-06-10)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * MAP errors ([571e96a](https://github.com/allnnde/pf2e-esp-translation/commit/571e96add080362e0bd18785892c641569e04139))
-
-
-
-## [4.2.8](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.7...v4.2.8) (2023-04-30)
-
-
-### Bug Fixes
-
-* fix errors in equip ([d70c398](https://github.com/allnnde/pf2e-esp-translation/commit/d70c398551bc774ae46bf53066e078b25affb162))
 
 
 
