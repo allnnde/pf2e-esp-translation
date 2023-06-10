@@ -1,3 +1,12 @@
+## [4.2.11](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.10...v4.2.11) (2023-05-01)
+
+
+### Bug Fixes
+
+* melee fix ([27058f2](https://github.com/allnnde/pf2e-esp-translation/commit/27058f2b3557261e41e1c09b5e8bbda866523922))
+
+
+
 ## [4.2.10](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.9...v4.2.10) (2023-04-30)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * fix foundy version ([7ce7452](https://github.com/allnnde/pf2e-esp-translation/commit/7ce745263cb265a736fdddfa1d3d741079f63479))
-
-
-
-## [4.2.6](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.5...v4.2.6) (2023-04-10)
-
-
-### Bug Fixes
-
-* bad traductions ([63eba3a](https://github.com/allnnde/pf2e-esp-translation/commit/63eba3a01c64ce45af52ab1a2a0687604d9b397c))
 
 
 
