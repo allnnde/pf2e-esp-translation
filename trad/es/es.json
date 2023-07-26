@@ -301,7 +301,55 @@
                     },
                     "Label": "Generar Ataque",
                     "Notification": "Ataque NPC generado: {attack}"
-                }
+                },
+                "Identification": {
+                    "Lore": {
+                        "Label": "Applicable Lore: DC {dc1} ({adjustment1}) or DC {dc2} ({adjustment2})",
+                        "Tooltip": "\"Using the applicable Lore usually has an easy or very easy DC (before adjusting for rarity).\" – CRB pg. 506"
+                    },
+                    "Skills": {
+                        "Label": "{skills}: DC {dc} ({adjustment})",
+                        "Tooltip": "\"The skill used to identify a creature usually depends on that creature’s trait, as shown on Table 10–7, but you have leeway on which skills apply.\" – CRB pg. 506"
+                    }
+                },
+                "SimpleSheet": "Simple NPC Sheet"
+            },
+            "Party": {
+                "BlankSlate": "This party doesn't have any members. Drag a creature from the actor sidebar to get started. ",
+                "ClearActivities": {
+                    "Complete": "Party exploration activities have been cleared",
+                    "Label": "Clear"
+                },
+                "ClownCar": {
+                    "Deposit": "Deposit PC Tokens",
+                    "Retrieve": "Retrieve PC Tokens"
+                },
+                "Coin": "Coin",
+                "InvalidCampaign": {
+                    "Hint": "The campaign data is invalid",
+                    "Message": {
+                        "error": "This party's campaign data ({current}) is corrupt and failed data preparation. Do you want to delete existing campaign data?",
+                        "mismatch": "This party has campaign data of type {current}, but the configured type is {campaignType}. Do you want to delete existing campaign data?"
+                    },
+                    "Title": "Invalid Campaign ({party})"
+                },
+                "Languages": "Party Languages",
+                "MembersLabel": "Members: ",
+                "NoSpecialSenses": "No Special Senses",
+                "RemoveMember": {
+                    "Content": "Remove member from party?",
+                    "Title": "Remove Member"
+                },
+                "Rest": "Rest",
+                "SlotAvailable": "Slot Available",
+                "Tabs": {
+                    "Exploration": "Exploration",
+                    "Inventory": "Inventory",
+                    "Orphaned": "Orphaned Items",
+                    "Overview": "Overview"
+                },
+                "Total": "Party Total",
+                "Wealth": "Wealth"
             },
             "Plural": "Actores"
         },
@@ -2188,6 +2236,14 @@
             },
             "SidebarSummary": "{type} Resumen",
             "Spell": {
+                "Counteract": {
+                    "criticalFailure": "You fail to counteract the target.",
+                    "criticalSuccess": "Counteract the target if its counteract rank is {rank} or less.",
+                    "failure": "Counteract the target if its counteract rank is less than {rank}.",
+                    "Hint": "If you're counteracting an affliction, the DC is in the affliction's stat block. If it's a spell, use the caster's DC. The GM can also calculate a DC based on the target effect's level.",
+                    "Label": "Counteract",
+                    "success": "Counteract the target if its counteract rank is {rank} or less."
+                },
                 "LevelN": "Conjuro {level}",
                 "PlaceMeasuredTemplate": "Lugar {size} - {unit} {shape}",
                 "Variants": {
@@ -2204,6 +2260,10 @@
                 }
             },
             "Weapon": {
+                "CanBeAmmo": {
+                    "Hint": "Indicate that this weapon can be loaded into another weapon as ammunition.",
+                    "Label": "Usable as Ammo"
+                },
                 "CriticalSpecialization": {
                     "axe": "Elige una criatura adictiva al objetivo inicial y al alcance. Si su CA es inferior al resultado de tu tirada de ataque para el golpe crítico, infliges daño a esa criatura igual al resultado del dado de daño de arma que tiraste (incluidos los dados adicionales para su runa de potencia, si los hay). Esta cantidad no se duplica y no se aplican bonificaciones u otros dados adicionales a este daño.",
                     "bomb": "Aumenta el radio del daño por salpicadura de la bomba (si lo hay) a 10 pies.",
@@ -2277,7 +2337,10 @@
                     "Hint": "Las armas a distancia y arrojadizas tienen un incremento de alcance. Los ataques con estas armas funcionan normalmente hasta esa distancia. Las tiradas de ataque más allá del incremento de alcance de un arma reciben una penalización de -2 por cada múltiplo adicional de ese incremento entre tú y el objetivo. Los ataques más allá del sexto incremento de rango son imposibles.",
                     "Label": "Incremento de rango {range} pies."
                 },
-                "ReloadOneMinute": "1 minuto",
+                "Reload": {
+                    "LabelN": "Reload {value}",
+                    "OneMinute": "1 min"
+                },
                 "SpecificMagicWeapon": {
                     "Hint": "Marcar esta arma como <i> arma mágica específica </i> indica que hace más de lo que permiten su composición material y sus runas. El nombre, el nivel, la rareza y el precio ya no se anularán de un material precioso o runas al momento de marcar. Sin embargo, esos materiales y runas seguirán como referencia para los ajustes de nivel, rareza y precio de actualizaciones posteriores.",
                     "Label": "Arma Mágica Específica"
@@ -2322,48 +2385,48 @@
         "KitItems": "Elementos",
         "KitWorldItem": "Este artículo no se encuentra en un Compendio y no funcionará en otros mundos.",
         "LackCastConsumableCapability": "{actor} carece de la competencia para usar {spell} y ​​no tiene la dote Truco de objeto mágico.",
-        "LanguageAbyssal": "Abisal",
+        "LanguageAbyssal": "Abyssal",
         "LanguageAdlet": "Adlet",
-        "LanguageAkitonian": "Akitoniano",
+        "LanguageAkitonian": "Akitonian",
         "LanguageAklo": "Aklo",
-        "LanguageAlghollthu": "Algolltu",
+        "LanguageAlghollthu": "Alghollthu",
         "LanguageAmurrun": "Amurrun",
         "LanguageAnadi": "Anadi",
-        "LanguageAncientOsiriani": "Antiguo Osiriani",
+        "LanguageAncientOsiriani": "Ancient Osiriani",
         "LanguageAndroffan": "Androffan",
         "LanguageAnugobu": "Anugobu",
         "LanguageAquan": "Aquan",
-        "LanguageArboreal": "Arbóreo",
-        "LanguageArcadian": "Arcada",
-        "LanguageAuran": "Aura",
+        "LanguageArboreal": "Arboreal",
+        "LanguageArcadian": "Arcadian",
+        "LanguageAuran": "Auran",
         "LanguageAzlanti": "Azlanti",
         "LanguageBoggard": "Boggard",
-        "LanguageCalda": "Caldá",
+        "LanguageCalda": "Calda",
         "LanguageCaligni": "Caligni",
         "LanguageCelestial": "Celestial",
-        "LanguageCommon": "Comunes",
-        "LanguageCyclops": "Ciclope",
-        "LanguageDaemonic": "Demoníaco",
-        "LanguageDestrachan": "Destracan",
-        "LanguageDraconic": "Draconiano",
-        "LanguageDrooni": "Droni",
-        "LanguageDruidic": "Druida",
-        "LanguageDwarven": "Enaño",
-        "LanguageDziriak": "D´ziriak",
-        "LanguageEkujae": "Guion de forma de Ekujae",
-        "LanguageElderThing": "Cosa mayor",
-        "LanguageElven": "Elfo",
+        "LanguageCommon": "Common",
+        "LanguageCyclops": "Cyclops",
+        "LanguageDaemonic": "Daemonic",
+        "LanguageDestrachan": "Destrachan",
+        "LanguageDraconic": "Draconic",
+        "LanguageDrooni": "Drooni",
+        "LanguageDruidic": "Druidic",
+        "LanguageDwarven": "Dwarven",
+        "LanguageDziriak": "D'ziriak",
+        "LanguageEkujae": "Ekujae shape-script",
+        "LanguageElderThing": "Elder Thing",
+        "LanguageElven": "Elven",
         "LanguageErutaki": "Erutaki",
-        "LanguageFormian": "Formiano",
+        "LanguageFormian": "Formian",
         "LanguageGarundi": "Garundi",
         "LanguageGirtablilu": "Girtablilu",
         "LanguageGnoll": "Gnoll",
-        "LanguageGnomish": "Gnómico",
-        "LanguageGoblin": "Duende",
+        "LanguageGnomish": "Gnomish",
+        "LanguageGoblin": "Goblin",
         "LanguageGoloma": "Goloma",
         "LanguageGrioth": "Grioth",
         "LanguageGrippli": "Grippli",
-        "LanguageHalfling": "Mediano",
+        "LanguageHalfling": "Halfling",
         "LanguageHallit": "Hallit",
         "LanguageHwan": "Hwan",
         "LanguageIblydan": "Iblydan",
@@ -2372,8 +2435,8 @@
         "LanguageImmolis": "Immolis",
         "LanguageInfernal": "Infernal",
         "LanguageIruxi": "Iruxi",
-        "LanguageJistkan": "Jistkán",
-        "LanguageJotun": "Jotún",
+        "LanguageJistkan": "Jistkan",
+        "LanguageJotun": "Jotun",
         "LanguageJyoti": "Jyoti",
         "LanguageKaava": "Kaava",
         "LanguageKashrishi": "Kashrishi",
@@ -2382,55 +2445,62 @@
         "LanguageKitsune": "Kitsune",
         "LanguageKovintal": "Kovintal",
         "LanguageLirgeni": "Lirgeni",
-        "LanguageMahwek": "Mawek",
-        "LanguageMiGo": "Mi-go",
+        "LanguageMahwek": "Mahwek",
+        "LanguageMiGo": "Mi-Go",
         "LanguageMinaten": "Minatan",
         "LanguageMinkaian": "Minkaian",
-        "LanguageMunavri": "Munavrí",
+        "LanguageMuan": "Muan",
+        "LanguageMunavri": "Munavri",
         "LanguageMwangi": "Mwangi",
         "LanguageMzunu": "Mzunu",
         "LanguageNagaji": "Nagaji",
         "LanguageNecril": "Necril",
         "LanguageOcotan": "Ocotan",
         "LanguageOkaiyan": "Okaiyan",
-        "LanguageOrcish": "Orco",
+        "LanguageOrcish": "Orcish",
         "LanguageOsiriani": "Osiriani",
-        "LanguageProtean": "Protegido",
+        "LanguagePetran": "Petran",
+        "LanguageProtean": "Protean",
+        "LanguagePyric": "Pyric",
         "LanguageRasu": "Rasu",
         "LanguageRatajin": "Ratajin",
         "LanguageRazatlani": "Razatlani",
-        "LanguageRequian": "Requián",
-        "LanguageRussian": "Ruso",
-        "Languages": "Idiomas",
-        "LanguagesAdditional": "Idiomas adicionales",
-        "LanguageSamsaran": "Samsarán",
+        "LanguageRequian": "Requian",
+        "LanguageRussian": "Russian",
+        "Languages": "Languages",
+        "LanguagesAdditional": "Additional Languages",
+        "LanguageSakvroth": "Sakvroth",
+        "LanguageSamsaran": "Samsaran",
         "LanguageSasquatch": "Sasquatch",
         "LanguageSenzar": "Senzar",
-        "LanguageShadowtongue": "Lengua de las Sombras",
+        "LanguageShadowtongue": "Shadowtongue",
         "LanguageShae": "Shae",
         "LanguageShisk": "Shisk",
         "LanguageShoanti": "Shoanti",
         "LanguageShobhad": "Shobhad",
         "LanguageShoony": "Shoony",
-        "LanguageSkald": "Escaldo",
-        "LanguageSphinx": "Esfinge",
+        "LanguageSkald": "Skald",
+        "LanguageSphinx": "Sphinx",
         "LanguageStrix": "Strix",
-        "LanguageSylvan": "Selvático",
+        "LanguageSusurran": "Susurran",
+        "LanguageSylvan": "Sylvan",
         "LanguageTaldane": "Taldane",
-        "LanguageTekritanin": "Tekritanina",
+        "LanguageTalican": "Talican",
+        "LanguageTekritanin": "Tekritanin",
         "LanguageTengu": "Tengu",
-        "LanguageTerran": "Terrano",
-        "LanguageThassilonian": "Thassiloniano",
-        "LanguageTien": "Tién",
-        "LanguageUndercommon": "Poco comun",
-        "LanguageUtopian": "Utópico",
+        "LanguageTerran": "Terran",
+        "LanguageThalassic": "Thalassic",
+        "LanguageThassilonian": "Thassilonian",
+        "LanguageTien": "Tien",
+        "LanguageUndercommon": "Undercommon",
+        "LanguageUtopian": "Utopian",
         "LanguageVanara": "Vanara",
-        "LanguageVarisian": "Varisio",
+        "LanguageVarisian": "Varisian",
         "LanguageVarki": "Varki",
         "LanguageVishkanyan": "Vishkanyan",
         "LanguageVudrani": "Vudrani",
-        "LanguageWyrwood": "Madera de wyrwood",
-        "LanguageXanmba": "Xanmbá",
+        "LanguageWyrwood": "Wyrwood",
+        "LanguageXanmba": "Xanmba",
         "LanguageYithian": "Yithian",
         "LanguageYsoki": "Ysoki",
         "Level1": "Nivel 1",
@@ -2498,6 +2568,7 @@
             "MoveLoot": "Elementos de movimiento",
             "MoveLootMessage": "¿Cuántos elementos desea mover?",
             "MoveLootPopupTitle": "Cantidad de objetos",
+            "PartyStash": "the party stash",
             "PermissionError": "Un DJ debe estar en línea para saquear o guardar un objeto.",
             "PlantMessage": "{planter} plantas {quantity} × {item} en {corpse} .",
             "PlantSubtitle": "Elemento de planta",
@@ -2517,9 +2588,13 @@
         },
         "Lore": "Ciencia",
         "LoreProficiencyDisclaimer": "Solo informativo. No cambiará el modificador de habilidad.",
-        "LoreSkillFormat": "{name} Tradición",
         "LoreSkillsHeader": "Habilidades de sabiduria",
         "Macro": {
+            "OptionToggle": {
+                "Notification": "{toggle} has been toggled {state}.",
+                "Off": "OFF",
+                "On": "ON"
+            },
             "Plural": "Macros"
         },
         "MacroActionNoActionError": "¡Esta acción ya no existe!",
@@ -2527,6 +2602,7 @@
         "MagicTraditionLabel": "Tradición Mágica",
         "MagicTraditionUseSpellLabel": "Usar tradicion de conjuros",
         "MAPAbbreviationLabel": "MAP {penalty}",
+        "MAPAbbreviationValueLabel": "{value} (MAP {penalty})",
         "MartialAdvanced": "Armas Avanzadas",
         "MartialHeavy": "Armadura pesada",
         "MartialLight": "Armadura ligera",
@@ -2553,17 +2629,14 @@
             "will": "Voluntaria maestra"
         },
         "MaxHitPointsBaseLabel": "PG base máx. {base}",
-        "MaxHitPointsHeader": "Puntos máximos de golpe",
         "MaxHitPointsShortLabel": "PG máx.",
-        "MaxHPTitle": "Tus puntos de vida máximos. Este campo se calcula automaticamente.",
-        "MaxHPTitleNPC": "Puntos máximos de golpe.",
         "MaxStaminaPointsShortLabel": "SP máx.",
         "MaxStaminaTitle": "Tus puntos máximos de resistencia",
-        "MetalStrikes": "Ataques de metal",
         "Migrations": {
             "Finished": "¡Migración del sistema PF2E a la versión {version} completada!",
             "OnlyGMCanUse": "Solo un director de juego puede usar esta herramienta.",
             "OutsideSchemaRange": "El rango especificado está fuera del rango de versiones del esquema del sistema (entre {minimum} y ​​{maximum}).",
+            "Running": "Running system migration ...",
             "Starting": "Aplicación de la migración del sistema PF2E a la versión {version} . Ten paciencia y no cierres tu juego ni apagues tu servidor.",
             "Summary": {
                 "Documents": "Documentos",
@@ -2684,6 +2757,7 @@
             "AddConsumable": "Consumible",
             "AddEquipment": "Equipo",
             "AddItem": "Añadir artículo",
+            "AddPassive": "Add Passive",
             "AddSkill": "Agregar habilidad",
             "AddTrait": "Agregar rasgo",
             "AddTreasure": "Tesoro",
@@ -2827,6 +2901,8 @@
         "PreciousMaterialHighGrade": "Alto grado",
         "PreciousMaterialInubrix": "Inubrix",
         "PreciousMaterialInubrixDescription": "La inusual estructura molecular de este metal pálido y maleable le permite atravesar parcialmente el hierro y el acero sin tocarlos. Si bien esta propiedad es útil para fabricar armas que evitan la armadura de metal, el inubrix es apenas más resistente que el plomo. Incluso en un estado aleado, este skymetal es tan frágil que es difícil de usar para fabricar escudos confiables y menos que ideal para fabricar armaduras.",
+        "PreciousMaterialKeepStone": "Keep Stone",
+        "PreciousMaterialKeepStoneDescription": "The crowning achievement of Highhelm's millennia of metallurgical advancements and engineering is the beautiful alloy called keep stone. Despite its name, no stone is used in the production of keep stone. Through the use of a highly guarded process that smelts together adamantine and lead, Highhelm's greatest crafters were able to develop a material with an appearance that more closely resembles marble than metal. Keep stone is only slightly weaker than adamantine alone, but with the incredible ability to disrupt magic. Any spell or magical effect targeting raw keep stone must succeed at a DC 5 flat check or the effect is lost.",
         "PreciousMaterialLabel": "Materiales preciosos",
         "PreciousMaterialLowGrade": "Grado bajo",
         "PreciousMaterialMithral": "Mitril",
@@ -2866,6 +2942,10 @@
         "ProficiencyLevel3": "Maestro",
         "ProficiencyLevel4": "Legendario",
         "ProficiencyRankLabel": "Profe",
+        "ProgressBar": {
+            "LoadingComplete": "Loading complete",
+            "LoadingPack": "Loading {pack}"
+        },
         "PropertyRuneLabel1": "Runa de propiedad (1º)",
         "PropertyRuneLabel2": "Runa de propiedad (2ª)",
         "PropertyRuneLabel3": "Runa de propiedad (3ª)",
@@ -2878,17 +2958,17 @@
         "RecallKnowledge": {
             "Breakdown": "Intentos",
             "BreakdownTitle": "Identificar intentos de criaturas",
-            "FifthAttempt": "5 a CD",
+            "FifthAttempt": "5ta CD",
             "FirstAttempt": "1er CD",
-            "FourthAttempt": "4 a CD",
+            "FourthAttempt": "4ra CD",
             "Help": "Puedes intentar acciones repetidas de Recuperar conocimiento para recordar más información sobre una criatura. Estas comprobaciones aumentan en dificultad como se muestra en la siguiente tabla. Sin embargo, si fallas, o si no aparece ningún CD, no puedes intentar más pruebas de Recuperar conocimientos contra esta criatura.",
             "Label": "Recordar conocimiento",
+            "LoreEasy": "Applicable Lore (Easy)",
+            "LoreVeryEasy": "Applicable Lore (Very Easy)",
             "SecondAttempt": "2do CD",
-            "SixthAttempt": "6 a CD",
+            "SixthAttempt": "6ta CD",
             "Skill": "Habilidad",
-            "SpecificLore": "Conocimiento especifico",
-            "ThirdAttempt": "3er CD",
-            "UnspecificLore": "Conocimiento inespecífico"
+            "ThirdAttempt": "3er CD"
         },
         "Recovery": {
             "critFailure": "Aumenta tu valor de morir en 2.",
@@ -2929,6 +3009,11 @@
         "ResolvePointsShortLabel": "Resolver",
         "ResolveTitle": "La cantidad de puntos de resolucion que tienes",
         "RestoreSpellTitle": "Restaurante conjuro",
+        "RevertDamage": {
+            "ButtonTooltip": "Undo",
+            "DamageMessage": "Damage applied to {actor} was reverted",
+            "HealingMessage": "Healing applied to {actor} was reverted"
+        },
         "Roll": {
             "Add": "Agregar",
             "CriticalHit": "Golpe critico",
@@ -2984,6 +3069,10 @@
                     "Hint": "Los efectos deshabilitan automáticamente los elementos de regla adjuntos cuando caduca la duración.",
                     "Name": "Los efectos caducan automaticamente"
                 },
+                "Encumbrance": {
+                    "Hint": "Automatically apply the Encumbered condition to creatures carrying more than their respective limits.",
+                    "Name": "Encumbrance"
+                },
                 "FlankingDetection": {
                     "Hint": "Los arreglos de flanqueo y las habilidades que se basan en él son administrados por el sistema.",
                     "Name": "Detección de flanqueo"
@@ -3013,9 +3102,28 @@
                 "Hint": "Agrega una sección a todas las hojas de jugador para las dotes específicas de la campaña.",
                 "Name": "Dotes de campaña"
             },
+            "CampaignType": {
+                "Choices": {
+                    "kingmaker": "Kingmaker",
+                    "none": "None"
+                },
+                "Hint": "Extended campaign rule type for parties",
+                "Name": "Campaign Type"
+            },
             "CompendiumBrowserPacks": {
                 "Hint": "Configuraciones para suprimir paquetes de la carga",
                 "Name": "Paquetes de navegador de Compendio"
+            },
+            "CompendiumBrowserSources": {
+                "DeleteAllInfo": "All compendium documents will become browseable, including those with empty sources.",
+                "DeleteAllQuestion": "Are you sure you want to reset all settings for included sources?",
+                "DeleteAllTitle": "Reset Settings",
+                "Hint": "Settings to display only entries with specified sources in the compendium browser.",
+                "IgnoreAsGM": "Let GMs ignore filtering and see all entries.",
+                "Name": "Included Sources",
+                "ShowEmptySources": "Do not filter entries with empty sources.",
+                "ShowUnknownSources": "Do not filter entries with unknown sources.",
+                "SourcesListHeader": "Specified Sources"
             },
             "critFumbleCardButtons": {
                 "hint": "Muestra los botones de golpe crítico y robo de cartas en las tiradas de ataque.",
@@ -3128,6 +3236,10 @@
                 "ShowDC": {
                     "Hint": "Si está habilitado, los jugadores verán los CD de las comprobaciones realizadas contra los NPC y otras fuentes que no son propiedad de los jugadores.",
                     "Name": "Mostrar CDs en ataques y guardados"
+                },
+                "ShowPartyStats": {
+                    "Hint": "If enabled, players will see stats for their fellow party members in the party actor sheet",
+                    "Name": "Show Party Member Stats"
                 },
                 "ShowResults": {
                     "Hint": "Si está habilitado, los jugadores verán el grado de éxito de las comprobaciones realizadas contra los NPC y otras fuentes que no son propiedad de los jugadores.",
@@ -3674,6 +3786,7 @@
         "TraitArcane": "Arcano",
         "TraitArchetype": "Arquetipo",
         "TraitArchon": "Arconte",
+        "TraitArdande": "Ardande",
         "TraitAreaDamage": "Dia de area",
         "TraitArtifact": "Artefacto",
         "TraitAstral": "Astral",
@@ -3715,6 +3828,7 @@
         "TraitCapacity3": "Capacidad 3",
         "TraitCapacity4": "Capacidad 4",
         "TraitCapacity5": "Capacidad 5",
+        "TraitCarried": "Carried",
         "TraitCatalyst": "Catalizador",
         "TraitCatfolk": "Catfolk",
         "TraitCelestial": "Celestial",
@@ -3735,6 +3849,7 @@
         "TraitCommon": "Comunes",
         "TraitCompanion": "Compañero",
         "TraitComplex": "Complejo",
+        "TraitComposite": "Composite",
         "TraitComposition": "Composición",
         "TraitConcealable": "Ocultable",
         "TraitConcentrate": "Concentrarme",
@@ -3768,6 +3883,7 @@
         "TraitDeadly4D8": "Letal 4d8",
         "TraitDeadlyD10": "Letal d10",
         "TraitDeadlyD12": "Letal d12",
+        "TraitDeadlyD4": "Deadly d4",
         "TraitDeadlyD6": "Letal d6",
         "TraitDeadlyD8": "Letal d8",
         "TraitDeath": "Muerte",
@@ -3801,6 +3917,7 @@
         "TraitDescriptionAquadynamic": "Esta armadura está diseñada para usar bajo el agua, con un diseño aerodinámico y materiales flotantes utilizados en lugares estratégicos. No aplica el penalizador de armadura a las pruebas de Acrobacias o Atletismo en agua o líquidos similares.",
         "TraitDescriptionArcane": "Esta magia proviene de la tradición arcana, que se basa en la lógica y la racionalidad. Cualquier cosa con este rasgo es mágica.",
         "TraitDescriptionArchetype": "Esta dote pertenece a un arquetipo.",
+        "TraitDescriptionArdande": "Ardandes are planar scions descended from kizidhars and other beings of elemental wood.",
         "TraitDescriptionArtifact": "Los artículos con este rasgo son artefactos. Estos objetos mágicos no se pueden fabricar por medios normales y no se pueden dañar por medios normales. Los artefactos son siempre raros o únicos.",
         "TraitDescriptionAttached": "Un arma adjunta debe combinarse con otra pieza de equipo para ser utilizada. El rasgo enumera a qué tipo de elemento se debe unir el arma. Debes empuñar o usar el objeto al que está unido el arma para poder atacar con él. Por ejemplo, las puntas de los escudos están unidas a un escudo, lo que te permite atacar con las puntas en lugar de con un golpe de escudo, pero solo si estás empuñando el escudo. Un arma adjunta generalmente está atornillada o integrada en el elemento al que está conectado y,por lo general, un elemento solo puede tener un arma adjunta. Un arma adjunta se puede colocar en un objeto con 10 minutos de trabajo y una prueba exitosa de @Check[type:crafting|dc:10] ; esto incluye el tiempo necesario para quitar el arma de un artículo anterior, si es necesario. Si se destruye un objeto, normalmente se puede recuperar el arma adjunta.",
         "TraitDescriptionAttack": "Una habilidad con este rasgo implica un ataque. Por cada ataque que haga más allá del primero en su turno, recibe una penalización de ataque múltiple.",
@@ -3837,6 +3954,7 @@
         "TraitDescriptionCommon": "Cualquier cosa que no incluya otro rasgo de rareza (poco común, raro o único) automáticamente tiene el rasgo común. Esta rareza indica que una habilidad, objeto o conjuro está disponible para todos los jugadores que cumplen los requisitos previos para ello. Una criatura de esta rareza es generalmente conocida y puede ser invocada con el conjuro de invocación apropiado.",
         "TraitDescriptionCompanion": "Un objeto con este rasgo puede ser usado por un animal de compañía o una criatura similar. Un acompañante puede tener hasta dos artículos invertidos.",
         "TraitDescriptionComplex": "Un peligro con este rasgo se turna en un encuentro.",
+        "TraitDescriptionComposite": "A composite impulse combines multiple elements. You can gain an impulse with the composite trait only if your kinetic elements include all the elements listed in the impulse’s traits.",
         "TraitDescriptionComposition": "Para lanzar un truco de composición o un conjuro de enfoque, generalmente usa un tipo de Interpretación. Si el conjuro incluye un componente verbal, debe usar una ejecución auditiva, y si incluye un componente somático, debe usar uno visual. El conjuro gana todos los rasgos de la interpretacion que usaste. Solo puedes lanzar un conjuro de composición cada turno y solo puedes tener uno activo a la vez. Si lanzas un nuevo conjuro de composición, cualquier efecto en curso de tu conjuro decomposición anterior termina inmediatamente.",
         "TraitDescriptionConcealable": "Esta arma está diseñada para pasar desapercibida o ocultarse fácilmente. Obtienes un bonificador de circunstancia de +2 a las pruebas de Sigilo y CD para esconder u ocultar un arma con este rasgo.",
         "TraitDescriptionConcentrate": "Una acción con este rasgo requiere un grado de concentración mental y disciplina.",
@@ -3884,6 +4002,7 @@
         "TraitDescriptionEsoterica": "El rasgo esotérico está presente en muchas proezas de taumaturgo y rasgos de clase que incorporan varios talismanes, baratijas sobrenaturales y otros objetos que llevas contigo. Las habilidades que tienen el rasgo esotérico requieren que estés en posesión de tu esotérica para usarlas. Normalmente, se supone que siempre tiene su esotérica con usted, pero en algunas circunstancias raras, es posible que no los tenga a mano o que le quiten su equipo.",
         "TraitDescriptionEvil": "Los efectos malignos a menudo manipulan la energía de los Planos Exteriores alineados con el mal y son la antítesis de los buenos sirvientes divinos o los sirvientes divinos de las buenas deidades. Una criatura con este rasgo tiene un alineamiento malvado. Una habilidad con este rasgo puede ser seleccionada o utilizada solo por criaturas malvadas.",
         "TraitDescriptionEvocation": "Los efectos y objetos mágicos con este rasgo están asociados con la escuela de magia de evocación, que generalmente involucra energía y fuerzas elementales.",
+        "TraitDescriptionEvolution": "Feats with this trait affect your eidolon instead of you, typically by granting it additional physical capabilities.",
         "TraitDescriptionExpandable": "Un elemento con el rasgo expandible aumenta un tamaño específico cuando se activa. A menos que se indique lo contrario, este espacio debe estar junto a ti y en el suelo, y el elemento debe tener espacio abierto para expandirse o, de lo contrario, la activación suficiente no tendrá efecto. Cuando finaliza el efecto, el elemento expandido se desintegra si es un consumible o se reduce a su tamaño normal si no es un consumible.",
         "TraitDescriptionExploration": "Se necesita más de un turno para usar una actividad con este rasgo y, por lo general, solo se puede usar durante el modo de exploración.",
         "TraitDescriptionExtradimensional": "Este efecto o elemento crea un espacio extradimensional. Un efecto extradimensional colocado dentro de otro espacio extradimensional deja de funcionar hasta que se elimina.",
@@ -3938,10 +4057,12 @@
         "TraitDescriptionHumanoid": "Las criaturas humanoides razonan y actúan como humanos. Por lo general, se paran erguidos y tienen dos brazos y dos piernas.",
         "TraitDescriptionIfrit": "Un tipo de genio descendiente de un ser del Plano de Fuego.",
         "TraitDescriptionIllusion": "Los efectos y elementos mágicos con este rasgo están asociados con la escuela de magia de ilusión, que generalmente involucra estímulos sensoriales falsos.",
+        "TraitDescriptionImpulse": "The primary magical actions kineticists use are called impulses. You can use an impulse only if your kinetic aura is active and channeling that element, and only if you have a hand free to shape the elemental flow. The impulse trait means the action has the concentrate trait unless another ability changes this. If an impulse allows you to choose an element, you can choose any element you're channeling, and the impulse gains that element's trait.",
         "TraitDescriptionIncapacitation": "Una habilidad con este rasgo puede sacar completamente a un personaje de la pelea o incluso matarlo, y es más difícil de usar en un personaje más poderoso. Si un conjuro tiene el rasgo de incapacitación, cualquier criatura con más del doble del nivel del conjuro trata el resultado de su prueba para evitar ser incapacitada por el conjuro como un grado de éxito mejor, o el resultado de cualquier prueba que el lanzar de conjuros haya hecho para incapacitarlos como un grado de éxito peor. SiCualquier otro efecto tiene el rasgo de incapacitación, una criatura de mayor nivel que el objeto, criatura o peligro que genera el efecto obtiene los mismos beneficios.",
         "TraitDescriptionIncarnate": "Un conjuro con el rasgo encarnado es similar en tema a los conjuros que invocan criaturas, pero no conjuran a un esbirro con el rasgo invocado. En cambio, cuando se la invoca, la criatura encarnada realiza su acción de Llegar cuando termina de lanzar el conjuro. Al final de tu siguiente turno, la criatura encarnada puede dar un paso, dar zancadas o realizar la acción de otro tipo de movimiento que tenga (como trepar o excavar), y luego realizar su acción de salida. El conjuro entonces termina.Los nombres de Arrive y Depart específicoslas acciones se enumeran en cursiva después de la palabra \"Llegar\" o \"Salir\", respectivamente, junto con cualquier rasgo. Una criatura convocada por un conjuro encarnado actúa en tu interés, aleja sus efectos de ti y de tus aliados tanto como sea posible y puede escuchar tus solicitudes, pero finalmente toma sus propias decisiones. Si el conjuro indica que el encarnado toma una decisión, el DJ determina qué haría el encarnado. Inclusive podria volverse masinclinado a hacer precisamente lo que desea en multiples convocatorias El encarnado no es completamente una criatura. No puede realizar ninguna otra acción, ni puede ser objetivo o daño de Golpes, conjuros u otros efectos a menos que puedan apuntar o finalizar un efecto de conjuro (como disipar magia). Tiene un tamaño para determinar su ubicación para los efectos, pero no bloquea el movimiento. Si es aplicable, sus efectos usan la CD de tu conjuro y el modificador de la tirada de ataque conconjuros",
         "TraitDescriptionIncorporeal": "Una criatura u objeto incorporado no tiene forma física. Puede atravesar objetos sólidos, incluidas paredes. Cuando está dentro de un objeto, una criatura incorpórea no puede percibir, atacar o interactuar con nada fuera del objeto, y si comienza su turno en un objeto, se ralentiza 1. Las criaturas corpóreas pueden atravesar una criatura incorpórea, pero pueden 't terminar su movimiento en su espacio. Una criatura incorporada no puede intentar pruebas basadas en la Fuerza contra criaturas físicaso solo contra objetos.contra los incorpóreos, a menos que esos objetos tengan la runa de propiedad de toque fantasma. Del mismo modo, una criatura corpórea no puede intentar pruebas basadas en la Fuerza contra criaturas u objetos incorporados. Las criaturas incorporales suelen tener inmunidad a los efectos o condiciones que requieren un cuerpo físico, como enfermedades, veneno y daño de precisión. Por lo general, tienen resistencia contra todo tipo de daño (excepto daño por fuerza y ​​daño porGolpes con la runa de propiedad toque fantasma), con el doble de resistencia contraDaño no mágico.",
         "TraitDescriptionInfused": "Creaste un objeto alquímico con el rasgo infundido usando tus reactivos infundidos, y tiene un tiempo limitado antes de que se vuelva inerte. Cualquier efecto no permanente de tus elementos alquímicos infundidos, con la excepción de aflicciones como venenos de acción lenta, finaliza cuando vuelves a hacer tus preparativos diarios.",
+        "TraitDescriptionInfusion": "Actions with the infusion trait tweak your kineticist impulses. You must use an infusion action directly before the impulse action you want to alter. If you use any action (including free actions and reactions) other than an impulse action directly after, you waste the benefits of the infusion action. Any additional effects added by an infusion action are part of the impulse's effect,not of the infusion action itself.",
         "TraitDescriptionIngested": "Este veneno se entrega cuando se bebe o se come.",
         "TraitDescriptionInhaled": "Este veneno se libera cuando se inhala.",
         "TraitDescriptionInjection": "Esta arma se puede llenar con un veneno para heridas. Inmediatamente después de un ataque exitoso con el arma, puedes inyectar al objetivo el veneno cargado con una sola acción de Interacción. Recargar el arma con una nueva sustancia requiere tres acciones de Interacción y usa ambos manos.",
@@ -3955,6 +4076,7 @@
         "TraitDescriptionJousting": "El arma es adecuada para el combate a caballo con arnés o medios similares. Cuando esté montado, si se movió al menos 10 pies en la acción antes de su ataque, agregue una bonificación de circunstancia al daño para ese ataque igual a la cantidad de dados de daño para el arma. Además, mientras está montado, puede empuñar el arma en una mano, cambiando el dado de daño al valor indicado.",
         "TraitDescriptionKashrishi": "Una ascendencia robusta con cuernos de cristal distintivos y habilidades psíquicas inherentes.",
         "TraitDescriptionKickback": "Un arma de contragolpe es muy poderosa y dificil de usar debido a su alto retroceso. Un arma de retroceso inflige 1 daño adicional con todos los ataques. Disparar un arma de contragolpe otorga una penalización de circunstancia de -2 a la tirada de ataque, pero los personajes con 14 o más de Fuerza ignoran la penalización. Colocar un arma de contragolpe en un bípode, trípode u otro estabilizador desplegado puede reducir o anular esta penalización.",
+        "TraitDescriptionKineticist": "This indicates abilities from the kineticist class.",
         "TraitDescriptionKitsune": "Humanoides que cambian de forma cuyas verdaderas formas se asemejan a los zorros.",
         "TraitDescriptionKobold": "Una criatura con este rasgo es un miembro de la ascendencia kobold.",
         "TraitDescriptionLaminar": "La armadura se compone de secciones en capas, por lo que cuando se rompe, no es un gran problema. La penalización de estado a la CA si esta armadura está rota es -1 por armadura media rota, -2 por armadura pesada rota o ninguna penalización por armadura ligera rota.",
@@ -4001,6 +4123,7 @@
         "TraitDescriptionOracle": "Esto indica habilidades de la clase oráculo.",
         "TraitDescriptionOrc": "Una criatura con este rasgo es un miembro de la ascendencia orca. Un arma con este rasgo es un arma que los orcos fabrican y usan.",
         "TraitDescriptionOread": "Un tipo de genio descendiente de un ser del Plano de la Tierra.",
+        "TraitDescriptionOverflow": "Powerful impulses temporarily overdraw the energy of your kinetic gate. When you use an impulse that has the overflow trait, your kinetic aura deactivates until you revitalize it (typically with Channel Elements). Extinguishing your element this severely is taxing, and consequently, you can use only one overflow impulse per round, even if you reactivate your kinetic gate.",
         "TraitDescriptionParry": "Esta arma se puede usar defensivamente para bloquear ataques. Mientras empuñas esta arma, si tu habilidad con ella está entrenada o superior, puedes gastar una sola acción para posicionar tu arma a la defensiva, ganando una bonificación de circunstancia de +1 a la CA hasta el comienzo de tu próximo turno.",
         "TraitDescriptionPeachwood": "Las armas de madera de durazno tienen un tinte particularmente castaño cuando están bajo la luz solar directa. La madera de durazno se trata como madera oscura para las resistencias o debilidades de cualquier criatura no muerta relacionada con la madera oscura (lo que permite que un arma de madera de durazno pase por alto la resistencia de un jiang-shi, por ejemplo). Además, las armas de madera de durazno eluden una pequeña parte de las resistencias de cualquier criatura no muerta. Los golpescon un arma de madera de durazno tratan las resistencias de un no-muerto contra el daño físico como 2 menos para la madera de durazno de grado estándar y 4inferior para alto grado.",
         "TraitDescriptionPlant": "Las criaturas vegetales tienen el rasgo de planta. Son distintas de las plantas normales. Los efectos mágicos con este rasgo manipulan o evocan plantas o materia vegetal de alguna manera. Aquellos que manipulan plantas no tienen efecto en un área sin plantas.",
@@ -4031,6 +4154,7 @@
         "TraitDescriptionReckless": "Las acciones con el rasgo imprudente corren el riesgo de que el piloto pierda el control de un vehículo. Al realizar una acción imprudente, el piloto primero debe intentar una verificación de pilotaje adecuada para mantener el control del vehículo.",
         "TraitDescriptionRecovery": "Las armas de recuperación son armas arrojadizas representaciones para regresar al lanzador cuando falla el objetivo. Cuando realizas un Golpe lanzado sin éxito con esta arma, vuela de regreso a tu mano una vez que se completa el Golpe, lo que te permite volver a intentarlo. Si tus manos están llenas cuando el arma regresa, cae al suelo en tu espacio.",
         "TraitDescriptionReflection": "Una criatura con este rasgo tiene la herencia versátil de reflejo. Los reflejos son seres que son copias de personas vivas, ya sea por clonación, duplicación plana u otro mecanismo. Una habilidad con este rasgo puede ser usado o seleccionado solo por reflejos.",
+        "TraitDescriptionRelic": "An item with the relic trait grows in power with its wielder.",
         "TraitDescriptionReload": "Si bien todas las armas necesitan algo de tiempo para colocarse en posición, muchas armas a distancia también deben cargarse y recargarse. Esta entrada indica tener acciones de Interact se necesitan para recargar dichas armas. Puede ser 0 si sacar munición y disparar el arma son parte de la misma acción. Si un elemento requiere 2 o más acciones para recargar, el DJ determina si deben realizar juntas como una actividad, o puedes gastar algunas de esas acciones durante un turno y el restodurante tu próximo turno.",
         "TraitDescriptionRepeating": "Un arma de repetición suele ser un tipo de ballesta que tiene un tiempo de recarga más corto. Estas armas no se pueden cargar con virotes individuales como otras ballestas; en cambio, requiere que se cargue una revista de municiones especializadas en una ranura especial. Una vez que el cargador está en su lugar, la munición se carga automáticamente cada vez que el arma se amartilla para disparar, reduce su recarga al valor en su entrada de recarga (normalmente 0). Cuando se acaba lamunición, se debe cargar un nuevo cargador, querequiere una mano libre y 3 acciones de interacción (quitar el cargador antiguo, recuperar el cargador nuevo y colocar el cargador nuevo en su lugar). Estas acciones no necesitan ser consecutivas.",
         "TraitDescriptionResonant": "Esta arma puede canalizar daño de energía. Obtienes la acción gratuita Conduct Energy mientras empuñas un arma resonante.",
@@ -4071,6 +4195,8 @@
         "TraitDescriptionSweep": "Esta arma realiza amplios ataques giratorios o de barrido, lo que facilita atacar a varios enemigos. Cuando atacas con esta arma, obtienes un bonificador de circunstancia de +1 a tu tirada de ataque si ya intentaste atacar a un objetivo diferente este turno usando esta arma.",
         "TraitDescriptionSylph": "Un tipo de genio descendiente de un ser del Plano del Aire.",
         "TraitDescriptionTalisman": "Un talismán es un objeto pequeño adherido a una armadura, un escudo o un arma (llamado elemento adherido). Debes empuñar o usar un objeto para activar un talismán adjunto. Una vez activado, un talismán se quema permanentemente.",
+        "TraitDescriptionTalos": "Taloses are planar scions descended from zuhras.",
+        "TraitDescriptionTandem": "Actions with this trait involve you and your eidolon acting in concert. You can't use a tandem action if either you or your eidolon can't act, if you haven't Manifested your Eidolon, or if you've Manifested your Eidolon in a way where it isn't a separate entity (such as with the Meld into Eidolon feat). Tandem actions often let both you and your eidolon take separate actions, but these must be actions taken separately by you and your eidolon; you can't use a tandem action to take another tandem action.",
         "TraitDescriptionTattoo": "Un tatuaje es un tipo de elemento que se dibuja o se corta en la piel de una criatura y, por lo general, adopta la forma de imágenes o símbolos.",
         "TraitDescriptionTech": "Los artículos con este rasgo están asociados con la tecnología de Numeria.",
         "TraitDescriptionTelepathy": "Una criatura con telepatía puede comunicarse mentalmente con las criaturas. Esto no da ningún acceso especial a sus pensamientos y no comunica más información de la que lo haría el habla normal.",
@@ -4098,12 +4224,15 @@
         "TraitDescriptionVirulent": "Las aflicciones con el rasgo virulento son más difíciles de eliminar. Debes tener éxito en dos salvaciones consecutivas para reducir la etapa de una aflicción virulenta en 1. Un éxito crítico reduce la etapa de una aflicción virulenta en solo 1 en lugar de 2.",
         "TraitDescriptionVishkanya": "Una ascendencia con rasgos de serpiente y veneno poderoso.",
         "TraitDescriptionVisual": "Un efecto visual solo puede afectar a las criaturas que pueden verlo. Esto se aplica solo a las partes visibles del efecto, según lo determine el DJ.",
+        "TraitDescriptionVitality": "Effects with this trait heal living creatures with energy from the Forge of Creation, deal vitality energy damage to undead, or manipulate vitality energy.",
+        "TraitDescriptionVoid": "Effects with this trait heal undead creatures with void energy, deal void damage to living creatures, or manipulate void energy.",
         "TraitDescriptionVolley": "Esta arma a distancia es menos efectiva a corta distancia. Tus ataques contra objetivos que están a una distancia dentro del rango indicado tienen una penalización de -2.",
         "TraitDescriptionWand": "Una varita contiene un solo conjuro que puedes lanzar una vez al día.",
         "TraitDescriptionWater": "Los efectos con el rasgo de agua manipulan o conjuran el agua. Los que manipulan el agua no tienen ningún efecto en un área sin agua. Las criaturas con este rasgo consisten principalmente en agua o tienen una conexión mágica con el elemento.",
         "TraitDescriptionWildHunt": "Las criaturas con el rasgo de caza salvaje nunca están por debajo del nivel 14. Poseen mayor visión en la oscuridad, visión verde, aclimatación planar, mirada salvaje, cooperación instintiva, debilidad al hierro frío, la capacidad de hablar con plantas y animales, y su propio vínculo específico de caza salvaje.",
         "TraitDescriptionWitch": "Esto indica habilidades de la clase de brujas.",
         "TraitDescriptionWizard": "Esto indica habilidades de la clase de mago.",
+        "TraitDescriptionWood": " Effects with the metal trait conjure or manipulate wood. Those that manipulate wood have no effectin an area without wood. Creatures with this trait consist primarily of wood or have a connection to magical wood.",
         "TraitDetection": "Detección",
         "TraitDeviant": "Desviado",
         "TraitDevil": "Demonio",
@@ -4138,10 +4267,12 @@
         "TraitEntrenchRanged": "Trinchera a distancia",
         "TraitEnvironmental": "Ambientales",
         "TraitEsoterica": "Esotérica",
+        "TraitEtchedOntoABludgeoningWeapon": "Etched on Bludgeoning Weapon",
         "TraitEtchedOntoAClanDagger": "Grabado en Clan Daga",
         "TraitEtchedOntoAMeleeWeapon": "Grabado en arma cuerpo a cuerpo",
         "TraitEtchedOntoAMeleeWeaponMonk": "Grabado en un arma cuerpo a cuerpo con el rasgo de monje",
         "TraitEtchedOntoAPiercingOrSlashingMeleeWeapon": "Grabado en arma cuerpo a cuerpo perforante/cortante",
+        "TraitEtchedOntoAPiercingOrSlashingWeapon": "Etched on Piercing/Slashing Weapon",
         "TraitEtchedOntoArmor": "Grabado en armadura",
         "TraitEtchedOntoASlashingMeleeWeapon": "Grabado en arma cuerpo a cuerpo cortante",
         "TraitEtchedOntoAThrownWeapon": "Grabado en arma arrojadiza",
@@ -4220,6 +4351,7 @@
         "TraitHampering": "Estorbar",
         "TraitHantu": "Hantu",
         "TraitHarnessed": "Aprovechado",
+        "TraitHarrowCourt": "Harrow Court",
         "TraitHaunt": "Guarida",
         "TraitHealing": "Cicatrización",
         "TraitHefty14": "Fuerte 14",
@@ -4236,11 +4368,13 @@
         "TraitIfrit": "Ifrit",
         "TraitIkeshti": "Ikeshti",
         "TraitIllusion": "Espejismo",
+        "TraitImpulse": "Impulse",
         "TraitIncapacitation": "Incapacitación",
         "TraitIncarnate": "Encarnar",
         "TraitIncorporeal": "Incorporado",
         "TraitInevitable": "Inevitable",
         "TraitInfused": "Infundido",
+        "TraitInfusion": "Infusion",
         "TraitIngested": "Ingerido",
         "TraitInhaled": "Inhalado",
         "TraitInjection": "Inyección",
@@ -4261,6 +4395,7 @@
         "TraitKami": "Kami",
         "TraitKashrishi": "Kashrishi",
         "TraitKickback": "Contragolpe",
+        "TraitKineticist": "Kineticist",
         "TraitKitsune": "Kitsune",
         "TraitKobold": "Kobold",
         "TraitKovintus": "Kovinto",
@@ -4269,6 +4404,7 @@
         "TraitLawful": "Legal",
         "TraitLeshy": "Leshy",
         "TraitLight": "Luz",
+        "TraitLilu": "Lilu",
         "TraitLineage": "Linaje",
         "TraitLinguistic": "Lingüístico",
         "TraitLitany": "Letanía",
@@ -4320,6 +4456,7 @@
         "TraitOracle": "Oraculo",
         "TraitOrc": "Orco",
         "TraitOread": "Oréada",
+        "TraitOverflow": "Overflow",
         "TraitPaaridar": "Paaridar",
         "TraitParry": "Pará",
         "TraitPervasiveMagic": "Magia omnipresente",
@@ -4434,8 +4571,10 @@
         "TraitReach10": "Alcance 10 pies",
         "TraitReach100": "Alcance 100 pies",
         "TraitReach1000": "Alcance 1.000 pies",
+        "TraitReach120": "Reach 120 ft",
         "TraitReach15": "Alcance 15 pies",
         "TraitReach20": "Alcance 20 pies",
+        "TraitReach200": "Reach 200 ft",
         "TraitReach25": "Alcance 25 pies",
         "TraitReach30": "Alcance 30 pies",
         "TraitReach40": "Alcance 40 pies",
@@ -4444,6 +4583,7 @@
         "TraitReckless": "Imprudente",
         "TraitRecovery": "Recuperación",
         "TraitReflection": "Reflexión",
+        "TraitRelic": "Relic",
         "TraitReload": "Recargar",
         "TraitReload0": "Recargar 0",
         "TraitReload1": "Recargar 1",
@@ -4460,6 +4600,7 @@
         "TraitScatter": "Dispersión",
         "TraitScatter10": "Dispersión 10",
         "TraitScatter15": "Dispersión 15",
+        "TraitScatter20": "Scatter 20",
         "TraitScatter5": "Dispersión 5",
         "TraitScroll": "Desplazarse",
         "TraitScrying": "Adivinando",
@@ -4505,6 +4646,7 @@
         "TraitStheno": "Esteño",
         "TraitStrix": "Strix",
         "TraitStructure": "Estructura",
+        "TraitSubjectiveGravity": "Subjective Gravity",
         "TraitSuli": "Suli",
         "TraitSummon": "Convocar",
         "TraitSummoned": "Convocado",
@@ -4514,6 +4656,7 @@
         "TraitSweep": "Barrera",
         "TraitSylph": "Sílfide",
         "TraitTalisman": "Talismán",
+        "TraitTalos": "Talos",
         "TraitTandem": "Tándem",
         "TraitTane": "Tane",
         "TraitTanggal": "Tanggal",
@@ -4586,6 +4729,8 @@
         "TraitVirulent": "Virulento",
         "TraitVishkanya": "Vishkanya",
         "TraitVisual": "Visual",
+        "TraitVitality": "Vitality",
+        "TraitVoid": "Void",
         "TraitVolley": "Voleo",
         "TraitVolley20": "Volea 20 pies.",
         "TraitVolley30": "Volea 30 pies.",
@@ -4600,6 +4745,7 @@
         "TraitWildHunt": "Caza salvaje",
         "TraitWitch": "Bruja",
         "TraitWizard": "Mago",
+        "TraitWood": "Wood",
         "TraitWorn": "Gastado",
         "TraitWornAmulet": "Amuleto gastado",
         "TraitWornAndAttachedToTwoWeapons": "Usado y unido a dos armas",
@@ -4643,6 +4789,7 @@
         "TraitZombie": "Zombis",
         "Trap": "Trampa",
         "TravelSpeed": {
+            "ActivitiesPerDay": "Activities per Day",
             "Days": "Días",
             "DetectBeforeRunningIntoIt": "Aviso todo por adelantado",
             "DetectEverything": "Fíjate en todo",
@@ -4704,7 +4851,8 @@
             "errorTargetToken": "Seleccione al menos una ficha.",
             "noDamageInfoForOutcome": "No hay información de daños para el resultado {outcome} .",
             "shiftModifyDamageLabel": "Ajustar daño/curación",
-            "shiftModifyDamageTitle": "Ajustar el daño/curación rodado"
+            "shiftModifyDamageTitle": "Ajustar el daño/curación rodado",
+            "warnNoActor": "This inline roll requires an actor."
         },
         "UnitedPaizoWorkers": {
             "PFSNote": "Nota para los jugadores de la Sociedad Pathfinder: En apoyo de UPW, la mercancía comprada en la tienda de la unión contará en la región de PFS en línea para la bendición <span class=\"hover\" title=\"When you use a Hero Point to reroll a check, add a +1 cirumstance bonus to the reroll\"> Vestimentas promocionales </a> .",
@@ -5078,6 +5226,15 @@
                     "criticalSuccess": "Si golpeas críticamente a un objetivo con un arma de anclaje, el arma lanza <em> @UUID[Compendium.pf2e.spells-srd.ksLCg62cLOojw3gN] {Dimensional Anchor} </em> en el objetivo ( @Check[type:will|dc:27|name:Anchoring Rune] , modificador de contrarresto [[/r 1d20+17 # Anchoring Rune Counteract Check]] {+17} )."
                 }
             },
+            "ashen": {
+                "Name": "Ashen",
+                "Note": {
+                    "success": "This ash clouds the senses, causing the creature to become confused for 1 round unless it succeeds at a @Check[type:will|dc:25] save."
+                }
+            },
+            "authorized": {
+                "Name": "Authorized"
+            },
             "axiomatic": {
                 "Name": "Axiomatico",
                 "Note": {
@@ -5102,6 +5259,12 @@
                     "criticalSuccess": "Con un golpe crítico, el objetivo debe tener éxito en una salvación de @Check[type:fortitude|dc:29|name:Brilliant Rune] o ser @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2] {Blinded} 1 ronda."
                 }
             },
+            "called": {
+                "Name": "Called"
+            },
+            "coating": {
+                "Name": "Coating"
+            },
             "conducting": {
                 "Name": "Conductibles"
             },
@@ -5123,6 +5286,9 @@
             "dancing": {
                 "Name": "Baile"
             },
+            "deathdrinking": {
+                "Name": "Deathdrinking"
+            },
             "demolishing": {
                 "Name": "Demoledor"
             },
@@ -5131,6 +5297,9 @@
                 "Note": {
                     "criticalSuccess": "Con un golpe crítico, el no-muerto también es @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7] {Enfeebled 1} hasta el final de tu próximo turno."
                 }
+            },
+            "earthbinding": {
+                "Name": "Earthbinding"
             },
             "energizing": {
                 "Name": "Energizante"
@@ -5153,6 +5322,9 @@
                     "criticalSuccess": "Con un golpe crítico, infliges un [[/r 1d10[persistent,fire]] adicional]."
                 }
             },
+            "flurrying": {
+                "Name": "Flurrying"
+            },
             "frost": {
                 "Name": "Escarcha",
                 "Note": {
@@ -5168,6 +5340,12 @@
                 "Note": {
                     "criticalSuccess": "Cuando golpeas críticamente a un objetivo con un arma con la runa de anclaje, el arma lanza <em> @UUID[Compendium.pf2e.spells-srd.ksLCg62cLOojw3gN] {Dimensional Anchor} </em> de nivel 8 en el objetivo ( @Check[type:will|dc:38|name:Greater Anchoring Rune] , modificador de contrarresto [[/r 1d20+28 #Greater Anchoring Rune Counteract Check]] {+28} ), excepto que si el objetivo tiene éxito crítico en su salvación Voluntad, en lugar de sin efecto, el ancla <em> dimensional </em> dura 1 ronda.",
                     "success": "<strong> Runa de anclaje mayor </strong> Cuando golpeas a un objetivo con el arma pero no lo haces de forma crítica, el objetivo se ve afectado por <em> @UUID[Compendium.pf2e.spells-srd.ksLCg62cLOojw3gN] {Dimensional Anchor} </em> de nivel 4 durante 1 ronda sin guardar (modificador de contrarresto [[/r 1d20+28 #Greater Anchoring Rune Counteract Check]] {+28} )."
+                }
+            },
+            "greaterAshen": {
+                "Name": "Greater Ashen",
+                "Note": {
+                    "success": "This ash clouds the senses, causing the creature to become confused for 1 round unless it succeeds at a @Check[type:will|dc:35] save. On a critical failure, the effect lasts for 1 minute."
                 }
             },
             "greaterBloodbane": {
@@ -5288,6 +5466,9 @@
                     "criticalSuccess": "Con un golpe crítico, puedes elegir forzar al objetivo a tener éxito en una salvación de @Check[type:fortitude|dc:27|name:Impactful Rune] o ser empujado a 5 pies de ti."
                 }
             },
+            "impossible": {
+                "Name": "Impossible"
+            },
             "keen": {
                 "Name": "Afecto",
                 "Note": "Los ataques con esta arma son un golpe crítico con un 19 en el dado siempre que el resultado sea un éxito. Esta propiedad no tiene efecto en un 19 si el resultado fuera un fracaso."
@@ -5297,6 +5478,10 @@
             },
             "majorFanged": {
                 "Name": "Alcalde con colmillos"
+            },
+            
+            "merciful": {
+                "Name": "Merciful"
             },
             "pacifying": {
                 "Name": "Pacificante"
@@ -5322,6 +5507,10 @@
             },
             "spellStoring": {
                 "Name": "Almacenamiento de conjuros"
+            },
+            
+            "swarming": {
+                "Name": "Swarming"
             },
             "thundering": {
                 "Name": "Tremendo",
@@ -5447,5 +5636,42 @@
     },
     "SIDEBAR": {
         "TabCombat": "Rastreador de encuentros"
+    },
+    "TYPES": {
+        "Actor": {
+            "character": "Personaje del jugador",
+            "eidolon": "Eidolón",
+            "familiar": "Familiar",
+            "hazard": "Peligro",
+            "loot": "Botín",
+            "npc": "PNJ",
+            "party": "Party",
+            "vehicle": "Vehicle"
+        },
+        "Item": {
+            "action": "Acción",
+            "affliction": "Aflicción",
+            "ancestry": "Ascendencia",
+            "armor": "Armadura",
+            "background": "Bagaje",
+            "backpack": "Envase",
+            "book": "Libro",
+            "campaignFeature": "Campaign Feature",
+            "class": "Clase",
+            "condition": "Condición",
+            "consumable": "Consumible",
+            "deity": "Deidad",
+            "effect": "Efecto",
+            "equipment": "Equipo",
+            "feat": "Dote/Caracteristica",
+            "heritage": "Herencia",
+            "kit": "Equipo",
+            "lore": "Caracteristica de sabiduria",
+            "melee": "Ataque de PNJ",
+            "spell": "Borrar",
+            "spellcastingEntry": "Entrada de lanzamiento de conjuros",
+            "treasure": "Tesoro",
+            "weapon": "Armas"
+        }
     }
 }

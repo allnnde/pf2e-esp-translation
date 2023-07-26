@@ -61,9 +61,16 @@
             "IncreasedCriticalChance": "Si el ataque impacta y la criatura saca un 19 en la tirada de d20, el ataque es un golpe crítico. Esto no tiene ningún efecto si el 19 sería un fracaso.",
             "IncreasedReach5": "Alcance alcanzado en 5 pies",
             "InterruptAction": "Con un impacto, la acción del objetivo se interrumpe.",
-            "KnockProne": "En un golpe, el objetivo es derribado @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} ."
+            "KnockProne": "En un golpe, el objetivo es derribado @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} .",
+            "ReduceHiddenCheck": "The DC of the flat check to target a @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} creature is only @Check[type:flat|dc:5]."
         },
         "BattleForm": {
+            "AberrantForm": {
+                "GugSqueezeNote": "Your multiple joints allow you to fit through tight spaces as if you were a Medium creature."
+            },
+            "AngelForm": {
+                "DeafenedNote": "@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round on a critical hit"
+            },
             "Attack": {
                 "Antler": "Cuerno",
                 "AqueousFist": "Puño acuoso",
@@ -114,11 +121,33 @@
                 "Web": "Red",
                 "Wing": "Ala"
             },
+            "CosmicForm": {
+                "MoonNote": "The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round.",
+                "SunNote": "The target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round."
+            },
+            "DaemonForm": {
+                "CeustodaemonDamageNote": "Any successful jaws or claw Strike deals an additional [[/r {1d6}]]{1d6 damage}, and you take the same amount of damage"
+            },
+            "ElementEmbodied": {
+                "AirPushNote": "Plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Push} 10 feet",
+                "WaterPushPullNote": "Plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Push} or Pull 10 feet"
+            },
+            "InsectForm": {
+                "SpiderWebNote": "A successful Web attack entangles the target for 1 round, but deals no damage"
+            },
+            "MonstrosityForm": {
+                "ShroudOfFlame": "Shroud of Flame"
+            },
             "Note": {
+                "Grab": "You can spend an action immediately after a hit to @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab} the target",
                 "GrabbingTrunk": {
                     "Text": "Una hasta dos tamaños más pequeña que es una criatura golpeada por tu trompa es @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei] {Grabbed} . Si tienes éxito en tu prueba de @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD] {Grapple} contra una criatura agarrada por tu baúl, puedes reubicar a la criatura en otro espacio dentro del alcance de tu baúl.",
                     "Title": "Agarrando el tronco"
-                }
+                },
+                "Shove": "You can spend an action immediately after a hit to push the target 5 feet with the effects of a successful @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}"
+            },
+            "OozeForm": {
+                "GelatinousCubeNote": "A creature hit by your cube face Strike must succeed at a @Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)|traits:incapacitation] save against your spell DC or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round on a critical failure); this save has the incapacitation trait."
             }
         },
         "BombNotes": {
@@ -403,6 +432,7 @@
                 }
             },
             "TallowBomb": {
+                "criticalSuccess": "On a critical hit, a living creature taking persistent fire damage from a tallow bomb is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} from the stench of burning fat and can't reduce its sickened value below 1 while the persistent fire damage lasts.",
                 "Greater": {
                     "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*3d4)[persistent,fire]] ], [[/r (3[splash])[fire]] ] {3 fire splash damage} , y el objetivo es @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18] {Sickened 1} del hedor de la grasa quemada. La criatura no puede reducir su valor de enfermedad por debajo de 1 mientras dure el daño de fuego persistente.",
                     "success": "<strong> Efecto </strong> La bomba también inflige [[/r 3d4[persistent,fire]] ] y [[/r (3[splash])[fire]] ] {3 fire splash damage} ."
@@ -513,6 +543,10 @@
                 "PinpointLight": "Luz precisa"
             },
             "BarghestFeed": "¿cuantas veces se ha alimentado el Barghest?",
+            "Bunyip": {
+                "CrocodileLegs": "Crocodile Legs",
+                "SnakeTail": "Snake Tail"
+            },
             "Calikang": {
                 "SixfoldFlurry": "Huelgas no tomadas?",
                 "SuspendedAnimationEnter": "Ingrese Animación Suspendida",
@@ -528,11 +562,23 @@
                 "BrokenArmor": "Armadura de construcción rota",
                 "CriticalHit": "Armadura de construcción rota por un golpe crítico"
             },
+            "CrumblingCarapace": "Carapace Broken by a Critical Hit",
             "CustomArmor": {
                 "BrokenArmor": "Armaduras rotativas personalizadas",
                 "CriticalHit": "Armadura personalizada rota por un golpe crítico"
             },
+            "CyclopsBully": {
+                "TerrorizingSwing": "If the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} and takes damage, it takes an additional 2d10 damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
+            },
             "DemonInfuseWeapons": "Inflige daño caótico en lugar de maligno",
+            "DisplacedRobot": {
+                "DivertPower": {
+                    "Fists": "Divert Power to Fists",
+                    "LaserBeam": "Divert Power to Laser Beam"
+                },
+                "Fists": "Fists",
+                "LaserBeam": "Laser Beam"
+            },
             "Dramofir": {
                 "BittersweetDreamsCriticalFailure": "Fallo critico",
                 "BittersweetDreamsSuccessFailure": "Éxito o fracaso"
@@ -579,9 +625,16 @@
                 "Three": "3 espadas largas",
                 "Two": "2 espadas largas"
             },
+            "Marut": {
+                "Lightning": "Lightning",
+                "Thunder": "Thunder"
+            },
             "MinotaurHuntedFear": {
                 "Demoralize": "El objetivo está en un laberinto o en una estructura similarmente difícil de navegar",
                 "Survival": "Para evitar perderse"
+            },
+            "Necrohulk": {
+                "AlchemicalCartridgeRuptured": "Alchemical Cartridge Ruptured"
             },
             "PaleStranger": {
                 "TargetMurderedPaleStranger": "Objetivo Asesinado Pálido Extraño",
@@ -589,8 +642,10 @@
             },
             "PoltergeistTelekineticStorm": {
                 "MultiAttackLabel": "Tormenta telequinética - Múltiples objetivos",
+                "MultipleTargets": "Multiple Targets",
                 "SingleAttackEffect": "El ataque inflige [[/r {1d12}]] {1d12 damage} si falla.",
-                "SingleAttackLabel": "Tormenta telequinética: objetivo único"
+                "SingleAttackLabel": "Tormenta telequinética: objetivo único",
+                "SingleTarget": "Single Target"
             },
             "PunishingStrike": {
                 "Note": "El ataque imprudente hace que el usuario @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg] {Flat-Footed} hasta el comienzo de su próximo turno. Si aciertan, pueden sumar @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.t6cx9FOODmeZQNYl] {Push} al strike"
@@ -621,6 +676,9 @@
             "Vampire": {
                 "JiangShi": {
                     "StanceOfDeath": {
+                        "BoneCorpse": {
+                            "Label": "Bone Corpse Stance"
+                        },
                         "CloudlessVoid": {
                             "Label": "Postura de vacio sin nubes"
                         },
@@ -639,6 +697,7 @@
         },
         "OracleCurses": {
             "Ancestor": {
+                "AncestralInfluence": "Ancestral Influence",
                 "Label": {
                     "ExtremeBattle": "Batalla extrema",
                     "ExtremeSkillful": "Extremo Habil",
@@ -646,14 +705,18 @@
                     "MajorBattle": "Batalla mayor",
                     "MajorSkillful": "Alcalde habilidoso",
                     "MajorSpellcasting": "Lanzamiento de conjuros mayores",
+                    "Martial": "Martial",
                     "MinorBattle": "Batalla menor",
                     "MinorSkillful": "Habil menor",
                     "MinorSpellcasting": "Lanzamiento de conjuros menores",
                     "ModerateBattle": "Batalla moderada",
                     "ModerateSkillful": "Moderado Hábil",
-                    "ModerateSpellcasting": "Lanzamiento de conjuros moderados"
+                    "ModerateSpellcasting": "Lanzamiento de conjuros moderados",
+                    "Skillful": "Skillful",
+                    "Spellcasting": "Spellcasting"
                 },
                 "MajorFailure": "Tu maldición interfiere con esta acción y debes hacer una prueba de @Check[type:flat|dc:8|showDC:owner] .",
+                "MeddlingAncestor": "Meddling Ancestor",
                 "MinorFailure": "Tu maldición interfiere con esta acción y debes hacer una prueba de @Check[type:flat|dc:4|showDC:owner] .",
                 "ModerateFailure": "Tu maldición interfiere con esta acción y debes hacer una prueba de @Check[type:flat|dc:6|showDC:owner] ."
             },
@@ -984,6 +1047,7 @@
             "FlatModifier": "Modificador plano",
             "GrantItem": "Artículo de concesión",
             "Immunity": "Inmunidad",
+            "ItemAlteration": "Item Alteration",
             "LoseHitPoints": "Pierde puntos de vida",
             "MarkToken": "Ficha de marca",
             "MartialProficiency": "Competencia marcial",
@@ -1018,16 +1082,22 @@
             "Buried": "Enterrado",
             "CanClearlyIdentifyTheStars": "Puede identificar claramente las estrellas",
             "Climb": "Escalar",
+            "ClimbHighJumpLongJumpOrDisarm": "To Climb, High Jump, Long Jump, or Disarm",
             "ClimbOrSwim": "Escalar o Nadar",
             "CommandAnAnimal": "Para comandar un animal",
             "CommandReptile": "Para dar órdenes a un animal que es un reptil",
+            "ConcealAnObject": "To Conceal an Object",
+            "CraftAlchemical": "To Craft Alchemical Items",
+            "CraftAlchemicalOrMedicine": "To Craft Alchemical or Medicinal Items",
             "CraftBone": "Usando hueso",
             "CraftJewelry": "Para hacer joyas",
+            "CraftSnare": "To Craft Snares",
             "CraftTrap": "Para fabricar trampas",
             "CraftTrapSnare": "Para fabricar trampas y lazos",
             "CreateForgery": "Para crear falsificacion",
             "Dance": "Bailar",
             "Darkness": "En la oscuridad",
+            "DarknessOrSmoke": "In Darkness or Smoke",
             "DecayingPlantFungus": "En medio de materia vegetal u hongos en descomposición",
             "Demoralize": "Desmoralizar",
             "DemoralizeThreateningLunge": "Para desmoralizar con estocada amenazante",
@@ -1041,25 +1111,42 @@
             "DisarmMetal": "Para desarmar un articulo de metal",
             "DisarmStoneMetal": "Para desarmar objetos de piedra o metal",
             "DiscernAndPredictWeather": "Discernir patrones climáticos y predecir las próximas condiciones climáticas",
+            "Diversion": "To Create a Diversion",
             "Escape": "Escapar",
             "EscapeForceOpenOrLift": "Para escapar, abrir a la fuerza o levantar objetos pesados",
             "Feint": "Fintar",
+            "ForceOpenGrappleShoveOrTrip": "To Force Open, Grapple, Shove, or Trip",
             "Forests": "En los bosques",
+            "ForestsOrGrasslands": "In Forests or Grasslands",
+            "ForestsOrJungles": "In Forests or Jungles",
             "ForestsOrSnow": "En Bosques o Nieve",
             "ForestsOrSwamps": "En bosques o pantanos",
+            "ForestsOrUnderground": "In Forests or Underground Areas",
+            "FortuneTelling": "To Tell Fortunes",
+            "FullMoon": "Full Moon",
             "GatherInformation": "Para recopilar informacion",
             "Grapple": "Lídiar",
             "GrappleShove": "Para agarrar o empujar",
             "Hide": "Esconder",
+            "HideInBody": "To Hide Inside a Body",
+            "HideInDim": "To Hide in Dim Light",
             "HideInDimOrDark": "Para esconderse en la oscuridad o la luz tenue",
             "HideSneakInscriptions": "Esconderse o escabullirse entre las inscripciones",
             "HideSneakTree": "Esconderse o escabullirse mientras está en un árbol",
             "HighJumpOrLongJump": "Al Salto de Altura o Salto de Longitud",
             "IceAndSnow": "En hielo o nieve",
             "ImitateStone": "Imitar piedra",
+            "ImitateVoice": "To Imitate a Voice",
             "Impersonate": "Suplantar",
             "ImpersonateCloakSheetRay": "Para hacerse pasar por una capa, una sabana o un rayo",
+            "ImpersonateClothing": "To Impersonate Clothing",
             "ImpersonateHumanVersion": "Suplantar una versión humana de sí mismos",
+            "ImpersonateInanimate": "To Impersonate an Inanimate Object",
+            "ImpersonateMound": "To Impersonate a Mound",
+            "ImpersonatePastSelf": "To Impersonate a Past Self",
+            "ImpersonateStumpOrLog": "To Impersonate a Stump or Log",
+            "JumpOrClimb": "To Jump or Climb",
+            "JumpOrSwim": "To Jump or Swim",
             "Jungles": "En selvas",
             "JunglesOrFlowerFields": "En Selvas o Campos de Flores",
             "JunkOrDebris": "En basura o escombros",
@@ -1068,8 +1155,10 @@
             "LeyLine": "Cerca de la Linea Ley",
             "Lie": "Mentir",
             "LongJump": "Al salto de longitud",
+            "Lute": "To Play the Lute",
             "MakeAnImpression": "Para hacer una impresion",
             "ManeuverInFlight": "Para maniobrar en vuelo",
+            "Moist": "In Moist Environments",
             "Mountains": "En las montañas",
             "Navigate": "Para navegar",
             "NearTheOcean": "Cerca del Océano",
@@ -1077,15 +1166,26 @@
             "OceansForests": "En océanos y bosques",
             "Orate": "Orar",
             "Paint": "Pintar",
+            "PalmAnObjectOrSteal": "To Palm an Object or Steal",
+            "PickALock": "To Pick a Lock",
+            "Poison": "To Craft Poisons",
+            "Prophecy": "To Spout Prophecy",
             "Raining": "Lloviendo",
+            "RecallKnowledge": "To Recall Knowledge",
+            "RecallKnowledgeDeadSubject": "To Recall Knowledge about a deceased subject",
             "Rocky": "En Terreno Rocoso",
+            "Ruins": "In Ruins",
             "RunningWater": "En agua corriente",
             "RustyTerrain": "En areas de objetos oxidados",
             "Sand": "En la arena",
             "SenseMotive": "Sentir motivo",
             "Sewers": "En alcantarillas",
+            "SewersScrapyards": "In Sewers and Scrapyards",
+            "Shoes": "For Shoes",
+            "ShootingGallery": "In the Shooting Gallery",
             "Shove": "Empújar",
             "Singing": "Cantando",
+            "Skinless": "When Skinless",
             "Snow": "En la nieve",
             "Squeeze": "Apretar",
             "Steal": "Robar",
@@ -1093,16 +1193,21 @@
             "StringedInstruments": "Para instrumentos de cuerda",
             "Subsist": "Subsistir",
             "Swamps": "En pantanos",
+            "Swardlands": "In the Swardlands",
             "Swim": "Nadar",
             "TarPit": "En pozos de alquitran",
             "TellTheTruth": "Decir la verdad",
             "ThickVegetation": "En espesa vegetación",
             "Track": "Para realizar un seguimiento",
             "TrackBleedingCreature": "Para rastrear una criatura sangrante",
+            "TrackCreator": "To Track Their Creator",
+            "TrackHalfHealth": "To Track a Creature at Half its Hit Points or Fewer",
             "Traps": "Trampas",
             "TrashAndRubbish": "En Basura y Basura",
             "Trip": "Viajar",
             "TripTangle": "Tropezar y enredarse",
+            "TumbleThrough": "To Tumble Through",
+            "TumbleThroughMediumOrLarger": "To Tumble Through the Space of a Medium or Larger Creature",
             "Tundra": "En la tundra",
             "Underground": "Subterráneo",
             "Undergrowth": "En maleza",
@@ -1112,6 +1217,7 @@
             "VsArthropods": "Contra artrópodos",
             "VsControlled": "Contra efectos controlados",
             "VsDarknessLightShadow": "Contra los efectos de Oscuridad, Luz o Sombra",
+            "VsDemons": "vs. Demons",
             "VsDiseases": "Contra enfermedades",
             "VsEmotion": "Vs efectos de emocion",
             "VsMagic": "Contra efectos magicos",
@@ -1126,9 +1232,25 @@
             "Woodworking": "Carpinteria"
         },
         "SpecificRule": {
+            "Actions": {
+                "ThreeActions": "Three Actions",
+                "TwoActions": "Two Actions"
+            },
+            "AdjustDegreeOfSuccess": {
+                "Squeeze": {
+                    "CriticalFailureSuccessBetter": "When you roll a critical failure on a check to Squeeze, you get a failure instead, and when you roll a success, you get a critical success instead."
+                }
+            },
+            "AdoptedAncestry": {
+                "Prompt": "Select a common ancestry."
+            },
             "AdvancedGeneralTraining": {
-                "AllowedDrops": "Dote general de nivel 7 o inferior",
                 "Prompt": "Selecciona una dote general de nivel 7 o inferior."
+            },
+            "AerialPiledriver": {
+                "CriticalFailureText": "You fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, and the target is no longer grabbed or restrained by you.",
+                "FailureText": "You lose your grip on the target, and it is no longer grabbed or restrained by you.",
+                "SuccessText": "The target lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
             },
             "AftermathFeats": {
                 "DormantEruptionToggle": "Ha utilizado la erupción térmica hoy",
@@ -1145,21 +1267,41 @@
                     "Prompt": "Seleccione un campo de investigacion."
                 }
             },
-            "AllowedDrops": {
-                "DeityOrPantheon": "Deidad o panteón"
+            "Anadi": {
+                "SpiderOrHybridForm": "In Spider or Hybrid Form"
             },
             "AncestralParagon": {
-                "AllowedDrops": "Dote de ascendencia de 1er nivel",
                 "Prompt": "Selecciona una dote de ascendencia de primer nivel."
             },
             "AncientElf": {
-                "AllowedDrops": "Hazaña de dedicación multiclase",
                 "Prompt": "Selecciona una dote de dedicación multiclase."
+            },
+            "AnimalForm": {
+                "Ape": "Ape",
+                "Bat": "Bat",
+                "Bear": "Bear",
+                "Bull": "Bull",
+                "Canine": "Canine",
+                "Cat": "Cat",
+                "Centipede": "Centipede",
+                "Deer": "Deer",
+                "Frog": "Frog",
+                "Shark": "Shark",
+                "Snake": "Snake",
+                "Toad": "Toad",
+                "Wolf": "Wolf"
             },
             "AnimalSkin": {
                 "BracersOfArmor": "Piel de animal con brazales de armadura",
                 "ExplorersClothing": "Piel de animal con ropa de explorador",
                 "MageArmor": "Piel de animal con armadura de mago"
+            },
+            "AquaticCombat": {
+                "FireNote": "You can't cast fire spells or use actions with the fire trait underwater.",
+                "RangedNote": "Ranged attacks that deal bludgeoning or slashing damage automatically miss if the attacker or target is underwater, and piercing ranged attacks made by an underwater creature or against an underwater target have their range increments halved."
+            },
+            "ArtokussFire": {
+                "Note": "Your Alchemist's Fire deals an additional 1d4 persistent fire damage, and creatures must make two succesful flat checks to end the condition (or one check, if they had assisted recovery that reduces the flat check to DC 10). Your enhanced fire burns underwater, and water does not help to end the persistent damage."
             },
             "Automaton": {
                 "ArcaneLocomotion": {
@@ -1276,6 +1418,9 @@
             "BlessingOfDefiance": {
                 "Prompt": "Elige una tirada de salvación."
             },
+            "BloodlettingKukri": {
+                "Note": "If the target didn't already have persistent bleed damage when you scored the critical hit, you also gain [[/r 1d8]] temporary Hit Points."
+            },
             "BonusLabel": {
                 "NegativeOne": "-1",
                 "PlusFour": "+4",
@@ -1313,7 +1458,10 @@
                 "BladeAllyRune": "Selecciona una runa de propiedad para tu espada aliada.",
                 "DivineSmite": {
                     "Label": "Golpe Divino"
-                }
+                },
+                "EvilDamage": "Evil Damage",
+                "NegativeDamage": "Negative Damage",
+                "TargetReaction": "Target triggered your champion reaction"
             },
             "ChromaticArmor": {
                 "Acid": "Naranja (Ácido)",
@@ -1341,6 +1489,14 @@
                     "Prompt": "Seleccione una doctrina."
                 }
             },
+            "Conditions": {
+                "Sickened": {
+                    "Reduce": {
+                        "criticalSuccess": "When you critically succeed at a Fortitude save to reduce your @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened} value, you reduce it by 3.",
+                        "success": "When you succeed at a Fortitude save to reduce your @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened} value, you reduce it by 2."
+                    }
+                }
+            },
             "Conrasu": {
                 "CeremonyEvenedHand": {
                     "Prompt": "Seleccione un ataque desarmado."
@@ -1351,6 +1507,10 @@
             },
             "Convergent": {
                 "Tactics": "Un aliado con Tácticas Convergentes está al alcance del objetivo."
+            },
+            "CorrosiveBody": {
+                "Note": "The first time each round that you deal acid damage to a creature in this way, you gain [[/r 3d6 #Temporary Hit Points]]{3d6 temporary Hit Points}",
+                "Note9th": "The first time each round that you deal acid damage to a creature in this way, you gain [[/r 5d6 #Temporary Hit Points]]{5d6 temporary Hit Points}"
             },
             "Cover": {
                 "Greater": "Alcalde",
@@ -1475,6 +1635,21 @@
                 "DeathWardenDwarf": {
                     "Note": "Cuando obtienes un éxito contra un efecto de nigromancia, obtienes un crítico en su lugar."
                 },
+                "DwarvenClan": {
+                    "Aringeld": "Clan Aringeld",
+                    "Breakiron": "Clan Breakiron",
+                    "Firecask": "Clan Firecask",
+                    "Gelderon": "Clan Gelderon",
+                    "Grimmark": "Clan Grimmark",
+                    "Ironfist": "Clan Ironfist",
+                    "Molgrade": "Clan Molgrade",
+                    "Oriddus": "Clan Oriddus",
+                    "Prompt": "Select a dwarven clan.",
+                    "Runebinder": "Clan Runebinder",
+                    "Stonefist": "Clan Stonefist",
+                    "Tolorr": "Clan Tolorr",
+                    "Vanderholl": "Clan Vanderholl"
+                },
                 "ElementalHeart": {
                     "Prompt": "Elige el tipo de tu Corazón Elemental"
                 },
@@ -1497,9 +1672,16 @@
                     "Prompt": "Elige un enemigo ancestral."
                 }
             },
+            "EldritchArcher": {
+                "ArrowOfDeath": {
+                    "Note": "On a critical hit, the target must also succeed at a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:death,incapacitation] saving throw, or be immediately slain."
+                },
+                "EnchantingArrow": {
+                    "Note": "On a critical hit, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}."
+                }
+            },
             "Elf": {
                 "Atavism": {
-                    "AllowedDrops": "Herencia de los elfos",
                     "Prompt": "Selecciona una herencia élfica."
                 },
                 "BrightnessSeeker": {
@@ -1520,6 +1702,11 @@
                 }
             },
             "Equipment": {
+                "BoastfulHunter": {
+                    "BoredLabel": "The Boastful Hunter is Bored",
+                    "InsultedLabel": "The Boastful Hunter is Insulted",
+                    "MisfireNote": "All attacks with an insulted <em>boastful hunter</em> incur a @Check[type:flat|dc:5] misfire chance until the weapon is appeased."
+                },
                 "BravosBrew": {
                     "Greater": {
                         "FearLabel": "Brebaje de Bravo Mayor (Vs. Miedo)"
@@ -1530,6 +1717,10 @@
                     "Moderate": {
                         "FearLabel": "Moderado Brebaje de Bravo (Vs. Miedo)"
                     }
+                },
+                "DeckOfDestiny": {
+                    "MatchingSuitPrompt": "Is the drawn card's suit related the check?",
+                    "WealOrWoePrompt": "Select Weal or Woe."
                 },
                 "EagleEyeElixir": {
                     "Greater": {
@@ -1551,7 +1742,18 @@
                 },
                 "PhantomShroud": {
                     "StrikeLabel": "Manos fantasmales"
+                },
+                "ScapularOfShields": {
+                    "CriticalImmunityLabel": "Activate Scapular of Shields to gain critical immunity.",
+                    "ResistAllLabel": "Activate Scapular of Shields to gain resistance to all damage."
                 }
+            },
+            "ExemplaryFinisher": {
+                "Battledancer": "You can Step as a free action immediately after the finisher.",
+                "Braggart": "If the foe was temporarily immune to your @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}, their temporary immunity ends.",
+                "Fencer": "The foe is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} until your next turn.",
+                "Name": "Exemplary Finisher",
+                "Wit": "The foe takes a -2 circumstance penalty to attack rolls against you until the start of your next turn."
             },
             "FanesFourberie": {
                 "Prompt": "¿Tratar las cartas como dardos o dagas?"
@@ -1630,7 +1832,6 @@
                 }
             },
             "GeneralTraining": {
-                "AllowedDrops": "Dote general de primer nivel",
                 "Prompt": "Selecciona una dote general de primer nivel."
             },
             "Ghoul": {
@@ -1648,8 +1849,10 @@
             },
             "Goblin": {
                 "ChosenOfLamashtu": {
-                    "AllowedDrops": "Duende herencia",
                     "Prompt": "Seleccione una herencia goblin."
+                },
+                "CityScavenger": {
+                    "EarnIncome": "City Scavenger - Earn Income"
                 },
                 "ExtraSquishy": {
                     "Note": "Si obtienes un éxito en Squeeze, obtienes un éxito crítico en su lugar."
@@ -1663,6 +1866,11 @@
                 "TorchGoblin": {
                     "Note": "Mientras sufras daño de fuego persistente, todos tus ataques cuerpo a cuerpo contra criaturas adyacentes infligen [[/r 1[fire]] ] {1 Fire Damage} adicionales por dado de daño de arma."
                 }
+            },
+            "GoldenBladeOfMzali": {
+                "ElementalFormLabel": "You have cast elemental form using the Golden Blade of Mzali",
+                "LitLabel": "Golden Blade of Mzali is lit",
+                "PersistentDamageNote": "Unlike normal when taking two types of persistent damage, a creature needs only a single successful flat check to remove both the fire and bleed damage."
             },
             "Gunslinger": {
                 "Way": {
@@ -1685,6 +1893,19 @@
                 "SureFeet": {
                     "BalanceNote": "Si obtienes un éxito en una prueba de Acrobacias para Equilibrar, obtienes un éxito crítico en su lugar. No estás desprevenido cuando intentas Equilibrar.",
                     "ClimbNote": "Si obtienes un éxito en una prueba de Atletismo para escalar, obtienes un éxito crítico en su lugar. No estás desprevenido cuando intentas escalar."
+                }
+            },
+            "HarrowChosen": {
+                "Misaligned": "Misaligned",
+                "PartialMatch": "Partial Match",
+                "Prompt": "Does your card match your alignment?",
+                "TrueMatch": "True Match",
+                "Unmatched": "Unmatched"
+            },
+            "HarrowCourt": {
+                "BooksSuitPrompt": "Was the drawn card from Books?",
+                "Fiend": {
+                    "ToggleLabel": "Repeating a non-strike action"
                 }
             },
             "HarrowDeck": {
@@ -1735,6 +1956,12 @@
                 "TargetHuntedPrey": "El objetivo es tu presa cazada",
                 "TrackHuntedPrey": "Para rastrear presas cazadas"
             },
+            "Ifrit": {
+                "Lavasoul": {
+                    "MagmaSpike": "Magma Spike",
+                    "MagmaSpikeCriticalSpecialization": "Instead of the normal critical specialization effect, the target takes [[/r 1d6[persistent,fire]]] damage; you gain a bonus on this persistent damage equal to your item bonus to attack rolls on unarmed attacks."
+                }
+            },
             "Inventor": {
                 "Innovation": {
                     "Armor": {
@@ -1746,7 +1973,6 @@
                     },
                     "Prompt": "Seleccione una innovación.",
                     "Weapon": {
-                        "AllowedDrops": "Nivel 0 o 1 arma simple o marcial",
                         "Prompt": "Seleccione una innovación de armas."
                     }
                 },
@@ -1773,6 +1999,32 @@
                     "Label": "Investigación de un sujeto designado con Pursue a Lead"
                 }
             },
+            "Kineticist": {
+                "Impulse": {
+                    "Prompt": "Select an Impulse."
+                },
+                "KineticGate": {
+                    "DualGate": "Dual Gate",
+                    "ExpandThePortal": "Expand the Portal",
+                    "ForkThePath": "Fork the Path",
+                    "Junction": {
+                        "AuraJunction": "Aura Junction",
+                        "CriticalBlast": "Critical Blast",
+                        "ElementalResistance": "Elemental Resistance",
+                        "ImpulseJunction": "Impulse Junction",
+                        "SkillJunction": "Skill Junction"
+                    },
+                    "Prompt": {
+                        "Element": "Select an element.",
+                        "ExpandElement": "Select an element to expand.",
+                        "Gate": "Select a kinetic gate.",
+                        "Impulse": "Select an impulse feat.",
+                        "Junction": "Select a gate junction.",
+                        "Threshold": "Select a gate's threshold."
+                    },
+                    "SingleGate": "Single Gate"
+                }
+            },
             "Kobold": {
                 "DragonbloodParagon": {
                     "Dracomancer": "Dracomancer",
@@ -1783,6 +2035,14 @@
                 "DragonsPresence": {
                     "Note": "Cuando obtienes un éxito en una tirada de salvación contra un efecto de miedo, obtienes un éxito crítico en su lugar. Cuando tiras un fallo contra un efecto de miedo, obtienes un fallo crítico en su lugar."
                 }
+            },
+            "Label": {
+                "DamageType": "Damage Type",
+                "Enter": "Enter",
+                "Exit": "Exit",
+                "ResistanceType": "Resistance Type",
+                "SecondAttempt": "Second Attempt",
+                "ThirdAttempt": "Third Attempt"
             },
             "Leshy": {
                 "Seedpod": {
@@ -1798,6 +2058,8 @@
                 }
             },
             "LitCandle": "La vela esta encendida",
+            "LitCandlecap": "Candlecap is lit",
+            "LitFirePoi": "Fire Poi is lit",
             "LitTorch": "La antorcha esta encendida",
             "Lizardfolk": {
                 "GuidedByTheStars": {
@@ -1925,6 +2187,9 @@
                 "BrokenShell": "Shell está roto"
             },
             "Monk": {
+                "DragonRoar": {
+                    "Label": "First attack vs. frightened creature"
+                },
                 "OneInchPunch": {
                     "ThreeActionLabel": "Golpe de una pulgada (tres acciones)",
                     "TwoActionLabel": "Punzón de una pulgada (dos acciones)"
@@ -1934,6 +2199,9 @@
                 },
                 "StunningFist": {
                     "Note": "El objetivo debe tener éxito en una salvación de @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.monk.value)|traits:incapacitation|overrideTraits:true] contra tu CD de clase o ser @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix] {Stunned 1} (o @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix] {Stunned 3} en un fallo crítico)."
+                },
+                "WolfDrag": {
+                    "Note": "If the attack succeeds, you knock the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
                 }
             },
             "MountainStance": {
@@ -1942,7 +2210,6 @@
                 "MageArmor": "Postura de montaña con armadura de mago"
             },
             "Multitalented": {
-                "AllowedDrops": "Dote de dedicación multiclase de segundo nivel",
                 "Prompt": "Selecciona una dote de dedicación multiclase."
             },
             "Mummy": {
@@ -1966,6 +2233,13 @@
                     "CriticalNote": "El objetivo toma [[/r (1+@weapon.system.runes.striking)[persistent,poison]] ] {persistent poison damage} igual al número de dados de daño del arma",
                     "HoodedNote": "El objetivo también es @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh] {Dazzled} hasta el comienzo de tu próximo turno.",
                     "StrikeLabel": "Escupitajo venenoso"
+                }
+            },
+            "Obcisidaemon": {
+                "ConsumeSoul": {
+                    "EmpowerSpell": "Empower Spell",
+                    "EmpowerWeapon": "Empower Weapon",
+                    "Prompt": "Empower a Spell or Weapon?"
                 }
             },
             "Oracle": {
@@ -2014,6 +2288,7 @@
                 "ConsciousMind": "Seleccione una Mente Consciente.",
                 "CreatureSize": "Seleccione un tamaño de criatura.",
                 "DamageType": "Seleccione un tipo de daño.",
+                "DegreeOfSuccess": "Select the degree of success.",
                 "Deity": "Seleccione una deidad.",
                 "DeitysDomain": "Selecciona el dominio de una deidad.",
                 "DragonBreathWeapon": "Selecciona el arma de aliento de un dragón.",
@@ -2064,7 +2339,16 @@
                     "Note": "Cuando sientes la dirección, obtienes un resultado un grado de éxito mejor que el que obtuviste."
                 }
             },
+            "RelicGift": {
+                "DivineRetribution": {
+                    "CriticalSuccess": "If the target is evil, it is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the start of your next turn on a critical hit.",
+                    "Success": "If the target is evil, it is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of your next turn on a hit."
+                }
+            },
             "Rogue": {
+                "DistractingFeint": {
+                    "Text": "While a creature is flat-footed by your Feint, it also takes a -2 circumstance penalty to Perception checks and Reflex saves. @UUID[Compendium.pf2e.feat-effects.Item.7hRgBo0fRQBxMK7g]{Effect: Distracting Feint}"
+                },
                 "EldritchTrickster": {
                     "Prompt": "Selecciona un arquetipo multiclase lanzador de conjuros."
                 },
@@ -2090,7 +2374,8 @@
             "Shisk": {
                 "PiercingQuills": {
                     "Note": "El ataque desarmado de tus púas inflige @Localize[PF2E.PersistentDamage.Bleed1d4.success] en un golpe crítico."
-                }
+                },
+                "Quills": "Quills"
             },
             "Shoony": {
                 "EsteemedVisitor": {
@@ -2101,7 +2386,6 @@
                 }
             },
             "SkillMastery": {
-                "AllowedDrops": "Dotes de habilidad",
                 "ExpertPrompt": "Seleccione una habilidad en la que se convierta en experto.",
                 "MasterPrompt": "Seleccione una habilidad para convertirse en maestro."
             },
@@ -2143,6 +2427,14 @@
                 "Tailoring": "Sastreria",
                 "Weaving": "Costura",
                 "Woodworking": "Carpinteria"
+            },
+            "SpellEffectEvolutionSurge": {
+                "Amphibious": "Swim Speed",
+                "Climb": "Climb Speed",
+                "Fly": "Fly Speed",
+                "Prompt": "Select an evolution.",
+                "Sight": "Low-light vision and darkvision",
+                "Speed": "+20-foot status bonus to Speed"
             },
             "SpellEffectProtection": {
                 "Prompt": "Elija contra qué rasgo de alineación se está protegiendo."
@@ -2224,8 +2516,26 @@
                 "AgainstHumanoids": "Contra humanoides",
                 "Necromancer": "El objetivo es un nigromante."
             },
+            "Tattoo": {
+                "WildwoodInk": {
+                    "Greater": {
+                        "InForestLabel": "Wildwood Ink (Greater) (In Forest)"
+                    },
+                    "Major": {
+                        "InForestLabel": "Wildwood Ink (Major) (In Forest)"
+                    },
+                    "Normal": {
+                        "InForestLabel": "Wildwood Ink (In Forest)"
+                    }
+                }
+            },
             "TerrainExpertise": {
                 "Prompt": "Selecciona un terreno"
+            },
+            "TerrainStalker": {
+                "Rubble": "Rubble",
+                "Snow": "Snow",
+                "Underbrush": "Underbrush"
             },
             "Thaumaturge": {
                 "Implement": {
