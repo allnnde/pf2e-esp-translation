@@ -1,3 +1,12 @@
+# [4.3.0](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.14...v4.3.0) (2023-07-26)
+
+
+### Features
+
+* add new files and properties ([6ec2819](https://github.com/allnnde/pf2e-esp-translation/commit/6ec2819e242152f17b089ec0a317bd33db44f171))
+
+
+
 ## [4.2.14](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.13...v4.2.14) (2023-07-24)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * melee fix ([27058f2](https://github.com/allnnde/pf2e-esp-translation/commit/27058f2b3557261e41e1c09b5e8bbda866523922))
-
-
-
-## [4.2.10](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.9...v4.2.10) (2023-04-30)
-
-
-### Bug Fixes
-
-* Combat and Draw fixs ([be9f90d](https://github.com/allnnde/pf2e-esp-translation/commit/be9f90d9bca84f9e6a3d52b94e86dc901a4b8c66))
 
 
 
