@@ -1,3 +1,12 @@
+## [4.3.1](https://github.com/allnnde/pf2e-esp-translation/compare/v4.3.0...v4.3.1) (2023-07-28)
+
+
+### Bug Fixes
+
+* Update README.md ([d09a6e1](https://github.com/allnnde/pf2e-esp-translation/commit/d09a6e1fffe817d131948ed062a929f24f48af62))
+
+
+
 # [4.3.0](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.14...v4.3.0) (2023-07-26)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * fix "gota" traduction ([4f027b8](https://github.com/allnnde/pf2e-esp-translation/commit/4f027b8b5c9fa9b2d8abb6f0f910f2ba54ebb235))
-
-
-
-## [4.2.11](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.10...v4.2.11) (2023-05-01)
-
-
-### Bug Fixes
-
-* melee fix ([27058f2](https://github.com/allnnde/pf2e-esp-translation/commit/27058f2b3557261e41e1c09b5e8bbda866523922))
 
 
 
