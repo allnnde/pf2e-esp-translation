@@ -1,3 +1,12 @@
+## [4.3.2](https://github.com/allnnde/pf2e-esp-translation/compare/v4.3.1...v4.3.2) (2023-07-29)
+
+
+### Bug Fixes
+
+* add verified version ok ([3695a32](https://github.com/allnnde/pf2e-esp-translation/commit/3695a32e017338e43172e1a94c73617b2551f241))
+
+
+
 ## [4.3.1](https://github.com/allnnde/pf2e-esp-translation/compare/v4.3.0...v4.3.1) (2023-07-28)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * fix "fiesta" traduction ([df109a6](https://github.com/allnnde/pf2e-esp-translation/commit/df109a6310f4329546f37667ae54c0a52a27c31e))
-
-
-
-## [4.2.12](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.11...v4.2.12) (2023-06-10)
-
-
-### Bug Fixes
-
-* fix "gota" traduction ([4f027b8](https://github.com/allnnde/pf2e-esp-translation/commit/4f027b8b5c9fa9b2d8abb6f0f910f2ba54ebb235))
 
 
 
