@@ -1,3 +1,17 @@
+# [4.5.0](https://github.com/allnnde/pf2e-esp-translation/compare/v4.4.0...v4.5.0) (2023-08-24)
+
+
+### Bug Fixes
+
+* pipeline error ([bb1db41](https://github.com/allnnde/pf2e-esp-translation/commit/bb1db413324621a51501750cc89a7dbd3138718b))
+
+
+### Features
+
+* change file module for system ([aba5d7a](https://github.com/allnnde/pf2e-esp-translation/commit/aba5d7a3e6ae8d33fc0885377d715c944d8f6158))
+
+
+
 # [4.4.0](https://github.com/allnnde/pf2e-esp-translation/compare/v4.3.2...v4.4.0) (2023-08-12)
 
 
@@ -37,15 +51,6 @@
 ### Features
 
 * add new files and properties ([6ec2819](https://github.com/allnnde/pf2e-esp-translation/commit/6ec2819e242152f17b089ec0a317bd33db44f171))
-
-
-
-## [4.2.14](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.13...v4.2.14) (2023-07-24)
-
-
-### Bug Fixes
-
-* minimal fix ([0f1dd34](https://github.com/allnnde/pf2e-esp-translation/commit/0f1dd349d94ff3ecf2912859afed690523f66243))
 
 
 
