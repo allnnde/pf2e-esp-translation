@@ -20,3 +20,5 @@ styles: carpeta con el archivo para la modificacion de los estilos de la interfa
 ## Nota
 La traduccion del los compendios esta en manos del equipo de https://gitlab.com/ashmcleod/foundryvtt-pathfinder-2-es
 
+se usa convencional commits
+

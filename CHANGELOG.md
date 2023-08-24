@@ -1,45 +1,51 @@
+# [4.4.0](https://github.com/allnnde/pf2e-esp-translation/compare/v4.3.2...v4.4.0) (2023-08-12)
+
+
+### Bug Fixes
+
+* add new traductions ([02ccf03](https://github.com/allnnde/pf2e-esp-translation/commit/02ccf0364a9a8a53ab9c58b0c512188397db1ab8))
+* partial traduction of kingmaker-es ([5087f68](https://github.com/allnnde/pf2e-esp-translation/commit/5087f68cb1acacb21798d67006e2252ccd30b09e))
+
+
+### Features
+
+* all es.json traductions ([c852cde](https://github.com/allnnde/pf2e-esp-translation/commit/c852cde1f918672a46ba59969ce7ac29bfcaa2b3))
+
+
+
+## [4.3.2](https://github.com/allnnde/pf2e-esp-translation/compare/v4.3.1...v4.3.2) (2023-07-29)
+
+
+### Bug Fixes
+
+* add verified version ok ([3695a32](https://github.com/allnnde/pf2e-esp-translation/commit/3695a32e017338e43172e1a94c73617b2551f241))
+
+
+
+## [4.3.1](https://github.com/allnnde/pf2e-esp-translation/compare/v4.3.0...v4.3.1) (2023-07-28)
+
+
+### Bug Fixes
+
+* Update README.md ([d09a6e1](https://github.com/allnnde/pf2e-esp-translation/commit/d09a6e1fffe817d131948ed062a929f24f48af62))
+
+
+
+# [4.3.0](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.14...v4.3.0) (2023-07-26)
+
+
+### Features
+
+* add new files and properties ([6ec2819](https://github.com/allnnde/pf2e-esp-translation/commit/6ec2819e242152f17b089ec0a317bd33db44f171))
+
+
+
 ## [4.2.14](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.13...v4.2.14) (2023-07-24)
 
 
 ### Bug Fixes
 
 * minimal fix ([0f1dd34](https://github.com/allnnde/pf2e-esp-translation/commit/0f1dd349d94ff3ecf2912859afed690523f66243))
-
-
-
-## [4.2.13](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.12...v4.2.13) (2023-06-10)
-
-
-### Bug Fixes
-
-* fix "fiesta" traduction ([df109a6](https://github.com/allnnde/pf2e-esp-translation/commit/df109a6310f4329546f37667ae54c0a52a27c31e))
-
-
-
-## [4.2.12](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.11...v4.2.12) (2023-06-10)
-
-
-### Bug Fixes
-
-* fix "gota" traduction ([4f027b8](https://github.com/allnnde/pf2e-esp-translation/commit/4f027b8b5c9fa9b2d8abb6f0f910f2ba54ebb235))
-
-
-
-## [4.2.11](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.10...v4.2.11) (2023-05-01)
-
-
-### Bug Fixes
-
-* melee fix ([27058f2](https://github.com/allnnde/pf2e-esp-translation/commit/27058f2b3557261e41e1c09b5e8bbda866523922))
-
-
-
-## [4.2.10](https://github.com/allnnde/pf2e-esp-translation/compare/v4.2.9...v4.2.10) (2023-04-30)
-
-
-### Bug Fixes
-
-* Combat and Draw fixs ([be9f90d](https://github.com/allnnde/pf2e-esp-translation/commit/be9f90d9bca84f9e6a3d52b94e86dc901a4b8c66))
 
 
 
