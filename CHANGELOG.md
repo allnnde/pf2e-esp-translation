@@ -1,3 +1,12 @@
+## [4.5.1](https://github.com/allnnde/pf2e-esp-translation/compare/v4.4.1...v4.5.1) (2023-08-24)
+
+
+### Bug Fixes
+
+* force generacion version ([0c11b8d](https://github.com/allnnde/pf2e-esp-translation/commit/0c11b8d910a9b49523949a7993909469a4b48372))
+
+
+
 ## [4.4.1](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.0...v4.4.1) (2023-08-24)
 
 
@@ -42,15 +51,6 @@
 ### Bug Fixes
 
 * add verified version ok ([3695a32](https://github.com/allnnde/pf2e-esp-translation/commit/3695a32e017338e43172e1a94c73617b2551f241))
-
-
-
-## [4.3.1](https://github.com/allnnde/pf2e-esp-translation/compare/v4.3.0...v4.3.1) (2023-07-28)
-
-
-### Bug Fixes
-
-* Update README.md ([d09a6e1](https://github.com/allnnde/pf2e-esp-translation/commit/d09a6e1fffe817d131948ed062a929f24f48af62))
 
 
 
