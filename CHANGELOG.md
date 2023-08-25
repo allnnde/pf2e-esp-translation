@@ -1,3 +1,12 @@
+## [4.5.3](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.2...v4.5.3) (2023-08-25)
+
+
+### Bug Fixes
+
+* kingmaker-es.json ([c81ba5f](https://github.com/allnnde/pf2e-esp-translation/commit/c81ba5f2593a86a3b7232c499e1e7605599fcab5))
+
+
+
 ## [4.5.2](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.1...v4.5.2) (2023-08-25)
 
 
@@ -36,21 +45,6 @@
 ### Features
 
 * change file module for system ([aba5d7a](https://github.com/allnnde/pf2e-esp-translation/commit/aba5d7a3e6ae8d33fc0885377d715c944d8f6158))
-
-
-
-# [4.4.0](https://github.com/allnnde/pf2e-esp-translation/compare/v4.3.2...v4.4.0) (2023-08-12)
-
-
-### Bug Fixes
-
-* add new traductions ([02ccf03](https://github.com/allnnde/pf2e-esp-translation/commit/02ccf0364a9a8a53ab9c58b0c512188397db1ab8))
-* partial traduction of kingmaker-es ([5087f68](https://github.com/allnnde/pf2e-esp-translation/commit/5087f68cb1acacb21798d67006e2252ccd30b09e))
-
-
-### Features
-
-* all es.json traductions ([c852cde](https://github.com/allnnde/pf2e-esp-translation/commit/c852cde1f918672a46ba59969ce7ac29bfcaa2b3))
 
 
 
