@@ -1,3 +1,12 @@
+## [4.5.4](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.3...v4.5.4) (2023-08-27)
+
+
+### Bug Fixes
+
+* fix aligment traduction ([dfa4d31](https://github.com/allnnde/pf2e-esp-translation/commit/dfa4d31b5018089714a6eb9ab8a6381d97c5eaf7))
+
+
+
 ## [4.5.3](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.2...v4.5.3) (2023-08-25)
 
 
@@ -31,20 +40,6 @@
 ### Bug Fixes
 
 * fix module json again ([763e9d0](https://github.com/allnnde/pf2e-esp-translation/commit/763e9d0721e417be80d49094836760866e10e27a))
-
-
-
-# [4.5.0](https://github.com/allnnde/pf2e-esp-translation/compare/v4.4.0...v4.5.0) (2023-08-24)
-
-
-### Bug Fixes
-
-* pipeline error ([bb1db41](https://github.com/allnnde/pf2e-esp-translation/commit/bb1db413324621a51501750cc89a7dbd3138718b))
-
-
-### Features
-
-* change file module for system ([aba5d7a](https://github.com/allnnde/pf2e-esp-translation/commit/aba5d7a3e6ae8d33fc0885377d715c944d8f6158))
 
 
 
