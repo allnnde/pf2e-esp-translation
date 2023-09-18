@@ -1,3 +1,12 @@
+## [4.5.7](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.6...v4.5.7) (2023-09-18)
+
+
+### Bug Fixes
+
+* spell traduction ([e4c48b3](https://github.com/allnnde/pf2e-esp-translation/commit/e4c48b394d8ae67d9b81bfbbb4e7d22c7d26ef20))
+
+
+
 ## [4.5.6](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.5...v4.5.6) (2023-09-17)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * kingmaker-es.json ([c81ba5f](https://github.com/allnnde/pf2e-esp-translation/commit/c81ba5f2593a86a3b7232c499e1e7605599fcab5))
-
-
-
-## [4.5.2](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.1...v4.5.2) (2023-08-25)
-
-
-### Bug Fixes
-
-* kingmaker fix ([f7091c3](https://github.com/allnnde/pf2e-esp-translation/commit/f7091c3d75c4b41d9b552b6db88a3a1c82c1e2e7))
 
 
 
