@@ -1,3 +1,12 @@
+## [4.5.10](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.9...v4.5.10) (2023-09-23)
+
+
+### Bug Fixes
+
+* object taps ([5f9a1d4](https://github.com/allnnde/pf2e-esp-translation/commit/5f9a1d41c083b4f7640720d6abc43e8cc94138d5))
+
+
+
 ## [4.5.9](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.8...v4.5.9) (2023-09-23)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * texts ([ecb08bd](https://github.com/allnnde/pf2e-esp-translation/commit/ecb08bd585823584319632edb57dd2c8634d16d2))
-
-
-
-## [4.5.5](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.4...v4.5.5) (2023-09-02)
-
-
-### Bug Fixes
-
-* solver bad traduction ([d9f42f0](https://github.com/allnnde/pf2e-esp-translation/commit/d9f42f0aed9e3c444a590d6d1a9bb804a921efe7))
 
 
 
