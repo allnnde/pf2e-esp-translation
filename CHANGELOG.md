@@ -1,3 +1,12 @@
+## [4.5.9](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.8...v4.5.9) (2023-09-23)
+
+
+### Bug Fixes
+
+* Salpicadura ([223ce13](https://github.com/allnnde/pf2e-esp-translation/commit/223ce13e86e8a387fd754dc717e5ddb1bb03c1fd))
+
+
+
 ## [4.5.8](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.7...v4.5.8) (2023-09-18)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * solver bad traduction ([d9f42f0](https://github.com/allnnde/pf2e-esp-translation/commit/d9f42f0aed9e3c444a590d6d1a9bb804a921efe7))
-
-
-
-## [4.5.4](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.3...v4.5.4) (2023-08-27)
-
-
-### Bug Fixes
-
-* fix aligment traduction ([dfa4d31](https://github.com/allnnde/pf2e-esp-translation/commit/dfa4d31b5018089714a6eb9ab8a6381d97c5eaf7))
 
 
 
