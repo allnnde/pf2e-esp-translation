@@ -1,3 +1,12 @@
+## [4.5.8](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.7...v4.5.8) (2023-09-18)
+
+
+### Bug Fixes
+
+* LowLightVision traduction ([0e43b2d](https://github.com/allnnde/pf2e-esp-translation/commit/0e43b2d4848a44f0c41b085953fdb346b8368c2e))
+
+
+
 ## [4.5.7](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.6...v4.5.7) (2023-09-18)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * fix aligment traduction ([dfa4d31](https://github.com/allnnde/pf2e-esp-translation/commit/dfa4d31b5018089714a6eb9ab8a6381d97c5eaf7))
-
-
-
-## [4.5.3](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.2...v4.5.3) (2023-08-25)
-
-
-### Bug Fixes
-
-* kingmaker-es.json ([c81ba5f](https://github.com/allnnde/pf2e-esp-translation/commit/c81ba5f2593a86a3b7232c499e1e7605599fcab5))
 
 
 
