@@ -22,6 +22,7 @@ jobs:
 
       # Create a zip file with all files required by the module to add to the release
       - name: Create Artifact
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}
         id: build-zip
         run: zip -r $ZIP_FILENAME.zip $PACKAGE_CONTENT
 
