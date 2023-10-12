@@ -1,3 +1,12 @@
+## [4.5.11](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.10...v4.5.11) (2023-10-12)
+
+
+### Bug Fixes
+
+* rollback action-en ([6bdff6c](https://github.com/allnnde/pf2e-esp-translation/commit/6bdff6cbc71cbe400594194887d5720f255d5964))
+
+
+
 ## [4.5.10](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.9...v4.5.10) (2023-09-23)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * spell traduction ([e4c48b3](https://github.com/allnnde/pf2e-esp-translation/commit/e4c48b394d8ae67d9b81bfbbb4e7d22c7d26ef20))
-
-
-
-## [4.5.6](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.5...v4.5.6) (2023-09-17)
-
-
-### Bug Fixes
-
-* texts ([ecb08bd](https://github.com/allnnde/pf2e-esp-translation/commit/ecb08bd585823584319632edb57dd2c8634d16d2))
 
 
 
