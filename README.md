@@ -18,7 +18,7 @@ lang: carpeta donde estan los json para traducciones del sistema, cualquer cambi
 styles: carpeta con el archivo para la modificacion de los estilos de la interface de usuario en caso de necesitar algun ajuste o alineamiento
 
 ## Nota
-La traduccion del los compendios esta en manos del equipo de https://gitlab.com/ashmcleod/foundryvtt-pathfinder-2-es
+La traduccion del los compendios esta en manos del equipo de https://gitlab.com/ashmcleod/foundryvtt-pathfinder-2-es, el manifiesto esta en dicho repositorio
 
 se usa convencional commits.
 
