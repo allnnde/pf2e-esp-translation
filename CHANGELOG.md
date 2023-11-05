@@ -1,3 +1,12 @@
+## [4.5.12](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.11...v4.5.12) (2023-11-05)
+
+
+### Bug Fixes
+
+* fuerza != fortaleza ([e8b9028](https://github.com/allnnde/pf2e-esp-translation/commit/e8b9028c5cd84aea1a80fa1d017acae1d9185de6))
+
+
+
 ## [4.5.11](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.10...v4.5.11) (2023-10-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * LowLightVision traduction ([0e43b2d](https://github.com/allnnde/pf2e-esp-translation/commit/0e43b2d4848a44f0c41b085953fdb346b8368c2e))
-
-
-
-## [4.5.7](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.6...v4.5.7) (2023-09-18)
-
-
-### Bug Fixes
-
-* spell traduction ([e4c48b3](https://github.com/allnnde/pf2e-esp-translation/commit/e4c48b394d8ae67d9b81bfbbb4e7d22c7d26ef20))
 
 
 
