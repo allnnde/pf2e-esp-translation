@@ -6,6 +6,9 @@
 
 <!-- ABOUT THE PROJECT -->
 
+## Colaboraciones
+Para poder lograr que el flujo automatico funcione, los comits y las pr deberian seguir la se usa [Convencional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
 ## About The Project
 
 Traduccion no oficial al español del sistema de Pathfinder Segunda edicion para Foundy VTT.
@@ -20,5 +23,5 @@ styles: carpeta con el archivo para la modificacion de los estilos de la interfa
 ## Nota
 La traduccion del los compendios esta en manos del equipo de https://gitlab.com/ashmcleod/foundryvtt-pathfinder-2-es, el manifiesto esta en dicho repositorio
 
-se usa convencional commits.
+
 
