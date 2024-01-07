@@ -1,3 +1,12 @@
+## [4.5.15](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.14...v4.5.15) (2024-01-07)
+
+
+### Bug Fixes
+
+* solve error css ([c780258](https://github.com/allnnde/pf2e-esp-translation/commit/c780258fedac8e0bfa43ccd7aaa663f22eb49d6f))
+
+
+
 ## [4.5.14](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.13...v4.5.14) (2023-11-21)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * rollback action-en ([6bdff6c](https://github.com/allnnde/pf2e-esp-translation/commit/6bdff6cbc71cbe400594194887d5720f255d5964))
-
-
-
-## [4.5.10](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.9...v4.5.10) (2023-09-23)
-
-
-### Bug Fixes
-
-* object taps ([5f9a1d4](https://github.com/allnnde/pf2e-esp-translation/commit/5f9a1d41c083b4f7640720d6abc43e8cc94138d5))
 
 
 
