@@ -1,3 +1,21 @@
+## [4.5.14](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.13...v4.5.14) (2023-11-21)
+
+
+### Bug Fixes
+
+* Update README.md ([55c31a8](https://github.com/allnnde/pf2e-esp-translation/commit/55c31a83a3bc5da7f81499e6a47e9eca6a184022))
+
+
+
+## [4.5.13](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.12...v4.5.13) (2023-11-20)
+
+
+### Bug Fixes
+
+* usa correct traductor ([964400f](https://github.com/allnnde/pf2e-esp-translation/commit/964400f4525b201ededfe9c4050cadd0098335b5))
+
+
+
 ## [4.5.12](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.11...v4.5.12) (2023-11-05)
 
 
@@ -22,24 +40,6 @@
 ### Bug Fixes
 
 * object taps ([5f9a1d4](https://github.com/allnnde/pf2e-esp-translation/commit/5f9a1d41c083b4f7640720d6abc43e8cc94138d5))
-
-
-
-## [4.5.9](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.8...v4.5.9) (2023-09-23)
-
-
-### Bug Fixes
-
-* Salpicadura ([223ce13](https://github.com/allnnde/pf2e-esp-translation/commit/223ce13e86e8a387fd754dc717e5ddb1bb03c1fd))
-
-
-
-## [4.5.8](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.7...v4.5.8) (2023-09-18)
-
-
-### Bug Fixes
-
-* LowLightVision traduction ([0e43b2d](https://github.com/allnnde/pf2e-esp-translation/commit/0e43b2d4848a44f0c41b085953fdb346b8368c2e))
 
 
 
