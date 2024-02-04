@@ -1,3 +1,12 @@
+## [4.5.17](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.16...v4.5.17) (2024-02-04)
+
+
+### Bug Fixes
+
+* lateral character bar ([e0d2fbf](https://github.com/allnnde/pf2e-esp-translation/commit/e0d2fbff3a3aff293b53c68ae83a22aef9d0d3f7))
+
+
+
 ## [4.5.16](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.15...v4.5.16) (2024-01-08)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * usa correct traductor ([964400f](https://github.com/allnnde/pf2e-esp-translation/commit/964400f4525b201ededfe9c4050cadd0098335b5))
-
-
-
-## [4.5.12](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.11...v4.5.12) (2023-11-05)
-
-
-### Bug Fixes
-
-* fuerza != fortaleza ([e8b9028](https://github.com/allnnde/pf2e-esp-translation/commit/e8b9028c5cd84aea1a80fa1d017acae1d9185de6))
 
 
 
