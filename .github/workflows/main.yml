@@ -46,8 +46,11 @@ jobs:
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         run: npx @ghost-fvtt/foundry-publish
         env:
-          FVTT_MANIFEST_PATH: 'module.json'
+          FVTT_MANIFEST_URL: 'https://github.com/allnnde/pf2e-esp-translation/releases/latest/download/module.json'
           FVTT_PACKAGE_ID: ${{ secrets.FVTT_PACKAGE_ID }}
           FVTT_USERNAME: ${{ secrets.FVTT_USERNAME }}
           FVTT_PASSWORD: ${{ secrets.FVTT_PASSWORD }}
-          FVTT_USE_NEW_PACKAGE_ADMINISTRATION_INTERFACE: true
+          FVTT_MINIMUM_CORE_VERSION: 11
+          FVTT_PACKAGE_VERSION: ${{ steps.changelog.outputs.tag }}
+          FVTT_VERIFIED_CORE_VERSION: 11
+          FVTT_COMPATIBLE_CORE_VERSION: 11
