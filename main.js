@@ -19,7 +19,7 @@ class Translator {
 Hooks.once("init", () => {
   game.langEsPf2e = Translator.get();
 
-  game.settings.register("lang-pf2-compendium-es", "dual-language-names", {
+  game.settings.register("pf2e-es", "dual-language-names", {
     name: "Nombres en Español e inglés",
     hint: "Además del nombre aleman, también se utiliza el inglés.",
     scope: "world",
@@ -32,7 +32,7 @@ Hooks.once("init", () => {
   });
 
   Babele.get().register({
-    module: "lang-pf2-compendium-es",
+    module: "pf2e-es",
     lang: "es",
     dir: "translation/es/compendium",
   });
@@ -107,7 +107,7 @@ Hooks.once("init", () => {
 Hooks.once("babele.ready", () => {
   game.pf2e.ConditionManager.initialize();
 
-  if (game.modules.get("lang-pf2-compendium-es")?.active) {
+  if (game.modules.get("pf2e-es")?.active) {
     ui.notifications.error('El paquete "Sistema PF2 Español" todavía está instalado en esta parte; ya no es útil y, por lo tanto, se puede desinstalar.');
   }
 });
