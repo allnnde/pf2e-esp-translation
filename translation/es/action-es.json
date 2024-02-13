@@ -1,0 +1,1035 @@
+{
+  "PF2E": {
+    "Action": {
+      "ApplyEffect": "Apply Effect",
+      "ExpandDescription": "Expand Description",
+      "Range": {
+        "IncrementN": "Range Increment {n} ft.",
+        "MaxN": "Range {n} ft."
+      },
+      "Use": "Use"
+    },
+    "Actions": {
+      "AdministerFirstAid": {
+        "Description": "<p>Prestas primeros auxilios a una criatura adyacente que est&eacute; moribunda o sangrando.&nbsp;Si una criatura se est&aacute; muriendo y sangrando, elige qu&eacute; dolencia quieres tratar antes de tirar.&nbsp;Puedes Administrar Primeros Auxilios de nuevo para intentar remediar el otro efecto.</p><ol><li><strong>Estabilizar</strong> Intenta un chequeo de Medicina en una criatura que tenga 0 Puntos de Vida y la condici&oacute;n de moribundo. La CC es igual a 5 + la CC de la tirada de recuperaci&oacute;n de esa criatura (normalmente 15 + su valor de moribundo).</li><li><strong>Stop Bleeding</strong> Intenta un chequeo de Medicina sobre una criatura que est&eacute; recibiendo da&ntilde;o persistente por hemorragia, d&aacute;ndole la oportunidad de hacer otro chequeo plano para eliminar el da&ntilde;o persistente. La DC suele ser la DC del efecto que caus&oacute; la hemorragia.</li></ol><p><strong>Exito</strong> Si intentas estabilizar, la criatura pierde la condici&oacute;n de moribunda (pero permanece inconsciente). Si intentas detener la hemorragia, la criatura intenta un chequeo plano para detener la hemorragia.<br /><strong>Fallo Critico</strong> Si estabas intentando estabilizar, el valor de muerte de la criatura aumenta en 1. Si estabas intentando detener la hemorragia, recibe inmediatamente una cantidad de da&ntilde;o igual a su da&ntilde;o de hemorragia persistente.</p>",
+        "Stabilize": {
+          "Description": "<p>Prestas primeros auxilios a una criatura adyacente que est&eacute; moribunda o sangrando.&nbsp;Si una criatura se est&aacute; muriendo y sangrando, elige qu&eacute; dolencia quieres tratar antes de tirar.&nbsp;Puedes Administrar Primeros Auxilios de nuevo para intentar remediar el otro efecto.</p><ol><li><strong>Estabilizar</strong> Intenta un chequeo de Medicina en una criatura que tenga 0 Puntos de Vida y la condici&oacute;n de moribundo. La CD es igual a 5 + la CD de la tirada de recuperaci&oacute;n de esa criatura (normalmente 15 + su valor de moribundo).</li><li><strong>Parar sangrado</strong> Intenta un chequeo de Medicina sobre una criatura que est&eacute; recibiendo da&ntilde;o persistente por hemorragia, d&aacute;ndole la oportunidad de hacer otro chequeo plano para eliminar el da&ntilde;o persistente. La CD suele ser la CD del efecto que caus&oacute; la hemorragia.</li></ol><p><strong>Exito</strong> Si intentas estabilizar, la criatura pierde la condici&oacute;n de moribunda (pero permanece inconsciente). Si intentas detener la hemorragia, la criatura intenta un chequeo plano para detener la hemorragia.<br /><strong>Fallo Critico</strong> Si estabas intentando estabilizar, el valor de muerte de la criatura aumenta en 1. Si estabas intentando detener la hemorragia, recibe inmediatamente una cantidad de da&ntilde;o igual a su da&ntilde;o de hemorragia persistente.</p>",
+          "DifficultyClass": {
+            "Label": "Administrar Primeros Auxilios DC"
+          },
+          "Notes": {
+            "criticalFailure": "<strong> Fallo crítico </strong> El valor de muerte de la criatura aumenta en 1.",
+            "success": "<strong> Éxito </strong> La criatura pierde la condición de morir (pero permanece inconsciente)."
+          },
+          "Title": "Administrar Primeros Auxilios - Estabilizar"
+        },
+        "StopBleeding": {
+          "Description": "<p>Prestas primeros auxilios a una criatura adyacente que est&eacute; sangrando. Intenta un chequeo de Medicina en una criatura que est&eacute; recibiendo da&ntilde;o persistente por hemorragia, d&aacute;ndole la oportunidad de hacer otro chequeo plano para eliminar el da&ntilde;o persistente. La CD suele ser la CD del efecto que caus&oacute; la hemorragia.</p><p><strong>Exito </strong>La criatura intenta un chequeo plano para acabar con la hemorragia..<br /><strong>Fallo Critico</strong> La criatura recibe inmediatamente una cantidad de da&ntilde;o igual a su da&ntilde;o de hemorragia persistente.</p>",
+          "Notes": {
+            "criticalFailure": "<strong> Fallo crítico </strong> La criatura recibe inmediatamente una cantidad de daño igual a su daño por sangrado persistente.",
+            "success": "<strong> Éxito </strong> La criatura intenta un jaque plano para detener el sangrado."
+          },
+          "Title": "Administrar Primeros Auxilios - Detener Sangrado"
+        },
+        "Title": "Administrar Primeros Auxilios",
+        "Warning": {
+          "TargetNotDying": "La criatura objetivo no está muriendo.",
+          "UnknownVariant": "Variante desconocida {variant} usada para Administrar Primeros Auxilios, use una de {variants} ."
+        }
+      },
+      "AffixATalisman": {
+        "Description": "<p><strong>Requirements</strong> You must use a @UUID[Compendium.pf2e.equipment-srd.Item.vLGDUFrg4yGzpTQX]{repair toolkit}.</p><hr><p>You spend 10 minutes affixing a talisman to an item, placing the item on a stable surface and using the repair toolkit with both hands. You can also use this activity to remove a talisman. Attaching more than one talisman to an item deactivates all the talismans. They must be removed and re-affixed before they can be used again.</p>",
+        "Title": "Affix a Talisman"
+      },
+      "Aid": {
+        "Description": "<p>Intentas ayudar a tu aliado con una tarea. Para usar esta reacci&oacute;n, primero debes prepararte para ayudar, normalmente usando una acci&oacute;n durante tu turno. Debes explicar al GM exactamente c&oacute;mo intentas ayudar, y ellos determinan si puedes Ayudar a tu aliado.</p><p>Cuando uses tu reacci&oacute;n de Ayuda, intenta un chequeo de habilidad o una tirada de ataque del tipo que decida el GM. La CD t&iacute;pica es 20, pero el GM puede ajustar esta CD para tareas particularmente dif&iacute;ciles o f&aacute;ciles. El GM puede a&ntilde;adir cualquier rasgo relevante a tu acci&oacute;n preparatoria o a tu reacci&oacute;n de Ayuda dependiendo de la situaci&oacute;n, o incluso permitirte realizar chequeos de Ayuda que no sean chequeos de habilidad o tiradas de ataque.</p><p><strong>Exito Critico</strong> Otorgas a tu aliado un bonificador +2 de circunstancia al chequeo de activaci&oacute;n. Si eres un maestro con el chequeo que has intentado, la bonificaci&oacute;n es de +3, y si eres legendario, es de +4.<br /><strong>Exito</strong> Otorgas a tu aliado un bonificador +1 de circunstancia al chequeo desencadenante.<br /><strong>Fallo Critico</strong> Tu aliado sufre una penalizaci&oacute;n de circunstancia de -1 al chequeo desencadenante.</p>",
+        "Notes": {
+          "criticalFailure": "Tu aliado sufre una penalización de circunstancia de -1 al chequeo desencadenante.",
+          "criticalSuccess": "Otorgas a tu aliado un bonificador +2 de circunstancia al chequeo de activación. Si eres un maestro con el chequeo que has intentado, la bonificación es de +3, y si eres legendario, es de +4.",
+          "success": "Otorgas a tu aliado un bonificador +1 de circunstancia al chequeo desencadenante."
+        },
+        "Title": "Ayuda",
+        "Warning": {
+          "NoStatistic": "La acción ayuda puede utilizarse con diferentes estadísticas, y no se especificó ninguna estadística."
+        }
+      },
+      "ArcaneSlam": {
+        "Modifier": {
+          "SizeDifference": "Diferencia de tamaño"
+        },
+        "Notes": {
+          "NoTarget": "<strong> Diferencia de tamaño </strong> Recibes una penalización de circunstancia de -2 a tu prueba si el objetivo es un tamaño más grande que tú y una penalización de circunstancia de -4 si es más grande que eso. Obtienes un bonificador de circunstancia de +2 a tu prueba si el objetivo es un tamaño más pequeño que tú y un bonificador de circunstancia de +4 si es más pequeño que eso.",
+          "criticalFailure": "<strong> Fallo crítico </strong> La criatura se libera y ya no está @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei] {grabbed} o @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM] {restrained} por ti.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Golpeas al enemigo y la energía mágica lo abruma. La criatura es noqueada @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {prone} , se convierte en @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh] {dazzled} durante 1 asalto y recibe un daño igual a [[/r 2d6 + @abilities.str.mod # Damage: Arcane Slam]] {2d6 plus your Strength modifier} . El enemigo ya no es @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei] {grabbed} o @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM] {restrained} por ti.",
+          "failure": "<strong> Fallo </strong> No puedes golpear a la criatura, pero tu control sobre la criatura permanece.",
+          "success": "<strong> Éxito </strong> Golpeas al enemigo. La criatura es derribada @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {prone} y ​​recibe un daño igual a tu [[/r @abilities.str.mod # Damage: Arcane Slam]] {Strength modifier} . El enemigo ya no es @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei] {grabbed} o @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM] {restrained} por ti."
+        },
+        "Title": "Embate Arcano"
+      },
+      "ArrestAFall": {
+        "Description": "<p><strong>Trigger</strong> You fall.</p><p><strong>Requirements</strong> You have a fly Speed.</p><hr><p>You attempt your choice of an Acrobatics check or Reflex save to slow your fall. The DC is typically 15, but it might be higher due to air turbulence or other circumstances.</p><p><strong>Success</strong> You take no damage from the fall.</p>",
+        "Notes": {
+          "success": "<strong>Success</strong> You take no damage from the fall."
+        },
+        "Title": "Arrest A Fall"
+      },
+      "AvertGaze": {
+        "Description": "<p>You avert your gaze from danger, such as a medusa's gaze. You gain a +2 circumstance bonus to saves against visual abilities that require you to look at a creature or object, such as a medusa's petrifying gaze. Your gaze remains averted until the start of your next turn.</p>",
+        "Title": "Avert Gaze"
+      },
+      "AvoidNotice": {
+        "Description": "<p>You attempt a Stealth check to avoid notice while traveling at half speed. If you have the Swift Sneak feat, you can move at full Speed rather than half, but you still can't use another exploration activity while you do so. If you have the Legendary Sneak feat, you can move at full Speed and use a second exploration activity. If you're Avoiding Notice at the start of an encounter, you usually roll a Stealth check instead of a Perception check both to determine your initiative and to see if the enemies notice you (based on their Perception DCs, as normal for Sneak, regardless of their initiative check results).</p>",
+        "Notes": {
+          "criticalSuccess": "<strong> Éxito crítico </strong> Eres @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf] {undetected} por la criatura durante tu movimiento y permaneces sin ser detectado por la criatura al final del mismo. <br/> <br/> Consulte la acción @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4] {Sneak} para obtener más detalles.",
+          "success": "<strong> Éxito </strong> Eres @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf] {undetected} por la criatura durante tu movimiento y permaneces sin ser detectado por la criatura al final del mismo. <br/> <br/> Consulte la acción @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4] {Sneak} para obtener más detalles."
+        },
+        "Title": "Evitar Aviso"
+      },
+      "Balance": {
+        "Description": "<p>You move across a narrow surface or uneven ground, attempting an Acrobatics check against its Balance DC. You are flat-footed while on a narrow surface or uneven ground.</p><p><strong>Éxito crítico</strong> You move up to your Speed.<br><strong>Éxito</strong> You move up to your Speed, treating it as difficult terrain (every 5 feet costs 10 feet of movement).<br><strong>Fallo</strong> You must remain stationary to keep your balance (wasting the action) or you fall. If you fall, your turn ends.<br><strong>Fallo crítico</strong> You fall and your turn ends.</p><section class=\"sample-tasks\"><h2>Sample Balance Tasks</h2><p><strong>No entrenado</strong> tangled roots, uneven cobblestones</p><p><strong>Entrenado</strong> wooden beam</p><p><strong>Experto</strong> deep, loose gravel</p><p><strong>Maestro</strong> tightrope, smooth sheet of ice</p><p><strong>Legendario</strong> razor's edge, chunks of floor falling in midair</p></section>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo Crítico </strong> Te caes y termina tu turno.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Te mueves hasta tu Velocidad.",
+          "failure": "<strong> Fallo </strong> Debes quedarte parado para mantener el equilibrio (desperdiciando la acción) o te caes. Si caes, tu turno termina.",
+          "success": "<strong> Éxito </strong> Te mueves hasta tu Velocidad, tratándolo como terreno difícil (cada 5 pies cuesta 10 pies de movimiento)."
+        },
+        "SampleTasks": {
+          "Untrained": "tangled roots, uneven cobblestones",
+          "Trained": "wooden beam",
+          "Expert": "deep, loose gravel",
+          "Master": "tightrope, smooth sheet of ice",
+          "Legendary": "razor's edge, chunks of floor falling in midair"
+        },
+        "Title": "Balance"
+      },
+      "BonMot": {
+        "Notes": {
+          "criticalFailure": "<strong> Fracaso crítico </strong> Tu broma es atroz. Recibes el mismo castigo que recibiría un enemigo si hubieras tenido éxito. Esto termina después de 1 minuto o si emite otro Bon Mot y tiene éxito. @UUID[Compendium.pf2e.feat-effects.GoSls6SKCFmSoDxT] {Effect: Bon Mot}",
+          "criticalSuccess": "<strong> Éxito crítico </strong> El objetivo se distrae y recibe una penalización de estado de -3 a Percepción y Salvaciones de Voluntad durante 1 minuto. El objetivo puede terminar el efecto antes de tiempo con una réplica a tu Bon Mot. Esto puede ser una sola acción que tenga el rasgo concentrado o una acción de habilidad apropiada para enmarcar su réplica. El DJ determina qué acciones de habilidad califican, aunque debe realizar al menos 1 acción. Por lo general, la réplica necesita usar una acción de habilidad lingüística basada en Carisma.@UUID[Compendium.pf2e.feat-effects.CtrZFI3RV0yPNzTv] {Effect: Bon Mot (Critical Success)}",
+          "success": "<strong> Éxito </strong> El objetivo se distrae y sufre una penalización de estado de -2 a la Percepción y la Voluntad salva durante 1 minuto. El objetivo puede terminar el efecto antes de tiempo con una réplica a tu Bon Mot. Esto puede ser una sola acción que tenga el rasgo concentrado o una acción de habilidad apropiada para enmarcar su réplica. El DJ determina qué acciones de habilidad califican, aunque debe realizar al menos 1 acción. Por lo general, la réplica necesita usar una acción de habilidad lingüística basada en Carisma. @UUID[Compendium.pf2e.feat-effects.GoSls6SKCFmSoDxT]{Effect: Bon Mot}"
+        },
+        "Title": "Buen mot"
+      },
+      "Burrow": {
+        "Description": "<p><strong>Requirements</strong> You have a burrow Speed.</p><hr><p>You dig your way through dirt, sand, or a similar loose material at a rate up to your burrow Speed. You can't burrow through rock or other substances denser than dirt unless you have an ability that allows you to do so.</p>",
+        "Title": "Burrow"
+      },
+      "Climb": {
+        "Description": "<p><strong>Requirements</strong> You have two hands free.</p><hr><p>You attempt an Athletics check to move a maximum distance of 5 feet up, down, or across an incline. You're @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while climbing unless you have a climb Speed. The GM determines the DC based on the nature of the incline and environmental circumstances; you might get an automatic critical success on an incline that's trivial to climb. If your land Speed is 40 feet or higher, increase the maximum distance by 5 feet for every 20 feet of Speed above 20 feet.</p><p><strong>Critical Success</strong> You move along the incline, increasing the maximum distance by 5 feet.<br><strong>Success</strong> You move along the incline.<br><strong>Critical Failure</strong> You fall. If you began the climb on stable ground, you fall and land @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Te caes. Si comenzaste el ascenso en terreno estable, te caes y aterrizas @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone}.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Subes, cruzas o bajas con seguridad la pendiente 5 pies más 5 pies por cada 20 pies de tu Velocidad terrestre (un total de 10 pies para la mayoría de los PJ).",
+          "success": "<strong> Éxito </strong> Subes, cruzas o bajas con seguridad la pendiente 5 pies por cada 20 pies de tu Velocidad terrestre (un total de 5 pies para la mayoría de los PJ, un mínimo de 5 pies si tu Velocidad es inferior a 20 pies)."
+        },
+        "SampleTasks": {
+          "Untrained": "ladder, steep slope, low-branched tree",
+          "Trained": "rigging, rope, typical tree",
+          "Expert": "wall with small handholds and footholds",
+          "Master": "ceiling with handholds and footholds, rock wall",
+          "Legendary": "smooth surface"
+        },
+        "Title": "Trepar"
+      },
+      "Coerce": {
+        "Description": "<p>With threats either veiled or overt, you attempt to bully a creature into doing what you want. You must spend at least 1 minute of conversation with a creature you can see and that can either see or sense you. At the end of the conversation, attempt an Intimidation check against the target's Will DC, modified by any circumstances the GM determines. The attitudes referenced in the effects below are summarized in the Changing Attitudes sidebar and described in full in the Conditions Appendix.</p><p><strong>Éxito crítico</strong> The target gives you the information you seek or agrees to follow your directives so long as they aren't likely to harm the target in any way. The target continues to comply for an amount of time determined by the GM but not exceeding 1 day, at which point the target becomes unfriendly (if they weren't already unfriendly or hostile). However, the target is too scared of you to retaliate - at least in the short term.<br><strong>Éxito</strong> As critical success, but once the target becomes unfriendly, they might decide to act against you — for example, by reporting you to the authorities or assisting your enemies.<br><strong>Fallo</strong> The target doesn't do what you say, and if they were not already unfriendly or hostile, they become unfriendly.<br><strong>Fallo crítico</strong> The target refuses to comply, becomes hostile if they weren't already, and can't be Coerced by you for at least 1 week.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> El objetivo se niega a obedecer, se vuelve hostil si aún no lo era y no puede ser coaccionado por ti durante al menos 1 semana.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> El objetivo le da la información que busca o accede a seguir sus instrucciones siempre que no sea probable que perjudique al objetivo de ninguna manera. El objetivo continúa obedeciendo durante un período de tiempo determinado por el DJ, pero que no exceda 1 día, momento en el que el objetivo se vuelve antipático (si no lo era ya). Sin embargo, el objetivo te tiene demasiado miedo como para tomar represalias, al menos a corto plazo.",
+          "failure": "<strong> Fallo </strong> El objetivo no hace lo que le dices, y si aún no era antipático u hostil, se vuelve antipático.",
+          "success": "<strong> Éxito </strong> Como éxito crítico, pero una vez que el objetivo se vuelve hostil, puede decidir actuar en tu contra, por ejemplo, denunciándote a las autoridades o ayudando a tus enemigos."
+        },
+        "Title": "Obligar"
+      },
+      "CommandAnAnimal": {
+        "Description": "<p>You issue an order to an animal. Attempt a Nature check against the animal's Will DC. The GM might adjust the DC if the animal has a good attitude toward you, you suggest a course of action it was predisposed toward, or you offer it a treat.</p><p>You automatically fail if the animal is hostile or unfriendly to you. If the animal is helpful to you, increase your degree of success by one step. You might be able to Command an Animal more easily with a feat like Ride.</p><p>Most animals know the Drop Prone, Leap, Seek, Stand, Stride, and Strike basic actions. If an animal knows an activity, such as a horse's Gallop, you can Command the Animal to perform the activity, but you must spend as many actions on Command an Animal as the activity's number of actions. You can also spend multiple actions to Command the Animal to perform that number of basic actions on its next turn; for instance, you could spend 3 actions to Command an Animal to Stride three times or to Stride twice and then Strike.</p><p><strong>Éxito</strong> The animal does as you command on its next turn.<br><strong>Fallo</strong> The animal is hesitant or resistant, and it does nothing.<br><strong>Fallo crítico</strong> The animal misbehaves or misunderstands, and it takes some other action determined by the GM.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo Crítico </strong> El animal se porta mal o malinterpreta, y toma alguna otra acción determinada por el DJ.",
+          "failure": "<strong> Fallo </strong> El animal titubea o se resiste, y no hace nada.",
+          "success": "<strong> Éxito </strong> El animal hace lo que le ordenas en su próximo turno."
+        },
+        "Title": "Comandar un animal"
+      },
+      "ConcealAnObject": {
+        "Description": "<p>You hide a small object on your person (such as a weapon of light Bulk). When you try to sneak a concealed object past someone who might notice it, the GM rolls your Stealth check and compares it to this passive observer's Perception DC. Once the GM rolls your check for a concealed object, that same result is used no matter how many passive observers you try to sneak it past. If a creature is specifically searching you for an item, it can attempt a Perception check against your Stealth DC (finding the object on success).</p><p>You can also conceal an object somewhere other than your person, such as among undergrowth or in a secret compartment within a piece of furniture. In this case, characters Seeking in an area compare their Perception check results to your Stealth DC to determine whether they find the object.</p><p><strong>Éxito</strong> The object remains undetected.<br><strong>Fallo</strong> The searcher finds the object.</p>",
+        "Notes": {
+          "failure": "<strong> Fallo </strong> El buscador encuentra el objeto.",
+          "success": "<strong> Éxito </strong> El objeto permanece sin ser detectado."
+        },
+        "Title": "Ocultar un objeto"
+      },
+      "CoverTracks": {
+        "Description": "<p>You cover your tracks, moving up to half your travel Speed, using the @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.YVLMgNxXTUQuDJgp]{Travel Speed} rules. You don't need to attempt a Survival check to cover your tracks, but anyone tracking you must succeed at a Survival check against your Survival DC if it is higher than the normal DC to Track.</p><p>In some cases, you might Cover Tracks in an encounter. In this case, Cover Tracks is a single action and doesn't have the exploration trait.</p>",
+        "Title": "Cover Tracks"
+      },
+      "Craft": {
+        "Details": {
+          "DaysForNoCost": "Días hasta sin Costo Adicional:",
+          "Discount": "Descuento por día:",
+          "LostMaterials": "Perder {cost} de materiales",
+          "PayFull": "Pagar {cost} Costos completos y artesanía",
+          "PayMaterials": "Pagar {cost} Costos de materiales y artesanía",
+          "ReceiveItem": "Recibir artículo"
+        },
+        "Error": {
+          "ItemReferenceMismatch": "Solo acepta artículos físicos para Craft de un compendio o del Directorio de artículos del mundo."
+        },
+        "Information": {
+          "LoseMaterials": "{actorName} pierde {cost} de materiales.",
+          "PayAndReceive": "{actorName} paga {cost} costos de elaboración y recibe {quantity} x {itemName} .",
+          "ReceiveItem": "{actorName} recibe {quantity} x {itemName} ."
+        },
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> No completa el elemento. Arruinas el 10% de las materias primas que proporcionaste, pero puedes salvar el resto. Si quieres volver a intentarlo, debes empezar de nuevo.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Su intento es exitoso. Cada día adicional dedicado a la elaboración reduce los materiales necesarios para completar el elemento en una cantidad basada en su nivel + 1 y su rango de competencia en la elaboración.",
+          "failure": "<strong> Fallo </strong> No completa el elemento. Puede recuperar las materias primas que proporcionó por su valor total. Si quieres volver a intentarlo, debes empezar de nuevo.",
+          "success": "<strong> Éxito </strong> Su intento fue exitoso. Cada día adicional dedicado a la elaboración reduce los materiales necesarios para completar el artículo en una cantidad basada en su nivel y su rango de competencia."
+        },
+        "SelectItemDialog": {
+          "CancelButtonLabel": "Cancelar",
+          "CraftButtonLabel": "Artesanía",
+          "DropItemZoneLabel": "Arrastrar aquí al elemento...",
+          "Title": "Seleccione el artículo para crear"
+        },
+        "SelectSpellDialog": {
+          "CraftButtonLabel": "Artesanía",
+          "Title": "Seleccionar hechizo"
+        },
+        "Title": "Artesanía",
+        "Warning": {
+          "CantAddItem": "No se pudieron agregar elementos",
+          "InsufficientCoins": "Monedas insuficientes",
+          "MissingItem": "No se puede fabricar un elemento desconocido con ID {uuid}.",
+          "NotPhysicalItem": "El artículo especificado {item} no es un artículo físico."
+        }
+      },
+      "Crawl": {
+        "Description": "<p>You move 5 feet by crawling and continue to stay prone.</p>",
+        "Title": "Crawl"
+      },
+      "CreateADiversion": {
+        "Description": "<p>With a gesture, a trick, or some distracting words, you can create a diversion that draws creatures' attention elsewhere. If you use a gesture or trick, this action gains the manipulate trait. If you use distracting words, it gains the auditory and linguistic traits.</p><p>Attempt a single Deception check and compare it to the Perception DCs of the creatures whose attention you're trying to divert. Whether or not you succeed, creatures you attempt to divert gain a +4 circumstance bonus to their Perception DCs against your attempts to Create a Diversion for 1 minute.</p><p><strong>Success</strong> You become @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} to each creature whose Perception DC is less than or equal to your result. (The hidden condition allows you to @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} away.) This lasts until the end of your turn or until you do anything except @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]{Step} or use the Stealth skill to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} or Sneak. If you @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{Strike} a creature, the creature remains @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against that attack, and you then become @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Observed}. If you do anything else, you become observed just before you act unless the GM determines otherwise.<br><strong>Failure</strong> You don't divert the attention of any creatures whose Perception DC exceeds your result, and those creatures are aware you were trying to trick them.</p>",
+        "DistractingWords": {
+          "Title": "Crear una distracción: palabras que distraen"
+        },
+        "Gesture": {
+          "Title": "Crear un desvío - Gesto"
+        },
+        "Notes": {
+          "failure": "<strong> Fallo </strong> No desvías la atención de ninguna criatura cuya CD de Percepción exceda tu resultado, y esas criaturas son conscientes de que intentabas engañarlas.",
+          "success": "<strong> Éxito </strong> Te conviertes en @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC] {Hidden} para cada criatura cuya CD de Percepción sea menor o igual a tu resultado. (La condición oculta te permite alejarte @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4] {Sneak}.) Esto dura hasta el final de tu turno o hasta que hagas algo excepto Step o uses la acción @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa] {Hide} o @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4] {Sneak} de la habilidad Sigilo. Si Golpeas a una criatura, la criatura permanece @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg] {Flat-Footed} contra ese ataque, y entonces túconvertirse en @UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G] {Observed} . Si haces algo más, te conviertes en @UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G] {Observed} justo antes de actuar, a menos que el DJ determine lo contrario."
+        },
+        "Title": "Crear un desvío",
+        "Trick": {
+          "Title": "Crear una distracción - Truco"
+        },
+        "Warning": {
+          "UnknownVariant": "Variante desconocida {variant} usada para Crear un desvío, use una de {variants} ."
+        }
+      },
+      "CreateForgery": {
+        "Description": "<p>You create a forged document, usually over the course of a day or a week. You must have the proper writing material to create a forgery. When you Create a Forgery, the GM rolls a secret DC 20 Society check. If you succeed, the forgery is of good enough quality that passive observers can't notice the fake. Only those who carefully examine the document and attempt a Perception or Society check against your Society DC can do so.</p><p>If the document's handwriting doesn't need to be specific to a person, you need only to have seen a similar document before, and you gain up to a +4 circumstance bonus to your check, as well as to your DC (the GM determines the bonus). To forge a specific person's handwriting, you need a sample of that person's handwriting.</p><p>If your check result was below 20, the forgery has some obvious signs of being a fake, so the GM compares your result to each passive observer's Perception DC or Society DC, whichever is higher, using the success or failure results below. Once the GM rolls your check for a document, that same result is used against all passive observers' DCs no matter how many creatures passively observe that document.</p><p>An observer who was fooled on a passive glance can still choose to closely scrutinize the documents on the lookout for a forgery, using different techniques and analysis methods beyond the surface elements you successfully forged with your original check. In that case, the observer can attempt a Perception or Society check against your Society DC (if they succeed, they know your document is a forgery).</p><p><strong>Éxito</strong> The observer does not detect the forgery.<br><strong>Fallo</strong> The observer knows your document is a forgery.</p>",
+        "ForgedDocument": {
+          "Description": "<p> Un observador que fue engañado con una mirada pasiva aún puede optar por escudriñar de cerca los documentos en busca de una falsificación, utilizando diferentes técnicas y métodos de análisis más allá de los elementos superficiales que falsificó con éxito con su cheque original. En ese caso, el observador puede intentar una verificación de @Check[type:perception|dc: {societyDC} ] o @Check[type:society|dc: {societyDC} ] contra su Sociedad CD (si tiene éxito, sabrá que su documento es una falsificación). </p>",
+          "FailureGmNote": "<p> La falsificación tiene algunos signos evidentes de ser una falsificación, por lo que el DJ compara el resultado de {total} con la CD de Percepción o la CD de Sociedad de cada observador pasivo, la que sea mayor, utilizando los resultados de éxito o fracaso que se muestran a continuación. El mismo resultado se usa contra las CD de todos los observadores pasivos sin importar cuántas criaturas observen pasivamente ese documento. </p>\n <p> {success} </p>\n <p> {failure} </p>",
+          "Name": "Documento falsificado",
+          "SuccessGmNote": "<p> La falsificación es de suficiente calidad para que los observadores pasivos no puedan notar la falsificación. Solo aquellos que examinen cuidadosamente el documento e intenten una verificación @Check[type:perception|dc: {societyDC} |showDC:gm] o @Check[type:society|dc: {societyDC} |showDC:gm] contra su DC de la Sociedad pueden hacerlo. </p>"
+        },
+        "ForgedDocumentCreatedNotification": "Se ha agregado un documento falsificado al inventario de {name}.",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo </strong> El observador sabe que su documento es una falsificación.",
+          "criticalSuccess": "<strong> Éxito </strong> El observador no detecta la falsificación.",
+          "failure": "<strong> Fallo </strong> El observador sabe que su documento es una falsificación.",
+          "success": "<strong> Éxito </strong> El observador no detecta la falsificación."
+        },
+        "Title": "Crear falsificación",
+        "UnspecificHandwriting": "Escritura inespecífica"
+      },
+      "DecipherWriting": {
+        "Description": "<p>You attempt to decipher complicated writing or literature on an obscure topic. This usually takes 1 minute per page of text, but might take longer (typically an hour per page for decrypting ciphers or the like). The text must be in a language you can read, though the GM might allow you to attempt to decipher text written in an unfamiliar language using Society instead.</p><p>The DC is determined by the GM based on the state or complexity of the document. The GM might have you roll one check for a short text or a check for each section of a larger text.</p><p><strong>Éxito crítico</strong> You understand the true meaning of the text.<br><strong>Éxito</strong> You understand the true meaning of the text. If it was a coded document, you know the general meaning but might not have a word-for-word translation.<br><strong>Fallo</strong> You can't understand the text and take a –2 circumstance penalty to further checks to decipher it.<br><strong>Fallo crítico</strong> You believe you understand the text on that page, but you have in fact misconstrued its message.</p><section class=\"sample-tasks\"><h2>Sample Decipher Tasks</h2><p><strong>Entrenado</strong> entry-level philosophy treatise</p><p><strong>Experto</strong> complex code, such as a cipher</p><p><strong>Maestro</strong> spymaster's code or advanced research notes</p><p><strong>Legendario</strong> esoteric planar text written in metaphor by an ancient celestial</p></section>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Cree que entiende el texto de esa página, pero en realidad ha malinterpretado su mensaje.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Entiendes el verdadero significado del texto.",
+          "failure": "<strong> Fallo </strong> No puedes entender el texto y recibes una penalización de -2 de circunstancia a más pruebas para descifrarlo.",
+          "success": "<strong> Éxito </strong> Entiendes el verdadero significado del texto. Si se trata de un documento codificado, conoce el significado general, pero es posible que no tenga una traducción palabra por palabra."
+        },
+        "SampleTasks": {
+          "Trained": "entry-level philosophy treatise",
+          "Expert": "complex code, such as a cipher",
+          "Master": "spymaster's code or advanced research notes",
+          "Legendary": "esoteric planar text written in metaphor by an ancient celestial"
+        },
+        "Title": "Descifrar la escritura",
+        "Warning": {
+          "NoSkill": "La acción Descifrar escritura se puede usar con diferentes habilidades, y no se especificó ninguna habilidad. Arcana se usa típicamente para escribir sobre magia o ciencia, Ocultismo para textos esotéricos sobre misterios y filosofía, Religión para escritura y Sociedad para mensajes codificados o documentos arcaicos."
+        }
+      },
+      "Delay": {
+        "Description": "<p>You wait for the right moment to act. The rest of your turn doesn't happen yet. Instead, you're removed from the initiative order. You can return to the initiative order as a free action triggered by the end of any other creature's turn. This permanently changes your initiative to the new position. You can't use reactions until you return to the initiative order. If you Delay an entire round without returning to the initiative order, the actions from the Delayed turn are lost, your initiative doesn't change, and your next turn occurs at your original position in the initiative order.</p><p>When you Delay, any persistent damage or other negative effects that normally occur at the start or end of your turn occur immediately when you use the Delay action. Any beneficial effects that would end at any point during your turn also end. The GM might determine that other effects end when you Delay as well. Essentially, you can't Delay to avoid negative consequences that would happen on your turn or to extend beneficial effects that would end on your turn.</p>",
+        "Title": "Delay"
+      },
+      "Demoralize": {
+        "Description": "<p>With a sudden shout, a well-timed taunt, or a cutting put-down, you can shake an enemy's resolve. Choose a creature within 30 feet of you who you're aware of. Attempt an Intimidation check against that target's Will DC. If the target does not understand the language you are speaking, you're not speaking a language, or they can't hear you, you take a –4 circumstance penalty to the check. Regardless of your result, the target is temporarily immune to your attempts to Demoralize it for 10 minutes.</p><p><strong>Éxito crítico</strong> The target becomes frightened 2.<br><strong>Éxito</strong> The target becomes frightened 1.</p>",
+        "Notes": {
+          "criticalSuccess": "<strong> Éxito crítico </strong> El objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL] {Frightened 2} .",
+          "success": "<strong> Éxito </strong> El destino se convierte en @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL] {Frightened 1} ."
+        },
+        "Title": "Desmoralizar",
+        "Unintelligible": "Unintelligible"
+      },
+      "DisableDevice": {
+        "Description": "<p>This action allows you to disarm a trap or another complex device. Often, a device requires numerous successes before becoming disabled, depending on its construction and complexity. Thieves' tools are helpful and sometimes even required to Disable a Device, as determined by the GM, and sometimes a device requires a higher proficiency rank in Thievery to disable it.</p><p>Your Thievery check result determines how much progress you make.</p><p><strong>Éxito crítico</strong> You disable the device, or you achieve two successes toward disabling a complex device. You leave no trace of your tampering, and you can rearm the device later, if that type of device can be rearmed.<br><strong>Éxito</strong> You disable the device, or you achieve one success toward disabling a complex device.<br><strong>Fallo crítico</strong> You trigger the device.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Activa el dispositivo.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Deshabilita el dispositivo o logra dos éxitos para deshabilitar un dispositivo complejo. No deja rastro de su manipulación y puede rearmar el dispositivo más tarde, si ese tipo de dispositivo puede rearmarse.",
+          "success": "<strong> Éxito </strong> Deshabilita el dispositivo o logra un éxito para deshabilitar un dispositivo complejo."
+        },
+        "Title": "Deshabilitar dispositivo"
+      },
+      "Disarm": {
+        "Description": "<p><strong>Requirements</strong> You have at least one hand free. The target can't be more than one size larger than you.</p><hr><p>You try to knock an item out of a creature's grasp. Attempt an Athletics check against the target's Reflex DC.</p><p><strong>Critical Success</strong> You knock the item out of the target's grasp. It falls to the ground in the target's space.<br><strong>Success</strong> You weaken your target's grasp on the item. Further attempts to Disarm the target of that item gain a +2 circumstance bonus, and the target takes a -2 circumstance penalty to attacks with the item or other checks requiring a firm grasp on the item. The creature can end the effect by Interacting to change its grip on the item; otherwise, it lasts as long as the creature holds the item.<br><strong>Critical Failure</strong> You lose your balance and become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of your next turn.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Pierdes el equilibrio y te conviertes en @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg] {Flat-Footed} hasta el comienzo de tu próximo turno.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Quitas el objeto del agarre del oponente. Cae al suelo en el espacio del oponente.",
+          "success": "<strong> Éxito </strong> Debilitas el agarre de tu oponente sobre el objeto. Hasta el comienzo del turno de esa criatura, los intentos de Desarmar al oponente de ese objeto obtienen una bonificación de circunstancia de +2, y el objetivo recibe una penalización de circunstancia de -2 a los ataques con el objeto u otras pruebas que requieran un agarre firme del objeto. @UUID[Compendium.pf2e.equipment-effects.z3ATL8DcRVrT0Uzt] {Effect: Disarm (Success)}"
+        },
+        "Title": "Desarmar"
+      },
+      "Dismiss": {
+        "Description": "<p>You end an effect that states you can Dismiss it. Dismissing ends the entire effect unless noted otherwise.</p>",
+        "Title": "Dismiss"
+      },
+      "DropProne": {
+        "Description": "<p>You fall prone.</p>",
+        "Title": "Drop Prone"
+      },
+      "EarnIncome": {
+        "Description": "<p>You use one of your skills to make money during downtime. The GM assigns a task level representing the most lucrative job available. You can search for lower-level tasks, with the GM determining whether you find any. Sometimes you can attempt to find better work than the initial offerings, though this takes time and requires using the Diplomacy skill to Gather Information, doing some research, or socializing.</p><p>When you take on a job, the GM secretly sets the DC of your skill check. After your first day of work, you roll to determine your earnings. You gain an amount of income based on your result, the task's level, and your proficiency rank (as listed on the Income Earned table).</p><p>You can continue working at the task on subsequent days without needing to roll again. For each day you spend after the first, you earn the same amount as the first day, up until the task's completion. The GM determines how long you can work at the task. Most tasks last a week or two, though some can take months or even years.</p><p><strong>Critical Success</strong> You do outstanding work. Gain the amount of currency listed for the task level + 1 and your proficiency rank.</p><p><strong>Success</strong> You do competent work. Gain the amount of currency listed for the task level and your proficiency rank.</p><p><strong>Failure</strong> You do shoddy work and get paid the bare minimum for your time. Gain the amount of currency listed in the failure column for the task level. The GM will likely reduce how long you can continue at the task.</p><p><strong>Critical Failure</strong> You earn nothing for your work and are fired immediately. You can't continue at the task. Your reputation suffers, potentially making it difficult for you to find rewarding jobs in that community in the future.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Critical Failure</strong> You earn nothing for your work and are fired immediately. You can't continue at the task. Your reputation suffers, potentially making it difficult for you to find rewarding jobs in that community in the future.",
+          "criticalSuccess": "<strong>Critical Success</strong> You do outstanding work. Gain the amount of currency listed for the task level + 1 and your proficiency rank.",
+          "failure": "<strong>Failure</strong> You do shoddy work and get paid the bare minimum for your time. Gain the amount of currency listed in the failure column for the task level. The GM will likely reduce how long you can continue at the task.",
+          "success": "<strong>Success</strong> You do competent work. Gain the amount of currency listed for the task level and your proficiency rank."
+        },
+        "SampleTasks": {
+          "Caption": "These examples use Alcohol Lore to work in a bar or Legal Lore to perform legal work.",
+          "Trained": "bartend, do legal research",
+          "Expert": "curate drink selection, present minor court cases",
+          "Master": "run a large brewery, present important court cases",
+          "Legendary": "run an international brewing franchise, present a case in Hell's courts"
+        },
+        "Title": "Earn Income"
+      },
+      "EncouragingWords": {
+        "BadArgs": "Esta acción debe realizarse con exactamente un personaje o NPC.",
+        "Cancel": "Cancelar",
+        "ContentLabel1": "CD Diplomacia:",
+        "ContentLabel2": "Modificador de CC:",
+        "ContentMain": "Seleccione un DC de destino. Recuerda que no puedes intentar una curación por encima de tu competencia. Intentar hacerlo reducirá la CD y la cantidad curada al máximo que seas capaz de hacer.",
+        "ContentOption1": "Entrenado CD 15",
+        "ContentOption2": "Experto CD 20, +5 Resistencia",
+        "ContentOption3": "Maestro CD 30, +15 aguante",
+        "ContentOption4": "CD legendario 40, +25 aguante",
+        "CritFailure": "Fallo crítico",
+        "CritSuccess": "Éxito crítico",
+        "Damage": "Daño",
+        "Failure": "Falla",
+        "NotTrained": "{name} no está capacitado en diplomacia y no sabe cómo usar palabras de aliento.",
+        "Recovery": "Recuperación de energía",
+        "StaminaNotEnabled": "La variante Stamina no está habilitada.",
+        "Success": "Éxito",
+        "Title": "Palabras de aliento"
+      },
+      "EndCover": {
+        "TowerShield": {
+          "Description": "{actor} comes out from behind their {weapon}.",
+          "Title": "End Cover"
+        },
+        "ShortTitle": "End Cover",
+        "Title": "End Cover"
+      },
+      "Escape": {
+        "Description": "<p>You attempt to escape from being grabbed, immobilized, or restrained. Choose one creature, object, spell effect, hazard, or other impediment imposing any of those conditions on you. Attempt a check using your unarmed attack modifier against the DC of the effect. This is typically the Athletics DC of a creature grabbing you, the Thievery DC of a creature who tied you up, the spell DC for a spell effect, or the listed Escape DC of an object, hazard, or other impediment. You can attempt an Acrobatics or Athletics check instead of using your attack modifier if you choose (but this action still has the attack trait).</p><p><strong>Éxito crítico</strong> You get free and remove the grabbed, immobilized, and restrained conditions imposed by your chosen target. You can then Stride up to 5 feet.<br><strong>Éxito</strong> You get free and remove the grabbed, immobilized, and restrained conditions imposed by your chosen target.<br><strong>Fallo crítico</strong> You don't get free, and you can't attempt to Escape again until your next turn.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> No te liberas y no puedes intentar escapar de nuevo hasta tu próximo turno.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Te liberas y eliminas las condiciones de agarre, inmovilización y restricción impuestas por tu objetivo elegido. Luego puede caminar hasta 5 pies.",
+          "success": "<strong> Éxito </strong> Te liberas y eliminas las condiciones de agarre, inmovilización y restricción impuestas por tu objetivo elegido."
+        },
+        "Title": "Escapar"
+      },
+      "Feint": {
+        "Description": "<p><strong>Requirements</strong> You are within melee reach of the target you attempt to Feint.</p><hr><p>With a misleading flourish, you leave an opponent unprepared for your real attack. Attempt a Deception check against your target's Perception DC.</p><p><strong>Critical Success</strong> You throw your enemy's defenses against you entirely off. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against melee attacks that you attempt against it until the end of your next turn.<br><strong>Success</strong> Your foe is fooled, but only momentarily. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the next melee attack that you attempt against it before the end of your current turn.<br><strong>Critical Failure</strong> Your feint backfires. You are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against melee attacks the target attempts against you until the end of your next turn.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Tu finta sale mal. Eres @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg] {Flat-Footed} contra ataques cuerpo a cuerpo que el objetivo intente contra ti hasta el final de tu próximo turno.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Derribas por completo las defensas de tu enemigo contra ti. El objetivo es @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg] {Flat-Footed} contra los ataques cuerpo a cuerpo que intentes contra él hasta el final de tu próximo turno.",
+          "success": "<strong> Éxito </strong> Tu enemigo es engañado, pero solo momentáneamente. El objetivo es @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg] {Flat-Footed} contra el próximo ataque cuerpo a cuerpo que intentes contra él antes del final de tu turno actual."
+        },
+        "Title": "Finta"
+      },
+      "Fly": {
+        "Description": "<p><strong>Requirements</strong> You have a fly Speed.</p><hr><p>You move through the air up to your fly Speed. Moving upward (straight up or diagonally) uses the rules for moving through difficult terrain. You can move straight down 10 feet for every 5 feet of movement you spend. If you Fly to the ground, you don't take falling damage. You can use an action to Fly 0 feet to hover in place. If you're airborne at the end of your turn and didn't use a Fly action this round, you fall.</p>",
+        "Title": "Fly"
+      },
+      "ForceOpen": {
+        "Description": "<p>Using your body, a lever, or some other tool, you attempt to forcefully open a door, window, container or heavy gate. With a high enough result, you can even smash through walls. Without a crowbar, prying something open takes a -2 item penalty to the Athletics check to Force Open.</p><p><strong>Critical Success</strong> You open the door, window, container, or gate and can avoid damaging it in the process.<br><strong>Success</strong> You break the door, window, container, or gate open, and it gains the @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Broken} condition. If it's especially sturdy, the GM might have it take damage but not be broken.<br><strong>Critical Failure</strong> Your attempt jams the door, window, container, or gate shut, imposing a –2 circumstance penalty on future attempts to Force it Open.</p>",
+        "NoCrowbarPenalty": "Sin palanca",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Tu intento atasca la puerta, ventana, contenedor o puerta para cerrarla, imponiendo una penalización de -2 por circunstancia en futuros intentos de forzar la apertura.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Usted abre la puerta, ventana, contenedor o puerta y puede evitar dañarlo en el proceso.",
+          "success": "<strong> Éxito </strong> Rompes la puerta, ventana, contenedor o puerta, y la puerta, ventana, contenedor o puerta gana la condición @UUID[Compendium.pf2e.conditionitems.6dNUvdb1dhToNDj3] {Broken}. Si es especialmente resistente, el DJ puede hacer que se dañe pero no se rompa."
+        },
+        "SampleTasks": {
+          "Untrained": "fabric, flimsy glass",
+          "Trained": "ice, sturdy glass",
+          "Expert": "flimsy wooden door, wooden portcullis",
+          "Master": "sturdy wooden door, iron portcullis, metal bar",
+          "Legendary": "stone or iron door"
+        },
+        "Title": "Forzar apertura"
+      },
+      "GatherInformation": {
+        "Description": "<p>You canvass local markets, taverns, and gathering places in an attempt to learn about a specific individual or topic. The GM determines the DC of the check and the amount of time it takes (typically 2 hours, but sometimes more), along with any benefit you might be able to gain by spending coin on bribes, drinks, or gifts.</p><p><strong>Success</strong> You collect information about the individual or topic. The GM determines the specifics.<br><strong>Critical Failure</strong> You collect incorrect information about the individual or topic.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Recopila información incorrecta sobre la persona o el tema.",
+          "success": "<strong> Éxito </strong> Recopila información sobre la persona o el tema. El DJ determina los detalles."
+        },
+        "SampleTasks": {
+          "Untrained": "talk of the town",
+          "Trained": "common rumor",
+          "Expert": "obscure rumor, poorly guarded secret",
+          "Master": "well-guarded or esoteric information",
+          "Legendary": "information known only to an incredibly select few, or only to extraordinary beings"
+        },
+        "Title": "Recopilar información"
+      },
+      "GrabAnEdge": {
+        "Description": "<p><strong>Trigger</strong> You fall from or past an edge or handhold.</p><p><strong>Requirements</strong> Your hands are not tied behind your back or otherwise restrained.</p><hr><p>When you fall off or past an edge or other handhold, you can try to grab it, potentially stopping your fall. You must succeed at your choice of an Acrobatics check or a Reflex save, usually at the Climb DC. If you grab the edge or handhold, you can then @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} up using Athletics.</p><hr /><p><strong>Critical Success</strong> You grab the edge or handhold, whether or not you have a hand free, typically by using a suitable held item to catch yourself (catching a battle axe on a ledge, for example). You still take damage from the distance fallen so far, but you treat the fall as though it were 30 feet shorter.</p><p><strong>Success</strong> If you have at least one hand free, you grab the edge or handhold, stopping your fall. You still take damage from the distance fallen so far, but you treat the fall as though it were 20 feet shorter. If you have no hands free, you continue to fall as if you had failed the check.</p><p><strong>Critical Failure</strong> You continue to fall, and if you've fallen 20 feet or more before you use this reaction, you take @Damage[10[bludgeoning]] damage from the impact for every 20 feet fallen.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Critical Failure</strong> You continue to fall, and if you've fallen 20 feet or more before you use this reaction, you take @Damage[10[bludgeoning]] damage from the impact for every 20 feet fallen.",
+          "criticalSuccess": "<strong>Critical Success</strong> You grab the edge or handhold, whether or not you have a hand free, typically by using a suitable held item to catch yourself (catching a battle axe on a ledge, for example). You still take damage from the distance fallen so far, but you treat the fall as though it were 30 feet shorter.",
+          "success": "<strong>Success</strong> If you have at least one hand free, you grab the edge or handhold, stopping your fall. You still take damage from the distance fallen so far, but you treat the fall as though it were 20 feet shorter. If you have no hands free, you continue to fall as if you had failed the check."
+        },
+        "Title": "Grab An Edge"
+      },
+      "Grapple": {
+        "Description": "<p><strong>Requirements</strong> You have at least one free hand and your target is no more than one size larger than you.</p><hr><p>You attempt to grab a creature or object with your free hand. Attempt an Athletics check against the target's Fortitude DC. You can Grapple a target you already have grabbed or restrained without having a hand free.</p><p><strong>Critical Success</strong> Your target is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} until the end of your next turn unless you move or your target @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes}.<br><strong>Success</strong> Your target is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} until the end of your next turn unless you move or your target @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes}.<br><strong>Failure</strong> You fail to grab your target. If you already had the target @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} using a Grapple, those conditions on the target end.<br><strong>Critical Failure</strong> If you already had the target @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, it breaks free. Your target can either grab you, as if it succeeded at using the Grapple action against you, or force you to fall and land @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Critical Failure </strong> Si ya tenías al oponente @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei] {Grabbed} o @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM] {Restrained} , se libera. Tu objetivo puede agarrarte, como si tuviera éxito al usar la acción @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD] {Grapple} contra ti, o forzarte a caer y aterrizar @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} .",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Tu oponente es @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM] {Restrained} hasta el final de tu próximo turno a menos que te muevas o tu oponente @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9] {Escapes} .",
+          "failure": "<strong> Fallo </strong> No logras agarrar a tu oponente. Si ya tenías al oponente @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei] {Grabbed} o @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM] {Restrained} usando un Grapple, esas condiciones en esa criatura terminan.",
+          "success": "<strong> Éxito </strong> Tu oponente es @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei] {Grabbed} hasta el final de tu próximo turno a menos que muevas o tu oponente @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9] {Escapes} ."
+        },
+        "Title": "Luchar"
+      },
+      "Hide": {
+        "Description": "<p> Te acurrucas detrás de una cubierta o una cubierta mayor o te escondes más profundamente para ocultarte, en lugar de ser observado. El DJ tira tu prueba de Sigilo en secreto y compara el resultado con la CD de Percepción de cada criatura que te observa pero de la que tienes cobertura o mayor cobertura o de la que estás escondido. Obtiene la bonificación de circunstancia de cobertura o mayor cobertura a su cheque. <p> <p> <strong> Éxito </strong> strong> Si la criatura pudiera verte, ahora estásescondido de él en lugar de observado. Si estuviste oculto o no fue detectado por la criatura, conservas esa condición. </p> <p> Si te ocultas con éxito a una criatura pero luego dejas de tener cobertura o mayor cobertura contra ella o te ocultas de ella, vuelves a ser observado. Dejas de estar oculto si haces algo que no sea Esconderse, Sigilosamente o Pisar. Si intentas Golpear a una criatura, la criatura permanece desprevenida contra ese ataque, y luego eres observado. Si ustedhaces cualquier otra cosa, eres observado justo antes de actuar, a menos que el DJ determine lo contrario. El DJ puede permitirte realizar una acción particularmente discreta sin que te den cuenta, lo que posiblemente requiera otra prueba de Sigilo. </p> <p> Si una criatura usa Buscar para que te observe, debes Ocultarte con éxito para volver a ocultarte de ella. </p>",
+        "Notes": {
+          "success": "<strong> Éxito </strong> Si la criatura pudiera verte, ahora estás @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC] {Hidden} de ella en lugar de observado. Si fuiste @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC] {Hidden} de o @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf] {Undetected} por la criatura, conservas esa condición."
+        },
+        "Title": "Esconder"
+      },
+      "HighJump": {
+        "Description": "<p>You @UUID[Compendium.pf2e.actionspf2e.Item.Bcxarzksqt9ezrs6]{Stride}, then attempt a DC 30 Athletics check to jump vertically. If you didn't Stride at least 10 feet, you automatically fail. This DC might be increased or decreased due to the situation, as determined by the GM.</p><p><strong>Critical Success</strong> You @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap} up to 8 feet vertically and 10 feet horizontally.<br><strong>Success</strong> You @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap} up to 5 feet vertically and 5 feet horizontally.<br><strong>Failure</strong> You @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap} normally.<br><strong>Critical Failure</strong> You fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} in your space.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> No @UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk] {Leap} en absoluto, y en su lugar caes @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} en tu espacio.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Aumente la distancia vertical máxima a 8 pies, o aumente la distancia vertical máxima a 5 pies y la distancia horizontal máxima a 10 pies.",
+          "failure": "<strong> Fallo </strong> Usted @UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk] {Leap} normalmente.",
+          "success": "<strong> Éxito </strong> Aumente la distancia vertical máxima a 5 pies."
+        },
+        "Title": "Salto alto"
+      },
+      "IdentifyAlchemy": {
+        "Description": "<p><strong>Requirements</strong> You are holding or wearing an alchemist's toolkit.</p><hr><p>You can identify the nature of an alchemical item with 10 minutes of testing using your alchemist's toolkit. If your attempt is interrupted in any way, you must start over.</p><p><strong>Success</strong> You identify the item and the means of activating it.</p><p><strong>Failure</strong> You fail to identify the item but can try again.</p><p><strong>Critical Failure</strong> You misidentify the item as another item of the GM's choice.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Critical Failure</strong> You misidentify the item as another item of the GM's choice.",
+          "failure": "<strong>Failure</strong> You fail to identify the item but can try again.",
+          "success": "<strong>Success</strong> You identify the item and the means of activating it."
+        },
+        "Title": "Identify Alchemy"
+      },
+      "IdentifyMagic": {
+        "Description": "<p>Once you discover that an item, location, or ongoing effect is magical, you can spend 10 minutes to try to identify the particulars of its magic. If your attempt is interrupted, you must start over. The GM sets the DC for your check. Cursed magic or esoteric subjects usually have higher DCs or might even be impossible to identify using this activity alone. Heightening a spell doesn't increase the DC to identify it.</p><p><strong>Critical Success</strong> You learn all the attributes of the magic, including its name (for an effect), what it does, any means of activating it (for an item or location), and whether it is cursed.</p><p><strong>Success</strong> For an item or location, you get a sense of what it does and learn any means of activating it. For an ongoing effect (such as a spell with a duration), you learn the effect's name and what it does. You can't try again in hopes of getting a critical success.</p><p><strong>Failure</strong> You fail to identify the magic and can't try again for 1 day.</p><p><strong>Critical Failure</strong> You misidentify the magic as something else of the GM's choice.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Critical Failure</strong> You misidentify the magic as something else of the GM's choice.",
+          "criticalSuccess": "<strong>Critical Success</strong> You learn all the attributes of the magic, including its name (for an effect), what it does, any means of activating it (for an item or location), and whether it is cursed.",
+          "failure": "<strong>Failure</strong> You fail to identify the magic and can't try again for 1 day.",
+          "success": "<strong>Success</strong> For an item or location, you get a sense of what it does and learn any means of activating it. For an ongoing effect (such as a spell with a duration), you learn the effect's name and what it does. You can't try again in hopes of getting a critical success."
+        },
+        "Title": "Identify Magic",
+        "Warning": {
+          "NoStatistic": "The Identify Magic action can be used with different statistics, and no statistic was specified."
+        }
+      },
+      "Impersonate": {
+        "Description": "<p>You create a disguise to pass yourself off as someone or something you are not. Assembling a convincing disguise takes 10 minutes and requires a @UUID[Compendium.pf2e.equipment-srd.Item.Jvp0x2Sc82WVpExT]{Disguise Kit}, but a simpler, quicker disguise might do the job if you're not trying to imitate a specific individual, at the GM's discretion.</p><p>In most cases, creatures have a chance to detect your deception only if they use the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to attempt Perception checks against your Deception DC. If you attempt to directly interact with someone while disguised, the GM rolls a secret Deception check for you against that creature's Perception DC instead.</p><p>If you're disguised as a specific individual, the GM might give creatures you interact with a circumstance bonus based on how well they know the person you're imitating, or the GM might roll a secret Deception check even if you aren't directly interacting with others.</p><p><strong>Success</strong> You trick the creature into thinking you're the person you're disguised as. You might have to attempt a new check if your behavior changes.<br><strong>Failure</strong> The creature can tell you're not who you claim to be.<br><strong>Critical Failure</strong> The creature can tell you're not who you claim to be, and it recognizes you if it would know you without a disguise.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> La criatura puede darse cuenta de que no eres quien dices ser, y te reconoce si te reconoce sin un disfraz.",
+          "failure": "<strong> Fallo </strong> La criatura puede decir que no eres quien dices ser.",
+          "success": "<strong> Éxito </strong> Engañas a la criatura haciéndole creer que eres la persona de la que estás disfrazado. Es posible que deba intentar una nueva verificación si su comportamiento cambia."
+        },
+        "Title": "Personificar"
+      },
+      "Interact": {
+        "Description": "<p>You use your hand or hands to manipulate an object or the terrain. You can grab an unattended or stored object, open a door, or produce some similar effect. You might have to attempt a skill check to determine if your Interact action was successful.</p>",
+        "Draw": {
+          "Title": "Draw"
+        },
+        "Draw1H": {
+          "Description": "{actor} desenfundo su {weapon} .",
+          "Title": "Desenfundar  (1H)"
+        },
+        "Draw2H": {
+          "Description": "{actor} desenfundo  su {weapon} .",
+          "Title": "Desenfundar  (2H)"
+        },
+        "Grip": {
+          "Description": "{actor} agarra su {weapon} con las dos manos.",
+          "Title": "Cambiar agarre (2H)"
+        },
+        "Modular": {
+          "Description": "{actor} adjusts their {weapon} to deal {damageType} damage.",
+          "Title": "Modular"
+        },
+        "Parenthetical": "Interactuar {purpose}",
+        "PickUp1H": {
+          "Description": "{actor} recoge {weapon} del suelo.",
+          "Title": "Recogida (1H)"
+        },
+        "PickUp2H": {
+          "Description": "{actor} recoge {weapon} del suelo.",
+          "Title": "Recogida (2H)"
+        },
+        "Retrieve1H": {
+          "Description": "{actor} recupera su {weapon} .",
+          "Title": "Recuperar (1H)"
+        },
+        "Retrieve2H": {
+          "Description": "{actor} recupera su {weapon} .",
+          "Title": "Recuperar (1H)"
+        },
+        "Sheathe": {
+          "Description": "{actor} envaina su {weapon} .",
+          "Title": "Envainar"
+        },
+        "Title": "Interactuar"
+      },
+      "Leap": {
+        "Description": "<p>You take a careful, short jump. You can Leap up to 10 feet horizontally if your Speed is at least 15 feet, or up to 15 feet horizontally if your Speed is at least 30 feet. You land in the space where your Leap ends (meaning you can typically clear a 5-foot gap, or a 10-foot gap if your Speed is 30 feet or more).</p><p>If you Leap vertically, you can move up to 3 feet vertically and 5 feet horizontally onto an elevated surface.</p><p>Jumping a greater distance requires using the Athletics skill.</p>",
+        "Title": "Leap"
+      },
+      "LearnASpell": {
+        "Description": "<p><strong>Requirements</strong> You have a spellcasting class feature, and the spell you want to learn is on your magical tradition's spell list.</p><hr><p>You can gain access to a new spell of your tradition from someone who knows that spell or from magical writing like a spellbook or scroll. If you can cast spells of multiple traditions, you can Learn a Spell of any of those traditions, but you must use the corresponding skill to do so. For example, if you were a cleric with the bard multiclass archetype, you couldn't use Religion to add an occult spell to your bardic spell repertoire.</p><p>To learn the spell, you must do the following:</p><ul><li>Spend 1 hour per spell rank, during which you must remain in conversation with a person who knows the spell or have the magical writing in your possession.</li><li>Have materials with the Price indicated in the Learning a Spell table.</li><li>Attempt a skill check for the skill corresponding to your tradition (DC determined by the GM, often close to the DC on the Learning a Spell Table). Uncommon or rare spells have higher DCs; full guidelines for the GM appear on page 52 of GM Core.</li></ul><p><strong>Critical Success</strong> You expend half the materials and learn the spell.</p><p><strong>Success</strong> You expend the materials and learn the spell.</p><p><strong>Failure</strong> You fail to learn the spell but can try again after you gain a level. The materials aren't expended.</p><p><strong>Critical Failure</strong> As failure, except you expend half the materials.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Critical Failure</strong> You fail to learn the spell but can try again after you gain a level. You expend half the materials.",
+          "criticalSuccess": "<strong>Critical Success</strong> You expend half the materials and learn the spell.",
+          "failure": "<strong>Failure</strong> You fail to learn the spell but can try again after you gain a level. The materials aren't expended.",
+          "success": "<strong>Success</strong> You expend the materials and learn the spell."
+        },
+        "Title": "Learn a Spell",
+        "Warning": {
+          "NoSkill": "The Learn a Spell action can be used with different skills, and no skill was specified. Each magical tradition has a corresponding skill: Arcana for the arcane tradition, Nature for the primal tradition, Occultism for the occult tradition, and Religion for the divine tradition."
+        }
+      },
+      "Lie": {
+        "Description": "<p>You try to fool someone with an untruth. Doing so takes at least 1 round, or longer if the lie is elaborate. You roll a single Deception check and compare it against the Perception DC of every creature you are trying to fool. The GM might give them a circumstance bonus based on the situation and the nature of the lie you are trying to tell. Elaborate or highly unbelievable lies are much harder to get a creature to believe than simpler and more believable lies, and some lies are so big that it's impossible to get anyone to believe them.</p><p>At the GM's discretion, if a creature initially believes your lie, it might attempt a Perception check later to @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive} against your Deception DC to realize it's a lie. This usually happens if the creature discovers enough evidence to counter your statements.</p><p><strong>Success</strong> The target believes your lie.<br><strong>Failure</strong> The target doesn't believe your lie and gains a +4 circumstance bonus against your attempts to Lie for the duration of your conversation. The target is also more likely to be suspicious of you in the future.</p>",
+        "Notes": {
+          "failure": "<strong> Fallo </strong> El objetivo no cree tu mentira y gana una bonificación de circunstancia de +4 contra tus intentos de mentir durante la conversación. También es más probable que el objetivo sospeche de ti en el futuro.",
+          "success": "<strong> Éxito </strong> El objetivo cree tu mentira."
+        },
+        "Title": "Mentir"
+      },
+      "LongJump": {
+        "Description": "<p>You @UUID[Compendium.pf2e.actionspf2e.Item.Bcxarzksqt9ezrs6]{Stride}, then attempt a DC 15 Athletics check to make a long jump in the direction you were Striding. If you didn't Stride at least 10 feet, you automatically fail your check. The GM might increase or decrease this DC depending on the situation.</p><p><strong>Success</strong> You @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap} up to a distance equal to your check result rounded down to the nearest 5 feet. You can't jump farther than your land Speed.<br><strong>Failure</strong> You make a normal horizontal @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap}.<br><strong>Critical Failure</strong> You make a normal horizontal @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap}, then fall and land @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Usted @UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk] {Leap} normalmente, pero luego cae y aterriza @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} .",
+          "failure": "<strong> Fallo </strong> Usted @UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk] {Leap} normalmente.",
+          "success": "<strong> Éxito </strong> Aumente la distancia horizontal máxima que @UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk] {Leap} a la distancia deseada."
+        },
+        "Title": "Salto largo"
+      },
+      "LowerShield": {
+        "Content": "{actor} lowers their {shield}.",
+        "ShortTitle": "Lower",
+        "Title": "Lower Shield"
+      },
+      "MakeAnImpression": {
+        "Description": "<p>With at least 1 minute of conversation, during which you engage in charismatic overtures, flattery, and other acts of goodwill, you seek to make a good impression on someone to make them temporarily agreeable. At the end of the conversation, attempt a Diplomacy check against the Will DC of one target. You can instead choose up to five targets if you take a –2 penalty. The GM might add other bonuses or penalties based on the situation. Any impression you make lasts for only the current social interaction unless the GM decides otherwise.</p><strong>Critical Success</strong> The target's attitude toward you improves by two steps.<br><strong>Success</strong> The target's attitude toward you improves by one step.<br><p><strong>Critical Failure</strong> The target's attitude toward you decreases by one step.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> La actitud del objetivo hacia ti disminuye en un paso.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> La actitud del objetivo hacia ti mejora en dos pasos.",
+          "success": "<strong> Éxito </strong> La actitud del objetivo hacia ti mejora en un paso."
+        },
+        "Title": "Dejar una impresión"
+      },
+      "ManeuverInFlight": {
+        "Description": "<p>You try a difficult maneuver while flying. Attempt an Acrobatics check. The GM determines what maneuvers are possible, but they rarely allow you to move farther than your fly Speed.</p><p><strong>Éxito</strong> You succeed at the maneuver.<br><strong>Fallo</strong> Your maneuver fails. The GM chooses if you simply can't move or if some other detrimental effect happens. The outcome should be appropriate for the maneuver you attempted (for instance, being blown off course if you were trying to fly against a strong wind).<br><strong>Fallo crítico</strong> As failure, but the consequence is more dire.</p><section class=\"sample-tasks\"><h2>Sample Maneuver in Flight Tasks</h2><p><strong>Entrenado</strong> steep ascent or descent</p><p><strong>Experto</strong> fly against the wind, hover midair</p><p><strong>Maestro</strong> reverse direction</p><p><strong>Legendario</strong> fly through gale force winds</p></section>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Como fallo, pero la consecuencia es más nefasta.",
+          "failure": "<strong> Fallo </strong> Tu maniobra falla. El DJ elige si simplemente no puedes moverte o si ocurre algún otro efecto perjudicial. El resultado debe ser apropiado para la maniobra que intentaste (por ejemplo, que te desvíen del rumbo si estabas tratando de volar contra un fuerte viento).",
+          "success": "<strong> Éxito </strong> Tienes éxito en la maniobra."
+        },
+        "SampleTasks": {
+          "Trained": "steep ascent or descent",
+          "Expert": "fly against the wind, hover midair",
+          "Master": "reverse direction",
+          "Legendary": "fly through gale force winds"
+        },
+        "Title": "Maniobra en vuelo"
+      },
+      "Mount": {
+        "Description": "<p><strong>Requirements</strong> You are adjacent to a creature that is at least one size larger than you and is willing to be your mount.</p><hr><p>You move onto the creature and ride it. If you're already mounted, you can instead use this action to dismount, moving off the mount into a space adjacent to it.</p>",
+        "Title": "Mount"
+      },
+      "PalmAnObject": {
+        "Description": "<p>Palming a small, unattended object without being noticed requires you to roll a single Thievery check against the Perception DCs of all creatures who are currently observing you. You take the object whether or not you successfully conceal that you did so. You can typically only Palm Objects of negligible Bulk, though the GM might determine otherwise depending on the situation.</p><p><strong>Éxito</strong> The creature does not notice you Palming the Object.<br><strong>Fallo</strong> The creature notices you Palming the Object, and the GM determines the creature's response.</p>",
+        "Notes": {
+          "failure": "<strong> Fallo </strong> La criatura se da cuenta de que palmeas el Objeto, y el DJ determina la respuesta de la criatura.",
+          "success": "<strong> Éxito </strong> La criatura no se da cuenta de que palmeas el Objeto."
+        },
+        "Title": "Palma un objeto"
+      },
+      "Perform": {
+        "Description": "<p>When making a brief performance - one song, a quick dance, or a few jokes - you use the Perform action. This action is most useful when you want to prove your capability or impress someone quickly. Performing rarely has an impact on its own, but it might influence the DCs of subsequent Diplomacy checks against the observers, or even change their attitudes if the GM sees fit.</p><p><strong>Critical Success</strong> Your performance impresses the observers, and they're likely to share stories of your ability.<br><strong>Success</strong> You prove yourself, and observers appreciate the quality of your performance.<br><strong>Failure</strong> Your performance falls flat.<br><strong>Critical Failure</strong> You demonstrate only incompetence.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fracaso Crítico </strong> Solo demuestras incompetencia.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Su desempeño impresiona a los observadores, y es probable que compartan historias de su habilidad.",
+          "failure": "<strong> Fallo </strong> Tu rendimiento se desploma.",
+          "success": "<strong> Éxito </strong> Te demuestras a ti mismo y los observadores aprecian la calidad de tu actuación."
+        },
+        "SampleTasks": {
+          "Untrained": "audience of commoners",
+          "Trained": "audience of artisans",
+          "Expert": "audience of merchants or minor nobles",
+          "Master": "audience of high nobility or minor royalty",
+          "Legendary": "audience of major royalty or otherworldly beings"
+        },
+        "Acting": {
+          "Title": "Interpretar - Actuar"
+        },
+        "Comedy": {
+          "Title": "Actuar - Comedia"
+        },
+        "Dance": {
+          "Title": "Actuar - Bailar"
+        },
+        "Keyboards": {
+          "Title": "Interpretar: tocar un instrumento de teclado"
+        },
+        "Oratory": {
+          "Title": "Interpretar - Oratoria"
+        },
+        "Percussion": {
+          "Title": "Interpretar - Tocar un instrumento de percusión"
+        },
+        "Singing": {
+          "Title": "Interpretar - Cantar"
+        },
+        "Strings": {
+          "Title": "Interpretar - Tocar un instrumento de cuerda"
+        },
+        "Winds": {
+          "Title": "Realizar - Tocar un instrumento de viento"
+        },
+        "Title": "Llevar a cabo",
+        "Warning": {
+          "UnknownVariant": "Variante desconocida ' {variant} ' usada para Interpretar, usar actuación, comedia, danza, teclados, oratoria, percusión, canto, cuerdas o vientos."
+        }
+      },
+      "PickALock": {
+        "Description": "<p>Opening a lock without a key is very similar to Disabling a Device, but the DC of the check is determined by the complexity and construction of the lock you are attempting to pick. Locks of higher qualities might require multiple successes to unlock, since otherwise even an unskilled burglar could easily crack the lock by attempting the check until they rolled a natural 20. If you lack the proper tools, the GM might let you used improvised picks, which are treated as shoddy tools, depending on the specifics of the lock.</p><p><strong>Éxito crítico</strong> You unlock the lock, or you achieve two successes toward opening a complex lock. You leave no trace of your tampering.<br><strong>Éxito</strong> You open the lock, or you achieve one success toward opening a complex lock.<br><strong>Fallo crítico</strong> You break your tools. Fixing them requires using Crafting to Repair them or else swapping in replacement picks (costing 3 sp, or 3 gp for infiltrator thieves' tools).</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Rompes tus herramientas. Arreglarlos requiere usar Fabricación para @UUID[Compendium.pf2e.actionspf2e.bT3skovyLUtP22ME] {Repair} o intercambiar picos de reemplazo (cuesta 3 sp, o 3 mo para las herramientas de los ladrones infiltrados).",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Desbloqueas la cerradura o logras dos éxitos para abrir una cerradura compleja. No dejas rastro de tu manipulación.",
+          "success": "<strong> Éxito </strong> Abres la cerradura, o logras un éxito para abrir una cerradura compleja."
+        },
+        "Title": "Elige un candado"
+      },
+      "PointOut": {
+        "Description": "<p><strong>Requirements</strong> A creature is undetected by one or more of your allies but isn't undetected by you.</p><hr><p>You indicate a creature that you can see to one or more allies, gesturing in a direction and describing the distance verbally. That creature is @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} to your allies, rather than @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}. This works only for allies who can see you and are in a position where they could potentially detect the target. If your allies can't hear or understand you, they must succeed at a @Check[perception|defense:stealth]{Perception} check against the creature's Stealth DC or they misunderstand and believe the target is in a different location.</p>",
+        "Title": "Point Out"
+      },
+      "RaiseAShield": {
+        "BadArgs": "Esta acción debe realizarse con exactamente un personaje o NPC.",
+        "Content": "{actor} levanta su escudo.",
+        "Description": "<p>You position your shield to protect yourself. When you have Raised a Shield, you gain its listed circumstance bonus to AC. Your shield remains raised until the start of your next turn.</p>",
+        "NoShieldEquipped": "{actor} debe tener un escudo equipado.",
+        "ReactionTitle": "Escudo reactivo",
+        "ShieldIsBroken": "{actor} {shield} está roto.",
+        "ShieldIsDestroyed": "{actor} {shield} está destruido.",
+        "ShortTitle": "Raise",
+        "SingleActionTitle": "Levanta un escudo",
+        "Title": "Raise a Shield"
+      },
+      "Ready": {
+        "Description": "<p>You prepare to use an action that will occur outside your turn. Choose a single action or free action you can use, and designate a trigger. Your turn then ends. If the trigger you designated occurs before the start of your next turn, you can use the chosen action as a reaction (provided you still meet the requirements to use it). You can't Ready a free action that already has a trigger.</p><p>If you have a multiple attack penalty and your readied action is an attack action, your readied attack takes the multiple attack penalty you had at the time you used Ready. This is one of the few times the multiple attack penalty applies when it's not your turn.</p>",
+        "Title": "Ready"
+      },
+      "RecallKnowledge": {
+        "Description": "<p>You attempt a skill check to try to remember a bit of knowledge regarding a topic related to that skill. Suggest which skill you'd like to use and ask the GM one question. The GM determines the DC. You might need to collaborate with the GM to narrow down the question or skills, and you can decide not to Recall Knowledge before committing to the action if you don't like your options.</p><p><strong>Critical Success</strong> You recall the knowledge accurately. The GM answers your question truthfully and either tells you additional information or context, or answers one follow-up question.</p><p><strong>Success</strong> You recall the knowledge accurately. The GM answers your question truthfully.</p><p><strong>Critical Failure</strong> You recall incorrect information. The GM answers your question falsely (or decides to give you no information, as on a failure).</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Critical Failure</strong> You recall incorrect information. The GM answers your question falsely (or decides to give you no information, as on a failure).",
+          "criticalSuccess": "<strong>Critical Success</strong> You recall the knowledge accurately. The GM answers your question truthfully and either tells you additional information or context, or answers one follow-up question.",
+          "success": "<strong>Success</strong> You recall the knowledge accurately. The GM answers your question truthfully."
+        },
+        "SampleTasks": {
+          "Caption": "The following examples use Society or Religion.",
+          "Untrained": "name of a ruler, head of state, key noble, or major deity",
+          "Trained": "line of succession for a major noble family, core doctrines of a major deity",
+          "Expert": "genealogy of a minor noble, teachings of an ancient priest",
+          "Master": "hierarchy of a genie noble court, major extraplanar temples of a deity",
+          "Legendary": "existence of a long-lost noble heir, secret doctrines of a religion"
+        },
+        "Title": "Recall Knowledge",
+        "Warning": {
+          "NoSkill": "The Recall Knowledge action can be used with different skills, and no skill was specified."
+        }
+      },
+      "Release": {
+        "Description": "<p>You release something you're holding in your hand or hands. This might mean dropping an item, removing one hand from your weapon while continuing to hold it in another hand, releasing a rope suspending a chandelier, or performing a similar action. Unlike most manipulate actions, Release does not trigger reactions that can be triggered by actions with the manipulate trait (such as Attack of Opportunity).</p><p>If you want to prepare to Release something outside of your turn, use the Ready activity.</p>",
+        "Drop": {
+          "Description": "{actor} deja caer su {weapon} al suelo.",
+          "Title": "Soltar"
+        },
+        "Grip": {
+          "Description": "{actor} suelta una mano de su {weapon} .",
+          "Title": "Cambiar agarre (1H)"
+        },
+        "Title": "Liberar"
+      },
+      "Repair": {
+        "Chat": {
+          "ItemDamaged": "{itemName} recibió {damageDealt} puntos de daño para un total de {afterDamageHitPoints} de {maximumHitPoints} puntos de vida.",
+          "ItemRepaired": "{itemName} fue reparado por {repairedDamage} puntos de daño para un total de {afterRepairHitPoints} de {maximumHitPoints} puntos de vida."
+        },
+        "Error": {
+          "ItemReferenceMismatch": "Solo acepta artículos físicos para reparación de un actor."
+        },
+        "Labels": {
+          "DamageMitigatedByHardness": "El intento de reparación fallido críticamente no causó daños al artículo debido a la dureza.",
+          "DealItemDamage": "Inflige {value} de daño al objeto",
+          "Hardness": "Dureza",
+          "ItemLevelRepairDC": "Nivel de objeto {level} CD de reparación",
+          "RestoreItemHitPoints": "Restaurar {value} Puntos de golpe al elemento",
+          "RollItemDamage": "Tira {value} daño"
+        },
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Infliges 2d6 de daño al objeto. Aplica la dureza del objeto a este daño.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Restauras 10 Puntos de vida al objeto, más 10 Puntos de vida adicionales por rango de competencia que tengas en Fabricación (un total de 20 HP si estás entrenado, 30 HP si eres un experto, 40 HP si eres un maestro, o 50 HP si eres legendario).",
+          "success": "<strong> Éxito </strong> Restauras 5 Puntos de Golpe al objeto, más 5 adicionales por rango de competencia que tengas en Fabricación (para un total de 10 HP si estás entrenado, 15 HP si eres un experto, 20 HP si eres un maestro, o 25 HP si eres legendario)."
+        },
+        "SelectItemDialog": {
+          "CancelButtonLabel": "Cancelar",
+          "DropItemZoneLabel": "Arrastrar aquí al elemento...",
+          "RepairButtonLabel": "Reparar",
+          "Title": "Seleccione el elemento para reparar"
+        },
+        "Title": "Reparar",
+        "Warning": {
+          "NotPhysicalItem": "El artículo especificado {item} no es un artículo físico."
+        }
+      },
+      "Reposition": {
+        "Description": "<p>You muscle a creature or object around. Attempt an Athletics check against the target's Fortitude DC.</p><p><strong>Critical Success</strong> You move the creature up to 10 feet. It must remain within your reach during this movement, and you can't move it into or through obstacles.<br><strong>Success</strong> You move the target up to 5 feet. It must remain within your reach during this movement, and you can't move it into or through obstacles.<br><strong>Critical Failure</strong> The target can move you up to 5 feet as though it successfully Repositioned you.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Critical Failure</strong> The target can move you up to 5 feet as though it successfully Repositioned you.",
+          "criticalSuccess": "<strong>Critical Success</strong> You move the creature up to 10 feet. It must remain within your reach during this movement, and you can't move it into or through obstacles.",
+          "success": "<strong>Success</strong> You move the target up to 5 feet. It must remain within your reach during this movement, and you can't move it into or through obstacles."
+        },
+        "Title": "Reposition"
+      },
+      "Request": {
+        "Description": "<p>You can make a request of a creature that's friendly or helpful to you. You must couch the request in terms that the target would accept given their current attitude toward you. The GM sets the DC based on the difficulty of the request. Some requests are unsavory or impossible, and even a helpful NPC would never agree to them.</p><p><strong>Critical Success</strong> The target agrees to your request without qualifications.<br><strong>Success</strong> The target agrees to your request, but they might demand added provisions or alterations to the request.<br><strong>Failure</strong> The target refuses the request, though they might propose an alternative that is less extreme.<br><strong>Critical Failure</strong> Not only does the target refuse the request, but their attitude toward you decreases by one step due to the temerity of the request.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> El objetivo no solo rechaza la solicitud, sino que su actitud hacia ti disminuye un paso debido a la temeridad de la solicitud.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> El objetivo acepta su solicitud sin salvedades.",
+          "failure": "<strong> Fallo </strong> El objetivo rechaza la solicitud, aunque puede proponer una alternativa menos extrema.",
+          "success": "<strong> Éxito </strong> El objetivo está de acuerdo con su solicitud, pero puede exigir disposiciones adicionales o modificaciones a la solicitud."
+        },
+        "Title": "Pedido"
+      },
+      "Seek": {
+        "Description": "<p>You scan an area for signs of creatures or objects. If you're looking for creatures, choose an area you're scanning. If precision is necessary, the GM can have you select a 30-foot cone or a 15-foot burst within line of sight. You might take a penalty if you choose an area that's far away.</p><p>If you're using Seek to search for objects (including secret doors and hazards), you search up to a 10-foot square adjacent to you. The GM might determine you need to Seek as an activity, taking more actions or even minutes or hours if you're searching a particularly cluttered area.</p><p>The GM attempts a single secret Perception check for you and compares the result to the Stealth DCs of any undetected or hidden creatures in the area or the DC to detect each object in the area (as determined by the GM or by someone Concealing the Object). A creature you detect might remain hidden, rather than becoming observed, if you're using an imprecise sense or if an effect (such as invisibility) prevents the subject from being observed.</p><p><strong>Éxito crítico</strong> If you were searching for creatures, any undetected or hidden creature you critically succeeded against becomes observed by you. If you were searching for an object, you learn its location.<br><strong>Éxito</strong> If you were searching for creatures, any undetected creature you succeeded against becomes hidden from you instead of undetected, and any hidden creature you succeeded against becomes observed by you. If you were searching for an object, you learn its location or get a clue to its whereabouts, as determined by the GM.</p>",
+        "Notes": {
+          "criticalSuccess": "<strong> Éxito crítico </strong> Si estabas buscando criaturas, cualquier criatura @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf] {Undetected} o @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC] {Hidden} contra la que hayas tenido éxito crítico se convierte en @UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G] {Observed} por ti. Si estabas buscando un objeto, aprendes su ubicación.",
+          "success": "<strong> Éxito </strong> Si estabas buscando criaturas, cualquier @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf] {Undetected} criatura contra la que hayas tenido éxito se convierte en @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC] {Hidden} de ti en lugar de @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf] {Undetected}, y cualquier @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC] {Hidden} criatura contra la que hayas tenido éxito se convierte en @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]. Si estabas buscando un objeto, aprendes su ubicación u obtienes una pista de su paradero, según lo determine el DJ."
+        },
+        "Title": "Buscar"
+      },
+      "SenseDirection": {
+        "Description": "<p>Using the stars, the position of the sun, traits of the geography or flora, or the behavior of fauna, you can stay oriented in the wild. Typically, you attempt a Survival check only once per day, but some environments or changes might necessitate rolling more often. The GM determines the DC and how long this activity takes (usually just a minute or so). More unusual locales or those you're unfamiliar with might require you to have a minimum proficiency rank to Sense Direction. Without a compass, you take a –2 item penalty to checks to Sense Direction.</p><p><strong>Éxito crítico</strong> You get an excellent sense of where you are. If you are in an environment with cardinal directions, you know them exactly.<br><strong>Éxito</strong> You gain enough orientation to avoid becoming hopelessly lost. If you are in an environment with cardinal directions, you have a sense of those directions.</p><section class=\"sample-tasks\"><h2>Sense Direction Tasks</h2><p><strong>No entrenado</strong> determine a cardinal direction using the sun</p><p><strong>Entrenado</strong> find an overgrown path in a forest</p><p><strong>Experto</strong> navigate a hedge maze</p><p><strong>Maestro</strong> navigate a byzantine labyrinth or relatively featureless desert</p><p><strong>Legendario</strong> navigate an ever-changing dream realm</p></section>",
+        "Modifier": {
+          "NoCompass": "Sin brújula"
+        },
+        "Notes": {
+          "criticalSuccess": "<strong> Éxito crítico </strong> Tienes una excelente idea de dónde estás. Si estás en un entorno con puntos cardinales, los conoces exactamente.",
+          "success": "<strong> Éxito </strong> Ganas suficiente orientación para evitar perderte irremediablemente. Si se encuentra en un entorno con direcciones cardinales, tiene una idea de esas direcciones."
+        },
+        "SampleTasks": {
+          "Untrained": "determine a cardinal direction using the sun",
+          "Trained": "find an overgrown path in a forest",
+          "Expert": "navigate a hedge maze",
+          "Master": "navigate a byzantine labyrinth or relatively featureless desert",
+          "Legendary": "navigate an ever-changing dream realm"
+        },
+        "Title": "Sentido de dirección"
+      },
+      "SenseMotive": {
+        "Description": "<p>You try to tell whether a creature's behavior is abnormal. Choose one creature, and assess it for odd body language, signs of nervousness, and other indicators that it might be trying to deceive someone. The GM attempts a single secret Perception check for you and compares the result to the Deception DC of the creature, the DC of a spell affecting the creature's mental state, or another appropriate DC determined by the GM. You typically can't try to Sense the Motive of the same creature again until the situation changes significantly.</p><p><strong>Éxito crítico</strong> You determine the creature's true intentions and get a solid idea of any mental magic affecting it.<br><strong>Éxito</strong> You can tell whether the creature is behaving normally, but you don't know its exact intentions or what magic might be affecting it.<br><strong>Fallo</strong> You detect what a deceptive creature wants you to believe. If they're not being deceptive, you believe they're behaving normally.<br><strong>Fallo crítico</strong> You get a false sense of the creature's intentions.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Obtienes una falsa sensación de las intenciones de la criatura.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Determinas las verdaderas intenciones de la criatura y obtienes una idea sólida de cualquier magia mental que la afecte.",
+          "failure": "<strong> Fallo </strong> Detectas lo que una criatura engañosa quiere que creas. Si no están siendo engañosos, crees que se están comportando normalmente.",
+          "success": "<strong> Éxito </strong> Puedes saber si la criatura se está comportando normalmente, pero no sabes sus intenciones exactas o qué magia podría estar afectándola."
+        },
+        "Title": "Motivo sentido"
+      },
+      "ShieldBlock": {
+        "SelectAShield": "Selecciona un escudo"
+      },
+      "Shove": {
+        "Description": "<p><strong>Requirements</strong> You have at least one hand free. The target can't be more than one size larger than you.</p><hr><p>You push a creature away from you. Attempt an Athletics check against your target's Fortitude DC.</p><p><strong>Critical Success</strong> You push your target up to 10 feet away from you. You can @UUID[Compendium.pf2e.actionspf2e.Item.Bcxarzksqt9ezrs6]{Stride} after it, but you must move the same distance and in the same direction.<br><strong>Success</strong> You push your target back 5 feet. You can @UUID[Compendium.pf2e.actionspf2e.Item.Bcxarzksqt9ezrs6]{Stride} after it, but you must move the same distance and in the same direction.<br><strong>Critical Failure</strong> You lose your balance, fall, and land @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Pierdes el equilibrio, caes y aterrizas @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} .",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Empujas a tu oponente hasta 10 pies de distancia de ti. Puedes caminar tras él, pero debes moverte la misma distancia y en la misma dirección.",
+          "success": "<strong> Éxito </strong> Empujas a tu oponente hacia atrás 5 pies. Puedes caminar tras él, pero debes moverte la misma distancia y en la misma dirección."
+        },
+        "Title": "Empujón"
+      },
+      "Sneak": {
+        "Description": "<p> Puedes intentar moverte a otro lugar mientras pasas desapercibido o pasas desapercibido. Avanza hasta la mitad de tu velocidad. (Puedes usar Sigilo mientras excavas, trepas, vuelas o nadas en lugar de caminar si tienes el tipo de movimiento correspondiente; debes moverte a la mitad de esa velocidad). </p> <p> Si una criatura no te detecta y es imposible para esa criatura para observarte (para una criatura típica, esto incluye cuando eres invisible, el observador está cegado o estás enoscuridad y la criatura no puede ver en la oscuridad), por cualquier fallo crítico que saques en una prueba de Sigilo, obtienes un fallo en su lugar. También continúas sin ser detectado si pierdes la cobertura o una mayor cobertura o ya no estás oculto de dicha criatura. </p> <p> Al final de tu movimiento, el DJ tira tu chequeo de Sigilo en secreto y compara el resultado con la CD de Percepción de cada criatura de la que estabas oculto o que no te detectó al comienzo de tu movimiento. Si usted tienecobertura o mayor cobertura de la criatura a lo largo de tu zancada, obtienes la bonificación de circunstancia de +2 de cobertura (o +4 de cobertura mayor) a tu prueba de Sigilo. Debido a que se está mudando, el aumento de bonificación de Cubrirse no se aplica. No puedes tirar contra una criatura si, al final de tu movimiento, no estás oculto ni tienes cobertura o mayor cobertura contra ella. Automáticamente eres observado por tal criatura. </p> <p> <strong> Éxito </strong>No eres detectado por la criatura durante tu movimiento y permaneces sin ser detectado por la criatura al final del mismo. Te vuelven observado tan pronto como haces algo que no sea Esconderse, Escabullirse o Caminar. Si intentas Golpear a una criatura, la criatura permanece desprevenida contra ese ataque, y luego eres observado. Si haces cualquier otra cosa, te observan justo antes de actuar, a menos que el DJ determine lo contrario. El DJ podría permitirte realizar una acción particularmente discreta sin sernotado, posiblemente requiriendo otra prueba de Sigilo. Si hablas o haces un ruido fuerte deliberado, te escondes en lugar de pasar desapercibido. Si una criatura usa Seek y, como resultado, te ocultas, debes Sigilo si quieres que esa criatura no te detecte nuevamente. <br> <strong> Fallo </strong> Un sonido revelador u otra señal delata tu posición, aunque sigues sin ser visto. Estás oculto de la criatura a lo largo de tu movimiento y permaneces así. <br><strong> Fallo crítico </strong> ¡Estás descubierto! Eres observado por la criatura a lo largo de tu movimiento y permaneces así. Si eres invisible y estabas oculto a la criatura, en lugar de ser observado, estás oculto durante todo tu movimiento y permaneces así. </p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> ¡Estás descubierto! Eres observado por la criatura a lo largo de tu movimiento y permaneces así. Si eres invisible y estabas oculto a la criatura, en lugar de ser observado, estás oculto durante todo tu movimiento y permaneces así.",
+          "failure": "<strong> Fallo </strong> Un sonido revelador u otra señal delata tu posición, aunque sigues sin ser visto. Estás oculto de la criatura a lo largo de tu movimiento y permaneces así.",
+          "success": "<strong> Éxito </strong> No eres detectado por la criatura durante tu movimiento y permaneces sin ser detectado por la criatura al final del mismo."
+        },
+        "Title": "Furtivo"
+      },
+      "Squeeze": {
+        "Description": "<p>You contort yourself to squeeze through a space so small you can barely fit through. This action is for exceptionally small spaces; many tight spaces are difficult terrain that you can move through more quickly and without a check.</p><p><strong>Éxito crítico</strong> You squeeze through the tight space in 1 minute per 10 feet of squeezing.<br><strong>Éxito</strong> You squeeze through in 1 minute per 5 feet.<br><strong>Fallo crítico</strong> You become stuck in the tight space. While you're stuck, you can spend 1 minute attempting another Acrobatics check at the same DC. Any result on that check other than a critical failure causes you to become unstuck.</p><section class=\"sample-tasks\"><h2>Sample Squeeze Tasks</h2><p><strong>Entrenado</strong> space barely fitting your shoulders</p><p><strong>Maestro</strong> space barely fitting your head</p></section>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Te quedas atascado en un espacio reducido. Mientras estás atascado, puedes pasar 1 minuto intentando otra prueba de Acrobacias con la misma CD. Cualquier resultado en esa prueba que no sea un fallo crítico hace que te despegues.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Atraviesas el espacio reducido en 1 minuto por 10 pies de presión.",
+          "success": "<strong> Éxito </strong> Pasas en 1 minuto cada 5 pies."
+        },
+        "SampleTasks": {
+          "Trained": "space barely fitting your shoulders",
+          "Master": "space barely fitting your head"
+        },
+        "Title": "Estrujar"
+      },
+      "Stand": {
+        "Description": "<p>You stand up from prone.</p>",
+        "Title": "Stand"
+      },
+      "Steal": {
+        "Description": "<p>You try to take a small object from another creature without being noticed. Typically, you can Steal only an object of negligible Bulk, and you automatically fail if the creature who has the object is in combat or on guard.</p><p>Attempt a Thievery check to determine if you successfully Steal the object. The DC to Steal is usually the Perception DC of the creature wearing the object. This assumes the object is worn but not closely guarded (like a loosely carried pouch filled with coins, or an object within such a pouch). If the object is in a pocket or similarly protected, you take a –5 penalty to your Thievery check. The GM might increase the DC of your check if the nature of the object makes it harder to steal (such as a very small item in a large pack, or a sheet of parchment mixed in with other documents).</p><p>You might also need to compare your Thievery check result against the Perception DCs of observers other than the person wearing the object. The GM may increase the Perception DCs of these observers if they're distracted.</p><p><strong>Éxito</strong> You steal the item without the bearer noticing, or an observer doesn't see you take or attempt to take the item.<br><strong>Fallo</strong> The item's bearer notices your attempt before you can take the object, or an observer sees you take or attempt to take the item. The GM determines the response of any creature that notices your theft.</p>",
+        "Notes": {
+          "failure": "<strong> Fallo </strong> El portador del artículo nota tu intento antes de que puedas tomar el objeto, o un observador ve que tomas o intentas tomar el artículo. El DJ determina la respuesta de cualquier criatura que se dé cuenta de tu robo.",
+          "success": "<strong> Éxito </strong> Robas el objeto sin que el portador se dé cuenta, o un observador no ve que tomas o intentas tomar el objeto."
+        },
+        "Pocketed": "Objeto embolsado o protegido",
+        "Title": "Robar"
+      },
+      "SteelYourResolve": {
+        "BadArgs": "Esta acción debe realizarse con exactamente un personaje o NPC.",
+        "Content": "¿Gastar un punto de resolución y recuperar la resistencia?",
+        "NoStamina": "{name} está cansado y necesita irse a la cama! No quedan puntos de resolución.",
+        "RecoverStamina": "{name} tiene {ratio} SP y gasta un punto de resolución, recuperando la mitad de su resistencia máxima.",
+        "StaminaNotEnabled": "La variante Stamina no está habilitada.",
+        "Title": "Fortalece tu determinación"
+      },
+      "Step": {
+        "Description": "<p>You carefully move 5 feet. Unlike most types of movement, Stepping doesn't trigger reactions, such as Attacks of Opportunity, that can be triggered by move actions or upon leaving or entering a square.</p><p>You can't Step into difficult terrain, and you can't Step using a Speed other than your land Speed.</p>",
+        "Title": "Step"
+      },
+      "Stride": {
+        "Description": "<p>You move up to your Speed.</p>",
+        "Title": "Stride"
+      },
+      "Strike": {
+        "Description": "<p>You attack with a weapon you're wielding or with an unarmed attack, targeting one creature within your reach (for a melee attack) or within range (for a ranged attack). Roll an attack roll using the attack modifier for the weapon or unarmed attack you're using, and compare the result to the target creature's AC to determine the effect.</p><p><strong>Critical Success</strong> You make a damage roll according to the weapon or unarmed attack and deal double damage.</p><p><strong>Success</strong> You make a damage roll according to the weapon or unarmed attack and deal damage.</p>",
+        "Notes": {
+          "criticalSuccess": "<strong>Critical Success</strong> You make a damage roll according to the weapon or unarmed attack and deal double damage.",
+          "success": "<strong>Success</strong> You make a damage roll according to the weapon or unarmed attack and deal damage."
+        },
+        "Title": "Strike"
+      },
+      "Subsist": {
+        "AfterExplorationPenalty": "Después de la exploración",
+        "Description": "<p>You try to provide food and shelter for yourself, and possibly others as well, with a standard of living depending on your degree of success. The GM determines the DC based on the nature of the place where you're trying to Subsist. You might need a minimum proficiency rank to Subsist in particularly strange environments. Unlike most downtime activities, you can Subsist after 8 hours or less of exploration, but if you do, you take a –5 penalty.</p><p><strong>Éxito crítico</strong> You either provide a subsistence living for yourself and one additional creature, or you improve your own food and shelter, granting yourself a comfortable living.<br><strong>Éxito</strong> You find enough food and shelter with basic protection from the elements to provide you a subsistence living.<br><strong>Fallo</strong> You're exposed to the elements and don't get enough food, becoming fatigued until you attain sufficient food and shelter.<br><strong>Fallo crítico</strong> You attract trouble, eat something you shouldn't, or otherwise worsen your situation. You take a –2 circumstance penalty to checks to Subsist for 1 week. You don't find any food at all; if you don't have any stored up, you're in danger of starving or dying of thirst if you continue failing.</p><section class=\"sample-tasks\"><h2>Sample Subsist Tasks</h2><p><strong>No entrenado</strong> lush forest with calm weather or large city with plentiful resources</p><p><strong>Entrenado</strong> typical hillside or village</p><p><strong>Experto</strong> typical mountains or insular hamlet</p><p><strong>Maestro</strong> typical desert or city under siege</p><p><strong>Legendario</strong> barren wasteland or city of undead</p></section>",
+        "Notes": {
+          "criticalFailure": "<strong> Fracaso Crítico </strong> Atraes problemas, comes algo que no debes, o empeoras tu situación. Recibes una penalización de -2 circunstancias para comprobar Subsistir durante 1 semana. No encuentras comida en absoluto; si no tienes nada almacenado, corres el peligro de morirte de hambre o de sed si sigues fallando. @UUID[Compendium.pf2e.other-effects.wHWWHkjDXmJl4Ia6] {Effect: Adverse Subsist Situation}",
+          "criticalSuccess": "<strong> Éxito crítico </strong> O te proporcionas un sustento de subsistencia para ti y una criatura adicional, o mejoras tu propia comida y vivienda, otorgándote una vida cómoda.",
+          "failure": "<strong> Fallo </strong> Estás expuesto a los elementos y no obtienes suficiente comida, y te fatigas hasta que obtienes suficiente comida y refugio.",
+          "success": "<strong> Éxito </strong> Encuentra suficiente comida y refugio con protección básica contra los elementos para poder subsistir."
+        },
+        "SampleTasks": {
+          "Untrained": "a lush forest with calm weather or a large city with plentiful resources",
+          "Trained": "typical hillside or village",
+          "Expert": "typical mountains or insular hamlet",
+          "Master": "typical desert or city under siege",
+          "Legendary": "barren wasteland or city of undead"
+        },
+        "Title": "Subsistir",
+        "Warning": {
+          "NoSkill": "La acción Subsist se puede usar con diferentes habilidades y no se especificó ninguna habilidad. Esto normalmente usa Sociedad si estás en un asentamiento o Supervivencia si estás en la naturaleza."
+        }
+      },
+      "Sustain": {
+        "Description": "<p>Choose one of your effects that has a sustained duration or lists a special benefit when you Sustain it. Most such effects come from spells or magic item activations. If the effect has a sustained duration, its duration extends until the end of your next turn. (Sustaining more than once in the same turn doesn't extend the duration to subsequent turns.) If an ability can be sustained but doesn't list how long, it can be sustained up to 10 minutes.</p><p>An effect might list an additional benefit that occurs if you Sustain it, and this can even appear on effects that don't have a sustained duration. If the effect has both a special benefit and a sustained duration, your Sustain action extends the duration as well as having the special benefit.</p><p>If your Sustain action is disrupted, the ability ends.</p>",
+        "Title": "Sustain"
+      },
+      "Swim": {
+        "Description": "<p>You attempt an Athletics check to move a maximum distance of 10 feet through water. The GM determines the DC based on the turbulence or danger of the water; in most instances of calm water, you get an automatic critical success. If your land Speed is 40 feet or higher, increase the maximum possible distance by 5 feet for every 20 feet of Speed above 20 feet.</p><p>If you end your turn in water and haven't succeeded at a Swim action that turn, you sink 10 feet or get moved by the current, as determined by the GM. This doesn't apply if your last action on your turn was to enter the water.</p><p><strong>Critical Success</strong> You move through the water, increasing the maximum distance by 5 feet.<br><strong>Success</strong> You move through the water.<br><strong>Critical Failure</strong> You make no progress. If you're holding your breath, you lose 1 round of air.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> No progresas y, si contienes la respiración, pierdes 1 ronda de aire.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Te mueves a través del agua 10 pies, más 5 pies por cada 20 pies de tu Velocidad terrestre (un total de 15 pies para la mayoría de los PJ).",
+          "success": "<strong> Éxito </strong> Te mueves a través del agua 5 pies, más 5 pies por cada 20 pies de tu Velocidad terrestre (un total de 10 pies para la mayoría de los PJ)."
+        },
+        "SampleTasks": {
+          "Untrained": "lake or other still water",
+          "Trained": "flowing water, like a river",
+          "Expert": "swiftly flowing river",
+          "Master": "stormy sea",
+          "Legendary": "maelstrom, waterfall"
+        },
+        "Title": "Nadar"
+      },
+      "TakeCover": {
+        "Description": "<p>You press yourself against a wall or duck behind an obstacle to take better advantage of cover. If you would have standard cover, you instead gain greater cover, which provides a +4 circumstance bonus to AC; to Reflex saves against area effects; and to Stealth checks to Hide, Sneak, or otherwise avoid detection. Otherwise, you gain the benefits of standard cover (a +2 circumstance bonus instead). This lasts until you move from your current space, use an attack action, become unconscious, or end this effect as a free action.</p>",
+        "TowerShield": {
+          "Description": "{actor} takes cover behind their {shield}."
+        },
+        "ShortTitle": "Take Cover",
+        "Title": "Take Cover"
+      },
+      "Tamper": {
+        "Notes": {
+          "criticalFailure": "<strong> Falla crítica </strong> Su manipulación falla dramáticamente, creando una pequeña explosión de sus propias herramientas o equipo. Tomas [[/r (@actor.level)[fire] #Tamper Backfire]] {fire damage equal to your level} .",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Tu manipulación es increíblemente efectiva. Si manipulaste un arma, el enemigo recibe una penalización de circunstancia de -2 a las tiradas de ataque y daño con esa arma. Si manipuló la armadura, la armadura obstaculiza el movimiento del enemigo, haciendo que el enemigo quede desprevenido e infligiendo una penalización de -10 pies a su velocidad. El efecto dura hasta que el enemigo interactúa para eliminarlo, sin importar cuál hayas usado. @UUID[Compendium.pf2e.feat-effects.rzcpTJU9MvW1x1gz] {Effect: Armor Tampered With (Critical Success)} @UUID[Compendium.pf2e.feat-effects.o7qm13OmaYOMwgib] {Effect: Weapon Tampered With (Critical Success)}",
+          "success": "<strong> Éxito </strong> Su manipulación es temporalmente efectiva. Como éxito crítico, pero el efecto termina al comienzo de tu próximo turno, incluso si el enemigo no interactúa para terminarlo. @UUID[Compendium.pf2e.feat-effects.IfRkgjyh0JzGalIy] {Effect: Armor Tampered With (Success)} @UUID[Compendium.pf2e.feat-effects.4QWayYR3JSL9bk2T] {Effect: Weapon Tampered With (Success)}"
+        },
+        "Title": "Manosear"
+      },
+      "Track": {
+        "Description": "<p>You follow tracks, moving at up to half your travel Speed. After a successful check to Track, you can continue following the tracks at half your Speed without attempting additional checks for up to 1 hour. In some cases, you might Track in an encounter. In this case, Track is a single action and doesn't have the exploration trait, but you might need to roll more often because you're in a tense situation. The GM determines how often you must attempt this check.</p><p>You attempt your Survival check when you start Tracking, once every hour you continue tracking, and any time something significant changes in the trail. The GM determines the DCs for such checks, depending on the freshness of the trail, the weather, and the type of ground.</p><p><strong>Éxito</strong> You find the trail or continue to follow the one you're already following.<br><strong>Fallo</strong> You lose the trail but can try again after a 1-hour delay.<br><strong>Fallo crítico</strong> You lose the trail and can't try again for 24 hours.</p><section class=\"sample-tasks\"><h2>Sample Track Tasks</h2><p><strong>No entrenado</strong> the path of a large army following a road</p><p><strong>Entrenado</strong> relatively fresh tracks of a rampaging bear through the plains</p><p><strong>Experto</strong> a nimble panther's tracks through a jungle, tracks obscured by rainfall</p><p><strong>Maestro</strong> tracks obscured by winter snow, tracks of a mouse or smaller creature, tracks left on surfaces that can't hold prints like bare rock</p><p><strong>Legendario</strong> old tracks through a windy desert's sands, tracks obscured by a major blizzard or hurricane</p></section>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Pierdes el rastro y no puedes volver a intentarlo durante 24 horas.",
+          "failure": "<strong> Fallo </strong> Pierde el rastro pero puede volver a intentarlo después de 1 hora de retraso.",
+          "success": "<strong> Éxito </strong> Encuentras el rastro o sigues el que ya estás siguiendo."
+        },
+        "SampleTasks": {
+          "Untrained": "the path of a large army following a road",
+          "Trained": "relatively fresh tracks of a rampaging bear through the plains",
+          "Expert": "a nimble panther's tracks through a jungle, tracks obscured by rainfall",
+          "Master": "tracks obscured by winter snow, tracks of a mouse or smaller creature, tracks left on surfaces that can't hold prints like bare rock",
+          "Legendary": "old tracks through a windy desert's sands, tracks obscured by a major blizzard or hurricane"
+        },
+        "Title": "Pista"
+      },
+      "TreatDisease": {
+        "Description": "<p>You spend at least 8 hours caring for a diseased creature. Attempt a Medicine check against the disease's DC. After you attempt to Treat a Disease for a creature, you can't try again until after that creature's next save against the disease.</p><p><strong>Éxito crítico</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the disease.<br><strong>Éxito</strong> You grant the creature a +2 circumstance bonus to its next saving throw against the disease.<br><strong>Fallo crítico</strong> Your efforts cause the creature to take a –2 circumstance penalty to its next save against the disease.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Tus esfuerzos hacen que la criatura reciba una penalización de -2 de circunstancia en su siguiente salvación contra la enfermedad. <br/> @UUID[Compendium.pf2e.equipment-effects.5oYKYXAexr0vhx84] {Effect: Treat Disease (Critical Failure)}",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Otorgas a la criatura un bonificador de circunstancia de +4 en su próxima tirada de salvación contra la enfermedad. <br/> @UUID[Compendium.pf2e.equipment-effects.id20P4pj7zDKeLmy] {Effect: Treat Disease (Critical Success)}",
+          "success": "<strong> Éxito </strong> Otorgas a la criatura un bonificador de circunstancia de +2 en su próxima tirada de salvación contra la enfermedad. <br/> @UUID[Compendium.pf2e.equipment-effects.Ee2xfKX1yyqGIDZj] {Effect: Treat Disease (Success)}"
+        },
+        "Title": "Tratar la enfermedad"
+      },
+      "TreatPoison": {
+        "Description": "<p>You treat a patient to prevent the spread of poison. Attempt a Medicine check against the poison's DC. After you attempt to Treat a Poison for a creature, you can't try again until after the next time that creature attempts a save against the poison.</p><p><strong>Éxito crítico</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the poison.<br><strong>Éxito</strong> You grant the creature a +2 circumstance bonus to its next saving throw against the poison.<br><strong>Fallo crítico</strong> Your efforts cause the creature to take a –2 circumstance penalty to its next save against the poison.</p>",
+        "Notes": {
+          "criticalFailure": "<strong> Fallo crítico </strong> Tus esfuerzos hacen que la criatura reciba una penalización de -2 de circunstancia en su siguiente salvación contra el veneno. <br/> @UUID[Compendium.pf2e.equipment-effects.ESuBosh3t1pXEcBj] {Effect: Treat Poison (Critical Failure)}",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Otorgas a la criatura un bonificador de circunstancia de +4 en su próxima tirada de salvación contra el veneno. <br/> @UUID[Compendium.pf2e.equipment-effects.XwCBalKJf3CiEiFa] {Effect: Treat Poison (Critical Success)}",
+          "success": "<strong> Éxito </strong> Otorgas a la criatura un bonificador de circunstancia de +2 en su próxima tirada de salvación contra el veneno. <br/> @UUID[Compendium.pf2e.equipment-effects.XWenziR7J3mwKV4W] {Effect: Treat Poison (Success)}"
+        },
+        "Title": "Tratar veneno"
+      },
+      "TreatWounds": {
+        "Content": "Seleccione un DC de destino. Recuerda que no puedes intentar una curación por encima de tu competencia. Intentar hacerlo reducirá la CD y la cantidad curada al máximo que seas capaz de hacer.",
+        "DC": {
+          "Expert": "Experto CD 20, +10 Curación",
+          "Legendary": "Legendario CD 40, +50 Curación",
+          "Master": "Maestro CD 30, +30 Curación",
+          "Mod": "Modificador de CC:",
+          "Trained": "Entrenado CD 15"
+        },
+        "Error": "Token {name} no tiene la habilidad de medicina",
+        "Feats": {
+          "MortalHealing": "Curación Mortal",
+          "RiskySurgery": "Cirugía arriesgada"
+        },
+        "Label": "Tratar heridas",
+        "Rolls": {
+          "RiskySurgery": "Tirada de daños: Cirugía arriesgada",
+          "TreatWounds": "Rollo de curación: tratar heridas",
+          "TreatWoundsCriticalFailure": "Tirada de daño: curar heridas"
+        },
+        "SkillSelect": "Habilidad de tratar heridas:"
+      },
+      "Trip": {
+        "Description": "<p> Intentas derribar a una criatura al suelo. Intenta una prueba de Atletismo contra la CD de Reflejos del objetivo. </p> <p> <strong> Éxito crítico </strong> El objetivo cae y cae boca abajo y recibe 1d6 daños contundentes. <br> <strong> Éxito </strong> El objetivo cae y aterriza boca abajo. <br> <strong> Fallo crítico </strong> Pierdes el equilibrio y caes y aterrizas boca abajo. </p>",
+        "Notes": {
+          "criticalFailure": "<strong> Falla crítica </strong> Pierdes el equilibrio y caes y aterrizas @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} .",
+          "criticalSuccess": "<strong> Éxito crítico </strong> El objetivo cae y aterriza @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} y ​​recibe [[/r 1d6[bludgeoning] # Bludgeoning damage]] {1d6} daño contundente.",
+          "success": "<strong> Éxito </strong> El objetivo cae y aterriza @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} ."
+        },
+        "Title": "Viaje"
+      },
+      "TumbleThrough": {
+        "Description": "<p>You Stride up to your Speed. During this movement, you can try to move through the space of one enemy. Attempt an Acrobatics check against the enemy's Reflex DC as soon as you try to enter its space. You can Tumble Through using Climb, Fly, Swim, or another action instead of Stride in the appropriate environment.</p><p><strong>Éxito</strong> You move through the enemy's space, treating the squares in its space as difficult terrain (every 5 feet costs 10 feet of movement). If you don't have enough Speed to move all the way through its space, you get the same effect as a failure.<br><strong>Fallo</strong> Your movement ends, and you trigger reactions as if you had moved out of the square you started in.</p>",
+        "Notes": {
+          "failure": "<strong> Fallo </strong> Tu movimiento finaliza y desencadenas reacciones como si te hubieras movido fuera de la casilla en la que comenzaste.",
+          "success": "<strong> Éxito </strong> Te mueves a través del espacio del enemigo, tratando las casillas en su espacio como terreno difícil (cada 5 pies cuesta 10 pies de movimiento). Si no tienes suficiente Velocidad para moverte completamente a través de su espacio, obtienes el mismo efecto que un fallo."
+        },
+        "Title": "Caer a través"
+      },
+      "WhirlingThrow": {
+        "Notes": {
+          "criticalFailure": "<strong> Critical Failure </strong> No lanzas la criatura, y ya no está @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei] {Grabbed} o @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM] {Restrained} por ti.",
+          "criticalSuccess": "<strong> Éxito crítico </strong> Lanzas a la criatura a la distancia deseada y cae @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} .",
+          "failure": "<strong> Fallo </strong> No arrojas la criatura.",
+          "success": "<strong> Éxito </strong> Lanzas a la criatura la distancia deseada."
+        },
+        "Title": "Lanzamiento giratorio"
+      }
+    },
+    "ActionsCheck": {
+      "acrobatics": "Prueba de acrobacias",
+      "arcana": "Comprobación de arcanos",
+      "athletics": "Verificación de atletismo",
+      "crafting": "Comprobación de elaboración",
+      "deception": "Verificación de engaño",
+      "diplomacy": "Prueba de diplomacia",
+      "fortitude": "Fortitude Saving Throw",
+      "intimidation": "Control de intimidación",
+      "medicine": "Verificación de medicamentos",
+      "nature": "Control de la naturaleza",
+      "occultism": "Prueba de ocultismo",
+      "perception": "Control de percepción",
+      "performance": "Comprobación de rendimiento",
+      "reflex": "Reflex Saving Throw",
+      "religion": "Comprobación de religión",
+      "society": "Comprobación de la sociedad",
+      "spell": "{type} Spell Attack",
+      "stealth": "Comprobación de sigilo",
+      "survival": "Control de supervivencia",
+      "thievery": "Cheque de robo",
+      "unarmed": "Tirada de ataque desarmado",
+      "will": "Will Saving Throw",
+      "x": "{type} Check",
+      "x-attack-roll": "{type} Attack Roll"
+    },
+    "ActionsSampleTasks": {
+      "Title": "Sample {action} Tasks"
+    },
+    "ActionsWarning": {
+      "NoActor": "Seleccione al menos una ficha antes de tirar, o asigne un carácter predeterminado.",
+      "NoStatistic": "El actor {name} ({id}) no tiene una estadística para {statistic}.",
+      "Variants": {
+        "None": "La acción ' {action} ' no tiene variantes, pero se solicitó la variante ' {variant} '.",
+        "Multiple": "La acción ' {action} ' tiene múltiples variantes, pero no se solicitó ninguna variante.",
+        "Nonexistent": "Specified variant '{variant}' does not exist for action '{action}'"
+      }
+    }
+  }
+}
