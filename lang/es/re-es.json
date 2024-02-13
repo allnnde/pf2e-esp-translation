@@ -1,0 +1,2705 @@
+{
+    "PF2E": {
+        "AmmunitionNotes": {
+            "AntlerArrow": {
+                "CriticalText": "La CD de la prueba de Atletismo para liberar el misil aumenta a @Check[type:athletics|dc:15|name:Pull the Missile Free|showDC:all]",
+                "Text": "El objetivo debe tener éxito en una salvación de @Check[type:reflex|dc:16|name:Antler Arrow] o quedar atrapado en la superficie, recibiendo los efectos críticos de especialización de un arco.",
+                "Title": "Flecha de asta"
+            },
+            "ExplosiveAmmunition": {
+                "Greater": {
+                    "Text": "El misil explota en un @Template[type:burst|distance:10] , e inflige [[/r 10d6[fire]] ] de daño a cada criatura en el área (incluido el objetivo). Cada criatura debe intentar una salvación de @Check[type:reflex|dc:30|basic:true|name:Explosive Ammunition].",
+                    "Title": "Munición explosiva (mayor)"
+                },
+                "Normal": {
+                    "Text": "El misil explota en un @Template[type:burst|distance:10] , e inflige [[/r 6d6[fire]] ] de daño a cada criatura en el área (incluido el objetivo). Cada criatura debe intentar una salvación de @Check[type:reflex|dc:25|basic:true|name:Explosive Ammunition].",
+                    "Title": "Municiones explosivas"
+                }
+            },
+            "ExsanguinatingAmmunition": {
+                "Greater": {
+                    "Text": "Durante 1 minuto después de que inflijas daño a una criatura con una munición exanguinante activada, esa criatura gana debilidad 3 al daño por sangrado persistente. Además, la CD de cualquier prueba plana para terminar con el daño por sangrado persistente aumenta de 15 a 17 (de 10 a 12 cuando se recibe asistencia particularmente efectiva) mientras dure. @UUID[Compendium.pf2e.equipment-effects.5lZWAvm0oGxvF4bm] {Effect: Exsanguinating Ammunition (Greater)}",
+                    "Title": "Munición exanguinante (mayor)"
+                },
+                "Major": {
+                    "Text": "Durante 1 minuto después de que inflijas daño a una criatura con una munición exanguinante activada, esa criatura gana debilidad 5 al daño por sangrado persistente. Además, la CD de cualquier prueba plana para terminar con el daño por sangrado persistente aumenta de 15 a 17 (de 10 a 12 cuando se recibe asistencia particularmente efectiva) mientras dure. @UUID[Compendium.pf2e.equipment-effects.mrwg2XftLtSLj197] {Effect: Exsanguinating Ammunition (Major)}",
+                    "Title": "Munición exanguinante (mayor)"
+                },
+                "Normal": {
+                    "Text": "Durante 1 minuto después de que inflijas daño a una criatura con una munición exanguinante activada, esa criatura gana debilidad 1 al daño por sangrado persistente. Además, la CD de cualquier prueba plana para terminar con el daño por sangrado persistente aumenta de 15 a 17 (de 10 a 12 cuando se recibe asistencia particularmente efectiva) mientras dure. @UUID[Compendium.pf2e.equipment-effects.Fz3cSffzDAxhCh2D] {Effect: Exsanguinating Ammunition}",
+                    "Title": "Munición exanguinante"
+                }
+            },
+            "FreezingAmmunition": {
+                "Text": "El objetivo debe tener éxito en una salvación de @Check[type:fortitude|dc:19] o ser @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3] {Slowed 1} durante 1 asalto por el frío intenso (ralentizado 1 durante 1 minuto en un fallo crítico).",
+                "Title": "Munición congelante"
+            },
+            "MeteorShot": {
+                "CriticalFailureText": "En un fallo crítico, el arma falla.",
+                "Greater": {
+                    "Text": "Además del daño normal del arma, el disparo de meteorito inflige daño de fuego y el suelo en el área se convierte en terreno difícil. La munición inflige [[/r 6d6[fire]] ] de daño en un @Template[type:emanation|distance:10] alrededor del objetivo ( @Check[type:reflex|dc:29|basic:true|name:Meteor Shot] de salvación).",
+                    "Title": "Disparo de meteorito (mayor)"
+                },
+                "Major": {
+                    "Text": "Además del daño normal del arma, el disparo de meteorito inflige daño de fuego y el suelo en el área se convierte en terreno difícil. La munición inflige [[/r 9d6[fire]] ] de daño en un @Template[type:emanation|distance:20] alrededor del objetivo ( @Check[type:reflex|dc:37|basic:true|name:Meteor Shot] de salvación).",
+                    "Title": "Disparo de meteorito (mayor)"
+                },
+                "Normal": {
+                    "Text": "Además del daño normal del arma, el disparo de meteorito inflige daño de fuego y el suelo en el área se convierte en terreno difícil. La munición inflige [[/r 3d6[fire]] ] de daño en un @Template[type:emanation|distance:5] alrededor del objetivo ( @Check[type:reflex|dc:23|basic:true|name:Meteor Shot] de salvación).",
+                    "Title": "Disparo de meteorito"
+                }
+            },
+            "ShiningAmmunition": {
+                "Text": "La munición arroja luz brillante en un radio de 20 pies (y luz tenue en los siguientes 20 pies) durante 10 minutos. Si golpea un objetivo, se pega, lo que hace que el objetivo arroje luz en el mismo radio. @UUID[Compendium.pf2e.equipment-effects.Sf6UO6vgCeicggOK] {Effect: Shining Ammunition}",
+                "Title": "Munición brillante"
+            }
+        },
+        "AttackEffects": {
+            "DropWeapon": "La criatura deja caer el arma empuñada.",
+            "IgnoreConcealed": "El ataque ignora la condición @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W] {Concealed} .",
+            "IgnoreCover": "El objetivo no se beneficia de una cobertura menor y reduce la bonificación de CA de la cobertura estándar en 2 contra el ataque.",
+            "IncreasedCriticalChance": "Si el ataque impacta y la criatura saca un 19 en la tirada de d20, el ataque es un golpe crítico. Esto no tiene ningún efecto si el 19 sería un fracaso.",
+            "IncreasedReach5": "Alcance alcanzado en 5 pies",
+            "InterruptAction": "Con un impacto, la acción del objetivo se interrumpe.",
+            "KnockProne": "En un golpe, el objetivo es derribado @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} .",
+            "ReduceHiddenCheck": "La DC del chequeo plano para apuntar a una criatura @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Oculta} es sólo @Check[type:flat|dc:5]."
+        },
+        "BattleForm": {
+            "AberrantForm": {
+                "GugSqueezeNote": "Sus múltiples articulaciones le permiten pasar por espacios reducidos como si fuera una criatura mediana."
+            },
+            "AngelForm": {
+                "DeafenedNote": "@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Sordo} durante 1 asalto en un golpe crítico."
+            },
+            "Attack": {
+                "Antler": "Cuerno",
+                "AqueousFist": "Puño acuoso",
+                "Beak": "Pico",
+                "Beard": "Barba",
+                "Bite": "Morder",
+                "Body": "Cuerpo",
+                "BoneShard": "Fragmento de hueso",
+                "Boot": "Bota",
+                "Branch": "Rama",
+                "Claw": "Garra",
+                "CubeFace": "Cara de cubo",
+                "Fangs": "Colmillos",
+                "FireMote": "Moto de fuego",
+                "Foot": "Pie",
+                "Foreleg": "Pata delantera",
+                "Gust": "Ráfaga",
+                "HolyMace": "Maza sagrada",
+                "Hoof": "Casco",
+                "Horn": "Bocina",
+                "Jaws": "Mandíbulas",
+                "LavaFist": "Puño de lava",
+                "Leaf": "Hoja",
+                "Leg": "Pierna",
+                "LightningLash": "Latigazo de relámpago",
+                "Mandibles": "Mandíbulas",
+                "Moonbeam": "Rayo de luna",
+                "PiercingHymn": "Himno penetrante",
+                "Pincer": "Pinza",
+                "Pseudopod": "Seudópodo",
+                "Rock": "Roca",
+                "Spikes": "Picos",
+                "Spine": "Columna vertebral",
+                "Stinger": "Aguijon",
+                "Sunbeam": "Rayo de sol",
+                "Tail": "Reajuste salarial",
+                "Talon": "Garra",
+                "Tendril": "Zarcillo",
+                "Tentacle": "Tentáculo",
+                "TentacleArm": "Brazo tentáculo",
+                "Thorns": "Espinas",
+                "Tongue": "Lengua",
+                "Trunk": "Trompa",
+                "Tusk": "Colmillo",
+                "Vine": "Enredadera",
+                "WaterSpout": "Caño de agua",
+                "Wave": "Ola",
+                "Web": "Red",
+                "Wing": "Ala"
+            },
+            "CosmicForm": {
+                "MoonNote": "El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Estupefacto 2} durante 1 asalto.",
+                "SunNote": "El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} durante 1 asalto."
+            },
+            "DaemonForm": {
+                "CeustodaemonDamageNote": "Cualquier golpe de mandíbula o garra con éxito inflige [[/r {1d6}]]{1d6 de daño} adicional, y tú recibes la misma cantidad de daño."
+            },
+            "ElementEmbodied": {
+                "AirPushNote": "Ademas @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Empujar} 10 pies",
+                "WaterPushPullNote": "Ademas @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Empujar} o Tirar 10 pies."
+            },
+            "InsectForm": {
+                "SpiderWebNote": "Un ataque de telaraña con éxito enreda al objetivo durante 1 asalto, pero no inflige daño."
+            },
+            "MonstrosityForm": {
+                "ShroudOfFlame": "Envoltura de llamas"
+            },
+            "Note": {
+                "Grab": "Puedes gastar una acción inmediatamente después de un golpe para @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Agarrar} al objetivo.",
+                "GrabbingTrunk": {
+                    "Text": "Una hasta dos tamaños más pequeña que es una criatura golpeada por tu trompa es @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei] {Grabbed} . Si tienes éxito en tu prueba de @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD] {Grapple} contra una criatura agarrada por tu baúl, puedes reubicar a la criatura en otro espacio dentro del alcance de tu baúl.",
+                    "Title": "Agarrando el tronco"
+                },
+                "Shove": "Puedes gastar una acción inmediatamente después de un golpe para empujar al objetivo 5 pies con los efectos de un @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}."
+            },
+            "OozeForm": {
+                "GelatinousCubeNote": "Una criatura golpeada por tu Golpe de cara de cubo debe tener éxito en una salvación @Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)|traits:incapacitation] contra tu DC de hechizo o quedar @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1} (o @UUID[Compendium.pf2e.conditionitems.Item.6 uEgoh53GbXuHpTF]{Paralizado} durante 1 asalto en caso de fallo crítico); esta salvación tiene el rasgo de incapacitación."
+            }
+        },
+        "BombNotes": {
+            "AcidFlask": {
+                "Greater": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*3d6)[persistent,acid]] ] y [[/r (3[splash])[acid]] ] {3 acid splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 3d6[persistent,acid]] ] y [[/r (3[splash])[acid]] ] {3 acid splash damage} ."
+                },
+                "Lesser": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*1d6)[persistent,acid]] ] y [[/r (1[splash])[acid]] ] {1 acid splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 1d6[persistent,acid]] ] y [[/r (1[splash])[acid]] ] {1 acid splash damage} ."
+                },
+                "Major": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*4d6)[persistent,acid]] ] y [[/r (4[splash])[acid]] ] {4 acid splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 4d6[persistent,acid]] ] y [[/r (4[splash])[acid]] ] {4 acid splash damage} ."
+                },
+                "Moderate": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*2d6)[persistent,acid]] ] y [[/r (2[splash])[acid]] ] {2 acid splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 2d6[persistent,acid]] ] y [[/r (2[splash])[acid]] ] {2 acid splash damage} ."
+                }
+            },
+            "AlchemistsFire": {
+                "Greater": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*3)[persistent,fire]] ] y [[/r (3[splash])[fire]] ] {3 fire splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 3[persistent,fire]] ] y [[/r (3[splash])[fire]] ] {3 fire splash damage} ."
+                },
+                "Lesser": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*1)[persistent,fire]] ] y [[/r (1[splash])[fire]] ] {1 fire splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 1[persistent,fire]] ] y [[/r (1[splash])[fire]] ] {1 fire splash damage} ."
+                },
+                "Major": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*4)[persistent,fire]] ] y [[/r (4[splash])[fire]] ] {4 fire splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 4[persistent,fire]] ] y [[/r (4[splash])[fire]] ] {4 fire splash damage} ."
+                },
+                "Moderate": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*2)[persistent,fire]] ] y [[/r (2[splash])[fire]] ] {2 fire splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 2[persistent,fire]] ] y [[/r (2[splash])[fire]] ] {2 fire splash damage} ."
+                }
+            },
+            "BioluminescenceBomb": {
+                "success": "<p> Cada criatura dentro de @Template[type:emanation|distance:10] {10 feet} de donde explotó la bomba debe tener éxito en una salvación de @Check[type:reflex|dc:17] o estar marcada con un tinte que continúa brillando durante 24 horas. Una criatura afectada también debe realizar una tirada de salvación de @Check[type:fortitude|dc:17] contra el abrumador estallido de luz. </p> <p> <strong> Éxito </strong> La criatura no se ve afectada. </p> <p> <strong> Fallo </strong> Lacriatura es @Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh] {Dazzled} durante 1 asalto. </p> <p> <strong> Fallo crítico </strong> La criatura es @Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2] {Blinded} durante 1 asalto, luego deslumbrada durante 1 asalto. </p>"
+            },
+            "BlightBomb": {
+                "Greater": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*3d4)[persistent,poison]] ] y [[/r (3[splash])[poison]] ] {3 poison splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 3d4[persistent,poison]] ] y [[/r (3[splash])[poison]] ] {3 poison splash damage} ."
+                },
+                "Lesser": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*1d4)[persistent,poison]] ] y [[/r (1[splash])[poison]] ] {1 poison splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 1d4[persistent,poison]] ] y [[/r (1[splash])[poison]] ] {1 poison splash damage} ."
+                },
+                "Major": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*4d4)[persistent,poison]] ] y [[/r (4[splash])[poison]] ] {4 poison splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 4d4[persistent,poison]] ] y [[/r (4[splash])[poison]] ] {4 poison splash damage} ."
+                },
+                "Moderate": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*2d4)[persistent,poison]] ] y [[/r (2[splash])[poison]] ] {2 poison splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 2d4[persistent,poison]] ] y [[/r (2[splash])[poison]] ] {2 poison splash damage} ."
+                }
+            },
+            "BottledLightning": {
+                "Greater": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[electricity]] ] {3 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg] {Flat-Footed} hasta el comienzo de tu próximo turno."
+                },
+                "Lesser": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[electricity]] ] {1 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg] {Flat-Footed} hasta el comienzo de tu próximo turno."
+                },
+                "Major": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[electricity]] ] {4 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg] {Flat-Footed} hasta el comienzo de tu próximo turno."
+                },
+                "Moderate": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[electricity]] ] {2 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg] {Flat-Footed} hasta el comienzo de tu próximo turno."
+                }
+            },
+            "CrystalShards": {
+                "Greater": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (5[splash])[piercing]] ] {5 piercing splash damage} y ​​la salpicadura crea cristales que son @UUID[Compendium.pf2e.equipment-srd.7fSnvJ2xoSfa6JXD] {Caltrops} en superficies niveladas y sideros en superficies verticales, otorgando un bonificador de objeto de +2 en la siguiente prueba de Atletismo para Trepar."
+                },
+                "Major": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (6[splash])[piercing]] ] {6 piercing splash damage} y ​​​​la salpicadura crea cristales que son @UUID[Compendium.pf2e.equipment-srd.7fSnvJ2xoSfa6JXD] {Caltrops} en superficies niveladas y sideros en superficies verticales, otorgando un bonificador de objeto de +3 en la siguiente prueba de Atletismo para Trepar."
+                },
+                "Moderate": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[piercing]] ] {4 piercing splash damage} y ​​​​la salpicadura crea cristales que son @UUID[Compendium.pf2e.equipment-srd.7fSnvJ2xoSfa6JXD] {Caltrops} en superficies niveladas y sideros en superficies verticales, otorgando un bonificador de objeto de +1 en la siguiente prueba de Atletismo para Trepar."
+                }
+            },
+            "DreadAmpoule": {
+                "Greater": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[mental]] ] {3 mental splash damage} y ​​​​el objetivo es @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL] {Frightened 1} ( @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL] {Frightened 2} en un crítico)."
+                },
+                "Lesser": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[mental]] ] {1 mental splash damage} y ​​​​el objetivo es @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL] {Frightened 1} ( @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL] {Frightened 2} en un crítico)."
+                },
+                "Major": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[mental]] ] {4 mental splash damage} y ​​​​el objetivo es @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL] {Frightened 1} ( @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL] {Frightened 2} en un crítico)."
+                },
+                "Moderate": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[mental]] ] {2 mental splash damage} y ​​​​el objetivo es @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL] {Frightened 1} ( @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL] {Frightened 2} en un crítico)."
+                }
+            },
+            "DwarvenDaisy": {
+                "Lesser": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[fire]] ] {1 fire splash damage} y ​​​​el objetivo debe tener éxito en una salvación de @Check[type:fortitude|dc:16|traits:damaging-effect|showDC:all] o convertirse en @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh] {Dazzled} durante 1 ronda."
+                },
+                "Moderate": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[fire]] ] {2 fire splash damage} y ​​​​el objetivo debe tener éxito en una salvación de @Check[type:fortitude|dc:18|traits:damaging-effect|showDC:all] o convertirse en @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh] {Dazzled} durante 1 ronda."
+                }
+            },
+            "FrostVial": {
+                "Greater": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[cold]] ] {3 cold splash damage} y ​​el objetivo recibe una penalización de -10 pies a sus Velocidades hasta el final de su siguiente turno ( @UUID[Compendium.pf2e.equipment-effects.nJRoiSyd67eQ1dYj] {Effect: Frost Vial (Greater)} )."
+                },
+                "Lesser": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[cold]] ] {1 cold splash damage} y ​​el objetivo sufre una penalización de -5 pies a sus Velocidades hasta el final de su siguiente turno ( @UUID[Compendium.pf2e.equipment-effects.RLsdvhmTh64Mmty9] {Effect: Frost Vial (Lesser)} )."
+                },
+                "Major": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[cold]] ] {4 cold splash damage} y ​​el objetivo sufre una penalización de -15 pies a sus Velocidades hasta el final de su siguiente turno ( @UUID[Compendium.pf2e.equipment-effects.4G9qnI0oRyL6eKFQ] {Effect: Frost Vial (Major)} )."
+                },
+                "Moderate": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[cold]] ] {2 cold splash damage} y ​​el objetivo recibe una penalización de -10 pies a sus Velocidades hasta el final de su siguiente turno ( @UUID[Compendium.pf2e.equipment-effects.dv0IKm5syOdP759w] {Effect: Frost Vial (Moderate)} )."
+                }
+            },
+            "GhostCharge": {
+                "Greater": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[positive]] ] {3 positive splash damage} y ​​​​el objetivo que recibe daño se convierte en @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7] {Enfeebled 2} hasta el comienzo de mi próximo turno."
+                },
+                "Lesser": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[positive]] ] {1 positive splash damage} y ​​​​el objetivo que recibe daño se convierte en @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7] {Enfeebled 1} hasta el comienzo de mi próximo turno."
+                },
+                "Major": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[positive]] ] {4 positive splash damage} y ​​​​el objetivo que recibe daño se convierte en @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7] {Enfeebled 2} hasta el comienzo de mi próximo turno."
+                },
+                "Moderate": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[positive]] ] {2 positive splash damage} y ​​​​el objetivo que recibe daño se convierte en @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7] {Enfeebled 1} hasta el comienzo de mi próximo turno."
+                }
+            },
+            "GooGrenade": {
+                "Greater": "Alcalde que",
+                "Lesser": "Menor",
+                "Major": "Importante",
+                "Moderate": "Moderado",
+                "Prompt": "Seleccione una calidad de granada pegajosa.",
+                "success": "<strong> Efecto </strong> Con un golpe, la criatura sufre una penalización a sus Velocidades debido a la pegajosa sustancia pegajosa. @UUID[Compendium.pf2e.equipment-effects.5JYchreCttBg7RcD] {Effect: Goo Grenade}"
+            },
+            "JunkBomb": {
+                "Greater": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*3)[bleed]] ] y [[/r (3[splash])[slashing]] ] {3 slashing splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 3[bleed]] ] y [[/r (3[splash])[slashing]] ] {3 slashing splash damage} ."
+                },
+                "Lesser": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*1)[bleed]] ] y [[/r (1[splash])[slashing]] ] {1 slashing splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 1[bleed]] ] y [[/r (1[splash])[slashing]] ] {1 slashing splash damage} ."
+                },
+                "Major": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*4)[bleed]] ] y [[/r (4[splash])[slashing]] ] {4 slashing splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 4[bleed]] ] y [[/r (4[splash])[slashing]] ] {4 slashing splash damage} ."
+                },
+                "Moderate": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*2)[bleed]] ] y [[/r (2[splash])[slashing]] ] {2 slashing splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 2[bleed]] ] y [[/r (2[splash])[slashing]] ] {2 slashing splash damage} ."
+                }
+            },
+            "MudBomb": {
+                "Greater": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[bludgeoning]] ] {3 bludgeoning splash damage} . El objetivo es @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh] {Dazzled} hasta el comienzo de tu próximo turno.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[bludgeoning]] ] {3 bludgeoning splash damage} ."
+                },
+                "Lesser": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[bludgeoning]] ] {1 bludgeoning splash damage} . El objetivo es @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh] {Dazzled} hasta el comienzo de tu próximo turno.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[bludgeoning]] ] {1 bludgeoning splash damage} ."
+                },
+                "Major": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[bludgeoning]] ] {4 bludgeoning splash damage} . El objetivo es @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh] {Dazzled} hasta el comienzo de tu próximo turno.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[bludgeoning]] ] {4 bludgeoning splash damage} ."
+                },
+                "Moderate": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[bludgeoning]] ] {2 bludgeoning splash damage} . El objetivo es @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh] {Dazzled} hasta el comienzo de tu próximo turno.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[bludgeoning]] ] {2 bludgeoning splash damage} ."
+                }
+            },
+            "NecroticBomb": {
+                "Greater": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[negative]] ] {3 negative splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18] {Sickened 3} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[negative]] ] {3 negative splash damage} ."
+                },
+                "Lesser": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[negative]] ] {1 negative splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18] {Sickened 1} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[negative]] ] {1 negative splash damage} ."
+                },
+                "Major": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[negative]] ] {4 negative splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18] {Sickened 4} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[negative]] ] {4 negative splash damage} ."
+                },
+                "Moderate": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[negative]] ] {2 negative splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18] {Sickened 2} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[negative]] ] {2 negative splash damage} ."
+                }
+            },
+            "PerniciousSporeBomb": {
+                "Greater": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*3d4)[persistent,piercing]] ] y [[/r (3[splash])[poison]] ] {3 poison splash damage} . El área de salpicadura de la bomba está cubierta de vegetación, convirtiéndose en terreno difícil durante 1 asalto.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 3d4[persistent,piercing]] ] y [[/r (3[splash])[poison]] ] {3 poison splash damage} . El área de salpicadura de la bomba está cubierta de vegetación, convirtiéndose en terreno difícil durante 1 asalto."
+                },
+                "Lesser": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*1d4)[persistent,piercing]] ] y [[/r (1[splash])[poison]] ] {1 poison splash damage} . El área de salpicadura de la bomba está cubierta de vegetación, convirtiéndose en terreno difícil durante 1 asalto.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 1d4[persistent,piercing]] ] y [[/r (1[splash])[poison]] ] {1 poison splash damage} . El área de salpicadura de la bomba está cubierta de vegetación, convirtiéndose en terreno difícil durante 1 asalto."
+                },
+                "Major": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*4d4)[persistent,piercing]] ] y [[/r (4[splash])[poison]] ] {4 poison splash damage} . El área de salpicadura de la bomba está cubierta de vegetación, lo que la convierte en un terreno difícil durante 1 minuto.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 4d4[persistent,piercing]] ] y [[/r (4[splash])[poison]] ] {4 poison splash damage} . El área de salpicadura de la bomba está cubierta de vegetación, lo que la convierte en un terreno difícil durante 1 minuto."
+                },
+                "Moderate": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*2d4)[persistent,piercing]] ] y [[/r (2[splash])[poison]] ] {2 poison splash damage} . El área de salpicadura de la bomba está cubierta de vegetación, convirtiéndose en terreno difícil durante 1 asalto.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 2d4[persistent,piercing]] ] y [[/r (2[splash])[poison]] ] {2 poison splash damage} . El área de salpicadura de la bomba está cubierta de vegetación, convirtiéndose en terreno difícil durante 1 asalto."
+                }
+            },
+            "PeshspineGrenade": {
+                "Greater": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[piercing]] ] {3 piercing splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg] {Stupefied 2} hasta el final de su turno."
+                },
+                "Lesser": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[piercing]] ] {1 piercing splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg] {Stupefied 1} hasta el final de su turno."
+                },
+                "Major": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[piercing]] ] {4 piercing splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg] {Stupefied 3} hasta el final de su turno."
+                },
+                "Moderate": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[piercing]] ] {2 piercing splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg] {Stupefied 1} hasta el final de su turno."
+                }
+            },
+            "PressureBomb": {
+                "Greater": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[bludgeoning]] ] {3 bludgeoning splash damage} , Los objetivos medianos o más pequeños son empujados a 5 pies de ti y el objetivo es golpeado @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[bludgeoning]] ] {3 bludgeoning splash damage} , Los objetivos medianos o pequeños son empujados a 5 pies de ti."
+                },
+                "Lesser": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[bludgeoning]] ] {1 bludgeoning splash damage} , los objetivos pequeños o más pequeños son empujados a 5 pies de distancia de ti y el objetivo es golpeado @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[bludgeoning]] ] {1 bludgeoning splash damage} , Los objetivos diminutos o más pequeños son empujados a 5 pies de ti."
+                },
+                "Major": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[bludgeoning]] ] {4 bludgeoning splash damage} , Las criaturas Medianas o más pequeñas que reciben daño por salpicadura son empujadas a 5 pies del objetivo, y luego, si el objetivo es Grande o más pequeño, es empujado a 5 pies de ti, y el objetivo es derribado @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[bludgeoning]] ] {4 bludgeoning splash damage} , Las criaturas Medianas o más pequeñas que reciben daño por salpicadura son empujadas a 5 pies del objetivo, y luego, si el objetivo es Grande o más pequeño, es empujado a 5 pies de ti."
+                },
+                "Moderate": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[bludgeoning]] ] {2 bludgeoning splash damage} , Los objetivos pequeños o más pequeños son empujados a 5 pies de distancia de ti, y el objetivo es golpeado @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[bludgeoning]] ] {2 bludgeoning splash damage} , Los pequeños objetivos o más pequeños son empujados a 5 pies de ti."
+                }
+            },
+            "RedpitchBomb": {
+                "Greater": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*3d4)[persistent,fire]] ] y [[/r (3[splash])[fire]] ] {3 fire splash damage} . En un golpe crítico, el objetivo es @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm] {Clumsy 2} hasta el comienzo de mi próximo turno.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 3d4[persistent,fire]] ] y [[/r (3[splash])[fire]] ] {3 fire splash damage} ."
+                },
+                "Lesser": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*1d4)[persistent,fire]] ] y [[/r (1[splash])[fire]] ] {1 fire splash damage} . En un golpe crítico, el objetivo es @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm] {Clumsy 1} hasta el comienzo de mi próximo turno.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 1d4[persistent,fire]] ] y [[/r (1[splash])[fire]] ] {1 fire splash damage} ."
+                },
+                "Major": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*4d4)[persistent,fire]] ] y [[/r (4[splash])[fire]] ] {4 fire splash damage} . En un golpe crítico, el objetivo es @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm] {Clumsy 3} hasta el comienzo de mi próximo turno.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 4d4[persistent,fire]] ] y [[/r (4[splash])[fire]] ] {4 fire splash damage} ."
+                },
+                "Moderate": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*2d4)[persistent,fire]] ] y [[/r (2[splash])[fire]] ] {2 fire splash damage} . En un golpe crítico, el objetivo es @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm] {Clumsy 1} hasta el comienzo de mi próximo turno.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 2d4[persistent,fire]] ] y [[/r (2[splash])[fire]] ] {2 fire splash damage} ."
+                }
+            },
+            "SulfurBomb": {
+                "Greater": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[acid]] ] {3 acid splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18] {Sickened 1} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[acid]] ] {3 acid splash damage} y ​​el objetivo sufre una penalización de estado de -1 a las pruebas de Percepción y tiradas de ataque hasta el final de su siguiente turno ( @UUID[Compendium.pf2e.equipment-effects.fuQVJiPPUsvL6fi5] {Effect: Sulfur Bomb (Failure)} )."
+                },
+                "Lesser": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[acid]] ] {1 acid splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18] {Sickened 1} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[acid]] ] {1 acid splash damage} y ​​el objetivo sufre una penalización de estado de -1 a las pruebas de Percepción y tiradas de ataque hasta el final de su siguiente turno ( @UUID[Compendium.pf2e.equipment-effects.fuQVJiPPUsvL6fi5] {Effect: Sulfur Bomb (Failure)} )."
+                },
+                "Major": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[acid]] ] {4 acid splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18] {Sickened 1} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[acid]] ] {4 acid splash damage} y ​​el objetivo sufre una penalización de estado de -1 a las pruebas de Percepción y tiradas de ataque hasta el final de su siguiente turno ( @UUID[Compendium.pf2e.equipment-effects.fuQVJiPPUsvL6fi5] {Effect: Sulfur Bomb (Failure)} )."
+                },
+                "Moderate": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[acid]] ] {2 acid splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18] {Sickened 1} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[acid]] ] {2 acid splash damage} y ​​el objetivo sufre una penalización de estado de -1 a las pruebas de Percepción y tiradas de ataque hasta el final de su siguiente turno ( @UUID[Compendium.pf2e.equipment-effects.fuQVJiPPUsvL6fi5] {Effect: Sulfur Bomb (Failure)} )."
+                }
+            },
+            "TallowBomb": {
+                "criticalSuccess": "Con un impacto crítico, una criatura viviente que reciba daño persistente de fuego de una bomba de sebo queda @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Enfermo 1} por el hedor de la grasa quemada y no puede reducir su valor de enfermo por debajo de 1 mientras dure el daño persistente de fuego",
+                "Greater": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*3d4)[persistent,fire]] ], [[/r (3[splash])[fire]] ] {3 fire splash damage} , y el objetivo es @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18] {Sickened 1} del hedor de la grasa quemada. La criatura no puede reducir su valor de enfermedad por debajo de 1 mientras dure el daño de fuego persistente.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 3d4[persistent,fire]] ] y [[/r (3[splash])[fire]] ] {3 fire splash damage} ."
+                },
+                "Lesser": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*1d4)[persistent,fire]] ], [[/r (1[splash])[fire]] ] {1 fire splash damage} , y el objetivo es @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18] {Sickened 1} del hedor de la grasa quemada. La criatura no puede reducir su valor de enfermedad por debajo de 1 mientras dure el daño de fuego persistente.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 1d4[persistent,fire]] ] y [[/r (1[splash])[fire]] ] {1 fire splash damage} ."
+                },
+                "Major": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*4d4)[persistent,fire]] ], [[/r (4[splash])[fire]] ] {4 fire splash damage} , y el objetivo es @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18] {Sickened 1} del hedor de la grasa quemada. La criatura no puede reducir su valor de enfermedad por debajo de 1 mientras dure el daño de fuego persistente.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 4d4[persistent,fire]] ] y [[/r (4[splash])[fire]] ] {4 fire splash damage} ."
+                },
+                "Moderate": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*2d4)[persistent,fire]] ], [[/r (2[splash])[fire]] ] {2 fire splash damage} , y el objetivo es @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18] {Sickened 1} del hedor de la grasa quemada. La criatura no puede reducir su valor de enfermedad por debajo de 1 mientras dure el daño de fuego persistente.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 2d4[persistent,fire]] ] y [[/r (2[splash])[fire]] ] {2 fire splash damage} ."
+                }
+            },
+            "TanglefootBag": {
+                "Greater": {
+                    "criticalSuccess": "Al golpear, @UUID[Compendium.pf2e.equipment-effects.csA4UAD2tQq7RjT8] {-15 ft Speed Penalty} durante 1 minuto. Con golpe crítico, @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe] {Immobilized} durante 1 ronda.",
+                    "success": "Al golpear, @UUID[Compendium.pf2e.equipment-effects.csA4UAD2tQq7RjT8] {-15 ft Speed Penalty} durante 1 minuto."
+                },
+                "Lesser": {
+                    "criticalSuccess": "Al golpear, @UUID[Compendium.pf2e.equipment-effects.fYZIanbYu0Vc4JEL] {-10 ft Speed Penalty} durante 1 minuto. Con golpe crítico, @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe] {Immobilized} durante 1 ronda.",
+                    "success": "Al golpear, @UUID[Compendium.pf2e.equipment-effects.fYZIanbYu0Vc4JEL] {-10 ft Speed Penalty} durante 1 minuto."
+                },
+                "Major": {
+                    "criticalSuccess": "Al golpear, @UUID[Compendium.pf2e.equipment-effects.ITAFsW3dQPupJ3DW] {-20 ft Speed Penalty} durante 1 minuto. Con golpe crítico, @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe] {Immobilized} durante 1 ronda.",
+                    "success": "Al golpear, @UUID[Compendium.pf2e.equipment-effects.ITAFsW3dQPupJ3DW] {-20 ft Speed Penalty} durante 1 minuto."
+                },
+                "Moderate": {
+                    "criticalSuccess": "Al golpear, @UUID[Compendium.pf2e.equipment-effects.MEreOgnjoRiXPEuq] {-15 ft Speed Penalty} durante 1 minuto. Con golpe crítico, @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe] {Immobilized} durante 1 ronda.",
+                    "success": "Al golpear, @UUID[Compendium.pf2e.equipment-effects.MEreOgnjoRiXPEuq] {-15 ft Speed Penalty} durante 1 minuto."
+                }
+            },
+            "Thunderstone": {
+                "Greater": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[sonic]] ] {3 sonic splash damage} y ​​​​todas las criaturas a 10 pies deben tener éxito en una salvación de @Check[type:fortitude|dc:28|showDC:all] o ser @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR] {Deafened} hasta el final de su próximo turno."
+                },
+                "Lesser": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[sonic]] ] {1 sonic splash damage} y ​​​​todas las criaturas a 10 pies deben tener éxito en una salvación de @Check[type:fortitude|dc:17|showDC:all] o ser @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR] {Deafened} hasta el final de su próximo turno."
+                },
+                "Major": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[sonic]] ] {4 sonic splash damage} y ​​​​todas las criaturas a 10 pies deben tener éxito en una salvación de @Check[type:fortitude|dc:36|showDC:all] o ser @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR] {Deafened} hasta el final de su próximo turno."
+                },
+                "Moderate": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[sonic]] ] {2 sonic splash damage} y ​​​​todas las criaturas a 10 pies deben tener éxito en una salvación de @Check[type:fortitude|dc:20|showDC:all] o ser @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR] {Deafened} hasta el final de su próximo turno."
+                }
+            },
+            "TwigjackSack": {
+                "Greater": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*4)[bleed]] ] y [[/r (3[splash])[piercing]] ] {3 piercing splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 4[bleed]] ] y [[/r (3[splash])[piercing]] ] {3 piercing splash damage} ."
+                },
+                "Lesser": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*1)[bleed]] ] y [[/r (1[splash])[piercing]] ] {1 piercing splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 1[bleed]] ] y [[/r (1[splash])[piercing]] ] {1 piercing splash damage} ."
+                },
+                "Major": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*5)[bleed]] ] y [[/r (4[splash])[piercing]] ] {4 piercing splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 5[bleed]] ] y [[/r (4[splash])[piercing]] ] {4 piercing splash damage} ."
+                },
+                "Moderate": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2*3)[bleed]] ] y [[/r (2[splash])[piercing]] ] {2 piercing splash damage} .",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r 3[bleed]] ] y [[/r (2[splash])[piercing]] ] {2 piercing splash damage} ."
+                }
+            },
+            "VexingVapor": {
+                "Greater": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[mental]] ] {3 mental splash damage} y ​​​​el objetivo debe tener éxito en un @Check[type:flat|dc:5] antes de realizar acciones con el rasgo concentrado, esto dura 1 minuto.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[mental]] ] {3 mental splash damage} y ​​​​el objetivo debe tener éxito en un @Check[type:flat|dc:5] antes de tomar acciones con el rasgo concentrado, esto dura hasta el final de su próximo turno."
+                },
+                "Lesser": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[mental]] ] {1 mental splash damage} y ​​​​el objetivo debe tener éxito en un @Check[type:flat|dc:5] antes de realizar acciones con el rasgo concentrado, esto dura 1 minuto.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[mental]] ] {1 mental splash damage} y ​​​​el objetivo debe tener éxito en un @Check[type:flat|dc:5] antes de tomar acciones con el rasgo concentrado, esto dura hasta el final de su próximo turno."
+                },
+                "Major": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[mental]] ] {4 mental splash damage} y ​​​​el objetivo debe tener éxito en un @Check[type:flat|dc:5] antes de realizar acciones con el rasgo concentrado, esto dura 1 minuto.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[mental]] ] {4 mental splash damage} y ​​​​el objetivo debe tener éxito en un @Check[type:flat|dc:5] antes de tomar acciones con el rasgo concentrado, esto dura hasta el final de su próximo turno."
+                },
+                "Moderate": {
+                    "criticalSuccess": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[mental]] ] {2 mental splash damage} y ​​​​el objetivo debe tener éxito en un @Check[type:flat|dc:5] antes de realizar acciones con el rasgo concentrado, esto dura 1 minuto.",
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[mental]] ] {2 mental splash damage} y ​​​​el objetivo debe tener éxito en un @Check[type:flat|dc:5] antes de tomar acciones con el rasgo concentrado, esto dura hasta el final de su próximo turno."
+                }
+            },
+            "WaterBomb": {
+                "Greater": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (3[splash])[bludgeoning]] ] {3 nonlethal bludgeoning splash damage} . La bomba extingue los incendios no mágicos dentro de su área de salpicadura."
+                },
+                "Lesser": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (1[splash])[bludgeoning]] ] {1 nonlethal bludgeoning splash damage} ."
+                },
+                "Major": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (4[splash])[bludgeoning]] ] {4 nonlethal bludgeoning splash damage} . La bomba extingue los incendios no mágicos dentro de su área de salpicadura."
+                },
+                "Moderate": {
+                    "success": "<strong> Efecto </strong> La bomba también inflige [[/r (2[splash])[bludgeoning]] ] {2 nonlethal bludgeoning splash damage} ."
+                }
+            }
+        },
+        "Mutagens": {
+            "BestialMutagen": {
+                "FeralPrompt": "¿Aumentar la penalización a la CA para aumentar el tamaño de los dados de daño?"
+            }
+        },
+        "NPCAbility": {
+            "AncientWisp": {
+                "PinpointLight": "Luz precisa"
+            },
+            "BarghestFeed": "¿cuantas veces se ha alimentado el Barghest?",
+            "Bunyip": {
+                "CrocodileLegs": "Piernas de cocodrilo",
+                "SnakeTail": "Cola de serpiente"
+            },
+            "Calikang": {
+                "SixfoldFlurry": "Huelgas no tomadas?",
+                "SuspendedAnimationEnter": "Ingrese Animación Suspendida",
+                "SuspendedAnimationExit": "Salir de la animación suspendida"
+            },
+            "Charge": {
+                "AtLeastTen": "Movido al menos 10 pies"
+            },
+            "ChyzaeduAlienVestment": "Vestimenta alienígena destrozada",
+            "ClockworkLostPlates": "¿Cuántos platos se pierden?",
+            "ClockworkWindUp": "Modo de espera",
+            "ConstructArmor": {
+                "BrokenArmor": "Armadura de construcción rota",
+                "CriticalHit": "Armadura de construcción rota por un golpe crítico"
+            },
+            "CrumblingCarapace": "Caparazón roto por un golpe crítico",
+            "CustomArmor": {
+                "BrokenArmor": "Armaduras rotativas personalizadas",
+                "CriticalHit": "Armadura personalizada rota por un golpe crítico"
+            },
+            "CyclopsBully": {
+                "TerrorizingSwing": "Si la criatura está @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado} y recibe daño, recibe 2d10 puntos de daño adicionales y es derribada @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}."
+            },
+            "DemonInfuseWeapons": "Inflige daño caótico en lugar de maligno",
+            "DisplacedRobot": {
+                "DivertPower": {
+                    "Fists": "Desviar el poder a los puños",
+                    "LaserBeam": "Desviar la potencia al rayo láser"
+                },
+                "Fists": "Puños",
+                "LaserBeam": "Rayo láser"
+            },
+            "Dramofir": {
+                "BittersweetDreamsCriticalFailure": "Fallo critico",
+                "BittersweetDreamsSuccessFailure": "Éxito o fracaso"
+            },
+            "DuskwalkerHuntPrey": {
+                "AC": "Presa Designada ataca al Caminante del Ocaso",
+                "Checks": "Duskwalker tira cheques contra su presa designada"
+            },
+            "Falrok": {
+                "LazuriteTerrainSwitch": "En terreno infundido con lazurita"
+            },
+            "GiantAnimatedStatueBrazier": "El brasero esta encendido",
+            "HellboundAttorney": {
+                "OpeningStatementCriticalSuccess": "Declaración de apertura (éxito crítico)"
+            },
+            "HobgoblinFormationArea": "Formación frente a efectos de área",
+            "IoseffXarwin": {
+                "FulviasRing": {
+                    "SavePossess": "Salva contra Target que posee el Anillo de Fulvia",
+                    "SaveWear": "Salva contra Target usando el Anillo de Fulvia",
+                    "TargetPossess": "El objetivo posee el Anillo de Fulvia.",
+                    "TargetWear": "Target lleva el anillo de Fulvia"
+                }
+            },
+            "KallasDevil": {
+                "DisguisedAsChild": "Disfrazado de niño",
+                "LyingAboutLoathsomeStench": "Mentir sobre hedor repugnante"
+            },
+            "KrampusPunishTheNaughty": "Krampus tira cheques contra Naughty Target",
+            "LegionArchon": {
+                "FlameOfJustice": "Llama de la justicia - Golpe critico"
+            },
+            "LemureSubservience": {
+                "Defend": "Sumisión - Defensor",
+                "Fetch": "Sumisión - Buscar",
+                "Kill": "Sumisión - Matar"
+            },
+            "MarilithFocusedAssault": {
+                "Five": "5 espadas largas",
+                "Four": "4 espadas largas",
+                "One": "1 espada larga",
+                "Prompt": "¿cuantas espadas largas empuña Marilith?",
+                "Six": "6 espadas largas",
+                "Three": "3 espadas largas",
+                "Two": "2 espadas largas"
+            },
+            "Marut": {
+                "Lightning": "Relámpago",
+                "Thunder": "Trueno"
+            },
+            "MinotaurHuntedFear": {
+                "Demoralize": "El objetivo está en un laberinto o en una estructura similarmente difícil de navegar",
+                "Survival": "Para evitar perderse"
+            },
+            "Necrohulk": {
+                "AlchemicalCartridgeRuptured": "Ruptura del cartucho alquímico"
+            },
+            "PaleStranger": {
+                "TargetMurderedPaleStranger": "Objetivo Asesinado Pálido Extraño",
+                "TargetNeverKilled": "El objetivo nunca ha matado"
+            },
+            "PoltergeistTelekineticStorm": {
+                "MultiAttackLabel": "Tormenta telequinética - Múltiples objetivos",
+                "MultipleTargets": "Mutiple objetivo",
+                "SingleAttackEffect": "El ataque inflige [[/r {1d12}]] {1d12 damage} si falla.",
+                "SingleAttackLabel": "Tormenta telequinética: objetivo único",
+                "SingleTarget": "Unico objetivo"
+            },
+            "PunishingStrike": {
+                "Note": "El ataque imprudente hace que el usuario @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg] {Flat-Footed} hasta el comienzo de su próximo turno. Si aciertan, pueden sumar @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.t6cx9FOODmeZQNYl] {Push} al strike"
+            },
+            "RaptorGuardWight": {
+                "TerrorMaster": "La Guardia Raptor lleva su casco de calavera de dinosaurio."
+            },
+            "Seugathi": {
+                "MindfogSuppression": "Suprimir aura de niebla mental"
+            },
+            "SkyDragon": {
+                "DivineLightningGood": "Rayo Divino - Buen Daño",
+                "DivineLightningPositive": "Rayo Divino - Daño Positivo"
+            },
+            "SovereignDragon": {
+                "InspireEnvoyDragonAdult": "Dragón soberano adulto",
+                "InspireEnvoyDragonAncient": "Dragón soberano antiguo",
+                "InspireEnvoyDragonChoice": "Dragón otorgando el efecto",
+                "InspireEnvoyEffectAC": "Bono a AC",
+                "InspireEnvoyEffectAttack": "Bono de ataque",
+                "InspireEnvoyEffectChoice": "Efecto concedido",
+                "InspireEnvoyEffectPercWillCha": "Bonificación a las pruebas de habilidad basadas en Voluntad, Percepción y Carisma"
+            },
+            "Surgeon": {
+                "MedicalMalpracticeCriticalSuccess": "Negligencia médica (éxito crítico)"
+            },
+            "TreerazerPlantAttack": "Atacar una planta",
+            "Vampire": {
+                "JiangShi": {
+                    "StanceOfDeath": {
+                        "BoneCorpse": {
+                            "Label": "Postura del cadáver óseo"
+                        },
+                        "CloudlessVoid": {
+                            "Label": "Postura de vacio sin nubes"
+                        },
+                        "SunderedVeins": {
+                            "Label": "Postura de venas rotas",
+                            "Note": "El objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7] {Enfeebled 1}"
+                        }
+                    }
+                }
+            },
+            "YetiNightmareGuardianRage": "Rabia del guardián de la pesadilla",
+            "Zetogeki": {
+                "TiltScalesChannelEnergy": "Energía cinética canalizada",
+                "TiltScalesTilted": "Balanzas inclinadas"
+            }
+        },
+        "OracleCurses": {
+            "Ancestor": {
+                "AncestralInfluence": "Influencia ancestral",
+                "Label": {
+                    "ExtremeBattle": "Batalla extrema",
+                    "ExtremeSkillful": "Extremo Habil",
+                    "ExtremeSpellcasting": "Lanzamiento de conjuros extremos",
+                    "MajorBattle": "Batalla mayor",
+                    "MajorSkillful": "Alcalde habilidoso",
+                    "MajorSpellcasting": "Lanzamiento de conjuros mayores",
+                    "Martial": "Marcial",
+                    "MinorBattle": "Batalla menor",
+                    "MinorSkillful": "Habil menor",
+                    "MinorSpellcasting": "Lanzamiento de conjuros menores",
+                    "ModerateBattle": "Batalla moderada",
+                    "ModerateSkillful": "Moderado Hábil",
+                    "ModerateSpellcasting": "Lanzamiento de conjuros moderados",
+                    "Skillful": "Hábil",
+                    "Spellcasting": "Lanzamiento de hechizos"
+                },
+                "MajorFailure": "Tu maldición interfiere con esta acción y debes hacer una prueba de @Check[type:flat|dc:8|showDC:owner] .",
+                "MeddlingAncestor": "Antepasado entrometido",
+                "MinorFailure": "Tu maldición interfiere con esta acción y debes hacer una prueba de @Check[type:flat|dc:4|showDC:owner] .",
+                "ModerateFailure": "Tu maldición interfiere con esta acción y debes hacer una prueba de @Check[type:flat|dc:6|showDC:owner] ."
+            },
+            "Battle": {
+                "MadeAStrike": "Has hecho un strike esta ronda",
+                "NonTrivialEncounter": "En un encuentro no trivial"
+            },
+            "Bones": {
+                "MajorUpgrade": "Cuando obtienes un fallo crítico en una tirada de salvación contra una enfermedad, un veneno o un efecto de muerte, obtienes un fallo en su lugar.",
+                "ModerateUpgrade": "Cuando obtienes un éxito en una tirada de salvación contra una enfermedad, un veneno o un efecto de muerte, obtienes un éxito crítico en su lugar."
+            },
+            "Label": {
+                "Extreme": "Extremo",
+                "Major": "Importante",
+                "Minor": "Menor",
+                "Moderate": "Moderado"
+            },
+            "Life": {
+                "ToggleLabel": "Todos los objetivos de Heal son criaturas vivas."
+            },
+            "Time": {
+                "ACLabel": "Defenderse de reacciones o acciones libres mientras se mueve"
+            }
+        },
+        "PersistentDamage": {
+            "Acid1d4": {
+                "criticalSuccess": "[[/r (2*1d4)[persistent,acid]] ]",
+                "success": "[[/r 1d4[persistent,acid]] ]"
+            },
+            "Acid1d6": {
+                "criticalSuccess": "[[/r (2*1d6)[persistent,acid]] ]",
+                "success": "[[/r 1d6[persistent,acid]] ]"
+            },
+            "Acid2d6": {
+                "criticalSuccess": "[[/r (2*2d6)[persistent,acid]] ]",
+                "success": "[[/r 2d6[persistent,acid]] ]"
+            },
+            "Acid2d6+2": {
+                "criticalSuccess": "[[/r (2*2d6+4)[persistent,acid]] ]",
+                "success": "[[/r (2d6+2)[persistent,acid]] ]"
+            },
+            "Bleed1": {
+                "criticalSuccess": "[[/r 2[bleed]] ]",
+                "success": "[[/r 1[bleed]] ]"
+            },
+            "Bleed1d10": {
+                "criticalSuccess": "[[/r (2*1d10)[bleed]] ]",
+                "success": "[[/r 1d10[bleed]] ]"
+            },
+            "Bleed1d12": {
+                "criticalSuccess": "[[/r (2*1d12)[bleed]] ]",
+                "success": "[[/r 1d12[bleed]] ]"
+            },
+            "Bleed1d4": {
+                "criticalSuccess": "[[/r (2*1d4)[bleed]] ]",
+                "success": "[[/r 1d4[bleed]] ]"
+            },
+            "Bleed1d6": {
+                "criticalSuccess": "[[/r (2*1d6)[bleed]] ]",
+                "success": "[[/r 1d6[bleed]] ]"
+            },
+            "Bleed1d8": {
+                "criticalSuccess": "[[/r (2*1d8)[bleed]] ]",
+                "success": "[[/r 1d8[bleed]] ]"
+            },
+            "Bleed2": {
+                "criticalSuccess": "[[/r 4[bleed]] ]",
+                "success": "[[/r 2[bleed]] ]"
+            },
+            "Bleed2d10": {
+                "criticalSuccess": "[[/r (2*2d10)[bleed]] ]",
+                "success": "[[/r 2d10[bleed]] ]"
+            },
+            "Bleed2d12": {
+                "criticalSuccess": "[[/r (2*2d12)[bleed]] ]",
+                "success": "[[/r 2d12[bleed]] ]"
+            },
+            "Bleed2d4": {
+                "criticalSuccess": "[[/r (2*2d4)[bleed]] ]",
+                "success": "[[/r 2d4[bleed]] ]"
+            },
+            "Bleed2d6": {
+                "criticalSuccess": "[[/r (2*2d6)[bleed]] ]",
+                "success": "[[/r 2d6[bleed]] ]"
+            },
+            "Bleed2d8": {
+                "criticalSuccess": "[[/r (2*2d8)[bleed]] ]",
+                "success": "[[/r 2d8[bleed]] ]"
+            },
+            "Bleed3d10": {
+                "criticalSuccess": "[[/r (2*3d10)[bleed]] ]",
+                "success": "[[/r 3d10[bleed]] ]"
+            },
+            "Bleed3d6": {
+                "criticalSuccess": "[[/r (2*3d6)[bleed]] ]",
+                "success": "[[/r 3d6[bleed]] ]"
+            },
+            "Bleed3d8": {
+                "criticalSuccess": "[[/r (2*3d8)[bleed]] ]",
+                "success": "[[/r 3d8[bleed]] ]"
+            },
+            "Bleed4d6": {
+                "criticalSuccess": "[[/r (2*4d6)[bleed]] ]",
+                "success": "[[/r 4d6[bleed]] ]"
+            },
+            "Bleed4d8": {
+                "criticalSuccess": "[[/r (2*4d8)[bleed]] ]",
+                "success": "[[/r 4d8[bleed]] ]"
+            },
+            "Bleed6d10": {
+                "criticalSuccess": "[[/r (2*6d10)[bleed]] ]",
+                "success": "[[/r 6d10[bleed]] ]"
+            },
+            "Bleed6d6": {
+                "criticalSuccess": "[[/r (2*6d6)[bleed]] ]",
+                "success": "[[/r 6d6[bleed]] ]"
+            },
+            "Bleed8d4": {
+                "criticalSuccess": "[[/r (2*8d4)[bleed]] ]",
+                "success": "[[/r 8d4[bleed]] ]"
+            },
+            "Cold1d6": {
+                "criticalSuccess": "[[/r (2*1d6)[persistent,cold]] ]",
+                "success": "[[/r 1d6[persistent,cold]] ]"
+            },
+            "Cold1d8": {
+                "criticalSuccess": "[[/r (2*1d8)[persistent,cold]] ]",
+                "success": "[[/r 1d8[persistent,cold]] ]"
+            },
+            "Cold2d6": {
+                "criticalSuccess": "[[/r (2*2d6)[persistent,cold]] ]",
+                "success": "[[/r 2d6[persistent,cold]] ]"
+            },
+            "Cold2d8": {
+                "criticalSuccess": "[[/r (2*2d8)[persistent,cold]] ]",
+                "success": "[[/r 2d8[persistent,cold]] ]"
+            },
+            "Fire1": {
+                "criticalSuccess": "[[/r 2[persistent,fire]] ]",
+                "success": "[[/r 1[persistent,fire]] ]"
+            },
+            "Fire1d10": {
+                "criticalSuccess": "[[/r (2*1d10)[persistent,fire]] ]",
+                "success": "[[/r 1d10[persistent,fire]] ]"
+            },
+            "Fire1d4": {
+                "criticalSuccess": "[[/r (2*1d4)[persistent,fire]] ]",
+                "success": "[[/r 1d4[persistent,fire]] ]"
+            },
+            "Fire1d6": {
+                "criticalSuccess": "[[/r (2*1d6)[persistent,fire]] ]",
+                "success": "[[/r 1d6[persistent,fire]] ]"
+            },
+            "Fire2d10": {
+                "criticalSuccess": "[[/r (2*2d10)[persistent,fire]] ]",
+                "success": "[[/r 2d10[persistent,fire]] ]"
+            },
+            "Fire2d4": {
+                "criticalSuccess": "[[/r (2*2d4)[persistent,fire]] ]",
+                "success": "[[/r 2d4[persistent,fire]] ]"
+            },
+            "Fire2d6": {
+                "criticalSuccess": "[[/r (2*2d6)[persistent,fire]] ]",
+                "success": "[[/r 2d6[persistent,fire]] ]"
+            },
+            "Fire2d8": {
+                "criticalSuccess": "[[/r (2*2d8)[persistent,fire]] ]",
+                "success": "[[/r 2d8[persistent,fire]] ]"
+            },
+            "Fire3d10": {
+                "criticalSuccess": "[[/r (2*3d10)[persistent,fire]] ]",
+                "success": "[[/r 3d10[persistent,fire]] ]"
+            },
+            "Fire3d6": {
+                "criticalSuccess": "[[/r (2*3d6)[persistent,fire]] ]",
+                "success": "[[/r 3d6[persistent,fire]] ]"
+            },
+            "Fire3d8": {
+                "criticalSuccess": "[[/r (2*3d8)[persistent,fire]] ]",
+                "success": "[[/r 3d8[persistent,fire]] ]"
+            },
+            "Fire4d10": {
+                "criticalSuccess": "[[/r (2*4d10)[persistent,fire]] ]",
+                "success": "[[/r 4d10[persistent,fire]] ]"
+            },
+            "Force1d12": {
+                "criticalSuccess": "[[/r (2*1d12)[persistent,force]] ]",
+                "success": "[[/r 1d12[persistent,force]] ]"
+            },
+            "Force2d12": {
+                "criticalSuccess": "[[/r (2*2d12)[persistent,force]] ]",
+                "success": "[[/r 2d12[persistent,force]] ]"
+            },
+            "Mental1d4": {
+                "criticalSuccess": "[[/r (2*1d4)[persistent,mental]] ]",
+                "success": "[[/r 1d4[persistent,mental]] ]"
+            },
+            "Mental1d6": {
+                "criticalSuccess": "[[/r (2*1d6)[persistent,mental]] ]",
+                "success": "[[/r 1d6[persistent,mental]] ]"
+            },
+            "Mental1d8": {
+                "criticalSuccess": "[[/r (2*1d8)[persistent,mental]] ]",
+                "success": "[[/r 1d8[persistent,mental]] ]"
+            },
+            "Mental2d6": {
+                "criticalSuccess": "[[/r (2*2d6)[persistent,mental]] ]",
+                "success": "[[/r 2d6[persistent,mental]] ]"
+            },
+            "Mental3d6": {
+                "criticalSuccess": "[[/r (2*3d6)[persistent,mental]] ]",
+                "success": "[[/r 3d6[persistent,mental]] ]"
+            },
+            "Negative1d10": {
+                "criticalSuccess": "[[/r (2*1d10)[persistent,negative]] ]",
+                "success": "[[/r 1d10[persistent,negative]] ]"
+            },
+            "Negative1d6": {
+                "criticalSuccess": "[[/r (2*1d6)[persistent,negative]] ]",
+                "success": "[[/r 1d6[persistent,negative]] ]"
+            },
+            "Negative1d8": {
+                "criticalSuccess": "[[/r (2*1d8)[persistent,negative]] ]",
+                "success": "[[/r 1d8[persistent,negative]] ]"
+            },
+            "Negative2d10": {
+                "criticalSuccess": "[[/r (2*2d10)[persistent,negative]] ]",
+                "success": "[[/r 2d10[persistent,negative]] ]"
+            },
+            "Piercing2d8+8": {
+                "criticalSuccess": "[[/r (2*2d8+16)[persistent,piercing]] ]",
+                "success": "[[/r (2d8+8)[persistent,piercing]] ]"
+            },
+            "Poison1d12": {
+                "criticalSuccess": "[[/r (2*1d12)[persistent,poison]] ]",
+                "success": "[[/r 1d12[persistent,poison]] ]"
+            },
+            "Poison1d4": {
+                "criticalSuccess": "[[/r (2*1d4)[persistent,poison]] ]",
+                "success": "[[/r 1d4[persistent,poison]] ]"
+            },
+            "Poison1d6": {
+                "criticalSuccess": "[[/r (2*1d6)[persistent,poison]] ]",
+                "success": "[[/r 1d6[persistent,poison]] ]"
+            },
+            "Poison1d8": {
+                "criticalSuccess": "[[/r (2*1d8)[persistent,poison]] ]",
+                "success": "[[/r 1d8[persistent,poison]] ]"
+            },
+            "Poison2d4": {
+                "criticalSuccess": "[[/r (2*2d4)[persistent,poison]] ]",
+                "success": "[[/r 2d4[persistent,poison]] ]"
+            },
+            "Poison2d6": {
+                "criticalSuccess": "[[/r (2*2d6)[persistent,poison]] ]",
+                "success": "[[/r 2d6[persistent,poison]] ]"
+            },
+            "Poison2d8": {
+                "criticalSuccess": "[[/r (2*2d8)[persistent,poison]] ]",
+                "success": "[[/r 2d8[persistent,poison]] ]"
+            },
+            "Poison3d4": {
+                "criticalSuccess": "[[/r (2*3d4)[persistent,poison]] ]",
+                "success": "[[/r 3d4[persistent,poison]] ]"
+            },
+            "Poison3d6": {
+                "criticalSuccess": "[[/r (2*3d6)[persistent,poison]] ]",
+                "success": "[[/r 3d6[persistent,poison]] ]"
+            },
+            "Poison4d6": {
+                "criticalSuccess": "[[/r (2*4d6)[persistent,poison]] ]",
+                "success": "[[/r 4d6[persistent,poison]] ]"
+            }
+        },
+        "RuleEditor": {
+            "FastHealing": {
+                "DeactivatedBy": "Desactivado por"
+            },
+            "FlatModifier": {
+                "HideIfDisabled": "Ocultar (si está deshabilitado)"
+            },
+            "General": {
+                "Brackets": "Soportes",
+                "CriticalBehavior": {
+                    "false": "1x Daño en Crit",
+                    "null": "2x Daño en Crit",
+                    "true": "Solo daño critico"
+                },
+                "DamageType": "Tipo de daño",
+                "Label": "Etiqueta",
+                "Predicate": "Predicado",
+                "Primitive": "Primitivo",
+                "Range": "Rango",
+                "Selector": "Selector",
+                "Value": "Valor"
+            },
+            "GrantItem": {
+                "AllowDuplicate": "Permitir duplicados",
+                "ReevaluateOnUpdate": "Reevaluar en la actualización",
+                "ReplaceSelf": "Reemplazarse a si mismo"
+            },
+            "Note": {
+                "Hidden": "Oculto",
+                "Outcome": "Resultado",
+                "Text": "Contenido del texto",
+                "Title": "Título"
+            }
+        },
+        "RuleElement": {
+            "ActiveEffectLike": "ActiveEffect-Like",
+            "ActorTraits": "Rasgos del actor",
+            "AdjustDegreeOfSuccess": "Ajustar el grado de éxito",
+            "AdjustModifier": "Modificador de ajuste",
+            "AdjustStrike": "Ajustar huelga",
+            "Aura": "Aura",
+            "BaseSpeed": "Base de velocidad",
+            "BattleForm": "Forma de batalla",
+            "ChoiceSet": "Conjunto de opciones",
+            "CraftingEntry": "Entrada de Artesanía",
+            "CraftingFormula": "Formula de Artesanía",
+            "CreatureSize": "Tamaño de la criatura",
+            "CriticalSpecialization": "Especializacion critica",
+            "DamageDice": "Dados de daño",
+            "DexterityModifierCap": "Gorra modificada de destreza",
+            "EphemeralEffect": "Efecto efímero",
+            "FastHealing": "Curación/regeneración rápida",
+            "FixedProficiency": "Competencia fija",
+            "FlatModifier": "Modificador plano",
+            "GrantItem": "Artículo de concesión",
+            "Immunity": "Inmunidad",
+            "ItemAlteration": "Alteración del Item",
+            "LoseHitPoints": "Pierde puntos de vida",
+            "MarkToken": "Ficha de marca",
+            "MartialProficiency": "Competencia marcial",
+            "MultipleAttackPenalty": "Penalización por Ataque Múltiple",
+            "Note": "No un",
+            "Resistance": "Resistencia",
+            "RollOption": "Opción de tirada",
+            "RollTwice": "Rodar dos veces",
+            "Sense": "Sentido",
+            "Strike": "Huelga",
+            "Striking": "Sorprendentes",
+            "SubstituteRoll": "Sustituto de tirada",
+            "TempHP": "Puntos de vida temporales",
+            "TempHPShortLabel": "Temperatura",
+            "TokenEffectIcon": "Icono de efecto de ficha",
+            "TokenImage": "Imagen de ficha",
+            "TokenLight": "Luz simbólica",
+            "TokenName": "Nombre de token",
+            "Unrecognized": "Elemento de regla no reconocido",
+            "Weakness": "Debilidad",
+            "WeaponPotency": "Potencia del arma"
+        },
+        "SkillVariant": {
+            "AboutCaves": "Acerca de las cuevas",
+            "AcidicEnvironment": "En un entorno ácido",
+            "AgainstDemons": "Contra demonios",
+            "Aid": "Ayudar",
+            "AttemptToFascinateOutdoorsInBrightSun": "Uso de una interpretación fascinante al aire libre con sol brillante",
+            "Blacksmithing": "Para herrería",
+            "BloodOrWater": "En sangre de agua",
+            "BoundHome": "Dentro del limite de la casa",
+            "Buried": "Enterrado",
+            "CanClearlyIdentifyTheStars": "Puede identificar claramente las estrellas",
+            "Climb": "Escalar",
+            "ClimbHighJumpLongJumpOrDisarm": "To Climb, High Jump, Long Jump, or Disarm",
+            "ClimbOrSwim": "Escalar o Nadar",
+            "CommandAnAnimal": "Para comandar un animal",
+            "CommandReptile": "Para dar órdenes a un animal que es un reptil",
+            "ConcealAnObject": "To Conceal an Object",
+            "CraftAlchemical": "To Craft Alchemical Items",
+            "CraftAlchemicalOrMedicine": "To Craft Alchemical or Medicinal Items",
+            "CraftBone": "Usando hueso",
+            "CraftJewelry": "Para hacer joyas",
+            "CraftSnare": "To Craft Snares",
+            "CraftTrap": "Para fabricar trampas",
+            "CraftTrapSnare": "Para fabricar trampas y lazos",
+            "CreateForgery": "Para crear falsificacion",
+            "Dance": "Bailar",
+            "Darkness": "En la oscuridad",
+            "DarknessOrSmoke": "In Darkness or Smoke",
+            "DecayingPlantFungus": "En medio de materia vegetal u hongos en descomposición",
+            "Demoralize": "Desmoralizar",
+            "DemoralizeThreateningLunge": "Para desmoralizar con estocada amenazante",
+            "Deserts": "En los desiertos",
+            "DimLight": "En luz tenue",
+            "DimLightOrDarkness": "En tenue luz u oscuridad",
+            "DisableADevice": "Para desactivar un dispositivo",
+            "Disarm": "Desarme",
+            "DisarmGrapple": "Para desarmar o agarrar",
+            "DisarmGrappleAvoidDisarm": "Para desarmar, agarrar o evitar ser desarmado",
+            "DisarmMetal": "Para desarmar un articulo de metal",
+            "DisarmStoneMetal": "Para desarmar objetos de piedra o metal",
+            "DiscernAndPredictWeather": "Discernir patrones climáticos y predecir las próximas condiciones climáticas",
+            "Diversion": "To Create a Diversion",
+            "Escape": "Escapar",
+            "EscapeForceOpenOrLift": "Para escapar, abrir a la fuerza o levantar objetos pesados",
+            "Feint": "Fintar",
+            "ForceOpenGrappleShoveOrTrip": "To Force Open, Grapple, Shove, or Trip",
+            "Forests": "En los bosques",
+            "ForestsOrGrasslands": "In Forests or Grasslands",
+            "ForestsOrJungles": "In Forests or Jungles",
+            "ForestsOrSnow": "En Bosques o Nieve",
+            "ForestsOrSwamps": "En bosques o pantanos",
+            "ForestsOrUnderground": "In Forests or Underground Areas",
+            "FortuneTelling": "To Tell Fortunes",
+            "FullMoon": "Full Moon",
+            "GatherInformation": "Para recopilar informacion",
+            "Grapple": "Lídiar",
+            "GrappleShove": "Para agarrar o empujar",
+            "Hide": "Esconder",
+            "HideInBody": "To Hide Inside a Body",
+            "HideInDim": "To Hide in Dim Light",
+            "HideInDimOrDark": "Para esconderse en la oscuridad o la luz tenue",
+            "HideSneakInscriptions": "Esconderse o escabullirse entre las inscripciones",
+            "HideSneakTree": "Esconderse o escabullirse mientras está en un árbol",
+            "HighJumpOrLongJump": "Al Salto de Altura o Salto de Longitud",
+            "IceAndSnow": "En hielo o nieve",
+            "ImitateStone": "Imitar piedra",
+            "ImitateVoice": "To Imitate a Voice",
+            "Impersonate": "Suplantar",
+            "ImpersonateCloakSheetRay": "Para hacerse pasar por una capa, una sabana o un rayo",
+            "ImpersonateClothing": "To Impersonate Clothing",
+            "ImpersonateHumanVersion": "Suplantar una versión humana de sí mismos",
+            "ImpersonateInanimate": "To Impersonate an Inanimate Object",
+            "ImpersonateMound": "To Impersonate a Mound",
+            "ImpersonatePastSelf": "To Impersonate a Past Self",
+            "ImpersonateStumpOrLog": "To Impersonate a Stump or Log",
+            "JumpOrClimb": "To Jump or Climb",
+            "JumpOrSwim": "To Jump or Swim",
+            "Jungles": "En selvas",
+            "JunglesOrFlowerFields": "En Selvas o Campos de Flores",
+            "JunkOrDebris": "En basura o escombros",
+            "Lair": "En guarida",
+            "Lava": "En lava",
+            "LeyLine": "Cerca de la Linea Ley",
+            "Lie": "Mentir",
+            "LongJump": "Al salto de longitud",
+            "Lute": "To Play the Lute",
+            "MakeAnImpression": "Para hacer una impresion",
+            "ManeuverInFlight": "Para maniobrar en vuelo",
+            "Moist": "In Moist Environments",
+            "Mountains": "En las montañas",
+            "Navigate": "Para navegar",
+            "NearTheOcean": "Cerca del Océano",
+            "NighttimeWithMoonVisible": "De noche, con la luna visible",
+            "OceansForests": "En océanos y bosques",
+            "Orate": "Orar",
+            "Paint": "Pintar",
+            "PalmAnObjectOrSteal": "To Palm an Object or Steal",
+            "PickALock": "To Pick a Lock",
+            "Poison": "To Craft Poisons",
+            "Prophecy": "To Spout Prophecy",
+            "Raining": "Lloviendo",
+            "RecallKnowledge": "To Recall Knowledge",
+            "RecallKnowledgeDeadSubject": "To Recall Knowledge about a deceased subject",
+            "Rocky": "En Terreno Rocoso",
+            "Ruins": "In Ruins",
+            "RunningWater": "En agua corriente",
+            "RustyTerrain": "En areas de objetos oxidados",
+            "Sand": "En la arena",
+            "SenseMotive": "Sentir motivo",
+            "Sewers": "En alcantarillas",
+            "SewersScrapyards": "In Sewers and Scrapyards",
+            "Shoes": "For Shoes",
+            "ShootingGallery": "In the Shooting Gallery",
+            "Shove": "Empújar",
+            "Singing": "Cantando",
+            "Skinless": "When Skinless",
+            "Snow": "En la nieve",
+            "Squeeze": "Apretar",
+            "Steal": "Robar",
+            "StonyOrIcyAreas": "En Zonas Pedregosas o Heladas",
+            "StringedInstruments": "Para instrumentos de cuerda",
+            "Subsist": "Subsistir",
+            "Swamps": "En pantanos",
+            "Swardlands": "In the Swardlands",
+            "Swim": "Nadar",
+            "TarPit": "En pozos de alquitran",
+            "TellTheTruth": "Decir la verdad",
+            "ThickVegetation": "En espesa vegetación",
+            "Track": "Para realizar un seguimiento",
+            "TrackBleedingCreature": "Para rastrear una criatura sangrante",
+            "TrackCreator": "To Track Their Creator",
+            "TrackHalfHealth": "To Track a Creature at Half its Hit Points or Fewer",
+            "Traps": "Trampas",
+            "TrashAndRubbish": "En Basura y Basura",
+            "Trip": "Viajar",
+            "TripTangle": "Tropezar y enredarse",
+            "TumbleThrough": "To Tumble Through",
+            "TumbleThroughMediumOrLarger": "To Tumble Through the Space of a Medium or Larger Creature",
+            "Tundra": "En la tundra",
+            "Underground": "Subterráneo",
+            "Undergrowth": "En maleza",
+            "Underwater": "Submarino",
+            "UnderwaterVegetation": "En Vegetación Submarina",
+            "Vegetation": "En vegetacion",
+            "VsArthropods": "Contra artrópodos",
+            "VsControlled": "Contra efectos controlados",
+            "VsDarknessLightShadow": "Contra los efectos de Oscuridad, Luz o Sombra",
+            "VsDemons": "vs. Demons",
+            "VsDiseases": "Contra enfermedades",
+            "VsEmotion": "Vs efectos de emocion",
+            "VsMagic": "Contra efectos magicos",
+            "VsMental": "Contra efectos mentales",
+            "VsPlants": "Contra las plantas",
+            "VsProne": "Contra efectos probables",
+            "VsShoveOrTrip": "Contra Empujon o Tropiezo",
+            "VsSleeping": "Frente a objetivos durmientes",
+            "Water": "En agua",
+            "WaterOrMud": "En agua o barro",
+            "Weave": "Tejer",
+            "Woodworking": "Carpinteria"
+        },
+        "SpecificRule": {
+            "Actions": {
+                "ThreeActions": "Three Actions",
+                "TwoActions": "Two Actions"
+            },
+            "AdjustDegreeOfSuccess": {
+                "Squeeze": {
+                    "CriticalFailureSuccessBetter": "When you roll a critical failure on a check to Squeeze, you get a failure instead, and when you roll a success, you get a critical success instead."
+                }
+            },
+            "AdoptedAncestry": {
+                "Prompt": "Select a common ancestry."
+            },
+            "AdvancedGeneralTraining": {
+                "Prompt": "Selecciona una dote general de nivel 7 o inferior."
+            },
+            "AerialPiledriver": {
+                "CriticalFailureText": "You fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, and the target is no longer grabbed or restrained by you.",
+                "FailureText": "You lose your grip on the target, and it is no longer grabbed or restrained by you.",
+                "SuccessText": "The target lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
+            },
+            "AftermathFeats": {
+                "DormantEruptionToggle": "Ha utilizado la erupción térmica hoy",
+                "StoneFistLabel": "Puño de piedra"
+            },
+            "Aid": {
+                "Prompt": "Elige el bono de Ayuda."
+            },
+            "Alchemist": {
+                "AlchemicalCrossbow": {
+                    "Prompt": "Elige una bomba para añadir a la ballesta."
+                },
+                "ResearchField": {
+                    "Prompt": "Seleccione un campo de investigacion."
+                }
+            },
+            "Anadi": {
+                "SpiderOrHybridForm": "In Spider or Hybrid Form"
+            },
+            "AncestralParagon": {
+                "Prompt": "Selecciona una dote de ascendencia de primer nivel."
+            },
+            "AncientElf": {
+                "Prompt": "Selecciona una dote de dedicación multiclase."
+            },
+            "AnimalForm": {
+                "Ape": "Ape",
+                "Bat": "Bat",
+                "Bear": "Bear",
+                "Bull": "Bull",
+                "Canine": "Canine",
+                "Cat": "Cat",
+                "Centipede": "Centipede",
+                "Deer": "Deer",
+                "Frog": "Frog",
+                "Shark": "Shark",
+                "Snake": "Snake",
+                "Toad": "Toad",
+                "Wolf": "Wolf"
+            },
+            "AnimalSkin": {
+                "BracersOfArmor": "Piel de animal con brazales de armadura",
+                "ExplorersClothing": "Piel de animal con ropa de explorador",
+                "MageArmor": "Piel de animal con armadura de mago"
+            },
+            "AquaticCombat": {
+                "FireNote": "You can't cast fire spells or use actions with the fire trait underwater.",
+                "RangedNote": "Ranged attacks that deal bludgeoning or slashing damage automatically miss if the attacker or target is underwater, and piercing ranged attacks made by an underwater creature or against an underwater target have their range increments halved."
+            },
+            "ArtokussFire": {
+                "Note": "Your Alchemist's Fire deals an additional 1d4 persistent fire damage, and creatures must make two succesful flat checks to end the condition (or one check, if they had assisted recovery that reduces the flat check to DC 10). Your enhanced fire burns underwater, and water does not help to end the persistent damage."
+            },
+            "Automaton": {
+                "ArcaneLocomotion": {
+                    "Prompt": "Seleccione un tipo de movimiento."
+                },
+                "AutomatonArmament": {
+                    "Prompt": "Seleccione un ataque desarmado."
+                },
+                "CoreCannon": {
+                    "AttackNote": "Debes aplicar manualmente tu runa de potencia más alta a esta tirada de ataque.",
+                    "CriticalHit": "Con un golpe crítico, el objetivo toma [[/r 10[persistent,fire]] ] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60] {Persistent Fire Damage} . Tu cañón principal no agrega efectos de especialización críticos. </p>"
+                },
+                "EnergyBeam": {
+                    "CriticalHit": "Con un impacto crítico, el objetivo sufre un daño de fuego persistente igual al número de dados de daño del arma. El haz de tu ojo no añade efectos de especialización críticos."
+                },
+                "EnhanceableFeats": {
+                    "ArcaneCamouflage": "Camuflaje Arcano",
+                    "ArcaneCommunication": "Comunicacion arcana",
+                    "ArcaneEye": "Ojo Arcano",
+                    "ArcaneLocomotion": "Locomoción arcana",
+                    "ArcanePropulsion": "Propulsión arcana",
+                    "ArcaneSafeguards": "Salvaguardas arcanos",
+                    "ArcaneSlam": "Embate Arcano",
+                    "AstralBlink": "Parpadeo Astral",
+                    "AutomatonArmament": "Armamento de autómatas",
+                    "AutomatonLore": "Conocimiento de los autómatas",
+                    "CoreAttunement": "Central de sintonizacion",
+                    "CoreRejuvenation": "Rejuvenecimiento del Núcleo",
+                    "EnergyBeam": "Rayo de energia",
+                    "EnlargedChassis": "Chasis agrandado",
+                    "IntegratedArmament": "Armamento Integrado",
+                    "LesserAugmentation": "Aumento menor",
+                    "MagicalResistance": "Resistencia magica",
+                    "RainOfBolts": "Lluvia de rayos",
+                    "ReinforcedChassis": "Chasis Reforzado"
+                },
+                "Enhancement": {
+                    "ArcaneLocomotionClimbSpeed": "Gana una velocidad de ascenso",
+                    "ArcaneLocomotionIncreaseSpeed": "Aumentar las velocidades",
+                    "ArcaneLocomotionSwimSpeed": "Gana una velocidad de nado",
+                    "AugmentationPrompt": "Seleccione una hazaña para aumentar",
+                    "EnhancementPrompt": "Elija una mejora",
+                    "MagicalResistanceAll": "Gana resistencias adicionales",
+                    "MagicalResistanceIncrease": "Mejorar la resistencia existente"
+                },
+                "HunterAutomaton": {
+                    "ToggleLabel": "Corriendo a cuatro patas"
+                },
+                "MagicalResistance": {
+                    "Prompt": "Seleccione un tipo de daño de energía."
+                }
+            },
+            "Barbarian": {
+                "Animal": {
+                    "Ape": "Mono",
+                    "Bear": "Oso",
+                    "Bull": "Toro",
+                    "Cat": "Gato",
+                    "Deer": "Ciervo",
+                    "Frog": "Rana",
+                    "Prompt": "Selecciona un animal.",
+                    "Shark": "Tiburón",
+                    "Snake": "Serpiente",
+                    "Wolf": "Lobo"
+                },
+                "Dragon": {
+                    "NormalRageDamage": "Infligir daño de ira normal",
+                    "Prompt": "Selecciona un dragón.",
+                    "ToggleLabel": "Rabia dracónica"
+                },
+                "Giant": {
+                    "Prompt": "Seleccione un tipo de energía para Raging Resistance."
+                },
+                "Instinct": {
+                    "Drops": "Rasgo de clase bárbaro de nivel 1",
+                    "Prompt": "Seleccione un instinto."
+                },
+                "InuredToAlchemy": {
+                    "CriticalSuccess": "Cada éxito crítico reduce el escenario en 3 para un veneno alquímico, droga o adicción.",
+                    "CriticalSuccessVirulent": "Cada éxito crítico reduce la etapa en 2 para un veneno alquímico virulento, una droga o una adicción.",
+                    "Success": "Cada uno de tus tiros de salvación exitosos contra un veneno alquímico, una droga o una adicción reduce el escenario en 2",
+                    "SuccessVirulent": "Cada uno de tus tiros de salvación exitosos contra un veneno alquímico virulento, una droga o una adicción reduce el escenario en 1"
+                },
+                "Spirit": {
+                    "NegativeDamage": "Daño negativo",
+                    "PositiveDamage": "Daño positivo",
+                    "ToggleLabel": "Rabia espiritual"
+                },
+                "Superstition": {
+                    "TargetingCaster": "El objetivo es un lanzador"
+                }
+            },
+            "Bard": {
+                "Muse": {
+                    "Enigma": "Enigma",
+                    "Maestro": "Maestro",
+                    "Polymath": "Erudito",
+                    "Prompt": "Selecciona una musa.",
+                    "Warrior": "Guerrero"
+                }
+            },
+            "Beastkin": {
+                "AnimalSenses": {
+                    "Prompt": "Seleccione un sentido disponible para su animal inherente."
+                },
+                "Senses": {
+                    "EcholocationImprecise": "Ecolocalización (Impreciso) 30 pies",
+                    "EcholocationPrecise": "Mejora tu ecolocalización para precisar",
+                    "Scent": "Olor (Impreciso) 30 pies",
+                    "TremorsenseImprecise": "Tremorsense (Impreciso) 30 pies",
+                    "TremorsensePrecise": "Mejore su sentido del temblor para precisar"
+                }
+            },
+            "BlessingOfDefiance": {
+                "Prompt": "Elige una tirada de salvación."
+            },
+            "BloodlettingKukri": {
+                "Note": "If the target didn't already have persistent bleed damage when you scored the critical hit, you also gain [[/r 1d8]] temporary Hit Points."
+            },
+            "BonusLabel": {
+                "NegativeOne": "-1",
+                "PlusFour": "+4",
+                "PlusOne": "+1",
+                "PlusThree": "+3",
+                "PlusTwo": "+2"
+            },
+            "BottledOmen": {
+                "Label": "Usa tu presagio"
+            },
+            "BountyHunterDedication": {
+                "GatherInfoHuntedPrey": "Para recopilar informacion sobre presas cazadas"
+            },
+            "BrevicNoble": {
+                "Garess": "Garesar",
+                "Lebeda": "Lebeda",
+                "Lodovka": "Lodovka",
+                "Medvyed": "Medvyed",
+                "Orlovsky": "Orlovsky",
+                "Prompt": "Seleccione su linaje Brevic",
+                "Surtova": "Surtova"
+            },
+            "CatharticMage": {
+                "EmotionalState": {
+                    "Prompt": "Selecciona tu Catarsis Emoción"
+                },
+                "Love": {
+                    "Toggle": "Lanzas un conjuro para beneficiar tu enfoque emocional."
+                }
+            },
+            "CelestialResistance": {
+                "Prompt": "Seleccione un tipo de energía asociada con su línea de sangre."
+            },
+            "Champion": {
+                "BladeAllyRune": "Selecciona una runa de propiedad para tu espada aliada.",
+                "DivineSmite": {
+                    "Label": "Golpe Divino"
+                },
+                "EvilDamage": "Evil Damage",
+                "NegativeDamage": "Negative Damage",
+                "TargetReaction": "Target triggered your champion reaction"
+            },
+            "ChromaticArmor": {
+                "Acid": "Naranja (Ácido)",
+                "Electricity": "Amarillo (Electricidad)",
+                "Fire": "Fuego rojo)",
+                "Force": "Violeta (Fuerza)",
+                "Mental": "Índigo (Mental)",
+                "Poison": "Verde (Veneno)",
+                "Prompt": "Seleccione un color.",
+                "Sonic": "Azul (sónico)"
+            },
+            "Chronoskimmer": {
+                "DestabilizeFailureLabel": "Desestabilizar flujo de tiempo (fallo)",
+                "DestabilizeSuccessLabel": "Desestabilizar flujo de tiempo (éxito)",
+                "StabilizeLabel": "Estabilizar flujo de tiempo"
+            },
+            "ClanWeapon": {
+                "ClanPistol": "Pistola de clan (hazaña de ascendencia)",
+                "Label": "Armas de clan",
+                "Prompt": "Selecciona un arma de clan."
+            },
+            "Cleric": {
+                "Doctrine": {
+                    "AllowedDrops": "Rasgo de clase de clérigo de primer nivel",
+                    "Prompt": "Seleccione una doctrina."
+                }
+            },
+            "Conditions": {
+                "Sickened": {
+                    "Reduce": {
+                        "criticalSuccess": "When you critically succeed at a Fortitude save to reduce your @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened} value, you reduce it by 3.",
+                        "success": "When you succeed at a Fortitude save to reduce your @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened} value, you reduce it by 2."
+                    }
+                }
+            },
+            "Conrasu": {
+                "CeremonyEvenedHand": {
+                    "Prompt": "Seleccione un ataque desarmado."
+                },
+                "RiteOfPassage": {
+                    "Note": "Cuando usas la habilidad Acrobacias para mantener el equilibrio en superficies estrechas o terrenos irregulares dentro de los bosques y obtienes un éxito, obtienes un éxito crítico en su lugar."
+                }
+            },
+            "Convergent": {
+                "Tactics": "Un aliado con Tácticas Convergentes está al alcance del objetivo."
+            },
+            "CorrosiveBody": {
+                "Note": "The first time each round that you deal acid damage to a creature in this way, you gain [[/r 3d6 #Temporary Hit Points]]{3d6 temporary Hit Points}",
+                "Note9th": "The first time each round that you deal acid damage to a creature in this way, you gain [[/r 5d6 #Temporary Hit Points]]{5d6 temporary Hit Points}"
+            },
+            "Cover": {
+                "Greater": "Alcalde",
+                "Lesser": "Menor",
+                "Prompt": "Seleccione un nivel de cobertura.",
+                "Prone": "Descubierto",
+                "Standard": "Normal"
+            },
+            "CriticalDeck": {
+                "Effect": {
+                    "Label": "Efecto critico"
+                }
+            },
+            "DancingShield": {
+                "Prompt": "Selecciona la bonificación de CA del escudo."
+            },
+            "DedicationCraftingEntry": {
+                "FireworkTechnician": "Técnico de fuegos artificiales",
+                "Herbalist": "Herbolario",
+                "Poisoner": "Envenenador",
+                "Snarecrafter": "Artesano de la trampa",
+                "TalismanDabbler": "Aficionado a los talismanes"
+            },
+            "Defending": {
+                "FireSpell": "Defenderse de un conjuro de fuego"
+            },
+            "DeityAndCause": {
+                "AllowedDrops": "Feature of class of champion of first level",
+                "Prompt": "Seleccione la causa de un campeón"
+            },
+            "DeviantAbilities": {
+                "AwakenedPower": {
+                    "AwakenedLabel": "Despertado",
+                    "BlastingBeamsAgile": "Rayos explosivos: Ataques ágiles",
+                    "BlastingBeamsLine": "Rayos de voladura: línea de 60 pies",
+                    "BoneSpikesPoison": "Púas de hueso: envenenado",
+                    "BoneSpikesReach": "Puntas de hueso: Alcance",
+                    "ConsumeEnergyRange": "Consumir energía: rango mejorado",
+                    "ConsumeEnergyStrikes": "Consumir energía: mejorar las huelgas",
+                    "DistantWanderingFly": "Errante distante: Vuelo",
+                    "DistantWanderingQuick": "Errante distante: acelerado",
+                    "EerieFlickerCompress": "Parpadeo espeluznante: Comprimir parpadeo",
+                    "EerieFlickerTerrify": "Eerie Flicker: forma aterradora",
+                    "EnervatingWailEnfeebling": "Lamento enervante: Lamento debilitante",
+                    "EnervatingWailSilent": "Lamento enervante: Lamento silencioso",
+                    "GhostlyGraspGrab": "Agarre fantasmal: agarrar",
+                    "GhostlyGraspPush": "Agarre fantasmal: empujar",
+                    "HighSpeedRegenerationRecovery": "Regeneración de alta velocidad: Regeneración de emergencia",
+                    "HighSpeedRegenerationSpeed": "Regeneración de alta velocidad: aumento de velocidad",
+                    "Prompt": "Selecciona un despertar para una hazaña desviada.",
+                    "PropulsiveLeapSpeed": "Salto propulsivo: aumento de velocidad",
+                    "PropulsiveLeapWeapon": "Salto propulsivo: arma improvisada",
+                    "StormingBreathEscape": "Storming Breath: Speedy Escape",
+                    "StormingBreathProne": "Aliento tormentoso: Knock Propenso",
+                    "TectonicStompStone": "Pisotón tectónico: cubierta de piedra",
+                    "TectonicStompStun": "Pisotón tectónico: aturdir a los enemigos",
+                    "TitanSwingBleed": "Titán Columpio: Sangrado",
+                    "TitanSwingProne": "Titan Swing: Retroceso"
+                },
+                "BoneSpikes": {
+                    "ReachLabel": "Extender puntas de hueso",
+                    "StrikeLabel": "Pua de hueso"
+                },
+                "Dragon": {
+                    "EnergyPrompt": "Selecciona una energía asociada con tus habilidades de dragón"
+                },
+                "TitanSwing": {
+                    "NoteFifteenFeet": "El objetivo es empujado hacia atrás 15 pies.",
+                    "NoteFiveFeet": "El objetivo es empujado hacia atrás 5 pies.",
+                    "NoteProne": "Empujas al objetivo hacia atrás el doble de la distancia normal y lo golpeas @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60] {Prone} .",
+                    "NoteTenFeet": "El objetivo es empujado hacia atrás 10 pies."
+                }
+            },
+            "Dhampir": {
+                "Adhyabhau": {
+                    "SaveNote": "Cuando obtienes un éxito en una salvación de Voluntad contra un efecto de emoción, obtienes un éxito crítico en su lugar."
+                },
+                "BloodlettingFangs": {
+                    "AttackNote": "Tu Golpe de colmillos inflige [[/r 1d4[bleed]] ] adicional con un golpe crítico."
+                }
+            },
+            "DivineAlly": {
+                "AllowedDrops": "Rasgo de clase campeon",
+                "Prompt": "Selecciona un aliado divino."
+            },
+            "DragonDisciple": {
+                "DragonChoice": {
+                    "Black": "Dragón Negro",
+                    "Blue": "Dragón azul",
+                    "Brass": "Dragón de latón",
+                    "Brine": "Dragón Salmuera",
+                    "Bronze": "Dragón de Bronce",
+                    "Cloud": "Nube de dragón",
+                    "Copper": "Dragón Cobre",
+                    "Crystal": "Dragón de cristal",
+                    "Forest": "Dragón del bosque",
+                    "Gold": "Dragón Dorado",
+                    "Green": "Dragón verde",
+                    "Magma": "Dragón Magma",
+                    "Red": "Dragón rojo",
+                    "Sea": "Dragón marino",
+                    "Silver": "Dragón plateado",
+                    "Sky": "Dragón del cielo",
+                    "Sovereign": "Dragón soberano",
+                    "Umbral": "Dragón Umbral",
+                    "Underworld": "Dragón del inframundo",
+                    "White": "Dragón blanco"
+                },
+                "Prompt": "Selecciona un Dragón",
+                "ScalesOfTheDragon": {
+                    "BracersOfArmor": "Escamas del dragón con brazales de armadura",
+                    "ExplorersClothing": "Escamas del dragón con ropa de explorador",
+                    "MageArmor": "Escamas del dragón con armadura de mago"
+                }
+            },
+            "Druid": {
+                "DruidicOrder": {
+                    "Prompt": "Selecciona una orden druídica."
+                }
+            },
+            "Dwarf": {
+                "DeathWardenDwarf": {
+                    "Note": "Cuando obtienes un éxito contra un efecto de nigromancia, obtienes un crítico en su lugar."
+                },
+                "DwarvenClan": {
+                    "Aringeld": "Clan Aringeld",
+                    "Breakiron": "Clan Breakiron",
+                    "Firecask": "Clan Firecask",
+                    "Gelderon": "Clan Gelderon",
+                    "Grimmark": "Clan Grimmark",
+                    "Ironfist": "Clan Ironfist",
+                    "Molgrade": "Clan Molgrade",
+                    "Oriddus": "Clan Oriddus",
+                    "Prompt": "Select a dwarven clan.",
+                    "Runebinder": "Clan Runebinder",
+                    "Stonefist": "Clan Stonefist",
+                    "Tolorr": "Clan Tolorr",
+                    "Vanderholl": "Clan Vanderholl"
+                },
+                "ElementalHeart": {
+                    "Prompt": "Elige el tipo de tu Corazón Elemental"
+                },
+                "ForgeBlessedShot": {
+                    "Note": "Ignora la condición @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W] {Concealed} de tu objetivo, así como la cobertura menor, estándar y mayor de tu objetivo."
+                },
+                "KneelForNoGod": {
+                    "Note": "Cuando obtienes un éxito contra un efecto divino, obtienes un éxito crítico en su lugar."
+                },
+                "RockRunner": {
+                    "Note": "Cuando usas la habilidad Acrobacias para Equilibrarte en superficies estrechas o terreno irregular hecho de piedra o tierra, no estás desprevenido, y cuando obtienes un éxito en una de estas pruebas de Acrobacias, obtienes un éxito crítico en su lugar."
+                },
+                "SparkFist": {
+                    "Note": "Cada vez que tienes éxito en un golpe de puño, tomas [[/r (1+@weapon.system.runes.striking)[fire]] ] {fire damage} ."
+                },
+                "TombWatchersGlare": {
+                    "Note": "Cuando golpeas críticamente a una criatura no muerta, son @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7] {Enfeebled 1} durante 1 ronda"
+                },
+                "VengefulHatred": {
+                    "Prompt": "Elige un enemigo ancestral."
+                }
+            },
+            "EldritchArcher": {
+                "ArrowOfDeath": {
+                    "Note": "On a critical hit, the target must also succeed at a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:death,incapacitation] saving throw, or be immediately slain."
+                },
+                "EnchantingArrow": {
+                    "Note": "On a critical hit, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}."
+                }
+            },
+            "Elf": {
+                "Atavism": {
+                    "Prompt": "Selecciona una herencia élfica."
+                },
+                "BrightnessSeeker": {
+                    "Label": "Llamar al brillo",
+                    "Prompt": "Seleccione el resultado de su Augurio.",
+                    "Weal": "Roncha",
+                    "WealAndWoe": "Bien y mal",
+                    "Woe": "Aflicción"
+                },
+                "DemonbaneWarrior": {
+                    "Note": "Si tus acciones obligan a un demonio a recibir daño por su vulnerabilidad al pecado, aumenta ese daño en [[/r 2]]"
+                },
+                "UnwaveringMien": {
+                    "Note": "Trata tus tiradas de salvación contra los efectos que harían que te quedes dormido como un grado de éxito mejor."
+                },
+                "Woodcraft": {
+                    "Note": "Cuando te encuentras en un entorno de bosque o jungla, si obtienes un fallo crítico en una prueba de habilidad de Supervivencia para Sentir dirección, Subsistir o Cubrir huellas, obtienes un fallo en su lugar, y si obtienes un éxito, obtienes un éxito crítico."
+                }
+            },
+            "Equipment": {
+                "BoastfulHunter": {
+                    "BoredLabel": "The Boastful Hunter is Bored",
+                    "InsultedLabel": "The Boastful Hunter is Insulted",
+                    "MisfireNote": "All attacks with an insulted <em>boastful hunter</em> incur a @Check[type:flat|dc:5] misfire chance until the weapon is appeased."
+                },
+                "BravosBrew": {
+                    "Greater": {
+                        "FearLabel": "Brebaje de Bravo Mayor (Vs. Miedo)"
+                    },
+                    "Lesser": {
+                        "FearLabel": "Brebaje de Bravo Menor (Vs. Fear)"
+                    },
+                    "Moderate": {
+                        "FearLabel": "Moderado Brebaje de Bravo (Vs. Miedo)"
+                    }
+                },
+                "DeckOfDestiny": {
+                    "MatchingSuitPrompt": "Is the drawn card's suit related the check?",
+                    "WealOrWoePrompt": "Select Weal or Woe."
+                },
+                "EagleEyeElixir": {
+                    "Greater": {
+                        "SecretLabel": "Gran elixir de ojo de águila (para encontrar puertas secretas o trampas)"
+                    },
+                    "Lesser": {
+                        "SecretLabel": "Elixir de ojo de águila menor (para encontrar puertas secretas o trampas)"
+                    },
+                    "Major": {
+                        "SecretLabel": "Major Eagle Eye Elixir (para encontrar puertas secretas o trampas)"
+                    },
+                    "Moderate": {
+                        "SecretLabel": "Moderado Elixir de ojo de águila (para encontrar puertas o trampas secretas)"
+                    }
+                },
+                "NosoiCharm": {
+                    "PerformanceLabel": "Nosoi Charm (Tocar un instrumento, orar o cantar)",
+                    "RequestLabel": "Amuleto Nosoi (Solicitud)"
+                },
+                "PhantomShroud": {
+                    "StrikeLabel": "Manos fantasmales"
+                },
+                "ScapularOfShields": {
+                    "CriticalImmunityLabel": "Activate Scapular of Shields to gain critical immunity.",
+                    "ResistAllLabel": "Activate Scapular of Shields to gain resistance to all damage."
+                }
+            },
+            "ExemplaryFinisher": {
+                "Battledancer": "You can Step as a free action immediately after the finisher.",
+                "Braggart": "If the foe was temporarily immune to your @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}, their temporary immunity ends.",
+                "Fencer": "The foe is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} until your next turn.",
+                "Name": "Exemplary Finisher",
+                "Wit": "The foe takes a -2 circumstance penalty to attack rolls against you until the start of your next turn."
+            },
+            "FanesFourberie": {
+                "Prompt": "¿Tratar las cartas como dardos o dagas?"
+            },
+            "Fetchling": {
+                "DeepFetchling": {
+                    "Prompt": "Seleccione un tipo de energía para resistir."
+                }
+            },
+            "Fighter": {
+                "DoubleSlice": {
+                    "SecondAttackLabel": "Segundo ataque de doble corte"
+                }
+            },
+            "FighterWeaponMasteryLegend": {
+                "Advanced": {
+                    "axe": "Eje avanzado",
+                    "bomb": "Bombas Avanzadas",
+                    "bow": "Arcos avanzados",
+                    "brawling": "Pelea avanzada",
+                    "club": "Clubes Avanzados",
+                    "dart": "Dardos avanzados",
+                    "firearm": "Armas de fuego avanzadas",
+                    "flail": "Mayales avanzados",
+                    "hammer": "Martillos avanzados",
+                    "knife": "Cuchillos Avanzados",
+                    "pick": "Selecciones avanzadas",
+                    "polearm": "Armas de asta avanzadas",
+                    "shield": "Escudos avanzados",
+                    "sling": "Eslingas avanzadas",
+                    "spear": "Lanzas Avanzadas",
+                    "sword": "Espadas Avanzadas"
+                },
+                "SimpleMartial": {
+                    "axe": "Hachas simples y marciales",
+                    "bomb": "Bombas simples y marciales",
+                    "bow": "Arcos simples y marciales",
+                    "brawling": "Pelea simple y marcial",
+                    "club": "Clubes simples y marciales",
+                    "dart": "Dardos simples y marciales",
+                    "firearm": "Armas de fuego simples y marciales",
+                    "flail": "Mayales simples y marciales",
+                    "hammer": "Martillos simples y marciales",
+                    "knife": "Cuchillos simples y marciales",
+                    "pick": "Selecciones simples y marciales",
+                    "polearm": "Armas de asta simples y marciales",
+                    "shield": "Escudos simples y marciales",
+                    "sling": "Hondas simples y marciales",
+                    "spear": "Lanzas simples y marciales",
+                    "sword": "Espadas simples y marciales"
+                }
+            },
+            "Fleshwarp": {
+                "CoatingOfSlime": {
+                    "CriticalHit": "Con un golpe crítico, el objetivo recibe [[/r 1d4[persistent,acid]] ]."
+                },
+                "LivingWeapon": {
+                    "Prompt": "Selecciona una parte de tu forma para usarla como arma."
+                },
+                "MutateWeapon": {
+                    "Accuracy": "Obtenga una bonificación de estado de +1 a los ataques",
+                    "Bonus": "Seleccione un bono",
+                    "Reach": "Alcance de ganancia 10",
+                    "Target": "Selecciona una de tus armas vivientes."
+                }
+            },
+            "FollowTheExpert": {
+                "Prompt": "Seleccione la competencia del experto en la habilidad."
+            },
+            "GameHunterDedication": {
+                "TargetHuntedPrey": "El objetivo es tu presa cazada (solo animal, bestia o dragón)"
+            },
+            "Ganzi": {
+                "Irrepressible": {
+                    "SaveNote": "Cuando obtienes un éxito en una salvación contra una emoción o un efecto de miedo, obtienes un éxito crítico en su lugar."
+                }
+            },
+            "GeneralTraining": {
+                "Prompt": "Selecciona una dote general de primer nivel."
+            },
+            "Ghoul": {
+                "FullySatiated": "Completamente saciado",
+                "Satiated": "Harto",
+                "SickeningBite": {
+                    "criticalSuccess": "Cuando golpeas críticamente a una criatura con tus mandíbulas, la criatura es @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18] {Sickened 1} . Este es un efecto de enfermedad.",
+                    "success": "Puede terminar su saciedad para hacer el objetivo @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18] {Sickened 1}"
+                }
+            },
+            "Gnome": {
+                "GrimInsight": {
+                    "SaveNote": "Cuando obtengas un éxito en una tirada de salvación contra un efecto de miedo, obtengas un éxito crítico en su lugar, y la fuente del efecto de miedo es @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg] {Flat-Footed} para ti hasta el final de tu próximo turno."
+                }
+            },
+            "Goblin": {
+                "ChosenOfLamashtu": {
+                    "Prompt": "Seleccione una herencia goblin."
+                },
+                "CityScavenger": {
+                    "EarnIncome": "City Scavenger - Earn Income"
+                },
+                "ExtraSquishy": {
+                    "Note": "Si obtienes un éxito en Squeeze, obtienes un éxito crítico en su lugar."
+                },
+                "RecklessAbandon": {
+                    "Note": "Si obtienes un fallo o un fallo crítico en una tirada de salvación contra un efecto dañino, obtienes un éxito en su lugar."
+                },
+                "ScaldingSpit": {
+                    "BoilingSpit": "Escupir hirviendo"
+                },
+                "TorchGoblin": {
+                    "Note": "Mientras sufras daño de fuego persistente, todos tus ataques cuerpo a cuerpo contra criaturas adyacentes infligen [[/r 1[fire]] ] {1 Fire Damage} adicionales por dado de daño de arma."
+                }
+            },
+            "GoldenBladeOfMzali": {
+                "ElementalFormLabel": "You have cast elemental form using the Golden Blade of Mzali",
+                "LitLabel": "Golden Blade of Mzali is lit",
+                "PersistentDamageNote": "Unlike normal when taking two types of persistent damage, a creature needs only a single successful flat check to remove both the fire and bleed damage."
+            },
+            "Gunslinger": {
+                "Way": {
+                    "Prompt": "Seleccione una forma.",
+                    "Spellshot": "Camino del Hechizo (Arquetipo)"
+                }
+            },
+            "HalfElf": {
+                "EarnedGlory": {
+                    "Note": "Si obtienes un fallo crítico cuando Imprimes a un elfo, obtienes un fallo en su lugar."
+                }
+            },
+            "Halfling": {
+                "Innocuous": {
+                    "Note": "Si fallas una prueba de Engaño para Crear una distracción, las criaturas humanoides no se dan cuenta de que estabas intentando engañarlas a menos que obtengas un fallo crítico en tu tirada."
+                },
+                "KeenEyes": {
+                    "Label": "Busca criaturas ocultas o no detectadas en una radio de 30 pies"
+                },
+                "SureFeet": {
+                    "BalanceNote": "Si obtienes un éxito en una prueba de Acrobacias para Equilibrar, obtienes un éxito crítico en su lugar. No estás desprevenido cuando intentas Equilibrar.",
+                    "ClimbNote": "Si obtienes un éxito en una prueba de Atletismo para escalar, obtienes un éxito crítico en su lugar. No estás desprevenido cuando intentas escalar."
+                }
+            },
+            "HarrowChosen": {
+                "Misaligned": "Misaligned",
+                "PartialMatch": "Partial Match",
+                "Prompt": "Does your card match your alignment?",
+                "TrueMatch": "True Match",
+                "Unmatched": "Unmatched"
+            },
+            "HarrowCourt": {
+                "BooksSuitPrompt": "Was the drawn card from Books?",
+                "Fiend": {
+                    "ToggleLabel": "Repeating a non-strike action"
+                }
+            },
+            "HarrowDeck": {
+                "HarrowSuits": {
+                    "Books": "Libros",
+                    "Crowns": "Coronas",
+                    "Hammers": "Martillos",
+                    "Keys": "Llaves",
+                    "Shields": "Escudos",
+                    "Stars": "Estrellas"
+                },
+                "Prompt": "Seleccione un traje Harrow"
+            },
+            "Hobgoblin": {
+                "AgonizingRebuke": {
+                    "Note": "Cuando desmoralizas con éxito a un enemigo, ese enemigo toma [[/r 1d4[mental]] ] {1d4 mental damage} al comienzo de cada uno de sus turnos, siempre y cuando permanezca Asustado y continúe combatiendo contigo. Si tienes competencia maestra en Intimidación, el daño aumenta a [[/r 2d4[mental]] ] {2d4} , y si tienes competencia legendaria, el daño aumenta a [[/r 3d4[mental]] ] {3d4} ."
+                },
+                "CantorianReinforcement": {
+                    "Note": "Cuando tenga éxito en una tirada de salvación contra una enfermedad o veneno, reduzca el nivel en 2 (o 1 para una enfermedad virulenta o veneno), y cuando tenga un éxito crítico, reduzca el nivel en 3 (o 2 para una enfermedad virulenta o veneno). veneno)."
+                },
+                "WarConditioning": {
+                    "Prompt": "Seleccione un tipo de movimiento."
+                }
+            },
+            "HouseOfPerfection": {
+                "Label": "Casa de la perfeccion",
+                "Prompt": "Seleccione una Casa de la Perfección.",
+                "UnblinkingFlame": "Llama que no parpadea",
+                "UnbreakingWaves": "Olas inquebrantables",
+                "UnfoldingWind": "Viento que se despliega",
+                "UntwistingIron": "Hierro desenredador"
+            },
+            "Human": {
+                "SaocAstrology": {
+                    "Prompt": "Selecciona la penalización por circunstancia o la bonificación que obtuviste al usar la acción Saoc Astrología."
+                },
+                "VikingShieldbearer": {
+                    "Prompt": "Selecciona un arma para entrenarte."
+                },
+                "WitchWarden": {
+                    "SaveNote": "Si obtienes un éxito en una tirada de salvación contra una maldición o un conjuro lanzado por una bruja o arpía, obtienes un éxito crítico en su lugar."
+                }
+            },
+            "HuntPrey": {
+                "FirstHitDamage": "Primer golpe a la presa cazada",
+                "FirstHitSwitch": "Golpear presa cazada por primera vez en esta ronda",
+                "SeekHuntedPrey": "Para buscar presas cazadas",
+                "TargetHuntedPrey": "El objetivo es tu presa cazada",
+                "TrackHuntedPrey": "Para rastrear presas cazadas"
+            },
+            "Ifrit": {
+                "Lavasoul": {
+                    "MagmaSpike": "Golpe magma",
+                    "MagmaSpikeCriticalSpecialization": "En lugar del efecto normal de especialización crítica, el objetivo recibe [[/r 1d6[persistente,fuego]]] de daño; obtienes un bonificador a este daño persistente igual a tu bonificador de objeto a las tiradas de ataque en ataques desarmados."
+                }
+            },
+            "Inventor": {
+                "Innovation": {
+                    "Armor": {
+                        "AllowedDrops": "Armadura unica de nivel cero",
+                        "Prompt": "Selecciona una innovación de armadura."
+                    },
+                    "Construct": {
+                        "Prompt": "Seleccione una innovación de construcción."
+                    },
+                    "Prompt": "Seleccione una innovación.",
+                    "Weapon": {
+                        "Prompt": "Seleccione una innovación de armas."
+                    }
+                },
+                "Modification": {
+                    "Breakthrough": {
+                        "AllowedDrops": "Función de clase de inventor de nivel 7 o inferior",
+                        "Prompt": "Seleccione una modificación revolucionaria."
+                    },
+                    "Initial": {
+                        "AllowedDrops": "Característica de clase de inventor de primer nivel",
+                        "Prompt": "Seleccione una modificación inicial."
+                    },
+                    "InnovationCollapsed": "Innovación colapsada",
+                    "NonlethalBluntShot": "Disparo contundente no letal",
+                    "NonlethalModularHead": "Cabeza modular no letal",
+                    "NonlethalPacificationTools": "Herramientas de pacificación no letales"
+                }
+            },
+            "Investigator": {
+                "Methodology": {
+                    "Prompt": "Seleccione una metodologia."
+                },
+                "PursueALead": {
+                    "Label": "Investigación de un sujeto designado con Pursue a Lead"
+                }
+            },
+            "Kineticist": {
+                "Impulse": {
+                    "Prompt": "Seleccione un impulso."
+                },
+                "KineticGate": {
+                    "DualGate": "Doble puerta",
+                    "ExpandThePortal": "Exandir el portal",
+                    "ForkThePath": "Dividir el camino",
+                    "Junction": {
+                        "AuraJunction": "Conexion de aura",
+                        "CriticalBlast": "Rayo critico",
+                        "ElementalResistance": "Resistencia elemental",
+                        "ImpulseJunction": "Conexion de impulso",
+                        "SkillJunction": "Conexion de habilidad"
+                    },
+                    "Prompt": {
+                        "Element": "Seleccione un elemento.",
+                        "ExpandElement": "Seleccioe un elemento a expandir.",
+                        "Gate": "Seleccione una puerta cinetica.",
+                        "Impulse": "Seleccione una dote de inpulso.",
+                        "Junction": "Seleccion una puerta de conexion.",
+                        "Threshold": "Seleccione un limiete de conexion."
+                    },
+                    "SingleGate": "Puerta Simple"
+                }
+            },
+            "Kobold": {
+                "DragonbloodParagon": {
+                    "Dracomancer": "Dracomancer",
+                    "KoboldBreath": "Aliento de kobold",
+                    "StrongjawKobold": "Kóbold mandíbulafuerte",
+                    "VenomtailKobold": "Kóbold Cola Venenosa"
+                },
+                "DragonsPresence": {
+                    "Note": "Cuando obtienes un éxito en una tirada de salvación contra un efecto de miedo, obtienes un éxito crítico en su lugar. Cuando tiras un fallo contra un efecto de miedo, obtienes un fallo crítico en su lugar."
+                }
+            },
+            "Label": {
+                "DamageType": "Tipo de daño",
+                "Enter": "Entrar",
+                "Exit": "Salir",
+                "ResistanceType": "Tipo de resistencia",
+                "SecondAttempt": "Segundo intento",
+                "ThirdAttempt": "Tercer intento"
+            },
+            "Leshy": {
+                "Seedpod": {
+                    "Note": "Con un golpe crítico, una vaina de semillas estalla, emitiendo una maraña de vegetación que impone una penalización de circunstancia de -10 pies a la velocidad del objetivo durante 1 asalto."
+                },
+                "ThornedSeedpod": {
+                    "Note": "Cuando tienes un éxito crítico en un Golpe de vaina de semillas, las enredaderas giran y apuñalan a tu enemigo, provocando [[/r 1d4[persistent,piercing]] ]"
+                }
+            },
+            "Lich": {
+                "HandOfTheLich": {
+                    "Note": "La criatura es @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3] {Slowed 1} hasta el final de tu próximo turno a menos que tenga éxito en una salvación de @Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)] contra tu CD de conjuros."
+                }
+            },
+            "LitCandle": "La vela esta encendida",
+            "LitCandlecap": "Se enciende el candelabro",
+            "LitFirePoi": "Se enciende Fire Poi",
+            "LitTorch": "La antorcha esta encendida",
+            "Lizardfolk": {
+                "GuidedByTheStars": {
+                    "Prompt": "Selecciona tirada de salvación o habilidad."
+                },
+                "ParthenogenicHatchling": {
+                    "Note": "Cada uno de tus tiros de salvación exitosos contra una enfermedad reduce su etapa en 2, o en 1 para una enfermedad virulenta. Cada éxito crítico contra una enfermedad en curso reduce su etapa en 3, o en 2 para una enfermedad virulenta."
+                }
+            },
+            "MagicalExperiment": {
+                "EnhancedSenses": "Sentidos mejorados",
+                "ResistantSkin": "Piel resistente",
+                "TouchTelepathy": "Telepatía táctil"
+            },
+            "Magus": {
+                "ArcaneCascade": {
+                    "WeaponDamage": "Daño de arma"
+                },
+                "HybridStudy": {
+                    "Prompt": "Seleccione un estudio hibrido."
+                },
+                "SparklingTarge": {
+                    "DefendingLabel": "Defendiendo contra la magia"
+                }
+            },
+            "MarkForDeath": {
+                "DeceiveMark": "Para usar el engaño para fintar tu marca",
+                "SeekMark": "Para buscar tu marca",
+                "TargetMark": "El objetivo esta marcado para la muerte"
+            },
+            "Marshal": {
+                "DreadMarshalStance": {
+                    "Note": "Cuando golpeas críticamente a un enemigo con un Golpe, ese enemigo es @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL] {Frightened 1}.",
+                    "Title": "Aura de mariscal aterrador"
+                }
+            },
+            "MartialProficiency": {
+                "AdvancedAzarketiWeapons": "Armas Azarketi Avanzadas",
+                "AdvancedCatfolkWeapons": "Armas Catfolk Avanzadas",
+                "AdvancedConrasuWeapons": "Armas avanzadas de Conrasu",
+                "AdvancedDwarfWeapons": "Armas Enanas Avanzadas",
+                "AdvancedElfWeapons": "Armas élficas avanzadas",
+                "AdvancedFirearmsCrossbows": "Armas de fuego y ballestas avanzadas",
+                "AdvancedGeniekinWeapons": "Armas Geniekin Avanzadas",
+                "AdvancedGhoranWeapons": "Armas avanzadas de Ghoran",
+                "AdvancedGnollWeapons": "Armas Gnoll Avanzadas",
+                "AdvancedGnomeWeapons": "Armas avanzadas de gnomos",
+                "AdvancedGoblinWeapons": "Armas Goblin Avanzadas",
+                "AdvancedGrippliWeapons": "Armas Grippli Avanzadas",
+                "AdvancedGroup": {
+                    "axe": "Eje avanzado",
+                    "bomb": "Bombas Avanzadas",
+                    "bow": "Arcos avanzados",
+                    "brawling": "Pelea avanzada",
+                    "club": "Clubes Avanzados",
+                    "dart": "Dardos avanzados",
+                    "firearm": "Armas de fuego avanzadas",
+                    "flail": "Mayales avanzados",
+                    "hammer": "Martillos avanzados",
+                    "knife": "Cuchillos Avanzados",
+                    "pick": "Selecciones avanzadas",
+                    "polearm": "Armas de asta avanzadas",
+                    "shield": "Escudos avanzados",
+                    "sling": "Eslingas avanzadas",
+                    "spear": "Lanzas Avanzadas",
+                    "sword": "Espadas Avanzadas"
+                },
+                "AdvancedHalflingWeapons": "Armas Medianas Avanzadas",
+                "AdvancedHobgoblinWeapons": "Armas avanzadas de Hobgoblin",
+                "AdvancedKoboldWeapons": "Armas Kóbold Avanzadas",
+                "AdvancedOrcWeapons": "Armas orcas avanzadas",
+                "AdvancedTenguWeapons": "Armas tengu avanzadas",
+                "AdvancedVanaraWeapons": "Armas vanara avanzadas",
+                "AdvancedVishkanyaWeapons": "Armas avanzadas de Vishkanya",
+                "MartialAzarketiWeapons": "Armas marciales azarketi",
+                "MartialBombsFirearms": "Bombas marciales y armas de fuego",
+                "MartialCatfolkWeapons": "Armas Marciales Catfolk",
+                "MartialConrasuWeapons": "Armas marciales de Conrasu",
+                "MartialDwarfWeapons": "Armas marciales de los enanos",
+                "MartialElfWeapons": "Armas élficas marciales",
+                "MartialFirearmsCrossbows": "Armas de fuego y ballestas marciales",
+                "MartialGeniekinWeapons": "Armas marciales Geniekin",
+                "MartialGhoranWeapons": "Armas marciales de Ghoran",
+                "MartialGnollWeapons": "Armas marciales de gnoll",
+                "MartialGnomeWeapons": "Armas marciales de gnomos",
+                "MartialGoblinWeapons": "Armas Duende Marcial",
+                "MartialGrippliWeapons": "Armas marciales Grippli",
+                "MartialGroup": {
+                    "axe": "Hachas marciales",
+                    "bomb": "Bombas marciales",
+                    "bow": "Arcos marciales",
+                    "brawling": "Pelea marcial",
+                    "club": "Clubs marciales",
+                    "dart": "Dardos marciales",
+                    "firearm": "Armas de fuego marcial",
+                    "flail": "Mayales marciales",
+                    "hammer": "Martillos marciales",
+                    "knife": "Cuchillos marciales",
+                    "pick": "Selecciones marciales",
+                    "polearm": "Armas de asta marcial",
+                    "shield": "Escudos marciales",
+                    "sling": "Hondas marciales",
+                    "spear": "Lanzas marciales",
+                    "sword": "Espadas marciales"
+                },
+                "MartialHalflingWeapons": "Armas marciales de mediano",
+                "MartialHobgoblinWeapons": "Armas Marciales Hobgoblin",
+                "MartialKoboldWeapons": "Armas marciales de kobold",
+                "MartialOrcWeapons": "Armas orcas marciales",
+                "MartialTenguWeapons": "Armas marciales tengu",
+                "MartialVanaraWeapons": "Armas marciales de Vanara",
+                "MartialVishkanyaWeapons": "Armas marciales Vishkanya",
+                "MonasticArchery": "Tiro con arco monástico",
+                "SimpleBombsFirearms": "Bombas simples y armas de fuego",
+                "SimpleFirearmsCrossbows": "Armas de fuego y ballestas simples",
+                "SimpleMartialBows": "Arcos simples y marciales",
+                "SimpleMartialTwoHandedMeleeWeapons": "Armas cuerpo a cuerpo a dos manos simples y marciales"
+            },
+            "MechanicalTorch": {
+                "Label": "La antorcha mecánica está encendida",
+                "LitCone": "La antorcha mecanica esta encendida (cono)",
+                "LitRadius": "La antorcha mecánica está encendida (radio)"
+            },
+            "Mindmoppet": {
+                "BrokenShell": "Shell está roto"
+            },
+            "Monk": {
+                "DragonRoar": {
+                    "Label": "Primer ataque contra criatura asustada"
+                },
+                "OneInchPunch": {
+                    "ThreeActionLabel": "Golpe de una pulgada (tres acciones)",
+                    "TwoActionLabel": "Punzón de una pulgada (dos acciones)"
+                },
+                "SacredKi": {
+                    "Prompt": "Elige tu daño alineado."
+                },
+                "StunningFist": {
+                    "Note": "El objetivo debe tener éxito en una salvación de @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.monk.value)|traits:incapacitation|overrideTraits:true] contra tu CD de clase o ser @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix] {Stunned 1} (o @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix] {Stunned 3} en un fallo crítico)."
+                },
+                "WolfDrag": {
+                    "Note": "Si el ataque tiene éxito, derribas al objetivo @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}."
+                }
+            },
+            "MountainStance": {
+                "BracersOfArmor": "Postura de montaña con brazales de armadura",
+                "ExplorersClothing": "Postura de montaña con ropa de explorador",
+                "MageArmor": "Postura de montaña con armadura de mago"
+            },
+            "Multitalented": {
+                "Prompt": "Selecciona una dote de dedicación multiclase."
+            },
+            "Mummy": {
+                "AccursedTouch": {
+                    "Note": {
+                        "Base": "La criatura toma [[/r 2d6[persistent,negative]] ] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60] {Persistent negative Damage} . Mientras la criatura tiene este daño persistente, también es @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg] {Stupefied 1} .",
+                        "FourteenthLevel": "La criatura toma [[/r 3d6[persistent,negative]] ] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60] {Persistent negative Damage} . Mientras la criatura tiene este daño persistente, también es @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg] {Stupefied 1} .",
+                        "TwentiethLevel": "La criatura toma [[/r 4d6[persistent,negative]] ] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60] {Persistent negative Damage} . Mientras la criatura tiene este daño persistente, también es @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg] {Stupefied 1} ."
+                    }
+                },
+                "Terrain": {
+                    "Arctic": "Ártico",
+                    "Desert": "Desierto",
+                    "Mountain": "Montana",
+                    "Prompt": "Seleccione su terreno delimitado",
+                    "Swamp": "Pantano"
+                }
+            },
+            "Nagaji": {
+                "VenomSpit": {
+                    "CriticalNote": "El objetivo toma [[/r (1+@weapon.system.runes.striking)[persistent,poison]] ] {persistent poison damage} igual al número de dados de daño del arma",
+                    "HoodedNote": "El objetivo también es @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh] {Dazzled} hasta el comienzo de tu próximo turno.",
+                    "StrikeLabel": "Escupitajo venenoso"
+                }
+            },
+            "Obcisidaemon": {
+                "ConsumeSoul": {
+                    "EmpowerSpell": "Potenciar Hechizo",
+                    "EmpowerWeapon": "Potenciar Arma",
+                    "Prompt": "Potenciar un Hechizo o Arma?"
+                }
+            },
+            "Oracle": {
+                "Mystery": {
+                    "Prompt": "Seleccione un misterio."
+                }
+            },
+            "Orc": {
+                "HoldMark": {
+                    "Axe": "Hacha (Hacha o Pico).",
+                    "Prompt": "Elija la forma de su marca de espera.",
+                    "Shield": "Escudo (Martillo o Escudo).",
+                    "Torch": "Antorcha (bomba o cuchillo)."
+                },
+                "OrcWarmask": {
+                    "Gods": "Los dioses",
+                    "Land": "La tierra",
+                    "Magic": "Magia",
+                    "Prompt": "Elige la fuente del poder de tu máscara de guerra.",
+                    "Unknown": "El desconocido"
+                }
+            },
+            "OverwhelmingBlow": {
+                "CriticalHit": "Golpe crítico con Golpe abrumador"
+            },
+            "PackAttack": {
+                "Label": "El objetivo está dentro del alcance de al menos dos aliados"
+            },
+            "Poppet": {
+                "WashOut": {
+                    "Note": "Cada vez que tienes éxito en una salvación de Fortaleza contra un veneno en curso, reduce su nivel en 2, o en 1 contra un veneno virulento. Cada éxito crítico que consiga contra un veneno en curso reduce su etapa en 3, o en 2 contra un veneno virulento."
+                }
+            },
+            "PowderPunchStance": {
+                "Label": "Primer golpe cuerpo a cuerpo en esta ronda",
+                "Note": "El objetivo es empujado hacia atrás 5 pies adicionales."
+            },
+            "PreciseStrike": {
+                "Finisher": "Acabador"
+            },
+            "Prompt": {
+                "AdvancedMulticlassFeat": "Selecciona una dote de clase hasta la mitad de tu nivel de personaje.",
+                "Alignment": "Seleccione un alineamiento.",
+                "CantripOrNonCantrip": "Seleccione cantrip o conjuro sin cantrip.",
+                "ClassDCAbilityScore": "Selecciona la puntuación de habilidad de la clase DC.",
+                "ConsciousMind": "Seleccione una Mente Consciente.",
+                "CreatureSize": "Seleccione un tamaño de criatura.",
+                "DamageType": "Seleccione un tipo de daño.",
+                "DegreeOfSuccess": "Seleccione el grado de éxito.",
+                "Deity": "Seleccione una deidad.",
+                "DeitysDomain": "Selecciona el dominio de una deidad.",
+                "DragonBreathWeapon": "Selecciona el arma de aliento de un dragón.",
+                "Element": "Seleccione un elemento.",
+                "EnergyType": "Seleccione un tipo de energia.",
+                "EvolutionFeat": "Selecciona tu primera hazaña de evolución.",
+                "Feat": "Selecciona una hazaña.",
+                "FirstImplement": "Seleccione su primer implemento.",
+                "Lesson": "Seleccione una selección.",
+                "LevelOneClassFeat": "Selecciona una dote de clase de primer nivel.",
+                "LevelOneOrTwoClassFeat": "Selecciona una dote de clase de primer o segundo nivel.",
+                "Material": "Seleccione un material.",
+                "PathToPerfection": "Seleccione un camino a la perfección.",
+                "Rune": "Seleccione una runa.",
+                "SecondImplement": "Seleccione su segundo implemento.",
+                "Shillelagh": "Seleccione un club o personal.",
+                "Skill": "Seleccione una habilidad.",
+                "SkillFeat": "Selecciona una hazaña de habilidad.",
+                "SubconsciousMind": "Seleccione una mente subconsciente.",
+                "ThirdImplement": "Seleccione su tercer Implemento.",
+                "UnarmedAttack": "Seleccione un ataque desarmado.",
+                "VersatileTrait": "Seleccione un tipo de daño versátil.",
+                "Weapon": "Selecciona un arma.",
+                "WeaponGroup": "Seleccione un grupo de armas.",
+                "WeaponOrUnarmed": "Selecciona un arma o un ataque desarmado.",
+                "WildShape": "Seleccione un efecto de formulario."
+            },
+            "Psychic": {
+                "UnleashPsyche": {
+                    "DamageLabel": "Lanzar un conjuro de Psychic Spellcasting"
+                }
+            },
+            "Ranger": {
+                "HamstringingStrike": {
+                    "Note": "Si golpeas a tu presa, la criatura recibe una penalización de estado de -5 pies a la velocidad. Si golpeas críticamente a tu presa, la criatura recibe una penalización de estado de -10 pies a la velocidad.\n  @UUID[Compendium.pf2e.feat-effects.ESnzqtwSgahLcxg2] {Effect: Hamstringing Strike}",
+                    "Prompt": "Seleccione un resultado de éxito."
+                },
+                "HuntersEdge": {
+                    "FirstAttack": "Primer ataque a una presa cazada en esta ronda",
+                    "Prompt": "Seleccione el filo de un cazador."
+                }
+            },
+            "Ratfolk": {
+                "LabRat": {
+                    "Note": "Si obtienes un éxito en tu tirada de salvación contra un elixir o veneno, obtienes un éxito crítico en su lugar."
+                },
+                "WarrenNavigator": {
+                    "Note": "Cuando sientes la dirección, obtienes un resultado un grado de éxito mejor que el que obtuviste."
+                }
+            },
+            "RelicGift": {
+                "DivineRetribution": {
+                    "CriticalSuccess": "Si el objetivo es malvado, también es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitada 2} hasta el inicio de tu siguiente turno en un golpe crítico.",
+                    "Success": "Si el objetivo es malvado, también es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} hasta el inicio de tu siguiente turno en un impacto."
+                }
+            },
+            "Rogue": {
+                "DistractingFeint": {
+                    "Text": "Mientras una criatura esté a desprevenido por tu Finta, también sufre un penalizador -2 de circunstancia a los pruebas de Percepción y a las salvaciones de Reflejos. @UUID[Compendium.pf2e.feat-effects.Item.7hRgBo0fRQBxMK7g]{Efecto: Finta de distracción}"
+                },
+                "EldritchTrickster": {
+                    "Prompt": "Selecciona un arquetipo multiclase lanzador de conjuros."
+                },
+                "Racket": {
+                    "Prompt": "Selecciona una raqueta."
+                },
+                "TrainSkill": {
+                    "Prompt": "Seleccione una habilidad para capacitarse."
+                }
+            },
+            "SaveSuccessToCriticalSuccess": {
+                "Fortitude": "Cuando obtienes un éxito en una salvación de Fortaleza, obtienes un éxito crítico en su lugar.",
+                "Reflex": "Cuando obtienes un éxito en una salvación de Reflejos, obtienes un éxito crítico en su lugar.",
+                "Will": "Cuando obtienes un éxito en una salvación de Voluntad, obtienes un éxito crítico en su lugar."
+            },
+            "ScionOfDomora": {
+                "GuardiansEmbrace": {
+                    "PhysicalAttackLabel": "Protegiéndose contra un ataque físico",
+                    "ProtectionLabel": "Ganar resistencia al ataque fisico"
+                },
+                "SpiritualFlurryNote": "Los objetivos se definirán en @Compendium[pf2e.conditionitems.Flat-Footed] {Flat-Footed} hasta el final de tu turno actual."
+            },
+            "Shisk": {
+                "PiercingQuills": {
+                    "Note": "El ataque desarmado de tus púas inflige @Localize[PF2E.PersistentDamage.Bleed1d4.success] en un golpe crítico."
+                },
+                "Quills": "Púas"
+            },
+            "Shoony": {
+                "EsteemedVisitor": {
+                    "Note": "Mientras estás en un asentamiento, cuando obtienes un fallo crítico en una prueba de Diplomacia para recopilar información o causar una impresión, obtienes un fallo en su lugar."
+                },
+                "FishseekerShoony": {
+                    "Note": "Si obtienes un éxito en un intento de agarrar una ventaja, obtienes un éxito crítico en su lugar; si obtienes un fallo crítico, obtienes un fallo en su lugar."
+                }
+            },
+            "SkillMastery": {
+                "ExpertPrompt": "Seleccione una habilidad en la que se convierta en experto.",
+                "MasterPrompt": "Seleccione una habilidad para convertirse en maestro."
+            },
+            "SmokingSword": {
+                "StokeFlames": "Aviva las llamas"
+            },
+            "SneakAttack": "Ataque furtivo",
+            "SnipersAim": {
+                "Note": "Ignora el estado Oculto del objetivo."
+            },
+            "SnipingDuoDedication": {
+                "Label": "El compañero de Sniping Duo da en el blanco con un golpe en esta ronda"
+            },
+            "Sorcerer": {
+                "Bloodline": {
+                    "Prompt": "Seleccione una línea de sangre."
+                }
+            },
+            "SoulWarden": {
+                "SafeguardSoul": {
+                    "Label": "Defenderse de la manipulación de tu alma"
+                },
+                "SpiralSworn": {
+                    "Label": "El objetivo posee un alma encarcelada o ha creado muertos vivientes"
+                },
+                "UndeadNearby": "Muertos vivientes cercanos"
+            },
+            "SpecialtyCrafting": {
+                "Alchemy": "Alquimia",
+                "Artistry": "Arte",
+                "Blacksmithing": "Herreria",
+                "Bookmaking": "Apuestas",
+                "Glassmaking": "Fabricacion de vidrio",
+                "Leatherworking": "Peletería",
+                "Pottery": "Ceramica",
+                "Prompt": "Seleccione una especialidad.",
+                "Shipbuilding": "Construccion naval",
+                "Stonemasonry": "Cantería",
+                "Tailoring": "Sastreria",
+                "Weaving": "Costura",
+                "Woodworking": "Carpinteria"
+            },
+            "SpellEffectEvolutionSurge": {
+                "Amphibious": "Velocidad de nado",
+                "Climb": "Velocidad de escalada",
+                "Fly": "Velocidad de vuelo",
+                "Prompt": "Selecciones una evolucion.",
+                "Sight": "Vision en penumbre y en la oscuridad",
+                "Speed": "+20 pies en velocidad"
+            },
+            "SpellEffectProtection": {
+                "Prompt": "Elija contra qué rasgo de alineación se está protegiendo."
+            },
+            "Spellheart": {
+                "BeastmastersSigil": {
+                    "AdjacentLabel": "Objetivo adjunto a la invocación de sigilo del maestro de bestias"
+                }
+            },
+            "SpellmastersResilience": {
+                "Prompt": "Seleccione una tradicion magica para ganar resistencia."
+            },
+            "Sprite": {
+                "LuminousSprite": {
+                    "Light": "Arrojar luz."
+                },
+                "SpritesSpark": {
+                    "Draxie": "Chispa eufórica",
+                    "Grig": "Nota disonante",
+                    "LuminousSprite": "Chispa luminosa",
+                    "Melixie": "Disparo de picadura",
+                    "Nyktera": "Pulso ultrasonico",
+                    "Pixie": "Polvo de hadas"
+                }
+            },
+            "Stance": {
+                "Attack": {
+                    "CobraFang": "Cobra Fang",
+                    "CraneWing": "Ala de grulla",
+                    "DragonTail": "Cola de dragón",
+                    "FallingStone": "Piedra que cae",
+                    "FireTalon": "Garra de fuego",
+                    "FlashingSpark": "Chispa intermitente",
+                    "FlowingWave": "Ola que fluye",
+                    "GorillaSlam": "Golpe de gorila",
+                    "IronSweep": "Barrido de hierro",
+                    "LashingBranch": "Rama de amarre",
+                    "ShadowGrasp": "Agarre de las sombras",
+                    "SkywardSlash": "Corte hacia el cielo",
+                    "StingingLash": "Latigazo punzante",
+                    "StumblingSwing": "Columpio de tropiezo",
+                    "TigerClaw": "Garra de tigre",
+                    "WindCrash": "Choque de viento",
+                    "WolfJaws": "Mandibulas de lobo"
+                }
+            },
+            "SteadyBalance": {
+                "Note": "Si obtienes un éxito con la acción Equilibrar, obtienes un éxito crítico en su lugar."
+            },
+            "SterlingDynamo": {
+                "AutomaticPercussive": "Dínamo automático de percusión Striker",
+                "AutomaticPower": "Dinamo de controlador de potencia automatica",
+                "Label": "Esterlina dinamo",
+                "ManualPercussive": "Dinamo Striker de percusión manual",
+                "ManualPower": "Dínamo de controlador de potencia manual"
+            },
+            "SubstituteRoll": {
+                "Assurance": "Garantía",
+                "EffectType": "{type} ( {substitution} )"
+            },
+            "Suli": {
+                "Dualborn": {
+                    "FirstElement": "Elige tu primer elemento.",
+                    "SecondElement": "Elige tu segundo elemento."
+                },
+                "ElementalAssault": {
+                    "Prompt": "Seleccione un elemento."
+                }
+            },
+            "Swashbuckler": {
+                "Panache": "Ganas @UUID[Compendium.pf2e.feat-effects.uBJsxCzNhje8m8jj] {Panache} .",
+                "Style": {
+                    "Prompt": "Seleccione un estilo."
+                }
+            },
+            "Target": {
+                "AgainstDemons": "Contra demonios",
+                "AgainstDevils": "Contra los demonios",
+                "AgainstHumanoids": "Contra humanoides",
+                "Necromancer": "El objetivo es un nigromante."
+            },
+            "Tattoo": {
+                "WildwoodInk": {
+                    "Greater": {
+                        "InForestLabel": "Tinta Madera salvaje (Superior) (En el bosque)"
+                    },
+                    "Major": {
+                        "InForestLabel": "Tinta Madera salvaje (Mayor) (En el bosque)"
+                    },
+                    "Normal": {
+                        "InForestLabel": "Tinta Madera salvaje  (En el bosque)"
+                    }
+                }
+            },
+            "TerrainExpertise": {
+                "Prompt": "Selecciona un terreno"
+            },
+            "TerrainStalker": {
+                "Rubble": "Escombros",
+                "Snow": "Nieve",
+                "Underbrush": "Maleza"
+            },
+            "Thaumaturge": {
+                "Implement": {
+                    "Amulet": "Amuleto",
+                    "Bell": "Campana",
+                    "Chalice": "Cáliz",
+                    "Lantern": "Linterna",
+                    "Mirror": "Espejo",
+                    "Regalia": "Insignias reales",
+                    "Tome": "Un mi",
+                    "Wand": "Varita magica",
+                    "Weapon": "Armas"
+                },
+                "TalismanEsoterica": "Talismán Esotérico"
+            },
+            "ToggleProperty": {
+                "GourdHead": "Cabeza de calabaza: aumenta la percepción DC",
+                "TagTeam": "Flanqueando con otro miembro de la Sociedad Secreta",
+                "Triangulate": "El observador puede ver el objetivo"
+            },
+            "TOTMToggle": {
+                "FirstRangeIncrement": "Habilite habilidades que requieran un objetivo dentro del primer incremento de rango.",
+                "FlatFooted": "Habilitar habilidades que requieren un objetivo desprevenido",
+                "Incorporeal": "Habilitar habilidades que requieren un objetivo incorporado",
+                "Undead": "Habilitar habilidades que requieren un objetivo no-muerto",
+                "Vampire": "Habilitar habilidades que requieren un objetivo vampiro"
+            },
+            "TrapFinder": {
+                "DefendingLabel": "Buscador de trampas (defensa de trampas)",
+                "SearchLabel": "Trap Finder (búsqueda de trampas)"
+            },
+            "TrinityGeodeLabel": "Geoda de la trinidad",
+            "TwinnedDefense": {
+                "Prompt": "¿Estás empuñando un arma de parada?"
+            },
+            "TwoHanded": {
+                "BastardSword": "Usar espada bastarda a dos manos",
+                "BattleLute": "Usar laúd de batalla a dos manos",
+                "Broom": "Usar escoba a dos manos",
+                "Cane": "Usar baston a dos manos",
+                "Katana": "Usar katana a dos manos",
+                "Khakkhara": "Usar Khakkhara a dos manos",
+                "ReinforcedStock": "Usar culata reforzada a dos manos",
+                "RhokaSword": "Usa la espada Rhoka a dos manos",
+                "Staff": "Usa el baston a dos manos"
+            },
+            "UndeadSlayer": {
+                "SlayersPresence": {
+                    "Note": "El objetivo es @UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D] {Fleeing} para 1 ronda."
+                }
+            },
+            "Vampire": {
+                "ViciousFangs": {
+                    "Note": {
+                        "Base": "Tu Fangs Strike inflige un [[/r 1d6[bleed]] adicional] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60] {Persistent bleed Damage} .",
+                        "FourteenthLevel": "Tu Fangs Strike inflige un [[/r 2d6[bleed]] adicional] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60] {Persistent bleed Damage} .",
+                        "TwentiethLevel": "Tu Fangs Strike inflige un [[/r 3d6[bleed]] adicional] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60] {Persistent bleed Damage} ."
+                    }
+                }
+            },
+            "VirtuosicPerformer": {
+                "Acting": "Interino",
+                "Comedy": "Comedia",
+                "Dance": "Bailar",
+                "Keyboards": "Teclados",
+                "Oratory": "Oratorio",
+                "Percussion": "Percusion",
+                "Prompt": "Seleccione un tipo de interpretación",
+                "Singing": "Cantando",
+                "Strings": "Instrumentos de cuerda",
+                "Winds": "Vientos"
+            },
+            "Vishkanya": {
+                "VenomResistantVishkanya": {
+                    "PoisonSaveNote": "Cada uno de tus tiros de salvación exitosos contra una aflicción de veneno reduce su etapa en 2. Cada éxito crítico contra un veneno en curso reduce su etapa en 3.",
+                    "VirulentSaveNote": "Cada uno de tus tiros de salvación exitosos contra una aflicción de veneno virulento reduce su etapa en 1. Cada éxito crítico contra un veneno virulento en curso reduce su etapa en 2."
+                }
+            },
+            "VitalityManipulationStance": {
+                "Note": "Cuando usas Puño aturdidor, en lugar de salvar contra el aturdimiento, puedes elegir que el objetivo haga una salvación @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)] contra tu CD de clase con los siguientes resultados. Debes elegir hacer esto antes de que el objetivo realice su tirada de salvación. </p> <hr> <p> <strong> Éxito crítico </strong> El objetivo no se ve afectado. </p> <p> <strong> Éxito </strong> Los músculos del objetivo se debilitan temporalmente.Para 1 ronda, el objetivo es @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7] {Enfeebled 2} , y cada vez que intenta realizar una acción con el rasgo de manipulación, la acción se interrumpe a menos que tenga éxito en una prueba plana con un CD igual a 5 + su valor debilitado. </p> <p> <strong> Fallo </strong> Como éxito, pero la duración es de 1 minuto. </p> <p> <strong> Fallo Crítico </strong> Como éxito, pero la duración es de 1 minuto, la prueba plana es CD 11, yel objetivo sufre una penalización de estado de -10 pies a todas las Velocidades para la duración. </p>",
+                "StrikeLabel": "Explosión de vitalidad"
+            },
+            "WardenHuman": {
+                "Fortitude": "Experto en Fortaleza salva",
+                "HitPoints": "4 Puntos de Golpe",
+                "MediumArmor": "Entrenado en armadura media"
+            },
+            "WardingRune": {
+                "Prompt": "Elige una escuela de magia que no sea adivinación."
+            },
+            "WellspringMage": {
+                "CriticalSuccess": "Recuperas temporalmente un espacio de conjuro gastado de cualquier nivel de tu elección. El espacio de conjuro temporal dura 1 minuto, y si no lo usas para entonces, experimenta un @UUID[Compendium.pf2e.rollable-tables.N0pDFNCffTe2Du39] {Wellspring Surge} inmediato.",
+                "Failure": "Generas un @UUID[Compendium.pf2e.rollable-tables.N0pDFNCffTe2Du39] {Wellspring Surge} , con un nivel de conjuro elegido al azar entre tus tres niveles principales de ranuras de conjuros (o todos tus niveles si tienes menos de tres)",
+                "Initiative": "Cuando tiras iniciativa para un encuentro de combate no trivial, así como en otras situaciones de alto estrés a elección del DJ, la magia brota dentro de ti. Intente una verificación de verificación @Check[type:flat|dc:6|traits:wellspring-magic] .",
+                "Success": "Recuperas temporalmente un espacio de conjuro gastado de un nivel de conjuro elegido al azar entre tus tres niveles principales de espacios de conjuro (o todos tus niveles si tienes menos de tres). El espacio de conjuro temporal dura 1 minuto, y si no lo usas para entonces, experimenta un @UUID[Compendium.pf2e.rollable-tables.N0pDFNCffTe2Du39] {Wellspring Surge} inmediato."
+            },
+            "WildMorph": {
+                "ElementalMatter": "Materia elemental",
+                "LongVines": "Videos largos",
+                "Prompt": "Seleccione una morfología.",
+                "PromptThree": "Seleccione una 3ra morfología.",
+                "PromptTwo": "Seleccione una 2da morfología.",
+                "WildClaws": "Garras salvajes",
+                "WildJaws": "Mandibulas salvajes",
+                "Wings": "Pobre de mí"
+            },
+            "Witch": {
+                "Patron": {
+                    "Prompt": "Seleccione un patrón."
+                }
+            },
+            "Wizard": {
+                "ArcaneSchool": {
+                    "Prompt": "Selecciona una escuela arcana."
+                },
+                "ArcaneThesis": {
+                    "Prompt": "Seleccione una tesis arcana."
+                },
+                "Metamagic1": {
+                    "Prompt": "Selecciona una dote metamágica de mago de primer nivel."
+                }
+            },
+            "Zombie": {
+                "Deteriorated": "Deteriorado"
+            }
+        },
+        "Terrain": {
+            "Aquatic": "Acuático",
+            "Arctic": "Ártico",
+            "Desert": "Desierto",
+            "Forest": "Bosque",
+            "Mountain": "Montana",
+            "Plains": "Llanuras",
+            "Sky": "Cielo",
+            "Swamp": "Pantano",
+            "Underground": "Subterráneo"
+        },
+        "UI": {
+            "RuleElements": {
+                "ChoiceSet": {
+                    "Decline": "Rechazar",
+                    "DragHomebrewItem": "Arrastre un elemento casero aquí si usa uno en lugar de las opciones anteriores",
+                    "HomebrewItem": "Articulo casero",
+                    "NoLabel": "No",
+                    "Prompt": "Tiene una elección.",
+                    "SaveLabel": "Ahorrar",
+                    "SkillLabel": "Habilidad",
+                    "YesLabel": "Si"
+                },
+                "EffectTarget": {
+                    "Prompt": "Elige el objetivo de este efecto."
+                },
+                "GrantItem": {
+                    "AlreadyHasItem": "{actor} ya tiene {item} , por lo que no se ha vuelto a agregar."
+                },
+                "MarkTarget": {
+                    "TargetToken": "Apunta a una ficha pasando el mouse sobre una y presionando T. Presiona Escape para cancelar.",
+                    "Timeout": "Se canceló la creación del efecto debido a la falta de objetivo."
+                },
+                "Prompt": {
+                    "NoSelectionMade": "No se realizó ninguna selección: {item} está inactivo.",
+                    "NoValidOptions": "{actor} no tiene opciones válidas para {item} ."
+                }
+            }
+        }
+    }
+}
