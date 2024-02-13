@@ -1,56 +1,56 @@
-name: Create new Release
+# name: Create new Release
 
-on:
-  push:
-    branches:
-      - main
-env:
-  ZIP_FILENAME: "pf2e-es"
-  PACKAGE_CONTENT: "module.json main.js babele.js lang/ compendium/ styles/"
+# on:
+#   push:
+#     branches:
+#       - main
+# env:
+#   ZIP_FILENAME: "pf2e-es"
+#   PACKAGE_CONTENT: "module.json main.js babele.js lang/ compendium/ styles/"
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Conventional Changelog Action
-        id: changelog
-        uses: TriPSs/conventional-changelog-action@v3
-        with:
-          github-token: ${{ secrets.github_token }}
-          version-file: "module.json"
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: Conventional Changelog Action
+#         id: changelog
+#         uses: TriPSs/conventional-changelog-action@v3
+#         with:
+#           github-token: ${{ secrets.github_token }}
+#           version-file: "module.json"
 
-      # Create a zip file with all files required by the module to add to the release
-      - name: Create Artifact
-        if: ${{ steps.changelog.outputs.skipped == 'false' }}
-        id: build-zip
-        run: zip -r $ZIP_FILENAME.zip $PACKAGE_CONTENT
+#       # Create a zip file with all files required by the module to add to the release
+#       - name: Create Artifact
+#         if: ${{ steps.changelog.outputs.skipped == 'false' }}
+#         id: build-zip
+#         run: zip -r $ZIP_FILENAME.zip $PACKAGE_CONTENT
 
-      # Create a release for this specific version
-      - name: Create release
-        id: create_release
-        uses: ncipollo/release-action@v1
-        if: ${{ steps.changelog.outputs.skipped == 'false' }}
-        with:
-          allowUpdates: true
-          name: ${{steps.changelog.outputs.version}}
-          draft: false
-          prerelease: false
-          token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: "./module.json, ./${{env.ZIP_FILENAME}}.zip"
-          tag: ${{ steps.changelog.outputs.tag }}
-          body: ${{ steps.changelog.outputs.changelog }}
+#       # Create a release for this specific version
+#       - name: Create release
+#         id: create_release
+#         uses: ncipollo/release-action@v1
+#         if: ${{ steps.changelog.outputs.skipped == 'false' }}
+#         with:
+#           allowUpdates: true
+#           name: ${{steps.changelog.outputs.version}}
+#           draft: false
+#           prerelease: false
+#           token: ${{ secrets.GITHUB_TOKEN }}
+#           artifacts: "./module.json, ./${{env.ZIP_FILENAME}}.zip"
+#           tag: ${{ steps.changelog.outputs.tag }}
+#           body: ${{ steps.changelog.outputs.changelog }}
 
-      - name: Publish to Foundry VTT Repo
-        id: publish_foundry_repo
-        if: ${{ steps.changelog.outputs.skipped == 'false' }}
-        run: npx @ghost-fvtt/foundry-publish
-        env:
-          FVTT_MANIFEST_URL: 'https://github.com/allnnde/pf2e-esp-translation/releases/latest/download/module.json'
-          FVTT_PACKAGE_ID: ${{ secrets.FVTT_PACKAGE_ID }}
-          FVTT_USERNAME: ${{ secrets.FVTT_USERNAME }}
-          FVTT_PASSWORD: ${{ secrets.FVTT_PASSWORD }}
-          FVTT_MINIMUM_CORE_VERSION: 11
-          FVTT_PACKAGE_VERSION: ${{ steps.changelog.outputs.tag }}
-          FVTT_VERIFIED_CORE_VERSION: 11
-          FVTT_COMPATIBLE_CORE_VERSION: 11
+#       - name: Publish to Foundry VTT Repo
+#         id: publish_foundry_repo
+#         if: ${{ steps.changelog.outputs.skipped == 'false' }}
+#         run: npx @ghost-fvtt/foundry-publish
+#         env:
+#           FVTT_MANIFEST_URL: 'https://github.com/allnnde/pf2e-esp-translation/releases/latest/download/module.json'
+#           FVTT_PACKAGE_ID: ${{ secrets.FVTT_PACKAGE_ID }}
+#           FVTT_USERNAME: ${{ secrets.FVTT_USERNAME }}
+#           FVTT_PASSWORD: ${{ secrets.FVTT_PASSWORD }}
+#           FVTT_MINIMUM_CORE_VERSION: 11
+#           FVTT_PACKAGE_VERSION: ${{ steps.changelog.outputs.tag }}
+#           FVTT_VERIFIED_CORE_VERSION: 11
+#           FVTT_COMPATIBLE_CORE_VERSION: 11
