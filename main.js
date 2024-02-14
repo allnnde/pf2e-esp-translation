@@ -106,8 +106,4 @@ Hooks.once("init", () => {
 
 Hooks.once("babele.ready", () => {
   game.pf2e.ConditionManager.initialize();
-
-  if (game.modules.get("pf2e-es")?.active) {
-    ui.notifications.error('El paquete "Sistema PF2 Español" todavía está instalado en esta parte; ya no es útil y, por lo tanto, se puede desinstalar.');
-  }
 });
