@@ -1,3 +1,18 @@
+## [5.1.5](https://github.com/allnnde/pf2e-esp-translation/compare/v5.1.4...v5.1.5) (2024-02-14)
+
+
+### Bug Fixes
+
+* configs ([0b7275f](https://github.com/allnnde/pf2e-esp-translation/commit/0b7275fab02a6068d0311dfd54ed7875895f6e3a))
+* New translations en.json from Crowdin ([4953401](https://github.com/allnnde/pf2e-esp-translation/commit/4953401198e780d46def1a19a7d1f7bd018d603a))
+* New translations en.json from Crowdin ([051f80a](https://github.com/allnnde/pf2e-esp-translation/commit/051f80a2e5670877777aeb97f2e0f7fa5f2729f0))
+* New translations feats.json from Crowdin ([960a611](https://github.com/allnnde/pf2e-esp-translation/commit/960a61185de0b1b5b6dbf59a4a33e6a07a60d61e))
+* New translations journals.json from Crowdin ([5a1b909](https://github.com/allnnde/pf2e-esp-translation/commit/5a1b909e0e4cae993cf856669579bf35f36814ce))
+* New translations kingmaker-en.json from Crowdin ([466d096](https://github.com/allnnde/pf2e-esp-translation/commit/466d0966c1217b283bfcc3fbbf6c86efa0f46b68))
+* New translations re-en.json from Crowdin ([ca3a0a1](https://github.com/allnnde/pf2e-esp-translation/commit/ca3a0a1d84ece9418ea1cf8180cfe308b4ea8fb1))
+
+
+
 ## [5.1.4](https://github.com/allnnde/pf2e-esp-translation/compare/v5.1.3...v5.1.4) (2024-02-14)
 
 
@@ -26,49 +41,6 @@
 ### Bug Fixes
 
 * add folder ([430e1b0](https://github.com/allnnde/pf2e-esp-translation/commit/430e1b0cc8ccc8af5f8d01510ef9845bcbd1da53))
-
-
-
-# [5.1.0](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.19...v5.1.0) (2024-02-14)
-
-
-### Bug Fixes
-
-* delete rar ([799e4a4](https://github.com/allnnde/pf2e-esp-translation/commit/799e4a4aef2222c708d5c926c596f96a98adb811))
-* fix ([eaa45c1](https://github.com/allnnde/pf2e-esp-translation/commit/eaa45c17f25af33af35df794c0c52781790e7416))
-
-
-### Features
-
-* setuop for crowind ([c32602a](https://github.com/allnnde/pf2e-esp-translation/commit/c32602ae8e8be6c4b79bb98ef2bd9574643d6973))
-
-
-
-## [5.0.2-beta](https://github.com/allnnde/pf2e-esp-translation/compare/v5.0.1-beta...v5.0.2-beta) (2024-02-13)
-
-
-### Bug Fixes
-
-* fix files names ([cfd4380](https://github.com/allnnde/pf2e-esp-translation/commit/cfd4380a39c56120625574defc8bde190f6bca41))
-
-
-
-## [5.0.1-beta](https://github.com/allnnde/pf2e-esp-translation/compare/v5.0.0-beta...v5.0.1-beta) (2024-02-13)
-
-
-### Bug Fixes
-
-* test ([46e89a0](https://github.com/allnnde/pf2e-esp-translation/commit/46e89a0b5fdfef7c8e508a0999af2444c89c46c0))
-* test ([e996b0f](https://github.com/allnnde/pf2e-esp-translation/commit/e996b0f2f56d0a51dfdd131dfe8c942651c62597))
-
-
-
-# [5.0.0-beta](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.18...v5.0.0-beta) (2024-02-13)
-
-
-### Bug Fixes
-
-* test ([e6f7905](https://github.com/allnnde/pf2e-esp-translation/commit/e6f79052996d679b57404d0ebeaa98c52ba15bd0))
 
 
 
