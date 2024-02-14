@@ -1,3 +1,12 @@
+## [5.1.3](https://github.com/allnnde/pf2e-esp-translation/compare/v5.1.2...v5.1.3) (2024-02-14)
+
+
+### Bug Fixes
+
+* settiings ([f05dd3f](https://github.com/allnnde/pf2e-esp-translation/commit/f05dd3faa13e5b54ee56762b1eabe5eae7359ed0))
+
+
+
 ## [5.1.2](https://github.com/allnnde/pf2e-esp-translation/compare/v5.1.1...v5.1.2) (2024-02-14)
 
 
@@ -65,15 +74,6 @@
 ### Bug Fixes
 
 * fix ([72b559c](https://github.com/allnnde/pf2e-esp-translation/commit/72b559cc46969c3a115b61127bfbab3cab4817fd))
-
-
-
-## [5.0.2-beta](https://github.com/allnnde/pf2e-esp-translation/compare/v5.0.1-beta...v5.0.2-beta) (2024-02-13)
-
-
-### Bug Fixes
-
-* fix files names ([cfd4380](https://github.com/allnnde/pf2e-esp-translation/commit/cfd4380a39c56120625574defc8bde190f6bca41))
 
 
 
