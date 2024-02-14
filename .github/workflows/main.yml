@@ -18,6 +18,7 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.github_token }}
+          skip-on-empty: false
           version-file: "module.json"
 
       # Create a zip file with all files required by the module to add to the release
@@ -39,7 +40,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           artifacts: "./module.json, ./${{env.ZIP_FILENAME}}.zip"
           tag: ${{ steps.changelog.outputs.tag }}
-          body: ${{ steps.changelog.outputs.changelog }}
+          body: ${{ steps.changelog.outputs.changelog }}          
 
       - name: Publish to Foundry VTT Repo
         id: publish_foundry_repo
