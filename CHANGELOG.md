@@ -1,3 +1,12 @@
+## [5.1.1](https://github.com/allnnde/pf2e-esp-translation/compare/v5.1.0...v5.1.1) (2024-02-14)
+
+
+### Bug Fixes
+
+* add folder ([430e1b0](https://github.com/allnnde/pf2e-esp-translation/commit/430e1b0cc8ccc8af5f8d01510ef9845bcbd1da53))
+
+
+
 # [5.1.0](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.19...v5.1.0) (2024-02-14)
 
 
@@ -66,17 +75,6 @@
 
 * test ([46e89a0](https://github.com/allnnde/pf2e-esp-translation/commit/46e89a0b5fdfef7c8e508a0999af2444c89c46c0))
 * test ([e996b0f](https://github.com/allnnde/pf2e-esp-translation/commit/e996b0f2f56d0a51dfdd131dfe8c942651c62597))
-
-
-
-# [5.0.0-beta](https://github.com/allnnde/pf2e-esp-translation/compare/v4.5.18...v5.0.0-beta) (2024-02-13)
-
-
-### Bug Fixes
-
-* test ([e6f7905](https://github.com/allnnde/pf2e-esp-translation/commit/e6f79052996d679b57404d0ebeaa98c52ba15bd0))
-* test ([5ecbb13](https://github.com/allnnde/pf2e-esp-translation/commit/5ecbb131347c098c1e60fd996dd4e0a52c0918ca))
-* test 2 ([fa01cfa](https://github.com/allnnde/pf2e-esp-translation/commit/fa01cfae11d3524dc6577fe8a6717fe796e5e1ee))
 
 
 
