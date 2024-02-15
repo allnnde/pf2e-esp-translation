@@ -1,3 +1,13 @@
+## [5.2.1](https://github.com/allnnde/pf2e-esp-translation/compare/v5.2.0...v5.2.1) (2024-02-15)
+
+
+### Bug Fixes
+
+* add npm i ([6c23cac](https://github.com/allnnde/pf2e-esp-translation/commit/6c23cac76db952f0b94568b11956598131002f12))
+* resolve styles ([062c8b2](https://github.com/allnnde/pf2e-esp-translation/commit/062c8b2d762c0ddaad4a176db73b8a82d734445e))
+
+
+
 # [5.2.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.1.5...v5.2.0) (2024-02-15)
 
 
@@ -37,15 +47,6 @@
 ### Bug Fixes
 
 * settiings ([f05dd3f](https://github.com/allnnde/pf2e-esp-translation/commit/f05dd3faa13e5b54ee56762b1eabe5eae7359ed0))
-
-
-
-## [5.1.2](https://github.com/allnnde/pf2e-esp-translation/compare/v5.1.1...v5.1.2) (2024-02-14)
-
-
-### Bug Fixes
-
-* error messages ([4f3b5c2](https://github.com/allnnde/pf2e-esp-translation/commit/4f3b5c26b112660141da0a7c7c3b80faea827d06))
 
 
 
