@@ -1,6 +1,7 @@
 name: Automatic download json files
 
 on:
+  workflow_dispatch: 
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '30 22 * * *'
@@ -19,4 +20,4 @@ jobs:
       # Commit all changed files back to the repository
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:            
-          commit_message: "fix: automatic json extract to traslate"
+          commit_message: "feat: automatic json extract to traslate"
