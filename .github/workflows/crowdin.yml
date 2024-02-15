@@ -1,0 +1,19 @@
+name: Automatic download json files
+
+on: 
+  workflow_dispatch: 
+
+jobs:
+  update-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: crowdin
+      - uses: actions/setup-node@v4
+      - run: npm run pack-extractor
+
+      # Commit all changed files back to the repository
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:            
+          commit_message: "fix: automatic json extract to traslate"
