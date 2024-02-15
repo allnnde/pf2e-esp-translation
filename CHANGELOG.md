@@ -1,3 +1,14 @@
+## [5.2.3](https://github.com/allnnde/pf2e-esp-translation/compare/v5.2.2...v5.2.3) (2024-02-15)
+
+
+### Bug Fixes
+
+* change messajes to  afd ([18a63ea](https://github.com/allnnde/pf2e-esp-translation/commit/18a63ea63dc7b2d126cd3a3408cfaf54c7695616))
+* pack eextract ([6dc4024](https://github.com/allnnde/pf2e-esp-translation/commit/6dc40248d0077e577209b637d8f73d5fd27c860e))
+* update packstract ([89dad96](https://github.com/allnnde/pf2e-esp-translation/commit/89dad96db7951a5eb439ec453d543278d88039db))
+
+
+
 ## [5.2.2](https://github.com/allnnde/pf2e-esp-translation/compare/v5.2.1...v5.2.2) (2024-02-15)
 
 
@@ -54,10 +65,6 @@
 * New translations journals.json from Crowdin ([5a1b909](https://github.com/allnnde/pf2e-esp-translation/commit/5a1b909e0e4cae993cf856669579bf35f36814ce))
 * New translations kingmaker-en.json from Crowdin ([466d096](https://github.com/allnnde/pf2e-esp-translation/commit/466d0966c1217b283bfcc3fbbf6c86efa0f46b68))
 * New translations re-en.json from Crowdin ([ca3a0a1](https://github.com/allnnde/pf2e-esp-translation/commit/ca3a0a1d84ece9418ea1cf8180cfe308b4ea8fb1))
-
-
-
-## [5.1.4](https://github.com/allnnde/pf2e-esp-translation/compare/v5.1.3...v5.1.4) (2024-02-14)
 
 
 
