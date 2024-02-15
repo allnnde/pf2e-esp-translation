@@ -1,3 +1,17 @@
+# [5.2.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.1.5...v5.2.0) (2024-02-15)
+
+
+### Bug Fixes
+
+* New translations en.json from Crowdin ([eab43da](https://github.com/allnnde/pf2e-esp-translation/commit/eab43dac7fa2deefd9a496a14e123fe91f987937))
+
+
+### Features
+
+* add workfow to extract jsons ([97a4259](https://github.com/allnnde/pf2e-esp-translation/commit/97a4259d468dc9e8045e819097a061f53fb164f6))
+
+
+
 ## [5.1.5](https://github.com/allnnde/pf2e-esp-translation/compare/v5.1.4...v5.1.5) (2024-02-14)
 
 
@@ -32,15 +46,6 @@
 ### Bug Fixes
 
 * error messages ([4f3b5c2](https://github.com/allnnde/pf2e-esp-translation/commit/4f3b5c26b112660141da0a7c7c3b80faea827d06))
-
-
-
-## [5.1.1](https://github.com/allnnde/pf2e-esp-translation/compare/v5.1.0...v5.1.1) (2024-02-14)
-
-
-### Bug Fixes
-
-* add folder ([430e1b0](https://github.com/allnnde/pf2e-esp-translation/commit/430e1b0cc8ccc8af5f8d01510ef9845bcbd1da53))
 
 
 
