@@ -261,7 +261,7 @@ export const PF2_DEFAULT_MAPPING = {
     },
     scene: {
         name: { path: "name" },
-        background: { path: "background.src", extractOptions: { addToMapping: false } },
+        background: { path: "background.src" },
         drawings: {
             path: "drawings",
             converter: "textCollection",
