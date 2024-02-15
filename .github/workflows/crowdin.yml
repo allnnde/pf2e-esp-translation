@@ -11,6 +11,7 @@ jobs:
         with:
           ref: crowdin
       - uses: actions/setup-node@v4
+      - run: npm install
       - run: npm run pack-extractor
 
       # Commit all changed files back to the repository
