@@ -1,3 +1,12 @@
+## [5.3.2](https://github.com/allnnde/pf2e-esp-translation/compare/v5.3.1...v5.3.2) (2024-02-16)
+
+
+### Bug Fixes
+
+* rollback stykes ([7302f35](https://github.com/allnnde/pf2e-esp-translation/commit/7302f35f32b7a9e357f9e6c393b7112fa4ef8440))
+
+
+
 ## [5.3.1](https://github.com/allnnde/pf2e-esp-translation/compare/v5.3.0...v5.3.1) (2024-02-16)
 
 
@@ -73,16 +82,6 @@
 * New translations re-en.json from Crowdin ([e787ee2](https://github.com/allnnde/pf2e-esp-translation/commit/e787ee228814514993a481528654fbaf77e79abc))
 * New translations re-en.json from Crowdin ([b455852](https://github.com/allnnde/pf2e-esp-translation/commit/b45585220845518f5b6dbe15108dee376ab5ec95))
 * schadule automatic files dowload ([a3cb843](https://github.com/allnnde/pf2e-esp-translation/commit/a3cb84324ed243ad473f564307d190dc2dd2fc9d))
-
-
-
-## [5.2.1](https://github.com/allnnde/pf2e-esp-translation/compare/v5.2.0...v5.2.1) (2024-02-15)
-
-
-### Bug Fixes
-
-* add npm i ([6c23cac](https://github.com/allnnde/pf2e-esp-translation/commit/6c23cac76db952f0b94568b11956598131002f12))
-* resolve styles ([062c8b2](https://github.com/allnnde/pf2e-esp-translation/commit/062c8b2d762c0ddaad4a176db73b8a82d734445e))
 
 
 
