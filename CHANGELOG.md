@@ -1,3 +1,12 @@
+## [5.4.4](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.3...v5.4.4) (2024-02-16)
+
+
+### Bug Fixes
+
+* STULES ([cbb13a7](https://github.com/allnnde/pf2e-esp-translation/commit/cbb13a7b1b2a1374c4973bf9fca06fb6128668a3))
+
+
+
 ## [5.4.3](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.2...v5.4.3) (2024-02-16)
 
 
@@ -34,16 +43,6 @@
 ### Features
 
 * new proces to trabslate ([29ba874](https://github.com/allnnde/pf2e-esp-translation/commit/29ba874df9136c7cd25f0637b19066f6ecf9c1b6))
-
-
-
-## [5.3.3](https://github.com/allnnde/pf2e-esp-translation/compare/v5.3.2...v5.3.3) (2024-02-16)
-
-
-### Bug Fixes
-
-* New translations en.json from Crowdin ([f07e7e3](https://github.com/allnnde/pf2e-esp-translation/commit/f07e7e341b4c9979909a96c3f815bdcd008c3514))
-* New translations equipment.json from Crowdin ([4a888cb](https://github.com/allnnde/pf2e-esp-translation/commit/4a888cb0f1477eb7a90e73c92b46123dc6f92a64))
 
 
 
