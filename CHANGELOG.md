@@ -1,3 +1,12 @@
+# [5.4.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.3.3...v5.4.0) (2024-02-16)
+
+
+### Features
+
+* new proces to trabslate ([29ba874](https://github.com/allnnde/pf2e-esp-translation/commit/29ba874df9136c7cd25f0637b19066f6ecf9c1b6))
+
+
+
 ## [5.3.3](https://github.com/allnnde/pf2e-esp-translation/compare/v5.3.2...v5.3.3) (2024-02-16)
 
 
@@ -61,17 +70,6 @@
 ### Features
 
 * automatic json extract to traslate ([b7e92c4](https://github.com/allnnde/pf2e-esp-translation/commit/b7e92c4cb21f5a7b8de08696fe70956e57bd77a3))
-
-
-
-## [5.2.3](https://github.com/allnnde/pf2e-esp-translation/compare/v5.2.2...v5.2.3) (2024-02-15)
-
-
-### Bug Fixes
-
-* change messajes to  afd ([18a63ea](https://github.com/allnnde/pf2e-esp-translation/commit/18a63ea63dc7b2d126cd3a3408cfaf54c7695616))
-* pack eextract ([6dc4024](https://github.com/allnnde/pf2e-esp-translation/commit/6dc40248d0077e577209b637d8f73d5fd27c860e))
-* update packstract ([89dad96](https://github.com/allnnde/pf2e-esp-translation/commit/89dad96db7951a5eb439ec453d543278d88039db))
 
 
 
