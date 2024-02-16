@@ -1,3 +1,12 @@
+## [5.4.5](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.4...v5.4.5) (2024-02-16)
+
+
+### Bug Fixes
+
+* fix stykes ([4ae4f2d](https://github.com/allnnde/pf2e-esp-translation/commit/4ae4f2dcb03310390d5bcf9a120b54ebcd14a362))
+
+
+
 ## [5.4.4](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.3...v5.4.4) (2024-02-16)
 
 
@@ -34,15 +43,6 @@
 ### Bug Fixes
 
 * orc license ([c51747b](https://github.com/allnnde/pf2e-esp-translation/commit/c51747b7a8f0fa3423afd826f5c928b8e2a4ad28))
-
-
-
-# [5.4.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.3.3...v5.4.0) (2024-02-16)
-
-
-### Features
-
-* new proces to trabslate ([29ba874](https://github.com/allnnde/pf2e-esp-translation/commit/29ba874df9136c7cd25f0637b19066f6ecf9c1b6))
 
 
 
