@@ -1,3 +1,15 @@
+## [5.4.3](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.2...v5.4.3) (2024-02-16)
+
+
+### Bug Fixes
+
+* chage title pull ([c9e48ed](https://github.com/allnnde/pf2e-esp-translation/commit/c9e48ed87619b727e589bd7c270156a13c2aa708))
+* New translations en.json from Crowdin ([c551b4d](https://github.com/allnnde/pf2e-esp-translation/commit/c551b4de82cdea5c17b7d26f0430ca756369a627))
+* New translations en.json from Crowdin ([46f112a](https://github.com/allnnde/pf2e-esp-translation/commit/46f112a5b585bd959c66b88e77327947958e5c53))
+* New translations journals.json from Crowdin ([9e36040](https://github.com/allnnde/pf2e-esp-translation/commit/9e360405a0b0595b20f0fc969001f853ad089918))
+
+
+
 ## [5.4.2](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.1...v5.4.2) (2024-02-16)
 
 
@@ -32,15 +44,6 @@
 
 * New translations en.json from Crowdin ([f07e7e3](https://github.com/allnnde/pf2e-esp-translation/commit/f07e7e341b4c9979909a96c3f815bdcd008c3514))
 * New translations equipment.json from Crowdin ([4a888cb](https://github.com/allnnde/pf2e-esp-translation/commit/4a888cb0f1477eb7a90e73c92b46123dc6f92a64))
-
-
-
-## [5.3.2](https://github.com/allnnde/pf2e-esp-translation/compare/v5.3.1...v5.3.2) (2024-02-16)
-
-
-### Bug Fixes
-
-* rollback stykes ([7302f35](https://github.com/allnnde/pf2e-esp-translation/commit/7302f35f32b7a9e357f9e6c393b7112fa4ef8440))
 
 
 
