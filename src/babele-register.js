@@ -27,9 +27,9 @@ function removeMismatchingTypes(fallback, other = {}) {
 
 Hooks.once("init", () => {
     if (typeof Babele !== "undefined") {
-        game.settings.register("lang-es-pf2e", "dual-language-names", {
-            name: "Nombres en Español e inglés",
-            hint: "Además del nombre aleman, también se utiliza el inglés.",
+        game.settings.register("pf2e-es", "dual-language-names", {
+            name: "Nombres en español e ingles",
+            hint: "No solo muestra los nombres en español sino tambien en ingles.",
             scope: "world",
             type: Boolean,
             default: false,
@@ -40,11 +40,11 @@ Hooks.once("init", () => {
         });
 
         Babele.get().register({
-            module: "lang-es-pf2e",
+            module: "pf2e-es",
             lang: "es",
             dir: "translation/es/compendium",
         });
-/*
+
         Babele.get().registerConverters({
             normalizeName: (_data, translation) => {
                 return game.langEsPf2e.normalizeName(translation);
@@ -109,7 +109,6 @@ Hooks.once("init", () => {
                 return game.langEsPf2e.updateImage("token", data, dataObject, translatedCompendium);
             },
         });
-        */
     }
 });
 
