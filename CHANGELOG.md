@@ -1,3 +1,13 @@
+## [5.4.12](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.11...v5.4.12) (2024-02-17)
+
+
+### Bug Fixes
+
+* New translations ancestries.json from Crowdin ([5918879](https://github.com/allnnde/pf2e-esp-translation/commit/5918879c3afa801009e9c93560dd63c977296934))
+* New translations journals.json from Crowdin ([d5a5fe8](https://github.com/allnnde/pf2e-esp-translation/commit/d5a5fe8bdc8a61f36d1e6f0ef83a27baa144cdbc))
+
+
+
 ## [5.4.11](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.10...v5.4.11) (2024-02-17)
 
 
@@ -73,15 +83,6 @@
 
 * New translations en.json from Crowdin ([fb5505a](https://github.com/allnnde/pf2e-esp-translation/commit/fb5505a7e3232af744364d01163e61d69920342c))
 * New translations en.json from Crowdin ([bbc7ccc](https://github.com/allnnde/pf2e-esp-translation/commit/bbc7cccfed8b19512c9f7dc23248bc8a9eb96f8e))
-
-
-
-## [5.4.7](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.6...v5.4.7) (2024-02-16)
-
-
-### Bug Fixes
-
-* stylis} ([8803ef4](https://github.com/allnnde/pf2e-esp-translation/commit/8803ef45ce68f27237a4e957b47f791556bb0cf8))
 
 
 
