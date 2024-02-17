@@ -1,0 +1,211 @@
+{
+    "paths": {
+        "dictionary": "modules/pf2e-es/translation/es/dictionary.json"
+    },
+    "artworkExceptions": {
+        "pathfinder-bestiary": {
+            "pf2e-tokens-bestiaries": "all",
+            "pf2e-b1-spanish": "all",
+            "pf2e-beginner-box": [
+                "animated-armor",
+                "basilisk",
+                "black-kobold-dragon-mage",
+                "blue-kobold-dragon-mage",
+                "boar",
+                "brine-shark",
+                "bugbear-thug",
+                "cinder-rat",
+                "doppelganger",
+                "drow-fighter",
+                "drow-priestess",
+                "drow-rogue",
+                "gargoyle",
+                "ghost-commoner",
+                "ghost-mage",
+                "ghoul",
+                "giant-centipede",
+                "giant-rat",
+                "giant-viper",
+                "goblin-commando",
+                "goblin-pyro",
+                "goblin-warrior",
+                "green-kobold-dragon-mage",
+                "harpy",
+                "hell-hound",
+                "hobgoblin-soldier",
+                "hunting-spider",
+                "kobold-scout",
+                "kobold-warrior",
+                "leopard",
+                "mimic",
+                "ogre-warrior",
+                "orc-brute",
+                "orc-warchief",
+                "orc-warrior",
+                "owlbear",
+                "pugwampi",
+                "red-kobold-dragon-mage",
+                "sewer-ooze",
+                "shadow",
+                "skeletal-giant",
+                "skeleton-guard",
+                "sod-hound",
+                "troll",
+                "viper",
+                "web-lurker",
+                "white-kobold-dragon-mage",
+                "wight",
+                "wolf",
+                "xulgath-leader",
+                "xulgath-skulker",
+                "xulgath-warrior",
+                "zephyr-hawk",
+                "zombie-brute",
+                "zombie-shambler"
+            ],
+            "pf2e-outlaws-of-alkenstar-spanish": [
+                "cockatrice",
+                "fungus-leshy",
+                "giant-viper",
+                "goblin-war-chanter",
+                "goblin-warrior",
+                "homunculus",
+                "mummy-Guardian",
+                "ogre-boss",
+                "ogre-warrior",
+                "wasp-swarm"
+            ]
+        },
+        "pathfinder-bestiary-2": {
+            "pf2e-tokens-bestiaries": "all",
+            "pf2e-b2-spanish": "all",
+            "pf2e-outlaws-of-alkenstar-spanish": [
+                "akizendri",
+                "catoblepas",
+                "cockroach-swarm",
+                "dweomercat",
+                "emperor-cobra",
+                "glass-golem",
+                "peryton",
+                "sand-sentry",
+                "specter",
+                "vexgit"
+            ]
+        },
+        "pathfinder-bestiary-3": {
+            "pf2e-tokens-bestiaries": "all",
+            "pf2e-b3-spanish": "all",
+            "pf2e-outlaws-of-alkenstar-spanish": [
+                "abandoned-zealot",
+                "aghash",
+                "aphorite-sharpshooter",
+                "clockwork-spy",
+                "kurobozu",
+                "mi-go",
+                "nyktera",
+                "pairaka",
+                "vishkanya-infiltrator"
+            ]
+        }
+    },
+    "compendiumExceptions": {
+        "pathfinder-bestiary": "pf2e-b1-spanish",
+        "pathfinder-bestiary-2": "pf2e-b2-spanish",
+        "pathfinder-bestiary-3": "pf2e-b3-spanish"
+    },
+    "_iconList": {
+        "item": "modules/pf2e-es/static/icons/item.webp",
+        "location": "modules/pf2e-es/static/icons/location.webp",
+        "lore": "modules/pf2e-es/static/icons/lore.webp",
+        "monster": "modules/pf2e-es/static/icons/monster.webp",
+        "rule": "modules/pf2e-es/static/icons/rule.webp",
+        "treasure": "modules/pf2e-es/static/icons/treasure.webp"
+    },
+    "itemBlacklist": [
+        "Compendium.pf2e.spells-srd.Item.o0l57UfBm9ScEUMW",
+        "Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu"
+    ],
+    "mappings": {
+        "choice": {
+            "entryType": "Item",
+            "mappingEntries": { "label": "label" }
+        },
+        "heightening": {
+            "entryType": "Item",
+            "mappingEntries": { "target": "target.value" }
+        },
+        "item": {
+            "entryType": "Item",
+            "mappingEntries": {
+                "name": "name",
+                "badges": "system.badge.labels",
+                "cost": "system.cost.value",
+                "description": "system.description.value",
+                "duration": {
+                    "path": "system.duration.value",
+                    "converter": "translateDuration"
+                },
+                "gmNote": "system.description.gm",
+                "heightening": {
+                    "path": "system.heightening.levels",
+                    "converter": "translateHeightening"
+                },
+                "materials": "system.materials.value",
+                "prerequisites": "system.prerequisites.value",
+                "primarycheck": "system.ritual.primary.check",
+                "range": {
+                    "path": "system.range.value",
+                    "converter": "translateRange"
+                },
+                "rules": {
+                    "path": "system.rules",
+                    "converter": "translateRules"
+                },
+                "secondarycaster": "system.ritual.secondary.casters",
+                "secondarycheck": "system.ritual.secondary.checks",
+                "skillVariants": {
+                    "path": "system.variants"
+                },
+                "source": {
+                    "path": "system.source.value",
+                    "converter": "translateSource"
+                },
+                "spellVariants": {
+                    "path": "system.overlays",
+                    "converter": "translateSpellVariant"
+                },
+                "target": "system.target.value",
+                "time": {
+                    "path": "system.time.value",
+                    "converter": "translateTime"
+                },
+                "trainedLore": "system.trainedLore"
+            }
+        },
+        "tile": {
+            "entryType": "Scene",
+            "mappingEntries": {
+                "texture": "texture.src"
+            }
+        },
+        "adventureJournal": {
+            "entryType": "JournalEntry",
+            "mappingEntries": {
+                "name": "name",
+                "pages": { "path": "pages", "converter": "translateAdventureJournalPages" }
+            }
+        },
+        "adventureJournalPage": {
+            "entryType": "JournalEntry",
+            "mappingEntries": {
+                "name": "name",
+                "caption": "image.caption",
+                "text": "text.content"
+            }
+        },
+        "rule": {
+            "entryType": "Item",
+            "mappingEntries": { "label": "label", "prompt": "prompt", "text": "text" }
+        }
+    }
+}

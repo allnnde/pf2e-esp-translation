@@ -1,30 +1,36 @@
 :root {
-    --actor-sheet-aside-background-size: 260px;
-  }
+  --actor-sheet-aside-background-size: 260px !important;
+}
 
+.actor.sheet {
+    width: 930px !important;
+
+}
 .actor.sheet .crb-style {
-    grid-template-rows: 75px minmax(min-content, max-content) 1fr !important;
-    grid-template-columns: calc(var(--actor-sheet-aside-background-size) + 10px) 1fr  !important;
-    grid-template-areas:
-        "sidebar header"
-        "sidebar nav"
-        "sidebar content"  !important;
-    grid-auto-flow: initial  !important;
-    grid-auto-rows: initial  !important;
-    grid-auto-columns: initial  !important;
+  grid-template-rows: 75px minmax(min-content, max-content) 1fr !important;
+  grid-template-columns: calc(var(--actor-sheet-aside-background-size) + 10px) 1fr !important;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar nav"
+    "sidebar content" !important;
+  grid-auto-flow: initial !important;
+  grid-auto-rows: initial !important;
+  grid-auto-columns: initial !important;
 }
 
-.actor.sheet .crb-style aside{
-    background-size: var(--actor-sheet-aside-background-size) calc(100% - 52px),var(--actor-sheet-aside-background-size) 52px;
+.actor.sheet .crb-style aside {
+  background-size: var(--actor-sheet-aside-background-size) calc(100% - 52px), var(--actor-sheet-aside-background-size) 52px !important;
+}
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .button-group.stacked {
+  width: 100px !important;
+}
 
+.actor.sheet.character .crb-style .roll-data .pf-rank {
+  width: 100% !important;
+  font-size: var(--font-size-9)  !important;
 }
-.actor.sheet.character .crb-style aside .sidebar{
-    margin: 0px 20px;
-}
-.actor.sheet.character .crb-style .pf-rank{
-    width: auto !important;
 
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .button-group button {
+  width: 100% !important;
 }
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .button-group button{
-    width: auto !important;
-}
+
