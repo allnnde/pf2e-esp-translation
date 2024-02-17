@@ -1,3 +1,19 @@
+## [5.4.11](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.10...v5.4.11) (2024-02-17)
+
+
+### Bug Fixes
+
+* New translations bestiary-family-ability-glossary.json from Crowdin ([5be4933](https://github.com/allnnde/pf2e-esp-translation/commit/5be493329ad9e216432c02c94e2184a05e98374f))
+* New translations boons-and-curses.json from Crowdin ([74753b2](https://github.com/allnnde/pf2e-esp-translation/commit/74753b27b9aaac23fa3db705b3a05e6579cc6424))
+* New translations en.json from Crowdin ([fda8f92](https://github.com/allnnde/pf2e-esp-translation/commit/fda8f920c6d664b5246b3e7bf8cd4bf4b0bdadc7))
+* New translations en.json from Crowdin ([2de6b5a](https://github.com/allnnde/pf2e-esp-translation/commit/2de6b5adfe4cb4ab16309f74fa02bb232a03551a))
+* New translations feats.json from Crowdin ([8f4d930](https://github.com/allnnde/pf2e-esp-translation/commit/8f4d9300f09f80106ec6b0236b7df04614b15a60))
+* New translations journals.json from Crowdin ([04a4369](https://github.com/allnnde/pf2e-esp-translation/commit/04a43698e160eec7d58f8553669df95bc71f1219))
+* New translations menace-under-otari-bestiary.json from Crowdin ([430f094](https://github.com/allnnde/pf2e-esp-translation/commit/430f094a8207a5093f7c20b60b2205d73c977f06))
+* New translations paizo-pregens.json from Crowdin ([79e5065](https://github.com/allnnde/pf2e-esp-translation/commit/79e506520aa3525753a872275a2d0dce3fee2aa6))
+
+
+
 ## [5.4.10](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.9...v5.4.10) (2024-02-17)
 
 
@@ -66,15 +82,6 @@
 ### Bug Fixes
 
 * stylis} ([8803ef4](https://github.com/allnnde/pf2e-esp-translation/commit/8803ef45ce68f27237a4e957b47f791556bb0cf8))
-
-
-
-## [5.4.6](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.5...v5.4.6) (2024-02-16)
-
-
-### Bug Fixes
-
-* test ([4f2a6e9](https://github.com/allnnde/pf2e-esp-translation/commit/4f2a6e95b53393adc7c3ef460146094cc88786fc))
 
 
 
