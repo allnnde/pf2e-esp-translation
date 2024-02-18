@@ -5,7 +5,7 @@ import { buildItemDatabase, extractPackGroupList } from "./helper/pack-extractor
 import { PF2_DEFAULT_MAPPING } from "./helper/constants.js" 
 
 // Read config file
-const configFile = JSON.parse(readFileSync("./pack-extractor/pack-extractor-config.json", "utf-8"));
+const configFile = JSON.parse(readFileSync("./src/pack-extractor/pack-extractor-config.json", "utf-8"));
 
 const CONFIG = {...configFile, mappings: PF2_DEFAULT_MAPPING}
 
