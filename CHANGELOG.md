@@ -1,3 +1,16 @@
+## [5.4.14](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.13...v5.4.14) (2024-02-19)
+
+
+### Bug Fixes
+
+* New translations conditions.json from Crowdin ([3634cf6](https://github.com/allnnde/pf2e-esp-translation/commit/3634cf62ed0afafd504dc9c56c2252f07300eb10))
+* New translations conditions.json from Crowdin ([bc4eac2](https://github.com/allnnde/pf2e-esp-translation/commit/bc4eac2dacf550d9d71ce202ed901c272991a3db))
+* New translations en.json from Crowdin ([1cad0d6](https://github.com/allnnde/pf2e-esp-translation/commit/1cad0d6dc7ac5cd0fc368497f46395dbe8a91462))
+* New translations feat-effects.json from Crowdin ([6a58f83](https://github.com/allnnde/pf2e-esp-translation/commit/6a58f8346af5116c63bf45bfb7e8402a9694d5a7))
+* New translations feats.json from Crowdin ([8451ed6](https://github.com/allnnde/pf2e-esp-translation/commit/8451ed676a3f2243fac791e3f7c29f8b6ec5a7f4))
+
+
+
 ## [5.4.13](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.12...v5.4.13) (2024-02-18)
 
 
@@ -74,17 +87,6 @@
 * New translations spell-effects.json from Crowdin ([1151752](https://github.com/allnnde/pf2e-esp-translation/commit/115175249b3a72d599b6725e061e722da06e4f4a))
 * New translations spells.json from Crowdin ([0de653a](https://github.com/allnnde/pf2e-esp-translation/commit/0de653af1af0b7ca0588efb33871044a3b345926))
 * New translations vehicles.json from Crowdin ([32d0348](https://github.com/allnnde/pf2e-esp-translation/commit/32d0348fc00332b386d18cc1661d0e7a180c35b8))
-
-
-
-## [5.4.9](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.8...v5.4.9) (2024-02-16)
-
-
-### Bug Fixes
-
-* New translations deities.json from Crowdin ([4568735](https://github.com/allnnde/pf2e-esp-translation/commit/4568735a34dc070b81dd1a5747e77a631c6fd84f))
-* New translations en.json from Crowdin ([e5fc3fc](https://github.com/allnnde/pf2e-esp-translation/commit/e5fc3fc42e3cd34ee1b2791592e9f2a24993d25c))
-* New translations equipment.json from Crowdin ([b6c68f4](https://github.com/allnnde/pf2e-esp-translation/commit/b6c68f4267aa77772369d0a4c387d55f957e2854))
 
 
 
