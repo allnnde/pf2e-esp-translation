@@ -356,9 +356,18 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
         }
 
         // Special extraction for adventure journal pages
+        // Add prefix to Id for journal pages that don't contain any text
         if (nestedEntryType === "adventureJournalPages") {
-            // Add the pages id in order to identify multiple pages with the same name
-            extractedEntryData.extractedEntry.duplicateId = entry._id;
+            if (mappingKey === "id") {
+                extractedEntryData.extractedEntry[mappingKey] =
+                    entry.text.content === undefined || entry.text.content === ""
+                        ? `no-text-${extractedValue}`
+                        : extractedValue;
+
+                // Add the pages id in order to identify multiple pages with the same name
+                extractedEntryData.extractedEntry.duplicateId = extractedEntryData.extractedEntry[mappingKey];
+                continue;
+            }
         }
 
         // For plain data collections, return the plain value instead of an object using the mapping key
