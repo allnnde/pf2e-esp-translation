@@ -1,3 +1,12 @@
+# [5.5.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.20...v5.5.0) (2024-02-20)
+
+
+### Features
+
+* update pack extractor ([3d8e62d](https://github.com/allnnde/pf2e-esp-translation/commit/3d8e62d4c3709a41b9f5176187fcf1aa1242a350))
+
+
+
 ## [5.4.20](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.19...v5.4.20) (2024-02-20)
 
 
@@ -38,17 +47,6 @@
 * New translations actions.json from Crowdin ([43667d6](https://github.com/allnnde/pf2e-esp-translation/commit/43667d66c1aaf77da7e55ee0f28369c5b1187735))
 * New translations heritages.json from Crowdin ([4f6c364](https://github.com/allnnde/pf2e-esp-translation/commit/4f6c364917858cfad84f1d6f7d4529ceb4126c36))
 * New translations journals.json from Crowdin ([2e1a99f](https://github.com/allnnde/pf2e-esp-translation/commit/2e1a99f6117d1c8a2f2c9f95ba31f1329470c5c2))
-
-
-
-## [5.4.16](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.15...v5.4.16) (2024-02-19)
-
-
-### Bug Fixes
-
-* New translations action-en.json from Crowdin ([90b4d2c](https://github.com/allnnde/pf2e-esp-translation/commit/90b4d2ce77e97e921a6e70d7ee60138961403d05))
-* New translations dictionary.json from Crowdin ([481bbe9](https://github.com/allnnde/pf2e-esp-translation/commit/481bbe9514bfe5255514dc9aab0281bb6ddde387))
-* New translations en.json from Crowdin ([c59017d](https://github.com/allnnde/pf2e-esp-translation/commit/c59017dea812d692892792805226a7087747504b))
 
 
 
