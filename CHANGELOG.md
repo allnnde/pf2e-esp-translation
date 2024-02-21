@@ -1,3 +1,18 @@
+## [5.5.2](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.1...v5.5.2) (2024-02-21)
+
+
+### Bug Fixes
+
+* New translations actions.json from Crowdin ([31fc2be](https://github.com/allnnde/pf2e-esp-translation/commit/31fc2bef38c5ac17e5e46aee7d1551e2485d8f62))
+* New translations conditions.json from Crowdin ([e57a522](https://github.com/allnnde/pf2e-esp-translation/commit/e57a522260f318a04c95d997499de32fcf276e26))
+* New translations en.json from Crowdin ([4a800e4](https://github.com/allnnde/pf2e-esp-translation/commit/4a800e4b2b054e4981336729824227f6fce1a08a))
+* New translations hazards.json from Crowdin ([fa7ecfc](https://github.com/allnnde/pf2e-esp-translation/commit/fa7ecfc08b711de6c6fa65d6d55a3f84495af2ae))
+* New translations heritages.json from Crowdin ([d051dc4](https://github.com/allnnde/pf2e-esp-translation/commit/d051dc421f171ee91b8231a9a95f7826f62076f0))
+* New translations journals.json from Crowdin ([880003a](https://github.com/allnnde/pf2e-esp-translation/commit/880003a2538d01c641c5042207f627827533064a))
+* New translations journals.json from Crowdin ([05ef411](https://github.com/allnnde/pf2e-esp-translation/commit/05ef41100d854a57d376ce8bfc742c39e92900c1))
+
+
+
 ## [5.5.1](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.0...v5.5.1) (2024-02-20)
 
 
@@ -37,16 +52,6 @@
 
 * New translations backgrounds.json from Crowdin ([da2c325](https://github.com/allnnde/pf2e-esp-translation/commit/da2c32532ca3c5e2835b72432793783188449d40))
 * New translations feats.json from Crowdin ([9a4e6ca](https://github.com/allnnde/pf2e-esp-translation/commit/9a4e6ca4661347f1fc7e1616fc6698e56ed83013))
-
-
-
-## [5.4.18](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.17...v5.4.18) (2024-02-20)
-
-
-### Bug Fixes
-
-* New translations en.json from Crowdin ([a2cc0c9](https://github.com/allnnde/pf2e-esp-translation/commit/a2cc0c9f4a8eb8e7fd040b9e30ff7003172776f0))
-* New translations en.json from Crowdin ([4ec3519](https://github.com/allnnde/pf2e-esp-translation/commit/4ec3519bd838bed24c27c0016b612b0d918ddfa9))
 
 
 
