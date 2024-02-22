@@ -1,3 +1,20 @@
+## [5.5.5](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.4...v5.5.5) (2024-02-22)
+
+
+### Bug Fixes
+
+* New translations classfeatures.json from Crowdin ([e6a3283](https://github.com/allnnde/pf2e-esp-translation/commit/e6a32832ec1f8bf05318dec8cb74a32646451ed8))
+* New translations en.json from Crowdin ([1bcf5f7](https://github.com/allnnde/pf2e-esp-translation/commit/1bcf5f79990d83c72101aff3dbf6760b9158fa10))
+* New translations familiar-abilities.json from Crowdin ([229db18](https://github.com/allnnde/pf2e-esp-translation/commit/229db18020b3a9f471117e8c2ff00475eed6444a))
+* New translations feats.json from Crowdin ([b18ed30](https://github.com/allnnde/pf2e-esp-translation/commit/b18ed30f715ed2e6df6ffd295a3194894be6d7c4))
+* New translations iconics.json from Crowdin ([f702b7f](https://github.com/allnnde/pf2e-esp-translation/commit/f702b7fa3c23e23e611ac32278065e218393d66f))
+* New translations npc-gallery.json from Crowdin ([49836a5](https://github.com/allnnde/pf2e-esp-translation/commit/49836a56f38d18f7270a95ad5d6a793b0151498e))
+* New translations outlaws-of-alkenstar-bestiary.json from Crowdin ([27e7104](https://github.com/allnnde/pf2e-esp-translation/commit/27e7104e230fa80cfede3c901efab8c102f9c495))
+* New translations paizo-pregens.json from Crowdin ([d8d4b18](https://github.com/allnnde/pf2e-esp-translation/commit/d8d4b18d4c388eea87d480966f043cfe2cf302af))
+* New translations rusthenge-bestiary.json from Crowdin ([035b2f8](https://github.com/allnnde/pf2e-esp-translation/commit/035b2f8347fa2abb948a41e371fc646252ae53ce))
+
+
+
 ## [5.5.4](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.3...v5.5.4) (2024-02-21)
 
 
@@ -42,15 +59,6 @@
 * New translations actions.json from Crowdin ([b1d76f9](https://github.com/allnnde/pf2e-esp-translation/commit/b1d76f968c8bbbe2b7ecfecbc07162479d156f1c))
 * New translations conditions.json from Crowdin ([396c897](https://github.com/allnnde/pf2e-esp-translation/commit/396c8970cf54f8bdf7c63ec33b724e52dd692b96))
 * New translations other-effects.json from Crowdin ([4fc5735](https://github.com/allnnde/pf2e-esp-translation/commit/4fc573517f43b56820b53d8bbe9fa76e400165b2))
-
-
-
-# [5.5.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.4.20...v5.5.0) (2024-02-20)
-
-
-### Features
-
-* update pack extractor ([3d8e62d](https://github.com/allnnde/pf2e-esp-translation/commit/3d8e62d4c3709a41b9f5176187fcf1aa1242a350))
 
 
 
