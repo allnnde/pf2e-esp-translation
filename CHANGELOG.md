@@ -1,3 +1,13 @@
+## [5.5.9](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.8...v5.5.9) (2024-02-23)
+
+
+### Bug Fixes
+
+* New translations conditions.json from Crowdin ([31dae24](https://github.com/allnnde/pf2e-esp-translation/commit/31dae2478688c291bf41fb560ac885769eea4c20))
+* New translations en.json from Crowdin ([c64a3fb](https://github.com/allnnde/pf2e-esp-translation/commit/c64a3fb2c8f29b49686d0f38fa9cd751fe1a5d12))
+
+
+
 ## [5.5.8](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.7...v5.5.8) (2024-02-23)
 
 
@@ -47,16 +57,6 @@
 * New translations outlaws-of-alkenstar-bestiary.json from Crowdin ([27e7104](https://github.com/allnnde/pf2e-esp-translation/commit/27e7104e230fa80cfede3c901efab8c102f9c495))
 * New translations paizo-pregens.json from Crowdin ([d8d4b18](https://github.com/allnnde/pf2e-esp-translation/commit/d8d4b18d4c388eea87d480966f043cfe2cf302af))
 * New translations rusthenge-bestiary.json from Crowdin ([035b2f8](https://github.com/allnnde/pf2e-esp-translation/commit/035b2f8347fa2abb948a41e371fc646252ae53ce))
-
-
-
-## [5.5.4](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.3...v5.5.4) (2024-02-21)
-
-
-### Bug Fixes
-
-* New translations feats.json from Crowdin ([669bec3](https://github.com/allnnde/pf2e-esp-translation/commit/669bec3605e1ab4c06ed51f67fad1bd2d6a880a2))
-* New translations journals.json from Crowdin ([35ed7f7](https://github.com/allnnde/pf2e-esp-translation/commit/35ed7f7b9c10aabe10cad5c7404460b21961f6a9))
 
 
 
