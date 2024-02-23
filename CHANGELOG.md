@@ -1,3 +1,16 @@
+## [5.5.6](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.5...v5.5.6) (2024-02-23)
+
+
+### Bug Fixes
+
+* New translations actions.json from Crowdin ([5d72835](https://github.com/allnnde/pf2e-esp-translation/commit/5d72835a5ead6da14f1d49bd6cc721b2cf00075d))
+* New translations actions.json from Crowdin ([ae891e4](https://github.com/allnnde/pf2e-esp-translation/commit/ae891e485b9f5e5ea880bba06299f0da019cfc98))
+* New translations classfeatures.json from Crowdin ([68a5203](https://github.com/allnnde/pf2e-esp-translation/commit/68a52033ad848cf4f4b1fb962a5da9de27dfaaa7))
+* New translations classfeatures.json from Crowdin ([890cafb](https://github.com/allnnde/pf2e-esp-translation/commit/890cafb944bd50b6a1794af25ea34d4a3d57e133))
+* New translations journals.json from Crowdin ([9c59fc8](https://github.com/allnnde/pf2e-esp-translation/commit/9c59fc896e12e33fa888f61e64dddfac69bddd64))
+
+
+
 ## [5.5.5](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.4...v5.5.5) (2024-02-22)
 
 
@@ -47,18 +60,6 @@
 * New translations heritages.json from Crowdin ([d051dc4](https://github.com/allnnde/pf2e-esp-translation/commit/d051dc421f171ee91b8231a9a95f7826f62076f0))
 * New translations journals.json from Crowdin ([880003a](https://github.com/allnnde/pf2e-esp-translation/commit/880003a2538d01c641c5042207f627827533064a))
 * New translations journals.json from Crowdin ([05ef411](https://github.com/allnnde/pf2e-esp-translation/commit/05ef41100d854a57d376ce8bfc742c39e92900c1))
-
-
-
-## [5.5.1](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.0...v5.5.1) (2024-02-20)
-
-
-### Bug Fixes
-
-* New translations actions.json from Crowdin ([2db99a5](https://github.com/allnnde/pf2e-esp-translation/commit/2db99a57e38b5c1337fb0bb76c0cf980630e944b))
-* New translations actions.json from Crowdin ([b1d76f9](https://github.com/allnnde/pf2e-esp-translation/commit/b1d76f968c8bbbe2b7ecfecbc07162479d156f1c))
-* New translations conditions.json from Crowdin ([396c897](https://github.com/allnnde/pf2e-esp-translation/commit/396c8970cf54f8bdf7c63ec33b724e52dd692b96))
-* New translations other-effects.json from Crowdin ([4fc5735](https://github.com/allnnde/pf2e-esp-translation/commit/4fc573517f43b56820b53d8bbe9fa76e400165b2))
 
 
 
