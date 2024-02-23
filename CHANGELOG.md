@@ -1,3 +1,15 @@
+## [5.5.7](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.6...v5.5.7) (2024-02-23)
+
+
+### Bug Fixes
+
+* New translations classfeatures.json from Crowdin ([3357bba](https://github.com/allnnde/pf2e-esp-translation/commit/3357bbaab526bc3fa68f24d820e048626dd56232))
+* New translations conditions.json from Crowdin ([67c5f40](https://github.com/allnnde/pf2e-esp-translation/commit/67c5f40ff201747fcea7ad7db1ea9d33fd352332))
+* New translations en.json from Crowdin ([bd4294e](https://github.com/allnnde/pf2e-esp-translation/commit/bd4294e6b1c7819c34dd2fed5cb11b6af5bd0212))
+* New translations feats.json from Crowdin ([13f1184](https://github.com/allnnde/pf2e-esp-translation/commit/13f1184b46a415e4eef593e06e1a5ab7bb54aa92))
+
+
+
 ## [5.5.6](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.5...v5.5.6) (2024-02-23)
 
 
@@ -45,21 +57,6 @@
 
 * New translations feats.json from Crowdin ([f795c29](https://github.com/allnnde/pf2e-esp-translation/commit/f795c296082d246dd8411a17112ba4c6903930cd))
 * New translations journals.json from Crowdin ([81a2ab2](https://github.com/allnnde/pf2e-esp-translation/commit/81a2ab28dfafc51edc4c51ac59dbe38d4e326795))
-
-
-
-## [5.5.2](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.1...v5.5.2) (2024-02-21)
-
-
-### Bug Fixes
-
-* New translations actions.json from Crowdin ([31fc2be](https://github.com/allnnde/pf2e-esp-translation/commit/31fc2bef38c5ac17e5e46aee7d1551e2485d8f62))
-* New translations conditions.json from Crowdin ([e57a522](https://github.com/allnnde/pf2e-esp-translation/commit/e57a522260f318a04c95d997499de32fcf276e26))
-* New translations en.json from Crowdin ([4a800e4](https://github.com/allnnde/pf2e-esp-translation/commit/4a800e4b2b054e4981336729824227f6fce1a08a))
-* New translations hazards.json from Crowdin ([fa7ecfc](https://github.com/allnnde/pf2e-esp-translation/commit/fa7ecfc08b711de6c6fa65d6d55a3f84495af2ae))
-* New translations heritages.json from Crowdin ([d051dc4](https://github.com/allnnde/pf2e-esp-translation/commit/d051dc421f171ee91b8231a9a95f7826f62076f0))
-* New translations journals.json from Crowdin ([880003a](https://github.com/allnnde/pf2e-esp-translation/commit/880003a2538d01c641c5042207f627827533064a))
-* New translations journals.json from Crowdin ([05ef411](https://github.com/allnnde/pf2e-esp-translation/commit/05ef41100d854a57d376ce8bfc742c39e92900c1))
 
 
 
