@@ -1,3 +1,13 @@
+## [5.5.16](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.15...v5.5.16) (2024-02-26)
+
+
+### Bug Fixes
+
+* New translations feats.json from Crowdin ([3736f8f](https://github.com/allnnde/pf2e-esp-translation/commit/3736f8ff31330a2c21ae266f6ca1df9a55bb3084))
+* New translations journals.json from Crowdin ([1439582](https://github.com/allnnde/pf2e-esp-translation/commit/1439582f182207f77aa940580564ce2695e85568))
+
+
+
 ## [5.5.15](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.14...v5.5.15) (2024-02-25)
 
 
@@ -42,15 +52,6 @@
 ### Bug Fixes
 
 * New translations en.json from Crowdin ([a21e6f8](https://github.com/allnnde/pf2e-esp-translation/commit/a21e6f83cf4c1e0ed612d431f4cdf1ef43153fad))
-
-
-
-## [5.5.11](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.10...v5.5.11) (2024-02-24)
-
-
-### Bug Fixes
-
-* add babele requerided ([f606b4d](https://github.com/allnnde/pf2e-esp-translation/commit/f606b4dbac36d72bc241420fa7af9b02b85f8f75))
 
 
 
