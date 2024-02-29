@@ -1,3 +1,26 @@
+## [5.5.16](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.15...v5.5.16) (2024-02-26)
+
+
+### Bug Fixes
+
+* New translations feats.json from Crowdin ([3736f8f](https://github.com/allnnde/pf2e-esp-translation/commit/3736f8ff31330a2c21ae266f6ca1df9a55bb3084))
+* New translations journals.json from Crowdin ([1439582](https://github.com/allnnde/pf2e-esp-translation/commit/1439582f182207f77aa940580564ce2695e85568))
+
+
+
+## [5.5.15](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.14...v5.5.15) (2024-02-25)
+
+
+### Bug Fixes
+
+* New translations equipment.json from Crowdin ([8e2b8ce](https://github.com/allnnde/pf2e-esp-translation/commit/8e2b8ce4b40cc1a3951b2ee4879ba1c8f979e1cd))
+* New translations feats.json from Crowdin ([7616643](https://github.com/allnnde/pf2e-esp-translation/commit/761664387ab854803f7c5191bfd303497515fd4a))
+* New translations feats.json from Crowdin ([a314134](https://github.com/allnnde/pf2e-esp-translation/commit/a314134c37bd8ad49889c98fa50f8236483fb774))
+* New translations journals.json from Crowdin ([058b80a](https://github.com/allnnde/pf2e-esp-translation/commit/058b80a342f6f0d55751d7d17e041165783546db))
+* New translations spells.json from Crowdin ([ba497a9](https://github.com/allnnde/pf2e-esp-translation/commit/ba497a9b8d1ee1bd778ed40498aa7bb1ad91c919))
+
+
+
 ## [5.5.14](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.13...v5.5.14) (2024-02-25)
 
 
@@ -29,24 +52,6 @@
 ### Bug Fixes
 
 * New translations en.json from Crowdin ([a21e6f8](https://github.com/allnnde/pf2e-esp-translation/commit/a21e6f83cf4c1e0ed612d431f4cdf1ef43153fad))
-
-
-
-## [5.5.11](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.10...v5.5.11) (2024-02-24)
-
-
-### Bug Fixes
-
-* add babele requerided ([f606b4d](https://github.com/allnnde/pf2e-esp-translation/commit/f606b4dbac36d72bc241420fa7af9b02b85f8f75))
-
-
-
-## [5.5.10](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.9...v5.5.10) (2024-02-24)
-
-
-### Bug Fixes
-
-* test disabled stiles ([538bcdd](https://github.com/allnnde/pf2e-esp-translation/commit/538bcdd6210b79b3cedd9049f1d23d481802e007))
 
 
 
