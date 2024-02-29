@@ -1,3 +1,13 @@
+## [5.5.18](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.17...v5.5.18) (2024-02-29)
+
+
+### Bug Fixes
+
+* New translations classfeatures.json from Crowdin ([33f794f](https://github.com/allnnde/pf2e-esp-translation/commit/33f794fee555c05029f57e7f5668bd12277a476b))
+* New translations re-en.json from Crowdin ([d95bd54](https://github.com/allnnde/pf2e-esp-translation/commit/d95bd541c6f6dd7071467a4868e33dfca41b1ed8))
+
+
+
 ## [5.5.17](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.16...v5.5.17) (2024-02-27)
 
 
@@ -41,18 +51,6 @@
 * New translations feat-effects.json from Crowdin ([4cf7e47](https://github.com/allnnde/pf2e-esp-translation/commit/4cf7e478d1b304fcfd45b6a8c82274dfd325ce45))
 * New translations journals.json from Crowdin ([a70e3b2](https://github.com/allnnde/pf2e-esp-translation/commit/a70e3b2d0709244e2c9077e1a3a4dc8fd7b8c201))
 * New translations spells.json from Crowdin ([841a62d](https://github.com/allnnde/pf2e-esp-translation/commit/841a62d706e52e67873a7e5043d4906048202c2d))
-
-
-
-## [5.5.13](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.12...v5.5.13) (2024-02-25)
-
-
-### Bug Fixes
-
-* New translations classfeatures.json from Crowdin ([9b28d7e](https://github.com/allnnde/pf2e-esp-translation/commit/9b28d7e38c31c743b3b05c758260c5a2cb2fcad4))
-* New translations classfeatures.json from Crowdin ([c44ff9c](https://github.com/allnnde/pf2e-esp-translation/commit/c44ff9c0c60bc13611148a8f9b05e3b2b7e2bbb6))
-* New translations feats.json from Crowdin ([da726cc](https://github.com/allnnde/pf2e-esp-translation/commit/da726ccdef7842d115ed6925ed42ed8fbaec3ce7))
-* New translations journals.json from Crowdin ([b947932](https://github.com/allnnde/pf2e-esp-translation/commit/b947932afa94e36626eab56f4b2587375a1b4c7d))
 
 
 
