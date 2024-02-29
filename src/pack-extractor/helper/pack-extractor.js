@@ -249,6 +249,12 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
                     nestedEntry = "adventureJournalPages";
                 }
 
+                // For scenes, set nested entry type to scene
+                if (extractOptions.specialExtraction === "adventureScenes") {
+                    subEntryKey = extractedValue[subEntry].name;
+                    nestedEntry = "adventureScenes";
+                }
+
                 // For table results, build special key consisting of the roll ranges
                 if (extractOptions.specialExtraction === "tableResults") {
                     subEntryKey = `${extractedValue[subEntry].range[0]}-${extractedValue[subEntry].range[1]}`;
@@ -284,13 +290,13 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
                 if (Object.keys(extractedSubEntry.extractedEntry).length > 0) {
                     extractedEntryData.extractedEntry[mappingKey] = extractedEntryData.extractedEntry[mappingKey] || {};
 
-                    // For regular subentries add the extracted data
+                    // For subentries without any possible duplicates add the extracted data
                     if (!extractedSubEntry.extractedEntry.hasOwnProperty("duplicateId")) {
                         Object.assign(extractedEntryData.extractedEntry[mappingKey], {
                             [subEntryKey]: extractedSubEntry.extractedEntry,
                         });
 
-                        // For actor items check for duplicates and either add the data or create an array in order to keep all duplicates
+                        // For subentries with possible duplicates check for duplicates and either add the data or create an array in order to keep all duplicates
                     } else {
                         entryDuplicates(
                             extractedEntryData.extractedEntry[mappingKey],
@@ -316,10 +322,10 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
             });
 
             // Delete all duplicateIds since those were only required to identify multiple item copies
-            deletePropertyRecursively(extractedEntryData.extractedEntry, "duplicateId");
+            deletePropertyRecursively(extractedEntryData.extractedEntry[mappingKey], "duplicateId");
 
             // During actor item extraction duplicate entries (e.g. two shortswords) were added to the extracted entry as an array with the id as identifier
-            // However, entries that only contain the id with not other extracted data are not needed and have to be deleted
+            // However, entries that only contain the id without other extracted data are not needed and have to be deleted
             if (typeof extractedEntryData.extractedEntry[mappingKey] === "object") {
                 Object.keys(extractedEntryData.extractedEntry[mappingKey]).forEach((subEntry) => {
                     if (Array.isArray(extractedEntryData.extractedEntry[mappingKey][subEntry])) {
@@ -375,6 +381,12 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
         if (nestedEntryType === "plainData") {
             extractedEntryData.extractedEntry = extractedValue;
             continue;
+        }
+
+        // Special extraction for adventure scenes
+        if (nestedEntryType === "adventureScenes") {
+            // Add the scene id in order to identify multiple scenes with the same name
+            extractedEntryData.extractedEntry.duplicateId = entry._id;
         }
 
         extractedEntryData.extractedEntry[mappingKey] = extractedValue;

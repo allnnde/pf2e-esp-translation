@@ -103,8 +103,8 @@ export const PF2_DEFAULT_MAPPING = {
         },
         scenes: {
             path: "scenes",
-            converter: "adventureScenes",
-            extractOptions: { subMapping: "scene", specialExtraction: "nameAsKey", subMappingAsMapping: true },
+            converter: "translateAdventureScenes",
+            extractOptions: { subMapping: "scene", specialExtraction: "adventureScenes", subMappingAsMapping: true },
         },
         folders: {
             path: "folders",
@@ -258,6 +258,7 @@ export const PF2_DEFAULT_MAPPING = {
         label: { path: "label", extractOptions: { addToMapping: false } },
         prompt: { path: "prompt", extractOptions: { addToMapping: false } },
         text: { path: "text", extractOptions: { addToMapping: false } },
+        value: { path: "value", extractOptions: { addToMapping: false, subMapping: "text" } },
     },
     scene: {
         name: { path: "name" },
