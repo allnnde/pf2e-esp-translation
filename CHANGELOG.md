@@ -1,3 +1,18 @@
+## [5.8.1](https://github.com/allnnde/pf2e-esp-translation/compare/v5.8.0...v5.8.1) (2024-03-04)
+
+
+### Bug Fixes
+
+* New translations abomination-vaults-bestiary.json from Crowdin ([09774b4](https://github.com/allnnde/pf2e-esp-translation/commit/09774b4dce762194dc5c0f85c323d4846d208fc2))
+* New translations dictionary.json from Crowdin ([3c186af](https://github.com/allnnde/pf2e-esp-translation/commit/3c186af7473157f57e6e0d445890e216f71fc428))
+* New translations iconics.json from Crowdin ([b864157](https://github.com/allnnde/pf2e-esp-translation/commit/b8641575faea151b95864d1686f0be4eff5f8cd1))
+* New translations npc-gallery.json from Crowdin ([432a75a](https://github.com/allnnde/pf2e-esp-translation/commit/432a75afd14ed16e7459089a2d34509cbaa44284))
+* New translations outlaws-of-alkenstar-bestiary.json from Crowdin ([2b8d1e9](https://github.com/allnnde/pf2e-esp-translation/commit/2b8d1e948d53bb16ce7fdab51d07f682f4db4f26))
+* New translations paizo-pregens.json from Crowdin ([d744852](https://github.com/allnnde/pf2e-esp-translation/commit/d744852594792e4cc6aa8b36fd4464b7e3a99d8a))
+* New translations rusthenge-bestiary.json from Crowdin ([837e271](https://github.com/allnnde/pf2e-esp-translation/commit/837e271ae1c606bc54cd1b1e8429d3447fdc435c))
+
+
+
 # [5.8.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.7.2...v5.8.0) (2024-03-04)
 
 
@@ -45,15 +60,6 @@
 ### Features
 
 * automatic json extract to traslate ([bb74d54](https://github.com/allnnde/pf2e-esp-translation/commit/bb74d543807e965fdbf3d9c5cb9898ef20591c30))
-
-
-
-# [5.6.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.19...v5.6.0) (2024-03-01)
-
-
-### Features
-
-* update extractor module ([a811425](https://github.com/allnnde/pf2e-esp-translation/commit/a811425d0b244e042b49ebe2818826ab79baecb0))
 
 
 
