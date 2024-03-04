@@ -1,3 +1,18 @@
+# [5.8.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.7.2...v5.8.0) (2024-03-04)
+
+
+### Bug Fixes
+
+* path of component ([252101a](https://github.com/allnnde/pf2e-esp-translation/commit/252101af91f7c87791ac75b697a185a00e0d2f88))
+
+
+### Features
+
+* automatic json extract to traslate ([8d9da45](https://github.com/allnnde/pf2e-esp-translation/commit/8d9da4593e4895046cdb8c8613b96371f97e9f01))
+* syncro to german repo ([82ba40f](https://github.com/allnnde/pf2e-esp-translation/commit/82ba40f9cd2e4f9b722d2aedd942a4e5cd61ac05))
+
+
+
 ## [5.7.2](https://github.com/allnnde/pf2e-esp-translation/compare/v5.7.1...v5.7.2) (2024-03-03)
 
 
@@ -39,15 +54,6 @@
 ### Features
 
 * update extractor module ([a811425](https://github.com/allnnde/pf2e-esp-translation/commit/a811425d0b244e042b49ebe2818826ab79baecb0))
-
-
-
-## [5.5.19](https://github.com/allnnde/pf2e-esp-translation/compare/v5.5.18...v5.5.19) (2024-02-29)
-
-
-### Bug Fixes
-
-* update pack extrator dependencie ([8346d2a](https://github.com/allnnde/pf2e-esp-translation/commit/8346d2a0446df64919d0a39932fe7e224f344b6c))
 
 
 
