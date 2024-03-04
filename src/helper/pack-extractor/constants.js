@@ -106,7 +106,7 @@ export const PF2_DEFAULT_MAPPING = {
             converter: "translateAdventureScenes",
             extractOptions: {
                 subMapping: "adventureScene",
-                specialExtraction: "adventureScenes"
+                specialExtraction: "adventureScenes",
             },
         },
         folders: {
@@ -173,6 +173,24 @@ export const PF2_DEFAULT_MAPPING = {
         badges: {
             path: "system.badge.labels",
             extractOptions: { extractOnActorItem: false, convertArray: false },
+        },
+        consumableSpellName: { path: "system.spell.name" },
+        consumableSpellDescription: { path: "system.spell.system.description.value" },
+        consumableSpellDuration: {
+            path: "system.spell.system.duration.value",
+            converter: "translateDuration",
+            extractOptions: { extractValue: false },
+        },
+        consumableSpellRange: {
+            path: "system.spell.system.range.value",
+            converter: "translateRange",
+            extractOptions: { extractValue: false },
+        },
+        consumableSpellTarget: { path: "system.spell.system.target.value" },
+        consumableSpellTime: {
+            path: "system.spell.system.time.value",
+            converter: "translateTime",
+            extractOptions: { extractValue: false },
         },
         cost: { path: "system.cost.value" },
         description: { path: "system.description.value" },

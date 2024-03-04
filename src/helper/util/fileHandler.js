@@ -1,7 +1,7 @@
 import { copyFileSync, existsSync, lstatSync, mkdirSync, readdirSync, rmdirSync, unlinkSync, writeFileSync } from "fs";
 import { dirname, join } from "path";
 import { BlobReader, BlobWriter, ZipReader } from "@zip.js/zip.js";
-import { postExtractMessage } from "../helper/pack-extractor.js";
+import { postExtractMessage } from "../pack-extractor/pack-extractor.js";
 
 /**
  * Read zip file, return array of objects containing filename, file type, file path, and file content (as string)
