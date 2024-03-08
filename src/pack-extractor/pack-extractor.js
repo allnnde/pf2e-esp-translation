@@ -1,8 +1,8 @@
 import { readFileSync, writeFileSync } from "fs";
-import { getZipContentFromURL, writeFilesFromBlob } from "../helper/util/fileHandler.js";
-import { replaceProperties } from "../helper/util/utilities.js";
-import { buildItemDatabase, extractPackGroupList } from "../helper/pack-extractor/pack-extractor.js";
-import { PF2_DEFAULT_MAPPING } from "../helper/pack-extractor/constants.js";
+import { getZipContentFromURL, writeFilesFromBlob } from "../helper/src/util/fileHandler.js";
+import { replaceProperties } from "../helper/src/util/utilities.js";
+import { buildItemDatabase, extractPackGroupList } from "../helper/src/pack-extractor/pack-extractor.js";
+import { PF2_DEFAULT_MAPPING } from "../helper/src/pack-extractor/constants.js";
 
 // Read config file
 const configFile = JSON.parse(readFileSync("./src/pack-extractor/pack-extractor-config.json", "utf-8"));
