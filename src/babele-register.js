@@ -50,13 +50,16 @@ Hooks.once("init", () => {
                 return game.langEsPf2e.normalizeName(translation);
             },
             translateAdventureActorItems: (data, translation) => {
-                return game.langEsPf2e.translateActorItems(data, translation, false);
+                return game.langEsPf2e.translateItems(data, translation, true, false);
             },
             translateActorDescription: (data, translation) => {
                 return game.langEsPf2e.translateActorDescription(data, translation);
             },
             translateActorItems: (data, translation) => {
-                return game.langEsPf2e.translateActorItems(data, translation);
+                return game.langEsPf2e.translateItems(data, translation, true);
+            },
+            translateAdventureItems: (data, translation) => {
+                return game.langEsPf2e.translateItems(data, translation, false, false);
             },
             translateAdventureJournals: (data, translation) => {
                 return game.langEsPf2e.translateArrayOfObjects(data, translation, "adventureJournal");
