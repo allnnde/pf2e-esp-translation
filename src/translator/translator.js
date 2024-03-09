@@ -3,7 +3,7 @@ Hooks.once("init", () => {
     game.langEsPf2e = Translator.get();
 
     // Register token setting
-    game.settings.register("pf2e-es", "token", {
+    game.settings.register("lang-es-pf2e", "token", {
         name: "Retrato de ficha",
         hint: "Al importar un PNJ traducido de un compendio, ¿debe utilizarse la imagen del retrato como ficha en lugar de la imagen de ficha normal?",
         scope: "world",
@@ -111,7 +111,7 @@ class Translator {
 
         if (!excluded) {
             ["portraits", "tokens"].forEach(async (imageType) => {
-                const imagePath = game.settings.get("pf2e-es", "token")
+                const imagePath = game.settings.get("lang-es-pf2e", "token")
                     ? path.concat(`/portraits/`)
                     : path.concat(`/${imageType}/`);
                 const images = {};
