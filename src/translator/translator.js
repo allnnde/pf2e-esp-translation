@@ -291,7 +291,7 @@ class Translator {
     translateDualLanguage(data, translation) {
         if (!translation || data === translation) {
             return data;
-        } else if (game.settings.get("lang-de-pf2e", "dual-language-names")) {
+        } else if (game.settings.get("lang-es-pf2e", "dual-language-names")) {
             return this.normalizeName(translation) + "/" + data;
         } else {
             return this.normalizeName(translation);
