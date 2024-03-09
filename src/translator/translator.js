@@ -1,6 +1,6 @@
 // Create Translator instance and register settings
 Hooks.once("init", () => {
-    game.langDePf2e = Translator.get();
+    game.langEsPf2e = Translator.get();
 
     // Register token setting
     game.settings.register("pf2e-es", "token", {
