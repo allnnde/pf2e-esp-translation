@@ -1,3 +1,12 @@
+## [5.8.5](https://github.com/allnnde/pf2e-esp-translation/compare/v5.8.4...v5.8.5) (2024-03-09)
+
+
+### Bug Fixes
+
+* auto generated files ([ff74501](https://github.com/allnnde/pf2e-esp-translation/commit/ff74501938143448c0d48991ebbdf2f04b6ba365))
+
+
+
 ## [5.8.4](https://github.com/allnnde/pf2e-esp-translation/compare/v5.8.3...v5.8.4) (2024-03-09)
 
 
@@ -39,21 +48,6 @@
 * New translations outlaws-of-alkenstar-bestiary.json from Crowdin ([2b8d1e9](https://github.com/allnnde/pf2e-esp-translation/commit/2b8d1e948d53bb16ce7fdab51d07f682f4db4f26))
 * New translations paizo-pregens.json from Crowdin ([d744852](https://github.com/allnnde/pf2e-esp-translation/commit/d744852594792e4cc6aa8b36fd4464b7e3a99d8a))
 * New translations rusthenge-bestiary.json from Crowdin ([837e271](https://github.com/allnnde/pf2e-esp-translation/commit/837e271ae1c606bc54cd1b1e8429d3447fdc435c))
-
-
-
-# [5.8.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.7.2...v5.8.0) (2024-03-04)
-
-
-### Bug Fixes
-
-* path of component ([252101a](https://github.com/allnnde/pf2e-esp-translation/commit/252101af91f7c87791ac75b697a185a00e0d2f88))
-
-
-### Features
-
-* automatic json extract to traslate ([8d9da45](https://github.com/allnnde/pf2e-esp-translation/commit/8d9da4593e4895046cdb8c8613b96371f97e9f01))
-* syncro to german repo ([82ba40f](https://github.com/allnnde/pf2e-esp-translation/commit/82ba40f9cd2e4f9b722d2aedd942a4e5cd61ac05))
 
 
 
