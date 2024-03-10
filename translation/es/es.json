@@ -135,6 +135,9 @@
         "TakesNoDamage": "<actor> {actor} </actor> no sufre daño.",
         "TheTarget": "El objetivo"
       },
+      "AttackEffects": {
+        "PlusList": "(plus {list})"
+      },
       "Attacks": "Ataques",
       "Character": {
         "Attribute": {
@@ -231,9 +234,12 @@
           "Defense": {
             "Heavy": "Armadura pesada",
             "HeavyBarding": "Barda pesada",
+            "HeavyShort": "Heavy",
             "Light": "Armadura ligera",
             "LightBarding": "Barda ligera",
+            "LightShort": "Light",
             "Medium": "Armadura media",
+            "MediumShort": "Medium",
             "Title": "Defensas",
             "Unarmored": "Defensa sin armadura"
           },
@@ -628,7 +634,16 @@
         },
         "Wealth": "Poder"
       },
-      "Plural": "actores"
+      "Plural": "actores",
+      "Vehicle": {
+        "EmitsSound": {
+          "Encounter": "During Encounters",
+          "False": "No",
+          "Hint": "Whether this vehicle is emitting sound and can be sensed via hearing.",
+          "Title": "Emitting Sound?",
+          "True": "Yes"
+        }
+      }
     },
     "ActorSizeGargantuan": "Gigantesco",
     "ActorSizeHuge": "Enorme",
@@ -653,34 +668,24 @@
     "AncestryFeatLevels": "Niveles de dotes de ascendencia",
     "AncestryFeatures": "Dotes de ascendencia",
     "AncestryHP": "PG de ascendencia",
-    "AreaLabel": "Área",
-    "AreaSize10": "10 pies",
-    "AreaSize100": "100 pies",
-    "AreaSize1000": "1000 pies",
-    "AreaSize120": "120 pies",
-    "AreaSize15": "15 pies",
-    "AreaSize1Mile": "1 milla",
-    "AreaSize20": "20 pies",
-    "AreaSize25": "25 pies",
-    "AreaSize30": "30 pies",
-    "AreaSize360": "360 pies",
-    "AreaSize40": "40 pies",
-    "AreaSize45": "45 pies",
-    "AreaSize5": "5 pies",
-    "AreaSize50": "50 pies",
-    "AreaSize500": "500 pies",
-    "AreaSize60": "60 pies",
-    "AreaSize65": "65 pies",
-    "AreaSize75": "75 pies",
-    "AreaSize80": "80 pies",
-    "AreaSize90": "90 pies",
-    "AreaSizeQuarterMile": "Cuarto de milla",
-    "AreaTypeBurst": "Explosión",
-    "AreaTypeCone": "Cono",
-    "AreaTypeCube": "Cubo",
-    "AreaTypeEmanation": "Emanación",
-    "AreaTypeLine": "Línea",
-    "AreaTypeSquare": "Cuadrado",
+    "Area": {
+      "InFeet": "Area (Feet)",
+      "Label": "Area",
+      "Shape": {
+        "burst": "burst",
+        "cone": "cone",
+        "cube": "cube",
+        "cylinder": "cylinder",
+        "emanation": "emanation",
+        "line": "line",
+        "square": "square"
+      },
+      "Size": {
+        "Half": "half",
+        "Mile": "mile",
+        "Quarter": "quarter"
+      }
+    },
     "ArmorArmorLabel": "Bono CA",
     "ArmorCheckLabel": "Verificar penalización",
     "ArmorCheckPenalty": "Penalización por prueba de armadura",
@@ -885,8 +890,8 @@
     "CharacterTraits": "Rasgos de personaje",
     "CharacterTraitsHeader": "Rasgos y otros detalles",
     "ChatRollDetails": {
+      "DiceAndModifiers": "Dice and Modifiers",
       "FlatCheckNoModifiers": "Los controles fijos nunca incluyen modificadores, bonificaciones o penalizaciones.",
-      "ModifiersAndDice": "Modificadores y dados",
       "RollOptions": "Opciones de tirada",
       "Select": "Inspeccionar tirada",
       "Title": "Inspector de tiradas"
@@ -897,7 +902,8 @@
           "AdjustedTarget": "<target> Objetivo: {target} </target> <dc> ( {dcType} <preadjusted> {preadjusted} </preadjusted> <adjusted> {adjusted} </adjusted> ) </dc>",
           "NoChangeTarget": "<target> Objetivo: {target} </target> <dc> ( {dcType} <adjusted> {adjusted} </adjusted> ) </dc>",
           "NoTarget": "<dc> {dcType} {dc} </dc>",
-          "WithTarget": "<target> Objetivo: {target} </target> <dc> ( {dcType} {dc} ) </dc>"
+          "WithTarget": "<target> Objetivo: {target} </target> <dc> ( {dcType} {dc} ) </dc>",
+          "WithOrigin": "<opposer>Origin: {opposer}</target> <dc>({dcType} {dc})</dc>"
         },
         "Specific": {
           "armor": "CA",
@@ -1160,7 +1166,9 @@
         "Type": {
           "abysium": "abisio",
           "adamantine": "adamantino",
+          "alchemical": "alchemical",
           "all-damage": "todo daño",
+          "arcane": "arcane",
           "area-damage": "daño del área",
           "arrow-vulnerability": "vulnerabilidad de flecha",
           "auditory": "auditivo",
@@ -1180,6 +1188,7 @@
           "death-effects": "efectos de muerte",
           "detection": "detección",
           "disease": "enfermedad",
+          "divine": "divine",
           "djezet": "djezet",
           "doomed": "condenado",
           "drained": "agotado",
@@ -1212,6 +1221,7 @@
           "nonlethal-attacks": "ataques no letales",
           "noqual": "no igual",
           "object-immunities": "inmunidades a objetos",
+          "occult": "occult",
           "off-guard": "indefenso",
           "olfactory": "olfativo",
           "orichalcum": "oricalco",
@@ -1222,6 +1232,7 @@
           "plant": "planta",
           "polymorph": "organismo polimorfo",
           "possession": "posesión",
+          "primal": "primal",
           "prone": "propenso",
           "protean-anatomy": "anatomía proteica",
           "radiation": "radiación",
@@ -1313,8 +1324,7 @@
         "vitality": "vitalidad",
         "void": "vacío",
         "untyped": "sin escribir"
-      },
-      "Scatter": "Daño de dispersión"
+      }
     },
     "DamageButton": {
       "Adjust": "[Shift-Click] Ajuste el valor antes de aplicarlo.",
@@ -1541,7 +1551,6 @@
     "FeatTypeSkill": "Dote de habilidad",
     "FeaturesAncestryHeader": "Dotes de ascendencia",
     "FeaturesClassHeader": "Dotes de clase",
-    "Feet": "pies",
     "FlatCheck": "Prueba plana",
     "Focus": {
       "NotEnoughFocusPointsError": "No tienes suficientes puntos de concentración para lanzar este hechizo.",
@@ -1552,7 +1561,18 @@
       "label": "Puntos de Foco",
       "pointLabel": "Puntos"
     },
-    "Foot": "Pies",
+    "Foot": {
+      "Label": "foot",
+      "Plural": "feet",
+      "Preformatted": {
+        "5": "5 feet",
+        "10": "10 feet",
+        "15": "15 feet",
+        "20": "20 feet",
+        "25": "25 feet",
+        "30": "30 feet"
+      }
+    },
     "FormulaKnownTitle": "Fórmulas conocidas",
     "FormulaListEmpty": "Vacío (arrastre la fórmula/elemento aquí)",
     "Formula": "Fórmula",
@@ -1839,7 +1859,10 @@
           "Heal": "Sanar",
           "Label": "Fuente Divina"
         },
-        "DivineSkill": "Habilidad Divina",
+        "DivineSkill": {
+          "Hint": "Most deities have a single divine skill, though some offer a choice between two.",
+          "Label": "Divine Skill"
+        },
         "Domain": {
           "Abomination": {
             "Description": "Buscas infundir aborrecimiento y horror en quienes te rodean.",
@@ -2181,6 +2204,7 @@
           },
           "Range": "Rango",
           "ReevaluateFormula": {
+            "InitiativeRoll": "On Initiative Roll",
             "Label": "¿Reevaluar?",
             "Never": "Nunca",
             "TurnEnd": "Al final del turno",
@@ -2196,6 +2220,7 @@
           "Description": "Quizás sea una condición tratable.",
           "Name": "Desintegrado"
         },
+        "Looping": "Loop back to start?",
         "Plural": "Efectos",
         "ShowTokenIcon": "¿Mostrar icono de ficha?",
         "Unidentified": "¿No identificado?"
@@ -2753,13 +2778,16 @@
           "NegativeHealing": "<p> Una criatura con curación del vacío obtiene salud de la energía del vacío en lugar de energía de vitalidad. Se daña por el daño de la vitalidad y no se cura con los efectos curativos de la vitalidad. No sufre daño de vacío y se cura mediante efectos de vacío que curan a los muertos vivientes. </p>",
           "Poison": "<p> Cuando una criatura está expuesta al veneno de un monstruo, intenta una salvación de Fortaleza para evitar ser envenenada. El nivel de un veneno es el nivel del monstruo que lo inflige. El veneno sigue las reglas de las aflicciones. </p>",
           "PowerAttack": "<p> <strong> Frecuencia </strong> una vez por ronda </p>\n <hr />\n <p> <strong> Efecto </strong> El monstruo realiza un ataque cuerpo a cuerpo. Esto cuenta como dos ataques al calcular la penalización de ataques múltiples del monstruo. Si este Golpe impacta, el monstruo inflige un dado extra de daño con arma. </p>",
+          "Pull": "<p><strong>Requirements</strong> The monster's last action was a success with a Strike that lists Pull in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to @UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{Reposition} the creature, moving it closer to the monster. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Pull lists a distance, change the distance the creature is pulled on a success to that distance.</p>",
           "Push": "<p> <strong> Requisitos </strong> La última acción del monstruo fue un Golpe exitoso que enumera Empujar en su entrada de daño </p> <hr /> <p> <strong> Efecto </strong> El monstruo intenta @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731] {Shove} la criatura. Este intento no se aplica ni cuenta para la penalización por ataque múltiple del monstruo. Si Empujar indica una distancia, cambia la distancia a la que la criatura es empujada si tiene éxito a esa distancia. </p>",
+          "ReactiveStrike": "<p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>",
           "Regeneration": "<p> Este monstruo recupera el número indicado de puntos de vida en cada ronda al comienzo de su turno. Su condición @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1] {Dying} nunca aumenta más allá de Dying 3 mientras su regeneración esté activa. Sin embargo, si recibe daño de un tipo enumerado en la entrada de regeneración, su regeneración se desactiva hasta el final de su siguiente turno. Desactiva la regeneración antes de aplicar cualquier daño de un tipo listado, ya que ese daño podría matar al monstruo llevándolo a Dying 4.</p>",
           "Rend": "<p> Una entrada de Rend enumera el Golpe que tiene el monstruo. </p>\n <p> <strong> Requisitos </strong> El monstruo golpea al mismo enemigo con dos golpes consecutivos del tipo indicado en la misma ronda. </p>\n <hr />\n <p> <strong> Efecto </strong> El monstruo automáticamente inflige el daño de ese Golpe nuevamente al enemigo. </p>",
           "RetributiveStrike": "<p> <strong> Activador </strong> Un enemigo daña al aliado del monstruo y ambos están a 15 pies del monstruo. </p>\n <hr />\n <p> <strong> Efecto </strong> El aliado gana resistencia a todo el daño contra el daño desencadenante igual a 2 + el nivel del monstruo. Si el enemigo está a su alcance, el monstruo realiza un ataque cuerpo a cuerpo contra él. </p>",
           "Scent": "<p> El olfato implica sentir criaturas u objetos mediante el olfato y, por lo general, es un sentido vago. El alcance figura en la habilidad y funciona sólo si la criatura u objeto que se detecta emite un aroma (por ejemplo, las criaturas incorpóreas normalmente no exudan un aroma). </p>\n <p> Si una criatura emite un fuerte aroma o está contra el viento, el DJ puede duplicar o incluso triplicar el alcance de las habilidades olfativas utilizadas para detectar esa criatura, y el DJ puede reducir el alcance si una criatura estáa favor del viento. </p>",
           "ShieldBlock": "<p> <strong> Activador </strong> El monstruo tiene su escudo levantado y recibe daño de un ataque físico. </p>\n <hr />\n <p> <strong> Efecto </strong> El monstruo coloca su escudo en su lugar para desviar un golpe. El escudo evita que el monstruo reciba una cantidad de daño hasta la dureza del escudo. El monstruo y el escudo reciben cada uno el daño restante, posiblemente rompiendo o destruyendo el escudo. </p>",
           "SneakAttack": "<p> Cuando el monstruo golpea a una criatura que tiene la condición @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] {Off-Guard} con un arma cuerpo a cuerpo ágil o sutil, un ataque desarmado ágil o sutil o un ataque con arma a distancia, también inflige el daño de precisión indicado. Para un ataque a distancia con un arma arrojadiza, esa arma también debe ser un arma ágil o sutil. </p>",
+          "Stench": "<p>A creature entering the aura or starting its turn in the area must succeed at a Fortitude save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it's sickened on a critical failure). A creature that succeeds at its save or recovers from being sickened is temporarily immune to all stench auras for 1 minute.</p>",
           "SwallowWhole": "<p> El monstruo intenta tragarse una criatura del tamaño indicado o más pequeño que ha agarrado con sus mandíbulas o boca. Si una criatura tragada tiene el tamaño máximo indicado, el monstruo no puede volver a usar Swallow Whole. Si la criatura es más pequeña que el máximo, el monstruo normalmente puede tragar más criaturas; el DJ determina el máximo. El monstruo intenta una prueba @Check[type:athletics|defense:reflex] opuesta a la CD de Reflejos de la criatura agarrada. Si lo consigue, se traga a la criatura. la boca del monstruoo las mandíbulas ya no agarran a una criatura que ha tragado, por lo que el monstruo es libre de usarlas para golpear o agarrar una vez más. El monstruo no puede atacar a las criaturas que ha tragado. </p>\n <p> Una criatura tragada es @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei] {Grabbed} , es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3] {Slowed 1} y ​​tiene que contener la respiración o comenzar a asfixiarse. La criatura tragada sufre la cantidad de daño indicada cuando se la traga por primera vez y al final de cada uno de sus turnos mientras es tragada. Si la víctima _@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} la condición de agarre de esta habilidad, sale por la boca del monstruo. Esto libera a cualquier otra criatura atrapada en la boca o las mandíbulas del monstruo. Una criatura tragada puede atacar al monstruo que la ha tragado, pero sólo con ataques desarmados o con armas de volumen ligero o menos. La criatura que traga está @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] {Off-Guard} contra el ataque. Si el monstruo recibe daño perforante o cortante igual o superior al valor de Ruptura indicado por un solo ataque o hechizo, elLa criatura tragada se libera. Una criatura que se libera escapando o liberándose puede respirar inmediatamente y salir del espacio del monstruo devorador. </p>\n <p> Si el monstruo muere, una criatura tragada puede ser liberada por criaturas adyacentes al cadáver si gastan un total combinado de 3 acciones cortando al monstruo con un arma o un ataque desarmado que cause daño perforante o cortante. </p>",
           "SwarmMind": "<p> Este monstruo no tiene una sola mente (generalmente porque es un enjambre de criaturas más pequeñas) y es inmune a los efectos mentales que apuntan solo a un número específico de criaturas. Todavía está sujeto a efectos mentales que afectan a todas las criaturas en un área. </p>",
           "Telepathy": "<p> Un monstruo con telepatía puede comunicarse mentalmente con cualquier criatura dentro del radio indicado, siempre que compartan un idioma. Esto no les da ningún acceso especial a sus pensamientos y no comunica más información que la que proporcionaría el habla normal. </p>",
@@ -3280,6 +3308,10 @@
         "Hint": "Limita el tipo de información del metajuego a la que tienen acceso tus jugadores.",
         "Label": "Limitar la información del metajuego",
         "Name": "Información del metajuego",
+        "SecretChecks": {
+          "Hint": "Players can see rolls with the Secret trait in chat.",
+          "Name": "Show Secret Checks"
+        },
         "ShowDC": {
           "Hint": "Los jugadores pueden ver los CD de las comprobaciones realizadas contra NPC y otras fuentes que no son propiedad de los jugadores.",
           "Name": "Mostrar resultado CD"
@@ -3777,6 +3809,7 @@
     "TraitBottledBreath": "Aliento embotellado",
     "TraitBrace": "Abrazadera",
     "TraitBrutal": "Brutal",
+    "TraitBugbear": "Bugbear",
     "TraitBulwark": "Baluarte",
     "TraitCaligni": "Caligni",
     "TraitCantrip": "Truco",
@@ -3789,6 +3822,7 @@
     "TraitCatalyst": "Catalizador",
     "TraitCatfolk": "gente gata",
     "TraitCelestial": "Celestial",
+    "TraitCentaur": "Centaur",
     "TraitChampion": "Campeón",
     "TraitChangeling": "Cambiante",
     "TraitCharauKa": "Charau-ka",
@@ -3990,6 +4024,7 @@
     "TraitDescriptionGnoll": "Los gnolls son humanoides que se parecen a las hienas.",
     "TraitDescriptionGnome": "Una criatura con este rasgo es miembro de la ascendencia de los gnomos. Los gnomos son personas pequeñas expertas en magia que buscan nuevas experiencias y suelen tener visión en condiciones de poca luz. Una habilidad con este rasgo puede ser utilizada o seleccionada sólo por gnomos. Los gnomos crean y utilizan un arma con este rasgo.",
     "TraitDescriptionGoblin": "Una criatura con este rasgo puede provenir de múltiples tribus de criaturas, incluidos duendes, hobgoblins y bugbears. Los goblins tienden a tener visión en la oscuridad. Una habilidad con este rasgo puede ser utilizada o elegida sólo por goblins. Los goblins crean y utilizan un arma con este rasgo.",
+    "TraitDescriptionBugbear": "Bugbears are the monsters lurking in the closet and hiding under the bed.",
     "TraitDescriptionGoloma": "Humanoides insulares que tienen innumerables ojos.",
     "TraitDescriptionGrapple": "Puedes usar esta arma para lidiar con la habilidad Atletismo incluso si no tienes las manos libres. Esto utiliza el alcance del arma (si es diferente al tuyo) y añade el bono del objeto del arma a las tiradas de ataque como un bono de objeto a la prueba de Atletismo. Si fallas críticamente una prueba de Agarre usando el arma, puedes soltar el arma para recibir los efectos de una falla en lugar de una falla crítica.",
     "TraitDescriptionGrimoire": "Los libros de hechizos son herramientas útiles para que cualquier usuario de magia escriba encantamientos y runas de poder, pero mientras que la mayoría de los libros de hechizos no son más que tinta sobre pergamino, los grimorios han absorbido la magia de los hechizos que contienen, magia que los lanzadores de hechizos expertos pueden usar para aumentar sus hechizos.",
@@ -4506,6 +4541,7 @@
     "TraitRangeIncrement280": "Incremento de alcance 280 pies",
     "TraitRangeIncrement290": "Incremento de alcance 290 pies",
     "TraitRangeIncrement30": "Incremento de alcance 30 pies",
+    "TraitRangeIncrement35": "Range Increment 35 feet",
     "TraitRangeIncrement300": "Incremento de alcance 300 pies",
     "TraitRangeIncrement310": "Incremento de alcance 310 pies",
     "TraitRangeIncrement320": "Incremento de alcance 320 pies",
@@ -4564,6 +4600,7 @@
     "TraitScrying": "Adivinando",
     "TraitSeaDevil": "diablo marino",
     "TraitSecret": "Secreto",
+    "TraitSedacthy": "Sedacthy",
     "TraitSerpentfolk": "gente serpiente",
     "TraitSeugathi": "Seugathi",
     "TraitSewnIntoClothing": "Cosido en la ropa",
@@ -4997,7 +5034,6 @@
         "morningstar": "Estrella de la mañana",
         "naginata": "Naginata",
         "nightstick": "Porra de policía",
-        "nine-ring-sword": "Espada de nueve anillos",
         "nodachi": "Nodachi",
         "nunchaku": "Nunchaku",
         "ogre-hook": "Gancho de ogro",
@@ -5533,7 +5569,6 @@
     "WeaponRangeReach": "Alcanzar",
     "WeaponReloadLabel": "Tiempo de recarga",
     "WeaponSpecialization": "Especialización en armas",
-    "WeaponSplashDamageLabel": "Daño por salpicadura",
     "WeaponStrikeLabel": "Ataque",
     "WeaponTypeAdvanced": "Arma avanzada",
     "WeaponTypeMartial": "Arma marcial",
