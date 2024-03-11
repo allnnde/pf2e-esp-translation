@@ -115,7 +115,12 @@
     },
     "Effect: Blasphemous Utterances": {
       "name": "Efecto: declaraciones blasfemas",
-      "description": "<p> La criatura sufre un penalizador de circunstancia de -2 a sus salvaciones contra efectos mentales. </p>\n <p> No puede realizar acciones que tengan el rasgo concentrado a menos que tenga éxito en una prueba @Check[type:flat|dc:10]. Fallar esta prueba desperdicia la acción. </p>"
+      "description": "<p> La criatura sufre un penalizador de circunstancia de -2 a sus salvaciones contra efectos mentales. </p>\n <p> No puede realizar acciones que tengan el rasgo concentrado a menos que tenga éxito en una prueba @Check[type:flat|dc:10]. Fallar esta prueba desperdicia la acción. </p>",
+      "rules": {
+        "1": {
+          "text": "<p>A creature in the aura can't take actions that have the concentrate trait unless they succeed at a @Check[type:flat|dc:10] check. On a failure, the action is disrupted.</p>"
+        }
+      }
     },
     "Effect: Blood Frenzy": {
       "name": "Efecto: Frenesí de sangre",
@@ -738,6 +743,10 @@
       "name": "Efecto: Pasión vigorizante",
       "description": "<p> La criatura obtiene un bono de estado +1 a las tiradas de ataque y 10 puntos de vida temporales. </p>"
     },
+    "Effect: Invoke Rune": {
+      "name": "Effect: Invoke Rune",
+      "description": "<p>A glowing copy of the invoked rune appears on a single weapon the giant holds, granting the weapon one effect of the giant’s choice.</p>"
+    },
     "Effect: Jury-Rig": {
       "name": "Efecto: Equipo de jurado",
       "description": "<p> El objetivo gana 10 puntos de vida temporales. </p>"
@@ -1195,7 +1204,8 @@
       "description": "<p> La criatura crece hasta alcanzar un tamaño enorme y su alcance aumenta a 15 pies. También obtiene 12 puntos de vida temporales, resistencia 5 a los golpes y una bonificación de estado +2 a las tiradas de daño </p>"
     },
     "Effect: Swig": {
-      "name": "Efecto: Trago"
+      "name": "Efecto: Trago",
+      "description": "<p>The dockhand gains a +2 item bonus to melee damage rolls and saving throws against fear, but they become clumsy 1.</p>"
     },
     "Effect: Sylvan Wine": {
       "name": "Efecto: Vino Sylvan",
@@ -1293,6 +1303,10 @@
       "name": "Efecto: Purga Volcánica",
       "description": "<p> El objetivo sufre @Damage[4d6[persistent,fire] ] daño, y mientras tenga este daño de fuego persistente, también sufre una penalización de estado de -10 pies a sus Velocidades. </p>"
     },
+    "Effect: Vomit Tar": {
+      "name": "Effect: Vomit Tar",
+      "description": "<p>The creature is slowed 1 and gains fire weakness 5.</p>"
+    },
     "Effect: Vulnerable to Curved Space": {
       "name": "Efecto: vulnerable al espacio curvo",
       "description": "<p> Cuando un sabueso de Tindalos no está adyacente a un ángulo estructural de 90º (o más agudo), su resistencia al daño físico se suprime y enferma 1. </p>"
@@ -1300,6 +1314,10 @@
     "Effect: War Leader": {
       "name": "Efecto: Líder de guerra",
       "description": "<p> La criatura obtiene un bonificador de estado +1 a las tiradas de ataque y pruebas de habilidad. </p>"
+    },
+    "Effect: Warded Casting": {
+      "name": "Effect: Warded Casting",
+      "description": "<p>Emaliza gains 20 temporary Hit Points and resistance 20 to either acid, cold, electricity, or fire damage.</p>"
     },
     "Effect: Warning Hoot": {
       "name": "Efecto: pitido de advertencia",
