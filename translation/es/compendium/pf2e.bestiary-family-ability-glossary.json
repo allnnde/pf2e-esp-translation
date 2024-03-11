@@ -59,6 +59,10 @@
       "name": "(Blackfrost Dead) Muerte destrozada",
       "description": "<p> Cuando el muerto de escarcha negra es destruido, su cuerpo se hace añicos como hielo quebradizo, llenando el aire a su alrededor con una nube de fragmentos de hielo helados y afilados. Las criaturas en un @Template[type:emanation|distance:10] toman @Damage[1d8[cold] ] por nivel de los muertos de escarcha negra (mínimo 3d8), con una salvación @Check[type:reflex|dc:|basic:true]. Las criaturas que fallan críticamente esta salvación también sufren @Damage[1d6[bleed] ]. </p>"
     },
+    "(Bulwark) Serpentstone Breath": {
+      "name": "(Bulwark) Serpentstone Breath",
+      "description": "<p>The bulwark breathes a 60- foot cone of green gas. Each creature in the area must attempt a @Check[type:fortitude|dc:34] save. The bulwark can't use Serpentstone Breath again for [[/br 1d4 #Recharge Serpentstone Breath]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature's body hardens, causing it to become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature becomes petrified for 1 minute. It can attempt a new save at the end of each of its turns.</p>\n<p><strong>Critical Failure</strong> The creature becomes petrified permanently.</p>"
+    },
     "(Castrovelian) Extra Large": {
       "name": "(Castroveliano) Extra Grande",
       "description": "<p> Una atmósfera rica y acceso a abundante comida hacen que esta criatura sea más grande que su contraparte Golarion. El tamaño de la criatura aumenta un paso (de Mediano a Grande, por ejemplo). </p>"
@@ -314,6 +318,14 @@
     "(Ghoul) Ghoul Fever": {
       "name": "(Ghoul) Fiebre Ghoul",
       "description": "<p> <strong> Tiro de salvación </strong> @Check[type:fortitude|dc:] </p>\n <hr />\n <p> <strong> Etapa 1 </strong> portador sin efectos nocivos (1 día) </p>\n <p> <strong> Etapa 2 </strong> @Damage[2d6[void] ] daño y recupera la mitad de puntos de vida de todas las curaciones (1 día) </p>\n <p> <strong> Etapa 3 </strong> como etapa 2 (1 día) </p>\n <p> <strong> Etapa 4 </strong> @Damage[2d6[void] ] daño y no ganabeneficio de la curación (1 día) </p>\n <p> <strong> Etapa 5 </strong> como etapa 4 (1 día) </p>\n <p> <strong> Etapa 6 </strong> muerto, y resucita como @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK] {Ghoul} la siguiente medianoche. </p>"
+    },
+    "(Ghoul) Ghoul Whispers": {
+      "name": "(Ghoul) Ghoul Whispers",
+      "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} creature is within the ghoul's reach</p>\n<hr />\n<p><strong>Effect</strong> The ghoul whispers dark thoughts and vile cravings into the creature's ears. The creature must save against the forbidden cravings curse.</p>\n<p><strong>Forbidden Cravings</strong> (curse)</p>\n<p><strong>Saving Throw</strong> @Check[type:will|dc:|traits:curse], using the high spell DC for the ghoul's level</p>\n<p><strong>Stage 1</strong> carrier with no ill effects (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} until it consumes raw meat (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2</p>\n<p><strong>Stage 4</strong> as stage 2 unless the target has consumed raw meat in the past 24 hours, then it takes @Damage[4d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} until it consumes raw meat;</p>\n<p><strong>Stage 5</strong> if the creature has eaten raw meat in the past 24 hours, it dies and rises as a ghoul, if not, it returns to stage 4</p>"
+    },
+    "(Ghoul) Grave Knowledge": {
+      "name": "(Ghoul) Grave Knowledge",
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The ghoul calls upon knowledge it retains from one creature it has consumed in the past 7 days. The ghoul attempts a skill check using a skill in which the consumed creature was trained (if it's unclear whether the creature was trained, the GM decides). The ghoul is treated as trained and uses the high skill modifier for the ghoul's level. This takes the same amount of actions or time as usual for the check.</p>\n<p>The ghoul can instead automatically learn something specific known by a creature it consumed in the last 7 days, like the location of a @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} treasure or the name of a loved one. The ghoul can do this only once for a given creature, no matter how much of its flesh the ghoul consumed.</p>"
     },
     "(Ghoul) Paralysis": {
       "name": "(Ghoul) Parálisis",
@@ -1061,9 +1073,9 @@
       "name": "(Vampiro, Verdadero) Niños de la Noche",
       "description": "<p> La presencia del vampiro genera criaturas de la noche para cumplir las órdenes del maestro. Estos normalmente incluyen @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.sPClc6y3dT3XZupv] {Rat Swarms} , @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VAWmwDA08ZLQd8lW] {Bat Swarms} y ​​@UUID[Compendium.pf2e.pathfinder-bestiary.Actor.Oilfs8Atv2LjAsUS] {Wolves} , pero pueden incluir otras criaturas. </p>\n <p> El vampiro puede dar órdenes telepáticas a estas criaturas siempre que se encuentren a menos de 100 pies, pero no pueden comunicarse. </p>"
     },
-    "(Vampire, True) Create Spawn": {
-      "name": "(Vampiro, Verdadero) Crear engendro",
-      "description": "<p> Si una criatura muere después de haber sido reducida a 0 HP por Drink Blood, el vampiro puede convertir a esta víctima en vampiro donando algo de su propia sangre a la víctima y enterrándola en la tierra durante 3 noches. </p>\n <p> Si el nuevo vampiro tiene un nivel inferior al de su creador, está bajo el control del creador. Si un vampiro controla demasiados engendros a la vez (según lo determine el DJ), los engendros de voluntad fuerte pueden liberarse teniendo éxito en una tirada de salvación @Check[type:will|dc:resolve(10+@actor.system.saves.will.value)|name:Escape Thralldom] contra elWill DC del vampiro. </p>"
+    "(Vampire, True) Create Servitor": {
+      "name": "(Vampire, True) Create Servitor",
+      "description": "<p>If a creature dies after being reduced to 0 HP by Drink Blood, the vampire can turn this victim into a vampire servitor by donating some of their own blood to the victim and burying the victim in earth for 3 nights.</p>\n<p>A vampiric servitor is compelled to obey its creator, but if a vampire controls too many vampiric servitors at once (as determined by the GM), or if the servitor is a higher level than the vampire that created it, strongwilled servitors can free themselves by succeeding at a @Check[type:will|defense:will] saving throw against the vampire's Will DC.</p>"
     },
     "(Vampire, True) Dominate": {
       "name": "(Vampiro, Verdadero) Dominar",
