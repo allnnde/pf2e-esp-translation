@@ -1,3 +1,12 @@
+# [5.11.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.10.0...v5.11.0) (2024-03-12)
+
+
+### Features
+
+* fix mani tag corrutions ([926dffd](https://github.com/allnnde/pf2e-esp-translation/commit/926dffd1545bdfebc40d8f5d8e3042c2658648b1))
+
+
+
 # [5.10.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.9.0...v5.10.0) (2024-03-11)
 
 
@@ -66,15 +75,6 @@
 ### Bug Fixes
 
 * fix merge error ([d26d78d](https://github.com/allnnde/pf2e-esp-translation/commit/d26d78df73f8856db6b045ebde70ea9e5a9c4675))
-
-
-
-## [5.8.7](https://github.com/allnnde/pf2e-esp-translation/compare/v5.8.6...v5.8.7) (2024-03-09)
-
-
-### Bug Fixes
-
-* merge error ([a0b3a06](https://github.com/allnnde/pf2e-esp-translation/commit/a0b3a06d89f23c71e40fda1b26e5fc37055197c4))
 
 
 
