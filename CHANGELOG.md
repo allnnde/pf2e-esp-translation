@@ -1,3 +1,19 @@
+# [5.12.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.11.1...v5.12.0) (2024-03-13)
+
+
+### Bug Fixes
+
+* New translations deities.json from Crowdin ([49dd557](https://github.com/allnnde/pf2e-esp-translation/commit/49dd5572f09f7bfc85f691fd6fd4d6e9919fad96))
+* New translations en.json from Crowdin ([fba9f87](https://github.com/allnnde/pf2e-esp-translation/commit/fba9f879508481e78d603e43aa260e7bd236e820))
+* New translations re-en.json from Crowdin ([5bd062f](https://github.com/allnnde/pf2e-esp-translation/commit/5bd062fe114d428d6c00f8511ec400eec1ec2651))
+
+
+### Features
+
+* automatic json extract to traslate ([9804698](https://github.com/allnnde/pf2e-esp-translation/commit/980469814458e8292c36998dc34902e6f054a7af))
+
+
+
 ## [5.11.1](https://github.com/allnnde/pf2e-esp-translation/compare/v5.11.0...v5.11.1) (2024-03-12)
 
 
@@ -129,15 +145,6 @@
 ### Features
 
 * automatic json extract to traslate ([8b0ea54](https://github.com/allnnde/pf2e-esp-translation/commit/8b0ea54191a5c12757b6b517e189f6be563b5dc9))
-
-
-
-## [5.8.9](https://github.com/allnnde/pf2e-esp-translation/compare/v5.8.8...v5.8.9) (2024-03-09)
-
-
-### Bug Fixes
-
-* translante errores ([aaa52cb](https://github.com/allnnde/pf2e-esp-translation/commit/aaa52cb41c116c42e144cb4c8de6dd6a79c7b3c6))
 
 
 
