@@ -1,3 +1,18 @@
+# [5.14.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.13.1...v5.14.0) (2024-03-18)
+
+
+### Bug Fixes
+
+* fix tag mergin ([0b3a10d](https://github.com/allnnde/pf2e-esp-translation/commit/0b3a10d4e67a0d5b25a9236f3e07186e4f342c4d))
+* sync to german repo ([7b3babb](https://github.com/allnnde/pf2e-esp-translation/commit/7b3babbe2bb1aa58fb73e512559f4547a7b2f884))
+
+
+### Features
+
+* solve journey tag replace ([146256e](https://github.com/allnnde/pf2e-esp-translation/commit/146256ee99664e4e1d668fb290c3089c936722aa))
+
+
+
 ## [5.13.1](https://github.com/allnnde/pf2e-esp-translation/compare/v5.13.0...v5.13.1) (2024-03-18)
 
 
@@ -138,15 +153,6 @@
 * New translations spells.json from Crowdin ([feafdfa](https://github.com/allnnde/pf2e-esp-translation/commit/feafdfa1f02a6055eca1ff10edfa749dc3a87da0))
 * New translations vehicles.json from Crowdin ([a4451c9](https://github.com/allnnde/pf2e-esp-translation/commit/a4451c9ab1c02d45ed956de24c12a55761099d49))
 * New translations vehicles.json from Crowdin ([90c4024](https://github.com/allnnde/pf2e-esp-translation/commit/90c40247cfaa3fb1bc67c36704ede9bbfd01291a))
-
-
-
-# [5.11.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.10.0...v5.11.0) (2024-03-12)
-
-
-### Features
-
-* fix mani tag corrutions ([926dffd](https://github.com/allnnde/pf2e-esp-translation/commit/926dffd1545bdfebc40d8f5d8e3042c2658648b1))
 
 
 
