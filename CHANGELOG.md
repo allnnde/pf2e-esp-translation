@@ -1,3 +1,13 @@
+## [5.14.5](https://github.com/allnnde/pf2e-esp-translation/compare/v5.14.4...v5.14.5) (2024-03-25)
+
+
+### Bug Fixes
+
+* New translations en.json from Crowdin ([c5807b4](https://github.com/allnnde/pf2e-esp-translation/commit/c5807b4382301e12671215e53aba147b3c5a5b2e))
+* New translations journals.json from Crowdin ([cd0bec9](https://github.com/allnnde/pf2e-esp-translation/commit/cd0bec963f0843df947ff10b70a1303adffc53c2))
+
+
+
 ## [5.14.4](https://github.com/allnnde/pf2e-esp-translation/compare/v5.14.3...v5.14.4) (2024-03-25)
 
 
@@ -77,21 +87,6 @@
 * New translations action-en.json from Crowdin ([837db29](https://github.com/allnnde/pf2e-esp-translation/commit/837db29f0765637eae360c1a2e1316bd24799094))
 * New translations feats.json from Crowdin ([0a78332](https://github.com/allnnde/pf2e-esp-translation/commit/0a7833215ccb3224233e3dfe4f461a76f3de6cc3))
 * New translations re-en.json from Crowdin ([8d446d7](https://github.com/allnnde/pf2e-esp-translation/commit/8d446d7ecd825eda32d95b9f8a0630e6098845f7))
-
-
-
-# [5.14.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.13.1...v5.14.0) (2024-03-18)
-
-
-### Bug Fixes
-
-* fix tag mergin ([0b3a10d](https://github.com/allnnde/pf2e-esp-translation/commit/0b3a10d4e67a0d5b25a9236f3e07186e4f342c4d))
-* sync to german repo ([7b3babb](https://github.com/allnnde/pf2e-esp-translation/commit/7b3babbe2bb1aa58fb73e512559f4547a7b2f884))
-
-
-### Features
-
-* solve journey tag replace ([146256e](https://github.com/allnnde/pf2e-esp-translation/commit/146256ee99664e4e1d668fb290c3089c936722aa))
 
 
 
