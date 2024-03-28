@@ -459,7 +459,7 @@ function formatActorItem(extractedValue, mappingKey, mappingPath, item, itemData
         }
         // Add note for description and name to use <Compendium> as a translation if the value should be taken from the compendium
         if (["description", "name"].includes(mappingKey)) {
-            return `<Compendium> tag will get replaced with text from compendium entry @UUID[${item.flags.core.sourceId}]\n${extractedValue}`;
+            return `<Compendium> tag will get replaced with text from compendium entry @UUID[${databaseItem.itemLink}]\n${extractedValue}`;
         }
     }
     return extractedValue;
@@ -543,7 +543,16 @@ export function buildItemDatabase(itemPacks, packMapping) {
                         ? item.flags.core.sourceId
                         : "";
 
-                const itemFields = {};
+                let itemLinkShort = "";
+
+                // Include both old and new notation, either including or omitting link type (e.g. .Item.)
+                if (itemLink !== "") {
+                    const linkParts = itemLink.split(".");
+                    linkParts.splice(3, 1);
+                    itemLinkShort = linkParts.join(".");
+                }
+
+                const itemFields = { itemLink: itemLink };
 
                 // Get the required item properties for the item database
                 packMapping.fields.forEach((field) => {
@@ -553,6 +562,7 @@ export function buildItemDatabase(itemPacks, packMapping) {
                 });
                 if (itemLink !== "" && Object.keys(itemFields).length > 0) {
                     itemDatabase[itemLink] = itemFields;
+                    itemDatabase[itemLinkShort] = itemFields;
                 }
             });
         }

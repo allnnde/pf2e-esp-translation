@@ -131,12 +131,12 @@ export function deletePropertyRecursively(obj, propToDelete) {
                             deletePropertyRecursively(obj[key][i], propToDelete);
                         }
                     }
-                } else {
+                } else if (obj[key] !== null) {
                     deletePropertyRecursively(obj[key], propToDelete);
                 }
 
                 // Delete objects that no longer contain data
-                if (Object.keys(obj[key]).length === 0) {
+                if (obj[key] === null || Object.keys(obj[key]).length === 0) {
                     delete obj[key];
                 }
             } else if (key === propToDelete) {

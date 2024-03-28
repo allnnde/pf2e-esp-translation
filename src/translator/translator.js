@@ -1,11 +1,11 @@
 // Create Translator instance and register settings
 Hooks.once("init", () => {
-    game.langEsPf2e = Translator.get();
+    game.langDePf2e = Translator.get();
 
     // Register token setting
-    game.settings.register("pf2e-es", "token", {
-        name: "Retrato de ficha",
-        hint: "Al importar un PNJ traducido de un compendio, ¿debe utilizarse la imagen del retrato como ficha en lugar de la imagen de ficha normal?",
+    game.settings.register("lang-de-pf2e", "token", {
+        name: "Portraitbild als Token",
+        hint: "Soll beim Import eines übersetzten NSCs aus einem Kompendium das Portraitbild als Token genutzt werden statt des regulären Token-Bilds?",
         scope: "world",
         type: Boolean,
         config: true,
@@ -27,10 +27,10 @@ class Translator {
         this.artworkExceptions = {};
         // Read config file
         const config = await Promise.all([
-            fetch("modules/pf2e-es/src/translator/translator-config.json")
+            fetch("modules/lang-de-pf2e/src/translator/translator-config.json")
                 .then((r) => r.json())
                 .catch((_e) => {
-                    console.error("pf2e-es: Couldn't find translator config file.");
+                    console.error("lang-de-pf2e: Couldn't find translator config file.");
                 }),
         ]);
 
@@ -70,7 +70,7 @@ class Translator {
             ]);
             this.dictionary = dict[0];
         } else {
-            console.error("pf2e-es: Dictionary not available");
+            console.error("lang-de-pf2e: Dictionary not available");
         }
 
         // Create list of icons
@@ -83,7 +83,7 @@ class Translator {
         this.mappings = config[0]?.mappings ?? {};
 
         // Signalize translator is ready
-        Hooks.callAll("langEsPf2e.ready");
+        Hooks.callAll("langDePf2e.ready");
     }
 
     constructor() {
@@ -111,7 +111,7 @@ class Translator {
 
         if (!excluded) {
             ["portraits", "tokens"].forEach(async (imageType) => {
-                const imagePath = game.settings.get("pf2e-es", "token")
+                const imagePath = game.settings.get("lang-de-pf2e", "token")
                     ? path.concat(`/portraits/`)
                     : path.concat(`/${imageType}/`);
                 const images = {};
@@ -203,7 +203,7 @@ class Translator {
                     dir: compendiumDirectory,
                 });
             } else {
-                console.error("pf2e-es: Required module Babele not active");
+                console.error("lang-de-pf2e: Required module Babele not active");
             }
         }
 
@@ -291,7 +291,7 @@ class Translator {
     translateDualLanguage(data, translation) {
         if (!translation || data === translation) {
             return data;
-        } else if (game.settings.get("pf2e-es", "dual-language-names")) {
+        } else if (game.settings.get("lang-de-pf2e", "dual-language-names")) {
             return this.normalizeName(translation) + "/" + data;
         } else {
             return this.normalizeName(translation);
