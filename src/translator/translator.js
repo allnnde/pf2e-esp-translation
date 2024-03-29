@@ -4,8 +4,8 @@ Hooks.once("init", () => {
 
     // Register token setting
     game.settings.register("pf2e-es", "token", {
-        name: "Portraitbild als Token",
-        hint: "Soll beim Import eines übersetzten NSCs aus einem Kompendium das Portraitbild als Token genutzt werden statt des regulären Token-Bilds?",
+        name: "Retrato de ficha",
+        hint: "Al importar un PNJ traducido de un compendio, ¿debe utilizarse la imagen del retrato como ficha en lugar de la imagen de ficha normal?",
         scope: "world",
         type: Boolean,
         config: true,
