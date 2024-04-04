@@ -1,3 +1,12 @@
+## [5.15.7](https://github.com/allnnde/pf2e-esp-translation/compare/v5.15.6...v5.15.7) (2024-04-04)
+
+
+### Bug Fixes
+
+* sycro german repo ([1ba19e7](https://github.com/allnnde/pf2e-esp-translation/commit/1ba19e7c8cb7156e11d2c84b5ca67bd592914d08))
+
+
+
 ## [5.15.6](https://github.com/allnnde/pf2e-esp-translation/compare/v5.15.5...v5.15.6) (2024-03-30)
 
 
@@ -73,15 +82,6 @@
 * New translations spells.json from Crowdin ([04100bf](https://github.com/allnnde/pf2e-esp-translation/commit/04100bf975bf9372f098ed214b0e8fa91bb0b9d1))
 * New translations vehicles.json from Crowdin ([9ff7962](https://github.com/allnnde/pf2e-esp-translation/commit/9ff7962b7febf1e066aad98eae9665357f1aac15))
 * New translations vehicles.json from Crowdin ([7a47af8](https://github.com/allnnde/pf2e-esp-translation/commit/7a47af859c19d5330d7efa9f2521450518e49115))
-
-
-
-## [5.15.2](https://github.com/allnnde/pf2e-esp-translation/compare/v5.15.1...v5.15.2) (2024-03-28)
-
-
-### Bug Fixes
-
-* syncro with german repo ([2de23ad](https://github.com/allnnde/pf2e-esp-translation/commit/2de23ad527de6cab07b0ac27105d3f27293547a0))
 
 
 
