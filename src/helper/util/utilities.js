@@ -218,8 +218,7 @@ export function unflattenObject(flattenedObj) {
 
                 if (isArrayKey) {
                     const arrayKey = unescapedKey.split("[")[0];
-                    const arrayIndex = parseInt(unescapedKey.match(/\d+/)[0], 10);
-
+                    const arrayIndex = RegExp("\\[(\\d+)\\]", "g").exec(unescapedKey)[1];
                     current[arrayKey] = current[arrayKey] || [];
                     current[arrayKey][arrayIndex] = current[arrayKey][arrayIndex] || {};
 
