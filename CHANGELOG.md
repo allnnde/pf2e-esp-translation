@@ -1,3 +1,23 @@
+## [5.16.1](https://github.com/allnnde/pf2e-esp-translation/compare/v5.16.0...v5.16.1) (2024-04-05)
+
+
+### Bug Fixes
+
+* New translations classfeatures.json from Crowdin ([36b50d0](https://github.com/allnnde/pf2e-esp-translation/commit/36b50d0b2524eb792744de0e0115b395dd37ac87))
+* New translations classfeatures.json from Crowdin ([744ab6a](https://github.com/allnnde/pf2e-esp-translation/commit/744ab6ab5b741c95446398d9638073faf48d92d2))
+* New translations deities.json from Crowdin ([0479ed1](https://github.com/allnnde/pf2e-esp-translation/commit/0479ed1a3fffe1eedb144ac8a11d8ec50284a741))
+* New translations deities.json from Crowdin ([7527ff7](https://github.com/allnnde/pf2e-esp-translation/commit/7527ff7615d2a7256c4037c96a99f68f17f3f33f))
+* New translations en.json from Crowdin ([0c2054d](https://github.com/allnnde/pf2e-esp-translation/commit/0c2054d9d13cfc4dedadb9d4eefef38b08a80cbf))
+* New translations feats.json from Crowdin ([af8e999](https://github.com/allnnde/pf2e-esp-translation/commit/af8e9992f4e365864b6728851f86633c8454b4a8))
+* New translations hazards.json from Crowdin ([51c7627](https://github.com/allnnde/pf2e-esp-translation/commit/51c76272117611665a3f725315de08a911492b4c))
+* New translations hazards.json from Crowdin ([cf91d5c](https://github.com/allnnde/pf2e-esp-translation/commit/cf91d5c348b043193470a9e1327db2f4f9d12eb0))
+* New translations heritages.json from Crowdin ([2138928](https://github.com/allnnde/pf2e-esp-translation/commit/213892845fd76de72fb993d88540cd820fcc41bd))
+* New translations heritages.json from Crowdin ([d158102](https://github.com/allnnde/pf2e-esp-translation/commit/d15810232ae321e9122ec9e459b71880059ca23f))
+* New translations spells.json from Crowdin ([6ba5983](https://github.com/allnnde/pf2e-esp-translation/commit/6ba5983d14e59b469fde59f0f7b26571d8c0c5bd))
+* New translations spells.json from Crowdin ([649fe0f](https://github.com/allnnde/pf2e-esp-translation/commit/649fe0f9cf106193caff4f15abcfbd9d2dd312c2))
+
+
+
 # [5.16.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.15.7...v5.16.0) (2024-04-05)
 
 
@@ -45,15 +65,6 @@
 ### Bug Fixes
 
 * re solvee ([fc6ecd0](https://github.com/allnnde/pf2e-esp-translation/commit/fc6ecd0d80cace330dd6fa4fc5ee10e06e6c8529))
-
-
-
-## [5.15.4](https://github.com/allnnde/pf2e-esp-translation/compare/v5.15.3...v5.15.4) (2024-03-29)
-
-
-### Bug Fixes
-
-* error with syncro german repo ([613f62c](https://github.com/allnnde/pf2e-esp-translation/commit/613f62c5ca265930f7a129e2d3fcf7d573347aa8))
 
 
 
