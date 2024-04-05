@@ -1,3 +1,19 @@
+## [5.16.2](https://github.com/allnnde/pf2e-esp-translation/compare/v5.16.1...v5.16.2) (2024-04-05)
+
+
+### Bug Fixes
+
+* New translations deities.json from Crowdin ([ffc0294](https://github.com/allnnde/pf2e-esp-translation/commit/ffc0294e5103fd0d21c2f546770ea5a62180f848))
+* New translations deities.json from Crowdin ([6dbd65a](https://github.com/allnnde/pf2e-esp-translation/commit/6dbd65a75c24424a5722985e7927010de2fcbc3e))
+* New translations hazards.json from Crowdin ([7d51446](https://github.com/allnnde/pf2e-esp-translation/commit/7d51446ba2bcc72fda7c708f51d416fc17941f10))
+* New translations hazards.json from Crowdin ([eb4d34f](https://github.com/allnnde/pf2e-esp-translation/commit/eb4d34fb988214188bcd738a20cf53d9632898e3))
+* New translations heritages.json from Crowdin ([630487f](https://github.com/allnnde/pf2e-esp-translation/commit/630487f5738cea22ad70e09a0903c4d4c043d5f4))
+* New translations heritages.json from Crowdin ([55a30b4](https://github.com/allnnde/pf2e-esp-translation/commit/55a30b4ade6ad9331c25ce013e111c00364308f0))
+* New translations spells.json from Crowdin ([a8fefc3](https://github.com/allnnde/pf2e-esp-translation/commit/a8fefc3930de07088ff23d1dc37ee38bdfa7eafb))
+* New translations spells.json from Crowdin ([9ae454d](https://github.com/allnnde/pf2e-esp-translation/commit/9ae454d2889383d375d4293caecb3184798ff85e))
+
+
+
 ## [5.16.1](https://github.com/allnnde/pf2e-esp-translation/compare/v5.16.0...v5.16.1) (2024-04-05)
 
 
@@ -56,15 +72,6 @@
 
 * New translations actions.json from Crowdin ([f97a16d](https://github.com/allnnde/pf2e-esp-translation/commit/f97a16d20d502e36883a2667abf942460e5906d5))
 * New translations journals.json from Crowdin ([f9ced67](https://github.com/allnnde/pf2e-esp-translation/commit/f9ced67079160e08506fd3afc62e1e2a8ca5c010))
-
-
-
-## [5.15.5](https://github.com/allnnde/pf2e-esp-translation/compare/v5.15.4...v5.15.5) (2024-03-29)
-
-
-### Bug Fixes
-
-* re solvee ([fc6ecd0](https://github.com/allnnde/pf2e-esp-translation/commit/fc6ecd0d80cace330dd6fa4fc5ee10e06e6c8529))
 
 
 
