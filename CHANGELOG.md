@@ -1,3 +1,19 @@
+## [5.16.3](https://github.com/allnnde/pf2e-esp-translation/compare/v5.16.2...v5.16.3) (2024-04-06)
+
+
+### Bug Fixes
+
+* New translations deities.json from Crowdin ([0149266](https://github.com/allnnde/pf2e-esp-translation/commit/01492662bdb78d6010a98e1e3cdac6ce5312de8b))
+* New translations deities.json from Crowdin ([1f60ad2](https://github.com/allnnde/pf2e-esp-translation/commit/1f60ad20049c01581b38bf58690be9f4c5b83510))
+* New translations hazards.json from Crowdin ([12e5474](https://github.com/allnnde/pf2e-esp-translation/commit/12e5474fbae1dd578cffbdcc02fb66d0d3e342c1))
+* New translations hazards.json from Crowdin ([87aac64](https://github.com/allnnde/pf2e-esp-translation/commit/87aac64a6cf2acf969bffd2f7c34a443b2f99754))
+* New translations heritages.json from Crowdin ([a9365c5](https://github.com/allnnde/pf2e-esp-translation/commit/a9365c5bc5929de4d759684bab5b36033da1cbc2))
+* New translations heritages.json from Crowdin ([35b17cc](https://github.com/allnnde/pf2e-esp-translation/commit/35b17ccde8ddf3bdba2186147330511737332680))
+* New translations spells.json from Crowdin ([2ea8b2f](https://github.com/allnnde/pf2e-esp-translation/commit/2ea8b2f0a8be683c5f8fa9e65d09d9677b196fcd))
+* New translations spells.json from Crowdin ([19ca72e](https://github.com/allnnde/pf2e-esp-translation/commit/19ca72e71954f328a531360d68a30168e46c9c1f))
+
+
+
 ## [5.16.2](https://github.com/allnnde/pf2e-esp-translation/compare/v5.16.1...v5.16.2) (2024-04-05)
 
 
@@ -62,16 +78,6 @@
 ### Bug Fixes
 
 * sycro german repo ([1ba19e7](https://github.com/allnnde/pf2e-esp-translation/commit/1ba19e7c8cb7156e11d2c84b5ca67bd592914d08))
-
-
-
-## [5.15.6](https://github.com/allnnde/pf2e-esp-translation/compare/v5.15.5...v5.15.6) (2024-03-30)
-
-
-### Bug Fixes
-
-* New translations actions.json from Crowdin ([f97a16d](https://github.com/allnnde/pf2e-esp-translation/commit/f97a16d20d502e36883a2667abf942460e5906d5))
-* New translations journals.json from Crowdin ([f9ced67](https://github.com/allnnde/pf2e-esp-translation/commit/f9ced67079160e08506fd3afc62e1e2a8ca5c010))
 
 
 
