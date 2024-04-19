@@ -7,7 +7,7 @@ import { PF2_DEFAULT_MAPPING } from "../helper/pack-extractor/constants.js";
 // Read config file
 const configFile = JSON.parse(readFileSync("./src/pack-extractor/pack-extractor-config.json", "utf-8"));
 
-const CONFIG = {...configFile, mappings: PF2_DEFAULT_MAPPING}
+const CONFIG = { ...configFile, mappings: PF2_DEFAULT_MAPPING };
 
 // Replace linked mappings and savePaths with actual data
 replaceProperties(CONFIG.mappings, ["subMapping"], CONFIG.mappings);
