@@ -138,6 +138,9 @@ Hooks.once("init", () => {
             translateTime: (data) => {
                 return game.langEsPf2e.translateValue("time", data);
             },
+            translateTokens: (data, translation, _dataObject, _translatedCompendium) => {
+                return game.langEsPf2e.translateArrayOfObjects(data, translation, "token");
+            },
             translateTokenName: (data, translation, _dataObject, _translatedCompendium, translationObject) => {
                 return game.langEsPf2e.translateTokenName(data, translation, translationObject);
             },

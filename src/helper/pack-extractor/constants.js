@@ -146,6 +146,10 @@ export const PF2_DEFAULT_MAPPING = {
             path: "tiles",
             extractOptions: { subMapping: "tile" },
         },
+        tokens: {
+            path: "tokens",
+            extractOptions: { subMapping: "token", specialExtraction: "tokens" },
+        },
     },
     heightening: {
         duration: {
@@ -342,5 +346,13 @@ export const PF2_DEFAULT_MAPPING = {
     },
     tile: {
         texture: { path: "texture.src", extractOptions: { addToMapping: false } },
+    },
+    token: {
+        name: { path: "name" },
+        items: {
+            path: "delta.items",
+            converter: "translateActorItems",
+            extractOptions: { subMapping: "item", specialExtraction: "actorItems" },
+        },
     },
 };
