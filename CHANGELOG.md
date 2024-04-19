@@ -1,3 +1,19 @@
+# [5.17.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.16.3...v5.17.0) (2024-04-19)
+
+
+### Bug Fixes
+
+* New translations equipment.json from Crowdin ([1f70bee](https://github.com/allnnde/pf2e-esp-translation/commit/1f70beee0a7616f274f609e90ad47da04707fe76))
+* New translations rollable-tables.json from Crowdin ([7f7a032](https://github.com/allnnde/pf2e-esp-translation/commit/7f7a03237940fec9edf24a5e712379940ab0aaa9))
+
+
+### Features
+
+* add new files ([a53a300](https://github.com/allnnde/pf2e-esp-translation/commit/a53a300aed48511cf09bfaca3d7e94cdb432a639))
+* sync to german repo ([ac4dcec](https://github.com/allnnde/pf2e-esp-translation/commit/ac4dcec73b62695e753369d5f1ff9d6a421627c2))
+
+
+
 ## [5.16.3](https://github.com/allnnde/pf2e-esp-translation/compare/v5.16.2...v5.16.3) (2024-04-06)
 
 
@@ -69,15 +85,6 @@
 
 * automatic json extract to traslate ([c76a053](https://github.com/allnnde/pf2e-esp-translation/commit/c76a053b85200ddb262bfbcf193bd9d0ac743170))
 * update glorary ([21a0b00](https://github.com/allnnde/pf2e-esp-translation/commit/21a0b00a0d0519a39ffabc8664135d815efbcdbd))
-
-
-
-## [5.15.7](https://github.com/allnnde/pf2e-esp-translation/compare/v5.15.6...v5.15.7) (2024-04-04)
-
-
-### Bug Fixes
-
-* sycro german repo ([1ba19e7](https://github.com/allnnde/pf2e-esp-translation/commit/1ba19e7c8cb7156e11d2c84b5ca67bd592914d08))
 
 
 
