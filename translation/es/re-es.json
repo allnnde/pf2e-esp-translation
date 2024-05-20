@@ -124,6 +124,7 @@
         "Mandibles": "Mandíbulas",
         "MetalShard": "fragmento de metal",
         "Moonbeam": "Rayo de luna",
+        "Nectar": "Nectar",
         "PiercingHymn": "Himno penetrante",
         "Pincer": "pinza",
         "Pseudopod": "Seudópodo",
@@ -589,6 +590,7 @@
       "Custom": {
         "AdamantineBludgeoning": "contundente adamantino",
         "AllDamageFromArcaneSpells": "all damage from arcane spells",
+        "AllDamageFromFungus": "all damage from fungus",
         "AllDamageFromSpells": "todo el daño de los hechizos",
         "AllDamageFromUndead": "todo el daño de los no-muertos",
         "AllMagicalDamage": "todo daño mágico",
@@ -1032,6 +1034,9 @@
       },
       "Surgeon": {
         "MedicalMalpracticeCriticalSuccess": "Negligencia médica (éxito crítico)"
+      },
+      "Target": {
+        "GrabbedByNPC": "You have the target grabbed."
       },
       "TheGreatFlood": {
         "LeadingHead": "Leading Head",
@@ -1795,6 +1800,15 @@
         "FireNote": "No puedes lanzar hechizos de fuego ni utilizar acciones con el rasgo de fuego bajo el agua.",
         "RangedNote": "Los ataques a distancia que causan daño contundente o cortante fallan automáticamente si el atacante o el objetivo está bajo el agua, y los ataques penetrantes a distancia realizados por una criatura bajo el agua o contra un objetivo bajo el agua ven sus incrementos de alcance reducidos a la mitad."
       },
+      "Ardande": {
+        "CausticNectar": {
+          "Note": "On a critical hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}."
+        },
+        "PotentNectar": {
+          "PersistentDamage": "Persistent Acid Damage",
+          "SplashDamage": "Acid Splash Damage"
+        }
+      },
       "ArtokussFire": {
         "Note": "El fuego de tu alquimista inflige 1d4 de daño de fuego persistente adicional, y las criaturas deben realizar dos pruebas fijas exitosas para poner fin a la condición (o una prueba, si tuvieron recuperación asistida que reduce la prueba fija a CD 10). Su fuego mejorado arde bajo el agua y el agua no ayuda a acabar con el daño persistente."
       },
@@ -1865,13 +1879,16 @@
           "Snake": "Serpiente",
           "Wolf": "Lobo"
         },
-        "Elemental": {
-          "ElementalEvolutionLabel": "Daño de ira elemental"
+        "Decay": {
+          "ToggleLabel": "Rotting Rage"
         },
         "Dragon": {
           "NormalRageDamage": "Inflige daño de ira normal",
           "ToggleLabel": "Furia dracónica",
           "Prompt": "Selecciona un dragón."
+        },
+        "Elemental": {
+          "ElementalEvolutionLabel": "Daño de ira elemental"
         },
         "Giant": {
           "Prompt": "Selecciona un tipo de energía para la resistencia furiosa."
@@ -1885,6 +1902,9 @@
           "CriticalSuccessVirulent": "Cada éxito crítico reduce la etapa en 2 para un veneno alquímico virulento, una droga o una adicción.",
           "Success": "Cada una de tus tiradas de salvación exitosas contra un veneno alquímico, una droga o una adicción reduce el nivel en 2.",
           "SuccessVirulent": "Cada una de tus tiradas de salvación exitosas contra un veneno alquímico virulento, una droga o una adicción reduce el nivel en 1."
+        },
+        "Ligneous": {
+          "ToggleLabel": "Wooden Rage"
         },
         "Spirit": {
           "NegativeDamage": "Daño vacío",
@@ -2051,6 +2071,12 @@
           "AllowedDrops": "Característica de clase de clérigo de primer nivel",
           "Prompt": "Seleccione una doctrina."
         },
+        "EmblazonAntimagic": {
+          "WeaponNote": "If you critically hit with the weapon, you can attempt to counteract a spell on your target, using half your level, rounded up, as the counteract level. If you attempt to do so, the emblazoned symbol immediately disappears."
+        },
+        "EmblazonEnergy": {
+          "MatchingDomainPrompt": "Matching domain?"
+        },
         "Martyr": {
           "Note": "You lose @Damage[(@item.rank)d8] Hit Points, which can't be reduced or mitigated in any way, and your ally regains an equal number of Hit Points."
         },
@@ -2138,6 +2164,10 @@
           "BoneSpikesReach": "Púas de hueso: alcance",
           "ConsumeEnergyRange": "Consumir energía: mejorar el alcance",
           "ConsumeEnergyStrikes": "Consumir energía: mejorar los ataques",
+          "DefensiveGrowthExplodingShield": "Defensive Growth: Exploding Shield",
+          "DefensiveGrowthStrongerShield": "Defensive Growth: Stronger Shield",
+          "DisperseIntoPetalsBlossomVortex": "Disperse Into Petals: Blossom Vortex",
+          "DisperseIntoPetalsExtendedFlight": "Disperse Into Petals: Extended Flight",
           "DistantWanderingFly": "Vagabundeo distante: vuelo",
           "DistantWanderingQuick": "Vagabundeo distante: acelerado",
           "EerieFlickerCompress": "Parpadeo misterioso: comprimir parpadeo",
@@ -2148,15 +2178,27 @@
           "GhostlyGraspPush": "Agarre fantasmal: empujar",
           "HighSpeedRegenerationRecovery": "Regeneración de alta velocidad: regeneración de emergencia",
           "HighSpeedRegenerationSpeed": "Regeneración de alta velocidad: aumento de velocidad",
+          "IrradiatePoison": "Irradiate: Poison Damage",
+          "IrradiateRadiusIncrease": "Irradiate: Increase Radius",
           "Prompt": "Selecciona un despertar para una dote desviada.",
           "PropulsiveLeapSpeed": "Salto propulsivo: aumento de velocidad",
           "PropulsiveLeapWeapon": "Salto propulsor: arma improvisada",
+          "ReleaseSporesSickening": "Release Spores: Sickening Smell",
+          "ReleaseSporesToxic": "Release Spores: Toxic Spores",
+          "RottenSlurrySplash": "Rotten Slurry: Splash",
+          "RottenSlurryPersistent": "Rotten Slurry: Persistent",
+          "SproutFruitPlentiful": "Sprout Fruit: Plentiful",
+          "SproutFruitPotent": "Sprout Fruit: Potent",
           "StormingBreathEscape": "Aliento tormentoso: escape rápido",
           "StormingBreathProne": "Aliento tormentoso: tumbado a los golpes",
           "TectonicStompStone": "Pisotón tectónico: cubierta de piedra",
           "TectonicStompStun": "Pisotón tectónico: aturde a los enemigos",
           "TitanSwingBleed": "Columpio de Titán: Sangrado",
-          "TitanSwingProne": "Columpio Titán: Rechazo"
+          "TitanSwingProne": "Columpio Titán: Rechazo",
+          "UnleashTheBlightDebilitating": "Unleash The Blight: Debilitating",
+          "UnleashTheBlightInfectious": "Unleash The Blight: Infectious",
+          "VineLashCone": "Vine Lash: 30-Foot Cone",
+          "VineLashConstrict": "Vine Lash: Constrict"
         },
         "BoneSpikes": {
           "ReachLabel": "Extender las espinas óseas",
@@ -2656,6 +2698,25 @@
         },
         "Prompt": "Seleccione un traje de grada."
       },
+      "HeroPointDeck": {
+        "AncestralMight": {
+          "FirstBoostPrompt": "Select one of your ancestry boosts, or pick any if it only had free boosts.",
+          "SecondBoostPrompt": "Select another one of your ancestry boosts. Skip if it only had free boosts.",
+          "SkipChoice": "Skip"
+        },
+        "AuraOfProtection": {
+          "SpellRankPrompt": "Select the rank of the spell you just cast."
+        },
+        "CalledFoe": {
+          "Note": "This effect lasts until the end of your next turn or until you critically hit the designated foe, whichever comes first."
+        },
+        "CriticalMoment": {
+          "Note": "If you still fail this check, you become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}."
+        },
+        "DesperateSwing": {
+          "Note": "If the attack fails, you release your weapon, or drop @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} if you were using an unarmed attack or otherwise can't release your weapon."
+        }
+      },
       "Hobgoblin": {
         "AgonizingRebuke": {
           "Note": "Cuando desmoralizas exitosamente a un enemigo, ese enemigo toma [[/r 1d4[mental]]]{1d4 mental damage} al comienzo de cada uno de sus turnos, siempre y cuando permanezca Asustado y continúe en combate contigo. Si tienes competencia maestra en Intimidación, el daño aumenta a [[/r 2d4[mental]]]{2d4} , y si tienes competencia legendaria, el daño aumenta a [[/r 3d4[mental]]]{3d4} ."
@@ -2981,6 +3042,7 @@
         "AdvancedTenguWeapons": "Armas Tengu avanzadas",
         "AdvancedVanaraWeapons": "Armas avanzadas de Vanara",
         "AdvancedVishkanyaWeapons": "Armas avanzadas de Vishkanya",
+        "BayonetsAndReinforcedStocks": "Bayonets and Reinforced Stocks",
         "MartialAzarketiWeapons": "Armas marciales Azarketi",
         "MartialBombsFirearms": "Bombas marciales y armas de fuego",
         "MartialCatfolkWeapons": "Armas felinas marciales",
@@ -3024,6 +3086,10 @@
         "SimpleFirearmsCrossbows": "Armas de fuego y ballestas simples",
         "SimpleMartialBows": "Arcos simples y marciales",
         "SimpleMartialTwoHandedMeleeWeapons": "Armas cuerpo a cuerpo simples y marciales a dos manos"
+      },
+      "MechanicalSymbiosis": {
+        "FailureNote": "You become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}",
+        "CriticalFailureNote": "You become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}"
       },
       "MechanicalTorch": {
         "Label": "La antorcha mecánica está encendida.",
@@ -3077,6 +3143,11 @@
           "CriticalNote": "El objetivo recibe [[/r (1+@weapon.system.runes.striking)[persistent,poison]]]{persistent poison damage} igual al número de dados de daño del arma.",
           "HoodedNote": "El objetivo también es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} hasta el comienzo de tu siguiente turno.",
           "StrikeLabel": "saliva venenosa"
+        }
+      },
+      "Nephilim": {
+        "Pitborn": {
+          "AllowedDrops": "1st level Athletics skill feat"
         }
       },
       "Notes": {
@@ -3161,6 +3232,7 @@
       "Prompt": {
         "AdvancedMulticlassFeat": "Selecciona una dote de clase hasta la mitad del nivel de tu personaje.",
         "Alignment": "Seleccione una alineación.",
+        "Benefit": "Select a benefit.",
         "CantripOrNonCantrip": "Selecciona un hechizo con truco o sin truco.",
         "ClassDCAbilityScore": "Seleccione el atributo clave de la clase DC.",
         "Color": "Seleccione un color.",
@@ -3191,6 +3263,7 @@
         "Sanctification": "Seleccione una santificación.",
         "SecondImplement": "Seleccione un segundo implemento.",
         "Shield": "Selecciona un escudo.",
+        "ShieldOrWeapon": "Select shield or weapon.",
         "Shillelagh": "Seleccione un club o personal.",
         "Skill": "Selecciona una habilidad.",
         "SkillFeat": "Selecciona una dote de habilidad.",
