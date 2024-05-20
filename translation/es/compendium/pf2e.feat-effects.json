@@ -40,7 +40,7 @@
     },
     "Effect: Alloy Flesh and Steel": {
       "name": "Effect: Alloy Flesh and Steel",
-      "description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.AkUvfczLFJcsv3Sp]{Alloy Flesh and Steel}</p>\n<p>Your body transforms entirely into flexible iron. You gain resistance 10 to physical damage, except adamantine. You're immune to death effects, disease, drained, fatigued, healing, nonlethal attacks, paralyzed, poison, sickened, vitality, and void; any of those conditions you had when the spell is cast are suspended until the spell ends, then return with their remaining duration when the spell ends. </p>\n<p>Your fist Strikes have a 1d10 damage die, and your metal spells deal one additional die of damage (of the same damage die and damage type the spell uses). Your metal Elemental Blasts deal an additional die of damage.</p>"
+      "description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.AkUvfczLFJcsv3Sp]{Alloy Flesh and Steel}</p>\n<p>Your body transforms entirely into flexible iron. You gain resistance 10 to physical damage, except adamantine. You're immune to death effects, disease, drained, fatigued, healing, nonlethal attacks, paralyzed, poison, sickened, vitality, and void; any of those conditions you had when the spell is cast are suspended until the spell ends, then return with their remaining duration when the spell ends.</p>\n<p>Your fist Strikes have a 1d10 damage die, and your metal spells deal one additional die of damage (of the same damage die and damage type the spell uses). Your metal Elemental Blasts deal an additional die of damage.</p>"
     },
     "Effect: Anadi Venom": {
       "name": "Efecto: Veneno de Anadi",
@@ -226,6 +226,10 @@
     "Effect: Bone Swarm": {
       "name": "Efecto: Enjambre de huesos",
       "description": "<p> Te vuelves enorme, obtienes el rasgo de enjambre y obtienes una velocidad de mosca de 40 pies. Como enjambre, tienes las siguientes características. </p>\n <ul>\n <li> Eres inmune a las condiciones @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} , @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} y ​​@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado}. </li>\n <li> Tienes debilidad 5 al daño de área y salpicadura. </li>\n <li> Puedes ocupar el mismo espacio que otras criaturas y debes hacerlo para usar tu habilidad dañina.</li>\n <li> Como actividad de 2 acciones, puedes infligir @Damage[10d6[bludgeoning]] daño a todas las criaturas que comparten tu espacio ( @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] salvación con una CD igual a la CD de tu clase o la CD del hechizo, lo que sea mayor). </li>\n <li> No puedes hablar, lanzar hechizos, utilizar acciones de manipulación que requieran tus manos, activar objetos mágicos ni realizar golpes con tu cuerpo normal. </li>\n <li> No obtienes la habilidad de mente de enjambre, por lo que aún te afectan normalmente los efectos mentales.También conservas los beneficios de las hazañas esqueléticas que no requieren comunicación ni el uso de las manos. </li>\n </ul>"
+    },
+    "Effect: Born to the Trees": {
+      "name": "Effect: Born to the Trees",
+      "description": "<p>You gain a climb Speed equal to your Speed and a +1 circumstance bonus to Acrobatics checks to @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance} and Athletics checks to @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Long Jump} and @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{High Jump}.</p>"
     },
     "Effect: Brightness Seeker": {
       "name": "Efecto: Buscador de brillo",
@@ -673,12 +677,35 @@
       "name": "Efecto: Dedicación elementalista",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.feats-srd.Item.tx9pkrpmtqe4FnvS]{Elementalist Dedication} </p>\n <p> Cada día, cuando haces tus preparativos diarios, puedes sintonizarte con un elemento de tu elección de tu filosofía elemental. Obtienes una resistencia equivalente a la mitad de tu nivel (mínimo 1 resistencia) contra el daño infligido por efectos con tu rasgo elemental sintonizado. Esta sintonía dura hasta la próxima vez que hagas tus preparativos diarios. </p>"
     },
-    "Effect: Emblazon Antimagic (Weapon)": {
-      "name": "Efecto: Emblazon Antimagic (Arma)",
-      "description": "<p> Concedido por @UUID[Compendium.pf2e.feats-srd.Item.xAFdoKl7aOP9rVkl]{Emblazon Antimagic} . </p>\n <p> Cuando el portador del arma golpea críticamente con el arma, puede intentar contrarrestar un hechizo en su objetivo, usando la mitad de su nivel, redondeado hacia arriba, como rango de contraataque. Si intentan hacerlo, el símbolo estampado desaparece inmediatamente. </p>",
+    "Effect: Emblazon Antimagic": {
+      "name": "Effect: Emblazon Antimagic",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.xAFdoKl7aOP9rVkl]{Emblazon Antimagic}</p>\n<ul>\n<li><strong>Shield</strong> When the wielder has the shield raised, they gain the shield's circumstance bonus to saving throws against magic.</li>\n<li><strong>Weapon</strong> When the weapon's wielder critically hits with the weapon, they can attempt to counteract a spell on their target, using half their level, rounded up, as the counteract rank.</li>\n</ul>",
       "rules": {
-        "1": {
-          "text": "Cuando golpeas críticamente con esta arma, puedes intentar contrarrestar un hechizo en tu objetivo, usando la mitad de tu nivel (redondeado hacia arriba) como rango de contraataque. Si hace esto, el símbolo estampado desaparece inmediatamente."
+        "0": {
+          "choices": {
+            "0": {
+              "label": "TYPES.Item.shield"
+            },
+            "1": {
+              "label": "TYPES.Item.weapon"
+            }
+          }
+        }
+      }
+    },
+    "Effect: Emblazon Armament": {
+      "name": "Effect: Emblazon Armament",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.7RFjTTzznsdPcaYB]{Emblazon Armament}</p>\n<ul>\n<li><strong>Shield</strong> The shield gains a +1 status bonus to its Hardness.</li>\n<li><strong>Weapon</strong> The wielder gains a +1 status bonus to damage rolls with the weapon.</li>\n</ul>",
+      "rules": {
+        "0": {
+          "choices": {
+            "0": {
+              "label": "TYPES.Item.shield"
+            },
+            "1": {
+              "label": "TYPES.Item.weapon"
+            }
+          }
         }
       }
     },
@@ -689,6 +716,22 @@
     "Effect: Emblazon Armament (Weapon)": {
       "name": "Efecto: Armamento de blasón (arma)",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.feats-srd.Item.7RFjTTzznsdPcaYB]{Emblazon Armament} </p>\n <p> El portador obtiene una bonificación de estado de +1 a las tiradas de daño con el arma elegida </p>"
+    },
+    "Effect: Emblazon Energy": {
+      "name": "Effect: Emblazon Energy",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.rKZE8BA9IQHSSWoW]{Emblazon Energy}</p>\n<ul>\n<li><strong>Shield</strong> Choose acid, cold, electricity, fire, or sonic. The wielder gains the shield's circumstance bonus to saving throws against that damage type.</li>\n<li><strong>Weapon</strong> Choose acid, cold, electricity, fire, or sonic. The weapon deals an extra 1d4 damage of that type. Increase this extra damage to 1d6 if you have a domain spell with a trait matching that type.</li>\n</ul>",
+      "rules": {
+        "0": {
+          "choices": {
+            "0": {
+              "label": "TYPES.Item.shield"
+            },
+            "1": {
+              "label": "TYPES.Item.weapon"
+            }
+          }
+        }
+      }
     },
     "Effect: Emblazon Energy (Weapon, Acid)": {
       "name": "Efecto: Emblazon Energy (Arma, Ácido)",
@@ -923,6 +966,15 @@
     "Effect: Fulminating Shot": {
       "name": "Efecto: Disparo Fulminante",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.feats-srd.Item.o3J79hnr00ztcwtT]{Fulminating Shot} </p>\n <p> Elige ácido, frío, electricidad o fuego. Si golpeas con tu próxima tirada de ataque usando un arma de fuego o una ballesta antes del final de tu turno, infliges 1d6 daños adicionales de este tipo. En el nivel 12, esto aumenta a 2d6 de daño adicional, y en el nivel 18, aumenta a 3d6 de daño adicional. </p>"
+    },
+    "Effect: Fungal Rot": {
+      "name": "Effect: Fungal Rot",
+      "badges": [
+        "Mild",
+        "Moderate",
+        "Severe"
+      ],
+      "description": "<p>As you use your powers, radioactive molds and fungi consume your flesh, making you look (and feel) like a rotting, walking corpse.</p>\n<p><strong>Mild Backlash</strong> You take damage equal to your level as your body decays.</p>\n<p><strong>Moderate Backlash</strong> You take damage equal to your level and become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Severe Backlash</strong> You take damage equal to twice your level and become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 4}. You can't reduce the value of your sickened condition below 1 for 1 hour.</p>"
     },
     "Effect: Furnace Form": {
       "name": "Efecto: Forma de horno",
@@ -1237,6 +1289,15 @@
           "label": "Paso liberador (vs. no-muertos)"
         }
       }
+    },
+    "Effect: Life-Draining": {
+      "name": "Effect: Life-Draining",
+      "badges": [
+        "Mild",
+        "Moderate",
+        "Severe"
+      ],
+      "description": "<p>The flourishing plant life that covers your body is a part of you, but it draws nutrients from your blood, making you weaker the more the flowers grow. As the plants grow, you need to spend more and more time recuperating. Recuperating in the sunshine lowers this duration, as it feeds the flowers, speeding your recovery.</p>\n<p><strong>Mild Backlash</strong> You become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} as the plants feed off your life force. This condition lasts until you spend 3 consecutive actions to rest and do nothing.</p>\n<p><strong>Moderate Backlash</strong> You become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} until you spend 20 minutes recuperating by resting and doing nothing. If you spend this time basking in sunshine, it instead takes 10 minutes.</p>\n<p><strong>Severe Backlash</strong> You become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} until you spend 2 hours napping. While napping, you're @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and can't take actions or engage in exploration activities, but a creature can wake you with a single action with the manipulate trait. If you spend this time napping in natural sunlight, it instead takes 1 hour. You're fatigued until you can get a full night's rest.</p>"
     },
     "Effect: Life-Giving Magic": {
       "name": "Efecto: Magia que da vida",
@@ -1635,21 +1696,13 @@
       "name": "Efecto: Dedicación del Reanimador",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.feats-srd.Item.5Cm2TYHzoO2DbQNM]{Reanimator Dedication} </p>\n <p> Los muertos vivientes que animas obtienen un bonificador de estado +1 a las tiradas de ataque, CA, tiros de salvación y pruebas de habilidad durante @UUID[Compendium.pf2e.spells-srd.Item.9WGeBwIIbbUuWKq0]{Summon Undead} . </p>"
     },
+    "Effect: Rebirth In Living Stone": {
+      "name": "Effect: Rebirth In Living Stone",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.mNiJvsbyxdLBnTRs]{Rebirth In Living Stone}<br /><br /></p>\n<p>Rock overflows from within you to consume your form before cracking open to reveal your body transformed into living stone. You gain 40 temporary Hit Points. You're immune to critical hits and precision damage. You can't be pushed, pulled, or tripped while you're standing on earth or stone. Your earth Elemental Blasts deal an additional 1d10 damage of their normal type. These benefits last until the end of your next turn, but you can Sustain them up to 1 minute. After you gain temporary Hit Points from this impulse, you can't do so again for 10 minutes.</p>\n<hr />\n<p><strong>Level (20th)</strong> You gain 50 temporary Hit Points.</p>"
+    },
     "Effect: Recall Under Pressure": {
       "name": "Efecto: Recuperar bajo presión",
-      "description": "<p> Obtienes una bonificación de estado de +1 a las tiradas de salvación durante el resto del encuentro de combate a medida que tu moral se eleva o una bonificación de estado de +2 si la carta que robaste era del palo de los Libros. </p>",
-      "rules": {
-        "0": {
-          "choices": {
-            "0": {
-              "label": "UI.RuleElements.ChoiceSet.NoLabel"
-            },
-            "1": {
-              "label": "UI.RuleElements.ChoiceSet.YesLabel"
-            }
-          }
-        }
-      }
+      "description": "<p> Obtienes una bonificación de estado de +1 a las tiradas de salvación durante el resto del encuentro de combate a medida que tu moral se eleva o una bonificación de estado de +2 si la carta que robaste era del palo de los Libros. </p>"
     },
     "Effect: Reckless Abandon (Barbarian)": {
       "name": "Efecto: Abandono imprudente (Bárbaro)",
@@ -1959,6 +2012,10 @@
       "name": "Efecto: desatar la psique",
       "description": "<p> Cuando lanzas un hechizo dañino, obtienes una bonificación de estado a su daño igual al doble del rango del hechizo. Esto se aplica sólo a hechizos que no tienen una duración y que lanzas usando hechizos psíquicos. </p>"
     },
+    "Effect: Unwavering Resilience": {
+      "name": "Effect: Unwavering Resilience",
+      "description": "<p>You gain a number of temporary Hit Point equal to your level.</p>"
+    },
     "Effect: Ursine Avenger Form": {
       "name": "Efecto: Forma de Vengador Ursino",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.feats-srd.Item.zV4vzcl7eoVewz5p]{Ursine Avenger Form} </p>\n <p> Obtienes un ataque desarmado con mandíbulas que causa 1d8 de daño perforante y un ataque desarmado con garras que causa 1d6 de daño cortante y tiene el rasgo de agilidad. </p>"
@@ -2247,10 +2304,6 @@
     "Stance: Ravel Of Thorns": {
       "name": "Postura: Enmarañamiento de espinas",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.feats-srd.Item.mHvkBdBN4gs6CH1g]{Ravel Of Thorns} </p>\n <p> Enredaderas espinosas crecen en patrones geométricos en las superficies de tu aura cinética. Una criatura que comienza su turno entre las espinas sufre una penalización de circunstancia de -10 pies a su Velocidad hasta que abandona el área. Las espinas son terreno peligroso. Una criatura sufre @Damage[(floor((@actor.level -4)/4)+2)[piercing]] de daño cada vez que entra en una de estas casillas. Si algún cuadrado en el que crecen las espinas es agua o tierra, duplica el daño al terreno peligroso para todas las espinas. Site mueves, las espinas desaparecen; Nuevas espinas crecen al final de tu turno. </p>\n <hr />\n <p> <strong> Nivel (+4) </strong> El daño aumenta en 1. </p>"
-    },
-    "Stance: Rebirth In Living Stone": {
-      "name": "Postura: Renacimiento En Piedra Viva",
-      "description": "<p> Concedido por @UUID[Compendium.pf2e.feats-srd.Item.mNiJvsbyxdLBnTRs]{Rebirth In Living Stone} <br /> <br /> </p>\n <p> La roca se desborda desde tu interior para consumir tu forma antes de abrirse para revelar tu cuerpo transformado en piedra viva. Obtienes 40 puntos de vida temporales. Eres inmune a los golpes críticos y al daño de precisión. No te pueden empujar, tirar ni hacer tropezar mientras estés parado sobre tierra o piedra. Tus Explosiones elementales de tierra causan 1d10 de daño adicional de su tipo normal. Estos beneficios duran hastaal final de tu siguiente turno, pero puedes mantenerlos hasta 1 minuto. Después de ganar puntos de vida temporales con este impulso, no podrás volver a hacerlo durante 10 minutos. </p>\n <hr />\n <p> <strong> Nivel (20) </strong> Obtienes 50 puntos de vida temporales. </p>"
     },
     "Stance: Reflective Ripple Stance": {
       "name": "Postura: Postura ondulada reflectante",
