@@ -265,6 +265,10 @@
       "name": "Cambiar de forma (Kitsune)",
       "description": "<p> Te transformas en una forma alternativa específica determinada por tu herencia. Si tu herencia no incluye una forma, tu forma alternativa es una forma sin cola, que es una ascendencia humanoide Mediana común que prevalece en el lugar donde creciste (típicamente humano). Esta forma tiene la misma edad y tipo de cuerpo que su forma verdadera y tiene rasgos físicos más o menos análogos, como el color del cabello. Usar Cambiar Forma cuenta como crear un disfraz para el uso de Engaño por Suplantación. Pierdes cualquier golpe desarmado.obtenido de una herencia kitsune o hazaña de ascendencia en esta forma. Puedes permanecer en tu forma alternativa indefinidamente y puedes volver a tu verdadera forma kitsune usando esta acción nuevamente. </p>"
     },
+    "Change Shape (Werecreature)": {
+      "name": "Change Shape (Werecreature)",
+      "description": "<p>You transform into your hybrid or animal shape. Your equipment transforms with you and continues to provide bonuses, but your animal shape cannot use weapons, shields, or other held items and cannot use manipulate actions. You gain a movement speed, unarmed attacks, and potentially other abilities based on your werecreature type. These unarmed attacks are in the brawling group. You can Dismiss the effect to return to your humanoid shape, and you resume your humanoid shape automatically if you're reduced to 0 Hit Points.</p>"
+    },
     "Change Tradition Focus": {
       "name": "Cambiar el enfoque de la tradición",
       "description": "<p> <strong> Requisitos </strong> Estás en un duelo y estás entrenado en la habilidad para la tradición a la que estás cambiando tu enfoque (Arcano para lo arcano, Ocultismo para lo oculto, Naturaleza para lo primordial o Religión para lo divino). </p>\n <hr />\n <p> Cambias tu enfoque de tradición a otra tradición mágica. </p>"
@@ -369,9 +373,17 @@
       "name": "Crear Una Distracción",
       "description": "<p> Con un <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"gesture\"> gesto </span> , un <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"trick\"> truco </span> , o algunas <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"distracting-words\"> palabras que distraen </span> , puedes crear una distracción que atraiga la atención de las criaturas a otra parte. Si usas un gesto o truco, esta acción obtiene el rasgo de manipulación. Si utiliza palabras que distraen, adquiere rasgos auditivos y lingüísticos. </p>\n <p> Intenta una única prueba de Engaño y compárala con las CD de Percepción de las criaturas cuya atención estás intentandopara desviar. Tengas éxito o no, las criaturas que intentas desviar obtienen un bono de circunstancia +4 a su CD de Percepción contra tus intentos de Crear una Desviación durante 1 minuto. </p>\n <hr />\n <p> <strong> Éxito </strong> Te conviertes en @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC] {Escondido} para cada criatura cuya CD de Percepción sea menor o igual a tu resultado. (La condición oculta te permite @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4] {Sneak} alejarte). Esto dura hasta el final de tu turno o hasta que lo hagas.cualquier cosa excepto Dar un paso o usar la habilidad Sigilo para esconderse o escabullirse. Si golpeas a una criatura, la criatura permanece @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] {Desprevenido} contra ese ataque, y luego eres observado. Si haces cualquier otra cosa, serás observado justo antes de actuar, a menos que el DJ determine lo contrario. </p>\n <p> <strong> Fallo </strong> No desvías la atención de ninguna criatura cuya CD de Percepción exceda tu resultado, y esas criaturas son conscientes de que estabas tratando de engañar.a ellos. </p>"
     },
+    "Dampening Harmonics": {
+      "name": "Dampening Harmonics",
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> You establish a force field that grants you resistance 10 to damage dealt by spells and magical abilities with the trait of your magiphage ability, except for force damage. The force field lasts for 10 minutes. Each time the field prevents damage, the duration decreases by 1 minute.</p>"
+    },
     "Daydream Trance": {
       "name": "Trance de ensueño",
       "description": "<p> Caes en un trance medio dormido. Esto dura 1 minuto o hasta que caigas @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf] {Inconsciente}, lo que ocurra primero. Puedes terminar voluntariamente tu trance realizando una sola acción, que tiene un rasgo de concentrado, y logrando una salvación @Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] contra tu propia DC de clase o DC de hechizo, lo que sea mayor. Una vez que termine tu trance, no podrás volver a entrar en Daydream Trance durante 1 minuto. Mientras estás en trance, obtienes los siguientes efectos: </p>\n <ul><li> Obtienes una bonificación de estado de +1 a las salvaciones de Voluntad. Este bono aumenta a +2 contra efectos mentales. Si eres legendario en Ocultismo, la bonificación contra los efectos mentales aumenta a +3. </li>\n <li> Recibes una penalización de -1 a las pruebas de Percepción y tiradas de iniciativa. </li>\n </ul>"
+    },
+    "Dazzle Seeker": {
+      "name": "Dazzle Seeker",
+      "description": "<p><strong>Trigger</strong> A creature attempts a flat check to target you due to you being @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} from it</p>\n<hr />\n<p><strong>Effect</strong> You flash your bright scales in the creature's eyes, making it hard for them to pinpoint your exact location. The creature must roll the flat check twice and take the worse result.</p>"
     },
     "De-Animating Gestures (False)": {
       "name": "Gestos desanimadores (falso)",
@@ -721,6 +733,10 @@
       "name": "Aligerar",
       "description": "<p> Te esfuerzas para moverte al doble de tu velocidad de viaje. Puedes Aligerar tan sólo tantos minutos como tu modificador por Constitución x 10 (mínimo 10 minutos). Si estás en un grupo que Aligera, utiliza el menor modificador por Constitución de todo el grupo para determinar la rapidez con que el grupo puede Aligerar junto. </p>"
     },
+    "I Defy You!": {
+      "name": "I Defy You!",
+      "description": "<p><strong>Trigger</strong> You fail a save against a mental effect</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> You reroll the triggering save and must take the second result.</p>"
+    },
     "Identify Alchemy": {
       "name": "Identificar Alquimia",
       "description": "<p> <strong> Requisitos </strong> Estás sosteniendo o usando un @UUID[Compendium.pf2e.equipment-srd.Item.4ftXXUCBHcf4b0MH] {Alchemist's Toolkit} . </p>\n <hr />\n <p> Puedes identificar la naturaleza de un objeto alquímico con 10 minutos de prueba utilizando el kit de herramientas del alquimista. Si tu intento se ve interrumpido de alguna manera, debes empezar de nuevo. </p>\n <hr />\n <p> <strong> Éxito </strong> Identificas el elemento y los medios para activarlo. </p>\n <p> <strong> Fracaso</strong> No logra identificar el elemento pero puede intentarlo nuevamente. </p>\n <p> <strong> Fallo crítico </strong> Identificas erróneamente el objeto como otro objeto elegido por el DJ. </p>"
@@ -792,6 +808,14 @@
     "Jumping Jenny": {
       "name": "saltando jenny",
       "description": "<p> <strong> Costo </strong> 2 lotes de reactivos infundidos </p>\n <hr />\n <p> <strong> Efecto </strong> Selecciona una criatura voladora dentro de 60 pies. Hasta el comienzo de tu siguiente turno, cada vez que esa criatura intente Volar, debe superar una prueba de Acrobacia para Maniobrar en Vuelo contra la CD de tus fuegos artificiales, o la acción de Volar se interrumpirá. Si todos los intentos de Volar de la criatura son interrumpidos, al final de su turno, cae inofensivamente ael suelo debajo. Una Jenny saltadora cuesta 2 lotes de reactivos infundidos, en lugar de 1. </p>"
+    },
+    "Lantern Beam": {
+      "name": "Lantern Beam",
+      "description": "<p><strong>Requirements</strong> Your lantern light is shining</p>\n<hr />\n<p><strong>Effect</strong> Your lenses focus your light into a searing beam. You deal @Damage[((max(5,ceil(@actor.level/2)))d4)[fire]] damage to all creatures in a @Template[type:line|distance:30], with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] saving throw against the higher of your class DC or spell DC. Your lantern light then extinguishes, and you can't use this ability or use your lantern light again for [[/r 1d4 #Recharge Lantern Beam]]{1d4 rounds}. At 11th level and every two levels thereafter, the damage increases by 1d4.</p>"
+    },
+    "Lantern Strobe": {
+      "name": "Lantern Strobe",
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> As you pulse your lantern, your emitters flash erratically, disorienting your opponents that see it. Each opponent in a @Template[type:cone|distance:15] must attempt a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] save against your class DC or spell DC (whichever is higher). On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round. On a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round and dazzled for the following round.</p>"
     },
     "Launch Fireworks Display": {
       "name": "Lanzar exhibición de fuegos artificiales",
@@ -1005,6 +1029,10 @@
       "name": "Levantar el cuello",
       "description": "<p> Levantas la cabeza en una posición de golpe. El golpe de colmillos otorgado por tu ascendencia nagaji gana un alcance de 10 pies hasta el final de tu turno. </p>"
     },
+    "Raise Slabs": {
+      "name": "Raise Slabs",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Thick slabs of stone rise around you before tilting over. You deal @Damage[(ceil(@actor.level/2)d6)[bludgeoning]] damage to all adjacent creatures (@Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] against your class DC or spell DC, whichever is higher). On a critical failure, the creature is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. At 3rd level, and every 2 levels thereafter, this damage increases by 1d6.</p>"
+    },
     "Raise a Shield": {
       "name": "Alzar Un Escudo",
       "description": "<p> <strong> Requisitos </strong> Estás empuñando un escudo. </p>\n <hr />\n <p> Colocas el escudo para que te proteja. Cuando has Alzado un escudo, obtienes el bonificador por circunstancia indicado a la CA. Tu escudo permanece alzado hasta el inicio de tu siguiente turno. </p>"
@@ -1201,6 +1229,10 @@
       "name": "Derramar espíritu",
       "description": "<p> <strong> Frecuencia </strong> una vez cada 10 minutos </p>\n <hr />\n <p> <strong> Efecto </strong> El espíritu de tu familiar sale de su cuerpo, dejando atrás su caparazón vacío, antes de volar hacia un enemigo dentro de 20 pies e infligir @Damage[(6+max(0,(ceil((@actor.level -8)/2)*2)))d6[spirit]] daño, con una salvación @Check[type:will|basic:true] contra la CD de tu hechizo. Si el familiar causó daño, luego vuela hacia un aliado dentro de 30 pies del enemigo, restaurando puntos de vida equivalentes a la mitad del daño causado. Tu familiar entoncesSe reforma en su plaza original. A nivel 9, y cada 2 niveles a partir de entonces, el ataque inflige 2d6 de daño adicional. </p>"
     },
+    "Shielding Wave": {
+      "name": "Shielding Wave",
+      "description": "<p>You raise a magical barrier of twisting currents. Until the start of your next turn, the first time you take acid or fire damage, you gain resistance to that damage equal to half your level (minimum 1). The resistance is equal to your level instead if you're submerged in water, if you already Cast a Spell with the water trait, or if you used another ability with the water trait this turn.</p>"
+    },
     "Shove": {
       "name": "Empujar",
       "description": "<p> <strong> Requisitos </strong> Tienes al menos una mano libre. El objetivo no puede ser más de una talla más grande que tú. </p>\n <hr />\n <p> Empujas a una criatura lejos de ti. Intenta una prueba de <span data-pf2-action=\"shove\" data-pf2-glyph=\"A\"> Atletismo </span> contra la CD de Fortaleza de tu objetivo. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> Empujas a tu objetivo hasta 10 pies de distancia de ti. Puedes caminar tras él, pero debes moverte la misma distancia.y en la misma dirección. </p>\n <p> <strong> Éxito </strong> Empujas a tu objetivo hacia atrás 5 pies. Puedes caminar tras él, pero debes moverte la misma distancia y en la misma dirección. </p>\n <p> <strong> Fallo crítico </strong> Pierdes el equilibrio, caes y aterrizas @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60] {Tumbado} . </p>"
@@ -1292,6 +1324,10 @@
     "Stride": {
       "name": "Zancada",
       "description": "<p> Te mueves hasta tu Velocidad (pág. 473). </p>"
+    },
+    "Stridulating Song": {
+      "name": "Stridulating Song",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You circulate magic through your wings, causing them to vibrate at high speeds such that their scraping produces disruptive sounds. You focus the sound at one creature within 30 feet who must succeed at a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] save against your class DC or spell DC (whichever is higher) or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure, as the vibrations disrupt its inner equilibrium. You can Sustain the effect for up to 1 minute; the creature can't recover from the sickened condition as long as you continue your song and it can hear you.</p>"
     },
     "Strike": {
       "name": "Golpear",
@@ -1412,6 +1448,10 @@
     "Treat Wounds": {
       "name": "Tratar Heridas",
       "description": "<p> <strong> Requisitos </strong> Estás usando o sosteniendo un @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY] {Healer's Toolkit} . </p>\n <hr />\n <p> Pasas 10 minutos tratando a una criatura viviente herida (apuntándote a ti mismo, si así lo deseas). Luego, el objetivo es temporalmente @UUID[Compendium.pf2e.feat-effects.Item.Lb4q2bBAgxamtix5] {immune} acciones de Tratar heridas durante 1 hora, pero este intervalo se superpone con el tiempo que dedicaste al tratamiento (por lo que un paciente puede ser tratado una vez por hora, no una vez cada 70 minutos). </p>\n <p> ElLa CD de control de medicina suele ser 15, aunque el DJ puede ajustarla según las circunstancias, como tratar a un paciente afuera en una tormenta o tratar heridas malditas mágicamente. Si eres un experto en Medicina, puedes intentar una prueba de CD 20 para aumentar los puntos de vida recuperados en 10; si eres un maestro en Medicina, puedes intentar una prueba de CD 30 para aumentar los puntos de vida recuperados en 30; y si eres legendario, puedes intentar una prueba de CD 40 para aumentar los puntos de vida recuperados.en 50. El daño causado en una falla crítica sigue siendo el mismo. </p>\n <p> Si tienes éxito en tu prueba, puedes continuar tratando al objetivo para otorgarle curación adicional. Si los tratas durante un total de 1 hora, duplica los puntos de vida que recuperan al tratar heridas. </p>\n <p> El resultado de tu prueba de Medicina determina cuántos puntos de vida recupera el objetivo. </p>\n <p> @UUID[Compendium.pf2e.pf2e-macros.Macro.6duZj0Ygiqv712rq] {Treat Wounds} </p>\n <hr />\n <p><strong> Éxito crítico </strong> El objetivo recupera [[/r 4d8]] Puntos de vida y su condición @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2] {Herido} se elimina. </p>\n <p> <strong> Éxito </strong> El objetivo recupera [[/r 2d8]] Puntos de vida y su condición de herido desaparece. </p>\n <p> <strong> Fallo crítico </strong> El objetivo sufre [[/r 1d8]] daño. </p>"
+    },
+    "Trench Digging": {
+      "name": "Trench Digging",
+      "description": "<p><strong>Trigger</strong> You're subjected to forced movement</p>\n<hr />\n<p><strong>Effect</strong> You deploy your claw spikes to churn the earth asunder, creating difficult terrain in each square of ground you're moved through.</p>"
     },
     "Trip": {
       "name": "Derribar",
