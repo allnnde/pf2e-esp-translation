@@ -331,6 +331,7 @@
           "kibwani": "Kibwani",
           "kitsune": "Kitsune",
           "kovintal": "Kovintal",
+          "lashunta": "Lashunta",
           "lirgeni": "Lirgeni",
           "mahwek": "Mahwek",
           "migo": "Mi-Go",
@@ -1175,6 +1176,7 @@
           "arrow-vulnerability": "vulnerabilidad de flecha",
           "auditory": "auditivo",
           "axe-vulnerability": "vulnerabilidad del hacha",
+          "axes": "axes",
           "blinded": "cegado",
           "broken": "roto",
           "clumsy": "torpe",
@@ -1487,6 +1489,28 @@
       "RevealName": "Revelar nombre",
       "XP": "experiencia"
     },
+    "Environment": {
+      "Type": {
+        "Aquatic": "Aquatic",
+        "Arctic": "Arctic",
+        "Desert": "Desert",
+        "Forest": "Forest",
+        "Mountain": "Mountain",
+        "Plains": "Plains",
+        "Swamp": "Swamp",
+        "Underground": "Underground",
+        "Urban": "Urban"
+      },
+      "Feature": {
+        "Crowd": "Crowd",
+        "Ice": "Ice",
+        "Lava": "Lava",
+        "Rubble": "Rubble",
+        "Sand": "Sand",
+        "Sewer": "Sewer",
+        "Snow": "Snow"
+      }
+    },
     "ErrorMessage": {
       "CantCreateEffectMacro": "Un efecto para una macro de alternancia debe provenir de un compendio o elemento mundial.",
       "CantImportTooHighVersion": "No se puede importar {sourceName}: su versión de esquema ( {sourceSchemaVersion} ) es superior a la de este mundo ( {worldSchemaVersion} ).",
@@ -1653,6 +1677,7 @@
     "InvestedLabel": "Invertido",
     "Item": {
       "ABC": {
+        "Add": "Add",
         "Features": "Características",
         "InvalidDrop": "{badType} no se puede colocar aquí (debe ser {goodType})"
       },
@@ -2298,6 +2323,7 @@
             "Label": "Separar artículo",
             "Prompt": "¿Está seguro de que desea separar {attachable}?"
           },
+          "Label": "Attach",
           "Outcome": {
             "Failure": "No pudo adjuntar {attachable} .",
             "Success": "{attachable} ahora está adjunto a {target}."
@@ -2438,12 +2464,14 @@
         "Hint": {
           "Slug": "Un identificador estable y legible por humanos: si se establece, permanecerá en su lugar incluso si se cambia el nombre del elemento.",
           "SourceId": "El UUID del elemento del compendio original.",
-          "UUID": "Un identificador universalmente único para este artículo."
+          "UUID": "Un identificador universalmente único para este artículo.",
+          "RollOptions": "An item roll option's prefix depends on its usage. <em>item:</em> is used most of the time, but <em>parent:</em> is used for the item containing the rule element."
         },
         "New": "Nuevo elemento de regla",
         "RegenerateSlug": "(Re)generar babosa",
         "Remove": "Eliminar elemento de regla",
-        "Tab": "Normas"
+        "Tab": "Normas",
+        "ViewRollOptions": "View Roll Options"
       },
       "Shield": {
         "Base": {
@@ -2621,10 +2649,6 @@
     "ItemTitle": "Artículo",
     "ItemsLabel": "Elementos",
     "Keybinding": {
-      "CycleTokenStack": {
-        "Hint": "Ciclo de los índices Z de una pila de tokens sobre la cual se coloca el mouse, empujando de arriba hacia abajo.",
-        "Label": "Pila de tokens de ciclo"
-      },
       "GMVision": {
         "Hint": "Ilumine las escenas oscuras para facilitar la visualización.",
         "Label": "Visión de GM"
@@ -3060,6 +3084,33 @@
       "rollingDescription": "DC {dc} (Morir {Moribundo})",
       "success": "Reduce tu valor de muerte en 1."
     },
+    "Region": {
+      "Environment": {
+        "Mode": {
+          "Add": {
+            "Label": "Add"
+          },
+          "Hint": "Set the mode for this terrain behavior. Either adds the selected types to the exisiting environment types, removes the selected types from the exisiting types or overrides the exsiting types with the selected types.",
+          "Label": "Mode",
+          "Override": {
+            "Label": "Override"
+          },
+          "Remove": {
+            "Label": "Remove"
+          }
+        },
+        "Label": "Environment",
+        "RegionLegend": {
+          "Header": "Scene Defaults",
+          "SceneRegionsHeader": "Scene Regions"
+        },
+        "Type": {
+          "Hint": "One or more environment types for this scene region.",
+          "Label": "Environment",
+          "SceneHint": "Specify one or more environment types for the entire scene."
+        }
+      }
+    },
     "RemoveCoinsByValueLabel": "Eliminar valor, no tipo específico",
     "RemoveCoinsTitle": "Quitar monedas",
     "RemoveCombatProficiency": {
@@ -3205,6 +3256,9 @@
         "ShowUnknownSources": "No filtre entradas con fuentes desconocidas.",
         "SourcesListHeader": "Fuentes especificadas"
       },
+      "Core": {
+        "ManagedBySystem": "Managed and locked by the PF2e System"
+      },
       "CritRule": {
         "Choices": {
           "Doubledamage": "Duplica el daño",
@@ -3285,6 +3339,10 @@
           "Campaign": "Campaña",
           "Damage": "Tipos de daños",
           "Traits": "Rasgos y categorías"
+        },
+        "EnvironmentTypes": {
+          "Hint": "Any custom environment type",
+          "Name": "Environment Types"
         },
         "WeaponCategories": {
           "Hint": "El nivel superior de la taxonomía de armas de Pathfinder 2e (por ejemplo, simple, marcial)",
@@ -3519,44 +3577,30 @@
     "SidebarAppearanceLabel": "Apariencia",
     "Size": "Tamaño",
     "SizeLabel": "Tamaño",
-    "SkillAcr": "Acrobacia",
-    "SkillAcrobatics": "Acrobacia",
-    "SkillArc": "Arcanos",
-    "SkillArcana": "Arcanos",
-    "SkillAth": "Atletismo",
-    "SkillAthletics": "Atletismo",
+    "Skill": {
+      "Acrobatics": "Acrobatics",
+      "Arcana": "Arcana",
+      "Athletics": "Athletics",
+      "Crafting": "Crafting",
+      "Deception": "Deception",
+      "Diplomacy": "Diplomacy",
+      "Intimidation": "Intimidation",
+      "Medicine": "Medicine",
+      "Nature": "Nature",
+      "Occultism": "Occultism",
+      "Performance": "Performance",
+      "Religion": "Religion",
+      "Society": "Society",
+      "Stealth": "Stealth",
+      "Survival": "Survival",
+      "Thievery": "Thievery"
+    },
     "SkillCheckWithName": "Prueba de habilidad: {skillName}",
-    "SkillCra": "Artesanía",
-    "SkillCrafting": "Artesanía",
-    "SkillDec": "Engaño",
-    "SkillDeception": "Engaño",
-    "SkillDip": "Diplomacia",
-    "SkillDiplomacy": "Diplomacia",
     "SkillFeatLevels": "Niveles de dotes de habilidad",
     "SkillIncreaseLevels": "Niveles de aumento de habilidades",
-    "SkillIntimidation": "Intimidación",
-    "SkillItm": "Intimidación",
     "SkillLabel": "Habilidad",
     "SkillLore": "Ciencia",
-    "SkillMed": "Medicina",
-    "SkillMedicine": "Medicina",
-    "SkillNat": "Naturaleza",
-    "SkillNature": "Naturaleza",
-    "SkillOcc": "Ocultismo",
-    "SkillOccultism": "Ocultismo",
-    "SkillPerformance": "Interpretacion",
     "SkillPotencyHeader": "Potencias de habilidad",
-    "SkillPrf": "Interpretacion",
-    "SkillRel": "Religión",
-    "SkillReligion": "Religión",
-    "SkillSoc": "Sociedad",
-    "SkillSociety": "Sociedad",
-    "SkillSte": "Sigilo",
-    "SkillStealth": "Sigilo",
-    "SkillSur": "Supervivencia",
-    "SkillSurvival": "Supervivencia",
-    "SkillThi": "Latrocinio",
-    "SkillThievery": "Latrocinio",
     "SkillsLabel": "Habilidades",
     "Slug": "Babosa",
     "SpecialSensesLabel": "Sentidos especiales",
@@ -4274,6 +4318,7 @@
     "TraitDescriptionVampire": "Undead creatures who thirst for blood, vampires are notoriously versatile and hard to destroy.",
     "TraitDescriptionVanara": "Una ascendencia curiosa con rasgos parecidos a los de los primates y colas prensiles.",
     "TraitDescriptionVehicular": "Un arma vehicular está sujeta a un vehículo o es usada por una montura y, por lo general, solo puede ser empuñada por el conductor del vehículo o el jinete principal de la montura. El conductor o jinete puede controlar un arma vehicular con las mismas manos que usa para conducir el vehículo o guiar la montura. Un arma vehicular se puede desarmar quitando los controles (normalmente las riendas de una montura o el dispositivo de dirección de un vehículo) de las manos del portador.",
+    "TraitDescriptionVenomous": "These weapons inject poison into every hit. When you hit a creature with this weapon, it deals an additional 1 persistent poison damage. This increases to 2 persistent poison damage if the weapon has a greater striking rune.",
     "TraitDescriptionVersatile": "Se puede utilizar un arma versátil para infligir un tipo de daño diferente al enumerado en la entrada Daño. Este rasgo indica el tipo de daño alternativo. Por ejemplo, un arma perforante que sea versátil S se puede utilizar para infligir daño perforante o cortante. Tú eliges el tipo de daño cada vez que realizas un ataque.",
     "TraitDescriptionVirulent": "Las aflicciones con el rasgo virulento son más difíciles de eliminar. Debes tener éxito en dos salvaciones consecutivas para reducir el nivel de una aflicción virulenta en 1. Un éxito crítico reduce el nivel de una aflicción virulenta en solo 1 en lugar de 2.",
     "TraitDescriptionVishkanya": "Una ascendencia con rasgos de serpiente y un poderoso veneno.",
@@ -4780,6 +4825,7 @@
     "TraitVanara": "vanara",
     "TraitVehicular": "De vehículos",
     "TraitVelstrac": "Velstrac",
+    "TraitVenomous": "Venomous",
     "TraitVersatile": "Versátil",
     "TraitVersatileAcid": "Ácido versátil",
     "TraitVersatileB": "Versátil B",
@@ -6003,6 +6049,7 @@
       "DepositSubtitle": "Artículo de depósito",
       "EditLootLabel": "¿Configurar el botín?",
       "GMSupervisionError": "Un GM debe estar en línea para poder interactuar con {loot}.",
+      "Give": "Give",
       "GiveMessage": "{giver} da {quantity} × {item} a {recipient}.",
       "GiveSubtitle": "Dar artículo",
       "HiddenWhenEmpty": {
@@ -6027,8 +6074,9 @@
       "PermissionError": "Un DJ debe estar en línea para poder saquear o guardar un artículo.",
       "PlantMessage": "{planter} plantas {quantity} × {item} en {corpse} .",
       "PlantSubtitle": "Artículo de planta",
-      "PurchaseLoot": "Comprar artículos",
-      "PurchaseLootMessage": "¿Cuántos artículos deseas comprar?",
+      "Purchase": "Purchase",
+      "PurchaseLootPrompt": "Does {buyer} want to purchase this item?",
+      "PurchasePrice": "Purchase Price",
       "Quantity": "Cantidad",
       "SellMessage": "{seller} vende {quantity} × {item} a {buyer} .",
       "SellSubtitle": "Vender artículo",
