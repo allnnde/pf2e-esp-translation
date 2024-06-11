@@ -1,3 +1,5 @@
+import { CompendiumMapping } from "../../../babele/script/compendium-mapping.js";
+
 // Create Translator instance and register settings
 Hooks.once("init", () => {
     game.langEsPf2e = Translator.get();
@@ -188,6 +190,17 @@ class Translator {
         }
     }
 
+    // Check if strike is ranged or melee and return the type
+    checkStrikeType(strike) {
+        let strikeType = "strike-melee";
+        strike.system.traits.value.forEach((trait) => {
+            if (trait.startsWith("range-")) {
+                strikeType = "strike-ranged";
+            }
+        });
+        return strikeType;
+    }
+
     // Normalize name for correct display within Foundry
     normalizeName(name) {
         return name.replace("ß", "ss");
@@ -197,7 +210,7 @@ class Translator {
         // Register compendium, check if different modules excludes the compendium
         if (!(this.compendiumExceptions[compendium] && this.compendiumExceptions[compendium] !== module)) {
             if (typeof Babele !== "undefined") {
-                Babele.get().register({
+                game.babele.register({
                     module: module,
                     lang: language,
                     dir: compendiumDirectory,

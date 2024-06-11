@@ -59,7 +59,7 @@ function AACreateItemNameProxy(item, realName) {
 }
 
 Hooks.once("init", () => {
-    if (typeof Babele !== "undefined") {
+    if (typeof Babele !== "undefined") { 
         game.settings.register("pf2e-es", "dual-language-names", {
             name: "Nombres en español e ingles",
             hint: "No solo muestra los nombres en español sino tambien en ingles.",
@@ -72,13 +72,13 @@ Hooks.once("init", () => {
             }, 100),
         });
 
-        Babele.get().register({
+        game.babele.register({
             module: "pf2e-es",
             lang: "es",
             dir: "translation/es/compendium",
         });
 
-        Babele.get().registerConverters({
+        game.babele.registerConverters({
             normalizeName: (_data, translation) => {
                 return game.langEsPf2e.normalizeName(translation);
             },
