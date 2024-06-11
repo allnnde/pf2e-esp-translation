@@ -190,6 +190,10 @@ export const PF2_DEFAULT_MAPPING = {
             converter: "translateRange",
             extractOptions: { extractValue: false },
         },
+        consumableSpellRequirements: {
+            path: "system.spell.system.requirements",
+            extractOptions: { onlyValues: true },
+        },
         consumableSpellTarget: { path: "system.spell.system.target.value" },
         consumableSpellTime: {
             path: "system.spell.system.time.value",
@@ -220,6 +224,7 @@ export const PF2_DEFAULT_MAPPING = {
             converter: "translateRange",
             extractOptions: { addToDictionary: true, extractValue: false },
         },
+        requirements: { path: "system.requirements", extractOptions: { onlyValues: true } },
         rules: {
             path: "system.rules",
             converter: "translateRules",
@@ -325,6 +330,7 @@ export const PF2_DEFAULT_MAPPING = {
             converter: "translateRange",
             extractOptions: { addToDictionary: true, extractValue: false },
         },
+        requirements: { path: "system.requirements", extractOptions: { onlyValues: true } },
         secondarycaster: { path: "system.secondarycasters.value" },
         secondarycheck: { path: "system.secondarycheck.value" },
         target: { path: "system.target.value" },
