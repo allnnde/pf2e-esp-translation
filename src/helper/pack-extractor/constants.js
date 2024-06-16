@@ -142,6 +142,10 @@ export const PF2_DEFAULT_MAPPING = {
             path: "notes",
             extractOptions: { subMapping: "text", specialExtraction: "textCollection" },
         },
+        regions: {
+            path: "regions",
+            extractOptions: { subMapping: { name: { path: "name" } }, specialExtraction: "nameCollection" },
+        },
         tiles: {
             path: "tiles",
             extractOptions: { subMapping: "tile" },
@@ -252,7 +256,10 @@ export const PF2_DEFAULT_MAPPING = {
             converter: "translateTime",
             extractOptions: { addToDictionary: true, extractValue: false },
         },
-        trainedLore: { path: "system.trainedLore", extractOptions: { extractOnActorItem: false } },
+        trainedLore: {
+            path: "system.trainedSkills.lore",
+            extractOptions: { extractOnActorItem: false, convertArray: false },
+        },
     },
     journal: {
         name: { path: "name" },

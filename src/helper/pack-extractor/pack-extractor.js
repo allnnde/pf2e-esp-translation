@@ -575,13 +575,13 @@ function checkLocalizationRelevance(data) {
 
 /**
  * Check if strike is ranged or melee and return the type
- * @param {*} strike    Object containing the strike
+ * @param {*} strike    Object containing the strike data
  * @returns {string}    The strike type, either "strike-melee" or "strike-ranged"
  */
 function checkStrikeType(strike) {
     let strikeType = "strike-melee";
     strike.system.traits.value.forEach((trait) => {
-        if (trait.startsWith("range-")) {
+        if (trait.startsWith("range-") || trait.startsWith("thrown-")) {
             strikeType = "strike-ranged";
         }
     });
