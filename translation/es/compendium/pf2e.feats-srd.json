@@ -121,10 +121,10 @@
     },
     "Accursed Claws": {
       "name": "Garras malditas",
-      "description": "<p> Tus garras llevan la magia de bruja de tu madre. Cuando golpeas críticamente con un golpe de garra, el objetivo sufre 1d4 de daño mental persistente adicional. </p>",
+      "description": "<p>Tus garras portan la magia de tu madre saga. Cuando obtienes un impacto crítico con un Golpe de garra, el objetivo sufre 1d4 daño mental persistente adicional.</p>",
       "prerequisites": [
         {
-          "value": "ataque de garra desarmado"
+          "value": "ataque sin armas de garra"
         }
       ]
     },
@@ -2017,7 +2017,7 @@
     },
     "Athletic Might": {
       "name": "Poder atlético",
-      "description": "<p> Sobrevivir en terreno hostil te ha dado un gran talento para la movilidad. Cada vez que obtienes un éxito en una prueba de Atletismo para @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} o @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Swim}, obtienes un éxito crítico. </p>",
+      "description": "<p>Sobrevivir en terrenos hostiles te ha proporcionado un gran talento para la movilidad. Siempre que obtienes un éxito en una prueba de Atletismo para @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Trepar} o @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Nadar}, en su lugar obtienes un éxito crítico. </p>",
       "rules": {
         "1": {
           "text": "Cada vez que obtienes un éxito en una prueba de Atletismo para Trepar o Nadar, obtienes un éxito crítico."
@@ -3014,8 +3014,8 @@
       ]
     },
     "Beast Trainer": {
-      "name": "Entrenador de bestias",
-      "description": "<p> Tienes una impresionante habilidad innata para domesticar y comandar bestias feroces. Te entrenas en la habilidad Naturaleza y obtienes la opción de elegir entre la dote general @UUID[Compendium.pf2e.feats-srd.Item.6yPrvbSDaa8glLjn]{Pet} o la dote de habilidad @UUID[Compendium.pf2e.feats-srd.Item.nowEaHgIyij7im8F]{Train Animal}. </p>"
+      "name": "Adiestrador de bestias",
+      "description": "<p>Tienes una sorprendente capacidad innata para domar y dominar bestias feroces. Obtienes el rango entrenado en la habilidad Naturaleza y puedes elegir entre la dote general @UUID[Compendium.pf2e.feats-srd.Item.6yPrvbSDaa8glLjn]{Mascota} y la dote de habilidad @UUID[Compendium.pf2e.feats-srd.Item.nowEaHgIyij7im8F]{Entrenar animal}.</p>"
     },
     "Beast of Burden": {
       "name": "Beast of Burden",
@@ -3609,7 +3609,7 @@
     },
     "Bloody Blows": {
       "name": "Golpes sangrientos",
-      "description": "<p> Tus letales ataques desarmados dejan cortes sangrientos o causan hemorragias internas graves. Cuando golpeas críticamente con un golpe usando un ataque desarmado que no es no letal, el objetivo sufre 1d4 de daño por sangrado persistente. Esto puede deberse a que estás recibiendo la penalización por usar un puño para un ataque letal o porque tienes un ataque desarmado sin el rasgo no letal debido a @UUID[Compendium.pf2e.feats-srd.Item.M5195FvfCN3X7gi9]{Tusks} o una habilidad similar. </p>"
+      "description": "<p> Tus ataques letales sin armas dejan magulladuras ensangrentadas o provocan graves hemorragias internas. Cuando obtienes un impactocrítico con un Golpe utilizando un ataque sin armas que no es no letal, el objetivo sufre 1d4 daño persistente por sangrado. Esto puede deberse a que se te impone el penalizador debido a utilizar un puño para un ataque letal o porque dispones de un ataque sin armas que carece del rasgo no letal debido a @UUID[Compendium.pf2e.feats-srd.Item.M5195FvfCN3X7gi9]{Colmillos} o una aptitud similar.</p>"
     },
     "Bloody Debilitation": {
       "name": "Debilitación sangrienta",
@@ -3970,11 +3970,11 @@
       ]
     },
     "Brine May": {
-      "name": "Maia Salitre",
-      "description": "<p> Tu madre era una bruja del mar y te concedía un ojo verde mar o azul. Encuentras comodidad tanto en el mar como en la orilla. Cada vez que obtienes un éxito en una prueba de Atletismo para @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Swim}, obtienes un éxito crítico. Si terminas tu turno en el agua sin haber tenido éxito en una acción de Nadar en esa ronda, no te hundes (pero aún así podrías ser movido por la corriente). </p>",
+      "name": "Maia salina",
+      "description": "<p> Tu madre era una saga marina, lo que te otorga un ojo verde o azul marino. Te sientes cómodo tanto en el mar como en la costa. Siempre que tienes éxito en una prueba de Atletismo para @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Nadar}, obtienes en su lugar un éxito crítico. Si acabas tu turno en el agua sin haber tenido éxito en una acción de Nadar en este asalto, no te hundes (pero igualmente te podría arrastrar la corriente).</p>",
       "rules": {
         "0": {
-          "text": "Cuando obtienes un éxito en una prueba de Atletismo para nadar, obtienes un éxito crítico."
+          "text": "Siempre que tienes éxito en una prueba de Atletismo para Nadar, obtienes en su lugar un éxito crítico."
         }
       }
     },
@@ -4259,11 +4259,11 @@
       "description": "<p> Olas enormes giran en espiral a tu alrededor, contigo como el ojo del huracán. Las ondas aparecen en un @Template[type:emanation|distance:20], o en un @Template[type:emanation|distance:30] si estás en una masa de agua. Cada criatura en el área recibe @Damage[(floor((@actor.level -8)/2)+6)d8[bludgeoning] |traits:area-damage] daño con una salvación @Check[type:reflex|dc:resolve(@actor.system.proficiencies.classDCs.kineticist.dc)|basic:true] contra tu clase DC. Una criatura que falla su salvación es golpeada por las olas y empujada 10 pies (o 20 pies en un fallo crítico). </p>\n <hr />\n <p> <strong> Nivel (+2) </strong> El daño aumentapor 1d8. </p>"
     },
     "Called": {
-      "name": "Llamado",
-      "description": "<p> Has escuchado la Llamada y, al resistirla, has desarrollado un baluarte contra los efectos que apuntan a tu mente. Obtienes un bonificador de circunstancia +1 a las tiradas de salvación de Voluntad contra efectos mentales. Si obtienes un éxito en tu tirada de salvación contra un efecto mental que te convertiría en @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlado}, obtendrás un éxito crítico. </p>",
+      "name": "Convocado",
+      "description": "<p> Has oído la Llamada, y al resistirte constantemente a ella has alzado un baluarte contra los efectos que tienen tu mente como objetivo. Obtienes un bonificador +1 por circunstancia a las salvaciones de Voluntad contra los efectos mentales. Si obtienes un éxito en tu tirada de salvación contra un efecto mental que te haría estar @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlado}, en su lugar obtienes un éxito crítico. </p>",
       "rules": {
         "1": {
-          "text": "Cuando obtienes un éxito en una tirada de salvación contra un efecto mental que te controlaría, obtienes un éxito crítico."
+          "text": "Si obtienes un éxito en tu tirada de salvación contra\nun efecto mental que te haría estar controlado, en su lugar obtienes un\néxito crítico."
         }
       }
     },
@@ -4272,8 +4272,8 @@
       "description": "<p> Apuntas a un área específica de la anatomía de tu enemigo para lograr un efecto debilitante. Declara una parte de la anatomía de tu enemigo para apuntar y realizar un ataque con arma a distancia. Si golpeas y causas daño, el objetivo sufre uno de los siguientes efectos, según la parte del cuerpo a la que apuntaste. El DJ debe usar los efectos indicados como guía al atacar criaturas con una anatomía extraña; por ejemplo, aplicar el efecto de \"brazos\" a los tentáculos de una criatura si esos son los que la criatura usa para atacar.</p>\n <ul>\n <li> <strong> Armas </strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} hasta el final de tu siguiente turno. En un golpe crítico, también es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} durante 1 minuto. </li>\n <li> <strong> Cabeza </strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} hasta el final de tu siguiente turno. En un golpe crítico, también es @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} durante 1 minuto. </li>\n <li> <strong> Piernas </strong> El objetivo recibe un-Penalización de estado de 10 pies a sus velocidades hasta el final de tu próximo turno. En un golpe crítico, también sufre una penalización de -5 pies a su Velocidad durante 1 minuto. </li>\n <li> <strong> Alas </strong> Si el objetivo está volando usando sus alas, inmediatamente cae 20 pies, o 40 pies en un golpe crítico. La caída es lo suficientemente gradual como para que si el objetivo golpea el suelo, no sufra daños por la caída. </li>\n </ul>"
     },
     "Callow May": {
-      "name": "Maia Bisoña",
-      "description": "<p> Estás entre los cambiantes más comunes (aquellos nacidos de dulces brujas) y un ojo verde vibrante significa ese parentesco. La naturaleza manipuladora y la voz versátil de tu madre te dan una ventaja a la hora de engañar a los demás. Obtienes la dote de habilidad @UUID[Compendium.pf2e.feats-srd.Item.B6HbYsLBWb1RR6Fx]{Charming Liar}. Si tiras Engaño por iniciativa, los enemigos en ese encuentro de combate que aún no han actuado están @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} contra ti. </p>"
+      "name": "Maia bisoña",
+      "description": "<p>Eres uno de los changelings más comunes, los nacidos de una saga dulce, y un ojo verde brillante indica dicho parentesco. La naturaleza manipuladora de tu madre y su versátil voz te conceden ventaja a la hora de engañar a los demás. Obtienes la dote de habilidad @UUID[Compendium.pf2e.feats-srd.Item.B6HbYsLBWb1RR6Fx]{Mentiroso encantador}. Si tiras Engaño para la iniciativa, los enemigos de dicho encuentro de combate que aún no han actuado están @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenidos} ante ti. </p>"
     },
     "Calm and Centered": {
       "name": "Tranquilo y centrado",
@@ -4885,8 +4885,8 @@
       ]
     },
     "Changeling Lore": {
-      "name": "Conocimiento de los cambiantes",
-      "description": "<p> Muy consciente de tu verdadera naturaleza, has estudiado a las brujas y sus poderes. Obtienes el rango de competencia entrenada en Engaño y Ocultismo. Si automáticamente se capacita en una de esas habilidades (de su experiencia o clase, por ejemplo), en su lugar se capacita en una habilidad de su elección. </p>\n <p> También obtienes la dote general @UUID[Compendium.pf2e.feats-srd.Item.BocFD2KV0qgUC76x]{Additional Lore} para Hag Lore. </p>"
+      "name": "Conocimiento de los changeling",
+      "description": "<p> Muy consciente de tu verdadera naturaleza, has estudiado a las sagas y sus poderes. Obtienes el rango de competencia entrenado en Engaño y Ocultismo. Si estás automáticamente entrenado en una de dichas habilidades por ejemplo debido a tu bagaje o a tu clase), en su lugar obtienes el rango entrenado en una habilidad a tu elección. </p>\n <p> También obtienes la dote general @UUID[Compendium.pf2e.feats-srd.Item.BocFD2KV0qgUC76x]{Saber adicional} para Saber (sagas).</p>"
     },
     "Channel Rot": {
       "name": "Canalizar Putridez",
@@ -7109,11 +7109,11 @@
       ]
     },
     "Defy Death": {
-      "name": "Desafía a la muerte",
-      "description": "<p> Eres excepcionalmente difícil de matar. La CD de tus pruebas de recuperación es igual a 9 + tu valor de muerte, u 8 + tu valor de muerte si tienes la dote general @UUID[Compendium.pf2e.feats-srd.Item.AmP0qu7c5dlBSath]{Toughness}. Además, cada vez que alguien te devuelve la vida usando magia que normalmente te dejaría debilitado durante una semana (como @UUID[Compendium.pf2e.spells-srd.Item.IkGYwHRLhkuoGReG]{Raise Dead} o el ritual de resurrección), no sufres esa condición. </p>",
+      "name": "Desafíar a la muerte",
+      "description": "<p> Eres excepcionalmente difícil de matar. La CD de tus pruebas de recuperación es igual a 9 + tu valor de moribundo, o bien 8 + tu valor de moribundo si dispones de la dote general @UUID[Compendium.pf2e.feats-srd.Item.AmP0qu7c5dlBSath]{Dureza}. Además, siempre que alguien te devuelve a la vida utilizando magia que normalmente te dejaría debilitado durante una semana (como por ejemplo @UUID[Compendium.pf2e.spells-srd.Item.IkGYwHRLhkuoGReG]{Revivir a los muertos} o el ritual resurrección), no sufres dicho estado.</p>",
       "prerequisites": [
         {
-          "value": "Ferocidad orca"
+          "value": "Ferocidad de orco"
         }
       ]
     },
@@ -8246,7 +8246,7 @@
       "description": "<p> Tu bodega tiene una conexión dracónica única. Obtienes un bono de circunstancia +2 cuando intentas causar una impresión en una criatura con el rasgo de dragón. Obtienes acceso al compañero animal Riding Drake. </p>",
       "prerequisites": [
         {
-          "value": "Entrenador de bestias"
+          "value": "Adiestrador de bestias"
         }
       ],
       "rules": {
@@ -8459,8 +8459,8 @@
       ]
     },
     "Dream May": {
-      "name": "Maia Onírica",
-      "description": "<p> Eres hijo de una bruja cuco, lo que hace que uno de tus ojos sea violeta o incluso negro. Los poderes de tu madre sobre el sueño y los sueños te han dado un grado de resistencia a esos efectos, otorgándote un bono de circunstancia +2 a todas las tiradas de salvación contra los efectos del sueño y los efectos que causan o alteran los sueños. </p>\n <p> Además, el sueño es más reparador para ti. Recuperas HP igual a tu modificador de Constitución × el doble de tu nivel (en lugar de solo × tu nivel), yreduce cualquier condición agotada y condenada que tengas en 2 en lugar de 1. </p>"
+      "name": "Maia onírica",
+      "description": "<p>Eres hijo de una saga chiflada, lo que hace que uno de tus ojos sea violeta o incluso negro. Los poderes de tu madre sobre el sueño y los sueños te han concedido cierto grado de resistencia a dichos efectos, obteniendo un bonificador +2 por circunstancia a todas las tiradas de salvación contra los efectos de sueño y los efectos que causan o alteran los sueños.</p>\n <p>Además, dormir resulta para ti más reparador. Recuperas tantos PG como tu modificador por Constitución multiplicado por el doble de tu nivel (en lugar de tan sólo multiplicado por tu nivel) y reduces en 2 en lugar de 1 cualquier estado propio de drenado y condenado.</p>"
     },
     "Drenching Mist": {
       "name": "Niebla empapadora",
@@ -11381,13 +11381,13 @@
     },
     "Ferocious Beasts": {
       "name": "Bestias feroces",
-      "description": "<p> Desde la antigüedad, los domadores de bestias orcos más poderosos sacaban a relucir el verdadero espíritu de lucha de sus bestias compañeras alimentándolas con una bebida que incorporaba la propia sangre del orco. Todos los animales de compañía, mascotas, familiares y animales vinculados que tengas obtienen la dote @UUID[Compendium.pf2e.feats-srd.Item.PlhPpdwIV0rIAJ8K]{Orc Ferocity} y ​​obtienen una reacción por ronda que pueden usar solo para Ferocidad Orca. Si tienes la dote de ascendencia @UUID[Compendium.pf2e.feats-srd.Item.zZOycr00XDVTKuXa]{Undying Ferocity}, todos los animales de compañía, mascotas, familiares y animales vinculados a tiTambién has obtenido los beneficios de esa hazaña al usar la reacción Orc Ferocity. </p>",
+      "description": "<p>Desde los tiempos antiguos, los domadores de bestias orcos más poderosos sacaban el verdadero espíritu de lucha de sus bestias compañeras, alimentando a las criaturas con una mezcla que incorporaba la propia sangre del orco. Todos los compañeros animales, mascotas, familiares y animales vinculados de que dispones obtienen la dote @UUID[Compendium.pf2e.feats-srd.Item.PlhPpdwIV0rIAJ8K]{Ferocidad de orco} y obtienen una reacción por asalto que pueden utilizar tan solo para Ferocidad de orco. Si tienes la dote de ascendencia @UUID[Compendium.pf2e.feats-srd.Item.zZOycr00XDVTKuXa]{Ferocidad inmortal}, todos los compañeros animales, mascotas, familiares y animales vinculados de que dispones obtienen también los beneficios de dicha dote utilizando la reacción Ferocidad de orco.</p>",
       "prerequisites": [
         {
-          "value": "animal de compañía, mascota o animal vinculado"
+          "value": "compañero animal, Mascota o Animal vinculado"
         },
         {
-          "value": "Ferocidad orca"
+          "value": "Ferocidad de orco"
         }
       ]
     },
@@ -14108,15 +14108,15 @@
       ]
     },
     "Hag Claws": {
-      "name": "Garras de bruja",
-      "description": "<p> Cuando alcanzaste la mayoría de edad, tus uñas crecieron largas y afiladas. Obtienes un ataque desarmado con garra que causa 1d4 de daño cortante. Tus garras están en el grupo de pelea y tienen rasgos de agilidad, delicadeza y desarmado. </p>\n <hr />\n <p> <strong> Especial </strong> Las garras de bruja pueden desarrollarse en cualquier momento de la vida de un cambiante. Puedes seleccionar esta dote cada vez que obtengas una dote de ascendencia, pero no puedes volver a entrenar para salir de ella. </p>"
+      "name": "Garras de saga",
+      "description": "<p> Cuando alcanzaste la mayoría de edad, las uñas empezaron a crecerte largas y afiladas. Obtienes un ataque sin armas de garra que inflige 1d4 daño cortante. Tus garras pertenecen al grupo pelea y tienen los rasgos ágil, sutileza y sin armas. </p>\n <hr />\n <p> <strong> Especial </strong> Las garras de saga pueden desarrollarse en cualquier momento de la vida de un changeling. Puedes seleccionar esta dote siempre que puedes obtener una dote de ascendencia, pero no puedes reconvertirla. </p>"
     },
     "Hag Magic": {
-      "name": "Bruja mágica",
-      "description": "<p> A través de tu herencia, puedes replicar la magia de una bruja. Elige un hechizo común de 4º rango o inferior de los disponibles para un aquelarre, incluidos los hechizos aportados a un aquelarre por una bruja del tipo de tu madre. Puedes lanzar este hechizo una vez al día como un hechizo innato ocultista de cuarto rango. </p>\n <p> Los hechizos disponibles para todos los aquelarres son @UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]{Augury} , @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} , @UUID[Compendium.pf2e.spells-srd.Item.HXhWYJviWalN5tQ2]{Clairaudience} , @UUID[Compendium.pf2e.spells-srd.Item.zvKWclOZ7A53DObE]{Clairvoyance} , @UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Dream Message} , y@UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise} . Los hechizos elegibles otorgados por los tipos de brujas más destacados son: </p>\n <p> <strong> Bruja cuco </strong> @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Nightmare} , @UUID[Compendium.pf2e.spells-srd.Item.8Umt1AzYfFbC4fui]{Spellwrack} </p>\n <p> <strong> Bruja de Hierro </strong> @UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind} , @UUID[Compendium.pf2e.spells-srd.Item.8Umt1AzYfFbC4fui]{Spellwrack} </p>\n <p> <strong> Bruja del mar </strong> @UUID[Compendium.pf2e.spells-srd.Item.2qGqa33E4GPUCbMV]{Humanoid Form} , @UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse} , @UUID[Compendium.pf2e.spells-srd.Item.Seaah9amXg70RKw2]{Water Walk} </p><p> <strong> Dulce bruja </strong> @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} , @UUID[Compendium.pf2e.spells-srd.Item.JyxTmqjYYn63V5LY]{Honeyed Words} , @UUID[Compendium.pf2e.spells-srd.Item.KSAEhNfZyXMO7Z7V]{Outcast's Curse} </p>"
+      "name": "Magia de saga",
+      "description": "<p>Gracias a tu herencia, puedes replicar parte de la magia de una saga. Elige un conjuro común de 4.º rango o inferior de los disponibles para un aquelarre, incluidos los aportados al mismo por una saga del tipo de tu madre. Puedes lanzar ese conjuro una vez al día como un conjuro innato ocultista de 4.º rango.</p>\n<p>Los conjuros disponibles para todos los aquelarres son @UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]{Augurio}, @UUID[Compendium.pf2e.spells-srd.Item.HXhWYJviWalN5tQ2]{Clariaudiencia}, @UUID[Compendium.pf2e.spells-srd.Item.zvKWclOZ7A53DObE]{Clarividencia}, @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Disfraz ilusorio}, @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Hechizar} y @UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Mensaje onírico}. \n\n<p>Los conjuros elegibles concedidos por los tipos de saga más prominentes son:</p>\n<p><strong> Saga chiflada </strong> @UUID[Compendium.pf2e.spells-srd.Item.8Umt1AzYfFbC4fui]{Arruinaconjuros}, @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Pesadilla}</p>\n<p><strong> Saga de hierro </strong> @UUID[Compendium.pf2e.spells-srd.Item.8Umt1AzYfFbC4fui]{Arruinaconjuros}, @UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Ligadura terrestre} </p>\n<p><strong> Saga marina </strong> @UUID[Compendium.pf2e.spells-srd.Item.Seaah9amXg70RKw2]{Caminar sobre las aguas}, @UUID[Compendium.pf2e.spells-srd.Item.2qGqa33E4GPUCbMV]{Forma humanoide}, @UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Maldición del marinero}</p>\n<p><strong> Saga dulce </strong> @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Hechizar}, @UUID[Compendium.pf2e.spells-srd.Item.KSAEhNfZyXMO7Z7V]{Maldición del paria}, @UUID[Compendium.pf2e.spells-srd.Item.JyxTmqjYYn63V5LY]{Palabras almibaradas}</p>\n\n\n ,  </p>"
     },
     "Hag's Sight": {
-      "name": "Vista de bruja",
+      "name": "Vista de saga",
       "description": "<p> Has cultivado las habilidades sobrenaturales que te regaló tu madre bruja, particularmente tu vista. Obtienes visión en la oscuridad. </p>"
     },
     "Hail Of Splinters": {
@@ -14871,8 +14871,8 @@
       ]
     },
     "Hold Mark": {
-      "name": "Mantener marca",
-      "description": "<p> Tienes cicatrices o tatuajes realzados por la marca de la destreza de tu comunidad. Cuando selecciones esta hazaña, elige una de las opciones de la siguiente tabla. Estás entrenado en la habilidad enumerada y obtienes una bonificación de estado de +1 a las salvaciones contra hechizos de la tradición enumerada. Obtienes una marca grande o un tatuaje con la forma del emblema elegido o un concepto similar (por ejemplo, el Sol Ardiente podría ser una antorcha, un sol, un volcán u otro símbolo de fuego, mientras que la Mano Vacía podría ser un puño o una garra). .</p>\n <table class=\"pf2e\">\n <thead>\n <tr>\n <th> Emblema de marca de retención </th>\n <th> Habilidad </th>\n <th> Tradición </th>\n </tr>\n </thead>\n <tbody>\n <tr>\n <td> Sol Ardiente </td>\n <td> Diplomacia </td>\n <td> Arcano </td>\n </tr>\n <tr>\n <td> Calavera </td>\n <td> Supervivencia </td>\n <td> Primal </td>\n </tr><tr>\n <td> Cadáver profanado </td>\n <td> Religión </td>\n <td> Divino </td>\n </tr>\n <tr>\n <td> Mano vacía </td>\n <td> Intimidación </td>\n <td> Ocultismo </td>\n </tr>\n </tbody>\n </table>"
+      "name": "Marca de clan",
+      "description": "<p> Luces cicatrices o tatuajes realzados por la marca de coraje de tu clan. Cuando seleccionas esta dote, elige una de las opciones de la tabla que viene a continuación. Estás entrenado en la habilidad indicada y obtienes un bonificador +1 por estatus a las salvaciones contra los conjuros de la tradición también indicada. Obtienes una gran marca o tatuaje en forma de emblema elegido o un concepto similar (por ejemplo, el Sol ardiente podría ser una antorcha, el sol, un volcán u otro símbolo flamígero, mientras que la Mano vacía podría ser un puño o una zarpa).</p>\n\n <table class=\"pf2e\">\n <thead>\n <tr>\n <th> Emblema/marca de clan</th>\n <th> Habilidad </th>\n <th> Tradición </th>\n </tr>\n </thead>\n <tbody>\n <tr>\n <td> Sol Ardiente </td>\n <td> Diplomacia </td>\n <td> arcana </td>\n </tr>\n <tr>\n <td> Calavera </td>\n <td> Supervivencia </td>\n <td> Primigenia </td>\n </tr><tr>\n <td> Cadáver profanado </td>\n <td> Religión </td>\n <td> divina </td>\n </tr>\n <tr>\n <td> Mano vacía </td>\n <td> Intimidación </td>\n <td> Ocultista </td>\n </tr>\n </tbody>\n </table>"
     },
     "Holistic Care": {
       "name": "Cuidado holístico",
@@ -15678,11 +15678,11 @@
       ]
     },
     "Incredible Ferocity": {
-      "name": "Ferocidad Sensacional",
-      "description": "<p> Si tienes tiempo para recuperarte después de un rasguño cercano a la muerte, podrás reconstruir tu ferocidad y resistir golpes finales adicionales. Puedes usar Orc Ferocity con una frecuencia de una vez por hora, en lugar de una vez por día. </p>",
+      "name": "Ferocidad sensacional",
+      "description": "<p>Si tienes tiempo para recomponerte tras un escarceo con la muerte, puedes reconstruir tu ferocidad y resistir golpes finales adicionales. Puedes utilizar Ferocidad de orco con una frecuencia de una vez por hora, en lugar de una vez al día.</p>",
       "prerequisites": [
         {
-          "value": "Ferocidad orca"
+          "value": "Ferocidad de orco"
         }
       ]
     },
@@ -16322,11 +16322,11 @@
       ]
     },
     "Invoke The Elements (Brine May)": {
-      "name": "Invocar los elementos (Brine May)",
+      "name": "Invocar los elementos (Maia salina)",
       "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <hr />\n <p> Invocas un aura de olas rompiendo. </p>\n <p> Durante 1 minuto, ganas @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} contra criaturas a más de 5 pies de distancia, y cualquier criatura que finalice su turno dentro de 5 pies de ti sufre @Damage[1d12[bludgeoning]] daño ( @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] salvación usando tu DC de clase o DC de hechizo, lo que sea mayor). </p>\n <p> En @Damage[2d12[bludgeoning]]{13th} y ​​@Damage[3d12[bludgeoning]]{17th} nivel, este daño aumenta en 1d12. </p>",
       "prerequisites": [
         {
-          "value": "salmuera mayo"
+          "value": "Maia salina"
         }
       ]
     },
@@ -16381,7 +16381,7 @@
     },
     "Iron Fists": {
       "name": "Puños de hierro",
-      "description": "<p> Tus puños han sido forjados por la batalla, tu piel naturalmente dura y tus huesos densos se han endurecido aún más por el conflicto. Tus ataques con puños desarmados ya no tienen el rasgo no letal y obtienen el rasgo de empujón con arma. </p>"
+      "description": "<p>Tus puños se han forjado en la batalla y tu piel naturalmente dura y tus densos huesos se han endurecido aún más debido al conflicto. Tus ataques sin armas con el puño ya no tienen el rasgo no letal y obtienen el rasgo de arma empujar.</p>"
     },
     "Iron Lung": {
       "name": "Pulmón de acero",
@@ -19412,8 +19412,8 @@
       ]
     },
     "Mist Child": {
-      "name": "Niño de la niebla",
-      "description": "<p> Te mezclas con una sutileza antinatural. Cuando seas @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} o @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido}, aumenta la CD de la prueba plana para apuntarte a 6 si estás oculto o 12 si estás oculto. </p>"
+      "name": "Hijo de la bruma",
+      "description": "<p> Te camuflas con una sutileza antinatural. Cuando estás @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} o @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido}, incrementa a 6 la CD de la prueba plana para designarte como objetivo si estás oculto o a 12 si estás escondido.</p>"
     },
     "Mist Escape": {
       "name": "Escape de la niebla",
@@ -20489,11 +20489,11 @@
       ]
     },
     "Occult Resistance": {
-      "name": "Resistencia oculta",
-      "description": "<p> Tu estudio de las prácticas ocultas te ha mostrado cómo defenderte mejor contra ellas. Obtienes un bonificador de circunstancia +1 a todas las tiradas de salvación contra efectos ocultos. </p>",
+      "name": "Resistencia al ocultismo",
+      "description": "<p>Tu estudio de las prácticas ocultistas te ha mostrado cómo defenderte mejor contra ellas. Obtienes un bonificador +1 por circunstancia a todas las tiradas de salvación contra los efectos ocultistas.</p>",
       "prerequisites": [
         {
-          "value": "experto en ocultismo"
+          "value": "rango experto en Ocultismo"
         }
       ]
     },
@@ -20741,12 +20741,12 @@
       "description": "<p> <strong> Desencadenante </strong> Estás a punto de tirar la iniciativa. </p>\n <hr />\n <p> Tienes un destello de percepción sobre un peligro inminente relacionado con un aliado, y puedes gritar o hacer gestos para advertir a ese aliado de la amenaza un momento antes de que se materialice. Un aliado de tu elección puede tirar dos veces para obtener iniciativa y utilizar el mejor resultado; Este es un efecto fortuna. Si eres legendario en Religión, recibes dos visiones y puedes advertir a dos aliados, otorgándoles a ambos esto.beneficio. </p>\n <p> Sin embargo, la percepción divina te desconcierta momentáneamente y debes tirar dos veces para tu tirada de iniciativa y usar el peor resultado. Este es un efecto de desgracia. Los dos efectos están unidos; Si evitas el efecto de desgracia por cualquier motivo, o si alguno de tus aliados niega su efecto de fortuna, tu Advertencia Oracular no hace nada. Dependiendo de si usa gestos o grita, esta acción adquiere el rasgo visual o auditivo,respectivamente. </p>"
     },
     "Orc Ferocity": {
-      "name": "Ferocidad De Orco",
-      "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <p> <strong> Activador </strong> Quedarás reducido a 0 puntos de vida pero no te matarán inmediatamente. </p>\n <hr />\n <p> La fiereza en la batalla corre por tu sangre, y te niegas a caer por tus heridas por muy terribles que sean. Evitas ser noqueado y permaneces en 1 punto de vida, y tu condición @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Herido} aumenta en 1. </p>"
+      "name": "Ferocidad de orco",
+      "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <p> <strong> Activador </strong> Quedarías reducido a 0 Puntos de Golpe pero no morirías de inmediato. </p>\n <hr />\n <p> La ferocidad en la batalla corre por tu sangre y te niegas a desplomarte debido a tus heridas, por terribles que sean. Evitas quedar tumbado y permaneces a 1 punto de Golpe, mientras que tu estado @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Herido} se incrementa en 1.</p>"
     },
     "Orc Lore": {
-      "name": "Conocimiento de los orcos",
-      "description": "<p> Los ancianos del castillo te enseñaron las historias de tu pueblo, te contaron historias de grandes hazañas atléticas y compartieron contigo las dificultades que soportaron tus antepasados ​​para que puedas transmitir esta sabiduría a las generaciones futuras. Te capacitarás en Atletismo y Supervivencia. Si automáticamente se capacita en una de esas habilidades (de su experiencia o clase, por ejemplo), en su lugar se capacita en una habilidad de su elección. </p>\n <p> También obtienes el @UUID[Compendium.pf2e.feats-srd.Item.BocFD2KV0qgUC76x]{Additional Lore}Hazaña general de Orc Lore. </p>"
+      "name": "Saber de los orcos",
+      "description": "<p>Los ancianos del clan te enseñaron la historia de tu pueblo, te contaron las grandes hazañas atléticas y compartieron contigo las dificultades que soportaron tus antepasados para que pudieras transmitir esta sabiduría a las generaciones futuras. Obtienes el rango entrenado en Atletismo y Supervivencia. Si estás automáticamente entrenado en una de dichas habilidades (por ejemplo debido a tu bagaje o a tu clase), en su lugar obtienes el rango entrenado en una habilidad a tu elección.</p>\n <p>Obtienes también la dote general @UUID[Compendium.pf2e.feats-srd.Item.BocFD2KV0qgUC76x]{Saber adicional} para Saber (orcos).</p>"
     },
     "Orc Sight": {
       "name": "Vista De Orco",
@@ -20758,7 +20758,7 @@
       ]
     },
     "Orc Superstition": {
-      "name": "Superstición De Orco",
+      "name": "Superstición de orco",
       "description": "<p> <strong> Desencadenante </strong> Intentas una tirada de salvación contra un hechizo o efecto mágico, y aún no lo has tirado. </p>\n <hr />\n <p> Te defiendes de la magia confiando en técnicas derivadas de las supersticiones culturales orcas. Obtienes un bonificador de circunstancia +1 a tu tirada de salvación contra el hechizo o efecto mágico desencadenante. </p>"
     },
     "Orc Warmask": {
@@ -20766,8 +20766,8 @@
       "description": "<p> Te pintas la cara para crear un <em> @UUID[Compendium.pf2e.equipment-srd.Item.ZEDDVQDtUZ2qOB5q]{Warmask} </em> , un objeto mágico invertido de volumen insignificante con un nivel de objeto igual a tu nivel y un uso de usado (máscara). Tiene el rasgo de adivinación y un rasgo de tradición mágica según su tipo. Ponerse o quitarse la <em> Warmmask </em> requiere 1 minuto de trabajo, aunque no es necesario invertir la máscara cada vez. La <em> Warmmask </em> es única para usted y puede significarsu dominio, sus logros o su fe. Mientras crea su máscara, debe elegir la fuente de poder de su <em> Warmask </em> entre las opciones siguientes. Esta fuente determina la habilidad asociada a la máscara así como la tradición mágica. Una vez que seleccione esta fuente, no podrá cambiarla. Te entrenas en la habilidad asociada y obtienes la dote de habilidad @UUID[Compendium.pf2e.feats-srd.Item.1Bt7uCW2WI4sM84P]{Dubious Knowledge} como dote adicional. Puedes pasar 1 hora realizando una ceremonia que cuesta 50 po para sintonizarte.más profundamente con tu <em> Warmmask </em>. Si lo haces, obtienes una bonificación de elemento +1 a la habilidad asociada cada vez que uses la máscara de guerra <em> </em>. </p>\n <hr />\n <ul>\n <li> <strong> Los Dioses </strong> Religión, tradición divina </li>\n <li> <strong> La Tierra </strong> Naturaleza, tradición primigenia </li>\n <li> <strong> Magia </strong> Arcanos, tradición arcana </li><li> <strong> Lo Desconocido </strong> Ocultismo, tradición oculta </li>\n </ul>"
     },
     "Orc Weapon Familiarity": {
-      "name": "Familiaridad Con Las Armas De Los Orcos",
-      "description": "<p> En combate, prefieres las armas brutales que son tradicionales de tus ancestros orcos. Obtienes acceso a todas las armas poco comunes con el rasgo orco. Estás familiarizado con las armas con el rasgo orco, además de la cimitarra y el gran hacha; a efectos de competencia, tratas cualquiera de estas que sean armas marciales como armas simples y las que sean armas avanzadas como armas marciales. </p>\n <p> En el nivel 5, cada vez que recibes un golpe crítico con una de estas armas, obtienessu efecto de especialización crítica. </p>"
+      "name": "Familiaridad con las armas de los orcos",
+      "description": "<p> En combate, prefieres las armas brutales que eran tradición para tus antepasados orcos. Obtienes acceso a todas las armas poco comunes con el rasgo orco. Tienes familiaridad con las armas que tienen el rasgo orco, además del alfanje y de la gran hacha; a efectos de competencia, de ellas tratas cualesquiera armas marciales como armas sencillas y cualesquiera armas avanzadas como armas marciales. </p>\n<p> A 5.º nivel, siempre que obtienes un impacto crítico con una de estas armas, obtienes su efecto de especialización crítica.</p>"
     },
     "Orchard's Endurance": {
       "name": "La resistencia del huerto",
@@ -21593,11 +21593,11 @@
       ]
     },
     "Pervasive Superstition": {
-      "name": "Superstición Omnipresente",
-      "description": "<p> Te sumerges en la superstición y practicas antiguos ejercicios mentales orcos para ignorar los efectos de la magia. Obtienes un bonificador de circunstancia +1 a las tiradas de salvación contra hechizos y efectos mágicos en todo momento. </p>",
+      "name": "Superstición dominante",
+      "description": "<p>Te infundes de superstición y practicas antiguos ejercicios mentales de los orcos para desprenderte de los efectos de la magia. Obtienes en todo momento un bonificador +1 por circunstancia a las tiradas de salvación contra los conjuros y los efectos mágicos. </p>",
       "prerequisites": [
         {
-          "value": "Superstición orca"
+          "value": "Superstición de orco"
         }
       ]
     },
@@ -23305,11 +23305,11 @@
       "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <hr />\n <p> Llamas a tus aliados y los empujas a darlo todo en combate. Todos los aliados en un radio de 30 pies que puedan escucharte obtienen una cantidad de puntos de vida temporales igual a tu nivel. Además, estos aliados se convierten en @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Acelerado} durante 1 minuto, pero solo pueden usar la acción adicional para dar un paso, avanzar o atacar. </p>"
     },
     "Rampaging Ferocity": {
-      "name": "Ferocidad devastadora",
-      "description": "<p> <strong> Activador </strong> Usas @UUID[Compendium.pf2e.feats-srd.Item.PlhPpdwIV0rIAJ8K]{Orc Ferocity} . </p>\n <hr />\n <p> Atacas brutalmente incluso mientras te defiendes de la muerte. Realiza un único ataque cuerpo a cuerpo. Si este Golpe lleva a un enemigo a 0 Puntos de Vida, esta activación de Ferocidad Orca no cuenta para su frecuencia. </p>",
+      "name": "Ferocidad desatada",
+      "description": "<p> <strong> Activador </strong> Utilizas @UUID[Compendium.pf2e.feats-srd.Item.PlhPpdwIV0rIAJ8K]{Ferocidad de orco} . </p>\n <hr />\n <p>Atacas con saña incluso cuando esquivas la muerte. Da un solo Golpe cuerpo a cuerpo. Si dicho Golpe lleva a 0 Puntos de Golpe a un enemigo, esta activación de Ferocidad de orco no cuenta contra su frecuencia.</p>",
       "prerequisites": [
         {
-          "value": "Ferocidad orca"
+          "value": "Ferocidad de orco"
         }
       ]
     },
@@ -25211,8 +25211,8 @@
       "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <hr />\n <p> <strong> Desencadenante </strong> Tu turno comienza o tu maldición oracular avanzaría. </p>\n <p> Al ver a Syndara superponer criaturas con propiedades metafísicas similares, has descubierto una manera de manipular los efectos de tu maldición oracular. Inmediatamente cambias tu maldición a su etapa menor, moderada o mayor, o de regreso a su forma leve, intercambiando el efecto de la maldición con ese.de una versión paralela de ti mismo en otra realidad. </p>"
     },
     "Scar-Thick Skin": {
-      "name": "Piel con cicatrices gruesas",
-      "description": "<p> Cicatrices gloriosas e históricas cubren y protegen gran parte de tu cuerpo, ciñéndote con una armadura carnal que resiste cualquier herida más débil que aquellas a las que ya has sobrevivido. Su CD en pruebas planas para terminar con el daño por sangrado persistente se reduce de 15 a 10, o de 10 a @Check[type:flat|dc:5] después de recibir asistencia especialmente adecuada. </p>"
+      "name": "Piel cicatrizal",
+      "description": "<p>Unas cicatrices gloriosas e historiadas cubren y protegen gran parte de tu cuerpo, envolviéndote en una armadura de carne que resiste cualquier herida más débil que aquellas a las que ya has sobrevivido. Tu CD para las pruebas planas con el fin de acabar con el daño persistente por sangrado se reduce de 15 a 10, o de 10 a 5 @Check[type:flat|dc:5] tras recibir una asistencia especialmente apropiada. </p>"
     },
     "Scare to Death": {
       "name": "Susto Mortal",
@@ -27089,8 +27089,8 @@
       ]
     },
     "Slag May": {
-      "name": "Maia Ferrosa",
-      "description": "<p> Tu madre era una bruja de hierro conocida por su destreza física, y tienes un ojo violeta o gris acero. Tienes garras gruesas y resistentes hechas de hierro frío que crecen naturalmente en tu cuerpo. Obtienes un ataque desarmado con garra que causa 1d6 de daño cortante. Tus garras están en el grupo de pelea, tienen rasgos de desarmado y de agarre, y son de hierro frío. </p>"
+      "name": "Maia ferrosa",
+      "description": "<p>Tu madre era una saga de hierro conocida por su poderío físico, y tú tienes un ojo color violeta o gris metálico. Dispones de unas garras gruesas y recias hechas de hierro frío, que te crecen de forma natural. Obtienes un ataque sin armas de garra que inflige 1d6 daño cortante. Tus garras pertenecen al grupo pelea, tienen los rasgos sin armas y presa y son de hierro frío.</p>"
     },
     "Slam Down": {
       "name": "Golpe hacia abajo",
@@ -27924,15 +27924,15 @@
     },
     "Spell Devourer": {
       "name": "Devorador de hechizos",
-      "description": "<p> No sólo te resistes a la magia; lo devoras. Siempre que tienes éxito en una tirada de salvación contra un hechizo o efecto mágico, obtienes puntos de vida temporales iguales al doble del rango del hechizo, o iguales al nivel si el efecto mágico no es un hechizo. Estos puntos de vida temporales duran hasta el final de tu siguiente turno. </p>",
+      "description": "<p>No tan solo resistes la magia, sino que la devoras. Siempre que tienes éxito en una tirada de salvación contra un conjuro o un efecto mágico, obtienes tantos Puntos de Golpe temporales como el doble del rango de conjuro, o bien como el nivel, si el efecto mágico no es un conjuro. Dichos Puntos de Golpe temporales duran hasta el final de tu siguiente turno.</p>",
       "prerequisites": [
         {
-          "value": "Superstición generalizada"
+          "value": "Superstición de orco"
         }
       ],
       "rules": {
         "0": {
-          "text": "Siempre que tienes éxito en una tirada de salvación contra un hechizo o efecto mágico, obtienes puntos de vida temporales iguales al doble del rango del hechizo, o iguales al nivel si el efecto mágico no es un hechizo. Estos puntos de vida temporales duran hasta el final de tu siguiente turno."
+          "text": "Siempre que tienes éxito en una tirada de salvación contra un conjuro o un efecto mágico, obtienes tantos Puntos de Golpe temporales como el doble del rango de conjuro, o bien como el nivel, si el efecto mágico no es un conjuro. Dichos Puntos de Golpe temporales duran hasta el final de tu siguiente turno."
         }
       }
     },
@@ -31621,7 +31621,7 @@
     },
     "Tusks (Orc)": {
       "name": "Colmillos (Orco)",
-      "description": "<p> Tienes colmillos particularmente largos y dentados, perfectos para arrancar la carne del hueso. Obtienes un ataque desarmado con colmillos que causa 1d6 de daño perforante. Tus colmillos están en el grupo de pelea y tienen rasgos de delicadeza y desarmado. </p>\n <hr />\n <p> <strong> Especial </strong> Puedes adquirir esta dote sólo en el 1er nivel y no puedes volver a entrenar en esta dote. Sólo puedes volver a entrenar para salir de esta hazaña mediante medidas drásticas, como romper, limar o extraer los colmillos.</p>"
+      "description": "<p>Tienes unos colmillos particularmente largos e irregulares, perfectos para arrancar la carne de los huesos. Obtienes un ataque sin arma de colmillo que inflige 1d6 daño perforante. Tus colmillos están en el grupo pelea y tienen los rasgos sutileza y sin armas.</p>\n <hr />\n <p> <strong> Especial </strong>Sólo puedes adquirir esta dote a 1.er nivel, y no puedes reconvertir otra dote en ésta. Sólo puedes reconvertir esta dote mediante medidas drásticas, como por ejemplo rompiendo, limando o extrayendo tus colmillos.</p>"
     },
     "Tut-Tut": {
       "name": "Tut-tut",
@@ -32093,11 +32093,11 @@
       ]
     },
     "Undying Ferocity": {
-      "name": "Ferocidad eterna",
+      "name": "Ferocidad inmortal",
       "description": "<p> Resiste las garras de la muerte con vigor sobrenatural, desafiando a la muerte a reclamarte mientras prometes que cualquier intento de ese tipo seguramente fracasará. Cuando usas @UUID[Compendium.pf2e.feats-srd.Item.PlhPpdwIV0rIAJ8K]{Orc Ferocity}, obtienes puntos de vida temporales iguales a tu nivel. </p>\n <p> @UUID[Compendium.pf2e.feat-effects.Item.Px4E3Hyx2pmvSWAA]{Effect: Undying Ferocity} </p>",
       "prerequisites": [
         {
-          "value": "Ferocidad orca"
+          "value": "Ferocidad de orco"
         }
       ]
     },
