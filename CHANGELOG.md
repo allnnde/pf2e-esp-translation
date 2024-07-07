@@ -1,3 +1,7 @@
+## [5.22.1](https://github.com/allnnde/pf2e-esp-translation/compare/v5.22.0...v5.22.1) (2024-07-07)
+
+
+
 # [5.22.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.21.1...v5.22.0) (2024-07-03)
 
 
@@ -96,19 +100,6 @@
 ### Bug Fixes
 
 * update to german repo ([3fddc35](https://github.com/allnnde/pf2e-esp-translation/commit/3fddc35e15478d7f32f08bdd0fb5f15859fea98c))
-
-
-
-## [5.20.1](https://github.com/allnnde/pf2e-esp-translation/compare/v5.20.0...v5.20.1) (2024-06-15)
-
-
-### Bug Fixes
-
-* New translations ancestries.json from Crowdin ([5182d80](https://github.com/allnnde/pf2e-esp-translation/commit/5182d80292e127b0f74ca7ea6113917ff6e02505))
-* New translations ancestries.json from Crowdin ([535c882](https://github.com/allnnde/pf2e-esp-translation/commit/535c882cf1b4d140ba1f17bf125683df634f191a))
-* New translations heritages.json from Crowdin ([3c955be](https://github.com/allnnde/pf2e-esp-translation/commit/3c955be25e929166ddb1ed7c76c57397d0e6a1b4))
-* New translations heritages.json from Crowdin ([498ef9f](https://github.com/allnnde/pf2e-esp-translation/commit/498ef9f035e0993aa816067268e52e5dcc9dd3a0))
-* New translations re-en.json from Crowdin ([bed7ca9](https://github.com/allnnde/pf2e-esp-translation/commit/bed7ca9e61a679769dba12f5b09311efedad5800))
 
 
 
