@@ -463,6 +463,8 @@
       "Dead": "Muerto",
       "Familiar": {
         "Blurb": "Familiar de {master}",
+        "MinimumAttributeModifier": "Minimum Attribute Modifier",
+        "NoAttribute": "None (Pet)",
         "Master": {
           "ArmorClass": "Clase de armadura maestra",
           "Perception": "Percepción maestra"
@@ -565,8 +567,16 @@
           }
         },
         "SimpleSheet": "Hoja de NPC simple",
+        "SpecialSkill": "+{mod} {label}",
         "SkillsEditor": {
+          "AddSpecial": "Add Special",
+          "Error": {
+            "PredicateArray": "Predicate must be an array"
+          },
           "LorePlaceholder": "Historia de la carpintería",
+          "Note": "Note",
+          "Predicate": "Predicate",
+          "Special": "Special",
           "Title": "Editor de habilidades ( {actor} )"
         }
       },
@@ -1136,10 +1146,11 @@
         "ApplicationBreakdown": {
           "ignored": "¡Se ignora la resistencia a {type}!",
           "immunity": "Inmune a {type} : {adjustment}",
+          "redirect": "Resistant to {type} (treated as {redirect}): {adjustment}",
+          "reduction": "Reducido en {type} : {adjustment}",
           "resistance": "Resistente a {type} : {adjustment}",
           "unaffected": "No afectado por {type} : {adjustment}",
-          "weakness": "Débil a {type} : {adjustment}",
-          "reduction": "Reducido en {type} : {adjustment}"
+          "weakness": "Débil a {type} : {adjustment}"
         },
         "CompositeLabel": {
           "Exceptions0DoubleVs0": "{type} {value}",
@@ -1526,6 +1537,7 @@
       "NoUpdatePermission": "No tienes permiso para actualizar este actor.",
       "NotEnoughAmmo": "No tienes suficiente munición para realizar este ataque.",
       "NotEnoughCoins": "Monedas insuficientes",
+      "MissingStatisticSelected": "Missing statistic {statistic} on selected actors.",
       "RuleElementSyntax": "Error de sintaxis en la definición del elemento de regla: {message}",
       "SubV9Module": "{module} no tiene mantenimiento y puede introducir problemas de estabilidad en tu juego.",
       "WeaponNoDamage": "Esta arma no causa daño.",
@@ -2430,6 +2442,7 @@
             "collar": "Cuello",
             "crown": "Corona",
             "epaulet": "Charretera",
+            "eyeglasses": "Eyeglasses",
             "eyepiece": "Ocular",
             "footwear": "Calzado",
             "garment": "Prenda",
@@ -2645,15 +2658,22 @@
     "ItemMystification": "Mistificación",
     "ItemMystified": "desconcertado",
     "ItemNamePlaceholder": "Nombre",
-    "ItemNewSkillVariant": "Nueva variante de habilidad",
     "ItemNotSupportedOnActor": "Elemento no compatible con el actor",
     "ItemRemoveRuleElement": "Eliminar elemento de regla",
     "ItemTitle": "Artículo",
     "ItemsLabel": "Elementos",
     "Keybinding": {
+      "CycleTokenStack": {
+        "Hint": "Cycle the Z indices of a mouse-hovered stack of tokens, pushing the top to the bottom.",
+        "Label": "Cycle Token Stack"
+      },
       "GMVision": {
         "Hint": "Ilumine las escenas oscuras para facilitar la visualización.",
         "Label": "Visión de GM"
+      },
+      "PlaceWaypoint": {
+        "Hint": "Place a waypoint while using drag measurement.",
+        "Label": "Place Waypoint (Drag Measurement)"
       },
       "TogglePartySheet": {
         "Hint": "Abre o cierra la hoja del grupo activo o (si es un jugador) asignado.",
@@ -2677,6 +2697,11 @@
     "Level19": "Nivel 19",
     "Level2": "Nivel 2",
     "Level20": "nivel 20",
+    "Level21": "Level 21",
+    "Level22": "Level 22",
+    "Level23": "Level 23",
+    "Level24": "Level 24",
+    "Level25": "Level 25",
     "Level3": "Nivel 3",
     "Level4": "Nivel 4",
     "Level5": "Nivel 5",
@@ -2704,7 +2729,6 @@
       "two": "{first} o {second}"
     },
     "Lore": "Ciencia",
-    "LoreProficiencyDisclaimer": "Sólo informativo. No cambiará el modificador de habilidad.",
     "LoreSkillsHeader": "Habilidades de Saber",
     "MAPAbbreviationLabel": "PAM {penalty}",
     "MAPAbbreviationValueLabel": "(PAM {penalty}) {value}",
@@ -3111,6 +3135,17 @@
           "Label": "Environment",
           "SceneHint": "Specify one or more environment types for the entire scene."
         }
+      },
+      "EnvironmentFeature": {
+        "Label": "Environment Feature",
+        "Terrain": {
+          "Difficult": {
+            "Difficult": "Difficult",
+            "Greater": "Greater Difficult",
+            "Label": "Difficult Terrain",
+            "None": "None"
+          }
+        }
       }
     },
     "RemoveCoinsByValueLabel": "Eliminar valor, no tipo específico",
@@ -3273,6 +3308,13 @@
       "DeathIcon": {
         "Hint": "Establece el icono de superposición utilizado para marcar actores muertos.",
         "Name": "Icono de muerte"
+      },
+      "DragMeasurement": {
+        "Always": "Always",
+        "Encounters": "During Encounters",
+        "Hint": "Measure distance traveled when dragging a token without the need for holding down another key. Waypoints are placed by pressing the \"{key}\" key.",
+        "Name": "Drag Measurement",
+        "Never": "Never"
       },
       "EnabledDisabled": {
         "Enabled": "Activado",
@@ -3725,10 +3767,10 @@
     "ToggleSignatureSpellTitle": "Alternar hechizo de firma",
     "ToggleSlotlessSpellLevelsTitle": "Alternar la visibilidad de los rangos de hechizos sin espacios",
     "ToggleSpellVisibilityTitle": "Preparación de hechizos",
-    "ToggleUnreadyStrikes": "Alternar armas no equipadas",
     "ToggleWithName": "Alternar: {property}",
     "TogglesLabel": "Alterna",
     "Token": {
+      "ActorLinkForced": "{type} actors cannot be unlinked.",
       "Appearance": "Apariencia",
       "Flanking": "Flanquear",
       "SecretDisposition": {
@@ -4207,6 +4249,14 @@
     "TraitDescriptionOverflow": "Impulsos poderosos sobrepasan temporalmente la energía de tu puerta cinética. Cuando usas un impulso que tiene el rasgo de desbordamiento, tu aura cinética se desactiva hasta que la revitalizas (normalmente con elementos de canal). Extinguir tu elemento de esta manera es agotador y, en consecuencia, solo puedes usar un impulso de desbordamiento por ronda, incluso si reactivas tu puerta cinética.",
     "TraitDescriptionParry": "Esta arma se puede utilizar a la defensiva para bloquear ataques. Mientras empuñas esta arma, si tu habilidad con ella es entrenada o mejor, puedes gastar una sola acción para posicionar tu arma a la defensiva, obteniendo una bonificación de circunstancia +1 a la CA hasta el comienzo de tu siguiente turno.",
     "TraitDescriptionPeachwood": "Las armas de Peachwood tienen un tinte particularmente castaño rojizo cuando están bajo la luz solar directa. Peachwood se trata como Darkwood para las resistencias o debilidades de cualquier criatura no muerta relacionada con Darkwood (permitiendo que un arma de Peachwood evite la resistencia de un jiang-shi, por ejemplo). Además, las armas de madera de durazno superan una pequeña parte de las resistencias de cualquier criatura no muerta. Los golpes con un arma de madera de durazno tratan las resistencias de un no-muerto contra el daño físico como 2 menos para la madera de durazno de Calidad normal y 4más bajo para Alta calidad.",
+    "TraitDescriptionPersonaFlirt": "The public perceives you as the most romantic of the group, and you may be thought of as a seducer or vapid pretender who gets by on their looks and brings nothing of value to the party.",
+    "TraitDescriptionPersonaGuardian": "The public perceives you as the healer and protector of the group, but some may also consider you too soft-hearted and meek to be a \"true hero.\"",
+    "TraitDescriptionPersonaLeader": "The public perceives you as the leader of the group, but some likewise consider you too brash or even pompous.",
+    "TraitDescriptionPersonaScholar": "The public considers you the problem-solver and brains of the group, though some also perceive you as arrogant or incapable of physical tasks.",
+    "TraitDescriptionPersonaScoundrel": "The public is convinced you are the \"bad boy/bad girl\" of the group who gets the distasteful but necessary things done, but who is at times thought of as a criminal or potential traitor to the party.",
+    "TraitDescriptionPersonaUnderdog": "The public perceives you as a \"fish out of water\"—someone who accidently got swept up by the group and still manages to triumph, but who is sometimes thought of as a weak link or loser.",
+    "TraitDescriptionPersonaWarrior": "The public believes you are the strong-arm of the group, the person who excels in a fight but is also at times considered cruel, uncouth, or even a bully.",
+    "TraitDescriptionPersonaWildcard": "The public perceives you as a source of whimsy, outlandish ideas, and comedy in the group, but that reputation is a double-edged sword, as some also consider you a liability or unreliable.",
     "TraitDescriptionPhantom": "A phantom is soul that has diverged from the River of Souls on the Ethereal Plane before being judged. They typically retain memories of their life before death but are not undead.",
     "TraitDescriptionPlant": "Las criaturas vegetales tienen el rasgo vegetal. Son distintas de las plantas normales. Los efectos mágicos con este rasgo manipulan o evocan plantas o materia vegetal de alguna manera. Los que manipulan plantas no tienen ningún efecto en una zona sin plantas.",
     "TraitDescriptionPoison": "Un efecto con este rasgo genera veneno o causa daño por veneno. Un objeto con este rasgo es venenoso y puede causar aflicción.",
@@ -4572,6 +4622,14 @@
     "TraitOverflow": "Desbordamiento",
     "TraitPaaridar": "Paaridar",
     "TraitParry": "Parar",
+    "TraitPersonaFlirt": "Persona: Flirt",
+    "TraitPersonaGuardian": "Persona: Guardian",
+    "TraitPersonaLeader": "Persona: Leader",
+    "TraitPersonaScholar": "Persona: Scholar",
+    "TraitPersonaScoundrel": "Persona: Scoundrel",
+    "TraitPersonaUnderdog": "Persona: Underdog",
+    "TraitPersonaWarrior": "Persona: Warrior",
+    "TraitPersonaWildcard": "Persona: Wildcard",
     "TraitPervasiveMagic": "Magia omnipresente",
     "TraitPetitioner": "Peticionario",
     "TraitPhantom": "Fantasma",
@@ -5382,12 +5440,6 @@
       "demolishing": {
         "Name": "Demoledor"
       },
-      "disrupting": {
-        "Name": "Vitalizante",
-        "Note": {
-          "criticalSuccess": "En un golpe crítico, los muertos vivientes también son @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} hasta el final de tu siguiente turno."
-        }
-      },
       "earthbinding": {
         "Name": "vinculante a la tierra"
       },
@@ -5558,7 +5610,9 @@
           "Bow": "La prueba de Atletismo para liberar el misil es CD 20.",
           "Brawling": "El objetivo sufre una penalización de circunstancia de -4 a su salvación.",
           "Club": "Puedes derribar al objetivo hasta 15 pies de distancia.",
+          "Crossbow": "If the target of the critical hit is adjacent to a surface, it gets stuck to that surface by the missile, as the bow critical specialization.",
           "Dart": "El daño base por sangrado persistente aumenta a [[/r 2d6[bleed]]].",
+          "Firearm": "The target takes a –4 circumstance penalty to its save.",
           "Flail": "Mueves el objetivo 5 pies. No puedes alejarlo de ti, pero puedes moverlo en otra dirección de tu elección.",
           "Hammer": "También puedes derribar al objetivo a 5 pies de distancia de ti.",
           "Knife": "El objetivo sufre una penalización de estado de -5 pies a su Velocidad mientras tenga el @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistente Bleed Damage} .",
@@ -5627,6 +5681,10 @@
       "pacifying": {
         "Name": "Pacificante"
       },
+      "quickstrike": {
+        "Name": "Quickstrike",
+        "Note": "While wielding a quickstrike weapon, you gain the @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} condition, but you can use the additional action granted only to make a Strike with the etched weapon."
+      },
       "returning": {
         "Name": "Regresando",
         "Note": "Cuando realizas un Golpe lanzado con esta arma, vuela de regreso a tu mano una vez que se completa el Golpe. Si tienes las manos ocupadas cuando el arma regresa, cae al suelo en tu espacio."
@@ -5648,6 +5706,10 @@
         "Note": {
           "criticalSuccess": "En un golpe crítico, la electricidad forma un arco que inflige la misma cantidad de daño eléctrico a hasta otras dos criaturas de tu elección dentro de 10 pies del objetivo."
         }
+      },
+      "shockwave": {
+        "Name": "Shockwave",
+        "Note": "Strikes with this weapon deal bludgeoning splash damage equal to the number of weapon damage dice. You're immune to this splash damage."
       },
       "spellStoring": {
         "Name": "Almacenamiento de hechizos"
@@ -5674,6 +5736,12 @@
         "Name": "Impío",
         "Note": {
           "criticalSuccess": "( <span class=\"pf2-icon\"> R </span> comando; una vez al día) <br /> <strong> Desencadenante </strong> Tienes éxito crítico en una tirada de ataque contra una buena criatura con el arma <br /> <strong> Efecto </strong> El objetivo recibe @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistente Bleed Damage} igual a 1d8 por El daño del arma muere del arma grabada."
+        }
+      },
+      "disrupting": {
+        "Name": "Vitalizante",
+        "Note": {
+          "criticalSuccess": "En un golpe crítico, los muertos vivientes también son @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} hasta el final de tu siguiente turno."
         }
       },
       "vorpal": {
