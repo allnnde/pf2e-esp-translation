@@ -21,6 +21,14 @@
       "name": "Organizarse",
       "description": "<p> <strong> Frecuencia </strong> una vez por ronda </p>\n <p> Tú y tu eidolon actúan como uno solo. O tú o tu eidolon realizas una acción o actividad utilizando el mismo número de acciones que Act Together, y el otro realiza una sola acción. </p>\n <p> Por ejemplo, si gastaste 2 acciones para Actuar juntos, podrías lanzar @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t] {Breathe Fire} (2 acciones) y tu eidolon podría Atacar (1 acción), o tu eidolon podría usar su Arma de Aliento (2 acciones) ypodrías caminar (1 acción). </p>\n <p> Esto les permite a cada uno utilizar actividades de exploración separadas como @UUID[Compendium.pf2e.actionspf2e.Item.IE2nThCmoyhQA0Jn] {Avoid Notice} mientras viaja. </p>"
     },
+    "Activate Resonant Reflection": {
+      "name": "Activate Resonant Reflection",
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision</p>\n<p><strong>Frequency</strong> once per day for each reflection</p><hr /><p>You activate one of your resonant reflections:</p>"
+    },
+    "Administer Ambient Magic": {
+      "name": "Administer Ambient Magic",
+      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Your ostilli pulses a calm lavender color as it converts stored magic into a curative balm. You regain @Damage[(2*(floor(@actor.level/4))d4)[healing]] Hit Points, and you can immediately attempt a flat check to recover from persistent bleed damage with the DC reduced to 10. This healing increases by 2d4 at 8th level and every 4 levels thereafter.</p>"
+    },
     "Administer First Aid": {
       "name": "Primeros Auxilios",
       "description": "<p> <strong> Requisitos </strong> Estás usando o sosteniendo un @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY] {Healer's Toolkit} . </p>\n <hr />\n <p> Realizas primeros auxilios en una criatura adyacente que es @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1] {Moribundo} o @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60] {Bleeding} . Si una criatura está muriendo y sangrando, elige qué dolencia estás tratando de tratar antes de tirar. Puede volver a administrar primeros auxilios para intentar remediar el otro efecto. </p>\n <ul>\n <li> <strong> Estabilizar</strong> Intenta una prueba de <span data-pf2-action=\"administerFirstAid\" data-pf2-variant=\"stabilize\" data-pf2-glyph=\"D\"> Medicina </span> en una criatura que tiene 0 puntos de vida y está en condición de morir. La CD es igual a 5 + la CD de la tirada de recuperación de esa criatura (normalmente 15 + su valor de muerte). </li>\n <li> <strong> Detener sangrado </strong> Intentar una <span data-pf2-action=\"administerFirstAid\" data-pf2-variant=\"stop-bleeding\" data-pf2-glyph=\"D\"> Medicina </span> prueba en una criatura que está sufriendo daño de sangrado persistente. La CD suele ser la CD del efecto que provocó el sangrado. </li>\n </ul>\n <hr /><p> <strong> Éxito </strong> Si intentas estabilizarte, el objetivo pierde la condición de muerte (pero permanece @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf] {Inconsciente}). Si está intentando detener el sangrado, el objetivo se beneficia de una recuperación asistida con el DC reducido para obtener una ayuda especialmente adecuada. </p>\n <p> <strong> Fallo crítico </strong> Si intentabas estabilizarte, el valor de muerte del objetivo aumenta en 1. Si intentabas detener la hemorragia, el objetivoinmediatamente recibe una cantidad de daño igual a su daño de sangrado persistente. </p>"
@@ -120,6 +128,10 @@
     "Binding Vow": {
       "name": "Voto vinculante",
       "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <hr />\n <p> <strong> Efecto </strong> Te vinculas pronunciando formalmente un voto vinculante. El poder sobrenatural fluye a través de ti y a tu alrededor mientras lo pronuncias, y todos los presentes que lo escuchan saben intrínsecamente que te une. Romper este voto es un anatema para ti y, si lo rompes voluntariamente, perderás todos los beneficios del Pactbinder hasta que cumplas tu voto o, si eso es imposible, participes en unritual de expiación. El voto no previene violaciones involuntarias y no puede usarse para tratar de eludir la magia de control mental, la confusión o situaciones similares en las que realizas una acción que no es enteramente por tu propia voluntad. Un voto vinculante no termina hasta que lo hayas cumplido. Incluso si mueres, el voto aún te vincula si regresas a la vida. El voto no te obliga a llegar a extremos ridículos, como morir, para cumplirlo, a menos que jures específicamente llegar a esos extremos. Tratando de subvertir tuUn voto vinculante al hacer promesas egoístas (como jurarle a un aliado que matarás a alguien a quien ya querías matar) es en sí mismo una violación de tu voto, al igual que intentar subvertir otros votos que hayas hecho (como los de otras dotes vinculantes de pactos o un código de campeón). Cuando haces una Solicitud o @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd] {Coerce} directamente para cumplir tu voto, obtienes un bonificador de circunstancia +1 a tu prueba contra cualquier criatura consciente de tu voto. </p>"
+    },
+    "Bite and Sting": {
+      "name": "Bite and Sting",
+      "description": "<p><strong>Requirements</strong> Your swarm is outside your body</p><hr /><p><strong>Effect</strong> Each creature in your swarm's space takes @Damage[(floor(@actor.level/2))d4[piercing]] damage with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save against your class DC or spell DC, whichever is higher. At 4th level and every 2 levels thereafter, the damage increases by 1d4.</p>"
     },
     "Blizzard Evasion": {
       "name": "Evasión de la tormenta de nieve",
@@ -285,6 +297,10 @@
       "name": "Deflexión del chasis",
       "description": "<p> <strong> Activador </strong> Un golpe crítico te causa daño físico. </p>\n <hr />\n <p> Intento de @Check[type:flat|dc:17] . Si tienes éxito, el ataque se convierte en un golpe normal. </p>"
     },
+    "Claw Stance": {
+      "name": "Claw Stance",
+      "description": "<p><strong>Effect</strong> You extend the claws in your hands and focus your attention to take down single targets. The only Strikes you can make are frenzied claw unarmed attacks. These deal @Damage[1d6[slashing]] damage, are in the brawling group, and have the agile, finesse, grapple, unarmed, and versatile piercing traits.</p>"
+    },
     "Cleanse Soul Path": {
       "name": "Limpiar el camino del alma",
       "description": "<p> Meditas, rezas o intentas reforzar la conexión de tu alma con tu armamento forjado por el alma. Esto lleva 10 minutos. Intenta contrarrestar tu <em> corrupción forjada con alma </em>. El rango de contraataque es la mitad de tu nivel redondeado hacia arriba, y el modificador de prueba de contraataque es tu modificador de Religión. Si tienes éxito, reduce la etapa de tu <em> corrupción forjada con alma </em> en 1 (hasta un mínimo de Etapa 1). </p>"
@@ -377,6 +393,10 @@
       "name": "Dampening Harmonics",
       "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> You establish a force field that grants you resistance 10 to damage dealt by spells and magical abilities with the trait of your magiphage ability, except for force damage. The force field lasts for 10 minutes. Each time the field prevents damage, the duration decreases by 1 minute.</p>"
     },
+    "Dancing Dodge": {
+      "name": "Dancing Dodge",
+      "description": "<p><strong>Trigger</strong> You're hit by a Strike during the first round of combat</p><hr /><p><strong>Effect</strong> You take advantage of the fact that your foe isn't ready to anticipate your dance-like moves in combat. Add a +3 circumstance bonus to your Armor Class against the triggering Strike to determine the Strike's actual result.</p>"
+    },
     "Daydream Trance": {
       "name": "Trance de ensueño",
       "description": "<p> Caes en un trance medio dormido. Esto dura 1 minuto o hasta que caigas @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf] {Inconsciente}, lo que ocurra primero. Puedes terminar voluntariamente tu trance realizando una sola acción, que tiene un rasgo de concentrado, y logrando una salvación @Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] contra tu propia DC de clase o DC de hechizo, lo que sea mayor. Una vez que termine tu trance, no podrás volver a entrar en Daydream Trance durante 1 minuto. Mientras estás en trance, obtienes los siguientes efectos: </p>\n <ul><li> Obtienes una bonificación de estado de +1 a las salvaciones de Voluntad. Este bono aumenta a +2 contra efectos mentales. Si eres legendario en Ocultismo, la bonificación contra los efectos mentales aumenta a +3. </li>\n <li> Recibes una penalización de -1 a las pruebas de Percepción y tiradas de iniciativa. </li>\n </ul>"
@@ -392,6 +412,10 @@
     "De-Animating Gestures (True)": {
       "name": "Gestos desanimadores (verdadero)",
       "description": "<p> Usted designa una sola construcción dentro de 30 pies que puede ver u oír. La construcción es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3] {Lentificado 1} durante 1 minuto. </p>"
+    },
+    "Death Drone": {
+      "name": "Death Drone",
+      "description": "<p>The cicadas in your swarm make a droning sound that stimulates a fear response. Each creature within your swarm's space takes @Damage[6d4[mental]] damage and must attempt a @Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creatures takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage, is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, and takes a –2 circumstance penalty to Perception checks that require hearing.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}, and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} until the start of your next turn.</p>"
     },
     "Debilitating Strike": {
       "name": "Impacto Debilitante",
@@ -441,6 +465,10 @@
       "name": "Diseñar una estratagema",
       "description": "<p> <strong> Frecuencia </strong> una vez por ronda </p>\n <hr />\n <p> Evalúas las debilidades de un enemigo en combate y las utilizas para formular un plan de ataque contra tu enemigo. Elige una criatura que puedas ver y tira un d20. Si golpeas a la criatura elegida más adelante en esta ronda, debes usar el resultado de la tirada que hiciste para idear una estratagema para la tirada de ataque de tu golpe en lugar de tirar. Realizas esta sustitución sólo para el primer Golpe que hagas contra elcriatura esta ronda, no ningún ataque posterior. </p>\n <p> Cuando haces esta sustitución, también puedes agregar tu modificador de Inteligencia a tu tirada de ataque en lugar de tu modificador de Fuerza o Destreza, siempre que tu Golpe utilice un arma cuerpo a cuerpo ágil o delicada, un ataque sin armas ágil o delicado, un arma a distancia (que debe ser ágil o sutil si es un arma cuerpo a cuerpo con el rasgo arrojadizo) o @UUID[Compendium.pf2e.equipment-srd.Item.TLQErnOpM9Luy7rL] {Sap} . </p>\n <p> Si eres consciente de que la criaturaeliges es el tema de una pista que estás siguiendo, puedes usar esta habilidad como una acción gratuita. </p>"
     },
+    "Devour Ambient Magic": {
+      "name": "Devour Ambient Magic",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> A creature Casts a Spell with you as the only target</p><hr /><p><strong>Effect</strong> Your ostilli radiates cyan light as its tentacle-like filters attempt to consume the magical effect. You can attempt to counteract the triggering spell with an @Check[type:arcana] or @Check[type:nature] check and a counteract rank equal to half your level.</p>"
+    },
     "Disable a Device": {
       "name": "Inutilizar Un Mecanismo",
       "description": "<p> Esta acción le permite desarmar una trampa u otro dispositivo complejo. A menudo, un dispositivo requiere numerosos éxitos antes de quedar inutilizado, dependiendo de su construcción y complejidad. Un @UUID[Compendium.pf2e.equipment-srd.Item.zvLyCVD8g2PdHJAc] {Thieves' Toolkit} es útil y a veces incluso es necesario para desactivar un dispositivo, según lo determine el DJ, y a veces un dispositivo requiere un rango de competencia más alto en Robo para desactivarlo. </p>\n <p> Tu resultado de la prueba <span data-pf2-action=\"disableDevice\" data-pf2-glyph=\"D\"> Robo </span> determina tu progreso.</p>\n <hr />\n <p> <strong> Éxito crítico </strong> Desactivas el dispositivo o logras dos éxitos para desactivar un dispositivo que requiere más de un éxito. No deja rastro de su manipulación y puede rearmar el dispositivo más tarde, si ese tipo de dispositivo se puede rearmar. </p>\n <p> <strong> Éxito </strong> Usted desactiva el dispositivo o logra un éxito para desactivar un dispositivo que requiere más de un éxito. </p><p> <strong> Fallo crítico </strong> Activas el dispositivo. </p>"
@@ -484,6 +512,10 @@
     "Drain Life": {
       "name": "Drenar La Vida",
       "description": "<p> Tu eidolon ataca a una criatura viviente y drena parte de la fuerza vital de la criatura para alimentar tu vínculo compartido. Tu eidolon ataca a un enemigo vivo. Si el Golpe impacta y causa daño, el objetivo debe intentar una salvación de Fortaleza, con los siguientes efectos. En un golpe crítico, el enemigo usa el resultado un grado peor de lo que obtuvo. </p>\n <p> <strong> Éxito crítico </strong> Sin efecto. </p>\n <p> <strong> Éxito </strong> Tu eidolondrena una pequeña cantidad de fuerza vital. El enemigo sufre un daño de vacío adicional equivalente a la mitad de tu nivel. </p>\n <p> <strong> Fracaso </strong> Tu eidolon drena suficiente fuerza vital para satisfacerse. El enemigo recibe daño de vacío adicional equivalente a la mitad de tu nivel y es @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR] {Drenado 1}. Tu eidolon gana puntos de vida temporales iguales al nivel del enemigo, que duran 1 minuto. </p>\n <p> <strong> Fallo crítico </strong> Tu eidolonDrena una cantidad increíble de fuerza vital y está completamente repleto de energía. Como fracaso, pero el enemigo es @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR] {Drenado 2} y ​​los puntos de vida temporales equivalen al doble del nivel del enemigo. </p>"
+    },
+    "Drape Ambient Magic": {
+      "name": "Drape Ambient Magic",
+      "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Your ostilli turns clear as it converts its stored magic into a bubble of refracting light around you. You become @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} to all creatures until the end of your turn. If you Strike a creature, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against that attack, and you then become observed.</p>"
     },
     "Dream Research": {
       "name": "Investigación de sueños",
@@ -552,6 +584,10 @@
     "Envenom": {
       "name": "Envenenar",
       "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <hr />\n <p> Mediante el uso de saliva o sangre, utilizas tus toxinas innatas para aplicar veneno vishkanyan a tu arma o munición. Para usar tu sangre, debes estar herido o puedes infligir @Damage[1[slashing]] daño a ti mismo como parte de la acción. El veneno vishkanyan sigue siendo potente hasta el final de tu siguiente turno, o hasta que lo gastes normalmente para causar daño al golpear a un objetivo ofallando críticamente una tirada de ataque. </p>\n <p> <strong> Veneno menor de Vishkanyan </strong> (lesión, veneno) </p>\n <hr />\n <p> <strong> Tiro de salvación </strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:injury,poison,damaging-effect] </p>\n <p> <strong> Duración máxima </strong> 6 rondas </p>\n <p> <strong> Etapa 1 </strong> @Damage[1d4[poison]] daño (1 ronda) </p>\n <p> <strong> Etapa 2 </strong> @Damage[1d4[poison]] daño (1 ronda)</p>\n <p> <strong> Etapa 3 </strong> @Damage[1d4[poison]] daño (1 ronda) </p>"
+    },
+    "Erupting Spurs": {
+      "name": "Erupting Spurs",
+      "description": "<p><strong>Trigger</strong> A creature takes persistent bleed damage from your bone flense spell</p><hr /><p><strong>Effect</strong> You will the bone spurs to erupt in a particularly devastating manner, dealing @Damage[6d6[piercing]] damage (basic Fortitude save) to the triggering creature instead of the persistent bleed damage from bone flense. The duration of bone flense immediately ends.</p>"
     },
     "Escape": {
       "name": "Huir",
@@ -752,6 +788,10 @@
     "Implement's Interruption": {
       "name": "Interrupción del implemento",
       "description": "<p> <strong> Desencadenante </strong> El objetivo de tu vulnerabilidad de explotación usa una acción de concentración, manipulación o movimiento, o abandona un cuadrado durante una acción de movimiento que está usando. </p>\n <p> <strong> Requisitos </strong> Estás sosteniendo tu arma y te estás beneficiando de Explotar la vulnerabilidad contra una criatura. La criatura debe estar a tu alcance si empuñas un arma cuerpo a cuerpo, o a 10 pies si empuñas un arma a distancia. </p><hr />\n <p> Tu arma detecta un momento de debilidad y guía tu mano para derribar a un enemigo. Realiza un Golpe contra la criatura desencadenante con tu arma. Si tu ataque es un golpe crítico, interrumpes la acción desencadenante. Este Golpe no cuenta para tu penalización por ataque múltiple, y tu penalización por ataque múltiple no se aplica a este Golpe. </p>"
+    },
+    "Impromptu Investment": {
+      "name": "Impromptu Investment",
+      "description": "<p>(one minute)</p>\n<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p><strong>Effect</strong> You can remove investiture from an item you currently have invested, and this investiture does not count against your daily limit. You can invest a new item in this item's place.</p>"
     },
     "Indomitable Act": {
       "name": "Acto indomable",
@@ -973,6 +1013,10 @@
       "name": "La réplica del pistolero",
       "description": "<p> <strong> Requisitos </strong> Estás empuñando un arma de fuego con una sola mano o una ballesta con una sola mano. </p>\n <p> <strong> Disparador </strong> Un enemigo dentro del primer incremento de alcance del arma de fuego de una mano o la ballesta de una mano que estás empuñando falla críticamente una tirada de ataque contra ti. </p>\n <hr />\n <p> Castigas el fracaso de tu enemigo con un disparo. Realiza un ataque contra el enemigo que dispara con un arma de fuego de una mano o una ballesta de una mano.</p>"
     },
+    "Pitch-Perfect Projection": {
+      "name": "Pitch-Perfect Projection",
+      "description": "<p>By using your perfect pitch, you can amplify your voice to cause magical auditory effects to reach further. If your next action this round is to Cast a Spell or use an action that creates an auditory effect with a range, increase that range by 30 feet.</p>"
+    },
     "Point Out": {
       "name": "Señalar",
       "description": "<p> <strong> Requisitos </strong> Una criatura no ha sido detectada por uno o más de tus aliados, pero sí por ti. </p>\n <hr />\n <p> Indicas a uno o más aliados donde está una criatura a la que puedes ver, haciendo gestos en una dirección y describiendo verbalmente la distancia. Dicha criatura pasa a estar @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC] {Escondida} para tus aliados, en lugar de @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf] {No detectada} (pág. 466) . Esto solo funciona para aliados que pueden verte y que están en una posición en la que podrían potencialmente detectar al objetivo. Si tus aliados no pueden oírte o entenderte, deben tener éxito en una prueba de Percepción contra la CD de Sigilo de la criatura o te entienden mal y creen que el objetivo está en un lugar diferente.</p>"
@@ -1049,6 +1093,10 @@
       "name": "Ferocidad devastadora",
       "description": "<p> <strong> Activador </strong> Usas @UUID[Compendium.pf2e.feats-srd.Item.PlhPpdwIV0rIAJ8K] {Orc Ferocity} </p>\n <hr />\n <p> Atacas brutalmente incluso mientras te defiendes de la muerte. Realiza un único ataque cuerpo a cuerpo. Si este Golpe lleva a un enemigo a 0 Puntos de Vida, esta activación de Ferocidad Orca no cuenta para su frecuencia. </p>"
     },
+    "Reactive Falsehood": {
+      "name": "Reactive Falsehood",
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You fail to @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie} to a creature in public</p><hr /><p><strong>Effect</strong> As your target sees through your lie, you spin your falsehood in a way that utilizes the crowd's reaction to bolster believability. Re-roll your Deception check to Lie with a +2 status bonus and use this check's result as the actual result to Lie.</p>"
+    },
     "Reactive Strike": {
       "name": "Ataque de oportunidad",
       "description": "<p> <strong> Desencadenante </strong> Una criatura a tu alcance utiliza una acción de manipular o de movimiento, lleva a cabo un ataque a distancia o abandona una casilla durante una acción de movimiento que está utilizando. </p>\n <hr />\n <p> Pegas a una criatura que deja una abertura en sus defensas. Da un Golpe cuerpo a cuerpo contra la criatura desencadenante. Si tu ataque resulta en un impacto crítico y el desencadenante fue una acción de manipular, dicha acción queda interrumpida. Este Golpe no cuenta para tu penalizador por ataque múltiple, y tu penalizador por ataque múltiple no se aplica al mismo.</p>\n<p>Esta reacción te permite dar un Golpe cuerpo a cuerpo si una criatura a tu alcance utiliza una acción de manipular o de mover, lleva a cabo un ataque a distancia o abandona una casilla durante una acción de movimiento. El diagrama de Movimientos desencadenantes de la pág. 474 ilustra ejemplos de movimientos que podrían desencadenar un ataque de oportunidad de una criatura sin alcance y una con alcance.</p>\n<p>Ten en cuenta que esta reacción te permite utilizar una acción básica modificada, Golpe. Esto sigue las reglas sobre acciones subordinadas de la pág. 462. Como quiera que tu Ataque de oportunidad tiene lugar fuera de tu turno, la tirada de ataque no está sujeta a penalizador por ataque múltiple.</p>"
@@ -1108,6 +1156,10 @@
     "Repeat a Spell": {
       "name": "Repetir Un Conjuro",
       "description": "<p> Lanzas repetidamente el mismo conjuro mientras te mueves a media velocidad. Típicamente, se trata de un truco que quieres que esté efectivo en caso de que surja un combate, y debe ser uno que puedes lanzar en 2 acciones o menos. Para evitar la fatiga debida al lanzamiento repetitivo, lo más probable es que sólo utilices esta actividad cuando suceda algo fuera de lo común.</p>\n <p>En su lugar, puedes utilizar esta actividad para continuar @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg] {Manteniendo un conjuro} o @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg] {Activación} con una duración de mantenido. La mayoría de semejantes conjuros o efectos de objeto se pueden mantener durante 10 minutos, aunque algunos especifican que se pueden mantener a lo largo de una duración diferente.</p>"
+    },
+    "Repel Ambient Magic": {
+      "name": "Repel Ambient Magic",
+      "description": "<p>Your ostilli glows green as it absorbs magic. Until the start of your next turn, you gain a +1 circumstance bonus to AC and saving throws against the next magical attack, cantrip, or spell that targets you. This bonus increases to +2 at 12th level.</p>"
     },
     "Reposition": {
       "name": "Reposicionar",
@@ -1289,6 +1341,10 @@
       "name": "Ayuda Espiritual",
       "description": "<p> <strong> Desencadenante </strong> Fallas una tirada de salvación de Reflejos o Voluntad </p>\n <hr />\n <p> <strong> Efecto </strong> Repites la tirada de salvación desencadenante. Debes utilizar el segundo resultado, aunque sea peor. Si obtienes un éxito, obtendrás un éxito crítico. </p>"
     },
+    "Spit Ambient Magic": {
+      "name": "Spit Ambient Magic",
+      "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Your ostilli flashes red as it regurgitates a dart of magic at a target within 30 feet. This magical dart deals @Damage[((1+floor((@actor.level -2)/4))d6)[piercing]] damage (@Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save against the higher of your class DC or spell DC). This damage increases by 1d6 at 6th level and every 4 levels thereafter.</p>"
+    },
     "Spring the Trap": {
       "name": "Saltar la trampa",
       "description": "<p> <strong> Desencadenante </strong> Tiras la iniciativa. </p>\n <hr />\n <p> Puedes interactuar para sacar un arma combinada y configurarla en modo cuerpo a cuerpo o a distancia. En tu primer turno, tu movimiento y tus ataques a distancia no desencadenan reacciones que normalmente se desencadenan por el movimiento o un ataque a distancia (como el Ataque de Oportunidad). </p>"
@@ -1357,6 +1413,14 @@
       "name": "Mantener un efecto",
       "description": "<p> Mantienes un efecto con una duración sostenida mientras te mueves a la mitad de velocidad. La mayoría de estos efectos pueden mantenerse durante 10 minutos, aunque algunos especifican que pueden mantenerse durante una duración diferente. Mantener un efecto que requiere tomar decisiones complejas, como <em> arma espectral </em> , puede convertirte en @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw] {Fatigado} , según lo determine el DJ. </p>"
     },
+    "Swarm Forth": {
+      "name": "Swarm Forth",
+      "description": "<p><strong>Requirements</strong> Your swarm is within your body</p><hr /><p><strong>Effect</strong> Your swarm boils forth from your body into a space adjacent to yours. (Its space can overlap yours.) It remains separate from you until the end of your next turn, but you can Sustain the effect up to 1 minute. The effect also ends if you end your turn more than 60 feet away from the swarm. When you use Swarm Forth and each time you Sustain the effect, you can have the swarm Stride.</p>"
+    },
+    "Swift Choreography": {
+      "name": "Swift Choreography",
+      "description": "<p><strong>Trigger</strong> An ally within 30 feet would become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p><hr /><p><strong>Effect</strong> You call out a quick reminder to your ally about a special move you'd suggested to them at some point in the past, allowing the ally to avoid the triggering effect completely.</p>"
+    },
     "Swim": {
       "name": "Nadar",
       "description": "<p> Intentas una prueba de <span data-pf2-action=\"swim\" data-pf2-glyph=\"A\"> Atletismo </span> para moverte una distancia máxima de 10 pies a través del agua. El GM determina la DC en función de la turbulencia o peligrosidad del agua; en la mayoría de los casos de aguas tranquilas, se obtiene un éxito crítico automático. Si su velocidad terrestre es de 40 pies o más, aumente la distancia máxima posible en 5 pies por cada 20 pies de velocidad por encima de 20 pies. </p>\n <p> Si terminas tu turno en el agua y no has tenido éxito en una acción de Nadar queturno, te hundes 10 pies o te mueves por la corriente, según lo determine el DJ. Esto no se aplica si tu última acción en tu turno fue entrar al agua. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> Te mueves a través del agua, aumentando la distancia máxima en 5 pies. </p>\n <p> <strong> Éxito </strong> Te mueves por el agua. </p>\n <p> <strong> Fallo crítico </strong> No logras ningún progreso. Siestás conteniendo la respiración, pierdes 1 ronda de aire. </p>\n <h2> Ejemplos de tareas de natación </h2>\n <p> <strong> No entrenado </strong> lago u otra agua tranquila </p>\n <p> <strong> Entrenado </strong> agua que fluye, como un río </p>\n <p> <strong> Experto </strong> río que fluye rápidamente </p>\n <p> <strong> Maestro </strong> mar tempestuoso </p>\n <p> <strong> Legendario</strong> vorágine, cascada </p>"
@@ -1384,6 +1448,10 @@
     "Take a Taste": {
       "name": "Pruébalo",
       "description": "<p> <strong> Requisitos </strong> El zombie tiene una criatura @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei] {Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM] {Neutralizado} . </p>\n <hr />\n <p> El zombi intenta agarrar y morder a una criatura. El zombie golpea con las mandíbulas a la criatura. Este Golpe usa las mismas estadísticas que su Golpe cuerpo a cuerpo normal, excepto que su dado de daño es 1d10 y causa daño perforante. </p>"
+    },
+    "Talon Stance": {
+      "name": "Talon Stance",
+      "description": "<p><strong>Effect</strong> You sway in a loose stance that lets you sweep in wide arcs with the claws on your feet. The only Strikes you can make are spinning talon unarmed attacks. These deal @Damage[1d8[slashing]] damage, are in the brawling group, and have the finesse, sweep, and unarmed traits. You don't need a free hand to use spinning talon strikes.</p>"
     },
     "Tap Ley Line": {
       "name": "Toque Línea Ley",
@@ -1466,12 +1534,16 @@
       "description": "<p> <strong> Requisitos </strong> Tienes al menos una mano libre. Tu objetivo no puede ser más de una talla más grande que tú. </p>\n <hr />\n <p> Intentas derribar a una criatura al suelo. Intenta una prueba de <span data-pf2-action=\"trip\" data-pf2-glyph=\"A\"> Atletismo </span> contra la CD de Reflejos del objetivo. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> El objetivo cae, aterriza @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60] {Tumbado} y ​​sufre @Damage[1d6[bludgeoning]] de daño. </p><p> <strong> Éxito </strong> El objetivo cae y aterriza boca abajo. </p>\n <p> <strong> Fallo crítico </strong> Pierdes el equilibrio, te caes y aterrizas boca abajo. </p>"
     },
     "True Shapeshift": {
-      "name": "Verdadero cambio de forma",
-      "description": "<p> <strong> Requisitos </strong> Estás bajo los efectos de @UUID[Compendium.pf2e.spells-srd.Item.8RWfKConLYFZpQ9X] {Untamed Form} </p>\n <hr />\n <p> <strong> Efecto </strong> Cambias a cualquier otra forma en tu <em> forma indómita </em> lista. Si la duración de esa forma es diferente de la que tenía anteriormente, use la duración más corta para determinar la duración restante. </p>"
+      "name": "Cambio de forma verdadero",
+      "description": "<p> <strong> Requisitos </strong> Estás bajo los efectos de @UUID[Compendium.pf2e.spells-srd.Item.8RWfKConLYFZpQ9X]{Forma indómita} </p>\n <hr />\n<p> <strong> Efecto </strong> Cambias a cualquier otra forma de tu lista de forma indómita. Si la duración de dicha forma es diferente a la que tenías previamente, utiliza la más corta para determinar la que queda. </p>"
     },
     "Tumble Through": {
       "name": "Pasar Haciendo Acrobacias",
       "description": "<p> Avanzas a tu velocidad. Durante este movimiento, puedes intentar moverte por el espacio de un enemigo. Intenta una prueba de <span data-pf2-action=\"tumbleThrough\" data-pf2-glyph=\"A\"> Acrobacias </span> contra la CD de Reflejos del enemigo tan pronto como intentes entrar en su espacio. Puedes @UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8] {Tumble Through} usando Trepar, Volar, Nadar u otra acción en lugar de Zancada en el entorno apropiado. </p>\n <p> <strong> Éxito </strong> Te mueves a través del espacio del enemigo, tratando las casillas en su espacio comoTerreno difícil (cada 5 pies cuesta 10 pies de movimiento). Si no tienes suficiente velocidad para moverte por todo su espacio, obtienes el mismo efecto que un fracaso. </p>\n <p> <strong> Fallo </strong> Tu movimiento termina y desencadenas reacciones como si te hubieras salido del cuadrado en el que empezaste. </p>"
+    },
+    "Turn Aside Ambient Magic": {
+      "name": "Turn Aside Ambient Magic",
+      "description": "<p>Your ostilli glows a faint yellow as it establishes a barrier. Choose acid, cold, electricity, fire, or sonic damage. Until the beginning of your next turn, you gain resistance against the chosen damage type equal to half your level.</p>"
     },
     "Unleash Psyche": {
       "name": "Libera la psique",
@@ -1479,7 +1551,7 @@
     },
     "Unwavering Resilience": {
       "name": "Unwavering Resilience",
-      "description": "<p><strong>Trigger</strong> You attempt a saving throw against a poison, disease, or mental effect, but you haven't rolled yet.</p>\n<hr />\n<p>You tap into the power of the Plane of Wood, gaining strength and mental fortitude. You gain a +1 circumstance bonus on the triggering save. If you critically succeed at this saving throw, you become bolstered by your success; blossoms and new growth temporarily sprout all over your body, and you gain a number of temporary Hit Point equal to your level. These temporary Hit Points last for one minute. When there temporary Hit Points are lost, the verdant growth subsides.</p>"
+      "description": "<p><strong>Desencadenante</strong> Intentas realizar una tirada de salvación contra un veneno, una enfermedad o un efecto mental, pero aún no lo has hecho.</p>\n<hora/>\n<p>Aprovechas el poder del Plano de Madera, ganando fuerza y ​​fortaleza mental. Obtienes una bonificación de circunstancia +1 en la salvación desencadenante. Si tienes un éxito crítico en esta tirada de salvación, tu éxito te reforzará; Flores y nuevos brotes brotan temporalmente por todo tu cuerpo, y ganas una cantidad de puntos de vida temporales igual a tu nivel. Estos puntos de vida temporales duran un minuto. Cuando se pierden puntos de vida temporales, el crecimiento verde disminuye.</p>"
     },
     "Upstage": {
       "name": "Altanero",
@@ -1491,7 +1563,7 @@
     },
     "Verdant Rest": {
       "name": "Descanso verde",
-      "description": "<p> Te conviertes en un árbol u otra planta que no es una criatura. Esto tiene el efecto de usar @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu] {One with Plants} para convertirte en una planta, excepto que tu CA es 30. Puedes descartar este efecto para regresar. Si descansas durante 10 minutos de esta forma a la luz del sol natural, recuperas la mitad de tus puntos de vida máximos. Si tomas tu descanso diario de esta forma, el resto te devuelve el máximo de puntos de vida y elimina todos los @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR] {Drenado}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7] {Debilitado}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm] no permanentes.condiciones {Torpe} y ​​@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg] {Anonadado}, así como todos los venenos y enfermedades de nivel 19 o inferior. </p>"
+      "description": "<p> Te conviertes en un árbol o en otra planta que no es una criatura. Esto tiene el mismo efecto que utilizar uno con las plantas para convertirte en una planta, excepto que tu CA es 30. Puedes Deshacer este efecto para volver. Si descansas durante 10 minutos en esta forma bajo luz solar natural, recuperas la mitad de tus Puntos de Golpe máximos. Si llevas a cabo tu descanso diario en esta forma, recuperas el máximo de tus Puntos de Golpe y eliminas todos los estados no permanentes de @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe} y @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado}, así como todos los venenos y enfermedades de nivel 19 o menor. </p>"
     },
     "Visions of Sin": {
       "name": "Visiones del pecado",
