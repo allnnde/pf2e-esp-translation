@@ -168,6 +168,9 @@
             }
           }
         },
+        "action->Quick-Tempered": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.actionspf2e.Item.a9PzINjFTO5GvAJN]\n<p><strong>Trigger</strong> You roll initiative.</p>\n<p><strong>Requirements</strong> You are not @UUID[Compendium.pf2e.conditionitems.Item.D5mg6Tc7Jzrj6ro7]{Encumbered} or wearing heavy armor.</p><hr /><p>So long as you are able to move freely, your fury is instinctive and instantaneous. You @UUID[Compendium.pf2e.actionspf2e.Item.Ah5g9pDwWF9b9VW9]{Rage}.</p>"
+        },
         "lore->Warfare Lore": {
           "name": "Warfare Lore"
         }
@@ -249,6 +252,10 @@
               "text": "Cuando obtienes un éxito en una tirada de salvación contra un efecto que te haría controlado, obtienes un éxito crítico."
             }
           }
+        },
+        "feat->Dangerous Sorcery": {
+          "name": "Dangerous Sorcery",
+          "description": "<p>Your legacy grants you great destructive power. When you Cast a Spell from your spell slots, if the spell deals damage and doesn't have a duration, you gain a status bonus to that spell's damage equal to the spell's rank.</p>"
         },
         "consumable->Scroll of Blur (Level 2)": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\nPergamino de Desenfoque (Nivel 2)",
@@ -810,6 +817,10 @@
         "feat->Living Weapon (Jaws)": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.feats-srd.Item.zi84Xt4dTsLeJ3uD]\nArma viviente (mandíbulas)"
         },
+        "feat->Dangerous Sorcery": {
+          "name": "Dangerous Sorcery",
+          "description": "<p>Your legacy grants you great destructive power. When you Cast a Spell from your spell slots, if the spell deals damage and doesn't have a duration, you gain a status bonus to that spell's damage equal to the spell's rank.</p>"
+        },
         "armor->Robes": {
           "name": "batas"
         },
@@ -1190,7 +1201,7 @@
         "consumable->Scroll of Augury (Level 2)": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\nPergamino de Augurio (Nivel 2)",
           "consumableSpellName": "Augurio",
-          "consumableSpellDescription": "<p>You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveals the GM's best guess among the following outcomes:</p>\n<ul>\n<li><strong>Weal</strong> The results will be good.</li>\n<li><strong>Woe</strong> The results will be bad.</li>\n<li><strong>Weal</strong> and Woe The results will be a mix of good and bad.</li>\n<li><strong>Nothing</strong> There won't be particularly good or bad results.</li>\n</ul>\n<p>The GM rolls a secret @Check[type:flat|dc:6|traits:secret]. On a failure, the result is always \"nothing.\" This makes it impossible to tell whether a \"nothing\" result is accurate. If anyone asks about the same topic as the first casting of augury during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result.</p>",
+          "consumableSpellDescription": "<p>You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveals the GM's best guess among the following outcomes:</p>\n<ul>\n<li><strong>Weal</strong> The results will be good.</li>\n<li><strong>Woe</strong> The results will be bad.</li>\n<li><strong>Weal</strong> and Woe The results will be a mix of good and bad.</li>\n<li><strong>Nothing</strong> There won't be particularly good or bad results.</li>\n</ul>\n<p>The GM rolls a secret @Check[flat|dc:6|traits:secret]. On a failure, the result is always \"nothing.\" This makes it impossible to tell whether a \"nothing\" result is accurate. If anyone asks about the same topic as the first casting of augury during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result.</p>",
           "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\n <p> @UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]{Augury} </p> <hr /> <p> Lanzar un hechizo desde un pergamino requiere sostener el pergamino en una mano y activarlo con una actividad de Lanzar un hechizo usando el número normal de acciones para ese hechizo. </p>\n <p> Para lanzar un hechizo desde un pergamino, el hechizo debe aparecer en tu lista de hechizos. Como eres tú quien lanza el hechizo, usa tu tirada de ataque de hechizo ydeletrea DC. El hechizo también obtiene el rasgo apropiado para tu tradición (arcana, divina, oculta o primordial). </p>\n <p> Todos los componentes materiales físicos y los costos se proporcionan cuando se crea un pergamino, por lo que no es necesario proporcionarlos al lanzar un hechizo a partir de un pergamino. Debes reemplazar cualquier componente material requerido para ese hechizo con un componente somático. Si el hechizo requiere un enfoque, debes tener ese enfoque para lanzar el hechizo desde un pergamino. </p>\n <hr /><p> <em> Nota: Para crear un pergamino o varita de un hechizo específico, arrastre el hechizo desde el compendio o navegador de compendio al inventario de un PC, NPC o actor de botín. </em> </p>"
         },
         "consumable->Scroll of Neutralize Poison (Level 3)": {
@@ -1825,7 +1836,8 @@
           "description": "<p>By birth or through training, your tail is strong enough to make for a powerful melee weapon. You gain a tail unarmed attack that deals 1d6 bludgeoning damage and has the sweep trait.</p>"
         },
         "feat->Vision Of Weakness": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.feats-srd.Item.ww5AM2yFs0lqQhmD]\nVision Of Weakness"
+          "name": "Vision Of Weakness",
+          "description": "<p>You can call upon divine insights to single out your foes' weak points. You learn the @UUID[Compendium.pf2e.spells-srd.Item.NhNKzq1DvFxkvTEc]{Vision of Weakness} revelation spell. Increase the number of Focus Points in your focus pool by 1.</p>"
         },
         "background->Scholar (Occultism)": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.backgrounds.Item.v0WPfxN6G8XFfFZT]\nErudito (ocultismo)"
@@ -1996,7 +2008,7 @@
           "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.qCEOZ6109Yo34tRx]\n <p> Un libro de fórmulas contiene las fórmulas necesarias para fabricar elementos distintos del equipo común de este capítulo; los alquimistas suelen obtener uno gratis. Cada libro de fórmulas puede contener fórmulas para hasta 100 elementos diferentes. Las fórmulas también pueden aparecer en hojas de pergamino, tabletas y casi cualquier otro medio; No es necesario que los copie en un libro específico siempre que pueda tenerlos a mano parahacer referencia a ellos. </p>"
         },
         "consumable->Biting Snare": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.9EZb1hmSKOGrU4Cf]\n<p>The snare's jaws shut on the leg of a creature that steps on it. The snare deals 5d6 piercing damage to the first creature that enters its square; that creature must attempt a @Check[type:reflex|dc:18] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and takes a -10-foot status penalty to its Speed until it recovers at least 1 Hit Point.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.9EZb1hmSKOGrU4Cf]\n<p>The snare's jaws shut on the leg of a creature that steps on it. The snare deals 5d6 piercing damage to the first creature that enters its square; that creature must attempt a @Check[reflex|dc:18] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and takes a -10-foot status penalty to its Speed until it recovers at least 1 Hit Point.</p>"
         }
       }
     },
@@ -2216,6 +2228,10 @@
       "items": {
         "heritage->Half-Orc": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.heritages.Item.tLd8Qg82AwEbbmgX]\nSemiorco"
+        },
+        "feat->Dangerous Sorcery": {
+          "name": "Dangerous Sorcery",
+          "description": "<p>Your legacy grants you great destructive power. When you Cast a Spell from your spell slots, if the spell deals damage and doesn't have a duration, you gain a status bonus to that spell's damage equal to the spell's rank.</p>"
         },
         "lore->Genealogy Lore": {
           "name": "Conocimiento genealógico"
