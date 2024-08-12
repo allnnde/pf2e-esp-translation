@@ -1121,13 +1121,13 @@
       "TheGreatFlood": {
         "LeadingHead": "Leading Head",
         "LeadingHeadDescription": {
-          "Aloof": "The aloof head casts a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]{Command} (@Check[will|dc:42]).",
+          "Aloof": "The aloof head casts a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]{Command} (@Check[type:will|dc:42]).",
           "Ambitious": "The ambitious head declares a divine position above its station. It gains 100 temporary Hit Points for 1 minute. It also gains a weakness 20 to spirit damage and can't Claim Position again for 1 minute.",
           "Assertive": "The Great Flood Swims, then makes a melee Strike.",
           "Capricious": "The capricious head counteracts each mental effect on themself as a 10th-rank effect with a [[/r 1d20+32 #Counteract]]{+32} counteract modifier.",
           "NoHeadSelected": "During each of the Great Flood's appearances, one head takes the lead once combat begins, chosen by the GM when initiative is rolled. Whichever head is in the lead grants a different action the Great Flood can use during its first turn each round (see Coordinated Actions).",
           "PeoplePleaser": "The heads discuss and audibly agree on a creature to target. Until they Build Consensus again, their Strikes deal an additional 20 precision damage to that creature.",
-          "Perfectionist": "The perfectionist head criticizes a creature within their aura. The creature must succeed at a @Check[will|dc:42] save or take @Damage[9d6[persistent,mental]] damage.",
+          "Perfectionist": "The perfectionist head criticizes a creature within their aura. The creature must succeed at a @Check[type:will|dc:42] save or take @Damage[9d6[persistent,mental]] damage.",
           "Playful": "The playful head makes an ill-timed quip about the impermanence of life. They attempt to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} each creature within their aura.",
           "Secretive": "The Great Flood is @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} until the end of their turn and teleports to an open space within their aura.",
           "Suspicious": "The Great Flood peers at their surroundings. Until they move, they see through illusions in their aura and the reach of their jaws is increased to 25 feet."
@@ -1934,7 +1934,7 @@
       },
       "Assassin": {
         "Assassinate": {
-          "Note": "If you hit, your mark takes an additional @Damage[(6d6[precision])[@item.system.damage.damageType]] damage with a @Check[fortitude|against:class-spell|basic] save. If the mark critically fails, it dies unless its level is higher than yours."
+          "Note": "If you hit, your mark takes an additional @Damage[(6d6[precision])[@item.system.damage.damageType]] damage with a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save. If the mark critically fails, it dies unless its level is higher than yours."
         }
       },
       "Automaton": {
@@ -2924,14 +2924,14 @@
         "AttunementShift": "Attunement Shift",
         "TerrainAttunement": {
           "Aquatic": "You gain a swim Speed equal to your land Speed. If you're on a surface, temporary waves of water follow your movements, allowing you to use your swim Speed—if you have one—as your land Speed.",
-          "Arctic": "Enemies must attempt a @Check[fortitude] save. They take a –5-foot status penalty to their Speeds for 2 rounds (–10-foot on a critical failure).",
+          "Arctic": "Enemies must attempt a @Check[type:fortitude] save. They take a –5-foot status penalty to their Speeds for 2 rounds (–10-foot on a critical failure).",
           "Desert": "Enemies must attempt a @Check[type:fortitude] save. On a failure, they're @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigado} until they drink water or another potable liquid.",
           "Forest": "Branches and vines reach out to get in your foes' way. Enemies must attempt a @Check[type:reflex] save. On a failure, they become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Torpe 1} for 1 round (@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Torpe 2} on a critical failure).",
           "Label": "Terrain Attunement",
           "Mountain": "You gain resistance to physical damage (except adamantine) equal to the spell level for 1 round.",
           "Plains": "You gain temporary Hit Points equal to the spell level for 1 round.",
           "Sky": "You can Fly up to 10 feet. If you're in the air at the end of the turn and don't have a fly Speed, you fall.",
-          "Swamp": "Affected foes take @Damage[(max(1,floor(@item.level/2)))[persistent,poison]] damage with a @Check[fortitude|basic] save.",
+          "Swamp": "Affected foes take @Damage[(max(1,floor(@item.level/2)))[persistent,poison]] damage with a @Check[type:fortitude|basic:true] save.",
           "Underground": "For 1 round, you gain darkvision as well as imprecise tremorsense out to 15 feet."
         }
       },
@@ -3187,7 +3187,7 @@
       },
       "Investigator": {
         "CertainStratagem": {
-          "Note": "You deal half of your @Damage[(floor((@actor.level+3)/4)d6[precision])[@item.system.damage.damageType]|traits:certain-stratagem]{Strategic Strike damage} to the target"
+          "Note": "You deal half of your @Damage[(floor((@actor.level+3)/4)[precision])[@item.system.damage.damageType]]{Strategic Strike damage} to the target"
         },
         "DeviseAStratagem": {
           "Attack": "Attack Stratagem",
@@ -3290,7 +3290,7 @@
           "VenomtailKobold": "Kobold cola venenosa"
         },
         "DragonsBreath": {
-          "DescriptionAlteration": "You channel your draconic exemplar's power into a gout of energy that manifests as a @Template[line|distance:60] or a @Template[cone|distance:30], dealing @Damage[ceil(@actor.level/2)d8[@actor.flags.pf2e.draconicExemplar.damageType]|traits:area-damage] damage. Each creature in the area must attempt a basic saving throw against the higher of your class DC or spell DC. You can't use this ability again for 1 hour."
+          "DescriptionAlteration": "You channel your draconic exemplar's power into a gout of energy that manifests as a @Template[type:line|distance:60] or a @Template[type:cone|distance:30], dealing @Damage[ceil(@actor.level/2)d8[@actor.flags.pf2e.draconicExemplar.damageType]|traits:area-damage] damage. Each creature in the area must attempt a basic saving throw against the higher of your class DC or spell DC. You can't use this ability again for 1 hour."
         },
         "DragonsPresence": {
           "Note": "Cuando obtienes un éxito en una tirada de salvación contra un efecto de miedo, obtienes un éxito crítico. Cuando obtienes un fracaso contra un efecto de miedo, en su lugar obtienes un fracaso crítico."
@@ -3594,7 +3594,7 @@
           "Toggle": "Used Diverse Mystery cursebound spell"
         },
         "MeddlingFutures": {
-          "Note": "If you attempt to use a different action, you must succeed at a @Check[flat|dc:6] or the action is lost."
+          "Note": "If you attempt to use a different action, you must succeed at a @Check[type:flat|dc:6] or the action is lost."
         },
         "Mystery": {
           "Prompt": "Selecciona un misterio."
@@ -4245,7 +4245,7 @@
         },
         "BeaconMark": {
           "Description": "When you cast _sigil_, you can modify the spell to add the following heightened entry.",
-          "DescriptionHeightened": "You attune yourself to the marked target. While the spell lasts, you can spend a single action, which has the concentrate, detection, and divination traits, to attempt to locate the target, learning the direction to the target as long as you are within 1 mile of it. If the target is a creature or a creature is in possession of the target object, the creature can attempt a @Check[will] saving throw against your spell DC. If it succeeds, your attempt to locate the target fails and you can't attempt this again for 1 day. You can only have a single target marked with a _sigil_ modified in this way. If you Cast this Spell again on a second target, the _sigil_ spell on the first target ends, and your mark fades."
+          "DescriptionHeightened": "You attune yourself to the marked target. While the spell lasts, you can spend a single action, which has the concentrate, detection, and divination traits, to attempt to locate the target, learning the direction to the target as long as you are within 1 mile of it. If the target is a creature or a creature is in possession of the target object, the creature can attempt a @Check[type:will] saving throw against your spell DC. If it succeeds, your attempt to locate the target fails and you can't attempt this again for 1 day. You can only have a single target marked with a _sigil_ modified in this way. If you Cast this Spell again on a second target, the _sigil_ spell on the first target ends, and your mark fades."
         },
         "ChokingSmoke": {
           "Description": "When you cast _fireball_ heightened to at least 6th rank, you can modify the spell's standard effects as follows: Reduce the spell's damage by 6d6. Your _fireball_ leaves behind a lingering cloud of toxic smoke in its area. While it's smoke instead of mist, this cloud otherwise has the effects of @UUID[Compendium.pf2e.spells-srd.Item.GKpEcy9WId6NJvtx]{Stinking Cloud}."
@@ -4279,7 +4279,7 @@
           "Description": "When you cast _mist_, you can modify the spell to replace its standard effects with the following: You cause a cloud of thick fog to blanket the area, making it difficult to see the ground. The area within the fog is difficult terrain for creatures that can't see through fog or mist. You can Dismiss the cloud."
         },
         "ScatteredFire": {
-          "Description": "When you cast _fireball_, you can modify its area to be two non-overlapping @Template[burst|distance:10]{10-foot bursts}."
+          "Description": "When you cast _fireball_, you can modify its area to be two non-overlapping @Template[type:burst|distance:10]{10-foot bursts}."
         },
         "ShiningArms": {
           "Description": "When you cast _light_, you can modify its target to be 1 melee weapon, either unattended or possessed by you or a willing ally, and modify its duration to be 1 minute. If you do, add the following to its effects: When a creature wielding the weapon critically hits a foe, you can Dismiss the Spell as a reaction, causing the foe to be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} for 1 round. After you use this reaction, you can't use this modification again for 10 minutes.",
@@ -4299,7 +4299,7 @@
           "Description": "When you cast _summon instrument_, you can modify its duration to be sustained, up to 1 minute. When you do, you summon a number of instruments equal to your spellcasting ability modifier that hover around you and play of their own accord. Once per turn when you Sustain the Spell, choose an opponent within 30 feet who can hear your performance. The target must attempt a @Check[type:will] save against the spell's DC; on a failure, it becomes distracted by your performance and becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} for 1 round. The target is then temporarily immune for 24 hours."
         },
         "SurroundingFlames": {
-          "Description": "When you cast _wall of fire_, you can modify its standard effects as follows: Instead of a 5-foot-thick, 10-foot-radius ring of flame, you can form the wall into a @Template[burst|distance:10]{10-foot-radius} hemisphere of fire."
+          "Description": "When you cast _wall of fire_, you can modify its standard effects as follows: Instead of a 5-foot-thick, 10-foot-radius ring of flame, you can form the wall into a @Template[type:burst|distance:10]{10-foot-radius} hemisphere of fire."
         },
         "TopplingTentacles": {
           "Description": "When you cast _black tentacles_, replace the spell's standard effects with the following: Tentacles slither along the ground in the area, attempting to hinder anyone within. Sticky black tentacles attempt to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} each creature in the area. Attempt spell attack rolls against the Reflex DCs of each affected creature. Any creature you succeed against is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} and takes @Damage[3d6[bludgeoning]] damage. Whenever a creature ends its turn in the area, the tentacles attempt to Trip that creature if it isn't already prone, and they deal @Damage[1d6[bludgeoning]] damage to any creature already prone. Creatures treat the spell's area as difficult terrain."
@@ -4312,7 +4312,7 @@
         },
         "VolatileGrease": {
           "CriticalSuccess": "El objetivo no ha sido afectado",
-          "Description": "When you cast _grease_, you can modify its target to be 1 creature. If you do, replace the spell's standard effects with the following: You splash the target with combustible grease. The target must attempt a @Check[reflex] save.",
+          "Description": "When you cast _grease_, you can modify its target to be 1 creature. If you do, replace the spell's standard effects with the following: You splash the target with combustible grease. The target must attempt a @Check[type:reflex] save.",
           "DescriptionHeightened": "The weakness increases by 1.",
           "Failure": "As success, except the weakness to fire lasts for 1 minute.",
           "Success": "The target is splattered with grease and gains weakness 2 to fire until the end of your next turn. The target or an adjacent creature can rub off the combustible grease with an Interact action, ending the effect."
@@ -4350,10 +4350,10 @@
         "EchoingChannel": "Choose one additional creature in range. Target that creature with a 1-action version of the same spell. This spell is the same rank as the 2-action harm or heal you cast and doesn't cost another spell slot",
         "EnergyAblation": "If your next action is to Cast a Spell that deals at least one type of energy damage (acid, cold, electricity, fire, force, sonic, vitality, or void), you gain resistance to an energy damage type of your choice equal to the spell's rank. The resistance lasts until the end of your next turn. You get the resistance regardless of whether or not your spell dealt damage.",
         "EnergyFusion": "If the next action you use is to Cast a Spell that deals energy damage, select a non-cantrip spell in your spell repertoire that deals a different type of energy damage, and expend an additional spell slot of the same rank as this secondary spell. The spell you cast deals additional damage equal to the rank of the secondary spell slot expended. The spell's total damage is divided evenly between the energy type of the spell you cast and the energy type of the secondary spell.",
-        "ExplosiveArrival": "If your next action is to Cast a Spell with the summon trait, all creatures in a @Template[emanation|distance:10] around the creature you summoned take @Damage[(@item.level)d4[fire]] damage. If the creature summoned has the @Damage[(@item.level)d4[acid]]{acid}, @Damage[(@item.level)d4[cold]]{cold}, @Damage[(@item.level)d4[electricity]]{electricity}, @Damage[(@item.level)d4[sonic]]{sonic}, or @Damage[(@item.level)d4[spirit]]{spirit} trait, you can deal damage of that type instead.",
+        "ExplosiveArrival": "If your next action is to Cast a Spell with the summon trait, all creatures in a @Template[type:emanation|distance:10] around the creature you summoned take @Damage[(@item.level)d4[fire]] damage. If the creature summoned has the @Damage[(@item.level)d4[acid]]{acid}, @Damage[(@item.level)d4[cold]]{cold}, @Damage[(@item.level)d4[electricity]]{electricity}, @Damage[(@item.level)d4[sonic]]{sonic}, or @Damage[(@item.level)d4[spirit]]{spirit} trait, you can deal damage of that type instead.",
         "ForcibleEnergy": "If your next action is to Cast a Spell that deals acid, cold, electricity, fire, or sonic damage, you can select one target that was damaged to gain weakness 5 to that damage type until the end of your next turn. If a spell deals multiple types of energy damage, choose one that the target gains weakness to. This has no effect on creatures with resistance or immunity to the energy type you choose. @UUID[Compendium.pf2e.feat-effects.Item.0Ai0u9kNJrEudPnN]{Effect: Forcible Energy}",
         "FormControl": "The spell's rank is 2 lower than normal (minimum 1st rank), but you can remain transformed for up to 1 hour or the listed duration (whichever is longer). You can still Dismiss untamed form as normal.",
-        "GarlandSpell": "A garland of plants grows in a @Template[burst|distance:10] in the spell's range. The plants are difficult terrain and hazardous terrain, covered in your choice of thorns or poisonous vines. Any creature that moves into one of these squares or ends its turn in one takes @Damage[2d6[piercing]]damage for thorns or @Damage[2d6[poison]] for vines. A creature can take this damage only once per turn. You and your familiar are immune to this damage. The plants last for 1 minute or until you cast another Garland Spell, whichever comes first. The damage increases to 3d6 at 16th level and 4d6 at 20th level.",
+        "GarlandSpell": "A garland of plants grows in a @Template[type:burst|distance:10] in the spell's range. The plants are difficult terrain and hazardous terrain, covered in your choice of thorns or poisonous vines. Any creature that moves into one of these squares or ends its turn in one takes @Damage[2d6[piercing]]damage for thorns or @Damage[2d6[poison]] for vines. A creature can take this damage only once per turn. You and your familiar are immune to this damage. The plants last for 1 minute or until you cast another Garland Spell, whichever comes first. The damage increases to 3d6 at 16th level and 4d6 at 20th level.",
         "GrowthSpell": "Expand the area of the spell. For bursts, expand the radius by 5 feet; for cones, expand the cone by 10 feet; and for lines, expand the length by 15 feet. The spell gains the wood trait.",
         "GustingSpell": "If the next action you use is to Cast a Spell with the air or electricity trait, you can Fly up to 10 feet before or after the spell is cast.",
         "Harmonize": "If your next action is to cast a composition, it becomes a harmonized composition. Unlike a normal composition, a harmonized composition doesn't end if you cast another composition, and you can cast another composition on the same turn as a harmonized one. Casting another harmonized composition ends any harmonized composition you already have in effect.",
@@ -4377,7 +4377,7 @@
         "RockslideSpell": "(@item.rank) 5-foot squares in the area equal to the spell rank become difficult terrain for 1 round. These squares must be on the ground, and the entire area of difficult terrain must be contiguous. The spell gains the earth trait.",
         "SafeguardSpell": "If the next action you take is to Cast a Spell with an area, you aren't affected by the spell even if you are within the area.",
         "ScintillatingSpell": "If your next action is to Cast a Spell that doesn't have the darkness trait, has no duration, and requires creatures to attempt a Reflex save, the spell explodes in a spray of scintillating lights, in addition to its other effects. Each creature that failed its Reflex save against the spell is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} for 1 round, and those who critically failed are instead @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} for 1 round.",
-        "SecondaryDetonationArray": "If your next action is to Cast a Spell that deals damage, has no duration, and affects an area, a glowing magic circle appears in a @Template[burst|distance:5] within that area. At the beginning of your next turn, the circle detonates, dealing @Damage[(@item.level)d6[force]] damage to all creatures within the circle, with a @Check[reflex|against:spell]. If the spell dealt a different type of damage, the circle deals @Damage[(@item.level)d6[@actor.flags.pf2e.spellshape.arrayDamage]]{this type of damage instead} (or one type of your choice if the spell could deal multiple types of damage)",
+        "SecondaryDetonationArray": "If your next action is to Cast a Spell that deals damage, has no duration, and affects an area, a glowing magic circle appears in a @Template[type:burst|distance:5] within that area. At the beginning of your next turn, the circle detonates, dealing @Damage[(@item.level)d6[force]] damage to all creatures within the circle, with a @Check[type:reflex|dc:resolve(@actor.system.attributes.spellDC.value)]. If the spell dealt a different type of damage, the circle deals @Damage[(@item.level)d6[@actor.flags.pf2e.spellshape.arrayDamage]]{this type of damage instead} (or one type of your choice if the spell could deal multiple types of damage)",
         "SnowdriftSpell": "Select one creature affected by the spell on the ground. Each square on the ground under or adjacent to the creature fills with ankle-deep snow. Those squares are difficult terrain until the beginning of your next turn. A creature can Interact to clear a square of snow, and the snow in a square melts if that square is exposed to a fire effect.",
         "SowSpell": "If your next action is to Cast a Spell using 1 action or 2 actions, the spell instead plants itself in an adjacent square. You must make all decisions regarding the spell at the time you cast it. Within the next 10 minutes, you can direct your sown spell to sprout and produce the spell's effects as a reaction, which is triggered when a creature enters the sown spell's space or a square adjacent to it. You can have only one sown spell at a time, and if you don't trigger the spell within 10 minutes, it dissipates and the spell is lost. A creature can notice the sown spell with a successful Perception check against your spell DC.",
         "SpellShroud": "If your next action is to Cast a Spell that targets you, you surround yourself in a @Template[emanation|distance:15] of dense magical mist that lasts until the start of your next turn. All creatures within the cloud become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the cloud are concealed to creatures within it.",
