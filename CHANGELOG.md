@@ -1,3 +1,77 @@
+# [5.25.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.24.0...v5.25.0) (2024-08-12)
+
+
+### Bug Fixes
+
+* New translations abomination-vaults-bestiary.json from Crowdin ([8bfc3ff](https://github.com/allnnde/pf2e-esp-translation/commit/8bfc3ff11bad058c01ea74abe08ae89fc1890faf))
+* New translations actions.json from Crowdin ([e24e8ef](https://github.com/allnnde/pf2e-esp-translation/commit/e24e8ef89fd7c3bf1168cb6d3e458ffeb827e37d))
+* New translations actions.json from Crowdin ([cd73522](https://github.com/allnnde/pf2e-esp-translation/commit/cd735228267357522f9d3d893e9af9670708e657))
+* New translations adventure-specific-actions.json from Crowdin ([7fb34e3](https://github.com/allnnde/pf2e-esp-translation/commit/7fb34e34815fd065c34ac27274ef1a0dc2b38460))
+* New translations age-of-ashes-bestiary.json from Crowdin ([a5733c6](https://github.com/allnnde/pf2e-esp-translation/commit/a5733c67657e62ae00a82f4746a58dfad9e0a038))
+* New translations age-of-ashes-bestiary.json from Crowdin ([368a4cc](https://github.com/allnnde/pf2e-esp-translation/commit/368a4ccb23973181be06a5a703cbd76fd3e96139))
+* New translations ancestries.json from Crowdin ([59b771c](https://github.com/allnnde/pf2e-esp-translation/commit/59b771c8f5c9c6647396c2fc195e3b4e54cdae1e))
+* New translations ancestries.json from Crowdin ([e3beaa9](https://github.com/allnnde/pf2e-esp-translation/commit/e3beaa92049748e4a173f80c1326246f1fd89144))
+* New translations ancestryfeatures.json from Crowdin ([6f2503a](https://github.com/allnnde/pf2e-esp-translation/commit/6f2503a3eb892b41dd985b4e01c87cb90fef1d0b))
+* New translations backgrounds.json from Crowdin ([c5a29f2](https://github.com/allnnde/pf2e-esp-translation/commit/c5a29f2449b41f094ce7a08b5f6fff362d40c457))
+* New translations bestiary-ability-glossary-srd.json from Crowdin ([0771384](https://github.com/allnnde/pf2e-esp-translation/commit/07713849e4dbd228a882bfe129b31af2c390ee3e))
+* New translations bestiary-effects.json from Crowdin ([53af7e7](https://github.com/allnnde/pf2e-esp-translation/commit/53af7e7cad7dc4990a3ddd3fbbc002ad4bbcae98))
+* New translations bestiary-effects.json from Crowdin ([002df8d](https://github.com/allnnde/pf2e-esp-translation/commit/002df8d84e9a4f2ca63ef876dc581d4a75cadcd9))
+* New translations bestiary-family-ability-glossary.json from Crowdin ([3f4b639](https://github.com/allnnde/pf2e-esp-translation/commit/3f4b6396e98db8c99e39fc0549ac144b119c5697))
+* New translations book-of-the-dead-bestiary.json from Crowdin ([1689ff4](https://github.com/allnnde/pf2e-esp-translation/commit/1689ff422bfee786d31d03b695957bc20a1d1b48))
+* New translations book-of-the-dead-bestiary.json from Crowdin ([4a175d9](https://github.com/allnnde/pf2e-esp-translation/commit/4a175d958b203603b57aa5cbda6de839f9869e49))
+* New translations boons-and-curses.json from Crowdin ([130b71b](https://github.com/allnnde/pf2e-esp-translation/commit/130b71b08034982afd3fc5c557f0746435a2540b))
+* New translations campaign-effects.json from Crowdin ([a7045fc](https://github.com/allnnde/pf2e-esp-translation/commit/a7045fcd25d7df21bb878ea8952e18fa45f6f23c))
+* New translations campaign-effects.json from Crowdin ([b837a74](https://github.com/allnnde/pf2e-esp-translation/commit/b837a74743f97d2038e7c35191f5aff02baf36f1))
+* New translations classfeatures.json from Crowdin ([41224e2](https://github.com/allnnde/pf2e-esp-translation/commit/41224e293d68726a7cf2e8b52f8addecd117a47b))
+* New translations classfeatures.json from Crowdin ([f2e0c26](https://github.com/allnnde/pf2e-esp-translation/commit/f2e0c261a65e378857fbe9c2106549bdc386ff22))
+* New translations conditions.json from Crowdin ([0e7e30e](https://github.com/allnnde/pf2e-esp-translation/commit/0e7e30e21cc4b3107987d5b01f24c98b82a169ce))
+* New translations dictionary.json from Crowdin ([3594c1f](https://github.com/allnnde/pf2e-esp-translation/commit/3594c1f638a532cfa783667dfac83192789a69eb))
+* New translations en.json from Crowdin ([cb161af](https://github.com/allnnde/pf2e-esp-translation/commit/cb161afa4c0e6b5d4cacab1ebc3648569422fe09))
+* New translations en.json from Crowdin ([b72e783](https://github.com/allnnde/pf2e-esp-translation/commit/b72e783833b7b212f781d38bd3764b3e4dc2c9af))
+* New translations equipment-effects.json from Crowdin ([8240fb1](https://github.com/allnnde/pf2e-esp-translation/commit/8240fb1846686f60a825bded597203b87053b2a2))
+* New translations equipment-effects.json from Crowdin ([e478f16](https://github.com/allnnde/pf2e-esp-translation/commit/e478f16fe851022d3dcbe5b1459808c8d40d34fa))
+* New translations equipment.json from Crowdin ([9529990](https://github.com/allnnde/pf2e-esp-translation/commit/9529990a31916f38ddd06fe9cd76b8924f7acb86))
+* New translations equipment.json from Crowdin ([e56cb7e](https://github.com/allnnde/pf2e-esp-translation/commit/e56cb7e414b77499e91fad72cad39044f73742f9))
+* New translations familiar-abilities.json from Crowdin ([9b4d0af](https://github.com/allnnde/pf2e-esp-translation/commit/9b4d0af5e37d7496b98d3d6d368fde62c7b61a40))
+* New translations feat-effects.json from Crowdin ([e611ac4](https://github.com/allnnde/pf2e-esp-translation/commit/e611ac4f741960d5fc7d7209681e256fdb719100))
+* New translations feat-effects.json from Crowdin ([337a52e](https://github.com/allnnde/pf2e-esp-translation/commit/337a52ed1814ed5df66594f66109d38bae3a805d))
+* New translations feats.json from Crowdin ([8e29d50](https://github.com/allnnde/pf2e-esp-translation/commit/8e29d50319f66bd09c3942b2302bf90eea85d703))
+* New translations feats.json from Crowdin ([96c4a0d](https://github.com/allnnde/pf2e-esp-translation/commit/96c4a0d27d04772bd395a5b79dbef767673d8b44))
+* New translations feats.json from Crowdin ([103971f](https://github.com/allnnde/pf2e-esp-translation/commit/103971f13911b63a5156af3f4dcafb8bd91123b9))
+* New translations heritages.json from Crowdin ([f668487](https://github.com/allnnde/pf2e-esp-translation/commit/f668487a5fc006bad3f1e1352f970eb2010dbe64))
+* New translations iconics.json from Crowdin ([3aecc58](https://github.com/allnnde/pf2e-esp-translation/commit/3aecc5886748caf77fa17d0d91bae2e5fab1de23))
+* New translations iconics.json from Crowdin ([2ff8b70](https://github.com/allnnde/pf2e-esp-translation/commit/2ff8b7066c8cc6b0122aa225f6d96ff7e144454c))
+* New translations journals.json from Crowdin ([71b3f77](https://github.com/allnnde/pf2e-esp-translation/commit/71b3f77c642de317bf530e11f1b7ad9227b13383))
+* New translations journals.json from Crowdin ([cee6063](https://github.com/allnnde/pf2e-esp-translation/commit/cee606333de67bff3bb63b14dc4183f9179160ea))
+* New translations menace-under-otari-bestiary.json from Crowdin ([d393022](https://github.com/allnnde/pf2e-esp-translation/commit/d3930225d8794cd4bbe9a75c44e79ca71843e935))
+* New translations menace-under-otari-bestiary.json from Crowdin ([06e7cad](https://github.com/allnnde/pf2e-esp-translation/commit/06e7cadb9549c3506f06ea71bca9c6cf3b629be5))
+* New translations mwangi-expanse-bestiary.json from Crowdin ([1e59a3c](https://github.com/allnnde/pf2e-esp-translation/commit/1e59a3c70401c29817d50e90d025ba2a7d277c0d))
+* New translations mwangi-expanse-bestiary.json from Crowdin ([26d85e5](https://github.com/allnnde/pf2e-esp-translation/commit/26d85e5ee981d844e0196bca956fe9c02b0e16ee))
+* New translations npc-gallery.json from Crowdin ([387b5e7](https://github.com/allnnde/pf2e-esp-translation/commit/387b5e7b0add975846d99b377bd3aa4b4c2af8ac))
+* New translations npc-gallery.json from Crowdin ([416b228](https://github.com/allnnde/pf2e-esp-translation/commit/416b228bc607628737188395be1365ddb162bbb5))
+* New translations outlaws-of-alkenstar-bestiary.json from Crowdin ([9d7c349](https://github.com/allnnde/pf2e-esp-translation/commit/9d7c34987cfcb799a77a5d6447756a52a98a3333))
+* New translations outlaws-of-alkenstar-bestiary.json from Crowdin ([1685224](https://github.com/allnnde/pf2e-esp-translation/commit/16852240cda9e693a48084fc4f5340260bf05c43))
+* New translations paizo-pregens.json from Crowdin ([4ec3d34](https://github.com/allnnde/pf2e-esp-translation/commit/4ec3d34511d493493951b257f81b960ad298c6e7))
+* New translations paizo-pregens.json from Crowdin ([94cc203](https://github.com/allnnde/pf2e-esp-translation/commit/94cc20316cc5d4faaf873e34af547312895418eb))
+* New translations re-en.json from Crowdin ([a63f3c9](https://github.com/allnnde/pf2e-esp-translation/commit/a63f3c98c13ed8e23a7c1cc62f2eab4d1f796ef1))
+* New translations re-en.json from Crowdin ([17e39a2](https://github.com/allnnde/pf2e-esp-translation/commit/17e39a2db6fa6916da469bad5bc64fece7ca3ab8))
+* New translations re-en.json from Crowdin ([547a8f7](https://github.com/allnnde/pf2e-esp-translation/commit/547a8f77914e81489d595134a56d026163c0e638))
+* New translations rollable-tables.json from Crowdin ([62eda85](https://github.com/allnnde/pf2e-esp-translation/commit/62eda85a044b3ac652047b06b7cfd6c12cafa990))
+* New translations rusthenge-bestiary.json from Crowdin ([bd5207b](https://github.com/allnnde/pf2e-esp-translation/commit/bd5207bdb9366b66874498ffae391f3b7a5e1d8e))
+* New translations rusthenge-bestiary.json from Crowdin ([9abacc6](https://github.com/allnnde/pf2e-esp-translation/commit/9abacc6c5b2bd707a2f51fa81ce982f359951958))
+* New translations spell-effects.json from Crowdin ([5ba648c](https://github.com/allnnde/pf2e-esp-translation/commit/5ba648c77ab66ec46c6f22a9c16f2e4902104569))
+* New translations spell-effects.json from Crowdin ([1a4995c](https://github.com/allnnde/pf2e-esp-translation/commit/1a4995c725a30a48597f3468deac1cf9c508cbb5))
+* New translations spells.json from Crowdin ([b7fb231](https://github.com/allnnde/pf2e-esp-translation/commit/b7fb23161dc249012819c02c99eab0d00427c101))
+* New translations spells.json from Crowdin ([f3a74d1](https://github.com/allnnde/pf2e-esp-translation/commit/f3a74d1774e4d381cf5f65d44cb54d7cd44a069e))
+
+
+### Features
+
+* automatic json extract to traslate ([bc0bbfb](https://github.com/allnnde/pf2e-esp-translation/commit/bc0bbfb5448e448d2f7597311ef249b017dc43b0))
+* automatic json extract to traslate ([c2a2f2d](https://github.com/allnnde/pf2e-esp-translation/commit/c2a2f2de46d1be000c26e3d64dbce3abb980f145))
+
+
+
 # [5.24.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.23.1...v5.24.0) (2024-07-30)
 
 
@@ -100,45 +174,6 @@
 * New translations en.json from Crowdin ([52f1583](https://github.com/allnnde/pf2e-esp-translation/commit/52f15834bed601e85886f7e8175ae8dc819ce2c3))
 * New translations journals.json from Crowdin ([814fa70](https://github.com/allnnde/pf2e-esp-translation/commit/814fa70ebc09ab0ae8a833665867831fcdbeaaa3))
 * New translations re-en.json from Crowdin ([31ba148](https://github.com/allnnde/pf2e-esp-translation/commit/31ba148f5101dc0b1d8aaf67ee70385376f4edff))
-
-
-
-## [5.22.2](https://github.com/allnnde/pf2e-esp-translation/compare/v5.22.1...v5.22.2) (2024-07-09)
-
-
-### Bug Fixes
-
-* New translations actions.json from Crowdin ([f5b4658](https://github.com/allnnde/pf2e-esp-translation/commit/f5b46584e182fd3d087c064a30dec98596fddf5e))
-* New translations ancestries.json from Crowdin ([4d29c19](https://github.com/allnnde/pf2e-esp-translation/commit/4d29c194f80a0a38151420fd4870b5886b85c515))
-* New translations ancestries.json from Crowdin ([347cf56](https://github.com/allnnde/pf2e-esp-translation/commit/347cf56d87e075f6257309bf96dae363941d3e4f))
-* New translations classes.json from Crowdin ([a515404](https://github.com/allnnde/pf2e-esp-translation/commit/a515404dbeb087477cd2799b5bfb074c48667c0a))
-* New translations classes.json from Crowdin ([608d102](https://github.com/allnnde/pf2e-esp-translation/commit/608d102b26b3fedfeb710c390ff44798e17f7f4a))
-* New translations classes.json from Crowdin ([75bf0d2](https://github.com/allnnde/pf2e-esp-translation/commit/75bf0d2b647fbb7cd117f5a1307594833169d96a))
-* New translations classfeatures.json from Crowdin ([5070d90](https://github.com/allnnde/pf2e-esp-translation/commit/5070d9095ad2dfe95340c0ddfc47609a4a2e1671))
-* New translations classfeatures.json from Crowdin ([97a1407](https://github.com/allnnde/pf2e-esp-translation/commit/97a1407692549e3ef12a6141f37f77fefc1470bc))
-* New translations classfeatures.json from Crowdin ([a7ff33c](https://github.com/allnnde/pf2e-esp-translation/commit/a7ff33c57605531cf007f08cc72af314b3d529af))
-* New translations classfeatures.json from Crowdin ([f27b82c](https://github.com/allnnde/pf2e-esp-translation/commit/f27b82ce00ff763d10009f76267d416a293b7cba))
-* New translations dictionary.json from Crowdin ([1a83fd6](https://github.com/allnnde/pf2e-esp-translation/commit/1a83fd6c9f8244c525b3e05d4f8bc9a40a039519))
-* New translations en.json from Crowdin ([ed01fb5](https://github.com/allnnde/pf2e-esp-translation/commit/ed01fb5ea3e4d2de5e85c1b9ecd61f9ddbd9c873))
-* New translations feat-effects.json from Crowdin ([f242ab3](https://github.com/allnnde/pf2e-esp-translation/commit/f242ab391cee5fbd3b3b640f4d370510c7647c2c))
-* New translations feat-effects.json from Crowdin ([1cff929](https://github.com/allnnde/pf2e-esp-translation/commit/1cff92917c977c6929720043d5f509df0cbcd384))
-* New translations feat-effects.json from Crowdin ([7be10ea](https://github.com/allnnde/pf2e-esp-translation/commit/7be10ea0fe18be3eb2c3a7662f69cb4da1eb5010))
-* New translations feat-effects.json from Crowdin ([3e891b4](https://github.com/allnnde/pf2e-esp-translation/commit/3e891b49a61b3710ce2bbaf6671bae0a66fc5153))
-* New translations feat-effects.json from Crowdin ([212d5fa](https://github.com/allnnde/pf2e-esp-translation/commit/212d5fac80c8eee019e401a26be4d4d0741c0804))
-* New translations feats.json from Crowdin ([dabbb27](https://github.com/allnnde/pf2e-esp-translation/commit/dabbb272a643a63f8b82a34bd6199fed6301b89b))
-* New translations feats.json from Crowdin ([c63dce3](https://github.com/allnnde/pf2e-esp-translation/commit/c63dce3781f51147390df9e3cb1c78267c4c2d58))
-* New translations feats.json from Crowdin ([c12d120](https://github.com/allnnde/pf2e-esp-translation/commit/c12d12026a1573d4f107b241b15f3d7542747ebc))
-* New translations feats.json from Crowdin ([474af14](https://github.com/allnnde/pf2e-esp-translation/commit/474af14a375bcc6d2ac85147613e057f65fc3a10))
-* New translations feats.json from Crowdin ([4930346](https://github.com/allnnde/pf2e-esp-translation/commit/49303461c9099b4dbcc5992d565229ac06232cee))
-* New translations feats.json from Crowdin ([c6f7930](https://github.com/allnnde/pf2e-esp-translation/commit/c6f793030218d48a3bd2ac5e3c9ee3f1b6d802c4))
-* New translations feats.json from Crowdin ([005eb30](https://github.com/allnnde/pf2e-esp-translation/commit/005eb3070e3876232979b08f15aaf4e085a75f1c))
-* New translations feats.json from Crowdin ([e1d4bf8](https://github.com/allnnde/pf2e-esp-translation/commit/e1d4bf80c296d91f2139822fe177762e7866ef7a))
-* New translations feats.json from Crowdin ([740406f](https://github.com/allnnde/pf2e-esp-translation/commit/740406f97f7d07d80be319825e63917df69f3d3f))
-* New translations journals.json from Crowdin ([cfc8b03](https://github.com/allnnde/pf2e-esp-translation/commit/cfc8b0300a06ddd147514e3b8b3039a164ee9144))
-* New translations journals.json from Crowdin ([dafd6da](https://github.com/allnnde/pf2e-esp-translation/commit/dafd6da9cc0fce4d85ff7a61898997a084edb996))
-* New translations journals.json from Crowdin ([1f20baf](https://github.com/allnnde/pf2e-esp-translation/commit/1f20baf9565404988059e409749ea82690a8fd9e))
-* New translations journals.json from Crowdin ([29012df](https://github.com/allnnde/pf2e-esp-translation/commit/29012df331f4a2180b3bdfd4a083ac2cbc89cd52))
-* New translations re-en.json from Crowdin ([58e324e](https://github.com/allnnde/pf2e-esp-translation/commit/58e324ef92e5b87105b1f14c0c69f2d525f759df))
 
 
 
