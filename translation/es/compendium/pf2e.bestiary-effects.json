@@ -18,19 +18,7 @@
       "description": "<p> Los golpes cuerpo a cuerpo de la criatura cuentan como adamantinos, de hierro frío o de plata. </p>"
     },
     "Effect: Aggravating Aura": {
-      "name": "Effect: Aggravating Aura",
-      "rules": {
-        "0": {
-          "choices": {
-            "0": {
-              "label": "Failure"
-            },
-            "1": {
-              "label": "Critical Failure"
-            }
-          }
-        }
-      }
+      "name": "Effect: Aggravating Aura"
     },
     "Effect: Air of Sickness": {
       "name": "Efecto: Aire de enfermedad",
@@ -145,7 +133,7 @@
       "description": "<p> La criatura sufre un penalizador de circunstancia de -2 a sus salvaciones contra efectos mentales. </p>\n <p> No puede realizar acciones que tengan el rasgo concentrado a menos que tenga éxito en una prueba @Check[type:flat|dc:10]. Fallar esta prueba desperdicia la acción. </p>",
       "rules": {
         "1": {
-          "text": "<p>A creature in the aura can't take actions that have the concentrate trait unless they succeed at a @Check[type:flat|dc:10] check. On a failure, the action is disrupted.</p>"
+          "text": "<p>A creature in the aura can't take actions that have the concentrate trait unless they succeed at a @Check[flat|dc:10] check. On a failure, the action is disrupted.</p>"
         }
       }
     },
@@ -216,6 +204,10 @@
     "Effect: Brand of the Impenitent": {
       "name": "Efecto: Marca del impenitente",
       "description": "<p> La criatura sufre una penalización de estado de -1 a CA y salva, reduce sus resistencias en 2 y gana debilidad 2 a sagrado. </p>"
+    },
+    "Effect: Bravado Aversion": {
+      "name": "Effect: Bravado Aversion",
+      "description": "<p>A gargarthezul can't stand to be shown up. The first time each round a creature successfully Demoralizes, Shoves, or Trips a gargarthezul, it takes @Damage[1d6[mental]] damage.</p>"
     },
     "Effect: Breach the Abyss": {
       "name": "Efecto: Romper el Abismo",
@@ -333,7 +325,7 @@
     },
     "Effect: Conduct": {
       "name": "Effect: Conduct",
-      "description": "<p>The concert frog and all allies within 60 feet gain one of the following three effects until the beginning of the concert frog’s next turn.</p>\n<ul>\n<li><strong>Red</strong> Grants a +10-foot status bonus to their Speeds.</li>\n<li><strong>Blue</strong> Grants a +1 status bonus to AC and Fortitude saving throws.</li>\n<li><strong>Yellow</strong> Allies gain a +1 status bonus to attack rolls and deal an additional 1d4 sonic damage on successful melee Strikes.</li>\n</ul>"
+      "description": "<p>The concert frog and all allies within 60 feet gain one of the following three effects until the beginning of the concert frog's next turn.</p>\n<ul>\n<li><strong>Red</strong> Grants a +10-foot status bonus to their Speeds.</li>\n<li><strong>Blue</strong> Grants a +1 status bonus to AC and Fortitude saving throws.</li>\n<li><strong>Yellow</strong> Allies gain a +1 status bonus to attack rolls and deal an additional 1d4 sonic damage on successful melee Strikes.</li>\n</ul>"
     },
     "Effect: Conductive Downpour": {
       "name": "Effect: Conductive Downpour",
@@ -773,6 +765,10 @@
     "Effect: Haywire": {
       "name": "Efecto: Descontrolado",
       "description": "<p> La criatura sufre una penalización de circunstancia de -1 a los golpes, pero causa un @Damage[1d6[bludgeoning]] daño adicional más @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu] {Knockdown} . </p>"
+    },
+    "Effect: Hope Vulnerability": {
+      "name": "Effect: Hope Vulnerability",
+      "description": "<p>The elegecide is fueled by the certainty of doom, which leaves it weakened by any hope. The first time each round that a creature critically fails at an attack or skill check against the elegecide, it experiences a burst of hope that leaves it @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
     },
     "Effect: Howl of Vengeful Fury": {
       "name": "Efecto: Aullido de furia vengativa",
@@ -1258,6 +1254,10 @@
       "name": "Efecto: Clamor raspante",
       "description": "<p> Obtienes una bonificación de circunstancia +1 a cualquier salvación para resistir hechizos o habilidades auditivas. </p>"
     },
+    "Effect: Sea Chantey": {
+      "name": "Effect: Sea Chantey",
+      "description": "<p>All fiends within 60 feet gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects.</p>"
+    },
     "Effect: Sepulchral Drain": {
       "name": "Effect: Sepulchral Drain",
       "description": "<p>The creature gains weakness 2 to void damage.</p>"
@@ -1403,14 +1403,14 @@
         "0": {
           "value": {
             "0": {
-              "text": "If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[type:flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied."
+              "text": "If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied."
             }
           }
         },
         "2": {
           "value": {
             "0": {
-              "text": "If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[type:flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied."
+              "text": "If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied."
             }
           }
         }
@@ -1507,6 +1507,14 @@
     "Effect: Vent Energy": {
       "name": "Efecto: Ventilar Energía",
       "description": "<p> Los golpes de brazo del arma del hadrinnex causan 2d6 de daño de energía adicional según el tipo de daño en la glándula de energía. </p>"
+    },
+    "Effect: Vicious Bluster": {
+      "name": "Effect: Vicious Bluster",
+      "description": "<p>When a gargarthezul successfully @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizes} a foe, it gains 1d6 temporary Hit Points (2d6 on a critical success) that last for 1 minute.</p>"
+    },
+    "Effect: Vicious Bluster (Critical Success)": {
+      "name": "Effect: Vicious Bluster (Critical Success)",
+      "description": "<p>When a gargarthezul successfully @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizes} a foe, it gains 1d6 temporary Hit Points (2d6 on a critical success) that last for 1 minute.</p>"
     },
     "Effect: Viscous Breath": {
       "name": "Efecto: Aliento Viscoso",

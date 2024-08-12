@@ -131,7 +131,7 @@
     },
     "Bite and Sting": {
       "name": "Bite and Sting",
-      "description": "<p><strong>Requirements</strong> Your swarm is outside your body</p><hr /><p><strong>Effect</strong> Each creature in your swarm's space takes @Damage[(floor(@actor.level/2))d4[piercing]] damage with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save against your class DC or spell DC, whichever is higher. At 4th level and every 2 levels thereafter, the damage increases by 1d4.</p>"
+      "description": "<p><strong>Requirements</strong> Your swarm is outside your body</p><hr /><p><strong>Effect</strong> Each creature in your swarm's space takes @Damage[(floor(@actor.level/2))d4[piercing]] damage with a @Check[reflex|against:class-spell|basic] save against your class DC or spell DC, whichever is higher. At 4th level and every 2 levels thereafter, the damage increases by 1d4.</p>"
     },
     "Blizzard Evasion": {
       "name": "Evasión de la tormenta de nieve",
@@ -317,6 +317,10 @@
       "name": "Pista",
       "description": "<p> <strong> Frecuencia </strong> una vez cada 10 minutos </p>\n <p> <strong> Desencadenante </strong> Otra criatura intenta una prueba para investigar una pista que estás siguiendo </p>\n <hr />\n <p> Compartes información con la criatura desencadenante. </p>\n <p> Obtienen un bonificador de circunstancia a su prueba igual a tu bonificador de circunstancia a las pruebas que investigan a tu sujeto desde @UUID[Compendium.pf2e.actionspf2e.Item.xTK2zsWFyxSJvYbX] {Pursue a Lead} . El DJ puede agregar cualquier información relevante.Los rasgos de esta reacción dependen de la situación, como auditivos y lingüísticos si estás transmitiendo información verbalmente. </p>\n <p> @UUID[Compendium.pf2e.feat-effects.Item.vhSYlQiAQMLuXqoc] {Effect: Clue In} </p>"
     },
+    "Cobble Together": {
+      "name": "Cobble Together",
+      "description": "<p>You @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Craft} a temporary item out of anything, anywhere, with whatever materials happen to be on hand, spending only 10 minutes to perform the initial Crafting check.</p>\n<p>The temporary item must be one you've memorized or have the formula for, and must be common, non-magical, half your level or lower, and must be a weapon, armor, or a non-consumable piece of adventuring gear (non-consumable adventuring gear appears on page 291 of Player Core). Instead of a single item, you can create 10 pieces of a single type of ammunition. You can create only the physical item, not any information or magic, so for example, while you could create a blank journal or one with random pages, you couldn't use it as a scholarly journal or a religious text</p>"
+    },
     "Coerce": {
       "name": "Obligar",
       "description": "<p> Con amenazas, ya sean veladas o abiertas, intentas intimidar a una criatura para que haga lo que quieres. Debes pasar al menos 1 minuto de conversación con la criatura. Al final de la conversación, intenta una prueba de <span data-pf2-action=\"coerce\"> Intimidación </span> contra la CD de Voluntad del objetivo, modificada por cualquier circunstancia que determine el DJ. (Las actitudes a las que se hace referencia en los efectos a continuación se resumen en la sección Cambio de actitudes en la parte inferior) </p>\n <hr />\n <p><strong> Éxito crítico </strong> El objetivo le brinda la información que busca o acepta seguir sus directivas siempre y cuando no sea probable que le dañen de ninguna manera. El objetivo continúa cumpliendo durante un período de tiempo determinado por el DJ pero que no excede 1 día, momento en el cual el objetivo se vuelve hostil (si aún no lo era). Sin embargo, el objetivo te tiene demasiado miedo como para tomar represalias, al menos a corto plazo. </p>\n <p> <strong>Éxito </strong> Como éxito crítico, pero una vez que el objetivo se vuelve hostil, podría decidir actuar en tu contra, por ejemplo, denunciándote a las autoridades o ayudando a tus enemigos. </p>\n <p> <strong> Fracaso </strong> El objetivo no hace lo que usted dice, y si aún no era antipático u hostil, se vuelve antipático. </p>\n <p> <strong> Fallo crítico </strong> El objetivo se niega a cumplir, se vuelve hostil sino lo estabas ya, y es temporalmente inmune a tu Coerción durante al menos 1 semana. </p>\n <hr />\n <h2> Cambio de actitudes </h2>\n <p> Tu influencia sobre los NPC se mide con un conjunto de actitudes que reflejan cómo ven a tu personaje. Éstos son sólo un breve resumen de la disposición de una criatura. El DJ proporcionará matices adicionales basados ​​en la historia y las creencias de los personajes con los que estás interactuando, y sus actitudes pueden cambiar de acuerdo con elhistoria. Las actitudes se detallan en el Apéndice de Condiciones y se resumen aquí. </p>\n <ul>\n <li> <strong> Útil: </strong> Dispuesto a ayudarle y responde favorablemente a sus solicitudes. </li>\n <li> <strong> Amigable: </strong> Tiene una buena actitud hacia ti, pero no necesariamente se arriesgará para ayudarte. </li>\n <li> <strong> Indiferente: </strong> No se preocupa por ti de ninguna manera. (La mayoría de los NPCempieza indiferente.) </li>\n <li> <strong> Antipático: </strong> No le agradas y no quiere ayudarte. </li>\n <li> <strong> Hostil: </strong> Trabaja activamente en tu contra y podría atacarte simplemente porque no les agrada. </li>\n </ul>\n <p> Nadie podrá cambiar la actitud de un personaje jugador con estas habilidades. Puedes interpretar interacciones con personajes jugadores e incluso usar resultados de Diplomacia si el jugadorQuiere tener una idea mecánica de lo convincente o encantador que es un personaje, pero los jugadores toman las decisiones finales sobre cómo responden sus personajes. </p>"
@@ -467,7 +471,7 @@
     },
     "Devour Ambient Magic": {
       "name": "Devour Ambient Magic",
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> A creature Casts a Spell with you as the only target</p><hr /><p><strong>Effect</strong> Your ostilli radiates cyan light as its tentacle-like filters attempt to consume the magical effect. You can attempt to counteract the triggering spell with an @Check[type:arcana] or @Check[type:nature] check and a counteract rank equal to half your level.</p>"
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> A creature Casts a Spell with you as the only target</p><hr /><p><strong>Effect</strong> Your ostilli radiates cyan light as its tentacle-like filters attempt to consume the magical effect. You can attempt to counteract the triggering spell with an @Check[arcana] or @Check[nature] check and a counteract rank equal to half your level.</p>"
     },
     "Disable a Device": {
       "name": "Inutilizar Un Mecanismo",
@@ -657,6 +661,10 @@
       "name": "Fuego en el hoyo",
       "description": "<p> <strong> Desencadenante </strong> Una criatura se mueve al espacio del peligro </p>\n <hr />\n <p> <strong> Efecto </strong> El peligro explota, causando el daño de las bombas y el daño por salpicadura al objeto inanimado. Combina este daño con el propósito de resistencias y debilidades, y este daño ignora una cantidad de Dureza del objeto igual a tu nivel. Cualquier criatura adyacente al peligro recibe el daño por salpicadura de las bombas, combinado de manera similar para este propósito.de resistencias y debilidades. Como recordatorio, como no arrojaste las bombas, @UUID[Compendium.pf2e.feats-srd.Item.UjWLK86BgHxz3Itd] {Calculated Splash} y ​​efectos similares no se aplican. </p>"
     },
+    "Flash of Grandeur": {
+      "name": "Flash of Grandeur",
+      "description": "<p><strong>Trigger</strong> An enemy damages your ally, and both are in your champion's aura</p><hr /><p><strong>Effect</strong> Imperious divine light flashes out from you to surround your foe. The ally gains resistance to all damage against the triggering damage equal to 2 + your level. For 1 round, the attacker is affected by @UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]{Revealing Light}.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.DawVHfoPKbPJsz4k]{Effect: Champion's Resistance}</p>"
+    },
     "Fling Magic": {
       "name": "Arrojar magia",
       "description": "<p> <strong> Requisitos </strong> Estás sosteniendo tu instrumento de varita. </p>\n <hr />\n <p> Lanzas energía mágica a un objetivo dentro de 60 pies, causando daño igual a 1d4 + tu modificador de Carisma al objetivo, con una salvación @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true] contra tu CD de clase. El daño es del tipo que seleccionaste cuando obtuviste el implemento de tu varita. En el nivel 3 y cada 2 niveles posteriores, el daño aumenta en 1d4. </p>\n <p> [[/r (ceil(@actor.level/2)d4+@actor.abilities.cha.mod)]] {Leveled damage}</p>\n <p> Puedes gastar más energía de lo habitual para aumentar el efecto de Fling Magic, causando d6s de daño en lugar de d4s. Después de hacerlo, la varita tarda [[/r 1d4 #Recharge Wand]] {1d4 rounds} en recargarse, durante el cual no puedes aumentar el daño de la varita, pero puedes continuar lanzando magia normalmente. Si golpeas críticamente con un golpe, tu varita se recarga inmediatamente a medida que extrae poder del choque. </p>\n <p> [[/r (ceil(@actor.level/2)d6+@actor.abilities.cha.mod)]] {Leveled boosted damage} </p>\n <hr /><p> <strong> Especial </strong> Esta actividad tiene el rasgo correspondiente al tipo de daño que seleccionaste. </p>"
@@ -801,6 +809,10 @@
       "name": "Influencia",
       "description": "<p> Intentas dar una impresión favorable a un NPC para convencerlo de que apoye tu causa. Intenta una prueba de habilidad para impresionar a ese NPC. La CD y las habilidades que se pueden aplicar se pueden encontrar en el bloque de estadísticas del NPC. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> Obtienes 2 puntos de influencia con el NPC elegido. </p>\n <p> <strong> Éxito </strong> Obtienes 1 punto de influencia con el NPC elegido. </p>\n <p><strong> Fracaso </strong> No ganas puntos de influencia con el NPC elegido. </p>\n <p> <strong> Fallo crítico </strong> Pierdes 1 punto de influencia con el NPC elegido. </p>"
     },
+    "Influence Rumor": {
+      "name": "Influence Rumor",
+      "description": "<p>You spend at least 1 day of downtime attempting to manipulate the course, tone, or content of a rumor to your benefit. You need to succeed at a Diplomacy check to shift the rumor as you intend. The difficulty is determined by the GM based on the size of the community, the relative perceptiveness of the inhabitants, and the agency of other rumormongers, but it typically is no lower than DC 15 for a small village, DC 20 for a town, DC 30 for a city, or DC 40 for a metropolis.</p>"
+    },
     "Inspired Stratagem": {
       "name": "Estratagema inspirada",
       "description": "<p> <strong> Desencadenante </strong> Un aliado con el que revisaste estratagemas está a punto de intentar una tirada de ataque o prueba de habilidad </p>\n <hr />\n <p> <strong> Efecto </strong> El aliado tira la prueba desencadenante dos veces y obtiene el mejor de los dos resultados. Ese aliado se vuelve temporalmente inmune a tu Estratagema Inspirada hasta tus próximos preparativos diarios. </p>\n <p> @UUID[Compendium.pf2e.feat-effects.Item.K0Sv9AHgq245hSLC] {Effect: Inspired Stratagem} </p>"
@@ -855,7 +867,7 @@
     },
     "Lantern Beam": {
       "name": "Lantern Beam",
-      "description": "<p><strong>Requirements</strong> Your lantern light is shining</p>\n<hr />\n<p><strong>Effect</strong> Your lenses focus your light into a searing beam. You deal @Damage[((max(5,ceil(@actor.level/2)))d4)[fire]] damage to all creatures in a @Template[type:line|distance:30], with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] saving throw against the higher of your class DC or spell DC. Your lantern light then extinguishes, and you can't use this ability or use your lantern light again for [[/r 1d4 #Recharge Lantern Beam]]{1d4 rounds}. At 11th level and every two levels thereafter, the damage increases by 1d4.</p>"
+      "description": "<p><strong>Requirements</strong> Your lantern light is shining</p>\n<hr />\n<p><strong>Effect</strong> Your lenses focus your light into a searing beam. You deal @Damage[((max(5,ceil(@actor.level/2)))d4)[fire]] damage to all creatures in a @Template[line|distance:30], with a @Check[reflex|against:class-spell|basic] saving throw against the higher of your class DC or spell DC. Your lantern light then extinguishes, and you can't use this ability or use your lantern light again for [[/r 1d4 #Recharge Lantern Beam]]{1d4 rounds}. At 11th level and every two levels thereafter, the damage increases by 1d4.</p>"
     },
     "Lantern Strobe": {
       "name": "Lantern Strobe",
@@ -969,6 +981,10 @@
       "name": "Objeción",
       "description": "<p> <strong> Frecuencia </strong> una vez por minuto </p>\n <p> <strong> Desencadenante </strong> Estás a punto de intentar una tirada de salvación contra un efecto lingüístico </p>\n <hr />\n <p> <strong> Efecto </strong> Tus ojos de diablo crepitan con alegría infernal cuando descubres una laguna en la redacción del efecto desencadenante. Realizas tu tirada de salvación dos veces y obtienes el resultado más alto. </p>"
     },
+    "Once Bitten": {
+      "name": "Once Bitten",
+      "description": "<p><strong>Trigger</strong> A creature adjacent to you hits you with a melee unarmed Strike</p>\n<p><strong>Requirements</strong> You have prepared your clothing to poison attackers</p><hr /><p><strong>Effect</strong> The triggering creature is exposed to the suffused poison, and the poison becomes inert.</p>"
+    },
     "One Shot, One Kill": {
       "name": "Un disparo, un muerto",
       "description": "<p> <strong> Desencadenante </strong> Tiras Sigilo para obtener iniciativa. </p>\n <hr />\n <p> Tu primer disparo es el más letal. Interactúa para sacar un arma de fuego o una ballesta. En tu primer turno, tu primer golpe con esa arma causa 1d6 de daño de precisión adicional. Este daño de precisión aumenta a 2d6 en el nivel 9 y 3d6 en el nivel 15. </p>"
@@ -1017,6 +1033,10 @@
       "name": "Pitch-Perfect Projection",
       "description": "<p>By using your perfect pitch, you can amplify your voice to cause magical auditory effects to reach further. If your next action this round is to Cast a Spell or use an action that creates an auditory effect with a range, increase that range by 30 feet.</p>"
     },
+    "Plummeting Roll": {
+      "name": "Plummeting Roll",
+      "description": "<p><strong>Trigger</strong> You fall at least 10 feet and take no damage from the fall</p><hr /><p><strong>Effect</strong> You tuck and roll with the motion. You land on your feet and Stride up to half your Speed</p>"
+    },
     "Point Out": {
       "name": "Señalar",
       "description": "<p> <strong> Requisitos </strong> Una criatura no ha sido detectada por uno o más de tus aliados, pero sí por ti. </p>\n <hr />\n <p> Indicas a uno o más aliados donde está una criatura a la que puedes ver, haciendo gestos en una dirección y describiendo verbalmente la distancia. Dicha criatura pasa a estar @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC] {Escondida} para tus aliados, en lugar de @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf] {No detectada} (pág. 466) . Esto solo funciona para aliados que pueden verte y que están en una posición en la que podrían potencialmente detectar al objetivo. Si tus aliados no pueden oírte o entenderte, deben tener éxito en una prueba de Percepción contra la CD de Sigilo de la criatura o te entienden mal y creen que el objetivo está en un lugar diferente.</p>"
@@ -1064,6 +1084,10 @@
     "Quick Tincture": {
       "name": "Tintura rápida",
       "description": "<p> <strong> Costo </strong> 1 vial versátil </p>\n <p> <strong> Requisitos </strong> Conoces la fórmula del objeto alquímico que estás creando, estás sosteniendo o usando herramientas de alquimista y tienes las manos libres. </p>\n <hr />\n <p> Rápidamente preparas una tintura de corta duración. Creas un único elixir alquímico o herramienta de tu nivel o inferior sin tener que gastar el costo monetario normal en reactivos alquímicos o necesitarintenta una prueba de Elaboración. Este objeto tiene el rasgo infundido, pero sigue siendo potente sólo hasta el final del turno actual. </p>"
+    },
+    "Quick-Tempered": {
+      "name": "Quick-Tempered",
+      "description": "<p><strong>Trigger</strong> You roll initiative.</p>\n<p><strong>Requirements</strong> You are not @UUID[Compendium.pf2e.conditionitems.Item.D5mg6Tc7Jzrj6ro7]{Encumbered} or wearing heavy armor.</p><hr /><p>So long as you are able to move freely, your fury is instinctive and instantaneous. You @UUID[Compendium.pf2e.actionspf2e.Item.Ah5g9pDwWF9b9VW9]{Rage}.</p><hr /><p>@UUID[Compendium.pf2e.feat-effects.Item.z3uyCMBddrPK5umr]{Effect: Rage}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.MaepXeSHiMoWDm7u]{Effect: Rage Temporary Hit Points Immunity}</p>"
     },
     "Raconteur's Reload": {
       "name": "Recarga del narrador",
@@ -1508,6 +1532,10 @@
     "Track": {
       "name": "Rastrear",
       "description": "<p> Sigues pistas, moviéndote hasta a la mitad de tu velocidad de viaje, usando las reglas @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.YVLMgNxXTUQuDJgp] {Travel Speed}. Después de una verificación exitosa de Seguimiento, puedes continuar siguiendo las huellas a la mitad de tu velocidad sin intentar realizar comprobaciones adicionales durante hasta 1 hora. </p>\n <p> En algunos casos, puedes realizar un seguimiento en un encuentro. En este caso, Rastrear es una acción única y no tiene el rasgo de exploración, pero es posible que tengas que tirar más a menudo porque estás en una situación tensa. el gerente generaldetermina con qué frecuencia debe intentar esta verificación. </p>\n <p> Intentas tu <span data-pf2-action=\"track\"> Supervivencia </span> cuando inicias el Rastreo, una vez cada hora que continúas rastreando y cada vez que algo cambia significativamente en el rastro. El DJ determina las CD para dichas comprobaciones, dependiendo de la frescura del sendero, el clima y el tipo de terreno. </p>\n <section class=\"sample-tasks\">\n <h2> Tareas de seguimiento de muestra </h2>\n <ul>\n <li> <strong>Sin entrenamiento </strong> el camino de un gran ejército siguiendo un camino </li>\n <li> <strong> Entrenado </strong> Huellas relativamente recientes de un oso furioso a través de las llanuras </li>\n <li> <strong> Experto </strong> las huellas de una ágil pantera a través de la jungla, huellas oscurecidas por la lluvia </li>\n <li> <strong> Maestro </strong> huellas oscurecidas por la nieve del invierno, huellas de un ratón o una criatura más pequeña, huellas dejadas en superficies que no puedenMantenga huellas como roca desnuda </li>\n <li> <strong> Legendario </strong> viejas huellas a través de las ventosas arenas del desierto, huellas oscurecidas por una gran tormenta de nieve o un huracán </li>\n </ul>\n </section>\n <hr />\n <p> <strong> Éxito </strong> Encuentras el rastro o continúas siguiendo el que ya estás siguiendo. </p>\n <p> <strong> Fallo </strong> Pierdes el rastro pero puedes volver a intentarlo después de un retraso de 1 hora.</p>\n <p> <strong> Fallo crítico </strong> Pierdes el rastro y no puedes volver a intentarlo durante 24 horas. </p>"
+    },
+    "Transform Ammunition": {
+      "name": "Transform Ammunition",
+      "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> You transform a non-magical arrow or bolt on your person into a piece of magical ammunition of one type you chose for the @UUID[Compendium.pf2e.feats-srd.Item.vUFvcrvszXlHvz2Y]{Magic Ammunition} feat. You must shoot the ammunition before the end of your turn or the magic dissipates. If the ammunition has an Activate entry, you still need to spend the required actions to activate the ammunition before shooting it.</p>\n<p>You can choose a type of magical ammunition that is typically not available to the type of ammunition you're using—for example, you can use @UUID[Compendium.pf2e.equipment-srd.Item.n5L7HE9H8jn8ftQy]{Climbing Bolt} on an arrow, even though that magical ammunition is normally only found on bolts.</p>"
     },
     "Travel": {
       "name": "Viajar",
