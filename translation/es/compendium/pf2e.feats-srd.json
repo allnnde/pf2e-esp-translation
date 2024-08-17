@@ -8302,6 +8302,15 @@
       "name": "Aroma dracónico",
       "description": "<p> Tu sentido del olfato es extraño, muy parecido al de un dragón. Obtienes un olor impreciso con un alcance de 30 pies. </p>\n <p> El DJ podría duplicar el alcance si estás a favor del viento respecto de la criatura o reducir a la mitad el alcance si estás a favor del viento, a su discreción. </p>"
     },
+    "Draconic Scent (Dragon Disciple)": {
+      "name": "Draconic Scent (Dragon Disciple)",
+      "description": "<p>Your sense of smell is uncanny, much like a dragon's. You gain imprecise scent with a range of 30 feet. The GM might double the range if you're downwind from the creature or halve the range if you're upwind, at their discretion.</p>",
+      "prerequisites": [
+        {
+          "value": "Dragon Disciple Dedication"
+        }
+      ]
+    },
     "Draconic Sight": {
       "name": "Draconic Sight",
       "description": "<p>You have a fraction of the senses of your draconic forebear. You gain low-light vision, or you gain darkvision if your ancestry already grants you low-light vision.</p>"
@@ -14583,7 +14592,7 @@
     },
     "Healer's Halo": {
       "name": "Healer's Halo",
-      "description": "<p><strong>Trigger</strong> You or allies within 30 feet recover Hit Points while your @UUID[Compendium.pf2e.feats-srd.Item.PGVXjbAi1Fa4uTmD]{Halo} is active.</p>\n<hr />\n<p>Your halo can enhance positive energy. Creatures who have recovered Hit Points from a positive healing effect recover an additional [[/r 1d6[healing]]]{1d6 Hit Points}. Creatures who benefit from this power become temporarily immune to its effect for the next 10 minutes.</p>",
+      "description": "<p><strong>Trigger</strong> You or allies within 30 feet recover Hit Points while your @UUID[Compendium.pf2e.feats-srd.Item.PGVXjbAi1Fa4uTmD]{Halo} is active.</p><hr /><p>Your halo can enhance positive energy. Creatures who have recovered Hit Points from a positive healing effect recover an additional @Damage[1d6[healing]] Hit Points. Creatures who benefit from this power become temporarily immune to its effect for the next 10 minutes.</p>",
       "prerequisites": [
         {
           "value": "Halo"
@@ -16461,42 +16470,6 @@
       "prerequisites": [
         {
           "value": "Mayo salmuera, mayo nieve, mayo velo o mayo Virga"
-        }
-      ]
-    },
-    "Invoke The Elements (Brine May)": {
-      "name": "Invocar los elementos (Maia salina)",
-      "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <hr />\n <p> Invocas un aura de olas rompiendo. </p>\n <p> Durante 1 minuto, ganas @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} contra criaturas a más de 5 pies de distancia, y cualquier criatura que finalice su turno dentro de 5 pies de ti sufre @Damage[1d12[bludgeoning]] daño ( @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] salvación usando tu DC de clase o DC de hechizo, lo que sea mayor). </p>\n <p> En @Damage[2d12[bludgeoning]]{13th} y ​​@Damage[3d12[bludgeoning]]{17th} nivel, este daño aumenta en 1d12. </p>",
-      "prerequisites": [
-        {
-          "value": "Maia salina"
-        }
-      ]
-    },
-    "Invoke The Elements (Snow May)": {
-      "name": "Invocar los elementos (mayo de nieve)",
-      "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <hr />\n <p> Invocas un aura de nieve ráfaga. </p>\n <p> Durante 1 minuto, ganas @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} contra criaturas a más de 5 pies de distancia, y cualquier criatura que finalice su turno dentro de 5 pies de ti sufre @Damage[1d12[cold]] daño ( @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] salvación usando tu DC de clase o DC de hechizo, lo que sea mayor). </p>\n <p> En @Damage[2d12[cold]]{13th} y ​​@Damage[3d12[cold]]{17th} nivel, este daño aumenta en 1d12. </p>",
-      "prerequisites": [
-        {
-          "value": "nieve mayo"
-        }
-      ]
-    },
-    "Invoke The Elements (Veil May)": {
-      "name": "Invocar los elementos (Veil May)",
-      "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <hr />\n <p> Invocas un aura de calor brillante. </p>\n <p> Durante 1 minuto, ganas @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} contra criaturas a más de 5 pies de distancia, y cualquier criatura que finalice su turno dentro de 5 pies de ti sufre @Damage[1d12[fire]] daño ( @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] salvación usando tu DC de clase o DC de hechizo, lo que sea mayor). </p>\n <p> En @Damage[2d12[fire]]{13th} y ​​@Damage[3d12[fire]]{17th} nivel, este daño aumenta en 1d12. </p>",
-      "prerequisites": [
-        {
-          "value": "velo mayo"
-        }
-      ]
-    },
-    "Invoke The Elements (Virga May)": {
-      "name": "Invocar los elementos (Virga May)",
-      "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <hr />\n <p> Invocas un aura de viento y relámpagos. </p>\n <p> Durante 1 minuto, ganas @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} contra criaturas a más de 5 pies de distancia, y cualquier criatura que finalice su turno dentro de 5 pies de ti sufre @Damage[1d12[electricity]] daño ( @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] salvación usando tu DC de clase o DC de hechizo, lo que sea mayor). </p>\n <p> En @Damage[2d12[electricity]]{13th} y@Damage[3d12[electricity]]{17th} nivel, este daño aumenta en 1d12. </p>",
-      "prerequisites": [
-        {
-          "value": "virga mayo"
         }
       ]
     },
@@ -27797,10 +27770,6 @@
     "Solar Rejuvenation": {
       "name": "Rejuvenecimiento Solar",
       "description": "<p> Si descansas al aire libre durante 10 minutos durante el día, recuperas tantos Puntos de Golpe como tu [[/r (@actor.abilities.con.mod * floor(@actor.level/2))[healing]]]{Modificador por constitución multiplicado por la mitad de tu nivel}. Obtienes este beneficio además de cualquier curación debida a @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Tratar heridas}. Los leshys cuya nutrición vegetal no se basa en la fotosíntesis requieren un ambiente similarmente adecuado. Por ejemplo, los leshys de los hongos necesitan entornos oscuros y húmedos y cierta cantidad de materia vegetal en descomposición.</p>"
-    },
-    "Solar Rejuvenation (Ghoran)": {
-      "name": "Rejuvenecimiento solar (Ghoran)",
-      "description": "<p> El calor y la luz del sol te da vida. Si descansas al aire libre durante 10 minutos durante el día, recuperas puntos de vida equivalentes a tus [[/r (floor(@actor.level/2)*@actor.con.mod)[healing]]]{Constitution modifier × half your level} . Obtienes este beneficio además de cualquier curación de @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds} . </p>"
     },
     "Solid Lead": {
       "name": "Plomo sólido",
