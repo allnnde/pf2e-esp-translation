@@ -83,6 +83,9 @@
       "KnockProne": "Con un impacto, el objetivo queda derribado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} .",
       "ReduceHiddenCheck": "La CD de la prueba plana para apuntar a una criatura @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} es solo @Check[type:flat|dc:5]."
     },
+    "Background": {
+      "Favored": "<p><strong>Frequency</strong> once per day;</p><hr><p><strong>Effect</strong> Reroll the skill check. You must use the second result, even if it's worse.</p>"
+    },
     "BattleForm": {
       "AberrantForm": {
         "GugSqueezeNote": "Tus múltiples articulaciones te permiten pasar por espacios reducidos como si fueras una criatura mediana."
@@ -95,6 +98,7 @@
         "AqueousFist": "Puño acuoso",
         "Beak": "Pico",
         "Beard": "Barba",
+        "Belly": "Belly",
         "BigClaw": "Big Claw",
         "Bite": "Morder",
         "Blade": "Cuchilla",
@@ -107,6 +111,7 @@
         "Branch": "Rama",
         "Claw": "Garra",
         "CubeFace": "Cara del cubo",
+        "ElementalCurrent": "Elemental Current",
         "Fangs": "colmillos",
         "FireMote": "Mota de fuego",
         "Fist": "Puño",
@@ -132,11 +137,15 @@
         "Pseudopod": "Seudópodo",
         "Quill": "Pluma",
         "Rock": "Roca",
+        "Root": "Root",
         "Seed": "Semilla",
         "Spikes": "Picos",
         "Spine": "Columna vertebral",
+        "Spoke": "Spoke",
         "Stinger": "Aguijón",
+        "SpiritTouch": "Spirit Touch",
         "StoneBall": "bola de piedra",
+        "StrikingSurface": "Striking Surface",
         "Sunbeam": "Rayo de sol",
         "Tail": "Cola",
         "Talon": "Garra",
@@ -151,7 +160,8 @@
         "WaterSpout": "Caño de agua",
         "Wave": "Ola",
         "Web": "Red",
-        "Wing": "Ala"
+        "Wing": "Ala",
+        "Wrap": "Wrap"
       },
       "CosmicForm": {
         "MoonNote": "El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} durante 1 ronda.",
@@ -634,6 +644,11 @@
         "Label": "Trigger"
       }
     },
+    "GenericLabel": {
+      "PreviousAction": {
+        "ClimbLeapStride": "Your previous action was to Climb, Leap, or Stride"
+      }
+    },
     "IWR": {
       "Custom": {
         "AcidAndSpellsThatCauseRust": "acid and spells that cause rust",
@@ -777,12 +792,14 @@
           },
           "Faydhaan": "Faydhaan",
           "Fish": "Fish",
+          "Fox": "Fox",
           "Gancanagh": "Gancanagh",
           "Gimmerling": "Gimmerling",
           "Gosreg": "Gosreg",
           "Gourd": "Gourd",
           "Gylou": "Gylou",
           "Hag": "Bruja",
+          "Human": "Human",
           "Humanoid": "humanoide",
           "HumanoidLarge": "Large Humanoid",
           "HumanoidMedium": "Medium Humanoid",
@@ -810,12 +827,15 @@
           "Plant": "Planta",
           "PorcupineGiant": "Giant Porcupine",
           "Pukwudgie": "Pukwudgie",
+          "RacoonDog": "Racoon Dog",
           "RajaKrodha": "Raja-Krodha",
           "Raktavarna": "Raktavarna",
           "Rat": "Rata",
           "Scorpion": "Escorpión",
           "Shark": "Tiburón",
+          "Spider": "Spider",
           "Succubus": "Súcubo",
+          "Tailless": "Tailless",
           "Tree": "Árbol",
           "Unicorn": "Unicornio",
           "Vampire": "Vampiro",
@@ -824,7 +844,8 @@
           "Voidworm": "Voidworm",
           "WingedHumanoid": "Winged Humanoid",
           "Wolf": "Lobo",
-          "WolfDire": "Dire Wolf"
+          "WolfDire": "Dire Wolf",
+          "Yaoguai": "Yaoguai"
         },
         "Label": "Current Form"
       },
@@ -1076,6 +1097,9 @@
       "Shell": {
         "BrokenShell": "Concha rota",
         "CriticalHit": "Caparazón roto por un golpe crítico"
+      },
+      "Shieldmarshal": {
+        "LawbringerSpeedLabel": "Lawbringer - Moving Toward Target"
       },
       "ShockerLizard": {
         "ShockingBurst": {
@@ -1599,7 +1623,6 @@
       "BattleForm": "Forma de batalla",
       "ChoiceSet": "Conjunto de elección",
       "CraftingEntry": "Entrada de Artesanía",
-      "CraftingFormula": "Formula de Artesanía",
       "CreatureSize": "Tamaño de la criatura",
       "CriticalSpecialization": "Especialización crítica",
       "DamageAlteration": "Damage Alteration",
@@ -1858,14 +1881,33 @@
         "Prompt": "Elige el bono de Ayuda."
       },
       "Alchemist": {
+        "AlchemicalAssessment": {
+          "Note": "If have the formula for the item you're identifying, and you roll a critical failure, you get a failure instead."
+        },
         "AlchemicalCrossbow": {
           "Prompt": "Elige una bomba para agregar a la ballesta."
         },
         "Alchemy": {
           "IdentifyAlchemy": "You can automatically identify alchemical items that you have the formula for."
         },
+        "BlowgunPoisoner": {
+          "CriticalNote": "If you critically succeed at a blowgun Strike using a poisoned dart, the target's initial save against the poison is one degree of success worse than the creature rolls; this is a misfortune effect.",
+          "StealthNote": "In addition, if you make a blowgun Strike while @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, you don't automatically become @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Observed}. Instead, immediately attempt a @Check[stealth|against:perception] check against the Perception DC of the target. If you succeed, you don't become observed, and are hidden (if you were undetected, you still become hidden rather than remaining undetected)."
+        },
         "ExpandedSplash": {
           "Note": "The splash damage affects all creatures within 10 feet of the target instead of 5 feet."
+        },
+        "ImprovedInvigoratingElixir": {
+          "Description": "Add the listed conditions to those you can choose for an invigorating elixir you create to counteract:",
+          "Label": "Improved Invigorating Elixir",
+          "Mental": {
+            "Label": "Physical Invigoration",
+            "Conditions": "@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}, @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}"
+          },
+          "Physical": {
+            "Label": "Mental Invigoration",
+            "Conditions": "@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, controlled, @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing}, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}."
+          }
         },
         "ResearchField": {
           "Bomber": {
@@ -1892,6 +1934,12 @@
               "Description": "You can apply the contents of a versatile vial to a weapon or piece of ammunition as an injury poison. Add the versatile vial's initial damage to the first successful Strike with that weapon or ammunition. The substance becomes inert at the end of your current turn."
             }
           }
+        },
+        "SupremeInvigoratingElixir": {
+          "Description": "For the purposes of counteracting effects with invigorating elixirs, treat your level as though it were 2 higher. Add the listed conditions to those you can choose for an invigorating elixir you create to counteract: @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified}, @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned}. You can also choose a disease regardless of what, if any, conditions it imposes."
+        },
+        "UncannyBombs": {
+          "Note": "You automatically succeed at the flat check when targeting a @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} creature."
         }
       },
       "AldoriDuelist": {
@@ -2240,6 +2288,14 @@
         "WeightOfGuilt": {
           "Description": "Guilt clouds the minds of those who ignore your Glimpse of Redemption. Instead of making the triggering creature enfeebled 2, you can make it @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Anonadado 2} for the same duration."
         }
+      },
+      "ChangeShape": {
+        "Anadi": "You change into your human or spider shape. Each shape has a specific, persistent appearance. In your human shape, you can't use unarmed attacks granted by your ancestry. You aren't off-guard when climbing in your spider shape. However, in your spider shape you can't use weapons, shields, or other held items of any sort, and you are limited in what actions you can take that have the manipulate trait. The only manipulate actions you can take are to @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} with somatic components, weave silk or webbing, or simple @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interact} actions such as opening an unlocked door. Your spider legs can't perform actions that require fingers or significant manual dexterity, including any action that would require a check to accomplish. The GM might determine other manipulate actions are appropriate for your spider legs.",
+        "Beastkin": "You change into your humanoid or hybrid shape. Each shape has a specific, persistent appearance, and most beastkin remain in their hybrid shapes by default. In hybrid shape, you appear as a mix between your ancestry and your inherent animal. While in hybrid shape, you gain a jaws unarmed Strike resembling the features of your inherent animal (fangs for bats, beaks for eagles, mandibles for wasps, and so on). Your jaws deal 1d4 piercing damage, have the agile, finesse, and unarmed traits, and are in the brawling weapon group. In your humanoid shape, you retain the appearance of your original ancestry.",
+        "Kitsune": "You transform into a specific alternate form determined by your heritage. If your heritage doesn't list a form, your alternate form is a tailless form, which is a common Medium humanoid ancestry prevalent where you grew up (typically human). This form is the same age and body type as your true form and has roughly analogous physical traits, such as hair color. Using Change Shape counts as creating a disguise for the @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} use of Deception. You lose any unarmed Strikes you gained from a kitsune heritage or ancestry feat in this form. You can remain in your alternate form indefinitely, and you can shift back to your true kitsune form by using this action again.",
+        "Tanuki": "You can transform into a mundane raccoon dog, using the statistics of @UUID[Compendium.pf2e.spells-srd.Item.gfPjmG6Fe6D3MFjl]{Pest Form}. This is a specific raccoon dog form that's the same age and body type as your true form and has roughly analogous physical traits, such as hair color. Using Change Shape counts as creating a disguise for the @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} use of Deception. You lose any unarmed Strikes you gained from a tanuki heritage or ancestry feat in this form. You can remain in your raccoon dog form indefinitely, and you can shift back to your tanuki form by using this action again.",
+        "Werecreature": "You transform into your hybrid or animal shape. Your equipment transforms with you and continues to provide bonuses, but your animal shape cannot use weapons, shields, or other held items and cannot use manipulate actions. You gain a movement speed, unarmed attacks, and potentially other abilities based on your werecreature type. These unarmed attacks are in the brawling group. You can Dismiss the effect to return to your humanoid shape, and you resume your humanoid shape automatically if you're reduced to 0 Hit Points.",
+        "Yaoguai": "You transform to or from your true yaoguai form into a humanoid alternate form, which is a common Medium humanoid ancestry prevalent where you were born (typically human). This form is the same apparent age and body type as your yaoguai form and has roughly analogous physical traits, such as hair color. Using Change Shape counts as creating a disguise for the @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} use of Deception. You can remain in your humanoid form indefinitely, but you revert to your yaoguai form after 1 hour of unconsciousness or 1 minute after death."
       },
       "CharmOfResistance": {
         "Greater": "Talismán de resistencia {damageType} (Mayor)",
@@ -2829,6 +2885,9 @@
           "Sorcerer": "You siphon spell energy into one weapon you're wielding or into one of your unarmed attacks, such as a fist. Until the end of your turn, the weapon or unarmed attack deals an extra 1d6 force damage and gains the trait of your bloodline's magical tradition if it didn't have it already. If the spell dealt a different type of damage, the Strike deals this type of damage instead (or one type of your choice if the spell could deal multiple types of damage).",
           "Wizard": "You siphon spell energy into one weapon you're wielding, or into one of your unarmed attacks, such as a fist. Until the end of your turn, the weapon or unarmed attack deals an extra 1d6 force damage and gains the arcane trait if it didn't have it already. If the spell dealt a different type of damage, the Strike deals this type of damage instead (or one type of your choice if the spell could deal multiple types of damage)."
         },
+        "BurnIt": {
+          "Label": "Burn It!"
+        },
         "CharmingLiar": {
           "Note": "Cuando obtienes un éxito crítico usando la acción Mentir, la actitud del objetivo hacia ti mejora en un paso, como si hubieras logrado usar la diplomacia para causar una impresión."
         },
@@ -3401,6 +3460,7 @@
       },
       "Magus": {
         "ArcaneCascade": {
+          "IncreaseDamage": "Increase Arcane Cascade damage",
           "WeaponDamage": "Daño de arma"
         },
         "HybridStudy": {
@@ -3468,14 +3528,17 @@
         "AdvancedHobgoblinWeapons": "Armas avanzadas de Hobgoblin",
         "AdvancedKholoWeapons": "Advanced Kholo Weapons",
         "AdvancedKoboldWeapons": "Armas Kobold avanzadas",
+        "AdvancedMonasticWeaponry": "Advanced Monastic Weaponry",
         "AdvancedMerfolkWeapons": "Advanced Merfolk Weapons",
         "AdvancedOrcWeapons": "Armas orcas avanzadas",
+        "AdvancedSamsaranWeapons": "Advanced Samsaran Weapons",
         "AdvancedSurkiWeapons": "Advanced Surki Weapons",
         "AdvancedTenguWeapons": "Armas Tengu avanzadas",
         "AdvancedTripkeeWeapons": "Advanced Tripkee Weapons",
         "AdvancedTwoHandedMeleeWeapons": "Advanced Two-Handed Melee Weapons",
         "AdvancedVanaraWeapons": "Armas avanzadas de Vanara",
         "AdvancedVishkanyaWeapons": "Armas avanzadas de Vishkanya",
+        "AdvancedWayangWeapons": "Advanced Wayang Weapons",
         "BayonetsAndReinforcedStocks": "Bayonets and Reinforced Stocks",
         "BountyHunterWeapons": "Bounty Hunter Tools of the Trade",
         "MartialAthamaruWeapons": "Martial Athamaru Weapons",
@@ -3518,13 +3581,16 @@
         "MartialKholoWeapons": "Martial Kholo Weapons",
         "MartialKoboldWeapons": "Armas kobold marciales",
         "MartialMerfolkWeapons": "Martial Merfolk Weapons",
+        "MartialOniWeapons": "Martial Oni Weapons",
         "MartialOrcWeapons": "Armas orcas marciales",
+        "MartialSamsaranWeapons": "Martial Samsaran Weapons",
         "MartialSurkiWeapons": "Martial Surki Weapons",
         "MartialTenguWeapons": "Armas marciales tengu",
         "MartialTripkeeWeapons": "Martial Tripkee Weapons",
         "MartialTwoHandedMeleeWeapons": "Martial Two-Handed Melee Weapons",
         "MartialVanaraWeapons": "Armas marciales Vanara",
         "MartialVishkanyaWeapons": "Armas marciales Vishkanya",
+        "MartialWayangWeapons": "Martial Wayang Weapons",
         "MinotaurWeapons": "Minotaur Weapons",
         "MonasticArchery": "Tiro con arco monástico",
         "PerformativeWeapons": "Gladiator Performative Weapons",
@@ -3728,6 +3794,10 @@
         "ThoroughReports": "Thorough Reports"
       },
       "Poppet": {
+        "Tsukumogami": {
+          "Ceramic": "Ceramic",
+          "Cloth": "Cloth or Wood"
+        },
         "WashOut": {
           "Note": "Cada vez que tienes éxito en una salvación de Fortaleza contra un veneno en curso, reduces su nivel en 2, o en 1 contra un veneno virulento. Cada éxito crítico que logres contra un veneno en curso reduce su nivel en 3, o en 2 contra un veneno virulento."
         }
@@ -3743,6 +3813,7 @@
         "AdvancedMulticlassFeat": "Selecciona una dote de clase hasta la mitad del nivel de tu personaje.",
         "Alignment": "Seleccione una alineación.",
         "Benefit": "Select a benefit.",
+        "Cantrip": "Select a cantrip.",
         "CantripOrNonCantrip": "Selecciona un hechizo con truco o sin truco.",
         "ClassDCAbilityScore": "Seleccione el atributo clave de la clase DC.",
         "Color": "Seleccione un color.",
@@ -3768,6 +3839,7 @@
         "LevelOneClassFeat": "Selecciona una dote de clase de primer nivel.",
         "LevelOneOrTwoClassFeat": "Selecciona una dote de clase de primer o segundo nivel.",
         "Material": "Seleccione un material.",
+        "MovementType": "Select a movement type.",
         "PathToPerfection": "Seleccione un camino hacia la perfección.",
         "Persona": "Select a persona trait.",
         "PsiCantrip": "Select a psi cantrip.",
@@ -4446,9 +4518,11 @@
         "EnergyAblation": "If your next action is to Cast a Spell that deals at least one type of energy damage (acid, cold, electricity, fire, force, sonic, vitality, or void), you gain resistance to an energy damage type of your choice equal to the spell's rank. The resistance lasts until the end of your next turn. You get the resistance regardless of whether or not your spell dealt damage.",
         "EnergyFusion": "If the next action you use is to Cast a Spell that deals energy damage, select a non-cantrip spell in your spell repertoire that deals a different type of energy damage, and expend an additional spell slot of the same rank as this secondary spell. The spell you cast deals additional damage equal to the rank of the secondary spell slot expended. The spell's total damage is divided evenly between the energy type of the spell you cast and the energy type of the secondary spell.",
         "ExplosiveArrival": "If your next action is to Cast a Spell with the summon trait, all creatures in a @Template[type:emanation|distance:10] around the creature you summoned take @Damage[(@item.level)d4[fire]] damage. If the creature summoned has the @Damage[(@item.level)d4[acid]]{acid}, @Damage[(@item.level)d4[cold]]{cold}, @Damage[(@item.level)d4[electricity]]{electricity}, @Damage[(@item.level)d4[sonic]]{sonic}, or @Damage[(@item.level)d4[spirit]]{spirit} trait, you can deal damage of that type instead.",
+        "FamiliarsResolve": "If the next action you use is to Cast a Spell, you or an ally within 30 feet gain a +2 status bonus to saving throws against effects that would cause you to be doomed or frightened for 1 round. At 14th level, you or an ally gain a +3 status bonus to saving throws against these effects instead. @UUID[Compendium.pf2e.feat-effects.Item.6I4qWkHzxj4MAt6g]{Effect: Familiar's Resolve}",
         "ForcibleEnergy": "If your next action is to Cast a Spell that deals acid, cold, electricity, fire, or sonic damage, you can select one target that was damaged to gain weakness 5 to that damage type until the end of your next turn. If a spell deals multiple types of energy damage, choose one that the target gains weakness to. This has no effect on creatures with resistance or immunity to the energy type you choose. @UUID[Compendium.pf2e.feat-effects.Item.0Ai0u9kNJrEudPnN]{Effect: Forcible Energy}",
         "FormControl": "The spell's rank is 2 lower than normal (minimum 1st rank), but you can remain transformed for up to 1 hour or the listed duration (whichever is longer). You can still Dismiss untamed form as normal.",
         "GarlandSpell": "A garland of plants grows in a @Template[type:burst|distance:10] in the spell's range. The plants are difficult terrain and hazardous terrain, covered in your choice of thorns or poisonous vines. Any creature that moves into one of these squares or ends its turn in one takes @Damage[2d6[piercing]]damage for thorns or @Damage[2d6[poison]] for vines. A creature can take this damage only once per turn. You and your familiar are immune to this damage. The plants last for 1 minute or until you cast another Garland Spell, whichever comes first. The damage increases to 3d6 at 16th level and 4d6 at 20th level.",
+        "GoldenDragonsBounty": "If the next action you use is to Cast a Spell that deals bludgeoning, piercing, or slashing damage, that damage is your choice of cold iron, silver, or steel for the purposes of weaknesses, resistances, vulnerabilities, and the like. At 14th level, adamantine is added to the list of metal choices. The spell gains the metal trait.",
         "GrowthSpell": "Expand the area of the spell. For bursts, expand the radius by 5 feet; for cones, expand the cone by 10 feet; and for lines, expand the length by 15 feet. The spell gains the wood trait.",
         "GustingSpell": "If the next action you use is to Cast a Spell with the air or electricity trait, you can Fly up to 10 feet before or after the spell is cast.",
         "Harmonize": "If your next action is to cast a composition, it becomes a harmonized composition. Unlike a normal composition, a harmonized composition doesn't end if you cast another composition, and you can cast another composition on the same turn as a harmonized one. Casting another harmonized composition ends any harmonized composition you already have in effect.",
@@ -4502,12 +4576,19 @@
         "MinorPrompt": "Selecciona un poder espiritual menor"
       },
       "Sprite": {
+        "Dijiang": {
+          "Emotion": "When you roll a failure (though not a critical failure) on a saving throw against an emotion effect, you get a success instead."
+        },
         "LuminousSprite": {
           "Light": "Arrojar luz"
         },
         "SpritesSpark": {
+          "Dijiang": "Primordial Pulse",
           "Draxie": "Chispa eufórica",
+          "Gandharva": "Celestial Song",
           "Grig": "Nota disonante",
+          "Kanchil": "Puzzling Bolt",
+          "Leungli": "Surging Splash",
           "LuminousSprite": "Chispa luminosa",
           "Melixie": "Tiro de picadura",
           "Nyktera": "Pulso ultrasónico",
@@ -4528,10 +4609,13 @@
           "FireTalon": "Garra de fuego",
           "FlashingSpark": "Chispa intermitente",
           "FlowingWave": "Ola que fluye",
+          "GaleBlossom": "Gale Blossom",
           "GorillaSlam": "Golpe de gorila",
           "IronSweep": "Barrido de hierro",
           "LashingBranch": "Rama de amarre",
+          "RammingHorn": "Ramming Horn",
           "ShadowGrasp": "Agarre de las sombras",
+          "ShatteringEarth": "Shattering Earth",
           "SkywardSlash": "Tajo hacia el cielo",
           "StingingLash": "Latigazo punzante",
           "Stonestrike": "Golpe de piedra",
@@ -4780,6 +4864,9 @@
       },
       "WardingRune": {
         "Prompt": "Seleccione una escuela de magia distinta de la adivinación."
+      },
+      "Wayang": {
+        "ShadowOfTheCourtier": "Once per day, if you fail, but not critically fail, a check to Make an Impression, you can play it off as part of a performance, allowing you to reroll the check; this is a fortune effect."
       },
       "Weapon": {
         "Metal": "Usando un arma de metal"
