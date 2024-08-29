@@ -133,6 +133,10 @@
       "name": "Bite and Sting",
       "description": "<p><strong>Requirements</strong> Your swarm is outside your body</p><hr /><p><strong>Effect</strong> Each creature in your swarm's space takes @Damage[(floor(@actor.level/2))d4[piercing]] damage with a @Check[reflex|against:class-spell|basic] save against your class DC or spell DC, whichever is higher. At 4th level and every 2 levels thereafter, the damage increases by 1d4.</p>"
     },
+    "Blazing Conflagration": {
+      "name": "Blazing Conflagration",
+      "description": "<p><strong>Requirements</strong> You're transformed into phoenix form by the monstrosity form spell granted by this feat</p><hr /><p><strong>Effect</strong> You dismiss phoenix form while a fiery corona erupts from you as searing light. Each creature in a @Template[type:burst|distance:10] takes @Damage[16d6[fire]] damage with a @Check[fortitude|against:spell|basic] save against your spell DC; creatures that critically fail are @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round. You gain 8d6 temporary Hit Points. At 18th level and again at 20th level, the burst deals an additional 2d6 fire damage, and you gain an additional 1d6 temporary Hit Points.</p>"
+    },
     "Blizzard Evasion": {
       "name": "Evasión de la tormenta de nieve",
       "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <p> <strong> Activador </strong> Recibes 40 o más de daño físico con un solo ataque </p>\n <hr />\n <p> <strong> Efecto </strong> Te descorporas en una tormenta de nieve giratoria durante hasta 3 rondas. Durante este tiempo, obtienes resistencia 10 al daño físico y debilidad 10 al daño forzado. Obtienes una velocidad de vuelo de 40 pies, pero la única acción que puedes realizar es @UUID[Compendium.pf2e.actionspf2e.Item.cS9nfDRGD83bNU1p]{Fly} . La primera vez en cada ronda que ingresas al espacio de otra criatura mientras estás descorporizado, o la primera vez que una criatura ingresa a tu espacio, esa criatura sufre @Damage[4d8[cold]] de daño y debe tener éxito en una tirada de salvación @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] contra la CD de tu clase o la CD del hechizo, lo que sea mayor, o de lo contrario será @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix] {Aturdido 1} . Al comienzo de tu turno, puedes finalizar este efecto como una acción gratuita. </p>"
@@ -213,21 +217,9 @@
       "name": "Catarsis",
       "description": "<p> <strong> Desencadenante </strong> determinado por tu emoción de catarsis </p>\n <hr />\n <p> <strong> Efecto </strong> Obtienes los efectos de activación de catarsis enumerados para tu emoción de catarsis. Obtienes los beneficios del fervor emocional de esa emoción durante 3 rondas. Cuando termina su fervor emocional, sufre las consecuencias emocionales enumeradas. Después de usar Catarsis, no puedes volver a usarlo hasta que uses la actividad @UUID[Compendium.pf2e.actionspf2e.Item.EhLvRWFKhZ3HtrZO] {Settle Emotions}. </p>\n <p>@UUID[Compendium.pf2e.feat-effects.Item.JysvElDwGZ5ABQ6x] {Effect: Emotional Fervor} </p>"
     },
-    "Change Shape (Anadi)": {
-      "name": "Cambiar de forma (Anadi)",
-      "description": "<p> Cambias a tu forma humana o de araña. Cada forma tiene una apariencia específica y persistente. </p>\n <p> En tu forma humana, no puedes usar ataques desarmados otorgados por tu ascendencia. No estás desprevenido al escalar en forma de araña. </p>\n <p> Sin embargo, en tu forma de araña no puedes usar armas, escudos u otros objetos de ningún tipo, y estás limitado en las acciones que puedes realizar que tengan el rasgo de manipulación. Las únicas acciones que manipulasLo que puedes hacer son @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz] {Cast a Spell} con componentes somáticos, tejer seda o telarañas, o acciones simples @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F] {Interact} como abrir una puerta abierta. Tus patas de araña no pueden realizar acciones que requieran dedos o una destreza manual significativa, incluida cualquier acción que requiera una verificación para realizarse. El DJ podría determinar que otras acciones de manipulación son apropiadas para tus patas de araña. </p>"
-    },
-    "Change Shape (Beastkin)": {
-      "name": "Cambiar de forma (Bestia)",
-      "description": "<p> Cambias a tu forma humanoide o híbrida. Cada forma tiene una apariencia específica y persistente, y la mayoría de los Beastkin permanecen en sus formas híbridas de forma predeterminada. </p>\n <p> En forma híbrida, apareces como una mezcla entre tu ascendencia y tu animal inherente. Mientras estás en forma híbrida, obtienes un golpe con mandíbulas desarmadas que se asemeja a las características de tu animal inherente (colmillos para murciélagos, picos para águilas, mandíbulas para avispas, etc.). Tus mandíbulas causan 1d4 de daño perforante, tienes laRasgos ágiles, delicados y desarmados, y están en el grupo de armas de pelea. </p>\n <p> En tu forma humanoide, conservas la apariencia de tu ascendencia original. </p>\n <p> @UUID[Compendium.pf2e.feat-effects.Item.qIOEe4kUN7FOBifb] {Effect: Hybrid Shape} </p>"
-    },
-    "Change Shape (Kitsune)": {
-      "name": "Cambiar de forma (Kitsune)",
-      "description": "<p> Te transformas en una forma alternativa específica determinada por tu herencia. Si tu herencia no incluye una forma, tu forma alternativa es una forma sin cola, que es una ascendencia humanoide Mediana común que prevalece en el lugar donde creciste (típicamente humano). Esta forma tiene la misma edad y tipo de cuerpo que su forma verdadera y tiene rasgos físicos más o menos análogos, como el color del cabello. Usar Cambiar Forma cuenta como crear un disfraz para el uso de Engaño por Suplantación. Pierdes cualquier golpe desarmado.obtenido de una herencia kitsune o hazaña de ascendencia en esta forma. Puedes permanecer en tu forma alternativa indefinidamente y puedes volver a tu verdadera forma kitsune usando esta acción nuevamente. </p>"
-    },
-    "Change Shape (Werecreature)": {
-      "name": "Change Shape (Werecreature)",
-      "description": "<p>You transform into your hybrid or animal shape. Your equipment transforms with you and continues to provide bonuses, but your animal shape cannot use weapons, shields, or other held items and cannot use manipulate actions. You gain a movement speed, unarmed attacks, and potentially other abilities based on your werecreature type. These unarmed attacks are in the brawling group. You can Dismiss the effect to return to your humanoid shape, and you resume your humanoid shape automatically if you're reduced to 0 Hit Points.</p>"
+    "Change Shape": {
+      "name": "Change Shape",
+      "description": "<p>You return to your natural shape or adopt a new shape as described by the source of this action.</p>"
     },
     "Change Tradition Focus": {
       "name": "Cambiar el enfoque de la tradición",
@@ -333,6 +325,10 @@
       "name": "Gatear",
       "description": "<p> <strong> Requisitos </strong> Estás tumbado y tu Velocidad es por lo menos de 10 pies (3 m). </p>\n <hr />\n <p> Te mueves 5 pies (1,5 m) gateando y continúas @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60] {Tumbado}. </p>"
     },
+    "Create Familiar Fulu": {
+      "name": "Create Familiar Fulu",
+      "description": "<p><strong>Frequency</strong> once per day or greater (see @UUID[Compendium.pf2e.feats-srd.Item.BcYmYMUU8HDwGthh]{Fulu Familiar});</p>\n<p><strong>Requirements</strong> Your familiar is within 30 feet, and you have one hand free;</p><hr /><p><strong>Effect</strong> You make a pinching motion, and your familiar dissolves into magical energy that re-forms between your fingers as a fulu magical item. The fulu must be at least two levels lower than your level, and you don’t need to spend the normal monetary cost in magical components or attempt a Crafting check. You can then choose to @UUID[Compendium.pf2e.actionspf2e.Item.UAaQk93a30nx0nYY]{Affix a Talisman} as part of this activity to affix your familiar fulu. While transformed, your familiar doesn’t grant its normal benefits, and it remains transformed until your next daily preparations or until you Activate the fulu, at which point your familiar reappears in an unoccupied space adjacent to you.</p>"
+    },
     "Create Forgery": {
       "name": "Falsificar",
       "description": "<p> <strong> Requisitos </strong> Usted proporciona los materiales de escritura adecuados para su falsificación. </p>\n <hr />\n <p> Creas un documento falsificado, generalmente en el transcurso de un día o una semana. El DJ tira una prueba secreta CD 20 <span data-pf2-action=\"createForgery\" data-pf2-dc=\"20\"> Sociedad </span>. Si necesita falsificar la letra de una persona específica, necesitará una muestra de la letra de esa persona. De lo contrario, sólo necesitas haber visto un documento similar y obtendrás una bonificación de circunstancia de +4 ala prueba (el DJ determina la bonificación). </p>\n <hr />\n <p> <strong> Éxito </strong> La falsificación es de calidad suficientemente buena como para que los observadores pasivos no puedan notar la falsificación (pero consulte Examinar falsificaciones). </p>\n <p> <strong> Fallo </strong> La falsificación tiene algunos signos obvios de ser una falsificación, lo que potencialmente permite que los observadores pasivos la detecten. Cada vez que un observador pasivo ve el documento, el DJ compara el resultado de su verificación con el del observador.Percepción DC o Sociedad DC, lo que sea mayor. Si su resultado no excede el DC de un observador pasivo, ese observador sabe que el documento es una falsificación. </p>\n <hr />\n <h2> Examinando falsificaciones </h2>\n <p> Una criatura que busca falsificaciones, incluso una que se dejó engañar con una mirada pasiva, puede tomarse el tiempo para examinar de cerca un documento para ver si es una falsificación. Aplican diferentes técnicas y métodos de análisis para mirar más allá de los elementos superficiales e intentaruna prueba secreta de Percepción o Sociedad contra la CD de Sociedad del falsificador; cualquier bonificación que tuvieras para crear la falsificación se aplica inicialmente a este DC. Si tiene éxito, el examinador sabe que el documento es una falsificación. En caso de error, piensan que el documento es genuino y no pueden volver a intentarlo a menos que encuentren una nueva razón para sospechar del documento. Si un PJ examina un documento genuino, el DJ aún podría pretender realizar una verificación secreta antes de revelar que el documento es genuino. </p>"
@@ -340,6 +336,10 @@
     "Create a Diversion": {
       "name": "Crear Una Distracción",
       "description": "<p> Con un <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"gesture\"> gesto </span> , un <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"trick\"> truco </span> , o algunas <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"distracting-words\"> palabras que distraen </span> , puedes crear una distracción que atraiga la atención de las criaturas a otra parte. Si usas un gesto o truco, esta acción obtiene el rasgo de manipulación. Si utiliza palabras que distraen, adquiere rasgos auditivos y lingüísticos. </p>\n <p> Intenta una única prueba de Engaño y compárala con las CD de Percepción de las criaturas cuya atención estás intentandopara desviar. Tengas éxito o no, las criaturas que intentas desviar obtienen un bono de circunstancia +4 a su CD de Percepción contra tus intentos de Crear una Desviación durante 1 minuto. </p>\n <hr />\n <p> <strong> Éxito </strong> Te conviertes en @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC] {Escondido} para cada criatura cuya CD de Percepción sea menor o igual a tu resultado. (La condición oculta te permite @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4] {Sneak} alejarte). Esto dura hasta el final de tu turno o hasta que lo hagas.cualquier cosa excepto Dar un paso o usar la habilidad Sigilo para esconderse o escabullirse. Si golpeas a una criatura, la criatura permanece @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] {Desprevenido} contra ese ataque, y luego eres observado. Si haces cualquier otra cosa, serás observado justo antes de actuar, a menos que el DJ determine lo contrario. </p>\n <p> <strong> Fallo </strong> No desvías la atención de ninguna criatura cuya CD de Percepción exceda tu resultado, y esas criaturas son conscientes de que estabas tratando de engañar.a ellos. </p>"
+    },
+    "Cycle Elemental Stance": {
+      "name": "Cycle Elemental Stance",
+      "description": "<p><strong>Requirements</strong> You're in one of the elemental stances</p><hr /><p><strong>Effect</strong> s Stride or Step, and then enter a different elemental stance from the one you're currently in.</p>"
     },
     "Dampening Harmonics": {
       "name": "Dampening Harmonics",
@@ -428,6 +428,10 @@
     "Disarm": {
       "name": "Desarmar",
       "description": "<p> <strong> Requisitos </strong> Tienes al menos una mano libre. El objetivo no puede ser más de una talla más grande que tú. </p>\n <hr />\n <p> Intentas sacar un objeto del alcance de una criatura. Intenta una prueba de <span data-pf2-action=\"disarm\" data-pf2-glyph=\"A\"> Atletismo </span> contra la CD de Reflejos del objetivo. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> Golpeas el objeto fuera del alcance del objetivo. Cae al suelo en el espacio del objetivo.</p>\n <p> <strong> Éxito </strong> Debilitas el agarre del objetivo sobre el objeto. Los intentos posteriores de @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9] {Disarm} al objetivo de ese objeto obtienen un bono de circunstancia +2, y el objetivo sufre un penalizador de circunstancia -2 a los ataques con el objeto u otras pruebas que requieran un agarre firme del objeto. La criatura puede finalizar el efecto interactuando para cambiar su agarre sobre el objeto; de lo contrario, dura mientras la criatura tenga el objeto. </p>\n <p><strong> Fallo crítico </strong> Pierdes el equilibrio y te conviertes en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] {Desprevenido} hasta el inicio de tu siguiente turno. </p>"
+    },
+    "Disarming Interception": {
+      "name": "Disarming Interception",
+      "description": "<p><strong>Requirements</strong> You have your fist positioned to parry</p>\n<p><strong>Trigger</strong> An enemy within your reach targets you or an ally with a weapon Strike</p><hr /><p><strong>Effect</strong> s You attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} the weapon the enemy is attacking with. You gain a +2 status bonus to this Disarm check, and if the check is successful, the triggering attack is disrupted. If the Disarm attempt is a critical success and you have a hand free, you can catch the disarmed weapon in your hand instead of it falling to the ground in the target's space.</p>"
     },
     "Discover": {
       "name": "Descubrir",
@@ -528,6 +532,10 @@
     "Energy Shot": {
       "name": "Disparo de energía",
       "description": "<p> <strong> Desencadenante </strong> Tiras la iniciativa. </p>\n <hr />\n <p> Liberas una pequeña oleada de energía mágica en tu arma, envolviendo la bala con energía potencial y otorgándole la capacidad de infligir daño energético a tus enemigos para explotar sus debilidades. Puedes interactuar para sacar un arma a distancia. En tus primeros tres golpes de este encuentro con un arma de fuego o ballesta, infliges 1 daño adicional por ácido, frío, fuego o electricidad. Tu eligesqué tipo de daño causar como parte de cada golpe. </p>\n <p> @UUID[Compendium.pf2e.feat-effects.Item.zocU4IYIlWwRKUuE] {Effect: Energy Shot} </p>"
+    },
+    "Enlightenment in Adversity": {
+      "name": "Enlightenment in Adversity",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You critically fail a skill check with a skill you gained from the banished celestial background</p><hr /><p><strong>Effect</strong> The next time you attempt a skill check using the skill that triggered this ability within the next minute, roll twice and take the higher result.</p>"
     },
     "Entity's Resurgence": {
       "name": "Resurgimiento de la entidad",
@@ -761,6 +769,10 @@
       "name": "Influence Rumor",
       "description": "<p>You spend at least 1 day of downtime attempting to manipulate the course, tone, or content of a rumor to your benefit. You need to succeed at a Diplomacy check to shift the rumor as you intend. The difficulty is determined by the GM based on the size of the community, the relative perceptiveness of the inhabitants, and the agency of other rumormongers, but it typically is no lower than DC 15 for a small village, DC 20 for a town, DC 30 for a city, or DC 40 for a metropolis.</p>"
     },
+    "Inscribe Shadow Pamor": {
+      "name": "Inscribe Shadow Pamor",
+      "description": "<p><strong>Frequency</strong> once per minute</p><hr /><p><strong>Effect</strong> You plunge your fist or weapon into your shadow, enveloping it in a rippling, damask-like pattern of darkness. If your next action is to Strike, the shadows cling to your foe with your attack, obscuring its vision. On a hit, the target of your Strike becomes @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the start of your next turn. The target can use an Interact action to tear away the clinging shadows and remove the dazzled condition. On a critical hit, the shadows are particularly stubborn and can't be torn away.</p>"
+    },
     "Inspired Stratagem": {
       "name": "Estratagema inspirada",
       "description": "<p> <strong> Desencadenante </strong> Un aliado con el que revisaste estratagemas está a punto de intentar una tirada de ataque o prueba de habilidad </p>\n <hr />\n <p> <strong> Efecto </strong> El aliado tira la prueba desencadenante dos veces y obtiene el mejor de los dos resultados. Ese aliado se vuelve temporalmente inmune a tu Estratagema Inspirada hasta tus próximos preparativos diarios. </p>\n <p> @UUID[Compendium.pf2e.feat-effects.Item.K0Sv9AHgq245hSLC] {Effect: Inspired Stratagem} </p>"
@@ -925,6 +937,14 @@
       "name": "Retrospectiva mutagénica",
       "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <hr />\n <p> Experimentas un breve resurgimiento de un mutágeno. Elige uno que has consumido desde tus últimos preparativos diarios. Obtienes los efectos de dicho mutágeno durante 1 minuto. </p>"
     },
+    "Name Drop": {
+      "name": "Name Drop",
+      "description": "<p><strong>Frequency</strong> once per day;</p>\n<p><strong>Trigger</strong> You fail or critically fail a Deception, Diplomacy, Intimidation, or Society check</p><hr /><p><strong>Effect</strong> Reroll the skill check. You must use the second result, even if it's worse.</p>"
+    },
+    "Nudging Whisper": {
+      "name": "Nudging Whisper",
+      "description": "<p>You lace your words with echoes of your ancestors' magic. If your next action is to @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request}, you gain the effects of the @UUID[Compendium.pf2e.feats-srd.Item.KIK2Eza9TK47MEb2]{Shameless Request} feat, and if your next action is to @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie}, you gain the effects of the @UUID[Compendium.pf2e.feats-srd.Item.6Z4e3B9vePYpibcy]{Confabulator} feat. If you critically fail at either check, the target and anyone who witnessed you fail becomes immune to your Nudging Whisper for one day, though this doesn't necessarily let them know that you attempted to charm them.</p>"
+    },
     "Objection": {
       "name": "Objeción",
       "description": "<p> <strong> Frecuencia </strong> una vez por minuto </p>\n <p> <strong> Desencadenante </strong> Estás a punto de intentar una tirada de salvación contra un efecto lingüístico </p>\n <hr />\n <p> <strong> Efecto </strong> Tus ojos de diablo crepitan con alegría infernal cuando descubres una laguna en la redacción del efecto desencadenante. Realizas tu tirada de salvación dos veces y obtienes el resultado más alto. </p>"
@@ -948,6 +968,10 @@
     "Overload Vision": {
       "name": "Visión de sobrecarga",
       "description": "<p> <strong> Desencadenante </strong> Una criatura dentro de 60 pies haría una tirada de ataque contra ti </p>\n <hr />\n <p> <strong> Efecto </strong> La criatura desencadenante debe intentar una salvación de Fortaleza. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> El objetivo no se ve afectado. </p>\n <p> <strong> Éxito </strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh] {Deslumbrado} hasta el final del turno actual.</p>\n <p> <strong> Fallo </strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2] {Cegado} hasta el final del turno actual. </p>\n <p> <strong> Fallo crítico </strong> El objetivo queda cegado hasta el final del turno actual y deslumbrado durante 1 minuto. </p>"
+    },
+    "Overwhelming Combination": {
+      "name": "Overwhelming Combination",
+      "description": "<p><strong>Requirements</strong> You're wielding a one-handed melee weapon or a melee weapon with the agile or finesse trait</p><hr /><p><strong>Effect</strong> s Make two Strikes against a target within your reach, one with the required weapon and one with your fist unarmed attack. If both hit the same target, combine their damage for the purposes of its resistances and weaknesses. Apply your multiple attack penalty to each Strike normally.</p>"
     },
     "Pacifying Infusion": {
       "name": "Infusión Pacificadora",
@@ -1329,6 +1353,10 @@
       "name": "Ponerse De Pie",
       "description": "<p> Te pones en pie estando @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60] {Tumbado}.</p>"
     },
+    "Starlit Transformation": {
+      "name": "Starlit Transformation",
+      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effects</strong> Light swirls around you, transforming your armor, clothing, and a single weapon in your possession into a specific alternate outfit. While your equipment might look dramatically different, it functions as normal. If someone attempts to discern your identity, they must use a @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to attempt a Perception check against your Deception DC, as if you were using the @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} action. Your Deception DC against such attempts is 20 + your proficiency modifier instead of the normal DC. Unlike with Impersonate, you don't have to attempt a Deception check to interact with someone to conceal your identity—a check happens only if someone else specifically tries to uncover it. You remain in your sentinel form for 10 minutes or until you use Starlit Transformation again to change back to your normal form.</p>\n<p>While you're in sentinel form, your transformed weapon shines with starlight and gains a +1 status bonus to damage rolls with the weapon. You can fling bolts of starlight from your weapon with a Strike action, using your melee attack modifier with the weapon. These bolts deal @Damage[1d4[force]] damage, have a range of 60 feet, are affected by your weapon runes, and have the arcane and force traits.</p>"
+    },
     "Steal": {
       "name": "Sustraer",
       "description": "<p> Intentas quitarle un objeto pequeño a otra criatura sin que te des cuenta. Normalmente, sólo puedes robar un objeto de volumen insignificante y fallas automáticamente si la criatura que tiene el objeto está en combate o en guardia. </p>\n <p> Intenta una <span data-pf2-action=\"steal\"> Robo </span> prueba para determinar si robas el objeto con éxito. La CD suele ser la CD de Percepción de la criatura que lleva el objeto. Es más fácil robar un objeto que está usado pero no muy cercaprotegido (como una bolsa holgada llena de monedas, o un objeto dentro de dicha bolsa). El DJ podría aumentar la CD si el objeto está protegido o si la naturaleza del objeto hace que sea más difícil de robar (como un objeto muy pequeño en un paquete grande o una hoja de pergamino mezclada con otros documentos). Por ejemplo, la CD suele ser 5 mayor si el objeto está en un bolsillo, en la mano de una criatura o protegido de manera similar. </p>\n <p> Es posible que también necesites comparar tu Roboverifique el resultado con las CD de percepción de observadores distintos de la persona que lleva el objeto. El DJ podría imponer una penalización circunstancial a las CD de los observadores que estén distraídos. </p>\n <hr />\n <p> <strong> Éxito </strong> Robas el objeto sin que el portador se dé cuenta, o un observador no ve que tomas o intentas tomar el objeto. </p>\n <p> <strong> Fallo </strong> El portador del objeto se da cuenta de tu intento antes de que puedas tomar elobjeto, o un observador ve que usted toma o intenta tomar el artículo. El DJ determina la respuesta de cualquier criatura que se dé cuenta de tu robo. </p>"
@@ -1401,6 +1429,10 @@
       "name": "Sudario carmesí en forma de remolino",
       "description": "<p> Puedes interactuar con tu sudario, girándolo a tu alrededor, para obtener una bonificación de circunstancia +1 a la CA hasta el comienzo de tu siguiente turno. </p>"
     },
+    "Tactical Retreat": {
+      "name": "Tactical Retreat",
+      "description": "<p><strong>Trigger</strong> You gain the frightened condition</p>\n<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Realizing that discretion is the better part of valor, you opt to put some distance between you and a threat. You gain the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition until the beginning of your next turn, and you Stride.</p>"
+    },
     "Tail Toxin": {
       "name": "Toxina de la cola",
       "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <p> <strong> Requisitos </strong> Estás empuñando un arma perforante o cortante </p>\n <hr />\n <p> Aplicas el veneno de tu cola a un arma perforante o cortante. Si tu próximo Golpe con esa arma antes del final de tu siguiente turno golpea e inflige daño, infliges daño de veneno persistente igual a tu nivel al objetivo. </p>"
@@ -1428,6 +1460,10 @@
     "Tap Ley Line": {
       "name": "Toque Línea Ley",
       "description": "<p> Intentas manipular la esencia mágica de una línea ley de la que eres consciente dentro de 30 pies. El DJ determina la CD basándose en la CD dura para el nivel de la línea ley. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> Obtienes los beneficios de la línea ley hasta el final de tu siguiente turno. </p>\n <p> <strong> Éxito </strong> Obtienes los beneficios de la línea ley hasta el final de tu turno. </p>\n <p> <strong> Fracaso</strong> Recibes daño mental equivalente a 1d6 × el nivel de la línea ley. No puedes volver a tocar la Línea Ley durante 1 hora. </p>\n <p> <strong> Fallo crítico </strong> Como fracaso, y estás sujeto al efecto de reacción de la línea ley. No podrás volver a tocar la Línea Ley durante 24 horas. </p>"
+    },
+    "Tap the Past": {
+      "name": "Tap the Past",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You're about to attempt a check to Recall Knowledge</p><hr /><p><strong>Effect</strong> You concentrate on the glimpses of a previous life to find a memory of a tome or an applicable lesson from your past. You roll a second time and use the higher result. If you roll a critical failure, you get a failure instead. If you roll a success, you get a critical success instead.</p>"
     },
     "Telekinetic Assault": {
       "name": "Asalto Telecinético",
