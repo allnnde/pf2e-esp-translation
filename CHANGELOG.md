@@ -1,3 +1,19 @@
+## [5.28.6](https://github.com/allnnde/pf2e-esp-translation/compare/v5.28.5...v5.28.6) (2024-09-07)
+
+
+### Bug Fixes
+
+* New translations conditions.json from Crowdin ([365f7cc](https://github.com/allnnde/pf2e-esp-translation/commit/365f7cc25d70cc4ba4cb9bb7c989ebd873357849))
+* New translations conditions.json from Crowdin ([eef4010](https://github.com/allnnde/pf2e-esp-translation/commit/eef4010e0ec39e1cf0a44f712a40357e7fd1295a))
+* New translations spells.json from Crowdin ([92306f6](https://github.com/allnnde/pf2e-esp-translation/commit/92306f648eacced53988bddca01d80e652822325))
+* New translations spells.json from Crowdin ([4b5f9f2](https://github.com/allnnde/pf2e-esp-translation/commit/4b5f9f24ea97c9988eed24f4b8aa3afe7799772e))
+* New translations spells.json from Crowdin ([cd7e0c4](https://github.com/allnnde/pf2e-esp-translation/commit/cd7e0c40a3c4af292a7c4b460e9d4d5e8748a8fa))
+* New translations spells.json from Crowdin ([bd4f9c1](https://github.com/allnnde/pf2e-esp-translation/commit/bd4f9c136039874017cf5cdf5df854eb77e83ba7))
+* New translations spells.json from Crowdin ([976fd6b](https://github.com/allnnde/pf2e-esp-translation/commit/976fd6be6bbc3547142032592e77e6f7076262f7))
+* New translations spells.json from Crowdin ([c5a5b09](https://github.com/allnnde/pf2e-esp-translation/commit/c5a5b097eaf3e9188cce9ec807ed150c50fc72ca))
+
+
+
 ## [5.28.5](https://github.com/allnnde/pf2e-esp-translation/compare/v5.28.4...v5.28.5) (2024-09-06)
 
 
@@ -74,18 +90,6 @@
 * New translations spells.json from Crowdin ([be8553d](https://github.com/allnnde/pf2e-esp-translation/commit/be8553d40d9bdff86a4483786e6ba9545bf51147))
 * New translations spells.json from Crowdin ([3a0acc0](https://github.com/allnnde/pf2e-esp-translation/commit/3a0acc086ba16f2badd5765d0b89e537789f942e))
 * New translations spells.json from Crowdin ([d61086a](https://github.com/allnnde/pf2e-esp-translation/commit/d61086ad08646ceb4e96aac2f2230124b8b0f56f))
-
-
-
-## [5.28.1](https://github.com/allnnde/pf2e-esp-translation/compare/v5.28.0...v5.28.1) (2024-09-01)
-
-
-### Bug Fixes
-
-* New translations actions.json from Crowdin ([d253917](https://github.com/allnnde/pf2e-esp-translation/commit/d253917999bcc039765c4f70784b273184d79b6b))
-* New translations feat-effects.json from Crowdin ([ff2d451](https://github.com/allnnde/pf2e-esp-translation/commit/ff2d4516b30c53ff402af4817906c70a369e3b47))
-* New translations feats.json from Crowdin ([94bf46b](https://github.com/allnnde/pf2e-esp-translation/commit/94bf46b77b0a8be87a60cce8fb26a10bc9e47abf))
-* New translations heritages.json from Crowdin ([fb0ec1c](https://github.com/allnnde/pf2e-esp-translation/commit/fb0ec1cb78a113a09e0301916f9b8856dd14bec2))
 
 
 
