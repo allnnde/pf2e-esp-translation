@@ -1,24 +1,6 @@
 {
   "label": "Bestiario - Amenaza bajo Otari",
   "entries": {
-    "Animated Armor (BB)": {
-      "name": "Armadura animada (BB)",
-      "acDetails": "(13 después de que la armadura de construcción se rompa), construir armadura",
-      "publicNotes": "<p> A los objetos se les puede dar una apariencia de vida mediante el uso de rituales u otra magia extraña, convirtiéndolos en objetos animados. Estos objetos se mueven, trabajan y luchan según las órdenes que les dan sus creadores, quienes generalmente los ponen en guardia o les hacen realizar trabajos de baja categoría. </p>\n <p> Las armaduras animadas pueden servir como guardianes, pero a veces las academias marciales de alto nivel los utilizan como compañeros de entrenamiento. Se encuentran con mayor frecuencia en los laboratorios de los magos.y mazmorras antiguas. </p>",
-      "tokenName": "Armadura animada",
-      "items": {
-        "strike-melee->Longsword": {
-          "name": "espada larga"
-        },
-        "strike-melee->Armored Fist": {
-          "name": "Puño blindado"
-        },
-        "action->Construct Armor": {
-          "name": "Construir armadura",
-          "description": "<p> La armadura animada reduce todo el daño que recibe en 9. Sin embargo, después de un golpe crítico que causa daño, o después de que su HP cae por debajo de 10, su armadura construida se rompe. Su CA baja a 13 y ya no reduce el daño en 9. </p>"
-        }
-      }
-    },
     "Basilisk (BB)": {
       "name": "Basilisco (BB)",
       "publicNotes": "<p> Un basilisco es un reptil de ocho patas que puede convertir criaturas en piedra con solo mirarlas. </p>",
@@ -34,24 +16,6 @@
         "action->Petrifying Gaze": {
           "name": "Mirada petrificante",
           "description": "<p> El basilisco mira fijamente a una criatura que puede ver a menos de 30 pies. Si la criatura puede ver el basilisco, esa criatura debe intentar una salvación @Check[type:fortitude|dc:22]. </p>\n <p> Si falla y aún no ha obtenido la condición de ralentización de Mirada petrificante o esta habilidad, obtiene la condición @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1}. Si la criatura falla esta salvación cuando ya tiene la condición de ralentización de esta habilidad o Mirada Petrificante, la criatura se convierte permanentemente en @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Stone} . </p>\n <p> Una criatura petrificada de esta manera que está cubierta con sangre fresca de basilisco vuelve instantáneamente a la carne. Un solo basilisco contiene suficiente sangre para cubrir hasta 2 criaturas de esta manera. </p>"
-        }
-      }
-    },
-    "Boar (BB)": {
-      "name": "Jabalí (BB)",
-      "publicNotes": "<p> De mal genio y duros, los jabalíes son mucho más peligrosos que los cerdos domesticados. Estos mamíferos omnívoros son cazados intensamente porque su carne se considera un manjar. Es más probable que los jabalíes ataquen a los humanoides en defensa propia o durante su temporada de apareamiento en los meses de invierno, cuando a los machos les crece una pulgada extra de tejido para proteger sus órganos mientras luchan contra sus rivales. En algunas culturas, los jabalíes son entrenados para volverse mucho más agresivos y usarlos como bestias de guerra y guardianes. cuando talLos jabalíes regresan a la naturaleza y pueden convertirse en verdaderos terrores de la región. </p>",
-      "tokenName": "Jabali",
-      "items": {
-        "strike-melee->Tusk": {
-          "name": "Colmillo"
-        },
-        "action->Ferocity": {
-          "name": "Ferocity",
-          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.N1kstYbHScxgUQtN]\n <p> Cuando el jabalí se reduce a 0 Puntos de Vida, puede usar su reacción para permanecer consciente con 1 Punto de Vida, pero gana la condición @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Herido 1} (o aumenta su valor de herido en 1 si ya tiene esa condición). No puede usar esta habilidad en herido 3. </p>"
-        },
-        "action->Boar Charge": {
-          "name": "Carga de jabalí",
-          "description": "<p> El jabalí da dos zancadas y luego realiza un golpe con un colmillo. Mientras se haya movido al menos 20 pies, obtiene un bonificador de circunstancia +2 a su tirada de ataque. </p>"
         }
       }
     },
@@ -2064,7 +2028,7 @@
         },
         "action->Corrupting Spite": {
           "name": "Corrupting Spite",
-          "description": "<p>When the wight deals damage to a living creature with its claw or dagger Strike, the wight regains 2 Hit Points and the target must succeed at a @Check[fortitude|dc:17] save or take 2 damage that can't be healed. The wight can use corrupting spite multiple times, but a single creature can't take more than 8 unhealable damage.</p>\n<p>Each full night of rest heals 2 of the unhealable damage, and a full day of bed rest increases the recovery to 4 of the unhealable damage.</p>"
+          "description": "<p>When the wight deals damage to a living creature with its claw or dagger Strike, the wight regains @Damage[2[void,healing]|shortLabel] Hit Points and the target must succeed at a @Check[fortitude|dc:17] save or take 2 damage that can't be healed. The wight can use corrupting spite multiple times, but a single creature can't take more than 8 unhealable damage.</p>\n<p>Each full night of rest heals 2 of the unhealable damage, and a full day of bed rest increases the recovery to 4 of the unhealable damage.</p>"
         }
       }
     },
