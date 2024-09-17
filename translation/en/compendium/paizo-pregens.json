@@ -853,7 +853,7 @@
         },
         "consumable->Elixir of Life (Minor)": {
           "name": "Elixir of Life (Minor)",
-          "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r 1d6[healing]]]{1d6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life (Minor)}</p>"
+          "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[1d6[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life (Minor)}</p>"
         },
         "treasure->Silver Pieces": {
           "name": "Silver Pieces"
@@ -2296,7 +2296,7 @@
         },
         "spell->Acid Splash": {
           "name": "Acid Splash",
-          "description": "<p>You splash a glob of acid that splatters your target and nearby creatures. Make a spell attack. If you hit, you deal 1d6 acid damage plus 1 splash acid damage. On a critical success, the target also takes [[/r (ceil(@item.level/2))[persistent,acid]]] damage.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The initial damage increases to 2d6, and the persistent damage increases to 2.</p>\n<p><strong>Heightened (5th)</strong> The initial damage increases to 3d6, the persistent damage increases to 3, and the splash damage increases to 2.</p>\n<p><strong>Heightened (7th)</strong> The initial damage increases to 4d6, the persistent damage increases to 4, and the splash damage increases to 3.</p>\n<p><strong>Heightened (9th)</strong> The initial damage increases to 5d6, the persistent damage increases to 5, and the splash damage increases to 4.</p>",
+          "description": "<p>You splash a glob of acid that splatters your target and nearby creatures. Make a spell attack. If you hit, you deal 1d6 acid damage plus 1 splash acid damage. On a critical success, the target also takes @Damage[(ceil(@item.level/2))[persistent,acid]] damage.</p><hr /><p><strong>Heightened (3rd)</strong> The initial damage increases to 2d6, and the persistent damage increases to 2.</p>\n<p><strong>Heightened (5th)</strong> The initial damage increases to 3d6, the persistent damage increases to 3, and the splash damage increases to 2.</p>\n<p><strong>Heightened (7th)</strong> The initial damage increases to 4d6, the persistent damage increases to 4, and the splash damage increases to 3.</p>\n<p><strong>Heightened (9th)</strong> The initial damage increases to 5d6, the persistent damage increases to 5, and the splash damage increases to 4.</p>",
           "target": "1 creature"
         },
         "spell->Detect Magic": {
@@ -3113,7 +3113,7 @@
         },
         "spell->Grim Tendrils": {
           "name": "Grim Tendrils",
-          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and [[/r (@item.level)[bleed]]] damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>"
+          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and @Damage[(@item.level)[bleed]] damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p><hr /><p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>"
         },
         "spell->Soothe": {
           "name": "Soothe",
@@ -3612,7 +3612,7 @@
         },
         "consumable->Healing Potion (Lesser)": {
           "name": "Healing Potion (Lesser)",
-          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2d8+5 Hit Points}.</p>"
+          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]] Hit Points.</p>"
         },
         "consumable->Cat's Eye Elixir": {
           "name": "Cat's Eye Elixir",
@@ -4277,7 +4277,7 @@
         },
         "spell->Searing Light": {
           "name": "Searing Light",
-          "description": "<p>You shoot a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals 5d6 fire damage. If the target is a fiend or undead, you deal an extra 5d6 spirit damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, <em>searing light</em> attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double fire damage, as well as double spirit damage if a fiend or undead.</p>\n<p><strong>Success</strong> The target takes full damage</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 2d6, and the spirit damage against fiends and undead increases by 2d6.</p>\n<p>[[/r ((@item.level*2)-1)d6[spirit]]]{Leveled Spirit Damage}</p>",
+          "description": "<p>You shoot a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals 5d6 fire damage. If the target is a fiend or undead, you deal an extra 5d6 spirit damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, <em>searing light</em> attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target</p><hr /><p><strong>Critical Success</strong> The target takes double fire damage, as well as double spirit damage if a fiend or undead.</p>\n<p><strong>Success</strong> The target takes full damage</p><hr /><p><strong>Heightened (+1)</strong> The fire damage increases by 2d6, and the spirit damage against fiends and undead increases by 2d6.</p>",
           "target": "1 creature"
         },
         "spellcastingEntry->Divine Focus Spells": {
@@ -4310,7 +4310,7 @@
         },
         "consumable->Healing Potion (Lesser)": {
           "name": "Healing Potion (Lesser)",
-          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2d8+5 Hit Points}.</p>"
+          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]] Hit Points.</p>"
         },
         "consumable->Scroll of Augury (Level 2)": {
           "name": "Scroll of Augury (Level 2)",
@@ -4681,7 +4681,7 @@
         },
         "spell->Phantom Pain": {
           "name": "Phantom Pain",
-          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>\n<p>[[/r (@item.level)d4[persistent,mental]]]{Leveled Persistent Mental Damage}</p>",
+          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and @Damage[(@item.level)d4[persistent,mental]] damage. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>",
           "target": "1 creature"
         },
         "spell->Grease": {
@@ -4691,7 +4691,7 @@
         },
         "spell->Shocking Grasp": {
           "name": "Shocking Grasp",
-          "description": "<p>You shroud your hands in a crackling field of lightning. Make a melee spell attack roll. On a hit, the target takes 2d12 electricity damage. If the target is wearing metal armor or is made of metal, you gain a +1 circumstance bonus to your attack roll with shocking grasp, and the target also takes 1d4 persistent electricity damage on a hit. On a critical hit, double the initial damage, but not the persistent damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12, and the persistent electricity damage increases by 1.</p>\n<p>[[/r (1d4+(@item.level)-1)[persistent,electricity]]]{Leveled Persistent Electricity Damage}</p>",
+          "description": "<p>You shroud your hands in a crackling field of lightning. Make a melee spell attack roll. On a hit, the target takes 2d12 electricity damage. If the target is wearing metal armor or is made of metal, you gain a +1 circumstance bonus to your attack roll with shocking grasp, and the target also takes @Damage[(1d4+(@item.level)-1)[persistent,electricity]] damage on a hit. On a critical hit, double the initial damage, but not the persistent damage.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d12, and the persistent electricity damage increases by 1.</p>",
           "target": "1 creature"
         },
         "spell->Feather Fall": {
@@ -4794,7 +4794,7 @@
         },
         "consumable->Healing Potion (Lesser)": {
           "name": "Healing Potion (Lesser)",
-          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2d8+5 Hit Points}.</p>"
+          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]].</p>"
         },
         "treasure->Gold Pieces": {
           "name": "Gold Pieces"
@@ -5064,7 +5064,7 @@
         },
         "consumable->Elixir of Life (Minor)": {
           "name": "Elixir of Life (Minor)",
-          "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r 1d6[healing]]]{1d6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life (Minor)}</p>"
+          "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[1d6[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life (Minor)}</p>"
         },
         "backpack->Backpack": {
           "name": "Backpack",
@@ -6609,7 +6609,7 @@
         },
         "consumable->Healing Potion (Minor)": {
           "name": "Healing Potion (Minor)",
-          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r 1d8[healing]]]{1d8 Hit Points}.</p>"
+          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
         },
         "backpack->Backpack": {
           "name": "Backpack",
@@ -7443,7 +7443,7 @@
         },
         "equipment->Healer's Gloves": {
           "name": "Healer's Gloves",
-          "description": "<p>These clean, white gloves never show signs of blood, even when used to stitch up wounds or treat other ailments. They give you a +1 item bonus to Medicine checks.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You can soothe the wounds of a willing, living, adjacent creature, restoring [[/r (2d6+7)[healing]]]{2d6+7 Hit Points} to that creature. This is a vitality healing effect. You can't harm undead with this healing.</p>"
+          "description": "<p>These clean, white gloves never show signs of blood, even when used to stitch up wounds or treat other ailments. They give you a +1 item bonus to Medicine checks.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> You can soothe the wounds of a willing, living, adjacent creature, restoring @Damage[(2d6+7)[healing]] Hit Points to that creature. This is a vitality healing effect. You can't harm undead with this healing.</p>"
         },
         "equipment->Healer's Tools": {
           "name": "Healer's Tools",
@@ -7618,7 +7618,7 @@
         },
         "consumable->Healing Potion (Minor)": {
           "name": "Healing Potion (Minor)",
-          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r 1d8[healing]]]{1d8 Hit Points}.</p>"
+          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
         },
         "consumable->Feather Token (Holly Bush)": {
           "name": "Feather Token (Holly Bush)",
@@ -7752,7 +7752,7 @@
         },
         "consumable->Elixir of Life (Minor)": {
           "name": "Elixir of Life (Minor)",
-          "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r 1d6[healing]]]{1d6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life (Minor)}</p>"
+          "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[1d6[healing]]{1d6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life (Minor)}</p>"
         },
         "treasure->Silver Pieces": {
           "name": "Silver Pieces"
@@ -7875,7 +7875,7 @@
         },
         "consumable->Elixir of Life (Lesser)": {
           "name": "Elixir of Life (Lesser)",
-          "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (3d6+6)[healing]]]{3d6+6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.EpB7yJPEuG6ez4z3]{Effect: Elixir of Life (Lesser)}</p>"
+          "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(3d6+6)[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.EpB7yJPEuG6ez4z3]{Effect: Elixir of Life (Lesser)}</p>"
         },
         "backpack->Backpack": {
           "name": "Backpack",
@@ -8534,7 +8534,7 @@
         },
         "consumable->Healing Potion (Minor)": {
           "name": "Healing Potion (Minor)",
-          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r 1d8[healing]]]{1d8 Hit Points}.</p>"
+          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
         },
         "consumable->Onyx Panther": {
           "name": "Onyx Panther",

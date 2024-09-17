@@ -135,7 +135,7 @@
     },
     "Blazing Conflagration": {
       "name": "Blazing Conflagration",
-      "description": "<p><strong>Requirements</strong> You're transformed into phoenix form by the monstrosity form spell granted by this feat</p><hr /><p><strong>Effect</strong> You dismiss phoenix form while a fiery corona erupts from you as searing light. Each creature in a @Template[type:burst|distance:10] takes @Damage[16d6[fire]] damage with a @Check[fortitude|against:spell|basic] save against your spell DC; creatures that critically fail are @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round. You gain 8d6 temporary Hit Points. At 18th level and again at 20th level, the burst deals an additional 2d6 fire damage, and you gain an additional 1d6 temporary Hit Points.</p>"
+      "description": "<p><strong>Requirements</strong> You're transformed into phoenix form by the monstrosity form spell granted by this feat</p><hr /><p><strong>Effect</strong> You dismiss phoenix form while a fiery corona erupts from you as searing light. Each creature in a @Template[type:burst|distance:10] takes @Damage[max(16,(2*(floor(@actor.level/2))))d6[fire]|options:area-damage] damage with a @Check[fortitude|against:spell|basic] save against your spell DC; creatures that critically fail are @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round. You gain 8d6 temporary Hit Points. At 18th level and again at 20th level, the burst deals an additional 2d6 fire damage, and you gain an additional 1d6 temporary Hit Points.</p>"
     },
     "Blizzard Evasion": {
       "name": "Evasión de la tormenta de nieve",
@@ -357,14 +357,6 @@
       "name": "Dazzle Seeker",
       "description": "<p><strong>Trigger</strong> A creature attempts a flat check to target you due to you being @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} from it</p>\n<hr />\n<p><strong>Effect</strong> You flash your bright scales in the creature's eyes, making it hard for them to pinpoint your exact location. The creature must roll the flat check twice and take the worse result.</p>"
     },
-    "De-Animating Gestures (False)": {
-      "name": "Gestos desanimadores (falso)",
-      "description": "<p> Usted designa una sola construcción dentro de 30 pies que puede ver u oír. La construcción se convierte en @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl] {Acelerado 1} durante 1 minuto y es temporalmente inmune a esta habilidad durante 24 horas. Puede usar su acción adicional sólo para dar zancadas o golpear. </p>"
-    },
-    "De-Animating Gestures (True)": {
-      "name": "Gestos desanimadores (verdadero)",
-      "description": "<p> Usted designa una sola construcción dentro de 30 pies que puede ver u oír. La construcción es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3] {Lentificado 1} durante 1 minuto. </p>"
-    },
     "Death Drone": {
       "name": "Death Drone",
       "description": "<p>The cicadas in your swarm make a droning sound that stimulates a fear response. Each creature within your swarm's space takes @Damage[6d4[mental]] damage and must attempt a @Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creatures takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage, is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}, and takes a –2 circumstance penalty to Perception checks that require hearing.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2}, and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido} until the start of your next turn.</p>"
@@ -472,10 +464,6 @@
     "Drape Ambient Magic": {
       "name": "Drape Ambient Magic",
       "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Your ostilli turns clear as it converts its stored magic into a bubble of refracting light around you. You become @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} to all creatures until the end of your turn. If you Strike a creature, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} against that attack, and you then become observed.</p>"
-    },
-    "Dream Research": {
-      "name": "Investigación de sueños",
-      "description": "<p> <strong> Desencadenante </strong> Te quedas dormido a 5 millas de Xarwin Manor. </p>\n <p> <strong> Frecuencia </strong> una vez cada 12 horas </p>\n <hr />\n <p> Mientras duermes, experimentas sueños que rayan en las pesadillas. En estos sueños, tu mente se aleja de tu alma y todo lo que sabes se siente como si estuviera siendo arrastrado a los lugares oscuros entre las estrellas para ser devorado. Durante el sueño, puedes concentrarte en un tema de investigación.has desbloqueado y no has investigado completamente. Si elige un tema para el cual la parte ya ha descubierto todos los umbrales de investigación, puede cambiar inmediatamente a un tema diferente. </p>\n <p> La habilidad que usas y la CD para la prueba dependen del tema, como se detalla en el lugar de Dreams de ese tema. Si no estás soñando dentro de los terrenos de la mansión, el vínculo espiritual con la malevolencia se reduce y sufres una penalización de estado de -2 a la prueba. </p>\n <hr /><p> <strong> Éxito crítico </strong> Obtienes 2 RP. </p>\n <p> <strong> Éxito </strong> Obtienes 1 RP. </p>\n <p> <strong> Fallo crítico </strong> Miras demasiado lejos en la malevolencia, que nota tu intento. Logras romper el vínculo mental justo antes de perder algunos recuerdos debido a su apetito voraz. Aumenta tu valor de condición de malevolencia en 1. </p>"
     },
     "Drifter's Wake": {
       "name": "Estela del vagabundo",
@@ -908,10 +896,6 @@
     "Master Strike": {
       "name": "Golpe Maestro",
       "description": "<p> <strong> Activa </strong> Tu golpe golpea a una criatura @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] {Desprevenido} y ​​causa daño. </p>\n <hr />\n <p> El objetivo intenta una salvación @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.rogue.dc)] contra tu clase DC. Luego se vuelve temporalmente inmune a tu Master Strike durante 1 día. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> El objetivo no se ve afectado. </p>\n <p> <strong> Éxito </strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} hasta el final de tu siguiente turno. </p>\n <p> <strong> Fallo </strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF] {Paralizado} durante 4 rondas. </p>\n <p> <strong> Fallo crítico </strong> El objetivo queda paralizado durante 4 asaltos, noqueado @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf] {Inconsciente} durante 2 horas o asesinado (tu elección). </p>"
-    },
-    "Mesmerizing Performance": {
-      "name": "Rendimiento fascinante",
-      "description": "<p> <strong> Requisitos </strong> La última acción del compañero fue una prueba de rendimiento exitosa de @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx] {Perform} . El compañero mantiene su desempeño para cautivar a un solo objetivo dentro de 30 pies que fue testigo de su desempeño exitoso. El objetivo debe intentar una salvación de Voluntad. </p>\n <hr />\n <p> <strong> Éxito </strong> El objetivo no se ve afectado y es temporalmente inmune durante 1 hora. </p>\n <p> <strong> Fracaso</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg] {Fascinado} por el compañero para su siguiente acción y luego es temporalmente inmune durante 1 hora. </p>\n <p> <strong> Fallo crítico </strong> El objetivo queda fascinado por el compañero durante 1 ronda. Mientras permanece fascinado, no sabe reaccionar. </p>"
     },
     "Mighty Rage": {
       "name": "Furia Poderosa",
@@ -1355,7 +1339,7 @@
     },
     "Starlit Transformation": {
       "name": "Starlit Transformation",
-      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effects</strong> Light swirls around you, transforming your armor, clothing, and a single weapon in your possession into a specific alternate outfit. While your equipment might look dramatically different, it functions as normal. If someone attempts to discern your identity, they must use a @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to attempt a Perception check against your Deception DC, as if you were using the @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} action. Your Deception DC against such attempts is 20 + your proficiency modifier instead of the normal DC. Unlike with Impersonate, you don't have to attempt a Deception check to interact with someone to conceal your identity—a check happens only if someone else specifically tries to uncover it. You remain in your sentinel form for 10 minutes or until you use Starlit Transformation again to change back to your normal form.</p>\n<p>While you're in sentinel form, your transformed weapon shines with starlight and gains a +1 status bonus to damage rolls with the weapon. You can fling bolts of starlight from your weapon with a Strike action, using your melee attack modifier with the weapon. These bolts deal @Damage[1d4[force]] damage, have a range of 60 feet, are affected by your weapon runes, and have the arcane and force traits.</p>"
+      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Light swirls around you, transforming your armor, clothing, and a single weapon in your possession into a specific alternate outfit. While your equipment might look dramatically different, it functions as normal. If someone attempts to discern your identity, they must use a @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to attempt a Perception check against your Deception DC, as if you were using the @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} action. Your Deception DC against such attempts is 20 + your proficiency modifier instead of the normal DC. Unlike with Impersonate, you don't have to attempt a Deception check to interact with someone to conceal your identity—a check happens only if someone else specifically tries to uncover it. You remain in your sentinel form for 10 minutes or until you use Starlit Transformation again to change back to your normal form.</p>\n<p>While you're in sentinel form, your transformed weapon shines with starlight and gains a +1 status bonus to damage rolls with the weapon. You can fling bolts of starlight from your weapon with a Strike action, using your melee attack modifier with the weapon. These bolts deal 1d4 force damage, have a range of 60 feet, are affected by your weapon runes, and have the arcane and force traits.</p>"
     },
     "Steal": {
       "name": "Sustraer",
@@ -1628,5 +1612,9 @@
       "converter": "translateSource",
       "path": "system.publication.title"
     }
+  },
+  "folders": {
+    "Basic Actions": "Basic Actions",
+    "Skill Actions": "Skill Actions"
   }
 }
