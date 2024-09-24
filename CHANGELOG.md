@@ -1,3 +1,7 @@
+## [6.0.6](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.5...v6.0.6) (2024-09-24)
+
+
+
 ## [6.0.5](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.4...v6.0.5) (2024-09-24)
 
 
@@ -99,15 +103,6 @@
 ### Bug Fixes
 
 * add step ([d202871](https://github.com/allnnde/pf2e-esp-translation/commit/d2028710abc786bddc60a829aeb01f5f14492c00))
-
-
-
-## [6.0.1](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.0...v6.0.1) (2024-09-24)
-
-
-### Bug Fixes
-
-* new forwlok ([bd92661](https://github.com/allnnde/pf2e-esp-translation/commit/bd92661d7fb955c3f9dae663b7fad9a59ab3fe65))
 
 
 
