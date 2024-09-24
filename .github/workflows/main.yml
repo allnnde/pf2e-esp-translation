@@ -9,8 +9,12 @@ env:
   PACKAGE_CONTENT: "module.json src/babele-register.js src/translator/ lang/ translation/ styles/"
 
 jobs:
-  build:
+  versioning:
     runs-on: ubuntu-latest
+    outputs:
+      tag: ${{steps.changelog.outputs.tag}}
+      skipped: ${{steps.changelog.outputs.skipped}}
+      changelog: ${{steps.changelog.outputs.changelog}}
     steps:
       - uses: actions/checkout@v2
       - name: Conventional Changelog Action
@@ -20,10 +24,13 @@ jobs:
           github-token: ${{ secrets.github_token }}
           skip-on-empty: false
           version-file: "module.json"
-
+  build:
+    runs-on: ubuntu-latest
+    needs: versioning
+    steps:
       # Create a zip file with all files required by the module to add to the release
       - name: Create Artifact
-        if: ${{ steps.changelog.outputs.skipped == 'false' }}
+        if: ${{ needs.versioning.outputs.skipped == 'false' }}
         id: build-zip
         run: zip -r $ZIP_FILENAME.zip $PACKAGE_CONTENT
 
@@ -31,20 +38,24 @@ jobs:
       - name: Create release
         id: create_release
         uses: ncipollo/release-action@v1
-        if: ${{ steps.changelog.outputs.skipped == 'false' }}
+        if: ${{ needs.versioning.outputs.skipped == 'false' }}
         with:
           allowUpdates: true
-          name: ${{steps.changelog.outputs.version}}
+          name: ${{needs.versioning.outputs.tag}}
           draft: false
           prerelease: false
           token: ${{ secrets.GITHUB_TOKEN }}
           artifacts: "./module.json, ./${{env.ZIP_FILENAME}}.zip"
-          tag: ${{ steps.changelog.outputs.tag }}
-          body: ${{ steps.changelog.outputs.changelog }}          
-
+          tag: ${{ needs.versioning.outputs.tag }}
+          body: ${{ needs.versioning.outputs.changelog }}
+          
+  publish:
+    runs-on: ubuntu-latest
+    needs: [versioning, build]
+    steps:
       - name: Publish to Foundry VTT Repo
         id: publish_foundry_repo
-        if: ${{ steps.changelog.outputs.skipped == 'false' }}
+        if: ${{ needs.versioning.outputs.skipped == 'false' }}
         run: npx @ghost-fvtt/foundry-publish
         env:
           FVTT_MANIFEST_URL: 'https://github.com/allnnde/pf2e-esp-translation/releases/latest/download/module.json'
@@ -52,6 +63,6 @@ jobs:
           FVTT_USERNAME: ${{ secrets.FVTT_USERNAME }}
           FVTT_PASSWORD: ${{ secrets.FVTT_PASSWORD }}
           FVTT_MINIMUM_CORE_VERSION: 11
-          FVTT_PACKAGE_VERSION: ${{ steps.changelog.outputs.tag }}
+          FVTT_PACKAGE_VERSION: ${{ needs.versioning.outputs.tag }}
           FVTT_VERIFIED_CORE_VERSION: 11
           FVTT_COMPATIBLE_CORE_VERSION: 11
