@@ -1,3 +1,12 @@
+## [6.0.7](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.6...v6.0.7) (2024-09-24)
+
+
+### Bug Fixes
+
+* new crowdin config ([bf0bedf](https://github.com/allnnde/pf2e-esp-translation/commit/bf0bedf98f5128c5b15d7f2c7bee35d3ea100259))
+
+
+
 ## [6.0.6](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.5...v6.0.6) (2024-09-24)
 
 
@@ -94,15 +103,6 @@
 * New translations equipment.json from Crowdin ([988b114](https://github.com/allnnde/pf2e-esp-translation/commit/988b1146adff480195221b7ed84070123b7d306d))
 * New translations equipment.json from Crowdin ([1b338e2](https://github.com/allnnde/pf2e-esp-translation/commit/1b338e22e679b20bcf469e70de23f958dc02598d))
 * New translations equipment.json from Crowdin ([b47dffb](https://github.com/allnnde/pf2e-esp-translation/commit/b47dffb731aabb0b47e9ac23dba847194746f3de))
-
-
-
-## [6.0.2](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.1...v6.0.2) (2024-09-24)
-
-
-### Bug Fixes
-
-* add step ([d202871](https://github.com/allnnde/pf2e-esp-translation/commit/d2028710abc786bddc60a829aeb01f5f14492c00))
 
 
 
