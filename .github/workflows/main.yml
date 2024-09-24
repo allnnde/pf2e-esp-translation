@@ -28,6 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: versioning
     steps:
+      - uses: actions/checkout@v2
       # Create a zip file with all files required by the module to add to the release
       - name: Create Artifact
         if: ${{ needs.versioning.outputs.skipped == 'false' }}
