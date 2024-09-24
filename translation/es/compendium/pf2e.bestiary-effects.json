@@ -18,19 +18,7 @@
       "description": "<p> Los golpes cuerpo a cuerpo de la criatura cuentan como adamantinos, de hierro frío o de plata. </p>"
     },
     "Effect: Aggravating Aura": {
-      "name": "Effect: Aggravating Aura",
-      "rules": {
-        "0": {
-          "choices": {
-            "0": {
-              "label": "Failure"
-            },
-            "1": {
-              "label": "Critical Failure"
-            }
-          }
-        }
-      }
+      "name": "Effect: Aggravating Aura"
     },
     "Effect: Air of Sickness": {
       "name": "Efecto: Aire de enfermedad",
@@ -145,7 +133,7 @@
       "description": "<p> La criatura sufre un penalizador de circunstancia de -2 a sus salvaciones contra efectos mentales. </p>\n <p> No puede realizar acciones que tengan el rasgo concentrado a menos que tenga éxito en una prueba @Check[type:flat|dc:10]. Fallar esta prueba desperdicia la acción. </p>",
       "rules": {
         "1": {
-          "text": "<p>A creature in the aura can't take actions that have the concentrate trait unless they succeed at a @Check[type:flat|dc:10] check. On a failure, the action is disrupted.</p>"
+          "text": "<p>A creature in the aura can't take actions that have the concentrate trait unless they succeed at a @Check[flat|dc:10] check. On a failure, the action is disrupted.</p>"
         }
       }
     },
@@ -172,6 +160,10 @@
     "Effect: Blood Wake": {
       "name": "Efecto: Estela de sangre",
       "description": "<p> La criatura sufre un penalizador de estado de -4 a las pruebas de Atletismo para Nadar. </p>"
+    },
+    "Effect: Bloodletting": {
+      "name": "Effect: Bloodletting",
+      "description": "<p>Father Skinsaw gains 40 temporary hit points.</p>"
     },
     "Effect: Bloodline Magic": {
       "name": "Efecto: Magia de línea de sangre",
@@ -217,29 +209,13 @@
       "name": "Efecto: Marca del impenitente",
       "description": "<p> La criatura sufre una penalización de estado de -1 a CA y salva, reduce sus resistencias en 2 y gana debilidad 2 a sagrado. </p>"
     },
+    "Effect: Bravado Aversion": {
+      "name": "Effect: Bravado Aversion",
+      "description": "<p>A gargarthezul can't stand to be shown up. The first time each round a creature successfully Demoralizes, Shoves, or Trips a gargarthezul, it takes @Damage[1d6[mental]] damage.</p>"
+    },
     "Effect: Breach the Abyss": {
       "name": "Efecto: Romper el Abismo",
       "description": "<p> el arma causa 2d6 de daño extra. </p>\n <p> Tira 1d20 para determinar el tipo: </p>\n <ul>\n <li> 1-7 ácido </li>\n <li> 8-9 frío </li>\n <li> 10-11 electricidad </li>\n <li> 12-18 fuego </li>\n <li> 19-20 nulo </li>\n </ul>"
-    },
-    "Effect: Breach the Abyss - Acid": {
-      "name": "Efecto: Romper el Abismo - Ácido",
-      "description": "<p> La criatura causa un @Damage[2d6[acid]] daño adicional con su arma. </p>"
-    },
-    "Effect: Breach the Abyss - Cold": {
-      "name": "Efecto: Romper el Abismo - Frío",
-      "description": "<p> La criatura causa un @Damage[2d6[cold]] daño adicional con su arma. </p>"
-    },
-    "Effect: Breach the Abyss - Electricity": {
-      "name": "Efecto: Romper el Abismo - Electricidad",
-      "description": "<p> La criatura causa un @Damage[2d6[electricity]] daño adicional con su arma. </p>"
-    },
-    "Effect: Breach the Abyss - Fire": {
-      "name": "Efecto: Romper el Abismo - Fuego",
-      "description": "<p> La criatura causa un @Damage[2d6[fire]] daño adicional con su arma. </p>"
-    },
-    "Effect: Breach the Abyss - Negative": {
-      "name": "Efecto: Romper el Abismo - Negativo",
-      "description": "<p> La criatura causa un @Damage[2d6[void]] daño adicional con su arma. </p>"
     },
     "Effect: Brutal Rally": {
       "name": "Efecto: Rally brutal",
@@ -333,7 +309,7 @@
     },
     "Effect: Conduct": {
       "name": "Effect: Conduct",
-      "description": "<p>The concert frog and all allies within 60 feet gain one of the following three effects until the beginning of the concert frog’s next turn.</p>\n<ul>\n<li><strong>Red</strong> Grants a +10-foot status bonus to their Speeds.</li>\n<li><strong>Blue</strong> Grants a +1 status bonus to AC and Fortitude saving throws.</li>\n<li><strong>Yellow</strong> Allies gain a +1 status bonus to attack rolls and deal an additional 1d4 sonic damage on successful melee Strikes.</li>\n</ul>"
+      "description": "<p>The concert frog and all allies within 60 feet gain one of the following three effects until the beginning of the concert frog's next turn.</p>\n<ul>\n<li><strong>Red</strong> Grants a +10-foot status bonus to their Speeds.</li>\n<li><strong>Blue</strong> Grants a +1 status bonus to AC and Fortitude saving throws.</li>\n<li><strong>Yellow</strong> Allies gain a +1 status bonus to attack rolls and deal an additional 1d4 sonic damage on successful melee Strikes.</li>\n</ul>"
     },
     "Effect: Conductive Downpour": {
       "name": "Effect: Conductive Downpour",
@@ -350,6 +326,10 @@
     "Effect: Consume Soul": {
       "name": "Efecto: Consumir Alma",
       "description": "<p> El obcisidaemon elige uno de los siguientes efectos. </p>\n <p> <em> Potenciar hechizo </em> El obcisidaemon obtiene una bonificación de estado +2 a la CD de sus hechizos y a las tiradas de ataque de hechizos hasta el final de su siguiente turno. </p>\n <p> <em> Potenciar arma </em> El arma del obcisidaemon obtiene los efectos de una runa mayor de fuego, mayor escarcha, mayor shock o herida hasta el final de su siguiente turno. </p>"
+    },
+    "Effect: Consumed by Bloodlust": {
+      "name": "Effect: Consumed by Bloodlust",
+      "description": "<p>Blackfingers gains a +2 status bonus to attacks and damage with his dagger, but is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
     },
     "Effect: Countered by Fire": {
       "name": "Efecto: contrarrestado por fuego",
@@ -501,7 +481,7 @@
     },
     "Effect: Divine Weapon": {
       "name": "Effect: Divine Weapon",
-      "description": "<p><span style=\"font-family:Roboto, sans-serif\">Sister Maeri's sawtooth saber deals an additional 1d4 spirit damage.</span></p>"
+      "description": "<p>Sister Maeri's sawtooth saber deals an additional 1d4 spirit damage.</p>"
     },
     "Effect: Downcast": {
       "name": "Efecto: Abatido",
@@ -523,6 +503,10 @@
       "name": "Effect: Droning Wings",
       "description": "<p>The coloxus gains immunity to sonic damage.</p>"
     },
+    "Effect: Dueling Dance": {
+      "name": "Effect: Dueling Dance",
+      "description": "<p>Vorens gains a +2 circumstance bonus to his AC until the start of his next turn.</p>"
+    },
     "Effect: Dust Eternal": {
       "name": "Efecto: Polvo Eterno",
       "description": "<p> Todo en el aura es @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W] {Oculto} . </p>"
@@ -530,6 +514,10 @@
     "Effect: Ectoplasmic Form (Physical)": {
       "name": "Efecto: Forma ectoplasmática (física)",
       "description": "<p> La criatura pierde el rasgo incorpóreo, la inmunidad al daño de precisión y todas las resistencias. Obtiene puntos de vida temporales y una clase de armadura aumentada según la criatura específica, los golpes de sus mandíbulas causan perforación y sus golpes de garras causan daño cortante en lugar de negativo. </p>"
+    },
+    "Effect: Electricity Absorption": {
+      "name": "Effect: Electricity Absorption",
+      "description": "<p>After taking electricity damage, a shock zombie loses its usual slowed 1 condition, gains the ability to use reactions, and gains a +10-foot status bonus to its Speed.</p>"
     },
     "Effect: Elemental Field": {
       "name": "Effect: Elemental Field"
@@ -774,6 +762,10 @@
       "name": "Efecto: Descontrolado",
       "description": "<p> La criatura sufre una penalización de circunstancia de -1 a los golpes, pero causa un @Damage[1d6[bludgeoning]] daño adicional más @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu] {Knockdown} . </p>"
     },
+    "Effect: Hope Vulnerability": {
+      "name": "Effect: Hope Vulnerability",
+      "description": "<p>The elegecide is fueled by the certainty of doom, which leaves it weakened by any hope. The first time each round that a creature critically fails at an attack or skill check against the elegecide, it experiences a burst of hope that leaves it @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
+    },
     "Effect: Howl of Vengeful Fury": {
       "name": "Efecto: Aullido de furia vengativa",
       "description": "<p> Los Thatchlings obtienen 5 puntos de vida temporales y una bonificación de estado de +1 a sus golpes y tiradas de salvación. </p>"
@@ -903,6 +895,10 @@
           "label": "Linterna de la esperanza (contra la desesperación aplastante)"
         }
       }
+    },
+    "Effect: Lawbringer": {
+      "name": "Effect: Lawbringer",
+      "description": "<p>The shieldmarshal marks a foe for judgment.</p>"
     },
     "Effect: Leader's Command": {
       "name": "Effect: Leader's Command",
@@ -1187,57 +1183,6 @@
         }
       }
     },
-    "Effect: Rune of Destruction (Greatsword)": {
-      "name": "Efecto: Runa de destrucción (gran espada)",
-      "description": "<p> La gran espada obtiene el rasgo mortal con 3d12, y una criatura golpeada con la gran espada es @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR] {Drenado 1} a menos que tenga éxito en una salvación @Check[type:fortitude|dc:35|name:Rune of Destruction|traits:arcane]. </p>"
-    },
-    "Effect: Rune of Destruction (Longspear)": {
-      "name": "Efecto: Runa de destrucción (Lanza larga)",
-      "description": "<p> La lanza larga obtiene el rasgo mortal con 3d8, y una criatura golpeada con la lanza larga es @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR] {Drenado 1} a menos que tenga éxito en una salvación @Check[type:fortitude|dc:35|name:Rune of Destruction|traits:arcane]. </p>"
-    },
-    "Effect: Rune of Destruction (Rock)": {
-      "name": "Efecto: Runa de Destrucción (Roca)",
-      "description": "<p> La roca obtiene el rasgo mortal con 3d12, y una criatura golpeada con la roca es @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR] {Drenado 1} a menos que tenga éxito en una salvación @Check[type:fortitude|dc:35|name:Rune of Destruction|traits:arcane]. </p>"
-    },
-    "Effect: Rune of Flames (Greatsword)": {
-      "name": "Efecto: Runa de llamas (gran espada)",
-      "description": "<p> La gran espada inflige 3d6 de daño de fuego adicional en todos los ataques. </p>",
-      "rules": {
-        "0": {
-          "label": "Runa de llamas"
-        }
-      }
-    },
-    "Effect: Rune of Flames (Longspear)": {
-      "name": "Efecto: Runa de llamas (Lanza larga)",
-      "description": "<p> La lanza larga inflige 3d6 de daño de fuego adicional en todos los ataques. </p>",
-      "rules": {
-        "0": {
-          "label": "Runa de llamas"
-        }
-      }
-    },
-    "Effect: Rune of Flames (Rock)": {
-      "name": "Efecto: Runa de llamas (roca)",
-      "description": "<p> La roca inflige 3d6 de daño de fuego adicional en todos los ataques. </p>",
-      "rules": {
-        "0": {
-          "label": "Runa de llamas"
-        }
-      }
-    },
-    "Effect: Rune of Smiting (Greatsword)": {
-      "name": "Efecto: Runa de Azote (Gran Espada)",
-      "description": "<p> Cuando la gran espada golpea, el gigante puede empujar al objetivo hacia atrás 10 pies, o 20 pies en un golpe crítico. </p>"
-    },
-    "Effect: Rune of Smiting (Longspear)": {
-      "name": "Efecto: Runa de Azote (Lanza Larga)",
-      "description": "<p> Cuando la lanza larga golpea, el gigante puede empujar al objetivo hacia atrás 10 pies, o 20 pies en un golpe crítico. </p>"
-    },
-    "Effect: Rune of Smiting (Rock)": {
-      "name": "Efecto: Runa de Azote (Roca)",
-      "description": "<p> Cuando la roca golpea, el gigante puede empujar al objetivo hacia atrás 10 pies, o 20 pies en un golpe crítico. </p>"
-    },
     "Effect: Runic Resistance": {
       "name": "Efecto: Resistencia Rúnica",
       "description": "<p> La criatura gana resistencia 5 a un tipo de daño. </p>"
@@ -1257,6 +1202,10 @@
     "Effect: Scraping Clamor": {
       "name": "Efecto: Clamor raspante",
       "description": "<p> Obtienes una bonificación de circunstancia +1 a cualquier salvación para resistir hechizos o habilidades auditivas. </p>"
+    },
+    "Effect: Sea Chantey": {
+      "name": "Effect: Sea Chantey",
+      "description": "<p>All fiends within 60 feet gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects.</p>"
     },
     "Effect: Sepulchral Drain": {
       "name": "Effect: Sepulchral Drain",
@@ -1388,6 +1337,10 @@
       "name": "Efecto: Avivar al Ferviente (Gran Atormentador)",
       "description": "<p> Cada aliado que escucha la llamada obtiene una bonificación de estado de +4 a las tiradas de ataque y de daño, una bonificación de estado de +2 a las tiradas de salvación y sufre una penalización de estado de -2 a la CA. Los aliados afectados deben usar al menos una de sus acciones para atacar en cada ronda, si pueden (incluso si eso significa atacar a un aliado, un objeto o el aire). </p>\n <p> <em> La duración del efecto se ha establecido en la duración promedio de [[/br 2d4 #rounds]] {2d4 rounds} . Establezca la duración en el valor correcto cuando elSe añade el efecto. </em> </p>"
     },
+    "Effect: Surge Forward": {
+      "name": "Effect: Surge Forward",
+      "description": "<p>You take a –1 circumstance penalty to your next skill check to overcome a task during the Dreaded Downpour event. On a critical failure this penalty is –2.</p>"
+    },
     "Effect: Surgical Rend": {
       "name": "Efecto: Desgarro Quirúrgico",
       "description": "<p> Hasta que la criatura recupere sus puntos de vida máximos, cerrando así la herida, los golpes contra la criatura infligen 1d6 de daño de precisión adicional. </p>"
@@ -1403,14 +1356,14 @@
         "0": {
           "value": {
             "0": {
-              "text": "If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[type:flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied."
+              "text": "If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied."
             }
           }
         },
         "2": {
           "value": {
             "0": {
-              "text": "If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[type:flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied."
+              "text": "If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied."
             }
           }
         }
@@ -1507,6 +1460,14 @@
     "Effect: Vent Energy": {
       "name": "Efecto: Ventilar Energía",
       "description": "<p> Los golpes de brazo del arma del hadrinnex causan 2d6 de daño de energía adicional según el tipo de daño en la glándula de energía. </p>"
+    },
+    "Effect: Vicious Bluster": {
+      "name": "Effect: Vicious Bluster",
+      "description": "<p>When a gargarthezul successfully @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizes} a foe, it gains 1d6 temporary Hit Points (2d6 on a critical success) that last for 1 minute.</p>"
+    },
+    "Effect: Vicious Bluster (Critical Success)": {
+      "name": "Effect: Vicious Bluster (Critical Success)",
+      "description": "<p>When a gargarthezul successfully @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizes} a foe, it gains 1d6 temporary Hit Points (2d6 on a critical success) that last for 1 minute.</p>"
     },
     "Effect: Viscous Breath": {
       "name": "Efecto: Aliento Viscoso",

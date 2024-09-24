@@ -18,19 +18,7 @@
       "description": "<p>The creature's melee strikes count either as adamantine, cold iron or silver.</p>"
     },
     "Effect: Aggravating Aura": {
-      "name": "Effect: Aggravating Aura",
-      "rules": {
-        "0": {
-          "choices": {
-            "0": {
-              "label": "Failure"
-            },
-            "1": {
-              "label": "Critical Failure"
-            }
-          }
-        }
-      }
+      "name": "Effect: Aggravating Aura"
     },
     "Effect: Air of Sickness": {
       "name": "Effect: Air of Sickness",
@@ -134,7 +122,7 @@
     },
     "Effect: Black Cat Curse": {
       "name": "Effect: Black Cat Curse",
-      "description": "<p><strong>Effect</strong> Mistress Dusklight spews a hatefully uttered curse at one creature within 30 feet that she can see. If the target fails a @Check[type:will|dc:32] save, whenever it attempts an attack roll or saving throw, it must roll twice and use the lower result. The target is then temporarily immune for 24 hours. The curse persists until it is removed or the target succeeds a later saving throw against it. The victim can attempt a new @Check[type:will|dc:32] save once per hour to end the curse.</p>"
+      "description": "<p><strong>Effect</strong> Mistress Dusklight spews a hatefully uttered curse at one creature within 30 feet that she can see. If the target fails a @Check[will|dc:32] save, whenever it attempts an attack roll or saving throw, it must roll twice and use the lower result. The target is then temporarily immune for 24 hours. The curse persists until it is removed or the target succeeds a later saving throw against it. The victim can attempt a new @Check[will|dc:32] save once per hour to end the curse.</p>"
     },
     "Effect: Blade Barrage": {
       "name": "Effect: Blade Barrage",
@@ -142,10 +130,10 @@
     },
     "Effect: Blasphemous Utterances": {
       "name": "Effect: Blasphemous Utterances",
-      "description": "<p>The creature takes a -2 circumstance penalty to saves against mental effects.</p>\n<p>It can't take actions that have the concentrate trait unless it succeeds at a @Check[type:flat|dc:10] check. Failing this check wastes the action.</p>",
+      "description": "<p>The creature takes a -2 circumstance penalty to saves against mental effects.</p>\n<p>It can't take actions that have the concentrate trait unless it succeeds at a @Check[flat|dc:10] check. Failing this check wastes the action.</p>",
       "rules": {
         "1": {
-          "text": "<p>A creature in the aura can't take actions that have the concentrate trait unless they succeed at a @Check[type:flat|dc:10] check. On a failure, the action is disrupted.</p>"
+          "text": "<p>A creature in the aura can't take actions that have the concentrate trait unless they succeed at a @Check[flat|dc:10] check. On a failure, the action is disrupted.</p>"
         }
       }
     },
@@ -172,6 +160,10 @@
     "Effect: Blood Wake": {
       "name": "Effect: Blood Wake",
       "description": "<p>The creature takes a -4 status penalty to Athletics checks to Swim.</p>"
+    },
+    "Effect: Bloodletting": {
+      "name": "Effect: Bloodletting",
+      "description": "<p>Father Skinsaw gains 40 temporary hit points.</p>"
     },
     "Effect: Bloodline Magic": {
       "name": "Effect: Bloodline Magic",
@@ -217,29 +209,13 @@
       "name": "Effect: Brand of the Impenitent",
       "description": "<p>The creature takes a -1 status penalty to AC and saves, reduces its resistances by 2, and gains weakness 2 to holy.</p>"
     },
+    "Effect: Bravado Aversion": {
+      "name": "Effect: Bravado Aversion",
+      "description": "<p>A gargarthezul can't stand to be shown up. The first time each round a creature successfully Demoralizes, Shoves, or Trips a gargarthezul, it takes @Damage[1d6[mental]] damage.</p>"
+    },
     "Effect: Breach the Abyss": {
       "name": "Effect: Breach the Abyss",
       "description": "<p>the weapon deals an extra 2d6 damage.</p>\n<p>Roll 1d20 to determine the type:</p>\n<ul>\n<li>1-7 acid</li>\n<li>8-9 cold</li>\n<li>10-11 electricity</li>\n<li>12-18 fire</li>\n<li>19-20 void</li>\n</ul>"
-    },
-    "Effect: Breach the Abyss - Acid": {
-      "name": "Effect: Breach the Abyss - Acid",
-      "description": "<p>The creature deals an extra @Damage[2d6[acid]] damage with its weapon.</p>"
-    },
-    "Effect: Breach the Abyss - Cold": {
-      "name": "Effect: Breach the Abyss - Cold",
-      "description": "<p>The creature deals an extra @Damage[2d6[cold]] damage with its weapon.</p>"
-    },
-    "Effect: Breach the Abyss - Electricity": {
-      "name": "Effect: Breach the Abyss - Electricity",
-      "description": "<p>The creature deals an extra @Damage[2d6[electricity]] damage with its weapon.</p>"
-    },
-    "Effect: Breach the Abyss - Fire": {
-      "name": "Effect: Breach the Abyss - Fire",
-      "description": "<p>The creature deals an extra @Damage[2d6[fire]] damage with its weapon.</p>"
-    },
-    "Effect: Breach the Abyss - Negative": {
-      "name": "Effect: Breach the Abyss - Negative",
-      "description": "<p>The creature deals an extra @Damage[2d6[void]] damage with its weapon.</p>"
     },
     "Effect: Brutal Rally": {
       "name": "Effect: Brutal Rally",
@@ -275,7 +251,7 @@
     },
     "Effect: Cat Sith's Mark": {
       "name": "Effect: Cat Sith's Mark",
-      "description": "<p>Whenever the cursed creature rolls a critical success on a skill check or saving throw, it gets a success instead. Each day, a cursed creature can attempt a @Check[type:flat|dc:10|traits:curse,misfortune|name:Break Cat Sith's Mark] check to break the curse.</p>"
+      "description": "<p>Whenever the cursed creature rolls a critical success on a skill check or saving throw, it gets a success instead. Each day, a cursed creature can attempt a @Check[flat|dc:10|traits:curse,misfortune|name:Break Cat Sith's Mark] check to break the curse.</p>"
     },
     "Effect: Caustic Drool": {
       "name": "Effect: Caustic Drool",
@@ -333,7 +309,7 @@
     },
     "Effect: Conduct": {
       "name": "Effect: Conduct",
-      "description": "<p>The concert frog and all allies within 60 feet gain one of the following three effects until the beginning of the concert frog’s next turn.</p>\n<ul>\n<li><strong>Red</strong> Grants a +10-foot status bonus to their Speeds.</li>\n<li><strong>Blue</strong> Grants a +1 status bonus to AC and Fortitude saving throws.</li>\n<li><strong>Yellow</strong> Allies gain a +1 status bonus to attack rolls and deal an additional 1d4 sonic damage on successful melee Strikes.</li>\n</ul>"
+      "description": "<p>The concert frog and all allies within 60 feet gain one of the following three effects until the beginning of the concert frog's next turn.</p>\n<ul>\n<li><strong>Red</strong> Grants a +10-foot status bonus to their Speeds.</li>\n<li><strong>Blue</strong> Grants a +1 status bonus to AC and Fortitude saving throws.</li>\n<li><strong>Yellow</strong> Allies gain a +1 status bonus to attack rolls and deal an additional 1d4 sonic damage on successful melee Strikes.</li>\n</ul>"
     },
     "Effect: Conductive Downpour": {
       "name": "Effect: Conductive Downpour",
@@ -350,6 +326,10 @@
     "Effect: Consume Soul": {
       "name": "Effect: Consume Soul",
       "description": "<p>The obcisidaemon chooses one of the following effects.</p>\n<p><em>Empower Spell</em> The obcisidaemon gains a +2 status bonus to its spell DCs and spell attack rolls until the end of its next turn.</p>\n<p><em>Empower Weapon</em> The obcisidaemon's weapon gains the effects of a greater flaming, greater frost, greater shock, or wounding rune until the end of its next turn.</p>"
+    },
+    "Effect: Consumed by Bloodlust": {
+      "name": "Effect: Consumed by Bloodlust",
+      "description": "<p>Blackfingers gains a +2 status bonus to attacks and damage with his dagger, but is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
     },
     "Effect: Countered by Fire": {
       "name": "Effect: Countered by Fire",
@@ -501,7 +481,7 @@
     },
     "Effect: Divine Weapon": {
       "name": "Effect: Divine Weapon",
-      "description": "<p><span style=\"font-family:Roboto, sans-serif\">Sister Maeri's sawtooth saber deals an additional 1d4 spirit damage.</span></p>"
+      "description": "<p>Sister Maeri's sawtooth saber deals an additional 1d4 spirit damage.</p>"
     },
     "Effect: Downcast": {
       "name": "Effect: Downcast",
@@ -523,6 +503,10 @@
       "name": "Effect: Droning Wings",
       "description": "<p>The coloxus gains immunity to sonic damage.</p>"
     },
+    "Effect: Dueling Dance": {
+      "name": "Effect: Dueling Dance",
+      "description": "<p>Vorens gains a +2 circumstance bonus to his AC until the start of his next turn.</p>"
+    },
     "Effect: Dust Eternal": {
       "name": "Effect: Dust Eternal",
       "description": "<p>Everything in the aura is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}.</p>"
@@ -530,6 +514,10 @@
     "Effect: Ectoplasmic Form (Physical)": {
       "name": "Effect: Ectoplasmic Form (Physical)",
       "description": "<p>The creature loses the incorporeal trait, the immunity to precision damage and all resistances. It gains temporary hit points and an increased armor class according to the specific creature, its jaws strikes deal piercing and its claws strikes deal slashing damage instead of negative.</p>"
+    },
+    "Effect: Electricity Absorption": {
+      "name": "Effect: Electricity Absorption",
+      "description": "<p>After taking electricity damage, a shock zombie loses its usual slowed 1 condition, gains the ability to use reactions, and gains a +10-foot status bonus to its Speed.</p>"
     },
     "Effect: Elemental Field": {
       "name": "Effect: Elemental Field"
@@ -774,6 +762,10 @@
       "name": "Effect: Haywire",
       "description": "<p>The creature takes a -1 circumstance penalty to Strikes but deals an additional @Damage[1d6[bludgeoning]] damage plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Knockdown}.</p>"
     },
+    "Effect: Hope Vulnerability": {
+      "name": "Effect: Hope Vulnerability",
+      "description": "<p>The elegecide is fueled by the certainty of doom, which leaves it weakened by any hope. The first time each round that a creature critically fails at an attack or skill check against the elegecide, it experiences a burst of hope that leaves it @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
+    },
     "Effect: Howl of Vengeful Fury": {
       "name": "Effect: Howl of Vengeful Fury",
       "description": "<p>Thatchlings gain 5 temporary Hit Points and a +1 status bonus to their Strikes and saving throws.</p>"
@@ -903,6 +895,10 @@
           "label": "Lantern of Hope (vs Crushing Despair)"
         }
       }
+    },
+    "Effect: Lawbringer": {
+      "name": "Effect: Lawbringer",
+      "description": "<p>The shieldmarshal marks a foe for judgment.</p>"
     },
     "Effect: Leader's Command": {
       "name": "Effect: Leader's Command",
@@ -1187,57 +1183,6 @@
         }
       }
     },
-    "Effect: Rune of Destruction (Greatsword)": {
-      "name": "Effect: Rune of Destruction (Greatsword)",
-      "description": "<p>The greatsword gains the deadly trait with 3d12, and a creature hit with the greatsword is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} unless it succeeds at a @Check[type:fortitude|dc:35|name:Rune of Destruction|traits:arcane] save.</p>"
-    },
-    "Effect: Rune of Destruction (Longspear)": {
-      "name": "Effect: Rune of Destruction (Longspear)",
-      "description": "<p>The longspear gains the deadly trait with 3d8, and a creature hit with the longspear is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} unless it succeeds at a @Check[type:fortitude|dc:35|name:Rune of Destruction|traits:arcane] save.</p>"
-    },
-    "Effect: Rune of Destruction (Rock)": {
-      "name": "Effect: Rune of Destruction (Rock)",
-      "description": "<p>The rock gains the deadly trait with 3d12, and a creature hit with the rock is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} unless it succeeds at a @Check[type:fortitude|dc:35|name:Rune of Destruction|traits:arcane] save.</p>"
-    },
-    "Effect: Rune of Flames (Greatsword)": {
-      "name": "Effect: Rune of Flames (Greatsword)",
-      "description": "<p>The greatsword deals an additional 3d6 fire damage on all attacks.</p>",
-      "rules": {
-        "0": {
-          "label": "Rune of Flames"
-        }
-      }
-    },
-    "Effect: Rune of Flames (Longspear)": {
-      "name": "Effect: Rune of Flames (Longspear)",
-      "description": "<p>The longspear deals an additional 3d6 fire damage on all attacks.</p>",
-      "rules": {
-        "0": {
-          "label": "Rune of Flames"
-        }
-      }
-    },
-    "Effect: Rune of Flames (Rock)": {
-      "name": "Effect: Rune of Flames (Rock)",
-      "description": "<p>The rock deals an additional 3d6 fire damage on all attacks.</p>",
-      "rules": {
-        "0": {
-          "label": "Rune of Flames"
-        }
-      }
-    },
-    "Effect: Rune of Smiting (Greatsword)": {
-      "name": "Effect: Rune of Smiting (Greatsword)",
-      "description": "<p>When the greatsword hits, the giant can Push the target back 10 feet, or 20 feet on a critical hit.</p>"
-    },
-    "Effect: Rune of Smiting (Longspear)": {
-      "name": "Effect: Rune of Smiting (Longspear)",
-      "description": "<p>When the longspear hits, the giant can Push the target back 10 feet, or 20 feet on a critical hit.</p>"
-    },
-    "Effect: Rune of Smiting (Rock)": {
-      "name": "Effect: Rune of Smiting (Rock)",
-      "description": "<p>When the rock hits, the giant can Push the target back 10 feet, or 20 feet on a critical hit.</p>"
-    },
     "Effect: Runic Resistance": {
       "name": "Effect: Runic Resistance",
       "description": "<p>The creature gains resistance 5 to one damage type.</p>"
@@ -1257,6 +1202,10 @@
     "Effect: Scraping Clamor": {
       "name": "Effect: Scraping Clamor",
       "description": "<p>You gain a +1 circumstance bonus to any saves to resist auditory spells or abilities.</p>"
+    },
+    "Effect: Sea Chantey": {
+      "name": "Effect: Sea Chantey",
+      "description": "<p>All fiends within 60 feet gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects.</p>"
     },
     "Effect: Sepulchral Drain": {
       "name": "Effect: Sepulchral Drain",
@@ -1378,7 +1327,7 @@
     },
     "Effect: Stink Sap": {
       "name": "Effect: Stink Sap",
-      "description": "<p>Creatures and their equipment coated in the sap smell horrible. Creatures in the aura must attempt a @Check[type:fortitude|dc:16] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is immune to stink sap for 1 minute. Creatures don't save against this effect in exploration mode and don't become temporarily immune, but creatures with stink sap on them must roll against their own aura when they roll initiative in encounter mode. The sap dissipates after 10 hours; spending 10 minutes scrubbing the sap off with soap and water reduces the duration by 1 hour.</p>"
+      "description": "<p>Creatures and their equipment coated in the sap smell horrible. Creatures in the aura must attempt a @Check[fortitude|dc:16] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is immune to stink sap for 1 minute. Creatures don't save against this effect in exploration mode and don't become temporarily immune, but creatures with stink sap on them must roll against their own aura when they roll initiative in encounter mode. The sap dissipates after 10 hours; spending 10 minutes scrubbing the sap off with soap and water reduces the duration by 1 hour.</p>"
     },
     "Effect: Stoke the Fervent": {
       "name": "Effect: Stoke the Fervent",
@@ -1387,6 +1336,10 @@
     "Effect: Stoke the Fervent (High Tormentor)": {
       "name": "Effect: Stoke the Fervent (High Tormentor)",
       "description": "<p>Each ally that hears the call gains a +4 status bonus to attack rolls and damage rolls, a +2 status bonus to saving throws, and takes a -2 status penalty to AC. Affected allies must use at least one of their actions to Strike each round, if they are able (even if it means attacking an ally, object, or thin air).</p>\n<p><em>The effect duration has been set to the average duration of [[/br 2d4 #rounds]]{2d4 rounds}. Set the duration to the correct value when the effect is added.</em></p>"
+    },
+    "Effect: Surge Forward": {
+      "name": "Effect: Surge Forward",
+      "description": "<p>You take a –1 circumstance penalty to your next skill check to overcome a task during the Dreaded Downpour event. On a critical failure this penalty is –2.</p>"
     },
     "Effect: Surgical Rend": {
       "name": "Effect: Surgical Rend",
@@ -1398,19 +1351,19 @@
     },
     "Effect: Swarming Bites": {
       "name": "Effect: Swarming Bites",
-      "description": "<p>A creature that fails its save against Swarming Bites becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round. If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[type:flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied.</p>",
+      "description": "<p>A creature that fails its save against Swarming Bites becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round. If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied.</p>",
       "rules": {
         "0": {
           "value": {
             "0": {
-              "text": "If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[type:flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied."
+              "text": "If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied."
             }
           }
         },
         "2": {
           "value": {
             "0": {
-              "text": "If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[type:flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied."
+              "text": "If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied."
             }
           }
         }
@@ -1507,6 +1460,14 @@
     "Effect: Vent Energy": {
       "name": "Effect: Vent Energy",
       "description": "<p>The hadrinnex's weapon arm strikes deal an extra 2d6 energy damage according to the damage type in the energy gland.</p>"
+    },
+    "Effect: Vicious Bluster": {
+      "name": "Effect: Vicious Bluster",
+      "description": "<p>When a gargarthezul successfully @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizes} a foe, it gains 1d6 temporary Hit Points (2d6 on a critical success) that last for 1 minute.</p>"
+    },
+    "Effect: Vicious Bluster (Critical Success)": {
+      "name": "Effect: Vicious Bluster (Critical Success)",
+      "description": "<p>When a gargarthezul successfully @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizes} a foe, it gains 1d6 temporary Hit Points (2d6 on a critical success) that last for 1 minute.</p>"
     },
     "Effect: Viscous Breath": {
       "name": "Effect: Viscous Breath",
