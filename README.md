@@ -17,6 +17,8 @@ Se ha usado https://github.com/thedaviddelta/lingva-translate para poder hacer l
 
 Y estamos mejorando y apliando la traducciones en [El proyecto Pathfinder 2E Español en Crowdin](https://crowdin.com/project/pathfinder-2e-espanol)
 
+Para estar en contacto tenemos nuestro [Discord!](https://discord.gg/KdFugdsctp)
+
 ## Estructura del proyecto
 
 Pendiente...
