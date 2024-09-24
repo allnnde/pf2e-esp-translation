@@ -31,7 +31,7 @@
         }
       },
       "FreezingAmmunition": {
-        "Text": "El objetivo debe tener éxito en una salvación @Check[type:fortitude|dc:19] o ser @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} durante 1 asalto por el frío intenso (ralentizado 1 durante 1 minuto en un fallo crítico).",
+        "Text": "El objetivo debe tener éxito en una salvación @Check[type:fortitude|dc:19] o ser @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} durante 1 asalto por el frío intenso (ralentizado 1 durante 1 minuto en un fallo crítico).",
         "Title": "Munición congelante"
       },
       "MeteorShot": {
@@ -50,7 +50,7 @@
         }
       },
       "OozeAmmunition": {
-        "CriticalHitText": "En un golpe crítico, la criatura es @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} durante 1 asalto además de los otros efectos.",
+        "CriticalHitText": "En un golpe crítico, la criatura es @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} durante 1 asalto además de los otros efectos.",
         "Greater": {
           "Text": "La criatura sufre una penalización de -10 pies a la velocidad y @Damage[3d4[persistent,acid]] de daño hasta que finaliza los efectos. El objetivo puede finalizar los efectos @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escaping} (CD 29) la espuma pegajosa. Otras criaturas pueden realizar las acciones, aunque hacerlo causa la mitad del daño persistente por ácido de la munición a la criatura que ayuda. Una criatura que finaliza el efecto aún recibe el daño persistente ese turno. @UUID[Compendium.pf2e.equipment-effects.Item.6Pwdim01PH447CeS]{Effect: Ooze Ammunition (Greater)}",
           "Title": "Rezuma munición (mayor)"
@@ -75,13 +75,13 @@
     },
     "AttackEffects": {
       "DropWeapon": "La criatura deja caer el arma empuñada.",
-      "IgnoreConcealed": "El ataque ignora la condición @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto}.",
+      "IgnoreConcealed": "El ataque ignora la condición @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}.",
       "IgnoreCover": "El objetivo no se beneficia de una cobertura menor y reduce la bonificación de CA de la cobertura estándar en 2 contra el ataque.",
       "IncreasedCriticalChance": "Si el ataque impacta y la criatura obtiene un 19 en la tirada d20, el ataque es un golpe crítico. Esto no tiene ningún efecto si el 19 fuera un fracaso.",
       "IncreasedReach5": "Alcance aumentado en 5 pies",
       "InterruptAction": "Con un impacto, la acción del objetivo se interrumpe.",
-      "KnockProne": "Con un impacto, el objetivo queda derribado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} .",
-      "ReduceHiddenCheck": "La CD de la prueba plana para apuntar a una criatura @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} es solo @Check[type:flat|dc:5]."
+      "KnockProne": "Con un impacto, el objetivo queda derribado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} .",
+      "ReduceHiddenCheck": "La CD de la prueba plana para apuntar a una criatura @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} es solo @Check[type:flat|dc:5]."
     },
     "Background": {
       "Favored": "<p><strong>Frequency</strong> once per day;</p><hr><p><strong>Effect</strong> Reroll the skill check. You must use the second result, even if it's worse.</p>"
@@ -91,7 +91,7 @@
         "GugSqueezeNote": "Tus múltiples articulaciones te permiten pasar por espacios reducidos como si fueras una criatura mediana."
       },
       "AngelForm": {
-        "DeafenedNote": "@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido} durante 1 asalto en caso de golpe crítico"
+        "DeafenedNote": "@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} durante 1 asalto en caso de golpe crítico"
       },
       "Attack": {
         "Antler": "Cuerno",
@@ -166,7 +166,7 @@
       },
       "CosmicForm": {
         "MoonNote": "El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} durante 1 ronda.",
-        "SunNote": "El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} durante 1 ronda."
+        "SunNote": "El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} durante 1 ronda."
       },
       "DaemonForm": {
         "CeustodaemonDamageNote": "Cualquier golpe exitoso con mandíbulas o garras causa [[/r {1d6}]]{1d6 damage} adicional y recibes la misma cantidad de daño."
@@ -188,13 +188,13 @@
       "Note": {
         "Grab": "Puedes gastar una acción inmediatamente después de un golpe para @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab} el objetivo.",
         "GrabbingTrunk": {
-          "Text": "Una criatura hasta dos tamaños más pequeña que es golpeada por tu trompa es @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} . Si tienes éxito en tu prueba @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} contra una criatura agarrada por tu baúl, puedes reposicionar la criatura en otro espacio dentro del alcance de tu baúl.",
+          "Text": "Una criatura hasta dos tamaños más pequeña que es golpeada por tu trompa es @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} . Si tienes éxito en tu prueba @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} contra una criatura agarrada por tu baúl, puedes reposicionar la criatura en otro espacio dentro del alcance de tu baúl.",
           "Title": "Agarrando el baúl"
         },
         "Shove": "Puedes gastar una acción inmediatamente después de un golpe para empujar al objetivo 5 pies con los efectos de un @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} exitoso."
       },
       "OozeForm": {
-        "GelatinousCubeNote": "Una criatura golpeada por tu Golpe de cara de cubo debe tener éxito en una salvación @Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)|traits:incapacitation] contra la CD de tu hechizo o ser @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1} (o @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralizado} durante 1 ronda en caso de fallo crítico); esta salvación tiene el rasgo de incapacitación."
+        "GelatinousCubeNote": "Una criatura golpeada por tu Golpe de cara de cubo debe tener éxito en una salvación @Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)|traits:incapacitation] contra la CD de tu hechizo o ser @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (o @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} durante 1 ronda en caso de fallo crítico); esta salvación tiene el rasgo de incapacitación."
       },
       "WormForm": {
         "Hybrid": "Híbrido",
@@ -239,7 +239,7 @@
         }
       },
       "BioluminescenceBomb": {
-        "success": "<p> Cada criatura dentro de @Template[type:emanation|distance:10]{10 feet} de donde explotó la bomba debe superar una salvación @Check[type:reflex|dc:17] o ser marcada con un tinte que continúa brillando durante 24 horas. Una criatura afectada también debe intentar una tirada de salvación @Check[type:fortitude|dc:17] contra el abrumador estallido de luz. </p> <p> <strong> Éxito </strong> La criatura no se ve afectada. </p> <p> <strong> Fallo </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} durante 1 ronda.</p> <p> <strong> Fallo crítico </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} durante 1 asalto, luego deslumbrada durante 1 asalto. </p>"
+        "success": "<p> Cada criatura dentro de @Template[type:emanation|distance:10]{10 feet} de donde explotó la bomba debe superar una salvación @Check[type:reflex|dc:17] o ser marcada con un tinte que continúa brillando durante 24 horas. Una criatura afectada también debe intentar una tirada de salvación @Check[type:fortitude|dc:17] contra el abrumador estallido de luz. </p> <p> <strong> Éxito </strong> La criatura no se ve afectada. </p> <p> <strong> Fallo </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} durante 1 ronda.</p> <p> <strong> Fallo crítico </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} durante 1 asalto, luego deslumbrada durante 1 asalto. </p>"
       },
       "BlightBomb": {
         "Greater": {
@@ -261,16 +261,16 @@
       },
       "BottledLightning": {
         "Greater": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[electricity]]]{3 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el comienzo de tu siguiente turno."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[electricity]]]{3 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} hasta el comienzo de tu siguiente turno."
         },
         "Lesser": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[electricity]]]{1 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el comienzo de tu siguiente turno."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[electricity]]]{1 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} hasta el comienzo de tu siguiente turno."
         },
         "Major": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[electricity]]]{4 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el comienzo de tu siguiente turno."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[electricity]]]{4 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} hasta el comienzo de tu siguiente turno."
         },
         "Moderate": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[electricity]]]{2 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el comienzo de tu siguiente turno."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[electricity]]]{2 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} hasta el comienzo de tu siguiente turno."
         }
       },
       "CrystalShards": {
@@ -286,24 +286,24 @@
       },
       "DreadAmpoule": {
         "Greater": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[mental]]]{3 mental splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} ( @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} en un crítico)."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[mental]]]{3 mental splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} ( @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} en un crítico)."
         },
         "Lesser": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[mental]]]{1 mental splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} ( @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} en un crítico)."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[mental]]]{1 mental splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} ( @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} en un crítico)."
         },
         "Major": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[mental]]]{4 mental splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} ( @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} en un crítico)."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[mental]]]{4 mental splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} ( @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} en un crítico)."
         },
         "Moderate": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[mental]]]{2 mental splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} ( @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} en un crítico)."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[mental]]]{2 mental splash damage} y ​​el objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} ( @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} en un crítico)."
         }
       },
       "DwarvenDaisy": {
         "Lesser": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[fire]]]{1 fire splash damage} y ​​el objetivo debe tener éxito en una salvación @Check[type:fortitude|dc:16|traits:damaging-effect|showDC:all] o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} durante 1 ronda."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[fire]]]{1 fire splash damage} y ​​el objetivo debe tener éxito en una salvación @Check[type:fortitude|dc:16|traits:damaging-effect|showDC:all] o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} durante 1 ronda."
         },
         "Moderate": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[fire]]]{2 fire splash damage} y ​​el objetivo debe tener éxito en una salvación @Check[type:fortitude|dc:18|traits:damaging-effect|showDC:all] o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} durante 1 ronda."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[fire]]]{2 fire splash damage} y ​​el objetivo debe tener éxito en una salvación @Check[type:fortitude|dc:18|traits:damaging-effect|showDC:all] o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} durante 1 ronda."
         }
       },
       "FrostVial": {
@@ -322,16 +322,16 @@
       },
       "GhostCharge": {
         "Greater": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[vitality]]]{3 vitality splash damage} y ​​el objetivo que recibe daño se convierte en @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} hasta el inicio de mi próximo turno."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[vitality]]]{3 vitality splash damage} y ​​el objetivo que recibe daño se convierte en @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} hasta el inicio de mi próximo turno."
         },
         "Lesser": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[vitality]]]{1 vitality splash damage} y ​​el objetivo que recibe daño se convierte en @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} hasta el inicio de mi próximo turno."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[vitality]]]{1 vitality splash damage} y ​​el objetivo que recibe daño se convierte en @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} hasta el inicio de mi próximo turno."
         },
         "Major": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[vitality]]]{4 vitality splash damage} y ​​el objetivo que recibe daño se convierte en @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} hasta el inicio de mi próximo turno."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[vitality]]]{4 vitality splash damage} y ​​el objetivo que recibe daño se convierte en @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} hasta el inicio de mi próximo turno."
         },
         "Moderate": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[vitality]]]{2 vitality splash damage} y ​​el objetivo que recibe daño se convierte en @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} hasta el inicio de mi próximo turno."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[vitality]]]{2 vitality splash damage} y ​​el objetivo que recibe daño se convierte en @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} hasta el inicio de mi próximo turno."
         }
       },
       "GooGrenade": {
@@ -362,19 +362,19 @@
       },
       "MudBomb": {
         "Greater": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[bludgeoning]]]{3 bludgeoning splash damage} . El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} hasta el comienzo de tu siguiente turno.",
+          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[bludgeoning]]]{3 bludgeoning splash damage} . El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} hasta el comienzo de tu siguiente turno.",
           "success": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[bludgeoning]]]{3 bludgeoning splash damage} ."
         },
         "Lesser": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[bludgeoning]]]{1 bludgeoning splash damage} . El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} hasta el comienzo de tu siguiente turno.",
+          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[bludgeoning]]]{1 bludgeoning splash damage} . El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} hasta el comienzo de tu siguiente turno.",
           "success": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[bludgeoning]]]{1 bludgeoning splash damage} ."
         },
         "Major": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[bludgeoning]]]{4 bludgeoning splash damage} . El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} hasta el comienzo de tu siguiente turno.",
+          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[bludgeoning]]]{4 bludgeoning splash damage} . El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} hasta el comienzo de tu siguiente turno.",
           "success": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[bludgeoning]]]{4 bludgeoning splash damage} ."
         },
         "Moderate": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[bludgeoning]]]{2 bludgeoning splash damage} . El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} hasta el comienzo de tu siguiente turno.",
+          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[bludgeoning]]]{2 bludgeoning splash damage} . El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} hasta el comienzo de tu siguiente turno.",
           "success": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[bludgeoning]]]{2 bludgeoning splash damage} ."
         }
       },
@@ -433,19 +433,19 @@
       },
       "PressureBomb": {
         "Greater": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[bludgeoning]]]{3 bludgeoning splash damage} , Los objetivos medianos o más pequeños son empujados a 5 pies de distancia de ti y el objetivo es derribado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} .",
+          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[bludgeoning]]]{3 bludgeoning splash damage} , Los objetivos medianos o más pequeños son empujados a 5 pies de distancia de ti y el objetivo es derribado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} .",
           "success": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[bludgeoning]]]{3 bludgeoning splash damage} , Los objetivos medianos o más pequeños son empujados a 5 pies de distancia de ti."
         },
         "Lesser": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[bludgeoning]]]{1 bludgeoning splash damage} . Los objetivos pequeños o más pequeños son empujados a 5 pies de distancia de ti y el objetivo es derribado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} .",
+          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[bludgeoning]]]{1 bludgeoning splash damage} . Los objetivos pequeños o más pequeños son empujados a 5 pies de distancia de ti y el objetivo es derribado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} .",
           "success": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[bludgeoning]]]{1 bludgeoning splash damage} , Los objetivos pequeños o más pequeños son empujados a 5 pies de distancia de ti."
         },
         "Major": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[bludgeoning]]]{4 bludgeoning splash damage} , Las criaturas medianas o más pequeñas que reciben daño por salpicadura son empujadas a 5 pies de distancia del objetivo y luego, si el objetivo es grande o más pequeño, se empuja a 5 pies de distancia de ti, y el El objetivo es derribado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} .",
+          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[bludgeoning]]]{4 bludgeoning splash damage} , Las criaturas medianas o más pequeñas que reciben daño por salpicadura son empujadas a 5 pies de distancia del objetivo y luego, si el objetivo es grande o más pequeño, se empuja a 5 pies de distancia de ti, y el El objetivo es derribado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} .",
           "success": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[bludgeoning]]]{4 bludgeoning splash damage} , Las criaturas medianas o más pequeñas que reciben daño por salpicadura son empujadas a 5 pies de distancia del objetivo y luego, si el objetivo es grande o más pequeño, se empuja a 5 pies de distancia de ti."
         },
         "Moderate": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[bludgeoning]]]{2 bludgeoning splash damage} . Los objetivos pequeños o más pequeños son empujados a 5 pies de distancia de ti y el objetivo es derribado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} .",
+          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[bludgeoning]]]{2 bludgeoning splash damage} . Los objetivos pequeños o más pequeños son empujados a 5 pies de distancia de ti y el objetivo es derribado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} .",
           "success": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[bludgeoning]]]{2 bludgeoning splash damage} , Los objetivos pequeños o más pequeños son empujados a 5 pies de distancia de ti."
         }
       },
@@ -506,34 +506,34 @@
       },
       "TanglefootBag": {
         "Greater": {
-          "criticalSuccess": "En un golpe crítico, @UUID[Compendium.pf2e.equipment-effects.Item.csA4UAD2tQq7RjT8]{-15-foot Speed penalty} durante 1 minuto y @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} durante 1 ronda.",
+          "criticalSuccess": "En un golpe crítico, @UUID[Compendium.pf2e.equipment-effects.Item.csA4UAD2tQq7RjT8]{-15-foot Speed penalty} durante 1 minuto y @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} durante 1 ronda.",
           "success": "En un acierto, @UUID[Compendium.pf2e.equipment-effects.Item.csA4UAD2tQq7RjT8]{-15-foot Speed penalty} durante 1 minuto."
         },
         "Lesser": {
-          "criticalSuccess": "En un golpe crítico, @UUID[Compendium.pf2e.equipment-effects.Item.fYZIanbYu0Vc4JEL]{-10-foot Speed penalty} durante 1 minuto y @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} durante 1 ronda.",
+          "criticalSuccess": "En un golpe crítico, @UUID[Compendium.pf2e.equipment-effects.Item.fYZIanbYu0Vc4JEL]{-10-foot Speed penalty} durante 1 minuto y @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} durante 1 ronda.",
           "success": "En un acierto, @UUID[Compendium.pf2e.equipment-effects.Item.fYZIanbYu0Vc4JEL]{-10-foot Speed penalty} durante 1 minuto."
         },
         "Major": {
-          "criticalSuccess": "En un golpe crítico, @UUID[Compendium.pf2e.equipment-effects.Item.ITAFsW3dQPupJ3DW]{-20-foot Speed penalty} durante 1 minuto y @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} durante 1 ronda.",
+          "criticalSuccess": "En un golpe crítico, @UUID[Compendium.pf2e.equipment-effects.Item.ITAFsW3dQPupJ3DW]{-20-foot Speed penalty} durante 1 minuto y @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} durante 1 ronda.",
           "success": "En un acierto, @UUID[Compendium.pf2e.equipment-effects.Item.ITAFsW3dQPupJ3DW]{-20-foot Speed penalty} durante 1 minuto."
         },
         "Moderate": {
-          "criticalSuccess": "En un golpe crítico, @UUID[Compendium.pf2e.equipment-effects.Item.MEreOgnjoRiXPEuq]{-15-foot Speed penalty} durante 1 minuto y @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} durante 1 ronda.",
+          "criticalSuccess": "En un golpe crítico, @UUID[Compendium.pf2e.equipment-effects.Item.MEreOgnjoRiXPEuq]{-15-foot Speed penalty} durante 1 minuto y @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} durante 1 ronda.",
           "success": "En un acierto, @UUID[Compendium.pf2e.equipment-effects.Item.MEreOgnjoRiXPEuq]{-15-foot Speed penalty} durante 1 minuto."
         }
       },
       "Thunderstone": {
         "Greater": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[sonic]]]{3 sonic splash damage} y ​​todas las criaturas dentro de 10 pies deben tener éxito en una salvación @Check[type:fortitude|dc:28|showDC:all] o ser @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido} hasta el final de su siguiente turno."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[sonic]]]{3 sonic splash damage} y ​​todas las criaturas dentro de 10 pies deben tener éxito en una salvación @Check[type:fortitude|dc:28|showDC:all] o ser @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} hasta el final de su siguiente turno."
         },
         "Lesser": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[sonic]]]{1 sonic splash damage} y ​​todas las criaturas dentro de 10 pies deben tener éxito en una salvación @Check[type:fortitude|dc:17|showDC:all] o ser @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido} hasta el final de su siguiente turno."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[sonic]]]{1 sonic splash damage} y ​​todas las criaturas dentro de 10 pies deben tener éxito en una salvación @Check[type:fortitude|dc:17|showDC:all] o ser @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} hasta el final de su siguiente turno."
         },
         "Major": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[sonic]]]{4 sonic splash damage} y ​​todas las criaturas dentro de 10 pies deben tener éxito en una salvación @Check[type:fortitude|dc:36|showDC:all] o ser @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido} hasta el final de su siguiente turno."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[sonic]]]{4 sonic splash damage} y ​​todas las criaturas dentro de 10 pies deben tener éxito en una salvación @Check[type:fortitude|dc:36|showDC:all] o ser @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} hasta el final de su siguiente turno."
         },
         "Moderate": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[sonic]]]{2 sonic splash damage} y ​​todas las criaturas dentro de 10 pies deben tener éxito en una salvación @Check[type:fortitude|dc:20|showDC:all] o ser @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido} hasta el final de su siguiente turno."
+          "success": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[sonic]]]{2 sonic splash damage} y ​​todas las criaturas dentro de 10 pies deben tener éxito en una salvación @Check[type:fortitude|dc:20|showDC:all] o ser @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} hasta el final de su siguiente turno."
         }
       },
       "TwigjackSack": {
@@ -884,7 +884,7 @@
         "CriticalHit": "Armadura personalizada rota por un golpe crítico"
       },
       "CyclopsBully": {
-        "TerrorizingSwing": "Si la criatura es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado} y ​​recibe daño, recibe 2d10 de daño adicional y es derribada @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}."
+        "TerrorizingSwing": "Si la criatura es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} y ​​recibe daño, recibe 2d10 de daño adicional y es derribada @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
       },
       "DeadFaine": {
         "TargetFeintOrTraitorousBetrayal": "Objetivo con la guardia baja debido a una finta o una traición traidora"
@@ -1062,7 +1062,7 @@
         "SingleTarget": "Único objetivo"
       },
       "PunishingStrike": {
-        "Note": "El ataque imprudente hace que el usuario @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el inicio de su siguiente turno. Si golpean, pueden agregar @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Push} al strike"
+        "Note": "El ataque imprudente hace que el usuario @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} hasta el inicio de su siguiente turno. Si golpean, pueden agregar @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Push} al strike"
       },
       "RaptorGuardWight": {
         "TerrorMaster": "La Guardia Raptor lleva su casco de calavera de dinosaurio."
@@ -1075,7 +1075,7 @@
           "Prompt": "Seleccione una runa.",
           "RuneOfDestruction": {
             "Label": "Rune of Destruction",
-            "Text": "A creature hit with the weapon is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1} unless it succeeds at a @Check[type:fortitude|dc:35|name:Rune of Destruction|traits:arcane,electricity] save."
+            "Text": "A creature hit with the weapon is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} unless it succeeds at a @Check[type:fortitude|dc:35|name:Rune of Destruction|traits:arcane,electricity] save."
           },
           "RuneOfFlames": {
             "Label": "Runa de llamas"
@@ -1195,7 +1195,7 @@
             },
             "SunderedVeins": {
               "Label": "Postura de las venas cortadas",
-              "Note": "El objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1}"
+              "Note": "El objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}"
             }
           }
         }
@@ -1879,9 +1879,9 @@
         "Prompt": "Selecciona una dote general de nivel 7 o inferior."
       },
       "AerialPiledriver": {
-        "CriticalFailureText": "Caes @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} y ​​ya no agarras ni sujetas al objetivo.",
+        "CriticalFailureText": "Caes @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} y ​​ya no agarras ni sujetas al objetivo.",
         "FailureText": "Pierdes el control sobre el objetivo y ya no lo agarras ni lo sujetas.",
-        "SuccessText": "El objetivo aterriza @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} ."
+        "SuccessText": "El objetivo aterriza @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} ."
       },
       "AftermathFeats": {
         "DormantEruptionToggle": "Has utilizado la erupción térmica hoy",
@@ -1902,7 +1902,7 @@
         },
         "BlowgunPoisoner": {
           "CriticalNote": "If you critically succeed at a blowgun Strike using a poisoned dart, the target's initial save against the poison is one degree of success worse than the creature rolls; this is a misfortune effect.",
-          "StealthNote": "In addition, if you make a blowgun Strike while @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{No detectado}, you don't automatically become @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Observado}. Instead, immediately attempt a @Check[stealth|against:perception] check against the Perception DC of the target. If you succeed, you don't become observed, and are hidden (if you were undetected, you still become hidden rather than remaining undetected)."
+          "StealthNote": "In addition, if you make a blowgun Strike while @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, you don't automatically become @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Observed}. Instead, immediately attempt a @Check[stealth|against:perception] check against the Perception DC of the target. If you succeed, you don't become observed, and are hidden (if you were undetected, you still become hidden rather than remaining undetected)."
         },
         "ExpandedSplash": {
           "Note": "The splash damage affects all creatures within 10 feet of the target instead of 5 feet."
@@ -1912,11 +1912,11 @@
           "Label": "Improved Invigorating Elixir",
           "Mental": {
             "Label": "Physical Invigoration",
-            "Conditions": "@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado}, @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido}, @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralizado}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado}"
+            "Conditions": "@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}, @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}"
           },
           "Physical": {
             "Label": "Mental Invigoration",
-            "Conditions": "@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confundido}, controlled, @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo}, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralizado}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado}."
+            "Conditions": "@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, controlled, @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing}, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}."
           }
         },
         "ResearchField": {
@@ -1946,10 +1946,10 @@
           }
         },
         "SupremeInvigoratingElixir": {
-          "Description": "For the purposes of counteracting effects with invigorating elixirs, treat your level as though it were 2 higher. Add the listed conditions to those you can choose for an invigorating elixir you create to counteract: @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrificado}, @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido}. You can also choose a disease regardless of what, if any, conditions it imposes."
+          "Description": "For the purposes of counteracting effects with invigorating elixirs, treat your level as though it were 2 higher. Add the listed conditions to those you can choose for an invigorating elixir you create to counteract: @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified}, @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned}. You can also choose a disease regardless of what, if any, conditions it imposes."
         },
         "UncannyBombs": {
-          "Note": "You automatically succeed at the flat check when targeting a @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} creature."
+          "Note": "You automatically succeed at the flat check when targeting a @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} creature."
         }
       },
       "AldoriDuelist": {
@@ -1960,7 +1960,7 @@
       "AlkenstarAgent": {
         "LooseCannon": {
           "Note": {
-            "CriticalFailure": "The firearm misfires and also explodes. It becomes @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Roto}, and it deals its normal weapon damage to all creatures in a @Template[type:burst|distance:20] centered on the firearm, with a @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true]. This damage includes any from the weapon's fundamental and property runes.",
+            "CriticalFailure": "The firearm misfires and also explodes. It becomes @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Broken}, and it deals its normal weapon damage to all creatures in a @Template[type:burst|distance:20] centered on the firearm, with a @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true]. This damage includes any from the weapon's fundamental and property runes.",
             "Failure": "The firearm misfires, but it doesn't cause the other critical failure effects."
           }
         }
@@ -2250,18 +2250,18 @@
           "Trigger": "Catharsis Trigger"
         },
         "Anger": {
-          "Activation": "If you're @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado}, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado}, you can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}. If you succeed, the creature or hazard imposing the condition on you (if applicable) takes force damage equal to your level.",
+          "Activation": "If you're @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, you can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}. If you succeed, the creature or hazard imposing the condition on you (if applicable) takes force damage equal to your level.",
           "Description": "Your destructive wrath allows you to harm your foes but causes you pain in the process.",
-          "Fallout": " You become @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigado }until you Settle your Emotions.",
+          "Fallout": " You become @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{fatigued }until you Settle your Emotions.",
           "Fervor": "When you Cast a Spell from your spell slots, if the spell deals damage and doesn't have a duration, you gain a status bonus to that spell's damage equal to the spell's rank. Spell: @UUID[Compendium.pf2e.spells-srd.Item.jsWthW1Qy6tg3SwD]{Draw Ire}",
           "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.UGJzJRJDoonfWqqI]{Athletic Rush}",
           "Label": "Anger",
-          "Trigger": "An enemy deals damage to you. You can't use this reaction if you're @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigado}."
+          "Trigger": "An enemy deals damage to you. You can't use this reaction if you're @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}."
         },
         "Awe": {
-          "Activation": "If you're @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado}, you can attempt an additional save to end the effect if it allowed a save.",
+          "Activation": "If you're @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied}, you can attempt an additional save to end the effect if it allowed a save.",
           "Description": "Your powerful sense of wonderment can be infectious and distracting.",
-          "Fallout": "You become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} until you Settle your Emotions.",
+          "Fallout": "You become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until you Settle your Emotions.",
           "Fervor": " When you cast a spell, choose one creature that was hit by your spell attack roll or that failed its saving throw, if any. That creature becomes fascinated with you until the end of its next turn. It's then temporarily immune to this fervor effect for 1 hour. Spell: @UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]{Revealing Light}",
           "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.zul5cBTfr7NXHBZf]{Dazzling Flash (doesn't require a religious symbol)",
           "Label": "Awe",
@@ -2277,9 +2277,9 @@
           "Trigger": "Your emotional focus takes damage from an enemy while within 30 feet of you."
         },
         "Fear": {
-          "Activation": "Increase your frightened value by 1, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 4}.",
+          "Activation": "Increase your frightened value by 1, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4}.",
           "Description": "You let your fear fuel you, rather than consume you, but it burns your endurance.",
-          "Fallout": "You are @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} for 2 rounds, running from the source of the frightened condition that triggered your Catharsis. If that source is no longer present, you instead flee from the position where you were at the start of your emotional fallout.",
+          "Fallout": "You are @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 2 rounds, running from the source of the frightened condition that triggered your Catharsis. If that source is no longer present, you instead flee from the position where you were at the start of your emotional fallout.",
           "Fervor": "You don't take the status penalty from the frightened condition to your spell DCs or spell attack bonus. Instead, you gain a status bonus to spell attack rolls equal to the penalty you would've taken, and your foes take the same status penalty to their saving throws against your spells. Any other statistic takes the status penalty as normal. Spell: @UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear}",
           "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.DU5daB09xwfE1y38]{Waking Nightmare}",
           "Label": "Fear",
@@ -2288,25 +2288,25 @@
         "Hatred": {
           "Activation": "You can Step or Stride. You must end this movement closer to your emotional focus.",
           "Description": "Your unabashed hatred consumes your soul and causes your foe to falter. Your emotional focus is an individual enemy you detest.",
-          "Fallout": "You become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 2}.",
-          "Fervor": "Your emotional focus is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} to you and takes a –2 status penalty to saves against your spells. You're off-guard to your emotional focus and take a –2 status penalty to saves against it. Spell: @UUID[Compendium.pf2e.spells-srd.Item.TaaMEYdZXQXF0Sks]{Blood Vendetta}",
+          "Fallout": "You become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.",
+          "Fervor": "Your emotional focus is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to you and takes a –2 status penalty to saves against your spells. You're off-guard to your emotional focus and take a –2 status penalty to saves against it. Spell: @UUID[Compendium.pf2e.spells-srd.Item.TaaMEYdZXQXF0Sks]{Blood Vendetta}",
           "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.0H1ozccQGGFLUwFI]{Cry of Destruction}",
           "Label": "Hatred",
           "Trigger": "You start your first turn in an encounter against your emotional focus or one of their followers. If the encounter includes multiple eligible followers and doesn't include your actual emotional focus, choose one of the followers to act as your emotional focus for this encounter (or until your actual emotional focus shows up)"
         },
         "Joy": {
-          "Activation": "Reduce the value of any @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado} or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado} condition you have by 1 and end any persistent mental damage you have.",
+          "Activation": "Reduce the value of any @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} condition you have by 1 and end any persistent mental damage you have.",
           "Description": "Your unbridled enthusiasm and positive attitude can lead you to success, but you might expend more energy than you planned.",
-          "Fallout": "You become @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigado} until you Settle your Emotions.",
+          "Fallout": "You become @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} until you Settle your Emotions.",
           "Fervor": "You gain a +1 status bonus to Performance checks and to the spell attack rolls of emotion spells, and enemies take a –1 status penalty to saves against your emotion spells. Spell: @UUID[Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv]{Laughing Fit}",
           "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.gwOYh5zMVZB0HNcT]{Unimpeded Stride}",
           "Label": "Joy",
           "Trigger": "You critically succeed on an attack roll or save, or an enemy critically fails on a save against you."
         },
         "Love": {
-          "Activation": "If either you or your emotional focus is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confundido} or @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlado}, one of you can attempt a new saving throw against one confusing or controlling effect (if it allowed a save), ending the condition if the new save is a success. If both of you are eligible, your emotional focus gets the new save.",
+          "Activation": "If either you or your emotional focus is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} or @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled}, one of you can attempt a new saving throw against one confusing or controlling effect (if it allowed a save), ending the condition if the new save is a success. If both of you are eligible, your emotional focus gets the new save.",
           "Description": "You're joined by the bonds of love and nothing can break that, but love can distract you from other things in your life. Your emotional focus is someone you're in love with; they aren't required to love you back.",
-          "Fallout": "You're @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} with your emotional focus for 1 minute.",
+          "Fallout": "You're @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with your emotional focus for 1 minute.",
           "Fervor": "You gain a +1 status bonus to Will saves. If you cast a spell to benefit your emotional focus, this bonus increases to +3 until the start of your next turn. Spell: @UUID[Compendium.pf2e.spells-srd.Item.szIyEsvihc5e1w8n]{Soothe}",
           "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.YGRpHU5yxw73mls8]{Soothing Words}",
           "Toggle": "Lanzas un hechizo para beneficiar tu concentración emocional.",
@@ -2325,7 +2325,7 @@
         "Pride": {
           "Activation": "The critical failure becomes a failure.",
           "Description": "All is well as long as you appear well, but you get caught up in the moment and lose track of what's important.",
-          "Fallout": "You momentarily lose track of what's real, becoming @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confundido} for 1 round. Spell: @UUID[Compendium.pf2e.spells-srd.Item.j8vIoIEWElvpwkcI]{Mirror Image}",
+          "Fallout": "You momentarily lose track of what's real, becoming @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round. Spell: @UUID[Compendium.pf2e.spells-srd.Item.j8vIoIEWElvpwkcI]{Mirror Image}",
           "Fervor": "Each time you cast an illusion spell, until the start of your next turn, any critical failure you roll on an attack roll or saving throw is a failure instead. Spell: @UUID[Compendium.pf2e.spells-srd.Item.UKsIOWmMx4hSpafl]{Dizzying Colors}",
           "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.Q25JQAgnJSGgFDKZ]{Veil of Confidence}",
           "Label": "Pride",
@@ -2334,7 +2334,7 @@
         "Remorse": {
           "Activation": "You Step or Stride. You must end this movement closer to the triggering ally.",
           "Description": "You attempt to overcome your failings, but your guilt stays with you.",
-          "Fallout": "Your emotional weight crushes you, leaving you @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} until you Settle your Emotions.",
+          "Fallout": "Your emotional weight crushes you, leaving you @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} until you Settle your Emotions.",
           "Fervor": "Any spell you cast that restores Hit Points to the triggering ally gets a status bonus to the Hit Points healed equal to the spell's rank, or double the spell's rank if the ally is at 0 Hit Points. Spell: @UUID[Compendium.pf2e.spells-srd.Item.kIwA7kwp5E0AC3yM]{Warrior's Regret}",
           "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.rhJyqB9g3ziImQgM]{Healer's Blessing}",
           "Label": "Remorse",
@@ -2364,14 +2364,14 @@
           "Iniquity": "Each enemy in your champion's aura other than the triggering creature takes half the damage you deal to the triggering enemy.",
           "Justice": "Each ally in your champion's aura with the target in their melee reach can spend a reaction to Strike the target with a –5 penalty.",
           "Liberation": "In addition to the ally affected by Liberating Step, you and all other allies in your champion's aura can Step as a free action. You and your allies gain the benefit even if the ally who benefited from Liberating Step can't move",
-          "Obedience": "Each enemy in your champion's aura other than the triggering creature must also either drop @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} or take mental damage (each enemy chooses). These creatures take only minimum damage (typically @Damage[ternary(gte(@actor.level,19),6,ternary(gte(@actor.level,16),5,ternary(gte(@actor.level,12),4,ternary(gte(@actor.level,11),3)[mental]]), and the effects they take can't be adjusted by anything that changes your Iron Command. For instance, the Iron Repercussions feat couldn't turn the damage into persistent mental damage for creatures other than the triggering creature.",
+          "Obedience": "Each enemy in your champion's aura other than the triggering creature must also either drop @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} or take mental damage (each enemy chooses). These creatures take only minimum damage (typically @Damage[ternary(gte(@actor.level,19),6,ternary(gte(@actor.level,16),5,ternary(gte(@actor.level,12),4,ternary(gte(@actor.level,11),3)[mental]]), and the effects they take can't be adjusted by anything that changes your Iron Command. For instance, the Iron Repercussions feat couldn't turn the damage into persistent mental damage for creatures other than the triggering creature.",
           "Redemption": "If the enemy refuses, you can choose to grant the resistance to yourself and all allies in your champion's aura, including the triggering ally. If you do, the resistance is reduced by 2 for all @UUID[Compendium.pf2e.feat-effects.Item.GFLiTESBmoyQ3sLx]{Effect: Exalted Reaction (Redemption)}"
         },
         "GreaterSecurity": {
           "Description": "While the companion shield is in effect, if your shield is raised, the ally with the companion shield gets the same bonus to AC your shield grants, and you can trigger Shield Block if that ally would meet the trigger. This uses your shield's statistics and applies damage to your shield."
         },
         "GruesomeStrike": {
-          "Note": "The target must succeed at a @Check[fortitude|against:class] save against your class DC or be @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}."
+          "Note": "The target must succeed at a @Check[fortitude|against:class] save against your class DC or be @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}."
         },
         "IronRepercussions": {
           "Description": "Disobeying your Iron Command has lasting consequences. If an enemy refuses to kneel to you, you can deal @Damage[(ternary(gte(@actor.level,19),6,ternary(gte(@actor.level,16),5,ternary(gte(@actor.level,12),4,ternary(gte(@actor.level,9),3,ternary(gte(@actor.level,5),2,1))))))d6[persistent,mental]] instead of normal mental damage. You must decide whether the mental damage will be persistent before your enemy chooses whether to kneel or not. The amount of damage is unchanged."
@@ -2694,7 +2694,7 @@
         "TitanSwing": {
           "NoteFifteenFeet": "El objetivo es empujado hacia atrás 15 pies.",
           "NoteFiveFeet": "El objetivo es empujado hacia atrás 5 pies.",
-          "NoteProne": "Empujas al objetivo hacia atrás el doble de la distancia normal y lo golpeas @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} .",
+          "NoteProne": "Empujas al objetivo hacia atrás el doble de la distancia normal y lo golpeas @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} .",
           "NoteTenFeet": "El objetivo es empujado hacia atrás 10 pies."
         }
       },
@@ -2819,7 +2819,7 @@
           "Prompt": "Elige el tipo de tu Corazón Elemental"
         },
         "ForgeBlessedShot": {
-          "Note": "Ignora la condición @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} de tu objetivo, así como la cobertura menor, estándar y mayor de tu objetivo."
+          "Note": "Ignora la condición @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} de tu objetivo, así como la cobertura menor, estándar y mayor de tu objetivo."
         },
         "KneelForNoGod": {
           "Note": "Cuando obtienes un éxito contra un efecto divino, obtienes un éxito crítico."
@@ -2834,7 +2834,7 @@
           "Note": "Tus tiradas de salvación exitosas contra un veneno reducen su nivel en 2 (o 1 para un veneno virulento). Cada éxito crítico reduce su nivel en 3 (o 2 en el caso de un veneno virulento)."
         },
         "TombWatchersGlare": {
-          "Note": "Cuando golpeas críticamente a una criatura no-muerta, esta es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} durante 1 ronda."
+          "Note": "Cuando golpeas críticamente a una criatura no-muerta, esta es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} durante 1 ronda."
         },
         "VengefulHatred": {
           "Prompt": "Elige un enemigo ancestral."
@@ -2845,7 +2845,7 @@
           "Note": "En un golpe crítico, el objetivo también debe superar una tirada de salvación @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:death,incapacitation] o morirá inmediatamente."
         },
         "EnchantingArrow": {
-          "Note": "En un golpe crítico, el objetivo también se convierte en @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1} ."
+          "Note": "En un golpe crítico, el objetivo también se convierte en @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} ."
         },
         "IncorporealShot": {
           "Label": "Incorporeal Shot - Target Wearing Armor"
@@ -2887,7 +2887,7 @@
           "Note": "Siempre que uses una acción para Trepar o Nadar y tengas éxito en la prueba de Atletismo, añade un bono de objeto de +5 pies a la distancia que te mueves."
         },
         "BlackScorpionStingmace": {
-          "BlackScorpionVenomNote": "<p>On a critical hit, the target is exposed to black scorpion venom.</p>\n<p><strong>Black Scorpion Venom</strong> (poison)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:36]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d12[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d12[poison]] damage, clumsy 2, and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 4}, and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 2} (1 round).</p>"
+          "BlackScorpionVenomNote": "<p>On a critical hit, the target is exposed to black scorpion venom.</p>\n<p><strong>Black Scorpion Venom</strong> (poison)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:36]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d12[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d12[poison]] damage, clumsy 2, and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 4}, and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} (1 round).</p>"
         },
         "BoastfulHunter": {
           "BoredLabel": "El cazador jactancioso se aburre",
@@ -2925,7 +2925,7 @@
         },
         "ChaliceOfJustice": {
           "SipOfJustice": {
-            "Note": "Whenever you critically hit an unholy creature with the <em>chalice of justice</em>, the creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} for 1 round."
+            "Note": "Whenever you critically hit an unholy creature with the <em>chalice of justice</em>, the creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round."
           }
         },
         "ChannelProtectionAmuletLabel": "Protección de canales",
@@ -3041,7 +3041,7 @@
           "WhiskeyLabel": "Whisky"
         },
         "Sparkler": {
-          "CriticalHitNote": "En un golpe crítico, haces que el objetivo se convierta en @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} durante 1 asalto.",
+          "CriticalHitNote": "En un golpe crítico, haces que el objetivo se convierta en @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} durante 1 asalto.",
           "StrikeLabel": "Bengala"
         },
         "SplitheadBow": {
@@ -3051,7 +3051,7 @@
           "ReactiveStrikeNote": "En un @UUID[Compendium.pf2e.actionspf2e.Item.KAVf7AmRnbCAHrkT]{Reactive Strike} exitoso, agregue un cargo: @UUID[Compendium.pf2e.equipment-effects.Item.nLwtvyLZZTZgFmKq]{Effect: Tactician's Helm Charges}"
         },
         "UnholyPlate": {
-          "Note": "On a critical hit with the horns, the target must succeed at a @Check[fortitude|dc:30] or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1} (or @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 2} on a critical failure)."
+          "Note": "On a critical hit with the horns, the target must succeed at a @Check[fortitude|dc:30] or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure)."
         },
         "UnholyWater": {
           "Note": "Sólo puede dañar a criaturas con el rasgo sagrado."
@@ -3063,7 +3063,7 @@
       "ExemplaryFinisher": {
         "Battledancer": "Puedes dar un Paso como acción gratuita inmediatamente después del finalizador.",
         "Braggart": "Si el enemigo era temporalmente inmune a tu @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}, su inmunidad temporal termina.",
-        "Fencer": "El enemigo es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta tu próximo turno.",
+        "Fencer": "El enemigo es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} hasta tu próximo turno.",
         "Name": "Rematador ejemplar",
         "Rascal": "The foe takes a -10 circumstance penalty to its speed until the start of your next turn. @UUID[Compendium.pf2e.feat-effects.Item.fgz7lwg1xHsVW4dX]{Effect: Exemplary Finisher (Rascal)}",
         "Wit": "El enemigo sufre una penalización de circunstancia de -2 a las tiradas de ataque contra ti hasta el comienzo de tu siguiente turno."
@@ -3157,7 +3157,7 @@
       },
       "Fighter": {
         "DazingBlow": {
-          "Note": "Si el Golpe impacta, la criatura debe intentar una salvación @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|traits:incapacitation] contra tu clase DC; este es un efecto de incapacitación. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> La criatura no se ve afectada. </p>\n <p> <strong> Éxito </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1} . </p>\n <p> <strong> Fallo </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 2} . </p>\n <p> <strong> CríticoFallo </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 3} ."
+          "Note": "Si el Golpe impacta, la criatura debe intentar una salvación @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|traits:incapacitation] contra tu clase DC; este es un efecto de incapacitación. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> La criatura no se ve afectada. </p>\n <p> <strong> Éxito </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} . </p>\n <p> <strong> Fallo </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2} . </p>\n <p> <strong> CríticoFallo </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} ."
         },
         "DoubleSlice": {
           "SecondAttackLabel": "Segundo ataque de doble corte"
@@ -3246,8 +3246,8 @@
         "TerrainAttunement": {
           "Aquatic": "You gain a swim Speed equal to your land Speed. If you're on a surface, temporary waves of water follow your movements, allowing you to use your swim Speed—if you have one—as your land Speed.",
           "Arctic": "Enemies must attempt a @Check[type:fortitude] save. They take a –5-foot status penalty to their Speeds for 2 rounds (–10-foot on a critical failure).",
-          "Desert": "Enemies must attempt a @Check[type:fortitude] save. On a failure, they're @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigado} until they drink water or another potable liquid.",
-          "Forest": "Branches and vines reach out to get in your foes' way. Enemies must attempt a @Check[type:reflex] save. On a failure, they become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Torpe 1} for 1 round (@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Torpe 2} on a critical failure).",
+          "Desert": "Enemies must attempt a @Check[type:fortitude] save. On a failure, they're @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued} until they drink water or another potable liquid.",
+          "Forest": "Branches and vines reach out to get in your foes' way. Enemies must attempt a @Check[type:reflex] save. On a failure, they become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round (@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} on a critical failure).",
           "Label": "Terrain Attunement",
           "Mountain": "You gain resistance to physical damage (except adamantine) equal to the spell level for 1 round.",
           "Plains": "You gain temporary Hit Points equal to the spell level for 1 round.",
@@ -3267,7 +3267,7 @@
       },
       "Gnome": {
         "GrimInsight": {
-          "SaveNote": "Cuando obtienes un éxito en una tirada de salvación contra un efecto de miedo, obtienes un éxito crítico y la fuente del efecto de miedo es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} para ti hasta el final de tu siguiente turno."
+          "SaveNote": "Cuando obtienes un éxito en una tirada de salvación contra un efecto de miedo, obtienes un éxito crítico y la fuente del efecto de miedo es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} para ti hasta el final de tu siguiente turno."
         }
       },
       "Goblin": {
@@ -3303,7 +3303,7 @@
       },
       "Gunslinger": {
         "FinalShot": {
-          "Note": "Independientemente de tu tirada, después del ataque estás @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el inicio de tu siguiente turno y @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1} .",
+          "Note": "Independientemente de tu tirada, después del ataque estás @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} hasta el inicio de tu siguiente turno y @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} .",
           "NoteFailure": "El arma falla."
         },
         "Way": {
@@ -3525,7 +3525,7 @@
           "Label": "Investigar un sujeto designado con Seguir una pista"
         },
         "SharedStratagem": {
-          "Note": "La criatura que golpeas es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} para un aliado designado en el siguiente ataque que el aliado haga contra la criatura antes del comienzo de tu siguiente turno."
+          "Note": "La criatura que golpeas es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} para un aliado designado en el siguiente ataque que el aliado haga contra la criatura antes del comienzo de tu siguiente turno."
         }
       },
       "ItemStrike": "{item} Huelga",
@@ -3539,12 +3539,12 @@
         "Impulse": {
           "CriticalBlast": {
             "Air": "Empuja el objetivo hasta 10 pies.",
-            "Earth": "Si el objetivo está en el suelo, es derribado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} ; si no está en el suelo, desciende hasta 20 pies (tú eliges la distancia).",
+            "Earth": "Si el objetivo está en el suelo, es derribado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} ; si no está en el suelo, desciende hasta 20 pies (tú eliges la distancia).",
             "Fire": "El objetivo sufre 1d6 daños por fuego persistente. Obtienes una bonificación de objeto a este daño persistente igual a tu bonificación de objeto a las tiradas de ataque de impulso, como las de un atenuador de puerta.",
             "Label": "Explosión crítica",
             "Metal": "El objetivo sufre 1d6 daños por sangrado persistente; si la criatura tiene el rasgo de metal o está hecha de metal, en su lugar recibe @Damage[1d6[persistent,untyped]] daño sin ningún tipo por óxido. Obtienes una bonificación de objeto a este daño persistente igual a tu bonificación de objeto a las tiradas de ataque de impulso, como las de un atenuador de puerta.",
             "Water": "La explosión causa 2 daños por salpicadura por dado de daño de la explosión, con el mismo tipo de daño.",
-            "Wood": "Si el objetivo del golpe crítico está adyacente a una superficie, las raíces lo enredan. El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} y ​​debe gastar una acción de Interactuar para intentar una prueba @Check[type:athletics|dc:10] para liberarse. El objetivo no se atasca si es incorpóreo, líquido o si podría escapar sin esfuerzo."
+            "Wood": "Si el objetivo del golpe crítico está adyacente a una superficie, las raíces lo enredan. El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} y ​​debe gastar una acción de Interactuar para intentar una prueba @Check[type:athletics|dc:10] para liberarse. El objetivo no se atasca si es incorpóreo, líquido o si podría escapar sin esfuerzo."
           },
           "ElementalBlast": {
             "Label": {
@@ -3645,7 +3645,7 @@
       },
       "Lich": {
         "HandOfTheLich": {
-          "Note": "La criatura es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} hasta el final de tu siguiente turno a menos que tenga éxito en una salvación @Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)] contra la CD de tu hechizo."
+          "Note": "La criatura es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} hasta el final de tu siguiente turno a menos que tenga éxito en una salvación @Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)] contra la CD de tu hechizo."
         }
       },
       "LitAlicornLance": "Lanza Alicornio encendida",
@@ -3705,7 +3705,7 @@
       },
       "Marshal": {
         "DreadMarshalStance": {
-          "Note": "Cuando golpeas críticamente a un enemigo con un Golpe, ese enemigo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.",
+          "Note": "Cuando golpeas críticamente a un enemigo con un Golpe, ese enemigo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.",
           "Title": "Aura del temible mariscal"
         }
       },
@@ -3861,10 +3861,10 @@
           "TwoActionLabel": "Golpe de una pulgada (dos acciones)"
         },
         "StunningFist": {
-          "Note": "El objetivo debe tener éxito en una salvación @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.monk.value)|name:Monk|traits:incapacitation|overrideTraits:true] contra tu CD de clase o ser @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1} (o @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 3} en un fallo crítico)."
+          "Note": "El objetivo debe tener éxito en una salvación @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.monk.value)|name:Monk|traits:incapacitation|overrideTraits:true] contra tu CD de clase o ser @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (o @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} en un fallo crítico)."
         },
         "WolfDrag": {
-          "Note": "Si el ataque tiene éxito, derribas al objetivo @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} ."
+          "Note": "Si el ataque tiene éxito, derribas al objetivo @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} ."
         }
       },
       "MountainStance": {
@@ -3897,7 +3897,7 @@
         },
         "Flat": {
           "Label": "Flat",
-          "Note": "<p>Whenever the enemy critically fails at a Strike, saving throw, or skill check, they fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} in addition to other effects from the critical failure.</p>"
+          "Note": "<p>Whenever the enemy critically fails at a Strike, saving throw, or skill check, they fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} in addition to other effects from the critical failure.</p>"
         },
         "Natural": {
           "Label": "Natural"
@@ -3916,8 +3916,8 @@
       },
       "Nagaji": {
         "VenomSpit": {
-          "CriticalNote": "El objetivo recibe [[/r (1+@weapon.system.runes.striking)[persistent,poison]]]{Persistente poison damage} igual al número de dados de daño del arma.",
-          "HoodedNote": "El objetivo también es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} hasta el comienzo de tu siguiente turno.",
+          "CriticalNote": "El objetivo recibe [[/r (1+@weapon.system.runes.striking)[persistent,poison]]]{persistent poison damage} igual al número de dados de daño del arma.",
+          "HoodedNote": "El objetivo también es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} hasta el comienzo de tu siguiente turno.",
           "StrikeLabel": "saliva venenosa"
         }
       },
@@ -3955,9 +3955,9 @@
           "HealDescription": "You cast a 3-action heal spell, expending the slot as normal. If the spell restores Hit Points to one or more creatures, then one creature healed by this spell regains @Damage[(@actor.conditions.cursebound.value)d8[healing,vitality]|shortLabel:true] additional Hit Points; if the spell damages one or more creatures, then one creature harmed by this spell takes @Damage[(@actor.conditions.cursebound.value)d8[vitality]|shortLabel:true] additional damage."
         },
         "CurseSeverity": {
-          "MajorToExtreme": "Cuando lanzas un hechizo de revelación mientras estás afectado por tu maldición principal, tu maldición se intensifica hasta un efecto extremo. Cuando te afecta tu maldición extrema, te conviertes en @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Condenado 2} (o aumentas tu condición de condenado en 2 si ya estabas condenado). Una vez cada 10 minutos, cuando fallas una tirada de ataque, una prueba de habilidad o de Percepción, o una tirada de salvación, puedes volver a tirarla y usar el segundo resultado. La repetición tiene el rasgo de fortuna y no requiere que gastes una acción, lo que significa que puedes usar elVuelve a tirar incluso si no puedes actuar.",
+          "MajorToExtreme": "Cuando lanzas un hechizo de revelación mientras estás afectado por tu maldición principal, tu maldición se intensifica hasta un efecto extremo. Cuando te afecta tu maldición extrema, te conviertes en @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2} (o aumentas tu condición de condenado en 2 si ya estabas condenado). Una vez cada 10 minutos, cuando fallas una tirada de ataque, una prueba de habilidad o de Percepción, o una tirada de salvación, puedes volver a tirarla y usar el segundo resultado. La repetición tiene el rasgo de fortuna y no requiere que gastes una acción, lo que significa que puedes usar elVuelve a tirar incluso si no puedes actuar.",
           "MinorToModerate": "Si lanzas un hechizo de revelación mientras tu maldición menor está vigente, progresas al efecto de maldición moderada inmediatamente después de terminar de lanzar el hechizo.",
-          "MinorToOffGuard": "Te conviertes en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} además de los efectos de la maldición menor.",
+          "MinorToOffGuard": "Te conviertes en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} además de los efectos de la maldición menor.",
           "ModerateToMajor": "Inmediatamente después de completar el lanzamiento de un hechizo de revelación mientras estás afectado por tu maldición moderada, tu maldición progresa hasta su efecto mayor.",
           "NoneToMinor": "Tu maldición progresa a su etapa menor la primera vez que terminas de lanzar un hechizo de revelación después de tus preparativos diarios.",
           "Overwhelmed": "Inmediatamente después de lanzar un hechizo de revelación, te sientes abrumado. Mientras estás abrumado, no puedes lanzar ni sostener ningún hechizo de revelación."
@@ -4122,7 +4122,7 @@
             }
           },
           "Daze": {
-            "Base": "Tu hechizo rompe las defensas mentales del objetivo, dejándolo susceptible a nuevos ataques psíquicos. El daño del hechizo cambia a 1d10. Si el objetivo falla su salvación de Voluntad, hasta el final de su siguiente turno, gana debilidad 1 al daño mental y sufre una penalización de estado de -1 a las salvaciones de Voluntad. En un fallo crítico, la debilidad es 3 (además de que el objetivo es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1}). La debilidad se aplica antes de que el aturdimiento cause daño.",
+            "Base": "Tu hechizo rompe las defensas mentales del objetivo, dejándolo susceptible a nuevos ataques psíquicos. El daño del hechizo cambia a 1d10. Si el objetivo falla su salvación de Voluntad, hasta el final de su siguiente turno, gana debilidad 1 al daño mental y sufre una penalización de estado de -1 a las salvaciones de Voluntad. En un fallo crítico, la debilidad es 3 (además de que el objetivo es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}). La debilidad se aplica antes de que el aturdimiento cause daño.",
             "Heightened": "El daño del hechizo aumenta en 2d10, y la debilidad en caso de fallo o fallo crítico aumenta en 1."
           },
           "DetectMagic": {
@@ -4132,7 +4132,7 @@
           "DistortionLens": "La lente puede interferir tanto con las criaturas como con los ataques. Una vez durante la acción de movimiento de un aliado mediano o más pequeño, el aliado puede entrar y salir del cuadrado de la lente sin que ese cuadrado cuente en la distancia total movida. Por el contrario, la lente es un terreno difícil para tus enemigos.",
           "EntropicWheel": "Obtienes dos motas en lugar de una cuando lanzas el hechizo y cada vez que la rueda gana otra mota.",
           "Figment": "Cuando amplificas el hechizo, puedes crear una ilusión que distraiga particularmente como parte de sus efectos normales. Elige una casilla desocupada dentro del alcance del hechizo. La ilusión en ese cuadrado proporciona flanqueo para un único ataque cuerpo a cuerpo realizado antes del comienzo de tu siguiente turno. Si sostienes el hechizo, los detalles de la ilusión cambian y cambian para mantener a tus enemigos intranquilos; La duración de la ilusión de flanqueo se extiende hasta el comienzo de tu siguiente turno y puedes moverla a cualquier lugar desocupado.casilla en el alcance del hechizo. La ilusión de flanqueo no puede proporcionar su beneficio contra ninguna criatura que no haya creído en la invención.",
-          "ForbiddenThought": "Tu impulso telepático es particularmente impactante para quienes lo resisten. Si el objetivo falla su salvación, también es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1} .",
+          "ForbiddenThought": "Tu impulso telepático es particularmente impactante para quienes lo resisten. Si el objetivo falla su salvación, también es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} .",
           "ForeseeThePath": "El hechizo tiene el mismo resultado en caso de fracaso que en caso de éxito (pero aún no tiene efecto en caso de fallo crítico). Cada vez que sostienes el hechizo, puedes elegir un aliado adicional como objetivo, otorgándole el mismo beneficio que el aliado objetivo inicial.",
           "Frostbite": {
             "Base": "Drenas energía térmica a distancia y usas lo que saqueas para reponerte. El orbe inflige 3d4 de daño por frío. Obtienes puntos de vida temporales equivalentes a la mitad del daño que recibe el objetivo (después de aplicar resistencias y similares). Pierdes los puntos de vida temporales restantes después de 1 minuto.",
@@ -4152,7 +4152,7 @@
             "Heightened": "La bonificación del conjuro aumenta a +2."
           },
           "HologramCage": "Las paredes de fuerza hacen que la barrera de la jaula sea física además de visual. Cada sección de 10 pies por 10 pies de la pared de la jaula tiene CA 10, dureza igual al doble del rango del hechizo y HP igual al cuadriplicado del rango del hechizo. El hechizo se interrumpe si cualquiera de sus paredes atraviesa una criatura cuando lo lanzas.",
-          "HomingBeacon": "Elige una criatura golpeada por el hechizo (si el hechizo tiene una tirada de ataque de hechizo) o que falla su salvación contra el hechizo (si el hechizo requiere una salvación). Una baliza psíquica se emite desde la ubicación de la criatura, lo que hace que sea más fácil notarla a medida que la mente y la atención de los espectadores se dirigen sutilmente hacia ella. Durante 1 minuto, si el objetivo fuera @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} , en cambio es simplemente @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} , y si estuviera oculto, ya no estará oculto.",
+          "HomingBeacon": "Elige una criatura golpeada por el hechizo (si el hechizo tiene una tirada de ataque de hechizo) o que falla su salvación contra el hechizo (si el hechizo requiere una salvación). Una baliza psíquica se emite desde la ubicación de la criatura, lo que hace que sea más fácil notarla a medida que la mente y la atención de los espectadores se dirigen sutilmente hacia ella. Durante 1 minuto, si el objetivo fuera @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} , en cambio es simplemente @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} , y si estuviera oculto, ya no estará oculto.",
           "Ignition": {
             "Base": "Proyectas calor puro que hace que un objetivo se queme. El daño inicial cambia a 1d10 de daño por fuego más 1 daño por salpicadura de fuego. Cuando uses encendido amplificado como ataque cuerpo a cuerpo, aumenta los dados de daño del daño inicial de d10 a d12. No sufrirá daños por salpicaduras debido al encendido amplificado.",
             "Heightened": "En lugar de utilizar la entrada intensificada normal de la ignición, el daño inicial aumenta en 1d10 (1d12 para cuerpo a cuerpo) y el daño por salpicadura aumenta en 1. El daño de fuego persistente en un golpe crítico aumenta en 1d4."
@@ -4172,7 +4172,7 @@
             "BaseTwo": "Si tomas la reacción de Ayuda para la que te preparaste y tienes éxito en tu tirada, estas bonificaciones aumentan a +2 en el ataque al que estás Ayudando. Con un éxito crítico, aumentan a +3, o a +4 si tienes una competencia legendaria en las tiradas de ataque con hechizos."
           },
           "PhaseBolt": {
-            "Base": "Tu rayo abandona la fase por completo y se vuelve invisible e intangible hasta que ya está incrustado en el objetivo, dando la impresión de que simplemente se teletransportó a su lugar. El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} contra el ataque. Además, el rayo ignora una cantidad de dureza o resistencia al daño penetrante igual al rango del hechizo. En caso de éxito crítico, el objetivo no puede verse afectado por los efectos de teletransportación hasta el comienzo de tu siguiente turno.",
+            "Base": "Tu rayo abandona la fase por completo y se vuelve invisible e intangible hasta que ya está incrustado en el objetivo, dando la impresión de que simplemente se teletransportó a su lugar. El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} contra el ataque. Además, el rayo ignora una cantidad de dureza o resistencia al daño penetrante igual al rango del hechizo. En caso de éxito crítico, el objetivo no puede verse afectado por los efectos de teletransportación hasta el comienzo de tu siguiente turno.",
             "Heightened": "El daño del rayo aumenta en 2d4 en lugar de 1d4."
           },
           "RedistributePotential": {
@@ -4181,7 +4181,7 @@
           },
           "RemovePresence": "Elige un objetivo del hechizo o una criatura en su área. Si ese enemigo falla su salvación o el hechizo lo golpea, esa criatura no te detecta y desapareces de sus sentidos durante 1 minuto o hasta que uses una acción hostil. Esto es similar a ser @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} , pero efectos como ver la invisibilidad no te revelan: estás afectando la mente del objetivo, no su visión. La visión verdadera aún puede ver a través de esta ilusión si la prueba de contrarrestar tiene éxito.",
           "ShatterMind": "Aumentas el área del hechizo a tu elección de @Template[type:cone|distance:30] o @Template[type:cone|distance:60], y los dados de daño del hechizo cambian a d10s. Las criaturas que fallan son @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} hasta el comienzo de tu siguiente turno (o @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} en caso de fallo crítico).",
-          "ShatterSpace": "Tú o uno de los objetivos del hechizo estáis rodeados por una espiral de espacio desgarrado. Esta es un aura y tú eliges el radio de la emanación, hasta 20 pies. Una criatura que comienza su turno en el aura o entra en el aura durante su turno sufre 1d6 de daño cortante por cada rango del truco psi amplificado, con una salvación de reflejos básica contra la CD de tu hechizo. Si la criatura falla críticamente, el espacio roto la desequilibra y cae @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} . El aura dura hasta el comienzo de tuSiguiente turno. Puedes elegir si el aura afecta a la criatura que la emite.",
+          "ShatterSpace": "Tú o uno de los objetivos del hechizo estáis rodeados por una espiral de espacio desgarrado. Esta es un aura y tú eliges el radio de la emanación, hasta 20 pies. Una criatura que comienza su turno en el aura o entra en el aura durante su turno sufre 1d6 de daño cortante por cada rango del truco psi amplificado, con una salvación de reflejos básica contra la CD de tu hechizo. Si la criatura falla críticamente, el espacio roto la desequilibra y cae @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} . El aura dura hasta el comienzo de tuSiguiente turno. Puedes elegir si el aura afecta a la criatura que la emite.",
           "Shield": {
             "Base": "Creas una barrera en capas de tres escudos para mejorar tus defensas. La duración aumenta a sostenida hasta 1 minuto. El escudo aún baja al comienzo de cada uno de tus turnos, pero puedes volver a subirlo cuando sostienes el hechizo.",
             "BaseTwo": "Cuando bloqueas con escudo con este hechizo, una de las tres capas se rompe y dejas de obtener la bonificación a la CA, pero el hechizo no termina. Puedes seguir usando el hechizo hasta que se rompa la capa final; una vez que lo hace, el hechizo termina y no puedes volver a lanzar escudo o escudo ampliado durante 10 minutos. Puedes optar por romper capas adicionales cuando bloqueas con escudo con este hechizo para mejorar tus defensas. Si rompes dos capas en lugar de una, aumenta la Dureza a 1-1/2 × la cantidad normal (7 en el 1er rango,15 en el tercer puesto, 22 en el quinto puesto, 30 en el séptimo puesto y 37 en el noveno puesto). Si rompes las tres capas, aumenta la Dureza al doble de la cantidad normal."
@@ -4196,7 +4196,7 @@
             "Heightened": "El daño aumenta en 2d6 en lugar de 1d6."
           },
           "TelekineticRend": {
-            "Base": "Tus pensamientos se expanden en alcance y poder. Las ráfagas causan 1d6 de daño contundente y 1d6 de daño cortante, en lugar del daño habitual. Una criatura que falla críticamente su salvación también es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1} .",
+            "Base": "Tus pensamientos se expanden en alcance y poder. Las ráfagas causan 1d6 de daño contundente y 1d6 de daño cortante, en lugar del daño habitual. Una criatura que falla críticamente su salvación también es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} .",
             "Heightened": "Ambos tipos de daño aumentan en 1d6 en lugar de solo uno. Agregue un tercer @Template[type:burst|distance:5] que no se superponga al área."
           },
           "TesseractTunnel": "Ya no es necesario el movimiento físico para conectar dos puntos en el espacio. Cuando lanzas un túnel de teseracto, simplemente creas un túnel que termina en un cuadrado dentro de un rango igual a tu Velocidad; puedes optar por teletransportarte inmediatamente al espacio al final del túnel. Además, el túnel se puede atravesar en ambas direcciones, en lugar de sólo desde la entrada hasta la salida. Finalmente, la duración del hechizo cambia a 1 minuto. Puedes descartar el hechizo.",
@@ -4238,7 +4238,7 @@
         },
         "SpellModification": {
           "Daze": "Puedes aturdirte desde una gran distancia. El alcance aumenta a 120 pies.",
-          "DeepRoots": "Cuando lanzas un hechizo que impone la condición @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlado} o que obliga al objetivo a realizar ciertas acciones (como @UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]{Command}), puedes elegir un objetivo que falló críticamente su salvación. Cuando ese objetivo termina de cumplir cualquier orden emitida por tu hechizo, o cuando el hechizo es disipado o contrarrestado, el objetivo sufre @Damage[(@item.level)d6[mental]] de daño.",
+          "DeepRoots": "Cuando lanzas un hechizo que impone la condición @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled} o que obliga al objetivo a realizar ciertas acciones (como @UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]{Command}), puedes elegir un objetivo que falló críticamente su salvación. Cuando ese objetivo termina de cumplir cualquier orden emitida por tu hechizo, o cuando el hechizo es disipado o contrarrestado, el objetivo sufre @Damage[(@item.level)d6[mental]] de daño.",
           "DetectMagic": "Tienes el tipo de control fino con el que otros lanzadores de hechizos sólo pueden soñar. Cuando lanzas detectar magia, eres consciente de cualquier criatura en la emanación afectada por un hechizo o que lleva un objeto mágico, y determinas la ubicación principal de la magia dentro de cualquier peligro mágico en la emanación (con las restricciones normales para detectar ilusiones). . Esto generalmente se manifiesta como una alteración en su visión, como ver un aura suave alrededor de la criatura o peligro. Sentir estos fenómenos no significaaclarar qué hechizo está sobre una criatura, ni cuáles de sus elementos son mágicos.",
           "Figment": "Tus ilusiones menores cambian y bailan. El alcance de la ficción aumenta a 60 pies. Cuando sostienes el hechizo, puedes mover el sonido o la visión aparente hasta 15 pies. Luego puede intentar @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Create a Diversion} como de costumbre. Aquellas criaturas que no creyeron en la ilusión no se ven afectadas por esta diversión.",
           "Frostbite": "Puedes congelar a personas incluso desde más lejos. El alcance de su congelación aumenta a 120 pies.",
@@ -4278,8 +4278,8 @@
       },
       "RelicGift": {
         "DivineRetribution": {
-          "CriticalSuccess": "Si el objetivo es malvado, también lo es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} hasta el inicio de tu siguiente turno con un golpe crítico.",
-          "Success": "Si el objetivo es malvado, también lo es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} hasta el comienzo de tu siguiente turno con un impacto."
+          "CriticalSuccess": "Si el objetivo es malvado, también lo es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} hasta el inicio de tu siguiente turno con un golpe crítico.",
+          "Success": "Si el objetivo es malvado, también lo es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} hasta el comienzo de tu siguiente turno con un impacto."
         }
       },
       "ResonantReflection": {
@@ -4317,16 +4317,16 @@
           },
           "Critical": {
             "Label": "Crítico",
-            "Note": "El objetivo intenta una salvación @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.rogue.dc)] contra tu clase DC con los siguientes efectos. <hr> <p> <strong> Éxito crítico </strong> El objetivo no se ve afectado. </p> <p> <strong> Éxito </strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} hasta el final de tu siguiente turno. </p> <p> <strong> Fallo </strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 2} hasta el final de tu siguiente turno. </p> <p> <strong>Fallo crítico </strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralizado} hasta el final de tu siguiente turno. </p>"
+            "Note": "El objetivo intenta una salvación @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.rogue.dc)] contra tu clase DC con los siguientes efectos. <hr> <p> <strong> Éxito crítico </strong> El objetivo no se ve afectado. </p> <p> <strong> Éxito </strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} hasta el final de tu siguiente turno. </p> <p> <strong> Fallo </strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} hasta el final de tu siguiente turno. </p> <p> <strong>Fallo crítico </strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} hasta el final de tu siguiente turno. </p>"
           },
           "Enfeebled": {
             "Label": "debilitado",
-            "Note": "El objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} ."
+            "Note": "El objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} ."
           },
           "Label": "Debilitación",
           "OffGuard": {
             "Label": "Desprevenido",
-            "Note": "El objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} ."
+            "Note": "El objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} ."
           },
           "PrecisionDamage": {
             "Label": "Daño de precisión",
@@ -4395,7 +4395,7 @@
           "PhysicalAttackLabel": "Protegerse contra un ataque físico",
           "ProtectionLabel": "Gana resistencia al ataque físico"
         },
-        "SpiritualFlurryNote": "Los objetivos se convierten en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el final de tu turno actual."
+        "SpiritualFlurryNote": "Los objetivos se convierten en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} hasta el final de tu turno actual."
       },
       "SeasonOfGhosts": {
         "Background": {
@@ -4469,7 +4469,7 @@
             "Draconic": "Las escamas dracónicas crecen brevemente en ti o en un objetivo, lo que otorga una bonificación de estado de +1 a la CA durante 1 ronda.",
             "Elemental": "La energía elemental te rodea a ti o a un objetivo. O obtienes un bonificador de estado +1 a las pruebas de Intimidación durante 1 asalto, o un objetivo sufre @Damage[@item.level[@actor.flags.pf2e.sorcerer.elementalBloodline.damageType]]. El daño es contundente o de fuego, según tu tipo elemental (ver más abajo). Si el hechizo ya causa ese tipo de daño, combínalo con el daño inicial del hechizo antes de determinar las debilidades y resistencias.",
             "ExplosionOfPower": "Each creature within a @Template[emanation|distance:5] takes @Damage[(@item.level)d6|options:explosion-of-power] damage (@Check[reflex|basic|against:spell] save).",
-            "Fey": "Coloridos glamures de hadas bailan a tu alrededor o a un objetivo, lo que hace que estén @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} durante 1 ronda. Un ocultamiento tan obvio no puede usarse para esconderse.",
+            "Fey": "Coloridos glamures de hadas bailan a tu alrededor o a un objetivo, lo que hace que estén @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} durante 1 ronda. Un ocultamiento tan obvio no puede usarse para esconderse.",
             "Genie": "Tus hechizos deforman la realidad y distraen a tus enemigos. O obtienes una bonificación de estado de +1 a las pruebas de Engaño durante 1 asalto, o un objetivo sufre una penalización de estado de -1 a Percepción durante 1 asalto.",
             "Hag": "Maldiciones rencorosas castigan a tus enemigos. Le haces @Damage[@item.level[mental]] ( @Check[type:will|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)] salvación) a la primera criatura que te hace daño antes del final de tu siguiente turno.",
             "Harrow": "Quedas envuelto en posibilidades, representadas como múltiples versiones de ti mismo de tus posibles futuros superpuestos unos a otros. Obtienes @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealement} durante 1 ronda, pero no puedes usar la ocultación para @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide}.",
@@ -4686,7 +4686,7 @@
           "Description": "When you cast _vampiric feast_, you can modify its standard effects as follows: Instead of gaining temporary Hit Points, if your target fails or critically fails its saving throw, you can attempt a counteract check to remove the clumsy or enfeebled conditions on yourself, using the source of that condition to determine the counteract rank and DC. If the condition was caused by an ongoing effect and you don't remove that effect, the condition returns at the end of your next turn."
         },
         "SummonEnsemble": {
-          "Description": "When you cast _summon instrument_, you can modify its duration to be sustained, up to 1 minute. When you do, you summon a number of instruments equal to your spellcasting ability modifier that hover around you and play of their own accord. Once per turn when you Sustain the Spell, choose an opponent within 30 feet who can hear your performance. The target must attempt a @Check[type:will] save against the spell's DC; on a failure, it becomes distracted by your performance and becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} for 1 round. The target is then temporarily immune for 24 hours."
+          "Description": "When you cast _summon instrument_, you can modify its duration to be sustained, up to 1 minute. When you do, you summon a number of instruments equal to your spellcasting ability modifier that hover around you and play of their own accord. Once per turn when you Sustain the Spell, choose an opponent within 30 feet who can hear your performance. The target must attempt a @Check[type:will] save against the spell's DC; on a failure, it becomes distracted by your performance and becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round. The target is then temporarily immune for 24 hours."
         },
         "SurroundingFlames": {
           "Description": "When you cast _wall of fire_, you can modify its standard effects as follows: Instead of a 5-foot-thick, 10-foot-radius ring of flame, you can form the wall into a @Template[type:burst|distance:10]{10-foot-radius} hemisphere of fire."
@@ -4698,7 +4698,7 @@
           "Description": "When you cast _sigil_, you can modify the spell to add the following to its standard effects: The target leaves a magical trail that you and others can try to follow. You and other creatures can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the target, substituting an Arcana, Nature, Occultism, or Religion check (whichever matches the magical tradition of your _sigil_ spell) for the Survival check. Much like Tracking with Survival, this must take place somewhere the target has been and follow the trail; it doesn't allow anyone to find the target from a distance. You can only have a single target marked with a modified _sigil_ in this way. If you use this ability again on a second target, the _sigil_ spell on the first target ends, and your mark fades."
         },
         "UneasyRest": {
-          "Description": " Cuando lanzas dormir, puedes modificar el hechizo para agregar lo siguiente a sus efectos estándar: Los sujetos de tu hechizo experimentan sueños perturbados. Cuando un objetivo que falló o falló críticamente su tirada de salvación se despierta, es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL] {Asustado 1} . "
+          "Description": " Cuando lanzas dormir, puedes modificar el hechizo para agregar lo siguiente a sus efectos estándar: Los sujetos de tu hechizo experimentan sueños perturbados. Cuando un objetivo que falló o falló críticamente su tirada de salvación se despierta, es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL] {Frightened 1} . "
         },
         "VolatileGrease": {
           "CriticalSuccess": "El objetivo no ha sido afectado",
@@ -4753,7 +4753,7 @@
         "HeroicRecovery": "The target gains three bonuses until the end of its next turn: a +5-foot status bonus to its Speed, a +1 status bonus to attack rolls, and a +1 status bonus to damage rolls. In addition, if the target is Prone, it can immediately Stand as a free action that doesn't trigger reactions.",
         "InTune": "If your next action is casting a composition spell with an emanation area, its area spreads from a willing ally of your choice within 60 feet instead of you. If you have Directed Audience, you can have that cone originate from the ally instead.",
         "InterweaveDispel": "If your next action is to cast a single-target spell against an enemy, and you either hit the enemy with the spell attack roll or the enemy fails its saving throw, you can cast @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} on the enemy as a free action, expending a spell slot as normal and targeting one spell effect affecting the enemy.",
-        "IntoTheFuture": "If your next action is to Cast a Spell that takes 1 or 2 actions to cast, the spell's effects occur 1 round later, at the beginning of your next turn, rather than immediately. Targets and choices about the spell must be determined when the spell is cast, and requirements, such as line of sight and line of effect, must be valid both when the spell is cast and when its effects occur. Consequences for the action of Casting the Spell itself, such as an Attack of Opportunity reaction or ending a foe's @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} condition by taking a hostile action, aren't delayed.",
+        "IntoTheFuture": "If your next action is to Cast a Spell that takes 1 or 2 actions to cast, the spell's effects occur 1 round later, at the beginning of your next turn, rather than immediately. Targets and choices about the spell must be determined when the spell is cast, and requirements, such as line of sight and line of effect, must be valid both when the spell is cast and when its effects occur. Consequences for the action of Casting the Spell itself, such as an Attack of Opportunity reaction or ending a foe's @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} condition by taking a hostile action, aren't delayed.",
         "KnowledgeOfShapes": "You use @UUID[Compendium.pf2e.feats-srd.Item.BWomK7EVY0WXxWgh]{Reach Spell} or @UUID[Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q]{Widen Spell} as a free action.",
         "LeyLineConduit": "If your next action is to Cast a Spell of 5th rank or lower that has no duration, you don't expend the prepared spell as you cast it.",
         "Martyr": "You lose @Damage[(@item.rank)d8] Hit Points, which can't be reduced or mitigated in any way, and your ally regains an equal number of Hit Points. @UUID[Compendium.pf2e.feat-effects.Item.7ogytOgDmh4h2g5d]{Effect: Heroic Recovery}",
@@ -4764,7 +4764,7 @@
         "OverwhelmingBreath": "If you use your next action to Cast a Spell that has the monk trait and no duration, the spell and any Strikes you make as a result of casting it ignore an amount of the target's resistance to physical damage equal to your level.",
         "OverwhelmingEnergy": "If the next action you use is to Cast a Spell, the spell ignores an amount of the target's resistance to acid, cold, electricity, fire, or sonic damage equal to your level. This applies to all damage the spell deals, including persistent damage and damage caused by an ongoing effect of the spell, such as the wall created by wall of fire. A creature's immunities are unaffected.",
         "PitchPerfectProjection": "If your next action this round is to Cast a Spell or use an action that creates an auditory effect with a range, increase that range by 30 feet.",
-        "PortentousSpell": "If the next action you use is to Cast a Spell, any creature that attempts to use a reaction triggered by your Cast a Spell activity takes a –2 circumstance penalty to attack rolls and skill checks rolled as part of the reaction. In addition, if the spell includes a spell attack or requires a saving throw, creatures you hit or that fail their saves are @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} with you until the start of your next turn. @UUID[Compendium.pf2e.feat-effects.Item.klZVVIetJlR99cT6]{Effect: Portentous Spell}",
+        "PortentousSpell": "If the next action you use is to Cast a Spell, any creature that attempts to use a reaction triggered by your Cast a Spell activity takes a –2 circumstance penalty to attack rolls and skill checks rolled as part of the reaction. In addition, if the spell includes a spell attack or requires a saving throw, creatures you hit or that fail their saves are @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with you until the start of your next turn. @UUID[Compendium.pf2e.feat-effects.Item.klZVVIetJlR99cT6]{Effect: Portentous Spell}",
         "PurifyingSpell": "If the next action you use is to cast _heal_ targeting a single living creature, you can attempt to counteract a disease or poison affecting the target, in addition to the other benefits of _heal_. If you do, _heal_ gains the water trait.",
         "QuickenedCasting": "If your next action is to cast a cantrip or a spell that is at least 2 ranks lower than the highest-rank bard spell slot you have, reduce the number of actions to cast it by 1 (minimum 1 action).",
         "ReachSpell": "If the next action you use is to Cast a Spell that has a range, increase that spell's range by 30 feet. As is standard for increasing spell ranges, if the spell normally has a range of touch, you extend its range to 30 feet.",
@@ -4776,7 +4776,7 @@
         "SecondaryDetonationArray": "If your next action is to Cast a Spell that deals damage, has no duration, and affects an area, a glowing magic circle appears in a @Template[type:burst|distance:5] within that area. At the beginning of your next turn, the circle detonates, dealing @Damage[(@item.level)d6[force]] damage to all creatures within the circle, with a @Check[type:reflex|dc:resolve(@actor.system.attributes.spellDC.value)]. If the spell dealt a different type of damage, the circle deals @Damage[(@item.level)d6[@actor.flags.pf2e.spellshape.arrayDamage]]{this type of damage instead} (or one type of your choice if the spell could deal multiple types of damage)",
         "SnowdriftSpell": "Select one creature affected by the spell on the ground. Each square on the ground under or adjacent to the creature fills with ankle-deep snow. Those squares are difficult terrain until the beginning of your next turn. A creature can Interact to clear a square of snow, and the snow in a square melts if that square is exposed to a fire effect.",
         "SowSpell": "If your next action is to Cast a Spell using 1 action or 2 actions, the spell instead plants itself in an adjacent square. You must make all decisions regarding the spell at the time you cast it. Within the next 10 minutes, you can direct your sown spell to sprout and produce the spell's effects as a reaction, which is triggered when a creature enters the sown spell's space or a square adjacent to it. You can have only one sown spell at a time, and if you don't trigger the spell within 10 minutes, it dissipates and the spell is lost. A creature can notice the sown spell with a successful Perception check against your spell DC.",
-        "SpellShroud": "If your next action is to Cast a Spell that targets you, you surround yourself in a @Template[emanation|distance:15] of dense magical mist that lasts until the start of your next turn. All creatures within the cloud become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto}, and all creatures outside the cloud are concealed to creatures within it.",
+        "SpellShroud": "If your next action is to Cast a Spell that targets you, you surround yourself in a @Template[emanation|distance:15] of dense magical mist that lasts until the start of your next turn. All creatures within the cloud become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the cloud are concealed to creatures within it.",
         "SplitHex": "If the next action you use is to Cast a Spell to cast a harmful hex with a single target, reduce its rank by 2 (making it 2 ranks lower than the maximum spell rank you can cast). If you do, you can select a second target for that hex to affect.",
         "SplitShot": "If your next action is to Cast a Spell without a duration that requires an attack roll against a single target, you can choose a second target within range. You roll a single attack roll and compare the result to the AC of both targets. This counts as one attack for your multiple attack penalty. To the second target, the spell deals half the amount of damage it would normally deal and has no effects beyond the spell's initial damage (such as imposing conditions or penalties).",
         "SurgingMight": "If the next action you use is to Cast a Spell, the spell ignores an amount of the target's resistance equal to your level against the following types of damage: spirit, vitality, and void. This applies to all damage the spell deals, including persistent damage and damage caused by an ongoing effect of the spell. This doesn't cause the spell to ignore immunities, only resistances.",
@@ -5046,7 +5046,7 @@
       },
       "UndeadSlayer": {
         "SlayersPresence": {
-          "Note": "El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} durante 1 ronda."
+          "Note": "El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} durante 1 ronda."
         }
       },
       "UntamedShift": {
@@ -5091,7 +5091,7 @@
         }
       },
       "VitalityManipulationStance": {
-        "Note": "Cuando usas Puño aturdidor, en lugar de salvarte contra el aturdimiento, puedes elegir que el objetivo realice una salvación @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)] contra tu CD de clase con los siguientes resultados. Debes elegir hacer esto antes de que el objetivo realice su tirada de salvación. </p> <hr> <p> <strong> Éxito crítico </strong> El objetivo no se ve afectado. </p> <p> <strong> Éxito </strong> Los músculos del objetivo se debilitan temporalmente. Durante 1 ronda, el objetivo es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2}, y cada vez que intenta realizar una acción con el rasgo de manipulación, la acción se interrumpe a menos que tenga éxito en una prueba fija con una CD igual a 5 + su valor debilitado. </p> <p> <strong> Fracaso </strong> Como éxito, pero la duración es de 1 minuto. </p> <p> <strong> Fallo crítico </strong> Como éxito, pero la duración es de 1 minuto, la prueba fija es CD 11 y el objetivo sufre una penalización de estado de -10 pies a todas las Velocidades durante elduración. </p>",
+        "Note": "Cuando usas Puño aturdidor, en lugar de salvarte contra el aturdimiento, puedes elegir que el objetivo realice una salvación @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)] contra tu CD de clase con los siguientes resultados. Debes elegir hacer esto antes de que el objetivo realice su tirada de salvación. </p> <hr> <p> <strong> Éxito crítico </strong> El objetivo no se ve afectado. </p> <p> <strong> Éxito </strong> Los músculos del objetivo se debilitan temporalmente. Durante 1 ronda, el objetivo es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, y cada vez que intenta realizar una acción con el rasgo de manipulación, la acción se interrumpe a menos que tenga éxito en una prueba fija con una CD igual a 5 + su valor debilitado. </p> <p> <strong> Fracaso </strong> Como éxito, pero la duración es de 1 minuto. </p> <p> <strong> Fallo crítico </strong> Como éxito, pero la duración es de 1 minuto, la prueba fija es CD 11 y el objetivo sufre una penalización de estado de -10 pies a todas las Velocidades durante elduración. </p>",
         "StrikeLabel": "Explosión de vitalidad"
       },
       "WardMedic": {
@@ -5200,7 +5200,7 @@
               "Title": "Familiar of Overwhelming Tides"
             },
             "ParasiticMight": {
-              "Description": "When you Cast or Sustain a hex, one creature within 15 feet of your familiar with less than half of its maximum Hit Points becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} unless it succeeds at a @Check[type:fortitude|dc:resolve(@actor.system.attributes.spellDC.value)] saving throw.",
+              "Description": "When you Cast or Sustain a hex, one creature within 15 feet of your familiar with less than half of its maximum Hit Points becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} unless it succeeds at a @Check[type:fortitude|dc:resolve(@actor.system.attributes.spellDC.value)] saving throw.",
               "Title": "Familiar of Parasitic Might"
             },
             "RestoredSpirit": {
@@ -5208,7 +5208,7 @@
               "Title": "Familiar del espíritu restaurado"
             },
             "StalkingNight": {
-              "Description": "Tu familiar tiene pelaje o plumas de color oscuro y la luz parece desaparecer en él. Cuando lanzas o sostienes un maleficio y tu familiar está adyacente a un enemigo al que está @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} , @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} , o no es detectado, el enemigo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} .",
+              "Description": "Tu familiar tiene pelaje o plumas de color oscuro y la luz parece desaparecer en él. Cuando lanzas o sostienes un maleficio y tu familiar está adyacente a un enemigo al que está @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} , @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} , o no es detectado, el enemigo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} .",
               "Title": "Familiar de la noche de acecho"
             }
           },
@@ -5219,7 +5219,7 @@
             "RollOptionLabel": "You hit the same enemy with two consecutive nail strikes"
           },
           "IronTeeth": {
-            "Note": "A creature that you critically hit with a jaws Strike must succeed at a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classDC.value)] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1}."
+            "Note": "A creature that you critically hit with a jaws Strike must succeed at a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classDC.value)] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}."
           },
           "LivingHair": {
             "SrikeLabel": "Quill"
