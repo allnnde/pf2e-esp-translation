@@ -1,3 +1,21 @@
+# [6.1.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.7...v6.1.0) (2024-09-24)
+
+
+### Features
+
+* update dependencies ([1b21364](https://github.com/allnnde/pf2e-esp-translation/commit/1b213646b0597538605c0498ed1b08835b32c1fb))
+
+
+
+## [6.0.7](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.6...v6.0.7) (2024-09-24)
+
+
+### Bug Fixes
+
+* new crowdin config ([bf0bedf](https://github.com/allnnde/pf2e-esp-translation/commit/bf0bedf98f5128c5b15d7f2c7bee35d3ea100259))
+
+
+
 ## [6.0.6](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.5...v6.0.6) (2024-09-24)
 
 
@@ -82,27 +100,6 @@
 * New translations travel-guide-bestiary.json from Crowdin ([9288842](https://github.com/allnnde/pf2e-esp-translation/commit/9288842e163d0981ae4e1def62f66f0afa7af92b))
 * New translations troubles-in-otari-bestiary.json from Crowdin ([69e5381](https://github.com/allnnde/pf2e-esp-translation/commit/69e5381e460dd5c411ff00417e4bc5531d58d21d))
 * New translations vehicles.json from Crowdin ([bc8ff65](https://github.com/allnnde/pf2e-esp-translation/commit/bc8ff6580ba02484abe54cf276e79b1eb96572eb))
-
-
-
-## [6.0.3](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.2...v6.0.3) (2024-09-24)
-
-
-### Bug Fixes
-
-* New translations actions.json from Crowdin ([7df5fd2](https://github.com/allnnde/pf2e-esp-translation/commit/7df5fd2030557dfb97b2eeb6d312abc7b188c64d))
-* New translations equipment.json from Crowdin ([988b114](https://github.com/allnnde/pf2e-esp-translation/commit/988b1146adff480195221b7ed84070123b7d306d))
-* New translations equipment.json from Crowdin ([1b338e2](https://github.com/allnnde/pf2e-esp-translation/commit/1b338e22e679b20bcf469e70de23f958dc02598d))
-* New translations equipment.json from Crowdin ([b47dffb](https://github.com/allnnde/pf2e-esp-translation/commit/b47dffb731aabb0b47e9ac23dba847194746f3de))
-
-
-
-## [6.0.2](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.1...v6.0.2) (2024-09-24)
-
-
-### Bug Fixes
-
-* add step ([d202871](https://github.com/allnnde/pf2e-esp-translation/commit/d2028710abc786bddc60a829aeb01f5f14492c00))
 
 
 
