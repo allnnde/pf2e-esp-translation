@@ -1,3 +1,12 @@
+## [6.0.5](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.4...v6.0.5) (2024-09-24)
+
+
+### Bug Fixes
+
+* condiciones de nuevooooo ([5722f3d](https://github.com/allnnde/pf2e-esp-translation/commit/5722f3d029cb5ad8a2e0923caad280713d117d3e))
+
+
+
 ## [6.0.4](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.3...v6.0.4) (2024-09-24)
 
 
@@ -99,26 +108,6 @@
 ### Bug Fixes
 
 * new forwlok ([bd92661](https://github.com/allnnde/pf2e-esp-translation/commit/bd92661d7fb955c3f9dae663b7fad9a59ab3fe65))
-
-
-
-# [6.0.0](https://github.com/allnnde/pf2e-esp-translation/compare/v5.29.1...v6.0.0) (2024-09-24)
-
-
-### Bug Fixes
-
-* New translations equipment.json from Crowdin ([c4b629c](https://github.com/allnnde/pf2e-esp-translation/commit/c4b629cfdcab990903e71bb0657c210cf904f88c))
-
-
-### Features
-
-* New extractor update ([71d56bd](https://github.com/allnnde/pf2e-esp-translation/commit/71d56bd1d597b8d2892e95568ea6f1e724744f42))
-* update with geman repo ([501a618](https://github.com/allnnde/pf2e-esp-translation/commit/501a61830660d3a8e321b693e16e7c7ef0aa68a5))
-
-
-### BREAKING CHANGES
-
-* update to geman repo for rework books
 
 
 
