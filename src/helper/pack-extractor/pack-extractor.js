@@ -5,12 +5,13 @@ import { convertArray, deletePropertyRecursively, sortObject, mergeNestedObjects
  * Extract pack data from a list of pack groups
  * Returns extracted data and a dictionary for specified fields
  *
- * @param {Array<Object>} packs An array of compendium packs
- * @param {Object} config       Contains the config for the packGroupList
- * @param {Object} itemDatabase Contains a database for compendium items to validate nested item entries against
- * @returns {Object}            Extracted data, stored in extractedPackGroups and packGroupListDictionary
+ * @param {Array<Object>} packs             An array of compendium packs
+ * @param {Object} config                   Contains the config for the packGroupList
+ * @param {Object} itemDatabase             Contains a database for compendium items to validate nested item entries against
+ * @param {Array<Object>} actorRedirects    Contains a list of actors with IDs that got redirected to a new compendium
+ * @returns {Object}                        Extracted data, stored in extractedPackGroups and packGroupListDictionary
  */
-export function extractPackGroupList(packs, config, itemDatabase = {}) {
+export function extractPackGroupList(packs, config, itemDatabase = {}, actorRedirects = []) {
     const extractedPackGroupListData = {
         extractedPackGroups: {},
         packGroupListDictionary: {},
@@ -28,7 +29,8 @@ export function extractPackGroupList(packs, config, itemDatabase = {}) {
             packs.filter((pack) => packGroupConfig.packNames.includes(pack.fileName)),
             packGroupConfig.mapping,
             itemDatabase,
-            extractFolders(folderPacks)
+            extractFolders(folderPacks),
+            actorRedirects
         );
         extractedPackGroupListData.extractedPackGroups[groupName] = extractedPackGroupData.extractedPacks;
         extractedPackGroupListData.packGroupListDictionary = mergeNestedObjects(
@@ -43,14 +45,15 @@ export function extractPackGroupList(packs, config, itemDatabase = {}) {
  * Extract pack data from a pack group
  * Returns extracted data and a dictionary for specified fields
  *
- * @param {Array<Object>} groupName Name of the pack group
- * @param {Array<Object>} packs     An array of compendium packs
- * @param {Object} mapping          Contains the mapping for the packGroup
- * @param {Object} itemDatabase     Contains a database for compendium items to validate nested item entries against
- * @param {Object} folderPacks      Contains folders for the compendium packs
- * @returns {Object}                Extracted data, stored in extractedPacks and packGroupDictionary
+ * @param {Array<Object>} groupName         Name of the pack group
+ * @param {Array<Object>} packs             An array of compendium packs
+ * @param {Object} mapping                  Contains the mapping for the packGroup
+ * @param {Object} itemDatabase             Contains a database for compendium items to validate nested item entries against
+ * @param {Object} folderPacks              Contains folders for the compendium packs
+ * @param {Array<Object>} actorRedirects    Contains a list of actors with IDs that got redirected to a new compendium
+ * @returns {Object}                        Extracted data, stored in extractedPacks and packGroupDictionary
  */
-export function extractPackGroup(groupName, packs, mapping, itemDatabase = {}, folderPacks) {
+export function extractPackGroup(groupName, packs, mapping, itemDatabase = {}, folderPacks, actorRedirects = []) {
     postExtractMessage(groupName, true);
 
     const extractedPackGroupData = {
@@ -64,7 +67,8 @@ export function extractPackGroup(groupName, packs, mapping, itemDatabase = {}, f
             JSON.parse(pack.content),
             mapping,
             itemDatabase,
-            folderPacks[pack.fileName]
+            folderPacks[pack.fileName],
+            actorRedirects
         );
         extractedPackGroupData.extractedPacks[pack.fileName] = extractedPackData.extractedPack;
         extractedPackGroupData.packGroupDictionary = mergeNestedObjects(
@@ -80,14 +84,15 @@ export function extractPackGroup(groupName, packs, mapping, itemDatabase = {}, f
  * Extract data from a pack
  * Returns extracted data and a dictionary for specified fields
  *
- * @param {Array<Object>} packName  Name of the pack
- * @param {Array<Object>} pack      A compendium pack
- * @param {Object} mapping          Contains the mapping for the pack
- * @param {Object} itemDatabase     Contains a database for compendium items to validate nested item entries against
- * @param {Object} packFolders      Contains folders for the compendium pack
- * @returns {Object}                Extracted data, stored in extractedPack and packDictionary
+ * @param {Array<Object>} packName          Name of the pack
+ * @param {Array<Object>} pack              A compendium pack
+ * @param {Object} mapping                  Contains the mapping for the pack
+ * @param {Object} itemDatabase             Contains a database for compendium items to validate nested item entries against
+ * @param {Object} packFolders              Contains folders for the compendium pack
+ * @param {Array<Object>} actorRedirects    Contains a list of actors with IDs that got redirected to a new compendium
+ * @returns {Object}                        Extracted data, stored in extractedPack and packDictionary
  */
-export function extractPack(packName, pack, mapping, itemDatabase = {}, packFolders) {
+export function extractPack(packName, pack, mapping, itemDatabase = {}, packFolders, actorRedirects = []) {
     postExtractMessage(packName);
 
     const extractedPackData = {
@@ -105,7 +110,7 @@ export function extractPack(packName, pack, mapping, itemDatabase = {}, packFold
     }
 
     pack.forEach((entry) => {
-        const extractedEntryData = extractEntry(entry, mapping, itemDatabase);
+        const extractedEntryData = extractEntry(entry, mapping, itemDatabase, false, actorRedirects);
 
         extractedPackData.extractedPack.entries[entry.name] = extractedEntryData.extractedEntry;
 
@@ -131,9 +136,10 @@ export function extractPack(packName, pack, mapping, itemDatabase = {}, packFold
  * @param {Object} mapping                                                              Paths to fields that should get extracted
  * @param {Object} itemDatabase                                                         Contains a database for compendium items to validate nested item entries against
  * @param {boolean|string} nestedEntryType                                              Specifies, if the entry is nested within other entries, e.g. an ector item
+ * @param {Array<Object>} actorRedirects                                                Contains a list of actors with IDs that got redirected to a new compendium
  * @returns {{extractedEntry: Object, entryMapping: Object, entryDictionary: Object}}   Extracted data, mapping, and dictionary entries
  */
-export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType = false) {
+export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType = false, actorRedirects = []) {
     const extractedEntryData = {
         extractedEntry: {},
         entryMapping: {},
@@ -145,7 +151,7 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
         addToDictionary: false, // Defines if values should get extracted to a dictionary
         addToMapping: true, // Defines if keys should get added to mapping if data is found
         convertArray: true, // Defines if an array should get converted to an object list
-        specialExtraction: false, // Defines special extractions: actorItems, nameAsKey, nameCollection, tableResults, textCollection, adventureActor
+        specialExtraction: false, // Defines special extractions: actorItems, nameAsKey, nameCollection, tableResults, textCollection, adventureActor, sourceId
         extractValue: true, // Defines if value should get extracted
         extractOnActorItem: true, // Defines if value should get extracted for items within actors
         extractOnAdventureActor: false, // For special extraction adventureActor, only data for non-compendium actors gets extracted by default. Set to true in order to extract the data
@@ -181,7 +187,7 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
 
         // Check if the current field exists in the compendium entry and extract its value
         let extractedValue = resolvePath(entry, mappingData.path).exists
-            ? resolveValue(entry, mappingData.path)
+            ? unifyLineBreaks(resolveValue(entry, mappingData.path))
             : false;
 
         // Add mappings that should always be included
@@ -202,6 +208,21 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
         // Don't extract fields on compendium actors within adventures that don't specifically define extraction
         if (nestedEntryType === "adventureCompendiumActors" && !extractOptions.extractOnAdventureActor) {
             continue;
+        }
+
+        // For special extraction sourceId, only extract value if redirected; use redirected value instead
+        if (extractOptions.specialExtraction === "sourceId") {
+            let redirected = false;
+            for (const actorRedirect of actorRedirects) {
+                if (extractedValue === actorRedirect.linkOld) {
+                    redirected = true;
+                    extractedValue = actorRedirect.linkNew;
+                    continue;
+                }
+            }
+            if (!redirected) {
+                continue;
+            }
         }
 
         // Add mapping
@@ -314,7 +335,8 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
                     extractedValue[subEntry],
                     extractOptions.subMapping,
                     itemDatabase,
-                    nestedEntry
+                    nestedEntry,
+                    actorRedirects
                 );
 
                 // Initialize structure for the current entry in order to receive subentry data and assign subentry data
@@ -605,8 +627,8 @@ export function buildItemDatabase(itemPacks, packMapping) {
             // Loop through the pack items and build database, exclude items on blacklist
             JSON.parse(pack.content).forEach((item) => {
                 const itemLink =
-                    item.flags?.core?.sourceId && !packMapping.blacklist.includes(item.flags.core.sourceId)
-                        ? item.flags.core.sourceId
+                    item._stats?.compendiumSource && !packMapping.blacklist.includes(item._stats.compendiumSource)
+                        ? item._stats.compendiumSource
                         : "";
 
                 let itemLinkShort = "";
@@ -668,4 +690,50 @@ function entryDuplicates(obj, property, value) {
             },
         ];
     }
+}
+
+/**
+ * Unifies a string, adding missing line breaks after certain html tags
+ *
+ * @param {string} htmlString   The string that needs to get unified
+ * @returns {string}            The unified string
+ */
+function unifyLineBreaks(htmlString) {
+    if (typeof htmlString !== "string") {
+        return htmlString;
+    }
+
+    //Replace <hr>
+    htmlString = htmlString.replaceAll("<hr>", "<hr />");
+
+    const tags = [
+        "p",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "ul",
+        "ol",
+        "li",
+        "table",
+        "thead",
+        "th",
+        "tbody",
+        "tr",
+        "td",
+        "section",
+        "blockquote",
+    ];
+
+    const tagList = tags.map((tag) => tag.toLowerCase());
+
+    tagList.forEach((tag) => {
+        const regexOpenTag = new RegExp(`(?<!\n|^)<${tag}(\\s[^>]*)?>`, "g");
+        const regexCloseTag = new RegExp(`</${tag}>(?!\n|$)`, "g");
+
+        htmlString = htmlString.replace(regexOpenTag, `\n<${tag}$1>`);
+        htmlString = htmlString.replace(regexCloseTag, `</${tag}>\n`);
+    });
+
+    return htmlString;
 }

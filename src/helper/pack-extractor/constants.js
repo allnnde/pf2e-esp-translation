@@ -32,14 +32,99 @@ export const PF2_DEFAULT_MAPPING = {
             path: "system.details.publicNotes",
             converter: "translateActorDescription",
         },
+        privateNotes: { path: "system.details.privateNotes" },
         reset: { path: "system.details.reset" },
         routine: { path: "system.details.routine" },
         saveDetails: { path: "system.attributes.allSaves.value" },
         senses: { path: "system.perception.details" },
+        skillSpecialAcrobatics: {
+            path: "system.skills.acrobatics.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
+        skillSpecialArcana: {
+            path: "system.skills.arcana.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
+        skillSpecialAthletics: {
+            path: "system.skills.athletics.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
+        skillSpecialCrafting: {
+            path: "system.skills.crafting.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
+        skillSpecialDeception: {
+            path: "system.skills.deception.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
+        skillSpecialDiplomacy: {
+            path: "system.skills.diplomacy.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
+        skillSpecialIntimidation: {
+            path: "system.skills.intimidation.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
+        skillSpecialMedicine: {
+            path: "system.skills.medicine.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
+        skillSpecialNature: {
+            path: "system.skills.nature.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
+        skillSpecialOccultism: {
+            path: "system.skills.occultism.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
+        skillSpecialPerformance: {
+            path: "system.skills.performance.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
+        skillSpecialReligion: {
+            path: "system.skills.religion.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
+        skillSpecialSociety: {
+            path: "system.skills.society.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
+        skillSpecialStealth: {
+            path: "system.skills.stealth.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
+        skillSpecialSurvival: {
+            path: "system.skills.survival.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
+        skillSpecialThievery: {
+            path: "system.skills.thievery.special",
+            converter: "translateSkillSpecial",
+            extractOptions: { subMapping: "label" },
+        },
         source: {
             path: "system.details.publication.title",
             converter: "translateSource",
             extractOptions: { addToDictionary: true, extractValue: false },
+        },
+        sourceId: {
+            path: "flags.core.sourceId",
+            extractOptions: { specialExtraction: "sourceId", extractOnAdventureActor: true },
         },
         speed: { path: "system.details.speed" },
         speed2: {
@@ -236,10 +321,6 @@ export const PF2_DEFAULT_MAPPING = {
         },
         secondarycaster: { path: "system.ritual.secondary.casters" },
         secondarycheck: { path: "system.ritual.secondary.checks" },
-        skillVariants: {
-            path: "system.variants",
-            extractOptions: { subMapping: "label" },
-        },
         source: {
             path: "system.publication.title",
             converter: "translateSource",
@@ -369,3 +450,86 @@ export const PF2_DEFAULT_MAPPING = {
         },
     },
 };
+
+export const ACTOR_REDIRECTS = [
+    {
+        name: "Aapoph Serpentfolk",
+        linkOld: "Compendium.pf2e.pathfinder-bestiary-2.Actor.fv91xoQJlogVbruW",
+        linkNew: "Compendium.pf2e.pathfinder-monster-core.Actor.X3QcYLr2rBcIsJrC",
+    },
+    {
+        name: "Alchemical Golem",
+        linkOld: "Compendium.pf2e.the-slithering-bestiary.Actor.idj4GBmsLUNUbk9r",
+        linkNew: "Compendium.pf2e.pathfinder-bestiary.Actor.Tpuqwt6Af29EMtqX",
+    },
+    {
+        name: "Animated Armor",
+        linkOld: "Compendium.pf2e.pathfinder-bestiary.Actor.cZDiyluplFqRxmGy",
+        linkNew: "Compendium.pf2e.pathfinder-monster-core.Actor.CFlx1tkRxKC9qAC7",
+    },
+    {
+        name: "Animated Armor",
+        linkOld: "Compendium.pf2e.menace-under-otari-bestiary.Actor.cZDiyluplFqRxmGy",
+        linkNew: "Compendium.pf2e.pathfinder-monster-core.Actor.CFlx1tkRxKC9qAC7",
+    },
+    {
+        name: "Animated Statue",
+        linkOld: "Compendium.pf2e.pathfinder-bestiary.Actor.PiAGhPEzJMC2egQk",
+        linkNew: "Compendium.pf2e.pathfinder-monster-core.Actor.yQ2mosomuAPiLMkU",
+    },
+    {
+        name: "Aolaz",
+        linkOld: "Compendium.pf2e.pathfinder-bestiary-2.Actor.WMiPblOVq5w2Fa1x",
+        linkNew: "Compendium.pf2e.pathfinder-monster-core.Actor.KdW5UeZSqeTZZlo5",
+    },
+    {
+        name: "Arboreal Regent",
+        linkOld: "Compendium.pf2e.pathfinder-bestiary.Actor.c6AE2Mh8BRtBgbtz",
+        linkNew: "Compendium.pf2e.pathfinder-monster-core.Actor.z2l8K7woKYPkm0qz",
+    },
+    {
+        name: "Arboreal Warden",
+        linkOld: "Compendium.pf2e.pathfinder-bestiary.Actor.aNWiP985fISjClGo",
+        linkNew: "Compendium.pf2e.pathfinder-monster-core.Actor.0rm0UDbXvwg4sSxQ",
+    },
+    {
+        name: "Army Ant Swarm",
+        linkOld: "Compendium.pf2e.pathfinder-bestiary-2.Actor.8a9N2iPA5HLpkWaF",
+        linkNew: "Compendium.pf2e.pathfinder-monster-core.Actor.drcSWbCIWc7P4lKO",
+    },
+    {
+        name: "Awakened Tree",
+        linkOld: "Compendium.pf2e.pathfinder-bestiary.Actor.oBMIc2S8ekmDgPpi",
+        linkNew: "Compendium.pf2e.pathfinder-monster-core.Actor.0Dsy2I3mu86Czjm0",
+    },
+    {
+        name: "Axiomite",
+        linkOld: "Compendium.pf2e.pathfinder-bestiary.Actor.9qjXP1Lho1UmAihJ",
+        linkNew: "Compendium.pf2e.pathfinder-monster-core.Actor.7v1gykqjBO1YHDfu",
+    },
+    {
+        name: "Azarketi Crab Catcher",
+        linkOld: "Compendium.pf2e.npc-gallery.Actor.KvcFqH6H4TFCuBZA",
+        linkNew: "Compendium.pf2e.pathfinder-monster-core.Actor.ZXiFjrQbhvboEZTL",
+    },
+    {
+        name: "Azarketi Tide Tamer",
+        linkOld: "Compendium.pf2e.npc-gallery.Actor.sZ9RwN8zIzpztW3N",
+        linkNew: "Compendium.pf2e.pathfinder-monster-core.Actor.jTszZSs0K6vOqidM",
+    },
+    {
+        name: "Boar",
+        linkOld: "Compendium.pf2e.pathfinder-bestiary.Actor.4MwjCsa5O9aAjxSm",
+        linkNew: "Compendium.pf2e.pathfinder-monster-core.Actor.IyhbcdTVmkV4pSju",
+    },
+    {
+        name: "Boar",
+        linkOld: "Compendium.pf2e.menace-under-otari-bestiary.Actor.4MwjCsa5O9aAjxSm",
+        linkNew: "Compendium.pf2e.pathfinder-monster-core.Actor.IyhbcdTVmkV4pSju",
+    },
+    {
+        name: "Dybbuk",
+        linkOld: "Compendium.pf2e.pathfinder-bestiary-3.Actor.QUzBzxRy6HLeK7ja",
+        linkNew: "Compendium.pf2e.pathfinder-monster-core.Actor.IrssIkWkW6fsbHJL",
+    },
+];
