@@ -4,37 +4,37 @@
       "ApplyEffect": "Aplicar efecto",
       "ExpandDescription": "Ampliar descripción",
       "Range": {
-        "IncrementN": "Incremento de rango {n} pies.",
+        "IncrementN": "Incremento de alcance {n} pies.",
         "MaxN": "Alcance {n} pies."
       },
       "Use": "Usar"
     },
     "Actions": {
       "AdministerFirstAid": {
-        "Description": "<p> Realizas primeros auxilios a una criatura adyacente que está muriendo o sangrando. Si una criatura está muriendo y sangrando, elige qué dolencia estás tratando de tratar antes de tirar. Puede volver a administrar primeros auxilios para intentar remediar el otro efecto. </p> <ul> <li> <strong> Estabilizar </strong> Intenta una prueba de Medicina en una criatura que tiene 0 puntos de vida y está en condición de morir. La CD es igual a 5 + la CD de la tirada de recuperación de esa criatura (normalmente 15 + suvalor de muerte). </li> <li> <strong> Detener sangrado </strong> Intenta una prueba de Medicina en una criatura que está sufriendo daño de sangrado persistente. La CD suele ser la CD del efecto que provocó el sangrado. </li> </ul> <p> <strong> Éxito </strong> Si intentas estabilizarte, el objetivo pierde la condición de muerte (pero permanece @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf] {Inconsciente} ). Si está intentando detener el sangrado, el objetivo se beneficia de una recuperación asistida con elDC reducido para obtener ayuda especialmente adecuada. </p> <p> <strong> Fallo crítico </strong> Si intentas estabilizarte, el valor de muerte del objetivo aumenta en 1. Si intentas detener la hemorragia, el objetivo recibe inmediatamente una cantidad de daño igual a su daño de hemorragia persistente. </p>",
+        "Description": "<p>Administras Primeros auxilios a una criatura adyacente que está moribunda o sangrando. Si una criatura está a la vez moribunda y sangrando, elige cuál de las aflicciones vas a tratar antes de hacer la tirada. Puedes administrar Primeros auxilios de nuevo para intentar remediar el otro efecto</p><ul><li><strong>Estabilizar</strong> Haz una prueba de Medicina sobre una criatura que está a 0 Puntos de Golpe y tiene el estado moribundo. La CD es igual a 5 + la CD de la tirada de recuperación de dicha criatura (típicamente 15 + su valor de moribundo)</li><li><strong>Detener la hemorragia</strong> Haz una prueba de Medicina sobre una criatura que está sufriendo daño daño por sangrado. La CD suele ser la misma del efecto que causó el\nsangrado.</li></ul><p><strong>Éxito</strong> Si estás intentando estabilizar, el objetivo pierde el estado moribundo (pero permanece @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{inconsciente}). Si intentas detener la hemorragia, el objetivo se beneficia de una recuperación asistida con la CD rebajada por una ayuda particularmente apropiada.</p><p><strong>Fallo crítico</strong> Si intentabas estabilizar, el valor de moribundo del objetivo se incrementa en 1. Si intentabas detener la hemorragia, el objetivo sufre de inmediato una cantidad de daño igual a su daño persistente por sangrado.</p>",
         "Stabilize": {
-          "Description": "<p> Intenta una prueba de Medicina en una criatura que tiene 0 puntos de vida y está en condición de morir. La CD es igual a 5 + la CD de la tirada de recuperación de esa criatura (normalmente 15 + su valor de muerte). </p> <p> <strong> Éxito </strong> La criatura pierde la condición de morir (pero permanece inconsciente). <br> <strong> Fallo crítico </strong> El valor de muerte de la criatura aumenta en 1. </p>",
+          "Description": "<p>Haz una prueba de Medicina sobre una criatura que está a 0 Puntos de Golpe y tiene el estado moribundo. La CD es igual a 5 + la CD de la tirada de recuperación de dicha criatura (típicamente 15 + su valor de moribundo).</p><p><strong>Éxito</strong> La criatura pierde el estado moribundo (pero permanece inconsciente).<br><strong>Fallo crítico</strong> El valor de moribundo de la criatura se incrementa en 1.</p>",
           "DifficultyClass": {
-            "Label": "Administrar primeros auxilios DC"
+            "Label": "Primeros auxilios CD"
           },
           "Notes": {
-            "criticalFailure": "<strong> Fallo crítico </strong> El valor de muerte de la criatura aumenta en 1.",
-            "success": "<strong> Éxito </strong> La criatura pierde la condición de muerte (pero permanece inconsciente)."
+            "criticalFailure": "<strong>Fallo crítico</strong> El valor de moribundo de la criatura se incrementa en 1.",
+            "success": "<strong>Éxito</strong> La criatura pierde el estado moribundo (pero permanece inconsciente)."
           },
           "Title": "Estabilizar"
         },
         "StopBleeding": {
-          "Description": "<p> Intenta una prueba de Medicina en una criatura que está sufriendo daño por sangrado persistente. La CD suele ser la CD del efecto que provocó el sangrado. </p> <p> <strong> Éxito </strong> La criatura se beneficia de una recuperación asistida con la CD reducida para obtener una ayuda particularmente adecuada. <br> <strong> Fallo crítico </strong> La criatura inmediatamente recibe una cantidad de daño igual a su daño de sangrado persistente. </p>",
+          "Description": "<p>Haz una prueba de Medicina sobre una criatura que está sufriendo daño daño por sangrado. La CD suele ser la misma del efecto que causó el sangrado.</p><p><strong>Éxito</strong> El objetivo se beneficia de una recuperación asistida con la CD rebajada por una ayuda particularmente apropiada.<br><strong>Fallo crítico</strong> El objetivo sufre de inmediato una cantidad de daño igual a su daño persistente por sangrado.</p>",
           "Notes": {
-            "criticalFailure": "<strong> Fallo crítico </strong> La criatura inmediatamente recibe una cantidad de daño igual a su daño de sangrado persistente.",
-            "success": "<strong> Éxito </strong> La criatura se beneficia de una recuperación asistida con la CD reducida para obtener una ayuda particularmente adecuada."
+            "criticalFailure": "<strong>Fallo crítico</strong> El objetivo sufre de inmediato una cantidad de daño igual a su daño persistente por sangrado.",
+            "success": "<strong>Éxito</strong> El objetivo se beneficia de una recuperación asistida con la CD rebajada por una ayuda particularmente apropiada."
           },
-          "Title": "Parar de sangrar"
+          "Title": "Detener la hemorragia"
         },
-        "Title": "Administrar primeros auxilios",
+        "Title": "Primeros auxilios",
         "Warning": {
           "TargetNotDying": "La criatura objetivo no está muriendo.",
-          "UnknownVariant": "Variante desconocida {variant} utilizada para administrar primeros auxilios, utilice una de {variants} ."
+          "UnknownVariant": "Variante desconocida {variant} utilizada para primeros auxilios, utiliza una de {variants}."
         }
       },
       "AffixATalisman": {
@@ -42,15 +42,15 @@
         "Title": "Fijar un talismán"
       },
       "Aid": {
-        "Description": "<p> Intentas ayudar a tu aliado con una tarea. Para usar esta reacción, primero debes prepararte para ayudar, generalmente usando una acción durante tu turno. Debes explicarle al DJ exactamente cómo estás tratando de ayudar y él determinará si puedes ayudar a tu aliado. </p> <p> Cuando uses tu reacción de Ayuda, intenta una prueba de habilidad o una tirada de ataque de un tipo decidido por el DJ. La CD típica es 15, pero el DJ puede ajustar esta CD para tareas particularmente difíciles o fáciles. El DJ puede añadir cualquierrasgos relevantes para tu acción preparatoria o para tu reacción de Ayuda dependiendo de la situación, o incluso permitirte realizar pruebas de Ayuda distintas a las pruebas de habilidad y tiradas de ataque. </p> <p> <strong> Éxito crítico </strong> Le otorgas a tu aliado un bono de circunstancia +2 a la prueba desencadenante. Si eres un maestro con la prueba que intentaste, la bonificación es +3, y si eres legendario, es +4. </p> <p> <strong> Éxito </strong> Le otorgas a tu aliado un +1bonificación de circunstancia a la prueba desencadenante. </p> <p> <strong> Fallo crítico </strong> Tu aliado sufre un penalizador de circunstancia de -1 a la prueba desencadenante. </p>",
+        "Description": "<p>Tratas de ayudar a un aliado en una tarea. Para utilizar esta reacción, primero tienes que prepararte para ayudar, por lo general utilizando una acción durante tu turno. Tienes que explicar al DJ exactamente cómo lo haces, y él determina si puedes Prestar ayuda a tu aliado.</p>\n<p>Cuando utilizas tu reacción Prestar ayuda, haz una prueba de habilidad o tirada de ataque de un tipo decidido por el DJ. La CD típica es 15, pero el DJ podría ajustarla para tareas particularmente difíciles o fáciles. El DJ puede añadir cualquier rasgo relevante a tu acción\npreparatoria o a tu acción de Prestar ayuda dependiendo de la situación, o incluso permitirte hacer pruebas de Prestar ayuda diferentes a las pruebas de habilidad y a las tiradas de ataque.</p><p><strong>Éxito crítico</strong> Concedes a tu aliado un bonificador +2 por circunstancia a la prueba desencadenante. Si tienes el rango maestro en la prueba que haces, el bonificador es +3 y si tienes el rango legendario, es +4.</p><p><strong>Éxito</strong> Concedes a tu aliado un bonificador +1 por circunstancia a la prueba desencadenante.</p><p><strong>Fallo crítico</strong> Tu aliado sufre un penalizador -1 por circunstancia a la prueba desencadenante.</p>",
         "Notes": {
-          "criticalFailure": "Tu aliado sufre un penalizador de circunstancia -1 a la prueba desencadenante.",
-          "criticalSuccess": "Le otorgas a tu aliado un bono de circunstancia +2 a la prueba desencadenante. Si eres un maestro con la prueba que intentaste, la bonificación es +3, y si eres legendario, es +4.",
-          "success": "Le otorgas a tu aliado un bono de circunstancia +1 a la prueba desencadenante."
+          "criticalFailure": "Tu aliado sufre un penalizador -1 por circunstancia a la prueba desencadenante.",
+          "criticalSuccess": "Concedes a tu aliado un bonificador +2 por circunstancia a la prueba desencadenante. Si tienes el rango maestro en la prueba que haces, el bonificador es +3 y si tienes el rango legendario, es +4.",
+          "success": "Concedes a tu aliado un bonificador +1 por circunstancia a la prueba desencadenante."
         },
-        "Title": "Ayuda",
+        "Title": "Prestar ayuda",
         "Warning": {
-          "NoStatistic": "La acción de Ayuda se puede utilizar con diferentes estadísticas y no se especificó ninguna estadística."
+          "NoStatistic": "La acción de Prestar ayuda se puede utilizar con diferentes estadísticas y no se especificó ninguna estadística."
         }
       },
       "ArcaneSlam": {
@@ -59,46 +59,46 @@
         },
         "Notes": {
           "NoTarget": "<strong> Diferencia de tamaño </strong> Recibes una penalización de -2 por circunstancia a tu prueba si el objetivo es un tamaño más grande que tú y una penalización de -4 por circunstancia si es más grande que eso. Obtienes un bono de circunstancia +2 a tu prueba si el objetivo es un tamaño más pequeño que tú y un bono de circunstancia +4 si es más pequeño que eso.",
-          "criticalFailure": "<strong> Fallo crítico </strong> La criatura se libera y ya no es @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei] {Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM] {Neutralizado} por ti.",
-          "criticalSuccess": "<strong> Éxito crítico </strong> Golpeas al enemigo y la energía mágica lo abruma. La criatura es noqueada @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60] {Tumbado} , se convierte en @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh] {Deslumbrado} durante 1 asalto y sufre un daño igual a [[/r 2d6 + @abilities.str.mod # Damage: Arcane Slam]] {2d6 plus your Strength modifier} . El enemigo ya no es @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei] {Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM] {Neutralizado} tuyo.",
+          "criticalFailure": "<strong>Fallo crítico</strong> La criatura se libera y ya no está @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrada} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizada} por ti.",
+          "criticalSuccess": "<strong>Éxito crítico</strong> Golpeas al enemigo y la energía mágica lo abruma. La criatura queda @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbada}, queda @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrada} durante 1 asalto y sufre daño igual a [[/r 2d6 + @abilities.str.mod # Damage: Arcane Slam]]{2d6 más tu modificador de Fuerza} . El enemigo ya no está @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado} por ti.",
           "failure": "<strong> Fallo </strong> No puedes golpear a la criatura, pero tu control sobre la criatura permanece.",
-          "success": "<strong> Éxito </strong> Derribas al enemigo. La criatura es derribada @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60] {Tumbado} y ​​sufre un daño igual a tu [[/r @abilities.str.mod # Damage: Arcane Slam]] {Strength modifier}. El enemigo ya no es @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei] {Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM] {Neutralizado} tuyo."
+          "success": "<strong> Éxito </strong> Derribas al enemigo. La criatura es derribada @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60] {Tumbado} y ​​sufre un daño igual a tu [[/r @abilities.str.mod # Damage: Arcane Slam]]{Strength modifier}. El enemigo ya no es @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado} tuyo."
         },
         "Title": "Golpe arcano"
       },
       "ArrestAFall": {
-        "Description": "<p> <strong> Desencadenante </strong> Te caes. </p> <p> <strong> Requisitos </strong> Tienes una velocidad de mosca. </p> <hr> <p> Intentas elegir entre una prueba de Acrobacias o una salvación de Reflejos para frenar tu caída. La CC suele ser 15, pero puede ser mayor debido a la turbulencia del aire u otras circunstancias. </p> <p> <strong> Éxito </strong> No sufres daño por la caída. </p>",
+        "Description": "<p><strong>Desencadenante</strong> Te caes.</p><p><strong>Requisitos</strong> Tener Velocidad de vuelo</p><hr><p>Puedes elegir entre hacer una prueba de Acrobacias y una salvación de Reflejos para hacer que tu caída sea más lenta. La CD suele ser 15, pero podría ser mayor debido a turbulencias en el aire u otras circunstancias</p><p><strong>Éxito</strong> No sufres daño alguno debido a la caída.</p>",
         "Notes": {
-          "success": "<strong> Éxito </strong> No sufres daño por la caída."
+          "success": "<strong>Éxito</strong> No sufres daño alguno debido a la caída."
         },
         "Title": "Detener una caída"
       },
       "AvertGaze": {
-        "Description": "<p> Desvías tu mirada del peligro, como la mirada de una medusa. Obtienes una bonificación de circunstancia +2 a las salvaciones contra habilidades visuales que requieren que mires a una criatura u objeto, como la mirada petrificante de una medusa. Tu mirada permanece desviada hasta el comienzo de tu siguiente turno. </p>",
-        "Title": "Evitar la mirada"
+        "Description": "<p>Desvias la mirada de un peligro, como por ejemplo los ojos de una medusa. Obtienes un bonificador +2 por circunstancia a las salvaciones contra las aptitudes visuales que requieren que mires a una criatura u objeto, como por ejemplo la mirada petrificante de una medusa. Tu mirada permanece desviada hasta el inicio de tu siguiente turno.</p>",
+        "Title": "Desviar la mirada"
       },
       "AvoidNotice": {
-        "Description": "<p> Intentas una prueba de Sigilo para evitar ser notado mientras viajas a media velocidad. Si tienes la hazaña Swift Sneak, puedes moverte a toda velocidad en lugar de a la mitad, pero aún así no puedes usar otra actividad de exploración mientras lo haces. Si tienes la dote de Furtivo legendario, puedes moverte a toda velocidad y utilizar una segunda actividad de exploración. Si estás evitando ser notado al comienzo de un encuentro, generalmente haces una prueba de Sigilo en lugar de una prueba de Percepción tanto para determinar tu iniciativa como paraComprueba si los enemigos te notan (según sus CD de Percepción, como es normal en Sigilo, independientemente de los resultados de sus pruebas de iniciativa). </p>",
+        "Description": "<p>Haces una prueba de Sigilo para Evitar ser visto cuando viajas a media velocidad. Si tienes la dote Movimiento furtivo rápido, puedes moverte a tu velocidad completa en lugar de a la mitad, pero sigues sin poder usar otra actividad de exploración mientras lo haces. Si estás Evitando ser visto al inicio de un encuentro, sueles hacer una prueba de Sigilo en lugar de Percepción, tanto para determinar tu iniciativa como para ver si los enemigos te ven (basándose en la CD de sus pruebas de Percepción, como es normal para el Movimiento furtivo, sea cual sea el resultado de su prueba de iniciativa).</p>",
         "Notes": {
-          "criticalSuccess": "<strong> Éxito crítico </strong> Eres @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf] {No detectado} por la criatura durante tu movimiento y permaneces sin ser detectado por la criatura al final del mismo. <br/> <br/> Consulte la acción @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4] {Sneak} para obtener más detalles.",
-          "success": "<strong> Éxito </strong> Estás @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf] {No detectado} por la criatura durante tu movimiento y permaneces sin ser detectado por la criatura al final del mismo. <br/> <br/> Consulte la acción @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4] {Sneak} para obtener más detalles."
+          "criticalSuccess": "<strong>Éxito crítico</strong> Estas @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{No detectado} por la criatura durante tu movimiento y permaneces sin ser detectado por la criatura al final del mismo.<br/><br/>Consulta la acción @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Movimiento furtivo} para obtener más detalles.",
+          "success": "<strong>Éxito</strong> Estás @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{No detectado} por la criatura durante tu movimiento y permaneces sin ser detectado por la criatura al final del mismo.<br/> <br/>Consulta la acción @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4] {Movimiento furtivo} para obtener más detalles."
         },
         "Title": "Evitar ser visto"
       },
       "Balance": {
-        "Description": "<p> Te mueves a través de una superficie estrecha o terreno irregular, intentando una prueba de Acrobacia contra su CD de Equilibrio. Estás desprevenido cuando estás en una superficie estrecha o terreno irregular. </p> <p> <strong> Éxito crítico </strong> Te mueves hasta tu velocidad. <br> <strong> Éxito </strong> Te mueves hasta tu Velocidad, tratándolo como terreno difícil (cada 5 pies cuesta 10 pies de movimiento). <br> <strong> Fallo </strong> Debe permanecer estacionario paraMantén el equilibrio (desperdiciando la acción) o te caerás. Si caes, tu turno termina. <br> <strong> Fallo crítico </strong> Caes y tu turno termina. </p>",
+        "Description": "<p>Cruzas una superficie estrecha o terreno desigual mediante una prueba de Acrobacias contra tu CD de Mantener el equilibrio. Mientras estás en una superficie estrecha o terreno desigual, estás desprevenido.</p><p><strong>Éxito crítico</strong> Te mueves hasta tu velocidad.<br><strong>Éxito</strong> Te mueves hasta tu Velocidad, tratándolo como terreno difícil (cada 5 pies cuestan 10 pies de movimiento [1,5 y 3 m respectivamente]).<br><strong>Fallo</strong> Tienes que permanecer estacionario para no perder el equilibrio (malgastando la acción) o te caes. Si te caes, se acaba tu turno.<br><strong>Fallo crítico</strong> Te caes y se acaba tu turno.</p>",
         "Notes": {
-          "criticalFailure": "<strong> Fallo Crítico </strong> Caes y tu turno termina.",
-          "criticalSuccess": "<strong> Éxito crítico </strong> Te mueves hasta tu Velocidad.",
-          "failure": "<strong> Fallo </strong> Debes permanecer estacionario para mantener el equilibrio (desperdiciando la acción) o te caerás. Si caes, tu turno termina.",
-          "success": "<strong> Éxito </strong> Te mueves hasta tu Velocidad, tratándolo como terreno difícil (cada 5 pies cuesta 10 pies de movimiento)."
+          "criticalFailure": "<strong>Fallo Crítico</strong> Te caes y se acaba tu turno.",
+          "criticalSuccess": "<strong>Éxito crítico</strong> Te mueves hasta tu Velocidad.",
+          "failure": "<strong>Fallo</strong> Tienes que permanecer estacionario para no perder el equilibrio\n(malgastando la acción) o te caes. Si te caes, se acaba tu turno.",
+          "success": "<strong>Éxito</strong> Te mueves hasta tu Velocidad, tratándolo como terreno difícil (cada 5 pies cuestan 10 pies de movimiento [1,5 y 3 m respectivamente])."
         },
         "SampleTasks": {
-          "Untrained": "raíces enredadas, adoquines desiguales",
+          "Untrained": " raíces enmarañadas, adoquines irregulares",
           "Trained": "viga de madera",
           "Expert": "grava profunda y suelta",
-          "Master": "cuerda floja, suave capa de hielo",
-          "Legendary": "filo de navaja, trozos de suelo cayendo en el aire"
+          "Master": "cuerda fija, placa de hielo lisa",
+          "Legendary": "el filo de una navaja, fragmentos de terreno cayendo por los aires"
         },
         "Title": "Mantener el equilibrio"
       },
@@ -111,67 +111,67 @@
         "Title": "Comentario Agudo"
       },
       "Burrow": {
-        "Description": "<p> <strong> Requisitos </strong> Tienes una velocidad de madriguera. </p> <hr> <p> Cavas a través de tierra, arena o un material suelto similar a un ritmo hasta la velocidad de tu madriguera. No puedes excavar rocas u otras sustancias más densas que la tierra a menos que tengas una habilidad que te permita hacerlo. </p>",
+        "Description": "<p><strong>Requisitos</strong> Tienes velocidad de excavar.</p><hr><p>Te abres camino excavando a través de tierra, arena o un material suelto similar, a un ritmo máximo igual a tu Velocidad de excavar. No puedes excavar a través de roca o de otras sustancias más densas\nque la tierra si no dispones de una aptitud que te lo permite.</p>",
         "Title": "Excavar"
       },
       "Climb": {
-        "Description": "<p> <strong> Requisitos </strong> Tienes las dos manos libres. </p> <hr> <p> Intentas una prueba de Atletismo para moverte una distancia máxima de 5 pies hacia arriba, hacia abajo o a través de una pendiente. Eres @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] {Desprevenido} mientras subes, a menos que tengas una velocidad de ascenso. El GM determina la CD basándose en la naturaleza de la inclinación y las circunstancias ambientales; es posible que obtengas un éxito crítico automático en una pendiente que sea trivial de escalar. Si la velocidad de tu tierra es de 40 pieso más, aumente la distancia máxima en 5 pies por cada 20 pies de Velocidad por encima de 20 pies. </p> <p> <strong> Éxito crítico </strong> Te mueves a lo largo de la pendiente, aumentando la distancia máxima en 5 pies. <br> <strong> Éxito </strong> Avanzas por la pendiente. <br> <strong> Fallo crítico </strong> Te caes. Si comenzaste el ascenso en terreno estable, te caes y aterrizas @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60] {Tumbado} . </p>",
+        "Description": "<p><strong>Requisitos</strong> Tienes libres las dos manos.</p><hr><p> Haces una prueba de Atletismo para moverte una distancia máxima de 5 pies (1,5 m) hacia arriba, hacia abajo o atravesando una pendiente. Mientras trepas estás @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{desprevenido} si no tienes Velocidad de trepar. El DJ es quien determina la CD basándose en la naturaleza de la pendiente y en las  ircunstancias ambientales; podrías obtener éxito crítico automático en una pendiente de inclinación trivial. Si tu Velocidad terrestre es 40 pies (12 m) o mayor, incrementa la distancia máxima en 5 pies (1,5 m) por cada 20 pies (6 m) de Velocidad por encima de 20 pies (6 m).</p> <p><strong>Éxito crítico</strong> Te mueves por la pendiente, incrementando en 5 pies (1,5 m) la distancia máxima.<br><strong>Éxito</strong> Te mueves por la pendiente.<br><strong>Fallo crítico</strong> Te caes. Si empezaste a moverte sobre terreno estable, te\ncaes y quedas @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{tumbado}.</p>",
         "Notes": {
-          "criticalFailure": "<strong> Fallo crítico </strong> Te caes. Si comenzaste el ascenso en terreno estable, te caes y aterrizas @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60] {Tumbado} .",
-          "criticalSuccess": "<strong> Éxito crítico </strong> Te mueves a lo largo de la pendiente, aumentando la distancia máxima en 5 pies.",
-          "success": "<strong> Éxito </strong> Avanzas por la pendiente."
+          "criticalFailure": "<strong>Fallo crítico</strong> Te caes. Si empezaste a moverte sobre terreno estable, te\ncaes y quedas @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{tumbado}.",
+          "criticalSuccess": "<strong>Éxito crítico</strong> Te mueves por la pendiente, incrementando en 5 pies (1,5 m) la distancia máxima.",
+          "success": "<strong>Éxito</strong> Te mueves por la pendiente."
         },
         "SampleTasks": {
-          "Untrained": "escalera, pendiente pronunciada, árbol poco ramificado",
-          "Trained": "aparejo, cuerda, árbol típico",
-          "Expert": "pared con pequeños asideros y puntos de apoyo para los pies",
+          "Untrained": "escala, fuerte pendiente, árbol de ramas bajas",
+          "Trained": "jarcias, soga, árbol típico",
+          "Expert": "muro con pequeños asideros y puntos de apoyo",
           "Master": "techo con asideros y puntos de apoyo para los pies, pared de roca",
           "Legendary": "superficie lisa"
         },
         "Title": "Trepar"
       },
       "Coerce": {
-        "Description": "<p> Con amenazas, ya sean veladas o abiertas, intentas intimidar a una criatura para que haga lo que quieres. Debes pasar al menos 1 minuto de conversación con una criatura que puedas ver y que pueda verte o sentirte. Al final de la conversación, intenta una prueba de Intimidación contra la CD de Voluntad del objetivo, modificada por cualquier circunstancia que determine el DJ. Las actitudes a las que se hace referencia en los efectos a continuación se resumen en la barra lateral Cambio de actitudes y se describen en su totalidad en las Condiciones.Apéndice. </p> <p> <strong> Éxito crítico </strong> El objetivo te proporciona la información que buscas o acepta seguir tus directivas siempre y cuando no sea probable que le dañen de ninguna manera. El objetivo continúa cumpliendo durante un período de tiempo determinado por el DJ pero que no excede 1 día, momento en el cual el objetivo se vuelve hostil (si aún no lo era). Sin embargo, el objetivo te tiene demasiado miedo como para tomar represalias, al menos a corto plazo.<br> <strong> Éxito </strong> Como éxito crítico, pero una vez que el objetivo se vuelve hostil, podría decidir actuar en tu contra, por ejemplo, informándote a las autoridades o ayudando a tus enemigos. <br> <strong> Fracaso </strong> El objetivo no hace lo que usted dice, y si aún no era antipático u hostil, se vuelve antipático. <br> <strong> Fallo crítico </strong> El objetivo se niega a cumplir, se vuelve hostil si no lo hizoya, y no puede ser coaccionado por usted durante al menos 1 semana. </p>",
+        "Description": "<p>Con amenazas veladas o directas, tratas de obligar a una criatura a que haga lo que tú quieres. Debes invertir por lo menos 1 minuto conversando con la criatura. Al final de la conversación, haz una prueba de Intimidación contra la CD de Voluntad del objetivo, modificada por cualquier circunstancia que el DJ determine (las actitudes a que se hace referencia en los efectos de más abajo se resumen en la barra lateral y se describen al completo en el Apéndice Estados.</p><p><strong>Éxito crítico</strong> El objetivo te facilita la información que buscas o se muestra de acuerdo en seguir tus instrucciones si éstas no pueden dañarle en modo alguno. El objetivo continúa estando de acuerdo contigo durante una cantidad de tiempo determinada por el DJ, pero no superior a 1 día, en cuyo momento se vuelve malintencionado (si aún no era malintencionado u hostil). Sin embargo, tiene demasiado miedo de ti para tomar represalias... por lo menos a corto plazo.<br><strong>Éxito</strong> Como éxito crítico, pero una vez que el objetivo se vuelve malintencionado, podría decidirse a actuar contra ti, por ejemplo informando de ti a las autoridades o ayudando a tus enemigos.<br><strong>Fallo</strong> El objetivo no hace lo que tú dices y, si aún no era malintencionado u hostil, se vuelve malintencionado.<br><strong>Fallo crítico</strong> El objetivo rehúsa cumplir tus órdenes, se vuelve hostil si aún no lo era y queda temporalmente inmune a tus intentos de Obligarle durante por lo menos 1 semana.</p>",
         "Notes": {
-          "criticalFailure": "<strong> Fallo crítico </strong> El objetivo se niega a cumplir, se vuelve hostil si aún no lo era y no puede ser coaccionado por usted durante al menos 1 semana.",
-          "criticalSuccess": "<strong> Éxito crítico </strong> El objetivo le brinda la información que busca o acepta seguir sus directivas siempre y cuando no sea probable que le dañen de ninguna manera. El objetivo continúa cumpliendo durante un período de tiempo determinado por el DJ pero que no excede 1 día, momento en el cual el objetivo se vuelve hostil (si aún no lo era). Sin embargo, el objetivo te tiene demasiado miedo como para tomar represalias, al menos a corto plazo.",
-          "failure": "<strong> Fracaso </strong> El objetivo no hace lo que usted dice, y si aún no era antipático u hostil, se vuelve antipático.",
-          "success": "<strong> Éxito </strong> Como éxito crítico, pero una vez que el objetivo se vuelve hostil, podría decidir actuar en tu contra, por ejemplo, informándote a las autoridades o ayudando a tus enemigos."
+          "criticalFailure": "<strong>Fallo crítico</strong> El objetivo rehúsa cumplir tus órdenes, se vuelve hostil si aún no lo era y queda temporalmente inmune a tus intentos de Obligarle durante por lo menos 1 semana.",
+          "criticalSuccess": "<strong>Éxito crítico</strong> El objetivo te facilita la información que buscas o se muestra de acuerdo en seguir tus instrucciones si éstas no pueden dañarle en modo alguno. El objetivo continúa estando de acuerdo contigo durante una cantidad de tiempo determinada por el DJ, pero no superior a 1 día, en cuyo momento se vuelve malintencionado (si aún no era malintencionado u hostil). Sin embargo, tiene demasiado miedo de ti para tomar represalias... por lo menos a corto plazo.",
+          "failure": "<strong>Fallo</strong> El objetivo no hace lo que tú dices y, si aún no era malintencionado u hostil, se vuelve malintencionado.",
+          "success": "<strong>Éxito</strong> Como éxito crítico, pero una vez que el objetivo se vuelve malintencionado, podría decidirse a actuar contra ti, por ejemplo informando de ti a las autoridades o ayudando a tus enemigos."
         },
         "Title": "Obligar"
       },
       "CommandAnAnimal": {
-        "Description": "<p> Le das una orden a un animal. Intenta una prueba de Naturaleza contra la CD de Voluntad del animal. El DJ podría ajustar la CD si el animal tiene una buena actitud hacia ti, sugieres un curso de acción al que estaba predispuesto o le ofreces un premio. </p> <p> Fallas automáticamente si el animal es hostil o antipático contigo. Si el animal le resulta útil, aumente su grado de éxito en un paso. Es posible que puedas comandar a un animal más fácilmente con una dote como Montar.</p> <p> La mayoría de los animales conocen las acciones básicas agacharse, saltar, buscar, pararse, caminar y golpear. Si un animal conoce una actividad, como el Galope de un caballo, puedes ordenarle al animal que realice la actividad, pero debes gastar tantas acciones en Ordenar a un animal como el número de acciones de la actividad. También puedes gastar múltiples acciones para ordenarle al animal que realice esa cantidad de acciones básicas en su próximo turno; por ejemplo, podrías gastar 3 acciones para ordenarle a un animal queCamina tres veces o camina dos veces y luego golpea. </p> <p> <strong> Éxito </strong> El animal hace lo que le ordenas en su siguiente turno. <br> <strong> Fracaso </strong> El animal duda o se resiste y no hace nada. <br> <strong> Fallo crítico </strong> El animal se porta mal o no entiende, y toma alguna otra acción determinada por el DJ. </p>",
+        "Description": "<p>Das una orden a un animal. Haz una prueba de Naturaleza contra la CD de Voluntad del animal. El DJ podría ajustar la CD si tiene una actitud buena hacia ti, si sugieres un curso de acción hacia el que estaba predispuesto o si le ofreces una golosina.</p>\n<p>Fallas automáticamente si el animal es hostil o mal intencionado hacia ti. Si es solícito contigo, incrementa en un paso tu grado de éxito. Podrías ser capaz de Comandar a un animal más fácilmente con una dote como Montar.</p>\n<p>La mayoría de animales conocen las acciones básicas Buscar, Golpear, Ponerse de pie, Saltar y Zancada. Si un animal conoce una actividad, como el galope de un caballo, puedes Comandar al animal para que la lleve a cabo, pero debes gastar tantas acciones en ello como número de acciones de la actividad. También puedes invertir múltiples acciones de Comandar al animal para que lleve a cabo dicho número de acciones básicas en su siguiente turno; por ejemplo, podrías invertir tres acciones para Comandar a un animal y que dé tres Zancadas, o que dé dos Zancadas y después un Golpe.</p><p><strong>Éxito</strong> El animal hace lo que le has ordenado en su siguiente turno.<br><strong>Fallo</strong> El animal duda o se resiste, y no hace nada.<br><strong>Fallo Crítico</strong> El animal se comporta mal o se confunde, y lleva a cabo alguna otra acción determinada por el DJ.</p>",
         "Notes": {
-          "criticalFailure": "<strong> Fallo Crítico </strong> El animal se porta mal o no entiende, y toma alguna otra acción determinada por el DJ.",
-          "failure": "<strong> Fracaso </strong> El animal duda o se resiste y no hace nada.",
-          "success": "<strong> Éxito </strong> El animal hace lo que le ordenas en su siguiente turno."
+          "criticalFailure": "<strong>Fallo Crítico</strong> El animal se comporta mal o se confunde, y lleva a cabo alguna otra acción determinada por el DJ.",
+          "failure": "<strong>Fallo</strong> El animal duda o se resiste, y no hace nada.",
+          "success": "<strong>Éxito</strong> El animal hace lo que le has ordenado en su siguiente turno."
         },
         "Title": "Comandar a un animal"
       },
       "ConcealAnObject": {
-        "Description": "<p> Ocultas un objeto pequeño en tu persona (como un arma de peso ligero). Cuando intentas pasar un objeto oculto a alguien que podría notarlo, el DJ tira tu prueba de Sigilo y la compara con la CD de Percepción de este observador pasivo. Una vez que el DJ tira tu prueba para detectar un objeto oculto, se utiliza el mismo resultado sin importar cuántos observadores pasivos intentes pasar a hurtadillas. Si una criatura te está buscando específicamente un objeto, puede intentar una prueba de Percepción contra tuDC sigiloso (encontrar el objeto en caso de éxito). </p> <p> También puedes ocultar un objeto en algún lugar que no sea tu persona, como entre la maleza o en un compartimento secreto dentro de un mueble. En este caso, los personajes que buscan en un área comparan los resultados de su prueba de Percepción con su CD de Sigilo para determinar si encuentran el objeto. </p> <p> <strong> Éxito </strong> El objeto no se detecta. </p> <p> <strong> Fracaso</strong> El buscador encuentra el objeto. </p>",
+        "Description": "<p>Disimulas un pequeño objeto en tu persona (como por ejemplo, un arma de Impedimenta ligera). Cuando tratas de pasar un objeto oculto por delante de alguien que podría darse cuenta de su presencia, el DJ hace por ti una prueba de Sigilo y la compara con la CD de Percepción del observador pasivo. Una vez el DJ hace tu prueba para un objeto oculto, se utiliza el mismo resultado sin importar por delante de cuántos observadores pasivos tratas de camuflarlo. Si una criatura te está registrando específicamente en busca de un objeto, puede hacer una prueba de Percepción contra tu CD de Sigilo (si tiene éxito, lo encuentra).</p>\n<p>También puedes ocultar un objeto en alguna parte que no es tu persona, como por ejemplo en el sotobosque o en un compartimento secreto de un mueble. En este caso, los personajes que Buscan en un área comparan los resultados de su prueba de Percepción contra tu CD de Sigilo para determinar si encuentran el objeto.</p><p><strong>Éxito</strong> El objeto sigue sin ser detectado.</p><p><strong>Fallo</strong> El buscador encuentra el objeto.</p>",
         "Notes": {
-          "failure": "<strong> Fallo </strong> El buscador encuentra el objeto.",
-          "success": "<strong> Éxito </strong> El objeto no se detecta."
+          "failure": "<strong>Fallo</strong> El buscador encuentra el objeto.",
+          "success": "<strong>Éxito</strong> El objeto sigue sin ser detectado."
         },
         "Title": "Ocultar un objeto"
       },
       "CoverTracks": {
-        "Description": "<p> Cubres tus huellas, moviéndote hasta la mitad de tu velocidad de recorrido, usando las reglas @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.YVLMgNxXTUQuDJgp] {Travel Speed}. No necesitas intentar una prueba de Supervivencia para cubrir tus huellas, pero cualquiera que te rastree debe tener éxito en una prueba de Supervivencia contra tu CD de Supervivencia si es mayor que la CD normal para rastrear. </p> <p> En algunos casos, puedes cubrir huellas en un encuentro. En este caso, Cover Tracks es una acción única y no tiene el rasgo de exploración. </p>",
-        "Title": "Cubrir pistas"
+        "Description": "<p>Cubres tus huellas, moviéndote hasta la mitad de tu Velocidad de viaje, utilizando las reglas de @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.YVLMgNxXTUQuDJgp]{Velocidad de viaje}. No tienes que hacer una prueba de Supervivencia para cubrir tu rastro, pero cualquiera que te rastrea ha de tener éxito en una prueba de Supervivencia contra tu CD de Supervivencia si es superior a la CD normal para Rastrear.</p>\n<p>En algunos casos, podrías Cubrir rastro en un encuentro. En este caso, es una sola acción y carece del rasgo exploración.</p>",
+        "Title": "Cubrir rastro"
       },
       "Craft": {
         "Details": {
           "DaysForNoCost": "Días hasta sin Costo Adicional:",
           "Discount": "Descuento por día:",
-          "LostMaterials": "Perder {cost} de materiales",
+          "LostMaterials": "Pierdes los materiales {cost} ",
           "PayFull": "Pagar {cost} costos totales y artesanía",
           "PayMaterials": "Pagar {cost} Costos de materiales y artesanía",
-          "ReceiveItem": "Recibir artículo"
+          "ReceiveItem": "Recibir objeto"
         },
         "Error": {
-          "ItemReferenceMismatch": "Solo acepta artículos físicos para Craft de un compendio o del Directorio de artículos del mundo."
+          "ItemReferenceMismatch": "Solo se permiten objetos físicos para Elaborar de un compendio o del Directorio de objetos del mundo."
         },
         "Information": {
           "LoseMaterials": "{actorName} pierde {cost} de materiales.",
@@ -179,16 +179,16 @@
           "ReceiveItem": "{actorName} recibe {quantity} x {itemName} ."
         },
         "Notes": {
-          "criticalFailure": "<strong> Fallo crítico </strong> No completa el elemento. Arruinas el 10% de las materias primas que suministraste, pero puedes recuperar el resto. Si quieres volver a intentarlo, debes empezar de nuevo.",
-          "criticalSuccess": "<strong> Éxito crítico </strong> Su intento es exitoso. Cada día adicional dedicado a la elaboración reduce los materiales necesarios para completar el artículo en una cantidad basada en tu nivel + 1 y tu rango de competencia en la elaboración.",
-          "failure": "<strong> Fallo </strong> No completa el elemento. Puede recuperar las materias primas que proporcionó por su valor total. Si quieres volver a intentarlo, debes empezar de nuevo.",
-          "success": "<strong> Éxito </strong> Su intento fue exitoso. Cada día adicional dedicado a la elaboración reduce los materiales necesarios para completar el artículo en una cantidad basada en su nivel y su rango de competencia."
+          "criticalFailure": "<strong>Fallo crítico</strong> No consigues completar el objeto. Echas a perder el 10% de la materia prima suministrada, pero puedes recuperar el resto. Si quieres probar de nuevo, tienes que volver a empezar,",
+          "criticalSuccess": "<strong>Éxito crítico</strong> Tu intento tiene éxito. Cada día adicional invertido en practicar la Artesanía reduce los materiales necesarios para completar el objeto en una cantidad que se basa en tu nivel + 1 y en tu rango de competencia en la habilidad.",
+          "failure": "<strong>Fallo</strong> No consigues completar el objeto. Puedes recuperar la materia prima que suministraste a su valor completo. Si quieres probar de nuevo, tienes que volver a empezar.",
+          "success": "<strong>Éxito</strong> Tu intento tiene éxito. Cada día adicional invertido en practicar la Artesanía reduce los materiales necesarios para completar el objeto en una cantidad que se basa en tu nivel y en tu rango de competencia en la habilidad."
         },
         "SelectItemDialog": {
           "CancelButtonLabel": "Cancelar",
           "CraftButtonLabel": "Artesanía",
-          "DropItemZoneLabel": "Arrastrar aquí al elemento...",
-          "Title": "Seleccionar artículo para crear"
+          "DropItemZoneLabel": "Arrastra aquí el objeto...",
+          "Title": "Selecciona objeto para crear"
         },
         "SelectSpellDialog": {
           "CraftButtonLabel": "Artesanía",
@@ -196,10 +196,10 @@
         },
         "Title": "Artesanía",
         "Warning": {
-          "CantAddItem": "No se pudieron agregar elementos",
+          "CantAddItem": "No se pudieron agregar objetos",
           "InsufficientCoins": "Monedas insuficientes",
-          "MissingItem": "No se puede crear un artículo desconocido con ID {uuid}.",
-          "NotPhysicalItem": "El artículo especificado {item} no es un artículo físico."
+          "MissingItem": "No se puede crear el objeto desconocido con ID {uuid}.",
+          "NotPhysicalItem": "El objeto especificado {item} no es un objeto físico."
         }
       },
       "Crawl": {
