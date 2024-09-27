@@ -129,6 +129,7 @@
         "Leaves": "Hojas",
         "Leg": "Pierna",
         "LightningLash": "Latigazo relámpago",
+        "LittleClaw": "Little Claw",
         "Mandibles": "Mandíbulas",
         "MetalShard": "fragmento de metal",
         "Moonbeam": "Rayo de luna",
@@ -139,6 +140,7 @@
         "Quill": "Pluma",
         "Rock": "Roca",
         "Root": "Root",
+        "SacredArmament": "Sacred Armament",
         "Seed": "Semilla",
         "Spikes": "Picos",
         "Spine": "Columna vertebral",
@@ -667,6 +669,7 @@
         "ColdIronBludgeoning": "golpes de hierro frío",
         "CrystalHazards": "crystal hazards",
         "DraconicBreathWeapons": "draconic breath weapons",
+        "EnemyStrikes": "enemy Strikes",
         "HolyBludgeoningPiercingSlashing": "holy bludgeoning, piercing and slashing damage",
         "ImpulseFireFrom": "fuego impulsivo de {origin}",
         "IngestedPoisons": "venenos ingeridos",
@@ -1940,6 +1943,9 @@
           },
           "Prompt": "Seleccione un campo de investigación.",
           "Toxicologist": {
+            "FieldBenefit": {
+              "RollOptionLabel": "Toxicologist — Field Benefit"
+            },
             "FieldVials": {
               "Description": "You can apply the contents of a versatile vial to a weapon or piece of ammunition as an injury poison. Add the versatile vial's initial damage to the first successful Strike with that weapon or ammunition. The substance becomes inert at the end of your current turn."
             }
@@ -2368,7 +2374,8 @@
           "Redemption": "If the enemy refuses, you can choose to grant the resistance to yourself and all allies in your champion's aura, including the triggering ally. If you do, the resistance is reduced by 2 for all @UUID[Compendium.pf2e.feat-effects.Item.GFLiTESBmoyQ3sLx]{Effect: Exalted Reaction (Redemption)}"
         },
         "GreaterSecurity": {
-          "Description": "While the companion shield is in effect, if your shield is raised, the ally with the companion shield gets the same bonus to AC your shield grants, and you can trigger Shield Block if that ally would meet the trigger. This uses your shield's statistics and applies damage to your shield."
+          "Description": "While the companion shield is in effect, if your shield is raised, the ally with the companion shield gets the same bonus to AC your shield grants, and you can trigger Shield Block if that ally would meet the trigger. This uses your shield's statistics and applies damage to your shield.",
+          "RollOptionLabel": "Greater Security — Champion has their shield raised"
         },
         "GruesomeStrike": {
           "Note": "The target must succeed at a @Check[fortitude|against:class] save against your class DC or be @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}."
@@ -3221,6 +3228,9 @@
       "FollowTheExpert": {
         "Prompt": "Seleccione la competencia del experto en habilidades."
       },
+      "FrenziedRevelry": {
+        "Note": "Whenever someone benefitting from this bonus critically succeeds at a saving throw against an enemy's mental effect, its revelry increases, granting it a +1 status bonus to attack rolls and damage rolls for 1 round. @UUID[Compendium.pf2e.spell-effects.Item.ldl1aU5ovTQMUHJ2]{Spell Effect: Frenzied Revelry (Critical)}"
+      },
       "GameHunterDedication": {
         "TargetHuntedPrey": "El objetivo es tu presa cazada (solo animal, bestia o dragón)"
       },
@@ -3431,6 +3441,10 @@
           "MagmaSpikeCriticalSpecialization": "En lugar del efecto normal de especialización crítica, el objetivo sufre [[/r 1d6[persistent,fire]]] daño; Obtienes una bonificación por este daño persistente igual a la bonificación de tu objeto a las tiradas de ataque en ataques desarmados."
         }
       },
+      "ImpeccableFlow": {
+        "RollOptionLabel": "Impeccable Flow — You critically failed any check.",
+        "Note": "If you critically fail any check while under the effects of this spell, the bonus ends and you instead have a -1 status penalty to all checks for the remaining duration."
+      },
       "InCombat": {
         "ToggleLabel": "En combate"
       },
@@ -3512,6 +3526,9 @@
       "Investigator": {
         "CertainStratagem": {
           "Note": "You deal half of your @Damage[(floor((@actor.level+3)/4)[precision])[@item.system.damage.damageType]]{Strategic Strike damage} to the target"
+        },
+        "DetectivesReadiness": {
+          "ClueInAddendum": "You can use Clue In to assist an ally's saving throw against creatures or effects that are related to the question at the heart of an open investigation."
         },
         "DeviseAStratagem": {
           "Attack": "Attack Stratagem",
@@ -4007,6 +4024,11 @@
           "Unknown": "El desconocido"
         }
       },
+      "Organsight": {
+        "Organs": "Organsight (Organs)",
+        "Skin": "Organsight (Skin)",
+        "Success": "Organsight — Successful Medicine Check"
+      },
       "OverwhelmingBlow": {
         "CriticalHit": "Golpe crítico con golpe abrumador"
       },
@@ -4184,7 +4206,8 @@
           "ShatterSpace": "Tú o uno de los objetivos del hechizo estáis rodeados por una espiral de espacio desgarrado. Esta es un aura y tú eliges el radio de la emanación, hasta 20 pies. Una criatura que comienza su turno en el aura o entra en el aura durante su turno sufre 1d6 de daño cortante por cada rango del truco psi amplificado, con una salvación de reflejos básica contra la CD de tu hechizo. Si la criatura falla críticamente, el espacio roto la desequilibra y cae @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} . El aura dura hasta el comienzo de tuSiguiente turno. Puedes elegir si el aura afecta a la criatura que la emite.",
           "Shield": {
             "Base": "Creas una barrera en capas de tres escudos para mejorar tus defensas. La duración aumenta a sostenida hasta 1 minuto. El escudo aún baja al comienzo de cada uno de tus turnos, pero puedes volver a subirlo cuando sostienes el hechizo.",
-            "BaseTwo": "Cuando bloqueas con escudo con este hechizo, una de las tres capas se rompe y dejas de obtener la bonificación a la CA, pero el hechizo no termina. Puedes seguir usando el hechizo hasta que se rompa la capa final; una vez que lo hace, el hechizo termina y no puedes volver a lanzar escudo o escudo ampliado durante 10 minutos. Puedes optar por romper capas adicionales cuando bloqueas con escudo con este hechizo para mejorar tus defensas. Si rompes dos capas en lugar de una, aumenta la Dureza a 1-1/2 × la cantidad normal (7 en el 1er rango,15 en el tercer puesto, 22 en el quinto puesto, 30 en el séptimo puesto y 37 en el noveno puesto). Si rompes las tres capas, aumenta la Dureza al doble de la cantidad normal."
+            "BaseTwo": "Cuando bloqueas con escudo con este hechizo, una de las tres capas se rompe y dejas de obtener la bonificación a la CA, pero el hechizo no termina. Puedes seguir usando el hechizo hasta que se rompa la capa final; una vez que lo hace, el hechizo termina y no puedes volver a lanzar escudo o escudo ampliado durante 10 minutos. Puedes optar por romper capas adicionales cuando bloqueas con escudo con este hechizo para mejorar tus defensas. Si rompes dos capas en lugar de una, aumenta la Dureza a 1-1/2 × la cantidad normal (7 en el 1er rango,15 en el tercer puesto, 22 en el quinto puesto, 30 en el séptimo puesto y 37 en el noveno puesto). Si rompes las tres capas, aumenta la Dureza al doble de la cantidad normal.",
+            "RollOptionLabel": "Shield (Amped) — Break layers to Shield Block"
           },
           "TargetOfPsychicIre": "Elige un objetivo del hechizo. Los fenómenos psíquicos se vuelven contra el objetivo; normalmente, los objetos se arrojan contra la criatura. Al comienzo de cada uno de los turnos del objetivo, recibe 1d4 de daño contundente por cada rango de hechizo del truco psi al que se agregó este amplificador, con una salvación de Reflejos básica. El objetivo permanece marcado por ira psíquica durante 3 asaltos. El efecto persiste incluso si caes @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Inconsciente} o abandonas el área.",
           "TelekineticHand": {
@@ -4267,6 +4290,9 @@
           "FirstAttack": "Primer ataque a una presa cazada en esta ronda.",
           "Prompt": "Selecciona una ventaja de cazador."
         }
+      },
+      "RapidAdaptation": {
+        "Prompt": "Does this character already have a swim speed?"
       },
       "Ratfolk": {
         "LabRat": {
@@ -5163,6 +5189,11 @@
         },
         "YouDontSmellRight": {
           "Label": "Seek to determine if a creature is disguised."
+        }
+      },
+      "WingedWarrior": {
+        "Dedication": {
+          "RollOptionLabel": "Flying using permanent wings"
         }
       },
       "Witch": {
