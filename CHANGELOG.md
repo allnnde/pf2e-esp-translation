@@ -1,3 +1,12 @@
+## [6.2.1](https://github.com/allnnde/pf2e-esp-translation/compare/v6.2.0...v6.2.1) (2024-09-27)
+
+
+### Bug Fixes
+
+* New translations action-en.json from Crowdin ([6c48e71](https://github.com/allnnde/pf2e-esp-translation/commit/6c48e7122a7948262127c50a5b1139b07c3f539d))
+
+
+
 # [6.2.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.1.0...v6.2.0) (2024-09-27)
 
 
@@ -54,15 +63,6 @@
 
 
 ## [6.0.6](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.5...v6.0.6) (2024-09-24)
-
-
-
-## [6.0.5](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.4...v6.0.5) (2024-09-24)
-
-
-### Bug Fixes
-
-* condiciones de nuevooooo ([5722f3d](https://github.com/allnnde/pf2e-esp-translation/commit/5722f3d029cb5ad8a2e0923caad280713d117d3e))
 
 
 
