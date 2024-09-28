@@ -1,3 +1,17 @@
+# [6.3.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.2.2...v6.3.0) (2024-09-28)
+
+
+### Bug Fixes
+
+* posibble solve to spell efecto name error ([34298c7](https://github.com/allnnde/pf2e-esp-translation/commit/34298c71bd4c449acab32b227b47ca6c09a2786d))
+
+
+### Features
+
+* automatic json extract to traslate ([ac63dbc](https://github.com/allnnde/pf2e-esp-translation/commit/ac63dbccb1a86279bd4f97ebffd7846f29f49d89))
+
+
+
 ## [6.2.2](https://github.com/allnnde/pf2e-esp-translation/compare/v6.2.1...v6.2.2) (2024-09-27)
 
 
@@ -59,15 +73,6 @@
 ### Features
 
 * update dependencies ([1b21364](https://github.com/allnnde/pf2e-esp-translation/commit/1b213646b0597538605c0498ed1b08835b32c1fb))
-
-
-
-## [6.0.7](https://github.com/allnnde/pf2e-esp-translation/compare/v6.0.6...v6.0.7) (2024-09-24)
-
-
-### Bug Fixes
-
-* new crowdin config ([bf0bedf](https://github.com/allnnde/pf2e-esp-translation/commit/bf0bedf98f5128c5b15d7f2c7bee35d3ea100259))
 
 
 
