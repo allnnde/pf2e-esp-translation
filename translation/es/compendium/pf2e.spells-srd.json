@@ -30,8 +30,8 @@
       "target": "1 criatura"
     },
     "Acid Grip": {
-      "name": "Presa Ácida",
-      "description": "<p> Una mano efímera y provista de garras aferra al objetivo quemándolo con ácido mágico. El objetivo sufre 2d8 daño por ácido más @Damage[floor(@item.level/2)d6[persistent,acid]] daño dependiendo de su salvación de Reflejos. Una criatura que sufre daño persistente debido a este conjuro sufre además un penalizador -10 pies (3 m) por estatus a sus Velocidades. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> La criatura no resulta afectada. </p>\n <p> <strong> Éxito </strong> La criatura sufre mitad de daño sin daño persistente, y la garra se mueve hasta 5 pies (1,5 m) en una dirección elegida por ti. </p>\n <p> <strong> Fallo </strong> La criatura sufre mitad de daño y daño persistente, y la garra se mueve hasta 10 pies (3 m) en una dirección elegida por ti. </p>\n <p> <strong> Fallo crítico </strong> La criatura sufre doble daño y daño persistente completo, y la garra se mueve hasta 20 pies (6 m) en una dirección elegida por ti. </p>\n <hr /><p> <strong> Potenciado (+2) </strong> El daño inicial se incrementa en 2d8 y el daño persistente por ácido se incrementa en 1d6. </p>",
+      "name": "Presa ácida",
+      "description": "<p> Una mano efímera y provista de garras aferra al objetivo quemándolo con ácido mágico. El objetivo sufre 2d8 daño por ácido más @Damage[floor(@item.level/2)d6[persistent,acid]]{1d6 \ndaño persistente por ácido} dependiendo de su salvación de Reflejos. Una criatura que sufre daño persistente debido a este conjuro sufre además un penalizador -10 pies (3 m) por estatus a sus Velocidades.</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no resulta afectada.</p>\n<p><strong>Éxito</strong> La criatura sufre mitad de daño sin daño persistente, y la garra se mueve hasta 5 pies (1,5 m) en una dirección elegida por ti.</p>\n<p><strong>Fallo</strong> La criatura sufre mitad de daño y daño persistente, y la garra se mueve hasta 10 pies (3 m) en una dirección elegida por ti.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre doble daño y daño persistente completo, y la garra se mueve hasta 20 pies (6 m) en una dirección elegida por ti.</p>\n<hr />\n<p><strong>Potenciado (+2)</strong> El daño inicial se incrementa en 2d8 y el daño persistente por ácido se incrementa en 1d6.</p>",
       "target": "1 criatura"
     },
     "Acid Splash": {
@@ -296,7 +296,7 @@
       "description": "<p> Evocas una masa de agua en el aire alrededor de tu puño extendido. Durante el resto de tu turno, puedes destruir objetivos dentro de un radio de 30 pies con esta agua gastando una sola acción que tenga los rasgos de ataque y concentración. Cuando lo hagas, intenta realizar una tirada de ataque con hechizos a distancia. Si golpeas, infliges 2d8 de daño contundente. En un golpe crítico, la explosión derriba al objetivo @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} . </p>\n <hr />\n <p> <strong> Intensificado (+1) </strong> Elel daño aumenta en 1d8. </p>"
     },
     "Aqueous Orb": {
-      "name": "Orbe Acuoso",
+      "name": "Orbe acuoso",
       "description": "<p> Una esfera de agua de 10 pies (3 m) de diámetro se forma en un espacio ocupado dentro del alcance, o bien en el suelo, o bien en la superficie de un líquido. Cuando Lanzas este conjuro y cada vez que lo Mantienes, puedes hacer rodar el orbe, moviéndolo hasta 10 pies (3 m) a lo largo del suelo o de la superficie de un líquido. El orbe puede atravesar los espacios de cualesquiera criaturas u obstáculos que no detendrían el flujo del agua. Extingue los fuegos no mágicos que atraviesa si son de su tamaño o menores y hace una prueba de contrarrestar cualquier fuego mágico que atraviesa. Si no consigue contrarrestar un fuego determinado, ya no puede hacerlo mientras dura el conjuro. </p>\n <p> El orbe puede englobar criaturas Grandes o menores si las atraviesa, y puede contener a todas las criaturas que caben en su espacio.Puede tratar de englobar a la misma criatura tan solo una vez por turno, incluso si atraviesa su espacio más de una vez. Cualquier cria- tura Grande o menor cuyo espacio atraviesa el orbe puede hacer una salvación de Reflejos. </p>\n <hr />\n <p> <strong> Éxito </strong> La criatura puede, o bien dejar pasar el orbe (permaneciendo en su espacio o saliendo de la trayectoria de este a un espacio a elección de la criatura), o bien permitir que éste la empuje hasta el final del movimiento del orbe. </p>\n <p> <strong> Fallo </strong> La criatura es englobada por el orbe. Se mueve junto con él y tiene que contener el aliento o empezar a asfixiarse (si no es ca- paz de respirar dentro del agua). Una criatura englobada Mediana o menor y cualquiera que intenta afectar a dicha criatura siguen las reglas normales de las batallas acuáticas (pág. 437). Una criatura englobada Grande suele ser lo suficientemente grande como para que partes de ella sobresalgan del agua, y puede estirar los brazos al exterior. La criatura puede liberarse, o bien Nadando (teniendo éxito en una prueba de @Check[type:athletics|traits:action:swim|dc:10]) o bien @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Huyendo} contra tu CD de conjuros. Una criatura liberada sale del espacio del orbe y puedes respirar de inmediato. </p>\n <p> <strong> Fallo crítico </strong> Igual que fallo, pero la criatura no puede Nadar para liberarse. </p>"
     },
     "Arcane Countermeasure": {
@@ -549,8 +549,8 @@
       "description": "<p> Existes en dos lugares a la vez. Cuando lanzas el hechizo, aparece otra copia de ti mismo en un cuadrado adyacente. Durante la duración de la bilocación, cada vez que actúan, pueden elegir cuál de ustedes lo hace, y cada vez que uno de ustedes usa una acción de movimiento, ambos pueden moverse. Ambos comparten puntos de vida y cualquier condición o efecto en uno afecta a ambos. Si ambos están en el área del mismo efecto, o son objetivo del mismo efecto multiobjetivo, solo te verás afectado una vez. InclusoSi te reducen a 0 puntos de vida o te matan, ambos permanecen hasta que expire la duración. Su vínculo continúa a cualquier distancia, incluso a través de límites planos. Puedes descartar el hechizo y, si lo haces, eliges cuál de los yo se desvanece y cuál se convierte en ti, permitiéndote liberar a uno de ti de una situación peligrosa. </p>"
     },
     "Bind Undead": {
-      "name": "Vincular Muertos Vivientes",
-      "description": "<p> Mediante una palabra de poder, tomas el control del objetivo. Éste obtiene el rasgo esbirro. Si tú o un aliado tuyo utilizáis cualquier otra acción hostil contra el objetivo, el conjuro se acaba. </p>\n <p> @UUID[Compendium.pf2e.spell-effects.Item.rVkUzqS4rpZp9LS3]{Efecto de Conjuro: Vincular Muertos Vivientes} </p>",
+      "name": "Vincular muertos vivientes",
+      "description": "<p>Mediante una palabra de poder, tomas el control del objetivo. Éste obtiene el rasgo esbirro. Si tú o un aliado tuyo utilizáis cualquier otra acción hostil contra el objetivo, el conjuro se acaba.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.rVkUzqS4rpZp9LS3]{Efecto de conjuro: Vincular muertos vivientes}</p>",
       "target": "1 criatura muerta viviente descerebrada cuyo nivel no es mayor que el rango del conjuro atar muertos vivientes."
     },
     "Binding Circle": {
@@ -616,7 +616,7 @@
       "description": "<p> Un rayo de luz ardiente en forma de cimitarra brota de tu mano libre. Mientras dura el hechizo, puedes usar una sola acción, que tiene los rasgos de ataque y concentración, para quemar a tus enemigos con la <em> hoja ardiente </em>. Cuando lo hagas, haz una tirada de ataque con hechizos. Con éxito, la <em> hoja ardiente </em> inflige 1d6 de daño de fuego más 1d6 de daño espiritual más tu modificador de habilidad de lanzamiento de hechizos. Con un éxito crítico, causa el doble del daño habitual. </p><hr />\n <p> <strong> Intensificado (4º) </strong> El daño por fuego de la hoja aumenta a 2d6. En caso de éxito crítico, el objetivo sufre @Damage[(ternary(gte(@item.level,8),3,ternary(gte(@item.level,6),2,1)))d6[persistent,spirit]] de daño. </p>\n <p> <strong> Incrementado (6º) </strong> El daño por fuego de la hoja aumenta a 3d6. Con un éxito crítico, el objetivo sufre 2d6 de daño espiritual persistente. </p>\n <p> <strong> Intensificado (8º) </strong> El daño por fuego de la hoja aumenta a 4d6. En caso de éxito crítico, elEl objetivo sufre 3d6 de daño espiritual persistente. </p>"
     },
     "Blazing Bolt": {
-      "name": "Virote Ardiente",
+      "name": "Virote ardiente",
       "description": "<p> Disparas un rayo de calor y llamas. Haz una tirada de ataque de conjuros contra una sola criatura. Con un impacto, el objetivo sufre 2d6 daño por fuego y, con un impacto crítico, doble daño. </p>\n <p> Por cada acción adicional que utilizas al Lanzar el conjuro, puedes disparar un rayo adicional a un objetivo diferente, hasta un máximo de 3 rayos que designan como objetivo a tres objetivos diferentes para 3 acciones. Cada uno de dichos ataques incrementa tu penalizador por ataque múltiple, pero no lo incrementa hasta después de haber hecho todas las tiradas de ataque para este conjuro. Si dedicas 2 o más acciones a Lanzar el conjuro, el daño se incrementa a 4d6 daño por fuego con un impacto, y sigues infligiendo doble daño con un impacto crítico. </p>\n <hr />\n <p> <strong> Potenciado (+1) </strong> El daño para cada objetivo se incrementa en 1d6 para la versión de 1 acción o en 2d6 para las versiones de 2 y 3 acciones. </p>",
       "spellVariants": {
         "hqiwae0wgehycnex": {
@@ -693,7 +693,7 @@
     },
     "Blindness": {
       "name": "Ceguera",
-      "description": "<p> Ciegas al objetivo. El efecto está determinado por la salvación de Fortaleza del objetivo. Luego, el objetivo se vuelve temporalmente inmune durante 1 minuto. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> El objetivo no se ve afectado. </p>\n <p> <strong> Éxito </strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} hasta que comience su siguiente turno. </p>\n <p> <strong> Fallo </strong> El objetivo queda cegado durante 1 minuto. </p><p> <strong> Fallo crítico </strong> El objetivo queda cegado permanentemente. </p>",
+      "description": "<p>Dejas ciego al objetivo. Los efectos vienen determinados por una salvación de Reflejos del mismo. A continuación, queda temporalmente inmune durante 1 minuto.</p>\n<hr />\n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado.</p>\n<p><strong>Éxito</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} hasta que empieza su siguiente turno.</p>\n<p><strong>Fallo</strong> El objetivo queda cegado durante 1 minuto.</p>\n<p><strong>Fallo crítico</strong> El objetivo queda cegado permanentemente.</p>",
       "target": "1 criatura"
     },
     "Blink Charge": {
@@ -722,8 +722,8 @@
       "target": "1 criatura"
     },
     "Blood Vendetta": {
-      "name": "Vendetta de Sangre",
-      "description": "<p> <strong> Requisitos </strong> Puedes sangrar </p>\n <p> <strong> Desencadenante </strong> Una criatura te inflige daño perforante, cortante o persistente por sangrado </p>\n <hr />\n <p> Maldices al objetivo, castigándole por haber tenido la audacia de derramar tu sangre. El objetivo sufre @Damage[2d6[bleed]] daño y tiene que hacer una salvación de Voluntad. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> El objetivo no resulta afectado.</p>\n <p> <strong> Éxito </strong> El sujeto sufre mitad daño persistente por sangrado. </p>\n <p> <strong> Fallo </strong> El sujeto sufre daño completo persistente por sangrado. Hasta que se detiene el sangrado, el objetivo tiene debilidad 1 al daño perforante y cortante. @UUID[Compendium.pf2e.spell-effects.Item.buXx8Azr4BYWPtFg]{Efecto de Conjuro: Vendetta de Sangre (Fallo)} </p>\n <p> <strong> Fallo crítico </strong> Igual que fallo, pero el objetivo sufre doble daño persistente por sangrado. </p><hr />\n <p> <strong> Potenciado (+2) </strong> El daño persistente por sangrado se incrementa en @Damage[2d6[bleed]]. </p>",
+      "name": "Vendetta de sangre",
+      "description": "<p><strong>Requisitos</strong> Puedes sangrar </p>\n<p><strong>Desencadenante</strong> Una criatura te inflige daño perforante, cortante o persistente por sangrado </p>\n<hr />\n<p>Maldices al objetivo, castigándole por haber tenido la audacia de derramar tu sangre. El objetivo sufre @Damage[2d6[bleed]]{2d6 daño persistente por sangrado} y tiene que hacer una salvación de Voluntad.</p>\n<hr />\n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado.</p>\n<p><strong>Éxito</strong> El sujeto sufre mitad daño persistente por sangrado. </p>\n<p><strong>Fallo</strong> El sujeto sufre daño completo persistente por sangrado. Hasta que se detiene el sangrado, el objetivo tiene debilidad 1 al daño perforante y cortante. @UUID[Compendium.pf2e.spell-effects.Item.buXx8Azr4BYWPtFg]{Efecto de conjuro: Vendetta de sangre (Fallo)} </p>\n<p><strong>Fallo crítico</strong> Igual que fallo, pero el objetivo sufre doble daño persistente por sangrado. </p><hr />\n<p><strong>Potenciado (+2)</strong> El daño persistente por sangrado se incrementa en @Damage[2d6[bleed]].</p>",
       "requirements": "Puedes sangrar",
       "target": " la criatura desencadenante"
     },
@@ -752,8 +752,8 @@
       "target": "1 hoja final"
     },
     "Blur": {
-      "name": "Contorno Borroso",
-      "description": "<p> La forma del objetivo aparece borrosa. Se convierte en @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} . Como la naturaleza de este efecto aún deja obvia la ubicación del objetivo, el objetivo no puede usar esta ocultación para esconderse o escabullirse. </p>",
+      "name": "Contorno borroso",
+      "description": "<p>La forma del objetivo aparece borrosa. Se convierte en @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto}. Como la naturaleza de este efecto aún deja obvia la ubicación del objetivo, el objetivo no puede usar esta ocultación para esconderse o escabullirse.</p>",
       "target": "1 criatura"
     },
     "Boil Blood": {
@@ -1141,7 +1141,7 @@
     },
     "Clairaudience": {
       "name": "Clariaudiencia",
-      "description": "<p> Creas una oreja flotante invisible en un lugar dentro del alcance (incluso si está fuera de tu línea visual o de efecto). No se puede mover, pero puedes oír a través de la misma como si utilizaras tus sentidos auditivos normales. </p>"
+      "description": "<p>Creas una oreja flotante @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} en un lugar dentro del alcance (incluso si está fuera de tu línea visual o de efecto). No se puede mover, pero puedes oír a través de la misma como si utilizaras tus sentidos auditivos normales.</p>"
     },
     "Clairvoyance": {
       "name": "Clarividencia",
@@ -1459,7 +1459,7 @@
       "description": "<p>Te inspiras a ti mismo y a tus aliados con palabras o canciones de ánimo. Tú y todos tus aliados en el área obtenéis un bonificador +1 por estatus a las tiradas de ataque, tiradas de daño y salvaciones contra los efectos de miedo.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.beReeFroAx24hj83]{Efecto de conjuro: Himno valeroso}</p>"
     },
     "Cozy Cabin": {
-      "name": "Cabaña Acogedora",
+      "name": "Cabaña acogedora",
       "description": "<p> Das forma a una cabaña de 20 pies (6 m) de lado y 10 pies (3 m) de altura. Esta cabaña tiene el rasgo estructura y las mismas restricciones que los objetos mágicos que crean estructuras. Las paredes de la cabaña son sencillas y de madera, con ventanitas cuadradas de vidrio y está provista de una puerta de madera. La puerta no incluye cerradura, pero tiene un cierre al que se puede aplicar una. </p>\n <p> El interior contiene tres catres, un orinal y una fogata pequeña que alberga un fuego mágico. El interior está iluminado por una pequeña luz mágica que puedes encender o apagar a voluntad utilizando una acción de Mantener. El clima del interior de la cabaña es cómodo y permite que las criaturas de dentro resistan la mayor parte de condiciones climatológicas hostiles, pero un calor o un frío increíbles, tormentas poderosas y vientos de fuerza huracán o superior la destruyen. Otras criaturas pueden entrar y salir libremente de la cabaña sin dañarla, pero si eres tú quien sale, el conjuro se acaba. Puedes Disipar el conjuro. </p>"
     },
     "Crashing Wave": {
@@ -1474,8 +1474,8 @@
       "secondarycheck": "Arcanos, Naturaleza, Ocultismo, Religión (los tres que no se utilicen para la comprobación principal)"
     },
     "Create Food": {
-      "name": "Crear Comida",
-      "description": "<p> Creas suficiente comida como para alimentar a 6 criaturas Medianas durante 1 día. Dicha comida es insípida y poco apetitosa, pero nutritiva. Al cabo de 1 día, si nadie se la ha comido, se descompone y se vuelve incomestible. La mayoría de criaturas Pequeñas comen la cuarta parte que una criatura Mediana (y la decimosexta parte para la mayoría de criaturas Menudas), y la mayoría de criaturas Grandes comen diez veces más (cien veces más para criaturas Enormes y así sucesivamente) </p>\n <hr />\n <p> <strong> Potenciado (4º) </strong>Puedes alimentar a 12 criaturas Medianas. </p>\n <p> <strong> Potenciado (6º) </strong> Puedes alimentar a 50 criaturas Medianas. </p>\n <p> <strong> Potenciado (8º) </strong> Puedes alimentar a 200 criaturas Medianas. </p>"
+      "name": "Crear comida",
+      "description": "<p>Creas suficiente comida como para alimentar a 6 criaturas Medianas durante 1 día. Dicha comida es insípida y poco apetitosa, pero nutritiva. Al cabo de 1 día, si nadie se la ha comido, se descompone y se vuelve incomestible. La mayoría de criaturas Pequeñas comen la cuarta parte que una criatura Mediana (y la decimosexta parte para la mayoría de criaturas Menudas), y la mayoría de criaturas Grandes comen diez veces más (cien veces más para criaturas Enormes y así sucesivamente)</p>\n<hr />\n<p><strong>Potenciado (4.º)</strong> Puedes alimentar a 12 criaturas Medianas.</p>\n<p><strong>Potenciado (6.º)</strong> Puedes alimentar a 50 criaturas Medianas.</p>\n<p><strong>Potenciado (8.º)</strong> Puedes alimentar a 200 criaturas Medianas.</p>"
     },
     "Create Mycoguardian": {
       "name": "Crear Micoguardián",
@@ -1634,11 +1634,11 @@
     },
     "Darkness": {
       "name": "Oscuridad",
-      "description": "<p> Creas un velo de oscuridad que impide que la luz penetre o emane dentro del área. La luz no ingresa al área y cualquier fuente de luz no mágica, como una antorcha o linterna, no emana ninguna luz mientras está dentro del área, incluso si su radio de luz se extiende más allá de la oscuridad. Esto también suprime la luz mágica del rango de tu hechizo de oscuridad o inferior. La luz no puede pasar, por lo que las criaturas en el área no pueden ver el exterior. Desde fuera parece un globo depura oscuridad. </p>\n <hr />\n <p> <strong> Mayor (4to) </strong> Incluso las criaturas con visión en la oscuridad (pero no con visión en la oscuridad mayor) apenas pueden ver a través de la oscuridad. Tratan a los objetivos vistos a través de la oscuridad como @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} . </p>"
+      "description": "<p> Creas un sudario de oscuridad que evita que la luz entre en el área o emane de ella. La luz no entra en el área y cualquier fuente de luz no mágica, como por ejemplo una antorcha o una linterna, no emana luz alguna en su interior, incluso si su radio se podría extender más allá de la oscuridad. Esto suprime también la luz mágica del mismo rango o inferior que tu conjuro de oscuridad. La luz no puede atravesarla, por lo que las criaturas del área no pueden ver el exterior. Desde fuera, parece un globo de oscuridad total.</p>\n<hr />\n<p><strong>Potenciado (4.º)</strong> Ni siquiera las criaturas con visión en la oscuridad (pero no visión en la oscuridad mayor) pueden apenas ver a través de la oscuridad. Tratan a los objetivos vistos a través de la oscuridad como si estuvieran @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Ocultos}.</p>"
     },
     "Darkvision": {
-      "name": "Visión en la Oscuridad",
-      "description": "<p> Te concedes a ti mismo una visión sobrenatural en áreas de oscuridad. Obtienes visión en la oscuridad. </p>\n <p> @UUID[Compendium.pf2e.spell-effects.Item.IXS15IQXYCZ8vsmX]{Efecto de Conjuro: Visión en la Oscuridad} </p>\n <p> @UUID[Compendium.pf2e.spell-effects.Item.inNfTmtWpsxeGBI9]{Efecto de Conjuro: Visión en la Oscuridad (24 horas)} </p>\n <hr />\n <p> <strong> Potenciado (3º) </strong> El alcance del conjuro es toque y tiene como objetivo 1 criatura voluntaria. </p>\n <p> <strong> Potenciado (5º) </strong> El alcance del conjuro es toque y tiene como objetivo 1 criatura voluntaria. La duración es hasta tus siguientes preparativos diarios. </p>",
+      "name": "Visión en la oscuridad",
+      "description": "<p>Te concedes a ti mismo una visión sobrenatural en áreas de oscuridad. Obtienes visión en la oscuridad.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.IXS15IQXYCZ8vsmX]{Efecto de conjuro: Visión en la oscuridad}</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.inNfTmtWpsxeGBI9]{Efecto de conjuro: Visión en la oscuridad (24 horas)}</p>\n<hr />\n<p><strong>Potenciado (3.º)</strong> El alcance del conjuro es toque y tiene como objetivo 1 criatura voluntaria.</p>\n<p><strong>Potenciado (5.º)</strong> El alcance del conjuro es toque y tiene como objetivo 1 criatura voluntaria. La duración es hasta tus siguientes preparativos diarios.</p>",
       "heightening": {
         "3": {
           "target": "1 criatura voluntaria"
@@ -1676,7 +1676,7 @@
     },
     "Deafness": {
       "name": "Sordera",
-      "description": "<p> El objetivo pierde la audición; debe intentar una salvación de Fortaleza. Luego, el objetivo queda temporalmente inmune durante 1 minuto. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> El objetivo no se ve afectado. </p>\n <p> <strong> Éxito </strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido} durante 1 ronda. </p>\n <p> <strong> Fallo </strong> El objetivo queda ensordecido durante 10 minutos. </p>\n <p> <strong> CríticoFallo </strong> El objetivo queda ensordecido permanentemente. </p>",
+      "description": "<p>El objetivo pierde la capacidad de oír. Tiene que hacer una salvación de Fortaleza y después queda temporalmente inmune durante 1 minuto.</p>\n<hr />\n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado.</p>\n<p><strong>Éxito</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido} durante 1 asalto.</p>\n<p><strong>Fallo</strong> El objetivo queda ensordecido durante 10 minutos.</p>\n<p><strong>Fallo crítico</strong> El objetivo queda ensordecido permanentemente.</p>",
       "target": "1 criatura"
     },
     "Death Knell": {
@@ -1901,8 +1901,8 @@
       "target": "1 objeto no mágico en tu posesión de 1 Bulk o menos"
     },
     "Dispel Magic": {
-      "name": "Disipar Magia",
-      "description": "<p> Descoses la magia que hay tras un conjuro o efecto. Haz una prueba de contrarrestar contra el objetivo (pág. 431). Si contrarrestas con éxito un objeto mágico, se convierte en un objeto mundano de su tipo durante 10 minutos. Esto no cambia las propiedades no mágicas del objeto Si el objetivo es un artefacto u objeto similar, fallas automáticamente. </p>",
+      "name": "Disipar magia",
+      "description": "<p>Descoses la magia que hay tras un conjuro o efecto. Haz una prueba de contrarrestar contra el objetivo. Si contrarrestas con éxito un objeto mágico, se convierte en un objeto mundano de su tipo durante 10 minutos. Esto no cambia las propiedades no mágicas del objeto Si el objetivo es un artefacto u objeto similar, fallas automáticamente. </p>",
       "target": "1 efecto de conjuro u objeto mágico desatendido"
     },
     "Dispelling Globe": {
@@ -2143,8 +2143,8 @@
       "target": "hasta 12 criaturas que conoces por su nombre y que has conocido en persona"
     },
     "Dream Message": {
-      "name": "Mensaje Onírico",
-      "description": "<p> Envías un mensaje a los sueños de tu objetivo. El mensaje tiene un solo sentido, y su duración máxima es de un minuto de habla (aproximadamente 150 palabras). Si el objetivo está dormido, recibe el mensaje de inmediato. Si no, lo recibe la siguiente vez que duerme. En cuanto lo recibe, el conjuro acaba y sabes que el mensaje ha sido enviado. </p>\n <hr />\n <p> <strong> Potenciado (4º) </strong> Puedes designar como objetivo hasta 10 criaturas \ncuyo nombre conoces y con las que te has reunido en persona. Tienes que enviarles a todas el mismo mensaje; el conjuro acaba para cada criatura individualmente. </p>",
+      "name": "Mensaje onírico",
+      "description": "<p>Envías un mensaje a los sueños de tu objetivo. El mensaje tiene un solo sentido, y su duración máxima es de un minuto de habla (aproximadamente 150 palabras). Si el objetivo está dormido, recibe el mensaje de inmediato. Si no, lo recibe la siguiente vez que duerme. En cuanto lo recibe, el conjuro acaba y sabes que el mensaje ha sido enviado.</p>\n<hr />\n<p><strong>Potenciado (4.º)</strong> Puedes designar como objetivo hasta 10 criaturas \ncuyo nombre conoces y con las que te has reunido en persona. Tienes que enviarles a todas el mismo mensaje; el conjuro acaba para cada criatura individualmente.</p>",
       "heightening": {
         "4": {
           "target": "10 criaturas cuyo nombre conoces y con las que te has reunido en persona"
@@ -2192,7 +2192,7 @@
       "target": "1 criatura"
     },
     "Earthbind": {
-      "name": "Ligadura Terrestre",
+      "name": "Ligadura terrestre",
       "description": "<p>Utilizando el peso de la tierra, perturbas el vuelo del objetivo, con efectos que se basan en su salvación de Fortaleza. Si la criatura llega al suelo de forma segura, no sufre daño por caída.</p>\n <hr />\n <p> <strong> Éxito crítico </strong> El objetivo no resulta afectado. </p>\n <p> <strong> Éxito </strong> El objetivo cae de forma segura hasta 120 pies (36 m). </p>\n <p> <strong> Fallo </strong> El objetivo cae de forma segura hasta 120 pies (36 m). Si llega \nal suelo, no puede Volar, levitar o abandonar el suelo de ninguna otra forma durante 1 asalto. </p>\n <p> <strong> Fallo crítico </strong> El objetivo cae de forma segura hasta 120 pies (36 m). Si llega al suelo, no puede Volar, levitar o abandonar el suelo de ninguna otra forma durante 1 minuto. </p>",
       "target": "1 criatura voladora"
     },
@@ -2378,8 +2378,8 @@
       "target": "1 criatura"
     },
     "Embed Message": {
-      "name": "Incrutar Mensaje",
-      "description": "<p> Especificas un desencadenante y un mensaje de hasta 25 palabras de longitud. Cuando el desencadenante especificado tiene lugar a 30 pies (9 m) o menos del objetivo, un texto ilusorio de tu mensaje rodea al objetivo acompañado por una voz incorporal. Puedes elegir un idioma de los que conoces para el texto y la voz y puedes elegir cómo suena ésta. Una vez completado el mensaje, el conjuro se acaba. </p>\n <hr />\n <p> <strong> Potenciado (4º) </strong> Puedes añadir un componente sensorial sencillo para \nenfatizar el mensaje, como por ejemplo un olor, un efecto visual o una sensación física. Esta adición es obviamente ilusoria y parte del mensaje, y sólo dura mientras el mensaje está siendo leído. </p>\n <p> <strong> Potenciado (6º) </strong> Como en 4.º rango, pero puedes elegir cuántas veces se repite el mensaje antes de que se acabe el conjuro; no hay límite al número de repeticiones. </p>",
+      "name": "Incrustar mensaje",
+      "description": "<p>Especificas un desencadenante y un mensaje de hasta 25 palabras de longitud. Cuando el desencadenante especificado tiene lugar a 30 pies (9 m) o menos del objetivo, un texto ilusorio de tu mensaje rodea al objetivo acompañado por una voz incorporal. Puedes elegir un idioma de los que conoces para el texto y la voz y puedes elegir cómo suena ésta. Una vez completado el mensaje, el conjuro se acaba.</p>\n<hr />\n<p><strong>Potenciado (4.º)</strong> Puedes añadir un componente sensorial sencillo para \nenfatizar el mensaje, como por ejemplo un olor, un efecto visual o una sensación física. Esta adición es obviamente ilusoria y parte del mensaje, y sólo dura mientras el mensaje está siendo leído. </p>\n<p><strong>Potenciado (6.º)</strong> Como en 4.º rango, pero puedes elegir cuántas veces se repite el mensaje antes de que se acabe el conjuro; no hay límite al número de repeticiones. </p>",
       "target": "1 objeto o criatura voluntaria"
     },
     "Embrace Nothingness": {
@@ -2456,7 +2456,7 @@
     },
     "Enlarge": {
       "name": "Agrandar",
-      "description": "<p> Reforzado por el poder mágico, el objetivo crece hasta tamaño Grande. Su equipo crece con él, pero vuelve a tamaño natural si se lo quita. La criatura es @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} . Su alcance se incrementa en 5 pies (1,5 m), o en 10 pies (3 m) si empieza en tamaño Menudo, y obtiene un bonificador +2 por estatus al daño cuerpo a cuerpo. Este conjuro no surte efecto en una criatura Grande o mayor. </p>\n <p> @UUID[Compendium.pf2e.spell-effects.Item.sPCWrhUHqlbGhYSD]{Efecto de Conjuro: Agrandar} </p>\n <hr />\n <p> <strong> Potenciado (4º) </strong> En su lugar, la criatura crece hasta tamaño Enorme. El bonificador por estatus al daño cuerpo a cuerpo es +4 y el alcance de la criatura se incrementa en 10 pies (3 m), o en 15 pies (4,5 m) si empieza en tamaño Menudo. Este conjuro no surte efecto en una criatura Enorme o mayor. </p>\n <p> <strong> Potenciado (6º) </strong> Elige entre la versión de 2.º o de 4.º rango de este conjuro y aplica sus efectos hasta a 10 criaturas voluntarias. </p>",
+      "description": "<p>Reforzado por el poder mágico, el objetivo crece hasta tamaño Grande. Su equipo crece con él, pero vuelve a tamaño natural si se lo quita. La criatura es @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1}. Su alcance se incrementa en 5 pies (1,5 m), o en 10 pies (3 m) si empieza en tamaño Menudo, y obtiene un bonificador +2 por estatus al daño cuerpo a cuerpo. Este conjuro no surte efecto en una criatura Grande o mayor.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.sPCWrhUHqlbGhYSD]{Efecto de conjuro: Agrandar} </p>\n<hr />\n<p><strong>Potenciado (4.º)</strong> En su lugar, la criatura crece hasta tamaño Enorme. El bonificador por estatus al daño cuerpo a cuerpo es +4 y el alcance de la criatura se incrementa en 10 pies (3 m), o en 15 pies (4,5 m) si empieza en tamaño Menudo. Este conjuro no surte efecto en una criatura Enorme o mayor. </p>\n<p><strong>Potenciado (6.º)</strong> Elige entre la versión de 2.º o de 4.º rango de este conjuro y aplica sus efectos hasta a 10 criaturas voluntarias. </p>",
       "heightening": {
         "6": {
           "target": "10 criaturas voluntarias"
@@ -2475,12 +2475,12 @@
       "target": "2 a 4 criaturas dentro del alcance"
     },
     "Entangling Flora": {
-      "name": "Flora Enmarañante",
-      "description": "<p> Las plantas y los hongos brotan o crecen rápidamente, enredando a las criaturas. Todas las superficies de la zona son terrenos difíciles. Cada ronda en la que una criatura comienza su turno en el área, debe intentar una salvación de Reflejos. En caso de fallo, sufre una penalización de circunstancia de –10 pies a su Velocidad hasta que abandona el área, y en caso de fallo crítico, también es @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} durante 1 ronda. Las criaturas pueden intentar @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} para eliminar estos efectos. </p>\n <p> @UUID[Compendium.pf2e.spell-effects.Item.rjM25qfw5BKj9h97]{Spell Effect: Entangling Flora} </p>"
+      "name": "Flora enmarañante",
+      "description": "<p>Plantas y hongos surgen de forma espontánea o crecen rápidamente, enmarañando a las criaturas. Todas las superficies en el área se convierten en terreno difícil. Cada asalto que una cria\ntura empieza su turno en el área tiene que hacer una salvación de Reflejos. Con un fallo, sufre un penalizador -10 pies (3 m) por circunstancia a sus velocidades hasta que abandona el área y, \ncon un fallo crítico, queda también @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} durante 1 asalto. Las criaturas pueden hacer una prueba de @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Huir} para eliminar estos efectos.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.rjM25qfw5BKj9h97]{Efecto de conjuro: Flora enmarañante}</p>"
     },
     "Enthrall": {
       "name": "Cautivar",
-      "description": "<p> Tus palabras fascinan a tus objetivos. Hablas o cantas sin interrupción durante todo el casting y duración. Los objetivos que noten su discurso o canción podrían prestarle toda su atención; cada objetivo debe intentar una salvación de Voluntad. El DJ podría otorgar una bonificación de circunstancia (hasta un máximo de +4) si el objetivo es de una religión, ascendencia o inclinación política opuesta, o si es poco probable que esté de acuerdo con lo que estás diciendo. </p>\n\n <p> Cada criatura que entra dentro del alcance tienepara intentar salvar cuando sostienes el hechizo. Si estás hablando, cautivar gana el rasgo lingüístico. </p>\n\n <hr />\n <p> <strong> Éxito crítico </strong> El objetivo no se ve afectado y se da cuenta de que intentaste usar magia. </p>\n <p> <strong> Éxito </strong> El objetivo no necesita prestar atención pero no se da cuenta de que intentaste usar magia (podría notar que otros están cautivados). </p>\n <p> <strong> Fracaso </strong> ElEl objetivo es @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} contigo. Puede intentar otra salvación de Voluntad si es testigo de acciones o palabras con las que no está de acuerdo. Si tiene éxito, ya no estará fascinado y quedará temporalmente inmune durante 1 hora. Si el objetivo es objeto de un acto hostil, o si otra criatura tiene éxito en una prueba de Diplomacia o Intimidación contra él, la fascinación termina inmediatamente. </p>\n <p> <strong> Fallo crítico </strong> Como fallo, pero el objetivo no puede intentar salvarPon fin a la fascinación si no te conviene. </p>",
+      "description": "<p> Tus palabras fascinan a tus objetivos. Hablas o cantas sin interrupción durante todo el casting y duración. Los objetivos que noten su discurso o canción podrían prestarle toda su atención; cada objetivo debe intentar una salvación de Voluntad. El DJ podría otorgar una bonificación de circunstancia (hasta un máximo de +4) si el objetivo es de una religión, ascendencia o inclinación política opuesta, o si es poco probable que esté de acuerdo con lo que estás diciendo. </p>\n <p> Cada criatura que entra dentro del alcance tienepara intentar salvar cuando sostienes el hechizo. Si estás hablando, cautivar gana el rasgo lingüístico. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> El objetivo no se ve afectado y se da cuenta de que intentaste usar magia. </p>\n <p> <strong> Éxito </strong> El objetivo no necesita prestar atención pero no se da cuenta de que intentaste usar magia (podría notar que otros están cautivados). </p>\n <p> <strong> Fracaso </strong> ElEl objetivo es @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} contigo. Puede intentar otra salvación de Voluntad si es testigo de acciones o palabras con las que no está de acuerdo. Si tiene éxito, ya no estará fascinado y quedará temporalmente inmune durante 1 hora. Si el objetivo es objeto de un acto hostil, o si otra criatura tiene éxito en una prueba de Diplomacia o Intimidación contra él, la fascinación termina inmediatamente. </p>\n <p> <strong> Fallo crítico </strong> Como fallo, pero el objetivo no puede intentar salvarPon fin a la fascinación si no te conviene. </p>",
       "target": "todas las criaturas dentro del alcance"
     },
     "Entrancing Eyes": {
@@ -2502,8 +2502,8 @@
       "target": "tu compañero o eidolon"
     },
     "Environmental Endurance": {
-      "name": "Aguante Ambiental",
-      "description": "<p> Escudas al objetivo contra las temperaturas peligrosas. Elige entre frío o calor severos. El objetivo queda protegido de la temperatura que has elegido (pero no del frío o del calor extremos). </p>\n <hr />\n <p> <strong> Potenciado (3º) </strong> El objetivo queda protegido del frío y del calor severos. </p>\n <p> <strong> Potenciado (5º) </strong> El objetivo queda protegido del frío severo, del calor severo, del frío extremo y del calor extremo. </p>",
+      "name": "Aguante ambiental",
+      "description": "<p>Escudas al objetivo contra las temperaturas peligrosas. Elige entre frío o calor severos. El objetivo queda protegido de la temperatura que has elegido (pero no del frío o del calor extremos).</p>\n<hr />\n<p><strong>Potenciado (3.º)</strong> El objetivo queda protegido del frío y del calor severos.</p>\n<p><strong>Potenciado (5.º)</strong> El objetivo queda protegido del frío severo, del calor severo, del frío extremo y del calor extremo.</p>",
       "target": "1 criatura voluntaria"
     },
     "Ephemeral Hazards": {
@@ -2574,8 +2574,8 @@
       "description": "<p> Ves la muerte no como un final sino como un comienzo, y te deleitas bailando al borde de ella. Cada vez que alcanzas la condición de agonizante y luego recuperas la conciencia mientras estás bajo el efecto de la renovación eufórica, obtienes tres beneficios. </p>\n <ul>\n <li> Estás @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Acelerado} en tu próximo turno. Puedes usar la acción adicional solo para plantarte. </li>\n <li> Obtienes una bonificación de circunstancia +1 a las salvaciones durante 1 minuto. </li>\n <li> Ganas 8Puntos de vida temporales que duran 1 minuto. </li>\n </ul>\n <p> @UUID[Compendium.pf2e.spell-effects.Item.16QrxIYal7PJFL2W]{Spell Effect: Euphoric Renewal} </p>\n <hr />\n <p> <strong> Incrementado (+1) </strong> El número de HP temporales aumenta en 2. </p>"
     },
     "Everlight": {
-      "name": "Luz Eterna",
-      "description": "<p> La piedra preciosa que tocas brilla, extendiendo luz brillante con un color a tu elección en un radio de 20 pies (6 m) y luz tenue los siguientes 20 pies (6 m). El conjuro se acaba de inmediato si la piedra preciosa se rompe. </p>\n <p> @UUID[Compendium.pf2e.spell-effects.Item.hpbCDbDOoVyhOmck]{Efecto de Conjuro: Luz Eterna} </p>",
+      "name": "Luz eterna",
+      "description": "<p>La piedra preciosa que tocas brilla, extendiendo luz brillante con un color a tu elección en un radio de 20 pies (6 m) y luz tenue los siguientes 20 pies (6 m). El conjuro se acaba de inmediato si la piedra preciosa se rompe.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.hpbCDbDOoVyhOmck]{Efecto de conjuro: Luz eterna}</p>",
       "target": "una piedra preciosa que vale 6 po o más"
     },
     "Evil Eye": {
@@ -2709,8 +2709,8 @@
       "description": "<p> Creas una falsa imagen que engaña a cualquier intento de escudriñar en un área. Cualquier conjuro de escudriñamiento ve, oye, huele y detecta de cualquier otra forma lo que tú quieres que detecte en el interior del área, en lugar de lo que realmente hay. Puedes Mantener el conjuro cada asalto para cambiar la ilusión como desees, incluyendo interpretar una escena compleja. Si el conjuro de escudriñamiento es de un rango superior a <em>falsa visión</em> , quien lo lanza puede hacer una prueba de Percepción para describir la ilusión, aunque incluso si tiene éxito no puede averiguar lo que sucede realmente en el área. </p>"
     },
     "False Vitality": {
-      "name": "Falsa Vitalidad",
-      "description": "<p> Potencias tu carne con las energías típicamente utilizadas para manipular a los muertos vivientes. Obtienes 10 Puntos de Golpe temporales. </p>\n <hr />\n <p> <strong> Potenciado (+1) </strong> Los Puntos de Golpe temporales se incrementan en 3. </p>\n <p> @UUID[Compendium.pf2e.spell-effects.Item.PANUWN5xXC20WBg2]{Efecto de Conjuro: Falsa Vitalidad} </p>"
+      "name": "Falsa vitalidad",
+      "description": "<p>Potencias tu carne con las energías típicamente utilizadas para manipular a los muertos vivientes. Obtienes 10 Puntos de Golpe temporales.</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> Los Puntos de Golpe temporales se incrementan en 3.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.PANUWN5xXC20WBg2]{Efecto de conjuro: Falsa vitalidad}</p>"
     },
     "Falsify Heat": {
       "name": "Falsificar el calor",
@@ -2816,8 +2816,8 @@
       "secondarycheck": "Deception or Thievery"
     },
     "Feet to Fins": {
-      "name": "Pies a Aletas",
-      "description": "<p> Los pies del objetivo se transforman en aletas, mejorando su movilidad en el agua pero reduciéndola en tierra firme. El objetivo obtiene una Velocidad de nado igual a su Velocidad normal en tierra, pero ésta última queda reducida a 5 pies (1,5 m). </p>\n <hr />\n <p> <strong> Potenciado (6º) </strong> El conjuro dura hasta tus siguientes preparativos diarios.</p>",
+      "name": "Pies a aletas",
+      "description": "<p>Los pies del objetivo se transforman en aletas, mejorando su movilidad en el agua pero reduciéndola en tierra firme. El objetivo obtiene una Velocidad de nado igual a su Velocidad normal en tierra, pero ésta última queda reducida a 5 pies (1,5 m).</p>\n<hr />\n<p><strong>Potenciado (6.º)</strong> El conjuro dura hasta tus siguientes preparativos diarios.</p>",
       "target": "1 criatura voluntaria"
     },
     "Feral Shades": {
@@ -2895,8 +2895,8 @@
       "description": "<p> Entras en un fuego ardiente que es lo suficientemente grande como para caber dentro y te teletransportas instantáneamente a cualquier otro fuego dentro de 5 millas que también tenga un tamaño suficientemente grande. Una vez que ingresa al primer incendio, conoce instantáneamente las ubicaciones aproximadas de otros incendios suficientemente grandes dentro del alcance y puede salir del incendio original, si lo prefiere. No puedes llevar espacios extradimensionales contigo; si intentas hacerlo, el hechizo falla. </p>\n <hr />\n <p> <strong>Intensificado (6º) </strong> El incendio del que sale puede estar a una distancia de hasta 50 millas. </p>\n <p> <strong> Intensificado (8vo) </strong> El incendio del que salgas puede estar a una distancia de hasta 500 millas. </p>\n <p> <strong> Intensificado (9º) </strong> El fuego del que sales puede estar en cualquier parte del mismo planeta. </p>"
     },
     "Fireball": {
-      "name": "Bola de Fuego",
-      "description": "<p> Una rugiente explosión de fuego explota en un lugar designado por ti, infligiendo 6d6 daño por fuego. </p>\n <hr />\n <p> <strong> Potenciado (+1) </strong> El daño se incrementa en 2d6. </p>"
+      "name": "Bola de fuego",
+      "description": "<p>Una rugiente explosión de fuego explota en un lugar designado por ti, infligiendo 6d6 daño por fuego.</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 2d6.</p>"
     },
     "Fireproof": {
       "name": "Incombustible",
@@ -2960,8 +2960,8 @@
       "description": "<p> Alternas rápidamente entre tu Plano y otro. Obtienes resistencia 5 a todo tipo de daño, excepto fuerza. Al final de cada uno de tus turnos, te teletransportas automáticamente 10 pies (3 m) en una dirección aleatoria, a determinar por el DJ. Puedes Mantener el conjuro para teletransportarte de esta forma. </p>\n <p> @UUID[Compendium.pf2e.spell-effects.Item.ZlsuhS9J0S3PuvCO]{Efecto de Conjuro: Parpadeo} </p>\n <hr />\n <p> <strong> Potenciado (+2) </strong> La resistencia se incrementa en 3. </p>"
     },
     "Floating Flame": {
-      "name": "Llama Flotante",
-      "description": "<p> Creas un fuego que arde sin combustible y se mueve siguiendo tus órdenes. La llama inflige 3d6 daño por fuego a toda criatura que está en la casilla en que aparece, con una salvación básica de Reflejos. Cuando Mantienes este conjuro, puedes hacer levitar la llama hasta 10 pies (3 m). A continuación inflige daño a cada criatura cuyo espacio ha compartido en cualquier punto de su vuelo. Esto utiliza los mismos salvación y daño, y sólo tiras éste cada vez que Mantienes. Una criatura dada sólo puede sufrir daño de <em>llama flotante</em> una vez por asalto. </p>\n <hr />\n <p> <strong> Potenciado (+1) </strong> El daño se incrementa en 1d6. </p>"
+      "name": "Llama flotante",
+      "description": "<p> Creas un fuego que arde sin combustible y se mueve siguiendo tus órdenes. La llama inflige 3d6 daño por fuego a toda criatura que está en la casilla en que aparece, con una salvación básica de Reflejos. Cuando Mantienes este conjuro, puedes hacer levitar la llama hasta 10 pies (3 m). A continuación inflige daño a cada criatura cuyo espacio ha compartido en cualquier punto de su vuelo. Esto utiliza los mismos salvación y daño, y sólo tiras éste cada vez que Mantienes. Una criatura dada sólo puede sufrir daño de <em>llama flotante</em> una vez por asalto. </p>\n <hr />\n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 1d6.</p>"
     },
     "Flourishing Flora": {
       "name": "Floreciente Flora",
@@ -3201,8 +3201,8 @@
       "target": "1 criatura de un nivel no superior al doble del rango de ritual del <em>geas</em>"
     },
     "Gecko Grip": {
-      "name": "Agarre de Geco",
-      "description": "<p> Unos pelos Menudos y pegajosos brotan en las manos y los pies de la criatura, permitiéndole agarrarse a prácticamente cualquier superficie. El objetivo obtiene una Velocidad de trepar igual a su Velocidad terrestre. </p>\n <hr />\n <p> <strong> Potenciado (5º) </strong> La duración se incrementa a 1 hora.</p>\n <p> @UUID[Compendium.pf2e.spell-effects.Item.qn7uO5Ih01yLJot7]{Efecto de Conjuro: Agarre de Geco} </p>",
+      "name": "Agarre de geco",
+      "description": "<p>Unos pelos Menudos y pegajosos brotan en las manos y los pies de la criatura, permitiéndole agarrarse a prácticamente cualquier superficie. El objetivo obtiene una Velocidad de trepar igual a su Velocidad terrestre.</p>\n<hr />\n<p><strong>Potenciado (5.º)</strong> La duración se incrementa a 1 hora.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.qn7uO5Ih01yLJot7]{Efecto de conjuro: Agarre de geco}</p>",
       "target": "1 criatura"
     },
     "Genie's Veil": {
@@ -3228,7 +3228,7 @@
       "description": "<p> Creas una ilusión auditiva de sonidos simples que tiene un volumen máximo igual al grito de cuatro humanos normales. Los sonidos emanan de un cuadrado que usted designa dentro del alcance. No puedes crear palabras inteligibles u otros sonidos complejos (como la música). </p>\n <hr />\n <p> <strong> Incrementado (3º) </strong> El alcance aumenta a 60 pies. </p>\n <p> <strong> Incrementado (5º) </strong> El alcance aumenta a 120 pies. </p>"
     },
     "Ghostly Carrier": {
-      "name": "Portador Fantasmal",
+      "name": "Portador fantasmal",
       "description": "<p> Creas una figura Menuda y semicorporal con una forma elegida por ti, que flota cerca de ti mientras dura el conjuro. Cuando Lanzas un conjuro con alcance de toque, puedes hacer que el portador se mueva hasta dicho alcance, aplique el conjuro a una criatura de allí y vuelva hasta ti. Si el portador tiene que hacer una tirada de ataque de conjuro, utiliza tus bonificadores normales. El portador tiene tu CA y tus salvaciones, pero es destruido por cualquier cantidad de daño. </p>"
     },
     "Ghostly Shift": {
@@ -3246,8 +3246,8 @@
       "target": "1 criatura"
     },
     "Ghostly Weapon": {
-      "name": "Arma Fantasmal",
-      "description": "<p>El arma objetivo se vuelve translúcida y fantasmal y puede afectar a criaturas y objetos tanto materiales como incorporales. Obtiene los efectos de la runa de propiedad <em> @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Toque Fantasmal} </em>, lo que significa que es mágica si antes no lo era, que es especialmente efectiva contra las criaturas incorporales y que puede ser empuñada por una criatura corporal o incorporal. </p>\n <p> @UUID[Compendium.pf2e.spell-effects.Item.EScdpppYsf9KhG4D]{Efecto de Conjuro: Arma Fantasmal} </p>",
+      "name": "Arma fantasmal",
+      "description": "<p>El arma objetivo se vuelve translúcida y fantasmal y puede afectar a criaturas y objetos tanto materiales como incorporales. Obtiene los efectos de la runa de propiedad <em>@UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Toque fantasmal}</em>, lo que significa que es mágica si antes no lo era, que es especialmente efectiva contra las criaturas incorporales y que puede ser empuñada por una criatura corporal o incorporal.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.EScdpppYsf9KhG4D]{Efecto de conjuro: Arma fantasmal}</p>",
       "target": "1 arma que esté desatendida o empuñada por ti o por un aliado dispuesto"
     },
     "Ghoulish Cravings": {
@@ -3483,7 +3483,7 @@
     },
     "Haste": {
       "name": "Acelerar",
-      "description": " <p> Magic empowers the target to act faster. It gains the  @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]  {Acelerado}  condition and can use the extra action each round only for Strike and Stride actions. </p> \n <hr /> \n <p>  <strong> Heightened (7th) </strong>  You can target up to 6 creatures. </p> \n <p>  @UUID[Compendium.pf2e.spell-effects.Item.ElkXovNrHB0Doi6O]  {Spell Effect: Haste}  </p> ",
+      "description": "<p>La magia potencia al objetivo para que actúe más deprisa. Obtiene el estado acelerado y sólo puede utilizar la acción adicional de cada asalto para acciones de Golpe y de Zancada.</p> \n<hr /> \n<p><strong> Potenciado (7.º)</strong> Puedes designar como objetivo hasta 6 criaturas.</p> \n<p>@UUID[Compendium.pf2e.spell-effects.Item.ElkXovNrHB0Doi6O]{Efecto de conjuro: Acelerar}</p> ",
       "heightening": {
         "7": {
           "target": "6 criaturas"
@@ -3678,8 +3678,8 @@
       "description": " <p> Unos vientos gélidos se extienden desde tus manos, surgiendo con gran fuerza. Si Lanzas este conjuro con 2 acciones, tiene el área de un cono de 60 pies (18 m); si Lanzas este conjuro con 3 acciones, tiene un alcance de 500 pies (150 m) y el área de una explosión de 30 pies (9 m). Cada criatura en el área sufre 10d6 daño por frío con una salvación básica de Reflejos. Ventisqueros y vientos helados llenan el área hasta el inicio de tu siguiente turno, convirtiéndola en terreno difícil. </p> \n <hr /> \n <p>  <strong> Potenciado (+1) </strong>  El daño se incrementa en 2d6. </p> "
     },
     "Humanoid Form": {
-      "name": "Forma Humanoide",
-      "description": " <p> Transformas tu apariencia a la de un humanoide Pequeño o Mediano, como por ejemplo un elfo, enano, goblin, humano, mediano u orco. Obtienes el rasgo humanoide además de tus demás rasgos mientras estás en esta forma, así como cualquier rasgo relacionado con el tipo de la criatura (como por ejemplo, goblin o humano). Si la transformación reduce tu tamaño, tu alcance queda reducido en idéntica medida (típicamente: 5 pies (1,5 m). La transformación no cambia tus estadísticas en modo alguno, y no obtienes ninguna aptitud especial de la forma humanoide que adoptas. Sigues pudiendo vestir y utilizar tu equipo, que cambia de tamaño (si es necesario) para encajar con tu nueva forma. Si algún objeto abandona tu persona, vuelve a su tamaño habitual. </p> \n <p> <em>Forma humanoide</em> te concede un bonificador +4 por estatus a las pruebas de Engaño para hacerte pasar por un miembro genérico de la ascendencia elegida, y añades tu nivel incluso si no estás entrenado, pero no puedes hacerte pasar por una persona específica. Si quieres Imitar a un individuo, sigues teniendo que crear un disfraz, aunque el DJ no tendrá en cuenta la diferencia en la ascendencia al determinar la CD de tu prueba de Engaño. Puedes Disipar este conjuro. </p> \n <hr /> \n <p>  <strong> Potenciado (3º) </strong>  Obtienes visión en la oscuridad o visión en la penumbra si la forma que adoptas dispone de dicha aptitud. </p> \n <p>  <strong> Potenciado (5º) </strong>  Puedes adoptar la apariencia de un humanoide Grande. Si esto incrementa tu tamaño, obtienes los efectos del conjuro <em>agrandar</em>. </p> "
+      "name": "Forma humanoide",
+      "description": " <p> Transformas tu apariencia a la de un humanoide Pequeño o Mediano, como por ejemplo un elfo, enano, goblin, humano, mediano u orco. Obtienes el rasgo humanoide además de tus demás rasgos mientras estás en esta forma, así como cualquier rasgo relacionado con el tipo de la criatura (como por ejemplo, goblin o humano). Si la transformación reduce tu tamaño, tu alcance queda reducido en idéntica medida (típicamente: 5 pies (1,5 m). La transformación no cambia tus estadísticas en modo alguno, y no obtienes ninguna aptitud especial de la forma humanoide que adoptas. Sigues pudiendo vestir y utilizar tu equipo, que cambia de tamaño (si es necesario) para encajar con tu nueva forma. Si algún objeto abandona tu persona, vuelve a su tamaño habitual. </p> \n <p> <em>Forma humanoide</em> te concede un bonificador +4 por estatus a las pruebas de Engaño para hacerte pasar por un miembro genérico de la ascendencia elegida, y añades tu nivel incluso si no estás entrenado, pero no puedes hacerte pasar por una persona específica. Si quieres Imitar a un individuo, sigues teniendo que crear un disfraz, aunque el DJ no tendrá en cuenta la diferencia en la ascendencia al determinar la CD de tu prueba de Engaño. Puedes Disipar este conjuro. </p> \n<hr /> \n<p><strong>Potenciado (3.º)</strong> Obtienes visión en la oscuridad o visión en la penumbra si la forma que adoptas dispone de dicha aptitud.</p> \n<p><strong>Potenciado (5.º)</strong> Puedes adoptar la apariencia de un humanoide Grande. Si esto incrementa tu tamaño, obtienes los efectos del conjuro <em>agrandar</em>.</p> "
     },
     "Hungry Depths": {
       "name": "Hungry Depths",
@@ -3737,7 +3737,7 @@
     },
     "Hypnotize": {
       "name": "Hipnotizar",
-      "description": " <p> You create a cloud of mesmerizing patterns and colors that hovers in the air. Creatures are  @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]  {Deslumbrado}  while inside the cloud. In addition, a creature must attempt a Will saving throw if it is inside the cloud when you cast it, when it enters the cloud, when it ends its turn within the cloud, or if it uses a  @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]  {Seek}  or Interact action on the cloud. A creature currently  @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]  {Fascinado}  by hypnotize doesn't attempt new saves. </p> \n <p>  <strong> Success </strong>  The target is unaffected. </p> \n <p>  <strong> Failure </strong>  The target is fascinated by the cloud. </p> \n <p>  <strong> Critical Failure </strong>  The target is fascinated by the cloud. While it remains fascinated, it can't use reactions. </p> "
+      "description": "<p> Creas una nube de esquemas y colores hipnóticos que flota en el aire. Las criaturas en el interior de la nube quedan @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbradas}. Además, una criatura tiene que hacer una salvación de Voluntad si está en el interior de la nube cuando la lanzas, cuando entra en la misma, cuando acaba su turno en ella o si utiliza una prueba de @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Buscar} o de Interactuar estando dentro de la nube. Una criatura @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinada} por hipnotizar no hace nuevas salvaciones.</p> \n<p><strong>Éxito</strong> El objetivo no resulta afectado.</p> \n<p><strong>Fallo</strong> El objetivo queda fascinado por la nube.</p> \n<p><strong>Fallo crítico</strong> El objetivo queda fascinado por la nube. Mientras está \nfascinado, no puede utilizar reacciones.</p> "
     },
     "Ice Storm": {
       "name": "Tormenta De Hielo",
@@ -3780,7 +3780,7 @@
       "description": " <p> You light all non-magical light sources in the area that use fire to provide their light—such as candles, lamps, and sconces. You can choose to make the emanation smaller than its maximum, to any distance of your choice. If a light source is attended by an unwilling creature, that creature can attempt a Reflex save to snuff the light out before it becomes noticeable. </p> \n <hr /> \n <p>  <strong> Heightened (+1) </strong>  The maximum area increases by 10 feet. </p> "
     },
     "Illusory Creature": {
-      "name": "Criatura Ilusoria",
+      "name": "Criatura ilusoria",
       "description": " <p>Creas una imagen ilusoria de una criatura Grande o más pequeña. Genera los sonidos y olores apropiados, y es creíble incluso al tacto. Si la imagen y tú os llegáis a separar más de 500 pies (150 m), el conjuro se acaba.</p>\n<p> La imagen no puede hablar, pero puedes utilizar tus acciones para hablar a través de la criatura, y el conjuro disfraza tu voz de la forma más apropiada. Puedes tener que hacer una prueba de Engaño o de Interpretación para imitar a la criatura, a juicio del DJ. Esto es especialmente probable si quieres imitar a una persona específica e interaccionar con alguien a quien dicha persona conoce.</p>\n<p>En combate, la ilusión puede utilizar 2 acciones por turno, que usa cuando Mantienes el conjuro. Utiliza tu modificador al ataque de conjuros para la tirada de ataque y tu CD de conjuros para su CA. Sus modificadores a las tiradas de salvación son iguales a tu CD de conjuros -10. Es lo suficientemente sustancial como para poder flanquear a otras criaturas. Si la imagen sufre un impacto de un ataque o falla una salvación, el conjuro se acaba.</p>\n<p> La ilusión puede causar daño haciendo que el objetivo crea que los ataques de ésta son reales, pero no puede afectar directamente al mundo físico de ninguna otra manera. Si la criatura ilusoria acierta con un Golpe, el objetivo sufre @Damage[3d4[mental]] daño mental. Los Golpes de la ilusión son no letales. Si el daño no se corresponde con la imagen del monstruo (por ejemplo, un dragón ilusorio Grande sólo inflige 5 daño) el DJ podría permitir al objetivo una prueba de Percepción inmediata para descreer el conjuro. Todas las resistencias y debilidades relevantes se aplican, si el objetivo cree que lo hacen, a juicio del DJ. Por ejemplo, si la ilusión empuña un martillo de guerra y ataca a una criatura resisten- te al daño contundente, dicha criatura sufriría menos daño mental. Sin embargo, el daño ilusorio no desactiva la regeneración ni desencadena otros efectos que requieren cierto tipo de daño. El DJ debería llevar la cuenta del daño ilusorio infligido por la ilusión.</p>\n<p> Cualquier criatura que toque la imagen o utilice la acción de @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Buscar} para examinarla podrá hacer un intento de descreer tu ilusión. Cuando una criatura descree la ilusión, se recupera de la mitad del daño sufrido a causa de ella (si lo hay) y ya no sufre más daño por ese motivo. </p> \n  <hr /> \n <p>  <strong> Potenciado (+1) </strong>  El daño de los Golpes de la imagen se incrementa en \n1d4, y el tamaño máximo de criatura que puedes crear se incrementa en 1 (hasta un máximo de Gargantuesco). </p> "
     },
     "Illusory Disguise": {
@@ -3959,8 +3959,8 @@
       "description": " <p> You shroud your form and features in an impenetrable mask of shadow. The mask grants you a +1 status bonus to Deception checks to  @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]  {Lie}  or  @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]  {Feint} , Intimidation checks to  @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]  {Demoralize} , and Stealth checks to  @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]  {Hide}  in areas of dim light or darkness. </p> \n <hr /> \n <p>  <strong> Heightened (6th) </strong>  The status bonus increases to +2. </p> \n <p>  <strong> Heightened (9th) </strong>  The status bonus increases to +3. </p> \n <p>  @UUID[Compendium.pf2e.spell-effects.Item.IcQMLYWYDMZbq3XE]  {Spell Effect: Inscrutable Mask}  </p> "
     },
     "Insect Form": {
-      "name": "Forma de Insecto",
-      "description": " <p> You envision a simple bug and transform into a Medium animal battle form. When you Cast this Spell, choose a listed battle form. You can decide the specific type of animal (such as such as a ladybug or scarab for beetle), but this has no effect on the form's Size or statistics. While in this form, you gain the animal trait. You can Dismiss this spell. </p> \n <p> You gain the following statistics and abilities regardless of which battle form you choose: </p> \n <ul> \n <li> AC = 18 + your level. Ignore your armor's check penalty and Speed reduction. </li> \n <li> 10 temporary Hit Points. </li> \n <li> Low-light vision. </li> \n <li> One or more attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +13, and your damage bonus is +2. These attacks are Strength based (for the purpose of the  @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]  {Debilitado}  condition). If your unarmed attack modifier is higher, you can use it instead. </li> \n <li> Athletics modifier of +13, unless your own is higher. </li> \n </ul> \n <p> You also gain specific abilities based on the form you choose: </p> \n <ul> \n <li>  <strong>  @UUID[Compendium.pf2e.spell-effects.Item.6IvTWcispcDaw88N]  {Ant}  </strong> \n <ul> \n <li> Speed 30 feet, climb Speed 30 feet; </li> \n <li>  <strong> Melee </strong>   <span class=\"action-glyph\"> 1  </span> mandibles,  <strong> Damage </strong>  2d6 bludgeoning. </li> \n </ul> \n </li> \n <li>  <strong>  @UUID[Compendium.pf2e.spell-effects.Item.amTa9jSml9ioKduN]  {Beetle}  </strong> \n <ul> \n <li> Speed 25 feet; </li> \n <li>  <strong> Melee </strong>   <span class=\"action-glyph\"> 1  </span> mandibles,  <strong> Damage </strong>  2d10 bludgeoning. </li> \n </ul> \n </li> \n <li>  <strong>  @UUID[Compendium.pf2e.spell-effects.Item.DENMzySYANjUBs4O]  {Centipede}  </strong> \n <ul> \n <li> Speed 25 feet, climb Speed 25 feet; darkvision; </li> \n <li>  <strong> Melee </strong>   <span class=\"action-glyph\"> 1  </span> mandibles,  <strong> Damage </strong>  1d8 piercing plus 1d4 persistent poison. </li> \n </ul> \n </li> \n <li>  <strong>  @UUID[Compendium.pf2e.spell-effects.Item.llrOM8rPP9nxIuEN]  {Mantis}  </strong> \n <ul> \n <li> Speed 40 feet; imprecise scent 30 feet; </li> \n <li>  <strong> Melee </strong>   <span class=\"action-glyph\"> 1  </span> foreleg,  <strong> Damage </strong>  2d8 bludgeoning. </li> \n </ul> \n </li> \n <li>  <strong>  @UUID[Compendium.pf2e.spell-effects.Item.bOjuEX3qj7XAOoDF]  {Scorpion}  </strong> \n <ul> \n <li> Speed 40 feet; darkvision, imprecise tremorsense 60 feet; </li> \n <li>  <strong> Melee </strong>   <span class=\"action-glyph\"> 1  </span> stinger,  <strong> Damage </strong>  1d8 piercing plus plus 1d4 persistent poison; </li> \n <li>  <strong> Melee </strong>   <span class=\"action-glyph\"> 1  </span> pincer (agile),  <strong> Damage </strong>  1d6 bludgeoning. </li> \n </ul> \n </li> \n <li>  <strong>  @UUID[Compendium.pf2e.spell-effects.Item.782NyomkDHyfsUn6]  {Spider}  </strong> \n <ul> \n <li> Speed 25 feet, climb Speed 25 feet; darkvision; </li> \n <li>  <strong> Melee </strong>   <span class=\"action-glyph\"> 1  </span> fangs,  <strong> Damage </strong>  1d6 piercing plus plus 1d4 persistent poison; </li> \n <li>  <strong> Ranged  <span class=\"action-glyph\"> 1  </span>  </strong>  web (range increment 20 feet),  <strong> Damage </strong>  entangles the target for 1 round. </li> \n </ul> \n </li> \n </ul> \n <hr /> \n <p>  <strong> Heightened (4th) </strong>  Your battle form is Large, and your attacks have 10-foot reach. You instead gain 15 temporary HP, attack modifier +16, damage bonus +6, and Athletics +16. </p> \n <p>  <strong> Heightened (5th) </strong>  Your battle form is Huge, and your attacks have 15-foot reach. You instead gain 20 temporary HP, attack modifier +18, damage bonus +2 and double damage dice (including persistent damage), and Athletics +20. </p> "
+      "name": "Forma de insecto",
+      "description": "<p> Te concentras en un bicho sencillo y te transformas en una forma de batalla animal de tamaño Mediano. Cuando Lanzas este conjuro, eliges una forma de batalla indicada en la lista de más abajo. Puedes decidir el tipo específico de animal (como por ejemplo una mariquita o un \nescarabajo para los coleópteros), pero esto no tiene efecto alguno ni en el Tamaño ni en las estadísticas de la forma. Cuando te encuentras en esta forma, obtienes el rasgo animal. Puedes Disipar este conjuro.</p> \n<p>Obtienes las siguientes estadísticas y aptitudes, sin importar qué forma de batalla eliges:</p> \n<ul> \n<li>CA = 18 + tu nivel. Ignoras el penalizador a las pruebas de armadura y la reducción de la Velocidad.</li> \n<li>10 Puntos de Golpe temporales.</li> \n<li>Visión en la penumbra.</li> \n<li>Uno o más ataques específicos a la forma de batalla que eliges, que son los únicos con los que puedes dar Golpes. Obtienes el rango entrenado en ellos. Tu modificador al ataque es +13 y tu \nbonificador al daño es +2. Estos ataques están basados en la Fuerza (a efectos del estado @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado}). Si tu modificador al ataque sin armas es mayor, puedes usarlo en lugar de éste.</li> \n<li>Un modificador +13 a las pruebas de Atletismo, a menos que el tuyo propio sea superior.</li> \n</ul> \n<p> Obtienes aptitudes específicas basadas en la forma elegida:</p> \n<ul> \n<li><strong>@UUID[Compendium.pf2e.spell-effects.Item.6IvTWcispcDaw88N]{Hormiga}</strong> \n<ul>\n<li>Velocidad 30 pies (9 m), trepar 30 pies (9 m);</li> \n<li><strong>Cuerpo a cuerpo</strong> <span class=\"action-glyph\">1</span> mandíbulas, <strong>Daño</strong> 2d6 contundente.</li> \n</ul> \n</li> \n<li><strong>@UUID[Compendium.pf2e.spell-effects.Item.amTa9jSml9ioKduN]{Escarabajo}</strong> \n<ul> \n<li>Velocidad 25 pies (7,5 m);</li> \n<li><strong>Cuerpo a cuerpo</strong> <span class=\"action-glyph\">1</span> mandíbulas, <strong>Daño</strong> 2d10 contundente.</li> \n</ul> \n</li> \n<li><strong>@UUID[Compendium.pf2e.spell-effects.Item.DENMzySYANjUBs4O]{Ciempíes}</strong>\n<ul> \n<li>Velocidad 25 pies (7,5 m), trepar 25 pies (7,5 m); visión en la oscuridad;</li> \n<li><strong>Cuerpo a cuerpo</strong> <span class=\"action-glyph\">1</span> mandíbulas, <strong>Daño</strong> 1d8 perforante más 1d4 persistente veneno.</li>\n</ul>\n</li> \n<li><strong>@UUID[Compendium.pf2e.spell-effects.Item.llrOM8rPP9nxIuEN]{Mantis}</strong> \n<ul> \n<li>Velocidad 40 pies (12 m); olfato impreciso 30 pies (9 m);</li>\n<li><strong>Cuerpo a cuerpo</strong> <span class=\"action-glyph\">1</span> pata delantera, <strong>Daño</strong> 2d8 perforante.</li> \n</ul> \n</li> \n<li><strong>@UUID[Compendium.pf2e.spell-effects.Item.bOjuEX3qj7XAOoDF]{Escorpion}</strong> \n<ul> \n<li>Velocidad 40 pies (12 m), visión en la oscuridad, sentido de la vibración impreciso 60 pies (18 m);</li> \n<li><strong>Cuerpo a cuerpo</strong> <span class=\"action-glyph\">1</span> aguijón, <strong>Daño</strong> 1d8 perforante más 1d4 persistente veneno;</li> \n<li><strong>Cuerpo a cuerpo</strong> <span class=\"action-glyph\">1</span> pinza (ágil), <strong>Daño</strong> 1d6 contundente.</li>\n</ul> \n</li> \n<li><strong>@UUID[Compendium.pf2e.spell-effects.Item.782NyomkDHyfsUn6]{Araña}</strong>\n<ul>\n<li>Velocidad 25 pies (7,5 m), trepar 25 pies (7,5 m);</li> \n<li><strong>Cuerpo a cuerpo</strong> <span class=\"action-glyph\">1</span> colmillos, <strong>Daño</strong> 1d6 perforante más 1d4 persistente veneno;</li> \n<li><strong>A distancia</strong> <span class=\"action-glyph\">1</span> telaraña (incremento de rango de distancia 20 pies [6 m]), <strong>Daño</strong> enmaraña al objetivo durante 1 asalto.</li> \n</ul> \n</li> \n</ul> \n<hr /> \n<p><strong>Potenciado (4.º)</strong> Tu forma de batalla es Grande y tus ataques tienen un alcance de 10 pies (3 m). En lugar de lo indicado obtienes 15 PG temporales, modificador al ataque +16, bonificador al daño +6 y Atletismo +16.</p> \n<p><strong>Potenciado (5.º)</strong> Tu forma de batalla es Enorme y tus ataques tienen un alcance de 15 pies (4,5 m). En lugar de lo indicado obtienes 20 PG temporales, modificador al ataque +18, bonificador al daño +2 y dobles dados de daño (incluyendo daño persistente) y Atletismo +20.</p> "
     },
     "Inside Ropes": {
       "name": "Inside Ropes",
@@ -4010,7 +4010,7 @@
     },
     "Invisibility": {
       "name": "Invisibilidad",
-      "description": " <p> Unas ilusiones retuercen la luz alrededor del objetivo, haciéndolo @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}. Esto lo convierte en @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{No Detectado} para todas las criaturas, aunque éstas pueden intentar buscarlo, con lo que para ellas quedará @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido}. Si el objetivo utiliza una acción hostil, el conjuro acaba una vez ésta se ha completado. </p> \n <hr /> \n <p>  <strong> Potenciado (4º) </strong>  El conjuro dura 1 minuto pero no acaba si el objetivo utiliza una acción hostil. </p> ",
+      "description": "<p>Unas ilusiones retuercen la luz alrededor del objetivo, haciéndolo @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}. Esto lo convierte en @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{No Detectado} para todas las criaturas, aunque éstas pueden intentar buscarlo, con lo que para ellas quedará @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido}. Si el objetivo utiliza una acción hostil, el conjuro acaba una vez ésta se ha completado.</p> \n<hr /> \n<p><strong>Potenciado (4.º)</strong> El conjuro dura 1 minuto pero no acaba si el objetivo utiliza una acción hostil.</p> ",
       "target": "1 criatura"
     },
     "Invisibility Cloak": {
@@ -4109,7 +4109,7 @@
     },
     "Knock": {
       "name": "Llamar",
-      "description": " <p> Haces que el objetivo sea más fácil de abrir. Llamar concede un bonificador +4 por estatus a cualquier criatura que quiere abrir la puerta, cerradura o recipiente objetivo mediante una prueba de Atletismo o de Latrocinio. Puedes hacer una prueba de Latrocinio para abrir el objetivo como parte de lanzar este conjuro y sumas tu nivel incluso si no estás entrenado.</p> \n <p>  <em> Llamar </em> contrarresta @UUID[Compendium.pf2e.spells-srd.Item.Azoh0BSoCASrA1lr]{Cerrar} . </p> \n <p>  @UUID[Compendium.pf2e.spell-effects.Item.OSapCU8heNHst21y]{Efecto de Conjuro: Llamar}  </p> ",
+      "description": "<p>Haces que el objetivo sea más fácil de abrir. Llamar concede un bonificador +4 por estatus a cualquier criatura que quiere abrir la puerta, cerradura o recipiente objetivo mediante una prueba de Atletismo o de Latrocinio. Puedes hacer una prueba de Latrocinio para abrir el objetivo como parte de lanzar este conjuro y sumas tu nivel incluso si no estás entrenado.</p> \n<p><em>Llamar</em> contrarresta @UUID[Compendium.pf2e.spells-srd.Item.Azoh0BSoCASrA1lr]{Cerrar}.</p> \n<p>@UUID[Compendium.pf2e.spell-effects.Item.OSapCU8heNHst21y]{Efecto de conjuro: Llamar}</p>",
       "target": "1 puerta, cerradura o recipiente"
     },
     "Know Location": {
@@ -4147,8 +4147,8 @@
       "target": "1 creature whom you love"
     },
     "Laughing Fit": {
-      "name": "Ataque de Risa",
-      "description": " <p> The target is overtaken with uncontrollable laughter. It must attempt a Will save. </p> \n <hr /> \n <p>  <strong> Critical Success </strong>  The target is unaffected. </p> \n <p>  <strong> Success </strong>  The target is plagued with uncontrollable laughter. It can't use reactions. </p> \n <p>  <strong> Failure </strong>  The target is  @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]  {Lentificado 1}  and can't use reactions. </p> \n <p>  <strong> Critical Failure </strong>  The target falls  @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]  {Tumbado}  and can't use actions or reactions for 1 round. It then takes the effects of a failure. </p> ",
+      "name": "Ataque de risa",
+      "description": "<p>El objetivo se ve abrumado por una risa incontrolable. Tiene que hacer una salvación de Voluntad.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado.</p> \n<p><strong>Éxito</strong> El objetivo resulta afectado por una risa incontrolable. No puede utilizar reacciones.</p> \n<p><strong>Fallo</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} y no puede utilizar reacciones.</p> \n<p><strong>Fallo crítico</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} y no puede utilizar acciones o reacciones durante 1 asalto. A continuación sufre los efectos de un fallo.</p> ",
       "target": "1 criatura viva"
     },
     "Lay on Hands": {
@@ -4499,8 +4499,8 @@
       "target": "1 criatura viviente"
     },
     "Marvelous Mount": {
-      "name": "Montura Maravillosa",
-      "description": " <p> Conjuras una criatura fantástica de tamaño Grande para que sirva de montura al objetivo. La montura es el esbirro del objetivo, tiene una Velocidad de 40 pies (12 m) y podrá llevar a lomos al objetivo con cualquier posesión que éste lleve encima. No puede llevar a ninguna otra criatura. La montura usa la CA y las salvaciones del objetivo, pero resulta destruida si sufre más de 10 daño en un momento dado, acabando el conjuro. </p> \n <hr /> \n <p>  <strong> Potenciado (3º) </strong>  La montura puede caminar sobre las aguas, pero tiene \nque acabar su turno en terreno sólido o se hunde. </p> \n <p>  <strong> Potenciado (4º) </strong>  La montura tiene una Velocidad de 60 pies (18 m) y puede caminar sobre las aguas. </p> \n <p>  <strong> Potenciado (5º) </strong>  La montura tiene una Velocidad de 60 pies (18 m) y puede caminar sobre las aguas. También tiene una Velocidad de vuelo de 60 pies (18 m), pero debe acabar su turno sobre una su- perficie o caer. </p> \n <p>  <strong> Potenciado (6º) </strong>  La montura tiene una Velocidad terrestre y de vuelo de 80 pies (24 m). </p> ",
+      "name": "Montura maravillosa",
+      "description": "<p>Conjuras una criatura fantástica de tamaño Grande para que sirva de montura al objetivo. La montura es el esbirro del objetivo, tiene una Velocidad de 40 pies (12 m) y podrá llevar a lomos al objetivo con cualquier posesión que éste lleve encima. No puede llevar a ninguna otra criatura. La montura usa la CA y las salvaciones del objetivo, pero resulta destruida si sufre más de 10 daño en un momento dado, acabando el conjuro.</p> \n<hr /> \n<p><strong>Potenciado (3.º)</strong> La montura puede caminar sobre las aguas, pero tiene \nque acabar su turno en terreno sólido o se hunde. </p> \n<p><strong>Potenciado (4.º)</strong> La montura tiene una Velocidad de 60 pies (18 m) y puede caminar sobre las aguas. </p> \n<p><strong>Potenciado (5.º)</strong> La montura tiene una Velocidad de 60 pies (18 m) y puede caminar sobre las aguas. También tiene una Velocidad de vuelo de 60 pies (18 m), pero debe acabar su turno sobre una su- perficie o caer. </p> \n<p><strong>Potenciado (6.º)</strong> La montura tiene una Velocidad terrestre y de vuelo de 80 pies (24 m). </p> ",
       "target": "1 criatura"
     },
     "Mask of Terror": {
@@ -4863,8 +4863,8 @@
       "target": "1 criatura cuyo nombre conoces"
     },
     "Noise Blast": {
-      "name": "Explosión de Ruido",
-      "description": " <p> A cacophonous noise blasts out, dealing 2d10 sonic damage. Each creature must attempt a Fortitude save. </p> \n <hr /> \n <p>  <strong> Critical Success </strong>  The creature is unaffected. </p> \n <p>  <strong> Success </strong>  The creature takes half damage. </p> \n <p>  <strong> Failure </strong>  The creature takes full damage and is  @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]  {Ensordecido}  for 1 round. </p> \n <p>  <strong> Critical Failure </strong>  The creature takes double damage, is deafened for 1 minute, and is  @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]  {Aturdido 1} . </p> \n <hr /> \n <p>  <strong> Heightened (+1) </strong>  The damage increases by 1d10. </p> "
+      "name": "Explosión de ruido",
+      "description": "<p> Invocas un ruido cacofónico, que inflige 2d10 daño sónico. Cada criatura tiene que hacer una salvación de Fortaleza.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> La criatura no resulta afectada.</p> \n<p><strong>Éxito</strong> La criatura sufre mitad de daño.</p> \n<p><strong>Fallo</strong> La criatura sufre daño completo y queda @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecida} durante \n1 asalto.</p> \n<p><strong>Fallo crítico</strong> La criatura sufre doble daño, queda ensordecida durante \n1 minuto y @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdida 1}.</p> \n<hr /> \n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 1d10.</p> "
     },
     "Nothing Up My Sleeve": {
       "name": "Nothing Up My Sleeve",
@@ -4897,8 +4897,8 @@
       "description": " <p> You grant an ally a token of favor. You create a token, such as a lock of your hair or a flower, that persists for the spell's duration; as part of Casting the Spell, you can  @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]  {Interact}  to pass the token to an ally within your reach. </p> \n <p> As long as the ally has the token on their person, they gain a +1 status bonus to Performance checks and Will saves. </p> \n <p> You can  @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo]  {Dismiss}  the spell as a free action. </p> \n <hr /> \n <p>  <strong> Heightened (4th) </strong>  As long as the ally has the token on their person, you can cast spells that have a range of touch on them at a range of 30 feet. </p> \n <p>  @UUID[Compendium.pf2e.spell-effects.Item.zjFN1cJEl3AMKiVs]  {Spell Effect: Nymph's Token}  </p> "
     },
     "Oaken Resilience": {
-      "name": "Resiliencia de Roble",
-      "description": " <p> La piel del objetivo se vuelve dura, con una consistencia como la de la corteza o la madera. El objetivo obtiene resistencia 2 al daño contundente y perforante y sufre debilidad 3 al fuego. Después de que el objetivo sufra daño por fuego, podrá Disipar el conjuro, acción gratuita desencadenada por sufrir el daño; hacerlo no reduce el daño por fuego sufrido. </p> \n <p>  @UUID[Compendium.pf2e.spell-effects.Item.HoOujAdQWCN4E6sQ]{Efecto de Conjuro: Resiliencia de Roble}  </p> \n <hr /> \n <p>  <strong> Potenciado (+2) </strong> Las resistencias se incrementan en 2 y las debilidades se incrementan en 3. </p> ",
+      "name": "Resiliencia de roble",
+      "description": "<p>La piel del objetivo se vuelve dura, con una consistencia como la de la corteza o la madera. El objetivo obtiene resistencia 2 al daño contundente y perforante y sufre debilidad 3 al fuego. Después de que el objetivo sufra daño por fuego, podrá Disipar el conjuro, acción gratuita desencadenada por sufrir el daño; hacerlo no reduce el daño por fuego sufrido.</p> \n<p>@UUID[Compendium.pf2e.spell-effects.Item.HoOujAdQWCN4E6sQ]{Efecto de conjuro: Resiliencia de roble}</p> \n<hr /> \n<p><strong>Potenciado (+2)</strong> Las resistencias se incrementan en 2 y las debilidades se incrementan en 3.</p> ",
       "target": "1 criatura voluntaria"
     },
     "Oathkeeper's Insignia": {
@@ -5084,8 +5084,8 @@
       "description": " <p> An opaque shell of drifting, iridescent runes covers the area, creating a bubble. You can choose to make the burst smaller, in 10-foot increments. The runes don't block travel, but those inside the bubble can't perceive those outside it and vice versa. Detection and scrying effects are likewise blocked. </p> \n <p> Creatures sleeping within the bubble are immune to dreams sent by spells. Those sleeping 8 hours reduce their  @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]  {Condenado}  condition by 2 instead of 1. </p> "
     },
     "Peaceful Rest": {
-      "name": "Tranquilo Descanso",
-      "description": " <p>El cadáver objetivo no se descompone ni se puede transformar en un muerto viviente. Si se ve sujeto a un conjuro que requiere que el cuerpo haya muerto en un cierto periodo de tiempo (por ejemplo  @UUID[Compendium.pf2e.spells-srd.Item.IkGYwHRLhkuoGReG]{Revivir a los Muertos}) la duración de <em>tranquilo descanso</em> no cuenta para dicho período. Este conjuro también evita que los bichos y las pestes normales (como por ejemplo los gusanos) consuman el cuerpo. </p> \n <hr /> \n <p>  <strong> Potenciado (5º) </strong>  La duración del conjuro es ilimitada, pero se tarda una \nacción más en lanzarlo y se incurre en un coste (fluido de embalsamar por valor de 6 po). </p> ",
+      "name": "Tranquilo descanso",
+      "description": "<p>El cadáver objetivo no se descompone ni se puede transformar en un muerto viviente. Si se ve sujeto a un conjuro que requiere que el cuerpo haya muerto en un cierto periodo de tiempo (por ejemplo  @UUID[Compendium.pf2e.spells-srd.Item.IkGYwHRLhkuoGReG]{Revivir a los muertos}) la duración de <em>tranquilo descanso</em> no cuenta para dicho período. Este conjuro también evita que los bichos y las pestes normales (como por ejemplo los gusanos) consuman el cuerpo. </p> \n<hr /> \n<p><strong>Potenciado (5.º)</strong> La duración del conjuro es ilimitada, pero se tarda una \nacción más en lanzarlo y se incurre en un coste (fluido de embalsamar por valor de 6 po).</p> ",
       "target": "1 cadáver"
     },
     "Penumbral Disguise": {
@@ -5841,8 +5841,8 @@
       "description": " <p> Manifiestas un aura que evita que las criaturas se te acerquen. Al lanzar el conjuro, puedes hacer que el área sea de cualquier radio que te interese, hasta 40 pies (12 m). Una criatura tiene que hacer una salvación de Voluntad si se encuentra en el interior del área cuan do Lanzas el conjuro o en cuanto entra en la misma con el conjuro funcionando. Una vez una criatura ha hecho la salvación, utiliza el mismo resultado para dicho lanzamiento de <em>rechazo</em>. Cualquier restricción sobre el movimiento de la criatura sólo se aplica si se mueve voluntariamente hacia ti; si eres tú quien se acerca a una criatura, no tiene por qué alejarse. </p> \n <hr /> \n <p>  <strong> Éxito crítico </strong>  El movimiento de la criatura no se ve restringido. </p> \n <p>  <strong> Éxito </strong>  La criatura trata cada casilla en el área como terreno difícil \ncuando se acerca a ti. </p> \n <p>  <strong> Fallo </strong>  La criatura no se puede acercar a ti dentro del área. </p> "
     },
     "Resist Energy": {
-      "name": "Resistir Energía",
-      "description": " <p> Un escudo de energía elemental protege a una criatura contra un tipo de daño por energía. Elige entre daño por ácido, electricidad, frío, fuego o sónico. El objetivo y su equipo obtienen resistencia 5 contra el tipo de daño elegido. </p> \n <p>  @UUID[Compendium.pf2e.spell-effects.Item.con2Hzt47JjpuUej]{Efecto de Conjuro: Resistir Energía}  </p> \n <hr /> \n <p>  <strong> Potenciado (4º) </strong> La resistencia se incrementa a 10 y puedes designar como objetivo hasta 2 criaturas. </p> \n <p>  <strong> Potenciado (7º) </strong> La resistencia se incrementa a 15 y puedes designar como objetivo hasta 5 criaturas. </p> ",
+      "name": "Resistir energía",
+      "description": "<p>Un escudo de energía elemental protege a una criatura contra un tipo de daño por energía. Elige entre daño por ácido, electricidad, frío, fuego o sónico. El objetivo y su equipo obtienen resistencia 5 contra el tipo de daño elegido.</p> \n<p>@UUID[Compendium.pf2e.spell-effects.Item.con2Hzt47JjpuUej]{Efecto de conjuro: Resistir energía}</p> \n<hr /> \n<p><strong>Potenciado (4.º)</strong> La resistencia se incrementa a 10 y puedes designar como objetivo hasta 2 criaturas.</p> \n<p><strong>Potenciado (7.º)</strong> La resistencia se incrementa a 15 y puedes designar como objetivo hasta 5 criaturas.</p> ",
       "heightening": {
         "4": {
           "target": "2 criaturas"
@@ -5912,8 +5912,8 @@
       "target": "1 aliado"
     },
     "Revealing Light": {
-      "name": "Luz Reveladora",
-      "description": " <p> A wave of magical light washes over the area. You choose the appearance of the light, such as colorful, heatless flames or sparkling motes. A creature affected by  <em> revealing light </em>  is  @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]  {Deslumbrado} . If the creature was  @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]  {Invisible} , it becomes  @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]  {Oculto}  instead. If the creature was already concealed for any other reason, it is no longer concealed. </p> \n <hr /> \n <p>  <strong> Critical Success </strong>  The target is unaffected. </p> \n <p>  <strong> Success </strong>  The light affects the creature for 2 rounds. </p> \n <p>  <strong> Failure </strong>  The light affects the creature for 1 minute. </p> \n <p>  <strong> Critical Failure </strong>  The light affects the creature for 10 minutes. </p> "
+      "name": "Luz reveladora",
+      "description": "<p>Una oleada de luz mágica baña el área. Tú eres quien elige la apariencia de esta, por ejemplo unas llamas coloridas exentas de calor o unas motas brillantes. Una criatura afectada por <em>luz reveladora</em> queda @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrada}. Si la criatura era @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}, en su lugar queda @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculta}. Si la criatura ya estaba oculta por cualquier otro motivo, ya no está oculta.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado.</p> \n<p><strong>Éxito</strong> La luz afecta a la criatura durante 2 asaltos.</p> \n<p><strong>Fallo</strong> La luz afecta a la criatura durante 1 minuto.</p> \n<p><strong>Fallo crítico</strong> La luz afecta a la criatura durante 10 minutos.</p> "
     },
     "Revel in Retribution": {
       "name": "Revel in Retribution",
@@ -6218,8 +6218,8 @@
       "target": "1 page up to 3 square feet in size"
     },
     "See the Unseen": {
-      "name": "Ver lo Invisible",
-      "description": " <p> Your gaze pierces through illusions and finds  @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]  {Invisible}  creatures and spirits. You can see invisible creatures as though they weren't invisible, although their features are blurred, making them  @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]  {Oculto}  and difficult to identify. You can also see incorporeal creatures, like ghosts, phased through an object from within 10 feet of an object's surface as blurry shapes seen through those objects. Subtler clues also grant you a +2 status bonus to checks you make to disbelieve illusions. </p> \n <hr /> \n <p>  <strong> Heightened (5th) </strong>  This spell has a duration of 8 hours. </p> \n <p>  @UUID[Compendium.pf2e.spell-effects.Item.T5bk6UH7yuYog1Fp]  {Spell Effect: See the Unseen}  </p> "
+      "name": "Ver lo invisible",
+      "description": "<p>Tu mirada atraviesa las ilusiones y encuentra a las criaturas @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisibles} y a los espíritus. Puedes ver a las criaturas invisibles como si no lo fueran, aunque sus rasgos son borrosos, lo que hace que estén @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Ocultos} y sean difíciles de identificar. También puedes ver criaturas  incorporales como los fantasmas, atravesando un objeto desde 10 pies (3 m) o menos de la superficie del mismo como formas borrosas vistas a través de dichos objetos. Pistas más sutiles también te conceden un bonificador +2 por estatus a las pruebas que llevas a cabo para descreer ilusiones.</p> \n<hr /> \n<p><strong> Potenciado (5.º)</strong> Este conjuro tiene una duración de 8 horas.</p> \n<p>@UUID[Compendium.pf2e.spell-effects.Item.T5bk6UH7yuYog1Fp]{Efecto de conjuro: Ver lo invisible}</p> "
     },
     "Seed of Mercy": {
       "name": "Seed of Mercy",
@@ -6334,7 +6334,7 @@
       "target": " un cubo de piedra de 10 pies (3 m) de lado o más pequeño."
     },
     "Shape Wood": {
-      "name": "Moldear la Madera",
+      "name": "Moldear la madera",
       "description": " <p> Das forma a la madera en una forma tosca de tu elección. El proceso de moldeo es demasiado basto como para dar como resultado partes intrincadas, detalles finos, piezas móviles o cosas parecidas. No puedes utilizar este conjuro para potenciar el valor de un objeto de madera que estás moldeando. </p> ",
       "target": "un trozo de madera sin trabajar de hasta 20 pies cúbicos (0,57 m³) de volumen."
     },
@@ -6470,7 +6470,7 @@
     },
     "Shrink": {
       "name": "Encoger",
-      "description": " <p> Distorsionas el espacio para hacer que una criatura sea más pequeña. El objetivo se encoge hasta convertirse en tamaño Menudo. Su equipo se encoge con él, pero vuelve a su tamaño original si se lo quita. El alcance de la criatura cambia a 0 pies. Este conjuro no tiene efecto alguno sobre una criatura Menuda. </p> \n <p>  @UUID[Compendium.pf2e.spell-effects.Item.LXf1Cqi1zyo4DaLv]{Efecto de Conjuro: Encoger}  </p> \n <hr /> \n <p>  <strong> Potenciado (6º) </strong>  El conjuro puede designar como objetivo hasta 10 criaturas. </p> ",
+      "description": "<p>Distorsionas el espacio para hacer que una criatura sea más pequeña. El objetivo se encoge hasta convertirse en tamaño Menudo. Su equipo se encoge con él, pero vuelve a su tamaño original si se lo quita. El alcance de la criatura cambia a 0 pies. Este conjuro no tiene efecto alguno sobre una criatura Menuda.</p> \n<p>@UUID[Compendium.pf2e.spell-effects.Item.LXf1Cqi1zyo4DaLv]{Efecto de conjuro: Encoger}</p> \n<hr /> \n<p><strong>Potenciado (6.º)</strong> El conjuro puede designar como objetivo hasta 10 criaturas.</p> ",
       "heightening": {
         "6": {
           "target": "10 criaturas voluntarias"
@@ -6947,7 +6947,7 @@
     },
     "Stupefy": {
       "name": "Anonadar",
-      "description": " <p> Nublas la mente del objetivo, dependiendo de su salvación de Voluntad. </p> \n <hr /> \n <p>  <strong> Éxito crítico </strong>  El objetivo no resulta afectado. </p> \n <p>  <strong> Éxito </strong>  El objeto queda  @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} hasta el inicio de tu siguiente turno. </p> \n <p>  <strong> Fallo </strong>  El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} durante 1 minuto. </p> \n <p>  <strong> Fallo crítico </strong>  El objetivo queda  @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 3} durante 1 minuto. </p> ",
+      "description": "<p>Nublas la mente del objetivo, dependiendo de su salvación de Voluntad.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado.</p> \n<p><strong>Éxito</strong> El objeto queda  @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} hasta el inicio de tu siguiente turno.</p> \n<p><strong>Fallo</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} durante 1 minuto.</p> \n<p><strong>Fallo crítico</strong>  El objetivo queda  @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 3} durante 1 minuto.</p> ",
       "target": "1 criatura"
     },
     "Subconscious Suggestion": {
@@ -7052,8 +7052,8 @@
       "description": " <p> Convocas a una criatura con el rasgo dragón y cuyo nivel es 5 o menor para que luche por ti. Si el dragón tiene un rasgo de tradición mágica (arcano, divino, ocultista o primigenio), sólo puedes convocarlo si estás utilizando dicha tradición para lanzar <em>convocar dragón</em>.</p> \n <hr /> \n <p>  <strong> Potenciado </strong>  Como se indica en el rasgo  @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.8gcp880pEWZ9VPnF]{Convocar}. </p> "
     },
     "Summon Elemental": {
-      "name": "Convocar Elemental",
-      "description": " <p> Convocas a una criatura con el rasgo elemental y cuyo nivel es 1 o menor para que luche por ti. </p> \n <hr /> \n <p>  <strong> Potenciado </strong>  Como se indica en el rasgo @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.8gcp880pEWZ9VPnF]{Convocar}. </p> "
+      "name": "Convocar elemental",
+      "description": "<p>Convocas a una criatura con el rasgo elemental y cuyo nivel es 1 o menor para que luche por ti.</p> \n<hr /> \n<p><strong>Potenciado</strong> Como se indica en el rasgo @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.8gcp880pEWZ9VPnF]{Convocar}.</p> "
     },
     "Summon Elemental Herald": {
       "name": "Summon Elemental Herald",
@@ -7334,8 +7334,8 @@
       "target": "1 objeto desatendido de hasta Impedimenta 80 sin ninguna dimensión superior a 20 pies (6 m)."
     },
     "Telekinetic Maneuver": {
-      "name": "Maniobra Telecinética",
-      "description": " <p>Con una oleada de poder telecinético, mueves un objetivo o algo que transporta. Puedes hacer una prueba de  @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Desarmar} ,  @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Empujar} ,  @UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{Reposicionar} , o  @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Derribar} al objetivo utilizando una tirada de ataque de con- juros en lugar de una prueba de Atletismo. </p> ",
+      "name": "Maniobra telecinética",
+      "description": "<p>Con una oleada de poder telecinético, mueves un objetivo o algo que transporta. Puedes hacer una prueba de  @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Desarmar},  @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Empujar},  @UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{Reposicionar}, o  @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Derribar} al objetivo utilizando una tirada de ataque de con- juros en lugar de una prueba de Atletismo.</p> ",
       "target": "1 criatura"
     },
     "Telekinetic Projectile": {
@@ -7630,7 +7630,7 @@
     },
     "Translate": {
       "name": "Traducir",
-      "description": " <p> El objetivo puede entender el significado de un solo idioma que está oyendo o leyendo cuando Lanzas el conjuro. Esto no le permite entender códigos, un texto lleno de metáforas y cosas parecidas (sujeto a la discreción del DJ). Si el objetivo puede oír múltiples idiomas, puede elegir qué idioma entender; de lo contrario, se elige al azar uno de ellos </p> \n <hr /> \n <p>  <strong> Potenciado (3º) </strong>  El objetivo también puede hablar el idioma. </p> \n <p>  <strong> Potenciado (4º) </strong>  Puedes designar como objetivo hasta 10 criaturas, y \nlos objetivos también pueden hablar el idioma. </p> ",
+      "description": "<p>El objetivo puede entender el significado de un solo idioma que está oyendo o leyendo cuando Lanzas el conjuro. Esto no le permite entender códigos, un texto lleno de metáforas y cosas parecidas (sujeto a la discreción del DJ). Si el objetivo puede oír múltiples idiomas, puede elegir qué idioma entender; de lo contrario, se elige al azar uno de ellos.</p> \n<hr /> \n<p><strong>Potenciado (3.º)</strong> El objetivo también puede hablar el idioma.</p> \n<p><strong>Potenciado (4.º)</strong> Puedes designar como objetivo hasta 10 criaturas, y \nlos objetivos también pueden hablar el idioma.</p> ",
       "heightening": {
         "4": {
           "target": "10 criaturas"
@@ -8169,13 +8169,13 @@
       "description": "<p> Algunos practicantes argumentan que este hechizo literalmente limpia tu fortuna de todas las influencias, malignas o benignas, mientras que otros afirman que simplemente limpia tu mente de obsesiones sobre la suerte y el destino. Te ajustas la ropa, cambias la postura de tu silla, jugueteas con un símbolo religioso o realizas alguna otra acción inocua y personalmente significativa para eliminar la mala suerte. </p>\n <p> Una vez durante la duración del hechizo, antes de realizar una prueba, puedes cancelar una desgracia.efecto en esa tirada, como es normal cuando un efecto de fortuna y desgracia se aplican a la misma tirada. Después de cancelar el efecto de desgracia, el hechizo termina y eres temporalmente inmune a lavar tu suerte durante 10 minutos. </p>\n <p> @UUID[Compendium.pf2e.spell-effects.Item.npFFTAxN44WWrGnM]{Spell Effect: Wash Your Luck} </p>"
     },
     "Water Breathing": {
-      "name": "Respirar Agua",
-      "description": "<p> Los objetivos pueden respirar bajo el agua. </p>\n <hr />\n <p> <strong> Potenciado (3º) </strong>  La duración es 8 horas. </p>\n <p> <strong> Potenciado (4º) </strong>  La duración es hasta tus siguientes preparativos diarios. </p>",
+      "name": "Respirar agua",
+      "description": "<p> Los objetivos pueden respirar bajo el agua.</p>\n<hr />\n<p><strong>Potenciado (3.º)</strong> La duración es 8 horas.</p>\n<p><strong>Potenciado (4.º)</strong> La duración es hasta tus siguientes preparativos diarios.</p>",
       "target": "hasta 5 criaturas"
     },
     "Water Walk": {
-      "name": "Caminar sobre las Aguas",
-      "description": "<p> El objetivo puede caminar sobre la superficie del agua y de otros líqui- dos sin atravesarla. Si lo desea, puede meterse bajo el agua, pero en ese caso tiene que Nadar de la forma habitual. Este conjuro no concede la aptitud de respirar bajo el agua. </p>\n <hr />\n <p> <strong> Potenciado (4º) </strong> El alcance del conjuro se incrementa a 30 pies (9 m), su duración se incrementa a 1 hora, y puedes designar como objetivo hasta 10 criaturas. </p>",
+      "name": "Caminar sobre las aguas",
+      "description": "<p>El objetivo puede caminar sobre la superficie del agua y de otros líqui- dos sin atravesarla. Si lo desea, puede meterse bajo el agua, pero en ese caso tiene que Nadar de la forma habitual. Este conjuro no concede la aptitud de respirar bajo el agua.</p>\n<hr />\n<p><strong>Potenciado (4.º)</strong> El alcance del conjuro se incrementa a 30 pies (9 m), su duración se incrementa a 1 hora, y puedes designar como objetivo hasta 10 criaturas.</p>",
       "heightening": {
         "4": {
           "target": "10 criaturas"
