@@ -1,3 +1,20 @@
+## [6.3.4](https://github.com/allnnde/pf2e-esp-translation/compare/v6.3.3...v6.3.4) (2024-10-03)
+
+
+### Bug Fixes
+
+* New translations deities.json from Crowdin ([60ef8dd](https://github.com/allnnde/pf2e-esp-translation/commit/60ef8dd503562af8b62bfae59b4e71352f6a4683))
+* New translations en.json from Crowdin ([3b5db5a](https://github.com/allnnde/pf2e-esp-translation/commit/3b5db5aff31ff6d493c90833e63373ec5f2655f6))
+* New translations spells.json from Crowdin ([6b82733](https://github.com/allnnde/pf2e-esp-translation/commit/6b82733298aceae10f99e9a63f982bf0d8ddec4c))
+* New translations spells.json from Crowdin ([d4262c1](https://github.com/allnnde/pf2e-esp-translation/commit/d4262c16a39f361a3a4c73483b5ceb9e5ff62333))
+* New translations spells.json from Crowdin ([1aa2923](https://github.com/allnnde/pf2e-esp-translation/commit/1aa2923eef65d541448f057b8dad93f5aed91605))
+* New translations spells.json from Crowdin ([ba22a8f](https://github.com/allnnde/pf2e-esp-translation/commit/ba22a8f0e3eca634ab697f3d2a21cb32a2d96788))
+* New translations spells.json from Crowdin ([caa6566](https://github.com/allnnde/pf2e-esp-translation/commit/caa656674b94a459624b793dc4258a54169b6adc))
+* New translations spells.json from Crowdin ([7e43a06](https://github.com/allnnde/pf2e-esp-translation/commit/7e43a06310f6390fc32ce9ec5a9cc8ab2f5e8c6c))
+* New translations spells.json from Crowdin ([3f962b3](https://github.com/allnnde/pf2e-esp-translation/commit/3f962b374b1b77e5d49f8e84c146c1ef3c6ddecd))
+
+
+
 ## [6.3.3](https://github.com/allnnde/pf2e-esp-translation/compare/v6.3.2...v6.3.3) (2024-09-29)
 
 
@@ -78,15 +95,6 @@
 ### Features
 
 * automatic json extract to traslate ([ac63dbc](https://github.com/allnnde/pf2e-esp-translation/commit/ac63dbccb1a86279bd4f97ebffd7846f29f49d89))
-
-
-
-## [6.2.2](https://github.com/allnnde/pf2e-esp-translation/compare/v6.2.1...v6.2.2) (2024-09-27)
-
-
-### Bug Fixes
-
-* New translations action-en.json from Crowdin ([d8f6d86](https://github.com/allnnde/pf2e-esp-translation/commit/d8f6d861d102b71602430324d852adcc1036eb02))
 
 
 
