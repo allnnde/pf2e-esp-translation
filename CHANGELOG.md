@@ -1,3 +1,12 @@
+## [6.3.5](https://github.com/allnnde/pf2e-esp-translation/compare/v6.3.4...v6.3.5) (2024-10-04)
+
+
+### Bug Fixes
+
+* New translations spells.json from Crowdin ([ad8313d](https://github.com/allnnde/pf2e-esp-translation/commit/ad8313d59a8ee3363dc8cb689fb7c1223a91bf37))
+
+
+
 ## [6.3.4](https://github.com/allnnde/pf2e-esp-translation/compare/v6.3.3...v6.3.4) (2024-10-03)
 
 
@@ -81,20 +90,6 @@
 * New translations spells.json from Crowdin ([8b6fd00](https://github.com/allnnde/pf2e-esp-translation/commit/8b6fd00a69f896028f57ddd5981ad569c8e2add1))
 * New translations spells.json from Crowdin ([048e994](https://github.com/allnnde/pf2e-esp-translation/commit/048e9949930ff49568c42fa084622d0fa01221ce))
 * New translations spells.json from Crowdin ([9573dce](https://github.com/allnnde/pf2e-esp-translation/commit/9573dce9d74e16655e0653cec11e714192a992e4))
-
-
-
-# [6.3.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.2.2...v6.3.0) (2024-09-28)
-
-
-### Bug Fixes
-
-* posibble solve to spell efecto name error ([34298c7](https://github.com/allnnde/pf2e-esp-translation/commit/34298c71bd4c449acab32b227b47ca6c09a2786d))
-
-
-### Features
-
-* automatic json extract to traslate ([ac63dbc](https://github.com/allnnde/pf2e-esp-translation/commit/ac63dbccb1a86279bd4f97ebffd7846f29f49d89))
 
 
 
