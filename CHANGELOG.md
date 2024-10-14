@@ -1,3 +1,14 @@
+## [6.3.9](https://github.com/allnnde/pf2e-esp-translation/compare/v6.3.8...v6.3.9) (2024-10-14)
+
+
+### Bug Fixes
+
+* add logic ([dc02f98](https://github.com/allnnde/pf2e-esp-translation/commit/dc02f98dac91fbfdf4540ff783dd45f7d4c73ddc))
+* New translations pathfinder-bestiary.json from Crowdin ([9952579](https://github.com/allnnde/pf2e-esp-translation/commit/995257970b63d38586129b57aa860d0814b2f777))
+* New translations pathfinder-bestiary.json from Crowdin ([b14e022](https://github.com/allnnde/pf2e-esp-translation/commit/b14e02276c68328e69a4e1c8779138f102003720))
+
+
+
 ## [6.3.8](https://github.com/allnnde/pf2e-esp-translation/compare/v6.3.7...v6.3.8) (2024-10-14)
 
 
@@ -56,23 +67,6 @@
 ### Bug Fixes
 
 * New translations spells.json from Crowdin ([ad8313d](https://github.com/allnnde/pf2e-esp-translation/commit/ad8313d59a8ee3363dc8cb689fb7c1223a91bf37))
-
-
-
-## [6.3.4](https://github.com/allnnde/pf2e-esp-translation/compare/v6.3.3...v6.3.4) (2024-10-03)
-
-
-### Bug Fixes
-
-* New translations deities.json from Crowdin ([60ef8dd](https://github.com/allnnde/pf2e-esp-translation/commit/60ef8dd503562af8b62bfae59b4e71352f6a4683))
-* New translations en.json from Crowdin ([3b5db5a](https://github.com/allnnde/pf2e-esp-translation/commit/3b5db5aff31ff6d493c90833e63373ec5f2655f6))
-* New translations spells.json from Crowdin ([6b82733](https://github.com/allnnde/pf2e-esp-translation/commit/6b82733298aceae10f99e9a63f982bf0d8ddec4c))
-* New translations spells.json from Crowdin ([d4262c1](https://github.com/allnnde/pf2e-esp-translation/commit/d4262c16a39f361a3a4c73483b5ceb9e5ff62333))
-* New translations spells.json from Crowdin ([1aa2923](https://github.com/allnnde/pf2e-esp-translation/commit/1aa2923eef65d541448f057b8dad93f5aed91605))
-* New translations spells.json from Crowdin ([ba22a8f](https://github.com/allnnde/pf2e-esp-translation/commit/ba22a8f0e3eca634ab697f3d2a21cb32a2d96788))
-* New translations spells.json from Crowdin ([caa6566](https://github.com/allnnde/pf2e-esp-translation/commit/caa656674b94a459624b793dc4258a54169b6adc))
-* New translations spells.json from Crowdin ([7e43a06](https://github.com/allnnde/pf2e-esp-translation/commit/7e43a06310f6390fc32ce9ec5a9cc8ab2f5e8c6c))
-* New translations spells.json from Crowdin ([3f962b3](https://github.com/allnnde/pf2e-esp-translation/commit/3f962b374b1b77e5d49f8e84c146c1ef3c6ddecd))
 
 
 
