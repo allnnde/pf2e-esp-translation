@@ -121,7 +121,7 @@
         "Gust": "Ráfaga",
         "HolyMace": "Maza Sagrada",
         "Hoof": "Casco",
-        "Horn": "Bocina",
+        "Horn": "Cuerno",
         "Horns": "Cuernos",
         "Jaws": "Mandíbulas",
         "LavaFist": "Puño de lava",
@@ -142,7 +142,7 @@
         "Root": "Root",
         "SacredArmament": "Sacred Armament",
         "Seed": "Semilla",
-        "Spikes": "Picos",
+        "Spikes": "Pinchos",
         "Spine": "Columna vertebral",
         "Spoke": "Spoke",
         "Stinger": "Aguijón",
@@ -167,8 +167,8 @@
         "Wrap": "Wrap"
       },
       "CosmicForm": {
-        "MoonNote": "El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} durante 1 ronda.",
-        "SunNote": "El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} durante 1 ronda."
+        "MoonNote": "El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} durante 1 asalto.",
+        "SunNote": "El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} durante 1 asalto."
       },
       "DaemonForm": {
         "CeustodaemonDamageNote": "Cualquier golpe exitoso con mandíbulas o garras causa [[/r {1d6}]]{1d6 damage} adicional y recibes la misma cantidad de daño."
@@ -178,7 +178,7 @@
         "WaterPushPullNote": "Más @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Push} o tirar 10 pies"
       },
       "InsectForm": {
-        "SpiderWebNote": "Un ataque web exitoso enreda al objetivo durante 1 asalto, pero no causa daño."
+        "SpiderWebNote": "Un ataque de telaraña con éxito enreda al objetivo durante 1 asalto, pero no causa daño."
       },
       "MonstrosityForm": {
         "ShroudOfFlame": "Sudario de llamas"
@@ -188,12 +188,12 @@
         "Kaiju": "Kaiju"
       },
       "Note": {
-        "Grab": "Puedes gastar una acción inmediatamente después de un golpe para @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab} el objetivo.",
+        "Grab": "Puedes gastar una acción inmediatamente después de un golpe para @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Agarrar} al objetivo.",
         "GrabbingTrunk": {
           "Text": "Una criatura hasta dos tamaños más pequeña que es golpeada por tu trompa es @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} . Si tienes éxito en tu prueba @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} contra una criatura agarrada por tu baúl, puedes reposicionar la criatura en otro espacio dentro del alcance de tu baúl.",
           "Title": "Agarrando el baúl"
         },
-        "Shove": "Puedes gastar una acción inmediatamente después de un golpe para empujar al objetivo 5 pies con los efectos de un @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} exitoso."
+        "Shove": "Puedes gastar una acción inmediatamente después de un golpe para empujar al objetivo 5 pies con los efectos de un @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Empujar} exitoso."
       },
       "OozeForm": {
         "GelatinousCubeNote": "Una criatura golpeada por tu Golpe de cara de cubo debe tener éxito en una salvación @Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)|traits:incapacitation] contra la CD de tu hechizo o ser @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1} (o @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralizado} durante 1 ronda en caso de fallo crítico); esta salvación tiene el rasgo de incapacitación."
@@ -206,38 +206,38 @@
     "BombNotes": {
       "AcidFlask": {
         "Greater": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2*3d6)[persistent,acid]]] y [[/r (3[splash])[acid]]]{3 acid splash damage} .",
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r 3d6[persistent,acid]]] y [[/r (3[splash])[acid]]]{3 acid splash damage} ."
+          "criticalSuccess": "<strong>Efecto</strong> La bomba también inflige @Damage[(2*3d6)[persistent,acid]] y @Damage[(3[splash])[acid]]{3 daño ácido por salpicadura}.",
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[3d6[persistent,acid]] y @Damage[(3[splash])[acid]]{3 daño ácido por salpicadura}."
         },
         "Lesser": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2*1d6)[persistent,acid]]] y [[/r (1[splash])[acid]]]{1 acid splash damage} .",
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r 1d6[persistent,acid]]] y [[/r (1[splash])[acid]]]{1 acid splash damage} ."
+          "criticalSuccess": "<strong>Efecto</strong> La bomba también inflige @Damage[(2*1d6)[persistent,acid]] y @Damage[(1[splash])[acid]]{1 daño ácido por salpicadura}.",
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[1d6[persistent,acid]] y @Damage[(1[splash])[acid]]{1 daño ácido por salpicadura}."
         },
         "Major": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2*4d6)[persistent,acid]]] y [[/r (4[splash])[acid]]]{4 acid splash damage} .",
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r 4d6[persistent,acid]]] y [[/r (4[splash])[acid]]]{4 acid splash damage} ."
+          "criticalSuccess": "<strong>Efecto</strong> La bomba también inflige @Damage[(2*4d6)[persistent,acid]] y @Damage[(4[splash])[acid]]{4 daño ácido por salpicadura}.",
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[4d6[persistent,acid]] y @Damage[(4[splash])[acid]]{4 daño ácido por salpicadura}."
         },
         "Moderate": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2*2d6)[persistent,acid]]] y [[/r (2[splash])[acid]]]{2 acid splash damage} .",
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r 2d6[persistent,acid]]] y [[/r (2[splash])[acid]]]{2 acid splash damage} ."
+          "criticalSuccess": "<strong>Efecto</strong> La bomba también inflige @Damage[(2*2d6)[persistent,acid]] y @Damage[(2[splash])[acid]]{2 daño ácido por salpicadura}.",
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[2d6[persistent,acid]] y @Damage[(2[splash])[acid]]{2 daño ácido por salpicadura}."
         }
       },
       "AlchemistsFire": {
         "Greater": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2*3)[persistent,fire]]] y [[/r (3[splash])[fire]]]{3 fire splash damage} .",
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r 3[persistent,fire]]] y [[/r (3[splash])[fire]]]{3 fire splash damage} ."
+          "criticalSuccess": "<strong>Efecto</strong> La bomba también inflige @Damage[(2*3)[persistent,fire]] y @Damage[(3[splash])[fire]]{3 daño fuego por salpicadura}.",
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[(3)[persistent,fire]] y @Damage[(3[splash])[fire]]{3 daño fuego por salpicadura}."
         },
         "Lesser": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2*1)[persistent,fire]]] y [[/r (1[splash])[fire]]]{1 fire splash damage} .",
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r 1[persistent,fire]]] y [[/r (1[splash])[fire]]]{1 fire splash damage} ."
+          "criticalSuccess": "<strong>Efecto</strong> La bomba también inflige @Damage[(2*1)[persistent,fire]] y @Damage[(1[splash])[fire]]{1 daño fuego por salpicadura}.",
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[1[persistent,fire]] y @Damage[(1[splash])[fire]{1 daño fuego por salpicadura}."
         },
         "Major": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2*4)[persistent,fire]]] y [[/r (4[splash])[fire]]]{4 fire splash damage} .",
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r 4[persistent,fire]]] y [[/r (4[splash])[fire]]]{4 fire splash damage} ."
+          "criticalSuccess": "<strong>Efecto</strong> La bomba también inflige @Damage[(2*4)[persistent,fire]] y @Damage[(4[splash])[fire]]{4 daño fuego por salpicadura}.",
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[4[persistent,fire]] y @Damage[(4[splash])[fire]]{4 daño fuego por salpicadura}."
         },
         "Moderate": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2*2)[persistent,fire]]] y [[/r (2[splash])[fire]]]{2 fire splash damage} .",
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r 2[persistent,fire]]] y [[/r (2[splash])[fire]]]{2 fire splash damage} ."
+          "criticalSuccess": "<strong>Efecto</strong> La bomba también inflige @Damage[(2*2)[persistent,fire]] y @Damage[(2[splash])[fire]]{2 daño fuego por salpicadura}.",
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[2[persistent,fire]] y @Damage[(2[splash])[fire]]{2 daño fuego por salpicadura}."
         }
       },
       "BioluminescenceBomb": {
@@ -245,42 +245,42 @@
       },
       "BlightBomb": {
         "Greater": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2*3d4)[persistent,poison]]] y [[/r (3[splash])[poison]]]{3 poison splash damage} .",
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r 3d4[persistent,poison]]] y [[/r (3[splash])[poison]]]{3 poison splash damage} ."
+          "criticalSuccess": "<strong>Efecto</strong> La bomba también inflige @Damage[(2*3d4)[persistent,poison]] y @Damage[(3[splash])[poison]]{3 daño veneno por salpicadura}.",
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[3d4[persistent,poison]] y @Damage[(3[splash])[poison]]{3 daño veneno por salpicadura}."
         },
         "Lesser": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2*1d4)[persistent,poison]]] y [[/r (1[splash])[poison]]]{1 poison splash damage} .",
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r 1d4[persistent,poison]]] y [[/r (1[splash])[poison]]]{1 poison splash damage} ."
+          "criticalSuccess": "<strong>Efecto</strong> La bomba también inflige  @Damage[(2*1d4)[persistent,poison]] y @Damage[(1[splash])[poison]]{1 daño veneno por salpicadura}.",
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[1d4[persistent,poison]] y @Damage[(1[splash])[poison]]{1 daño veneno por salpicadura}."
         },
         "Major": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2*4d4)[persistent,poison]]] y [[/r (4[splash])[poison]]]{4 poison splash damage} .",
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r 4d4[persistent,poison]]] y [[/r (4[splash])[poison]]]{4 poison splash damage} ."
+          "criticalSuccess": "<strong>Efecto</strong> La bomba también inflige @Damage[(2*4d4)[persistent,poison]] y @Damage[(4[splash])[poison]]{4 daño veneno por salpicadura}.",
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[4d4[persistent,poison]] y @Damage[(4[splash])[poison]]{4 daño veneno por salpicadura}."
         },
         "Moderate": {
-          "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (2*2d4)[persistent,poison]]] y [[/r (2[splash])[poison]]]{2 poison splash damage} .",
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r 2d4[persistent,poison]]] y [[/r (2[splash])[poison]]]{2 poison splash damage} ."
+          "criticalSuccess": "<strong>Efecto</strong> La bomba también inflige @Damage[(2*2d4)[persistent,poison] y @Damage[(2[splash])[poison]]{2 daño veneno por salpicadura}.",
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[2d4[persistent,poison]] y @Damage[(2[splash])[poison]]{2 daño veneno por salpicadura}."
         }
       },
       "BottledLightning": {
         "Greater": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[electricity]]]{3 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el comienzo de tu siguiente turno."
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[(3[splash])[electricity]]{3 daño electricidad por salpicadura} y ​​el objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el comienzo de tu siguiente turno."
         },
         "Lesser": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (1[splash])[electricity]]]{1 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el comienzo de tu siguiente turno."
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[(1[splash])[electricity]]{1 daño electricidad por salpicadura} y ​​el objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el comienzo de tu siguiente turno."
         },
         "Major": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[electricity]]]{4 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el comienzo de tu siguiente turno."
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[(4[splash])[electricity]]{4 daño electricidad por salpicadura} y ​​el objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el comienzo de tu siguiente turno."
         },
         "Moderate": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (2[splash])[electricity]]]{2 electricity splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el comienzo de tu siguiente turno."
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[(2[splash])[electricity]]{2 daño electricidad por salpicadura} y ​​el objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el comienzo de tu siguiente turno."
         }
       },
       "CrystalShards": {
         "Greater": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (5[splash])[piercing]]]{5 piercing splash damage} y ​​la salpicadura crea cristales que son @UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{Caltrops} en superficies niveladas y asideros en superficies verticales, otorgando una bonificación de +2 por objeto a la siguiente prueba de Atletismo para Trepar."
+          "success": "<strong>Efecto</strong> La bomba también inflige @Damage[(5[splash])[piercing]]{5 daño perforante por salpicadura} y ​​la salpicadura crea cristales que se consideran @UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{Abrojos} en superficies niveladas y asideros en superficies verticales, otorgando un bonificador +2 por objeto a la siguiente prueba de Atletismo para Trepar."
         },
         "Major": {
-          "success": "<strong> Efecto </strong> La bomba también causa [[/r (6[splash])[piercing]]]{6 piercing splash damage} y ​​la salpicadura crea cristales que son @UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{Caltrops} en superficies niveladas y asideros en superficies verticales, otorgando una bonificación de +3 por objeto a la siguiente prueba de Atletismo para Trepar."
+          "success": "<strong>Efecto</strong> La bomba también causa [[/r (6[splash])[piercing]]]{6 piercing splash damage} y ​​la salpicadura crea cristales que son @UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{Caltrops} en superficies niveladas y asideros en superficies verticales, otorgando una bonificación de +3 por objeto a la siguiente prueba de Atletismo para Trepar."
         },
         "Moderate": {
           "success": "<strong> Efecto </strong> La bomba también causa [[/r (4[splash])[piercing]]]{4 piercing splash damage} y ​​la salpicadura crea cristales que son @UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{Caltrops} en superficies niveladas y asideros en superficies verticales, otorgando una bonificación de +1 por objeto a la siguiente prueba de Atletismo para Trepar."
