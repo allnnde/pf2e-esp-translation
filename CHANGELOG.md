@@ -1,3 +1,23 @@
+# [6.4.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.3.9...v6.4.0) (2024-10-14)
+
+
+### Bug Fixes
+
+* New translations pathfinder-bestiary-2.json from Crowdin ([f7fc144](https://github.com/allnnde/pf2e-esp-translation/commit/f7fc14490c408d0444353f39f14a9dc53f281e3f))
+* New translations pathfinder-bestiary-2.json from Crowdin ([cad8d44](https://github.com/allnnde/pf2e-esp-translation/commit/cad8d444ad9b1738fd045a3d2fc8f8b9e962bc69))
+* New translations pathfinder-bestiary-3.json from Crowdin ([56f3076](https://github.com/allnnde/pf2e-esp-translation/commit/56f30768eb360776070a1f0f534c30a2b394ef9c))
+* New translations pathfinder-bestiary-3.json from Crowdin ([84f7b46](https://github.com/allnnde/pf2e-esp-translation/commit/84f7b46e8e6d3bff4b806894be0874677bd71fbe))
+* New translations pathfinder-bestiary.json from Crowdin ([6eaada6](https://github.com/allnnde/pf2e-esp-translation/commit/6eaada65b8c86d38098fe10852884d6f9330f104))
+* New translations pathfinder-monster-core.json from Crowdin ([fc337ae](https://github.com/allnnde/pf2e-esp-translation/commit/fc337ae84f30d6649d5836f9c10bd8a3e82d3475))
+* New translations pathfinder-monster-core.json from Crowdin ([87a2fb1](https://github.com/allnnde/pf2e-esp-translation/commit/87a2fb1465d7a885cd85b31f6a6591d6e17d7f2b))
+
+
+### Features
+
+* add bestiaris ([048db3e](https://github.com/allnnde/pf2e-esp-translation/commit/048db3e23f4a2121e50be06ac042b30abf44f723))
+
+
+
 ## [6.3.9](https://github.com/allnnde/pf2e-esp-translation/compare/v6.3.8...v6.3.9) (2024-10-14)
 
 
@@ -58,15 +78,6 @@
 * New translations spells.json from Crowdin ([1b6e7ff](https://github.com/allnnde/pf2e-esp-translation/commit/1b6e7ff34471bbe605fd5cd328e721124938e81b))
 * New translations spells.json from Crowdin ([6f624af](https://github.com/allnnde/pf2e-esp-translation/commit/6f624af2f2bb2940cfeb037514993ecd814ea42b))
 * New translations spells.json from Crowdin ([3f9f4b4](https://github.com/allnnde/pf2e-esp-translation/commit/3f9f4b457f92c40304af17461dec174d4984f2ad))
-
-
-
-## [6.3.5](https://github.com/allnnde/pf2e-esp-translation/compare/v6.3.4...v6.3.5) (2024-10-04)
-
-
-### Bug Fixes
-
-* New translations spells.json from Crowdin ([ad8313d](https://github.com/allnnde/pf2e-esp-translation/commit/ad8313d59a8ee3363dc8cb689fb7c1223a91bf37))
 
 
 
