@@ -1,3 +1,19 @@
+## [6.4.6](https://github.com/allnnde/pf2e-esp-translation/compare/v6.4.5...v6.4.6) (2024-10-23)
+
+
+### Bug Fixes
+
+* New translations actions.json from Crowdin ([d87f3b7](https://github.com/allnnde/pf2e-esp-translation/commit/d87f3b7262c0d057c3eeb599c4bea3de3d07ef9b))
+* New translations dictionary.json from Crowdin ([ca7d632](https://github.com/allnnde/pf2e-esp-translation/commit/ca7d6323c5e87891f730457d5e2213228dbabe1c))
+* New translations en.json from Crowdin ([f3e7613](https://github.com/allnnde/pf2e-esp-translation/commit/f3e7613d4103543ac7adebd800ea737fb26541b8))
+* New translations en.json from Crowdin ([6e1559c](https://github.com/allnnde/pf2e-esp-translation/commit/6e1559c32fea24bf3eb1fb7feaa797bbe32436e8))
+* New translations en.json from Crowdin ([b09bf35](https://github.com/allnnde/pf2e-esp-translation/commit/b09bf35c77dd256b31926b7e9fff0f73c6f6d2cc))
+* New translations equipment.json from Crowdin ([31e2d90](https://github.com/allnnde/pf2e-esp-translation/commit/31e2d907cb25ef4b22cf47df2d4e72294b9012c0))
+* New translations equipment.json from Crowdin ([bc19629](https://github.com/allnnde/pf2e-esp-translation/commit/bc1962904b3b283a0b7cc425aab907ebf3cce3a4))
+* New translations equipment.json from Crowdin ([7f8ad41](https://github.com/allnnde/pf2e-esp-translation/commit/7f8ad41ac1aa38861cc4322ca7905e361be84c2c))
+
+
+
 ## [6.4.5](https://github.com/allnnde/pf2e-esp-translation/compare/v6.4.4...v6.4.5) (2024-10-21)
 
 
@@ -46,15 +62,6 @@
 
 * New translations ancestryfeatures.json from Crowdin ([23f6b85](https://github.com/allnnde/pf2e-esp-translation/commit/23f6b85175822472a06415fa17f463fb73ca2fb0))
 * New translations equipment.json from Crowdin ([0d8ebad](https://github.com/allnnde/pf2e-esp-translation/commit/0d8ebadb293967ba8c3a62d936b8b9444f2cd699))
-
-
-
-## [6.4.1](https://github.com/allnnde/pf2e-esp-translation/compare/v6.4.0...v6.4.1) (2024-10-14)
-
-
-### Bug Fixes
-
-* fix version error ([be4b277](https://github.com/allnnde/pf2e-esp-translation/commit/be4b2773f7512eabafc66706f1f84f07f076ea0e))
 
 
 
