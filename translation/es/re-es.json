@@ -648,6 +648,9 @@
       }
     },
     "GenericLabel": {
+      "ItemVs": {
+        "Fear": "{item} vs. fear"
+      },
       "PreviousAction": {
         "ClimbLeapStride": "Your previous action was to Climb, Leap, or Stride"
       }
@@ -695,6 +698,9 @@
       "SanguineMutagen": {
         "DamageNote": "Cada vez que recibes daño perforante o cortante, sufres @Damage[1d6[bleed]].",
         "VariantSaveLabel": "{item} vs Enfermedad, Veneno, Fatiga"
+      },
+      "SereneMutagen": {
+        "PenaltyLabel": "Serene Mutagen — Casting an offensive spell."
       }
     },
     "NPCAbility": {
@@ -711,6 +717,12 @@
           "Spirit": "Espíritu"
         },
         "SpectralFlame": "Spectral Flame"
+      },
+      "Asper": {
+        "Aura": {
+          "Fire": "Any creature within 30 feet who receives fire damage receives an extra @Damage[2d10[persistent,fire]] damage.",
+          "Label": "Asper's Elemental Aura"
+        }
       },
       "BarghestFeed": "¿Cuántas veces se ha alimentado el Barghest?",
       "BladeMagus": {
@@ -739,6 +751,9 @@
         }
       },
       "ChangeShape": {
+        "AlterationNotes": {
+          "Unusable": "This ability is not usable in your current form."
+        },
         "Form": {
           "Animal": "Animal",
           "AnimalAerial": "Aerial Animal",
@@ -827,6 +842,7 @@
           "ObjectTiny": "Tiny Inanimate Object",
           "Octopus": "Pulpo",
           "Oni": "Oní",
+          "Orc": "Orc",
           "Owlbear": "Oso lechuza (Owlbear)",
           "Plant": "Planta",
           "PorcupineGiant": "Giant Porcupine",
@@ -840,6 +856,7 @@
           "Spider": "Spider",
           "Succubus": "Súcubo",
           "Tailless": "Tailless",
+          "Tiger": "Tiger",
           "Tree": "Árbol",
           "Unicorn": "Unicornio",
           "Vampire": "Vampiro",
@@ -1632,7 +1649,7 @@
       "BaseSpeed": "Velocidad básica",
       "BattleForm": "Forma de batalla",
       "ChoiceSet": "Conjunto de elección",
-      "CraftingEntry": "Entrada de Artesanía",
+      "CraftingAbility": "Crafting Ability",
       "CreatureSize": "Tamaño de la criatura",
       "CriticalSpecialization": "Especialización crítica",
       "DamageAlteration": "Damage Alteration",
@@ -1654,6 +1671,7 @@
       "RollOption": "Opción de rollo",
       "RollTwice": "rodar dos veces",
       "Sense": "Sentido",
+      "SpecialResource": "Special Resource",
       "SpecialStatistic": "Estadística especial",
       "Strike": "Huelga",
       "Striking": "Sorprendentes",
@@ -2123,6 +2141,11 @@
           "WebNote": "<p>The spider's web attack deals no damage, but the target takes a –10-foot circumstance penalty to its Speeds for 1 round on a hit.</p><p>@UUID[Compendium.pf2e.feat-effects.Item.tCMVyxQhzYCjBQtK]</p><p>If a target is hit a second time by the same character's web attack while they have this penalty, they're instead @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} until they succeed at a check to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} against your class DC.</p>",
           "Wolf": "Lobo"
         },
+        "ComeAndGetMe": {
+          "IncomingDamage": "If a creature hits you, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to you until the end of your next turn.",
+          "Name": "Come and Get Me",
+          "TemporaryHitPoints": "When you strike a creature who hit you in the last round, you gain temporary Hit Points equal to your Constitution modifier, or double that on a critical hit. These temporary Hit Points last until the end of your rage. @UUID[Compendium.pf2e.feat-effects.Item.CYmipBeliNuymENB]{Effect: Come and Get Me (Temporary Hit Points)}"
+        },
         "Decay": {
           "ToggleLabel": "Rotting Rage"
         },
@@ -2360,6 +2383,9 @@
           "Toggle": "Primer golpe contra una criatura impía en esta ronda."
         },
         "BladeAllyRune": "Selecciona una runa de propiedad para tu aliado espada.",
+        "BlessedSwiftness": {
+          "RollOptionLabel": "Defending against a reaction triggered by your movement"
+        },
         "DivineSmite": {
           "Label": "Castigo Divino"
         },
@@ -2879,6 +2905,9 @@
           "Note": "Cuando estás en un entorno de bosque o jungla, si obtienes un fracaso crítico en una prueba de habilidad de Supervivencia para Sentir dirección, Subsistir o Cubrir pistas, obtienes un fracaso, y si obtienes un éxito, obtienes un éxito crítico."
         }
       },
+      "EnvenomCompanion": {
+        "DamageNote": "A creature that is damaged by this poison must attempt a @Check[fortitude|traits:poison] save. On a failure, it's also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round."
+      },
       "Equipment": {
         "AlchemistGoggles": {
           "RollOptionLabel": "Failed Strike with an alchemical bomb"
@@ -2954,12 +2983,18 @@
         "CloakOfWavesAndClouds": {
           "CutAirAndSea": "Cut Air and Sea"
         },
+        "Confabulator": {
+          "RollOptionLabel": "Performance with confabulator instrument"
+        },
         "ConstrictingMeteor": {
           "CoilingChainLabel": "Constricting Meteor - Coiling Chain"
         },
         "CoyoteCloak": {
           "GreaterNote": "Si tienes un éxito crítico en tu prueba de Supervivencia para Subsistir, podrás alimentar cuatro veces más criaturas adicionales.",
           "Note": "Si tienes un éxito crítico en tu prueba de Supervivencia para Subsistir, podrás alimentar al doble de criaturas adicionales."
+        },
+        "DazzlingRosary": {
+          "Note": "The target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the beginning of your next turn."
         },
         "DeckOfDestiny": {
           "MatchingSuitPrompt": "¿El palo de la carta extraída está relacionado con el cheque?",
@@ -2988,6 +3023,10 @@
           "ChocolateLabel": "Chocolate",
           "StrawberryLabel": "Fresa",
           "VanillaLabel": "Vainilla"
+        },
+        "EnergizingLattice": {
+          "Note": "If your Strike fails, but doesn't critically fail, the target still takes half the @Damage[6d6[force]]{force damage}.",
+          "RollOptionLabel": "Energizing Lattice — Release energy"
         },
         "Erraticannon": {
           "Note": "Cada vez que ataques con el arma, tira para determinar el tipo de daño del Golpe. @UUID[Compendium.pf2e.equipment-effects.Item.wmrINlK6twqfbJjo]{Effect: Erraticannon}"
@@ -3032,6 +3071,11 @@
         "PhantomShroud": {
           "StrikeLabel": "Mano fantasmal"
         },
+        "RhinoShot": {
+          "CriticalSuccess": "The target must succeed at a @Check[fortitude|dc:19|name:Rhino Shot|traits:conjuration,consumable,magical|showDC:all] save or be knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.",
+          "Label": "Rhino Shot",
+          "Success": "The target must critically succeed at a @Check[fortitude|dc:19|name:Rhino Shot|traits:conjuration,consumable,magical|showDC:all] save or be knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
+        },
         "RobeOfTheArchmagi": {
           "VsArcaneSpells": "{item} (vs. Arcane Spells)"
         },
@@ -3062,6 +3106,9 @@
         },
         "UnholyWater": {
           "Note": "Sólo puede dañar a criaturas con el rasgo sagrado."
+        },
+        "WemmuthTrinket": {
+          "Description": "Creatures who fail or critically fail their Reflex saves also take @Damage[(@item.rank)[piercing]]."
         },
         "ZuhrasGloves": {
           "WallOfMetalLabel": "La pared de metal está activa"
@@ -3145,8 +3192,8 @@
           "Note": "Cuando tratas heridas, puedes infligir @Damage[1d8[slashing]] daño a tu paciente justo antes de aplicar los efectos de tratar heridas. Si lo haces, obtienes un bonificador +2 de circunstancia a tu prueba de Medicina para Tratar Heridas, y si obtienes un éxito, obtendrás un éxito crítico."
         },
         "SolarRejuvenation": {
-          "Ghoran": "The warmth and light of the sun gives you life. If you rest outdoors for 10 minutes during the day, you regain Hit Points equal to your @Damage[(floor(@actor.level/2)*@actor.con.mod)[healing]]{Constitution modifier × half your level}. You gain this benefit in addition to any healing from @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}.",
-          "Leshy": "If you rest outdoors for 10 minutes during the day, you regain Hit Points equal to your @Damage[(floor(@actor.level/2)*@actor.con.mod)[healing]]{Constitution modifier × half your level}. You gain this benefit in addition to any healing from @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}. Leshies whose plant nourishment does not rely on photosynthesis require a similarly suitable environment. For example, fungus leshies need dark, damp environments and a pile of decaying plant matter."
+          "Ghoran": "The warmth and light of the sun gives you life. If you rest outdoors for 10 minutes during the day, you regain Hit Points equal to your @Damage[(floor(@actor.level/2)*@actor.abilities.con.mod)[healing]]{Constitution modifier × half your level}. You gain this benefit in addition to any healing from @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}.",
+          "Leshy": "If you rest outdoors for 10 minutes during the day, you regain Hit Points equal to your @Damage[(floor(@actor.level/2)*@actor.abilities.con.mod)[healing]]{Constitution modifier × half your level}. You gain this benefit in addition to any healing from @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}. Leshies whose plant nourishment does not rely on photosynthesis require a similarly suitable environment. For example, fungus leshies need dark, damp environments and a pile of decaying plant matter."
         },
         "ThlipitContestantDedication": {
           "Lash": "Lash"
@@ -3298,6 +3345,10 @@
         },
         "TorchGoblin": {
           "Note": "Mientras sufras daño de fuego persistente, todos tus ataques cuerpo a cuerpo contra criaturas adyacentes causan un [[/r 1[fire]]]{1 Fire Damage} adicional por dado de daño de arma."
+        },
+        "Twitchy": {
+          "InitiativeToggle": "Twitchy — Opponent uses Deception or Diplomacy for initiative",
+          "TOTMToggle": "Twitchy — Defending against hazards"
         }
       },
       "GoldenBladeOfMzali": {
@@ -4001,7 +4052,7 @@
         },
         "RevelInRetribution": {
           "Label": "Revel in Retribution",
-          "Note": "Lashing out at a defenseless enemy invigorates you with the thrill of combat, granting you temporary Hit Points whenever you successfully hit with a Reactive Strike. The temporary Hit Points last for the spell's duration. @UUID[Compendium.pf2e.spell-effects.Item.rnkQKEwUxrGruE1e]{Effect: Revel in Retribution (Temp HP)}",
+          "Note": "Lashing out at a defenseless enemy invigorates you with the thrill of combat, granting you temporary Hit Points whenever you successfully hit with a Reactive Strike. The temporary Hit Points last for the spell's duration. @UUID[Compendium.pf2e.spell-effects.Item.rnkQKEwUxrGruE1e]{Spell Effect: Revel in Retribution (Temp HP)}",
           "RollOptionLabel": "Using Reactive Strike"
         }
       },
@@ -4038,6 +4089,7 @@
       "PathfinderAgentDedication": {
         "ThoroughReports": "Thorough Reports"
       },
+      "PlayingItem": "Playing {item}",
       "Poppet": {
         "Tsukumogami": {
           "Ceramic": "Ceramic",
@@ -4072,6 +4124,7 @@
         "DragonBreathWeapon": "Selecciona un arma de aliento de dragón.",
         "Element": "Seleccione un elemento.",
         "EnergyType": "Seleccione un tipo de energía.",
+        "EquipmentVariety": "Select an item variety.",
         "EvolutionFeat": "Selecciona una primera dote de evolución.",
         "Feat": "Selecciona una dote.",
         "Feature": "Seleccione una característica.",
@@ -4465,6 +4518,12 @@
         },
         "FishseekerShoony": {
           "Note": "Si obtienes un éxito en un intento de agarrar una ventaja, obtendrás un éxito crítico; si obtienes un fallo crítico, en su lugar obtendrás un fallo."
+        }
+      },
+      "SixthPillar": {
+        "SixthPillarMastery": {
+          "AttackNote": "Whenever you succeed at an unarmed Strike against an opponent, they have a -1 status penalty to saves against your spells until the start of your next turn. @UUID[Compendium.pf2e.feat-effects.Item.DX6v0lcI2uA99Yjv]{Effect: Sixth Pillar Mastery}",
+          "SpellNote": "Whenever you cast a spell using spell slots, you gain a +1 status bonus to attack rolls with your unarmed Strikes until the start of your next turn."
         }
       },
       "SkillMastery": {
@@ -5066,9 +5125,11 @@
         "Cane": "Usar bastón a dos manos",
         "Katana": "Usar Katana a dos manos",
         "Khakkhara": "Usar Khakkhara a dos manos",
+        "OrcSkewermaul": "Use Orc Skewermaul Two-Handed",
         "ReinforcedStock": "Utilice material reforzado a dos manos",
         "RhokaSword": "Usa la espada Rhoka a dos manos",
-        "Staff": "Utilice el bastón a dos manos"
+        "Staff": "Utilice el bastón a dos manos",
+        "Tuskblade": "Use Tuskblade Two-Handed"
       },
       "UndeadSlayer": {
         "SlayersPresence": {
@@ -5274,6 +5335,11 @@
         },
         "UnifiedMagicalTheory": {
           "Prompt": "Selecciona una dote de mago de primer nivel."
+        }
+      },
+      "ZephyrGuard": {
+        "KnowTheBeat": {
+          "RollOptionLabel": "Know the Beat — Investigating crimes"
         }
       },
       "Zombie": {

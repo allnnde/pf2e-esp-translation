@@ -85,6 +85,7 @@
           "HitPointsSingle": "{hitPoints} punto de golpe restaurado.",
           "InfusedReagents": "Se restauraron los reactivos infundidos.",
           "Resolve": "Resolución restaurada.",
+          "Resource": "{name} restored.",
           "SpellSlots": "Todos los espacios de conjuros restaurados.",
           "StaminaPoints": "Puntos de resistencia restaurados.",
           "TemporaryItems": "Elementos temporales eliminados.",
@@ -101,7 +102,6 @@
     "ActionActionTypeLabel": "Tipo de acción",
     "ActionActionsLabel": "Acciones",
     "ActionBrowserSearchHint": "Puede buscar por nombre o atributos personalizados. Los posibles atributos buscables son: <br> fuente, tipo de conjuro, nivel, materiales, objetivo, alcance, tiempo, duración, daño, tipo de daño, salvación, concentración, ritual, habilidad y clases. <br> Ejemplo: 'fuego, daño:d6' para mostrar todos los conjuros que tienen fuego en su nombre y un d6 en el daño",
-    "ActionDeathNoteLabel": "Aviso de muerte",
     "ActionNumber1": "Uno",
     "ActionNumber2": "Dos",
     "ActionNumber3": "Tres",
@@ -140,6 +140,14 @@
       },
       "Attacks": "Ataques",
       "Character": {
+        "ABCPicker": {
+          "SearchPlaceholder": "Search {items}",
+          "Title": "{type} Selection",
+          "Tooltip": {
+            "ConfirmSelection": "Confirm Selection",
+            "ViewSheet": "View Sheet"
+          }
+        },
         "Attribute": {
           "Apex": "Atributo de ápice",
           "Boosts": "Mejoras de atributos",
@@ -1702,27 +1710,34 @@
         "Features": "Características",
         "InvalidDrop": "{badType} no se puede colocar aquí (debe ser {goodType})"
       },
-      "Action": {
+      "Ability": {
         "Category": {
-          "None": "Ninguno",
-          "Defensive": "Defensivo",
-          "Interaction": "Interacción",
-          "Offensive": "Ofensivo",
-          "Familiar": "Habilidad del familiar"
+          "None": "None",
+          "Defensive": "Defensive",
+          "Interaction": "Interaction",
+          "Offensive": "Offensive",
+          "Familiar": "Familiar Ability"
         },
-        "Plural": "Habilidades",
+        "FIELDS": {
+          "deathNote": {
+            "label": "Death Note"
+          },
+          "selfEffect": {
+            "hint": "A single effect item to be applied to the actor that uses this action",
+            "label": "Self-Applied Effect"
+          }
+        },
+        "Plural": "Abilities",
         "SelfAppliedEffect": {
-          "Applied": "Se aplicó {effect}.",
-          "Delete": "Eliminar referencia",
-          "Drop": "Efecto soltar",
-          "Label": "Efecto autoaplicado",
-          "Hint": "Un elemento de efecto único que se aplicará al actor que utiliza esta acción."
+          "Applied": "{effect} was applied.",
+          "Delete": "Delete Reference",
+          "Drop": "Drop Effect"
         },
         "Type": {
-          "Activity": "Actividad",
-          "Free": "Acción libre",
-          "Single": "Acción única",
-          "Reaction": "Reacción"
+          "Activity": "Activity",
+          "Free": "Free Action",
+          "Single": "Single Action",
+          "Reaction": "Reaction"
         }
       },
       "Activation": {
@@ -1751,6 +1766,7 @@
       },
       "Ancestry": {
         "DropFeatures": "Coloca las dotes de ascendencia aquí.",
+        "Plural": "Ancestries",
         "Vision": {
           "Label": "Visión",
           "Normal": "Visión normal"
@@ -1810,11 +1826,17 @@
         },
         "UnequippedHint": "Esta armadura es más voluminosa debido a que no está equipada."
       },
+      "Background": {
+        "Plural": "Backgrounds"
+      },
       "CampaignFeature": {
         "CampaignLabel": "Campaña",
         "Plural": "Características de campaña"
       },
       "CannotAddType": "Los objetos {type} no se pueden agregar a este actor.",
+      "Class": {
+        "Plural": "Classes"
+      },
       "Condition": {
         "Chat": {
           "Current": "Condiciones actuales"
@@ -2221,6 +2243,7 @@
           "Hint": "Casi todas las deidades tienen una única arma predilecta, pero algunas tienen tanto un arma predilecta como un ataque sin armas.",
           "Label": "Arma(s) favorita(s)"
         },
+        "Plural": "Deities",
         "Sanctification": {
           "Can": {
             "Holy": "puedes elegir sagrado",
@@ -2274,6 +2297,11 @@
         "ShowTokenIcon": "¿Mostrar icono de ficha?",
         "Unidentified": "¿No identificado?"
       },
+      "FIELDS": {
+        "category": {
+          "label": "Category"
+        }
+      },
       "Feat": {
         "Info": {
           "Added": "{item} se agregó a {category}."
@@ -2326,6 +2354,7 @@
         "AncestryNotFound": "No se encontró el elemento de ascendencia al que se hace referencia.",
         "DragAncestryHere": "Arrastre un elemento de ascendencia aquí para establecer el requisito previo de ascendencia de esta herencia.",
         "NoneVersatile": "Ninguno (versátil)",
+        "Plural": "Heritages",
         "RemoveAncestry": "Eliminar ascendencia de requisito previo"
       },
       "IconLabel": "Icono",
@@ -2419,6 +2448,7 @@
         },
         "LevelLabel": "Objeto {level}",
         "OtherTag": {
+          "HandwrapsOfMightyBlows": "Handwraps of Mighty Blows",
           "Herbal": "Herbario",
           "Improvised": "Improvisado",
           "Shoddy": "Deficiente"
@@ -3900,6 +3930,7 @@
     "TraitAttachedToFirearm": "Fijado al arma de fuego",
     "TraitAttachedToFirearmFiringMechanism": "Fijado al arma de fuego (mecanismo de disparo)",
     "TraitAttachedToFirearmScope": "Fijado al arma de fuego (alcance)",
+    "TraitAttachedToMeleeWeapon": "Attached to a Melee Weapon",
     "TraitAttachedToShield": "Fijado al escudo",
     "TraitAttachedToShipsBow": "Fijado a la proa de un barco",
     "TraitAttack": "Ataque",
@@ -4224,6 +4255,7 @@
     "TraitDescriptionLaunching": "Un mecanismo dentro de este escudo puede disparar proyectiles, lo que hace que el escudo también funcione como un arma a distancia. El rasgo enumera el tipo de arma, como \"lanzar dardos\". Golpear con el lanzador requiere la misma cantidad de manos que de forma normal, excepto que la mano que sostiene el escudo cuenta para este total, por lo que un arma a distancia con una sola mano requeriría solo una mano. La recarga requiere el número normal de acciones de Interactuar, hasta un mínimo de 1 acción, y no puedes usar la mano que sostiene tu escudo pararecargar.",
     "TraitDescriptionLeshy": "Una criatura con este rasgo es miembro de la ascendencia leshy.",
     "TraitDescriptionLight": "Los efectos de luz superan la oscuridad no mágica del área y pueden contrarrestar la oscuridad mágica. Por lo general, debes apuntar a la magia de oscuridad con tu magia de luz directamente para contrarrestar la oscuridad, pero algunos hechizos de luz intentan contrarrestar automáticamente la oscuridad.",
+    "TraitDescriptionLineage": "A feat with this trait indicates a character's descendance from a particular type of creature. You can have only one lineage feat. You can select a lineage feat only at 1st level, and you can't retrain into or out of these feats.",
     "TraitDescriptionLinguistic": "Un efecto con este rasgo depende de la comprensión del lenguaje. Un efecto lingüístico que apunta a una criatura funciona sólo si el objetivo entiende el idioma que estás usando.",
     "TraitDescriptionLitany": "Las letanías son hechizos de devoción especiales, normalmente utilizados por campeones y que requieren una sola acción, que normalmente otorgan inmunidad temporal a más letanías.",
     "TraitDescriptionLizardfolk": "Estos humanoides reptiles, también conocidos como iruxi, son extremadamente adaptables y pacientes.",
@@ -4661,7 +4693,7 @@
     "TraitPetitioner": "Peticionario",
     "TraitPhantom": "Fantasma",
     "TraitPhysical": "Físico",
-    "TraitPiercing": "Perforación",
+    "TraitPiercing": "Perforante",
     "TraitPlant": "Planta",
     "TraitPoison": "Veneno",
     "TraitPolymorph": "Organismo polimorfo",
@@ -4941,6 +4973,7 @@
     "TraitVolley20": "Volea 20 pies.",
     "TraitVolley30": "Volea 30 pies.",
     "TraitVolley50": "Volea 50 pies.",
+    "TraitVolley60": "Volley 60 ft.",
     "TraitVorpalFear": "Miedo vorpal",
     "TraitWand": "Varita",
     "TraitWater": "Agua",
@@ -5257,6 +5290,7 @@
         "ogre-hook": "Gancho de ogro",
         "orc-knuckle-dagger": "Daga orca de nudillos",
         "orc-necksplitter": "Partecuellos orcos",
+        "orc-skewermaul": "Orc Skewermaul",
         "panabas": "Panabas",
         "pepperbox": "Pimentero",
         "phalanx-piercer": "Perforador de falange",
@@ -6186,6 +6220,7 @@
       "Quantity": "Cantidad",
       "SellMessage": "{seller} vende {quantity} × {item} a {buyer} .",
       "SellSubtitle": "Vender objeto",
+      "SendToPartyStash": "Send to Party Stash",
       "SheetType": "Tipo de hoja",
       "SplitCoinsLabel": "Distribuir monedas",
       "SplitCoinsPopupHeader": "Elige actores para recibir una acción.",
