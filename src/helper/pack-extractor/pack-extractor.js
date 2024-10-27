@@ -30,7 +30,8 @@ export function extractPackGroupList(packs, config, itemDatabase = {}, actorRedi
             packGroupConfig.mapping,
             itemDatabase,
             extractFolders(folderPacks),
-            actorRedirects
+            actorRedirects,
+            packGroupConfig.limitedPacks ? packGroupConfig.limitedPacks : null
         );
         extractedPackGroupListData.extractedPackGroups[groupName] = extractedPackGroupData.extractedPacks;
         extractedPackGroupListData.packGroupListDictionary = mergeNestedObjects(
@@ -51,9 +52,18 @@ export function extractPackGroupList(packs, config, itemDatabase = {}, actorRedi
  * @param {Object} itemDatabase             Contains a database for compendium items to validate nested item entries against
  * @param {Object} folderPacks              Contains folders for the compendium packs
  * @param {Array<Object>} actorRedirects    Contains a list of actors with IDs that got redirected to a new compendium
+ * @param {Object} limitedPacks             The included entries specify specific entries in order to only do a partial extraction for the pack
  * @returns {Object}                        Extracted data, stored in extractedPacks and packGroupDictionary
  */
-export function extractPackGroup(groupName, packs, mapping, itemDatabase = {}, folderPacks, actorRedirects = []) {
+export function extractPackGroup(
+    groupName,
+    packs,
+    mapping,
+    itemDatabase = {},
+    folderPacks,
+    actorRedirects = [],
+    limitedPacks = null
+) {
     postExtractMessage(groupName, true);
 
     const extractedPackGroupData = {
@@ -62,13 +72,18 @@ export function extractPackGroup(groupName, packs, mapping, itemDatabase = {}, f
     };
 
     packs.forEach((pack) => {
+        let limitedEntries = null;
+        if (limitedPacks && limitedPacks[pack.fileName]) {
+            limitedEntries = limitedPacks[pack.fileName];
+        }
         const extractedPackData = extractPack(
             pack.fileName,
             JSON.parse(pack.content),
             mapping,
             itemDatabase,
             folderPacks[pack.fileName],
-            actorRedirects
+            actorRedirects,
+            limitedEntries
         );
         extractedPackGroupData.extractedPacks[pack.fileName] = extractedPackData.extractedPack;
         extractedPackGroupData.packGroupDictionary = mergeNestedObjects(
@@ -90,9 +105,18 @@ export function extractPackGroup(groupName, packs, mapping, itemDatabase = {}, f
  * @param {Object} itemDatabase             Contains a database for compendium items to validate nested item entries against
  * @param {Object} packFolders              Contains folders for the compendium pack
  * @param {Array<Object>} actorRedirects    Contains a list of actors with IDs that got redirected to a new compendium
+ * @param {Array<String>} limitedEntries    Contains a list of pack entries for a partial extraction
  * @returns {Object}                        Extracted data, stored in extractedPack and packDictionary
  */
-export function extractPack(packName, pack, mapping, itemDatabase = {}, packFolders, actorRedirects = []) {
+export function extractPack(
+    packName,
+    pack,
+    mapping,
+    itemDatabase = {},
+    packFolders,
+    actorRedirects = [],
+    limitedEntries = null
+) {
     postExtractMessage(packName);
 
     const extractedPackData = {
@@ -109,8 +133,11 @@ export function extractPack(packName, pack, mapping, itemDatabase = {}, packFold
         extractedPackData.extractedPack.folders = packFolders;
     }
 
-    pack.forEach((entry) => {
-        const extractedEntryData = extractEntry(entry, mapping, itemDatabase, false, actorRedirects);
+    for (const entry of pack) {
+        if (limitedEntries && !limitedEntries.includes(entry.name)) {
+            continue;
+        }
+        const extractedEntryData = extractEntry(entry, mapping, itemDatabase, false, actorRedirects, limitedEntries);
 
         extractedPackData.extractedPack.entries[entry.name] = extractedEntryData.extractedEntry;
 
@@ -123,7 +150,7 @@ export function extractPack(packName, pack, mapping, itemDatabase = {}, packFold
             extractedPackData.packDictionary,
             extractedEntryData.entryDictionary
         );
-    });
+    }
     extractedPackData.extractedPack.entries = sortObject(extractedPackData.extractedPack.entries);
     return extractedPackData;
 }
@@ -507,9 +534,9 @@ function formatActorItem(extractedValue, mappingKey, mappingPath, item, itemData
     }
 
     // Check if the item exists in a pf2 system compendium
-    if (resolvePath(item, "flags.core.sourceId").exists && itemDatabase[item.flags.core.sourceId]) {
-        const databaseItem = itemDatabase[item.flags.core.sourceId];
-
+    const itemCompendiumLink = getCompendiumLinkFromItemData(item);
+    if (itemCompendiumLink && itemDatabase[itemCompendiumLink]) {
+        const databaseItem = itemDatabase[itemCompendiumLink];
         // For regular actor items, reduce localization load since items are pulled and merged from a compendium during translation.
         // For adventure actor items however, items may have gotten modified and mustn't get merged with the compendium version.
         // As a result, adventure actor items need to get all relevant fields extracted
@@ -736,4 +763,26 @@ function unifyLineBreaks(htmlString) {
     });
 
     return htmlString;
+}
+
+/**
+ * Extracts an item's compendium link for items, that originate from a compendium
+ *
+ * @param {Object} item         Item data
+ * @returns {string|boolean}  The item's compendium link
+ */
+function getCompendiumLinkFromItemData(item) {
+    let compendiumLink = false;
+    if (resolvePath(item, "flags.core.sourceId").exists) {
+        compendiumLink = item.flags.core.sourceId;
+    }
+    if (resolvePath(item, "_stats.compendiumSource").exists) {
+        compendiumLink = item._stats.compendiumSource;
+    }
+
+    if (compendiumLink !== null && compendiumLink.startsWith("Compendium.pf2e.")) {
+        return compendiumLink;
+    }
+
+    return false;
 }
