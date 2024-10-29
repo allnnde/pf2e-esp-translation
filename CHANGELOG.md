@@ -1,3 +1,13 @@
+## [6.6.1](https://github.com/allnnde/pf2e-esp-translation/compare/v6.6.0...v6.6.1) (2024-10-29)
+
+
+### Bug Fixes
+
+* New translations actions.json from Crowdin ([01f1814](https://github.com/allnnde/pf2e-esp-translation/commit/01f18146daa419e8955731a2e3b394215e141517))
+* New translations journals.json from Crowdin ([c8d17bb](https://github.com/allnnde/pf2e-esp-translation/commit/c8d17bbc434042bf3a2c6ea90fe5b3ead5ba3abb))
+
+
+
 # [6.6.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.5.0...v6.6.0) (2024-10-29)
 
 
@@ -161,23 +171,6 @@
 * New translations equipment.json from Crowdin ([31e2d90](https://github.com/allnnde/pf2e-esp-translation/commit/31e2d907cb25ef4b22cf47df2d4e72294b9012c0))
 * New translations equipment.json from Crowdin ([bc19629](https://github.com/allnnde/pf2e-esp-translation/commit/bc1962904b3b283a0b7cc425aab907ebf3cce3a4))
 * New translations equipment.json from Crowdin ([7f8ad41](https://github.com/allnnde/pf2e-esp-translation/commit/7f8ad41ac1aa38861cc4322ca7905e361be84c2c))
-
-
-
-## [6.4.5](https://github.com/allnnde/pf2e-esp-translation/compare/v6.4.4...v6.4.5) (2024-10-21)
-
-
-### Bug Fixes
-
-* New translations en.json from Crowdin ([42c5cbe](https://github.com/allnnde/pf2e-esp-translation/commit/42c5cbe336d5bebaede7672f61e91a3140008cba))
-* New translations en.json from Crowdin ([919f482](https://github.com/allnnde/pf2e-esp-translation/commit/919f4827f2699d0f78d8f883fe9ca0e86bd39428))
-* New translations equipment.json from Crowdin ([c94fab6](https://github.com/allnnde/pf2e-esp-translation/commit/c94fab6d6521e0bcf788a05fec7af5acec795eca))
-* New translations equipment.json from Crowdin ([64d99bc](https://github.com/allnnde/pf2e-esp-translation/commit/64d99bc6355886404fc6e1d25e97b08234e07a6c))
-* New translations equipment.json from Crowdin ([c45c6e4](https://github.com/allnnde/pf2e-esp-translation/commit/c45c6e4f171d4271bb40e6792162cc5a7aa4188f))
-* New translations equipment.json from Crowdin ([45b7140](https://github.com/allnnde/pf2e-esp-translation/commit/45b7140ef5543ab8651e8e64bdf729a05cbcef7c))
-* New translations equipment.json from Crowdin ([fb9434c](https://github.com/allnnde/pf2e-esp-translation/commit/fb9434c0bbadd6048dcc6d3f4f757371e6a36161))
-* New translations equipment.json from Crowdin ([ad0e882](https://github.com/allnnde/pf2e-esp-translation/commit/ad0e882388be672a668dff0b3d8037daaec53272))
-* New translations feats.json from Crowdin ([1c1d853](https://github.com/allnnde/pf2e-esp-translation/commit/1c1d85332bc1870be7bde2d890e8700729669a41))
 
 
 
