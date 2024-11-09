@@ -2,14 +2,14 @@
   "label": "Peligros",
   "entries": {
     "Armageddon Orb": {
-      "name": "Orbe Del Armaggedon",
-      "description": "<p> Un orbe rojo turbulento, forjado a partir de una gota de sangre del dios Rovagug, hace llover fuego desde el cielo cuando se cumple una condición específica. </p>",
-      "disable": "<p> @Check[type:thievery|dc:48|name:Imbue Thieves' Tools|traits:action:disable-a-device] (legendario) para imbuir un juego de herramientas de ladrones con aspectos que representan a Asmodeus y Sarenrae y usarlos para drenar el poder del orbe durante 10 minutos; el personaje que intenta esta prueba sufre @Damage[5[fire]] de daño cada ronda hasta que el orbe se agota </p>",
-      "stealth": "o <em> detectar magia </em>",
+      "name": "Orbe del armagedón",
+      "description": "<p>Un turbio orbe rojo, forjado a partir de una gota de la sangre del dios Rovagug, hace llover fuego del cielo cuando se cumple una condición específica.</p>",
+      "disable": "<p>@Check[type:thievery|dc:48|name:Imbuir juego de herramientas de ladrón|traits:action:disable-a-device] (legendario) para imbuir un juego de herramientas de ladrón con aspectos que representen a Asmodeo y Sarenrae y usarlo para drenar el poder del orbe durante 10 minutos; el personaje que haga esta prueba sufrirá 5 daño por fuego cada asalto hasta que el orbe se agote.</p>",
+      "stealth": "o <em>detectar magia</em>",
       "items": {
         "action->Burn It All": {
-          "name": "Quémalo todo",
-          "description": "<p> <strong> Desencadenante </strong> Se produce una condición especial establecida por el creador de la trampa, generalmente el evento de su muerte. </p>\n <hr />\n <p> <strong> Efecto </strong> Llueve fuego del cielo en un radio de 100 millas, causando @Damage[10d6[fire]] daño a criaturas y objetos en el área. Cada criatura u objeto puede intentar una salvación @Check[type:reflex|dc:46|basic:true]. Cualquier criatura reducida a 0 puntos de vida por este daño muere instantáneamente. Este no es suficiente daño para quemar completamente unbosque o arrasa una montaña o ciudad entera, pero normalmente mata a la mayoría de las criaturas de la zona. </p>"
+          "name": "Quémadlo todo",
+          "description": "<p><strong>Desencadenante</strong> Se cumple una condición especial establecida por el creador de la trampa, normalmente su muerte.</p>\n<hr />\n<p><strong>Efecto</strong> Llueve fuego del cielo en un radio de 100 millas (160 km), infligiendo @Damage[10d6[fire]]{10d6 daño por fuego} a las criaturas y objetos de la zona. Cada criatura u objeto puede hacer una salvación de @Check[reflex|dc:46|basic]. Cualquier criatura reducida a 0 Puntos de Golpe por este daño muere instantáneamente. Este daño no es suficiente para quemar por completo un bosque o arrasar una montaña o ciudad, pero suele matar a la mayoría de las criaturas de la zona.</p>"
         }
       }
     },
@@ -28,27 +28,27 @@
       }
     },
     "Bloodthirsty Urge": {
-      "name": "Ansia Sanguinaria",
-      "description": "<p> Un objeto perseguido por los ecos de una mente viciosa intenta matar a alguien que se acerca. </p>",
-      "disable": "<p> @Check[type:religion|dc:29|name:Exorcise Spirit] (maestro) para exorcizar el espíritu o @Check[type:diplomacy|dc:31|name:Talk Down the Spirit] (experto) para calmarlo </p>",
-      "stealth": "<p> (entrenado) </p>",
+      "name": "Ansia sanguinaria",
+      "description": "<p>Un objeto atormentado por los ecos de una mente violenta intenta matar a quien se acerque.</p>",
+      "disable": "<p>@Check[type:religion|dc:29|name:Exorcizar espíritu] (maestro) para exorcizar el espíritu o @Check[type:diplomacy|dc:31|name:Calmar al espíritu] (experto) para hablar con él.</p>",
+      "stealth": "<p>(entrenado)</p>",
       "items": {
         "action->Quietus": {
-          "name": "Golpe de gracia",
-          "description": "<p> <strong> Desencadenante </strong> Una criatura se mueve a 10 pies del objeto embrujado </p>\n <hr />\n <p> <strong> Efecto </strong> El fantasma toma el control de la criatura desencadenante, obligándola a atacarse a sí misma. La criatura debe intentar una salvación @Check[type:will|dc:29]. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> El objetivo no se ve afectado. </p>\n <p> <strong> Éxito </strong> El objetivo hace unaGolpea contra sí mismo y golpea automáticamente; el objetivo también se convierte en @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} . </p>\n <p> <strong> Fallo </strong> El objetivo realiza un Golpe contra sí mismo y automáticamente obtiene un golpe crítico; el objetivo también se convierte en @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} . </p>\n <p> <strong> Fallo crítico </strong> El objetivo intenta una salvación de Fortaleza. Si el objetivo tiene éxito, está sujeto a los efectos de un fracaso. si el objetivofalla, se reduce a 0 HP y muere </p>"
+          "name": "Óbito",
+          "description": "<p><strong>Desencadenante</strong> Una criatura se mueve a menos de 10 pies (3 m) del objeto encantado.</p>\n<hr />\n<p><strong>Efecto</strong> La aparición toma el control de la criatura desencadenante, forzándola a atacarse a sí misma. La criatura tiene que hacer una salvación de @Check[will|dc:29].</p>\n<hr />\n<p><strong>Éxito crítico</strong> El objetivo no se ve afectado.</p>\n<p><strong>Éxito</strong> El objetivo se asesta un Golpe a sí mismo y acierta automáticamente; también queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>\n<p><strong>Fallo</strong> El objetivo se asesta un Golpe a sí mismo y obtiene automáticamente un impacto crítico; también queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2}.</p>\n<p><strong>Fallo crítico</strong> El objetivo hace una salvación de Fortaleza. Si tiene éxito, sufre los efectos de un fallo. Si falla, queda reducido a 0 PG y muere.</p>"
         }
       }
     },
     "Bottomless Pit": {
-      "name": "Pozo Sin Fondo",
-      "description": "<p> Una trampilla de hierro cubre un pozo infinitamente profundo de 10 pies cuadrados. </p>",
-      "disable": "<p> @Check[type:thievery|dc:28|name:Remove Trapdoor|traits:action:disable-a-device] (entrenado) para quitar la trampilla </p>",
-      "reset": "<p> La trampa aún hace que las criaturas caigan para siempre si caen, pero la trampilla debe restablecerse manualmente para que la trampa vuelva a quedar oculta. </p>",
-      "stealth": "<p> (o 0 si la trampilla está desactivada o rota) o <em> detectar magia </em> </p>",
+      "name": "Pozo sin fondo",
+      "description": "<p>Una trampilla de hierro cubre un foso de 10 pies (3 m) cuadrados de profundidad infinita.</p>",
+      "disable": "<p>@Check[type:thievery|dc:28|name:Quitar trampilla|traits:action:disable-a-device] (entrenado) para quitar la trampilla.</p>",
+      "reset": "<p>La trampa sigue provocando que las criaturas caigan para siempre si caen dentro, pero la trampilla tiene que rearmarse manualmente para que la trampa vuelva a estar escondida.</p>",
+      "stealth": "<p>(0 si la trampilla está inutilizada o rota) o <em>detectar magia</em></p>",
       "items": {
         "action->Infinite Pitfall": {
-          "name": "Abismo Infinito",
-          "description": "<p> <strong> Desencadenante </strong> Una criatura camina hacia la trampilla </p>\n <hr />\n <p> <strong> Efecto </strong> La criatura desencadenante cae y continúa cayendo, potencialmente para siempre. Esa criatura puede intentar @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} para evitar caer. La CD para escalar las paredes o agarrar un borde es 26. El pozo contiene muchos asideros, por lo que la criatura que cae puede intentar agarrar un borde nuevamente cada 6 segundos. Si la criatura tiene éxito, puede comenzar aSube desde ese punto (aunque puede ser una subida muy larga, dependiendo de qué tan lejos haya caído la criatura). Dado que la criatura cae sin cesar, puede descansar e incluso preparar hechizos mientras cae, aunque los objetos que caen durante la caída generalmente se pierden para siempre. </p>"
+          "name": "Trampilla infinita",
+          "description": "<p><strong>Desencadenante</strong> Una criatura pisa la trampilla</p>\n<hr />\n<p><strong>Efecto</strong> La criatura desencadenante cae y sigue cayendo, potencialmente para siempre. Dicha criatura puede intentar @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Agarrarse a un saliente} para evitar caer. La CD para Trepar por las paredes o Agarrarse a un saliente es 26.</p>\n<p>El pozo contiene muchos asideros, por lo que la criatura que cae puede intentar Agarrarse a un saliente de nuevo cada 6 segundos. Si lo consigue, puede empezar a Trepar desde ese punto (aunque puede ser una subida muy larga, dependiendo de lo lejos que haya caído). Como cae sin parar, puede descansar e incluso preparar conjuros mientras cae, aunque los objetos que se le caen suelen perderse para siempre</p>"
         }
       }
     },
@@ -128,14 +128,14 @@
       }
     },
     "Electric Latch Rune": {
-      "name": "Runa De Pestillo Eléctrico",
-      "description": "<p> Una runa invisible impresa en el pestillo de una puerta libera una poderosa descarga eléctrica. </p>",
-      "disable": "<p> @Check[type:thievery|dc:20|name:Scratch Out the Rune|traits:action:disable-a-device] (experto) para tachar la runa sin permitir que fluya la electricidad, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (segundo rango; contrarrestar CD 18) para contrarrestar la runa </p>",
-      "stealth": "<p> (entrenado) </p>",
+      "name": "Runa de pestillo eléctrico",
+      "description": "<p>Una runa invisible grabada en el pestillo de una puerta libera una potente descarga eléctrica.</p>",
+      "disable": "<p>@Check[type:thievery|dc:20|name:Tachar la runa|traits:action:disable-a-device] (experto) para tachar la runa y no permitir que fluya la electricidad o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (2.º rango; contrarrestar CD 18) para contrarrestar la runa.</p>",
+      "stealth": "<p>(entrenado)</p>",
       "items": {
         "action->Electrocution": {
           "name": "Electrocución",
-          "description": "<p> <strong> Gatillo </strong> Una criatura agarra el pestillo de la puerta directamente o con una herramienta </p>\n <hr />\n <p> <strong> Efecto </strong> La trampa causa @Damage[3d12[electricity]] daño a la criatura que la activa (@Check[type:reflex|dc:22|basic:true] salvación). </p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura agarra el pestillo de la puerta directamente o con una herramienta.</p>\n<hr />\n<p><strong>Efecto</strong> La trampa inflige @Damage[3d12[electricity]]{3d12 daño por electricidad} a la criatura desencadenante (salvación @Check[reflex|dc:22|basic]).</p>"
         }
       }
     },
@@ -154,14 +154,14 @@
       }
     },
     "Fireball Rune": {
-      "name": "Runa De Bola De Fuego",
-      "description": "<p> Una runa invisible crea un sensor mágico esférico e invisible con un radio de 20 pies. </p>",
-      "disable": "<p> @Check[type:thievery|dc:22|name:Erase the Rune] (experto) para borrar la runa sin activar el sensor, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3er rango; contrarrestar CD 20) para contrarrestar la runa </p>",
-      "stealth": "<p> (experto) </p>",
+      "name": "Runa de bola de fuego",
+      "description": "<p>Una runa invisible crea un sensor mágico esférico invisible con un radio de 20 pies (6 m).</p>",
+      "disable": "<p>@Check[type:thievery|dc:22|name:Borrar la runa] (experto) para borrar la runa sin activar el sensor, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (3.º rango; contrarrestar CD 20) para contrarrestar la runa.</p>",
+      "stealth": "<p>(experto)</p>",
       "items": {
         "action->Fireball": {
-          "name": "bola de fuego",
-          "description": "<p> <strong> Activador </strong> Una criatura viviente ingresa al área del sensor </p>\n <hr />\n <p> <strong> Efecto </strong> La runa detona un @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball} centrado en el cuadrado de la criatura desencadenante. Este es un hechizo de bola de fuego de tercer rango que causa @Damage[6d6[fire]] de daño ( @Check[type:reflex|dc:22|basic:true] salvación). </p>"
+          "name": "Bola de fuego",
+          "description": "<p><strong>Desencadenante</strong> Una criatura viva entra en el área del sensor.</p>\n<hr />\n<p><strong>Efecto</strong> La runa detona una @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Bola de fuego} centrada en la casilla de la criatura desencadenante. Es un conjuro bola de fuego de 3.º rango que inflige @Damage[6d6[fire]]{6d6 daño por fuego} (salvación @Check[reflex|dc:22|basic]).</p>"
         }
       }
     },
@@ -193,13 +193,13 @@
     },
     "Ghostly Choir": {
       "name": "Coro fantasmal",
-      "description": "<p> Un coro de almas perdidas se levanta del suelo, cantando un canto espeluznante que aterroriza a sus oyentes y golpea sus cuerpos con paredes de sonido. </p>",
-      "disable": "<p> @Check[type:performance|dc:28|name:Sing a Different Tune|traits:haunt] (entrenado) para interrumpir la resonancia de la canción con otra melodía o @Check[type:religion|dc:28|name:Ritually Silence the Haunt|traits:haunt] (entrenado) para silenciar ritualmente a los espíritus </p>",
-      "stealth": "<p> (experto) </p>",
+      "description": "<p>Un coro de almas perdidas surge del suelo, entonando un espeluznante cántico que aterroriza a sus oyentes y sacude sus cuerpos con muros de sonido.</p>",
+      "disable": "<p>@Check[type:performance|dc:28|name:Cantar otra melodía|traits:haunt] (entrenado) para interrumpir la resonancia de la canción con otra melodía o @Check[religion|dc:28|name:Silenciar ritualmente a los espíritus|traits:haunt] (entrenado) para silenciar ritualmente a los espíritus.</p>",
+      "stealth": "<p>(experto)</p>",
       "items": {
         "action->Profane Chant": {
-          "name": "Canto Profano",
-          "description": "<p> <strong> Desencadenante </strong> Una criatura se mueve dentro de 10 pies de la sección del piso desde donde puede surgir el coro </p>\n <hr />\n <p> <strong> Efecto </strong> El coro se levanta y su canción inflige @Damage[(4d8+18)[mental]] daño a criaturas no malvadas dentro de 30 pies de las formas espectrales de las almas. Las criaturas afectadas deben intentar una salvación @Check[type:will|dc:24|traits:damaging-effect] cada una. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> La criatura esinafectado. </p>\n <p> <strong> Éxito </strong> La criatura recibe la mitad del daño y se convierte en @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} . </p>\n <p> <strong> Fallo </strong> La criatura sufre todo el daño y se convierte en @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} . </p>\n <p> <strong> Fallo crítico </strong> La criatura sufre el doble de daño. También se convierte en @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3} y ​​@UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} durante 1 ronda. </p>"
+          "name": "Cántico sacrílego",
+          "description": "<p><strong>Desencadenante</strong> Una criatura se mueve a menos de 10 pies (3 m) de la sección del suelo de la que puede surgir el coro.</p>\n<hr />\n<p><strong>Efecto</strong> El coro se eleva y su canción inflige @Damage[(4d8+18)[mental]]{4d8+18 daño mental} a las criaturas que carecen del rasgo vacío en un radio de 30 pies (9 m) de las formas espectrales de las almas. Las criaturas afectadas han de hacer una salvación de @Check[will|dc:24|traits:damaging-effect] cada una.</p> \n<hr />\n<p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura sufre mitad de daño y queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 1}.</p>\n<p><strong>Fallo</strong> La criatura sufre daño completo y queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 2}.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre doble daño. También queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 3} y @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} durante 1 asalto.</p>"
         }
       }
     },
@@ -242,57 +242,57 @@
       }
     },
     "Hallucination Powder Trap": {
-      "name": "Trampa De Polvo Alucinógeno",
-      "description": "<p> Un tubo de polvo alucinógeno armado con un explosivo en miniatura está conectado al pomo de una puerta o a un pestillo similar. </p>",
-      "disable": "<p> @Check[type:thievery|dc:26|name:Disable Hammer|traits:action:disable-a-device] (experto) para desactivar el martillo que golpea el casquillo de percusión </p>",
-      "stealth": "<p> (experto) </p>",
+      "name": "Trampa de polvo alucinógeno",
+      "description": "<p>Un tubo de polvo alucinógeno armado con un explosivo en miniatura está conectado al pomo de una puerta o a un pestillo similar.</p>",
+      "disable": "<p>@Check[type:thievery|dc:26|name:Desactivar martillo|traits:action:disable-a-device] (experto) para desactivar el martillo que golpea la cápsula fulminante.</p>",
+      "stealth": "<p>(experto)</p>",
       "items": {
         "action->Powder Burst": {
-          "name": "Explosión de pólvora",
-          "description": "<p> <strong> Gatillo </strong> El pestillo está abierto o el tubo está roto. </p>\n <hr />\n <p> <strong> Efecto </strong> El tubo explota, rociando polvo alucinógeno en un @Template[type:cone|distance:30] . Cualquier criatura en el cono debe tener éxito en una salvación @Check[type:will|dc:24] o quedará confundida durante 1 ronda y sufrir una penalización de estado de -2 a las pruebas de Percepción y salvaciones contra efectos mentales por [[/br 1d4 #hours]]{1d4 hours}. En caso de fallo crítico, la penalización es de -4. </p><p> @UUID[Compendium.pf2e.bestiary-effects.Item.6OpwHz0f55wPawHI]{Effect: Powder Burst} </p>"
+          "name": "Explosión de polvo",
+          "description": "<p><strong>Desencadenante</strong> Se abre el pestillo o se rompe el tubo.</p>\n<hr />\n<p><strong>Efecto</strong> El tubo explota, rociando polvo alucinógeno en un @Template[cone|distance:30]{cono de 30 pies (9 m)}. Cualquier criatura en el cono ha de tener éxito en una salvación de @Check[will|dc:24] o queda confusa durante 1 asalto y se le impone un penalizador -2 por estatus a las pruebas de Percepción y a las salvaciones contra efectos mentales durante [[/br 1d4 #horas]]{1d4 horas}. En caso de fallo crítico, el penalizador es -4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.6OpwHz0f55wPawHI]{Efecto: Explosión de polvo}</p>"
         }
       }
     },
     "Hammer Of Forbiddance": {
-      "name": "Martillo De Interdicción",
-      "description": "<p> Un enorme martillo en la entrada de un edificio se balancea hacia abajo en un intento de dañar a una criatura que ingresa a un área, empujarla hacia atrás y evitar que avance más. </p>",
-      "disable": "<p> @Check[type:thievery|dc:28|name:Prevent Hammer from Swinging|traits:action:disable-a-device] (experto) una vez en el propio martillo y otra en su articulación para evitar que el martillo oscile </p>",
-      "hpDetails": "Dureza de la junta: 16, HP de la junta: 64 (BT 32)",
-      "reset": "<p> La trampa se reinicia en el transcurso de la ronda y está lista para moverse nuevamente 1 ronda después. </p>",
-      "stealth": "<p> (experto) </p>",
+      "name": "Martillo de interdicción",
+      "description": "<p>Un enorme martillo a la entrada de un edificio desciende en un intento de dañar a una criatura que entra en la zona, empujarla hacia atrás e impedir que siga avanzando.</p>",
+      "disable": "<p>@Check[type:thievery|dc:28|name:Evitar que el martillo descienda|traits:action:disable-a-device] (experto) una vez en el propio martillo y una vez en su bisagra para evitar que el martillo descienda.</p>",
+      "hpDetails": "Dureza de la bisagra: 16, PG de la bisagra: 64 (UR 32)",
+      "reset": "<p>La trampa se rearma en el transcurso del asalto y está lista para volver a activarse al cabo de 1 asalto.</p>",
+      "stealth": "<p>(experto)</p>",
       "items": {
         "action->Forbid Entry": {
           "name": "Prohibir la entrada",
-          "description": "<p> <strong> Desencadenante </strong> Una criatura intenta entrar por la entrada. </p>\n <hr />\n <p> <strong> Efecto </strong> El martillo se balancea hacia abajo, realizando un golpe contra la criatura que lo activa. </p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura intenta atravesar la entrada.</p>\n<hr />\n<p><strong>Efecto</strong> El martillo desciende, asestando un Golpe contra la criatura desencadenante.</p>"
         },
         "strike-melee->Hammer": {
           "name": "Martillo",
-          "description": "<p> En un golpe, el objetivo es empujado hacia atrás 10 pies y debe tener éxito en un @Check[type:will|dc:30] o no podrá ingresar al edificio por ninguna entrada durante 24 horas (en un golpe crítico, el objetivo automáticamente falla la salvación de Voluntad); sin penalización por ataque múltiple </p>"
+          "description": "<p>Si golpea, el objetivo retrocede 10 pies (3 m) y tiene que superar una salvación de @Check[will|dc:30] o no podrá entrar en el edificio por ninguna entrada durante 24 horas (en caso de impacto crítico, el objetivo falla automáticamente la salvación de Voluntad); sin penalizador por ataque múltiple.</p>"
         }
       }
     },
     "Hampering Web": {
-      "name": "Red obstaculizadora",
-      "description": "<p> Láminas semitransparentes de telaraña se extienden por la entrada, listas para capturar pequeños insectos o obstaculizar a las criaturas más grandes que pasan. </p>",
-      "disable": "<p> @Check[type:survival|dc:17|name:Dislodge Web] (entrenado) para desalojarlo </p>",
-      "stealth": "<p> (experto) </p>",
+      "name": "Telaraña entorpecedora",
+      "description": "<p>Láminas de telaraña semitransparentes se extienden por la entrada, listas para capturar pequeños insectos o dificultar el paso de criaturas más grandes.</p>",
+      "disable": "<p>@Check[type:survival|dc:17|name:Quitar telaraña] (entrenado) para quitarlas.</p>",
+      "stealth": "<p>(experto)</p>",
       "items": {
         "action->Ensnare": {
-          "name": "Entrampar",
-          "description": "<p> <strong> Desencadenante </strong> Una criatura que no es una araña entra en la red </p>\n <hr />\n <p> <strong> Efecto </strong> La red envuelve el cuerpo de la criatura desencadenante, aferrándose a sus extremidades. La criatura desencadenante debe tener éxito en una salvación @Check[type:reflex|dc:20] o sufrir una penalización de circunstancia de –10 pies a todas sus Velocidades hasta que @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} la red (CD 20). En un fallo crítico, la red también se adhiere a la cara de la criatura, haciendoellos @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} y ​​no pueden intentar reducir esta condición hasta que escapen de la web. </p>"
+          "name": "Enredar",
+          "description": "<p><strong>Desencadenante</strong> Una criatura que no es una araña entra en la telaraña.</p>\n<hr />\n<p><strong>Efecto</strong> La telaraña envuelve el cuerpo de la criatura desencadenante, pegándose a sus extremidades. La criatura desencadenante ha de tener éxito en una salvación de @Check[reflex|dc:20] o se le impone un penalizador por circunstancia de -10 pies (3 m) a todas sus Velocidades hasta que @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Huye} de la telaraña (CD 20). En caso de fallo crítico, la telaraña también se adhiere a la cara de la criatura, dejándola @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesta 1}, y no puede reducir este estado hasta que Huye de la telaraña.</p>"
         }
       }
     },
     "Hidden Pit": {
-      "name": "Foso Escondido",
-      "description": "<p> Una trampilla de madera cubre un pozo de 10 pies cuadrados y 20 pies de profundidad. </p>",
-      "disable": "@Check[type:thievery|dc:12|name:Remove the Trapdoor] para quitar la trampilla",
-      "reset": "<p> Las criaturas aún pueden caer en la trampa, pero la trampilla debe restablecerse manualmente para que la trampa vuelva a ocultarse. </p>",
-      "stealth": "<p> (o 0 si la trampilla está deshabilitada o rota) </p>",
+      "name": "Foso escondido",
+      "description": "<p>Una trampilla de madera cubre un foso de 10 pies (3 m) cuadrados y 20 pies (6 m) de profundidad.</p>",
+      "disable": "<p>@Check[type:thievery|dc:12|name:Quitar la trampilla] para quitar la trampilla</p>",
+      "reset": "<p>Las criaturas pueden seguir cayendo en la trampa, pero la trampilla tiene que rearmarse manualmente para que vuelva a estar escondida.</p>",
+      "stealth": "<p>(0 si la trampilla está inutilizada o rota)</p>",
       "items": {
         "action->Pitfall": {
-          "name": "Trampa",
-          "description": "<p> <strong> Desencadenante </strong> Una criatura camina hacia la trampilla. </p>\n <hr />\n <p> <strong> Efecto </strong> La criatura desencadenante cae y sufre daño por caída (normalmente @Damage[10[bludgeoning]] daño). Esa criatura puede usar la reacción @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} para evitar caer. </p>"
+          "name": "Trampa de caida",
+          "description": "<p><strong>Desencadenante</strong> Una criatura camina sobre la trampilla.</p>\n<hr />\n<p><strong>Efecto</strong> La criatura desencadenante cae y sufre daño por caída (normalmente @Damage[10[bludgeoning]]{10 daño contundente}). La criatura puede usar la reacción @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Agarrarse a un saliente} para no caer.</p>"
         }
       }
     },
@@ -371,27 +371,27 @@
       }
     },
     "Pharaoh's Ward": {
-      "name": "La sala del faraón",
+      "name": "Custodia del faraón",
       "description": "<p> Una maldición está imbuida en el umbral de una entrada. </p>",
-      "disable": "<p> @Check[type:thievery|dc:27|name:Remove the Lintel] (maestro) para quitar minuciosamente el dintel sin activar la magia, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4to rango; contrarrestar CD 25) para contrarrestar la runa </p>",
-      "reset": "<p> La trampa se reinicia cuando se cierra la puerta. </p>",
-      "stealth": "<p> (experto) </p>",
+      "disable": "<p>@Check[type:thievery|dc:27|name:Quitar el dintel] (maestro) para quitar con cuidado el dintel sin activar la magia, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (4.º rango; contrarrestar CD 25) para contrarrestar la runa.</p>",
+      "reset": "<p>La trampa se rearma cuando se cierra la puerta.</p>",
+      "stealth": "<p>(experto)</p>",
       "items": {
         "action->Curse the Intruders": {
-          "name": "Maldecir a los intrusos",
-          "description": "<p> <strong> Desencadenante </strong> El sello de la tumba está roto desde el exterior. </p>\n <hr />\n <p> <strong> Efecto </strong> Cada criatura viviente en un radio de 60 pies debe superar una salvación @Check[type:will|dc:23] o quedará sujeta a la maldición del faraón. Una criatura maldita sufre una penalización de estado de -2 a las salvaciones de Fortaleza, y cualquier curación natural o mágica que reciba se reduce a la mitad. La maldición permanece hasta que sea eliminada por @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} o magia similar. </p>"
+          "name": "Malditos sean los intrusos",
+          "description": "<p><strong>Desencadenante</strong> El sello de la tumba se rompe desde el exterior.</p>\n<hr />\n<p><strong>Efecto</strong> Cada criatura viva en un radio de 60 pies (18 m) ha de tener éxito en una salvación de @Check[will|dc:23] o sufrir la maldición del faraón. A una criatura maldita se le impone un penalizador -2 por estatus a las salvaciones de Fortaleza y cualquier curación natural o mágica que recibe se reduce a la mitad. La maldición permanece hasta que se elimina mediante @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Limpiar aflicción} o magia similar.</p>"
         }
       }
     },
     "Planar Rift": {
-      "name": "Grieta Planaria",
-      "description": "<p> Una grieta intenta atraer criaturas a otro plano (el DJ elige el plano específico). </p>",
-      "disable": "<p> @Check[type:thievery|dc:33|name:Assemble a Rift Seal|traits:action:disable-a-device] (maestro) para ensamblar un sello de grieta usando objetos fuertemente conectados a tierra en tu avión, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (séptimo rango; contrarrestar CD 31) para contrarrestar la grieta </p>",
-      "stealth": "<p> (entrenado) </p>",
+      "name": "Grieta planaria",
+      "description": "<p>Una grieta intenta atraer criaturas a otro plano (el DJ elige el plano específico).</p>",
+      "disable": "<p>@Check[type:thievery|dc:33|name:Crear un sello de grieta|traits:action:disable-a-device] (maestro) para sellar la grieta usando objetos fuertemente conectados a tu Plano, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (7.º rango; contrarrestar CD 31) para contrarrestar la grieta.</p>",
+      "stealth": "<p>(entrenado)</p>",
       "items": {
         "action->Into the Great Beyond": {
-          "name": "Hacia el gran más allá",
-          "description": "<p> <strong> Desencadenante </strong> Una criatura se mueve a 10 pies de la grieta. </p>\n <hr />\n <p> <strong> Efecto </strong> La criatura desencadenante y todas las criaturas dentro de 30 pies de la grieta son arrastradas a otro plano. Cada criatura puede intentar una salvación @Check[type:reflex|dc:33] para evitar este destino. </p>"
+          "name": "Hacia El Gran Más Allá",
+          "description": "<p><strong>Desencadenante</strong> Una criatura se mueve a menos de 10 pies (3 m) de la grieta.</p>\n<hr />\n<p><strong>Efecto</strong> La criatura desencadenante y todas las criaturas a menos de 30 pies (9 m) de la grieta son atraídas hacia otro Plano. Cada una puede hacer una salvación de @Check[reflex|dc:33] para evitar dicho destino.</p>"
         }
       }
     },
