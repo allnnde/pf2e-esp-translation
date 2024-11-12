@@ -1,5 +1,5 @@
 {
-  "label": "Peligros",
+  "label": "Riesgos",
   "entries": {
     "Armageddon Orb": {
       "name": "Orbe del armagedón",
@@ -409,32 +409,32 @@
       }
     },
     "Poisoned Dart Gallery": {
-      "name": "Galería De Dardos Envenenados",
-      "description": "<p> Innumerables agujeros para lanzar dardos venenosos desde una línea de un largo pasillo con un panel de control oculto en el otro extremo. </p>",
-      "disable": "<p> @Check[type:thievery|dc:21|name:Disable Trap (Control Panel)|traits:action:disable-a-device] (experto) en el panel de control desactiva la trampa. </p>",
-      "hpDetails": "destruir el panel de control y desactivar la trampa",
-      "reset": "<p> La trampa se desactiva y se reinicia después de 1 minuto. </p>",
-      "routine": "<p> (1 acción) La trampa lanza un dardo contra cada criatura en la galería como 1 acción. Debido a que lanza dardos continuamente, la trampa también puede usar la acción gratuita de bombardeo continuo (ver más abajo) para lanzar dardos a cada criatura durante el turno de esa criatura. </p>",
-      "stealth": "<p> (experto) o @Check[type:perception|dc:31|traits:action:seek] (maestro) para notar el panel de control </p>",
+      "name": "Galería de dardos envenenados",
+      "description": "<p>Innumerables agujeros que lanzan dardos envenenados desde un largo pasillo, con un panel de control oculto en el otro extremo.</p>",
+      "disable": "<p>@Check[type:thievery|dc:21|name:Inutilizar trampa (panel de control)|traits:action:disable-a-device] (experto) en el panel de control inutiliza la trampa.</p>",
+      "hpDetails": "destruir el panel de control e inutilizar la trampa",
+      "reset": "<p>La trampa se desactiva y rearma al cabo de 1 minuto.</p>",
+      "routine": "<p> (1 acción) La trampa lanza un dardo contra cada criatura de la galería como 1 acción. Como lanza dardos continuamente, la trampa\ntambién puede usar la acción gratuita Descarga continua (ver más abajo) para lanzar dardos contra cada criatura durante el turno de esa criatura.</p>",
+      "stealth": "<p>(experto) o @Check[type:perception|dc:31|traits:action:seek] (maestro) para descubrir el panel de control</p>",
       "items": {
         "action->Dart Volley": {
-          "name": "Volea de dardos",
-          "description": "<p> <strong> Desencadenante </strong> Una criatura entra al pasillo o termina su turno en el pasillo </p>\n <hr />\n <p> <strong> Efecto </strong> La trampa genera un dardo envenenado. Golpea a la criatura que la activa y luego tira la iniciativa. </p>"
+          "name": "Andanada de dardos",
+          "description": "<p><strong>Desencadenante</strong> Una criatura entra en el pasillo o termina su turno en el mismo</p>\n<hr />\n<p><strong>Efecto</strong> La trampa asesta un Golpe de dardo envenenado contra la criatura desencadenante, luego tira iniciativa.</p>"
         },
         "strike-melee->Poisoned Dart": {
-          "name": "Poisoned Dart"
+          "name": "Dardo envenenado"
         },
         "action->Continuous Barrage": {
-          "name": "Aluvión continuo",
-          "description": "<p> <strong> Desencadenante </strong> Una criatura dentro de la galería activa finaliza una acción </p>\n <hr />\n <p> <strong> Efecto </strong> La trampa hace que un dardo envenenado golpee a la criatura que la activa. </p>"
+          "name": "Descarga continua",
+          "description": "<p><strong>Desencadenante</strong> Una criatura dentro de la galería activa termina una acción</p>\n<hr />\n<p><strong>Efecto</strong> La trampa lanza un dardo envenenado contra la criatura desencadenante.</p>"
         },
         "action->Flesset Poison": {
-          "name": "Veneno de Flesset",
-          "description": "<p> <strong> Tiro de salvación </strong> @Check[type:fortitude|dc:22] </p>\n <p> <strong> Duración máxima </strong> 6 rondas </p>\n <p> <strong> Etapa 1 </strong> @Damage[1d6[poison]] daño y @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} (1 ronda) </p>\n <p> <strong> Etapa 2 </strong> @Damage[2d6[poison]] daño y @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2} (1 ronda) </p>\n <p> <strong> Etapa 3 </strong> @Damage[3d6[poison]] daños y @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 3} (1 ronda) </p>"
+          "name": "Veneno de flesset",
+          "description": "<p><strong>Tirada de salvación</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Duración máxima</strong> 6 asaltos</p>\n<p><strong>Etapa 1</strong> @Damage[1d6[poison]]{1d6 daño por veneno} y @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} (1 asalto)</p>\n<p><strong>Etapa 2</strong> @Damage[2d6[poison]]{2d6 daño por veneno} y  @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2} (1 asalto)</p>\n<p><strong>Etapa 3</strong> @Damage[3d6[poison]]{3d6 daño por veneno} y @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 3} (1 asalto)</p>"
         },
         "action->No MAP": {
-          "name": "Sin mapa",
-          "description": "<p> Los dardos envenenados no aplican MAP. </p>"
+          "name": "Sin PAM",
+          "description": "<p>Sin penalizador por ataque múltiple.</p>"
         }
       }
     },
@@ -491,16 +491,16 @@
       }
     },
     "Quicksand": {
-      "name": "Arenas Movedizas",
-      "description": "<p> Una zona de agua y arena de 15 pies de ancho intenta sumergir a las criaturas que pisan sobre ella. </p>",
-      "disable": "<p> @Check[type:survival|dc:18|name:Safely Disturb the Surface] (entrenado) para alterar la superficie </p>",
-      "reset": "<p> El peligro aún sumerge a cualquiera que entre, pero la superficie no vuelve a ocultarse hasta que se asienta en el transcurso de 24 horas. </p>",
-      "routine": "<p> (1 acción) Por iniciativa, las arenas movedizas derriban a todas las criaturas que se encuentran dentro de ella. Una criatura que estaba sumergida hasta la cintura queda sumergida hasta el cuello, y una criatura que estaba sumergida hasta el cuello es arrastrada hacia abajo y tiene que contener la respiración para evitar asfixia. Una criatura en las arenas movedizas puede intentar una prueba @Check[type:athletics|dc:20|traits:action:swim] de Nadar para elevarse un paso si está sumergida hasta el cuello o algo peor, o moverse 5 pies si está sumergida sólo hasta la cintura. En unfallo crítico, la criatura cae un escalón. Una criatura que nada fuera de las arenas movedizas escapa del peligro y está @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} en un espacio adyacente a la zona de arenas movedizas. Otras criaturas pueden Ayudar a la criatura, normalmente usando una cuerda o ayuda similar, o intentar sacar a la criatura con su propia prueba @Check[type:athletics|dc:20|name:Aid Another Creature in Quicksand], con los mismos resultados que si la criatura intentara la prueba. </p>",
-      "stealth": "<p> (entrenado) (o -10 y sin competencia mínima si la superficie está alterada) </p>",
+      "name": "Arenas movedizas",
+      "description": "<p>Una zona de agua y arena de 15 pies (4,5 m) de ancho intenta sumergir a las criaturas que la pisan.</p>",
+      "disable": "<p>@Check[type:survival|dc:18|name:Perturbar la superficie] (entrenado) para perturbar la superficie.</p>",
+      "reset": "<p>El riesgo sigue sumergiendo a cualquiera que entra en él, pero la superficie no vuelve a estar escondida hasta que se asienta en el\ntranscurso de 24 horas.</p>",
+      "routine": "<p> (1 acción) En su iniciativa, las arenas movedizas tiran hacia abajo de cualquier criatura que se encuentra en su interior. Una criatura que estaba sumergida hasta la cintura pasa a estar sumergida hasta el cuello y una criatura que estaba sumergida hasta el cuello es arrastrada hacia abajo y tiene que contener la respiración para evitar la asfixia.</p>\n<p>Una criatura en las arenas movedizas puede hacer una prueba de @Check[athletics|dc:20|traits:action:swim] para Nadar y así elevarse un nivel si está sumergida hasta el cuello o peor, o para moverse 5 pies (1,5 m) si solo está sumergida hasta la cintura. En caso de fallo crítico, la criatura se hunde un nivel. Una criatura que sale Nadando de las arenas movedizas escapa del riesgo y queda @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbada} en un espacio adyacente a la zona de  arenas movedizas. Otras criaturas pueden Prestar ayuda, normalmente utilizando una cuerda o ayuda similar o intentar sacarla con su propia prueba de @Check[athletics|dc:20|name:Ayudar a otra criatura en las arenas movedizas], con los mismos resultados que si la criatura intentara la prueba.</p>",
+      "stealth": "<p>(entrenado) (o -10 y sin competencia mínima si la superficie está alterada)</p>",
       "items": {
         "action->Submerge": {
-          "name": "Sumergir",
-          "description": "<p> <strong> Desencadenante </strong> Una criatura enorme o más pequeña camina sobre las arenas movedizas </p>\n <hr />\n <p> <strong> Efecto </strong> La criatura desencadenante se hunde en las arenas movedizas hasta la cintura. La iniciativa de las arenas movedizas, si aún no lo ha hecho. </p>"
+          "name": "Hundir",
+          "description": "<p><strong>Desencadenante</strong> Una criatura Enorme o más pequeña pisa las arenas movedizas</p>\n<hr />\n<p><strong>Efecto</strong> La criatura desencadenante se hunde hasta la cintura. Las arenas movedizas tiran iniciativa si aún no lo han hecho.</p>"
         }
       }
     },
@@ -612,24 +612,24 @@
       }
     },
     "Spinning Blade Pillar": {
-      "name": "Pilar De Cuchilla Giratoria",
-      "description": "<p> Un poste de metal con tres cuchillas giratorias afiladas está escondido en el piso, conectado a placas de activación en hasta ocho losas del piso y un panel de control oculto a 30 pies. </p>",
-      "disable": "<p> @Check[type:thievery|dc:21|name:Disable Pillar|traits:action:disable-a-device] (entrenado) dos veces en el pilar, o @Check[type:thievery|dc:19|name:Disable Trap (Control Panel)|traits:action:disable-a-device] (experto) una vez en el panel de control desactiva toda la trampa. Romper el panel de control evita que alguien pueda desactivar la trampa usando el panel de control y evita que la trampa se desactive automáticamente. </p>",
-      "hpDetails": "Dureza del panel: 5, HP del panel: 20 (BT 10)",
-      "reset": "<p> La trampa se desactiva y se reinicia después de 1 minuto. </p>",
-      "routine": "<p> (3 acciones) La trampa usa su primera acción para realizar un Golpe con la cuchilla giratoria contra cada criatura adyacente, su segunda acción para moverse en línea recta en una dirección aleatoria (tira 1d4 para determinar la dirección) y la tercera para realizar un Golpe con la cuchilla giratoria. contra cada criatura adyacente. Esta trampa no sufre penalización por ataques múltiples. </p>",
-      "stealth": "<p> (capacitado) o @Check[type:perception|dc:26|traits:action:seek] (experto) para notar el panel de control </p>",
+      "name": "Pilar de cuchilla giratoria",
+      "description": "<p>Un poste metálico con tres afiladas cuchillas giratorias está oculto en el suelo, conectado a placas activadoras en hasta ocho baldosas del suelo y a un panel de control oculto en un radio de 30 pies (9 m).</p>",
+      "disable": "<p>@Check[type:thievery|dc:21|name:Inutilizar pilar|traits:action:disable-a-device] (entrenado) dos veces en el pilar o @Check[thievery|dc:19|name:Inutilizar trampa (panel de control)|traits:action:disable-a-device] (experto) una vez en el panel de control desactiva toda la trampa. Romper el panel de control impide que alguien inutilice la trampa utilizándolo y evita que la trampa se desactive automáticamente.</p>",
+      "hpDetails": "Dureza del panel: 5, PG del panel: 20 (UR 10)",
+      "reset": "<p> La trampa se desactiva y se rearma al cabo de 1 minuto.</p>",
+      "routine": "<p>(3 acciones) La trampa utiliza su primera acción para dar un Golpe de cuchilla giratoria contra cada criatura adyacente, su segunda acción para moverse en línea recta en una dirección aleatoria (tira [[/br 1d4 #Dirección]] para determinar la dirección) y su tercera para asestar un Golpe de cuchilla giratoria contra cada criatura adyacente. A esta trampa no se le impone el penalizador por ataque múltiple.</p>",
+      "stealth": "<p>(entrenado) o @Check[type:perception|dc:26|traits:action:seek] (experto) para descubrir el panel de control</p>",
       "items": {
         "action->Rising Pillar": {
           "name": "Pilar ascendente",
-          "description": "<p> <strong> Desencadenante </strong> Una criatura pisa una de las baldosas atrapadas </p>\n <hr />\n <p> <strong> Efecto </strong> La trampa aparece en una intersección de la cuadrícula y hace que una cuchilla giratoria golpee contra una criatura adyacente (si la hay), luego tira la iniciativa. </p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura pisa una de las baldosas con trampa</p>\n<hr />\n<p><strong>Efecto</strong> La trampa aparece en una intersección de el tablero y asesta un Golpe de cuchilla giratoria contra una criatura\nadyacente (si la hay), luego tira iniciativa.</p>"
         },
         "action->Speed": {
           "name": "Velocidad",
-          "description": "<p> 10 pies </p>"
+          "description": "<p>10 pies (3 m)</p>"
         },
         "strike-melee->Spinning Blade": {
-          "name": "Hoja giratoria"
+          "name": "Cuchilla giratoria"
         }
       }
     },
@@ -662,15 +662,15 @@
       }
     },
     "Summoning Rune": {
-      "name": "Runa De Convocación",
-      "description": "<p> Una nube de sensores mágicos invisibles en un radio de 10 pies rodea una runa invisible de pared o piso del tamaño de la criatura que se va a convocar. </p>",
-      "disable": "<p> @Check[type:acrobatics|dc:15|name:Approach Rune] para acercarse sin activar la trampa seguido de @Check[type:thievery|dc:17|name:Erase Rune|traits:action:disable-a-device] (entrenado) para borrar la runa, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1er rango; contrarrestar CD 15) para contrarrestar la runa </p>",
-      "reset": "<p> La trampa se reinicia cada día al amanecer. </p>",
-      "stealth": "<p> (entrenado) </p>",
+      "name": "Runa de Convocación",
+      "description": "<p>Una nube de sensores mágicos invisibles en un radio de 10 pies (3 m) rodea una runa invisible en la pared o el suelo del tamaño de la criatura a convocar.</p>",
+      "disable": "<p>@Check[type:acrobatics|dc:15|name:Acercarse a la runa] para acercarse sin desencadenar la trampa seguido de @Check[thievery|dc:17|name:Borrar la runa|traits:action:disable-a-device] (entrenado) para borrar la runa o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (1.º rango; contrarrestar CD 15) para contrarrestar la runa.</p>",
+      "reset": "<p>La trampa se rearma cada día al amanecer.</p>",
+      "stealth": "<p>(entrenado)</p>",
       "items": {
         "action->Summon Monster": {
-          "name": "Invocar monstruo",
-          "description": "<p> <strong> Desencadenante </strong> Una criatura entra en la nube de sensores mágicos </p>\n <hr />\n <p> <strong> Efecto </strong> Esta trampa invoca una criatura específica de 1er nivel, determinada cuando se crea la trampa. La criatura tira la iniciativa y permanece durante [[/br 2d6 #rounds]]{2d6 rounds}, después de lo cual el hechizo termina y la criatura desaparece. La criatura también desaparece si alguien desactiva la trampa antes de que expire la duración. La criatura convocada puede usar 3acciones en cada ronda y puede usar reacciones, a diferencia de la mayoría de las criaturas convocadas. </p>"
+          "name": "Convocar monstruo",
+          "description": "<p><strong>Desencadenante</strong> Una criatura entra en la nube de sensores mágicos.</p>\n<hr />\n<p><strong>Efecto</strong> Esta trampa convoca a una criatura específica de 1.er nivel, determinada cuando se crea la trampa. La criatura tira para determinar su iniciativa y permanece durante [[/br 2d6 #asaltos]]{2d6 asaltos}, tras los cuales el conjuro termina y la criatura desaparece. La criatura también desaparece si alguien inutiliza la trampa antes de que expire la duración. La criatura convocada puede realizar 3 acciones cada asalto y puede utilizar reacciones, a diferencia de la mayoría de las criaturas convocadas.</p>"
         }
       }
     },
@@ -781,16 +781,16 @@
       }
     },
     "Wheel Of Misery": {
-      "name": "Rueda De La Miseria",
-      "description": "<p> Una rueda ornamentada colocada en una pared, dividida en seis segmentos con runas de colores en cada uno, está controlada por un sensor mágico que detecta cualquier criatura dentro de un radio de 100 pies frente a ella. </p>",
-      "disable": "<p> @Check[type:thievery|dc:26|name:Stop Wheel from Spinning|traits:action:disable-a-device] (experto) en la rueda para evitar que gire, @Check[type:thievery|dc:22|name:Erase Rune|traits:action:disable-a-device] (maestro) para borrar cada runa, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4to rango; contrarrestar CD 22) para contrarrestar cada runa </p>",
-      "reset": "<p> La trampa se desactiva y se reinicia si pasa 1 minuto sin que ninguna criatura se mueva dentro del alcance de su sensor. </p>",
-      "routine": "<p> (2 acciones) Por iniciativa, la trampa utiliza su primera acción para girar y luego se detiene. Tira 1d6 para determinar qué segmento está más arriba cuando la rueda deja de girar. La rueda usa su segunda acción para replicar el hechizo listado para ese segmento (3er rango, CD 24, modificador de ataque de hechizo +14). El objetivo de este hechizo se centra o incluye a la criatura más cercana en el área. Esto aumenta el alcance del hechizo a 100 pies si es necesario. Cualquier hechizo lanzado por esta trampa es arcano. </p><p> <strong> 1 </strong> @UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep} </p>\n <p> <strong> 2 </strong> @UUID[Compendium.pf2e.spells-srd.Item.DCQHaLrYXMI37dvW]{Paralyze} </p>\n <p> <strong> 3 </strong> @UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]{Lightning Bolt} (línea de 100 pies) </p>\n <p> <strong> 4 </strong> @UUID[Compendium.pf2e.spells-srd.Item.VosLNn2M8S7JH67D]{Blindness} </p>\n <p> <strong> 5 </strong> @UUID[Compendium.pf2e.spells-srd.Item.thAHF1zxNplLCJPO]{Caustic Blast} </p>\n <p> <strong> 6 </strong> @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]{Enfeeble}</p>",
-      "stealth": "<p> (experto) para detectar el sensor mágico; notar que la rueda tiene un DC de 0 </p>",
+      "name": "Rueda de la miseria",
+      "description": "<p>Una rueda ornamentada incrustada en una pared (dividida en seis segmentos con runas de colores en cada uno) está controlada por un sensor mágico que detecta cualquier criatura en un radio de 100 pies (30 m) delante de ella.</p>",
+      "disable": "<p>@Check[type:thievery|dc:26|name:Parar la rueda|traits:action:disable-a-device] (experto) en la rueda para que deje de girar,\n@Check[thievery|dc:22|name:Borrar runa|traits:action:disable-a-device] (maestro) para borrar cada runa o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (4.º rango; contrarrestar CD 22) para contrarrestar cada runa.</p>",
+      "reset": "<p> La trampa se desactiva y se rearma si transcurre 1 minuto sin que ninguna criatura se mueva dentro del alcance de su sensor.</p>",
+      "routine": "<p>(2 acciones) En su iniciativa, la trampa utiliza su primera acción para girar, luego se detiene. Tira 1d6 para determinar qué segmento\nestá en lo alto cuando la rueda deja de girar. La rueda usa su segunda acción para replicar el conjuro indicado para ese segmento (3.er\nrango, CD 24, modificador al ataque de conjuros +14). El objetivo de este conjuro se centra en la criatura más cercana del área, o la incluye. Esto aumenta el alcance del conjuro a 100 pies (30 m) si es necesario. Cualquier conjuro lanzado por esta trampa es arcano.</p>\n<p><strong>1</strong> @UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Dormir}</p>\n<p><strong>2</strong> @UUID[Compendium.pf2e.spells-srd.Item.DCQHaLrYXMI37dvW]{Paralizar}</p>\n<p><strong>3</strong> @UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]{Relámpago} (línea de 100 pies {30 m])</p>\n<p><strong>4</strong> @UUID[Compendium.pf2e.spells-srd.Item.VosLNn2M8S7JH67D]{Ceguera}</p>\n<p><strong>5</strong> @UUID[Compendium.pf2e.spells-srd.Item.thAHF1zxNplLCJPO]{Explosión cáustica}</p>\n<p><strong>6</strong> @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]{Debilidad}</p>",
+      "stealth": "<p>(experto) para detectar el sensor mágico; descubrir la rueda tiene una CD de 0</p>",
       "items": {
         "action->Wheel Spin": {
           "name": "Giro de la rueda",
-          "description": "<p> <strong> Activador </strong> Una criatura ingresa al área de detección del sensor. </p>\n <hr />\n <p> <strong> Efecto </strong> La rueda comienza a girar y rueda la iniciativa. </p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura entra en el área de detección del sensor.</p>\n<hr />\n<p><strong>Efecto</strong> La rueda comienza a girar y tira iniciativa.</p>"
         }
       }
     },

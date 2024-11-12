@@ -1021,9 +1021,9 @@
       "description": "<p>Arrojas un gran pegote de ácido que detona inmediatamente, salpicando a las criaturas cercanas. Las criaturas en el área sufren 1d8 daño por ácido y tienen que hacer una salvación básica de Reflejos; con un fallo crítico, una criatura sufre también @Damage[(floor(@item.level/2)+1)[persistent,acid]]{1 daño persistente por ácido}.</p>\n<hr />\n<p><strong>Potenciado (+2)</strong> El daño inicial se incrementa en 1d8 y el daño persistente en un fallo crítico se incrementa en 1.</p>"
     },
     "Cauterize Wounds": {
-      "name": "cauterizar heridas",
-      "description": "<p> Sellas heridas sangrantes con fuego. Cualquier objetivo que tenga daño por sangrado persistente puede optar por recibir @Damage[1[fire]] daño. Si lo hace, puede intentar recuperarse de su daño de sangrado persistente, con la CD más baja como ayuda particularmente efectiva. Durante la duración del hechizo, puedes usar una sola acción, que tiene el rasgo de concentración, para repetir este efecto para un objetivo del hechizo. </p>",
-      "target": "hasta 5 criaturas dispuestas"
+      "name": "Cauterizar heridas",
+      "description": "<p> Sellas heridas sangrantes con fuego. Cualquier objetivo que tenga daño por sangrado persistente puede optar por recibir @Damage[1[fire]|immutable:true] de daño. Si lo hace, puede intentar recuperarse de su daño de sangrado persistente, con la CD más baja como ayuda particularmente efectiva. Durante la duración del hechizo, puedes usar una sola acción, que tiene el rasgo de concentrar, para repetir este efecto en un objetivo del hechizo. </p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.sdKsB8dmIiPEHePZ]{Efecto de hechizo: Cauterizar Heridas}</p>",
+      "target": "hasta 5 criaturas voluntarias"
     },
     "Cave Fangs": {
       "name": "Colmillos de cueva",
@@ -2201,7 +2201,7 @@
     },
     "Earth's Bile": {
       "name": "Earth's Bile",
-      "description": "<p>Your apparition is the will of lava and magma made manifest, the earth's molten blood unleashing devastating bursts of liquid stone and unquenchable fire at your command. When you Cast this Spell and the first time you Sustain it each round thereafter, choose an area within range. Each creature in the area takes 1d4 fire damage, 1d4 bludgeoning damage, and @Damage[(@item.rank)[persistent,fire]] damage (the persistent fire damage is negated on a successful save).</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The fire and bludgeoning damage each increase by 1d4, and the persistent fire damage increases by 1.</p>"
+      "description": "<p>Your apparition is the will of lava and magma made manifest, the earth's molten blood unleashing devastating bursts of liquid stone and unquenchable fire at your command. When you Cast this Spell and the first time you Sustain it each round thereafter, choose an area within range. Each creature in the area takes 1d4 fire damage, 1d4 bludgeoning damage, and @Damage[(ceil(@item.rank/2))[persistent,fire]] damage (the persistent fire damage is negated on a successful save).</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The fire and bludgeoning damage each increase by 1d4, and the persistent fire damage increases by 1.</p>"
     },
     "Earthbind": {
       "name": "Ligadura terrestre",
