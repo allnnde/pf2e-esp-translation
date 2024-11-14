@@ -146,8 +146,8 @@
       "description": "<p> Usted designa una sola construcción dentro de 30 pies que puede ver u oír. La construcción es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} durante 1 minuto. </p>"
     },
     "Deadly Spark": {
-      "name": "Chispa mortal",
-      "description": "<p> <strong> Aspecto </strong> aire </p>\n <p> <strong> Activar </strong> <span class=\"action-glyph\"> 2 </span> comando, Interactuar </p>\n <hr />\n <p> <strong> Efecto </strong> Una chispa sale disparada de la reliquia hacia una criatura dentro de un radio de 20 pies. Esta chispa causa @Damage[1d12[electricity]] daño ( @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] salvación). El daño aumenta en 1d12 en el nivel 6 y en otros 1d12 cada 4 niveles a partir de entonces. </p>\n <p> [[/r (1+max(0,floor((@actor.level -2)/4)))d12[electricity]]]{Leveled electricity damage} </p>"
+      "name": "Chispa letal",
+      "description": "<p><strong>Aspecto</strong> aire</p>\n<p><strong>Activar</strong> <span class=\"action-glyph\">2</span> (concentrar, manipular)</p>\n<hr />\n<p><strong>Efecto </strong> Una chispa sale de la reliquia hacia una criatura en un radio de 20 pies (6 m), infligiendo @Damage[(1+max(0,floor((@actor.level -2)/4)))d12[electricity]]{1d12 daño por electricidad} (salvación @Check[reflex|against:class-spell|basic]). El daño aumenta en 1d12 a 6.º nivel y en otro 1d12 cada 4 niveles a partir de entonces.</p>"
     },
     "Deadly Traps": {
       "name": "Trampas mortales",
@@ -174,8 +174,8 @@
       "description": "<p> Intentas distraer a un grupo específico de guardias fuera de su ruta de patrulla o de su puesto. Puedes hacerlo intentando una prueba @Check[type:deception|dc:41], o usando un efecto de hechizo, en cuyo caso intentas una prueba @Check[type:arcana|dc:41], @Check[type:nature|dc:41], @Check[type:occultism|dc:41] o @Check[type:religion|dc:41] (según corresponda) para determinar el éxito. Cada intento de distraer a los guardias tarda un minuto en desarrollarse, desde la distracción inicial hasta la reacción del guardia. </p>\n <hr />\n <p> <strong> CríticoÉxito </strong> Distraes significativamente a los guardias lejos de su área de patrulla o te colocas en un área de la ciudadela de tu elección. Los guardias regresan a su puesto original después de 1 hora. </p>\n <p> <strong> Éxito </strong> Distraes a los guardias lejos de su área de patrulla o te desplazas a un área en la ciudadela de tu elección. Los guardias regresan a su puesto original después de transcurridos 20 minutos. </p>\n <p> <strong> Fallo </strong>No logras distraer a los guardias. Cualquier intento realizado en los siguientes 10 minutos para distraer a los mismos guardias conlleva una penalización de -2 al control. </p>\n <p> <strong> Fallo crítico </strong> Como el fallo anterior, pero los guardias se dan cuenta de que estás tratando de distraerlos y te escoltan fuera del edificio. Si esta es su tercera falla crítica contra ese grupo particular de guardias, el guardia lo arrestará. </p>"
     },
     "Divine Retribution": {
-      "name": "Retribución Divina",
-      "description": "<p> <strong> Aspecto </strong> celeste </p>\n <p> <strong> Requisitos previos </strong> La reliquia es un arma. </p>\n <p> <strong> Activar </strong> <span class=\"action-glyph\"> 2 </span> comando </p>\n <hr />\n <p> <strong> Efecto </strong> Basándote en la furia divina, seleccionas un objetivo que te haya dañado a ti o a un aliado en la ronda anterior y llenas tu reliquia con venganza divina contra él. Realizar un ataque contraese enemigo, infligiendo un dado de daño adicional con un golpe. Si el objetivo es malvado, también es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} hasta el comienzo de tu siguiente turno con un golpe (o @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} con un golpe crítico). </p>"
+      "name": "Represalia divina",
+      "description": "<p><strong>Aspecto</strong> celestial</p>\n<p><strong>Prerrequisitos</strong> La reliquia es un arma.</p>\n<p><strong>Activar</strong> <span class=\"action-glyph\">2</span> (concentrar)</p>\n<hr />\n<p><strong>Efecto</strong> Recurriendo a la furia divina, eliges un objetivo que te ha dañado a ti o a un aliado en el último asalto y llenas tu reliquia de venganza divina contra él. Asesta un Golpe a ese enemigo y, si aciertas, infliges un dado de daño adicional. Si el objetivo tiene el rasgo sacrílego, también queda @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} hasta el inicio de tu siguiente turno en caso de impacto (o @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} en caso de impacto crítico).</p>"
     },
     "Diviner on Duty": {
       "name": "Adivino de turno",
@@ -218,8 +218,8 @@
       "description": "<p> La búsqueda en un área de la bóveda lleva unos 10 minutos. Cuando explores la Bóveda de las maravillas ilimitadas, intenta una prueba de habilidad, eligiendo entre las habilidades indicadas en el área que estás buscando. Otras comprobaciones de Conocimiento podrían ser apropiadas a discreción del DJ. La CD de la mayoría de las pruebas de habilidad es 15 (CD 18 para los niveles 3-4); para pruebas que utilicen una habilidad de Conocimiento adecuada, reduzca la CD a 12 (CD 15 para los niveles 3-4). La abrumadora presencia de magia en la bóveda hace que sea menos difícil detectar magia y magia similar.preciso de lo habitual, pero si usas tales hechizos, obtienes una bonificación de estado +1 a tu prueba. Según los resultados de su verificación, es posible que descubra algo útil. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> Haces un descubrimiento importante en el área que estás buscando. </p>\n <p> <strong> Éxito </strong> Haces un descubrimiento en el área que estás buscando. </p>\n <p> <strong> Fallo crítico </strong> Ustedhaga un descubrimiento equivocado en el área que está buscando. </p>"
     },
     "Feral Claws": {
-      "name": "Garras salvajes",
-      "description": "<p> <strong> Aspecto </strong> bestia </p>\n <p> <strong> Prerrequisito </strong> La reliquia es un objeto desgastado </p>\n <p> <strong> Activar comando </strong> </p>\n <hr />\n <p> <strong> Efecto </strong> Tus manos se transforman en un par de garras. Estos te otorgan un ataque desarmado con garra que inflige 1d6 de daño cortante y tiene rasgos de agilidad y delicadeza. Esto dura hasta que descartas el efecto. </p>"
+      "name": "Garras de fiera",
+      "description": "<p><strong>Aspecto</strong> bestia</p>\n<p><strong>Prerrequisitos</strong> La reliquia es un objeto que se lleva puesto</p>\n<p><strong>Activar</strong> <span class=\"action-glyph\">1</span> (concentrar)</p>\n<hr />\n<p><strong>Efecto</strong> Tus manos se transforman en un par de garras, que te otorgan un ataque sin arma de garra que inflige 1d6 daño cortante y tiene los rasgos ágil y sutil. Esto dura hasta que Disipas el efecto.</p>"
     },
     "Fey Luck": {
       "name": "Suerte fey",
@@ -267,7 +267,7 @@
     },
     "Form of Fury": {
       "name": "Forma de furia",
-      "description": "<p> <strong> Aspecto </strong> bestia </p>\n <p> <strong> Requisitos previos </strong> La reliquia es un objeto desgastado. </p>\n <p> <strong> Activar </strong> <span class=\"action-glyph\"> 2 </span> comando, visualizar </p>\n <p> <strong> Frecuencia </strong> dos veces al día </p>\n <hr />\n <p> <strong> Efecto </strong> Invocando la naturaleza bestial interior, cambias de forma a la de un animal. Ella reliquia arroja @UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form} sobre ti, transformándote en el mismo tipo de animal cada vez, elegido cuando se obtiene el regalo; el rango del hechizo es la mitad del nivel del objeto, redondeado hacia abajo. </p>\n <p> En el nivel 11, el hechizo es de rango 5, y el rango del hechizo aumenta en 1 por cada 2 niveles más allá de eso. </p>"
+      "description": "<p><strong>Aspecto</strong> bestia</p>\n<p><strong>Prerrequisitos</strong> La reliquia es un objeto que se lleva puesto.</p>\n<p><strong>Activar</strong> <span class=\"action-glyph\">2</span> (concentrar)</p>\n<p><strong>Frecuencia</strong> dos veces al día</p>\n<hr />\n<p><strong>Efecto</strong> Recurriendo a la naturaleza bestial que llevas dentro, adoptas la forma de un animal. La reliquia lanza @UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Forma animal} sobre ti, transformándote en el mismo tipo de animal cada vez, elegido cuando se obtiene el don; el rango del conjuro es la mitad del nivel del objeto, redondeado hacia abajo.</p>"
     },
     "Grudge": {
       "name": "Grudge",
@@ -416,7 +416,7 @@
     },
     "Propelling Winds": {
       "name": "Vientos propulsores",
-      "description": "<p> <strong> Aspecto </strong> aire </p>\n <p> <strong> Activar </strong> <span class=\"action-glyph\"> 2 </span> comando, Interactuar </p>\n <p> <strong> Frecuencia </strong> una vez por hora </p>\n <hr />\n <p> <strong> Efecto </strong> La reliquia lanza @UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Fly} apuntando a ti. </p>"
+      "description": "<p><strong>Aspecto</strong> aire</p>\n<p><strong>Activar</strong> <span class=\"action-glyph\">2</span> (concentrar, manipular)</p>\n<p><strong>Frecuencia </strong> una vez por hora</p>\n<hr />\n<p><strong>Efecto</strong> La reliquia lanza @UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Volar} designándote a ti  como objetivo.</p>"
     },
     "Protector's Interdiction": {
       "name": "Interdicción del protector",
@@ -623,8 +623,8 @@
       "description": "<p> <strong> Requisitos </strong> Artesanía (maestro), Artesanía especializada (albañilería) o cantero contratado; especialistas organizados </p>\n <hr />\n <p> Refuerzas las paredes de la Ciudadela Altaerein con tirantes metálicos, ingeniería hábil y otros soportes. Esta actualización requiere 40 días de trabajo y una verificación @Check[type:crafting|dc:25]. </p>"
     },
     "Wind Barrier": {
-      "name": "Wind Barrier",
-      "description": "<p><strong>Aspect</strong> air</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> concentrate</p>\n<hr />\n<p><strong>Effect</strong> An invisible barrier of air deflects ranged attacks, granting you a +2 circumstance bonus to AC against ranged attacks until the beginning of your next turn. At 13th level, this increases to a +3 circumstance bonus to AC against ranged attacks.</p>"
+      "name": "Barrera de viento",
+      "description": "<p><strong>Aspecto</strong> aire</p>\n<p><strong>Activar</strong> <span class=\"action-glyph\">1</span> (concentrar)</p>\n<hr />\n<p><strong>Efecto</strong> Una barrera invisible de aire desvía los ataques a distancia, otorgándote un bonificador +2 por circunstancia a la CA contra ataques a distancia hasta el comienzo de tu siguiente turno. A 13.er nivel, aumenta a un bonificador +3 por circunstancia a la CA contra ataques a distancia.</p>"
     },
     "Word of Faith": {
       "name": "Palabra de fe",
