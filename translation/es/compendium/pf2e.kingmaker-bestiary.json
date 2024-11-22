@@ -648,7 +648,7 @@
         },
         "action->Change Shape": {
           "name": "Change Shape",
-          "description": "<p>The Lantern King can take on the appearance of any fey or humanoid, but he typically does so only to trick and confuse creatures. He loses his searing rune and blinding beam Strikes, but he gains a melee fist Strike that inflicts [[/r (4d8 + 19)[bludgeoning]]] damage.</p>",
+          "description": "<p>The Lantern King can take on the appearance of any fey or humanoid, but he typically does so only to trick and confuse creatures. He loses his searing rune and blinding beam Strikes, but he gains a melee fist Strike that inflicts @Damage[(4d8 + 19)[bludgeoning]] damage.</p>",
           "rules": {
             "1": {
               "label": "Fist"
@@ -5600,7 +5600,7 @@
         },
         "action->Self-Repair": {
           "name": "Self-Repair",
-          "description": "<p>The golem repairs itself, regaining [[/r 30[healing]]]{30 Hit Points}.</p>"
+          "description": "<p>The golem repairs itself, regaining @Damage[30[healing]] Hit Points.</p>"
         },
         "action->Vent": {
           "name": "Vent",
@@ -7279,7 +7279,7 @@
         },
         "action->Release Boulders": {
           "name": "Release Boulders",
-          "description": "<p><strong>Trigger</strong> All four boulders are not placed within six minutes</p>\n<p><strong>Effect</strong> All four steps angle downward, causing any boulders held within to roll toward area <strong>D1</strong>. Each rolling boulder inflicts [[/r (3d6 + 6)[bludgeoning]]] damage on all creatures in area <strong>D2</strong>(@Check[reflex|dc:37|basic]).</p>"
+          "description": "<p><strong>Trigger</strong> All four boulders are not placed within six minutes</p>\n<p><strong>Effect</strong> All four steps angle downward, causing any boulders held within to roll toward area <strong>D1</strong>. Each rolling boulder inflicts @Damage[(3d6 + 6)[bludgeoning]] damage on all creatures in area <strong>D2</strong>(@Check[reflex|dc:37|basic]).</p>"
         }
       }
     },
@@ -7451,8 +7451,7 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ga0Oj7mmjSwWQgmR]\n<p>The ghost stares at a creature it can see within 30 feet. The target takes @Damage[9d6[void]] damage with a @Check[will|dc:37|basic] save.</p>\n<p>A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} for 1 minute.</p>"
         },
         "action->Draining Touch": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.fVyoHEO3fSR737M1]\nDraining Touch",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.fVyoHEO3fSR737M1]\n<p>With a touch, the ghost attempts to drain a living creature's life force. It makes a ghostly hand Strike but deals no damage on a hit.</p>\n<p>Instead, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1} for 1 day, and the ghost regains [[/r (max(1,floor(@actor.level/2)))[healing]]]{HP equal to half its own level}.</p>"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.fVyoHEO3fSR737M1]\nDraining Touch"
         },
         "action->Quickened Casting": {
           "name": "Quickened Casting",
@@ -8055,6 +8054,9 @@
         "spell->Tongues": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues"
         },
+        "spell->Delay Consequence": {
+          "target": "the triggering creature"
+        },
         "spell->Disrupt Undead": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.kcelf6IHl3L9VXXg]\nDisrupt Undead",
           "target": "1 undead creature"
@@ -8400,7 +8402,7 @@
           "name": "Divine Focus Spells"
         },
         "equipment->Healer's Gloves (Greater)": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.0GOHTXBxs6H6ARBz]\n<p>These clean, white gloves never show signs of blood, even when used to stitch up wounds or treat other ailments. They give you a +2 item bonus to Medicine checks.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You can soothe the wounds of a willing, living, adjacent creature, restoring [[/r (4d6+15)[healing]]]{4d6+15 Hit Points} to that creature. This is a vitality healing effect. You can't harm undead with this healing.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.0GOHTXBxs6H6ARBz]\n<p>These clean, white gloves never show signs of blood, even when used to stitch up wounds or treat other ailments. They give you a +2 item bonus to Medicine checks.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You can soothe the wounds of a willing, living, adjacent creature, restoring @Damage[(4d6+15)[healing]] Hit Points to that creature. This is a vitality healing effect. You can't harm undead with this healing.</p>"
         },
         "equipment->Ring of Energy Resistance (Fire)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.EkZVXMdtqTTgahiJ]\nRing of Energy Resistance (Fire)",
