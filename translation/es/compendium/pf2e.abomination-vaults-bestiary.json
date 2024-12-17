@@ -827,10 +827,10 @@
       }
     },
     "Corpselight": {
-      "name": "Luz del cadáver",
+      "name": "Luz cadavérica",
       "hpDetails": "curación del vacío",
-      "publicNotes": "<p> Un fuego fatuo que muere de hambre podría elevarse como una esfera fría, azul y brillante de humedad esponjosa: una luz de cadáver. Una luz de cadáver busca instintivamente un cadáver huésped en el que habitar, ya que su forma física se deteriora rápidamente si no se esconde dentro de una criatura muerta. </p>",
-      "senses": "Sentido del cadáver (preciso) 30 pies.",
+      "publicNotes": "<p>Cuando un fuego fatuo se muere de hambre, puede surgir una esfera fría, azul y brillante de humedad esponjosa: una luz cadavérica. Una luz cadavérica busca instintivamente un cadáver anfitrión en el que habitar, ya que su forma física se deteriora\nrápidamente si no se oculta en el interior de una criatura muerta.</p>",
+      "senses": "sentir los cadáveres (preciso) 30 pies (9 m)",
       "items": {
         "strike-melee->Jaws": {
           "name": "Mandíbulas"
@@ -839,24 +839,24 @@
           "name": "Garra"
         },
         "action->Corpse Sense (Precise) 30 feet": {
-          "name": "Sentido de cadáver (preciso) 30 pies",
-          "description": "<p> Una luz de cadáver puede detectar cadáveres dentro del alcance. Se trata de un sentido preciso que funciona a través de barreras sólidas de menos de 5 pies de espesor. </p>"
+          "name": "Sentir los cadáveres (preciso) 30 pies (9 m)",
+          "description": "<p>Una luz cadavérica puede sentir los cadáveres que se encuentren dentro de su alcance. Es un sentido preciso que funciona a través de barreras sólidas de menos de 5 pies (1,5 m) de grosor.</p>"
         },
         "action->Sunlight Powerlessness": {
-          "name": "Impotencia de la luz del sol",
-          "description": "<p> Una luz de cadáver expuesta a la luz solar es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 2} y ​​@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2} y ​​no puede reclamar un cadáver. </p>"
+          "name": "Impotencia hacia la luz del sol",
+          "description": "<p>Una luz cadavérica expuesta a la luz del sol queda @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdida 2}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2} y no puede Reclamar un cadáver.</p>"
         },
         "action->Wisp Form": {
-          "name": "Forma de brizna",
-          "description": "<p> Cuando la luz de un cadáver se reduce a 0 puntos de vida mientras se fusiona con un cadáver, en su lugar se reduce a 1 punto de vida cuando el cadáver colapsa en el suelo y la luz del cadáver emerge en su forma de brizna. </p>\n <p> Mientras está en forma de fuego fatuo, una luz de cadáver es diminuta y no puede realizar otras acciones que no sean Reclamar cadáver o Volar. </p>\n <p> Una luz de cadáver que comienza su turno en forma de brizna debe intentar un @Check[type:flat|dc:16|immutable:true] al final de su turno; si falla, pierde 1 punto de vida. ALa luz del cadáver se reduce a 0 puntos de vida mientras se destruye en forma de brizna. </p>"
+          "name": "Forma de voluta",
+          "description": "<p> Si los Puntos de Golpe de una luz cadavérica se reducen a 0 mientras está fusionada con un cadáver, pasa a tener 1 Punto de Golpe cuando el cadáver se desploma en el suelo y la luz cadavérica emerge en su forma de voluta.</p>\n<p>Mientras está en forma de voluta, la luz cadavérica es Menuda y no puede realizar más acciones que Reclamar el cadáver o Volar.</p>\n<p>Una luz cadavérica que comienza su turno en forma de voluta debe hacer una @Check[flat|dc:16|immutable:true] al final de su turno; si falla, pierde 1 Punto de Golpe. Una luz cadavérica cuyos Puntos de Golpe queden reducidos a 0 mientras está en forma de voluta es destruida.</p>"
         },
         "action->Claim Corpse": {
           "name": "Reclamar cadáver",
-          "description": "<p> <strong> Prerrequisitos </strong> La luz del cadáver está en forma de brizna y está adyacente a un cadáver mediano o pequeño que no ha sido reclamado por una luz del cadáver en las últimas 24 horas </p>\n <hr />\n <p> <strong> Efecto </strong> La luz del cadáver se fusiona con el cadáver, hace que el cadáver se quede en pie y recupera [[/r 3d6[healing]]] Puntos de vida. </p>\n <p> @UUID[Compendium.pf2e.bestiary-effects.Item.auJ02rr1Jr88oD3Z]{Effect: Claim Corpse - Fleshy} </p>\n <p> @UUID[Compendium.pf2e.bestiary-effects.Item.3np7EyJ8pyrVlpie]{Effect: Claim Corpse - Skeletal} </p>"
+          "description": "<p><strong>Prerrequisitos</strong> La luz cadavérica está en forma de voluta y se encuentra junto a un cadáver Mediano o Pequeño que no haya sido reclamado por una luz cadavérica en las últimas 24 horas</p>\n<hr />\n<p><strong>Efecto</strong> La luz cadavérica se fusiona con el cadáver, hace que éste se ponga de pie y recupera 3d6 Puntos de Golpe.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.auJ02rr1Jr88oD3Z]{Efecto: Reclamar cadáver - reciente}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3np7EyJ8pyrVlpie]{Efecto: Reclamar cadáver - esquelético}</p>"
         },
         "action->Death Light": {
-          "name": "Luz de la muerte",
-          "description": "<p> <strong> Prerrequisitos </strong> La luz del cadáver está en un cadáver </p>\n <hr />\n <p> <strong> Efecto </strong> La luz del cadáver emite un rayo de luz azul enfermizo desde su boca y ojos en un @Template[type:cone|distance:20]. Todas las criaturas vivientes en esta área deben intentar una tirada de salvación @Check[type:fortitude|dc:18|traits:damaging-effect]. Si al menos 1 criatura falla su salvación, la luz del cadáver recupera [[/r 2d6[healing]]] Puntos de Vida, ganando cualquiera que exceda su máximo como Puntos de Vida temporales que duran 1 minuto.</p>\n <p> La luz del cadáver no se puede volver a usar durante [[/br 1d4 #Recharge Death Light]]{1d4 rounds}. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> La criatura no se ve afectada. </p>\n <p> <strong> Éxito </strong> La criatura sufre @Damage[1d6[void]] de daño. </p>\n <p> <strong> Fallo </strong> La criatura recibe @Damage[2d6[void]] daño y es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} . </p>\n <p> <strong>Fallo crítico </strong> La criatura recibe @Damage[4d6[void]] de daño y es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3} . </p>"
+          "name": "Luz fúnebre",
+          "description": "<p><strong>Prerrequisitos</strong> La luz cadavérica está fusionada con un cadáver</p>\n<hr />\n<p><strong>Efecto</strong> La luz cadavérica emite un pálido haz de luz azul desde la boca y los ojos en un @Template[cone|distance:20]{cono de 20 pies (6 m)}. Todas las criaturas vivas en esta área deben hacer una tirada de salvación de @Check[fortitude|dc:18|traits:damaging-effect]. Si al menos una criatura falla la tirada de salvación, la luz cadavérica recupera @Damage[2d6[healing]]{2d6 Puntos de Golpe} y gana los que excedan su máximo como Puntos de Golpe temporales que duran 1 minuto.</p>\n<p>La luz cadavérica no puede volver a usar Luz fúnebre hasta pasados [[/br 1d4 #Recarga Luz fúnebre]]{1d4 asaltos}.</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no se ve afectada. </p>\n<p><strong>Éxito </strong> La criatura sufre @Damage[1d6[void]]{1d6 daño de vacío}.</p>\n<p><strong>Fallo </strong> La criatura sufre @Damage[2d6[void]]{2d6 daño de vacío} y queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 1}.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre @Damage[4d6[void]]{4d6 daño de vacío} y queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 3}.</p>"
         }
       }
     },
