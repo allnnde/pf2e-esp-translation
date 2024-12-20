@@ -102,7 +102,6 @@
     },
     "ActionActionTypeLabel": "Tipo de acción",
     "ActionActionsLabel": "Acciones",
-    "ActionBrowserSearchHint": "Puede buscar por nombre o atributos personalizados. Los posibles atributos buscables son: <br> fuente, tipo de conjuro, nivel, materiales, objetivo, alcance, tiempo, duración, daño, tipo de daño, salvación, concentración, ritual, habilidad y clases. <br> Ejemplo: 'fuego, daño:d6' para mostrar todos los conjuros que tienen fuego en su nombre y un d6 en el daño",
     "ActionNumber1": "Uno",
     "ActionNumber2": "Dos",
     "ActionNumber3": "Tres",
@@ -210,14 +209,21 @@
           "Title": "Configurar personaje"
         },
         "Crafting": {
+          "Action": {
+            "Hint": "Select an item to craft using {resource} ({value}/{max})"
+          },
           "BatchQuantity": "x{quantity}",
           "Cost": "Coste",
           "Daily": {
             "Complete": "Elaboración diaria completa.",
             "Perform": "Realizar manualidades diarias"
           },
+          "FreeCrafting": "Free Crafting",
+          "FreeCraftingTooltip": "If enabled, creates items immediately without spending gold",
           "MissingResource": "Recursos insuficientes para completar la elaboración",
-          "RemainingSlots": "Ranura Vacía({remaining} restante)"
+          "PrepareHint": "Select the items that you want to prepare",
+          "RemainingSlots": "Ranura Vacía({remaining} restante)",
+          "Search": "Search Formulas"
         },
         "CreateFeat": "Crear dote",
         "FeatSlot": {
@@ -235,6 +241,7 @@
           "MythicDestinyPlaceholder": "Destino Mítico",
           "MythicHeader": "Mítico",
           "MythicFeatPlaceholder": "Dote Mítica",
+          "MythicTier": "Tier",
           "SkillHeader": "Dote de habilidad"
         },
         "HandsOccupied": "Manos ocupadas",
@@ -538,6 +545,7 @@
         "Section": {
           "WeaponsAndShields": "Armas y escudos "
         },
+        "Search": "Search Inventory",
         "TotalBulk": "Impedimenta: {bulk}",
         "UnitTitle": {
           "Bulk": "Impedimenta",
@@ -853,7 +861,6 @@
     "BackgroundSkillFeats": "Dote de habilidad",
     "BaseModifier": "Modificador base",
     "BaseWeapons": "Armas básicas",
-    "BestiaryBrowserSearchHint": "Puede buscar por nombre o atributos personalizados. Los posibles atributos buscables son: <br> fuente, tipo de conjuro, nivel, materiales, objetivo, alcance, tiempo, duración, daño, tipo de daño, salvación, concentración, ritual, habilidad y clases. <br> Ejemplo: 'fuego, daño:d6' para mostrar todos los conjuros que tienen fuego en su nombre y un d6 en el daño",
     "Biography": "Biografía",
     "BiographyAllies": "Aliados",
     "BiographyAppearance": "Apariencia",
@@ -883,35 +890,6 @@
     "BonusSPLabel": "Bonificación SP",
     "BonusSPperLevel": "Bonificación SP por nivel",
     "BrowseLabel": "Consultar",
-    "BrowserClearFilter": "Borrar filtro",
-    "BrowserClearFilters": "Borrar todos los filtros",
-    "BrowserFilterAlignments": "Alineaciones",
-    "BrowserFilterAncestries": "Ascendencias",
-    "BrowserFilterArmorFilters": "Filtros de armadura",
-    "BrowserFilterCastingTime": "Tiempo de lanzamiento",
-    "BrowserFilterCategory": "Categorías",
-    "BrowserFilterClass": "Clases",
-    "BrowserFilterComplexity": "Complejidades de los peligros",
-    "BrowserFilterConjunction": {
-      "AndLabel": "Todo lo anterior",
-      "OrLabel": "Cualquiera de los anteriores"
-    },
-    "BrowserFilterInventoryTypes": "Tipos de inventario",
-    "BrowserFilterLevels": "Niveles",
-    "BrowserFilterProficiencyRequirements": "Requisitos de competencia",
-    "BrowserFilterRarities": "Rareza",
-    "BrowserFilterSizes": "Tamaños",
-    "BrowserFilterSkills": "Habilidades",
-    "BrowserFilterSource": "Origen",
-    "BrowserFilterSpellCategories": "Categorías",
-    "BrowserFilterTraditions": "Tradiciones",
-    "BrowserFilterTraits": "Rasgos",
-    "BrowserFilterWeaponFilters": "Filtros de armas",
-    "BrowserSearchPlaceholder": "Buscar texto",
-    "BrowserSearchTitle": "Clic derecho para guía",
-    "BrowserSettingsSaved": "Los ajustes se han guardado",
-    "BrowserSortyByLabel": "Ordenar por",
-    "BrowserWarnPackNotLoaded": "No se pudo cargar el compendio \"{pack}\".",
     "BulkMaxLabel": "Impedimenta máxima",
     "CapacityBarLabel": "Capacidad",
     "CarryType": {
@@ -942,7 +920,11 @@
     "CharacterTraits": "Rasgos de personaje",
     "CharacterTraitsHeader": "Rasgos y otros detalles",
     "ChatRollDetails": {
+      "ContextualOptions": {
+        "postRoll": "Post Roll Options"
+      },
       "DiceAndModifiers": "Dados y modificadores",
+      "DiceRollOptionsHint": "Dice and modifier roll options are used when predicating DamageAlteration rule elements.",
       "FlatCheckNoModifiers": "Las pruebas planas nunca incluyen modificadores, bonificadores o penalizadores.",
       "RollOptions": "Opciones de tirada",
       "Select": "Inspeccionar tirada",
@@ -1013,6 +995,33 @@
       "BuyLabel": "Comprar objeto",
       "FailedToBuyItemWithCharacter": "No se pudo comprar {item} con {character}.",
       "FailedToBuyItemWithSomeCharacters": "No se pudo comprar {item} con algunos de los actores seleccionados.",
+      "Filter": {
+        "Alignments": "Alignments",
+        "Ancestries": "Ancestries",
+        "ArmorFilters": "Armor Filters",
+        "ClearFilter": "Clear",
+        "ClearAllFilters": "Clear All Filters",
+        "CastingTime": "Casting time",
+        "Categories": "Categories",
+        "Class": "Classes",
+        "Complexity": "Hazard Complexities",
+        "Conjunction": {
+          "AndLabel": "All of above",
+          "OrLabel": "Any of above"
+        },
+        "FilterSources": "Filter Sources",
+        "InventoryTypes": "Inventory Types",
+        "Levels": "Levels",
+        "OrderByLabel": "Order by",
+        "ProficiencyRequirements": "Proficiency Requirements",
+        "Rarities": "Rarities",
+        "Sizes": "Sizes",
+        "Source": "Sources",
+        "Traditions": "Traditions",
+        "WeaponFilters": "Weapon Filters",
+        "SearchPlaceholder": "Search Text",
+        "WarnPackNotLoaded": "Compendium \"{pack}\" could not be loaded."
+      },
       "Hint": "Utilice las pestañas de arriba para seleccionar un compendio",
       "RollTable": {
         "AddDialogText": "¿Agregar {count} resultado(s) a la tabla de tiradas?",
@@ -1024,15 +1033,22 @@
         "WeightLabel": "Peso"
       },
       "Settings": {
+        "OpenSettings": "Open Settings",
         "PacksLabel": "Paquetes",
-        "SourcesLabel": "Fuentes"
+        "Saved": "Settings have been saved",
+        "SourcesLabel": "Fuentes",
+        "Title": "Compendium Browser Settings"
       },
       "TabAction": "Acciones",
       "TabBestiary": "Bestiarios",
       "TabCampaign": "Campaña",
       "TabFeat": "Dotes/Características",
       "TakeLabel": "Coger objeto",
-      "Title": "Buscador del compendio"
+      "Title": "Buscador del compendio",
+      "TraitsComponent": {
+        "Empty": "No options",
+        "NoMatch": "No matching options"
+      }
     },
     "CompendiumMigrationStatus": {
       "Document": "Documento",
@@ -1131,10 +1147,8 @@
       "CraftQuantityTitle": "Cantidad",
       "ExpendFormula": "Gastar fórmula",
       "NoEligibleEntry": "No se encontró ninguna entrada de elaboración elegible.",
-      "QuickAddTitle": "Añade esta fórmula a una o más entradas de elaboración",
       "RemoveFormulaDialogQuestion": "¿Estás seguro de que deseas eliminar la fórmula {name}?",
       "RemoveFormulaDialogTitle": "Eliminar fórmula",
-      "ToggleFreeCrafting": "Alternar elaboración gratuita",
       "ToggleQuickAlchemy": "Alquimia rápida",
       "UndeletableTooltip": "Esta fórmula de elaboración es parte de otro elemento y no se puede eliminar individualmente.",
       "UnprepareFormulaDialogQuestion": "¿Está seguro de que desea deshacer la fórmula para {name}?",
@@ -1609,7 +1623,6 @@
     "FeatActionTypeLabel": "Tipo de acción",
     "FeatActionsLabel": "Número de acciones",
     "FeatBackgroundShort": "BG",
-    "FeatBrowserSearchHint": "Puede buscar por nombre o atributos personalizados. Los posibles atributos buscables son: <br> fuente, tipo de conjuro, nivel, materiales, objetivo, alcance, tiempo, duración, daño, tipo de daño, salvación, concentración, ritual, habilidad y clases. <br> Ejemplo: 'fuego, daño:d6' para mostrar todos los conjuros que tienen fuego en su nombre y un d6 en el daño",
     "FeatLevelLabel": "Nivel",
     "FeatPFSBoonHeader": "Beneficios de Sociedad",
     "FeatPrereqLabel": "Prerrequisitos",
@@ -1705,7 +1718,6 @@
       "TypeUnsupported": "Error en @Template: el tipo {type} no es compatible",
       "WidthNoNumber": "Error en @Template: el ancho {width} no es un número"
     },
-    "InventroyBrowserSearchHint": "Puede buscar por nombre o atributos personalizados. Los posibles atributos buscables son: <br> fuente, tipo de conjuro, nivel, materiales, objetivo, alcance, tiempo, duración, daño, tipo de daño, salvación, concentración, ritual, habilidad y clases. <br> Ejemplo: 'fuego, daño:d6' para mostrar todos los conjuros que tienen fuego en su nombre y un d6 en el daño",
     "InvestedLabel": "Investido",
     "Item": {
       "ABC": {
@@ -1720,6 +1732,10 @@
           "Interaction": "Interacción",
           "Offensive": "Ofensivo",
           "Familiar": "Habilidad del familiar"
+        },
+        "CraftedItem": {
+          "Crafted": "{item} was crafted.",
+          "CraftedWithoutResources": "Crafted without required resources"
         },
         "FIELDS": {
           "deathNote": {
@@ -2471,6 +2487,8 @@
         },
         "LevelLabel": "Objeto {level}",
         "OtherTag": {
+          "AlchemicalFood": "Alchemical Food",
+          "AlchemicalTool": "Alchemical Tool",
           "HandwrapsOfMightyBlows": "Vendas de Golpes Poderosos",
           "Herbal": "Herbario",
           "Improvised": "Improvisado",
@@ -3741,7 +3759,6 @@
     "SpellArea": "Área: {area}",
     "SpellAttackLabel": "Ataque de conjuro",
     "SpellAttackWithTradition": "Ataque de conjuro {tradition}",
-    "SpellBrowserSearchHint": "Puede buscar por nombre o atributos personalizados. Los posibles atributos buscables son: <br> fuente, tipo de conjuro, nivel, materiales, objetivo, alcance, tiempo, duración, daño, tipo de daño, salvación, concentración, ritual, habilidad y clases. <br> Ejemplo: 'fuego, daño:d6' para mostrar todos los conjuros que tienen fuego en su nombre y un d6 en el daño",
     "SpellCastingFormat": "Conjuros {traditionSpells} {preparationType}",
     "SpellCollectionAdd": "Añadir a la lista de conjuros",
     "SpellCollectionRemove": "Quitar de la lista de conjuros",
@@ -4437,7 +4454,6 @@
     "TraitDescriptionSteam": "Los artículos con esta característica funcionan con motores que hierven agua para producir vapor y mover sus componentes.",
     "TraitDescriptionStrix": "Humanoides alados, la mayoría de los cuales viven en Cheliax y sus alrededores.",
     "TraitDescriptionStructure": "Un objeto con el rasgo de estructura crea un edificio mágico u otra estructura cuando se activa. El elemento debe activarse en un terreno libre de otras estructuras. La estructura se adapta al terreno natural, adoptando los requisitos estructurales para su construcción en el mismo. La estructura se ajusta alrededor de elementos pequeños como estanques o agujas de roca, pero no se puede crear sobre agua u otras superficies no sólidas. Si se activa sobre nieve, dunas de arena u otras superficies blandas con una superficie sólida debajo,Los cimientos de la estructura (si los hay) llegan al suelo sólido. Si un objeto con este rasgo se activa en una superficie sólida pero inestable, como un pantano o una zona plagada de temblores, tira un @Check[type:flat|dc:3] cada día; en caso de falla, la estructura comienza a hundirse o colapsar. La estructura no daña a las criaturas dentro del área cuando aparece y no se puede crear dentro de una multitud o en un área densamente poblada. Cualquier criatura atrapada inadvertidamente dentro de la estructura cuando se activa el elemento terminaileso dentro de la estructura completa y siempre tiene un camino despejado de escape. Una criatura dentro de la estructura cuando finaliza la activación no sufre daño y aterriza sin causar daño en el suelo si estaba en un nivel superior de la estructura.",
-    "TraitDescriptionSubjectiveGravity": "En aviones con esta característica, todos los cuerpos de masa pueden ser centros de gravedad con la misma cantidad de fuerza, pero sólo si una criatura sin sentido así lo desea.",
     "TraitDescriptionSubtle": "Un hechizo con el rasgo sutil se puede lanzar sin encantamientos y no tiene manifestaciones obvias.",
     "TraitDescriptionSuli": "Los sulis son vástagos planos que descienden de jann.",
     "TraitDescriptionSurki": "Surkis are a subterranean insectile ancestry that absorb ambient magic and evolve unique adaptations.",
@@ -4667,7 +4683,10 @@
     "TraitInvested": "Investido",
     "TraitInvestigator": "Investigador",
     "TraitJousting": "Justa",
+    "TraitJoustingD4": "Jousting d4",
     "TraitJoustingD6": "Justa d6",
+    "TraitJoustingD8": "Jousting d8",
+    "TraitJoustingD10": "Jousting d10",
     "TraitKaiju": "Kaiju",
     "TraitKami": "Kami",
     "TraitKashrishi": "Kashrishi",
