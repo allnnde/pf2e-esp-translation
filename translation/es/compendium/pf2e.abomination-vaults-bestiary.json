@@ -377,15 +377,15 @@
     },
     "Blood of Belcorra": {
       "name": "Sangre de Belcorra",
-      "description": "<p> Surge una imagen sangrienta de Belcorra, emite una luz que drena el alma y luego inhala sangre de las criaturas vivientes en la habitación. </p>",
-      "disable": "<p> @Check[type:thievery|dc:22|name:Wipe Away Blood] (entrenado) para limpiar suficiente mancha de sangre para interrumpir las energías nigrománticas del refugio, o @Check[type:religion|dc:20|name:Excorcise Haunt] (entrenado) para exorcizar el refugio </p>",
-      "reset": "<p> Si el refugio queda inhabilitado o destruido por daño, el sangriento fantasma de Belcorra se lanza hacia arriba en espiral, empapando la trampilla que conduce al área <strong> A25 </strong> antes de drenar hacia arriba a través del ojo de la cerradura, lo que reduce la CD de Robo a @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick the Lock} a @Check[type:thievery|dc:20|name:Pick Trap Door|traits:action:pick-a-lock,skill,manipulate]. </p>\n <p> Al siguiente amanecer, la sangre regresa a esta habitación y el refugio se reinicia. El refugio se destruye permanentemente una vez que Lasda Venkervale es rescatada del área.<strong> D9 </strong> . </p>",
-      "routine": "<p> (1 acción) La imagen sangrienta abre la boca y parece inhalar, extrayendo sangre del cuerpo de una criatura en su línea de visión dentro de 90 pies del centro del área <strong> A11 </strong>. La criatura objetivo debe intentar una salvación @Check[type:fortitude|dc:20|traits:damaging-effect]. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> La criatura no se ve afectada. </p>\n <p> <strong> Éxito </strong> La criatura toma @Damage[1d10[bleed]]. </p><p> <strong> Fallo </strong> La criatura sufre @Damage[(1d10+6)[bleed]] de daño. </p>\n <p> <strong> Fallo crítico </strong> La criatura recibe @Damage[(2d10+6)[bleed]] daño y es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} mientras esté sangrando. </p>",
-      "stealth": "<p> (experto) </p>",
+      "description": "<p>Una copia sangrienta de Belcorra surge del charco, emite una luz que drena el alma y luego inhala sangre de las criaturas vivas de la sala.</p>",
+      "disable": "<p>@Check[type:thievery|dc:22|name:Limpiar la mancha de sangre] (entrenado) para limpiar parte suficiente de la mancha de sangre para interrumpir las energías nigrománticas de la aparición, o @Check[type:religion|dc:20|name:Exorcizar la aparición] (entrenado) para exorcizar la aparición.</p>",
+      "reset": "<p>Si la aparición queda inutilizada o destruida por el daño, el fantasma sangriento de Belcorra sale pulverizado en espiral hacia arriba, empapando la trampilla que lleva al área <strong>A25</strong> antes de escurrirse por el ojo de la cerradura, lo que reduce la CD de Latrocinio para @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Forzar la cerradura} a @Check[thievery|dc:20|name:Forzar la trampilla|traits:action:pick-a-lock,skill,manipulate].</p>\n<p>Al siguiente amanecer, la sangre vuelve a derramarse en esta sala y la aparición se rearma. La aparición se destruye permanentemente una vez que Lasda Venkervale es rescatado del área <strong>D9</strong>.</p>",
+      "routine": "<p>(1 acción) La copia sangrienta abre su boca y parece inhalar, extrayendo sangre del cuerpo de una criatura que se encuentre en su línea de visión y a menos de 90 pies (27 m) del centro del área <strong>A11</strong>. La criatura a la que se dirige debe hacer una salvación de @Check[fortitude|dc:20|traits:damaging-effect].</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura sufre @Damage[1d10[bleed]]{1d10 de daño persistente por sangrado}.</p>\n<p><strong>Fallo</strong> La criatura sufre @Damage[(1d10+6)[bleed]]{1d6+6 de daño persistente por sangrado}.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre @Damage[(2d10+6)[bleed]]{2d10+6 de daño persistente por sangrado} y queda @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitada 2} mientras dure el sangrando.</p>",
+      "stealth": "<p>(experto)</p>",
       "items": {
         "action->Gauntlight Beam": {
-          "name": "Haz de luz guantelete",
-          "description": "<p> <strong> Desencadenante </strong> Una criatura viviente termina su turno en el área <strong> A11 </strong> de noche </p>\n <hr />\n <p> <strong> Efecto </strong> Una imagen espantosa de Belcorra, aparentemente compuesta de sangre fresca, se eleva desde la mancha de sangre en el suelo y gira en su lugar como un faro. Rayos de fría luz azul brillan en los ojos y la boca abierta de Belcorra, provocando que ampollas y descomposición se extiendan por la carne. Criaturas vivas dentro de un @Template[type:burst|distance:30]desde el centro del área <strong> A11 </strong> debe intentar una parada @Check[type:fortitude|dc:20|traits:damaging-effect]. </p>\n <p> La guarida tira la iniciativa. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> La criatura no se ve afectada. </p>\n <p> <strong> Éxito </strong> La criatura sufre @Damage[1d8[void]] de daño. </p>\n <p> <strong> Fallo </strong> La criatura recibe @Damage[(1d8+6)[void]] daño y es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} durante 1 ronda. </p>\n <p> <strong> Fallo crítico </strong> La criatura sufre @Damage[(2d8+6)[void]] de daño y es @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} durante 1 asalto y luego deslumbrada durante 1 asalto. </p>"
+          "name": "Rayo de Luz sombría",
+          "description": "<p><strong>Desencadenante</strong> Una criatura viviente termina su turno en el área <strong>A11</strong> de noche</p>\n<hr />\n<p><strong>Efecto</strong> Una versión espantosa de Belcorra, aparentemente compuesta de sangre fresca, surge de la mancha de sangre en el suelo y gira sobre sí misma como un faro. De los ojos y la boca abierta de Belcorra salen rayos de una fría luz azul que provocan ampollas y putrefacción en la carne. Las criaturas vivas en un @Template[burst|distance:30]{radio de 30 pies (9 m)} desde el centro del área <strong>A11</strong> deben hacer una salvación de @Check[fortitude|dc:20|traits:damaging-effect].</p>\n<p>Entonces, la aparición tira iniciativa</p>\n<hr />\n<p><strong>Éxito crítico </strong> La criatura no se ve afectada. </p>\n<p><strong>Éxito </strong> La criatura sufre @Damage[1d8[void]]{1d8 de daño negativo}.</p>\n<p><strong>Fallo </strong> La criatura sufre @Damage[(1d8+6)[void]]{1d8+6 de daño negativo} y queda @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrada} durante 1 asalto.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre @Damage[(2d8+6)[void]]{2d8+6 de daño negativo} y queda @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegada} durante 1 asalto y deslumbrada durante 1 asalto.</p>"
         }
       }
     },
@@ -437,25 +437,25 @@
     },
     "Boss Skrawng": {
       "name": "Jefe Skrawng",
-      "blurb": "Jefe de pandilla mitflit masculino",
+      "blurb": "Mitflit varón jefe de banda",
       "skillSpecialDiplomacy": {
         "0": {
-          "label": "vs. arthropods"
+          "label": "contra artrópodos"
         }
       },
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
-          "name": "Hechizos innatos primordiales"
+          "name": "Conjuros innatos primigenios"
         },
         "spell->Speak with Animals (At Will) (Arthropods Only)": {
-          "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.spells-srd.Item.BBvV7qoXGdw09q1C]\nHabla con animales (a voluntad) (solo artrópodos)"
+          "name": "Habla con los animales (a voluntad, solo artrópodos)"
         },
         "equipment->Mud and Bug Crown": {
           "name": "Corona de barro y bichos"
         },
         "consumable->Blowgun Darts (Poisoned)": {
-          "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.sqhr1crb184s3Vnd]\nDardos de cerbatana (envenenados)",
-          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.sqhr1crb184s3Vnd]\n <p> Estos dardos delgados y livianos generalmente están hechos de madera dura y estabilizados con plumas de plumón o piel. A menudo son huecos, por lo que pueden usarse para administrar veneno. </p>\n <hr />\n <p> @UUID[Compendium.pf2e.equipment-srd.Item.CeKPffF0FaEyhLMp]{Spear Frog Poison} </p>"
+          "name": "Dardos de cerbatana (envenenados)",
+          "description": "<p>Estos dardos finos y ligeros están hechos típicamente de madera dura y estabilizados con un emplumado de plumón o de pelaje. A menudo están huecos para poder utilizarlos con veneno.</p>\n<hr />\n<p>@UUID[Compendium.pf2e.equipment-srd.Item.CeKPffF0FaEyhLMp]{Veneno de rana lanza}</p>"
         },
         "strike-melee->Trident": {
           "name": "Tridente"
@@ -465,23 +465,23 @@
         },
         "strike-ranged->Blowgun": {
           "name": "Cerbatana",
-          "description": "<p> Dos dardos de cerbatana envenenados. </p>"
+          "description": "<p>Dos dardos de cerbatana envenenados.</p>"
         },
         "action->Self-Loathing": {
           "name": "Autodesprecio",
-          "description": "<p> El autodesprecio de un mitflit hace que sea fácil influenciarlo. Sufre una penalización de -4 a su CD de Voluntad contra las pruebas de Coaccionar, Desmoralizar, Impresionar y Solicitar. </p>"
+          "description": "<p>El autodesprecio del jefe Skrawng lo vuelve fácil de influenciar. Se le impone un penalizador -4 a su CD de Voluntad contra las pruebas para Causar impresión, Desmoralizar, Obligar y Pedir.</p>"
         },
         "action->Vermin Empathy": {
-          "name": "Empatía de las alimañas",
-          "description": "<p> Los Mitflits pueden usar la Diplomacia para @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} y ​​@UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request} cosas de artrópodos (insectos, arañas, escorpiones, cangrejos y animales invertebrados similares). La mayoría de los artrópodos tienen una actitud inicial de indiferencia hacia los mitflits. </p>"
+          "name": "Empatía con las sabandijas",
+          "description": "<p>El jefe Skrawng puede usar la Diplomacia para @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Causar impresión} y @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Pedir} cosas a los artrópodos (arañas, cangrejos, escorpiones, insectos y animales invertebrados similares). La mayoría de los artrópodos tienen una actitud inicial indiferente hacia los mitflits.</p>"
         },
         "action->Spear Frog Poison": {
           "name": "Veneno de rana lanza",
-          "description": "<p> <strong> Tiro de salvación </strong> @Check[type:fortitude|dc:15] </p>\n <p> <strong> Duración máxima </strong> 6 rondas </p>\n <p> <strong> Etapa 1 </strong> @Damage[1d4[poison]] daño (1 ronda) </p>\n <p> <strong> Etapa 2 </strong> @Damage[1d6[poison]] daño y @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} (1 ronda) </p>"
+          "description": "<p><strong>Tirada de salvación</strong> @Check[type:fortitude|dc:15]</p>\n<p><strong>Duración máxima </strong> 6 asaltos</p>\n<p><strong>Fase 1</strong> @Damage[1d4[poison]]{1d4 de daño de veneno} (1 asalto)</p>\n<p><strong>Fase 2</strong> @Damage[1d6[poison]]{1d6 de daño de veneno} y @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} (1 asalto)</p>"
         },
         "action->Vengeful Anger": {
-          "name": "Ira vengativa",
-          "description": "<p> Mientras no sea @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado}, Boss Skrawng obtiene una bonificación de estado +2 a las tiradas de daño contra una criatura que lo haya dañado o atormentado previamente. </p>"
+          "name": "Furia vengativa",
+          "description": "<p>Mientras no esté @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado}, el jefe Skrawng obtiene un bonificador +2 por estatus a las tiradas de daño contra una criatura que le haya dañado o atormentado previamente.</p>"
         }
       }
     },
@@ -827,10 +827,10 @@
       }
     },
     "Corpselight": {
-      "name": "Luz del cadáver",
+      "name": "Luz cadavérica",
       "hpDetails": "curación del vacío",
-      "publicNotes": "<p> Un fuego fatuo que muere de hambre podría elevarse como una esfera fría, azul y brillante de humedad esponjosa: una luz de cadáver. Una luz de cadáver busca instintivamente un cadáver huésped en el que habitar, ya que su forma física se deteriora rápidamente si no se esconde dentro de una criatura muerta. </p>",
-      "senses": "Sentido del cadáver (preciso) 30 pies.",
+      "publicNotes": "<p>Cuando un fuego fatuo se muere de hambre, puede surgir una esfera fría, azul y brillante de humedad esponjosa: una luz cadavérica. Una luz cadavérica busca instintivamente un cadáver anfitrión en el que habitar, ya que su forma física se deteriora\nrápidamente si no se oculta en el interior de una criatura muerta.</p>",
+      "senses": "sentir los cadáveres (preciso) 30 pies (9 m)",
       "items": {
         "strike-melee->Jaws": {
           "name": "Mandíbulas"
@@ -839,24 +839,24 @@
           "name": "Garra"
         },
         "action->Corpse Sense (Precise) 30 feet": {
-          "name": "Sentido de cadáver (preciso) 30 pies",
-          "description": "<p> Una luz de cadáver puede detectar cadáveres dentro del alcance. Se trata de un sentido preciso que funciona a través de barreras sólidas de menos de 5 pies de espesor. </p>"
+          "name": "Sentir los cadáveres (preciso) 30 pies (9 m)",
+          "description": "<p>Una luz cadavérica puede sentir los cadáveres que se encuentren dentro de su alcance. Es un sentido preciso que funciona a través de barreras sólidas de menos de 5 pies (1,5 m) de grosor.</p>"
         },
         "action->Sunlight Powerlessness": {
-          "name": "Impotencia de la luz del sol",
-          "description": "<p> Una luz de cadáver expuesta a la luz solar es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 2} y ​​@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2} y ​​no puede reclamar un cadáver. </p>"
+          "name": "Impotencia hacia la luz del sol",
+          "description": "<p>Una luz cadavérica expuesta a la luz del sol queda @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdida 2}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2} y no puede Reclamar un cadáver.</p>"
         },
         "action->Wisp Form": {
-          "name": "Forma de brizna",
-          "description": "<p> Cuando la luz de un cadáver se reduce a 0 puntos de vida mientras se fusiona con un cadáver, en su lugar se reduce a 1 punto de vida cuando el cadáver colapsa en el suelo y la luz del cadáver emerge en su forma de brizna. </p>\n <p> Mientras está en forma de fuego fatuo, una luz de cadáver es diminuta y no puede realizar otras acciones que no sean Reclamar cadáver o Volar. </p>\n <p> Una luz de cadáver que comienza su turno en forma de brizna debe intentar un @Check[type:flat|dc:16|immutable:true] al final de su turno; si falla, pierde 1 punto de vida. ALa luz del cadáver se reduce a 0 puntos de vida mientras se destruye en forma de brizna. </p>"
+          "name": "Forma de voluta",
+          "description": "<p> Si los Puntos de Golpe de una luz cadavérica se reducen a 0 mientras está fusionada con un cadáver, pasa a tener 1 Punto de Golpe cuando el cadáver se desploma en el suelo y la luz cadavérica emerge en su forma de voluta.</p>\n<p>Mientras está en forma de voluta, la luz cadavérica es Menuda y no puede realizar más acciones que Reclamar el cadáver o Volar.</p>\n<p>Una luz cadavérica que comienza su turno en forma de voluta debe hacer una @Check[flat|dc:16|immutable:true] al final de su turno; si falla, pierde 1 Punto de Golpe. Una luz cadavérica cuyos Puntos de Golpe queden reducidos a 0 mientras está en forma de voluta es destruida.</p>"
         },
         "action->Claim Corpse": {
           "name": "Reclamar cadáver",
-          "description": "<p> <strong> Prerrequisitos </strong> La luz del cadáver está en forma de brizna y está adyacente a un cadáver mediano o pequeño que no ha sido reclamado por una luz del cadáver en las últimas 24 horas </p>\n <hr />\n <p> <strong> Efecto </strong> La luz del cadáver se fusiona con el cadáver, hace que el cadáver se quede en pie y recupera [[/r 3d6[healing]]] Puntos de vida. </p>\n <p> @UUID[Compendium.pf2e.bestiary-effects.Item.auJ02rr1Jr88oD3Z]{Effect: Claim Corpse - Fleshy} </p>\n <p> @UUID[Compendium.pf2e.bestiary-effects.Item.3np7EyJ8pyrVlpie]{Effect: Claim Corpse - Skeletal} </p>"
+          "description": "<p><strong>Prerrequisitos</strong> La luz cadavérica está en forma de voluta y se encuentra junto a un cadáver Mediano o Pequeño que no haya sido reclamado por una luz cadavérica en las últimas 24 horas</p>\n<hr />\n<p><strong>Efecto</strong> La luz cadavérica se fusiona con el cadáver, hace que éste se ponga de pie y recupera 3d6 Puntos de Golpe.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.auJ02rr1Jr88oD3Z]{Efecto: Reclamar cadáver - reciente}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3np7EyJ8pyrVlpie]{Efecto: Reclamar cadáver - esquelético}</p>"
         },
         "action->Death Light": {
-          "name": "Luz de la muerte",
-          "description": "<p> <strong> Prerrequisitos </strong> La luz del cadáver está en un cadáver </p>\n <hr />\n <p> <strong> Efecto </strong> La luz del cadáver emite un rayo de luz azul enfermizo desde su boca y ojos en un @Template[type:cone|distance:20]. Todas las criaturas vivientes en esta área deben intentar una tirada de salvación @Check[type:fortitude|dc:18|traits:damaging-effect]. Si al menos 1 criatura falla su salvación, la luz del cadáver recupera [[/r 2d6[healing]]] Puntos de Vida, ganando cualquiera que exceda su máximo como Puntos de Vida temporales que duran 1 minuto.</p>\n <p> La luz del cadáver no se puede volver a usar durante [[/br 1d4 #Recharge Death Light]]{1d4 rounds}. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> La criatura no se ve afectada. </p>\n <p> <strong> Éxito </strong> La criatura sufre @Damage[1d6[void]] de daño. </p>\n <p> <strong> Fallo </strong> La criatura recibe @Damage[2d6[void]] daño y es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} . </p>\n <p> <strong>Fallo crítico </strong> La criatura recibe @Damage[4d6[void]] de daño y es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3} . </p>"
+          "name": "Luz fúnebre",
+          "description": "<p><strong>Prerrequisitos</strong> La luz cadavérica está fusionada con un cadáver</p>\n<hr />\n<p><strong>Efecto</strong> La luz cadavérica emite un pálido haz de luz azul desde la boca y los ojos en un @Template[cone|distance:20]{cono de 20 pies (6 m)}. Todas las criaturas vivas en esta área deben hacer una tirada de salvación de @Check[fortitude|dc:18|traits:damaging-effect]. Si al menos una criatura falla la tirada de salvación, la luz cadavérica recupera @Damage[2d6[healing]]{2d6 Puntos de Golpe} y gana los que excedan su máximo como Puntos de Golpe temporales que duran 1 minuto.</p>\n<p>La luz cadavérica no puede volver a usar Luz fúnebre hasta pasados [[/br 1d4 #Recarga Luz fúnebre]]{1d4 asaltos}.</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no se ve afectada. </p>\n<p><strong>Éxito </strong> La criatura sufre @Damage[1d6[void]]{1d6 daño de vacío}.</p>\n<p><strong>Fallo </strong> La criatura sufre @Damage[2d6[void]]{2d6 daño de vacío} y queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 1}.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre @Damage[4d6[void]]{4d6 daño de vacío} y queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 3}.</p>"
         }
       }
     },
@@ -1368,6 +1368,9 @@
         "weapon->Longsword": {
           "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n <p> Las espadas largas pueden ser espadas de uno o dos filos. Sus hojas son pesadas y miden entre 3 y 4 pies de largo. </p>"
         },
+        "armor->Chain Shirt": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
+        },
         "strike-melee->Longsword": {
           "name": "espada larga"
         },
@@ -1499,6 +1502,9 @@
         "spell->Obscuring Mist (At Will)": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.spells-srd.Item.9XHmC2JgTUIQ1CCm]\nNiebla oscurecedora (a voluntad)"
         },
+        "armor->Chain Shirt": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
+        },
         "strike-melee->War Flail": {
           "name": "mayal de guerra"
         },
@@ -1604,31 +1610,31 @@
       }
     },
     "Flickerwisp": {
-      "name": "parpadeo",
-      "publicNotes": "<p> El fuego fatuo que baila y se retuerce es un tipo de fuego fatuo menos poderoso pero no menos malévolo. Al igual que sus parientes más peligrosos, los flickerwisps prefieren frecuentar pantanos solitarios o tramos de ríos o arroyos solitarios, particularmente cerca de las costas, donde pueden hacerse pasar por nada más que un pequeño grupo de luciérnagas. El cuerpo de un flickerwisp es una longitud de 3 pies de largo de fibras parecidas a pelos que destella y pulsa con cintas y puntos de espeluznante luz amarilla mientras la criaturarevolotea por el aire. </p>\n <p> Si bien un centelleo puede saborear el miedo y encuentra el sabor delicioso, no se alimenta de esta emoción. En cambio, los destellos subsisten gracias a la confusión y la duda. La sensación de inquietud que exuda un viajero cuando se pierde en el bosque es la comida favorita de los flickerwisps. Pueden aprovechar esta sensación de desorientación sin traicionar su presencia ni dañar a su presa. Con el tiempo, los flickerwisps tienen demasiada hambre y se ven obligados a revolotear más cerca,confunden a sus presas y se atiborran de emociones crudas. Los Flickerwisps hacen todo lo posible para alejarse antes de que ocurra la muerte, y los más hábiles de estos torturadores pueden mantener viva una comida elegida durante días, sorbiendo la confusión en pequeñas dosis. </p>",
+      "name": "Voluta titilante",
+      "publicNotes": "<p>La danzante y retorcida voluta titilante es un tipo menos poderoso, pero no por ello menos malévolo, de fuego fatuo. Al igual que sus parientes más peligrosos, las volutas titilantes prefieren merodear por pantanos o tramos de ríos o arroyos solitarios, especialmente cerca de las orillas, donde pueden hacerse pasar por un pequeño grupo de luciérnagas. El cuerpo de una voluta titilante está compuesto por unos 3 pies (90 cm) de fibras similares a pelos que brillan y parpadean con cintas y puntos de una espeluznante luz amarilla.</p>\n<p>Aunque una voluta titilante puede saborear el miedo (y encuentra ese sabor delicioso), no se alimenta de esta emoción. En su lugar, las volutas titilantes se alimentan de la confusión y de la duda. La sensación de desasosiego que desprende un viajero cuando se pierde en el bosque es el alimento preferido de las volutas titilantes. Pueden beberse a sorbos esta sensación de desorientación sin delatar su presencia ni dañar a su presa. Con el tiempo, a las volutas titilantes les vence el hambre y se ven obligadas a revolotear más cerca, confundir a su presa y saciarse con sus emociones. Los más hábiles de estos torturadores pueden mantener viva una comida determinada durante días, sorbiendo su confusión en pequeñas dosis.</p>",
       "items": {
         "strike-melee->Shock": {
-          "name": "Choque"
+          "name": "Descarga"
         },
         "action->Glow": {
-          "name": "Brillo",
-          "description": "<p> 5 pies. Un parpadeo es en sí mismo naturalmente invisible, pero brilla con una luz amarilla pálida, proyectando una luz brillante en el aura y haciéndola visible. </p>"
+          "name": "Fulgor",
+          "description": "<p>5 pies (1,5 m). Una voluta titilante es naturalmente invisible, pero brilla con una pálida luz amarilla, proyectando una luz\nbrillante en el aura que la vuelve visible.</p>"
         },
         "action->Innocuous": {
-          "name": "Inocuo",
-          "description": "<p> La apariencia de un centelleo se registra de manera extraña en las mentes de las criaturas que están confundidas. Una criatura con la condición @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confuso} nunca apunta a un flickerwisp con ataques a menos que la criatura haya sido dañada por la habilidad de choque del flickerwisp en las últimas 24 horas. </p>"
+          "name": "Inofensiva",
+          "description": "<p> La apariencia de una voluta titilante se registra de forma extraña en la mente de las criaturas que están confusas. Una\ncriatura con el estado negativo @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confundido} nunca ataca a una voluta titilante, a menos que la criatura haya sido dañada por la aptitud descarga de la voluta titilante en las últimas 24 horas.</p>"
         },
         "action->Magic Immunity": {
-          "name": "Inmunidad mágica",
-          "description": "<p> Un flickerwisp es inmune a todos los hechizos excepto @UUID[Compendium.pf2e.spells-srd.Item.HRb2doyaLtaoCfi3]{Faerie Fire}, @UUID[Compendium.pf2e.spells-srd.Item.g8QqHpv2CWDwmIm1]{Gust of Wind}, @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Force Barrage} y ​​@UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]{Quandary}. </p>"
+          "name": "Inmunidad a la magia",
+          "description": "<p>Una voluta titilante es inmune a todos los conjuros excepto @UUID[Compendium.pf2e.spells-srd.Item.HRb2doyaLtaoCfi3]{Fuego feérico}, @UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]{Dilema}, @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Descarga de fuerza} y @UUID[Compendium.pf2e.spells-srd.Item.g8QqHpv2CWDwmIm1]{Ráfaga de viento}.</p>"
         },
         "action->Consume Confusion": {
           "name": "Consumir confusión",
-          "description": "<p> <strong> Frecuencia </strong> una vez por ronda </p>\n <p> <strong> Requisito </strong> Una criatura dentro de 15 pies del flickerwisp es @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confuso} </p>\n <hr />\n <p> <strong> Efecto </strong> El parpadeo se alimenta de la confusión de la criatura, incluso cuando su cuerpo destellante y sus giros inconexos hacen que persistan los efectos de confusión existentes. </p>\n <p> Recupera [[/r 1d4[healing]]] Puntos de Vida, y si elLa condición de confusión de la criatura tiene una duración limitada, dura 1 asalto adicional. </p>"
+          "description": "<p><strong>Frecuencia</strong> una vez por asalto</p>\n<p><strong>Requisito</strong> Hay una criatura @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confundida} en un radio de 15 pies (4,5 m) de la voluta titilante</p>\n<hr />\n<p><strong>Efecto</strong>  La voluta titilante se alimenta de la confusión de la criatura, incluso mientras su cuerpo parpadeante y sus giros inconexos provocan que los efectos de confusión existentes persistan.</p>\n<p>Recupera @Damage[1d4[healing]]{1d4 Puntos de Golpe} y, si el estado negativo confuso de la criatura tiene una duración limitada, dura 1 asalto adicional.</p>"
         },
         "action->Flicker": {
           "name": "Parpadeo",
-          "description": "<p> El parpadeo se agita y revolotea en el aire alrededor de la cabeza de una criatura adyacente, y su longitud destella y brilla en una desconcertante variedad de pulsaciones que distraen. </p>\n <p> La criatura debe tener éxito en una salvación @Check[type:will|dc:18] o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confuso} durante 1 asalto (2 asaltos en caso de fallo crítico). Con un éxito crítico, la criatura es temporalmente inmune durante 24 horas. </p>"
+          "description": "<p> La voluta titilante se agita y revolotea en el aire alrededor de la cabeza de una criatura adyacente y su largo cuerpo parpadea y centellea en una desconcertante serie de pulsaciones distractoras.</p>\n<p>La criatura debe tener éxito en una salvación de @Check[will|dc:18] o quedar @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confundida} durante 1 asalto (2 asaltos en caso de fallo crítico). Con un éxito crítico, la criatura se vuelve temporalmente inmune a Parpadeo durante 24 horas.</p>"
         }
       }
     },
@@ -2308,29 +2314,29 @@
       }
     },
     "Mister Beak": {
-      "name": "Señor pico",
-      "blurb": "Muñeca con alma variante",
-      "publicNotes": "<p> Las muñecas Soulbound son maniquíes o juguetes espeluznantes que han sido imbuidos de un pequeño trozo del alma de un mortal fallecido. Estos pequeños constructos se crean por diversas razones, como servir como compañeros o sirvientes, pero su libre albedrío significa que su obediencia a sus creadores difícilmente es un hecho. Los seguidores de Pharasma generalmente aborrecen las muñecas ligadas al alma, considerándolas una perversión del ciclo natural de las almas, y aquellos que adoran a la Señora de las Tumbas ven la destrucción de unmuñeca ligada al alma, independientemente de la alineación de la construcción, como un servicio importante al Gran Más Allá. Los muñecos con almas son los más simples de una serie de construcciones con almas que incluyen maniquíes con almas de tamaño humano, poderosas conchas con almas y guerreros de terracota centinelas con almas. Crearlos a partir de criaturas vivientes que no lo deseen es malvado, y un donante que no lo desee puede resistir el proceso con una salvación de Voluntad exitosa contra el Craft DC del creador, arruinando el muñeco si no evitando que el donante lo haga.muerte. Una muñeca no maligna sólo puede elaborarse a partir del alma de una persona que haya dado su consentimiento para dicho uso antes de que ocurriera su muerte </p>\n <p> Los muñecos vinculados al alma que encuentran los aventureros suelen ser guardianes de algún tipo; A pesar de su diminuto tamaño, el poder del fragmento de alma hace que el puño del muñeco sea más peligroso de lo que un observador casual esperaría. Además, le otorga al muñeco un único hechizo de poder descomunal dada su estatura. Por su autonomía y notableinteligencia, los artesanos emplean ocasionalmente muñecos ligados al alma como administradores de construcciones mucho más poderosas pero sin sentido, como los golems, lo que les permite controlar defensas mucho más allá de sus propias capacidades. Aunque las muñecas con alma contienen un pequeño fragmento de un alma extraída durante o poco después de la muerte de una persona, esto no afecta la resurrección del difunto ni su progreso hacia la otra vida. Este proceso de extracción es letal para los posibles donantes de almas que de otro modo estarían vivos.aunque hay rumores de procesos más costosos que permiten a alguien donar un fragmento de un alma viviente sin repercusiones. </p>\n <p> El fragmento de alma reside en una gema de enfoque del alma típicamente incrustada en el cuello o el pecho de la muñeca. El fragmento de alma no es estático y la muñeca continúa aprendiendo desde su estado inicial, lo que significa que su personalidad y habilidades pueden cambiar, posiblemente acercándose a las del donante o avanzando más en su propio camino individual. el alma ligadaLa gema de enfoque de la muñeca conserva los recuerdos de la muñeca incluso después de su destrucción. La gema de enfoque del alma intacta de una muñeca destruida puede incluso ser colocada en un nuevo cuerpo de muñeca por alguien con conocimientos en la creación de criaturas ligadas al alma, reconstituyendo efectivamente la muñeca ligada al alma. </p>",
+      "name": "Señor Pico",
+      "blurb": "Variante de muñeca de alma vinculada",
+      "publicNotes": "<p>Las muñecas de alma vinculada son inquietantes maniquíes o juguetes que han sido imbuidos con un pequeño fragmento del alma de un mortal fallecido. Estos pequeños constructos son creados por diversas razones, como para que hagan de ayudantes o sirvientes, pero su libre albedrío hace que su lealtad a su creador no esté garantizada. Por lo general, los seguidores de Farasma aborrecen las muñecas de alma vinculada, a las que ven como una perversión del ciclo de las almas y quienes veneran a la Dama de las Tumbas ven la destrucción de cualquier muñeca de alma vinculada como un fiel servicio al Gran Más Allá, sin importar el alineamiento del constructo.</p>\n<p>Las muñecas de alma vinculada son los más sencillos de una serie de constructos con almas vinculadas, que incluyen maniquíes de tamaño humano, poderosos cascarones con almas vinculadas y guerreros de terracota centinelas. Crearlas a partir de criaturas involuntarias es un acto maligno y el donante involuntario puede resistirse al proceso con una salvación de Voluntad contra la CD de Artesanía del creador, lo cual puede arruinar la muñeca e incluso evitar la muerte del donante. Una muñeca no maligna sólo puede crearse a partir del alma de una persona que ha dado su consentimiento a tal uso antes de que tenga lugar su muerte.</p>\n<p>Las muñecas de alma vinculada con las que se topan los aventureros suelen ser guardianes; a pesar de su tamaño diminuto, el poder del fragmento de alma hace que sus golpes sean más peligrosos de lo que podría aparentar. Además, proporciona a la muñeca\nun único conjuro de gran poder para lo que su estatura sugiere. Dada su autonomía y su considerable inteligencia, las muñecas de alma vinculada a veces son empleadas por sus creadores como administradoras de constructos mucho más poderosos pero descerebrados, como gólems, lo que permite a dichas muñecas manejar defensas por encima de sus propias capacidades. Aunque las muñecas de alma vinculada contienen un pequeño fragmento de alma extraído durante o poco después de la muerte de una persona, esto no afecta a la resurrección del fallecido ni a su progreso hasta el más allá. Este proceso de extracción es letal para los posibles donantes que siguen vivos, aunque hay rumores acerca de procesos más costosos que permiten a alguien donar un fragmento de una\nalma viva sin repercusiones.</p>\n<p>El fragmento de alma reside en una gema de foco de alma (Dureza 10) que normalmente está incrustada en el cuello o el pecho de la muñeca. El fragmento de alma no es estático y la muñeca sigue aprendiendo a partir de su estado inicial, lo que significa que su personalidad y sus capacidades pueden cambiar, quizá acercándose más a las del donante o profundizando en su propio sendero individual. La gema de foco de una muñeca de alma vinculada retiene los recuerdos de la muñeca incluso después de que esta es destruida. Si la gema de foco de alma de una muñeca destruida está intacta, alguien familiarizado con la creación de criaturas con almas vinculadas puede colocarla en un nuevo cuerpo de muñeca y así reconstituirla.</p>",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
-          "name": "Hechizos innatos ocultos"
+          "name": "Conjuros de ocultismo innatos"
         },
         "spell->Light": {
-          "target": "1 objeto de 1 volumen o menos, ya sea desatendido o poseído por ti o por un aliado dispuesto"
+          "target": "1 objeto de 1 de impedimenta o menos, ya sea desatendido o poseído por ti o por un aliado dispuesto"
         },
         "spell->Mage Hand": {
-          "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]\nMano de mago"
+          "name": "Mano telecinética"
         },
         "treasure->Soul Gem": {
           "name": "Gema del alma",
-          "description": "<p> La gema de enfoque del alma de Mister Beak está ubicada en su espalda, acurrucada entre sus alas. </p>"
+          "description": "<p>La gema de foco del alma del Señor Pico se encuentra en su espalda, situada entre sus alas.</p>"
         },
         "strike-melee->Fist": {
           "name": "Puño"
         },
         "action->Personality Fragments": {
           "name": "Fragmentos de personalidad",
-          "description": "<p> Mister Beak comparte fragmentos del alma de su donante, el duende Borbo, pero ninguno de los recuerdos de Borbo. </p>"
+          "description": "<p>El señor Pico comparte fragmentos del alma de su donante, el goblin Borbo, pero no conserva ninguno de los recuerdos de Borbo.</p>"
         }
       }
     },
@@ -2719,6 +2725,9 @@
         "weapon->Longsword": {
           "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n <p> Las espadas largas pueden ser espadas de uno o dos filos. Sus hojas son pesadas y miden entre 3 y 4 pies de largo. </p>"
         },
+        "armor->Chain Shirt": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
+        },
         "equipment->Nyzuros's Keys": {
           "name": "Las llaves de Nyzuros"
         },
@@ -2967,6 +2976,9 @@
         },
         "weapon->+1 Striking Kukri": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.TDrO7Xdyn7juFy3c]\n+1 Kukri llamativo"
+        },
+        "armor->Chain Shirt": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
         },
         "equipment->Quara's Key": {
           "name": "La llave de Quara"
@@ -3593,16 +3605,16 @@
       }
     },
     "Stonescale Spirits": {
-      "name": "Espíritus de escamas de piedra",
-      "description": "<p> Media docena de kobolds fantasmales se levantan de los escombros en un vórtice aullante. </p>",
-      "disable": "<p> @Check[type:intimidation|dc:18|name:Frighten the Spirits] (entrenado) para asustar a los espíritus con una exhibición amenazante, o @Check[type:religion|dc:21|name:Excorcise the Spirits] (entrenado) para exorcizar a los espíritus </p>",
-      "reset": "<p> La guarida se desactiva si no hay criaturas asustadas en el área <strong> A7 </strong> al inicio de su turno. Los kobolds fantasmales regresan al montón de escombros. </p>\n <p> El refugio no puede activarse nuevamente durante 1 hora. </p>",
-      "routine": "<p> (1 acción) Los espíritus se lanzan juntos hacia una criatura en el área <strong> A7 </strong> que es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado}, inculcando sentimientos de traición y confusión. El objetivo sufre @Damage[(1d10+4)[mental]] daño (salvación @Check[type:will|dc:18|basic:true]). </p>",
-      "stealth": "<p> (entrenado) </p>",
+      "name": "Espíritus de los escamas de piedra",
+      "description": "<p>Media docena de kóbolds fantasmales surgen de los escombros en un vórtice aullante.</p>",
+      "disable": "<p>@Check[type:intimidation|dc:18|name:Asustar a los espiritus] (entrenado) para asustar a los espíritus con una exhibición amenazante o @Check[type:religion|dc:21|name:Exorcizar a los espiritus] (entrenado) para exorcizar a los espíritus</p>",
+      "reset": "<p>La aparición se desactiva si no hay criaturas asustadas en el área <strong>A7</strong> al comienzo de su turno. Los kóbolds fantasmales vuelven a la pila de escombros.</p>\n<p>La aparición no puede activarse de nuevo hasta pasada 1 hora.</p>",
+      "routine": "<p> (1 acción) Los espíritus se abalanzan juntos hacia una criatura en el área <strong>A7</strong> que está @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada}, inspirando sentimientos de traición y confusión. El objetivo sufre @Damage[(1d10+4)[mental]]{1d10+4 de daño mental} (salvación @Check[will|dc:18|basic]).</p>",
+      "stealth": "<p>(entrenado)</p>",
       "items": {
         "action->Confusing Confrontation": {
-          "name": "Confrontación confusa",
-          "description": "<p> <strong> Desencadenante </strong> Una criatura entra en un cuadrado total o parcialmente lleno de escombros en el medio de la habitación </p>\n <hr />\n <p> <strong> Efecto </strong> Seis kobolds fantasmales surgen de los escombros con espeluznantes aullidos. Cada criatura en el área <strong> A7 </strong> debe intentar una salvación @Check[type:will|dc:18] con los siguientes resultados. La guarida tira entonces la iniciativa. </p>\n <hr />\n <p> <strong> Éxito crítico</strong> La criatura no se ve afectada, es temporalmente inmune a la Confrontación Confusa durante 24 horas y se da cuenta de que una demostración de dominio intimidante podría sofocar el asalto de los kobolds fantasmales. </p>\n <p> <strong> Éxito </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} . </p>\n <p> <strong> Fallo </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confuso} durante 1 ronda y es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} . </p>\n <p><strong> Fallo crítico </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confuso} durante 2 rondas y es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3} . </p>"
+          "name": "Enfrentamiento confuso",
+          "description": "<p><strong>Desencadenante</strong> Una criatura entra en una casilla total o parcialmente llena de escombros en el centro de la habitación</p>\n<hr />\n<p><strong>Efecto</strong> Seis kóbolds fantasmales surgen de los escombros entre espeluznantes aullidos. Cada criatura que se encuentre en el área <strong>A7</strong> debe hacer una salvación de @Check[will|dc:18] con los siguientes resultados. Entonces, la aparición tira iniciativa.</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no se ve afectada, se vuelve temporalmente inmune a Enfrentamiento confuso durante 24 horas y se da cuenta de que una muestra de dominancia intimidatoria podría sofocar el asalto de los kóbolds fantasmales.</p>\n<p><strong>Éxito</strong> La criatura queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 1}.</p>\n<p><strong>Fallo</strong> La criatura queda @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confundida} durante 1 asalto y @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 2}.</p>\n<p><strong>Fallo crítico</strong> La criatura queda @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confundida} durante 2 asaltos y @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 3}.</p>"
         }
       }
     },
@@ -3835,6 +3847,9 @@
         },
         "spell->Ray of Enfeeblement": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRayo de debilitamiento"
+        },
+        "armor->Chain Shirt": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
         },
         "strike-melee->Shauth Lash": {
           "name": "Latigazo de Shauth"
