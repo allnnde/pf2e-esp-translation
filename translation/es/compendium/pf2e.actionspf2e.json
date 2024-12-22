@@ -159,7 +159,7 @@
     },
     "Bless Ally": {
       "name": "Bless Ally",
-      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Requirements</strong> Your nimbus is active</p>\n<p>Target a willing ally within the bright light of your nimbus</p>\n<hr />\n<p><strong>Effect</strong> Your radiance grants an ally some of your celestial grace. That ally can roll twice and use the higher result for the next Will save they attempt before the beginning of your next turn.</p>"
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Requirements</strong> Your nimbus is active</p>\n<p><strong>Target</strong> a willing ally within the bright light of your nimbus</p>\n<hr />\n<p><strong>Effect</strong> Your radiance grants an ally some of your celestial grace. That ally can roll twice and use the higher result for the next Will save they attempt before the beginning of your next turn.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.niYOLA6l44U2NMM3]{Effect: Bless Ally}</p>"
     },
     "Blinding of the Needle": {
       "name": "Blinding of the Needle",
@@ -519,7 +519,7 @@
     },
     "Drain Realm": {
       "name": "Drain Realm",
-      "description": "<p><strong>Trigger</strong> Your previous action was to Sustain your manifested realm</p>\n<p><strong>Requirements</strong> Your manifested realm has a radius of at least 10 feet</p>\n<hr />\n<p><strong>Effect</strong> You siphon power from your manifested realm to bolster your physical form. Decrease your manifested realm's radius by 10 feet. You regain a number of Hit Points equal to your level and each of your Strikes made before the end of your turn deal an additional @Damage[1d8[untyped]] damage of your realm's damage type.</p>"
+      "description": "<p><strong>Trigger</strong> Your previous action was to Sustain your manifested realm</p>\n<p><strong>Requirements</strong> Your manifested realm has a radius of at least 10 feet</p>\n<hr />\n<p><strong>Effect</strong> You siphon power from your manifested realm to bolster your physical form. Decrease your manifested realm's radius by 10 feet. You regain a number of @Damage[(@actor.level)[healing]]{Hit Points equal to your level} and each of your Strikes made before the end of your turn deal an additional 1d8 damage of your realm's damage type.</p>"
     },
     "Drape Ambient Magic": {
       "name": "Drape Ambient Magic",
@@ -833,6 +833,10 @@
       "name": "Perseguir presa",
       "description": "<p> Designas a una única criatura como tu presa y centras tus ataques en dicha criatura. Debes ser capaz de ver u oír a la presa, o debes estar rastreando a la misma durante la exploración. </p>\n <p> Obtienes un bonificador +2 por circunstancia a las pruebas de Percepción cuando Buscas a tu presa y un bonificador +2 por circunstancia a las pruebas de Supervivencia cuando @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Buscas} a tu presa y un bonificador +2 por circunstancia a las pruebas de Supervivencia cuando @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Rastreas} a tu presa. Ignoras además el penalizador por llevar a cabo ataques a distancia en tu segundo incremento de alcance contra la presa a la que persigues. </p>\n <p> Sólo puedes tener una criatura designada como presa en un momento dado. Si utilizas Perseguir presa contra una criatura cuando ya tienes a otra designada, la criatura previa pierde la designación, que va a parar a la nueva presa. Tu designación dura hasta tus preparativos del día siguiente. </p>"
     },
+    "Hunt the Razer's Pawn": {
+      "name": "Hunt the Razer's Pawn",
+      "description": "<p>Designate a single creature that you can see or hear, or whom you've spent a significant amount of time studying and reading about from afar (subject to the GM's approval), and who you know to be an agent of Treerazer. You gain a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} or @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense the Motive} of this creature. This creature takes a –1 circumstance penalty to saving throws against spells or effects you create; this penalty increases to –2 against effects that have the holy trait.</p>\n<p>You can have only one creature designated by Hunt the Razer's Pawn at a time. If you use this ability against a creature when you already have one designated, the prior creature loses the designation and the new creature gains the designation. This lasts until your next daily preparations.</p>"
+    },
     "Hustle": {
       "name": "Aligerar",
       "description": "<p> Te esfuerzas para moverte al doble de tu velocidad de viaje. Puedes Aligerar tan sólo tantos minutos como tu modificador por Constitución x 10 (mínimo 10 minutos). Si estás en un grupo que Aligera, utiliza el menor modificador por Constitución de todo el grupo para determinar la rapidez con que el grupo puede Aligerar junto. </p>"
@@ -1007,7 +1011,7 @@
     },
     "Manifest Realm": {
       "name": "Manifest Realm",
-      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> You corrupt the surrounding area into a manifestation of your realm in a 20-foot-radius burst centered on you. Your manifested realm counts as difficult terrain for your enemies, and your enemies take a –1 penalty to Fortitude saving throws while in your manifested realm. You can Sustain your manifested realm once per round on subsequent rounds, and if you do not, the radius of your manifested realm is reduced by 5 feet. Your realm remains manifested for a maximum of 1 minute, and you can Dismiss your manifested realm. If your manifested realm's radius is ever reduced to 0 feet or if you move beyond 100 feet from the borders of your manifested realm, your manifested realm is automatically Dismissed.</p>"
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> You corrupt the surrounding area into a manifestation of your realm in a @Template[type:burst|distance:20]{20-foot-radius burst} centered on you. Your manifested realm counts as difficult terrain for your enemies, and your enemies take a –1 penalty to Fortitude saving throws while in your manifested realm.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.VrTaP6BcXo6sizn6]{Effect: Manifest Realm}</p>\n<p>You can Sustain your manifested realm once per round on subsequent rounds, and if you do not, the radius of your manifested realm is reduced by 5 feet.</p>\n<p>Your realm remains manifested for a maximum of 1 minute, and you can Dismiss your manifested realm. If your manifested realm's radius is ever reduced to 0 feet or if you move beyond 100 feet from the borders of your manifested realm, your manifested realm is automatically Dismissed.</p>"
     },
     "Manifest Soulforged Armament": {
       "name": "Armamento manifiesto forjado con alma",
@@ -1096,6 +1100,10 @@
     "Opportune Riposte": {
       "name": "Respuesta oportuna",
       "description": "<p> <strong> Activador </strong> Un enemigo dentro de tu alcance falla críticamente un golpe contra ti </p>\n <hr />\n <p> Aprovechas una apertura del ataque fallido de tu enemigo. O realizas un golpe cuerpo a cuerpo contra el enemigo que activa el ataque o intentas @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} del arma que usó para el ataque. </p>"
+    },
+    "Opportunistic Accusation": {
+      "name": "Opportunistic Accusation",
+      "description": "<p><strong>Trigger</strong> A demon you're aware of within 30 feet of you suffers from its sin vulnerability or critical fails at a saving throw against a mental effect</p>\n<hr />\n<p>You make a quick cutting remark against the demon that takes advantage of the fiend's momentary disadvantage. The demon must attempt a @Check[will|against:class] save against your class DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The demon is unaffected and likely to focus its attention on you in combat from this point forward.</p>\n<p><strong>Success</strong> The demon takes @Damage[2d6[mental]] damage.</p>\n<p><strong>Failure</strong> The demon takes @Damage[4d6[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but the off-guard condition lasts until the end of the next round. The demon also takes @Damage[2d6[persistent,mental]] damage.</p>"
     },
     "Overawe Crowd": {
       "name": "Overawe Crowd",
@@ -1203,7 +1211,12 @@
     },
     "Quick-Tempered": {
       "name": "Mal Genio",
-      "description": "<p><strong>Trigger</strong> You roll initiative.</p>\n<p><strong>Requirements</strong> You are not @UUID[Compendium.pf2e.conditionitems.Item.D5mg6Tc7Jzrj6ro7]{Impedido} or wearing heavy armor.</p><hr /><p>So long as you are able to move freely, your fury is instinctive and instantaneous. You @UUID[Compendium.pf2e.actionspf2e.Item.Ah5g9pDwWF9b9VW9]{Rage}.</p><hr /><p>@UUID[Compendium.pf2e.feat-effects.Item.z3uyCMBddrPK5umr]{Effect: Rage}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.MaepXeSHiMoWDm7u]{Effect: Rage Temporary Hit Points Immunity}</p>"
+      "description": "<p><strong>Trigger</strong> You roll initiative.</p>\n<p><strong>Requirements</strong> You are not @UUID[Compendium.pf2e.conditionitems.Item.D5mg6Tc7Jzrj6ro7]{Impedido} or wearing heavy armor.</p><hr /><p>So long as you are able to move freely, your fury is instinctive and instantaneous. You @UUID[Compendium.pf2e.actionspf2e.Item.Ah5g9pDwWF9b9VW9]{Rage}.</p><hr /><p>@UUID[Compendium.pf2e.feat-effects.Item.z3uyCMBddrPK5umr]{Effect: Rage}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.MaepXeSHiMoWDm7u]{Effect: Rage Temporary Hit Points Immunity}</p>",
+      "rules": {
+        "0": {
+          "text": "{item|description}\n@UUID[Compendium.pf2e.feat-effects.Item.z3uyCMBddrPK5umr]{Effect: Rage}\n@UUID[Compendium.pf2e.feat-effects.Item.MaepXeSHiMoWDm7u]{Effect: Rage Temporary Hit Points Immunity}"
+        }
+      }
     },
     "Race the Skies": {
       "name": "Race the Skies",
@@ -1336,6 +1349,10 @@
     "Resist Magic": {
       "name": "Resistir la magia",
       "description": "<p> <strong> Desencadenante </strong> Intentas una tirada de salvación contra un efecto mágico dañino pero aún no lo has tirado. </p>\n <hr />\n <p> Tu magia innata te protege. Obtienes un bonificador de circunstancia +1 a la tirada de salvación desencadenante. Además, si el efecto desencadenante es arcano, si obtienes un éxito, obtendrás un éxito crítico. </p>"
+    },
+    "Restorative Teleportation": {
+      "name": "Restorative Teleportation",
+      "description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Trigger</strong> You arrive at a location via a teleportation effect</p>\n<hr />\n<p><strong>Effect</strong> When you reappear after the teleportation, your body takes advantage of the teleportation to put itself back together in a healthier state, and you restore a number of Hit Points equal to 1d6 plus your level plus your Intelligence modifier (@Damage[(1d6 + @actor.level + @actor.system.abilities.int.mod)[healing]]).</p>"
     },
     "Restore the Mind": {
       "name": "Restaurar la mente",
@@ -1771,7 +1788,7 @@
     },
     "Ultimatum of Liberation": {
       "name": "Ultimatum of Liberation",
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You proclaim an ultimatum against a creature you believe is oppressing others and all who follow their orders. All other creatures (including you) who hear your ultimatum, or learn about it later on, are emboldened by your words for 1 day, and gain a +2 status bonus to their Will saving throws against effects produced by the oppressing creature and their allies, which increases to +3 if they are within 30 feet of you. Additionally, the first time each day that creature and each of its allies comes within 30 feet of you, they must succeed on a @Check[will|against:class-spell] save against your class DC or spell DC (whichever is higher) or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). This second effect has the emotion, fear, and mental traits. The oppressing creature may end all the effects as a free action by truthfully agreeing to permanently end their oppression. Otherwise, your Ultimatum of Liberation has no duration, though you can have only one Ultimatum of Liberation active at a time. If you pronounce a second Ultimatum of Liberation, the effects of the first one end.</p>"
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You proclaim an ultimatum against a creature you believe is oppressing others and all who follow their orders. All other creatures (including you) who hear your ultimatum, or learn about it later on, are emboldened by your words for 1 day, and gain a +2 status bonus to their Will saving throws against effects produced by the oppressing creature and their allies, which increases to +3 if they are within 30 feet of you.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.RPfpy4WzUzdwTeo0]{Effect: Ultimatum of Liberation}</p>\n<p>Additionally, the first time each day that creature and each of its allies comes within 30 feet of you, they must succeed on a @Check[will|against:class-spell|traits:emotion,fear,mental] save against your class DC or spell DC (whichever is higher) or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). This second effect has the emotion, fear, and mental traits. The oppressing creature may end all the effects as a free action by truthfully agreeing to permanently end their oppression. Otherwise, your Ultimatum of Liberation has no duration, though you can have only one Ultimatum of Liberation active at a time. If you pronounce a second Ultimatum of Liberation, the effects of the first one end.</p>"
     },
     "Unleash Psyche": {
       "name": "Libera la psique",
@@ -1779,7 +1796,7 @@
     },
     "Unleash Realm": {
       "name": "Unleash Realm",
-      "description": "<p><strong>Trigger</strong> Your previous action was to Sustain your manifested realm</p>\n<hr />\n<p><strong>Effect</strong> You punish those who transgress upon your realm. An enemy within your realm takes @Damage[4d8[untyped]] damage of your realm's damage type with a @Check[fortitude|against:class-spell|basic] save against your class DC or spell DC, whichever is higher.</p>"
+      "description": "<p><strong>Trigger</strong> Your previous action was to Sustain your manifested realm</p>\n<hr />\n<p><strong>Effect</strong> You punish those who transgress upon your realm. An enemy within your realm takes @Damage[4d8[@actor.flags.pf2e.realmDamage]|shortLabel|options:area-damage] damage of your realm's damage type with a @Check[fortitude|against:class-spell|basic|options:area-effect] save against your class DC or spell DC, whichever is higher.</p>"
     },
     "Unwavering Resilience": {
       "name": "Unwavering Resilience",
