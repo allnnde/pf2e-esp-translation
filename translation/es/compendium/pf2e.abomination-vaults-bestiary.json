@@ -390,7 +390,7 @@
       }
     },
     "Bloodsiphon": {
-      "name": "sifón de sangre",
+      "name": "Vaciasangre",
       "hpDetails": "curación del vacío",
       "languages": "no puedo hablar ningún idioma",
       "items": {
@@ -398,18 +398,18 @@
           "name": "Boca"
         },
         "strike-ranged->Spittle": {
-          "name": "Saliva"
+          "name": "Escupitajo"
         },
         "action->Tremorsense 30 feet": {
-          "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense 30 pies"
+          "name": "Sentido de la vibración 30 pies (9 m)"
         },
         "action->Death Burst": {
-          "name": "Explosión de muerte",
-          "description": "<p> 20 pies. Cuando el sifón de sangre muere, su cuerpo explota en un estallido rojo turbio de sangre seca necrótica en un área de 20 pies. </p>\n <p> Las criaturas dentro del alcance deben intentar una salvación @Check[type:reflex|dc:21|traits:damaging-effect]. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> La criatura no se ve afectada. </p>\n <p> <strong> Éxito </strong> La criatura sufre @Damage[2d6[void]] de daño. </p>\n <p> <strong> Fracaso </strong> Ella criatura sufre @Damage[4d6[void]] de daño. </p>\n <p> <strong> Fallo crítico </strong> La criatura recibe @Damage[6d6[void]] daño y es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} durante 1 hora. </p>"
+          "name": "Estallido mortal",
+          "description": "<p>Cuando el vaciasangre muere, su cuerpo explota en un estallido rojo y turbio de sangre seca necrótica en un @Template[emanation|distance:20]{área de 20 pies (6 m)}.</p>\n<p>Las criaturas al alcance deben hacer una salvación de @Check[reflex|dc:21|options:area-effect,damaging-effect].</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura sufre @Damage[2d6[void]|options:area-damage]{2d6 daño de vacío}.</p>\n<p><strong>Fallo</strong> La criatura sufre @Damage[4d6[void]|options:area-damage]{4d6 daño de vacío}.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre @Damage[6d6[void]|options:area-damage]{6d6 daño de vacío} y queda @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitada 2} durante 1 hora.</p>"
         },
         "action->Blood Drain": {
-          "name": "Drenaje de sangre",
-          "description": "<p> <strong> Requisitos </strong> El sifón de sangre tiene una criatura @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado} </p>\n <hr />\n <p> <strong> Efecto </strong> El sifón de sangre drena la sangre de la criatura que ha agarrado. Esto causa [[/r {4d4}]]{4d4 damage} y ​​el sifón de sangre se vuelve temporalmente húmedo y viscoso a medida que recupera [[/r 8[healing]]]{8 Hit Points} , ganando cualquier exceso como puntos de vida temporales que duran 1 minuto. </p><p> Una criatura a la que le drena la sangre el sifón de sangre es @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1} hasta que reciba algún tipo de curación. </p>"
+          "name": "Drenar sangre",
+          "description": "<p><strong>Requisitos</strong> El vaciasangre tierne una criatura @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrada} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizada}</p>\n<hr />\n<p><strong>Efecto</strong> El vaciasangre drena sangre de la criatura que tiene agarrada. Esto inflige @Damage[4d4[untyped]]{4d4 de daño} y el vaciasangre se vuelve temporalmente húmedo y viscoso mientras recupera @Damage[8[healing]]{8 Puntos de Golpe}, ganando cualquier exceso como Puntos de Golpe temporales que duran 1 minuto.</p>\n<p>Una criatura a la que el vaciasangre drena la sangre queda @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenada 1} hasta que reciba cualquier tipo de curación.</p>"
         }
       }
     },
@@ -2417,18 +2417,18 @@
           "description": "<p> Un morlock puede compartir el mismo espacio que otro morlock, pero no más de dos morlocks pueden ocupar el mismo espacio. Cuando los morlocks comparten el mismo espacio, obtienen una bonificación de circunstancia +1 a las tiradas de ataque. </p>"
         },
         "action->Uncanny Tinker": {
-          "name": "Tinker extraño",
-          "description": "<p> El ingeniero morlock juguetea con una construcción adyacente o un peligro mecánico. Intentan una prueba @Check[type:crafting|defense:fortitude] contra la CD de Fortaleza del constructo o peligro. El morlock no puede obtener un resultado mejor que el fracaso si el nivel del objetivo es más del doble que el del morlock. </p>\n <p> Esta habilidad refleja reparaciones apresuradas en el campo de batalla; Una vez que una construcción o peligro recupera puntos de vida de esta habilidad, no puede volver a hacerlo hasta que haya sido @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repaired} .</p>\n <hr />\n <p> <strong> Éxito crítico </strong> El objetivo recupera [[/r 8d6[healing]]] Puntos de vida y un bono de circunstancia +1 a las tiradas de ataque durante 1 minuto. Alternativamente, el morlock puede aplicar [[/r 8d6]]{8d6 damage} (golpear, perforar o cortar, según lo elija el ingeniero morlock) a la construcción o peligro. </p>\n <p> <strong> Éxito </strong> Como éxito crítico, pero el objetivo recupera [[/r 4d6[healing]]] Puntos de vida o el morlock reparte[[/r 4d6]]{4d6 damage} . </p>\n <p> <strong> Fallo crítico </strong> El morlock se lastima a sí mismo, recibiendo [[/r 3d6]]{3d6 damage} (normalmente contundente, perforante o cortante, pero potencialmente de un tipo diferente a discreción del DJ). </p>\n <p> @UUID[Compendium.pf2e.bestiary-effects.Item.BTSstQAn4Xlm1PWV]{Effect: Uncanny Tinker} </p>"
+          "name": "Manitas asombroso",
+          "description": "<p>El ingeniero morlock manipula un constructo o peligro mecánico adyacente. Hace una prueba de Artesanía contra la CD de fortaleza del constructo o peligro. El morlock no puede obtener un resultado mejor que un fallo si el nivel del objetivo es más del doble que el del morlock.</p>\n<p>Esta aptitud refleja las reparaciones apresuradas en el campo de batalla; una vez que un constructo o peligro recupera Puntos de Golpe gracias a esta aptitud, no puede volver a hacerlo hasta que se haya @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Reparado}.</p>\n<hr />\n<p><strong>Éxito crítico</strong> El objetivo recupera @Damage[8d6[healing]]{8d6 Puntos de Golpe} y obtiene un bonificador +1 por circunstancia a las tiradas de ataque durante 1 minuto. De forma alternativa, el morlock puede infligir @Damage[8d6[untyped]]{8d6 puntos de daño} (contundente, cortante o perforante, a elección del ingeniero morlock) al constructo o peligro.</p>\n<p><strong>Éxito</strong> Como con el éxito crítico, pero el objetivo recupera @Damage[4d6[healing]]{4d6 Puntos de Golpe} o el morlock inflige @Damage[4d6[untyped]]{4d6 de daño}.</p>\n<p><strong>Fallo crítico</strong> El morlock se hiere a sí mismo, sufre @Damage[3d6[untyped]]{3d6 puntos de daño} (normalmente contundente, cortante o perforante, pero potencialmente de otro tipo a discreción del DJ).</p>\n<p> @UUID[Compendium.pf2e.bestiary-effects.Item.BTSstQAn4Xlm1PWV]{Efecto: Manitas asombroso}</p>"
         }
       }
     },
     "Morlock Scavenger": {
-      "name": "Carroñero Morlock",
-      "publicNotes": "<p> El carroñero morlock es una versión más pequeña y larguirucha de un morlock típico. Su estatura les permite meterse en áreas a las que otros morlocks no pueden acceder. </p>\n <hr />\n <p> Los Morlocks se originan a partir de humanos perdidos hace mucho tiempo en el mundo de la superficie. Tienen afinidad por la maquinaria, la basura y los extraños comportamientos ocultos. </p>",
-      "saveDetails": "+2 de estado a todas las salvaciones contra enfermedades y venenos.",
+      "name": "Morlock carroñero",
+      "publicNotes": "<p>El morlock carroñero es una versión más larguirucha y pequeña del morlock típico. Su estatura les permite colarse en zonas a las que otros morlock no pueden acceder.</p>\n<hr />\n<p>Los morlocks proceden de humanos que desaparecieron hace tiempo del mundo de la superficie. Tienen afinidad por la maquinaria, buscar carroña y extraños comportamientos ocultistas.</p>",
+      "saveDetails": "+2 por estatus a todas las salvaciones contra enfermedad y veneno",
       "skillSpecialAthletics": {
         "0": {
-          "label": "Climbing"
+          "label": "Trepar"
         }
       },
       "items": {
@@ -2442,18 +2442,18 @@
           "name": "Daga"
         },
         "action->+2 Status to All Saves vs. Disease and Poison": {
-          "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 de estado a todas las salvaciones frente a enfermedades y venenos"
+          "name": "+2 por estatus a todas las salvaciones contra enfermedad y veneno"
         },
         "action->Scuttling Attack": {
-          "name": "Ataque de hundimiento",
-          "description": "<p> El carroñero morlock Da dos zancadas, ignorando el terreno difícil causado por características naturales de la caverna como escombros o estalagmitas. En cualquier momento durante su movimiento, el morlock puede realizar un ataque cuerpo a cuerpo contra un enemigo a su alcance. </p>"
+          "name": "Ataque en barrena",
+          "description": "<p>El carroñero morlock da dos Zancadas, ignorando el terreno difícil causado por características naturales de la caverna, como escombros o estalagmitas. En cualquier momento de su movimiento, el morlock puede asestar un Golpe cuerpo a cuerpo contra un enemigo que esté a su alcance.</p>"
         },
         "action->Sneak Attack": {
-          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n <p> El morlock inflige 1d6 de daño de precisión adicional a @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} criaturas. </p>"
+          "description": " <p>El morlock inflige 1d6 de daño de precisión adicional a las criaturas @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenidas}.</p>"
         },
         "action->Swarming Stance": {
-          "name": "Postura de enjambre",
-          "description": "<p> Un morlock puede compartir el mismo espacio que otro morlock, pero no más de dos morlocks pueden ocupar el mismo espacio. Cuando los morlocks comparten el mismo espacio, obtienen una bonificación de circunstancia +1 a las tiradas de ataque. </p>"
+          "name": "Posición de plaga",
+          "description": "<p>Un morlock puede compartir el mismo espacio con otro morlock, pero no puede haber más de dos morlock en el mismo espacio. Cuando los morlocks comparten el mismo espacio, obtienen un bonificador +1 por circunstancia a las tiradas de ataque.</p>"
         }
       }
     },
@@ -3205,26 +3205,26 @@
       }
     },
     "Scalathrax": {
-      "name": "escalatrax",
-      "publicNotes": "<p> Estos horrores resbaladizos y escamosos habitan en redes de cuevas remotas en las Tierras Oscuras y prefieren anidar en fisuras estrechas. Cuando están de caza, lanzan púas de sus largas patas o rocían a sus enemigos con un aceite transparente y tóxico. El mismo aceite cubre el cuerpo del scalathrax, todo lo cual es bastante inflamable, ya sea que cubra a una víctima o al scalathrax mismo. </p>\n <p> Si bien un scalathrax parece salvaje, es más inteligente de lo que parece y es capaz de hablar en un ambiente húmedo yvoz resbaladiza. La gran mayoría de los scalathraxes tienen mal genio y se enojan rápidamente, y la mayoría disfruta matando. Es posible forjar una alianza con un scalathrax, pero hacerlo requiere sobornos constantes de nuevas criaturas para matar o una personalidad particularmente intimidante: los scalathrax a menudo respetan a los matones, viendo en ellos un espejo de sus propios valores crueles. </p>",
+      "name": "Scalathrax",
+      "publicNotes": "<p>Estos horrores escamosos y escurridizos habitan en redes de cuevas remotas en las Tierras Oscuras y les gusta anidar en grietas estrechas. Cuando cazan, lanzan púas desde sus largas patas o rocían a sus enemigos con un aceite transparente y tóxico. Ese mismo aceite recubre el cuerpo del scalathrax y es bastante inflamable, tanto si recubre a una víctima como al propio scalathrax.</p>\n<p>Aunque los scalathrax parecen salvajes, son más inteligentes de lo que uno podría imaginar y son capaces de hablar con una voz úmeda y resbaladiza. La gran mayoría de los scalathrax tienen mal genio, se enfadan rápidamente y casi todos ellos disfrutan matando. Es posible forjar una alianza con un scalathrax, pero para ello es necesario sobornarlo constantemente con nuevas criaturas a las que matar o tener una personalidad especialmente intimidante: los scalathrax suelen respetar a los matones, ya que ven en ellos un reflejo de sus propios valores crueles.</p>",
       "items": {
         "strike-melee->Jaws": {
           "name": "Mandíbulas"
         },
         "strike-ranged->Leg Quill": {
-          "name": "pluma de pierna"
+          "name": "Púa de pata"
         },
         "action->Oily Scales": {
           "name": "Escamas aceitosas",
-          "description": "<p> Un scalatrax suda constantemente un aceite brillante que lo hace excepcionalmente resbaladizo. Trata los resultados de las pruebas de Acrobacias hasta @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeeze} o de cualquier prueba de habilidad hasta @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} como un grado de éxito mayor que el resultado obtenido. </p>\n <p> Un scalathrax pierde este beneficio durante 1 minuto después de recibir cualquier cantidad de daño por fuego. </p>"
+          "description": "<p>Un scalathrax exuda constantemente un aceite brillante que lo hace excepcionalmente resbaladizo. Considera los resultados de las pruebas de Acrobacias para @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Escurrirse} o de cualquier prueba de habilidad para @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Huir} como un grado de éxito mayor que el resultado obtenido.</p>\n<p>Un scalathrax pierde este beneficio durante 1 minuto después de sufrir cualquier cantidad de daño por fuego.</p>"
         },
         "action->Scalathrax Venom": {
           "name": "Veneno de Scalathrax",
-          "description": "<p> <strong> Tiro de salvación </strong> @Check[type:fortitude|dc:21] </p>\n <hr />\n <p> <strong> Duración máxima </strong> 6 rondas </p>\n <p> <strong> Etapa 1 </strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} (1 ronda) </p>\n <p> <strong> Etapa 2 </strong> torpe 1 y @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} (1 ronda) </p>\n <p> <strong> Etapa 3 </strong> torpe 1 y @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 2} (1 ronda) </p>"
+          "description": "<p><strong>Tirada de salvación</strong> @Check[type:fortitude|dc:21]</p>\n<hr />\n<p><strong>Duración máxima </strong> 6 asaltos</p>\n<p><strong>Fase 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} (1 asalto)</p>\n<p><strong>Fase 2</strong> torpe 1 y @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} (1 asalto)</p>\n<p><strong>Fase 3</strong> torpe 1 y @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 2} (1 asalto)</p>"
         },
         "action->Spray Toxic Oil": {
-          "name": "Rocíe aceite tóxico",
-          "description": "<p> El scalathrax expulsa una gota de aceite tóxico de su boca en un @Template[type:cone|distance:15] . Las criaturas en el área deben intentar una salvación @Check[type:reflex|dc:21|traits:damaging-effect]. </p>\n <p> El scalathrax no puede volver a usar el spray de aceite tóxico durante [[/br 1d4 #Recharge Spray Toxic Oil]]{1d4 rounds}. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> La criatura no se ve afectada. </p>\n <p> <strong> Éxito </strong> La criatura sufre @Damage[1d8[poison]] de daño. </p>\n <p><strong> Fallo </strong> La criatura sufre @Damage[2d8[poison]] daño. Durante 1 minuto, la criatura gana debilidad para disparar 5, y cada vez que la criatura falla críticamente en una tirada de ataque con un arma empuñada, deja caer el arma. </p>\n <p> <strong> Fallo crítico </strong> Como fallo, pero @Damage[4d8[poison]] daño. </p>\n <p> @UUID[Compendium.pf2e.bestiary-effects.Item.75B7z49jfQbWcSy9]{Effect: Spray Toxic Oil} </p>"
+          "name": "Rociar aceite tóxico",
+          "description": "<p>El scalathrax expulsa una gota de aceite tóxico por la boca en un @Template[type:cone|distance:15]{cono de 15 pies (4,5 m)}. Las criaturas en el área deben hacer una salvación de @Check[type:reflex|dc:21|traits:damaging-effect].</p>\n<p>El scalathrax no puede volver a Rociar aceite tóxico hasta pasados [[/br 1d4 #Recarga Rociar aceite tóxico]]{1d4 asaltos}.</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura sufre @Damage[1d8[poison]]{1d8 daño por veneno}. </p>\n<p><strong>Fallo</strong> La criatura sufre @Damage[2d8[poison]]{2d8 daño por veneno}. Durante 1 minuto, la criatura obtiene debilidad al fuego 5 y siempre que la criatura falle críticamente una tirada de ataque con un arma que empuñe, se le cae el arma.</p>\n<p><strong>Fallo crítico</strong> Como con el fallo, pero con @Damage[4d8[poison]]{4d8 daño por veneno}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.75B7z49jfQbWcSy9]{Efecto: Rociar aceite tóxico}</p>"
         }
       }
     },
