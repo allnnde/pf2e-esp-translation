@@ -1429,6 +1429,10 @@
         }
       ]
     },
+    "Anchoring Arrow": {
+      "name": "Anchoring Arrow",
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>You can prevent demonic foes from fleeing your wrath via teleportation. Make a bow Strike against a demon. In addition to the normal effects of the Strike, the target must attempt a @Check[will|against:class] save against your class DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The target avoids any additional effect.</p>\n<p><strong>Success</strong> The target takes a –5 circumstance penalty to all their movement Speeds for 1 round as arcane coils of magic meddle with their mobility.</p>\n<p><strong>Failure</strong> As success, but a –5 foot circumstance penalty for 1 minute. While the target is affected by this, Anchoring Arrow attempts to counteract any teleportation effect that would move the target, or any effect that would transport the target to a different plane. The arrow has a counteract rank of 7th and a [[/gmr 1d20+20 @Counteract]]{+20} modifier to the roll.</p>\n<p><strong>Critical Failure</strong> As failure, except a –10 foot circumstance penalty, and the duration is 10 minutes.</p>"
+    },
     "Anchoring Aura": {
       "name": "Aura Anclante",
       "description": "<p> Tu aura obstaculiza el teletransporte de los infernales. Tu aura intenta contrarrestar los conjuros de teletransporte lanzados por infernales a 15 pies (4,5 m) o menos, utilizando el nivel de conjuro y la CD de tus conjuros de devoción. </p>",
@@ -1613,12 +1617,7 @@
     },
     "Animalistic Resistance": {
       "name": "Resistencia animal",
-      "description": "<p> Tus conexiones animales te ayudan a resistir las aflicciones naturales. Obtienes una bonificación de circunstancia de +2 a las salvaciones para resistir enfermedades y venenos. </p>",
-      "rules": {
-        "0": {
-          "label": "Resistencia animal (frente a enfermedades y venenos)"
-        }
-      }
+      "description": "<p> Tus conexiones animales te ayudan a resistir las aflicciones naturales. Obtienes una bonificación de circunstancia de +2 a las salvaciones para resistir enfermedades y venenos. </p>"
     },
     "Animate Net": {
       "name": "Animar red",
@@ -5724,7 +5723,12 @@
     },
     "Chemical Contagion": {
       "name": "Contagio químico",
-      "description": "<p> <strong> Desencadenante </strong> Una criatura dentro de 30 pies falla críticamente su tirada de salvación inicial contra un veneno que tú creaste. </p>\n <hr />\n <p> Con enzimas cuidadosamente diseñadas, consigues que parte de tu veneno infecte a otro objetivo, utilizando a la víctima original como portador. Una criatura adyacente a la criatura desencadenante está expuesta al veneno desencadenante. </p>"
+      "description": "<p> <strong> Desencadenante </strong> Una criatura dentro de 30 pies falla críticamente su tirada de salvación inicial contra un veneno que tú creaste. </p>\n <hr />\n <p> Con enzimas cuidadosamente diseñadas, consigues que parte de tu veneno infecte a otro objetivo, utilizando a la víctima original como portador. Una criatura adyacente a la criatura desencadenante está expuesta al veneno desencadenante. </p>",
+      "prerequisites": [
+        {
+          "value": "Poisoner Dedication"
+        }
+      ]
     },
     "Chemical Purification": {
       "name": "Purificación química",
@@ -6151,6 +6155,10 @@
     "Cognitive Loophole": {
       "name": "Resquicio cognitivo",
       "description": "<p><strong>Desencadenante</strong> Acaba tu turno.</p>\n<p><strong>Requisitos</strong> Estás siendo afectado por un efecto mental.</p>\n<hr />\n<p>Puedes encontrar un resquicio en un efecto mental que te permite superarlo temporalmente. Hasta el final de tu siguiente turno, ignoras un solo efecto mental. Puedes suprimir un efecto en particular utilizando Resquicio cognitivo sólo una vez. No puedes usar Resquicio cognitivo para suprimir un efecto que has elegido que te afecte.</p>\n<hr />\n<p><strong>Especial</strong> Puedes utilizar esta reacción incluso si el efecto mental te impide utilizar reacciones.</p>"
+    },
+    "Cold Iron Stomach": {
+      "name": "Cold Iron Stomach",
+      "description": "<p>You have steeled yourself against potent odors. Whenever you gain the @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened} condition, you reduce the value of that condition by 1; if this reduces the value to 0, you avoid becoming sickened entirely. You gain a +2 circumstance bonus to all saving throws against olfactory and poison effects created by demons or environmental hazards associated with the Outer Rifts (including all environmental hazards found in Tanglebriar).</p>"
     },
     "Cold Minded": {
       "name": "Mente fría",
@@ -7881,12 +7889,7 @@
     },
     "Debilitating Bomb": {
       "name": "Bomba Debilitante",
-      "description": "<p> <strong> Frecuencia </strong> una vez por asalto</p>\n <p> <strong> Desencadenante </strong> Utilizas @UUID[Compendium.pf2e.classfeatures.Item.sPtl05wwTpqFI0lL]{Alquimia rápida} para elaborar una bomba alquímica que es por lo menos 2 niveles inferior a tu nivel de alquimia avanzada. </p>\n <hr />\n <p> Tus bombas imponen efectos adicionales a tus enemigos. Mezclas una sustancia en la bomba que causa uno de los siguientes efectos: @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} , @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido}, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} o bien un penalizador de -5 pies (-1,5 m) por estatus a las Velocidades.</p>\n <p> Si el ataque con esta bomba acierta, el objetivo debe conseguir una salvación de Fortaleza o sufrir dicho efecto hasta el final de tu siguiente turno. Utiliza la CD de tu clase para esta tirada de salvación (incluso si la bomba la lanza alguien que no eres tú). </p>",
-      "rules": {
-        "1": {
-          "text": "Si tu bomba impacta, el objetivo debe superar una salvación de Fortaleza contra tu CD de Clase, o sufrir uno de los siguientes @UUID[Compendium.pf2e.feats-srd.Item.sv4LeEbkOJyLen10]{Efectos}"
-        }
-      }
+      "description": "<p> <strong> Frecuencia </strong> una vez por asalto</p>\n <p> <strong> Desencadenante </strong> Utilizas @UUID[Compendium.pf2e.classfeatures.Item.sPtl05wwTpqFI0lL]{Alquimia rápida} para elaborar una bomba alquímica que es por lo menos 2 niveles inferior a tu nivel de alquimia avanzada. </p>\n <hr />\n <p> Tus bombas imponen efectos adicionales a tus enemigos. Mezclas una sustancia en la bomba que causa uno de los siguientes efectos: @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} , @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido}, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} o bien un penalizador de -5 pies (-1,5 m) por estatus a las Velocidades.</p>\n <p> Si el ataque con esta bomba acierta, el objetivo debe conseguir una salvación de Fortaleza o sufrir dicho efecto hasta el final de tu siguiente turno. Utiliza la CD de tu clase para esta tirada de salvación (incluso si la bomba la lanza alguien que no eres tú). </p>"
     },
     "Debilitating Dichotomy": {
       "name": "Dicotomía debilitante",
@@ -8269,6 +8272,19 @@
     "Demolitionist Dedication": {
       "name": "Dedicación demolicionista",
       "description": "<p> Sabes cómo colocar explosivos para causar el máximo daño posible a edificios y otras estructuras. Te capacitarás en conocimientos de ingeniería o te convertirás en un experto en ella si ya estabas capacitado. Obtienes la acción @UUID[Compendium.pf2e.actionspf2e.Item.vvYsE7OiSSCXhPdr]{Set Explosives}. </p>\n <p> <strong> Especial </strong> No puedes seleccionar otra dote de dedicación hasta que hayas obtenido otras dos dotes del arquetipo @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.Mk7ECwe1a971WyWl]{Demolitionist}. </p>"
+    },
+    "Demon Hunter": {
+      "name": "Demon Hunter",
+      "description": "<p>The demons of Tanglebriar have long haunted your dreams, just as they have long threatened Kyonin. You have not only studied these fiendish foes well, but have trained extensively to battle the hordes of demons that serve Treerazer and are particularly adept at striking desperate melee blows against them.</p>\n<p>When you make your daily preparations, choose one kind of demon, such as succubus, omox, shemhazian, or Treerazer. For the remainder of the day, the first time you hit one of those specific demons in a round with a melee Strike, you also deal 1d6 additional spirit damage. At 13th level, the extra damage increases to 2d6 additional spirit damage, and at 17th level, the extra damage increases to 3d6 spirit damage.</p>",
+      "prerequisites": [
+        {
+          "value": "expert in Religion or Demon Lore"
+        }
+      ]
+    },
+    "Demon Slayer": {
+      "name": "Demon Slayer",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You can deliver a melee blow to a demon that creates an explosion of holy light to try to finish the demon off. In addition to the normal damage from your melee Strike, you also inflict @Damage[10d6[spirit]] damage to the demon. The demon can resist this additional damage with a @Check[fortitude|against:class|basic] save against your class DC. If the demon is slain by this strike, it explodes in a blast of holy light that fills a @Template[type:emanation|distance:30]. All creatures in this area that have the demon trait take @Damage[10d6[spirit]] damage and must attempt a @Check[fortitude|against:class] save against your class DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The demon takes no damage.</p>\n<p><strong>Success</strong> The demon takes half damage.</p>\n<p><strong>Failure</strong> The demon takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Critical Failure</strong> The demon takes full damage and is permanently @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}.</p>"
     },
     "Demon's Hair": {
       "name": "Pelo de demonio",
@@ -14592,12 +14608,7 @@
         {
           "value": "experto en artesanía"
         }
-      ],
-      "rules": {
-        "0": {
-          "label": "Gadget Specialist"
-        }
-      }
+      ]
     },
     "Galvanize Spell": {
       "name": "Galvanize Spell",
@@ -16922,7 +16933,16 @@
     },
     "Heroes' Call": {
       "name": "Llamada de héroes",
-      "description": "<p> Las canciones de los antiguos héroes resuenan en tu mente y aceleran tu pulso, especialmente en situaciones desesperadas. Obtienes @UUID[Compendium.pf2e.spells-srd.Item.KqvqNAfGIE5a9wSv]{Heroism} como un hechizo oculto innato de tercer rango que puedes lanzar una vez al día. Si lanzas el hechizo cuando tienes la mitad o menos de puntos de vida, también obtienes puntos de vida temporales equivalentes al doble de tu nivel. </p>\n <p> @UUID[Compendium.pf2e.feat-effects.Item.BHnunYPROBG5lxv4]{Effect: Heroes' Call} </p>"
+      "description": "<p> Las canciones de los antiguos héroes resuenan en tu mente y aceleran tu pulso, especialmente en situaciones desesperadas. Obtienes @UUID[Compendium.pf2e.spells-srd.Item.KqvqNAfGIE5a9wSv]{Heroism} como un hechizo oculto innato de tercer rango que puedes lanzar una vez al día. Si lanzas el hechizo cuando tienes la mitad o menos de puntos de vida, también obtienes puntos de vida temporales equivalentes al doble de tu nivel. </p>\n <p> @UUID[Compendium.pf2e.feat-effects.Item.BHnunYPROBG5lxv4]{Effect: Heroes' Call} </p>",
+      "rules": {
+        "2": {
+          "value": {
+            "1": {
+              "text": "@UUID[Compendium.pf2e.feat-effects.Item.BHnunYPROBG5lxv4]{Effect: Heroes' Call}"
+            }
+          }
+        }
+      }
     },
     "Heroic Defiance": {
       "name": "Heroic Defiance",
@@ -25558,6 +25578,24 @@
         }
       ]
     },
+    "Political Acumen": {
+      "name": "Political Acumen",
+      "description": "<p>You have spent years following the political maneuvering and secret alliances of elves in Iadara. You gain a +2 circumstance bonus to Perception checks made to @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive} against other elves and to your Perception DC against Lies spoken by agents of Tanglebriar.</p>",
+      "prerequisites": [
+        {
+          "value": "trained in Perception"
+        }
+      ]
+    },
+    "Political Virtuoso": {
+      "name": "Political Virtuoso",
+      "description": "<p>Your mastery of the politics of your home nation is profound. Your circumstance bonus from @UUID[Compendium.pf2e.feats-srd.Item.h3h6QWv1m3MOpx66]{Political Acumen} becomes +4 instead of +2.</p>",
+      "prerequisites": [
+        {
+          "value": "Political Acumen"
+        }
+      ]
+    },
     "Pollinate": {
       "name": "Pollinate",
       "description": "<p><strong>Trigger</strong> You take bludgeoning damage.</p>\n<hr />\n<p>As you're hit, you emit a dense cloud of pollen, obscuring you from sight. You become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} until the beginning of your next turn.</p>\n<hr />\n<p><strong>Special</strong> This feat gains the trait for your ancestry.</p>",
@@ -30237,6 +30275,10 @@
         }
       ]
     },
+    "Shame the Sin": {
+      "name": "Shame the Sin",
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You critically hit a demon with a Strike.</p>\n<hr />\n<p>Your conviction against the sins that all demons grow from is so strong that you can force a demon to suffer from its sins when you strike a sound blow against them. In addition to doing the normal damage for your critical hit, the demon also suffers the effects of its special vulnerability. If the demon has no special vulnerability, it instead takes an additional @Damage[1d6[mental]] damage. This increases to @Damage[2d6[mental]] damage at 13th level and to @Damage[3d6[mental]] damage at 17th level.</p>"
+    },
     "Shameless Request": {
       "name": "Petición descarada",
       "description": "<p>Puedes minimizar las consecuencias o la indignación resultante de tus peticiones utilizando dosis de audacia y de encanto. Cuando Pides algo, reduces en 2 cualquier incremento de CD debido a hacer una petición descarada y, si sufres un fallo crítico para tu Petición, en su lugar sufres un fallo. Si bien esto significa que nunca puedes hacer que tu objetivo reduzca su actitud hacia ti llevando a cabo una Petición, acabará por cansarse de las mismas aunque sigue teniendo una actitud positiva hacia ti.</p>",
@@ -31649,12 +31691,7 @@
         {
           "value": "Elaboración de trampas"
         }
-      ],
-      "rules": {
-        "0": {
-          "label": "Snare Crafting"
-        }
-      }
+      ]
     },
     "Snare Hopping": {
       "name": "Salto de trampa",
@@ -31687,12 +31724,7 @@
         {
           "value": "Elaboración de trampas de lazo"
         }
-      ],
-      "rules": {
-        "0": {
-          "label": "Snare Crafting"
-        }
-      }
+      ]
     },
     "Snarecrafter Dedication": {
       "name": "Dedicación del trampantojo",
@@ -34372,6 +34404,15 @@
       "name": "Iniciativa fanfarrona",
       "description": "<p> <strong> Desencadenante </strong> Estás a punto de tirar la iniciativa. </p>\n <hr />\n <p> Te pavoneas fácilmente en cualquier pelea, incluso en una emboscada. Obtienes un bono de circunstancia +2 a tu tirada de iniciativa y puedes @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interact} sacar un arma. </p>"
     },
+    "Swamp Stealth": {
+      "name": "Swamp Stealth",
+      "description": "<p><strong>Requirements</strong> You are in a swamp environment near an environmental feature that would allow you to @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{Take Cover}.</p>\n<hr />\n<p>In swamplands, you are particularly skilled at quickly hiding behind bits of underbrush or foliage, or moving quietly through murky water. You Take Cover and then use that cover to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide}.</p>",
+      "prerequisites": [
+        {
+          "value": "expert in Stealth"
+        }
+      ]
+    },
     "Swap Investment": {
       "name": "Inversión swap",
       "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <hr />\n <p> Tu tiempo como Conquistador te ha enseñado a improvisar y has aprendido a utilizar los recursos que encuentras en el campo. Inviertes un objeto mágico y eliminas un objeto previamente invertido. El artículo anterior ya no cuenta para tu límite de 10 artículos invertidos. </p>",
@@ -36062,6 +36103,10 @@
         }
       ]
     },
+    "Traditional Ways": {
+      "name": "Traditional Ways",
+      "description": "<p>You are a fervent follower of the long-standing elven traditions established when your people returned to Kyonin. You gain a +2 circumstance bonus to Nature, Society, and Lore skill checks related to Kyonin or the elves that live there, as well as a +1 circumstance bonus to saves against enchantment effects that would force you to act against your will.</p>"
+    },
     "Tragic Lament": {
       "name": "Tragic Lament",
       "description": "<p><strong>Trigger</strong> A creature you're aware of critically succeeds on a Strike against you and would deal damage to you.</p>\n<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p>You dramatically cry out in poetic verse about the tragedies that led to your doom at this very moment, instilling guilt in your attacker. The Strike deals normal damage rather than critical damage as your foe relents on their attack at the last moment as they're moved by your words, though other effects that happen on a critical hit still occur. The creature that made the triggering Strike must then succeed on a @Check[type:will|dc:resolve(@actor.system.attributes.classDC.value)] save against your Class DC or be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} for 1 round by guilt at its actions against you.</p>",
@@ -36232,6 +36277,10 @@
     "Tree's Ward": {
       "name": "Guardián del árbol",
       "description": "<p> Has vivido entre árboles durante tanto tiempo que reconocen tu presencia y buscan protegerte de cualquier daño. Puedes lanzar @UUID[Compendium.pf2e.spells-srd.Item.K9gI08enGtmih5X1]{Protector Tree} como un hechizo innato primario una vez al día. </p>"
+    },
+    "Treehealer": {
+      "name": "Treehealer",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You can undo the effect of demonic corruption in plants. By spending 10 minutes in contact with a tree that's been corrupted by demonic presence, you can restore the tree to its original health. This does not prevent that tree from becoming corrupted again in the future. Alternatively, you can spend 10 minutes in contact with a creature with the plant trait. At the end of this time, you restore @Damage[7d8+56[healing]] Hit Points to that creature and heal half that amount of your own Hit Points. Additionally, you can attempt to counteract any one curse or disease afflicting that plant creature as if you had cast @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} heightened to 7th rank. Your counteract rank for this is 7, and your counteract check is equal to your Will save or your spell attack modifier, whichever is higher.</p>"
     },
     "Treespeech": {
       "name": "habla de los árboles",
