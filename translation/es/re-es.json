@@ -478,6 +478,20 @@
           "success": "<strong> Efecto </strong> La bomba también causa [[/r 2d4[persistent,fire]]] y [[/r (2[splash])[fire]]]{2 fire splash damage} ."
         }
       },
+      "SkunkBomb": {
+        "Greater": {
+          "success": "<strong>Effect</strong> Any creature hit by the bomb or in its splash area must attempt a @Check[fortitude|dc:28] saving throw. Creatures in the splash area treat the results of their saving throw as one step better.<hr><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p><p><strong>Failure</strong> The target is sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} while sickened.</p><p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}, and slowed 1 while sickened.</p>"
+        },
+        "Lesser": {
+          "success": "<strong>Effect</strong> Any creature hit by the bomb or in its splash area must attempt a @Check[fortitude|dc:15] saving throw. Creatures in the splash area treat the results of their saving throw as one step better.<hr><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p><p><strong>Failure</strong> The target is sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} while sickened.</p><p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}, and slowed 1 while sickened.</p>"
+        },
+        "Major": {
+          "success": "<strong>Effect</strong> Any creature hit by the bomb or in its splash area must attempt a @Check[fortitude|dc:37] saving throw. Creatures in the splash area treat the results of their saving throw as one step better.<hr><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p><p><strong>Failure</strong> The target is sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} while sickened.</p><p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}, and slowed 1 while sickened.</p>"
+        },
+        "Moderate": {
+          "success": "<strong>Effect</strong> Any creature hit by the bomb or in its splash area must attempt a @Check[fortitude|dc:17] saving throw. Creatures in the splash area treat the results of their saving throw as one step better.<hr><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p><p><strong>Failure</strong> The target is sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} while sickened.</p><p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}, and slowed 1 while sickened.</p>"
+        }
+      },
       "SulfurBomb": {
         "Greater": {
           "criticalSuccess": "<strong> Efecto </strong> La bomba también causa [[/r (3[splash])[acid]]]{3 acid splash damage} y ​​el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} .",
@@ -662,6 +676,12 @@
       }
     },
     "GenericLabel": {
+      "Check": {
+        "Attack": "Attack Rolls",
+        "Perception": "Perception Check",
+        "SavingThrow": "Saving Throws",
+        "Skill": "Skill Checks"
+      },
       "ItemVs": {
         "DeathVoid": "{item} vs. Death and Void effects",
         "Fear": "{item} vs. fear"
@@ -3782,7 +3802,7 @@
           "Lash": "Lash"
         },
         "YoureNext": {
-          "Rogue": "After downing a foe, you menace another. Attempt to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} a creature within 60 feet, with a +2 circumstance bonus. If you have legendary proficiency in Intimidation, you can use this as a free action with the same trigger.",
+          "Rogue": "After downing a foe, you menace another. Attempt to [[/act demoralize options=youre-next]] a creature within 60 feet, with a +2 circumstance bonus. If you have legendary proficiency in Intimidation, you can use this as a free action with the same trigger.",
           "Swashbuckler": "After downing a foe, you promise another that you’re coming after them next. Attempt an Intimidation check with a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} a single creature that you can see and that can see you. If you’re legendary in Intimidation, you can use this as a free action with the same trigger.",
           "Trigger": "You reduce an enemy to 0 Hit Points."
         }
@@ -3793,6 +3813,9 @@
         }
       },
       "Fighter": {
+        "BrutalFinish": {
+          "Note": "You deal @Damage[(ternary(gte(@actor.level,18),2,1))@item.system.damage.die[@item.system.damage.damageType]] damage."
+        },
         "DazingBlow": {
           "Note": "Si el Golpe impacta, la criatura debe intentar una salvación @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|traits:incapacitation] contra tu clase DC; este es un efecto de incapacitación. </p>\n <hr />\n <p> <strong> Éxito crítico </strong> La criatura no se ve afectada. </p>\n <p> <strong> Éxito </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1} . </p>\n <p> <strong> Fallo </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 2} . </p>\n <p> <strong> CríticoFallo </strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 3} ."
         },
@@ -4390,6 +4413,11 @@
           "Title": "Aura del temible mariscal"
         }
       },
+      "MartialArtist": {
+        "GrievousBlow": {
+          "Note": "This Strike ignores an amount of resistance to physical damage (or to a specific physical damage type) equal to your level."
+        }
+      },
       "MartialProficiency": {
         "AdvancedAthamaruWeapons": "Advanced Athamaru Weapons",
         "AdvancedAzarketiWeapons": "Armas Azarketi avanzadas",
@@ -4724,6 +4752,11 @@
         "ThoroughReports": "Thorough Reports"
       },
       "PlayingItem": "Playing {item}",
+      "PFS": {
+        "NarsensWeb": {
+          "RollOptionLabel": "Hiding behind a mask or disguise"
+        }
+      },
       "Poppet": {
         "Tsukumogami": {
           "Ceramic": "Ceramic",
@@ -4745,6 +4778,7 @@
         "Alignment": "Seleccione una alineación.",
         "Attribute": "Select an attribute.",
         "Benefit": "Select a benefit.",
+        "Bonus": "Select a bonus.",
         "Cantrip": "Select a cantrip.",
         "CantripOrNonCantrip": "Selecciona un hechizo con truco o sin truco.",
         "ClassDCAbilityScore": "Seleccione el atributo clave de la clase DC.",
