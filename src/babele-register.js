@@ -59,7 +59,7 @@ function AACreateItemNameProxy(item, realName) {
 }
 
 Hooks.once("init", () => {
-    if (typeof Babele !== "undefined") { 
+    if (game.babele) {
         game.settings.register("pf2e-es", "dual-language-names", {
             name: "Nombres en español e ingles",
             hint: "No solo muestra los nombres en español sino tambien en ingles.",
@@ -90,6 +90,9 @@ Hooks.once("init", () => {
             },
             translateActorItems: (data, translation) => {
                 return game.langEsPf2e.translateItems(data, translation, true);
+            },
+            translateAdventureActors: (data, translation) => {
+                return game.langEsPf2e.translateArrayOfObjects(data, translation, "adventureActor");
             },
             translateAdventureItems: (data, translation) => {
                 return game.langEsPf2e.translateItems(data, translation, false, false);
@@ -164,7 +167,7 @@ Hooks.once("init", () => {
 });
 
 Hooks.once("i18nInit", () => {
-    if (game.i18n.lang === "es") {
+    if (game.i18n.lang === "de") {
         const fallback = game.i18n._fallback;
         removeMismatchingTypes(fallback, game.i18n.translations);
     }
