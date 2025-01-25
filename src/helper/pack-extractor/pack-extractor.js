@@ -422,6 +422,12 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
             continue;
         }
         // Apply special extraction rules on value level
+        // Special extraction for actors
+        if (["adventureActors", "adventureCompendiumActors"].includes(nestedEntryType)) {
+            // Add the actor id in order to identify actor duplicates (e.g. treasure actors with the same name)
+            extractedEntryData.extractedEntry.duplicateId = entry._id;
+        }
+
         // Special extraction for actor items
         if (["actorItems", "adventureActorItems"].includes(nestedEntryType)) {
             const formatedActorItem = formatActorItem(
@@ -773,14 +779,14 @@ function unifyLineBreaks(htmlString) {
  */
 function getCompendiumLinkFromItemData(item) {
     let compendiumLink = false;
-    if (resolvePath(item, "flags.core.sourceId").exists) {
+    if (resolvePath(item, "flags.core.sourceId").exists && item.flags.core.sourceId !== null) {
         compendiumLink = item.flags.core.sourceId;
     }
-    if (resolvePath(item, "_stats.compendiumSource").exists) {
+    if (resolvePath(item, "_stats.compendiumSource").exists && item._stats.compendiumSource !== null) {
         compendiumLink = item._stats.compendiumSource;
     }
 
-    if (compendiumLink !== null && compendiumLink.startsWith("Compendium.pf2e.")) {
+    if (compendiumLink !== false && compendiumLink.startsWith("Compendium.pf2e.")) {
         return compendiumLink;
     }
 
