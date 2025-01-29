@@ -1,3 +1,12 @@
+## [6.15.6](https://github.com/allnnde/pf2e-esp-translation/compare/v6.15.5...v6.15.6) (2025-01-29)
+
+
+### Bug Fixes
+
+* New translations pathfinder-bestiary-2.json from Crowdin ([24d36a7](https://github.com/allnnde/pf2e-esp-translation/commit/24d36a725552262657d848c2bb12cb4ee49bfb4a))
+
+
+
 ## [6.15.5](https://github.com/allnnde/pf2e-esp-translation/compare/v6.15.4...v6.15.5) (2025-01-28)
 
 
@@ -57,26 +66,6 @@
 * New translations quest-for-the-frozen-flame-bestiary.json from Crowdin ([8b6abc9](https://github.com/allnnde/pf2e-esp-translation/commit/8b6abc9714245cc6ac92966063a9e40b5c71b660))
 * New translations season-of-ghosts-bestiary.json from Crowdin ([5314b15](https://github.com/allnnde/pf2e-esp-translation/commit/5314b15f751efa91e0780fe21d309284e6176f27))
 * New translations strength-of-thousands-bestiary.json from Crowdin ([f8619e0](https://github.com/allnnde/pf2e-esp-translation/commit/f8619e01b9bfa2123098843d11d7dfca9c12f6ac))
-
-
-
-## [6.15.1](https://github.com/allnnde/pf2e-esp-translation/compare/v6.15.0...v6.15.1) (2025-01-25)
-
-
-### Bug Fixes
-
-* New translations bestiary-effects.json from Crowdin ([1725a28](https://github.com/allnnde/pf2e-esp-translation/commit/1725a285acc1e63ddd27ff259a3df9d1cf7f1955))
-* New translations bestiary-effects.json from Crowdin ([0f0c3dc](https://github.com/allnnde/pf2e-esp-translation/commit/0f0c3dc2d9890f81c9cf682f0ef2542de82e761c))
-* New translations pathfinder-bestiary-2.json from Crowdin ([5e8af69](https://github.com/allnnde/pf2e-esp-translation/commit/5e8af69973bf792abd3dd3f6c780344852244dc2))
-* New translations pathfinder-bestiary-2.json from Crowdin ([2621251](https://github.com/allnnde/pf2e-esp-translation/commit/262125159aa5786dd9cddd284bad5b6adec0097c))
-* New translations pathfinder-bestiary-2.json from Crowdin ([7a63728](https://github.com/allnnde/pf2e-esp-translation/commit/7a637286ab4885ddc6f4b132af4aad687cce064d))
-* New translations pathfinder-bestiary.json from Crowdin ([d839c83](https://github.com/allnnde/pf2e-esp-translation/commit/d839c8332356b9f8cdca32f97a4b955606145e24))
-* New translations pathfinder-bestiary.json from Crowdin ([2f7fcee](https://github.com/allnnde/pf2e-esp-translation/commit/2f7fcee0fe630380c5589ce6034f312f99bd40ae))
-* New translations pathfinder-monster-core.json from Crowdin ([5e40857](https://github.com/allnnde/pf2e-esp-translation/commit/5e4085794ee3b80ce41da73ab686b8ebd1345593))
-* New translations pathfinder-monster-core.json from Crowdin ([a5fcaef](https://github.com/allnnde/pf2e-esp-translation/commit/a5fcaef392f597eb3f20cf8fcc269c8bc5e012e5))
-* New translations spells.json from Crowdin ([ccf9c4c](https://github.com/allnnde/pf2e-esp-translation/commit/ccf9c4c2f36aec6501bca26ed704916a7e9dc437))
-* test ([61bb771](https://github.com/allnnde/pf2e-esp-translation/commit/61bb771ed5a982bca20211341322533643a3e772))
-* update rapo german ([32f8f4e](https://github.com/allnnde/pf2e-esp-translation/commit/32f8f4e01a18e3783b3dee2e138312fb94505707))
 
 
 
