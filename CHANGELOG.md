@@ -1,3 +1,12 @@
+## [6.15.7](https://github.com/allnnde/pf2e-esp-translation/compare/v6.15.6...v6.15.7) (2025-01-31)
+
+
+### Bug Fixes
+
+* add sefl effect ([0bcbf4e](https://github.com/allnnde/pf2e-esp-translation/commit/0bcbf4e949fe4b3c6ee0cb8cf80f75bd235a1d9f))
+
+
+
 ## [6.15.6](https://github.com/allnnde/pf2e-esp-translation/compare/v6.15.5...v6.15.6) (2025-01-29)
 
 
@@ -51,21 +60,6 @@
 * New translations pathfinder-monster-core.json from Crowdin ([10eb7f1](https://github.com/allnnde/pf2e-esp-translation/commit/10eb7f1bbb77f3b6fef3ddeac07cc7e1cfdd8d73))
 * New translations pathfinder-monster-core.json from Crowdin ([dcbbaab](https://github.com/allnnde/pf2e-esp-translation/commit/dcbbaabbd95ba711d444e5c645fdb6af09b358d8))
 * New translations pathfinder-monster-core.json from Crowdin ([5f6b41f](https://github.com/allnnde/pf2e-esp-translation/commit/5f6b41f02f10e6b019814417d0d4201086a58bf4))
-
-
-
-## [6.15.2](https://github.com/allnnde/pf2e-esp-translation/compare/v6.15.1...v6.15.2) (2025-01-25)
-
-
-### Bug Fixes
-
-* New translations blood-lords-bestiary.json from Crowdin ([870c1a0](https://github.com/allnnde/pf2e-esp-translation/commit/870c1a095a1c167873b44afd39519ee28762c54a))
-* New translations extinction-curse-bestiary.json from Crowdin ([e118b12](https://github.com/allnnde/pf2e-esp-translation/commit/e118b125fa6ea1ea2aa6508ddd57a86adb3cd764))
-* New translations fists-of-the-ruby-phoenix-bestiary.json from Crowdin ([db02f98](https://github.com/allnnde/pf2e-esp-translation/commit/db02f98f313827a15cc93ecd16d69574abfc8793))
-* New translations pathfinder-monster-core.json from Crowdin ([221f80a](https://github.com/allnnde/pf2e-esp-translation/commit/221f80a94b2002bdeb9599548eb2ae5737f8effd))
-* New translations quest-for-the-frozen-flame-bestiary.json from Crowdin ([8b6abc9](https://github.com/allnnde/pf2e-esp-translation/commit/8b6abc9714245cc6ac92966063a9e40b5c71b660))
-* New translations season-of-ghosts-bestiary.json from Crowdin ([5314b15](https://github.com/allnnde/pf2e-esp-translation/commit/5314b15f751efa91e0780fe21d309284e6176f27))
-* New translations strength-of-thousands-bestiary.json from Crowdin ([f8619e0](https://github.com/allnnde/pf2e-esp-translation/commit/f8619e01b9bfa2123098843d11d7dfca9c12f6ac))
 
 
 
