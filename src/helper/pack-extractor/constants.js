@@ -321,6 +321,7 @@ export const PF2_DEFAULT_MAPPING = {
         },
         secondarycaster: { path: "system.ritual.secondary.casters" },
         secondarycheck: { path: "system.ritual.secondary.checks" },
+        selfEffect: { path: "system.selfEffect.name" },
         source: {
             path: "system.publication.title",
             converter: "translateSource",
