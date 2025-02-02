@@ -1,3 +1,12 @@
+## [6.16.2](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.1...v6.16.2) (2025-02-02)
+
+
+### Bug Fixes
+
+* automarge ([ab1662a](https://github.com/allnnde/pf2e-esp-translation/commit/ab1662addc47c645c03cc2626993e7b058d70c1e))
+
+
+
 ## [6.16.1](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.0...v6.16.1) (2025-02-02)
 
 
@@ -82,15 +91,6 @@
 ### Bug Fixes
 
 * add sefl effect ([0bcbf4e](https://github.com/allnnde/pf2e-esp-translation/commit/0bcbf4e949fe4b3c6ee0cb8cf80f75bd235a1d9f))
-
-
-
-## [6.15.6](https://github.com/allnnde/pf2e-esp-translation/compare/v6.15.5...v6.15.6) (2025-01-29)
-
-
-### Bug Fixes
-
-* New translations pathfinder-bestiary-2.json from Crowdin ([24d36a7](https://github.com/allnnde/pf2e-esp-translation/commit/24d36a725552262657d848c2bb12cb4ee49bfb4a))
 
 
 
