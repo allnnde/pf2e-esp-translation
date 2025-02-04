@@ -1,3 +1,7 @@
+## [6.16.3](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.2...v6.16.3) (2025-02-04)
+
+
+
 ## [6.16.2](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.1...v6.16.2) (2025-02-02)
 
 
@@ -82,15 +86,6 @@
 * New translations re-en.json from Crowdin ([54aa77f](https://github.com/allnnde/pf2e-esp-translation/commit/54aa77fd7ca25acd39f64d9394a07cca911ffdd5))
 * New translations seven-dooms-for-sandpoint-bestiary.json from Crowdin ([02f907c](https://github.com/allnnde/pf2e-esp-translation/commit/02f907c73d04f25acfb85d767d94c96f4424688a))
 * New translations spells.json from Crowdin ([1c934d7](https://github.com/allnnde/pf2e-esp-translation/commit/1c934d7cc231a5ea67b2a6364130e5b997b62901))
-
-
-
-## [6.15.7](https://github.com/allnnde/pf2e-esp-translation/compare/v6.15.6...v6.15.7) (2025-01-31)
-
-
-### Bug Fixes
-
-* add sefl effect ([0bcbf4e](https://github.com/allnnde/pf2e-esp-translation/commit/0bcbf4e949fe4b3c6ee0cb8cf80f75bd235a1d9f))
 
 
 
