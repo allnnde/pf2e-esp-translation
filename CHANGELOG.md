@@ -1,3 +1,12 @@
+## [6.16.7](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.6...v6.16.7) (2025-02-05)
+
+
+### Bug Fixes
+
+* New translations pathfinder-monster-core.json from Crowdin ([09ad0dc](https://github.com/allnnde/pf2e-esp-translation/commit/09ad0dc4bcedd1d9fdb53be5f2fb170d6676e0e5))
+
+
+
 ## [6.16.6](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.5...v6.16.6) (2025-02-04)
 
 
@@ -18,15 +27,6 @@
 
 
 ## [6.16.3](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.2...v6.16.3) (2025-02-04)
-
-
-
-## [6.16.2](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.1...v6.16.2) (2025-02-02)
-
-
-### Bug Fixes
-
-* automarge ([ab1662a](https://github.com/allnnde/pf2e-esp-translation/commit/ab1662addc47c645c03cc2626993e7b058d70c1e))
 
 
 
