@@ -1,3 +1,16 @@
+## [6.16.15](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.14...v6.16.15) (2025-02-25)
+
+
+### Bug Fixes
+
+* New translations pathfinder-monster-core.json from Crowdin ([879c3e5](https://github.com/allnnde/pf2e-esp-translation/commit/879c3e5c52d5b9581071859c28e59d0580d5312c))
+* New translations pathfinder-monster-core.json from Crowdin ([002bb01](https://github.com/allnnde/pf2e-esp-translation/commit/002bb01e7c0cdb504e38139c9d854c9e4a27257f))
+* New translations pathfinder-monster-core.json from Crowdin ([cf98e9d](https://github.com/allnnde/pf2e-esp-translation/commit/cf98e9d84f19d14674bce9ee76ccf719ca70926f))
+* New translations pathfinder-monster-core.json from Crowdin ([f3c2081](https://github.com/allnnde/pf2e-esp-translation/commit/f3c2081d021a1b624946a8f744d18486ebc2fcf1))
+* New translations pathfinder-monster-core.json from Crowdin ([221f8db](https://github.com/allnnde/pf2e-esp-translation/commit/221f8dbc44aadd6e97af5c4e3f6e40449bdf8987))
+
+
+
 ## [6.16.14](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.13...v6.16.14) (2025-02-23)
 
 
@@ -47,16 +60,6 @@
 * New translations pathfinder-monster-core.json from Crowdin ([9f20475](https://github.com/allnnde/pf2e-esp-translation/commit/9f20475978c01d456cad88704bb11f560ac9be8f))
 * New translations pathfinder-monster-core.json from Crowdin ([5c0c62f](https://github.com/allnnde/pf2e-esp-translation/commit/5c0c62fc7f884edf9bef36d04f543fc10515aa2a))
 * New translations pathfinder-monster-core.json from Crowdin ([62923c9](https://github.com/allnnde/pf2e-esp-translation/commit/62923c945b0a692fbcd1dae90d269881e297a3c7))
-
-
-
-## [6.16.10](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.9...v6.16.10) (2025-02-09)
-
-
-### Bug Fixes
-
-* New translations pathfinder-bestiary-2.json from Crowdin ([7cc9054](https://github.com/allnnde/pf2e-esp-translation/commit/7cc90544cca028a9d0a7b574e0a14bcdb7a7712a))
-* New translations pathfinder-bestiary.json from Crowdin ([9dad410](https://github.com/allnnde/pf2e-esp-translation/commit/9dad410e44fbde102cfcc04b9b319b5303ae9aee))
 
 
 
