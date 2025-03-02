@@ -1,3 +1,13 @@
+## [6.16.17](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.16...v6.16.17) (2025-03-02)
+
+
+### Bug Fixes
+
+* New translations pathfinder-monster-core.json from Crowdin ([2bf4348](https://github.com/allnnde/pf2e-esp-translation/commit/2bf434814b0cc5bff0534e3de0ef91948727b09e))
+* New translations pathfinder-monster-core.json from Crowdin ([cb6203e](https://github.com/allnnde/pf2e-esp-translation/commit/cb6203e86fe531e0c5c1e1e74011d0b2395d5a35))
+
+
+
 ## [6.16.16](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.15...v6.16.16) (2025-02-27)
 
 
@@ -53,15 +63,6 @@
 * New translations pathfinder-monster-core.json from Crowdin ([1ed450f](https://github.com/allnnde/pf2e-esp-translation/commit/1ed450f2a273c4b71738da468294ad3f7827f4b2))
 * New translations pathfinder-monster-core.json from Crowdin ([3b7682e](https://github.com/allnnde/pf2e-esp-translation/commit/3b7682ead8a1606a960f86869d1fb1ba5887cd79))
 * New translations pathfinder-monster-core.json from Crowdin ([b390227](https://github.com/allnnde/pf2e-esp-translation/commit/b3902279667ff093602dcde507448fa4dd2ade74))
-
-
-
-## [6.16.12](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.11...v6.16.12) (2025-02-17)
-
-
-### Bug Fixes
-
-* New translations pathfinder-bestiary.json from Crowdin ([6866b85](https://github.com/allnnde/pf2e-esp-translation/commit/6866b8547ba54e626e85770f03ea37951ef3778b))
 
 
 
