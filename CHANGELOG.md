@@ -1,3 +1,15 @@
+## [6.16.18](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.17...v6.16.18) (2025-03-03)
+
+
+### Bug Fixes
+
+* New translations bestiary-effects.json from Crowdin ([1dd1264](https://github.com/allnnde/pf2e-esp-translation/commit/1dd1264dc5be49b216ff7f0fd74f6c440e785c0b))
+* New translations pathfinder-monster-core.json from Crowdin ([2fe706c](https://github.com/allnnde/pf2e-esp-translation/commit/2fe706c3337cc6fe06434bcd66f240a636889a64))
+* New translations pathfinder-monster-core.json from Crowdin ([bc4af95](https://github.com/allnnde/pf2e-esp-translation/commit/bc4af9521f4ddc1cdb52e4f0c2a52064b89aa218))
+* New translations pathfinder-monster-core.json from Crowdin ([9b798d5](https://github.com/allnnde/pf2e-esp-translation/commit/9b798d5846b339778f7f42278330629df3973998))
+
+
+
 ## [6.16.17](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.16...v6.16.17) (2025-03-02)
 
 
@@ -51,18 +63,6 @@
 * New translations pathfinder-monster-core.json from Crowdin ([6c16051](https://github.com/allnnde/pf2e-esp-translation/commit/6c16051ce1bb085b93855bc865ea64aae02c8db7))
 * New translations pathfinder-monster-core.json from Crowdin ([b9cac81](https://github.com/allnnde/pf2e-esp-translation/commit/b9cac8172b66fcbfc89f8d49c2f0e1d849293822))
 * New translations pathfinder-monster-core.json from Crowdin ([42cbe6f](https://github.com/allnnde/pf2e-esp-translation/commit/42cbe6f00e69eee4527fd7550246cd97c777d888))
-
-
-
-## [6.16.13](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.12...v6.16.13) (2025-02-19)
-
-
-### Bug Fixes
-
-* New translations pathfinder-monster-core.json from Crowdin ([49a5ef4](https://github.com/allnnde/pf2e-esp-translation/commit/49a5ef4182937992fa78faa81215a30700efd151))
-* New translations pathfinder-monster-core.json from Crowdin ([1ed450f](https://github.com/allnnde/pf2e-esp-translation/commit/1ed450f2a273c4b71738da468294ad3f7827f4b2))
-* New translations pathfinder-monster-core.json from Crowdin ([3b7682e](https://github.com/allnnde/pf2e-esp-translation/commit/3b7682ead8a1606a960f86869d1fb1ba5887cd79))
-* New translations pathfinder-monster-core.json from Crowdin ([b390227](https://github.com/allnnde/pf2e-esp-translation/commit/b3902279667ff093602dcde507448fa4dd2ade74))
 
 
 
