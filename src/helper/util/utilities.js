@@ -20,11 +20,16 @@ export function convertArray(sourceArray) {
  * @returns {Object}                                The new sorted object
  */
 export function sortObject(obj, { recursiveSort = false } = {}) {
+    const options = { recursiveSort };
+
+    if (recursiveSort && Array.isArray(obj)) {
+        return obj.map((entry) => sortObject(entry, options));
+    }
+
     if (typeof obj !== "object" || obj === null || Array.isArray(obj)) {
         return obj;
     }
 
-    const options = { recursiveSort };
     const sortedObject = {};
 
     Object.keys(obj)

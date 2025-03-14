@@ -395,8 +395,10 @@ class Translator {
             }
 
             // Add the item slug if not already included
-            if (!arr[index].system.slug || arr[index].system.slug === "") {
-                arr[index].system.slug = this.sluggify(itemName);
+            if (arr[index].system) {
+                if (!arr[index].system.slug || arr[index].system.slug === "") {
+                    arr[index].system.slug = this.sluggify(itemName);
+                }
             }
         });
 
@@ -472,6 +474,9 @@ class Translator {
 
     // For default icons, update the image if included in the media path
     updateImage(type, value, dataObject, translatedCompendium) {
+        if (!translatedCompendium) {
+            return value;
+        }
         // Get image source based on type
         let imageSource = "";
         if (type === "portrait") {

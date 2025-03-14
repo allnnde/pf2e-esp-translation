@@ -58,7 +58,7 @@ function AACreateItemNameProxy(item, realName) {
     });
 }
 
-Hooks.once("init", () => {
+Hooks.once("babele.init", () => {
     if (game.babele) {
         game.settings.register("pf2e-es", "dual-language-names", {
             name: "Nombres en español e ingles",
@@ -167,7 +167,7 @@ Hooks.once("init", () => {
 });
 
 Hooks.once("i18nInit", () => {
-    if (game.i18n.lang === "de") {
+    if (game.i18n.lang === "es") {
         const fallback = game.i18n._fallback;
         removeMismatchingTypes(fallback, game.i18n.translations);
     }
