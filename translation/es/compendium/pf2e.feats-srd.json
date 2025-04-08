@@ -679,7 +679,7 @@
       "description": "<p>Your talent at controlling your qi has reached new heights. You gain @UUID[Compendium.pf2e.spells-srd.Item.oo7YcRC2gcez81PV]{Qi Blast}, @UUID[Compendium.pf2e.spells-srd.Item.Az3PmWnlWSb5ELX9]{Shrink the Span}, or another 3rd-rank qi spell you have access to.</p>",
       "prerequisites": [
         {
-          "value": "Qi Spells"
+          "value": "Conjuros de Qi"
         }
       ]
     },
@@ -1131,7 +1131,7 @@
       "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You Cast a Spell that has the monk trait.</p><hr /><p>he power of your qi soothes your wounds and energizes you for battle. You @Damage[(@actor.abilities.wis.mod + @actor.level)[healing]]{regain Hit Points} equal to your level plus your Wisdom modifier.</p>",
       "prerequisites": [
         {
-          "value": "Qi Spells"
+          "value": "Conjuros de Qi"
         }
       ]
     },
@@ -9545,7 +9545,7 @@
       "description": "<p> <strong> Requisitos </strong> Estás en @UUID[Compendium.pf2e.feats-srd.Item.8sy3sHwOHS4ImwvJ]{Dragon Stance} </p>\n <hr />\n <p> Bramas, infundiendo miedo a tus enemigos. Los enemigos dentro de un @Template[type:emanation|distance:15] deben tener éxito en una salvación de Voluntad contra tu CD de Intimidación o ser @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} ( @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} en un fallo crítico). Cuando una criatura asustada por el rugido comienza su turno adyacente a ti, no puede reducir su valor de asustado por debajo de 1 en ese turno. </p><p> Tu primer ataque que golpea a una criatura asustada después de tu rugido y antes del final de tu siguiente turno obtiene una bonificación de +4 de circunstancia al daño. </p>\n <p> Después de usar Dragon Roar, no puedes volver a usarlo durante [[/r 1d4 #rounds]]{1d4 rounds}. Sus efectos terminan inmediatamente si abandonas Dragon Stance. Las criaturas en el área de tu rugido quedan temporalmente inmunes durante 1 minuto. </p>",
       "prerequisites": [
         {
-          "value": "Postura del Dragón"
+          "value": "Postura del dragón"
         }
       ]
     },
@@ -9568,14 +9568,14 @@
       ]
     },
     "Dragon Stance": {
-      "name": "Posición Del Dragón",
-      "description": "<p> <strong> Requisitos </strong> Estás desarmado </p>\n <hr />\n <p> Entras en la postura de un dragón y realizas poderosos golpes con las piernas como la cola de un dragón. Puedes realizar ataques con cola de dragón que causan 1d10 de daño contundente. Están en el grupo de pelea y tienen rasgos de backswing, no letales y desarmados. </p>\n <p> Mientras estás en Dragon Stance, puedes ignorar el primer cuadrado de terreno difícil mientras caminas. </p>",
+      "name": "Postura del dragón",
+      "description": "<p> <strong> Requisitos </strong> Estás desarmado </p>\n <hr />\n <p>Tomas la postura de un dragón y realizas poderosos golpes con las piernas como si fueran la cola de un dragón. Puedes realizar ataques con cola de dragón que causan 1d10 de daño contundente. Están en el grupo de pelea y tienen rasgos: no letales, revés y desarmados. </p>\n <p> Mientras estás en la Postura del dragón, puedes ignorar el primer cuadrado de terreno difícil mientras caminas. </p>",
       "prerequisites": [
         {
           "value": "estas desarmado"
         }
       ],
-      "selfEffect": "Stance: Dragon Stance"
+      "selfEffect": "Postura del dragón"
     },
     "Dragon Transformation": {
       "name": "Transformación De Dragón",
@@ -9628,7 +9628,7 @@
     },
     "Dragon's Rage Breath": {
       "name": "Aliento de furia de dragón",
-      "description": "<p> <strong> Requisitos </strong> No has utilizado esta aptitud desde la última vez que entraste en furia. </p>\n <hr />\n <p> Respiras hondo y exhalas una poderosa energía en un cono de 30 pies (9 m) @Template[type:cone|distance:30] o  o una línea de 60 pies (18 m) @Template[type:line|distance:60] , infligiendo @Damage[(@actor.level)d6[@actor.flags.pf2e.barbarian.instinct.dragon.damageType] |rasgos: daño de área]{1d6 daño por nivell} . El área y el tipo de daño son los mismos que los de tu dragón (ver @UUID[Compendium.pf2e.classfeatures.Item.VDot7CDcXElxmkkz]{Table 3-4}) en la pág. 87). </p>\n <p> Si has utilizado esta aptitud en la última hora, el área de daño se reduce a la mitad (cono de 15 pies [4,5 m] o línea de 30 pies [9 m] @Template[type:line|distance:30]; @Damage[(floor(@actor.level2))d6[@actor.flags.pf2e.barbarian.instinct.dragon.damageType] |rasgos:daño-área]{1d6 daño por cada 2 niveles} ). </p>\n <p> Cada criatura de la zona debe hacer una salvación básica de Reflejos @Check[type:reflexdc:resolve(@actor.attributes.classDC.value)|basic:true]. </p>",
+      "description": "<p><strong>Requisitos </strong>No has utilizado esta aptitud desde la última vez que entraste en furia.</p>\n<hr>\n<p>Respiras hondo y exhalas una poderosa energía en un cono de 30 pies @Template[type:cone|distance:30] o o una línea de 60 pies @Template[type:line|distance:60] , infligiendo @Damage[(@actor.level)d6[@actor.flags.pf2e.barbarian.instinct.dragon.damageType] |rasgos: daño de área]{1d6 daño por nivel} . El área y el tipo de daño son los mismos que los de tu dragón (ver @UUID[Compendium.pf2e.classfeatures.Item.VDot7CDcXElxmkkz]{Table 3-4}) en la pág. 87).</p>\n<p>Si has utilizado esta aptitud en la última hora, el área de daño se reduce a la mitad (cono de 15 pies @Template[type:cone|distance:15] o línea de 30 pies @Template[type:line|distance:30]; @Damage[(floor(@actor.level2))d6[@actor.flags.pf2e.barbarian.instinct.dragon.damageType]|rasgos:daño-área]{1d6 daño por cada 2 niveles} ).</p>\n<p>Cada criatura de la zona debe hacer una salvación básica de Reflejos @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true].</p>",
       "prerequisites": [
         {
           "value": "Instinto de dragón"
@@ -11877,7 +11877,7 @@
     },
     "Experienced Smuggler": {
       "name": "Contrabandista experto",
-      "description": "<p> A menudo pasas cosas de contrabando ante las autoridades. Cuando el DJ realiza tu prueba de Sigilo para ver si un observador pasivo nota un objeto pequeño que tienes @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto}, el DJ usa el número obtenido o 10, el que sea mayor, como resultado de tu tirada del dado, agregándolo a tu modificador de Sigilo. para determinar el resultado de tu prueba de Sigilo. Si eres un maestro en Sigilo, el DJ usa el número obtenido o 15, y si eres legendario en Sigilo, automáticamente logras ocultar una pequeñaObjeto oculto a observadores pasivos. Esto no proporciona ningún beneficio cuando una criatura intenta una prueba de Percepción mientras te busca activamente @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} elementos. </p>\n <hr />\n <p> <strong> Nota PFS </strong> Esta dote te permite obtener ingresos con Underworld Lore con tareas de tu nivel -1 (en lugar del nivel normal -2). </p>",
+      "description": "<p>A menudo pasas cosas de contrabando ante las autoridades. Cuando el DJ realiza tu prueba de Sigilo para ver si un observador pasivo nota un objeto pequeño que tienes @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto}, el DJ usa el número obtenido o 10, el que sea mayor, como resultado de tu tirada del dado, agregándolo a tu modificador de Sigilo. para determinar el resultado de tu prueba de Sigilo. Si eres un maestro en Sigilo, el DJ usa el número obtenido o 15, y si eres legendario en Sigilo, automáticamente logras ocultar una pequeñaObjeto oculto a observadores pasivos. Esto no proporciona ningún beneficio cuando una criatura intenta una prueba de Percepción mientras te busca activamente @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} elementos. </p>\n<hr />\n<p><strong>Nota PFS</strong> Esta dote te permite obtener ingresos con Saber (bajos fondos) en tareas de tu nivel -1 (en lugar del nivel normal -2).</p>",
       "prerequisites": [
         {
           "value": "rango entrenado en Sigilo"
@@ -13901,8 +13901,8 @@
       "description": "<p> Aparece una pequeña forma de llama, que toma la forma que elijas, como un pájaro, una flecha o una simple esfera. Vuela desde ti hasta 30 pies en el camino que elijas. Cada criatura que atraviesa sufre @Damage[(floor((@actor.level -1)/2)+1)d6[fire]] daño con una salvación @Check[type:reflex|dc:resolve(@actor.system.proficiencies.classDCs.kineticist.dc)|basic:true] contra tu clase DC. Una criatura solo intenta una salvación, incluso si la llama la atraviesa varias veces. </p>\n <hr />\n <p> <strong> Nivel (+2) </strong> El daño aumenta en 1d6. </p>"
     },
     "Flying Kick": {
-      "name": "Patada Voladora",
-      "description": "<p> Te lanzas hacia un enemigo. Haga un @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap} o intente un @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{High Jump} o @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Long Jump}. </p>\n <p> Al final del salto, si estás adyacente a un enemigo, puedes golpear inmediatamente a ese enemigo con un ataque desarmado, incluso si el enemigo está en el aire. Caes al suelo después del Golpe. Si la distancia que caes no es mayor que la altura de tu salto, aterrizas erguido y no sufres daño. </p>"
+      "name": "Patada voladora",
+      "description": "<p>Te lanzas hacia un enemigo. Realiza un @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salto} o intenta un @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{Salto de altura} o @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Salto de longitud}.</p>\n<p>Al final del salto, si estás adyacente a un enemigo, puedes golpear inmediatamente a ese enemigo con un ataque desarmado, incluso si el enemigo está en el aire. Caes al suelo después del Golpe. Si la distancia que caes no es mayor que la altura de tu salto, aterrizas erguido y no sufres daño.</p>"
     },
     "Focus Ally": {
       "name": "Aliado de enfoque",
@@ -26615,8 +26615,8 @@
       ]
     },
     "Qi Spells": {
-      "name": "Qi Spells",
-      "description": "<p>You have cultivated your qi to produce magical effects. You gain @UUID[Compendium.pf2e.spells-srd.Item.ZL8NTvB22NeEWhVG]{Inner Upheaval}, @UUID[Compendium.pf2e.spells-srd.Item.ps0nmhclT6aIXgd8]{Qi Rush}, or another 1st-rank monk qi spell you have access to.</p>"
+      "name": "Conjuros de Qi",
+      "description": "<p>Has cultivado tu qi para producir efectos mágicos. Tienes acceso a @UUID[Compendium.pf2e.spells-srd.Item.ZL8NTvB22NeEWhVG]{Agitación interna}, @UUID[Compendium.pf2e.spells-srd.Item.ps0nmhclT6aIXgd8]{Acometida de Qi} u otro hechizo de qi de monje de primer rango.</p>"
     },
     "Qlippoth Magic": {
       "name": "Qlippoth Magic",
@@ -27005,8 +27005,8 @@
       ]
     },
     "Raging Intimidation": {
-      "name": "Intimidación Furiosa",
-      "description": "<p> Tu furia llena de temor a tus enemigos. Cuando estás en furia, tus acciones de Desmoralizar y Asustar mortalmente (de la habilidad Intimidación y de la dote de habilidad Intimidación respectivamente) obtienen el rasgo furia, lo que te permite utilizarlas estando en furia. En cuanto cumples los prerrequisitos para las dotes de habilidad Mirada intimidante y Asustar mortalmente, obtienes estas dotes. </p>"
+      "name": "Intimidación furiosa",
+      "description": "<p> Tu furia llena de temor a tus enemigos. Cuando estás en furia, tus acciones de @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Desmoralizar} y @UUID[Compendium.pf2e.feats-srd.Item.mZttsiWl1ql5NvrH]{Susto mortal} (de la habilidad Intimidación y de la dote de habilidad Intimidación respectivamente) obtienen el rasgo furia, lo que te permite utilizarlas estando en furia. En cuanto cumples los prerrequisitos para las dotes de habilidad Mirada intimidante y Asustar mortalmente, obtienes estas dotes. </p>"
     },
     "Raging Thrower": {
       "name": "Lanzador Furioso",
@@ -33743,7 +33743,7 @@
     },
     "Storm Born": {
       "name": "Nacido de la tormenta",
-      "description": "<p> Te sientes como en casa en medio de los elementos, deleitándote con el poder de la naturaleza desatada. No aplicas penalizaciones de circunstancia a los ataques con hechizos a distancia ni a las pruebas de Percepción causadas por el clima, y ​​tus hechizos dirigidos no requieren una prueba fija para tener éxito contra un objetivo @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} por el clima (como la niebla). </p>",
+      "description": "<p>Te encuentras como en casa expuesto a los elementos, gozando del poder de la Naturaleza desencadenada. No sufres  penalizadores por circunstancia a los ataques de conjuro a distancia o a las pruebas de Percepción debido a la climatología, y tus conjuros con objetivo no requieren una prueba plana para tener éxito contra un enemigo @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} por un elemento climático (como por ejemplo, la niebla).</p>",
       "prerequisites": [
         {
           "value": "Orden de la tormenta"
@@ -37753,7 +37753,7 @@
     },
     "Untamed Form": {
       "name": "Forma salvaje",
-      "description": "<p> Eres uno con las tierras vírgenes, siempre cambiando y adaptándote para enfrentarte a cualquier desafío. Obtienes el conjuro de orden @UUID[Compendium.pf2e.spells-srd.Item.8RWfKConLYFZpQ9X]{Cambio indómito}, que te permite transformarte en una gran variedad de formas que puedes expandir mediante dotes de druida.</p>",
+      "description": "<p> Eres uno con las tierras vírgenes, siempre cambiando y adaptándote para enfrentarte a cualquier desafío. Obtienes el conjuro de orden @UUID[Compendium.pf2e.spells-srd.Item.8RWfKConLYFZpQ9X]{Forma indómita}, que te permite transformarte en una gran variedad de formas que puedes expandir mediante dotes de druida.</p>",
       "prerequisites": [
         {
           "value": "Orden salvaje"
