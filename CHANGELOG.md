@@ -1,3 +1,12 @@
+## [6.16.28](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.27...v6.16.28) (2025-04-17)
+
+
+### Bug Fixes
+
+* New translations en.json from Crowdin ([17b087c](https://github.com/allnnde/pf2e-esp-translation/commit/17b087c1832ad251e50dd270cccdf37e20574171))
+
+
+
 ## [6.16.27](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.26...v6.16.27) (2025-04-11)
 
 
@@ -100,15 +109,6 @@
 * New translations pathfinder-monster-core.json from Crowdin ([e5fd81a](https://github.com/allnnde/pf2e-esp-translation/commit/e5fd81a1a627b1dc942a33f166868b58ebf39525))
 * New translations pathfinder-monster-core.json from Crowdin ([ce60bc6](https://github.com/allnnde/pf2e-esp-translation/commit/ce60bc66daaa26031447235d6ac95d4cfdd23cae))
 * New translations pathfinder-monster-core.json from Crowdin ([33e6ceb](https://github.com/allnnde/pf2e-esp-translation/commit/33e6ceb70cbdea9045ce5fe0e7036a03648a4816))
-
-
-
-## [6.16.23](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.22...v6.16.23) (2025-03-14)
-
-
-### Bug Fixes
-
-* update germand ([0cc7cae](https://github.com/allnnde/pf2e-esp-translation/commit/0cc7cae3dc012caeb592a79b1d2e74a64bd5fd64))
 
 
 
