@@ -105,6 +105,9 @@
       "name": "Ambrost Mugland",
       "blurb": "Magnate criminal mediano",
       "items": {
+        "consumable->Eroding Bullet": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rab0x5F9KpRxxlnH]\n<p><strong>Ammunition</strong> round</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p>Eroding bullets cast a faint green glow, and smell like the sickly- sweet organic gases that rise from corpses. Handling an eroding bullet without gloves deals @Damage[1[acid]] damage and leaves the putrid scent coated on your fingers. Upon Striking an enemy, the glass casing inside the bullet bursts, releasing a splattering of bubbling green acid that coats the target. The target takes @Damage[2d6[persistent,acid]] damage in addition to the damage normally dealt by the attack.</p>"
+        },
         "strike-ranged->Cane Pistol": [
           {
             "name": "Cane Pistol",
@@ -859,7 +862,8 @@
           "description": "<p> Una tropa shambler está permanentemente @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} y ​​no puede usar reacciones. </p>"
         },
         "action->Troop Defenses": {
-          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.RJbI07QSiYp0SF9A]\n <p> <strong> Umbrales </strong> 160 (12 cuadrados), 80 (8 cuadrados) </p>\n <hr />\n <p> @Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses] </p>"
+          "name": "Troop Defenses",
+          "description": "<p><strong>Thresholds</strong> 160 (12 squares), 80 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "action->Grave Tide": {
           "name": "Marea grave",
@@ -1310,6 +1314,9 @@
         "armor->Chain Shirt": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
         },
+        "consumable->Black Powder (Horn)": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.sHBk2pY0I6dCW2Mw]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p>Black powder is a volatile and explosive alchemical substance commonly used in the production of firearm munitions. Black powder becomes inert and useless when wet and must be kept in a sealed, water-tight container.</p>\n<p>A horn contains 500 doses worth of black powder. A horn can be detonated by leaving a small trail of black powder and then lighting it. Each 5-foot square requires one dose of black powder to create a trail through. As long as the horn is mostly full (at least 400 doses remaining) it can be detonated to deal @Damage[1d6[fire]] damage in a @Template[burst|distance:5] (@Check[reflex|dc:16|basic|name:Gunpowder Detonation] save). It takes 1 round per 15 feet of powder trail laid down for a horn to detonate after the trail is lit. If multiple horns detonate simultaneously, it can increase the area of the explosion, but the damage in overlapping areas doesn't increase.</p>"
+        },
         "strike-ranged->Dagger": {
           "name": "Dagger"
         },
@@ -1673,6 +1680,9 @@
       "items": {
         "weapon->Longsword": {
           "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n <p> Las espadas largas pueden ser espadas de uno o dos filos. Sus hojas son pesadas y miden entre 3 y 4 pies de largo. </p>"
+        },
+        "weapon->Arquebus": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ChTaE7jhvCjcS6jI]\n<p>This is a long rifle that offers more range than the average firearm, though the long barrel and ferocious kickback make the weapon particularly unsteady unless a tripod or other stand is used to stabilize it. The arquebus is one of the most commonly used long guns among the soldiers of Dongun Hold and Alkenstar.</p>"
         },
         "armor->Full Plate": {
           "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.Gq1cZWSKOtJhKd2p]\n <p> La malla de placas consiste en placas entrelazadas que encierran casi todo el cuerpo en un caparazón de acero. Es costoso y pesado, y el usuario a menudo requiere ayuda para ponérselo correctamente, pero proporciona la mejor armadura defensiva que puede ofrecer. Un traje de esta armadura viene con una capa interna de armadura acolchada y un par de guanteletes. </p>"
@@ -3241,5 +3251,10 @@
       "converter": "translateTokenName",
       "path": "prototypeToken.name"
     }
+  },
+  "folders": {
+    "Book 1 - Punks in a Powder Keg": "Book 1 - Punks in a Powder Keg",
+    "Book 2 - Cradle of Quartz": "Book 2 - Cradle of Quartz",
+    "Book 3 - The Smoking Gun": "Book 3 - The Smoking Gun"
   }
 }
