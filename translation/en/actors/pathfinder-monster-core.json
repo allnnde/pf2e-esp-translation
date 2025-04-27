@@ -1318,7 +1318,7 @@
         },
         "action->Quick Recovery": {
           "name": "Quick Recovery",
-          "description": "<p>The bandersnatch recovers with frightening speed. At the end of its turn, it reduces the value of one debilitating condition it suffers (with the exception of dying) by 1. If it's @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}, @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}, @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing}, or petrified, it can instead succeed at a @Check[flat|dc:16] to end one of these conditions of its choice; it can't use quick recovery on other conditions that lack values.</p>"
+          "description": "<p>The bandersnatch recovers with frightening speed. At the end of its turn, it reduces the value of one debilitating condition it suffers (with the exception of @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying}) by 1. If it's @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}, @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}, @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing}, or @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified}, it can instead succeed at a @Check[flat|dc:16] to end one of these conditions of its choice; it can't use quick recovery on other conditions that lack values.</p>"
         },
         "action->Reactive Strike (Tail Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.W7SbTykXrNwxDzJc]\nReactive Strike (Tail Only)"
@@ -1330,10 +1330,6 @@
         "action->Frumious Charge": {
           "name": "Frumious Charge",
           "description": "<p>The bandersnatch Strides, ignoring difficult terrain, then makes two claw Strikes at the end of its movement.</p>"
-        },
-        "action->Lash Out": {
-          "name": "Lash Out",
-          "description": "<p>At the start of its turn, the bandersnatch gains an additional reaction that can be used only to attempt an Attack of Opportunity.</p>"
         },
         "action->Pain": {
           "name": "Pain",
@@ -8198,6 +8194,9 @@
           "name": "Burning Grasp",
           "description": "<p>When the ifrit @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabs} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrains} a creature, that creature takes @Damage[2d6[fire]] damage, and takes 2d6 fire damage at the end of each of its turns until freed.</p>"
         },
+        "action->Change Shape": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The ifrit transforms into a Small or Medium fire elemental or reptile, such as a snake. This doesn't affect their statistics but could change the damage type of their Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+        },
         "action->Combat Grab": {
           "name": "Combat Grab",
           "description": "<p><strong>Requirements</strong> The ifrit has a hand free</p>\n<hr />\n<p><strong>Effect</strong> The ifrit makes a melee Strike. If the Strike hits, the target is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in the ifrit's free hand.</p>"
@@ -8291,7 +8290,7 @@
         },
         "action->Bonds of Iron": {
           "name": "Bonds of Iron",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The hag causes a cage built of cold iron fingernails to spring out of nothingness around one creature within 30 feet, attempting an @Check[athletics|defense:fortitude|traits:action:grapple] check to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} against the target's Fortitude DC; if the target has a weakness to cold iron, the iron hag gains a +2 circumstance bonus to this check.</p>\n<p>On a success, the creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the magical fingernails (or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} on a critical success). If the creature successfully [[/act escape dc=24]]{Escapes (DC 24)}, the cage crumbles into rust.</p>\n<p>Any creature can attempt to destroy the cage by attacking it. It has an AC of 19, Hardness 10, and 40 Hit Points.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The hag causes a cage built of cold iron fingernails to spring out of nothingness around one creature within 30 feet, attempting an Athletics check to [[/act grapple]] against the target's Fortitude DC; if the target has a weakness to cold iron, the iron hag gains a +2 circumstance bonus to this check.</p>\n<p>On a success, the creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the magical fingernails (or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} on a critical success). If the creature successfully [[/act escape dc=24]]{Escapes} (DC 24), the cage crumbles into rust.</p>\n<p>Any creature can attempt to destroy the cage by attacking it. It has an AC of 19, Hardness 10, and 40 Hit Points.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The iron hag can take on the appearance of any Medium female humanoid. This doesn't change their Speed or their attack and damage bonuses with their Strikes but might change the damage type their Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -14801,11 +14800,11 @@
         "strike-melee->Jaws": {
           "name": "Jaws"
         },
-        "action->Telepathy 300 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 300 feet"
-        },
         "action->+2 Status to All Saves vs. Magic": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Magic"
+        },
+        "action->Regeneration 50 (Deactivated by Holy)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.lR9R5Vld8Eu2Dha5]\nRegeneration 50 (Deactivated by Holy)"
         },
         "action->Aura of Corruption": {
           "name": "Aura of Corruption",
@@ -15207,7 +15206,8 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.wqptDG0IW6ExnISC]\n<p>If a creature dies after being reduced to 0 HP by Drink Blood, the vampire can turn this victim into a vampire servitor by donating some of their own blood to the victim and burying the victim in earth for 3 nights.</p>\n<p>A vampiric servitor is compelled to obey its creator, but if a vampire controls too many vampiric servitors at once (as determined by the GM), or if the servitor is a higher level than the vampire that created it, strongwilled servitors can free themselves by succeeding at a @Check[will|defense:will] saving throw against the vampire's Will DC.</p>"
         },
         "action->Dominate": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.AjTkksppymqzCivT]\nDominate"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.AjTkksppymqzCivT]\nDominate",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.AjTkksppymqzCivT]\n<p>The vampire can cast @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate} at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait (@Check[will|dc:26]). A creature that succeeds is temporarily immune to that vampire's Dominate for 24 hours.</p>\n<p>Fully destroying the vampire ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.</p>"
         },
         "action->Drain Bonded Item": {
           "name": "Drain Bonded Item",
