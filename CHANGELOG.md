@@ -1,3 +1,12 @@
+## [6.17.5](https://github.com/allnnde/pf2e-esp-translation/compare/v6.17.4...v6.17.5) (2025-05-08)
+
+
+### Bug Fixes
+
+* test ([daca659](https://github.com/allnnde/pf2e-esp-translation/commit/daca6593623c95095db93230b18a9cc134e79c0a))
+
+
+
 ## [6.17.4](https://github.com/allnnde/pf2e-esp-translation/compare/v6.17.3...v6.17.4) (2025-05-08)
 
 
@@ -87,15 +96,6 @@
 * New translations strength-of-thousands-bestiary.json from Crowdin ([79b2ee9](https://github.com/allnnde/pf2e-esp-translation/commit/79b2ee9e7558fdd969341ab0e04b4a1ca3a2b792))
 * New translations vehicles.json from Crowdin ([2476ffe](https://github.com/allnnde/pf2e-esp-translation/commit/2476ffee375f7ff85f51cf81adeea57edb69b1b7))
 * New translations war-of-immortals-bestiary.json from Crowdin ([22f4439](https://github.com/allnnde/pf2e-esp-translation/commit/22f443965507b2cbee38d515b76cbc6747feeec9))
-
-
-
-# [6.17.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.16.28...v6.17.0) (2025-04-27)
-
-
-### Features
-
-* fix export errors ([96aa6e5](https://github.com/allnnde/pf2e-esp-translation/commit/96aa6e5177b03b5f54bb077ecd1f95f65278d9ee))
 
 
 
