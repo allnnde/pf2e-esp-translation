@@ -1,3 +1,21 @@
+## [6.18.2](https://github.com/allnnde/pf2e-esp-translation/compare/v6.18.1...v6.18.2) (2025-05-17)
+
+
+### Bug Fixes
+
+* New translations actions.json from Crowdin ([e234e20](https://github.com/allnnde/pf2e-esp-translation/commit/e234e20d2bbae78a93537b84b708e838db99258d))
+* New translations actions.json from Crowdin ([719c431](https://github.com/allnnde/pf2e-esp-translation/commit/719c431651bc68a4b6c3596369436188205334b0))
+* New translations campaign-effects.json from Crowdin ([12efb98](https://github.com/allnnde/pf2e-esp-translation/commit/12efb984f2a6024042b3df9d529149a918e2cd8a))
+* New translations en.json from Crowdin ([f6a820f](https://github.com/allnnde/pf2e-esp-translation/commit/f6a820f780dff883d380514d48313774b33541bd))
+* New translations journals.json from Crowdin ([1987b82](https://github.com/allnnde/pf2e-esp-translation/commit/1987b823e7bf459a506ea0a6accdf8fe0b89cb4b))
+* New translations journals.json from Crowdin ([29e91a2](https://github.com/allnnde/pf2e-esp-translation/commit/29e91a282e56ead71c0b316d1b0907e0a14af229))
+* New translations journals.json from Crowdin ([e8cfc97](https://github.com/allnnde/pf2e-esp-translation/commit/e8cfc978b496f13da708c1eff874713fec138b3f))
+* New translations journals.json from Crowdin ([a3ed6a0](https://github.com/allnnde/pf2e-esp-translation/commit/a3ed6a0794f8f917b08cb1f5c240c907befff81b))
+* New translations re-en.json from Crowdin ([e52f245](https://github.com/allnnde/pf2e-esp-translation/commit/e52f24567e26969d275c7aa741f565a5a979ca2d))
+* New translations re-en.json from Crowdin ([e56a2ba](https://github.com/allnnde/pf2e-esp-translation/commit/e56a2bac9832334acfda7c84905bc930dff9f761))
+
+
+
 ## [6.18.1](https://github.com/allnnde/pf2e-esp-translation/compare/v6.18.0...v6.18.1) (2025-05-13)
 
 
@@ -79,15 +97,6 @@
 ### Bug Fixes
 
 * New translations en.json from Crowdin ([6032f49](https://github.com/allnnde/pf2e-esp-translation/commit/6032f49b662ecefa6e88b372dbcdb419637121a2))
-
-
-
-## [6.17.3](https://github.com/allnnde/pf2e-esp-translation/compare/v6.17.2...v6.17.3) (2025-05-08)
-
-
-### Bug Fixes
-
-* token vvt ([8662e7c](https://github.com/allnnde/pf2e-esp-translation/commit/8662e7c3ee85d03f00e087960036144ef1d12c3d))
 
 
 
