@@ -1,3 +1,12 @@
+## [6.18.3](https://github.com/allnnde/pf2e-esp-translation/compare/v6.18.2...v6.18.3) (2025-05-18)
+
+
+### Bug Fixes
+
+* New translations journals.json from Crowdin ([4dfb71b](https://github.com/allnnde/pf2e-esp-translation/commit/4dfb71b3f86574b4206ebd1cedaf808b53d2de94))
+
+
+
 ## [6.18.2](https://github.com/allnnde/pf2e-esp-translation/compare/v6.18.1...v6.18.2) (2025-05-17)
 
 
@@ -88,15 +97,6 @@
 ### Bug Fixes
 
 * test ([daca659](https://github.com/allnnde/pf2e-esp-translation/commit/daca6593623c95095db93230b18a9cc134e79c0a))
-
-
-
-## [6.17.4](https://github.com/allnnde/pf2e-esp-translation/compare/v6.17.3...v6.17.4) (2025-05-08)
-
-
-### Bug Fixes
-
-* New translations en.json from Crowdin ([6032f49](https://github.com/allnnde/pf2e-esp-translation/commit/6032f49b662ecefa6e88b372dbcdb419637121a2))
 
 
 
