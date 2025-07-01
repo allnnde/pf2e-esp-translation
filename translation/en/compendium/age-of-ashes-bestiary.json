@@ -870,7 +870,7 @@
         },
         "action->Magma Splash": {
           "name": "Magma Splash",
-          "description": "<p>Whenever the dalos takes damage from a melee Strike, magma splashes from its open wound and sticks to nearby creatures. Each creature in a @Template[emanation|distance:10] must attempt a @Check[reflex|dc:31|traits:damaging-effect] save. On a failure, the creature takes @Damage[3d6[persistent,fire]] damage as the superheated rock sticks to them and cools. The DC to end this persistent damage decreases by 5 each turn after the first as the magma cools.</p>"
+          "description": "<p>Whenever the dalos takes damage from a melee Strike, magma splashes from its open wound and sticks to nearby creatures. Each creature in a @Template[emanation|distance:10] must attempt a @Check[reflex|dc:31|options:area-effect,damaging-effect] save. On a failure, the creature takes @Damage[3d6[persistent,fire]|options:area-damage] damage as the superheated rock sticks to them and cools. The DC to end this persistent damage decreases by 5 each turn after the first as the magma cools.</p>"
         },
         "action->Volcanic Heat": {
           "name": "Volcanic Heat",
@@ -886,7 +886,7 @@
         },
         "action->Lava Bomb": {
           "name": "Lava Bomb",
-          "description": "<p>The dalos causes a volcanic explosion to erupt from its head, lobbing a mass of molten rock up to 100 feet. This lava bomb deals @Damage[6d8[fire],6d8[bludgeoning]]{6d8 fire damage and 6d8 bludgeoning damage} to each creature in a @Template[burst|distance:20]{20-foot radius} of its impact point, with a @Check[reflex|dc:33|basic] save.</p>\n<p>The dalos can't use Lava Bomb again for [[/gmr 1d4 #Recharge Lava Bomb]]{1d4 rounds}.</p>"
+          "description": "<p>The dalos causes a volcanic explosion to erupt from its head, lobbing a mass of molten rock up to 100 feet. This lava bomb deals @Damage[6d8[fire],6d8[bludgeoning]|options:area-damage]{6d8 fire damage and 6d8 bludgeoning damage} to each creature in a @Template[burst|distance:20]{20-foot radius} of its impact point, with a @Check[reflex|dc:33|basic|options:area-effect] save.</p>\n<p>The dalos can't use Lava Bomb again for [[/gmr 1d4 #Recharge Lava Bomb]]{1d4 rounds}.</p>"
         },
         "action->Throw Rock": {
           "name": "Throw Rock"
@@ -2222,7 +2222,7 @@
         },
         "action->Weapon Supremacy": {
           "name": "Weapon Supremacy",
-          "description": "<p>Inizra is permanently @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1}. She can use her extra action only to Strike.</p>"
+          "description": "<p>Inizra is permanently @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened}. She can use her extra action only to Strike.</p>"
         },
         "lore->Hermea Lore": {
           "name": "Hermea Lore"
@@ -2685,7 +2685,7 @@
         },
         "action->Necrotic Pulse": {
           "name": "Necrotic Pulse",
-          "description": "<p>Each creature in a @Template[emanation|distance:10] must succeed at a @Check[fortitude|dc:32] save or take @Damage[1d6[persistent,void]] damage and be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute as their flesh and bones temporarily atrophy. The golem can't use Necrotic Pulse again for [[/gmr 1d4 #Recharge Necrotic Pulse]]{1d4 rounds}.</p>"
+          "description": "<p>Each creature in a @Template[emanation|distance:10] must succeed at a @Check[fortitude|dc:32|options:area-effect,damaging-effect] save or take @Damage[1d6[persistent,void]|options:area-damage] damage and be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute as their flesh and bones temporarily atrophy. The golem can't use Necrotic Pulse again for [[/gmr 1d4 #Recharge Necrotic Pulse]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -4193,7 +4193,7 @@
         },
         "action->Obliteration Beam": {
           "name": "Obliteration Beam",
-          "description": "<p><strong>Requirements</strong> The spiritbound aluum has bound a soul using its @UUID[Compendium.pf2e.spells-srd.Item.GYmXvS9NJ7QwfWGg]{Seize Soul} innate spell</p>\n<hr />\n<p><strong>Effect</strong> The spiritbound aluum transforms the captured soul's essence into raw magical energy, channeling the spirit into a beam that deals @Damage[20d6[force]] damage in a @Template[line|distance:30] (@Check[reflex|dc:38|basic] save). The remaining fragments of the captured soul are released to the Great Beyond.</p>\n<p>The spiritbound aluum can't use Obliteration Beam again for [[/gmr 1d4 #Recharge Obliteration Beam]]{1d4 rounds}.</p>"
+          "description": "<p><strong>Requirements</strong> The spiritbound aluum has bound a soul using its @UUID[Compendium.pf2e.spells-srd.Item.GYmXvS9NJ7QwfWGg]{Seize Soul} innate spell</p>\n<hr />\n<p><strong>Effect</strong> The spiritbound aluum transforms the captured soul's essence into raw magical energy, channeling the spirit into a beam that deals @Damage[20d6[force]|options:area-damage] damage in a @Template[line|distance:30] (@Check[reflex|dc:38|basic|options:area-effect] save). The remaining fragments of the captured soul are released to the Great Beyond.</p>\n<p>The spiritbound aluum can't use Obliteration Beam again for [[/gmr 1d4 #Recharge Obliteration Beam]]{1d4 rounds}.</p>"
         },
         "action->Paralyzing Force": {
           "name": "Paralyzing Force",

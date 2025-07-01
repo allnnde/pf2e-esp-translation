@@ -198,12 +198,6 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.EkZVXMdtqTTgahiJ]\nRing of Energy Resistance (Cold)",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.EkZVXMdtqTTgahiJ]\n<p>This ring grants you resistance 5 against one type of energy damage: acid, cold, electricity, fire, or sonic. Each ring is crafted to protect against a particular type of energy damage, and its design usually embodies the type of energy it protects the wearer from in some way. For instance, a <em>ring of fire resistance</em> might be capped with a ruby, whereas a <em>ring of cold resistance</em> features a sapphire instead.</p>"
         },
-        "strike-melee->Jaws": {
-          "name": "Jaws"
-        },
-        "strike-melee->Claw": {
-          "name": "Claw"
-        },
         "action->Tiger Empathy": {
           "name": "Tiger Empathy",
           "description": "<p>Alasen can communicate with felines.</p>"
@@ -2686,12 +2680,6 @@
         "armor->Chain Shirt": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
         },
-        "strike-melee->Jaws": {
-          "name": "Jaws"
-        },
-        "strike-melee->Claw": {
-          "name": "Claw"
-        },
         "strike-ranged->Oathbow": {
           "name": "Oathbow",
           "rules": {
@@ -4439,18 +4427,6 @@
       "blurb": "Male human werewolf",
       "languages": "wolf empathy",
       "items": {
-        "strike-melee->Jaws": {
-          "name": "Jaws"
-        },
-        "strike-melee->Claw": {
-          "name": "Claw"
-        },
-        "strike-melee->Fist": {
-          "name": "Fist"
-        },
-        "strike-melee->Wolf Jaws": {
-          "name": "Wolf Jaws"
-        },
         "action->Wolf Empathy": {
           "name": "Wolf Empathy",
           "description": "<p>Kundal can communicate with lupines.</p>"
@@ -4460,7 +4436,12 @@
           "description": "<p><strong>Requirement</strong> Kundal rolled Stealth for Initiative, and it's the first round of combat.</p>\n<hr />\n<p><strong>Effect</strong> Kundal Strides up to his speed and then attempts a jaws Strike and a claw Strike against a single adjacent target. Apply his multiple attack penalty to each Strike normally.</p>"
         },
         "action->Change Shape": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>Human with fist +16 for 1d4+7 bludgeoning, or wolf with Speed 40 feet and jaws with Knockdown.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>Human with fist +16 for 1d4+7 bludgeoning, or wolf with Speed 40 feet and jaws with Knockdown.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+          "rules": {
+            "2": {
+              "text": "@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]"
+            }
+          }
         },
         "action->Curse of the Werewolf": {
           "name": "Curse of the Werewolf",
@@ -9238,7 +9219,7 @@
         },
         "action->Mind-Numbing Breath": {
           "name": "Mind-Numbing Breath",
-          "description": "<p>The whimwyrm exhales a @Template[cone|distance:40] of sparkling magenta mist. Creatures within the area must attempt a @Check[will|dc:38] save as their minds are overwhelmed by a sudden riot of false (and typically unpleasant) memories, taking @Damage[10d12[mental]] damage depending on their save. The whimwyrm can't use mind-numbing breath for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature becomes outlined in sparkling dust, negating any @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility} it has in effect for 1 round and takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage, and its invisibility is negated for 2 rounds.</p>\n<p><strong>Failure</strong> The creature takes full damage, is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute, and its invisibility is negated for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round, dazzled for 1 minute, and its invisibility is negated for 1 minute.</p>"
+          "description": "<p>The whimwyrm exhales a @Template[cone|distance:40] of sparkling magenta mist. Creatures within the area must attempt a @Check[will|dc:38|options:area-effect,damaging-effect] save as their minds are overwhelmed by a sudden riot of false (and typically unpleasant) memories, taking @Damage[10d12[mental]|options:area-damage] damage depending on their save. The whimwyrm can't use mind-numbing breath for [[/gmr 1d4 #Recharge Mind-Numbing Breath]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature becomes outlined in sparkling dust, negating any @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility} it has in effect for 1 round and takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage, and its invisibility is negated for 2 rounds.</p>\n<p><strong>Failure</strong> The creature takes full damage, is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute, and its invisibility is negated for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round, dazzled for 1 minute, and its invisibility is negated for 1 minute.</p>"
         }
       }
     },

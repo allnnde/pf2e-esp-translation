@@ -1800,7 +1800,7 @@
         },
         "action->Relentless": {
           "name": "Relentless",
-          "description": "<p>The titan is as ever-moving as ocean waves. They're permanently @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1}, and the extra action can only be used to Stride, Strike, or Sustain a Spell, or as one of the actions necessary to Cast @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}.</p>"
+          "description": "<p>The titan is as ever-moving as ocean waves. They're permanently @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened}, and the extra action can only be used to Stride, Strike, or Sustain a Spell, or as one of the actions necessary to Cast @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}.</p>"
         },
         "action->Roiling Rebuke": {
           "name": "Roiling Rebuke",
@@ -7152,9 +7152,6 @@
       "name": "Mithral Golem",
       "publicNotes": "<p>Mithral golems are gorgeously crafted, silvery humanoids made from colossal amounts of the purest dawnsilver. While massive in construction, they possess amazing speed and grace through literal fluidity. Unpredictable and flexible, they can melt into liquid form and reform into a solid shape in mere seconds, allowing them to shape their limbs into sharp spikes or heavy fists as needed.</p>\n<hr />\n<p>Powerful constructs that blend magic and raw material, golems make ideal guardians and bodyguards, with forms and functions as varied as the needs of those who employ them. As their crafters experiment with more exotic components and create new formulas, golems with surprising abilities emerge.</p>",
       "items": {
-        "condition->Quickened": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]\n<p>You gain 1 additional action at the start of your turn each round. Many effects that make you quickened specify the types of actions you can use with this additional action. If you become quickened from multiple sources, you can use the extra action you've been granted for any single action allowed by any of the effects that made you quickened. Because quickened has its effect at the start of your turn, you don't immediately gain actions if you become quickened during your turn.</p>"
-        },
         "strike-melee->Fist": {
           "name": "Fist"
         },
@@ -7800,7 +7797,7 @@
         },
         "action->Striking Koa": {
           "name": "Striking Koa",
-          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The troop attacks with spears, clubs, and leiomano against enemies within @Template[emanation|distance:5]{5 feet} (@Check[reflex|dc:33|basic] save) for their choice of bludgeoning, piercing, or slashing damage depending on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d6+2)[bludgeoning]] damage, @Damage[(2d6+2)[piercing]] damage, or @Damage[(2d6+2)[slashing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d6+12)[bludgeoning]] damage, @Damage[(4d6+12)[piercing]] damage, or @Damage[(4d6+12)[slashing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(6d6+12)[bludgeoning]] damage, @Damage[(6d6+12)[piercing]] damage, or @Damage[(6d6+12)[slashing]] damage</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The troop attacks with spears, clubs, and leiomano against enemies within @Template[emanation|distance:5]{5 feet} (@Check[reflex|dc:33|basic|options:area-effect] save) for their choice of bludgeoning, piercing, or slashing damage depending on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d6+2)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d6+12)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(6d6+12)[untyped]|options:area-damage] damage</p>"
         },
         "action->Troop Movement": {
           "name": "Troop Movement",
@@ -10201,7 +10198,7 @@
         },
         "action->Lower Spears!": {
           "name": "Lower Spears!",
-          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The skeletons engage in a coordinated longspear attack against each enemy within @Template[emanation|distance:10]{10 feet} (@Check[reflex|dc:27|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[piercing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+8)[piercing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+8)[piercing]] damage</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The skeletons engage in a coordinated longspear attack against each enemy within @Template[emanation|distance:10]{10 feet} (@Check[reflex|dc:27|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+8)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+8)[piercing]|options:area-damage] damage</p>"
         },
         "action->Phalanx Charge": {
           "name": "Phalanx Charge",
@@ -13281,12 +13278,6 @@
         }
       },
       "items": {
-        "strike-melee->Jaws": {
-          "name": "Jaws"
-        },
-        "strike-melee->Tail": {
-          "name": "Tail"
-        },
         "strike-melee->Hatchet": {
           "name": "Hatchet"
         },
@@ -13306,7 +13297,12 @@
         },
         "action->Change Shape": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.08egiRxOvMX97XTc]\nChange Shape",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.08egiRxOvMX97XTc]\n<ul>\n<li><strong>Human</strong>\n<ul>\n<li><strong>Melee</strong> fist [[/r 1d20+10 #Fist]]{+10}/[[/r 1d20+6 #Fist]]{+6}/[[/r 1d20+2 #Fist]]{+2} (agile, nonlethal), <strong>Damage</strong> @Damage[(1d4+2)[bludgeoning]] damage</li>\n</ul>\n</li>\n<li><strong>Crocodile</strong>\n<ul>\n<li><strong>Melee</strong> jaws[[/r 1d20+10 #Jaws]]{+10}/[[/r 1d20+5 #Jaws]]{+5}/[[/r 1d20 #Jaws]]{+0}, <strong>Damage</strong> @Damage[(2d6+4)[piercing]] damage</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>The werecreature changes into its humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true werecreature's natural form is its hybrid shape.</p>\n<p>In humanoid shape, the werecreature uses its original humanoid size, loses its jaws and claws Strikes, and gains a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by its claw.</p>\n<p>In animal shape, its Speed and size change to that of the animal, it gains any special Strike effects of the animal that it didn't already have (such as Grab), and it loses its weapon Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.08egiRxOvMX97XTc]\n<ul>\n<li><strong>Human</strong>\n<ul>\n<li><strong>Melee</strong> fist [[/r 1d20+10 #Fist]]{+10}/[[/r 1d20+6 #Fist]]{+6}/[[/r 1d20+2 #Fist]]{+2} (agile, nonlethal), <strong>Damage</strong> @Damage[(1d4+2)[bludgeoning]] damage</li>\n</ul>\n</li>\n<li><strong>Crocodile</strong>\n<ul>\n<li><strong>Melee</strong> jaws[[/r 1d20+10 #Jaws]]{+10}/[[/r 1d20+5 #Jaws]]{+5}/[[/r 1d20 #Jaws]]{+0}, <strong>Damage</strong> @Damage[(2d6+4)[piercing]] damage</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>The werecreature changes into its humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true werecreature's natural form is its hybrid shape.</p>\n<p>In humanoid shape, the werecreature uses its original humanoid size, loses its jaws and claws Strikes, and gains a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by its claw.</p>\n<p>In animal shape, its Speed and size change to that of the animal, it gains any special Strike effects of the animal that it didn't already have (such as Grab), and it loses its weapon Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+          "rules": {
+            "6": {
+              "text": "@Localize[PF2E.NPC.Abilities.Glossary.Grab]"
+            }
+          }
         },
         "action->Curse of the Werecrocodile": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ICnpftxZEilrYjn0]\nCurse of the Werecrocodile",
@@ -13319,6 +13315,13 @@
         "action->Twisting Thrash": {
           "name": "Twisting Thrash",
           "description": "<p><strong>Requirements</strong> The werecrocodile has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The werecrocodile makes a Jaws Strike with a +2 circumstance bonus to the attack roll against the grabbed creature. If this Strike hits, it also knocks the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If it fails, the werecrocodile releases the target.</p>"
+        },
+        "action->Grab": {
+          "rules": {
+            "0": {
+              "text": "@Localize[PF2E.NPC.Abilities.Glossary.Grab]"
+            }
+          }
         }
       }
     },
