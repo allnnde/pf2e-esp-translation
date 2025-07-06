@@ -497,7 +497,7 @@
         },
         "action->Bright Release": {
           "name": "Bright Release",
-          "description": "<p>When a bright walker is reduced to 0 Hit Points, they flash out in a burst of light, obtaining the blazing end they were denied at death. This blaze deals @Damage[10d6[fire]] damage (@Check[reflex|dc:25|basic] save) to creatures within @Template[emanation|distance:20]{20 feet}.</p>\n<p>Creatures who fail this save are also @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute (@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute on a critical failure).</p>"
+          "description": "<p>When a bright walker is reduced to 0 Hit Points, they flash out in a burst of light, obtaining the blazing end they were denied at death. This blaze deals @Damage[10d6[fire]|options:area-damage] damage (@Check[reflex|dc:25|basic|options:area-effect] save) to creatures within @Template[emanation|distance:20]{20 feet}.</p>\n<p>Creatures who fail this save are also @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute (@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute on a critical failure).</p>"
         },
         "action->Light Aura": {
           "name": "Light Aura",
@@ -513,7 +513,7 @@
         },
         "action->Light Flare": {
           "name": "Light Flare",
-          "description": "<p><strong>Requirement</strong> The bright walker's Light Aura is suppressed</p>\n<hr />\n<p><strong>Effect</strong> The bright walker reignites their Light Aura with a burst of brightness that deals @Damage[5d6[fire]] damage (@Check[reflex|dc:25|basic] save) to creatures within a @Template[burst|distance:20].</p>\n<p>Creatures who are @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} or with @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.I0HYG0ctCLP5JRsW]{Light Blindness} find this flare particularly painful; such a creature's save result is one degree of success worse than the result it rolled.</p>"
+          "description": "<p><strong>Requirement</strong> The bright walker's Light Aura is suppressed</p>\n<hr />\n<p><strong>Effect</strong> The bright walker reignites their Light Aura with a burst of brightness that deals @Damage[5d6[fire]|options:area-damage] damage (@Check[reflex|dc:25|basic|options:area-effect] save) to creatures within a @Template[burst|distance:20].</p>\n<p>Creatures who are @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} or with @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.I0HYG0ctCLP5JRsW]{Light Blindness} find this flare particularly painful; such a creature's save result is one degree of success worse than the result it rolled.</p>"
         },
         "action->Shadow Jump": {
           "name": "Shadow Jump",
@@ -549,7 +549,7 @@
         },
         "action->Devastating Blast": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\nDevastating Blast",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\n<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[6d12[cold]] damage (@Check[reflex|dc:29|basic] save).</p>\n<p>The graveknight can use this ability once every [[/gmr 1d4 #Recharge Devastating Blast]]{1d4 rounds}.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\n<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[6d12[cold]|options:area-damage] damage (@Check[reflex|dc:29|basic|options:area-effect] save).</p>\n<p>The graveknight can use this ability once every [[/gmr 1d4 #Recharge Devastating Blast]]{1d4 rounds}.</p>"
         },
         "action->Graveknight's Curse": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5dbzWZbiTyPKgwKS]\nGraveknight's Curse",
@@ -595,7 +595,7 @@
         },
         "action->Death Flame": {
           "name": "Death Flame",
-          "description": "<p>When the caligni defender dies, their body combusts in a flash of white-hot flame. All creatures in a @Template[burst|distance:20] take @Damage[6d10[fire]] damage (@Check[reflex|dc:26|basic] save). Their gear and treasure are unaffected by the flames and are left in a pile where they died.</p>"
+          "description": "<p>When the caligni defender dies, their body combusts in a flash of white-hot flame. All creatures in a @Template[burst|distance:20] take @Damage[6d10[fire]|options:area-damage] damage (@Check[reflex|dc:26|basic|options:area-effect] save). Their gear and treasure are unaffected by the flames and are left in a pile where they died.</p>"
         },
         "action->Black Smear Poison": {
           "name": "Black Smear Poison",
@@ -854,7 +854,7 @@
         },
         "action->Death Light": {
           "name": "Death Light",
-          "description": "<p><strong>Prerequisites</strong> The corpselight is in a corpse</p>\n<hr />\n<p><strong>Effect</strong> The corpselight emits a sickly blue beam of light from its mouth and eyes in a @Template[cone|distance:20]. All living creatures in this area must attempt a @Check[fortitude|dc:18|traits:damaging-effect] saving throw. If at least 1 creature fails its save, the corpselight regains @Damage[2d6[healing]] Hit Points, gaining any that exceed its maximum as temporary Hit Points that last for 1 minute.</p>\n<p>The corpselight can't use again for [[/gmr 1d4 #Recharge Death Light]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[1d6[void]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[2d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[4d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
+          "description": "<p><strong>Prerequisites</strong> The corpselight is in a corpse</p>\n<hr />\n<p><strong>Effect</strong> The corpselight emits a sickly blue beam of light from its mouth and eyes in a @Template[cone|distance:20]. All living creatures in this area must attempt a @Check[fortitude|dc:18|options:area-effect,damaging-effect] saving throw. If at least 1 creature fails its save, the corpselight regains @Damage[2d6[healing]] Hit Points, gaining any that exceed its maximum as temporary Hit Points that last for 1 minute.</p>\n<p>The corpselight can't use again for [[/gmr 1d4 #Recharge Death Light]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[1d6[void]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[2d6[void]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[4d6[void]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
         }
       }
     },
@@ -1198,7 +1198,7 @@
         },
         "action->Needle Spray": {
           "name": "Needle Spray",
-          "description": "<p>The dreshkan braces itself on all four limbs and sprays needles at as many creatures as it would like in a @Template[cone|distance:30], dealing @Damage[2d4[piercing],2d8[electricity]]{2d4 piercing damage plus 2d8 electricity damage}. Each targeted creature in the area must attempt a @Check[reflex|dc:21|basic].</p>"
+          "description": "<p>The dreshkan braces itself on all four limbs and sprays needles at as many creatures as it would like in a @Template[cone|distance:30], dealing @Damage[2d4[piercing],2d8[electricity]|options:area-damage]{2d4 piercing damage plus 2d8 electricity damage}. Each targeted creature in the area must attempt a @Check[reflex|dc:21|basic|options:area-effect].</p>"
         },
         "action->Swarming Stance": {
           "name": "Swarming Stance",
@@ -1508,7 +1508,7 @@
         },
         "action->Death Shadows": {
           "name": "Death Shadows",
-          "description": "<p>When Dulac dies, her body is destroyed in a burst of chilling shadows. All creatures in a @Template[burst|distance:20] take @Damage[8d8[cold]] damage (@Check[reflex|dc:28|basic] save).</p>\n<p>Dulac's gear and treasure are unaffected by the shadows and are left in a pile where she died.</p>"
+          "description": "<p>When Dulac dies, her body is destroyed in a burst of chilling shadows. All creatures in a @Template[burst|distance:20] take @Damage[8d8[cold]|options:area-damage] damage (@Check[reflex|dc:28|basic|options:area-effect] save).</p>\n<p>Dulac's gear and treasure are unaffected by the shadows and are left in a pile where she died.</p>"
         },
         "action->Opportune Step": {
           "name": "Opportune Step",
@@ -1685,7 +1685,7 @@
         },
         "action->Death Motes": {
           "name": "Death Motes",
-          "description": "<p>When Galudu dies, her body explodes into brilliant motes of magical energy. All creatures in a @Template[burst|distance:20] take @Damage[12d6[force]] damage (@Check[reflex|dc:30|basic] save). Galudu's gear is unaffected by the explosion and is left in a pile where she died.</p>"
+          "description": "<p>When Galudu dies, her body explodes into brilliant motes of magical energy. All creatures in a @Template[burst|distance:20] take @Damage[12d6[force]|options:area-damage] damage (@Check[reflex|dc:30|basic|options:area-effect] save). Galudu's gear is unaffected by the explosion and is left in a pile where she died.</p>"
         },
         "action->Opportune Step": {
           "name": "Opportune Step",
@@ -2171,7 +2171,7 @@
         },
         "action->Necrotic Decay": {
           "name": "Necrotic Decay",
-          "description": "<p>When Khurfel dies, his invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:10] around his body. The gas deals @Damage[10d6[void]] damage to creatures in this area as their flesh too curdles and rots (@Check[fortitude|dc:28|basic] save).</p>"
+          "description": "<p>When Khurfel dies, his invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:10] around his body. The gas deals @Damage[10d6[void]|options:area-damage] damage to creatures in this area as their flesh too curdles and rots (@Check[fortitude|dc:28|basic|options:area-effect] save).</p>"
         },
         "action->Frenzied Attack": {
           "name": "Frenzied Attack",
@@ -2481,7 +2481,7 @@
         },
         "action->Explosive Decay": {
           "name": "Explosive Decay",
-          "description": "<p>When a mulventok dies, its mirrored flesh ruptures and explodes in a @Template[burst|distance:20]{20-foot radius}. Creatures caught in the blast are covered with viscera and take @Damage[8d6[void]] damage (@Check[reflex|dc:22|basic] save).</p>"
+          "description": "<p>When a mulventok dies, its mirrored flesh ruptures and explodes in a @Template[burst|distance:20]{20-foot radius}. Creatures caught in the blast are covered with viscera and take @Damage[8d6[void]|options:area-damage] damage (@Check[reflex|dc:22|basic|options:area-effect] save).</p>"
         },
         "action->Stay in the Fight": {
           "name": "Stay in the Fight",
@@ -2686,7 +2686,7 @@
         },
         "action->Death Flame": {
           "name": "Death Flame",
-          "description": "<p>When Nox dies, their body combusts in a flash of white-hot flame that deals @Damage[5d6[fire]] damage to creatures in a @Template[burst|distance:20] (@Check[reflex|dc:21|basic] save). Nox's gear and treasure are unaffected by the flames and are left in a pile where they died.</p>"
+          "description": "<p>When Nox dies, their body combusts in a flash of white-hot flame that deals @Damage[5d6[fire]|options:area-damage] damage to creatures in a @Template[burst|distance:20] (@Check[reflex|dc:21|basic|options:area-effect] save). Nox's gear and treasure are unaffected by the flames and are left in a pile where they died.</p>"
         },
         "action->Intense Performer": {
           "name": "Intense Performer",
@@ -2878,7 +2878,7 @@
         },
         "action->Death Flame": {
           "name": "Death Flame",
-          "description": "<p>When Padli dies, his body combusts in a flash of white-hot flame. All creatures in a @Template[burst|distance:20] take @Damage[6d10[fire]] damage (@Check[reflex|dc:28|basic] save).</p>\n<p>His gear is unaffected by the flames and is left in a pile where he died.</p>"
+          "description": "<p>When Padli dies, his body combusts in a flash of white-hot flame. All creatures in a @Template[burst|distance:20] take @Damage[6d10[fire]|options:area-damage] damage (@Check[reflex|dc:28|basic|options:area-effect] save).</p>\n<p>His gear is unaffected by the flames and is left in a pile where he died.</p>"
         },
         "action->Occult Ward": {
           "name": "Occult Ward",
@@ -3447,7 +3447,7 @@
         },
         "action->Necrotic Decay": {
           "name": "Necrotic Decay",
-          "description": "<p>When the shanrigol behemoth dies, its flesh rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around the body. This gas deals @Damage[9d6[void]] damage to creatures in this area as their flesh curdles and rots as well (@Check[fortitude|dc:27|basic] save).</p>"
+          "description": "<p>When the shanrigol behemoth dies, its flesh rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around the body. This gas deals @Damage[9d6[void]|options:area-damage] damage to creatures in this area as their flesh curdles and rots as well (@Check[fortitude|dc:27|basic|options:area-effect] save).</p>"
         },
         "action->Sapping Squeeze": {
           "name": "Sapping Squeeze",
@@ -3770,7 +3770,7 @@
         },
         "action->Necrotic Decay": {
           "name": "Necrotic Decay",
-          "description": "<p>When an urdefhan dies, its invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around the body.</p>\n<p>This gas deals @Damage[8d6[void]] damage to creatures in this area as their flesh curdles and rots as well (@Check[fortitude|dc:24|basic] save).</p>"
+          "description": "<p>When an urdefhan dies, its invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around the body.</p>\n<p>This gas deals @Damage[8d6[void]|options:area-damage] damage to creatures in this area as their flesh curdles and rots as well (@Check[fortitude|dc:24|basic|options:area-effect] save).</p>"
         },
         "action->Blood Offering": {
           "name": "Blood Offering",
@@ -3812,7 +3812,7 @@
         },
         "action->Necrotic Decay": {
           "name": "Necrotic Decay",
-          "description": "<p>When an urdefhan dies, its invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around the body.</p>\n<p>This gas deals @Damage[6d6[void]] damage to creatures in this area as their flesh curdles and rots as well (@Check[fortitude|dc:23|basic] save).</p>"
+          "description": "<p>When an urdefhan dies, its invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around the body.</p>\n<p>This gas deals @Damage[6d6[void]|options:area-damage] damage to creatures in this area as their flesh curdles and rots as well (@Check[fortitude|dc:23|basic|options:area-effect] save).</p>"
         },
         "action->Shauth Bite": {
           "name": "Shauth Bite",
@@ -3853,7 +3853,7 @@
         },
         "action->Necrotic Decay": {
           "name": "Necrotic Decay",
-          "description": "<p>When an urdefhan dies, its invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around the body.</p>\n<p>This gas deals @Damage[7d6[void]] damage to creatures in this area as their flesh curdles and rots as well (@Check[fortitude|dc:24|basic] save).</p>"
+          "description": "<p>When an urdefhan dies, its invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around the body.</p>\n<p>This gas deals @Damage[7d6[void]|options:area-damage] damage to creatures in this area as their flesh curdles and rots as well (@Check[fortitude|dc:24|basic|options:area-effect] save).</p>"
         },
         "action->Constrict": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(1d8+7)[slashing]] damage, @Check[fortitude|dc:25|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
@@ -4016,7 +4016,7 @@
         },
         "action->Necrotic Decay": {
           "name": "Necrotic Decay",
-          "description": "<p>When Vischari dies, her invisible flesh rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around her body. This gas deals @Damage[7d6[void]] damage to creatures in this area as their flesh curdles and rots (@Check[fortitude|dc:24|basic] save).</p>"
+          "description": "<p>When Vischari dies, her invisible flesh rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around her body. This gas deals @Damage[7d6[void]|options:area-damage] damage to creatures in this area as their flesh curdles and rots (@Check[fortitude|dc:24|basic|options:area-effect] save).</p>"
         },
         "action->Immobilizing Blow": {
           "name": "Immobilizing Blow",
