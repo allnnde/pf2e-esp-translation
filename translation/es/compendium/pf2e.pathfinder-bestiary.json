@@ -271,7 +271,7 @@
         },
         "action->Death Throes": {
           "name": "Death Throes",
-          "description": "<p>When a balor dies, their body explodes in a @Template[emanation|distance:100]{100-Foot Aura} of intense demonic flame. All creatures and objects in range take @Damage[16d10[fire]] damage (@Check[reflex|dc:45|basic] save). Because the flame is infused with Abyssal energy, creatures in the area apply only half their usual fire resistance. Creatures with immunity to fire use an outcome one degree of success better than what they rolled, instead of gaining the usual benefit of immunity. The bodies of creatures reduced to 0 Hit Points by a balor's death throes are completely incinerated into fine ash.</p>"
+          "description": "<p>When a balor dies, their body explodes in a @Template[emanation|distance:100]{100-foot aura} of intense demonic flame. All creatures and objects in range take @Damage[16d10[fire]|options:area-damage] damage (@Check[reflex|dc:45|basic|options:area-effect] save). Because the flame is infused with Abyssal energy, creatures in the area apply only half their usual fire resistance. Creatures with immunity to fire use an outcome one degree of success better than what they rolled, instead of gaining the usual benefit of immunity. The bodies of creatures reduced to 0 Hit Points by a balor's death throes are completely incinerated into fine ash.</p>"
         },
         "action->Dimensional Dervish": {
           "name": "Dimensional Dervish",
@@ -3073,7 +3073,7 @@
         },
         "action->Ethereal Web Trap": {
           "name": "Ethereal Web Trap",
-          "description": "<p>A creature hit by the ether spider's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface (Escape DC 22).</p>"
+          "description": "<p>A creature hit by the ether spider's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface ([[/act escape dc=22]]).</p>"
         },
         "action->Web Burst": {
           "name": "Web Burst",
@@ -3176,7 +3176,7 @@
           "description": "<p>A gelatinous cube is so clear that it's difficult to spot. A successful @Check[perception|dc:23|traits:action:search] check is required to notice a stationary cube, and a creature must be @UUID[Compendium.pf2e.actionspf2e.Item.TiNDYUGlMmxzxBYU]{Searching} to attempt this check.</p>\n<p>A creature that walks into the cube is automatically Engulfed (this usually causes the GM to call for initiative).</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:19|traits:damaging-effect], @Damage[2d6[acid]], Escape DC 19, Rupture 7</p>\n<p>A creature Engulfed by the gelatinous cube must also attempt a saving throw against paralysis.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:19|traits:damaging-effect], @Damage[2d6[acid]], [[/act escape dc=19]], Rupture 7</p>\n<p>A creature Engulfed by the gelatinous cube must also attempt a saving throw against paralysis.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Paralysis": {
           "name": "Paralysis",
@@ -4993,25 +4993,6 @@
         }
       }
     },
-    "Manticore": {
-      "name": "Manticore",
-      "publicNotes": "<p>The manticore is a monstrous amalgamation of lion, dragon, and human with a penchant for feasting on human flesh. Its distinctive tail is festooned with large quills like those of a porcupine, which the manticore flings at prey by whipping its tail like a sling. These deadly spikes give the manticore the power to slaughter even well-armed warriors from the safety of the sky.</p>\n<p>Although the anthropomorphic face of the manticore suggests a keen intellect, most creatures of its kind are simple-minded killers. They can be clever liars, however, and their voices have a strangely musical sound that has lured many unwitting travelers into an ambush. A manticore discovered by uneducated humanoids can sometimes become the center of adoration and even worship; a manticore in this situation swiftly gives in to its laziness and allows its acolytes to bring it tribute in the form of food and treasure, feasting upon its own followers when offerings become scarce. Stronger humanoids who encounter a manticore can cow it through intimidation and violence, sometimes even forcing it into service as a mount. As long as the manticore is well fed with human flesh and its master leads it to victory, a manticore mount can prove surprisingly loyal.</p>",
-      "items": {
-        "strike-melee->Jaws": {
-          "name": "Jaws"
-        },
-        "strike-melee->Claw": {
-          "name": "Claw"
-        },
-        "strike-ranged->Spike": {
-          "name": "Spike"
-        },
-        "action->Spike Volley": {
-          "name": "Spike Volley",
-          "description": "<p>The manticore flings up to two spikes from its tail, targeting either two different creatures or a single creature. If the manticore targets two different creatures, these creatures must be within 20 feet of one another, and the manticore makes a separate Strike against each; this counts as only one Strike for the manticore's multiple attack penalty, and the penalty doesn't increase until after both attacks. If the manticore fires both spikes at the same creature, it makes a single Strike. If the attack hits, it deals the damage of a single spike, but the target is pinned in place, rendering it @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}. A creature that succeeds at a @Check[athletics|dc:23|name:Remove Spike] check (attempted as a single action) can pull the spike free.</p>\n<p>A manticore can hurl no more than 12 spikes in 24 hours.</p>"
-        }
-      }
-    },
     "Marid": {
       "name": "Marid",
       "publicNotes": "<p>Marids are capricious but powerful genies from the Plane of Water; among geniekind, they are rivaled in power only by the fiery efreet. Marids embody the strength of the ocean's waves and currents, but they also have a gentler side, loving performance and art such as dancing, music, and storytelling.</p>\n<p>Marids regard efreet with hostility but rarely encounter them in their native environment. They get along with djinn, jann, and shaitans, although the latter consider marids flighty and annoying, associating only long enough to close trade deals. Marid society has strict rules of hospitality, and many marid cities have a magically sealed foreign quarter where marid shahzadas conduct business with air-breathers.</p>\n<hr />\n<p>A unique type of genie exists for each Elemental Plane, and the bodies of genies are formed out of elemental matter corresponding to their native plane: djinn are formed from wind, clouds, and storms; efreet are fire made flesh; marids are beings of water; and shaitans are composed of metal, gems, and stone. Lastly, the jann are formed out of all four elements, and are the weakest of geniekind.</p>",
@@ -5207,7 +5188,7 @@
         },
         "action->Cough Spores": {
           "name": "Cough Spores",
-          "description": "<p>The mu spore releases a cloud of burrowing spores in a @Template[cone|distance:400]. The spores deal @Damage[22d6[piercing]] damage to all creatures, objects, and wooden structures in the area, but not to plants or fungi (@Check[reflex|dc:46|basic] save).</p>\n<p>The mu spore can't use this ability again for [[/gmr 1d4 #Recharge Cough Spores]]{1d4 rounds}.</p>"
+          "description": "<p>The mu spore releases a cloud of burrowing spores in a @Template[cone|distance:400]. The spores deal @Damage[22d6[piercing]|options:area-damage] damage to all creatures, objects, and wooden structures in the area, but not to plants or fungi (@Check[reflex|dc:46|basic|options:area-effect] save).</p>\n<p>The mu spore can't use this ability again for [[/gmr 1d4 #Recharge Cough Spores]]{1d4 rounds}.</p>"
         },
         "action->Enormous Inhalation": {
           "name": "Enormous Inhalation",
@@ -6492,7 +6473,7 @@
           "description": "<p>A creature that begins its turn inside the shoggoth takes @Damage[9d6[acid]] damage.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:40|traits:damaging-effect], @Damage[6d6[acid]] damage, Escape DC 40, Rupture 40</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:40|traits:damaging-effect], @Damage[6d6[acid]] damage, [[/act escape dc=40]], Rupture 40</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         }
       }
     },
@@ -7447,7 +7428,7 @@
         },
         "action->Dance of Ruin": {
           "name": "Dance of Ruin",
-          "description": "<p>The vrock dances in flight and chants to create a ruinous explosion of electricity. If more vrocks within 30 feet want to join the dance, the vrock can delay the dance to wait for more vrocks; in that case, the effect occurs after the last vrock uses Dance of Ruin or one of the vrocks chooses to complete that round of the dance. Each non-demon creature in a @Template[emanation|distance:20] from any of the dancing vrocks takes @Damage[2d12[electricity]] damage (@Check[reflex|dc:28|basic] save). For each additional vrock that joins the dance, the damage increases by 1d12 and the save DC increases by 1 (to a maximum of four vrocks dealing 5d12 electricity damage with a DC 31 save). The vrocks can continue dancing by using Dance of Ruin each round, for up to 3 rounds in total. The emanation's size increases by 20 feet each round, and the damage increases by 1d12 per vrock each round.</p>\n<hr />\n<ul>\n<li><strong>1 Vrock Dancing</strong>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[emanation|distance:20] @Damage[2d12[electricity]] damage @Check[reflex|dc:28|basic]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[emanation|distance:40] @Damage[3d12[electricity]] damage @Check[reflex|dc:28|basic]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[emanation|distance:60] @Damage[4d12[electricity]] damage @Check[reflex|dc:28|basic]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>2 Vrocks Dancing</strong>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[emanation|distance:20] @Damage[3d12[electricity]] damage @Check[reflex|dc:29|basic]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[emanation|distance:40] @Damage[5d12[electricity]] damage @Check[reflex|dc:29|basic]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[emanation|distance:60] @Damage[7d12[electricity]] damage @Check[reflex|dc:29|basic]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>3 Vrocks Dancing</strong>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[emanation|distance:20] @Damage[4d12[electricity]] damage @Check[reflex|dc:30|basic]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[emanation|distance:40] @Damage[7d12[electricity]] damage @Check[reflex|dc:30|basic]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[emanation|distance:60] @Damage[10d12[electricity]] damage @Check[reflex|dc:30|basic]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>4 Vrocks Dancing</strong>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[emanation|distance:20] @Damage[5d12[electricity]] damage @Check[reflex|dc:31|basic]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[emanation|distance:40] @Damage[9d12[electricity]] damage @Check[reflex|dc:31|basic]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[emanation|distance:60] @Damage[13d12[electricity]] damage @Check[reflex|dc:31|basic]</td>\n</tr>\n</tbody>\n</table>\n</li>\n</ul>"
+          "description": "<p>The vrock dances in flight and chants to create a ruinous explosion of electricity. If more vrocks within 30 feet want to join the dance, the vrock can delay the dance to wait for more vrocks; in that case, the effect occurs after the last vrock uses Dance of Ruin or one of the vrocks chooses to complete that round of the dance. Each non-demon creature in a @Template[emanation|distance:20] from any of the dancing vrocks takes @Damage[2d12[electricity]|options:area-damage] damage (@Check[reflex|dc:28|basic|options:area-effect] save). For each additional vrock that joins the dance, the damage increases by 1d12 and the save DC increases by 1 (to a maximum of four vrocks dealing 5d12 electricity damage with a DC 31 save). The vrocks can continue dancing by using Dance of Ruin each round, for up to 3 rounds in total. The emanation's size increases by 20 feet each round, and the damage increases by 1d12 per vrock each round.</p>\n<hr />\n<ul>\n<li><strong>1 Vrock Dancing</strong>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[emanation|distance:20] @Damage[2d12[electricity]|options:area-damage] damage @Check[reflex|dc:28|basic|options:area-effect]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[emanation|distance:40] @Damage[3d12[electricity]|options:area-damage] damage @Check[reflex|dc:28|basic|options:area-effect]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[emanation|distance:60] @Damage[4d12[electricity]|options:area-damage] damage @Check[reflex|dc:28|basic|options:area-effect]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>2 Vrocks Dancing</strong>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[emanation|distance:20] @Damage[3d12[electricity]|options:area-damage] damage @Check[reflex|dc:29|basic|options:area-effect]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[emanation|distance:40] @Damage[5d12[electricity]|options:area-damage] damage @Check[reflex|dc:29|basic|options:area-effect]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[emanation|distance:60] @Damage[7d12[electricity]|options:area-damage] damage @Check[reflex|dc:29|basic|options:area-effect]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>3 Vrocks Dancing</strong>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[emanation|distance:20] @Damage[4d12[electricity]|options:area-damage] damage @Check[reflex|dc:30|basic|options:area-effect]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[emanation|distance:40] @Damage[7d12[electricity]|options:area-damage] damage @Check[reflex|dc:30|basic|options:area-effect]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[emanation|distance:60] @Damage[10d12[electricity]|options:area-damage] damage @Check[reflex|dc:30|basic|options:area-effect]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>4 Vrocks Dancing</strong>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[emanation|distance:20] @Damage[5d12[electricity]|options:area-damage] damage @Check[reflex|dc:31|basic|options:area-effect]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[emanation|distance:40] @Damage[9d12[electricity]|options:area-damage] damage @Check[reflex|dc:31|basic|options:area-effect]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[emanation|distance:60] @Damage[13d12[electricity]|options:area-damage] damage @Check[reflex|dc:31|basic|options:area-effect]</td>\n</tr>\n</tbody>\n</table>\n</li>\n</ul>"
         },
         "action->Spore Cloud": {
           "name": "Spore Cloud",
@@ -7546,7 +7527,7 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(2d12+10)[bludgeoning]] damage, @Check[fortitude|dc:37|basic] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:37|traits:damaging-effect], @Damage[4d8[bludgeoning]] damage, Escape DC 35, Rupture 36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:37|traits:damaging-effect], @Damage[4d8[bludgeoning]] damage, [[/act escape dc=35]], Rupture 36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Thorny Mass": {
           "name": "Thorny Mass",
@@ -7659,7 +7640,7 @@
         },
         "action->Ground Slam": {
           "name": "Ground Slam",
-          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:29|traits:damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[3d6[bludgeoning]] damage.</p>\n<p>The dragon can then Step.</p>"
+          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:29|options:area-effect,damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[3d6[bludgeoning]|options:area-damage] damage.</p>\n<p>The dragon can then Step.</p>"
         },
         "action->Ice Climb": {
           "name": "Ice Climb",
@@ -7739,7 +7720,7 @@
         },
         "action->Ground Slam": {
           "name": "Ground Slam",
-          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:29|traits:damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[3d6[bludgeoning]] damage.</p>\n<p>The dragon can then Step.</p>"
+          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:29|options:area-effect,damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[3d6[bludgeoning]|options:area-damage] damage.</p>\n<p>The dragon can then Step.</p>"
         },
         "action->Ice Climb": {
           "name": "Ice Climb",
@@ -7812,7 +7793,7 @@
         },
         "action->Ground Slam": {
           "name": "Ground Slam",
-          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:37|traits:damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[5d6[bludgeoning]] damage.</p>\n<p>The dragon can then Step.</p>"
+          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:37|options:area-effect,damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[5d6[bludgeoning]|options:area-damage] damage.</p>\n<p>The dragon can then Step.</p>"
         },
         "action->Ice Climb": {
           "name": "Ice Climb",
@@ -7911,7 +7892,7 @@
         },
         "action->Ground Slam": {
           "name": "Ground Slam",
-          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:37|traits:damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[5d6[bludgeoning]] damage.</p>\n<p>The dragon can then Step.</p>"
+          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:37|options:area-effect,damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[5d6[bludgeoning]|options:area-damage] damage.</p>\n<p>The dragon can then Step.</p>"
         },
         "action->Ice Climb": {
           "name": "Ice Climb",
@@ -7963,7 +7944,7 @@
         },
         "action->Ground Slam": {
           "name": "Ground Slam",
-          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:24|traits:damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[2d6[bludgeoning]] damage.</p>\n<p>The dragon can then Step.</p>"
+          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:24|options:area-effect,damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[2d6[bludgeoning]|options:area-damage] damage.</p>\n<p>The dragon can then Step.</p>"
         },
         "action->Ice Climb": {
           "name": "Ice Climb",
@@ -8020,7 +8001,7 @@
         },
         "action->Ground Slam": {
           "name": "Ground Slam",
-          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:24|traits:damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[2d6[bludgeoning]] damage.</p>\n<p>The dragon can then Step.</p>"
+          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:24|options:area-effect,damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[2d6[bludgeoning]|options:area-damage] damage.</p>\n<p>The dragon can then Step.</p>"
         },
         "action->Ice Climb": {
           "name": "Ice Climb",
@@ -8105,7 +8086,7 @@
           "description": "<p>Until the next time it acts, the zaramuun appears to be a sand dune. It has an automatic result of 47 (50 in sandy terrain) on Deception and Stealth checks and DCs to pass as a sand dune. Any creature that walks onto the zaramuun moves into its body and is Engulfed.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:35|traits:damaging-effect], @Damage[4d12[bludgeoning]] damage and @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Planar Tether}, Escape DC 32, Rupture 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:35|traits:damaging-effect], @Damage[4d12[bludgeoning]] damage and @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Planar Tether}, [[/act escape dc=32]], Rupture 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Raking Sand": {
           "name": "Raking Sand",
