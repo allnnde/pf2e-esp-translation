@@ -798,7 +798,7 @@
         },
         "action->Explosion": {
           "name": "Explosion",
-          "description": "<p>When the elemental inferno dies, it explodes, dealing @Damage[7d6[fire]] damage to each creature in a @Template[emanation|distance:10|traits:fire,damaging-effect] (@Check[reflex|dc:30|basic] save).</p>"
+          "description": "<p>When the elemental inferno dies, it explodes, dealing @Damage[7d6[fire]|options:area-damage] damage to each creature in a @Template[emanation|distance:10|traits:fire,damaging-effect] (@Check[reflex|dc:30|basic|options:area-effect] save).</p>"
         },
         "action->Intense Heat": {
           "name": "Intense Heat",
@@ -810,7 +810,7 @@
         },
         "action->Inferno Leap": {
           "name": "Inferno Leap",
-          "description": "<p>The elemental inferno jumps horizontally and vertically with a maximum height and distance each equal to its Speed. Its intense heat is suppressed until the end of the jump. At any point during the jump, flames explode from the elemental in a @Template[emanation|distance:20], dealing @Damage[12d6[fire]] damage to each creature within the area (@Check[reflex|dc:30|basic] save).</p>\n<p>The elemental inferno can't Inferno Leap again for [[/gmr 1d4 #Recharge Inferno Leap]]{1d4 rounds}.</p>"
+          "description": "<p>The elemental inferno jumps horizontally and vertically with a maximum height and distance each equal to its Speed. Its intense heat is suppressed until the end of the jump. At any point during the jump, flames explode from the elemental in a @Template[emanation|distance:20], dealing @Damage[12d6[fire]|options:area-damage] damage to each creature within the area (@Check[reflex|dc:30|basic|options:area-effect] save).</p>\n<p>The elemental inferno can't Inferno Leap again for [[/gmr 1d4 #Recharge Inferno Leap]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -1308,7 +1308,7 @@
         },
         "action->Hammerfall": {
           "name": "Hammerfall",
-          "description": "<p>The forgepriest tosses their hammer up to 30 feet. Where the hammer lands, molten metal erupts from the ground in a @Template[burst|distance:10]{10 foot radius} dealing @Damage[6d8[fire]] damage to creatures in the area (@Check[reflex|dc:21|basic] save). Creatures who critically fail also take @Damage[1d8[persistent,fire]] damage. The forgepriest can't use Hammerfall again for [[/gmr 1d4 #Recharge Hammerfall]]{1d4 rounds}.</p>"
+          "description": "<p>The forgepriest tosses their hammer up to 30 feet. Where the hammer lands, molten metal erupts from the ground in a @Template[burst|distance:10]{10 foot radius} dealing @Damage[6d8[fire]|options:area-damage] damage to creatures in the area (@Check[reflex|dc:21|basic|options:area-effect] save). Creatures who critically fail also take @Damage[1d8[persistent,fire]] damage. The forgepriest can't use Hammerfall again for [[/gmr 1d4 #Recharge Hammerfall]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -1586,7 +1586,7 @@
         },
         "action->Spore Burst": {
           "name": "Spore Burst",
-          "description": "<p>When a hyphae tyrant dies, a burst of primal energy explodes from its body in a @Template[emanation|distance:30], restoring 3d8 to each fungus creature and dealing @Damage[3d8[void]] damage (@Check[fortitude|dc:20]{basic Fortitude} save) to each non-fungus creature in the area. This area is filled with fungus, becoming difficult terrain.</p>"
+          "description": "<p>When a hyphae tyrant dies, a burst of primal energy explodes from its body in a @Template[emanation|distance:30], restoring 3d8 to each fungus creature and dealing @Damage[3d8[void]|options:area-damage] damage (@Check[fortitude|dc:20|basic|options:area-effect] save) to each non-fungus creature in the area. This area is filled with fungus, becoming difficult terrain.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The hyphae tyrant transforms into a Small fungus. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -2460,7 +2460,7 @@
         },
         "action->Spore Burst": {
           "name": "Spore Burst",
-          "description": "<p>When a hyphae tyrant dies, a burst of primal energy explodes from its body in a @Template[emanation|distance:30], restoring 3d8 to each fungus creature and dealing @Damage[3d8[void]] damage (@Check[fortitude|dc:20]{basic Fortitude} save) to each non-fungus creature in the area. This area is filled with fungus, becoming difficult terrain.</p>"
+          "description": "<p>When a hyphae tyrant dies, a burst of primal energy explodes from its body in a @Template[emanation|distance:30], restoring 3d8 to each fungus creature and dealing @Damage[3d8[void]|options:area-damage] damage (@Check[fortitude|dc:20|basic|options:area-effect] save) to each non-fungus creature in the area. This area is filled with fungus, becoming difficult terrain.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The hyphae tyrant transforms into a Small fungus. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -3189,7 +3189,7 @@
         },
         "action->Cathartic Howl": {
           "name": "Cathartic Howl",
-          "description": "<p><strong>Requirements</strong> The unfeeling empath is under an emotion effect</p>\n<hr />\n<p><strong>Effect</strong> The unfeeling empath attempts to counteract the emotion effect, with a counteract modifier of [[/r 1d20+11 #Counteract]]{+11}. It then howls, projecting those emotions in a @Template[cone|distance:15] (or a @Template[cone|distance:30] if the unfeeling empath successfully counteracted the emotion effect). Creatures in the area take @Damage[2d8[mental]] damage (@Check[will|dc:18|basic] save). A creature that critically fails this saving throw also takes @Damage[1d4[mental,persistent]] damage.</p>"
+          "description": "<p><strong>Requirements</strong> The unfeeling empath is under an emotion effect</p>\n<hr />\n<p><strong>Effect</strong> The unfeeling empath attempts to counteract the emotion effect, with a counteract modifier of [[/r 1d20+11 #Counteract]]{+11}. It then howls, projecting those emotions in a @Template[cone|distance:15] (or a @Template[cone|distance:30] if the unfeeling empath successfully counteracted the emotion effect). Creatures in the area take @Damage[2d8[mental]|options:area-damage] damage (@Check[will|dc:18|basic|options:area-effect] save). A creature that critically fails this saving throw also takes @Damage[1d4[mental,persistent]] damage.</p>"
         },
         "action->Drink Emotions": {
           "name": "Drink Emotions",
