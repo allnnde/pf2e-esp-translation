@@ -4584,6 +4584,10 @@
         }
       ]
     },
+    "Borrowed Ability": {
+      "name": "Borrowed Ability",
+      "description": "<p>Your touch opens a conduit into the mind of your target, the emptiness within you pulling skills and memories through. You touch an adjacent creature and choose any skill you believe they are trained or better in. If you choose a skill that they are trained or better in, you borrow their proficiency in that skill, becoming trained in that skill for 1 minute. If they are not trained in the skill you choose, the GM chooses the next most applicable skill (for instance, choosing Acrobatics instead of Athletics). At 12th level, you can become an expert in the skill if the target is as well.</p>\n<p>If the target of Borrowed Ability is unwilling, the effects depend on the target's Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target resists your touch completely.</p>\n<p><strong>Success</strong> Your borrowing is unstable. At the beginning of each of your turns, you must either relinquish your hold on the borrowed skill (as a free action), or attempt another backlash check for your deviation; the ability ends if you fail.</p>\n<p><strong>Failure</strong> Borrowed Ability lasts for its full duration.</p>\n<hr />\n<p><strong>Awakening</strong> You gain some of the target's defensive abilities. When you use Borrowed Ability, you also gain a +1 circumstance bonus to one of your saving throws for the duration, matching the target's highest saving throw. You can choose to apply a –1 circumstance penalty to the target's saving throw when you do so.</p>\n<p><strong>Awakening</strong> Your touch establishes a lingering link through which you can sense what your target does. When you use Borrowed Ability, you gain any special senses—such as darkvision, scent, or tremorsense—that the target possesses. If the target does not have a sense that you normally have (for instance, an ooze that has no vision), you lose those senses as well. Your senses remain altered for the duration of Borrowed Ability.</p>"
+    },
     "Boulder Roll": {
       "name": "Rodar la roca",
       "description": "<p>Tu constitución enana te permite empujar a tus enemigos de aquí para allá, de la misma forma en que una gran roca rueda por una cámara subterránea. Da un paso al interior de la casilla de un enemigo de tu tamaño o menor, y el enemigo deberá moverse al espacio vacío que tiene directamente detrás. El enemigo tiene que moverse incluso si haciéndolo se pone en peligro. El enemigo puede hacer una salvación de Fortaleza contra tu CD de Atletismo para bloquear tu Paso. Si la hace y no obtiene un éxito crítico, sufre tanto @Damage[(@actor.level + @actor.abilities.str.mod)[bludgeoning]]{daño contundente} como tu nivel más tu modificador por Fuerza.</p>\n<p>Si el enemigo no puede moverse a un espacio vacío (por ejemplo si está rodeado de objetos sólidos u otras criaturas), tu Rodar la roca no tiene efecto alguno.</p>",
@@ -10051,6 +10055,10 @@
         }
       ]
     },
+    "Draining Touch": {
+      "name": "Draining Touch",
+      "description": "<p>You reach out your arm, grasping hungrily for a source of energy. Attempt a melee Strike. If you succeed, you deal 1d8 cold damage for every 2 levels you have to the target (@Damage[(floor(@actor.level/2))d8[cold]]), or double damage on a critical success.</p>\n<p><strong>Awakening</strong> You drain enough energy from a creature to leave it with lingering aftereffects. Your Draining Touch also leaves a creature @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, or @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} if your attack was a critical success.</p>\n<p><strong>Awakening</strong> You can pull away not just physical energy, but a creature's spirit as well. Your Draining Touch can deal your choice of cold, spirit, or void damage, changing the cold trait to spirit or void as appropriate.</p>"
+    },
     "Draw From the Land": {
       "name": "Sacar de la tierra",
       "description": "<p> <strong> Requisitos </strong> Obtuviste un beneficio de sintonía con el terreno este turno y coincidió con el terreno en el que te encuentras. </p>\n <hr />\n <p> Sacas fuerza del terreno circundante. Obtienes puntos de vida temporales iguales a tu nivel. Duran 1 ronda. Si anteriormente obtuviste el efecto de sintonía con el terreno de las llanuras este turno, combina los puntos de vida temporales. </p>",
@@ -13383,6 +13391,10 @@
         }
       ]
     },
+    "Feed the Void": {
+      "name": "Feed the Void",
+      "description": "<p>The void within you manages to manifest itself temporarily, a black hole opening over your heart and threatening to draw everything in. A @Template[type:cone|distance:60] becomes filled with screaming winds that rush in toward you. All creatures in the cone must attempt a Fortitude saving throw.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pulled 10 feet toward you.</p>\n<p><strong>Failure</strong> The creature is pulled 20 feet toward you.</p>\n<p><strong>Critical Failure</strong> The creature is pulled 30 feet toward you.</p>\n<p>Creatures that would be pulled into your square contact the void, which deals @Damage[5d6[spirit]|options:area-damage] damage with no saving throw, and are then spat back out in a square adjacent to you of your choice. At 12th level, and every 2 levels thereafter, the damage increases by 1d6.</p>\n<p><strong>Awakening</strong> The void feeds upon the creature's spirit, transferring you some of their vitality. If one or more creatures are pulled into the void, you gain temporary Hit Points equal to the level of the highest-level creature pulled in. These temporary Hit Points last for 10 minutes.</p>\n<p><strong>Awakening</strong> The void's suction draws in heat and light as well. The first 30 feet of the cone becomes covered in ice as temperatures drop, making the area difficult terrain, and is also plunged into darkness, with the effects of darkness heightened to half your level. Both effects last until the beginning of your next turn.</p>"
+    },
     "Feeding Frenzy": {
       "name": "Feeding Frenzy",
       "description": "<p>Your serrated teeth rip and tear at your prey. When you critically hit with your jaws Strike from Werecreature Dedication, your target takes 1d4 persistent bleed damage and you gain a +1 circumstance bonus to jaws Strikes against the target until the end of your turn. If you have scent as a special sense, it's a precise sense with double its normal range when locating creatures taking persistent bleed damage.</p>",
@@ -14907,12 +14919,7 @@
     },
     "Friendform": {
       "name": "Forma De Amigo",
-      "description": "<p> El vínculo compartido entre tú y tus aliados te permite actuar en su nombre. </p>\n <p> Durante tus preparativos diarios, puedes realizar un ritual simple con hasta cinco humanoides Pequeños o Medianos dispuestos, donde los participantes intercambian fichas menores de importancia personal. </p>\n <p> Mientras conserves la ficha de un participante, puedes asumir su forma con tu habilidad Cambiar forma, obteniendo una bonificación de estado de +4 a las pruebas de Engaño para pasar por esa persona.y agregando tu nivel al cheque incluso si no estás capacitado. Pierdes el acceso al formulario de un participante si no lleva tu ficha o si vuelves a utilizar el ritual. </p>",
-      "rules": {
-        "0": {
-          "label": "Suplantar a través del ritual Friendform"
-        }
-      }
+      "description": "<p> El vínculo compartido entre tú y tus aliados te permite actuar en su nombre. </p>\n <p> Durante tus preparativos diarios, puedes realizar un ritual simple con hasta cinco humanoides Pequeños o Medianos dispuestos, donde los participantes intercambian fichas menores de importancia personal. </p>\n <p> Mientras conserves la ficha de un participante, puedes asumir su forma con tu habilidad Cambiar forma, obteniendo una bonificación de estado de +4 a las pruebas de Engaño para pasar por esa persona.y agregando tu nivel al cheque incluso si no estás capacitado. Pierdes el acceso al formulario de un participante si no lleva tu ficha o si vuelves a utilizar el ritual. </p>"
     },
     "Friendly Fling": {
       "name": "Friendly Fling",
@@ -17892,12 +17899,7 @@
     },
     "Hunter's Fangs": {
       "name": "Colmillos Del Cazador",
-      "description": "<p> Tus colmillos son excepcionalmente dolorosos. Cada vez que consigues un golpe crítico con el ataque desarmado de tus colmillos, aplicas el efecto de especialización crítica del ataque desarmado. </p>",
-      "rules": {
-        "0": {
-          "text": "El objetivo debe tener éxito en una salvación de Fortaleza contra tu DC de clase o ser @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} hasta el final de tu siguiente turno."
-        }
-      }
+      "description": "<p> Tus colmillos son excepcionalmente dolorosos. Cada vez que consigues un golpe crítico con el ataque desarmado de tus colmillos, aplicas el efecto de especialización crítica del ataque desarmado. </p>"
     },
     "Hunter's Sanctum": {
       "name": "Santuario del cazador",
@@ -20074,6 +20076,10 @@
       "name": "Activación Cinética",
       "description": "<p> En lugar de encantamientos y gestos, puedes usar tu puerta cinética para desbloquear directamente el potencial de objetos mágicos potenciados elementalmente. Puedes activar objetos mágicos que requieren que puedas @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} , siempre que los actives para lanzar un hechizo con el mismo rasgo que uno de tus elementos cinéticos; por ejemplo, si puedes canalizar el fuego, podrías activar un pergamino <em> de </em> @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball} . Para cualquier efecto de estos artículos que utilizan untirada de ataque de hechizo o DC de hechizo, puedes sustituir tu tirada de ataque de impulso o DC de clase. </p>\n <p> También puedes preparar un bastón que tenga al menos un hechizo con un rasgo apropiado, usando la mitad de tu nivel redondeado hacia arriba para determinar la cantidad de cargas que agregas. Esto no te permite lanzar hechizos sin el rasgo de uno de tus elementos cinéticos, y no obtienes los beneficios adicionales preparados y los lanzadores de hechizos espontáneos. </p>"
     },
+    "Kinetic Dampening": {
+      "name": "Kinetic Dampening",
+      "description": "<p>You feed off energy in your immediate surroundings, allowing you to dampen the force imparted by incoming blows. Until the beginning of your next turn, you gain resistance 5 to physical damage. At 10th level, and every 4 levels thereafter, the resistance increases by 5. Any blows that strike you during this time make no sound as their energy is drained.</p>\n<p><strong>Awakening</strong> You can extend your dampening field around you to create a safe haven for your allies. If you spend an additional action when using Kinetic Dampening, your field extends in a @Template[type:emanation|distance:15] around you. You can choose which creatures within the emanation are affected.</p>\n<p><strong>Awakening</strong> You dampen a greater variety of wavelengths. When you use this feat, you also gain resistance to your choice of fire, electricity, or sonic damage.</p>"
+    },
     "Kinetic Pinnacle": {
       "name": "Pináculo cinético",
       "description": "<p> Nadie puede igualar el ritmo al que fluyen los elementos de ti. Estás permanentemente @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Acelerado} . Puedes usar tu acción adicional solo para @UUID[Compendium.pf2e.actionspf2e.Item.g8QrV39TmZfkbXgE]{Channel Elements} , usar un @UUID[Compendium.pf2e.actionspf2e.Item.6lbr0Jnv0zMB5uGb]{Elemental Blast} de 1 acción o usar un impulso de postura de 1 acción. </p>"
@@ -21143,6 +21149,10 @@
     "Lightning Tongue": {
       "name": "Lengua de relámpago",
       "description": "<p> Su lengua sale más rápido de lo que el ojo puede ver para recuperar objetos sueltos. Interactúas para recoger un único objeto desatendido de tamaño ligero o menos dentro de 10 pies de ti. Si no tienes suficientes manos libres para sostener el objeto, éste cae al suelo en tu espacio. </p>"
+    },
+    "Lightspeed Assault": {
+      "name": "Lightspeed Assault",
+      "description": "<p>You zoom from enemy to enemy, striking each in an instant. Stride to an enemy and attempt a Strike against it. If successful, you can add another action to Lightspeed Assault. Stride again and attempt another Strike; if this second Strike is successful, you can spend another action to Stride again and attempt a third Strike. You can use Lightspeed Assault while Burrowing, Climbing, Flying, or Swimming instead of Striding if you have the corresponding movement type. You attempt a backlash check for your deviation only once, regardless of how many actions you end up spending on your Lightspeed Assault.</p>\n<p><strong>Awakening</strong> Your speed allows you to slip the bonds of space. Instead of Striding, you simply teleport to your desired destination. Lightspeed Assault gains the teleportation trait.</p>\n<p><strong>Awakening</strong> You move so quickly that you might as well be in multiple places at once. When you use Lightspeed Assault, you can decide to spend one, two, or three actions up front, selecting your targets ahead of time. You can flank with yourself for any of these Strikes, and if you deal damage to a target more than once, you can add all the damage together for the purpose of overcoming resistances, if it would be more beneficial to you.</p>"
     },
     "Like a Roach": {
       "name": "como una cucaracha",
@@ -25192,6 +25202,10 @@
           "value": "Dedicación zombi"
         }
       ]
+    },
+    "Overclock Senses": {
+      "name": "Overclock Senses",
+      "description": "<p>Your senses speed up to the point that time seems to stand still, allowing you to catch details and incoming attacks. You @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek}. After you Seek, you gain a +2 circumstance bonus to your AC against ranged attacks and to Reflex saving throws until the beginning of your next turn.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.feQwOL1QfZDfVrt8]{Effect: Overclock Senses}</p>\n<p><strong>Awakening</strong> When you use Overclock Senses, you can focus even more on the present moment, allowing you more apparent time to observe and plot at the expense of defense. When you use Overclock Senses, you do so with the benefits of darkvision, or if you are at least 14th level, with the benefits of truesight. You can attempt a @UUID[Compendium.pf2e.actionspf2e.Recall Knowledge]{Recall Knowledge} check as a free action after Seeking. Your senses spent, you then do not gain the normal bonuses to AC and Reflex saving throws.</p>\n<p><strong>Awakening</strong> You hone your senses even further, letting you react to attacks almost before they happen. While you have the bonuses from Overclock Senses, if you would be hit by a ranged attack, you can spend a reaction to have the attacker roll the attack again (this is a misfortune effect), and if you would fail a Reflex save, you can spend a reaction to roll the save again (this is a fortune effect). You must take the second result, even if it is worse.</p>"
     },
     "Overcrowd": {
       "name": "Atestar",
@@ -33273,6 +33287,10 @@
         }
       ]
     },
+    "Sonic Dash": {
+      "name": "Sonic Dash",
+      "description": "<p>You bounce up and down once, then sprint forward. You Stride twice in a straight line. You can use Sonic Dash while Burrowing, Climbing, Flying, or Swimming instead of Striding if you have the corresponding movement type.</p>\n<p><strong>Awakening</strong> Your Sonic Dash generates a sonic boom, dealing 1d4 sonic damage for every two levels you have (@Damage[floor(@actor.level/2)d4[sonic]|options:area-damage]) to all creatures other than you in a @Template[type:emanation|distance:5] at the point you end your Sonic Dash, with a @Check[fortitude|against:deviant|basic]save. Creatures that fail are @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round, or 1 minute on a critical failure.</p>\n<p><strong>Awakening</strong> Your speed generates a slipstream that allows you to reposition your allies. You can dash through a willing ally's space during your Sonic Dash, causing them to be drawn by winds alongside you. You deposit them in any unoccupied space adjacent to you at the end of your Sonic Dash.</p>"
+    },
     "Sonic Strafe": {
       "name": "Sonic Strafe",
       "description": "<p><strong>Requirements</strong> You currently have a fly Speed.</p>\n<hr />\n<p>You can now achieve such flight speeds that your passage splits the very air. Fly twice. Any creature that is adjacent to you at any point during your movement takes @Damage[10d6[sonic]] damage (@Check[type:fortitude|dc:resolve(@actor.system.attributes.classDC.value)|basic:true] save against your class DC). On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido} for 1 hour.</p>",
@@ -39144,6 +39162,10 @@
       "name": "Brebaje inestable",
       "description": "<p> Puedes crear maravillas alquímicas extraordinarias, aunque volátiles, aunque tienen una desafortunada tendencia a explotar violentamente cuando las usas. </p>\n <p> Cuando usas @UUID[Compendium.pf2e.feats-srd.Item.NlEZ0piDxg9buXCL]{Quick Alchemy}, puedes crear un objeto alquímico de tu libro de fórmulas cuyo nivel es hasta 2 superior a tu nivel de alquimia avanzada. Puedes gastar hasta 3 lotes adicionales de @UUID[Compendium.pf2e.classfeatures.Item.wySB9VHOW1v3TX1L]{Infused Reagents} al crear este artículo para estabilizarlo. </p>\n <p> Al activarel artículo, intente un @Check[type:flat|dc:10] ; por cada lote adicional de @UUID[Compendium.pf2e.classfeatures.Item.wySB9VHOW1v3TX1L]{Infused Reagents} que gastes para crear el artículo, reduce este CD en 2. Si tiene éxito, el artículo funciona normalmente. En caso de fallo, el objeto explota, causando un daño de fuerza al usuario equivalente al doble del nivel del objeto (duplicado en caso de fallo crítico). </p>"
     },
+    "Unstable Gearshift": {
+      "name": "Unstable Gearshift",
+      "description": "<p>You shift your body into a higher gear, your speed compounding further and further. You gain a +10-foot status bonus to all your Speeds, which lasts until the end of your next turn. At any time during your next turn, you can use Unstable Gearshift again, increasing the status bonus by another 5 feet and prolonging the effect for another round. You can keep using Unstable Gearshift in this way until you can no longer use your deviant abilities.</p>\n<p><strong>Awakening</strong> When moving at high speed, your form blurs. You have concealment for the duration of any move action you take while you are affected by Unstable Gearshift.</p>\n<p><strong>Awakening</strong> Your high-speed form has become partially out of phase with reality. While you are affected by Unstable Gearshift, you are not affected by physical difficult terrain (such as rubble), you do not trigger traps that use weight or pressure plates as a trigger, and you can move through enemy spaces without making checks to @UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{Tumble Through}, as you simply phase through them.</p>"
+    },
     "Unstable Patronage": {
       "name": "Unstable Patronage",
       "description": "<p>You can act as a magical patron for your charges. When you finish your daily preparations, choose a spell your familiar knows and one of your charges. Once before your next daily preparations, that creature can Cast the Spell as an innate spell; this spell can be of no higher a rank than the highest rank of spells you can cast –2.</p>",
@@ -40666,18 +40688,7 @@
     },
     "Web Walker": {
       "name": "Caminante web",
-      "description": "<p> Tienes mucha práctica navegando por la web. Obtienes una bonificación de circunstancia +2 a las salvaciones y a la CA contra el hechizo @UUID[Compendium.pf2e.spells-srd.Item.9s5tqqXNzcoKamWx]{Web}, las redes naturales y los efectos que te atrapan en redes, así como una bonificación de circunstancia +1 contra otros efectos que te atrapan y enredan, como el hechizo @UUID[Compendium.pf2e.spells-srd.Item.J6vNvrUT3b1hx2iA]{Entangling Flora} . Cada vez que obtienes un éxito en una tirada de salvación contra un efecto que involucra una red, obtienes un éxito crítico. </p>",
-      "rules": {
-        "0": {
-          "label": "Web Walker (frente a webs)"
-        },
-        "1": {
-          "label": "Web Walker (contra trampas y enredos)"
-        },
-        "3": {
-          "text": "Cada vez que obtienes un éxito en una tirada de salvación contra un efecto que involucra una red, obtienes un éxito crítico."
-        }
-      }
+      "description": "<p> Tienes mucha práctica navegando por la web. Obtienes una bonificación de circunstancia +2 a las salvaciones y a la CA contra el hechizo @UUID[Compendium.pf2e.spells-srd.Item.9s5tqqXNzcoKamWx]{Web}, las redes naturales y los efectos que te atrapan en redes, así como una bonificación de circunstancia +1 contra otros efectos que te atrapan y enredan, como el hechizo @UUID[Compendium.pf2e.spells-srd.Item.J6vNvrUT3b1hx2iA]{Entangling Flora} . Cada vez que obtienes un éxito en una tirada de salvación contra un efecto que involucra una red, obtienes un éxito crítico. </p>"
     },
     "Web Weaver": {
       "name": "Tejedor De Telarañas",
