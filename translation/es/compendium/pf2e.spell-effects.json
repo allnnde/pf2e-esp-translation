@@ -57,6 +57,10 @@
       "name": "Efecto: Inmunidad a orientación",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.spells-srd.Item.izcxFQFwf3woCnFs]{Orientación}</p>\n<p>Te vuelve inmune al efecto del conjuro mientras dure. </p>"
     },
+    "Effect: Halt Death": {
+      "name": "Effect: Halt Death",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.NQk8Cabhhw7jXkg0]{Halt Death}</p>\n<p>You are guarded against death, gaining a status bonus to saving throws against death effects. If the result of the ritual was a critical success, when you succeed at a recovery check, you get a critical success instead.</p>"
+    },
     "Effect: Shield Immunity": {
       "name": "Efecto: Inmunidad a escudo",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR]{Escudo} </p>\n <p>No puedes volver a lanzarlo durante 10 minutos. </p>"
@@ -452,6 +456,10 @@
       "name": "Efecto de conjuro: Arma conductora",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.spells-srd.Item.fkUCvynklBGb4LaI]{Conductive Weapon} </p>\n <p> El objetivo se convierte en un <em> +1 arma de choque </em> . Si algún objetivo de un ataque con el arma lleva una armadura de metal o está hecho principalmente de metal, el daño eléctrico causado por la runa <em> shock </em> es 1d12. </p>"
     },
+    "Spell Effect: Conquering Soldiers (Depart)": {
+      "name": "Spell Effect: Conquering Soldiers (Depart)",
+      "description": "<p>Granted by Conquering Soldiers</p>\n<p>You gain a +2 status bonus to all attacks, saving throws, skill checks, and DCs.</p>"
+    },
     "Spell Effect: Contagious Idea (Pleasant Thought)": {
       "name": "Efecto de conjuro: Idea contagiosa (pensamiento agradable)",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.spells-srd.Item.Dby1eQ7y5dXBWlyc]{Contagious Idea} </p>\n <p> Obtienes puntos de vida temporales iguales al rango del hechizo. </p>"
@@ -483,6 +491,14 @@
     "Spell Effect: Crown of Prophets": {
       "name": "Spell Effect: Crown of Prophets",
       "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.h2DLv8TQV0Z83tQp]{Crown of Prophets}</p>\n<p>You gain a fangs unarmed attack that deals 1d6 piercing damage and has the agile, finesse, and versatile poison traits.</p>"
+    },
+    "Spell Effect: Curse of Recoil (Critical Failure)": {
+      "name": "Spell Effect: Curse of Recoil (Critical Failure)",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.9uSBfK8EUVBrcNYx]{Curse of Recoil}</p>\n<p>You take a –2 status penalty to your ranged attacks and you're off-guard.</p>"
+    },
+    "Spell Effect: Curse of Recoil (Failure)": {
+      "name": "Spell Effect: Curse of Recoil (Failure)",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.9uSBfK8EUVBrcNYx]{Curse of Recoil}</p>\n<p>You take a –1 status penalty to your ranged attack.</p>"
     },
     "Spell Effect: Cutting Eye": {
       "name": "Spell Effect: Cutting Eye",
@@ -544,33 +560,21 @@
       "name": "Efecto de conjuro: Vista profunda",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.spells-srd.Item.Irlpzl1YBSJ6xF5e]{Deep Sight} </p>\n <p> Obtienes visión en la oscuridad. </p>"
     },
-    "Spell Effect: Demon Form (Abrikandilu)": {
-      "name": "Spell Effect: Demon Form (Abrikandilu)",
-      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.dKbv80rlAWVpz83C]{Demon Form}</p>\n<p>You transform into a Medium demon battle form. While in this form, you gain the demon and fiend traits. You have hands in this battle form and can use manipulate actions. You gain the following statistics and abilities regardless of the form that you choose:</p>\n<ul>\n<li>AC = 20 + your level. Ignore your armor check's penalty and Speed reduction.</li>\n<li>30 temporary Hit Points, weakness 5 to cold iron, and weakness 5 to holy.</li>\n<li>Darkvision.</li>\n<li>One or more attacks specific to the battle form you use. You're trained with them. Your attack modifier is +22, and you use the listed damage. These attacks are Strength based (for the purpose of the enfeebled condition, for example). If your attack modifier is higher for the given unarmed attack or weapon, you can use it instead.</li>\n<li>Athletics modifier of +23, unless your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of demon you choose:</p>\n<ul>\n<li>\n<p><strong>Abrikandilu</strong> Speed 25 feet;</p>\n<ul>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> jaws (magical, unholy), <strong>Damage</strong> 2d6+12 piercing, and clumsy 1 for 1 minute on a critical hit;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> claw (agile, magic, unholy), <strong>Damage</strong> 2d6+12 slashing;</li>\n<li><strong>Ranged</strong><span class=\"action-glyph\">1</span> hurled debris (range increment 20 feet, unholy), Damage 2d6+6 bludgeoning.</li>\n</ul>\n</li>\n</ul>"
+    "Spell Effect: Demon Form": {
+      "name": "Spell Effect: Demon Form",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.dKbv80rlAWVpz83C]{Demon Form}</p>\n<p>You transform into a Medium demon battle form. While in this form, you gain the demon and fiend traits. You have hands in this battle form and can use manipulate actions. You gain the following statistics and abilities regardless of the form that you choose:</p>\n<ul>\n<li>AC = 20 + your level. Ignore your armor check's penalty and Speed reduction.</li>\n<li>30 temporary Hit Points, weakness 5 to cold iron, and weakness 5 to holy.</li>\n<li>Darkvision.</li>\n<li>One or more attacks specific to the battle form you use. You're trained with them. Your attack modifier is +22, and you use the listed damage. These attacks are Strength based (for the purpose of the enfeebled condition, for example). If your attack modifier is higher for the given unarmed attack or weapon, you can use it instead.</li>\n<li>Athletics modifier of +23, unless your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of demon you choose:</p>\n<ul>\n<li>\n<p><strong>Abrikandilu</strong> Speed 25 feet;</p>\n<ul>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> jaws (magical, unholy), <strong>Damage</strong> 2d6+12 piercing, and clumsy 1 for 1 minute on a critical hit;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> claw (agile, magic, unholy), <strong>Damage</strong> 2d6+12 slashing;</li>\n<li><strong>Ranged</strong><span class=\"action-glyph\">1</span> hurled debris (range increment 20 feet, unholy), Damage 2d6+6 bludgeoning.</li>\n</ul>\n</li>\n<li>\n<p><strong>Brimorak</strong> Speed 30 feet;</p>\n<ul>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> flaming sword (magical, unholy), <strong>Damage</strong> 2d8+10 slashing plus 1d6 fire;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> hoof (agile, unholy), <strong>Damage</strong> 2d4+10 bludgeoning plus 1d6 fire.</li>\n</ul>\n</li>\n<li>\n<p><strong>Kithangian</strong> Speed 30 feet;</p>\n<ul>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> pincer (magical, reach 10 feet, unholy), <strong>Damage</strong> 1d12+12 slashing, and you can spend an action after a hit to attempt to Grab the target</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> stinger (agile, magical, reach 10 feet, unholy), <strong>Damage</strong> 1d8+12 piercing; all melee Strikes deal 2d6 additional precision damage to animals.</li>\n</ul>\n</li>\n<li>\n<p><strong>Vloriak</strong> Speed 25 feet; resistance 10 to acid;</p>\n<ul>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> claw (unholy), Damage 2d6+12 piercing plus 1d6 spirit;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> tongue (agile, reach 10 feet, unholy), Damage 1d6+12 acid plus 1d6 spirit.</li>\n</ul>\n</li>\n</ul>"
     },
     "Spell Effect: Demon Form (Babau)": {
       "name": "Efecto de conjuro: Forma de demonio (Babau)",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.spells-srd.Item.dKbv80rlAWVpz83C]{Demon Form} </p>\n <p> Te corrompes con el pecado del Abismo, transformándote en una forma de batalla de demonio Mediano. Cuando lances este hechizo, elige babau, hezrou, nabasu o vrock. Si eliges hezrou, la forma de batalla es Grande y debes tener suficiente espacio para expandirte o el hechizo se perderá. Mientras estás en esta forma, obtienes los rasgos de demonio y demonio. Tienes manos en esta forma de batalla y puedes usar acciones de manipulación. Puedes descartar eldeletrear. </p>\n <p> Obtienes las siguientes estadísticas y habilidades independientemente de la forma que elijas: </p>\n <ul>\n <li> AC = 20 + tu nivel. Ignora la penalización de tu prueba de armadura y la reducción de velocidad. </li>\n <li> 30 puntos de vida temporales, debilidad 5 al hierro frío y debilidad 5 al sagrado. </li>\n <li> Visión en la oscuridad. </li>\n <li> Uno o más ataques específicos de la forma de batalla que utilizas. Estás entrenado con ellos. tu ataqueEl modificador es +22 y usas el daño indicado. Estos ataques se basan en la Fuerza (para el propósito de la condición de debilitamiento, por ejemplo). Si tu modificador de ataque es mayor para el ataque o arma desarmado dado, puedes usarlo en su lugar. </li>\n <li> Modificador de atletismo de +23, a menos que tu propio modificador sea mayor. </li>\n </ul>\n <p> También obtienes habilidades específicas según el tipo de demonio que elijas: </p>\n <ul>\n <li> <strong>Babau </strong> Velocidad 25 pies;\n <ul>\n <li> <strong> Cuerpo a cuerpo </strong> <span class=\"action-glyph\"> 1 </span> lanza larga (alcanza 10 pies), <strong> Daño </strong> 2d8+10 perforante más 1d6 de espíritu; </li>\n <li> <strong> Cuerpo a cuerpo </strong> <span class=\"action-glyph\"> 1 </span> mandíbulas, <strong> Daño </strong> 2d10 perforantes más 1d6 de espíritu; </li>\n <li> <strong> Cuerpo a cuerpo </strong> <span class=\"action-glyph\"> 1 </span> garra (ágil),<strong> Daño </strong> 2d4 corte más 1d6 espíritu; </li>\n <li> todos los Golpes infligen 2d6 daños de precisión adicionales a @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} criaturas. </li>\n </ul>\n </li>\n </ul>"
     },
-    "Spell Effect: Demon Form (Brimorak)": {
-      "name": "Spell Effect: Demon Form (Brimorak)",
-      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.dKbv80rlAWVpz83C]{Demon Form}</p>\n<p>You transform into a Medium demon battle form. While in this form, you gain the demon and fiend traits. You have hands in this battle form and can use manipulate actions. You gain the following statistics and abilities regardless of the form that you choose:</p>\n<ul>\n<li>AC = 20 + your level. Ignore your armor check's penalty and Speed reduction.</li>\n<li>30 temporary Hit Points, weakness 5 to cold iron, and weakness 5 to holy.</li>\n<li>Darkvision.</li>\n<li>One or more attacks specific to the battle form you use. You're trained with them. Your attack modifier is +22, and you use the listed damage. These attacks are Strength based (for the purpose of the enfeebled condition, for example). If your attack modifier is higher for the given unarmed attack or weapon, you can use it instead.</li>\n<li>Athletics modifier of +23, unless your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of demon you choose:</p>\n<ul>\n<li>\n<p><strong>Brimorak</strong> Speed 30 feet;</p>\n<ul>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> flaming sword (magical, unholy), <strong>Damage</strong> 2d8+10 slashing plus 1d6 fire;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> hoof (agile, unholy), <strong>Damage</strong> 2d4+10 bludgeoning plus 1d6 fire.</li>\n</ul>\n</li>\n</ul>"
-    },
     "Spell Effect: Demon Form (Hezrou)": {
       "name": "Efecto de conjuro: Forma de demonio (Hezrou)",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.spells-srd.Item.dKbv80rlAWVpz83C]{Demon Form} </p>\n <p> Te corrompes con el pecado del Abismo, transformándote en una forma de batalla de demonio Mediano. Cuando lances este hechizo, elige babau, hezrou, nabasu o vrock. Si eliges hezrou, la forma de batalla es Grande y debes tener suficiente espacio para expandirte o el hechizo se perderá. Mientras estás en esta forma, obtienes los rasgos de demonio y demonio. Tienes manos en esta forma de batalla y puedes usar acciones de manipulación. Puedes descartar eldeletrear. </p>\n <p> Obtienes las siguientes estadísticas y habilidades independientemente de la forma que elijas: </p>\n <ul>\n <li> AC = 20 + tu nivel. Ignora la penalización de tu prueba de armadura y la reducción de velocidad. </li>\n <li> 30 puntos de vida temporales, debilidad 5 al hierro frío y debilidad 5 al sagrado. </li>\n <li> Visión en la oscuridad. </li>\n <li> Uno o más ataques específicos de la forma de batalla que utilizas. Estás entrenado con ellos. tu ataqueEl modificador es +22 y usas el daño indicado. Estos ataques se basan en la Fuerza (para el propósito de la condición de debilitamiento, por ejemplo). Si tu modificador de ataque es mayor para el ataque o arma desarmado dado, puedes usarlo en su lugar. </li>\n <li> Modificador de atletismo de +23, a menos que tu propio modificador sea mayor. </li>\n </ul>\n <p> También obtienes habilidades específicas según el tipo de demonio que elijas: </p>\n <ul>\n <li> <strong>Babau </strong> Velocidad 25 pies; <strong> Cuerpo a cuerpo </strong> <span class=\"action-glyph\"> 1 </span> lanza larga (alcanza 10 pies), <strong> Daño </strong> 2d8+10 perforante más 1d6 de espíritu; <strong> Cuerpo a cuerpo </strong> <span class=\"action-glyph\"> 1 </span> mandíbulas, <strong> Daño </strong> 2d10 perforantes más 1d6 de espíritu; <strong> Cuerpo a cuerpo </strong> <span class=\"action-glyph\"> 1 </span> garra (ágil), <strong> Daño </strong> 2d4 de corte más 1d6 de espíritu; todos los ataques infligen 2d6daño de precisión adicional a @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} criaturas. </li>\n <li> <strong> Hezrou </strong> Velocidad 30 pies, nadar 30 pies; <strong> Cuerpo a cuerpo </strong> <span class=\"action-glyph\"> 1 </span> mandíbulas (alcanzar 10 pies), <strong> Daño </strong> 2d12+10 perforantes más 1d6 de espíritu, y puedes gastar una acción después de un golpe para agarrar al objetivo; <strong> Cuerpo a cuerpo </strong> <span class=\"action-glyph\"> 1 </span> garra (ágil, alcanza 10 pies), <strong> Daño</strong> 2d8 de corte más 1d6 de espíritu. </li>\n <li> <strong> Nabasu </strong> Velocidad 25 pies, vuelo 40 pies; <strong> Cuerpo a cuerpo </strong> <span class=\"action-glyph\"> 1 </span> mandíbulas, <strong> Daño </strong> 2d10+10 perforantes más 1d6 de espíritu; <strong> Cuerpo a cuerpo </strong> <span class=\"action-glyph\"> 1 </span> garra (ágil), <strong> Daño </strong> 2d6 de corte más 1d6 de espíritu. </li>\n <li> <strong> Vrock </strong> Velocidad 25 pies, vuelo 35pies; resistencia 10 a la electricidad; <strong> Cuerpo a cuerpo </strong> <span class=\"action-glyph\"> 1 </span> pico, <strong> Daño </strong> 2d8+10 perforante más 1d6 de espíritu; <strong> Cuerpo a cuerpo </strong> <span class=\"action-glyph\"> 1 </span> garra (ágil), <strong> Daño </strong> 2d6 cortante más 1d6 de espíritu; <strong> Cuerpo a cuerpo </strong> <span class=\"action-glyph\"> 1 </span> garra (ágil), <strong> Daño </strong> 2d6 de corte más 1d6 de espíritu. </li>\n </ul>"
     },
-    "Spell Effect: Demon Form (Kithangian)": {
-      "name": "Spell Effect: Demon Form (Kithangian)",
-      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.dKbv80rlAWVpz83C]{Demon Form}</p>\n<p>You transform into a Medium demon battle form. While in this form, you gain the demon and fiend traits. You have hands in this battle form and can use manipulate actions. You gain the following statistics and abilities regardless of the form that you choose:</p>\n<ul>\n<li>AC = 20 + your level. Ignore your armor check's penalty and Speed reduction.</li>\n<li>30 temporary Hit Points, weakness 5 to cold iron, and weakness 5 to holy.</li>\n<li>Darkvision.</li>\n<li>One or more attacks specific to the battle form you use. You're trained with them. Your attack modifier is +22, and you use the listed damage. These attacks are Strength based (for the purpose of the enfeebled condition, for example). If your attack modifier is higher for the given unarmed attack or weapon, you can use it instead.</li>\n<li>Athletics modifier of +23, unless your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of demon you choose:</p>\n<ul>\n<li>\n<p><strong>Kithangian</strong> Speed 30 feet;</p>\n<ul>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> pincer (magical, reach 10 feet, unholy), <strong>Damage</strong> 1d12+12 slashing, and you can spend an action after a hit to attempt to Grab the target</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> stinger (agile, magical, reach 10 feet, unholy), <strong>Damage</strong> 1d8+12 piercing; all melee Strikes deal 2d6 additional precision damage to animals.</li>\n</ul>\n</li>\n</ul>"
-    },
     "Spell Effect: Demon Form (Nabasu)": {
       "name": "Efecto de conjuro: Forma de demonio (Nabasu)",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.spells-srd.Item.dKbv80rlAWVpz83C]{Demon Form} </p>\n <p> Te corrompes con el pecado del Abismo, transformándote en una forma de batalla de demonio Mediano. Cuando lances este hechizo, elige babau, hezrou, nabasu o vrock. Si eliges hezrou, la forma de batalla es Grande y debes tener suficiente espacio para expandirte o el hechizo se perderá. Mientras estás en esta forma, obtienes los rasgos de demonio y demonio. Tienes manos en esta forma de batalla y puedes usar acciones de manipulación. Puedes descartar eldeletrear. </p>\n <p> Obtienes las siguientes estadísticas y habilidades independientemente de la forma que elijas: </p>\n <ul>\n <li> AC = 20 + tu nivel. Ignora la penalización de tu prueba de armadura y la reducción de velocidad. </li>\n <li> 30 puntos de vida temporales, debilidad 5 al hierro frío y debilidad 5 al sagrado. </li>\n <li> Visión en la oscuridad. </li>\n <li> Uno o más ataques específicos de la forma de batalla que utilizas. Estás entrenado con ellos. tu ataqueEl modificador es +22 y usas el daño indicado. Estos ataques se basan en la Fuerza (para el propósito de la condición de debilitamiento, por ejemplo). Si tu modificador de ataque es mayor para el ataque o arma desarmado dado, puedes usarlo en su lugar. </li>\n <li> Modificador de atletismo de +23, a menos que tu propio modificador sea mayor. </li>\n </ul>\n <p> También obtienes habilidades específicas según el tipo de demonio que elijas: </p>\n <ul>\n <li> <strong>Nabasu </strong> Velocidad 25 pies, vuelo 40 pies;\n <ul>\n <li> <strong> Cuerpo a cuerpo </strong> <span class=\"action-glyph\"> 1 </span> mandíbulas, <strong> Daño </strong> 2d10+10 perforantes más 1d6 de espíritu; </li>\n <li> <strong> Cuerpo a cuerpo </strong> <span class=\"action-glyph\"> 1 </span> garra (ágil), <strong> Daño </strong> 2d6 de corte más 1d6 de espíritu. </li>\n </ul>\n </li>\n </ul>"
-    },
-    "Spell Effect: Demon Form (Vloriak)": {
-      "name": "Spell Effect: Demon Form (Vloriak)",
-      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.dKbv80rlAWVpz83C]{Demon Form}</p>\n<p>You transform into a Medium demon battle form. While in this form, you gain the demon and fiend traits. You have hands in this battle form and can use manipulate actions. You gain the following statistics and abilities regardless of the form that you choose:</p>\n<ul>\n<li>AC = 20 + your level. Ignore your armor check's penalty and Speed reduction.</li>\n<li>30 temporary Hit Points, weakness 5 to cold iron, and weakness 5 to holy.</li>\n<li>Darkvision.</li>\n<li>One or more attacks specific to the battle form you use. You're trained with them. Your attack modifier is +22, and you use the listed damage. These attacks are Strength based (for the purpose of the enfeebled condition, for example). If your attack modifier is higher for the given unarmed attack or weapon, you can use it instead.</li>\n<li>Athletics modifier of +23, unless your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of demon you choose:</p>\n<ul>\n<li>\n<p><strong>Vloriak</strong> Speed 25 feet; resistance 10 to acid;</p>\n<ul>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> claw (unholy), Damage 2d6+12 piercing plus 1d6 spirit;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> tongue (agile, reach 10 feet, unholy), Damage 1d6+12 acid plus 1d6 spirit.</li>\n</ul>\n</li>\n</ul>"
     },
     "Spell Effect: Demon Form (Vrock)": {
       "name": "Efecto de conjuro: Forma de demonio (Vrock)",
@@ -914,6 +918,10 @@
       "name": "Efecto de fonjuro: Fantasía",
       "description": "<p>Concedido por @UUID[Compendium.pf2e.spells-srd.Item.0zU8CPejjQFnhZFI]{Fantasía}</p>\n<p>Obtienes un bonificador +2 por circunstancia a tu prueba de Engaño.</p>"
     },
+    "Spell Effect: Filter Air": {
+      "name": "Spell Effect: Filter Air",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.GgrrcKQgJH2Eykq1]{Filter Air}</p>\n<p>You get the outcome one degree of success higher on your saving throws against inhaled poisons and diseases.</p>"
+    },
     "Spell Effect: Fire Shield": {
       "name": "Efecto de conjuro: Escudo de fuego",
       "description": "<p>Concedido por @UUID[Compendium.pf2e.spells-srd.Item.YrzBLPLd3r9m6t1p]{Escudo de fuego}</p>\n<p>El objetivo obtiene resistencia al daño de frío</p>"
@@ -1083,6 +1091,10 @@
       "name": "Efecto de conjuro: Bendición del sanador",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.spells-srd.Item.rhJyqB9g3ziImQgM]{Bendición del sanador} </p>\n<p>Cuando recuperas Puntos de Golpe gracias a un conjuro curativo de vitalidad, recupera 2 Puntos de Golpe adicionales.</p>"
     },
+    "Spell Effect: Helpful Reload": {
+      "name": "Spell Effect: Helpful Reload",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.0OFFXFdnMmFVlt8W]{Helpful Reload}</p>\n<p>You gain a +1 status bonus to your next Strike.</p>"
+    },
     "Spell Effect: Heroism": {
       "name": "Efecto de conjuro: Heroísmo",
       "description": "<p>Concedido por @UUID[Compendium.pf2e.spells-srd.Item.KqvqNAfGIE5a9wSv]{Heroísmo}</p>\n<p>Liberas el heroísmo interior del objetivo, obtienes un bonificador +1 por estatus a las tiradas de ataque, pruebas de Percepción,\ntiradas de salvación y pruebas de habilidad.</p>"
@@ -1102,6 +1114,10 @@
     "Spell Effect: Honeyed Words": {
       "name": "Spell Effect: Honeyed Words",
       "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.JyxTmqjYYn63V5LY]{Honeyed Words}</p>\n<p>You gain a +4 status bonus to Deception checks to Lie, and you add your level even if untrained.</p>"
+    },
+    "Spell Effect: Humanoid Form": {
+      "name": "Spell Effect: Humanoid Form",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.2qGqa33E4GPUCbMV]{Humanoid Form}</p>\n<p>You transform your appearance to that of a Small or Medium humanoid. You gain the humanoid trait. If this transformation reduces your size, it reduces your reach accordingly (typically to 5 feet). You gain a +4 status bonus to Deception checks to pass as a generic member of the chosen ancestry, and you add your level even if you're untrained, but you can't make yourself look like a specific person.</p>\n<p><strong>Heightened (3rd)</strong> You gain darkvision or low-light vision if the form you assume has that ability.</p>\n<p><strong>Heightened (5th)</strong> You can take on the appearance of a Large humanoid. If this increases your size, you gain the effects of the enlarge spell.</p>"
     },
     "Spell Effect: Hymn of Healing": {
       "name": "Efecto de conjuro: Himno de curación",
@@ -1538,6 +1554,14 @@
           "label": "Vista de órgano"
         }
       }
+    },
+    "Spell Effect: Outcast's Curse (Failure)": {
+      "name": "Spell Effect: Outcast's Curse (Failure)",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.KSAEhNfZyXMO7Z7V]{Outcast's Curse}</p>\n<p>You must roll twice and use the worse result whenever attempting a Deception, Diplomacy, Intimidation, or Performance check.</p>"
+    },
+    "Spell Effect: Outcast's Curse (Success)": {
+      "name": "Spell Effect: Outcast's Curse (Success)",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.KSAEhNfZyXMO7Z7V]{Outcast's Curse}</p>\n<p>You must roll twice and use the worse result whenever attempting a Deception, Diplomacy, Intimidation, or Performance check.</p>"
     },
     "Spell Effect: Overwhelming Perfume": {
       "name": "Spell Effect: Overwhelming Perfume",
@@ -2237,6 +2261,14 @@
     "Spell Effect: Wind Jump": {
       "name": "Efecto del hechizo: Salto de viento",
       "description": "<p> Concedido por @UUID[Compendium.pf2e.spells-srd.Item.kRxlkPPe6Gr7Du59]{Wind Jump} </p>\n <p> Obtienes una Velocidad de vuelo igual a tu Velocidad. Debes terminar tu turno en tierra firme o te caerás. </p>"
+    },
+    "Spell Effect: Wings of the Valkyrie": {
+      "name": "Spell Effect: Wings of the Valkyrie",
+      "description": "<p>Granted by Wings of the Valkyrie</p>\n<p>You gain a fly Speed equal to your Speed.</p>"
+    },
+    "Spell Effect: Wings of the Valkyrie (Heightened)": {
+      "name": "Spell Effect: Wings of the Valkyrie (Heightened)",
+      "description": "<p>Granted by Wings of the Valkyrie</p>\n<p>You gain a fly Speed equal to your Speed.</p>"
     },
     "Spell Effect: Wish-Twisted Form (Failure)": {
       "name": "Efecto del hechizo: forma retorcida por el deseo (fracaso)",
