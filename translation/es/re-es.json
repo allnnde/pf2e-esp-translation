@@ -77,7 +77,7 @@
       "DropWeapon": "La criatura deja caer el arma empuñada.",
       "IgnoreConcealed": "El ataque ignora el estado @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto}.",
       "IgnoreCover": "El objetivo no se beneficia de una cobertura menor y reduce la bonificación de CA de la cobertura estándar en 2 contra el ataque.",
-      "IncreasedCriticalChance": "Si el ataque impacta y la criatura obtiene un 19 en la tirada d20, el ataque es un golpe crítico. Esto no tiene ningún efecto si el 19 fuera un fracaso.",
+      "IncreasedCriticalChance": "Si el ataque impacta y la criatura obtiene un 19 en la tirada d20, el ataque es un golpe crítico. Esto no tiene ningún efecto si el 19 fuera un fallo.",
       "IncreasedReach5": "Alcance aumentado en 5 pies",
       "InterruptAction": "Con un impacto, la acción del objetivo se interrumpe.",
       "KnockProne": "Con un impacto, el objetivo queda derribado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} .",
@@ -1027,7 +1027,7 @@
       },
       "Dramofir": {
         "BittersweetDreamsCriticalFailure": "Fallo crítico",
-        "BittersweetDreamsSuccessFailure": "Éxito o fracaso"
+        "BittersweetDreamsSuccessFailure": "Éxito o fallo"
       },
       "DuskwalkerHuntPrey": {
         "AC": "Presa designada ataca al Caminante del Anochecer",
@@ -2143,7 +2143,7 @@
           "SuccessBetterAdditionalInformation": "Cuando tienes éxito en una prueba para Recuperar conocimiento, obtienes información o contexto adicional. Cuando tienes un éxito crítico en una prueba de Recuperar conocimiento, a discreción del DJ puedes obtener incluso más información o contexto adicional de lo normal."
         },
         "Squeeze": {
-          "CriticalFailureSuccessBetter": "Cuando obtienes un fracaso crítico en una prueba de Apretar, obtienes un fracaso, y cuando obtienes un éxito, obtienes un éxito crítico."
+          "CriticalFailureSuccessBetter": "Cuando obtienes un fallo crítico en una prueba de Escurrirse, obtienes un fallo, y cuando obtienes un éxito, obtienes un éxito crítico."
         },
         "Survival": {
           "SenseDirection": {
@@ -3564,7 +3564,7 @@
           "Note": "Trate sus tiradas de salvación contra efectos que le harían quedarse dormido como un grado de éxito mejor."
         },
         "Woodcraft": {
-          "Note": "Cuando estás en un entorno de bosque o jungla, si obtienes un fracaso crítico en una prueba de habilidad de Supervivencia para Sentir dirección, Subsistir o Cubrir pistas, obtienes un fracaso, y si obtienes un éxito, obtienes un éxito crítico."
+          "Note": "Cuando estás en un entorno de bosque o jungla, si obtienes un fallo crítico en una prueba de habilidad de Supervivencia para Sentir dirección, Subsistir o Cubrir pistas, obtienes un fallo, y si obtienes un éxito, obtienes un éxito crítico."
         }
       },
       "EnvenomCompanion": {
@@ -4366,7 +4366,7 @@
           "Note": "Si obtienes un éxito en Squeeze, obtendrás un éxito crítico."
         },
         "RecklessAbandon": {
-          "Note": "Si obtienes un fracaso o un fallo crítico en una tirada de salvación contra un efecto dañino, obtendrás un éxito."
+          "Note": "Si sufres un fallo o un fallo crítico en una tirada de salvación contra un efecto dañino, en su lugar obtendrás un éxito."
         },
         "ScaldingSpit": {
           "BoilingSpit": "Escupitajo hirviendo"
@@ -4790,7 +4790,7 @@
           "DescriptionAlteration": "You channel your draconic exemplar's power into a gout of energy that manifests as a @Template[type:line|distance:60] or a @Template[type:cone|distance:30], dealing @Damage[ceil(@actor.level/2)d8[@actor.flags.pf2e.draconicExemplar.damageType]|traits:area-damage] damage. Each creature in the area must attempt a basic saving throw against the higher of your class DC or spell DC. You can't use this ability again for 1 hour."
         },
         "DragonsPresence": {
-          "Note": "Cuando obtienes un éxito en una tirada de salvación contra un efecto de miedo, obtienes un éxito crítico. Cuando obtienes un fracaso contra un efecto de miedo, en su lugar obtienes un fracaso crítico."
+          "Note": "Cuando obtienes un éxito en una tirada de salvación contra un efecto de miedo, obtienes un éxito crítico. Cuando sufres un fallo contra un efecto de miedo, en su lugar obtienes un fallo crítico."
         }
       },
       "Label": {
@@ -5374,7 +5374,7 @@
           "EntropicWheel": "Obtienes dos motas en lugar de una cuando lanzas el hechizo y cada vez que la rueda gana otra mota.",
           "Figment": "Cuando amplificas el hechizo, puedes crear una ilusión que distraiga particularmente como parte de sus efectos normales. Elige una casilla desocupada dentro del alcance del hechizo. La ilusión en ese cuadrado proporciona flanqueo para un único ataque cuerpo a cuerpo realizado antes del comienzo de tu siguiente turno. Si sostienes el hechizo, los detalles de la ilusión cambian y cambian para mantener a tus enemigos intranquilos; La duración de la ilusión de flanqueo se extiende hasta el comienzo de tu siguiente turno y puedes moverla a cualquier lugar desocupado.casilla en el alcance del hechizo. La ilusión de flanqueo no puede proporcionar su beneficio contra ninguna criatura que no haya creído en la invención.",
           "ForbiddenThought": "Tu impulso telepático es particularmente impactante para quienes lo resisten. Si el objetivo falla su salvación, también es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1} .",
-          "ForeseeThePath": "El hechizo tiene el mismo resultado en caso de fracaso que en caso de éxito (pero aún no tiene efecto en caso de fallo crítico). Cada vez que sostienes el hechizo, puedes elegir un aliado adicional como objetivo, otorgándole el mismo beneficio que el aliado objetivo inicial.",
+          "ForeseeThePath": "El conjuro tiene el mismo resultado en caso de fallo que en caso de éxito (pero aún no tiene efecto en caso de fallo crítico). Cada vez que mantienes el conjuro, puedes elegir un aliado adicional como objetivo, otorgándole el mismo beneficio que el aliado objetivo inicial.",
           "Frostbite": {
             "Base": "Drenas energía térmica a distancia y usas lo que saqueas para reponerte. El orbe inflige 3d4 de daño por frío. Obtienes puntos de vida temporales equivalentes a la mitad del daño que recibe el objetivo (después de aplicar resistencias y similares). Pierdes los puntos de vida temporales restantes después de 1 minuto.",
             "Heightened": "El daño inicial aumenta en 2d4 en lugar de 1d4. La debilidad en un fallo crítico aumenta en 1."
@@ -5388,8 +5388,8 @@
             "Heightened": "El daño de precisión adicional aumenta en 1d4+1."
           },
           "Guidance": {
-            "Base": "Puedes proyectar un destello de conocimiento a tu aliado justo a tiempo para salvarlo del fracaso. La guía mejorada no hace que una criatura se vuelva temporalmente inmune a la guía, y una criatura puede ser objetivo de la guía mejorada incluso si es temporalmente inmune a la guía.",
-            "BaseTwo": "Puedes lanzar un hechizo de guía ampliado como una reacción que se activa cuando tu aliado falla o falla críticamente una tirada de ataque, una prueba de Percepción, una tirada de salvación o una prueba de habilidad, y la bonificación de la guía cambiaría el fracaso a un éxito o el fracaso crítico a un fallo normal. La bonificación por orientación se aplica retroactivamente a su cheque.",
+            "Base": "Puedes proyectar un destello de conocimiento a tu aliado justo a tiempo para salvarlo del fallo. La guía mejorada no hace que una criatura se vuelva temporalmente inmune a la guía, y una criatura puede ser objetivo de la guía mejorada incluso si es temporalmente inmune a la guía.",
+            "BaseTwo": "Puedes lanzar un conjuro de guía mejorado como una reacción que se activa cuando tu aliado falla o falla críticamente una tirada de ataque, una prueba de Percepción, una tirada de salvación o una prueba de habilidad, y la bonificación de la guía cambiaría el fallo a un éxito o el fallo crítico a un fallo normal. El bonificador por guía se aplica retroactivamente a la prueba.",
             "Heightened": "La bonificación del conjuro aumenta a +2."
           },
           "HologramCage": "Las paredes de fuerza hacen que la barrera de la jaula sea física además de visual. Cada sección de 10 pies por 10 pies de la pared de la jaula tiene CA 10, dureza igual al doble del rango del hechizo y HP igual al cuadriplicado del rango del hechizo. El hechizo se interrumpe si cualquiera de sus paredes atraviesa una criatura cuando lo lanzas.",
@@ -6635,7 +6635,7 @@
         }
       },
       "VitalityManipulationStance": {
-        "Note": "Cuando usas Puño aturdidor, en lugar de salvar contra el aturdimiento, puedes elegir que el objetivo realice una salvación @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)] contra tu CD de clase con los siguientes resultados. Debes elegir esto antes de que el objetivo haga su tirada de salvación. </p> <hr> <p> <strong> Éxito crítico </strong> El objetivo no se ve afectado. </p> <p> <strong> Éxito </strong> Los músculos del objetivo se debilitan temporalmente. Durante 1 asalto, el objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2}, y cada vez que trata de llevar a cabo una acción con el rasgo manipulación, la acción se interrumpe a menos que tenga éxito en una prueba plana con una CD igual a 5 + su valor de debilitado. </p> <p> <strong> Fallo </strong> Como éxito, pero la duración es de 1 minuto. </p> <p> <strong> Fallo crítico </strong> Como éxito, pero la duración es de 1 minuto, la prueba plana es CD 11 y el objetivo sufre un penalizador -10 pies (3 m) por estatus a todas las Velocidades mientras dura. </p>",
+        "Note": "Cuando usas Puño aturdidor, en lugar de salvar contra el aturdimiento, puedes elegir que el objetivo haga una salvación @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)] contra tu CD de clase con los siguientes resultados. Debes elegir antes de que el objetivo haga su tirada de salvación. </p> <hr> <p> <strong> Éxito crítico </strong> El objetivo no se ve afectado. </p> <p> <strong> Éxito </strong> Los músculos del objetivo se debilitan temporalmente. Durante 1 asalto, el objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2}, y cada vez que trata de llevar a cabo una acción con el rasgo manipulación, la acción se interrumpe a menos que tenga éxito en una prueba plana con una CD igual a 5 + su valor de debilitado. </p> <p> <strong> Fallo </strong> Como éxito, pero la duración es de 1 minuto. </p> <p> <strong> Fallo crítico </strong> Como éxito, pero la duración es de 1 minuto, la prueba plana es CD 11 y el objetivo sufre un penalizador -10 pies (3 m) por estatus a todas las Velocidades mientras dura. </p>",
         "StrikeLabel": "Explosión de vitalidad"
       },
       "WanderingChef": {
