@@ -1,3 +1,12 @@
+## [6.24.3](https://github.com/allnnde/pf2e-esp-translation/compare/v6.24.2...v6.24.3) (2025-08-16)
+
+
+### Bug Fixes
+
+* New translations pathfinder-bestiary-2.json from Crowdin ([c709a21](https://github.com/allnnde/pf2e-esp-translation/commit/c709a2191cb732d41b9a493490a50ec384f95c92))
+
+
+
 ## [6.24.2](https://github.com/allnnde/pf2e-esp-translation/compare/v6.24.1...v6.24.2) (2025-08-16)
 
 
@@ -220,24 +229,6 @@
 * New translations strength-of-thousands-bestiary.json from Crowdin ([8b15c74](https://github.com/allnnde/pf2e-esp-translation/commit/8b15c747df93ab65e0e842f95227a4f0bc33c019))
 * New translations vehicles.json from Crowdin ([fddb731](https://github.com/allnnde/pf2e-esp-translation/commit/fddb7312488b60b0ce765329f83de5f8dc9430b4))
 * New translations war-of-immortals-bestiary.json from Crowdin ([b6f713d](https://github.com/allnnde/pf2e-esp-translation/commit/b6f713dae39e7f08c76a3d06f22d56ee2300bff8))
-
-
-
-# [6.23.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.22.1...v6.23.0) (2025-08-03)
-
-
-### Bug Fixes
-
-* New translations dictionary.json from Crowdin ([4bb1a5b](https://github.com/allnnde/pf2e-esp-translation/commit/4bb1a5b8b0d54c17820b8268fee64ba2ac6cfb3d))
-* New translations heritages.json from Crowdin ([2d8d0e2](https://github.com/allnnde/pf2e-esp-translation/commit/2d8d0e21bdf14b0847900fcc38ac981ef2f486dc))
-* New translations heritages.json from Crowdin ([8838ccd](https://github.com/allnnde/pf2e-esp-translation/commit/8838ccdfe14c47dbaa0f51f5a804d7426c9ccdef))
-* New translations pathfinder-bestiary.json from Crowdin ([7431511](https://github.com/allnnde/pf2e-esp-translation/commit/74315115a1810b351e87d8a0351c02da6c6a1d77))
-* New translations pathfinder-bestiary.json from Crowdin ([497b657](https://github.com/allnnde/pf2e-esp-translation/commit/497b6570d5b763bb5d90eab39e34e1bd823b10b6))
-
-
-### Features
-
-* automatic json extract to traslate ([144b073](https://github.com/allnnde/pf2e-esp-translation/commit/144b073e80d28c96584ae1955f8d725586037420))
 
 
 
