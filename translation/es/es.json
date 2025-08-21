@@ -1313,6 +1313,7 @@
           "stupefied": "anonadado",
           "swarm-attacks": "ataques de plaga",
           "swarm-mind": "Mente de plaga",
+          "time": "time",
           "trip": "derribado",
           "unarmed-attacks": "ataques sin armas",
           "unconscious": "inconsciente",
@@ -1830,6 +1831,7 @@
           "heavy-barding": "Barda pesada",
           "light-barding": "Barda ligera"
         },
+        "GradeOption": "{grade} (+{bonus}; resilient +{resilient})",
         "Rune": {
           "Resilient": {
             "Label": "Runa resistente"
@@ -2372,6 +2374,11 @@
         "ShowTokenIcon": "¿Mostrar icono de ficha?",
         "Unidentified": "¿No identificado?"
       },
+      "Equipment": {
+        "Category": {
+          "upgrade": "Upgrade"
+        }
+      },
       "FIELDS": {
         "category": {
           "label": "Categoría"
@@ -2460,6 +2467,11 @@
         "Hint": "Etiquetas adicionales además de los rasgos para ayudar a clasificar un artículo"
       },
       "Physical": {
+        "FIELDS": {
+          "grade": {
+            "label": "Grade"
+          }
+        },
         "Attach": {
           "CraftingCheck": "Prueba de elaboración",
           "Detach": {
@@ -2496,6 +2508,11 @@
           "NLight": "{light}L",
           "WithLight": "{bulk}, {light}L"
         },
+        "ChangeEquipmentSystem": {
+          "Title": "Change System",
+          "ToPathfinder": "Removing the {removedTrait} trait changes this {type} from Starfinder to Pathfinder. Your grade will be lost. Are you sure? Alternatively, you could swap it to {otherTrait}.",
+          "ToStarfinder": "Adding the {newTrait} trait changes this {type} from Pathfinder to Starfinder. All runes will be lost. Are you sure?"
+        },
         "Destroyed": "Destruido",
         "FromSpell": {
           "CantripDeck5": "Baraja de trucos de {name} (paquete de 5)",
@@ -2511,6 +2528,8 @@
           "Material": "{material} {base}",
           "OneProperty": "{property1} {base}",
           "OnePropertyMaterial": "{property1} {material} {base}",
+          "Grade": "{grade} {base}",
+          "GradeMaterial": "{grade} {material} {base}",
           "Potency": "+{potency} {base}",
           "PotencyFourProperties": "+{potency} {property1} {property2} {property3} {property4} {base}",
           "PotencyFourPropertiesMaterial": "+{potency} {property1} {property2} {property3} {property4} {material} {base}",
@@ -2537,6 +2556,15 @@
           "ThreePropertiesMaterial": "{property1} {property2} {property3} {material} {base}",
           "TwoProperties": "{property1} {property2} {base}",
           "TwoPropertiesMaterial": "{property1} {property2} {material} {base}"
+        },
+        "Grade": {
+          "commercial": "Commercial",
+          "tactical": "Tactical",
+          "advanced": "Advanced",
+          "superior": "Superior",
+          "elite": "Elite",
+          "ultimate": "Ultimate",
+          "paragon": "Paragon"
         },
         "LevelLabel": "Objeto {level}",
         "OtherTag": {
@@ -2748,6 +2776,7 @@
         },
         "FromABP": "La progresión de bonificación automática ha ajustado el {property} de esta arma a {value}.",
         "FromMaterialAndRunes": "Los materiales preciosos y las runas de este objeto han ajustado su {property} a {value}.",
+        "GradeOption": "{grade} (+{tracking}; {dice} damage dice)",
         "HandsLabel": "Manos",
         "MandatoryMelee": "Esta arma tiene una característica que sólo puede usarse con armas cuerpo a cuerpo.",
         "MaterialAndRunes": {
@@ -2783,6 +2812,7 @@
         "ThrownUsage": {
           "Label": "Uso arrojado"
         },
+        "Tracking": "Tracking",
         "Twin": {
           "SecondPlus": "Segundo (o más) ataque gemelo"
         }
@@ -2818,6 +2848,10 @@
         "Hint": "Ponga un punto de ruta mientras usa la medida de arrastre",
         "Label": "Ponga un punto de ruta (Medida de arrastre)"
       },
+      "OpenCompendiumBrowser": {
+        "Hint": "Open or close the compendium browser.",
+        "Label": "Toggle Compendium Browser"
+      },
       "TogglePartySheet": {
         "Hint": "Abre o cierra la hoja del grupo activo o (si es un jugador) asignado.",
         "Label": "Alternar hoja de grupo"
@@ -2827,6 +2861,10 @@
     "KitWorldItem": "Este artículo no se encuentra en un Compendio y no funcionará en otros mundos.",
     "LackCastConsumableCapability": "{actor} no tiene  competencia para usar {conjuro} y ​​no tiene la dote Trucar objeto mágico.",
     "LanguagesAdditional": "Idiomas adicionales",
+    "LegalNotice": {
+      "Title": "Legal Notice",
+      "Text": "This system for Foundry Virtual Tabletop uses trademarks and copyrights owned by Paizo Inc., used under Paizo's Community Use Policy (<a href=\"https://paizo.com/community/communityuse\" target=\"_blank\">paizo.com/communityuse</a>). We are expressly prohibited from charging you to use or access this content. This system for FoundryVTT is not published, endorsed, or specifically approved by Paizo. For more information about Paizo Inc. and Paizo products, visit <a href=\"https://paizo.com/\" target=\"_blank\">paizo.com</a>."
+    },
     "Level1": "Nivel 1",
     "Level10": "Nivel 10",
     "Level11": "Nivel 11",
@@ -2855,10 +2893,6 @@
     "LevelLabel": "Nivel",
     "LevelN": "Nivel {level}",
     "LevelRange": "Niveles {minLevel} - {level}",
-    "LicenseViewer": {
-      "Label": "Aviso Legal",
-      "LandingPageText": "Utilice las pestañas de arriba para leer la información legal."
-    },
     "ListPartsAnd": {
       "end": "{first}, y ​​{second}",
       "middle": "{first}, {second}",
@@ -3488,6 +3522,10 @@
           "Message": "¿Eliminar elemento Homebrew <strong> {element} </strong>?",
           "Title": "¿Eliminar elemento Homebrew?"
         },
+        "ClassTraits": {
+          "Hint": "Traits referring to individual classes",
+          "Name": "Class Traits"
+        },
         "CreatureTraits": {
           "Hint": "Rasgos que se pueden aplicar a cualquier criatura y a algunos tipos de elementos (por ejemplo, Dragón, Gnomo)",
           "Name": "Rasgos de la criatura"
@@ -3945,6 +3983,7 @@
     "Token": {
       "ActorLinkForced": "{type} actors cannot be unlinked.",
       "Appearance": "Apariencia",
+      "Distance": "Distancia: {distance} pies",
       "Flanking": "Flanquear",
       "SecretDisposition": {
         "Label": "Disposición secreta",
@@ -4021,6 +4060,7 @@
     "TraitAmp": "Amp",
     "TraitAmphibious": "Anfibio",
     "TraitAnadi": "Anadi",
+    "TraitAnalog": "Analog",
     "TraitAndroid": "Androide",
     "TraitAngel": "Ángel",
     "TraitAnimal": "Animal",
@@ -4187,6 +4227,7 @@
     "TraitDescriptionAmp": "Un amplificador es una forma de pensamiento especial que modifica las propiedades de tus trucos psi. Cada uno de los trucos psi tiene su propio amplificador, y las dote con el rasgo de amplificador proporcionan diferentes amplificadores que puedes aplicar a los trucos psi en lugar de sus amplificadores normales.",
     "TraitDescriptionAmphibious": "Una criatura anfibia puede respirar agua y aire, incluso fuera de su entorno preferido, normalmente de forma indefinida, pero al menos durante horas. Estas criaturas suelen tener velocidad de nado. Sus golpes contundentes y cortantes desarmados no reciben la penalización habitual de -2 por estar bajo el agua.",
     "TraitDescriptionAnadi": "Un pueblo solitario de Garund que se parece a las arañas y puede asumir formas humanas.",
+    "TraitDescriptionAnalog": "This weapon eschews advanced electronics, computers systems, and electric power sources, but was manufactured and calibrated using advanced technology. This weapon is immune to abilities that target technology. Weapon runes don't function on this weapon unless this weapon also has the archaic trait.",
     "TraitDescriptionAndroid": "Una ascendencia humanoide sintética creada por medios artificiales. Más común en Numeria.",
     "TraitDescriptionAngel": "Esta familia de celestiales es nativa del plano del Nirvana. La mayor parte de los ángeles son neutrales buenos, tienen visión en la oscuridad y debilidad ante el daño maligno.",
     "TraitDescriptionAnimal": "Un animal es una criatura con una Inteligencia relativamente baja. Típicamente no tiene un modificador de característica por Inteligencia superior a -4, no puede hablar idioma alguno y no puede ser entrenado en habilidades basadas en la Inteligencia.",
@@ -4775,6 +4816,17 @@
     "TraitIkon": "Ikon",
     "TraitIllusion": "Ilusión",
     "TraitImplanted": "Implanted",
+    "TraitInstalledInAGrenadeLauncherOrTwoHandedWeaponWithAnUndermoundedGrenadeLauncher": "Installed in a grenade launcher or two-handed weapon with an undermounted grenade launcher",
+    "TraitInstalledInArmor": "Installed in armor",
+    "TraitInstalledInArmorWithTheEnergyShieldingUpgrade": "Installed in armor with the energy shielding upgrade",
+    "TraitInstalledInArmorWithTheExposedTrait": "Installed in armor with the exposed trait",
+    "TraitInstalledInAWeapon": "Installed in a weapon",
+    "TraitInstalledInAWeaponSight": "Installed in a weapon (sight)",
+    "TraitInstalledInAWeaponWithTheKickbackTrait": "Installed in a weapon with the kickback trait",
+    "TraitInstalledInOneHandedWeaponGrip": "Installed in one-handed weapon (grip)",
+    "TraitInstalledInRangedWeaponWithoutALoudener": "Installed in ranged weapon without a loudener",
+    "TraitInstalledInTwoHandedWeapon": "Installed in two-handed weapon",
+    "TraitInstalledOnAWeaponWithoutASilencer": "Installed on a weapon without a silencer",
     "TraitImpulse": "Impulso",
     "TraitIncapacitation": "Incapacitación",
     "TraitIncarnate": "Encarnar",
@@ -5117,6 +5169,9 @@
     "TraitTime": "Tiempo",
     "TraitTitan": "Titán",
     "TraitTouched": "Tocado",
+    "TraitTracking1": "Tracking +1",
+    "TraitTracking2": "Tracking +2",
+    "TraitTracking3": "Tracking +3",
     "TraitTraining": "Capacitación",
     "TraitTranscendence": "Transcendence",
     "TraitTrap": "Trampa",
