@@ -1,3 +1,29 @@
+# [6.27.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.26.0...v6.27.0) (2025-08-23)
+
+
+### Bug Fixes
+
+* New translations classes.json from Crowdin ([30d301a](https://github.com/allnnde/pf2e-esp-translation/commit/30d301abebe6abb11adcf541913571b8a20e73bd))
+* New translations classfeatures.json from Crowdin ([9d5dbe8](https://github.com/allnnde/pf2e-esp-translation/commit/9d5dbe8c493689ba2465fa391b952f5339c8184e))
+* New translations classfeatures.json from Crowdin ([c7bf6da](https://github.com/allnnde/pf2e-esp-translation/commit/c7bf6dab2dbd9eefb4b6b816389aabc4ddb9e7ca))
+* New translations classfeatures.json from Crowdin ([87b9361](https://github.com/allnnde/pf2e-esp-translation/commit/87b9361b0c4156c829692133d90cac44122f933b))
+* New translations en.json from Crowdin ([e10dd91](https://github.com/allnnde/pf2e-esp-translation/commit/e10dd911279abceb54495cc6c4e8f603b537e5b1))
+* New translations equipment.json from Crowdin ([08b9365](https://github.com/allnnde/pf2e-esp-translation/commit/08b936536f1a380eb5a2d91cb39cdcc6b0ea85c8))
+* New translations equipment.json from Crowdin ([27756d3](https://github.com/allnnde/pf2e-esp-translation/commit/27756d33515c0bb0e420d530fd915e7cddfa38e0))
+* New translations equipment.json from Crowdin ([66d86a5](https://github.com/allnnde/pf2e-esp-translation/commit/66d86a5e1b47f21f023d6ce365528d8315bb5f0f))
+* New translations feat-effects.json from Crowdin ([e771fe4](https://github.com/allnnde/pf2e-esp-translation/commit/e771fe4bb3b8c11cb066655cc9b3a054f04926c0))
+* New translations feats.json from Crowdin ([0db7bab](https://github.com/allnnde/pf2e-esp-translation/commit/0db7bab11c6e8b9779f38d44b08c9b663ffbc8a8))
+* New translations re-en.json from Crowdin ([a40d83e](https://github.com/allnnde/pf2e-esp-translation/commit/a40d83e8a3fc70a688186ab3fd0089c1c9b28efc))
+* New translations spell-effects.json from Crowdin ([dc3b088](https://github.com/allnnde/pf2e-esp-translation/commit/dc3b088522d7dcc7c5fe8478ac47f917c17f9ad9))
+* New translations spells.json from Crowdin ([91f7bdf](https://github.com/allnnde/pf2e-esp-translation/commit/91f7bdf4f71284553aacf3743e2785b77b5975cc))
+
+
+### Features
+
+* automatic json extract to traslate ([d19f588](https://github.com/allnnde/pf2e-esp-translation/commit/d19f5884d1b3a5f312e43bba4d8b29b4c9cb12ad))
+
+
+
 # [6.26.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.25.0...v6.26.0) (2025-08-21)
 
 
@@ -177,33 +203,6 @@
 * New translations re-en.json from Crowdin ([ce11df2](https://github.com/allnnde/pf2e-esp-translation/commit/ce11df2284830c0be1acf85b8f7b12f54965662e))
 * New translations spells.json from Crowdin ([d918b56](https://github.com/allnnde/pf2e-esp-translation/commit/d918b561dc025bf4beab3152bf379b10068945fa))
 * New translations spells.json from Crowdin ([2bed052](https://github.com/allnnde/pf2e-esp-translation/commit/2bed052ade5759153682a325012b68bb89b9d872))
-
-
-
-## [6.24.1](https://github.com/allnnde/pf2e-esp-translation/compare/v6.24.0...v6.24.1) (2025-08-08)
-
-
-### Bug Fixes
-
-* New translations actions.json from Crowdin ([0f5115b](https://github.com/allnnde/pf2e-esp-translation/commit/0f5115ba615e79506b61ff6659762ae68bca28a3))
-* New translations bestiary-effects.json from Crowdin ([27e4dfb](https://github.com/allnnde/pf2e-esp-translation/commit/27e4dfbf26fc0ee5cdd84221b70737058189fba0))
-* New translations dictionary.json from Crowdin ([72bf2ee](https://github.com/allnnde/pf2e-esp-translation/commit/72bf2eef31711b866f8dabfa3d49a43a4f09734c))
-* New translations equipment-effects.json from Crowdin ([0d1682c](https://github.com/allnnde/pf2e-esp-translation/commit/0d1682ccf188fff00740904308cd01675e085f37))
-* New translations equipment.json from Crowdin ([624e618](https://github.com/allnnde/pf2e-esp-translation/commit/624e6181961cf2e8aa8ef0e5ad2c617a1ea5ef47))
-* New translations feat-effects.json from Crowdin ([c8dbc18](https://github.com/allnnde/pf2e-esp-translation/commit/c8dbc18fd93b9db448cddcffb75d27cd85b37e63))
-* New translations feats.json from Crowdin ([36888ba](https://github.com/allnnde/pf2e-esp-translation/commit/36888badaf968fb9e44513bfa84b96b79d5abd4d))
-* New translations gatewalkers-bestiary.json from Crowdin ([1efada3](https://github.com/allnnde/pf2e-esp-translation/commit/1efada3412f5a9d5b92af5ad3bc58e9beaecd3fc))
-* New translations howl-of-the-wild-bestiary.json from Crowdin ([6439756](https://github.com/allnnde/pf2e-esp-translation/commit/6439756b7e27f3cda231d7b5c2ba5ed260cafd7d))
-* New translations iconics.json from Crowdin ([a487b99](https://github.com/allnnde/pf2e-esp-translation/commit/a487b99b9ba6012ed63296adb86ad571ec9d794f))
-* New translations kingmaker-bestiary.json from Crowdin ([987fae4](https://github.com/allnnde/pf2e-esp-translation/commit/987fae4c492b731629afecae2fb475e2b5956caf))
-* New translations kingmaker-en.json from Crowdin ([73af74e](https://github.com/allnnde/pf2e-esp-translation/commit/73af74e95fe43a3a91cb6a51f1708c9c17a933ef))
-* New translations pathfinder-bestiary-2.json from Crowdin ([2eaaf0a](https://github.com/allnnde/pf2e-esp-translation/commit/2eaaf0a481bd46da1a4b774796e1b81fa5e2d647))
-* New translations pathfinder-bestiary-3.json from Crowdin ([e552b4b](https://github.com/allnnde/pf2e-esp-translation/commit/e552b4b64f7564402693f721b9b6d656c6261af6))
-* New translations pathfinder-bestiary.json from Crowdin ([6bacf58](https://github.com/allnnde/pf2e-esp-translation/commit/6bacf581d9b690f47c09e88762cb945a015a20fb))
-* New translations rage-of-elements-bestiary.json from Crowdin ([ffaf33f](https://github.com/allnnde/pf2e-esp-translation/commit/ffaf33feceb5065f0dd2670d77e81a3a7be3ca68))
-* New translations re-en.json from Crowdin ([87ce1e7](https://github.com/allnnde/pf2e-esp-translation/commit/87ce1e7ffa06c5b973aa097f1fb9ba2d18455519))
-* New translations spell-effects.json from Crowdin ([231eeee](https://github.com/allnnde/pf2e-esp-translation/commit/231eeee80186be25037e8fae03a5d2600b109dad))
-* New translations spells.json from Crowdin ([cb7da7b](https://github.com/allnnde/pf2e-esp-translation/commit/cb7da7bea9852b42167cbe7dd7d98541a0ab0a90))
 
 
 
