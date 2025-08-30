@@ -1,3 +1,20 @@
+# [6.28.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.27.1...v6.28.0) (2025-08-30)
+
+
+### Bug Fixes
+
+* New translations ancestries.json from Crowdin ([66978b6](https://github.com/allnnde/pf2e-esp-translation/commit/66978b65264aadd6d7be10ae990597b57d32c16d))
+* New translations ancestries.json from Crowdin ([9a02c39](https://github.com/allnnde/pf2e-esp-translation/commit/9a02c398b97929b0171750cb82a4177c89d8a3d9))
+* New translations equipment.json from Crowdin ([61aa503](https://github.com/allnnde/pf2e-esp-translation/commit/61aa503616fcecdac391eb703a7e46e10d62e54c))
+* New translations equipment.json from Crowdin ([64deb51](https://github.com/allnnde/pf2e-esp-translation/commit/64deb51196b9c15cc8a0b1c8b392b187e77cc3d5))
+
+
+### Features
+
+* automatic json extract to traslate ([48f4a46](https://github.com/allnnde/pf2e-esp-translation/commit/48f4a46336ba0cc100e94d21fe2b67b2f0f83953))
+
+
+
 ## [6.27.1](https://github.com/allnnde/pf2e-esp-translation/compare/v6.27.0...v6.27.1) (2025-08-25)
 
 
@@ -145,15 +162,6 @@
 ### Features
 
 * automatic json extract to traslate ([1aedaae](https://github.com/allnnde/pf2e-esp-translation/commit/1aedaae6451846e256d2974a5f64e5fb1791d457))
-
-
-
-## [6.24.3](https://github.com/allnnde/pf2e-esp-translation/compare/v6.24.2...v6.24.3) (2025-08-16)
-
-
-### Bug Fixes
-
-* New translations pathfinder-bestiary-2.json from Crowdin ([c709a21](https://github.com/allnnde/pf2e-esp-translation/commit/c709a2191cb732d41b9a493490a50ec384f95c92))
 
 
 
