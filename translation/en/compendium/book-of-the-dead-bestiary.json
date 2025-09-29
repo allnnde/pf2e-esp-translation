@@ -478,7 +478,7 @@
       "items": {
         "action->Desperate Meal": {
           "name": "Desperate Meal",
-          "description": "<p><strong>Trigger</strong> A creature approaches within 10 feet</p>\n<hr />\n<p><strong>Effect</strong> Creatures within @Template[emanation|distance:30]{30 feet} are filled with painful hunger and must succeed at a @Check[fortitude|dc:32] save or feel their stomachs fill with rocks, dirt, and worse, dealing @Damage[(6d10+20)[piercing]] damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 4}, and takes a -10-foot status penalty to its Speeds for as long as it's sickened.</p>"
+          "description": "<p><strong>Trigger</strong> A creature approaches within 10 feet</p>\n<hr />\n<p><strong>Effect</strong> Creatures within @Template[emanation|distance:30]{30 feet} are filled with painful hunger and must succeed at a @Check[fortitude|dc:32] save or feel their stomachs fill with rocks, dirt, and worse, dealing @Damage[(6d10+20)[piercing]] damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 4}, and takes a –10-foot status penalty to its Speeds for as long as it's sickened.</p>"
         }
       }
     },
@@ -1403,6 +1403,10 @@
       "hpDetails": "void healing",
       "publicNotes": "<p>Dangers deep in the wilderness claim the life some lone scout or hunter. When they arise as wights, they renew their hunt with equal vigor, but all the living are now their prey. Hunter wights prefer to seek strategic ground, frequently taking residence atop hills or within abandoned watchtowers and keeps.</p>\n<hr />\n<p>Wights are undead beings of spite who primarily stalk places related to death.</p>",
       "items": {
+        "equipment->Snare Kit": {
+          "name": "Snare Kit",
+          "description": "<p>This kit contains tools and materials for creating snares. A snare kit allows you to Craft snares using the Crafting skill.</p>"
+        },
         "strike-melee->Claw": {
           "name": "Claw"
         },
@@ -2253,6 +2257,10 @@
           "name": "Ecstatic Ululation",
           "description": "<p><strong>Trigger</strong> A ghoul ally within 30 feet Consumes Flesh to regain Hit Points</p>\n<hr />\n<p><strong>Effect</strong> The priest of Kabriri unleashes a rapturous howl in praise of their god. All ghouls within 30 feet of the priest of Kabriri, including the priest but not the triggering ghoul, regain half as many Hit Points as the triggering ghoul. All living creatures within 30 feet take void damage equal to half the number of Hit Points the triggering ghoul gained, with a @Check[fortitude|dc:20|basic]. Only one Ecstatic Ululation can affect a use of Consume Flesh. Any beyond the first have no effect.</p>"
         },
+        "action->Consume Flesh": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\nConsume Flesh",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\n<p><strong>Requirements</strong> The priest of Kabriri is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The priest of Kabriri devours a chunk of the corpse and regains @Damage[3d6[healing]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>"
+        },
         "action->Ghoul Fever": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]\nGhoul Fever",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:20]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[2d6[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
@@ -2372,7 +2380,7 @@
         },
         "action->Voice of the Soul": {
           "name": "Voice of the Soul",
-          "description": "<p>A sluagh queen knows any language of a creature whose soul they've devoured and can perfectly mimic its voice by attempting a Deception check to Lie, with a +4 circumstance bonus.</p>"
+          "description": "<p>A sluagh queen knows any language of a creature whose soul they've devoured and can perfectly mimic its voice by attempting a Deception check to [[/act lie options=voice-of-the-soul]], with a +4 circumstance bonus.</p>"
         },
         "action->Call of the Damned": {
           "name": "Call of the Damned",
@@ -3579,7 +3587,7 @@
       "items": {
         "action->Mental Bind": {
           "name": "Mental Bind",
-          "description": "<p><strong>Trigger</strong> A creature enters the area</p>\n<hr />\n<p><strong>Effect</strong> Each creature within 30 feet becomes wrapped in heavy spectral chains forged from its own sins and regrets. Each must attempt a @Check[will|dc:25] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes a -10-foot status penalty to its Speeds for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} until it [[/act escape dc=25]]{Escapes}.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is overwhelmed with guilt, becoming @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 day.</p>"
+          "description": "<p><strong>Trigger</strong> A creature enters the area</p>\n<hr />\n<p><strong>Effect</strong> Each creature within 30 feet becomes wrapped in heavy spectral chains forged from its own sins and regrets. Each must attempt a @Check[will|dc:25] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes a –10-foot status penalty to its Speeds for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} until it [[/act escape dc=25]]{Escapes}.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is overwhelmed with guilt, becoming @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 day.</p>"
         }
       }
     },
