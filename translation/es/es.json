@@ -571,6 +571,7 @@
       },
       "Speed": {
         "BaseLabel": "Velocidad base {type}",
+        "BaseWithSource": "{value}-Foot {type} Speed ({source})",
         "Plural": "Velocidades",
         "Label": "Velocidad",
         "LabelFeet": "Velocidad (pies)",
@@ -1054,10 +1055,13 @@
         "SourcesLabel": "Fuentes",
         "Title": "Ajustes del navegador del compendio"
       },
-      "TabAction": "Acciones",
+      "TabAbilities": "Abilities",
       "TabBestiary": "Bestiarios",
       "TabCampaign": "Campaña",
+      "TabEquipment": "Equipment",
       "TabFeat": "Dotes/Características",
+      "TabHazard": "Hazards",
+      "TabSpell": "Spells",
       "TakeLabel": "Coger objeto",
       "Title": "Buscador del compendio",
       "TraitsComponent": {
@@ -1632,6 +1636,7 @@
       "pointLabel": "Puntos"
     },
     "Foot": {
+      "Abbreviation": "ft",
       "Label": "pies",
       "Plural": "pies",
       "Preformatted": {
@@ -1789,6 +1794,17 @@
       },
       "Ancestry": {
         "DropFeatures": "Coloca las dotes de ascendencia aquí.",
+        "FIELDS": {
+          "hands": {
+            "label": "Hands"
+          },
+          "reach": {
+            "label": "Reach"
+          },
+          "speed": {
+            "label": "Speed"
+          }
+        },
         "Plural": "Ascendencias",
         "Vision": {
           "Label": "Visión",
@@ -2696,7 +2712,10 @@
       "Spell": {
         "Area": "{size}-{unit} {shape}",
         "BaseValue": "Base: {value}",
-        "Cast": "Lanzar",
+        "Cast": {
+          "Noun": "Cast",
+          "Verb": "Cast"
+        },
         "Cost": "Coste",
         "Counteract": {
           "Hint": "Si estás contrarrestando una aflicción, la CD está en el bloque de estadísticas de la misma. Si es un conjuro, usa la CD del lanzador. El DJ también puede calcular una CD basada en el nivel del efecto objetivo.",
@@ -2843,6 +2862,23 @@
     "ItemNotSupportedOnActor": "Elemento no compatible con el actor",
     "ItemRemoveRuleElement": "Eliminar elemento de regla",
     "ItemTitle": "Objeto",
+    "ItemTransferDialog": {
+      "Button": {
+        "gift": "Give",
+        "move": "Transfer",
+        "purchase": "Purchase"
+      },
+      "Prompt": {
+        "gift": "Give this item to {actor}?",
+        "move": "Transfer this item to {actor}?",
+        "purchase": "Does {actor} wish to purchase this item?"
+      },
+      "Title": {
+        "gift": "Give {item}",
+        "move": "Transfer {item}",
+        "purchase": "Purchase {item}"
+      }
+    },
     "ItemsLabel": "Objetos",
     "Keybinding": {
       "CycleTokenStack": {
@@ -3245,7 +3281,9 @@
     "PreciousMaterialWarpglassDescription": "Esta extraña sustancia está formada a partir de la cruda y caótica quintaesencia del Torbellino. Se puede transformar en armas y objetos, pero es demasiado inestable para convertirlo en armaduras o escudos útiles. El vidrio de urdimbre en bruto es un material vítreo opalescente con una resistencia sorprendente. Cuando se trabaja, cambia su apariencia (aunque no sus propiedades) para aparecer como estrías aleatorias de otros metales y tipos de piedra.",
     "PreparationTypeInnate": "Innato",
     "PreparationTypeItems": "Sólo objetos",
+    "PreparationTypeFocus": "Focus",
     "PreparationTypePrepared": "Preparado",
+    "PreparationTypeRitual": "Ritual",
     "PreparationTypeSpontaneous": "Espontáneo",
     "Prerequisite1": "Requisito previo 1",
     "Prerequisite2": "Requisito previo 2",
@@ -3454,11 +3492,11 @@
         },
         "Name": "Automatización",
         "ReachEnforcement": {
-          "Corpses": "Cadáveres",
-          "Doors": "Puertas",
+          "corpses": "Corpses",
+          "doors": "Doors",
           "Hint": "Impón el alcance cuando los jugadores traten de interactuar con determinados objetos en el lienzo.",
-          "Loot": "Saquear",
-          "Merchants": "Mercaderes",
+          "loot": "Loot",
+          "merchants": "Traders",
           "Name": "Imposición de alcance"
         },
         "RemoveExpiredEffects": {
@@ -3514,12 +3552,12 @@
         "Hint": "Establece el icono de superposición utilizado para marcar actores muertos.",
         "Name": "Icono de muerte"
       },
-      "DragMeasurement": {
-        "Always": "Siempre",
-        "Encounters": "Durante los encuentros",
-        "Hint": "Measure distance traveled when dragging a token without the need for holding down another key. Waypoints are placed by pressing the \"{key}\" key.",
-        "Name": "Medida del arrastre",
-        "Never": "Nunca"
+      "DistanceDisplay": {
+        "Hint": "Display the distance between controlled and mouse-hovered tokens on the canvas.",
+        "Name": "Token Distance Display",
+        "always": "Always",
+        "encounters": "During Encounters",
+        "never": "Never"
       },
       "EnabledDisabled": {
         "Enabled": "Activado",
@@ -4027,6 +4065,60 @@
     "TotalCoinage": "Total de monedas",
     "TotalTreasure": "Tesoro total",
     "TotalWealth": "Riqueza total",
+    "TradeDialog": {
+      "Aborted": "{user} has ended the trade: no items were exchanged.",
+      "Acceptance": {
+        "Accepted": "{user} has accepted your offer.",
+        "Accept": "Accept Offer",
+        "NotAccepted": "{user} has not accepted your offer.",
+        "Rescind": "Rescind Acceptance"
+      },
+      "Error": {
+        "Engaged": "{user} is currently engaged in a trade.",
+        "LoggedOut": "Ending trade: {user} is no longer logged in.",
+        "NotTrading": "Ending trade: {user} is not longer trading.",
+        "OutOfReach": "{self} and {trader} are not in reach of each other.",
+        "SelectToken": "Select exactly one token associated with a PC or NPC to represent you in a trade.",
+        "Timeout": "Ending trade: there was no response from {user} after {timeout} seconds",
+        "Unavailable": "Ending trade: {user} has become unavailable."
+      },
+      "Gift": {
+        "Accepted": "{trader} has received your item.",
+        "Declined": "{trader} has declined your item.",
+        "Prompt": {
+          "Content": "{trader} ({user}) would like to give {quantity}x {item} to {self}.",
+          "Title": "Receive Item(s)?"
+        },
+        "Received": "{self} has received the item from {trader}."
+      },
+      "ImgAlt": {
+        "Actor": "Portrait of {actor}, representing {user}",
+        "Item": "Icon for {item}"
+      },
+      "Quantity": {
+        "Decrement": "Decrement Item Quantity",
+        "Increment": "Increment Item Quantity",
+        "Label": "Quantity of {item}"
+      },
+      "Receiving": "Receiving: {list}",
+      "Request": {
+        "Declined": "{trader} ({user}) has declined your request to trade.",
+        "Requesting": "Requesting to trade with {trader} ...",
+        "Prompt": {
+          "Content": "{trader} ({user}) would like to trade with {self}.",
+          "Title": "Trade with {trader}?"
+        },
+        "MenuLabel": "Request Trade",
+        "Timeout": "There was no response from {user} to your trade request after 30 seconds."
+      },
+      "Sending": "Sending: {list}",
+      "Success": {
+        "Finished": "{self} has finished trading with {trader}.",
+        "NoItems": "The trade has concluded, but no items were exchanged."
+      },
+      "Title": "Trading With {trader}",
+      "You": "You"
+    },
     "TrainedSkillsLabel": "Habilidades entrenadas",
     "TraitAberration": "Aberración",
     "TraitAcid": "Ácido",
@@ -5092,6 +5184,9 @@
     "TraitReload1Min": "Recarga 1 minuto",
     "TraitReload2": "Recarga 2",
     "TraitRepeating": "Repitidora",
+    "TraitResilient1": "Resilient +1",
+    "TraitResilient2": "Resilient +2",
+    "TraitResilient3": "Resilient +3",
     "TraitResonant": "Resonante",
     "TraitRevelation": "Revelación",
     "TraitRogue": "Pícaro",
@@ -6257,6 +6352,10 @@
         "rules": "<p>Te han dado una orden, te han dominado mágicamente o por lo demás han subvertido tu voluntad. Tu controlador dicta cómo actúas y puede hacer que uses cualquiera de sus acciones, incluyendo ataques, reacciones o incluso Retrasar. Por lo general, el controlador no tiene que gastar acciones propias cuando te controla.</p>",
         "summary": "Otra criatura determina tus acciones."
       },
+      "cursebound": {
+        "name": "Cursebound",
+        "rules": "<p>Your oracular curse is constricting around you as you receive divine punishment after drawing too deeply on your mystery's powers. Cursebound is a condition that affects only creatures with an oracular curse, and cursebound always includes a value. Your specific oracular curse imposes unique negative effects depending on your cursebound value. You can remove the cursebound condition only by Refocusing.</p>"
+      },
       "dazzled": {
         "name": "Deslumbrado",
         "rules": "<p>Tus ojos han sido sobreestimulados o se te ha nublado la vista. Si la vista es tu único sentido preciso, todas las criaturas y objetos están ocultos de ti.</p>",
@@ -6502,9 +6601,7 @@
       "DepositSubtitle": "Depositar objeto",
       "EditLootLabel": "¿Configurar el botín?",
       "GMSupervisionError": "Un DJ debe estar en línea para poder interactuar con {loot}.",
-      "Give": "Dar",
       "GiveMessage": "{giver} da {quantity} × {item} a {recipient}.",
-      "GiveSubtitle": "Dar objeto",
       "HiddenWhenEmpty": {
         "Hint": "Oculta las fichas de este actor cuando su inventario esté vacío.",
         "Label": "Oculto cuando está vacío"
@@ -6522,14 +6619,11 @@
       "MerchantDescription": "Permite a los jugadores comprar objetos directamente desde la hoja.",
       "MerchantLabel": "Comerciante",
       "MoveLoot": "Mover objetos",
-      "MoveLootMessage": "¿Cuántos objetos deseas mover?",
       "MoveLootPopupTitle": "Cantidad de objetos",
       "PartyStash": "Alijo del grupo",
       "PermissionError": "Un DJ debe estar en línea para poder saquear o guardar un artículo.",
       "PlantMessage": "{planter} plantas {quantity} × {item} en {corpse} .",
       "PlantSubtitle": "Plantar objeto",
-      "Purchase": "Comprar",
-      "PurchaseLootPrompt": "¿Quiere {buyer} comprar este objeto?",
       "PurchasePrice": "Precio de compra",
       "Quantity": "Cantidad",
       "SellMessage": "{seller} vende {quantity} × {item} a {buyer} .",
@@ -6581,6 +6675,30 @@
   },
   "SIDEBAR": {
     "TabCombat": "Rastreador de encuentros"
+  },
+  "TOKEN": {
+    "MOVEMENT": {
+      "ACTIONS": {
+        "deploy": {
+          "label": "Deploy"
+        },
+        "drive": {
+          "label": "Drive"
+        },
+        "jump": {
+          "label": "Leap"
+        },
+        "travel": {
+          "label": "Travel"
+        },
+        "walk": {
+          "label": "Stride"
+        },
+        "blink": {
+          "label": "Teleport"
+        }
+      }
+    }
   },
   "TYPES": {
     "Actor": {
