@@ -1132,7 +1132,7 @@
     },
     "Caustic Blast": {
       "name": "Explosión cáustica",
-      "description": "<p>Arrojas un gran pegote de ácido que detona inmediatamente, salpicando a las criaturas cercanas. Las criaturas en el área sufren 1d8 daño por ácido y tienen que hacer una salvación básica de Reflejos; con un fallo crítico, una criatura sufre también @Damage[(floor(@item.level/2)+1)[persistent,acid]]{1 daño persistente por ácido}.</p>\n<hr />\n<p><strong>Potenciado (+2)</strong> El daño inicial se incrementa en 1d8 y el daño persistente en un fallo crítico se incrementa en 1.</p>"
+      "description": "<p>Arrojas un gran pegote de ácido que detona inmediatamente, salpicando a las criaturas cercanas. Las criaturas en el área sufren 1d8 daño por ácido y tienen que hacer una salvación básica de Reflejos; con un fallo crítico, una criatura sufre también @Damage[(1+floor((@item.rank -1)/2))[persistent,acid]]{ daño persistente por ácido}.</p>\n<hr />\n<p><strong>Potenciado (+2)</strong> El daño inicial se incrementa en 1d8 y el daño persistente en un fallo crítico se incrementa en 1.</p>"
     },
     "Cauterize Wounds": {
       "name": "Cauterizar heridas",
@@ -3642,13 +3642,13 @@
     },
     "Gouging Claw": {
       "name": "Garra punzante",
-      "description": " <p>Transformas temporalmente tu extremidad en un apéndice provisto de garras. Haz una tirada de ataque de conjuros cuerpo a cuerpo contra la CA de tu objetivo. Si impactas, infliges (a elegir) 2d6 daño cortante o 2d6 daño perforante, más @Damage[(@item.level +1)[bleed]]{2 daño persistente por sangrado}. Con un éxito crítico, infliges doble daño y doble daño por sangrado.</p> \n<hr /> \n<p><strong>Potenciado (+1)</strong>El daño se incrementa en 1d6 y el daño persistente por sangrado se incrementa en 1.</p> ",
+      "description": " <p>Transformas temporalmente tu extremidad en un apéndice provisto de garras. Haz una tirada de ataque de conjuros cuerpo a cuerpo contra la CA de tu objetivo. Si impactas, infliges (a elegir) 2d6 daño cortante o 2d6 daño perforante, más 2 daño persistente por sangrado. Con un éxito crítico, infliges doble daño y doble daño por sangrado.</p> \n<hr /> \n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 1d6 y el daño persistente por sangrado se incrementa en 1.</p> ",
       "spellVariants": {
         "URQWpedXx9fB1fR7": {
-          "name": "Perforante"
+          "name": "Garra punzante (perforante)"
         },
         "wQHuRGaDDW2MemlK": {
-          "name": "Cortante"
+          "name": "Garra punzante (cortante)"
         }
       },
       "target": "1 criatura"
@@ -5699,7 +5699,7 @@
     },
     "Phantom Pain": {
       "name": "Dolor fantasmal",
-      "description": "<p>Un dolor ilusorio azota al objetivo, infligiendo 2d4 daño mental y @Damage[(@item.level)d4[persistent,mental]]{1d4 daño persistente mental} y tiene que hacer una salvación de Voluntad.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado.</p> \n<p><strong>Éxito</strong> El objetivo sufre el daño inicial completo pero no daño persistente, y el conjuro se acaba de inmediato.</p> \n<p><strong>Fallo</strong> El objetivo sufre el daño inicial y el daño persistente completos, y queda  @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1}. Si se recupera del estado indispuesto, el daño persistente se acaba y el conjuro también.</p> \n<p><strong>Fallo crítico</strong> Como fallo, pero el objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2}. </p> \n<hr /> \n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 2d4 y el daño persistente en 1d4.</p> ",
+      "description": "<p>Un dolor ilusorio azota al objetivo, infligiendo 2d4 daño mental y @Damage[(@item.level)d4[persistent,mental]]{ daño persistente mental} y tiene que hacer una salvación de Voluntad.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado.</p> \n<p><strong>Éxito</strong> El objetivo sufre el daño inicial completo pero no daño persistente, y el conjuro se acaba de inmediato.</p> \n<p><strong>Fallo</strong> El objetivo sufre el daño inicial y el daño persistente completos, y queda  @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1}. Si se recupera del estado indispuesto, el daño persistente se acaba y el conjuro también.</p> \n<p><strong>Fallo crítico</strong> Como fallo, pero el objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2}.</p> \n<hr /> \n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 2d4 y el daño persistente en 1d4.</p> ",
       "target": "1 criatura"
     },
     "Phantom Prison": {
