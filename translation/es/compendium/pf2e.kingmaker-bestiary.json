@@ -74,7 +74,7 @@
         "strike-melee->Morningstar": {
           "name": "Morningstar"
         },
-        "strike-ranged->Crossbow": {
+        "strike-melee->Crossbow": {
           "name": "Crossbow"
         },
         "action->Enraged Growth": {
@@ -114,7 +114,7 @@
         "strike-melee->Longsword": {
           "name": "Longsword"
         },
-        "strike-ranged->Composite Longbow": {
+        "strike-melee->Composite Longbow": {
           "name": "Composite Longbow"
         },
         "action->Shameful Memories": {
@@ -198,12 +198,6 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.EkZVXMdtqTTgahiJ]\nRing of Energy Resistance (Cold)",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.EkZVXMdtqTTgahiJ]\n<p>This ring grants you resistance 5 against one type of energy damage: acid, cold, electricity, fire, or sonic. Each ring is crafted to protect against a particular type of energy damage, and its design usually embodies the type of energy it protects the wearer from in some way. For instance, a <em>ring of fire resistance</em> might be capped with a ruby, whereas a <em>ring of cold resistance</em> features a sapphire instead.</p>"
         },
-        "strike-melee->Jaws": {
-          "name": "Jaws"
-        },
-        "strike-melee->Claw": {
-          "name": "Claw"
-        },
         "action->Tiger Empathy": {
           "name": "Tiger Empathy",
           "description": "<p>Alasen can communicate with felines.</p>"
@@ -254,7 +248,7 @@
         "strike-melee->Aldori Dueling Sword": {
           "name": "Aldori Dueling Sword"
         },
-        "strike-ranged->Composite Longbow": {
+        "strike-melee->Composite Longbow": {
           "name": "Composite Longbow"
         },
         "action->Forager": {
@@ -294,7 +288,7 @@
         "strike-melee->Cold Iron Shortsword": {
           "name": "Cold Iron Shortsword"
         },
-        "strike-ranged->Composite Shortbow": {
+        "strike-melee->Composite Shortbow": {
           "name": "Composite Shortbow"
         },
         "action->Sneak Attack": {
@@ -449,7 +443,7 @@
         },
         "action->Shadow Doubles": {
           "name": "Shadow Doubles",
-          "description": "<p>(1 to 3 actions)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> For each action spent to use this ability, the ankou creates one shadowy duplicate of themself anywhere within 60 feet of themself. Shadow doubles have the same statistics as an ankou, but they have the summoned trait, have 110 Hit Points, can't use Shadow Doubles or innate spells, and have an attack bonus of +27 for their Strikes. A shadow double that attempts a saving throw against a light effect can't get a result better than failure. Each double remains for 1 round, until it's reduced to 0 Hit Points, or until it moves further than 120 feet from the ankou, whichever comes first. Each round thereafter, the ankou can spend a single action that has the concentrate trait to extend the duration of surviving duplicates by 1 round, to a maximum duration of 1 minute. The ankou can see through the eyes of all of the shadow doubles at once. A character who @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seeks} can identify an ankou as real or a shadow double with a successful @Check[perception|dc:43] check.</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> For each action spent to use this ability, the ankou creates one shadowy duplicate of themself anywhere within 60 feet of themself. Shadow doubles have the same statistics as an ankou, but they have the summoned trait, have 110 Hit Points, can't use Shadow Doubles or innate spells, and have an attack bonus of +27 for their Strikes. A shadow double that attempts a saving throw against a light effect can't get a result better than failure. Each double remains for 1 round, until it's reduced to 0 Hit Points, or until it moves further than 120 feet from the ankou, whichever comes first. Each round thereafter, the ankou can spend a single action that has the concentrate trait to extend the duration of surviving duplicates by 1 round, to a maximum duration of 1 minute. The ankou can see through the eyes of all of the shadow doubles at once. A character who @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seeks} can identify an ankou as real or a shadow double with a successful @Check[perception|dc:43] check.</p>"
         },
         "action->Sneak Attack": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>An ankou's Strikes deal an additional 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} creatures.</p>"
@@ -614,6 +608,11 @@
         "spell->Light": {
           "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "action->Telepathy 300 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 300 feet"
         },
@@ -712,7 +711,7 @@
           "name": "Ready and Load",
           "description": "<p><strong>Trigger</strong> The alarm is raised while the PCs are approaching the Palace</p>\n<hr />\n<p><strong>Effect</strong> The guards ready and load the ballista. The ballista defense then rolls Initiative.</p>"
         },
-        "strike-ranged->Ballista Bolt": {
+        "strike-melee->Ballista Bolt": {
           "name": "Ballista Bolt"
         }
       }
@@ -822,7 +821,7 @@
         "strike-ranged->Dagger": {
           "name": "Dagger"
         },
-        "strike-ranged->Hand Crossbow": {
+        "strike-melee->Hand Crossbow": {
           "name": "Hand Crossbow"
         }
       }
@@ -902,7 +901,7 @@
         "strike-melee->Thorny Vine": {
           "name": "Thorny Vine"
         },
-        "strike-ranged->Thorn": {
+        "strike-melee->Thorn": {
           "name": "Thorn"
         },
         "action->Tremorsense (Precise) 30 feet": {
@@ -944,7 +943,7 @@
         "strike-melee->Claw": {
           "name": "Claw"
         },
-        "strike-ranged->Rock": {
+        "strike-melee->Rock": {
           "name": "Rock"
         },
         "action->Attack of Opportunity (Special)": {
@@ -1033,7 +1032,7 @@
         "strike-melee->Whip": {
           "name": "Whip"
         },
-        "strike-ranged->Blowgun": {
+        "strike-melee->Blowgun": {
           "name": "Blowgun"
         },
         "action->Gogunta's Croak": {
@@ -1078,7 +1077,7 @@
             "id": "In6OZtLo0Avr0mV1"
           }
         ],
-        "strike-ranged->Blowgun": {
+        "strike-melee->Blowgun": {
           "name": "Blowgun"
         },
         "action->Nature's Edge": {
@@ -1105,7 +1104,7 @@
     "Breath of Despair": {
       "name": "Breath of Despair",
       "description": "<p>The faces carved on the wall appear to inhale, then exhale slithering tendrils of darkness to harm those who would despoil the tomb.</p>",
-      "disable": "<p>@Check[thievery|dc:23] (expert) to disarm the trap's sensors in the chamber floor, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd level; counteract DC 23) to counteract the faces. Breaking one of the faces on the walls reduces the trap's save DC, attack rolls, and its total actions by 1 per broken face; if all four faces are destroyed, the trap is disabled.</p>",
+      "disable": "<p>@Check[thievery|dc:23] (expert) to disarm the trap's sensors in the chamber floor, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank; counteract DC 23) to counteract the faces. Breaking one of the faces on the walls reduces the trap's save DC, attack rolls, and its total actions by 1 per broken face; if all four faces are destroyed, the trap is disabled.</p>",
       "hpDetails": "HP for each face, 4 faces",
       "reset": "<p>The trap resets after 1 minute</p>",
       "routine": "<p>(4 actions) The trap loses 1 action per disabled face each turn. On each action, a different face spews a writhing breath of darkness from its mouth to a target in the area. A creature can only be targeted once per round by the despairing breath, so if fewer than four creatures are in the room, the trap won't be able to take full advantage of all four of its actions.</p>",
@@ -1252,7 +1251,7 @@
         "strike-melee->Rod of Razors": {
           "name": "Rod of Razors"
         },
-        "strike-ranged->Flechette": {
+        "strike-melee->Flechette": {
           "name": "Flechette"
         },
         "action->Nyrissa's Favor": {
@@ -1455,7 +1454,7 @@
         "strike-melee->Greataxe": {
           "name": "Greataxe"
         },
-        "strike-ranged->Composite Shortbow": {
+        "strike-melee->Composite Shortbow": {
           "name": "Composite Shortbow"
         },
         "action->Felling Blow": {
@@ -1725,7 +1724,7 @@
         },
         "action->Support Benefit": {
           "name": "Support Benefit",
-          "description": "<p>Until the start of Ekundayo's next turn, his Strikes that damage creatures Dog threatens give the target a -5-foot status penalty to its Speeds for 1 minute (-10 on a critical success).</p>"
+          "description": "<p>Until the start of Ekundayo's next turn, his Strikes that damage creatures Dog threatens give the target a –5-foot status penalty to its Speeds for 1 minute (-10 on a critical success).</p>"
         }
       }
     },
@@ -1788,7 +1787,7 @@
         "strike-melee->Longsword": {
           "name": "Longsword"
         },
-        "strike-ranged->Composite Longbow": {
+        "strike-melee->Composite Longbow": {
           "name": "Composite Longbow"
         },
         "action->Raise a Shield": {
@@ -1881,6 +1880,23 @@
         },
         "weapon->Longsword": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+        },
+        "feat->Precision": {
+          "rules": {
+            "2": {
+              "value": {
+                "1": {
+                  "text": "@UUID[Compendium.pf2e.feat-effects.Item.mNk0KxsZMFnDjUA0]{Effect: Share Hunter's Edge (Precision)}"
+                },
+                "3": {
+                  "text": "@UUID[Compendium.pf2e.feat-effects.Item.Lt5iSfx8fxHSdYXz]{Effect: Share Hunter's Edge (Precision, Masterful)}"
+                }
+              }
+            }
+          }
+        },
+        "action->Hunt Prey": {
+          "selfEffect": "Effect: Hunt Prey"
         }
       }
     },
@@ -1932,6 +1948,23 @@
         },
         "feat->Trackless Step": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.classfeatures.Item.PeZi7E9lI4vz8EGY]\nTrackless Step"
+        },
+        "feat->Precision": {
+          "rules": {
+            "2": {
+              "value": {
+                "1": {
+                  "text": "@UUID[Compendium.pf2e.feat-effects.Item.mNk0KxsZMFnDjUA0]{Effect: Share Hunter's Edge (Precision)}"
+                },
+                "3": {
+                  "text": "@UUID[Compendium.pf2e.feat-effects.Item.Lt5iSfx8fxHSdYXz]{Effect: Share Hunter's Edge (Precision, Masterful)}"
+                }
+              }
+            }
+          }
+        },
+        "action->Hunt Prey": {
+          "selfEffect": "Effect: Hunt Prey"
         }
       }
     },
@@ -1961,7 +1994,7 @@
         },
         "action->Surge": {
           "name": "Surge",
-          "description": "<p>The elemental tsunami quickly expands its space to fill the area of its vortex. Creatures within the vortex's emanation take @Damage[(6d12+8)[bludgeoning]] damage (@Check[fortitude|dc:34|basic] save). A creature that fails this save is Pushed 20 feet. The elemental tsunami then retracts to its former space.</p>\n<p>A creature that takes damage is exposed to blinding sickness.</p>\n<p>The elemental tsunami can't Surge again for [[/gmr 1d4 #Recharge Surge]]{1d4 rounds}.</p>"
+          "description": "<p>The elemental tsunami quickly expands its space to fill the area of its vortex. Creatures within the vortex's emanation take @Damage[(6d12+8)[bludgeoning]|options:area-damage] damage (@Check[fortitude|dc:34|basic|options:area-effect,forced-movement] save). A creature that fails this save is Pushed 20 feet. The elemental tsunami then retracts to its former space.</p>\n<p>A creature that takes damage is exposed to blinding sickness.</p>\n<p>The elemental tsunami can't Surge again for [[/gmr 1d4 #Recharge Surge]]{1d4 rounds}.</p>"
         },
         "action->Push or Pull 10 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]\nPush or Pull 10 feet",
@@ -2142,7 +2175,7 @@
         },
         "action->Fireball Breath": {
           "name": "Fireball Breath",
-          "description": "<p>The flame drake expels a ball of flame to a range of 180 feet that explodes in a @Template[burst|distance:20]. Creatures in the burst take @Damage[9d6[fire]] damage (@Check[reflex|dc:26|basic] save).</p>\n<p>The flame drake can't use Fireball Breath again for [[/gmr 1d6 #Recharge Fireball Breath]]{1d6 rounds}.</p>"
+          "description": "<p>The flame drake expels a ball of flame to a range of 180 feet that explodes in a @Template[burst|distance:20]. Creatures in the burst take @Damage[9d6[fire]|options:area-damage] damage (@Check[reflex|dc:26|basic|options:area-effect] save).</p>\n<p>The flame drake can't use Fireball Breath again for [[/gmr 1d6 #Recharge Fireball Breath]]{1d6 rounds}.</p>"
         },
         "action->Speed Surge": {
           "name": "Speed Surge",
@@ -2242,7 +2275,7 @@
     "Explosion Bear": {
       "name": "Explosion Bear",
       "description": "<p>An invisible rune causes the animated bear to explode if it is destroyed or if it finishes its dance while anyone is in the room.</p>",
-      "disable": "<p>@Check[thievery|dc:48|traits:action:disable-a-device|name:Erase the Rune] (legendary) to erase the rune without triggering the explosion (the DC is increased to @Check[thievery|dc:51|traits:action:disable-a-device|name:Erase the Rune] while the bear is moving), @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (10th level, counteract DC 39) to counteract the rune, or Nyrissa says the words \"Good bear\" to the trap before it finishes its dance.</p>",
+      "disable": "<p>@Check[thievery|dc:48|traits:action:disable-a-device|name:Erase the Rune] (legendary) to erase the rune without triggering the explosion (the DC is increased to @Check[thievery|dc:51|traits:action:disable-a-device|name:Erase the Rune] while the bear is moving), @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (10th rank, counteract DC 39) to counteract the rune, or Nyrissa says the words \"Good bear\" to the trap before it finishes its dance.</p>",
       "stealth": "<p>(legendary)</p>",
       "items": {
         "action->Fireball": {
@@ -2281,6 +2314,11 @@
         },
         "spell->Alarm": {
           "requirements": "3 gp silver bell focus"
+        },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
         },
         "spell->Tanglefoot": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
@@ -2355,7 +2393,7 @@
         "strike-melee->Fist": {
           "name": "Fist"
         },
-        "strike-ranged->Rock": {
+        "strike-melee->Rock": {
           "name": "Rock"
         },
         "action->Regeneration 45 (Deactivated by Fire or Void)": {
@@ -2386,6 +2424,11 @@
         },
         "spell->Illusory Disguise (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]\nIllusory Disguise (At Will)"
+        },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
         },
         "strike-melee->Fetch Weapon": {
           "name": "Fetch Weapon"
@@ -2671,13 +2714,7 @@
         "armor->Chain Shirt": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
         },
-        "strike-melee->Jaws": {
-          "name": "Jaws"
-        },
-        "strike-melee->Claw": {
-          "name": "Claw"
-        },
-        "strike-ranged->Oathbow": {
+        "strike-melee->Oathbow": {
           "name": "Oathbow",
           "rules": {
             "0": {
@@ -2788,7 +2825,7 @@
         "strike-melee->Greatsword": {
           "name": "Greatsword"
         },
-        "strike-ranged->Composite Longbow": {
+        "strike-melee->Composite Longbow": {
           "name": "Composite Longbow"
         },
         "action->Regeneration 15 (deactivated by Acid or Fire)": {
@@ -2859,7 +2896,7 @@
     "Glyph of Warding (Kingmaker)": {
       "name": "Glyph of Warding (Kingmaker)",
       "description": "<p>An hourglass-shaped glyph flashes with mauve light, then seems to quickly drain its sand away, as if to indicate time has suddenly run out.</p>",
-      "disable": "<p>@Check[thievery|dc:34] (trained) to remove the glyph without triggering it, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th level, counteract DC 34) to counteract the glyph.</p>",
+      "disable": "<p>@Check[thievery|dc:34] (trained) to remove the glyph without triggering it, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th rank, counteract DC 34) to counteract the glyph.</p>",
       "stealth": "<p>(trained)</p>",
       "items": {
         "action->Release Spell": {
@@ -2921,7 +2958,7 @@
         },
         "action->Ride Tick": {
           "name": "Ride Tick",
-          "description": "<p>Grabbles can use Diplomacy to Command an Animal when riding Tickleback.</p>"
+          "description": "<p>Grabbles can use Diplomacy to [[/act command-an-animal skill=diplomacy]] when riding Tickleback.</p>"
         },
         "action->Vengeful Anger": {
           "name": "Vengeful Anger",
@@ -2978,7 +3015,7 @@
         "strike-melee->Rapier": {
           "name": "Rapier"
         },
-        "strike-ranged->Shortbow": {
+        "strike-melee->Shortbow": {
           "name": "Shortbow"
         },
         "action->Rhetorical Spell": {
@@ -3057,7 +3094,7 @@
         },
         "equipment->Key Ring": {
           "name": "Key Ring",
-          "description": "<p>Contains keys to all locks in Drelev Keep</p>"
+          "gmNote": "<p>Contains keys to all locks in Drelev Keep</p>"
         },
         "consumable->Healing Potion (Moderate)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(3d8+10)[healing]] Hit Points.</p>"
@@ -3068,16 +3105,17 @@
         "strike-melee->Hatchet": {
           "name": "Hatchet"
         },
-        "strike-ranged->Crossbow": {
+        "strike-melee->Crossbow": {
           "name": "Crossbow"
         },
         "action->Defensive Slice": {
           "name": "Defensive Slice",
-          "description": "<p><strong>Requirement</strong> Baron Drelev hasn't attempted a Strike during this turn.</p>\n<hr />\n<p><strong>Effect</strong> Baron Drelev assumes a defensive position with his weapons out, then attempts a melee Strike. He takes a -2 status penalty on all Strikes (including this one) and gains a +2 status bonus to his AC until the start of his next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.EwhWYPCNM8bIIYEI]{Effect: Defensive Slice}</p>"
+          "description": "<p><strong>Requirement</strong> Baron Drelev hasn't attempted a Strike during this turn.</p>\n<hr />\n<p><strong>Effect</strong> Baron Drelev assumes a defensive position with his weapons out, then attempts a melee Strike. He takes a -2 status penalty on all Strikes (including this one) and gains a +2 status bonus to his AC until the start of his next turn.</p>",
+          "selfEffect": "Effect: Defensive Slice"
         },
         "action->Dramatic Disarm": {
           "name": "Dramatic Disarm",
-          "description": "<p>If Baron Drelev scores a critical success on an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} an opponent, he can choose to have the disarmed item fly [[/r (1d4*5) #feet]]{1d4 × 5 feet} in a random direction rather than have it fall to the ground in the opponent's space. If this causes the item to land in a space occupied by a creature with at least one free hand, that creature can attempt a @Check[reflex|dc:20] save to catch the item (otherwise it falls to the ground in that space).</p>"
+          "description": "<p>If Baron Drelev scores a critical success on an Athletics check to [[/act disarm]] an opponent, he can choose to have the disarmed item fly [[/gmr (1d4*5) #feet]]{1d4 × 5 feet} in a random direction rather than have it fall to the ground in the opponent's space. If this causes the item to land in a space occupied by a creature with at least one free hand, that creature can attempt a @Check[reflex|dc:20] save to catch the item (otherwise it falls to the ground in that space).</p>"
         },
         "action->Harrying Swordfighter": {
           "name": "Harrying Swordfighter",
@@ -3108,7 +3146,7 @@
         "strike-ranged->Dagger": {
           "name": "Dagger"
         },
-        "strike-ranged->Composite Shortbow": {
+        "strike-melee->Composite Shortbow": {
           "name": "Composite Shortbow"
         },
         "action->Focused Target": {
@@ -3167,7 +3205,7 @@
         "strike-melee->Sickle": {
           "name": "Sickle"
         },
-        "strike-ranged->Blowgun": {
+        "strike-melee->Blowgun": {
           "name": "Blowgun"
         },
         "action->+2 Status to All Saves vs. Mental": {
@@ -3222,7 +3260,7 @@
         "equipment->Sack for Holding Rocks": {
           "name": "Sack for Holding Rocks"
         },
-        "consumable->Rock": {
+        "ammo->Rock": {
           "name": "Rock"
         },
         "strike-melee->Battle Axe": {
@@ -3238,7 +3276,7 @@
             "id": "ApHre7Dw1aJJlSiv"
           }
         ],
-        "strike-ranged->Rock": {
+        "strike-melee->Rock": {
           "name": "Rock"
         },
         "action->Menace Prey": {
@@ -3328,7 +3366,7 @@
         },
         "action->Poison Spray": {
           "name": "Poison Spray",
-          "description": "<p>Hooktongue sprays poison from its throat in an @Template[line|distance:80] that deals @Damage[15d6[poison]] damage (@Check[reflex|dc:34|basic]). A creature that fails or critically fails this save is exposed to Hooktongue Venom as well. Hooktongue can't use Poison Spray again for [[/gmr 1d4 #Recharge Poison Spray]]{1d4 rounds}.</p>"
+          "description": "<p>Hooktongue sprays poison from its throat in an @Template[line|distance:80] that deals @Damage[15d6[poison]|options:area-damage] damage (@Check[reflex|dc:34|basic|options:area-effect]). A creature that fails or critically fails this save is exposed to Hooktongue Venom as well. Hooktongue can't use Poison Spray again for [[/gmr 1d4 #Recharge Poison Spray]]{1d4 rounds}.</p>"
         },
         "action->Swallow Whole": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Large, @Damage[(2d10+10)[bludgeoning]] damage, Rupture 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
@@ -3415,6 +3453,11 @@
         },
         "spell->Pass Without Trace": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.zlnXpME1T2uvn8Lr]\nPass Without Trace"
+        },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
         },
         "spell->Tanglefoot": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
@@ -3540,8 +3583,8 @@
       "name": "Imeckus Stroon",
       "blurb": "Male human wizard",
       "items": {
-        "spellcastingEntry->Arcane Spells Prepared": {
-          "name": "Arcane Spells Prepared"
+        "spellcastingEntry->Arcane Prepared Spells": {
+          "name": "Arcane Prepared Spells"
         },
         "spellcastingEntry->Staff of Fire (Major)": {
           "name": "Staff of Fire (Major)"
@@ -3576,12 +3619,26 @@
         "spell->Magic Missile": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]\nMagic Missile"
         },
+        "spell->Produce Flame": [
+          {
+            "name": "Produce Flame",
+            "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+            "target": "1 creature",
+            "id": "PVpmk6m6i9TyZdRd"
+          },
+          {
+            "name": "Produce Flame",
+            "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+            "target": "1 creature",
+            "id": "9bTe9wqq7rnNstxy"
+          }
+        ],
         "spell->Ray of Enfeeblement": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
         },
         "weapon->+1 Striking Staff of Fire (Major)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qx4Cq99vng6GhzEh]\n+1 Striking Staff of Fire (Major)",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qx4Cq99vng6GhzEh]\n<p>This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Produce Flame}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire} @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}</li>\n<li><strong>3rd</strong> @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame} @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}</li>\n<li><strong>4th</strong> @UUID[Compendium.pf2e.spells-srd.Item.YrzBLPLd3r9m6t1p]{Fire Shield}, @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball} @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire}</li>\n<li><strong>5th</strong> @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball} @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire}</li>\n</ul>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qx4Cq99vng6GhzEh]\n<p>This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire} @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}</li>\n<li><strong>3rd</strong> @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame} @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}</li>\n<li><strong>4th</strong> @UUID[Compendium.pf2e.spells-srd.Item.YrzBLPLd3r9m6t1p]{Fire Shield}, @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball} @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire}</li>\n<li><strong>5th</strong> @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball} @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire}</li>\n</ul>"
         },
         "equipment->The Inward Flowing Source (Spellbook)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE]\nThe Inward Flowing Source (Spellbook)",
@@ -3719,6 +3776,11 @@
         "spell->Air Walk (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0]\nAir Walk (Constant)"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "strike-melee->Fetch Weapon": {
           "name": "Fetch Weapon"
         },
@@ -3764,7 +3826,7 @@
         },
         "action->Bonds of Iron": {
           "name": "Bonds of Iron",
-          "description": "<p>Once per day, a jaggerdbrier hag can cause a cage built of cold iron fingernails to spring out of nothingness at a range of up to 30 feet, attempting an Athletics check to [[/act grapple]] against the target's Fortitude DC; if the target has a weakness to cold iron, the jaggerdbrier hag gains a +2 circumstance bonus to this check.</p>\n<p>Unlike a normal Grapple, the jaggerdbrier hag doesn't need to be within reach and can move as she pleases, and a successful attempt lasts until the creature [[/act escape dc=25]]{Escapes} (DC 25), causing the cage to crumble into rust.</p>\n<p>Any creature can attempt to destroy the cage by attacking it. It has an AC of 19, Hardness 10, and 40 Hit Points.</p>"
+          "description": "<p>Once per day, a jaggerdbrier hag can cause a cage built of cold iron fingernails to spring out of nothingness at a range of up to 30 feet, attempting an Athletics check to [[/act grapple]] against the target's Fortitude DC; if the target has a weakness to cold iron, the jaggerdbrier hag gains a +2 circumstance bonus to this check.</p>\n<p>Unlike a normal Grapple, the jaggerdbrier hag doesn't need to be within reach and can move as she pleases, and a successful attempt lasts until the creature [[/act escape dc=25]]{Escapes}, causing the cage to crumble into rust.</p>\n<p>Any creature can attempt to destroy the cage by attacking it. It has an AC of 19, Hardness 10, and 40 Hit Points.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The hag can take on the appearance of any Medium female humanoid. This doesn't change her Speed or her attack and damage bonuses with her Strikes but might change the damage type her Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -3864,7 +3926,7 @@
         },
         "action->Telekinetic Assault": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.0K3vhX14UEPftqu8]\nTelekinetic Assault",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.0K3vhX14UEPftqu8]\n<p>The ghost cries out in pain and anguish as small objects and debris fly about in a @Template[emanation|distance:30]. Creatures in this area take @Damage[5d6[bludgeoning]] damage, subject to a @Check[reflex|dc:28|basic] save.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.0K3vhX14UEPftqu8]\n<p>The ghost cries out in pain and anguish as small objects and debris fly about in a @Template[emanation|distance:30]. Creatures in this area take @Damage[5d6[bludgeoning]|options:area-damage] damage, subject to a @Check[reflex|dc:28|basic|options:area-effect] save.</p>"
         }
       }
     },
@@ -4018,6 +4080,11 @@
           "name": "Specialty Crafting (Alchemy)",
           "description": "<p>Your training focused on Crafting one particular kind of item. You gain a +1 circumstance bonus to Crafting checks to Craft alchemical items. If you are a master in Crafting, this bonus increases to +2.</p>\n<hr />\n<p><strong>Sample Items</strong> Alchemical Items such as Elixirs</p>\n<p>If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "weapon->Acid Flask (Moderate)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.SgtqZxt26BdjUmEB]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 2d6 persistent acid damage, and 2 acid splash damage. You gain a +1 item bonus to attack rolls.</p>"
         },
@@ -4081,13 +4148,13 @@
       },
       "speed": "ice stride",
       "items": {
-        "consumable->Rock": {
+        "ammo->Rock": {
           "name": "Rock"
         },
         "strike-melee->Hatchet": {
           "name": "Hatchet"
         },
-        "strike-ranged->Rock": {
+        "strike-melee->Rock": {
           "name": "Rock"
         },
         "action->Fast Healing 20": {
@@ -4134,7 +4201,7 @@
         "weapon->Greataxe": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.8COlYvHe6hKCXY8x]\n<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often \"bearded\", having a hook at the bottom to increase the strength of their chopping power.</p>"
         },
-        "consumable->Rock": {
+        "ammo->Rock": {
           "name": "Rock"
         },
         "strike-melee->Greataxe": {
@@ -4143,7 +4210,7 @@
         "strike-melee->Fist": {
           "name": "Fist"
         },
-        "strike-ranged->Rock": {
+        "strike-melee->Rock": {
           "name": "Rock"
         },
         "action->Fast Healing 15": {
@@ -4188,7 +4255,7 @@
         },
         "action->Devastating Blast": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\nDevastating Blast",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\n<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[8d12[cold]] damage (@Check[reflex|dc:34|basic] save). The graveknight can use this ability once every [[/gmr 1d4 #Recharge Devastating Blast]]{1d4 rounds}.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\n<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[8d12[cold]|options:area-damage] damage (@Check[reflex|dc:34|basic|options:area-effect] save). The graveknight can use this ability once every [[/gmr 1d4 #Recharge Devastating Blast]]{1d4 rounds}.</p>"
         },
         "action->Graveknight's Curse": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5dbzWZbiTyPKgwKS]\nGraveknight's Curse",
@@ -4232,6 +4299,11 @@
         },
         "spell->Magic Missile": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]\nMagic Missile"
+        },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
         },
         "equipment->Robes": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ilbLQNy6TbBPW7sQ]\nRobes"
@@ -4296,7 +4368,7 @@
         "weapon->+2 Greater Striking Spiked Greatclub": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.kdGqnqbrwPzQfTsm]\n+2 Greater Striking Spiked Greatclub"
         },
-        "consumable->Rock": {
+        "ammo->Rock": {
           "name": "Rock"
         },
         "strike-melee->Spiked Greatclub": {
@@ -4305,7 +4377,7 @@
         "strike-melee->Fist": {
           "name": "Fist"
         },
-        "strike-ranged->Rock": {
+        "strike-melee->Rock": {
           "name": "Rock"
         },
         "action->Kob's Ruinous Strike": {
@@ -4344,7 +4416,7 @@
         },
         "action->Devastating Blast": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\nDevastating Blast",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\n<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[9d12[electricity]] damage (@Check[reflex|dc:37|basic] save). The graveknight can use this ability once every [[/gmr 1d4 #Recharge Devastating Blast]]{1d4 rounds}.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\n<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[9d12[electricity]|options:area-damage] damage (@Check[reflex|dc:37|basic|options:area-effect] save). The graveknight can use this ability once every [[/gmr 1d4 #Recharge Devastating Blast]]{1d4 rounds}.</p>"
         },
         "action->Graveknight's Curse": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5dbzWZbiTyPKgwKS]\nGraveknight's Curse",
@@ -4390,18 +4462,6 @@
       "blurb": "Male human werewolf",
       "languages": "wolf empathy",
       "items": {
-        "strike-melee->Jaws": {
-          "name": "Jaws"
-        },
-        "strike-melee->Claw": {
-          "name": "Claw"
-        },
-        "strike-melee->Fist": {
-          "name": "Fist"
-        },
-        "strike-melee->Wolf Jaws": {
-          "name": "Wolf Jaws"
-        },
         "action->Wolf Empathy": {
           "name": "Wolf Empathy",
           "description": "<p>Kundal can communicate with lupines.</p>"
@@ -4411,7 +4471,12 @@
           "description": "<p><strong>Requirement</strong> Kundal rolled Stealth for Initiative, and it's the first round of combat.</p>\n<hr />\n<p><strong>Effect</strong> Kundal Strides up to his speed and then attempts a jaws Strike and a claw Strike against a single adjacent target. Apply his multiple attack penalty to each Strike normally.</p>"
         },
         "action->Change Shape": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>Human with fist +16 for 1d4+7 bludgeoning, or wolf with Speed 40 feet and jaws with Knockdown.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>Human with fist +16 for 1d4+7 bludgeoning, or wolf with Speed 40 feet and jaws with Knockdown.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+          "rules": {
+            "2": {
+              "text": "@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]"
+            }
+          }
         },
         "action->Curse of the Werewolf": {
           "name": "Curse of the Werewolf",
@@ -4437,8 +4502,8 @@
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Occult Innate Spells"
         },
-        "spell->Tongues (Tongues)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues (Tongues)"
+        "spell->Tongues (Constant)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues (Constant)"
         },
         "spell->Hypnotic Pattern": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.K2WpC3FFoHrqX9Q5]\nHypnotic Pattern"
@@ -4511,7 +4576,7 @@
         "strike-melee->Wing": {
           "name": "Wing"
         },
-        "strike-ranged->Eyes Of Flame": {
+        "strike-melee->Eyes Of Flame": {
           "name": "Eyes Of Flame"
         },
         "action->Planar Acclimation": {
@@ -4562,6 +4627,11 @@
         },
         "spell->Burning Hands": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]\nBurning Hands"
+        },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
         },
         "spell->Tanglefoot": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
@@ -4822,13 +4892,13 @@
     "Locking Alarm": {
       "name": "Locking Alarm",
       "description": "<p>Any attempt to open the door without first tracing the symbol of Yhidothrus (an hourglass) on the door's face with a fingertip causes a glowing green ward to seal the door shut and raise an alarm.</p>",
-      "disable": "<p>@Check[thievery|dc:32] (expert) to bypass the magical triggers on the door, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th level, counteract DC 29) to counteract the alarm.</p>",
+      "disable": "<p>@Check[thievery|dc:32] (expert) to bypass the magical triggers on the door, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th rank, counteract DC 29) to counteract the alarm.</p>",
       "reset": "<p>The <em>locking alarm</em> resets after 1 minute.</p>",
       "stealth": "<p>(master)</p>",
       "items": {
         "action->Lock and Shriek": {
           "name": "Lock and Shriek",
-          "description": "<p><strong>Trigger</strong> A creature attempts to open or affect the door</p>\n<p><strong>Effect</strong> The religious symbol of Yhidothrus glows green on the door, sealing it shut while simultaneously shrieking like a tormented soul. This howl is audible in areas <strong>D1-D4</strong> and is loud enough in area <strong>D2</strong> to rouse the bodaks.</p>\n<p>While the door remains locked, a @Check[athletics|dc:32] check can Force it Open, or a @Check[thievery|dc:32] check can Pick the Lock. The lock can also be removed with @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th level, counteract DC 29).</p>\n<p>Once triggered, the alarm continues to shriek and the door remains locked until the hazard is disabled or the door is destroyed or opened. Tracing Yhidothrus's hourglass-shaped religious symbol on either side of the door with a fingertip disables the alarm and the locking ward.</p>"
+          "description": "<p><strong>Trigger</strong> A creature attempts to open or affect the door</p>\n<p><strong>Effect</strong> The religious symbol of Yhidothrus glows green on the door, sealing it shut while simultaneously shrieking like a tormented soul. This howl is audible in areas <strong>D1-D4</strong> and is loud enough in area <strong>D2</strong> to rouse the bodaks.</p>\n<p>While the door remains locked, a @Check[athletics|dc:32] check can Force it Open, or a @Check[thievery|dc:32] check can Pick the Lock. The lock can also be removed with @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th rank, counteract DC 29).</p>\n<p>Once triggered, the alarm continues to shriek and the door remains locked until the hazard is disabled or the door is destroyed or opened. Tracing Yhidothrus's hourglass-shaped religious symbol on either side of the door with a fingertip disables the alarm and the locking ward.</p>"
         }
       }
     },
@@ -5061,7 +5131,7 @@
         },
         "action->Wild Empathy": {
           "name": "Wild Empathy",
-          "description": "<p>Melianse can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on aquatic or amphibious animals and make very simple Requests of them.</p>"
+          "description": "<p>Melianse can use Diplomacy to [[/act make-an-impression]] on aquatic or amphibious animals and make very simple [[/act request]]{Requests} of them.</p>"
         },
         "action->Grant Desire": {
           "name": "Grant Desire",
@@ -5101,7 +5171,7 @@
         },
         "action->Wyvern Venom": {
           "name": "Wyvern Venom",
-          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[5d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[6d6[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[8d6[poison]] damage (1 round)</p>"
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:41]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[5d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[6d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[8d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3} (1 round)</p>"
         }
       }
     },
@@ -5257,7 +5327,7 @@
         "strike-ranged->Club": {
           "name": "Club"
         },
-        "strike-ranged->Composite Shortbow": {
+        "strike-melee->Composite Shortbow": {
           "name": "Composite Shortbow"
         },
         "action->+1 Status to All Saves vs. Poison": {
@@ -5512,7 +5582,7 @@
         "strike-melee->Maul": {
           "name": "Maul"
         },
-        "strike-ranged->Composite Longbow": {
+        "strike-melee->Composite Longbow": {
           "name": "Composite Longbow"
         },
         "action->Furious Power Attack": {
@@ -5563,7 +5633,7 @@
         },
         "action->Swift Summon": {
           "name": "Swift Summon",
-          "description": "<p>Prerequisite Nugrah has a summon animal spell prepared and available.</p>\n<hr />\n<p><strong>Effect</strong> Nugrah casts summon animal but does not need to use a material component.</p>"
+          "description": "<p><strong>Requirements</strong> Nugrah has a @UUID[Compendium.pf2e.spells-srd.Item.4YnON9JHYqtLzccu]{Summon Animal} spell prepared and available.</p>\n<hr />\n<p><strong>Effect</strong> Nugrah casts <em>summon animal</em> but does not need to use a material component.</p>"
         }
       }
     },
@@ -5605,7 +5675,7 @@
         },
         "action->Vent": {
           "name": "Vent",
-          "description": "<p>The golem vents a @Template[cone|distance:30] of superheated steam from its internal forge. This deals @Damage[15d6[fire]] damage to all creatures in the cone (@Check[reflex|dc:40|basic]).</p>\n<p>The golem can't use Vent again for [[/gmr 1d6 #Recharge Vent]]{1d6 rounds}.</p>"
+          "description": "<p>The golem vents a @Template[cone|distance:30] of superheated steam from its internal forge. This deals @Damage[15d6[fire]|options:area-damage] damage to all creatures in the cone (@Check[reflex|dc:40|basic|options:area-effect]).</p>\n<p>The golem can't use Vent again for [[/gmr 1d6 #Recharge Vent]]{1d6 rounds}.</p>"
         }
       }
     },
@@ -5701,7 +5771,7 @@
         },
         "action->Radiant Blast": {
           "name": "Radiant Blast",
-          "description": "<p>The radiant warden releases a @Template[cone|distance:50] of bright energy that deals @Damage[10d12[force]] damage (@Check[reflex|dc:38|basic] save). The radiant warden can't use Radiant Blast for [[/gmr 1d4 #Recharge Radiant Blast]]{1d4 rounds}.</p>"
+          "description": "<p>The radiant warden releases a @Template[cone|distance:50] of bright energy that deals @Damage[10d12[force]|options:area-damage] damage (@Check[reflex|dc:38|basic|options:area-effect] save). The radiant warden can't use Radiant Blast for [[/gmr 1d4 #Recharge Radiant Blast]]{1d4 rounds}.</p>"
         },
         "action->Radiant Blow": {
           "name": "Radiant Blow",
@@ -5836,7 +5906,7 @@
         "strike-melee->Thorny Lash": {
           "name": "Thorny Lash"
         },
-        "strike-ranged->Hurled Thorn": {
+        "strike-melee->Hurled Thorn": {
           "name": "Hurled Thorn"
         },
         "action->Shame": {
@@ -5845,7 +5915,7 @@
         },
         "action->Wild Empathy": {
           "name": "Wild Empathy",
-          "description": "<p>Nyrissa can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and make very simple Requests of animals and plant creatures.</p>"
+          "description": "<p>Nyrissa can use Diplomacy to [[/act make-an-impression]] on and make very simple [[/act request]]{Requests} of animals and plant creatures.</p>"
         },
         "action->Blinding Beauty": {
           "name": "Blinding Beauty",
@@ -5890,7 +5960,7 @@
     "Nyrissa's Tempest": {
       "name": "Nyrissa's Tempest",
       "description": "<p>Sudden dark clouds gather in the sky above, and moments later, blasts of lightning and swirling tornadoes begin to rip the landscape apart.</p>",
-      "disable": "<p>@Check[nature|dc:42] (master) to note the magical nature of the storm and to perform a quick ritual and prayer to the fey spirits of the region to cause the tempest to disperse, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th level, counteract DC 36) to counteract the tempest immediately.</p>",
+      "disable": "<p>@Check[nature|dc:42] (master) to note the magical nature of the storm and to perform a quick ritual and prayer to the fey spirits of the region to cause the tempest to disperse, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th rank, counteract DC 36) to counteract the tempest immediately.</p>",
       "routine": "<p>(4 actions) If the PCs successfully sought shelter with a Survival check, the storm takes no actions if the GM fails a @Check[flat|dc:16]. Otherwise, the storm takes four of the following actions, each determined by rolling a [[/br 1d4]], during the round. On each successive round, the number of actions the storm takes is reduced by 1; when the storm is reduced to 0 actions in this way, the hazard ends.</p>\n<ul>\n<li><strong>1 Thunderclap</strong> A blast of sound rips through the region. Unsheltered armies must attempt a DC 30 Morale check or increase their shaken value by 1. Unsheltered PCs take @Damage[10d6[sonic]] damage (@Check[fortitude|dc:38|basic]).</li>\n<li><strong>2 Lightning</strong> The tempest takes its Raging Storm reaction as a single action.</li>\n<li><strong>3 Tornado</strong> A tornado funnel extends down from the storm to unerringly strike at a PC, who must attempt a @Check[fortitude|dc:38] save.</li>\n</ul>\n<hr />\n<p><strong>Critical Success</strong> The PC escapes unscathed.</p>\n<p><strong>Success</strong> The PC is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} and takes @Damage[8d6[bludgeoning]] damage.</p>\n<p><strong>Failure</strong> The PC is hurled through the air, taking @Damage[8d6[bludgeoning]] damage and then falling 1d6&times;10 feet for appropriate falling damage, landing prone.</p>\n<p><strong>Critical Failure</strong> As failure, but @Damage[8d6[bludgeoning]] damage and a fall of [[/r 10*(2d8) #Feet Fallen]]{2d8 x 10 feet}.</p>\n<ul>\n<li><strong>4 Renewal Blasts</strong> of wind tear through the area but do no real damage. Attempt a @Check[flat|dc:11]; on a success, the number of actions the storm takes next round is not reduced as usual.</li>\n</ul>",
       "stealth": "<p>(expert)</p>",
       "items": {
@@ -5960,7 +6030,7 @@
     "Orb Blast Trap": {
       "name": "Orb Blast Trap",
       "description": "<p>Five globes shoot bolts of force up and down the hall when a second creature reaches its midpoint.</p>",
-      "disable": "<p>@Check[thievery|dc:48] (master) to deactivate the trap entirely before it triggers, @Check[thievery|dc:45] (expert) to deactivate one of the glimmering orbs after the trap rolls initiative, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th level; counteract DC 41) to deactivate the trap entirely.</p>",
+      "disable": "<p>@Check[thievery|dc:48] (master) to deactivate the trap entirely before it triggers, @Check[thievery|dc:45] (expert) to deactivate one of the glimmering orbs after the trap rolls initiative, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th rank; counteract DC 41) to deactivate the trap entirely.</p>",
       "hpDetails": "per orb",
       "reset": "<p>The trap deactivates 1 round after it has no creatures to target and resets automatically after 1 minute.</p>",
       "routine": "<p>(5 actions) Five energized orbs each take one action to make a force bolt attack against a different target in the hallway (a single target cannot be fired at more than once per round by the trap). The trap doesn't take multiple attack penalties. Each orb that is disabled or destroyed reduces the trap's actions by 1.</p>",
@@ -5980,7 +6050,7 @@
       "name": "Overgrown Viper Vine",
       "blurb": "Variant viper vine",
       "publicNotes": "<p>A voracious, flesh-eating carnivore, the viper vine has a single enormous blossom arising from a thick, leafy tangle of snake-like vines. When the plant senses the approach of suitable prey through its sensitive, shallowly buried root system, it rises up like an agitated snake and unfurls its brightly colored bloom, an act that releases a cloud of mind-numbing pollen. Persistent stories claim the viper vine can lure prey into its clutches by swaying with a hypnotic motion, but this effect is in fact created by this invisible, odorless pollen cloud.</p>\n<p>Since a viper vine gains nourishment by consuming creatures rather than through ingesting moisture and soil, it has developed rudimentary locomotion and can drag itself along the ground with its tentacle-like roots. It even has a form of rudimentary sentience, allowing it to not only discern differences in prey and make limited tactical decisions, but also to avoid creatures that are particularly large or dangerous-looking.</p>\n<p>The area around viper vine hunting grounds is often strewn with the partially devoured remains of victims. It's not unusual to find the rotting corpses of wild animals, ill-fated adventurers, and even giants in the plant's immediate vicinity, along with a scattering of incidental treasure left behind on the corpses. A viper vine rarely returns to the carcass of a creature it killed earlier, preferring to hunt fresh meat.</p>",
-      "senses": "otherwise imprecise) 60 feet",
+      "senses": "tremorsense is precise in area A7",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -6121,6 +6191,22 @@
         }
       }
     },
+    "Phantasmal Protagonist": {
+      "name": "Phantasmal Protagonist",
+      "items": {
+        "strike-melee->Thematic Action - Hero": {
+          "name": "Thematic Action - Hero"
+        },
+        "action->Thematic Action - Ally": {
+          "name": "Thematic Action - Ally",
+          "description": "<p>The protagonist takes the form of a recognizable support character. Its thematic action is to grant an adjacent creature 4d4 temporary Hit Points, which last for 1 round.</p>"
+        },
+        "action->Thematic Action - Villain": {
+          "name": "Thematic Action - Villain",
+          "description": "<p>The protagonist takes the form of a notorious villain. Its thematic action is to harry and mock an adjacent target. The target must succeed at a Will save or become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} on a critical failure) until the end of your next turn.</p>"
+        }
+      }
+    },
     "Phomandala": {
       "name": "Phomandala",
       "acDetails": "all-around vision",
@@ -6254,7 +6340,7 @@
         "strike-melee->Greatsword": {
           "name": "Greatsword"
         },
-        "strike-ranged->Shortbow": {
+        "strike-melee->Shortbow": {
           "name": "Shortbow"
         },
         "action->Power Attack": {
@@ -6286,7 +6372,7 @@
     "Praise of Yog-Sothoth": {
       "name": "Praise of Yog-Sothoth",
       "description": "<p>Magical letters reveal phrases in Aklo that, if not properly spoken aloud, inflict numbing cold.</p>",
-      "disable": "<p>@Check[occultism|dc:47] (master) or @Check[religion|dc:49] (master) three times in a row to successfully speak aloud the esoteric phrases as they appear (this causes the trap to deactivate for 1 hour, although the phrases continue to appear during this time), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th level, counteract DC 38).</p>",
+      "disable": "<p>@Check[occultism|dc:47] (master) or @Check[religion|dc:49] (master) three times in a row to successfully speak aloud the esoteric phrases as they appear (this causes the trap to deactivate for 1 hour, although the phrases continue to appear during this time), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th rank, counteract DC 38).</p>",
       "reset": "<p>The trap deactivates 1 round after it has no target creatures and resets after 1 minute.</p>",
       "routine": "<p>(1 action) The trap fills the entirety of area <strong>B4</strong> with additional blasts of cold. All creatures in area <strong>B4</strong> take @Damage[12d6[cold]] damage (@Check[fortitude|dc:41|basic], plus @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} for 1 minute on a critical failure).</p>",
       "stealth": "<p>(legendary) to recognize the symbols as a magical trap</p>",
@@ -6378,7 +6464,7 @@
         "strike-melee->Tail": {
           "name": "Tail"
         },
-        "strike-ranged->Quill": {
+        "strike-melee->Quill": {
           "name": "Quill"
         },
         "action->Planar Acclimation": {
@@ -6718,7 +6804,7 @@
       "items": {
         "action->Scalding Burst": {
           "name": "Scalding Burst",
-          "description": "<p><strong>Trigger</strong> A creature attempts to move through the tar</p>\n<hr />\n<p><strong>Effect</strong> A scalding burst of hot tar burns the creature, which must immediately attempt a @Check[reflex|dc:28] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d6[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[6d6[fire],1d6[persistent,fire]]{6d6 fire damage and 1d6 persistent fire damage}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[9d6[fire],2d6[persistent,fire]]{9d6 fire damage, 2d6 persistent fire damage} and takes a -10-foot status penalty to its Speed as long as it continues to take the persistent fire damage from the hot tar clinging to it.</p>"
+          "description": "<p><strong>Trigger</strong> A creature attempts to move through the tar</p>\n<hr />\n<p><strong>Effect</strong> A scalding burst of hot tar burns the creature, which must immediately attempt a @Check[reflex|dc:28] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d6[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[6d6[fire],1d6[persistent,fire]]{6d6 fire damage and 1d6 persistent fire damage}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[9d6[fire],2d6[persistent,fire]]{9d6 fire damage, 2d6 persistent fire damage} and takes a –10-foot status penalty to its Speed as long as it continues to take the persistent fire damage from the hot tar clinging to it.</p>"
         }
       }
     },
@@ -6758,7 +6844,7 @@
         },
         "action->Inveigled": {
           "name": "Inveigled",
-          "description": "<p>Sepoko has been inveigled by the naga Ngara. This effect can be removed with @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th level; counteract DC 31).</p>"
+          "description": "<p>Sepoko has been inveigled by the naga Ngara. This effect can be removed with @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th rank; counteract DC 31).</p>"
         },
         "action->Swamp Stride": {
           "name": "Swamp Stride",
@@ -6845,7 +6931,7 @@
         "strike-melee->Longsword": {
           "name": "Longsword"
         },
-        "strike-ranged->Composite Shortbow": {
+        "strike-melee->Composite Shortbow": {
           "name": "Composite Shortbow"
         },
         "action->Quick Block": {
@@ -6905,7 +6991,7 @@
         "strike-melee->Greatsword": {
           "name": "Greatsword"
         },
-        "strike-ranged->Composite Longbow": {
+        "strike-melee->Composite Longbow": {
           "name": "Composite Longbow"
         },
         "action->Fast Healing 10": {
@@ -6960,7 +7046,7 @@
     "Spiral Seal": {
       "name": "Spiral Seal",
       "description": "<p>A spiral shape suggesting the curling religious symbol of Pharasma is carved into the stone floor.</p>",
-      "disable": "<p>@Check[occultism|dc:37] (master) or @Check[religion|dc:40] (master) to unmake the Spiral Seal through occult ritual or prayer performed as a 10 minute activity with the Concentrate trait, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th level, counteract DC 40) to counteract the Spiral Seal.</p>",
+      "disable": "<p>@Check[occultism|dc:37] (master) or @Check[religion|dc:40] (master) to unmake the Spiral Seal through occult ritual or prayer performed as a 10 minute activity with the Concentrate trait, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th rank, counteract DC 40) to counteract the Spiral Seal.</p>",
       "hpDetails": "recovery",
       "items": {
         "action->Backlash": {
@@ -7025,7 +7111,7 @@
         "strike-melee->Longsword": {
           "name": "Longsword"
         },
-        "strike-ranged->Composite Longbow": {
+        "strike-melee->Composite Longbow": {
           "name": "Composite Longbow"
         }
       }
@@ -7077,7 +7163,7 @@
     "Stygian Fires": {
       "name": "Stygian Fires",
       "description": "<p>Freezing black fire bursts from the two quartz altars, filling the room with numbing black flames that scour away memories and emotions as swiftly as they sear flesh and bone.</p>",
-      "disable": "<p>@Check[thievery|dc:30] (master) to sever the links between the door and the lanterns, @Check[religion|dc:35] (master) to use prayer to deactivate the divine magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th level; counteract DC 30) to counteract the trap</p>",
+      "disable": "<p>@Check[thievery|dc:30] (master) to sever the links between the door and the lanterns, @Check[religion|dc:35] (master) to use prayer to deactivate the divine magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th rank; counteract DC 30) to counteract the trap</p>",
       "reset": "<p>The trap resets one minute after the doors to area <strong>E3</strong> are closed.</p>",
       "stealth": "<p>(master)</p>",
       "items": {
@@ -7125,12 +7211,7 @@
         },
         "action->Snack": {
           "name": "Snack",
-          "description": "<p>A roc gains a +2 circumstance bonus to hit with its beak Strike if the target is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado} in its talon.</p>",
-          "rules": {
-            "0": {
-              "label": "The Target is Grabbed or Restrained in the Roc's Talon"
-            }
-          }
+          "description": "<p>A roc gains a +2 circumstance bonus to hit with its beak Strike if the target is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado} in its talon.</p>"
         },
         "action->Snatch": {
           "name": "Snatch",
@@ -7267,7 +7348,7 @@
     "Test of Endurance": {
       "name": "Test of Endurance",
       "description": "<p>The room fills with swirling vortexes of freezing wind that swiftly freeze flesh and chill the bones.</p>",
-      "disable": "<p>@Check[thievery|dc:33] (master) to adjust the wheel's mechanisms so that it won't trigger the Test of Endurance, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th level, counteract DC 31) to counteract the trap's magic.</p>",
+      "disable": "<p>@Check[thievery|dc:33] (master) to adjust the wheel's mechanisms so that it won't trigger the Test of Endurance, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th rank, counteract DC 31) to counteract the trap's magic.</p>",
       "reset": "<p>The trap resets automatically.</p>",
       "stealth": "<p>(master)</p>",
       "items": {
@@ -7297,7 +7378,7 @@
     "Test of Tactics": {
       "name": "Test of Tactics",
       "description": "<p>Obscure magical runes hidden within the runes of the 16 named warriors bind a pair of derghodaemons into the walls of this hallway.</p>",
-      "disable": "<p>@Check[thievery|dc:37] (expert) to remove a set of runes linked to one bound derghodaemon, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th level, counteract DC 31) to counteract the trap's magic.</p>",
+      "disable": "<p>@Check[thievery|dc:37] (expert) to remove a set of runes linked to one bound derghodaemon, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th rank, counteract DC 31) to counteract the trap's magic.</p>",
       "reset": "<p>If at least one of the @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.oKogG9AwUZ9iBsm3]{Derghodaemons} survives, the trap resets after 1 hour, causing the surviving derghodaemons to be completely restored to full health and to merge with the floors.</p>",
       "stealth": "<p>(expert)</p>",
       "items": {
@@ -7470,7 +7551,7 @@
         },
         "action->Telekinetic Assault": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.0K3vhX14UEPftqu8]\nTelekinetic Assault",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.0K3vhX14UEPftqu8]\n<p>The ghost cries out in pain and anguish as small objects and debris fly about in a @Template[emanation|distance:30]. Creatures in this area take @Damage[9d6[bludgeoning]] damage, subject to a @Check[reflex|dc:37|basic] save.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.0K3vhX14UEPftqu8]\n<p>The ghost cries out in pain and anguish as small objects and debris fly about in a @Template[emanation|distance:30]. Creatures in this area take @Damage[9d6[bludgeoning]|options:area-damage] damage, subject to a @Check[reflex|dc:37|basic|options:area-effect] save.</p>"
         }
       }
     },
@@ -7504,7 +7585,7 @@
         "strike-melee->Horns": {
           "name": "Horns"
         },
-        "strike-ranged->Composite Shortbow": {
+        "strike-melee->Composite Shortbow": {
           "name": "Composite Shortbow"
         },
         "action->Fey Conduit": {
@@ -7553,11 +7634,6 @@
       "blurb": "Variant female annis hag",
       "publicNotes": "<p>Annis hags are brutal torturers and murderers, delighting in the musical screams and tasty flesh of young creatures and those who are pure of heart. Annis hags are the most direct of all hags, engaging in physical combat and using their change shape ability to hunt rather than to infiltrate and betray humanoids. But an Annis hag takes a grisly trophy from each kill and uses it to sow discord, sending the trophy to one of her victim's loved ones in a way that implicates another family member in the murder. Also known as iron hags, annis hags have iron-like yet flexible flesh that resists edged weapons, and their own touch is the same cold iron that burns the flesh of other hags. This allows them to bully their way to the leadership of hag covens.</p>\n<hr />\n<p>Malevolent crones who lurk at the edges of civilization, hags use their deceptive, magical abilities to prey upon humanoids, manipulating and corrupting them. Some say hags arose from fey that became twisted by their inner selfishness. Hags gather together in covens for greater power, craft unique magical items known as <em>@UUID[Compendium.pf2e.equipment-srd.Item.ACa9QlFqdmW4s2Th]{Hag Eyes}</em>, and are known to replace infant humanoids with their own offspring-these children are @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.RqX0vfUjlycKjGyp]{Changelings} who have the potential to become hags themselves.</p>",
       "saveDetails": "+1 status to all saves vs. magic, resolve",
-      "skillSpecialAthletics": {
-        "0": {
-          "label": "to Grapple"
-        }
-      },
       "items": {
         "spellcastingEntry->Divine Prepared Spells": {
           "name": "Divine Prepared Spells"
@@ -7595,7 +7671,7 @@
         },
         "equipment->Wand of Slaying (7th-Rank Spell)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.CjfBdn0fOIarWzBc]\nWand of Slaying (7th-Rank Spell)",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.CjfBdn0fOIarWzBc]\n<p>This polished black wand has a green gem at the tip, and anyone who looks into it sees a reflection of a grinning skull instead of their face.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> Once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.Z9OrRXKgAPv6Hn5l]{Execute} at 7th rank.</p>\n<p>If the spell slays its target, the corpse releases void energy in a @Template[emanation|distance:20], dealing void damage equal to double the spell's rank (@Damage[14[void]] damage).</p>\n<hr />\n<p><strong>Craft Requirements</strong> Supply a casting of finger of death of the appropriate rank.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.CjfBdn0fOIarWzBc]\n<p>This polished black wand has a green gem at the tip, and anyone who looks into it sees a reflection of a grinning skull instead of their face.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> Once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.Z9OrRXKgAPv6Hn5l]{Execute} at 7th rank.</p>\n<p>If the spell slays its target, the corpse releases void energy in a @Template[emanation|distance:20], dealing void damage equal to double the spell's rank (@Damage[14[void]|options:area-damage] damage).</p>\n<hr />\n<p><strong>Craft Requirements</strong> Supply a casting of finger of death of the appropriate rank.</p>"
         },
         "strike-melee->Claw": {
           "name": "Claw"
@@ -7611,7 +7687,7 @@
         },
         "action->Bonds of Iron": {
           "name": "Bonds of Iron",
-          "description": "<p>Once per day, an annis hag can cause a cage built of cold iron fingernails to spring out of nothingness at a range of up to 30 feet, attempting an Athletics check to [[/act grapple]] against the target's Fortitude DC; if the target has a weakness to cold iron, the annis hag gains a +2 circumstance bonus to this check.</p>\n<p>Unlike a normal Grapple, the annis hag doesn't need to be within reach and can move as she pleases, and a successful attempt lasts until the creature [[/act escape dc=42]]{Escapes} (DC 42), causing the cage to crumble into rust.</p>\n<p>Any creature can attempt to destroy the cage by attacking it. It has an AC of 40, Hardness 20, and 80 Hit Points.</p>"
+          "description": "<p>Once per day, an annis hag can cause a cage built of cold iron fingernails to spring out of nothingness at a range of up to 30 feet, attempting an Athletics check to [[/act grapple]] against the target's Fortitude DC; if the target has a weakness to cold iron, the annis hag gains a +2 circumstance bonus to this check.</p>\n<p>Unlike a normal Grapple, the annis hag doesn't need to be within reach and can move as she pleases, and a successful attempt lasts until the creature [[/act escape dc=42]]{Escapes}, causing the cage to crumble into rust.</p>\n<p>Any creature can attempt to destroy the cage by attacking it. It has an AC of 40, Hardness 20, and 80 Hit Points.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The hag can take on the appearance of any Medium female humanoid. This doesn't change her Speed or her attack and damage bonuses with her Strikes but might change the damage type her Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -7653,10 +7729,6 @@
         "action->Drain Life": {
           "name": "Drain Life",
           "description": "<p>When The Lonely Warrior damages a living creature with a melee Strike, using an unarmed attack or its bound weapon, The Lonely Warrior gains [[/r 5 #Temporary Hit Points]]{5 temporary Hit Points} and the creature must succeed at a @Check[fortitude|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}. Further damage dealt by the cairn wraith increases the drained condition value by 1 on a failed save, to a maximum of drained 4.</p>"
-        },
-        "action->Funereal Dirge": {
-          "name": "Funereal Dirge",
-          "description": "<p>The cairn wight chants a low, haunting melody. Living creatures within @Template[emanation|distance:50]{50 feet} must attempt a @Check[will|dc:21] save.</p>\n<p>The cairn wight can't chant a new Funereal Dirge for [[/br 1d4 #Recharge Funereal Dirge]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} and takes a -2 status penalty to saving throws against drain life.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.8ecPVgMeWDxc4jI4]{Effect: Funereal Dirge}</p>"
         },
         "action->Lonely Dirge": {
           "name": "Lonely Dirge",
@@ -7757,7 +7829,7 @@
         "strike-melee->Longsword": {
           "name": "Longsword"
         },
-        "strike-ranged->Composite Longbow": {
+        "strike-melee->Composite Longbow": {
           "name": "Composite Longbow"
         },
         "action->Perpetual Hangover": {
@@ -7901,7 +7973,7 @@
         "strike-ranged->Dagger": {
           "name": "Dagger"
         },
-        "strike-ranged->Shortbow": {
+        "strike-melee->Shortbow": {
           "name": "Shortbow"
         }
       }
@@ -8010,7 +8082,7 @@
         "strike-melee->Dagger": {
           "name": "Dagger"
         },
-        "strike-ranged->Greater Acid Flask": {
+        "strike-melee->Greater Acid Flask": {
           "name": "Greater Acid Flask",
           "description": "<p>10 foot splash</p>"
         },
@@ -8198,7 +8270,7 @@
         "equipment->Sack for Holding Rocks": {
           "name": "Sack for Holding Rocks"
         },
-        "consumable->Rock": {
+        "ammo->Rock": {
           "name": "Rock"
         },
         "strike-melee->Greatclub": {
@@ -8207,7 +8279,7 @@
         "strike-melee->Fist": {
           "name": "Fist"
         },
-        "strike-ranged->Rock": {
+        "strike-melee->Rock": {
           "name": "Rock"
         },
         "action->Knockback": {
@@ -8774,7 +8846,7 @@
       "items": {
         "action->Cling": {
           "name": "Cling",
-          "description": "<p><strong>Trigger</strong> A creature leaves the swarm's space</p>\n<hr />\n<p><strong>Effect</strong> The swarm takes [[/r {1d6}]]{1d6 damage} as ants cling to the creature and continue biting, dealing @Damage[7d6[persistent,piercing]] damage. High winds or immersion in water reduces the DC of the flat check to end this persistent damage to 5. Any area damage dealt to the creature destroys these clinging ants.</p>"
+          "description": "<p><strong>Trigger</strong> A creature leaves the swarm's space</p>\n<hr />\n<p><strong>Effect</strong> The swarm takes @Damage[1d6[untyped]] damage as ants cling to the creature and continue biting, dealing @Damage[7d6[persistent,piercing]] damage. High winds or immersion in water reduces the DC of the flat check to end this persistent damage to 5. Any area damage dealt to the creature destroys these clinging ants.</p>"
         },
         "action->Swarming Bites": {
           "name": "Swarming Bites",
@@ -8928,13 +9000,14 @@
     },
     "Void Pit": {
       "name": "Void Pit",
-      "disable": "<p>@Check[thievery|dc:48] (legendary) to deactivate the pit's magical link to outer space or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (10th level, counteract DC 44)</p>",
+      "description": "<p>An ice-caked pit with no bottom looks out into the depths of space.</p>",
+      "disable": "<p>@Check[thievery|dc:48] (legendary) to deactivate the pit's magical link to outer space or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (10th rank, counteract DC 44)</p>",
       "reset": "<p>The Void Pit resets instantly.</p>",
       "stealth": "<p>or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</p>",
       "items": {
         "action->Beyond the Barrier": {
           "name": "Beyond the Barrier",
-          "description": "<p><strong>Trigger</strong> A creature within the pit takes three consecutive Interact actions to push their way through the barrier in the pit</p>\n<hr />\n<p><strong>Effect</strong> The creature is pulled through the portal into the depths of space. It can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} with a @Check[reflex|dc:42] save, otherwise it discovers the portal is one-way-no return route to Golarion exists. The creature takes @Damage[10d6[bludgeoning]] damage (@Check[fortitude|dc:42|basic]) at the start of each turn and begins to suffocate. Without powerful magic like plane shift or wish, even a creature that can survive the depths of space will be lost forever-as the Void Pit deposits them in the unimaginably vast gulf between galaxies in which sound cannot exist, where they cannot cast spells with verbal components.</p>"
+          "description": "<p><strong>Trigger</strong> A creature within the pit takes three consecutive Interact actions to push their way through the barrier in the pit</p>\n<hr />\n<p><strong>Effect</strong> The creature is pulled through the portal into the depths of space. It can attempt to [[/act grab-an-edge dc=42]] with a DC 42 Reflex save, otherwise it discovers the portal is one-way—no return route to Golarion exists. The creature takes @Damage[10d6[bludgeoning]] damage (@Check[fortitude|dc:42|basic]) at the start of each turn and begins to suffocate. Without powerful magic like @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]{Interplanar Teleport} or @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}, even a creature that can survive the depths of space will be lost forever—as the Void Pit deposits them in the unimaginably vast gulf between galaxies in which sound cannot exist, where they cannot cast spells with verbal components.</p>"
         }
       }
     },
@@ -9234,7 +9307,7 @@
         "strike-melee->Horns": {
           "name": "Horns"
         },
-        "strike-ranged->Living Bow": {
+        "strike-melee->Living Bow": {
           "name": "Living Bow"
         },
         "action->Greensight": {
@@ -9414,7 +9487,7 @@
         },
         "action->Summon Pack": {
           "name": "Summon Pack",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> With a howl, the wild hunt hound summons a fog that manifests into several misty hounds. These foggy hounds shift and race and howl in a @Template[emanation|distance:20] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura} as long as the wild hunt hound Sustains the effect. While the hounds seem to be made of fog, their teeth are very real, and any creature that ends its turn in this aura takes @Damage[6d6[piercing]] damage from numerous bites (@Check[reflex|dc:31|basic]).</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> With a howl, the wild hunt hound summons a fog that manifests into several misty hounds. These foggy hounds shift and race and howl in a 20-foot aura as long as the wild hunt hound Sustains the effect. While the hounds seem to be made of fog, their teeth are very real, and any creature that ends its turn in this aura takes @Damage[6d6[piercing]|options:area-damage] damage from numerous bites (@Check[reflex|dc:31|basic|options:area-effect]).</p>"
         }
       }
     },
@@ -9457,6 +9530,11 @@
         },
         "spell->Know Direction": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.tXa5vOu5giBNCjdR]\nKnow Direction"
+        },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
         },
         "equipment->Monarch's Horn": {
           "name": "Monarch's Horn"
@@ -9564,7 +9642,7 @@
         "strike-melee->Crystal Scimitar": {
           "name": "Crystal Scimitar"
         },
-        "strike-ranged->Emerald Beam": {
+        "strike-melee->Emerald Beam": {
           "name": "Emerald Beam"
         },
         "action->Greensight": {

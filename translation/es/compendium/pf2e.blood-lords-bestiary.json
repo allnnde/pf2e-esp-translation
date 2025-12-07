@@ -17,7 +17,7 @@
         "strike-melee->Root": {
           "name": "Root"
         },
-        "strike-ranged->Rock": {
+        "strike-melee->Rock": {
           "name": "Rock"
         },
         "action->Axe Vulnerability": {
@@ -42,7 +42,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The Azmakian effigy exhales rusting gas in a @Template[cone|distance:15]. The gas deals @Damage[2d6|options:area-damage] damage to the highest-level metal item carried by every creature in the area, ignoring these items' Hardness (@Check[fortitude|dc:22|basic|options:area-effect]); unattended metal items in the area take this damage automatically. The Azmakian effigy can't use its Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>The Azmakian effigy exhales rusting gas in a @Template[cone|distance:15]. The gas deals @Damage[2d6[untyped]|options:area-damage] damage to the highest-level metal item carried by every creature in the area, ignoring these items' Hardness (@Check[fortitude|dc:22|basic|options:area-effect]); unattended metal items in the area take this damage automatically. The Azmakian effigy can't use its Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         },
         "action->Powerful Charge": {
           "name": "Powerful Charge",
@@ -255,7 +255,7 @@
         },
         "action->Troop Defenses": {
           "name": "Troop Defenses",
-          "description": "<p><strong>Thresholds</strong> 70 (12 squares), 35 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+          "description": "<p><strong>Thresholds</strong> 70 (3 segments), 35 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "action->Clutching Hands": {
           "name": "Clutching Hands",
@@ -301,7 +301,7 @@
         "strike-melee->Flail": {
           "name": "Flail"
         },
-        "strike-ranged->Heavy Crossbow": {
+        "strike-melee->Heavy Crossbow": {
           "name": "Heavy Crossbow"
         },
         "action->Destructive Vengeance": {
@@ -348,7 +348,7 @@
         "strike-melee->Claw": {
           "name": "Claw"
         },
-        "strike-ranged->Composite Shortbow": {
+        "strike-melee->Composite Shortbow": {
           "name": "Composite Shortbow"
         },
         "action->Deny Advantage": {
@@ -410,7 +410,7 @@
         "strike-melee->Claw": {
           "name": "Claw"
         },
-        "strike-ranged->Grave Ray": {
+        "strike-melee->Grave Ray": {
           "name": "Grave Ray"
         },
         "action->Coven": {
@@ -478,7 +478,7 @@
         "strike-melee->Fist": {
           "name": "Fist"
         },
-        "strike-ranged->Rock": {
+        "strike-melee->Rock": {
           "name": "Rock"
         },
         "action->Alchemical Cartridge": {
@@ -529,7 +529,7 @@
         },
         "action->Countless Digits": {
           "name": "Countless Digits",
-          "description": "<p>Each other creature in the phalanx of phalanges' space takes @Damage[1d6[piercing]] damage (@Damage[(1d6+2)[piercing]] damage if the swarm is berserk) (@Check[reflex|dc:17|basic]). On a critical failure, the target is thoroughly pinned by the phalanges, becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 17) or until any creature uses 2 Interact actions to scrape away the bones pinning them down.</p>"
+          "description": "<p>Each other creature in the phalanx of phalanges' space takes @Damage[1d6[piercing]] damage (@Damage[(1d6+2)[piercing]] damage if the swarm is berserk) (@Check[reflex|dc:17|basic]). On a critical failure, the target is thoroughly pinned by the phalanges, becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it [[/act escape dc=17]]{Escapes} or until any creature uses 2 Interact actions to scrape away the bones pinning them down.</p>"
         }
       }
     },
@@ -565,11 +565,11 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>A pyrogeist can spit a cone of spectral fire in a @Template[cone|distance:30], dealing @Damage[10d6[void]] damage (@Check[fortitude|dc:29|basic]). A creature that fails the save also takes @Damage[1d6[persistent,void]] damage and is subject to the effects of @UUID[Compendium.pf2e.spells-srd.Item.HRb2doyaLtaoCfi3]{Faerie Fire} until the persistent damage ends.</p>"
+          "description": "<p>A pyrogeist can spit a cone of spectral fire in a @Template[cone|distance:30], dealing @Damage[10d6[void]|options:area-damage] damage (@Check[fortitude|dc:29|basic|options:area-effect]). A creature that fails the save also takes @Damage[1d6[persistent,void]] damage and is subject to the effects of @UUID[Compendium.pf2e.spells-srd.Item.HRb2doyaLtaoCfi3]{Faerie Fire} until the persistent damage ends.</p>"
         },
         "action->Pyrokinetic Whirlwind": {
           "name": "Pyrokinetic Whirlwind",
-          "description": "<p>The pyrogeist transforms into a 40-foot tall vortex of spectral flame that appears to immolate everything within a @Template[burst|distance:10]. A creature within this area take @Damage[(2d12 + 20)[void]] damage (@Check[fortitude|dc:29|basic]).</p>"
+          "description": "<p>The pyrogeist transforms into a 40-foot tall vortex of spectral flame that appears to immolate everything within a @Template[burst|distance:10]. A creature within this area take @Damage[(2d12+20)[void]|options:area-damage] damage (@Check[fortitude|dc:29|basic|options:area-effect]).</p>"
         },
         "action->Soul Consumption": {
           "name": "Soul Consumption",
@@ -588,10 +588,10 @@
         "strike-melee->Claw": {
           "name": "Claw"
         },
-        "strike-ranged->Ghost Touch Arquebus": {
+        "strike-melee->Ghost Touch Arquebus": {
           "name": "Ghost Touch Arquebus"
         },
-        "strike-ranged->Flintlock Pistol": {
+        "strike-melee->Flintlock Pistol": {
           "name": "Flintlock Pistol"
         },
         "action->Coven": {
@@ -607,7 +607,7 @@
         },
         "action->Rusting Touch": {
           "name": "Rusting Touch",
-          "description": "<p>A rust hag's touch causes metal to rapidly rust and corrode. If the hag succeeds at a Strike with her claw, she deals [[/r 2d6 #Rusting Touch Damage]] damage (doubled on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness. If the hag hits an unattended metal item, the item takes this damage automatically. If a creature uses the Shield Block reaction with a metal shield against the hag's claw attack, the shield is automatically broken, but no other item is rusted on that attack. Objects made of skymetal, such as adamantine and orichalcum, are immune to rusting touch.</p>"
+          "description": "<p>A rust hag's touch causes metal to rapidly rust and corrode. If the hag succeeds at a Strike with her claw, she deals @Damage[2d6[untyped]] damage (doubled on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness. If the hag hits an unattended metal item, the item takes this damage automatically. If a creature uses the Shield Block reaction with a metal shield against the hag's claw attack, the shield is automatically broken, but no other item is rusted on that attack. Objects made of skymetal, such as adamantine and orichalcum, are immune to rusting touch.</p>"
         }
       }
     },
@@ -653,7 +653,7 @@
         },
         "action->Shadow Breath": {
           "name": "Shadow Breath",
-          "description": "<p>The shadowforged guardian expels a @Template[cone|distance:30] of twisting shadows from its mouth. All creatures in the area must attempt a @Check[fortitude|dc:29] save. The guardian can't use Shadow Breath for [[/gmr 1d4 #Recharge Shadow Breath]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the end of its next turn.</p>\n<p><strong>Failure</strong> The creature is enfeebled 1 for 1 hour and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 24 hours and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 minute.</p>"
+          "description": "<p>The shadowforged guardian expels a @Template[cone|distance:30] of twisting shadows from its mouth. All creatures in the area must attempt a @Check[fortitude|dc:29|options:area-effect,inflicts:enfeebled,inflicts:slowed] save. The guardian can't use Shadow Breath for [[/gmr 1d4 #Recharge Shadow Breath]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the end of its next turn.</p>\n<p><strong>Failure</strong> The creature is enfeebled 1 for 1 hour and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 24 hours and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 minute.</p>"
         }
       }
     },
@@ -708,7 +708,7 @@
         },
         "action->Grave Breath": {
           "name": "Grave Breath",
-          "description": "<p><strong>Requirements</strong> The troll is bloated with void energy from a Death Feast</p>\n<hr />\n<p><strong>Effect</strong> The troll breathes a @Template[cone|distance:15] of putrid, soul-chilling gas. Each living creature in the area takes @Damage[2d6[void]] damage (@Check[fortitude|dc:14|basic]). On a failure, the creature also becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. The troll can't use Grave Breath until it uses Death Feast again.</p>"
+          "description": "<p><strong>Requirements</strong> The troll is bloated with void energy from a Death Feast</p>\n<hr />\n<p><strong>Effect</strong> The troll breathes a @Template[cone|distance:15] of putrid, soul-chilling gas. Each living creature in the area takes @Damage[2d6[void]|options:area-damage] damage (@Check[fortitude|dc:14|basic|options:area-effect]). On a failure, the creature also becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. The troll can't use Grave Breath until it uses Death Feast again.</p>"
         },
         "action->Rend": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1]\n<p>Claw</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"

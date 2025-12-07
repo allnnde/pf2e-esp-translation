@@ -268,7 +268,7 @@
     "Explosive Crystal Spheres": {
       "name": "Explosive Crystal Spheres",
       "description": "<p>Shimmering, glyph-graven, two-foot-diameter crystalline spheres shimmer and condense in the air, launching with explosive force at intruders.</p>",
-      "disable": "<p>@Check[thievery|dc:25] (expert) to locate and deface tiny activation runes located at one of the six locations that spawn crystal spheres, or @Check[arcana|dc:28] (expert) or @Check[occultism|dc:28] (expert) to manipulate the magical energy at one of those locations to render the spheres inert, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd level; counteract DC 22) to counteract one of the crystal sphere spawn points</p>",
+      "disable": "<p>@Check[thievery|dc:25] (expert) to locate and deface tiny activation runes located at one of the six locations that spawn crystal spheres, or @Check[arcana|dc:28] (expert) or @Check[occultism|dc:28] (expert) to manipulate the magical energy at one of those locations to render the spheres inert, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank; counteract DC 22) to counteract one of the crystal sphere spawn points</p>",
       "hpDetails": "BT 27",
       "routine": "<p>(6 actions) On each of the trap's actions, a crystal sphere that hasn't yet taken an action during the turn either flies 25 feet toward the closest creature in the Outer Ring (if no creature is within 25 feet), or it attacks a visible creature within 25 feet (the crystal spheres can sense targets via darkvision). If a crystal sphere attacks a target, that target takes @Damage[1d6[force]] damage (@Check[reflex|dc:24|basic]) as the sphere hits them and bursts. A creature can be attacked by multiple spheres in a turn, but a sphere always targets the closest target. Once a sphere attacks and bursts, it vanishes but respawns at its spawn point at the start of the next turn and continues its routine. A sphere that has been destroyed or had its spawn point disabled vanishes and doesn't continue to respawn and attack, and the trap loses 1 action for each sphere destroyed or disabled in this way.</p>",
       "stealth": "<p>(expert)</p>",
@@ -300,7 +300,7 @@
         "strike-melee->Dagger": {
           "name": "Dagger"
         },
-        "strike-ranged->Shortbow": {
+        "strike-melee->Shortbow": {
           "name": "Shortbow"
         },
         "action->Slightly Drunk": {
@@ -507,7 +507,7 @@
         "strike-ranged->Hatchet": {
           "name": "Hatchet"
         },
-        "strike-ranged->Crossbow": {
+        "strike-melee->Crossbow": {
           "name": "Crossbow"
         },
         "action->Hurried Retreat": {
@@ -665,7 +665,7 @@
     "Lodestone Trap": {
       "name": "Lodestone Trap",
       "description": "<p>The magical lodestone discharges bolts of electricity that also magnetize metal in the room.</p>",
-      "disable": "<p>@Check[thievery|dc:18] to unhook the pressure plates from the trap, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd level, counteract DC 18) to counteract the trap</p>",
+      "disable": "<p>@Check[thievery|dc:18] to unhook the pressure plates from the trap, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank, counteract DC 18) to counteract the trap</p>",
       "hpDetails": "BT 15",
       "reset": "<p>At the end of a round in which there are no creatures standing on the floor or stuck to the lodestone, the trap deactivates. The vargouilles return to their alcoves, and the doors close. The trap resets automatically after 1 minute.</p>",
       "routine": "<p>(1 action) On its initiative, the trap exerts a strong magnetic pull on the doors, causing the north and west doors to open if they're closed, or causing the south and east doors to close if they're open. A character can open or close a door against this pull with a successful @Check[athletics|dc:18] check to @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Force Open} the door. At the same time, any character in the room who wears primarily metal armor must attempt a @Check[reflex|dc:18] save (characters in medium metal armor suffer a -1 circumstance penalty to this save, and characters in heavy metal armor suffer a -2 circumstance penalty).</p>\n<hr />\n<p><strong>Critical Success</strong> The PC is unaffected.</p>\n<p><strong>Success</strong> The PC resists the pull but treats the room as difficult terrain.</p>\n<p><strong>Failure</strong> The PC treats the room as difficult terrain and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}. A PC who's already prone suffers a critical failure instead.</p>\n<p><strong>Critical Failure</strong> As failure, but the PC is also pulled 5 feet toward the lodestone. A PC who is adjacent to the lodestone instead becomes stuck to it and is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado} as long as the trap continues its routine (escape DC 18).</p>",
@@ -697,6 +697,11 @@
         },
         "spell->Burning Hands": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]\nBurning Hands"
+        },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
         },
         "consumable->Wand of Spider Climb (Level 2)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]\nWand of Spider Climb (Level 2)",
@@ -832,7 +837,7 @@
         },
         "action->Agonized Howl": {
           "name": "Agonized Howl",
-          "description": "<p>The unrisen howls in pain at its cursed existence. Creatures within a @Template[emanation|distance:30] take @Damage[6d8[mental]] damage (@Check[will|dc:25|basic]). The unrisen can't use Agonized Howl again for [[/gmr 1d4 #Recharge Agonized Howl]]{1d4 rounds}.</p>"
+          "description": "<p>The unrisen howls in pain at its cursed existence. Creatures within a @Template[emanation|distance:30] take @Damage[6d8[mental]|options:area-damage] damage (@Check[will|dc:25|basic|options:area-effect]). The unrisen can't use Agonized Howl again for [[/gmr 1d4 #Recharge Agonized Howl]]{1d4 rounds}.</p>"
         },
         "action->Awful Approach": {
           "name": "Awful Approach",
@@ -903,7 +908,7 @@
           "name": "Spew Toxins",
           "description": "<p><strong>Trigger</strong> A visible living creature enters the room, or a Stealthy creature fails to remain @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} from the toxic furnace with a @Check[stealth|dc:25] check (the trap's sensors have darkvision and lifesense);</p>\n<p><strong>Effect</strong> One of the toxic furnace's vents swivels to aim at the triggering creature and then spews a gout of boiling toxin at the target. The toxic furnace then rolls initiative.</p>"
         },
-        "strike-ranged->Boiling Toxin": {
+        "strike-melee->Boiling Toxin": {
           "name": "Boiling Toxin"
         }
       }

@@ -4,14 +4,14 @@
       "ApplyEffect": "Aplicar efecto",
       "ExpandDescription": "Ampliar descripción",
       "Range": {
-        "IncrementN": "Incremento de alcance {n} pies.",
-        "MaxN": "Alcance {n} pies."
+        "IncrementN": "Incremento de alcance {n} pies (x 0,3 m).",
+        "MaxN": "Alcance {n} pies (x 0,3 m)."
       },
       "Use": "Usar"
     },
     "Actions": {
       "AdministerFirstAid": {
-        "Description": "<p>Administras Primeros auxilios a una criatura adyacente que está moribunda o sangrando. Si una criatura está a la vez moribunda y sangrando, elige cuál de las aflicciones vas a tratar antes de hacer la tirada. Puedes administrar Primeros auxilios de nuevo para intentar remediar el otro efecto</p><ul><li><strong>Estabilizar</strong> Haz una prueba de Medicina sobre una criatura que está a 0 Puntos de Golpe y tiene el estado moribundo. La CD es igual a 5 + la CD de la tirada de recuperación de dicha criatura (típicamente 15 + su valor de moribundo)</li><li><strong>Detener la hemorragia</strong> Haz una prueba de Medicina sobre una criatura que está sufriendo daño daño por sangrado. La CD suele ser la misma del efecto que causó el\nsangrado.</li></ul><p><strong>Éxito</strong> Si estás intentando estabilizar, el objetivo pierde el estado moribundo (pero permanece @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{inconsciente}). Si intentas detener la hemorragia, el objetivo se beneficia de una recuperación asistida con la CD rebajada por una ayuda particularmente apropiada.</p><p><strong>Fallo crítico</strong> Si intentabas estabilizar, el valor de moribundo del objetivo se incrementa en 1. Si intentabas detener la hemorragia, el objetivo sufre de inmediato una cantidad de daño igual a su daño persistente por sangrado.</p>",
+        "Description": "<p>Administras Primeros auxilios a una criatura adyacente que está moribunda o sangrando. Si una criatura está a la vez moribunda y sangrando, elige cuál de las aflicciones vas a tratar antes de hacer la tirada. Puedes administrar Primeros auxilios de nuevo para intentar remediar el otro efecto</p><ul><li><strong>Estabilizar</strong> Haz una prueba de Medicina sobre una criatura que está a 0 Puntos de Golpe y tiene el estado moribundo. La CD es igual a 5 + la CD de la tirada de recuperación de dicha criatura (típicamente 15 + su valor de moribundo)</li><li><strong>Detener la hemorragia</strong> Haz una prueba de Medicina sobre una criatura que está sufriendo daño por sangrado. La CD suele ser la misma del efecto que causó el sangrado.</li></ul><p><strong>Éxito</strong> Si estás intentando estabilizar, el objetivo pierde el estado moribundo (pero permanece @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{inconsciente}). Si intentas detener la hemorragia, el objetivo se beneficia de una recuperación asistida con la CD rebajada por una ayuda particularmente apropiada.</p><p><strong>Fallo crítico</strong> Si intentabas estabilizar, el valor de moribundo del objetivo se incrementa en 1. Si intentabas detener la hemorragia, el objetivo sufre de inmediato una cantidad de daño igual a su daño persistente por sangrado.</p>",
         "Stabilize": {
           "Description": "<p>Haz una prueba de Medicina sobre una criatura que está a 0 Puntos de Golpe y tiene el estado moribundo. La CD es igual a 5 + la CD de la tirada de recuperación de dicha criatura (típicamente 15 + su valor de moribundo).</p><p><strong>Éxito</strong> La criatura pierde el estado moribundo (pero permanece inconsciente).<br><strong>Fallo crítico</strong> El valor de moribundo de la criatura se incrementa en 1.</p>",
           "DifficultyClass": {
@@ -66,12 +66,20 @@
         },
         "Title": "Golpe arcano"
       },
+      "AreaFire": {
+        "Description": "Impactas a cada criatura en el área designada, que tiene un rango de distancia igual al incremento de rango de distancia del arma (para cono o línea) o el radio designado de la explosión (para explosión). Para la explosión, puedes situar el punto central en cualquier lugar de tu primer incremento de rango de distancia. Todas las criaturas del área han de tener éxito en una salvación básica de Reflejos contra tu CD de clase más el valor de rastreo del arma. Este daño es de área. Las criaturas que fallan críticamente la salvación quedan sujetos a los efectos de un crítico con esta arma, incluyendo el efecto de especialización crítica. El fuego de área tiene un gasto igual al indicado en el arma.",
+        "Title": "Fuego de área"
+      },
       "ArrestAFall": {
         "Description": "<p><strong>Desencadenante</strong> Te caes.</p><p><strong>Requisitos</strong> Tener Velocidad de vuelo</p><hr><p>Puedes elegir entre hacer una prueba de Acrobacias y una salvación de Reflejos para hacer que tu caída sea más lenta. La CD suele ser 15, pero podría ser mayor debido a turbulencias en el aire u otras circunstancias</p><p><strong>Éxito</strong> No sufres daño alguno debido a la caída.</p>",
         "Notes": {
           "success": "<strong>Éxito</strong> No sufres daño alguno debido a la caída."
         },
         "Title": "Detener una caída"
+      },
+      "AutoFire": {
+        "Description": "Impactas a cada criatura en un cono, que tiene un rango de distancia igual a la mitad del incremento de rango de distancia del arma. Todas las criaturas del área sufren tanto daño como el daño del arma (salvación básica de Reflejos contra tu CD de clase más el valor de rastreo del arma). Este daño es de área. Las criaturas que fallan críticamente la salvación quedan sujetos a los efectos de un crítico con esta arma, incluyendo el efecto de especialización crítica. El fuego automático tiene un gasto igual al número de objetivos en el área x2.",
+        "Title": "Fuego automático"
       },
       "AvertGaze": {
         "Description": "<p>Desvias la mirada de un peligro, como por ejemplo los ojos de una medusa. Obtienes un bonificador +2 por circunstancia a las salvaciones contra las aptitudes visuales que requieren que mires a una criatura u objeto, como por ejemplo la mirada petrificante de una medusa. Tu mirada permanece desviada hasta el inicio de tu siguiente turno.</p>",
@@ -117,7 +125,7 @@
       "Climb": {
         "Description": "<p><strong>Requisitos</strong> Tienes libres las dos manos.</p><hr><p> Haces una prueba de Atletismo para moverte una distancia máxima de 5 pies (1,5 m) hacia arriba, hacia abajo o atravesando una pendiente. Mientras trepas estás @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{desprevenido} si no tienes Velocidad de trepar. El DJ es quien determina la CD basándose en la naturaleza de la pendiente y en las  ircunstancias ambientales; podrías obtener éxito crítico automático en una pendiente de inclinación trivial. Si tu Velocidad terrestre es 40 pies (12 m) o mayor, incrementa la distancia máxima en 5 pies (1,5 m) por cada 20 pies (6 m) de Velocidad por encima de 20 pies (6 m).</p> <p><strong>Éxito crítico</strong> Te mueves por la pendiente, incrementando en 5 pies (1,5 m) la distancia máxima.<br><strong>Éxito</strong> Te mueves por la pendiente.<br><strong>Fallo crítico</strong> Te caes. Si empezaste a moverte sobre terreno estable, te\ncaes y quedas @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{tumbado}.</p>",
         "Modifier": {
-          "ClimbSpeed": "Climb Speed"
+          "ClimbSpeed": "Velocidad de escalada"
         },
         "Notes": {
           "criticalFailure": "<strong>Fallo crítico</strong> Te caes. Si empezaste a moverte sobre terreno estable, te\ncaes y quedas @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{tumbado}.",
@@ -134,7 +142,7 @@
         "Title": "Trepar"
       },
       "Coerce": {
-        "Description": "<p>Con amenazas veladas o directas, tratas de obligar a una criatura a que haga lo que tú quieres. Debes invertir por lo menos 1 minuto conversando con la criatura. Al final de la conversación, haz una prueba de Intimidación contra la CD de Voluntad del objetivo, modificada por cualquier circunstancia que el DJ determine (las actitudes a que se hace referencia en los efectos de más abajo se resumen en la barra lateral y se describen al completo en el Apéndice Estados.</p><p><strong>Éxito crítico</strong> El objetivo te facilita la información que buscas o se muestra de acuerdo en seguir tus instrucciones si éstas no pueden dañarle en modo alguno. El objetivo continúa estando de acuerdo contigo durante una cantidad de tiempo determinada por el DJ, pero no superior a 1 día, en cuyo momento se vuelve malintencionado (si aún no era malintencionado u hostil). Sin embargo, tiene demasiado miedo de ti para tomar represalias... por lo menos a corto plazo.<br><strong>Éxito</strong> Como éxito crítico, pero una vez que el objetivo se vuelve malintencionado, podría decidirse a actuar contra ti, por ejemplo informando de ti a las autoridades o ayudando a tus enemigos.<br><strong>Fallo</strong> El objetivo no hace lo que tú dices y, si aún no era malintencionado u hostil, se vuelve malintencionado.<br><strong>Fallo crítico</strong> El objetivo rehúsa cumplir tus órdenes, se vuelve hostil si aún no lo era y queda temporalmente inmune a tus intentos de Obligarle durante por lo menos 1 semana.</p>",
+        "Description": "<p>Con amenazas veladas o directas, tratas de obligar a una criatura a que haga lo que tú quieres. Debes invertir por lo menos 1 minuto conversando con ella. Al final de la conversación, haz una prueba de Intimidación contra la CD de Voluntad del objetivo, modificada por cualquier circunstancia que el DJ determine (las actitudes a que se hace referencia en los efectos de más abajo se resumen en la barra lateral y se describen al completo en el Apéndice Estados.</p><p><strong>Éxito crítico</strong> El objetivo te facilita la información que buscas o se muestra de acuerdo en seguir tus instrucciones si éstas no pueden dañarle en modo alguno. El objetivo continúa estando de acuerdo contigo durante una cantidad de tiempo determinada por el DJ, pero no superior a 1 día, en cuyo momento se vuelve malintencionado (si aún no era malintencionado u hostil). Sin embargo, tiene demasiado miedo de ti para tomar represalias... por lo menos a corto plazo.<br><strong>Éxito</strong> Como éxito crítico, pero una vez que el objetivo se vuelve malintencionado, podría decidirse a actuar contra ti, por ejemplo informando de ti a las autoridades o ayudando a tus enemigos.<br><strong>Fallo</strong> El objetivo no hace lo que tú dices y, si aún no era malintencionado u hostil, se vuelve malintencionado.<br><strong>Fallo crítico</strong> El objetivo rehúsa cumplir tus órdenes, se vuelve hostil si aún no lo era y queda temporalmente inmune a tus intentos de Obligarle durante por lo menos 1 semana.</p>",
         "Notes": {
           "criticalFailure": "<strong>Fallo crítico</strong> El objetivo rehúsa cumplir tus órdenes, se vuelve hostil si aún no lo era y queda temporalmente inmune a tus intentos de Obligarle durante por lo menos 1 semana.",
           "criticalSuccess": "<strong>Éxito crítico</strong> El objetivo te facilita la información que buscas o se muestra de acuerdo en seguir tus instrucciones si éstas no pueden dañarle en modo alguno. El objetivo continúa estando de acuerdo contigo durante una cantidad de tiempo determinada por el DJ, pero no superior a 1 día, en cuyo momento se vuelve malintencionado (si aún no era malintencionado u hostil). Sin embargo, tiene demasiado miedo de ti para tomar represalias... por lo menos a corto plazo.",
@@ -144,7 +152,7 @@
         "Title": "Obligar"
       },
       "CommandAnAnimal": {
-        "Description": "<p>Das una orden a un animal. Haz una prueba de Naturaleza contra la CD de Voluntad del animal. El DJ podría ajustar la CD si tiene una actitud buena hacia ti, si sugieres un curso de acción hacia el que estaba predispuesto o si le ofreces una golosina.</p>\n<p>Fallas automáticamente si el animal es hostil o mal intencionado hacia ti. Si es solícito contigo, incrementa en un paso tu grado de éxito. Podrías ser capaz de Comandar a un animal más fácilmente con una dote como Montar.</p>\n<p>La mayoría de animales conocen las acciones básicas Buscar, Golpear, Ponerse de pie, Saltar y Zancada. Si un animal conoce una actividad, como el galope de un caballo, puedes Comandar al animal para que la lleve a cabo, pero debes gastar tantas acciones en ello como número de acciones de la actividad. También puedes invertir múltiples acciones de Comandar al animal para que lleve a cabo dicho número de acciones básicas en su siguiente turno; por ejemplo, podrías invertir tres acciones para Comandar a un animal y que dé tres Zancadas, o que dé dos Zancadas y después un Golpe.</p><p><strong>Éxito</strong> El animal hace lo que le has ordenado en su siguiente turno.<br><strong>Fallo</strong> El animal duda o se resiste, y no hace nada.<br><strong>Fallo Crítico</strong> El animal se comporta mal o se confunde, y lleva a cabo alguna otra acción determinada por el DJ.</p>",
+        "Description": "<p>Das una orden a un animal. Haz una prueba de Naturaleza contra la CD de Voluntad del animal. El DJ podría ajustar la CD si tiene una actitud buena hacia ti, si sugieres un curso de acción hacia el que estaba predispuesto o si le ofreces una golosina.</p>\n<p>Fallas automáticamente si el animal es hostil o mal intencionado hacia ti. Si es solícito contigo, incrementa en un paso tu grado de éxito. Podrías ser capaz de Comandar a un animal más fácilmente con una dote como Montar.</p>\n<p>La mayoría de animales conocen las acciones básicas Buscar, Golpear, Ponerse de pie, Saltar y Zancada. Si un animal conoce una actividad, como el galope de un caballo, puedes Comandar al animal para que la lleve a cabo, pero debes gastar tantas acciones en ello como número de acciones de la actividad. También puedes invertir múltiples acciones de Comandar al animal para que lleve a cabo dicho número de acciones básicas en su siguiente turno; por ejemplo, podrías invertir tres acciones para Comandar a un animal y que dé tres Zancadas, o que dé dos Zancadas y después un Golpe.</p><p><strong>Éxito</strong> El animal hace lo que le has ordenado en su siguiente turno.<br><strong>Fallo</strong> El animal duda o se resiste, y no hace nada.<br><strong>Fallo crítico</strong> El animal se comporta mal o se confunde, y lleva a cabo alguna otra acción determinada por el DJ.</p>",
         "Notes": {
           "criticalFailure": "<strong>Fallo Crítico</strong> El animal se comporta mal o se confunde, y lleva a cabo alguna otra acción determinada por el DJ.",
           "failure": "<strong>Fallo</strong> El animal duda o se resiste, y no hace nada.",
@@ -210,7 +218,7 @@
         "Title": "Gatear"
       },
       "CreateADiversion": {
-        "Description": "<p>Con un gesto, un truco o unas palabras engañosas, puedes crear una distracción que atrae hacia otra parte la atención de una criatura. Si utilizas un gesto o un truquillo, la acción obtiene el rasgo manipular. Si utilizas palabras distractoras, obtiene los rasgos auditivo y lingüístico.</p>\n<p>Haz una sola prueba de Engaño y compárala con las CD de Percepción de las criaturas cuya atención tratas de distraer. Tanto si\ntienes éxito como si no, las criaturas que tratas de distraer obtienen un bonificador +4 por circunstancia a sus CD de Percepción contra tus intentos de Crear una distracción durante 1 minuto.</p></p><p><strong>Éxito</strong> Quedas escondido ante todas las criaturas cuya CD de Percepción es menor o igual que tu resultado (el estado escondido te permite @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Moverte furtivamente} para alejarte). Esto dura hasta el final de tu turno o hasta que haces cualquier cosa excepto dar un @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]{Paso} o utilizar la habilidad Sigilo para @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Esconderte} o Moverte furtivamente. Si das un @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{Golpe} a una criatura, está @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{desprevenida} contra dicho ataque y a continuación quedas @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{observado}. Si haces cualquier otra cosa, quedas observado justo antes de actuar, si el DJ no determina lo contrario.<br><strong>Fallo</strong> No desvías la atención de ninguna criatura cuya CD de Percepción exceda tu resultado, y esas criaturas son conscientes de que estabas tratando de engañarlas.</p>",
+        "Description": "<p>Con un gesto, un truco o unas palabras engañosas, puedes crear una distracción que atrae hacia otra parte la atención de una criatura. Si utilizas un gesto o un truquillo, la acción obtiene el rasgo manipular. Si utilizas palabras distractoras, obtiene los rasgos auditivo y lingüístico.</p>\n<p>Haz una sola prueba de Engaño y compárala con las CD de Percepción de las criaturas cuya atención tratas de distraer. Tanto si tienes éxito como si no, las criaturas a las que tratas de distraer obtienen un bonificador +4 por circunstancia a sus CD de Percepción contra tus intentos de Crear una distracción durante 1 minuto.</p></p><p><strong>Éxito</strong> Quedas escondido ante todas las criaturas cuya CD de Percepción es menor o igual que tu resultado (el estado escondido te permite @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Moverte furtivamente} para alejarte). Esto dura hasta el final de tu turno o hasta que haces cualquier cosa excepto dar un @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]{Paso} o utilizar la habilidad Sigilo para @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Esconderte} o Moverte furtivamente. Si das un @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{Golpe} a una criatura, está @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{desprevenida} contra dicho ataque y a continuación quedas @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{observado}. Si haces cualquier otra cosa, quedas observado justo antes de actuar, si el DJ no determina lo contrario.<br><strong>Fallo</strong> No desvías la atención de ninguna criatura cuya CD de Percepción exceda tu resultado, y esas criaturas son conscientes de que estabas tratando de engañarlas.</p>",
         "DistractingWords": {
           "Title": "Palabras engañosas"
         },
@@ -267,7 +275,7 @@
         }
       },
       "Delay": {
-        "Description": "<p>Esperas al momento preciso para actuar. El resto de tu turno aún no tiene lugar. En su lugar, se te retira del orden de iniciativa. Puedes volver al mismo como acción gratuita desencadenada por el final del turno de cualquier otra criatura. Esto cambia permanentemente tu iniciativa a la nueva posición. No puedes usar reacciones hasta volver al orden de iniciativa. Si Retrasas un asalto entero sin volver al orden de iniciativa, las acciones del turno Retrasado se pierden, tu iniciativa no cambia y tu siguiente turno tiene lugar en tu posición original en el orden de iniciativa.</p>\n<p>Cuando Retrasas, cualquier daño persistente u otros efectos negativos que normalmente tienen lugar al inicio o al final de tu turno\nsuceden de inmediato cuando utilizas la acción Retrasar. Cualquier efecto beneficioso que acabaría en cualquier momento de tu turno\ntambién acaba. El DJ podría determinar que otros efectos también se acaban cuando Retrasas. Esencialmente, no puedes Retrasar para evitar consecuencias negativas que tendrían lugar en tu turno ni para prolongar efectos beneficiosos que acabarían en tu turno.</p>",
+        "Description": "<p>Esperas al momento preciso para actuar. El resto de tu turno aún no tiene lugar. En su lugar, se te retira del orden de iniciativa. Puedes volver al mismo como acción gratuita desencadenada por el final del turno de cualquier otra criatura. Esto cambia permanentemente tu iniciativa a la nueva posición. No puedes usar reacciones hasta volver al orden de iniciativa. Si Retrasas un asalto entero sin volver al orden de iniciativa, las acciones del turno Retrasado se pierden, tu iniciativa no cambia y tu siguiente turno tiene lugar en tu posición original en el orden de iniciativa.</p>\n<p>Cuando Retrasas, cualquier daño persistente u otros efectos negativos que normalmente tienen lugar al inicio o al final de tu turno suceden de inmediato cuando utilizas la acción Retrasar. Cualquier efecto beneficioso que acabaría en cualquier momento de tu turno\ntambién acaba. El DJ podría determinar que otros efectos también se acaban cuando Retrasas. Esencialmente, no puedes Retrasar para evitar consecuencias negativas que tendrían lugar en tu turno ni para prolongar efectos beneficiosos que acabarían en tu turno.</p>",
         "Title": "Retrasar"
       },
       "Demoralize": {
@@ -351,7 +359,7 @@
         "Title": "Salir de la cobertura"
       },
       "Escape": {
-        "Description": "<p>Tratas de huir de haber sido @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{agarrado}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{inmovilizado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{neutralizado}. Elige una criatura, objeto, efecto de conjuro, peligro u otro impedimento que te impone cualquiera de estos estados. Haz una prueba utilizando tu modificador al ataque sin armas contra la CD del efecto, que normalmente suele ser la CD de Atletismo de una criatura  que te está agarrando, la CD de Latrocinio de una criatura que te ha atado, la CD de conjuros para un efecto de conjuro o la CD de @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Huir} indicada para un objeto, peligro u otro impedimento. Si lo prefieres, en lugar de utilizar tu modificador al ataque puedes hacer una prueba de Acrobacias o de Atletismo (pero la acción sigue teniendo el rasgo ataque).</p><p><strong>Éxito crítico</strong> Quedas libre y eliminas los estados agarrado, inmovili\nzado y restringido impuestos por el objetivo elegido. A continuación, puedes dar una Zancada de hasta 5 pies (1,5 m).</p><p><strong>Éxito</strong> Quedas libre y eliminas los estados agarrado, inmovilizado y restringido impuestos por el objetivo elegido.</p> <p><strong>Fallo crítico</strong> No te liberas y no puedes volver a intentar Huir hasta tu siguiente turno.</p>",
+        "Description": "<p>Tratas de huir de haber sido @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{agarrado}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{inmovilizado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{neutralizado}. Elige una criatura, objeto, efecto de conjuro, peligro u otro impedimento que te impone cualquiera de estos estados. Haz una prueba utilizando tu modificador al ataque sin armas contra la CD del efecto, que normalmente suele ser la CD de Atletismo de una criatura  que te está agarrando, la CD de Latrocinio de una criatura que te ha atado, la CD de conjuros para un efecto de conjuro o la CD de @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Huir} indicada para un objeto, peligro u otro impedimento. Si lo prefieres, en lugar de utilizar tu modificador al ataque puedes hacer una prueba de Acrobacias o de Atletismo (pero la acción sigue teniendo el rasgo ataque).</p><p><strong>Éxito crítico</strong> Quedas libre y eliminas los estados agarrado, inmovilizado y restringido impuestos por el objetivo elegido. A continuación, puedes dar una Zancada de hasta 5 pies (1,5 m).</p><p><strong>Éxito</strong> Quedas libre y eliminas los estados agarrado, inmovilizado y restringido impuestos por el objetivo elegido.</p> <p><strong>Fallo crítico</strong> No te liberas y no puedes volver a intentar Huir hasta tu siguiente turno.</p>",
         "Notes": {
           "criticalFailure": "<strong>Fallo crítico</strong> No te liberas y no puedes volver a intentar Huir hasta tu siguiente turno.",
           "criticalSuccess": "<strong>Éxito crítico</strong> Quedas libre y eliminas los estados agarrado, inmovilizado y restringido impuestos por el objetivo elegido. A continuación, puedes dar una Zancada de hasta 5 pies (1,5 m).",
@@ -484,6 +492,15 @@
           "Description": "{actor} desenvaina su {weapon}.",
           "Title": "Desenvainar (2 Manos)"
         },
+        "ExchangeItems": {
+          "Description": "{actor} y {other} intercambian objetos.",
+          "Title": "Intercambiar objetos"
+        },
+        "GiveItem": {
+          "AnItem": "un objeto",
+          "Description": "{actor} da {item} a {other}.",
+          "Title": "Dar objeto"
+        },
         "Grip": {
           "Description": "{actor} agarra su {weapon} con ambas manos.",
           "Title": "Cambiar agarre (2 Manos)"
@@ -500,6 +517,10 @@
         "PickUp2H": {
           "Description": "{actor} recoge {weapon} del suelo.",
           "Title": "Recoger (2 Manos)"
+        },
+        "Reload": {
+          "Description": "{actor} loads {weapon} with {ammo}.",
+          "Title": "Reload"
         },
         "Retrieve1H": {
           "Description": "{actor} recupera su {weapon}.",
@@ -592,7 +613,7 @@
       },
       "Parry": {
         "ShortTitle": "Parry",
-        "Content": "{actor} begins to parry.",
+        "Content": "{actor} inicia un parry.",
         "Title": "Parry"
       },
       "Perform": {
@@ -643,7 +664,7 @@
         }
       },
       "PickALock": {
-        "Description": "<p> Abrir una cerradura sin tener la llave es muy parecido a Inutilizar un mecanismo, pero la CD de la prueba la determinan la complejidad y la construcción de la cerradura. Las cerraduras de calidad superior podrían requerir múltiples éxitos para ser forzadas. Si careces de las herramientas apropiadas, el DJ te podría permitir que utilizaras ganzúas improvisadas, que se tratan como \nherramientas de baja calidad.</p><p><strong>Éxito crítico</strong> Fuerzas la cerradura u obtienes dos éxitos acumulativos para forzar una que requiere más de un éxito. No dejas rastro de tus manipulaciones.</p><p><strong>Éxito</strong> Fuerzas la cerradura u obtienes un éxito acumulativo para forzar una que requiere más de un éxito. Dejas tras de ti unos daños que indican que la cerradura ha sido forzada, si se examina de cerca.</p><p><strong>Fallo crítico</strong> Rompes tus herramientas y dejas tras de ti unos daños obvios. Arreglar un juego de herramientas roto requiere utilizar Artesanía o @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repararlo}, o bien incorporar @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{ganzúas de repuesto}.</p>",
+        "Description": "<p> Abrir una cerradura sin tener la llave es muy parecido a Inutilizar un mecanismo, pero la CD de la prueba la determinan la complejidad y la construcción de la cerradura. Las cerraduras de calidad superior podrían requerir múltiples éxitos para ser forzadas. Si careces de las herramientas apropiadas, el DJ te podría permitir que utilizaras ganzúas improvisadas, que se tratan como herramientas de baja calidad.</p><p><strong>Éxito crítico</strong> Fuerzas la cerradura u obtienes dos éxitos acumulativos para forzar una que requiere más de un éxito. No dejas rastro de tus manipulaciones.</p><p><strong>Éxito</strong> Fuerzas la cerradura u obtienes un éxito acumulativo para forzar una que requiere más de un éxito. Dejas tras de ti unos daños que indican que la cerradura ha sido forzada, si se examina de cerca.</p><p><strong>Fallo crítico</strong> Rompes tus herramientas y dejas tras de ti unos daños obvios. Arreglar un juego de herramientas roto requiere utilizar Artesanía o @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Reparar}, o bien incorporar @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{Ganzúas de repuesto}.</p>",
         "Notes": {
           "criticalFailure": "<strong>Fallo crítico</strong> Rompes tus herramientas y dejas tras de ti unos daños obvios. Arreglar un juego de herramientas roto requiere utilizar Artesanía o @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repararlo}, o bien incorporar @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{ganzúas de repuesto}.",
           "criticalSuccess": "<strong>Éxito crítico</strong> Fuerzas la cerradura u obtienes dos éxitos acumulativos para forzar una que requiere más de un éxito. No dejas rastro de tus manipulaciones.",
@@ -875,7 +896,7 @@
           "Trained": "la ladera de una colina o poblado típicos",
           "Expert": "unas montañas típicas o una aldea aislada",
           "Master": "un desierto típico o una ciudad asediada",
-          "Legendary": "un yermo desolado o una ciudad de muertos vivientes"
+          "Legendary": "yermo desolado o ciudad de muertos vivientes"
         },
         "Title": "Subsistir",
         "Warning": {
@@ -889,7 +910,7 @@
       "Swim": {
         "Description": "<p> Haces una prueba de Atletismo para moverte una distancia máxima de 10 pies (3 m) a través del agua. El DJ es quien determina la CD, basada en la turbulencia o el peligro de las aguas; en la mayoría de casos de aguas en calma, obtienes un éxito crítico automático.</p><p>Si tu Velocidad terrestre es 40 pies (12 m) o mayor, incrementa la distancia máxima posible en 5 pies (1,5 m) por cada 20 pies (6 m) de Velocidad por encima de 20 pies (6 m).</p><p> Si acabas tu turno en el agua y no has conseguido llevar a cabo \nuna acción de Nadar dicho turno, te hundes 10 pies (3 m) o te arrastra la corriente, a discreción del DJ.  Esto no aplica si la última acción de tu turno fue entrar en el agua.</p><p><strong>Éxito crítico</strong> Te mueves atravesando el agua, incrementando en 5 pies (1,5 m) la distancia máxima.<br><strong>Éxito</strong> Te mueves atravesando el agua.<br><strong>Fallo crítico</strong> No consigues avanzar. Si estás conteniendo el aliento, pierdes 1 asalto de aire.</p>",
         "Modifier": {
-          "SwimSpeed": "Swim Speed"
+          "SwimSpeed": "Velocidad de Nado"
         },
         "Notes": {
           "criticalFailure": "<strong>Fallo crítico</strong> No consigues avanzar. Si estás conteniendo el aliento, pierdes 1 asalto de aire.",

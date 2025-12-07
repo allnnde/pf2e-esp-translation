@@ -62,6 +62,7 @@
     },
     "Aiudara Wraith": {
       "name": "Aiudara Wraith",
+      "hpDetails": "void healing",
       "publicNotes": "<p>Dahak's influence in Alseta's Landing created a soul-draining effect that slays unprotected creatures within, transforming them into ghostly creatures known as aiudara wraiths, but these rare undead can rise within modern aiudara portals as well. Each time an individual travels through an aiudara, there's a chance their passage could leave a faint imprint of their subconscious in the network. Normally this imprint simply fades away, but when an aiudara is damaged or the individual is suffering from necromantic contagions, these imprints can accumulate and, in time, coalesce on the Astral Plane or within Alseta's Landing as a full-fledged aiudara wraith. The wraith is forced to live with an incomplete sense of self, always seeking its own memories and swiftly growing violent and vengeful as its quest to reclaim these ephemeral notions constantly meets with failure.</p>",
       "speed": "instantaneous movement",
       "items": {
@@ -141,7 +142,7 @@
         },
         "action->Vulnerable to Dispelling": {
           "name": "Vulnerable to Dispelling",
-          "description": "<p>The animated dragonstorm can be targeted by disjunction and dispel magic. If targeted by such a spell of 9th rank or higher, the construct loses its resistance to acid, cold, electricity, fire, and physical damage and is slowed 1 for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+          "description": "<p>The animated dragonstorm can be targeted by @UUID[Compendium.pf2e.spells-srd.Item.ihbRf964JDXztcy3]{Disjunction} and @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}. If targeted by such a spell of 9th rank or higher, the construct loses its resistance to acid, cold, electricity, fire, and physical damage and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
         },
         "action->Channel Dragonstorm": {
           "name": "Channel Dragonstorm",
@@ -153,7 +154,7 @@
         },
         "action->Dragonstorm Strike": {
           "name": "Dragonstorm Strike",
-          "description": "<p>On a critical hit, the animated dragonstorm's fist bursts with dragonstorm energy. The target takes @Damage[1d6[acid],1d6[cold],1d6[electricity],1d6[fire],1d6[poison]]{1d6 acid, 1d6 cold, 1d6 electricity, 1d6 fire, and 1d6 poison damage}.</p>"
+          "description": "<p>On a critical hit, the animated dragonstorm's fist bursts with dragonstorm energy. The target takes 1d6 acid, 1d6 cold, 1d6 electricity, 1d6 fire, and 1d6 poison damage.</p>"
         }
       }
     },
@@ -285,6 +286,11 @@
         "spell->Burning Hands": {
           "name": "Burning Hands"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "spell->Ray of Enfeeblement": {
           "name": "Ray of Enfeeblement"
         },
@@ -405,7 +411,7 @@
         "strike-melee->Longsword": {
           "name": "Longsword"
         },
-        "strike-ranged->Shortbow": {
+        "strike-melee->Shortbow": {
           "name": "Shortbow"
         },
         "action->Hunt Prey": {
@@ -454,7 +460,7 @@
         },
         "action->Shield Breaker": {
           "name": "Shield Breaker",
-          "description": "<p>When the target of Bshez's javelin Strike uses Shield Block, the Strike deals an additional [[/r 4d6 #Shield Breaker]]{4d6 damage} to the shield.</p>"
+          "description": "<p>When the target of Bshez's javelin Strike uses Shield Block, the Strike deals an additional @Damage[4d6[untyped]] damage to the shield.</p>"
         },
         "action->Weapon Master": {
           "name": "Weapon Master",
@@ -480,7 +486,7 @@
         "strike-ranged->Dagger": {
           "name": "Dagger"
         },
-        "strike-ranged->Shortbow": {
+        "strike-melee->Shortbow": {
           "name": "Shortbow"
         },
         "action->Keen Eyes": {
@@ -660,6 +666,11 @@
         "spell->Burning Hands": {
           "name": "Burning Hands"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "spell->Ray of Enfeeblement": {
           "name": "Ray of Enfeeblement"
         },
@@ -712,7 +723,7 @@
         "strike-melee->Maul": {
           "name": "Maul"
         },
-        "strike-ranged->Composite Shortbow": {
+        "strike-melee->Composite Shortbow": {
           "name": "Composite Shortbow"
         },
         "action->Improved Knockdown": {
@@ -778,7 +789,7 @@
       "disable": "<p>Each dragon pillar that is destroyed removes the corresponding color's effect from Dahak's shell; as long as even one color remains active, the pillars marking the shell's border cannot be damaged themselves, but a successful @Check[type:thievery|dc:32|name:Disable Color|traits:magical,trap,hazard] (master) check or a successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th level; counteract DC 30) against one of the eight pillars can cause a randomly determined active color in the shell defense (below) to become deactivated for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
       "stealth": "<p>or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</p>",
       "items": {
-        "strike-ranged->Eye Beam": {
+        "strike-melee->Eye Beam": {
           "name": "Eye Beam",
           "description": "<p>The target suffers an effect corresponding to the eye beam's color. On a critical hit, the target's save result is one degree worse.</p>"
         },
@@ -839,7 +850,7 @@
           "name": "Dahak's Glance",
           "description": "<p><strong>Trigger</strong> A living creature that is not a member of the Cinderclaws enters area <strong>C9</strong></p>\n<hr />\n<p><strong>Effect</strong> One of the dragon skull's eye sockets shoots an eye beam at the triggering creature, then the hazard rolls initiative.</p>"
         },
-        "strike-ranged->Eye Beam": {
+        "strike-melee->Eye Beam": {
           "name": "Eye Beam"
         }
       }
@@ -854,7 +865,7 @@
         "strike-melee->Fist": {
           "name": "Fist"
         },
-        "strike-ranged->Rock": {
+        "strike-melee->Rock": {
           "name": "Rock"
         },
         "action->Magma Splash": {
@@ -950,7 +961,7 @@
         "strike-ranged->Dagger": {
           "name": "Dagger"
         },
-        "strike-ranged->Composite Shortbow": {
+        "strike-melee->Composite Shortbow": {
           "name": "Composite Shortbow"
         },
         "action->Flurry": {
@@ -1047,7 +1058,7 @@
           "name": "Black Eye Beam",
           "description": "<p>@Check[type:fortitude|dc:24|traits:hazard,trap] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} for 1 round.</p>\n<p><strong>Failure</strong> The target is blinded for 1 hour.</p>\n<p><strong>Critical Failure</strong> The target is blinded for 24 hours.</p>"
         },
-        "strike-ranged->Eye Beam": {
+        "strike-melee->Eye Beam": {
           "name": "Eye Beam",
           "description": "<p><strong>Effect</strong> The target is subjected to an effect determined by the pillar's color and summarized in the passive actions. On a critical hit, the target's save result is one degree worse.</p>"
         },
@@ -1191,13 +1202,13 @@
         "spell->Levitate (At Will)": {
           "name": "Levitate (At Will)"
         },
-        "consumable->Sack With 5 Rocks": {
+        "ammo->Sack With 5 Rocks": {
           "name": "Sack With 5 Rocks"
         },
         "strike-melee->Greatsword": {
           "name": "Greatsword"
         },
-        "strike-ranged->Rock": {
+        "strike-melee->Rock": {
           "name": "Rock"
         },
         "action->Dragonstorm Blade": {
@@ -1226,7 +1237,7 @@
         "strike-melee->Hatchet": {
           "name": "Hatchet"
         },
-        "strike-ranged->Composite Longbow": {
+        "strike-melee->Composite Longbow": {
           "name": "Composite Longbow"
         },
         "action->Improved Evasion": {
@@ -1294,7 +1305,7 @@
         "strike-ranged->Silver Dagger": {
           "name": "Silver Dagger"
         },
-        "strike-ranged->Longbow": {
+        "strike-melee->Longbow": {
           "name": "Longbow"
         },
         "action->Double Slice": {
@@ -1540,12 +1551,12 @@
         "consumable->Gunpower": {
           "name": "Gunpower"
         },
-        "consumable->Grapeshot": {
-          "name": "Grapeshot"
-        },
         "consumable->Tindertwig": {
           "name": "Tindertwig",
           "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>An alchemical substance applied to one end of this tiny wooden stick ignites when struck against a rough surface. Creating a flame with a tindertwig is much faster than creating a flame with flint and steel. You can ignite the tindertwig and touch it to a flammable object as part of the same Interact action.</p>"
+        },
+        "ammo->Grapeshot": {
+          "name": "Grapeshot"
         },
         "backpack->Bag of Holding (Type I)": {
           "name": "Bag of Holding (Type I)",
@@ -1653,7 +1664,7 @@
         },
         "action->Body Slam": {
           "name": "Body Slam",
-          "description": "<p><strong>Requirements</strong> More than one enemy is adjacent to the grauladon.</p>\n<hr />\n<p><strong>Effect</strong> The grauladon swings its tail at each adjacent enemy and attempts to <span data-pf2-action=\"trip\" data-pf2-glyph=\"A\">Trip</span> each creature adjacent to it. It rolls only a single Athletics check and compares the result to the Fortitude DC of each target.</p>"
+          "description": "<p><strong>Requirements</strong> More than one enemy is adjacent to the grauladon.</p>\n<hr />\n<p><strong>Effect</strong> The grauladon swings its tail at each adjacent enemy and attempts to [[/act trip]] each creature adjacent to it. It rolls only a single Athletics check and compares the result to the Fortitude DC of each target.</p>"
         },
         "action->Deep Breath": {
           "name": "Deep Breath",
@@ -1717,7 +1728,7 @@
         "strike-melee->Shortsword": {
           "name": "Shortsword"
         },
-        "strike-ranged->Shortbow": {
+        "strike-melee->Shortbow": {
           "name": "Shortbow"
         },
         "action->Hail of Arrows": {
@@ -1750,6 +1761,11 @@
         "spell->Pass Without Trace": {
           "name": "Pass Without Trace"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "spell->Tanglefoot": {
           "name": "Tanglefoot"
         },
@@ -1761,7 +1777,7 @@
         },
         "action->Green Empathy": {
           "name": "Green Empathy",
-          "description": "<p>The greenspeaker can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and make very simple Requests of plants and fungi.</p>"
+          "description": "<p>The greenspeaker can use Diplomacy to [[/act make-an-impression]] on and make very simple [[/act request]]{Requests} of plants and fungi.</p>"
         },
         "action->Jungle Stride": {
           "name": "Jungle Stride",
@@ -1774,7 +1790,7 @@
       "hpDetails": "void healing",
       "publicNotes": "<p>The life of a Hellknight is bloody, brutal, and often short. Many who perish in service to a Hellknight order are glad to rest after having served their masters so faithfully, but others seek to continue their work even in death. When a Hellknight is decapitated, the ghostly undead known as a hellcrown is an occasional result. Consumed by the desire to bring about order by inflicting cruelty, hellcrowns haunt battlefields and abandoned castles, slaying all they encounter. A strange fusion of spirit and steel, a hellcrown has no corporeal form by itself, but instead inhabits the helmet it so proudly wore in life. Dangling from the helmet like a shroud is a shadow of the former Hellknight's spine, adding to the creature's terrifyingly gruesome appearance. Hellknights regard hellcrowns with a mixture of disgust and respect, considering the individuals who transform into these floating undead to have been resolute in purpose but weak in body.</p>\n<p>A hellcrown usually manifests hours or longer after its body's death, and only when its body is unattended; this might even take days if the Hellknight perished in a major battle. Typically, no recognizable fragment of the Hellknight's former personality survives the grisly transformation into a hellcrown, but in rare and particularly tragic cases a hellcrown might remember its life and hold grudges against those it views as the cause of its death. Regardless of whether they retain memories of their lives or have lost all former sense of self, hellcrowns linger around the site of their death, reminding all they encounter of the merciless principles of their order.</p>",
       "items": {
-        "strike-ranged->Nail": {
+        "strike-melee->Nail": {
           "name": "Nail"
         },
         "action->Bleeding Nail": {
@@ -1881,7 +1897,7 @@
         "strike-ranged->Dagger": {
           "name": "Dagger"
         },
-        "strike-ranged->Crossbow": {
+        "strike-melee->Crossbow": {
           "name": "Crossbow"
         },
         "action->Kobold Explosives": {
@@ -1994,7 +2010,7 @@
         },
         "equipment->Religious Symbol of Droskar": {
           "name": "Religious Symbol of Droskar",
-          "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
+          "description": "La etiqueta <Compendio> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.upzjwQ96cZG0Xlmx]\n <p> Esta pieza de madera o plata está adornada con una imagen que representa un dios. Algunos lanzadores de conjuros divinos, como los clérigos, pueden utilizar un símbolo religioso de su dios como foco divino para utilizar ciertas habilidades y lanzar algunos conjuros. Se debe sostener un símbolo religioso en una mano para usarlo. </p>"
         },
         "strike-melee->Fleshroaster": {
           "name": "Fleshroaster"
@@ -2019,7 +2035,7 @@
       "name": "Immortal Ichor",
       "hpDetails": "regeneration 15 (deactivated by holy)",
       "languages": "telepathy 100 feet",
-      "publicNotes": "<p>An immortal ichor is an intelligent mass of blood from a dead evil deity. The cultists who perform the ritual to create immortal ichor typically seal up the sentient ooze in an underground or remote chamber that blocks its magical abilities, but over time these seals break or weaken, freeing the unholy monster.</p>",
+      "publicNotes": " <p>Un icor inmortal es uma masa inteligente de sangre de un dios maligno muerto. Los sectarios que llevan a cabo el ritual de creación de un icor inmortal suelen sellar al cieno inteligente en una cámara remota o subterránea que bloquea sus aptitudes mágicas, pero con el tiempo dichos sellos se rompen o debilitan, liberando al impío monstruo.</p>",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -2061,7 +2077,7 @@
         },
         "action->Dead Spells": {
           "name": "Dead Spells",
-          "description": "<p>An immortal ichor can cast an initial and advanced domain spell of a domain that belonged to the dead deity from which the ichor arose (the domain spells presented here are from the destruction domain).</p>"
+          "description": "<p>Un coro inmortal puede lanzar un conjuro de dominio inicial y avanzado de un dominio que perteneció al dios muerto del que se alzó el icor (los conjuros de dominio presentados aquí son del dominio de la destrucción).</p>"
         },
         "action->Mental Erosion": {
           "name": "Mental Erosion",
@@ -2093,7 +2109,7 @@
         },
         "weapon->Frost Vial (Major) [Infused]": {
           "name": "Frost Vial (Major) [Infused]",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4DJQID8GIlxQ7b9C]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +3 item bonus to attack rolls, the bomb deals 4d6 cold damage and 4 cold splash damage, and the target takes a -15-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4DJQID8GIlxQ7b9C]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +3 item bonus to attack rolls, the bomb deals 4d6 cold damage and 4 cold splash damage, and the target takes a –15-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
         },
         "armor->Chain Shirt": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
@@ -2127,16 +2143,16 @@
         "strike-ranged->Dagger": {
           "name": "Dagger"
         },
-        "strike-ranged->Major Acid Flask": {
+        "strike-melee->Major Acid Flask": {
           "name": "Major Acid Flask"
         },
-        "strike-ranged->Major Alchemist's Fire": {
+        "strike-melee->Major Alchemist's Fire": {
           "name": "Major Alchemist's Fire"
         },
-        "strike-ranged->Major Bottled Lightning": {
+        "strike-melee->Major Bottled Lightning": {
           "name": "Major Bottled Lightning"
         },
-        "strike-ranged->Major Frost Vial": {
+        "strike-melee->Major Frost Vial": {
           "name": "Major Frost Vial"
         },
         "action->Infused Items": {
@@ -2309,7 +2325,7 @@
         "strike-melee->Hand": {
           "name": "Hand"
         },
-        "strike-ranged->Rock": {
+        "strike-melee->Rock": {
           "name": "Rock"
         },
         "action->+1 Status to All Saves vs. Vitality": {
@@ -2385,7 +2401,7 @@
         "strike-ranged->Silver Dagger": {
           "name": "Silver Dagger"
         },
-        "strike-ranged->Longbow": {
+        "strike-melee->Longbow": {
           "name": "Longbow"
         },
         "action->Divine Providence": {
@@ -2576,7 +2592,7 @@
         "strike-melee->Corrosive Whip": {
           "name": "Corrosive Whip"
         },
-        "strike-ranged->Composite Longbow": {
+        "strike-melee->Composite Longbow": {
           "name": "Composite Longbow"
         },
         "action->Intimidating Attack of Opportunity": {
@@ -2605,7 +2621,7 @@
         "strike-melee->Bite": {
           "name": "Bite"
         },
-        "strike-ranged->Composite Longbow": {
+        "strike-melee->Composite Longbow": {
           "name": "Composite Longbow"
         },
         "action->Attack of Opportunity (Special)": {
@@ -2990,7 +3006,7 @@
         },
         "action->Contingency": {
           "name": "Contingency",
-          "description": "<p><strong>Trigger</strong> Mengkare fails a saving throw against a spell.</p>\n<hr />\n<p><strong>Effect</strong> @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th level) attempts to counteract the triggering spell.</p>"
+          "description": "<p><strong>Trigger</strong> Mengkare fails a saving throw against a spell.</p>\n<hr />\n<p><strong>Effect</strong> @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th rank) attempts to counteract the triggering spell.</p>"
         },
         "action->Extra Reaction": {
           "name": "Extra Reaction",
@@ -3044,7 +3060,7 @@
         "strike-melee->Scimitar": {
           "name": "Scimitar"
         },
-        "strike-ranged->Shortbow": {
+        "strike-melee->Shortbow": {
           "name": "Shortbow"
         },
         "action->Shipboard Grace": {
@@ -3091,7 +3107,7 @@
         "strike-melee->Rapier": {
           "name": "Rapier"
         },
-        "strike-ranged->Hand Crossbow": {
+        "strike-melee->Hand Crossbow": {
           "name": "Hand Crossbow"
         },
         "action->Deny Advantage": {
@@ -3214,7 +3230,7 @@
         "strike-melee->Verdant Staff": {
           "name": "Verdant Staff"
         },
-        "strike-ranged->Longbow": {
+        "strike-melee->Longbow": {
           "name": "Longbow"
         },
         "action->+1 Status to All Saves vs. Mental": {
@@ -3254,7 +3270,7 @@
         "strike-ranged->Dagger": {
           "name": "Dagger"
         },
-        "strike-ranged->Nolly's Hoe": {
+        "strike-melee->Nolly's Hoe": {
           "name": "Nolly's Hoe"
         },
         "action->Halfling Luck": {
@@ -3373,7 +3389,7 @@
         "strike-melee->Longsword": {
           "name": "Longsword"
         },
-        "strike-ranged->Composite Shortbow": {
+        "strike-melee->Composite Shortbow": {
           "name": "Composite Shortbow"
         },
         "action->Attack of Opportunity (Special)": {
@@ -3518,7 +3534,7 @@
           "name": "Spontaneous Divine Spells"
         },
         "spell->Weapon of Judgment": {
-          "requirements": "You have a deity."
+          "requirements": "Tienes un dios."
         },
         "spell->Discern Location": {
           "name": "Discern Location"
@@ -3626,7 +3642,7 @@
         },
         "action->Bonds of Iron": {
           "name": "Bonds of Iron",
-          "description": "<p>Once per day, Rusty Mae can cause a cage built of cold iron fingernails to spring out of nothingness at a range of up to 30 feet, attempting an Athletics check to [[/act grapple]] against the target's Fortitude DC; if the target has a weakness to cold iron, Rusty Mae gains a +2 circumstance bonus to this check. Unlike a normal Grapple, Rusty Mae doesn't need to be within reach and can move as she pleases, and a successful attempt lasts until the creature [[/act escape dc=29]]{Escapes} (DC 29), causing the cage to crumble into rust. Any creature can attempt to destroy the cage by attacking it. It has an AC of 25, Hardness 14, and 56 Hit Points.</p>"
+          "description": "<p>Once per day, Rusty Mae can cause a cage built of cold iron fingernails to spring out of nothingness at a range of up to 30 feet, attempting an Athletics check to [[/act grapple]] against the target's Fortitude DC; if the target has a weakness to cold iron, Rusty Mae gains a +2 circumstance bonus to this check. Unlike a normal Grapple, Rusty Mae doesn't need to be within reach and can move as she pleases, and a successful attempt lasts until the creature [[/act escape dc=29]]{Escapes}, causing the cage to crumble into rust. Any creature can attempt to destroy the cage by attacking it. It has an AC of 25, Hardness 14, and 56 Hit Points.</p>"
         },
         "action->Change Shape": {
           "description": "<p>Rusty Mae can take on the appearance of any Medium female humanoid. This doesn't change her Speed or her attack and damage bonuses with her Strikes but might change the damage type her Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -3656,7 +3672,7 @@
         "spell->Mage Hand": {
           "name": "Mage Hand"
         },
-        "strike-ranged->Telekinetic Object": {
+        "strike-melee->Telekinetic Object": {
           "name": "Telekinetic Object",
           "description": "<p>Damage type depends on object thrown</p>"
         },
@@ -3707,7 +3723,7 @@
         "strike-melee->Rapier": {
           "name": "Rapier"
         },
-        "strike-ranged->Blowgun": {
+        "strike-melee->Blowgun": {
           "name": "Blowgun"
         },
         "action->Efficient Capture": {
@@ -3746,7 +3762,7 @@
         "strike-melee->Shortsword": {
           "name": "Shortsword"
         },
-        "strike-ranged->Composite Shortbow": {
+        "strike-melee->Composite Shortbow": {
           "name": "Composite Shortbow"
         },
         "action->Return Fire": {
@@ -3755,7 +3771,7 @@
         },
         "action->Darting Shot": {
           "name": "Darting Shot",
-          "description": "<p>The Scarlet Triad boss <span data-pf2-action=\"feint\" data-pf2-glyph=\"A\">Feints</span> a target, Strides up to their Speed, and makes a Strike with their shortbow in any order. They can Feint any target within 30 feet when using this ability.</p>"
+          "description": "<p>The Scarlet Triad boss [[/act feint]]{Feints} a target, Strides up to their Speed, and makes a Strike with their shortbow in any order. They can Feint any target within 30 feet when using this ability.</p>"
         },
         "action->Sneak Attack": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The scarlet triad boss deals 4d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} creatures.</p>"
@@ -3777,7 +3793,7 @@
         "strike-melee->Kick": {
           "name": "Kick"
         },
-        "strike-ranged->Shortbow": {
+        "strike-melee->Shortbow": {
           "name": "Shortbow"
         },
         "action->Batter the Fallen": {
@@ -3810,7 +3826,7 @@
         "strike-melee->Sap": {
           "name": "Sap"
         },
-        "strike-ranged->Composite Shortbow": {
+        "strike-melee->Composite Shortbow": {
           "name": "Composite Shortbow"
         },
         "action->Stunning Retort": {
@@ -3898,7 +3914,7 @@
         "strike-melee->Shortsword": {
           "name": "Shortsword"
         },
-        "strike-ranged->Crossbow": {
+        "strike-melee->Crossbow": {
           "name": "Crossbow"
         },
         "action->+1 Status to All Saves vs. Poison": {
@@ -3971,7 +3987,7 @@
         "strike-melee->Pick": {
           "name": "Pick"
         },
-        "strike-ranged->Composite Longbow": {
+        "strike-melee->Composite Longbow": {
           "name": "Composite Longbow"
         },
         "action->Backshot": {
@@ -4092,7 +4108,7 @@
         },
         "action->Vulnerability to Exorcism": {
           "name": "Vulnerability to Exorcism",
-          "description": "<p>When a soulbound ruin fails a saving throw against a spell that would banish tormented spirits or manipulate souls, such as @UUID[Compendium.pf2e.spells-srd.Item.bay4AfSu2iIozNNW]{Banishment} or @UUID[Compendium.pf2e.spells-srd.Item.GYmXvS9NJ7QwfWGg]{Seize Soul}, instead of experiencing the listed effects, it takes [[/r 10]]{10 damage} per spell rank.</p>"
+          "description": "<p>When a soulbound ruin fails a saving throw against a spell that would banish tormented spirits or manipulate souls, such as @UUID[Compendium.pf2e.spells-srd.Item.bay4AfSu2iIozNNW]{Banishment} or @UUID[Compendium.pf2e.spells-srd.Item.GYmXvS9NJ7QwfWGg]{Seize Soul}, instead of experiencing the listed effects, it takes @Damage[10[untyped]] damage per spell rank.</p>"
         },
         "action->Collapse Ceiling": {
           "name": "Collapse Ceiling",
@@ -4104,7 +4120,7 @@
         },
         "action->Self-Repair": {
           "name": "Self-Repair",
-          "description": "<p>The ruin can spend 10 minutes repairing itself to regain up to @Damage[30[healing]] Hit Points. If the ruin is interrupted during this time, it loses its focus and the repair fails.</p>\n<p>This ability functions even if the ruin is reduced to 0 HP, unless a @UUID[Compendium.pf2e.spells-srd.Item.Dbd5W6G8U2vzWolN]{Consecrate} ritual has been performed to purify the building, in which case the soulbound ruin is destroyed. This ritual must be dedicated to a good deity or a deity with a strong opposition to undead, such as Pharasma.</p>"
+          "description": "<p>Las ruinas pueden invertir 10 minutos reparándose para recuperar hasta @Damage[30[healing]] Puntos de Golpe. Si se les interrumpe durante este tiempo, pierden enfoque y la reparación falla.</p>\n<p>Esta aptitud funciona incluso si las ruinas son reducidas a 0 PG, a menos que se haya llevado a cabo un ritual de @UUID[Compendium.pf2e.spells-srd.Item.Dbd5W6G8U2vzWolN]{Consagrar} para purificar el edificio, en cuyo caso las ruinas de alma vinculada quedan destruidas. Dicho ritual debe estar dedicado a un dios bueno o a uno con una fuerte oposición a los muertos vivientes, como Farasma.</p>"
         }
       }
     },
@@ -4126,7 +4142,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The spawn breathes flames that deals @Damage[9d6[fire]|options:area-damage] damage to all creatures in a @Template[cone|distance:30] (@Check[reflex|dc:26|basic] save).</p>\n<p>They can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}</p>"
+          "description": "<p>The spawn breathes flames that deals @Damage[9d6[fire]|options:area-damage] damage to all creatures in a @Template[cone|distance:30] (@Check[reflex|dc:26|basic|options:area-effect] save).</p>\n<p>They can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}</p>"
         },
         "action->Draconic Frenzy": {
           "name": "Draconic Frenzy",
@@ -4266,7 +4282,7 @@
         "strike-melee->Horns": {
           "name": "Horns"
         },
-        "strike-ranged->Spine": {
+        "strike-melee->Spine": {
           "name": "Spine"
         },
         "action->+2 Status to All Saves vs. Magic": {
@@ -4617,7 +4633,7 @@
         "strike-melee->Fangs": {
           "name": "Fangs"
         },
-        "strike-ranged->Web": {
+        "strike-melee->Web": {
           "name": "Web"
         },
         "action->Hostile Juxtaposition": {
@@ -4658,6 +4674,11 @@
         "spell->Burning Hands (At Will)": {
           "name": "Burning Hands (At Will)"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "strike-melee->Jaws": {
           "name": "Jaws"
         },
@@ -4695,7 +4716,7 @@
         },
         "action->Volcanic Purge": {
           "name": "Volcanic Purge",
-          "description": "<p>If the next action Veshumirix uses is Breath Weapon, the magma clings to those it damages. Each creature that fails its save against the Breath Weapon takes @Damage[4d6[persistent,fire]] damage, and as long as it has this persistent fire damage, it also takes a -10-foot status penalty to its Speeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.7qoZauizAKfPIXeu]{Effect: Volcanic Purge}</p>"
+          "description": "<p>If the next action Veshumirix uses is Breath Weapon, the magma clings to those it damages. Each creature that fails its save against the Breath Weapon takes @Damage[4d6[persistent,fire]] damage, and as long as it has this persistent fire damage, it also takes a –10-foot status penalty to its Speeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.7qoZauizAKfPIXeu]{Effect: Volcanic Purge}</p>"
         }
       }
     },
@@ -4826,7 +4847,7 @@
         },
         "equipment->Religious Symbol of Desna": {
           "name": "Religious Symbol of Desna",
-          "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
+          "description": "La etiqueta <Compendio> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\n<p> Esta pieza de madera o plata está adornada con una imagen que representa un dios. Algunos lanzadores de conjuros divinos, como los clérigos, pueden utilizar un símbolo religioso de su dios como foco divino para utilizar ciertas habilidades y lanzar algunos conjuros. Se debe sostener un símbolo religioso en una mano para usarlo. </p>"
         },
         "equipment->Scholar's Robes": {
           "name": "Scholar's Robes"
@@ -4983,7 +5004,7 @@
         "strike-melee->Claw": {
           "name": "Claw"
         },
-        "strike-ranged->Lava Bomb": {
+        "strike-melee->Lava Bomb": {
           "name": "Lava Bomb"
         },
         "action->Blindsight (Precise) 120 feet": {
@@ -5062,7 +5083,7 @@
         "strike-melee->Scimitar": {
           "name": "Scimitar"
         },
-        "strike-ranged->Heavy Crossbow": {
+        "strike-melee->Heavy Crossbow": {
           "name": "Heavy Crossbow"
         },
         "action->Adroit Disarm": {
@@ -5097,7 +5118,7 @@
         },
         "weapon->Frost Vial (Greater) [Infused]": {
           "name": "Frost Vial (Greater) [Infused]",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +2 item bonus to attack rolls, the bomb deals 3d6 cold damage and 3 cold splash damage, and the target takes a -10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +2 item bonus to attack rolls, the bomb deals 3d6 cold damage and 3 cold splash damage, and the target takes a –10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
         },
         "weapon->Thunderstone (Greater) [Infused]": {
           "name": "Thunderstone (Greater) [Infused]",
@@ -5132,16 +5153,16 @@
         "strike-melee->Light Mace": {
           "name": "Light Mace"
         },
-        "strike-ranged->Greater Acid Flask": {
+        "strike-melee->Greater Acid Flask": {
           "name": "Greater Acid Flask"
         },
-        "strike-ranged->Greater Alchemist's Fire": {
+        "strike-melee->Greater Alchemist's Fire": {
           "name": "Greater Alchemist's Fire"
         },
-        "strike-ranged->Greater Frost Vial": {
+        "strike-melee->Greater Frost Vial": {
           "name": "Greater Frost Vial"
         },
-        "strike-ranged->Greater Thunderstone": {
+        "strike-melee->Greater Thunderstone": {
           "name": "Greater Thunderstone"
         },
         "action->Infused Items": {

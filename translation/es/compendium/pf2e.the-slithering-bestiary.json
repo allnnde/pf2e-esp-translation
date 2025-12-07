@@ -57,12 +57,7 @@
         },
         "action->Wicked Trophies": {
           "name": "Wicked Trophies",
-          "description": "<p>An ahvothian chooses a creature type (such as animal, celestial, or humanoid) from which they currently carry a trophy from a past kill.</p>\n<p>Their weapon Strikes against creatures of that type deal an additional [[/r 1d10]] damage and they gain a +2 status bonus on Intimidation checks against creatures of that type.</p>\n<p>The ahvothian doesn't lose these bonuses if they lose the trophies. Once per day, an ahvothian can change the creature type of their wicked trophies in a ritual that takes 1 hour.</p>\n<p>Nearly all ahvothians encountered on the Material Plane have selected humanoids as the focus of their wicked trophies.</p>",
-          "rules": {
-            "0": {
-              "label": "Target is subject of Wicked Trophies"
-            }
-          }
+          "description": "<p>An ahvothian chooses a creature type (such as animal, celestial, or humanoid) from which they currently carry a trophy from a past kill.</p>\n<p>Their weapon Strikes against creatures of that type deal an additional 1d10 damage and they gain a +2 status bonus on Intimidation checks against creatures of that type.</p>\n<p>The ahvothian doesn't lose these bonuses if they lose the trophies. Once per day, an ahvothian can change the creature type of their wicked trophies in a ritual that takes 1 hour.</p>\n<p>Nearly all ahvothians encountered on the Material Plane have selected humanoids as the focus of their wicked trophies.</p>"
         }
       }
     },
@@ -148,7 +143,7 @@
         "strike-ranged->Dagger": {
           "name": "Dagger"
         },
-        "strike-ranged->Crossbow": {
+        "strike-melee->Crossbow": {
           "name": "Crossbow"
         },
         "action->Bravery": {
@@ -203,10 +198,10 @@
         "strike-melee->Rapier": {
           "name": "Rapier"
         },
-        "strike-ranged->Acid Flask": {
+        "strike-melee->Acid Flask": {
           "name": "Acid Flask"
         },
-        "strike-ranged->Alchemist's Fire": {
+        "strike-melee->Alchemist's Fire": {
           "name": "Alchemist's Fire"
         },
         "action->Infused Items": {
@@ -321,7 +316,7 @@
     "Fiendripping Blast Trap": {
       "name": "Fiendripping Blast Trap",
       "description": "<p>A blast of energy damages all creatures within 20 feet, with particularly severe damage to fiends.</p>",
-      "disable": "<p>@Check[thievery|dc:27|name:Identify Button Sequence|traits:action:disable-a-device] (expert) to identify the proper sequence of buttons in the divots, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th level; counteract DC 25) to suppress the magical effect for 1 hour</p>",
+      "disable": "<p>@Check[thievery|dc:27|name:Identify Button Sequence|traits:action:disable-a-device] (expert) to identify the proper sequence of buttons in the divots, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank; counteract DC 25) to suppress the magical effect for 1 hour</p>",
       "reset": "<p>The trap resets after 1 hour.</p>",
       "stealth": "<p>(expert)</p>",
       "items": {
@@ -339,7 +334,7 @@
         "strike-melee->Pseudopod": {
           "name": "Pseudopod"
         },
-        "strike-ranged->Ejected Glob": {
+        "strike-melee->Ejected Glob": {
           "name": "Ejected Glob"
         },
         "action->Chemical Sense 60 feet": {
@@ -419,7 +414,7 @@
         },
         "action->Steady Spellcasting": {
           "name": "Steady Spellcasting",
-          "description": "<p>If a would disrupt Nyamat's spellcasting action, on a successful @Check[flat|dc:15], the action isn't disrupted.</p>"
+          "description": "<p>If a reaction would disrupt Nyamat's spellcasting action, on a successful @Check[flat|dc:15], the action isn't disrupted.</p>"
         },
         "lore->Demon Lore": {
           "name": "Demon Lore"
@@ -502,7 +497,7 @@
     "Scroll Shock Trap": {
       "name": "Scroll Shock Trap",
       "description": "<p>Five scroll symbols shoot electricity bolts around the room.</p>",
-      "disable": "<p>@Check[thievery|dc:25|name:Counteract Magic|traits:action:disable-a-device] (expert) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd level; counteract DC 24)</p>\n<p>@Check[thievery|dc:29|name:Disable Trap (Control Panel)|traits:action:disable-a-device] (master) to disable the entire trap from the hidden control panel beneath the central slab.</p>",
+      "disable": "<p>@Check[thievery|dc:25|name:Counteract Magic|traits:action:disable-a-device] (expert) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank; counteract DC 24)</p>\n<p>@Check[thievery|dc:29|name:Disable Trap (Control Panel)|traits:action:disable-a-device] (master) to disable the entire trap from the hidden control panel beneath the central slab.</p>",
       "hpDetails": "See Symbol and Panel Stats",
       "reset": "<p>The trap deactivates 1 round after it has no target creatures and resets after 1 minute.</p>",
       "routine": "<p>(5 actions) Each disabled symbol reduces the trap's number of actions by 1.</p>\n<p>For each of its actions, a different symbol shoots an electricity bolt at a random creature in the room. The trap doesn't take multiple attack penalties.</p>",
@@ -523,7 +518,7 @@
         "action->No Multiple Attack Penalty": {
           "name": "No Multiple Attack Penalty"
         },
-        "strike-ranged->Electrical Bolt": {
+        "strike-melee->Electrical Bolt": {
           "name": "Electrical Bolt"
         }
       }
@@ -531,7 +526,7 @@
     "Stalker Summoning Rune": {
       "name": "Stalker Summoning Rune",
       "description": "<p>The sand conceals a rune that summons an invisible stalker into this yard.</p>",
-      "disable": "<p>@Check[acrobatics|dc:25|name:Approach Rune] to approach without triggering the trap followed by @Check[arcana|dc:25|name:Erase Rune] (expert) or @Check[thievery|dc:27|name:Erase Rune|traits:action:disable-a-device] (expert) to erase the rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th level; counteract DC 25) to counteract the rune</p>",
+      "disable": "<p>@Check[acrobatics|dc:25|name:Approach Rune] to approach without triggering the trap followed by @Check[arcana|dc:25|name:Erase Rune] (expert) or @Check[thievery|dc:27|name:Erase Rune|traits:action:disable-a-device] (expert) to erase the rune, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank; counteract DC 25) to counteract the rune</p>",
       "reset": "<p>The trap resets after 24 hours.</p>",
       "stealth": "<p>(expert)</p>",
       "items": {

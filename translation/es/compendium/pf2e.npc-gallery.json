@@ -32,8 +32,8 @@
         "strike-melee->Staff": {
           "name": "Personal"
         },
-        "strike-ranged->Crossbow": {
-          "name": "Ballesta"
+        "strike-melee->Crossbow": {
+          "name": "Crossbow"
         }
       }
     },
@@ -89,8 +89,8 @@
         "strike-melee->Scimitar": {
           "name": "Cimitarra"
         },
-        "strike-ranged->Composite Longbow": {
-          "name": "Arco largo compuesto"
+        "strike-melee->Composite Longbow": {
+          "name": "Composite Longbow"
         },
         "action->Hydration": {
           "name": "Hidratación",
@@ -144,12 +144,7 @@
         },
         "action->Bar Brawler": {
           "name": "Luchador de bar",
-          "description": "<p> El camarero ha estado en suficientes peleas de bar como para saber cómo lanzar algunos golpes. Cuando pelea en su bar y realiza un ataque no letal, el camarero obtiene una bonificación de circunstancia +1 a las tiradas de ataque y reparte un [[/r {1d4}]]{1d4 damage} adicional. </p>",
-          "rules": {
-            "0": {
-              "label": "Peleando en su propio bar"
-            }
-          }
+          "description": "<p> El camarero ha estado en suficientes peleas de bar como para saber cómo lanzar algunos golpes. Cuando pelea en su bar y realiza un ataque no letal, el camarero obtiene una bonificación de circunstancia +1 a las tiradas de ataque y reparte un [[/r {1d4}]]{1d4 damage} adicional. </p>"
         },
         "action->Barkeep's Advice": {
           "name": "El consejo del barman",
@@ -183,6 +178,11 @@
         "spell->Longstrider": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.spells-srd.Item.KcLVELhCUcKXxiKE]\nZancudo largo"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "spell->Tanglefoot": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nPie enredado"
         },
@@ -210,8 +210,8 @@
         "strike-melee->Sap": {
           "name": "Savia"
         },
-        "strike-ranged->Hand Crossbow": {
-          "name": "Ballesta de mano"
+        "strike-melee->Hand Crossbow": {
+          "name": "Hand Crossbow"
         },
         "action->Deny Advantage": {
           "name": "Negar ventaja",
@@ -254,8 +254,8 @@
         "strike-melee->War Flail": {
           "name": "mayal de guerra"
         },
-        "strike-ranged->Composite Longbow": {
-          "name": "Arco largo compuesto"
+        "strike-melee->Composite Longbow": {
+          "name": "Composite Longbow"
         },
         "action->+1 Status to All Saves vs. Fear": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+1 estado a todas las salvaciones contra el miedo"
@@ -294,8 +294,16 @@
         "spell->Light": {
           "target": "1 objeto de 1 volumen o menos, ya sea desatendido o poseído por ti o por un aliado dispuesto"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "spell->Ray of Enfeeblement": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRayo de debilitamiento"
+        },
+        "armor->Hellknight Plate": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.lCgXeV52eYYl5cUX]\n<p>Few armors in the Inner Sea region are as memorable as the iconic Hellknight plate. While each order has its own flourishes, Hellknight plate is instantly recognizable to any who know of the Hellknights. Hellknights go to extreme measures to punish non-Hellknights who get their hands on Hellknight plate, and the reward is not usually worth the risk, since for non-Hellknights, the armor is functionally similar to @UUID[Compendium.pf2e.equipment-srd.Item.Gq1cZWSKOtJhKd2p]{Full Plate}.</p>"
         },
         "consumable->Healing Potion (Lesser)": {
           "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n <p> Una poción curativa es un frasco de un líquido rojo rubí que imparte una sensación de hormigueo a medida que las heridas del bebedor sanan rápidamente. Cuando bebes una poción curativa, recuperas [[/r (2d8+5)[healing]]]{2d8+5 Hit Points} . </p>"
@@ -303,8 +311,8 @@
         "strike-melee->Morningstar": {
           "name": "Estrella de la mañana"
         },
-        "strike-ranged->Crossbow": {
-          "name": "Ballesta"
+        "strike-melee->Crossbow": {
+          "name": "Crossbow"
         },
         "action->Steady Spellcasting": {
           "name": "Lanzamiento de hechizos constante",
@@ -380,8 +388,8 @@
         "strike-melee->Rapier": {
           "name": "Estoque"
         },
-        "strike-ranged->Shortbow": {
-          "name": "Arco corto"
+        "strike-melee->Shortbow": {
+          "name": "Shortbow"
         },
         "action->Scout's Warning": {
           "name": "Advertencia del explorador",
@@ -453,8 +461,8 @@
         "strike-melee->Warhammer": {
           "name": "martillo de guerra"
         },
-        "strike-ranged->Composite Longbow": {
-          "name": "Arco largo compuesto"
+        "strike-melee->Composite Longbow": {
+          "name": "Composite Longbow"
         },
         "action->Fortitude Saves": {
           "name": "La fortaleza salva",
@@ -573,8 +581,8 @@
         "strike-melee->Rapier": {
           "name": "Estoque"
         },
-        "strike-ranged->Crossbow": {
-          "name": "Ballesta"
+        "strike-melee->Crossbow": {
+          "name": "Crossbow"
         },
         "action->Reach Spell": {
           "name": "Alcanzar hechizo",
@@ -631,8 +639,8 @@
         "strike-melee->Scimitar": {
           "name": "Cimitarra"
         },
-        "strike-ranged->Composite Longbow": {
-          "name": "Arco largo compuesto"
+        "strike-melee->Composite Longbow": {
+          "name": "Composite Longbow"
         },
         "action->+1 Status to All Saves vs. Poison": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+1 estado a todas las salvaciones contra veneno"
@@ -685,8 +693,8 @@
         "strike-melee->Fist": {
           "name": "Puño"
         },
-        "strike-ranged->Rock": {
-          "name": "Roca"
+        "strike-melee->Rock": {
+          "name": "Rock"
         },
         "action->Big Swing": {
           "name": "gran columpio",
@@ -728,6 +736,11 @@
         "spell->Mage Hand": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]\nMano de mago"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "spell->Tanglefoot": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nPie enredado"
         },
@@ -752,8 +765,8 @@
         "strike-melee->Staff Of Abjuration": {
           "name": "Bastón de abjuración"
         },
-        "strike-ranged->Crossbow": {
-          "name": "Ballesta"
+        "strike-melee->Crossbow": {
+          "name": "Crossbow"
         },
         "action->Mask Bond": {
           "name": "Vínculo de máscara",
@@ -791,8 +804,8 @@
         "strike-ranged->Dagger": {
           "name": "Daga"
         },
-        "strike-ranged->Composite Longbow": {
-          "name": "Arco largo compuesto"
+        "strike-melee->Composite Longbow": {
+          "name": "Composite Longbow"
         },
         "action->Crimson Vengeance": {
           "name": "Venganza carmesí",
@@ -836,8 +849,8 @@
         "strike-melee->Longsword": {
           "name": "espada larga"
         },
-        "strike-ranged->Composite Longbow": {
-          "name": "Arco largo compuesto"
+        "strike-melee->Composite Longbow": {
+          "name": "Composite Longbow"
         },
         "action->+3 Status to Reflex vs. Damaging Effects": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+3 Estado a reflejos versus efectos dañinos"

@@ -16,7 +16,7 @@ jobs:
       skipped: ${{steps.changelog.outputs.skipped}}
       changelog: ${{steps.changelog.outputs.changelog}}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.2.2
       - name: Conventional Changelog Action
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: versioning
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.2.2
         with:
           ref: ${{ needs.versioning.outputs.tag }}
       # Create a zip file with all files required by the module to add to the release
