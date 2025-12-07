@@ -28,7 +28,7 @@
         },
         "action->Blizzard Evasion": {
           "name": "Blizzard Evasion",
-          "description": "<p><strong>Trigger</strong> Ainamuuren takes at least 40 points of physical damage from a single attack, and he isn't currently discorporated</p>\n<hr />\n<p><strong>Effect</strong> Ainamuuren discorporates into a whirling blizzard for 3 rounds. During this time, he gains resistance 10 to physical damage and weakness 10 to force damage. He gains a fly speed of 40 feet, but the only action he can take is to Fly. While discorporated, the first time each round that Ainamuuren enters another creature's space or a creature enters Ainamuuren's space, that creature takes @Damage[4d8[cold]] damage and must succeed at a @Check[fortitude|dc:34] save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1}. At the start of his turn, Ainamuuren can end this effect as a free action.</p>"
+          "description": "<p><strong>Trigger</strong> Ainamuuren takes at least 40 points of physical damage from a single attack, and he isn't currently discorporated</p>\n<hr />\n<p><strong>Effect</strong> Ainamuuren discorporates into a whirling blizzard for 3 rounds. During this time, he gains resistance 10 to physical damage and weakness 10 to force damage. He gains a fly speed of 40 feet, but the only action he can take is to Fly. While discorporated, the first time each round that Ainamuuren enters another creature's space or a creature enters Ainamuuren's space, that creature takes @Damage[4d8[cold]] damage and must succeed at a @Check[fortitude|dc:34] save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. At the start of his turn, Ainamuuren can end this effect as a free action.</p>"
         },
         "action->Frostbite Runes": {
           "name": "Frostbite Runes",
@@ -49,7 +49,7 @@
       "description": "<p>Ebeshra brushes against a structure, possibly causing it to collapse.</p>",
       "disable": "<p>@Check[athletics|dc:43|name:Brace Building (Athletics)|traits:complex,environmental,kaiju,hazard] (master), @Check[crafting|dc:43|name:Brace Building (Crafting)|traits:complex,environmental,kaiju,hazard] (master), or @Check[engineering|dc:43|name:Brace Building (Engineering)|traits:complex,environmental,kaiju,hazard]{Engineering Lore} (master) to brace the structure to reduce the risk of collapse until the end of the creature's next turn. The DC of the flat check for this round (see Routine) is increased by 4 on a success, or by 8 on a critical success. Increasing the flat check DC to 21 or higher stabilizes the structure, ending this hazard.</p>",
       "reset": "<p>The building becomes susceptible to Shake Apart again 1d6 rounds after it's stabilized.</p>",
-      "routine": "<p>The GM rolls a @Check[flat|dc:9|showDC:owner] to determine if the building partially collapses, increasing the DC as listed above. On a successful check, dust and debris fall within the building and 30 feet around it, providing concealment and dealing @Damage[6d6[bludgeoning]] damage to [[/r 1d4 #Targets]] randomly chosen targets (@Check[reflex|dc:35|basic|name:Falling Debris|traits:hazard,complex,environmental,kaiju] save; on a critical failure, the creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}). On a critical success, the effect is the same, but the debris deals @Damage[12d6[bludgeoning]] damage to [[/r 2d4 #Targets]] randomly chosen targets instead (@Check[reflex|dc:35|basic|name:Falling Debris|traits:hazard,complex,environmental,kaiju] save; on a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado} by rubble until freed [@UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Force Open} DC 38, @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 35]).</p>",
+      "routine": "<p>The GM rolls a @Check[flat|dc:9|showDC:owner] to determine if the building partially collapses, increasing the DC as listed above. On a successful check, dust and debris fall within the building and 30 feet around it, providing concealment and dealing @Damage[6d6[bludgeoning]] damage to [[/r 1d4 #Targets]] randomly chosen targets (@Check[reflex|dc:35|basic|name:Falling Debris|traits:hazard,complex,environmental,kaiju] save; on a critical failure, the creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}). On a critical success, the effect is the same, but the debris deals @Damage[12d6[bludgeoning]] damage to [[/r 2d4 #Targets]] randomly chosen targets instead (@Check[reflex|dc:35|basic|name:Falling Debris|traits:hazard,complex,environmental,kaiju] save; on a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by rubble until freed [@UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Force Open} DC 38, @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 35]).</p>",
       "stealth": "<p>(master) to notice cracks forming in the walls of the structure as Ebeshra approaches</p>",
       "items": {
         "action->Shake Apart": {
@@ -62,7 +62,7 @@
       "name": "Crystal Pin",
       "description": "<p>Ebeshra fires a crystal at a creature to pin them onto the Material Plane.</p>",
       "disable": "<p>@Check[occultism|dc:48|name:Earn Ebeshra's Favor (Occultism)|traits:abjuration,divine,environmental,kaiju,hazard] (legendary) or @Check[religion|dc:48|name:Earn Ebeshra's Favor (Religion)|traits:abjuration,divine,environmental,kaiju,hazard] (legendary) to earn Ebeshra's favor and allow safe travel or @Check[deception|dc:51|name:Divert Ebeshra's Attention|traits:abjuration,divine,environmental,kaiju,hazard] (master) to momentarily divert Ebeshra's attention</p>",
-      "reset": "<p>Ebeshra waits [[/br 1d4 #Rounds]] rounds to break off another crystal.</p>",
+      "reset": "<p>Ebeshra waits [[/gmr 1d4 #Rounds]] rounds to break off another crystal.</p>",
       "items": {
         "action->Fire Pin": {
           "name": "Fire Pin",
@@ -102,11 +102,11 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>Cuetzmonquali unleashes a blast of fire that deals @Damage[12d10[fire]] damage in a @Template[cone|distance:50] (@Check[reflex|dc:38|basic] save). Creatures that fail their saves catch on fire and take @Damage[1d12[persistent,fire]] damage. Cuetzmonquali can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>Cuetzmonquali unleashes a blast of fire that deals @Damage[12d10[fire]|options:area-damage] damage in a @Template[cone|distance:50] (@Check[reflex|dc:38|basic|options:area-effect] save). Creatures that fail their saves catch on fire and take @Damage[1d12[persistent,fire]] damage. Cuetzmonquali can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         },
         "action->Burning Venom": {
           "name": "Burning Venom",
-          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:38]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[4d6[poison],2d10[fire]]{4d6 poison plus 2d10 fire}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[6d6[poison],3d10[fire]]{6d6 poison plus 3d10 fire}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[8d6[poison],4d10[fire]]{8d6 poison plus 4d10 fire}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 3} (1 round)</p>"
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:38]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[4d6[poison],2d10[fire]]{4d6 poison plus 2d10 fire}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[6d6[poison],3d10[fire]]{6d6 poison plus 3d10 fire}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[8d6[poison],4d10[fire]]{8d6 poison plus 4d10 fire}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} (1 round)</p>"
         },
         "action->Constrict": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(2d6+8)[bludgeoning],2d10[fire]]{2d6+8 bludgeoning damage plus 2d10 fire damage}, @Check[fortitude|dc:38|basic] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
@@ -117,7 +117,7 @@
         },
         "action->Impaling Charge": {
           "name": "Impaling Charge",
-          "description": "<p>Cuetzmonquali charges forward and attempts to gore a foe. It Strides and attempts a horn Strike. On a hit, the target becomes impaled on one of Cuetzmonquali's horns. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado}. If Cuetzmonquali moves, it brings the grabbed creature along with it. Cuetzmonquali doesn't need to use additional actions to keep the creature grabbed; the creature remains grabbed as long as it's impaled. The grabbed creature can attempt to Escape as normal, but the DC to do so is 40, rather than Cuetzmonquali's Athletics DC. If Cuetzmonquali critically hit the creature to impale it, that creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado} for 1 round, in addition to being grabbed and impaled as per a success.</p>"
+          "description": "<p>Cuetzmonquali charges forward and attempts to gore a foe. It Strides and attempts a horn Strike. On a hit, the target becomes impaled on one of Cuetzmonquali's horns. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. If Cuetzmonquali moves, it brings the grabbed creature along with it. Cuetzmonquali doesn't need to use additional actions to keep the creature grabbed; the creature remains grabbed as long as it's impaled. The grabbed creature can attempt to Escape as normal, but the DC to do so is 40, rather than Cuetzmonquali's Athletics DC. If Cuetzmonquali critically hit the creature to impale it, that creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} for 1 round, in addition to being grabbed and impaled as per a success.</p>"
         },
         "action->Trample": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Large or smaller, claw, @Check[reflex|dc:38|basic] save</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
@@ -155,7 +155,7 @@
         },
         "action->Aura of Agony": {
           "name": "Aura of Agony",
-          "description": "<p>10 miles. Desert's Howl exudes a massive psychic disturbance many miles away from its location, assaulting the minds and spirits of those who dare to sleep within the unsettling bounds of its aura of agony. Creatures that attempt to rest while they're within this emanation are beset by disturbing nightmares and hallucinations, regardless of whether they're aware of Desert's Howl's presence. This restlessness causes creatures to wake up @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigado}, and they don't recover from fatigue by resting. Creatures affected by aura of agony don't reduce their @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado} condition by resting as long as they remain within the area of the aura.</p>"
+          "description": "<p>10 miles. Desert's Howl exudes a massive psychic disturbance many miles away from its location, assaulting the minds and spirits of those who dare to sleep within the unsettling bounds of its aura of agony. Creatures that attempt to rest while they're within this emanation are beset by disturbing nightmares and hallucinations, regardless of whether they're aware of Desert's Howl's presence. This restlessness causes creatures to wake up @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}, and they don't recover from fatigue by resting. Creatures affected by aura of agony don't reduce their @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition by resting as long as they remain within the area of the aura.</p>"
         },
         "action->Fear Scent (Precise) 120 feet": {
           "name": "Fear Scent (Precise) 120 feet",
@@ -170,7 +170,7 @@
         },
         "action->Forlorn Howl": {
           "name": "Forlorn Howl",
-          "description": "<p>Desert's Howl vents a long and desolate wail full of nightmares and despair. The devastating howl can be heard up to 1 mile away under the open sky. Any creature who hears it experiences a sudden sinking in its stomach and heart palpitations, its hair stands on end, and it must attempt a @Check[will|dc:38] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and becomes temporarily immune for 1 hour.</p>\n<p><strong>Success</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2}.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3}.</p>\n<p><strong>Critical Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Condenado 1}, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 4}, and is @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} for 1 round.</p>"
+          "description": "<p>Desert's Howl vents a long and desolate wail full of nightmares and despair. The devastating howl can be heard up to 1 mile away under the open sky. Any creature who hears it experiences a sudden sinking in its stomach and heart palpitations, its hair stands on end, and it must attempt a @Check[will|dc:38] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and becomes temporarily immune for 1 hour.</p>\n<p><strong>Success</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>\n<p><strong>Critical Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4}, and is @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>"
         },
         "action->Illusory Ambush": {
           "name": "Illusory Ambush",
@@ -178,15 +178,15 @@
         },
         "action->Nightmare Fuel": {
           "name": "Nightmare Fuel",
-          "description": "<p>Desert's Howl's claws are infused with some of the nightmares that make up Desert's Howl's being, and they infect victims with lasting fear, cycling their victims' fears and anxieties in a horrific loop that takes time and rest to break. A creature that takes damage from Desert's Howl's claw Strike while frightened no longer reduces its @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado} condition at the end of each turn. Instead, the creature can only decrease its frightened condition by 1 after each full night's rest or with magical effects counteracting the fear, such as @UUID[Compendium.pf2e.spells-srd.Item.EfFMLVbmkBWmzoLF]{Clear Mind}.</p>"
+          "description": "<p>Desert's Howl's claws are infused with some of the nightmares that make up Desert's Howl's being, and they infect victims with lasting fear, cycling their victims' fears and anxieties in a horrific loop that takes time and rest to break. A creature that takes damage from Desert's Howl's claw Strike while frightened no longer reduces its @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition at the end of each turn. Instead, the creature can only decrease its frightened condition by 1 after each full night's rest or with magical effects counteracting the fear, such as @UUID[Compendium.pf2e.spells-srd.Item.EfFMLVbmkBWmzoLF]{Clear Mind}.</p>"
         },
         "action->Paralytic Secretion": {
           "name": "Paralytic Secretion",
-          "description": "<p>Desert's Howl's saliva is a potent paralytic substance that drains the energy from prey. A creature hit by its spit Strike must succeed at a @Check[fortitude|dc:41] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 2} as well as @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralizado} for 1 round. If the target was already drained, it instead increases the condition's value by 1, to a maximum of drained 4.</p>"
+          "description": "<p>Desert's Howl's saliva is a potent paralytic substance that drains the energy from prey. A creature hit by its spit Strike must succeed at a @Check[fortitude|dc:41] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} as well as @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round. If the target was already drained, it instead increases the condition's value by 1, to a maximum of drained 4.</p>"
         },
         "action->Profane Feast": {
           "name": "Profane Feast",
-          "description": "<p><strong>Requirements</strong> Desert's Howl has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado}</p>\n<hr />\n<p><strong>Effect</strong> Desert's Howl begins to consume the creature, dealing @Damage[(2d12+15)[piercing]] damage (@Check[fortitude|dc:41|basic] save) and exposing the creature to its paralytic secretion.</p>"
+          "description": "<p><strong>Requirements</strong> Desert's Howl has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> Desert's Howl begins to consume the creature, dealing @Damage[(2d12+15)[piercing]] damage (@Check[fortitude|dc:41|basic] save) and exposing the creature to its paralytic secretion.</p>"
         },
         "lore->Desert Lore": {
           "name": "Desert Lore"
@@ -240,7 +240,7 @@
         },
         "action->Curse of the Woeful Wyrd": {
           "name": "Curse of the Woeful Wyrd",
-          "description": "<p>When a creature slays Fafnheir, it becomes home to his soul, which slowly emerges from his killer's body. The creature must attempt a @Check[will|dc:52] save or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Condenado 2} (@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Condenado 1} on a success, unaffected on a critical success). Unless the creature critically succeeded at the saving throw, each day the doomed value increases by 1. If the creature dies while suffering the curse of the woeful wyrd, its corpse explodes in a @Template[burst|distance:60] with the effect of Blasting Breath. Fafnheir is immediately returned to life in the nearest available space to the corpse with full Hit Points and no conditions. Even an indirect slaying usually still allows Fafnheir to curse the soul of his slayer through the metaphysical link between them.</p>"
+          "description": "<p>When a creature slays Fafnheir, it becomes home to his soul, which slowly emerges from his killer's body. The creature must attempt a @Check[will|dc:52] save or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2} (@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} on a success, unaffected on a critical success). Unless the creature critically succeeded at the saving throw, each day the doomed value increases by 1. If the creature dies while suffering the curse of the woeful wyrd, its corpse explodes in a @Template[burst|distance:60] with the effect of Blasting Breath. Fafnheir is immediately returned to life in the nearest available space to the corpse with full Hit Points and no conditions. Even an indirect slaying usually still allows Fafnheir to curse the soul of his slayer through the metaphysical link between them.</p>"
         },
         "action->Enormous": {
           "name": "Enormous",
@@ -259,11 +259,11 @@
         },
         "action->Blasting Breath": {
           "name": "Blasting Breath",
-          "description": "<p>Fafnheir exhales a cataclysmic firestorm laced with lightning and hurricane-strength winds, dealing @Damage[20d6[fire]] damage in a @Template[cone|distance:90] (@Check[reflex|dc:48|basic] save). Additionally, Fafnheir deals @Damage[10d6[electricity]]{10d6} additional electricity damage to one creature within the area of Blasting Breath of Fafnheir's choice, determined by the same basic Reflex save. Creatures in the area must also attempt a @Check[fortitude|dc:48|name:Resist Winds|traits:damaging-effect] save to resist the powerful winds and deafening thunderclaps of the breath. Creatures that fail experience the effects of @UUID[Compendium.pf2e.spells-srd.Item.g8QqHpv2CWDwmIm1]{Gust of Wind}, affecting Large or smaller creatures as normal. Finally, creatures that fail their Fortitude save become @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido} for 1 minute (permanently deafened on a critical failure).</p>"
+          "description": "<p>Fafnheir exhales a cataclysmic firestorm laced with lightning and hurricane-strength winds, dealing @Damage[20d6[fire]] damage in a @Template[cone|distance:90] (@Check[reflex|dc:48|basic] save). Additionally, Fafnheir deals @Damage[10d6[electricity]]{10d6} additional electricity damage to one creature within the area of Blasting Breath of Fafnheir's choice, determined by the same basic Reflex save. Creatures in the area must also attempt a @Check[fortitude|dc:48|name:Resist Winds|traits:damaging-effect] save to resist the powerful winds and deafening thunderclaps of the breath. Creatures that fail experience the effects of @UUID[Compendium.pf2e.spells-srd.Item.g8QqHpv2CWDwmIm1]{Gust of Wind}, affecting Large or smaller creatures as normal. Finally, creatures that fail their Fortitude save become @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute (permanently deafened on a critical failure).</p>"
         },
         "action->Boiling Blood": {
           "name": "Boiling Blood",
-          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:48]</p>\n<p><strong>Maximum Duration</strong> 10 rounds</p>\n<p><strong>Stage 1</strong> @Damage[6d8[fire]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[6d10[fire]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[6d12[fire]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 3} (1 round)</p>"
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:48]</p>\n<p><strong>Maximum Duration</strong> 10 rounds</p>\n<p><strong>Stage 1</strong> @Damage[6d8[fire]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[6d10[fire]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[6d12[fire]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} (1 round)</p>"
         },
         "action->Furious Frenzy": {
           "name": "Furious Frenzy",
@@ -329,7 +329,7 @@
         },
         "action->Aura of Blinding Light": {
           "name": "Aura of Blinding Light",
-          "description": "<p>40 feet. Any creature that begins its turn in the aura must attempt a @Check[fortitude|dc:34|traits:damaging-effect] save or be @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} for 1 minute and become temporarily immune for 1 day. If the creature critically fails this save, it's permanently blinded.</p>"
+          "description": "<p>40 feet. Any creature that begins its turn in the aura must attempt a @Check[fortitude|dc:34|traits:damaging-effect] save or be @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute and become temporarily immune for 1 day. If the creature critically fails this save, it's permanently blinded.</p>"
         },
         "action->Dual Pounce": {
           "name": "Dual Pounce",
@@ -387,11 +387,11 @@
         },
         "action->Paralytic Secretion": {
           "name": "Paralytic Secretion",
-          "description": "<p>The howling spawn's saliva is a potent paralytic substance that drains the energy from its prey. A creature hit by its spit Strike must succeed at a @Check[fortitude|dc:30] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1} as well as @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralizado} for 1 round. If the target was already drained, it instead increases the condition's value by 1, to a maximum of drained 4.</p>"
+          "description": "<p>The howling spawn's saliva is a potent paralytic substance that drains the energy from its prey. A creature hit by its spit Strike must succeed at a @Check[fortitude|dc:30] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} as well as @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round. If the target was already drained, it instead increases the condition's value by 1, to a maximum of drained 4.</p>"
         },
         "action->Profane Feast": {
           "name": "Profane Feast",
-          "description": "<p><strong>Requirements</strong> The howling spawn has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado}</p>\n<hr />\n<p><strong>Effect</strong> The howling spawn begins to consume the creature, dealing @Damage[(2d12+5)[piercing]] damage (@Check[fortitude|dc:30|basic] save) and exposing the creature to its paralytic secretion.</p>"
+          "description": "<p><strong>Requirements</strong> The howling spawn has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The howling spawn begins to consume the creature, dealing @Damage[(2d12+5)[piercing]] damage (@Check[fortitude|dc:30|basic] save) and exposing the creature to its paralytic secretion.</p>"
         }
       }
     },
@@ -414,7 +414,7 @@
         },
         "action->Empty Wail": {
           "name": "Empty Wail",
-          "description": "<p>The imperfect automaton utters a mournful cry in a @Template[cone|distance:30]{30-foot cone}. The cry deals @Damage[4d6[mental]] damage to all creatures in the area (@Check[will|dc:22] save). The imperfect automaton can't use its Empty Wail again for [[/br 1d4 #Recharge Empty Wail]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} for [[/br 1d4+1 #rounds]]{1d4+1 rounds}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is stupefied 1 for 1d4+1 rounds and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1}.</p>"
+          "description": "<p>The imperfect automaton utters a mournful cry in a @Template[cone|distance:30]. The cry deals @Damage[4d6[mental]] damage to all creatures in the area (@Check[will|dc:22] save). The imperfect automaton can't use its Empty Wail again for [[/gmr 1d4 #Recharge Empty Wail]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for [[/gmr 1d4+1 #rounds]]{1d4+1 rounds}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is stupefied 1 for 1d4+1 rounds and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
         },
         "action->Impassioned Strikes": {
           "name": "Impassioned Strikes",
@@ -427,7 +427,7 @@
         },
         "action->Mortal Reflection": {
           "name": "Mortal Reflection",
-          "description": "<p><strong>Requirements</strong> The imperfect automaton has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado}</p>\n<hr />\n<p><strong>Effect</strong> The imperfect automaton draws upon the target's emotions to recall a semblance of mortal feeling, gaining a +5-foot status bonus to its Speed for 1 minute. If the grabbed or restrained creature has an ongoing emotion or mental effect with a counteract rank of 4 or lower, the imperfect automaton can gain a copy of that effect that lasts for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.vUFIbQ74jz22rOXw]{Effect: Mortal Reflection}</p>"
+          "description": "<p><strong>Requirements</strong> The imperfect automaton has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> The imperfect automaton draws upon the target's emotions to recall a semblance of mortal feeling, gaining a +5-foot status bonus to its Speed for 1 minute. If the grabbed or restrained creature has an ongoing emotion or mental effect with a counteract rank of 4 or lower, the imperfect automaton can gain a copy of that effect that lasts for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.vUFIbQ74jz22rOXw]{Effect: Mortal Reflection}</p>"
         }
       }
     },
@@ -454,7 +454,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]\nSleep (At Will)"
         },
         "weapon->Devil's Trident": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TO8UvbBy1NfVbrdB]\n<p>This <em>+1 striking returning trident</em> is made of an ancient black metal that glistens unnaturally and is cold to the touch. The prongs of this trident drip with metallic lake water. Strikes with the <em>Devil's Trident</em> trigger the weaknesses of any creature with a weakness to water.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">r</span> Command</p>\n<p><strong>Trigger</strong> You critically hit a creature</p>\n<hr />\n<p><strong>Effect</strong> The target must succeed at a @Check[fortitude|dc:25|traits:disease,virulent] save or become infected with sewer haze.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The trident casts 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.02J0rDTk37KN2sjt]{Quench} with a DC of 25 and a counteract modifier of [[/r 1d20+15 #Quench Counteract Modifier]]{+15}. You can Sustain the Spell as normal.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">3</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You call upon the corrupted power of the trident to stay a foe. Attempt a Strike. On a hit, the trident casts 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.DCQHaLrYXMI37dvW]{Paralyze} on the target (DC 25). If the Strike was a critical hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1} even if it critically succeeds at the save.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.TO8UvbBy1NfVbrdB]\n<p>This <em>+1 striking returning trident</em> is made of an ancient black metal that glistens unnaturally and is cold to the touch. The prongs of this trident drip with metallic lake water. Strikes with the <em>Devil's Trident</em> trigger the weaknesses of any creature with a weakness to water.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">r</span> Command</p>\n<p><strong>Trigger</strong> You critically hit a creature</p>\n<hr />\n<p><strong>Effect</strong> The target must succeed at a @Check[fortitude|dc:25|traits:disease,virulent] save or become infected with sewer haze.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The trident casts 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.02J0rDTk37KN2sjt]{Quench} with a DC of 25 and a counteract modifier of [[/r 1d20+15 #Quench Counteract Modifier]]{+15}. You can Sustain the Spell as normal.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">3</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You call upon the corrupted power of the trident to stay a foe. Attempt a Strike. On a hit, the trident casts 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.DCQHaLrYXMI37dvW]{Paralyze} on the target (DC 25). If the Strike was a critical hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} even if it critically succeeds at the save.</p>"
         },
         "equipment->Skinned Cloak": {
           "name": "Skinned Cloak"
@@ -490,7 +490,7 @@
         },
         "action->Loathsome Stench": {
           "name": "Loathsome Stench",
-          "description": "<p>20 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:20] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2} on a critical failure). A creature that succeeds at its saves is temporarily immune for 1 minute.</p>"
+          "description": "<p>20 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:20] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). A creature that succeeds at its saves is temporarily immune for 1 minute.</p>"
         },
         "action->Mount Steed": {
           "name": "Mount Steed",
@@ -513,11 +513,11 @@
         },
         "action->Flay Alive": {
           "name": "Flay Alive",
-          "description": "<p><strong>Requirements</strong> The Kallas Devil has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado}, and it has been grabbed since her last turn.</p>\n<hr />\n<p><strong>Effect</strong> The Kallas Devil flays her prey, dealing @Damage[(2d12+17)[slashing]] damage, and the target must attempt a @Check[fortitude|dc:25] save. On a failure, it becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 2} on a critical failure). On a critical success, the creature escapes from being grabbed; otherwise, the Kallas Devil extends the grabbed condition until the end of her next turn.</p>"
+          "description": "<p><strong>Requirements</strong> The Kallas Devil has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, and it has been grabbed since her last turn.</p>\n<hr />\n<p><strong>Effect</strong> The Kallas Devil flays her prey, dealing @Damage[(2d12+17)[slashing]] damage, and the target must attempt a @Check[fortitude|dc:25] save. On a failure, it becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure). On a critical success, the creature escapes from being grabbed; otherwise, the Kallas Devil extends the grabbed condition until the end of her next turn.</p>"
         },
         "action->Sewer Haze": {
           "name": "Sewer Haze",
-          "description": "<p>Many healers and alchemists suspect that sewer haze has a supernatural origin, given its association with particularly strong otyughs.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:23|name:Sewer Hsaze]</p>\n<p><strong>Onset</strong> 2 days</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 2} and stupefied 2 (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 3} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 3} (1 day)</p>"
+          "description": "<p>Many healers and alchemists suspect that sewer haze has a supernatural origin, given its association with particularly strong otyughs.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:23|name:Sewer Hsaze]</p>\n<p><strong>Onset</strong> 2 days</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and stupefied 2 (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} (1 day)</p>"
         }
       }
     },
@@ -544,11 +544,11 @@
         },
         "action->Horrific Speed": {
           "name": "Horrific Speed",
-          "description": "<p>Kothogaz is permanently @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Acelerado 1}. It can use this extra action to Stride or Strike.</p>"
+          "description": "<p>Kothogaz is permanently @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1}. It can use this extra action to Stride or Strike.</p>"
         },
         "action->Noxious Aura": {
           "name": "Noxious Aura",
-          "description": "<p>120 feet. A creature that enters or begins its turn in the emanation must succeed at a @Check[fortitude|dc:41] save or be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2} (sickened 3 on a critical failure).</p>"
+          "description": "<p>120 feet. A creature that enters or begins its turn in the emanation must succeed at a @Check[fortitude|dc:41] save or be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (sickened 3 on a critical failure).</p>"
         },
         "action->Reactive": {
           "name": "Reactive",
@@ -564,7 +564,7 @@
         },
         "action->Many-Eyed Blight": {
           "name": "Many-Eyed Blight",
-          "description": "<p>@Check[fortitude|dc:44]</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2}</p>\n<p><strong>Stage 2</strong> stupefied 2 and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado}</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 3}, @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confundido}, and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado}</p>\n<p><strong>Stage 4</strong> if you die, at the next new moon, your body splits, and your viscera become an undead under Kothogaz's control.</p>"
+          "description": "<p>@Check[fortitude|dc:44]</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}</p>\n<p><strong>Stage 2</strong> stupefied 2 and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3}, @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}</p>\n<p><strong>Stage 4</strong> if you die, at the next new moon, your body splits, and your viscera become an undead under Kothogaz's control.</p>"
         },
         "action->Pox the Land": {
           "name": "Pox the Land",
@@ -575,7 +575,7 @@
           "description": "<p>The earth festers in Kothogaz's wake. Kothogaz Strides up to its Speed. Squares through which Kothogaz passes are greater difficult terrain until the start of its next turn, and any creature that enters or begins its turn in those squares must succeed at a @Check[reflex|dc:44] save or take @Damage[4d10[poison],4d10[acid]]{4d10 poison damage and 4d10 acid damage} (on a critical failure, double damage and exposed to many-eyed blight).</p>"
         },
         "action->Swallow Whole": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Huge, @Damage[(4d10+18)[bludgeoning],2d12[sonic]]{4d10+18 bludgeoning plus 2d12 sonic} and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} while swallowed, Rupture 40</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Huge, @Damage[(4d10+18)[bludgeoning],2d12[sonic]]{4d10+18 bludgeoning plus 2d12 sonic} and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} while swallowed, Rupture 40</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         }
       }
     },
@@ -643,11 +643,11 @@
         },
         "action->Capture": {
           "name": "Capture",
-          "description": "<p><strong>Requirements</strong> Krampus has a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado}</p>\n<hr />\n<p><strong>Effect</strong> Krampus attempts to stuff the grabbed creature into his basket, attempting an @Check[athletics|defense:reflex] check against the target's Reflex DC. If he succeeds, the creature is shoved into Krampus's basket and Krampus's spiked chain or claw is freed for future Strikes.</p>\n<p>The captured creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1}, and subjected to Krampus's regression ability (see below) at the start of each round it is captured.</p>\n<p>If the victim @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 48), it climbs out of the basket. A captured creature can attack the interior of the basket, but only with unarmed attacks or weapons of light Bulk or less, against an AC of 40. If the captured creature deals 40 slashing or piercing damage, the basket is broken and all the creatures inside spill out. A creature that gets free by either Escaping or by someone breaking the basket is deposited in a square of their choosing adjacent to Krampus.</p>\n<p>The basket is an extradimensional space, so the weight of the creatures within doesn't count against Krampus's Bulk limit. Up to four Small creatures or two Medium creatures can fit in the basket at one time.</p>\n<p>Krampus can @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repair} the basket as a 2-action activity that doesn't require tools. If the basket is lost or destroyed, Krampus can create a new one with 1 hour of work. The basket functions as a normal sack if used by anyone other than Krampus.</p>"
+          "description": "<p><strong>Requirements</strong> Krampus has a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> Krampus attempts to stuff the grabbed creature into his basket, attempting an @Check[athletics|defense:reflex] check against the target's Reflex DC. If he succeeds, the creature is shoved into Krampus's basket and Krampus's spiked chain or claw is freed for future Strikes.</p>\n<p>The captured creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}, and subjected to Krampus's regression ability (see below) at the start of each round it is captured.</p>\n<p>If the victim @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 48), it climbs out of the basket. A captured creature can attack the interior of the basket, but only with unarmed attacks or weapons of light Bulk or less, against an AC of 40. If the captured creature deals 40 slashing or piercing damage, the basket is broken and all the creatures inside spill out. A creature that gets free by either Escaping or by someone breaking the basket is deposited in a square of their choosing adjacent to Krampus.</p>\n<p>The basket is an extradimensional space, so the weight of the creatures within doesn't count against Krampus's Bulk limit. Up to four Small creatures or two Medium creatures can fit in the basket at one time.</p>\n<p>Krampus can @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repair} the basket as a 2-action activity that doesn't require tools. If the basket is lost or destroyed, Krampus can create a new one with 1 hour of work. The basket functions as a normal sack if used by anyone other than Krampus.</p>"
         },
         "action->Crushing Avarice": {
           "name": "Crushing Avarice",
-          "description": "<p>Krampus's greed is so great that expending any of his wealth causes him to become physically ill and potentially nauseous. Whenever Krampus uses a consumable item from his bountiful bag, or when he witnesses one of his possessions stolen, he must attempt a @Check[will|dc:44] save.</p>\n<p><strong>Success</strong> Krampus is unaffected.</p>\n<p><strong>Failure</strong> Krampus becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1}.</p>\n<p><strong>Critical Failure</strong> Krampus becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2}.</p>"
+          "description": "<p>Krampus's greed is so great that expending any of his wealth causes him to become physically ill and potentially nauseous. Whenever Krampus uses a consumable item from his bountiful bag, or when he witnesses one of his possessions stolen, he must attempt a @Check[will|dc:44] save.</p>\n<p><strong>Success</strong> Krampus is unaffected.</p>\n<p><strong>Failure</strong> Krampus becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> Krampus becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>"
         },
         "action->Punish the Naughty": {
           "name": "Punish the Naughty",
@@ -731,7 +731,7 @@
         },
         "action->Addictive Exhaustion": {
           "name": "Addictive Exhaustion",
-          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:32]</p>\n<p>Creatures with addictive exhaustion can't reduce their sickened condition from addictive exhaustion while they have the disease</p>\n<p><strong>Stage 1</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1}. One skill of the creature's choice doesn't suffer the status penalty from this sickened condition to its skill checks (1 day)</p>\n<p><strong>Stage 2</strong> As Stage 1, but the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2} and is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigado} (5 days)</p>\n<p><strong>Stage 3</strong> As Stage 2, but the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 3} and has incurable hunger and thirst, in addition to being fatigued (1 day)</p>"
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:32]</p>\n<p>Creatures with addictive exhaustion can't reduce their sickened condition from addictive exhaustion while they have the disease</p>\n<p><strong>Stage 1</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. One skill of the creature's choice doesn't suffer the status penalty from this sickened condition to its skill checks (1 day)</p>\n<p><strong>Stage 2</strong> As Stage 1, but the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} and is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (5 days)</p>\n<p><strong>Stage 3</strong> As Stage 2, but the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} and has incurable hunger and thirst, in addition to being fatigued (1 day)</p>"
         },
         "action->Gauge Potential": {
           "name": "Gauge Potential",
@@ -744,11 +744,11 @@
         },
         "action->Infectious Spores": {
           "name": "Infectious Spores",
-          "description": "<p>Kuworsys releases a choking field of spores within a @Template[burst|distance:30]{30-foot radius}, continuing to release them until the end of its next turn. Creatures who begin their turns within the area of the spores, or who enter the area, must attempt a @Check[fortitude|dc:32|traits:disease] save. On a failure, the creature becomes afflicted with addictive exhaustion.</p>\n<p>Kuworsys then can't use its Infectious Spores again for [[/br 1d4 #Recharge Infectious Spores]]{1d4 rounds}.</p>"
+          "description": "<p>Kuworsys releases a choking field of spores within a @Template[burst|distance:30]{30-foot radius}, continuing to release them until the end of its next turn. Creatures who begin their turns within the area of the spores, or who enter the area, must attempt a @Check[fortitude|dc:32|traits:disease] save. On a failure, the creature becomes afflicted with addictive exhaustion.</p>\n<p>Kuworsys then can't use its Infectious Spores again for [[/gmr 1d4 #Recharge Infectious Spores]]{1d4 rounds}.</p>"
         },
         "action->Rear Back": {
           "name": "Rear Back",
-          "description": "<p>Kuworsys stands on its two hind limbs, bringing its other four limbs to bear on its foes. Kuworsys stays Reared Back until it uses a single action to return to its normal stance. While Kuworsys is Reared Back, it is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} but can use its Pinion and Yank abilities.</p>"
+          "description": "<p>Kuworsys stands on its two hind limbs, bringing its other four limbs to bear on its foes. Kuworsys stays Reared Back until it uses a single action to return to its normal stance. While Kuworsys is Reared Back, it is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} but can use its Pinion and Yank abilities.</p>"
         },
         "action->Yank": {
           "name": "Yank",
@@ -781,11 +781,11 @@
         },
         "action->Terrorspores": {
           "name": "Terrorspores",
-          "description": "<p>60 feet. A creature that enters the emanation must attempt a @Check[will|dc:21] save. Regardless of outcome, the creature is temporarily immune to terrorspores for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} and inhales spores that remain in its body for 1 minute.</p>\n<p><strong>Failure</strong> As success, but @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} and the spores remain for 1 hour.</p>\n<p><strong>Critical Failure</strong> As success, but @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3}, the spores remain for 1 hour, and the creature's frightened condition can't be reduced below 1 as long as spores remain in its body.</p>"
+          "description": "<p>60 feet. A creature that enters the emanation must attempt a @Check[will|dc:21] save. Regardless of outcome, the creature is temporarily immune to terrorspores for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} and inhales spores that remain in its body for 1 minute.</p>\n<p><strong>Failure</strong> As success, but @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and the spores remain for 1 hour.</p>\n<p><strong>Critical Failure</strong> As success, but @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}, the spores remain for 1 hour, and the creature's frightened condition can't be reduced below 1 as long as spores remain in its body.</p>"
         },
         "action->Envelop": {
           "name": "Envelop",
-          "description": "<p>The Melfesh Monster attempts to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} a creature within reach. On a success, the creature is pulled into the Monster's body. The Melfesh Monster is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} while it envelops a creature, and this otherwise has the effects of @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]{Swallow Whole} (the Melfesh Monster's size or smaller, @Damage[1d10[bludgeoning],1d12[poison]]{1d10 bludgeoning and 1d12 poison}, Rupture 15).</p>"
+          "description": "<p>The Melfesh Monster attempts to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} a creature within reach. On a success, the creature is pulled into the Monster's body. The Melfesh Monster is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} while it envelops a creature, and this otherwise has the effects of @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]{Swallow Whole} (the Melfesh Monster's size or smaller, @Damage[1d10[bludgeoning],1d12[poison]]{1d10 bludgeoning and 1d12 poison}, Rupture 15).</p>"
         },
         "action->Fulminate": {
           "name": "Fulminate",
@@ -793,7 +793,7 @@
         },
         "action->Spore Cloud": {
           "name": "Spore Cloud",
-          "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The Melfesh Monster conjures a cloud of spores within 60 feet in a @Template[burst|distance:20]. The cloud lasts 1 minute. Creatures that enter or begin their turn within the cloud must succeed at a @Check[fortitude|dc:21] save or take @Damage[3d8[poison]] damage, be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2}, and inhale spores that remain in their bodies for 1 minute (on a critical failure, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 3} and an additional @Damage[4[persistent,poison]] damage).</p>"
+          "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The Melfesh Monster conjures a cloud of spores within 60 feet in a @Template[burst|distance:20]. The cloud lasts 1 minute. Creatures that enter or begin their turn within the cloud must succeed at a @Check[fortitude|dc:21] save or take @Damage[3d8[poison]] damage, be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}, and inhale spores that remain in their bodies for 1 minute (on a critical failure, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} and an additional @Damage[4[persistent,poison]] damage).</p>"
         }
       }
     },
@@ -835,7 +835,7 @@
         },
         "action->Haunting Gaze": {
           "name": "Haunting Gaze",
-          "description": "<p>30 feet. When a creature ends its turn in the emanation, it must attempt a @Check[will|dc:29] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}. If it's already frightened, its frightened value instead increases by 1 (maximum @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3}) and doesn't decrease by 1 at the end of the creature's next turn. If a creature's frightened value is 3 or higher before failing its save, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} for 1 round.</p>"
+          "description": "<p>30 feet. When a creature ends its turn in the emanation, it must attempt a @Check[will|dc:29] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. If it's already frightened, its frightened value instead increases by 1 (maximum @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}) and doesn't decrease by 1 at the end of the creature's next turn. If a creature's frightened value is 3 or higher before failing its save, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>"
         },
         "action->Dipteric Dread": {
           "name": "Dipteric Dread",
@@ -876,11 +876,11 @@
         },
         "action->Bloodbelly": {
           "name": "Bloodbelly",
-          "description": "<p>The Mosquito Witch steals and stores stolen blood to power her divinations. Whenever she deals piercing damage, the Mosquito Witch can gain an equal number of Blood Points, to a maximum of 100 Blood Points. She becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} so long as she has at least 40 Blood Points stored, or @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2} if she has at least 80 Blood Points stored.</p>"
+          "description": "<p>The Mosquito Witch steals and stores stolen blood to power her divinations. Whenever she deals piercing damage, the Mosquito Witch can gain an equal number of Blood Points, to a maximum of 100 Blood Points. She becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} so long as she has at least 40 Blood Points stored, or @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} if she has at least 80 Blood Points stored.</p>"
         },
         "action->Haunting Gaze": {
           "name": "Haunting Gaze",
-          "description": "<p>30 feet. When a creature ends its turn in the emanation, it must attempt a @Check[will|dc:29] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}. If it's already frightened, its frightened value instead increases by 1 (maximum @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3}) and doesn't decrease by 1 at the end of the creature's next turn. If a creature's frightened value is 3 or higher before failing its save, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} for 1 round.</p>"
+          "description": "<p>30 feet. When a creature ends its turn in the emanation, it must attempt a @Check[will|dc:29] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. If it's already frightened, its frightened value instead increases by 1 (maximum @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}) and doesn't decrease by 1 at the end of the creature's next turn. If a creature's frightened value is 3 or higher before failing its save, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>"
         },
         "action->Dipteric Dread": {
           "name": "Dipteric Dread",
@@ -939,7 +939,7 @@
         },
         "action->Haunting Gaze": {
           "name": "Haunting Gaze",
-          "description": "<p>30 feet. When a creature ends its turn in the emanation, it must attempt a @Check[will|dc:29] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}. If it's already frightened, its frightened value instead increases by 1 (maximum @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3}) and doesn't decrease by 1 at the end of the creature's next turn. If a creature's frightened value is 3 or higher before failing its save, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} for 1 round.</p>"
+          "description": "<p>30 feet. When a creature ends its turn in the emanation, it must attempt a @Check[will|dc:29] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. If it's already frightened, its frightened value instead increases by 1 (maximum @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}) and doesn't decrease by 1 at the end of the creature's next turn. If a creature's frightened value is 3 or higher before failing its save, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>"
         },
         "action->Dipteric Dread": {
           "name": "Dipteric Dread",
@@ -994,15 +994,15 @@
         },
         "action->Fecund Wounds": {
           "name": "Fecund Wounds",
-          "description": "<p>Insect larvae clog and wriggle out of open wounds within 100 feet of the Mosquito Witch. A creature that takes bleed damage in the area also becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} for 1 round.</p>"
+          "description": "<p>Insect larvae clog and wriggle out of open wounds within 100 feet of the Mosquito Witch. A creature that takes bleed damage in the area also becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round.</p>"
         },
         "action->Haunting Gaze": {
           "name": "Haunting Gaze",
-          "description": "<p>30 feet. When a creature ends its turn in the emanation, it must attempt a @Check[will|dc:29] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}. If it's already frightened, its frightened value instead increases by 1 (maximum @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3}) and doesn't decrease by 1 at the end of the creature's next turn. If a creature's frightened value is 3 or higher before failing its save, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} for 1 round.</p>"
+          "description": "<p>30 feet. When a creature ends its turn in the emanation, it must attempt a @Check[will|dc:29] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. If it's already frightened, its frightened value instead increases by 1 (maximum @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}) and doesn't decrease by 1 at the end of the creature's next turn. If a creature's frightened value is 3 or higher before failing its save, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>"
         },
         "action->Obscuring Host": {
           "name": "Obscuring Host",
-          "description": "<p>20 feet. A thick swarm of mosquitoes surrounds the Mosquito Witch, creating concealment in the aura. A creature that begins its turn in the emanation becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} unless it succeeds at a @Check[fortitude|dc:26] save. The Mosquito Witch and arthropods can see through this aura and are immune to its sickened effect.</p>"
+          "description": "<p>20 feet. A thick swarm of mosquitoes surrounds the Mosquito Witch, creating concealment in the aura. A creature that begins its turn in the emanation becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} unless it succeeds at a @Check[fortitude|dc:26] save. The Mosquito Witch and arthropods can see through this aura and are immune to its sickened effect.</p>"
         },
         "action->Dipteric Dread": {
           "name": "Dipteric Dread",
@@ -1032,11 +1032,11 @@
       "name": "Quaking Slither",
       "description": "<p>Ebeshra slithers across the ground, causing the earth to tremble as though from a powerful earthquake.</p>",
       "disable": "<p>three @Check[athletics|dc:38|name:Brace for Earthquake (Athletics)|traits:environmental,kaiju,hazard] (trained), @Check[crafting|dc:38|name:Brace for Earthquake (Crafting)|traits:environmental,kaiju,hazard] (trained), or @Check[engineering|dc:38|name:Brace for Earthquake (Engineering)|traits:environmental,kaiju,hazard]{Engineering Lore} (trained) checks to brace a small structure or surface to cancel the effects of the quake in that area, or a single @Check[diplomacy|dc:41|name:Entreat With Ebeshra|traits:environmental,kaiju,hazard] (master) check to entreat Ebeshra to stand down</p>",
-      "reset": "<p>Ebeshra doesn't rush this way again for [[/br 1d4 #Rounds]] rounds.</p>",
+      "reset": "<p>Ebeshra doesn't rush this way again for [[/gmr 1d4 #Rounds]] rounds.</p>",
       "items": {
         "action->Quake": {
           "name": "Quake",
-          "description": "<p><strong>Trigger</strong> Ebeshra moves at least 60 feet on land</p>\n<hr />\n<p><strong>Effect</strong> The ground shakes in a @Template[emanation|distance:120] from Ebeshra's space. This creates a variety of effects depending on the surrounding environment.</p>\n<p>In an area without significant underground space, the ground becomes greater difficult terrain, and creatures on it are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2} for 1 round.</p>\n<p>In areas with existing underground spaces (like sewers, sinkholes, or catacombs), fissures open up in the ground. Creatures in the area tumble into the resulting 80-foot-deep hole unless they succeed at a @Check[reflex|dc:40|name:Avoid Fissure|traits:environmental,kaiju,hazard] save.</p>\n<p>In bays, on beaches, and in other relatively substantial but shallow bodies of water, the tremors create dangerous waves. Creatures in the water or within 60 feet of the waterline are struck by waves that deal @Damage[10d8[bludgeoning]] damage (@Check[reflex|dc:35|basic|name:Crashing Waves|traits:environmental,kaiju,hazard] save). On a critical failure, a creature is instantly swept 60 feet out to sea and 60 feet under the water's surface.</p>"
+          "description": "<p><strong>Trigger</strong> Ebeshra moves at least 60 feet on land</p>\n<hr />\n<p><strong>Effect</strong> The ground shakes in a @Template[emanation|distance:120] from Ebeshra's space. This creates a variety of effects depending on the surrounding environment.</p>\n<p>In an area without significant underground space, the ground becomes greater difficult terrain, and creatures on it are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for 1 round.</p>\n<p>In areas with existing underground spaces (like sewers, sinkholes, or catacombs), fissures open up in the ground. Creatures in the area tumble into the resulting 80-foot-deep hole unless they succeed at a @Check[reflex|dc:40|name:Avoid Fissure|traits:environmental,kaiju,hazard] save.</p>\n<p>In bays, on beaches, and in other relatively substantial but shallow bodies of water, the tremors create dangerous waves. Creatures in the water or within 60 feet of the waterline are struck by waves that deal @Damage[10d8[bludgeoning]] damage (@Check[reflex|dc:35|basic|name:Crashing Waves|traits:environmental,kaiju,hazard] save). On a critical failure, a creature is instantly swept 60 feet out to sea and 60 feet under the water's surface.</p>"
         }
       }
     },
@@ -1065,7 +1065,7 @@
         },
         "action->Baleful Gaze": {
           "name": "Baleful Gaze",
-          "description": "<p><strong>Trigger</strong> A creature within 100 feet makes a ranged attack or uses an action that has the concentrate trait</p>\n<hr />\n<p><strong>Effect</strong> Somnalu fixes its central eye upon the triggering creature in an attempt to frighten it, jolting it and disrupting its action. The creature must attempt a @Check[will|dc:36] save; on a failure, Somnalu disrupts the triggering action and the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>"
+          "description": "<p><strong>Trigger</strong> A creature within 100 feet makes a ranged attack or uses an action that has the concentrate trait</p>\n<hr />\n<p><strong>Effect</strong> Somnalu fixes its central eye upon the triggering creature in an attempt to frighten it, jolting it and disrupting its action. The creature must attempt a @Check[will|dc:36] save; on a failure, Somnalu disrupts the triggering action and the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>"
         },
         "action->Corrosive Wounds": {
           "name": "Corrosive Wounds",
@@ -1081,7 +1081,7 @@
         },
         "action->Acid Spew": {
           "name": "Acid Spew",
-          "description": "<p>Somnalu jets acid from its skin, dousing all creatures in a @Template[line|distance:60|width:15]{15-foot-wide, 60-foot-long line}. Each creature in this area takes @Damage[10d8[acid]] damage (@Check[reflex|dc:33|basic] save). It can't use this ability again for [[/br 1d4 #Recharge Acid Spew]]{1d4 rounds}.</p>"
+          "description": "<p>Somnalu jets acid from its skin, dousing all creatures in a @Template[line|distance:60|width:15]{15-foot-wide, 60-foot-long line}. Each creature in this area takes @Damage[10d8[acid]] damage (@Check[reflex|dc:33|basic] save). It can't use this ability again for [[/gmr 1d4 #Recharge Acid Spew]]{1d4 rounds}.</p>"
         },
         "action->Caustic Trench": {
           "name": "Caustic Trench",
@@ -1093,11 +1093,11 @@
         },
         "action->Drain Nutrients": {
           "name": "Drain Nutrients",
-          "description": "<p>Somnalu targets a creature with a claw Strike. On a success, Somnalu drains the creature's life through its skin. The creature must succeed at a @Check[fortitude|dc:36] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 2} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1} on a success, no effect on a critical success). Somnalu gains temporary Hit Points equal to the amount of Hit Points the creature loses from this Strike.</p>"
+          "description": "<p>Somnalu targets a creature with a claw Strike. On a success, Somnalu drains the creature's life through its skin. The creature must succeed at a @Check[fortitude|dc:36] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} on a success, no effect on a critical success). Somnalu gains temporary Hit Points equal to the amount of Hit Points the creature loses from this Strike.</p>"
         },
         "action->Vent Fumes": {
           "name": "Vent Fumes",
-          "description": "<p>Somnalu blasts poison gas in a @Template[burst|distance:30]{30-foot radius}. The gas lingers for 1 round, and all creatures that begin their turn in the gas or enter the gas take @Damage[4d8[poison]] damage (@Check[fortitude|dc:36|basic] save). Any creature in the gas is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto}, and other creatures are concealed to all creatures in the gas. However, Somnalu can see through this concealment.</p>"
+          "description": "<p>Somnalu blasts poison gas in a @Template[burst|distance:30]{30-foot radius}. The gas lingers for 1 round, and all creatures that begin their turn in the gas or enter the gas take @Damage[4d8[poison]] damage (@Check[fortitude|dc:36|basic] save). Any creature in the gas is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and other creatures are concealed to all creatures in the gas. However, Somnalu can see through this concealment.</p>"
         },
         "lore->Dreamlands Lore": {
           "name": "Dreamlands Lore"
@@ -1133,11 +1133,11 @@
         },
         "action->Clearing Blink": {
           "name": "Clearing Blink",
-          "description": "<p><strong>Trigger</strong> The Somnalu Oculus would be affected by a condition</p>\n<hr />\n<p><strong>Effect</strong> The Somnalu Oculus rapidly blinks, using dream wisps as an eyelid. The Somnalu Oculus attempts to counteract the source of the condition with a counteract modifier of [[/r 1d20+24 #Counteract]]{+24} and a counteract rank of 8.</p>\n<p>It can't use Clearing Blink again for [[/br 1d4 #Recharge Clearing Blink]]{1d4 rounds}.</p>"
+          "description": "<p><strong>Trigger</strong> The Somnalu Oculus would be affected by a condition</p>\n<hr />\n<p><strong>Effect</strong> The Somnalu Oculus rapidly blinks, using dream wisps as an eyelid. The Somnalu Oculus attempts to counteract the source of the condition with a counteract modifier of [[/r 1d20+24 #Counteract]]{+24} and a counteract rank of 8.</p>\n<p>It can't use Clearing Blink again for [[/gmr 1d4 #Recharge Clearing Blink]]{1d4 rounds}.</p>"
         },
         "action->Scrutinizing Presence": {
           "name": "Scrutinizing Presence",
-          "description": "<p>60 feet. The Somnalu Oculus scrutinizes creatures around it, causing them to falter with nervousness and self-doubt. Upon entering the emanation, a creature must attempt a @Check[will|dc:34] save. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} for 1 round. Regardless of the result of the saving throw, the creature is temporarily immune to scrutinizing presence for 1 minute.</p>"
+          "description": "<p>60 feet. The Somnalu Oculus scrutinizes creatures around it, causing them to falter with nervousness and self-doubt. Upon entering the emanation, a creature must attempt a @Check[will|dc:34] save. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round. Regardless of the result of the saving throw, the creature is temporarily immune to scrutinizing presence for 1 minute.</p>"
         }
       }
     },
@@ -1164,7 +1164,7 @@
         },
         "action->Fusing Spit": {
           "name": "Fusing Spit",
-          "description": "<p>The spawn retches up thick, caustic sludge and spits it at a creature within 60 feet, causing equipment and flesh to melt and partially fuse together. The creature must succeed at a @Check[reflex|dc:23] save or be @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2} for 1 minute.</p>"
+          "description": "<p>The spawn retches up thick, caustic sludge and spits it at a creature within 60 feet, causing equipment and flesh to melt and partially fuse together. The creature must succeed at a @Check[reflex|dc:23] save or be @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for 1 minute.</p>"
         }
       }
     },
@@ -1196,11 +1196,11 @@
         },
         "action->Rejuvenation": {
           "name": "Rejuvenation",
-          "description": "<p>Destroying the Spectral Devil releases its pure, evil essence into the world, where it can find a new body and re-form. When the Spectral Devil is destroyed, its essence finds the remains of a dead horse and rebuilds its physical body over the course of [[/br 1d10 #days]]{1d10 days}. Only completing a @UUID[Compendium.pf2e.spells-srd.Item.Dbd5W6G8U2vzWolN]{Consecrate} ritual heightened to at least 6th level, which consecrates the site of the Spectral Devil's destruction to a good deity, can prevent the Spectral Devil from returning and haunting the world once more.</p>"
+          "description": "<p>Destroying the Spectral Devil releases its pure, evil essence into the world, where it can find a new body and re-form. When the Spectral Devil is destroyed, its essence finds the remains of a dead horse and rebuilds its physical body over the course of [[/gmr 1d10 #days]]{1d10 days}. Only completing a @UUID[Compendium.pf2e.spells-srd.Item.Dbd5W6G8U2vzWolN]{Consecrate} ritual heightened to at least 6th level, which consecrates the site of the Spectral Devil's destruction to a good deity, can prevent the Spectral Devil from returning and haunting the world once more.</p>"
         },
         "action->Accursed Shriek": {
           "name": "Accursed Shriek",
-          "description": "<p>The Spectral Devil unleashes a terrifying whinny in a @Template[cone|distance:30]{30-foot cone} that deals @Damage[5d10[sonic]] damage. Each creature in the area must attempt a @Check[reflex|dc:29] save.</p>\n<p>The Spectral Devil can't use Accursed Shriek for [[/br 1d4 #Recharge Accursed Shriek]]{1d4 rounds}.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} by the eerie noise.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage, is frightened 2, and becomes cursed. The victim's mind echoes with the sound of the whinny, impairing concentration. The cursed creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} until the curse is removed.</p>"
+          "description": "<p>The Spectral Devil unleashes a terrifying whinny in a @Template[cone|distance:30] that deals @Damage[5d10[sonic]] damage. Each creature in the area must attempt a @Check[reflex|dc:29] save.</p>\n<p>The Spectral Devil can't use Accursed Shriek for [[/gmr 1d4 #Recharge Accursed Shriek]]{1d4 rounds}.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} by the eerie noise.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage, is frightened 2, and becomes cursed. The victim's mind echoes with the sound of the whinny, impairing concentration. The cursed creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} until the curse is removed.</p>"
         },
         "action->Trample": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Medium or smaller, Ghostly Hoof, @Check[reflex|dc:26|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
@@ -1250,11 +1250,11 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>Spring-Heeled Jack exhales a gout of bright blue fire that deals @Damage[4d6[fire]] damage in a @Template[cone|distance:15] (@Check[reflex|dc:20|basic] save).</p>\n<p>He can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>Spring-Heeled Jack exhales a gout of bright blue fire that deals @Damage[4d6[fire]|options:area-damage] damage in a @Template[cone|distance:15] (@Check[reflex|dc:20|basic|options:area-effect] save).</p>\n<p>He can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         },
         "action->Malicious Stab": {
           "name": "Malicious Stab",
-          "description": "<p>Spring-Heeled Jack deals an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado} creatures (2d6 precision damage to creatures that are both off-guard and frightened).</p>",
+          "description": "<p>Spring-Heeled Jack deals an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} creatures (2d6 precision damage to creatures that are both off-guard and frightened).</p>",
           "rules": {
             "0": {
               "label": "Malicious Stab (Off-Guard)"
@@ -1274,7 +1274,7 @@
       "name": "Storm Discharge",
       "description": "<p>Ebeshra aligns its crystalline form to produce a blast of lightning that charges the surrounding area with electrical energy.</p>",
       "disable": "<p>@Check[nature|dc:45|name:Balance the Electrical Charges|traits:divine,electricity,environmental,evocation,kaiju,hazard] (master) to balance the electrical charges in the area or @Check[deception|dc:48|name:Divert Ebeshra's Attention|traits:divine,electricity,environmental,evocation,kaiju,hazard] (expert) to momentarily divert Ebeshra's attention</p>",
-      "reset": "<p>Ebeshra waits [[/br 1d4 #Lightning Blast Wait]] rounds before another blast.</p>",
+      "reset": "<p>Ebeshra waits [[/gmr 1d4 #Lightning Blast Wait]] rounds before another blast.</p>",
       "items": {
         "action->Lightning Blast": {
           "name": "Lightning Blast",
@@ -1300,7 +1300,7 @@
         },
         "action->Jelly Gluttony": {
           "name": "Jelly Gluttony",
-          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} to all other creatures for [[/br 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
+          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to all other creatures for [[/gmr 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
         },
         "action->Jelly Sense": {
           "name": "Jelly Sense",
@@ -1345,7 +1345,7 @@
         },
         "action->Jelly Gluttony": {
           "name": "Jelly Gluttony",
-          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} to all other creatures for [[/br 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
+          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to all other creatures for [[/gmr 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
         },
         "action->Jelly Sense": {
           "name": "Jelly Sense",
@@ -1394,7 +1394,7 @@
         },
         "action->Jelly Gluttony": {
           "name": "Jelly Gluttony",
-          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} to all other creatures for [[/br 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
+          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to all other creatures for [[/gmr 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
         },
         "action->Jelly Sense": {
           "name": "Jelly Sense",
@@ -1450,7 +1450,7 @@
         },
         "action->Jelly Gluttony": {
           "name": "Jelly Gluttony",
-          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} to all other creatures for [[/br 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
+          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to all other creatures for [[/gmr 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
         },
         "action->Jelly Sense": {
           "name": "Jelly Sense",
@@ -1504,7 +1504,7 @@
         },
         "action->Jelly Gluttony": {
           "name": "Jelly Gluttony",
-          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} to all other creatures for [[/br 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
+          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to all other creatures for [[/gmr 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
         },
         "action->Jelly Sense": {
           "name": "Jelly Sense",
@@ -1546,7 +1546,7 @@
         },
         "action->Jelly Gluttony": {
           "name": "Jelly Gluttony",
-          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} to all other creatures for [[/br 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
+          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to all other creatures for [[/gmr 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
         },
         "action->Jelly Sense": {
           "name": "Jelly Sense",
@@ -1558,7 +1558,7 @@
         },
         "action->Cometfall Arrow": {
           "name": "Cometfall Arrow",
-          "description": "<p>Taljjae fires an arrow that could shoot a star from the sky. All creatures in a @Template[line|distance:120] take @Damage[10d12[piercing]] damage (@Check[reflex|dc:37|basic] save); on a critical failure, the target falls to the ground without taking falling damage, and it can't Fly, Leap, levitate, or otherwise leave the ground until the end of Taljjae's next turn.</p>\n<p>Taljjae then can't use Cometfall Arrow for [[/br 1d4 #Recharge Cometfall Arrow]]{1d4 rounds}.</p>"
+          "description": "<p>Taljjae fires an arrow that could shoot a star from the sky. All creatures in a @Template[line|distance:120] take @Damage[10d12[piercing]] damage (@Check[reflex|dc:37|basic] save); on a critical failure, the target falls to the ground without taking falling damage, and it can't Fly, Leap, levitate, or otherwise leave the ground until the end of Taljjae's next turn.</p>\n<p>Taljjae then can't use Cometfall Arrow for [[/gmr 1d4 #Recharge Cometfall Arrow]]{1d4 rounds}.</p>"
         },
         "action->Double Shot": {
           "name": "Double Shot",
@@ -1593,7 +1593,7 @@
         },
         "action->Jelly Gluttony": {
           "name": "Jelly Gluttony",
-          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} to all other creatures for [[/br 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
+          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to all other creatures for [[/gmr 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
         },
         "action->Jelly Sense": {
           "name": "Jelly Sense",
@@ -1656,7 +1656,7 @@
         },
         "action->Jelly Gluttony": {
           "name": "Jelly Gluttony",
-          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} to all other creatures for [[/br 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
+          "description": "<p>If Taljjae detects buckwheat jelly with its jelly sense, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the food and the creature possessing it (if applicable) and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to all other creatures for [[/gmr 1d4 #Rounds]]{1d4 rounds}, or until it uses an appropriate number of Interact actions to consume the jelly (generally 2: 1 to take the jelly, and another to eat it). If there's more than one helping of jelly, the condition ends once Taljjae consumes the jelly once.</p>"
         },
         "action->Jelly Sense": {
           "name": "Jelly Sense",
@@ -1679,7 +1679,7 @@
           "description": "<p><strong>Trigger</strong> Taljjae's turn begins <strong>Requirements</strong> Taljjae has 200 or fewer Hit Points</p>\n<hr />\n<p><strong>Effect</strong> Taljjae's dance reaches a frantic climax, allowing it to change personas rapidly. Taljjae Changes Characters.</p>"
         },
         "action->Sneak Attack": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Taljjae deals an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} foes.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Taljjae deals an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} foes.</p>"
         },
         "action->Waypoints": {
           "name": "Waypoints",
@@ -1756,7 +1756,7 @@
         },
         "action->Release Claw (Barbed Spear)": {
           "name": "Release Claw (Barbed Spear)",
-          "description": "<p><strong>Requirements</strong> Tehialai has Pressurized a Claw</p>\n<hr />\n<p>Tehialai's spear shoots out, impaling prey and reeling them back. All creatures in a @Template[line|distance:40] take @Damage[8d6[piercing]] damage (@Check[reflex|dc:33|basic] save); creatures that critically fail are @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} until the end of Tehialai's next turn.</p>\n<hr />\n<p>After Releasing a Claw, the claw depressurizes.</p>"
+          "description": "<p><strong>Requirements</strong> Tehialai has Pressurized a Claw</p>\n<hr />\n<p>Tehialai's spear shoots out, impaling prey and reeling them back. All creatures in a @Template[line|distance:40] take @Damage[8d6[piercing]] damage (@Check[reflex|dc:33|basic] save); creatures that critically fail are @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} until the end of Tehialai's next turn.</p>\n<hr />\n<p>After Releasing a Claw, the claw depressurizes.</p>"
         },
         "action->Release Claw (Boiling Club)": {
           "name": "Release Claw (Boiling Club)",
@@ -1768,11 +1768,11 @@
         },
         "action->Release Claw (Tidal Gourd)": {
           "name": "Release Claw (Tidal Gourd)",
-          "description": "<p>Tehialai atomizes the water in her claw to create a mist that fills a @Template[emanation|distance:40] centered on her and that lasts until the end of her next turn or until dispersed by a strong wind. All creatures within the mist become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto}, and all creatures outside the mist become concealed to creatures within it. Wavesense functions through the mist and ignores the concealment.</p>"
+          "description": "<p>Tehialai atomizes the water in her claw to create a mist that fills a @Template[emanation|distance:40] centered on her and that lasts until the end of her next turn or until dispersed by a strong wind. All creatures within the mist become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the mist become concealed to creatures within it. Wavesense functions through the mist and ignores the concealment.</p>"
         },
         "action->Release Claw (Toothed Shredder)": {
           "name": "Release Claw (Toothed Shredder)",
-          "description": "<p>Tehialai's claw whirs and spins to cut through armor and ship hulls. Tehialai makes a toothed shredder Strike. On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} until the end of Tehialai's next turn and takes @Damage[2d12[bleed]].</p>"
+          "description": "<p>Tehialai's claw whirs and spins to cut through armor and ship hulls. Tehialai makes a toothed shredder Strike. On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of Tehialai's next turn and takes @Damage[2d12[bleed]].</p>"
         },
         "lore->Ocean Lore": {
           "name": "Ocean Lore"
@@ -1853,11 +1853,11 @@
         },
         "action->Baleful Glare": {
           "name": "Baleful Glare",
-          "description": "<p>15 feet. Creatures entering or starting their turn in the emanation that can see Ulgrem-Axaan must succeed at a @Check[will|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} on a critical failure). A creature that succeeds at its save is temporarily immune to baleful glare for 1 minute.</p>"
+          "description": "<p>15 feet. Creatures entering or starting their turn in the emanation that can see Ulgrem-Axaan must succeed at a @Check[will|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). A creature that succeeds at its save is temporarily immune to baleful glare for 1 minute.</p>"
         },
         "action->Territorial Rage": {
           "name": "Territorial Rage",
-          "description": "<p><strong>Trigger</strong> A creature comes within melee reach of Ulgrem-Axaan while it's burrowed underground or underwater</p>\n<hr />\n<p><strong>Effect</strong> Ulgrem-Axaan lunges and makes a jaws Strike against the creature, which is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} against the attack and takes an additional [[/r {1d6}]]{1d6 damage} on a hit.</p>"
+          "description": "<p><strong>Trigger</strong> A creature comes within melee reach of Ulgrem-Axaan while it's burrowed underground or underwater</p>\n<hr />\n<p><strong>Effect</strong> Ulgrem-Axaan lunges and makes a jaws Strike against the creature, which is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the attack and takes an additional [[/r {1d6}]]{1d6 damage} on a hit.</p>"
         },
         "action->Aquatic Ambush": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.HBrBrUzjfvj2gDXB]\n<p>30 feet</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
@@ -1871,7 +1871,7 @@
         },
         "action->Voltaic Blow": {
           "name": "Voltaic Blow",
-          "description": "<p><strong>Requirements</strong> Ulgrem-Axaan has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} with its tail</p>\n<hr />\n<p><strong>Effect</strong> An electric shock passes through Ulgrem-Axaan's tail, dealing @Damage[(2d4+8)[electricity]] damage to the creature (@Check[fortitude|dc:25|basic] save).</p>"
+          "description": "<p><strong>Requirements</strong> Ulgrem-Axaan has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} with its tail</p>\n<hr />\n<p><strong>Effect</strong> An electric shock passes through Ulgrem-Axaan's tail, dealing @Damage[(2d4+8)[electricity]] damage to the creature (@Check[fortitude|dc:25|basic] save).</p>"
         }
       }
     },
@@ -1900,7 +1900,7 @@
         },
         "action->Sparking Bite": {
           "name": "Sparking Bite",
-          "description": "<p><strong>Requirements</strong> The Ulgrem-Lurann has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} with its jaws</p>\n<hr />\n<p><strong>Effect</strong> Electricity courses through its body and mouth, dealing an additional @Damage[(1d4+6)[electricity]] damage to the grabbed target with a @Check[fortitude|dc:20|basic] save.</p>"
+          "description": "<p><strong>Requirements</strong> The Ulgrem-Lurann has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} with its jaws</p>\n<hr />\n<p><strong>Effect</strong> Electricity courses through its body and mouth, dealing an additional @Damage[(1d4+6)[electricity]] damage to the grabbed target with a @Check[fortitude|dc:20|basic] save.</p>"
         },
         "action->Swallow Whole": {
           "name": "Swallow Whole",
@@ -1908,7 +1908,7 @@
         },
         "action->Voltaic Blow": {
           "name": "Voltaic Blow",
-          "description": "<p><strong>Requirements</strong> The Ulgrem-Lurann has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} with its jaws</p>\n<hr />\n<p><strong>Effect</strong> Electricity courses through its body and mouth, dealing an additional @Damage[(1d4+6)[electricity]] damage to the creature (@Check[fortitude|dc:20|basic|name:Sparking Bite] save).</p>"
+          "description": "<p><strong>Requirements</strong> The Ulgrem-Lurann has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} with its jaws</p>\n<hr />\n<p><strong>Effect</strong> Electricity courses through its body and mouth, dealing an additional @Damage[(1d4+6)[electricity]] damage to the creature (@Check[fortitude|dc:20|basic|name:Sparking Bite] save).</p>"
         }
       }
     },
@@ -1956,7 +1956,7 @@
         },
         "action->Artificer's Eye": {
           "name": "Artificer's Eye",
-          "description": "<p>Ulistul chooses one construct or statue she can currently perceive with a precise sense or with statuesense; usually, her only precise sense is vision. After choosing her target, she begins to perceive the target's surroundings as though she occupied its space. If the target is either an inanimate statue or a mindless creature, she can also verbally interact with nearby creatures (including issuing Artificer's Commands) or cause the target to move subtly, such as moving its mouth. This ability can be sustained indefinitely as long as Ulistul can perceive the target, though her visual stimuli from her own body are harder to process; she's @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} when using her own senses for the effect's duration.</p>"
+          "description": "<p>Ulistul chooses one construct or statue she can currently perceive with a precise sense or with statuesense; usually, her only precise sense is vision. After choosing her target, she begins to perceive the target's surroundings as though she occupied its space. If the target is either an inanimate statue or a mindless creature, she can also verbally interact with nearby creatures (including issuing Artificer's Commands) or cause the target to move subtly, such as moving its mouth. This ability can be sustained indefinitely as long as Ulistul can perceive the target, though her visual stimuli from her own body are harder to process; she's @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} when using her own senses for the effect's duration.</p>"
         },
         "action->Dismantler": {
           "name": "Dismantler",
@@ -1998,7 +1998,7 @@
         },
         "action->Young Linnorm Venom": {
           "name": "Young Linnorm Venom",
-          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 10 rounds</p>\n<p><strong>Stage 1</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}</p>"
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 10 rounds</p>\n<p><strong>Stage 1</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}</p>"
         }
       }
     }
