@@ -1182,17 +1182,23 @@
     "CriticalDamageLabel": "Crítico",
     "CriticalFumbleCardButtonTitle": "Robar una carta de error crítico",
     "CriticalHitCardButtonTitle": "Robar una carta de golpe crítico",
+    "CurrencyLabel": "Currency",
     "CurrencyAbbreviations": {
       "cp": "pc",
       "gp": "po",
       "pp": "ppt",
       "sp": "pp",
-      "credits": "créditos"
+      "credits": "créditos",
+      "upb": "upb"
     },
-    "CurrencyCP": "Cobre",
-    "CurrencyGP": "Oro",
-    "CurrencyPP": "Platino",
-    "CurrencySP": "Plata",
+    "Currency": {
+      "cp": "Copper",
+      "credits": "Credits",
+      "gp": "Gold",
+      "pp": "Platinum",
+      "sp": "Silver",
+      "upb": "UPB"
+    },
     "CurrentHitPointsShortLabel": "PG actuales",
     "CurrentStaminaPointsShortLabel": "PR actuales",
     "DCAdjustmentEasy": "fácil",
@@ -1231,6 +1237,7 @@
         "Type": {
           "abysium": "abisio",
           "adamantine": "adamantita",
+          "aging": "aging",
           "alchemical": "alquímico",
           "all-damage": "todo el daño",
           "arcane": "arcano",
@@ -1302,6 +1309,7 @@
           "polymorph": "polimorfía",
           "possession": "posesión",
           "primal": "primigenio",
+          "prediction": "prediction",
           "prone": "tumbado",
           "protean-anatomy": "anatomía proteica",
           "radiation": "radiación",
@@ -2889,7 +2897,8 @@
               "art-object": "Objeto de arte",
               "coin": "Moneda",
               "gem": "Gema",
-              "material": "Material"
+              "material": "Material",
+              "credstick": "Credstick"
             }
           }
         }
@@ -3008,17 +3017,20 @@
       "Button": {
         "gift": "Dar",
         "move": "Transferir",
-        "purchase": "Comprar"
+        "purchase": "Comprar",
+        "credits": "Transfer"
       },
       "Prompt": {
         "gift": "¿Dar este objeto a {actor}?",
         "move": "¿Transferir este objeto a {actor}?",
-        "purchase": "¿Quiere el {actor} comprar este objeto?"
+        "purchase": "¿Quiere el {actor} comprar este objeto?",
+        "credits": "Transfer credits to {actor}"
       },
       "Title": {
         "gift": "Dar {item}",
         "move": "Transferir {item}",
-        "purchase": "Comprar {item}"
+        "purchase": "Comprar {item}",
+        "credits": "Transfer Credits"
       }
     },
     "ItemsLabel": "Objetos",
@@ -4115,7 +4127,6 @@
     },
     "SpellcastingTypeLabel": "Tipo de lanzamiento de conjuros",
     "SpellsActionHeader": "Acción",
-    "StackGroupCoins": "Monedas",
     "StackGroupGems": "Gemas",
     "StackGroupLabel": "Grupo de apilamiento",
     "StaminaPointsHeader": "Puntos de aguante",
@@ -4143,6 +4154,7 @@
       "Ranged": {
         "Description": "Atacas con un arma que empuñas, designando como objetivo a una criatura dentro del rango de distancia. Haz una tirada de ataque utilizando el modificador al ataque para el arma que estás utilizando, y compara el resultado con la CA de la criatura objetivo para determinar el efecto.",
         "NoAmmo": "No se ha asignado munición a {weapon}. Consulta la pestaña Acciones de la hoja de personaje de {actor}.",
+        "InsufficientAmmo": "Not enough ammunition is left in {weapon}. Check the Actions tab of {actor}'s sheet.",
         "Success": "Infliges daño de acuerdo con el arma o el ataque desarmado, incluidos los modificadores, bonificadores y penalizadores que tienes para hacer daño."
       },
       "Unarmed": {
@@ -4211,8 +4223,9 @@
       }
     },
     "TotalCoinage": "Total de monedas",
-    "TotalTreasure": "Tesoro total",
+    "TotalCurrency": "Total Currency",
     "TotalWealth": "Riqueza total",
+    "TotalTreasure": "Tesoro total",
     "TradeDialog": {
       "Aborted": "{user} has ended the trade: no items were exchanged.",
       "Acceptance": {
@@ -6685,6 +6698,7 @@
       }
     },
     "loot": {
+      "AllowConversion": "Allow coin type conversion",
       "BuySubtitle": "Comprar objeto",
       "DepositMessage": "{depositor} deposita {quantity} × {item} en {container} .",
       "DepositSubtitle": "Depositar objeto",
@@ -6721,6 +6735,7 @@
       "SheetType": "Tipo de hoja",
       "SplitCoinsLabel": "Distribuir monedas",
       "SplitCoinsPopupHeader": "Elige actores para recibir una acción.",
+      "NoPlayerCharacters": "There are no player characters to distribute to",
       "Stack": "¿Crear un nuevo montón?",
       "TakeMessage": "{taker} toma {quantity} × {item} de {container} .",
       "TakeSubtitle": "Tomar objeto",
