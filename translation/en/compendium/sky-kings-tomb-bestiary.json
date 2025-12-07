@@ -34,7 +34,7 @@
         },
         "action->Grasping Foliage": {
           "name": "Grasping Foliage",
-          "description": "<p><strong>Trigger</strong> The assassin vine detects a creature within 20 feet via @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]{Tremorsense}</p>\n<hr />\n<p><strong>Effect</strong> The assassin vine causes vegetation within a @Template[emanation|distance:20] to writhe for 1 round, turning this area into difficult terrain. When a creature starts its turn in this area, it must attempt a @Check[reflex|dc:20] save. On a failure, it takes a -10-foot circumstance penalty to its Speeds until it leaves the area, and on a critical failure it is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. A creature can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} to remove these effects.</p>\n<p>Assassin vines are immune to Grasping Foliage.</p>"
+          "description": "<p><strong>Trigger</strong> The assassin vine detects a creature within 20 feet via @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]{Tremorsense}</p>\n<hr />\n<p><strong>Effect</strong> The assassin vine causes vegetation within a @Template[emanation|distance:20] to writhe for 1 round, turning this area into difficult terrain. When a creature starts its turn in this area, it must attempt a @Check[reflex|dc:20] save. On a failure, it takes a –10-foot circumstance penalty to its Speeds until it leaves the area, and on a critical failure it is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. A creature can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} to remove these effects.</p>\n<p>Assassin vines are immune to Grasping Foliage.</p>"
         },
         "action->Constrict": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(1d8+4)[bludgeoning]], @Check[fortitude|dc:20|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
@@ -135,11 +135,26 @@
         },
         "action->Surface-Bound": {
           "name": "Surface-Bound",
-          "description": "<p>A living graffiti can move only along flat surfaces. If the surface it's on is destroyed, the graffiti takes [[/r 1d6]] damage and is shunted to the nearest flat surface. If there's no flat surface within 5 feet, the graffiti is destroyed.</p>"
+          "description": "<p>A living graffiti can move only along flat surfaces. If the surface it's on is destroyed, the graffiti takes @Damage[1d6[untyped]] damage and is shunted to the nearest flat surface. If there's no flat surface within 5 feet, the graffiti is destroyed.</p>"
         },
         "action->Splatter": {
           "name": "Splatter",
           "description": "<p>A living graffiti splatters paint into a creature's face with its paint Strike. On a hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round or until it Interacts to remove the paint from its face.</p>"
+        }
+      }
+    },
+    "Ancestor Statue": {
+      "name": "Ancestor Statue",
+      "acDetails": "(17 when broken); construct armor",
+      "blurb": "Elite animated statue",
+      "publicNotes": "<p>Animated statues are often used to guard crypts, small shrines, or areas in government buildings where they can be positioned amid normal statues to hide their true nature until an intruder arouses their ire. Adventurers' suspicions regarding statues suddenly animating and attacking has led many less scrupulous adventurers to automatically attack any statues they encounter, ruining harmless, ancient relics.</p>\n<hr />\n<p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
+      "items": {
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "action->Construct Armor (Hardness 6)": {
+          "name": "Construct Armor (Hardness 6)",
+          "description": "<p>Like normal objects, an animated statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness.</p>\n<p>Once an elite animated statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 17.</p>"
         }
       }
     },
@@ -175,21 +190,6 @@
         "action->Howl of Agony": {
           "name": "Howl of Agony",
           "description": "<p><strong>Trigger</strong> At least two living creatures step on the staircase</p>\n<hr />\n<p><strong>Effect</strong> Dozens of mouths open on the stairs and eastern wall doors of the chamber and howl in anger and misery. Creatures in the area are @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 2 rounds and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} unless they succeed at a @Check[fortitude|dc:27] save. Creatures who critically fail are deafened for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}. The haunt then rolls initiative.</p>"
-        }
-      }
-    },
-    "Ansestor Statue": {
-      "name": "Ansestor Statue",
-      "acDetails": "(17 when broken); construct armor",
-      "blurb": "Elite animated statue",
-      "publicNotes": "<p>Animated statues are often used to guard crypts, small shrines, or areas in government buildings where they can be positioned amid normal statues to hide their true nature until an intruder arouses their ire. Adventurers' suspicions regarding statues suddenly animating and attacking has led many less scrupulous adventurers to automatically attack any statues they encounter, ruining harmless, ancient relics.</p>\n<hr />\n<p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
-      "items": {
-        "strike-melee->Fist": {
-          "name": "Fist"
-        },
-        "action->Construct Armor (Hardness 6)": {
-          "name": "Construct Armor (Hardness 6)",
-          "description": "<p>Like normal objects, an animated statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness.</p>\n<p>Once an elite animated statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 17.</p>"
         }
       }
     },
@@ -280,7 +280,7 @@
     "Bestial Transformation": {
       "name": "Bestial Transformation",
       "description": "<p>Enchanted carvings of animals transform any creatures who damage the door into the animal they harmed.</p>",
-      "disable": "<p>@Check[nature|dc:26] (expert) to handle the animal carvings or @Check[thievery|dc:33] (master) to scratch out the animal carvings or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th level; counteract DC 28) to counteract the spell</p>",
+      "disable": "<p>@Check[nature|dc:26] (expert) to handle the animal carvings or @Check[thievery|dc:33] (master) to scratch out the animal carvings or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th rank; counteract DC 28) to counteract the spell</p>",
       "reset": "<p>automatic</p>",
       "stealth": "<p>(master)</p>",
       "items": {
@@ -343,6 +343,11 @@
         },
         "spell->Blood Vendetta": {
           "requirements": "You can bleed"
+        },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
         },
         "spell->True Strike": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]\nTrue Strike"
@@ -535,7 +540,7 @@
     },
     "Cultist Troop": {
       "name": "Cultist Troop",
-      "hpDetails": "(16 squares); Thresholds 60 (12 squares), 30 (8 squares);",
+      "hpDetails": "(16 squares); Thresholds 60 (3 segments), 30 (2 segments);",
       "speed": "troop movement",
       "items": {
         "action->Troop Defenses": {
@@ -547,7 +552,7 @@
         },
         "action->Wild Swing": {
           "name": "Wild Swing",
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The cultists chaotically swing their weapons—from pixies' tiny rapiers to redcaps' scythes—at each enemy adjacent to the troop (@Check[reflex|dc:22|basic] save), dealing a small amount of damage to the troop at the same time. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+1)[slashing]] damage to enemies and @Damage[1d4[slashing]] damage to the troop</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d12+1)[slashing]] damage and @Damage[(1d4+2)[slashing]] damage to the troop</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d12+5)[slashing]] damage and @Damage[2d4[slashing]] damage to the troop</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The cultists chaotically swing their weapons—from pixies' tiny rapiers to redcaps' scythes—at each enemy adjacent to the troop (@Check[reflex|dc:22|basic] save), dealing a small amount of damage to the troop at the same time. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+1)[slashing]] damage to enemies and @Damage[1d4[slashing]] damage to the troop</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d12+1)[slashing]] damage and @Damage[(1d4+2)[slashing]] damage to the troop</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d12+5)[slashing]] damage and @Damage[2d4[slashing]] damage to the troop</p>"
         }
       }
     },
@@ -597,7 +602,7 @@
     "Electrified Hall": {
       "name": "Electrified Hall",
       "description": "<p>Runes hidden in the door's carvings blast lightning down the hall.</p>",
-      "disable": "<p>@Check[thievery|dc:30] (master) to scratch out the runes, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th level; counteract DC 28) to counteract the runes</p>",
+      "disable": "<p>@Check[thievery|dc:30] (master) to scratch out the runes, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th rank; counteract DC 28) to counteract the runes</p>",
       "reset": "<p>automatic</p>",
       "stealth": "<p>(expert)</p>",
       "items": {
@@ -726,6 +731,10 @@
         }
       },
       "items": {
+        "equipment->Snare Kit": {
+          "name": "Snare Kit",
+          "description": "<p>This kit contains tools and materials for creating snares. A snare kit allows you to Craft snares using the Crafting skill.</p>"
+        },
         "strike-melee->Shortsword": {
           "name": "Shortsword"
         },
@@ -793,7 +802,7 @@
         },
         "action->Explosion": {
           "name": "Explosion",
-          "description": "<p>When the elemental inferno dies, it explodes, dealing @Damage[7d6[fire]] damage to each creature in a @Template[emanation|distance:10|traits:fire,damaging-effect] (@Check[reflex|dc:30|basic] save).</p>"
+          "description": "<p>When the elemental inferno dies, it explodes, dealing @Damage[7d6[fire]|options:area-damage] damage to each creature in a @Template[emanation|distance:10|traits:fire,damaging-effect] (@Check[reflex|dc:30|basic|options:area-effect] save).</p>"
         },
         "action->Intense Heat": {
           "name": "Intense Heat",
@@ -805,7 +814,7 @@
         },
         "action->Inferno Leap": {
           "name": "Inferno Leap",
-          "description": "<p>The elemental inferno jumps horizontally and vertically with a maximum height and distance each equal to its Speed. Its intense heat is suppressed until the end of the jump. At any point during the jump, flames explode from the elemental in a @Template[emanation|distance:20], dealing @Damage[12d6[fire]] damage to each creature within the area (@Check[reflex|dc:30|basic] save).</p>\n<p>The elemental inferno can't Inferno Leap again for [[/gmr 1d4 #Recharge Inferno Leap]]{1d4 rounds}.</p>"
+          "description": "<p>The elemental inferno jumps horizontally and vertically with a maximum height and distance each equal to its Speed. Its intense heat is suppressed until the end of the jump. At any point during the jump, flames explode from the elemental in a @Template[emanation|distance:20], dealing @Damage[12d6[fire]|options:area-damage] damage to each creature within the area (@Check[reflex|dc:30|basic|options:area-effect] save).</p>\n<p>The elemental inferno can't Inferno Leap again for [[/gmr 1d4 #Recharge Inferno Leap]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -864,7 +873,7 @@
         },
         "action->Blood Drain": {
           "name": "Blood Drain",
-          "description": "<p><strong>Requirements</strong> The bloodseeker's last action was a successful Strike with its proboscis against a target with blood</p>\n<hr />\n<p><strong>Effect</strong> The bloodseeker sucks blood from that target, dealing @Damage[2d4] damage, and the bloodseeker gains temporary Hit Points equal to the damage dealt. The target becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>"
+          "description": "<p><strong>Requirements</strong> The bloodseeker's last action was a successful Strike with its proboscis against a target with blood</p>\n<hr />\n<p><strong>Effect</strong> The bloodseeker sucks blood from that target, dealing @Damage[2d4[untyped]] damage, and the bloodseeker gains temporary Hit Points equal to the damage dealt. The target becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>"
         }
       }
     },
@@ -885,7 +894,7 @@
         },
         "action->Blood Drain": {
           "name": "Blood Drain",
-          "description": "<p><strong>Requirements</strong> The giant leech has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> The giant leech drains blood from the creature it has grabbed. This deals [[/r 2d4]] damage. A creature that has its blood drained by a giant leech is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives any kind or amount of healing.</p>"
+          "description": "<p><strong>Requirements</strong> The giant leech has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> The giant leech drains blood from the creature it has grabbed. This deals @Damage[2d4[untyped]] damage. A creature that has its blood drained by a giant leech is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives any kind or amount of healing.</p>"
         },
         "action->Gnash": {
           "name": "Gnash",
@@ -1176,7 +1185,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5RGNjhDxZ0yMhTds]\nHunting Spider Venom (5 doses applied to first magazine)",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5RGNjhDxZ0yMhTds]\n<p>This venom erodes its target's defenses, aiding the spider in securing prey.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and off-guard (1 round)</p>"
         },
-        "consumable->Bolts (4 magazines with 5 bolts each)": {
+        "ammo->Bolts (4 magazines with 5 bolts each)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.AITVZmakiu3RgfKo]\nBolts (4 magazines with 5 bolts each)"
         },
         "strike-ranged->Dagger": {
@@ -1242,7 +1251,7 @@
     },
     "Hryngar Breccia Squad": {
       "name": "Hryngar Breccia Squad",
-      "hpDetails": "Thresholds 100 (12 squares), 50 (8 squares)",
+      "hpDetails": "Thresholds 100 (3 segments), 50 (2 segments)",
       "publicNotes": "<p>A hryngar breccia squad is a group of hryngar martial combatants armed with melee weapons and steel shields. Though more likely to be encountered near large hryngar settlements, these strike forces see wide use throughout the Darklands. Hryngar breccia squads often serve as military units, mercenary companies, city patrols, and caravan guards. Like all warriors, the favored combat methods of a hryngar breccia squad change by location, often due to surrounding environment and popular equipment.</p>\n<hr />\n<p>Deep under the surface of Golarion, dwarves still dwell in the darkness. Once abandoned by their kin who were obsessed with reaching the surface, these dwarves have found that by working harder than their brethren, they can build a society far greater than anything under the sun. Droskar, Master of the Dark Furnace, teaches them that toiling for their masters, who in turn toil for their masters above, will lead all of them to become stronger than ever. Every hryngar knows that their labor defines them, and brings them glory in the eyes of Droskar and their peers. Exhaustion at the end of the work day is an honor, proof of their worth in society.</p>\n<h2>Rift Jumpers</h2>\n<p>Hryngar breccia squads that specialize in spelunking are known as Rift Jumpers, named for their reckless leaps into perilous chasms. They swap their shields and warhammers for light picks and train with their climbing equipment until it serves as an extension of their body. Rift Jumpers lose the Raise Shields, Shield Block, and Push Back actions, and gain a climb Speed of 20 feet.</p>",
       "saveDetails": "+2 status to all saves vs. magic",
       "speed": "troop movement",
@@ -1258,11 +1267,11 @@
         },
         "action->Bolt Barrage": {
           "name": "Bolt Barrage",
-          "description": "<p>The hryngar breccia squad draws or reloads its crossbows, then launches a ranged attack in the form of a volley. This volley is a @Template[burst|distance:10] within 120 feet that deals @Damage[4d8[piercing]] damage (@Check[reflex|dc:28|basic] save). When the hryngar breccia squad is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>"
+          "description": "<p>The hryngar breccia squad draws or reloads its crossbows, then launches a ranged attack in the form of a volley. This volley is a @Template[burst|distance:10] within 120 feet that deals @Damage[4d8[piercing]|options:area-damage] damage (@Check[reflex|dc:28|basic|options:area-effect] save). When the hryngar breccia squad is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>"
         },
         "action->General Melee": {
           "name": "General Melee",
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The hryngar breccia squad engages in a coordinated attack with its melee weapons against each enemy within 5 feet (@Check[reflex|dc:28|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+6)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+10)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+14)[bludgeoning]] damage</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The hryngar breccia squad engages in a coordinated attack with its melee weapons against each enemy in a @Template[emanation|distance:5] (@Check[reflex|dc:28|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+6)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+10)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+14)[bludgeoning]|options:area-damage] damage</p>"
         },
         "action->Raise Shields": {
           "name": "Raise Shields",
@@ -1303,7 +1312,7 @@
         },
         "action->Hammerfall": {
           "name": "Hammerfall",
-          "description": "<p>The forgepriest tosses their hammer up to 30 feet. Where the hammer lands, molten metal erupts from the ground in a @Template[burst|distance:10]{10 foot radius} dealing @Damage[6d8[fire]] damage to creatures in the area (@Check[reflex|dc:21|basic] save). Creatures who critically fail also take @Damage[1d8[persistent,fire]] damage. The forgepriest can't use Hammerfall again for [[/gmr 1d4 #Recharge Hammerfall]]{1d4 rounds}.</p>"
+          "description": "<p>The forgepriest tosses their hammer up to 30 feet. Where the hammer lands, molten metal erupts from the ground in a @Template[burst|distance:10]{10 foot radius} dealing @Damage[6d8[fire]|options:area-damage] damage to creatures in the area (@Check[reflex|dc:21|basic|options:area-effect] save). Creatures who critically fail also take @Damage[1d8[persistent,fire]] damage. The forgepriest can't use Hammerfall again for [[/gmr 1d4 #Recharge Hammerfall]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -1317,17 +1326,14 @@
         "spell->Blood Vendetta": {
           "requirements": "You can bleed"
         },
-        "weapon->Bola": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.YUzPv0i8d8p2J9yx]\n<p>This throwing weapon consists of weights tied to the end of long cords, which can be used to entangle foes.</p>"
-        },
         "equipment->Manacles Key": {
           "name": "Manacles Key"
         },
-        "consumable->Spellstrike Ammunition (Type I, Sleep)": {
+        "ammo->Spellstrike Ammunition (Type I, Sleep)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.NSo0bFX7DGGjqKKl]\nSpellstrike Ammunition (Type I, Sleep)",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.NSo0bFX7DGGjqKKl]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep}</p>\n<p>Mystic patterns create a magic reservoir within this ammunition. You activate <em>spellstrike ammunition</em> by Casting a Spell into the ammunition. The spell must be of a spell rank the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated <em>spellstrike ammunition</em> is targeted by the spell. If the creature isn't a valid target for the spell, the spell is lost.</p>\n<p>The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.</p>\n<p>The maximum rank of spell the ammunition can hold determines its item level and Price.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Cast a Spell</p>\n<p>Maximum Spell Rank 1st</p>"
         },
-        "consumable->Spellstrike Ammunition (Type I, Command 'drop prone')": {
+        "ammo->Spellstrike Ammunition (Type I, Command 'drop prone')": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.NSo0bFX7DGGjqKKl]\nSpellstrike Ammunition (Type I, Command 'drop prone')",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.NSo0bFX7DGGjqKKl]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]{Command}</p>\n<p>Mystic patterns create a magic reservoir within this ammunition. You activate <em>spellstrike ammunition</em> by Casting a Spell into the ammunition. The spell must be of a spell rank the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated <em>spellstrike ammunition</em> is targeted by the spell. If the creature isn't a valid target for the spell, the spell is lost.</p>\n<p>The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.</p>\n<p>The maximum rank of spell the ammunition can hold determines its item level and Price.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Cast a Spell</p>\n<p>Maximum Spell Rank 1st</p>"
         },
@@ -1481,12 +1487,7 @@
         },
         "action->Mark for Death": {
           "name": "Mark for Death",
-          "description": "<p>The executioner marks a single creature they can see for death. The first time each round the executioner Strikes that creature, the Strike deals 1d12 additional precision damage.</p>\n<p>The creature remains marked for death until the executioner is knocked out, marks a different creature for death, or the encounter ends.</p>",
-          "rules": {
-            "0": {
-              "label": "First attack on marked target this round"
-            }
-          }
+          "description": "<p>The executioner marks a single creature they can see for death. The first time each round the executioner Strikes that creature, the Strike deals 1d12 additional precision damage.</p>\n<p>The creature remains marked for death until the executioner is knocked out, marks a different creature for death, or the encounter ends.</p>"
         }
       }
     },
@@ -1503,7 +1504,7 @@
         },
         "weapon->Tanglefoot Bag (Moderate)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.evBPzM1VsuYcoenn]\nTanglefoot Bag (Moderate)",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.evBPzM1VsuYcoenn]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a -15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.evBPzM1VsuYcoenn]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
         },
         "consumable->Healing Potion (Minor)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
@@ -1584,14 +1585,14 @@
         },
         "action->Spore Burst": {
           "name": "Spore Burst",
-          "description": "<p>When a hyphae tyrant dies, a burst of primal energy explodes from its body in a @Template[emanation|distance:30], restoring 3d8 to each fungus creature and dealing @Damage[3d8[void]] damage (@Check[fortitude|dc:20]{basic Fortitude} save) to each non-fungus creature in the area. This area is filled with fungus, becoming difficult terrain.</p>"
+          "description": "<p>When a hyphae tyrant dies, a burst of primal energy explodes from its body in a @Template[emanation|distance:30], restoring 3d8 to each fungus creature and dealing @Damage[3d8[void]|options:area-damage] damage (@Check[fortitude|dc:20|basic|options:area-effect] save) to each non-fungus creature in the area. This area is filled with fungus, becoming difficult terrain.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The hyphae tyrant transforms into a Small fungus. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
         },
         "action->Spore Cloud": {
           "name": "Spore Cloud",
-          "description": "<p>A hyphae tyrant unleashes a cloud of spores in a @Template[emanation|distance:20]. Each non-fungi creature in this area must succeed at a @Check[fortitude|dc:20] save or take @Damage[2[persistent,poison]] damage. A creature has its vision reduced as long as the persistent damage continues and can see only within 20 feet (or 10 feet on a critical failure).</p>"
+          "description": "<p>A hyphae tyrant unleashes a cloud of spores in a @Template[emanation|distance:20]. Each non-fungi creature in this area must succeed at a @Check[fortitude|dc:20|options:area-effect,damaging-effect] save or take @Damage[2[persistent,poison]|options:area-damage] damage. A creature has its vision reduced as long as the persistent damage continues and can see only within 20 feet (or 10 feet on a critical failure).</p>"
         },
         "action->Spores": {
           "name": "Spores",
@@ -1953,6 +1954,9 @@
       "blurb": "Variant Giant Crab",
       "publicNotes": "<p>Crabs are scavenging crustaceans known for their hard shells and iconic sideways gait. They use their claws to defend themselves, hunt, and fight other crabs for territory. When confronted with threats from outside their species, most crabs prefer to flee, but when retreat isn't possible, they clamp on to their foes as tightly as they can.</p>\n<p>The statistics presented here represent giant crabs that live close to the water's surface. Crabs that live deeper underwater often exhibit more extreme adaptations to their environment. Crabs who live in the depths where little light reaches gain darkvision and cold resistance, and those adapted to the most hostile reaches of the deep sea can detect nearby creatures through subtle shifts in ocean currents.</p>\n<p>These skittering creatures are prized for their delicious meat, but their size makes them dangerous targets for harvesting.</p>",
       "items": {
+        "condition->Clumsy": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]\n<p>Your movements become clumsy and inexact. Clumsy always includes a value. You take a status penalty equal to the condition value to Dexterity-based checks and DCs, including AC, Reflex saves, ranged attack rolls, and skill checks using Acrobatics, Stealth, and Thievery.</p>"
+        },
         "strike-melee->Claw": {
           "name": "Claw"
         },
@@ -1986,7 +1990,7 @@
         },
         "action->Shake It Off": {
           "name": "Shake It Off",
-          "description": "<p><strong>Trigger</strong> The larval cave worm brood would be affected by a condition or adverse effect (such as @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis})</p>\n<hr />\n<p><strong>Effect</strong> The larval brood negates the triggering condition or effect. Effects from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The larval cave worm brood would be affected by a condition or adverse effect (such as @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis})</p>\n<hr />\n<p><strong>Effect</strong> The larval brood negates the triggering condition or effect. Effects from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>"
         },
         "action->Ferocious Gnaw": {
           "name": "Ferocious Gnaw",
@@ -2011,7 +2015,7 @@
         },
         "action->Shake It Off": {
           "name": "Shake It Off",
-          "description": "<p><strong>Trigger</strong> The larval cave worm brood would be affected by a condition or adverse effect (such as @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis})</p>\n<hr />\n<p><strong>Effect</strong> The larval brood negates the triggering condition or effect. Effects from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The larval cave worm brood would be affected by a condition or adverse effect (such as @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis})</p>\n<hr />\n<p><strong>Effect</strong> The larval brood negates the triggering condition or effect. Effects from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>"
         },
         "action->Ferocious Gnaw": {
           "name": "Ferocious Gnaw",
@@ -2036,7 +2040,7 @@
         },
         "action->Shake It Off": {
           "name": "Shake It Off",
-          "description": "<p><strong>Trigger</strong> The larval cave worm brood would be affected by a condition or adverse effect (such as @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis})</p>\n<hr />\n<p><strong>Effect</strong> The larval brood negates the triggering condition or effect. Effects from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The larval cave worm brood would be affected by a condition or adverse effect (such as @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis})</p>\n<hr />\n<p><strong>Effect</strong> The larval brood negates the triggering condition or effect. Effects from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>"
         },
         "action->Ferocious Gnaw": {
           "name": "Ferocious Gnaw",
@@ -2062,7 +2066,7 @@
         },
         "action->Shake It Off": {
           "name": "Shake It Off",
-          "description": "<p><strong>Trigger</strong> The larval cave worm brood would be affected by a condition or adverse effect (such as @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis})</p>\n<hr />\n<p><strong>Effect</strong> The larval brood negates the triggering condition or effect. Effects from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The larval cave worm brood would be affected by a condition or adverse effect (such as @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis})</p>\n<hr />\n<p><strong>Effect</strong> The larval brood negates the triggering condition or effect. Effects from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>"
         },
         "action->Ferocious Gnaw": {
           "name": "Ferocious Gnaw",
@@ -2087,7 +2091,7 @@
         },
         "action->Shake It Off": {
           "name": "Shake It Off",
-          "description": "<p><strong>Trigger</strong> The larval cave worm brood would be affected by a condition or adverse effect (such as @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis})</p>\n<hr />\n<p><strong>Effect</strong> The larval brood negates the triggering condition or effect. Effects from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The larval cave worm brood would be affected by a condition or adverse effect (such as @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis})</p>\n<hr />\n<p><strong>Effect</strong> The larval brood negates the triggering condition or effect. Effects from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>"
         },
         "action->Ferocious Gnaw": {
           "name": "Ferocious Gnaw",
@@ -2397,7 +2401,7 @@
         },
         "action->Troop Defenses": {
           "name": "Troop Defenses",
-          "description": "<p><strong>Thresholds</strong> 60 (12 squares), 30 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+          "description": "<p><strong>Thresholds</strong> 60 (3 segments), 30 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "action->Grave Tide": {
           "name": "Grave Tide",
@@ -2409,7 +2413,7 @@
         },
         "action->Shambling Onslaught": {
           "name": "Shambling Onslaught",
-          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">2</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The shamblers lash out at any enemies in their squares or within @Template[emanation|distance:5]{5 feet} (@Check[reflex|dc:18|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d6+5)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+9)[bludgeoning]] damage</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">2</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The shamblers lash out at any enemies in their squares or within @Template[emanation|distance:5]{5 feet} (@Check[reflex|dc:18|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d6+5)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+9)[bludgeoning]|options:area-damage] damage</p>"
         },
         "action->Troop Movement": {
           "name": "Troop Movement",
@@ -2455,14 +2459,14 @@
         },
         "action->Spore Burst": {
           "name": "Spore Burst",
-          "description": "<p>When a hyphae tyrant dies, a burst of primal energy explodes from its body in a @Template[emanation|distance:30], restoring 3d8 to each fungus creature and dealing @Damage[3d8[void]] damage (@Check[fortitude|dc:20]{basic Fortitude} save) to each non-fungus creature in the area. This area is filled with fungus, becoming difficult terrain.</p>"
+          "description": "<p>When a hyphae tyrant dies, a burst of primal energy explodes from its body in a @Template[emanation|distance:30], restoring 3d8 to each fungus creature and dealing @Damage[3d8[void]|options:area-damage] damage (@Check[fortitude|dc:20|basic|options:area-effect] save) to each non-fungus creature in the area. This area is filled with fungus, becoming difficult terrain.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The hyphae tyrant transforms into a Small fungus. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
         },
         "action->Spore Cloud": {
           "name": "Spore Cloud",
-          "description": "<p>A hyphae tyrant unleashes a cloud of spores in a @Template[emanation|distance:20]. Each non-fungi creature in this area must succeed at a @Check[fortitude|dc:20] save or take @Damage[2[persistent,poison]] damage. A creature has its vision reduced as long as the persistent damage continues and can see only within 20 feet (or 10 feet on a critical failure).</p>"
+          "description": "<p>A hyphae tyrant unleashes a cloud of spores in a @Template[emanation|distance:20]. Each non-fungi creature in this area must succeed at a @Check[fortitude|dc:20|options:area-effect,damaging-effect] save or take @Damage[2[persistent,poison]|options:area-damage] damage. A creature has its vision reduced as long as the persistent damage continues and can see only within 20 feet (or 10 feet on a critical failure).</p>"
         },
         "action->Spores": {
           "name": "Spores",
@@ -3001,7 +3005,7 @@
         },
         "action->Vulnerability to Exorcism": {
           "name": "Vulnerability to Exorcism",
-          "description": "<p>When a toilforged sentinel fails a saving throw against a spell that would banish tormented spirits or manipulate souls, such as @UUID[Compendium.pf2e.spells-srd.Item.bay4AfSu2iIozNNW]{Banishment} or @UUID[Compendium.pf2e.spells-srd.Item.GYmXvS9NJ7QwfWGg]{Seize Soul}, instead of experiencing the listed effect, it takes 10 damage per spell rank.</p>"
+          "description": "<p>When a toilforged sentinel fails a saving throw against a spell that would banish tormented spirits or manipulate souls, such as @UUID[Compendium.pf2e.spells-srd.Item.bay4AfSu2iIozNNW]{Banishment} or @UUID[Compendium.pf2e.spells-srd.Item.GYmXvS9NJ7QwfWGg]{Seize Soul}, instead of experiencing the listed effect, it takes @Damage[10[untyped]] damage per spell rank.</p>"
         },
         "action->Droskar's Grasp": {
           "name": "Droskar's Grasp",
@@ -3036,6 +3040,11 @@
         },
         "spell->Mage Hand": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]\nMage Hand"
+        },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
         },
         "equipment->Blacksmith Tools (Sterling)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.0QgniSjpzksm5riV]\nBlacksmith Tools (Sterling)",
@@ -3179,7 +3188,7 @@
         },
         "action->Cathartic Howl": {
           "name": "Cathartic Howl",
-          "description": "<p><strong>Requirements</strong> The unfeeling empath is under an emotion effect</p>\n<hr />\n<p><strong>Effect</strong> The unfeeling empath attempts to counteract the emotion effect, with a counteract modifier of [[/r 1d20+11 #Counteract]]{+11}. It then howls, projecting those emotions in a @Template[cone|distance:15] (or a @Template[cone|distance:30] if the unfeeling empath successfully counteracted the emotion effect). Creatures in the area take @Damage[2d8[mental]] damage (@Check[will|dc:18|basic] save). A creature that critically fails this saving throw also takes @Damage[1d4[mental,persistent]] damage.</p>"
+          "description": "<p><strong>Requirements</strong> The unfeeling empath is under an emotion effect</p>\n<hr />\n<p><strong>Effect</strong> The unfeeling empath attempts to counteract the emotion effect, with a counteract modifier of [[/r 1d20+11 #Counteract]]{+11}. It then howls, projecting those emotions in a @Template[cone|distance:15] (or a @Template[cone|distance:30] if the unfeeling empath successfully counteracted the emotion effect). Creatures in the area take @Damage[2d8[mental]|options:area-damage] damage (@Check[will|dc:18|basic|options:area-effect] save). A creature that critically fails this saving throw also takes @Damage[1d4[mental,persistent]] damage.</p>"
         },
         "action->Drink Emotions": {
           "name": "Drink Emotions",
@@ -3258,7 +3267,7 @@
     },
     "Xulgath Ravening": {
       "name": "Xulgath Ravening",
-      "hpDetails": "Thresholds 48 (12 squares), 24 (8 squares)",
+      "hpDetails": "Thresholds 48 (3 segments), 24 (2 segments)",
       "publicNotes": "<p>Strength and hunger drive most xulgath societies, reinforced by the tenets of their abyssal patron Zevgavizeb. A powerful leader can seize control of a xulgath community and direct their followers to fight as a unit, but formation fighting isn't something most xulgaths practice. This mob mentality often results in overzealous warriors tripping over or even biting each other. Suitably, these mobs have earned the name \"ravenings,\" a term also used when describing Zevgavizeb's carnivorous rampages and referring to the millennia of xulgath infighting and social decline.</p>\n<h2>The Power of Suggestion</h2>\n<p>Xulgath ravening are most common in clutches controlled by spiritual leaders using some combination of cult behavior, group ritual, and even a little enchantment magic. By convincing participants that they're possessed by Zevgavizeb or a similar force, the leader then identifies a target and hopes for the best. Instilling secular doubt or incapacitating the leader can shatter a ravening's focus, causing its members to scatter or even turn on their leader.</p>",
       "speed": "troop movement",
       "items": {
@@ -3268,11 +3277,11 @@
         },
         "action->Troop Defenses": {
           "name": "Troop Defenses",
-          "description": "<p><strong>Thresholds</strong> 48 (12 squares), 24 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+          "description": "<p><strong>Thresholds</strong> 48 (3 segments), 24 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "action->Fang and Claw": {
           "name": "Fang and Claw",
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The xulgath ravening lashes out at enemies within 5 feet (@Check[reflex|dc:21|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d6+5)[slashing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+5)[slashing]] damage</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The xulgath ravening lashes out at enemies within 5 feet (@Check[reflex|dc:21|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d6+5)[slashing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+5)[slashing]] damage</p>"
         },
         "action->Infected Wounds": {
           "name": "Infected Wounds",
@@ -3280,7 +3289,7 @@
         },
         "action->Sharpened Advance": {
           "name": "Sharpened Advance",
-          "description": "<p>The troop fires a ranged attack in the form of a @Template[burst|distance:5] within 50 feet that deals @Damage[3d6[piercing]] damage (@Check[reflex|dc:18|basic] save), then the troop either Steps or Strides up to 15 feet toward the area they attacked.</p>"
+          "description": "<p>The troop fires a ranged attack in the form of a @Template[burst|distance:5] within 50 feet that deals @Damage[3d6[piercing]|options:area-damage] damage (@Check[reflex|dc:18|basic|options:area-effect] save), then the troop either Steps or Strides up to 15 feet toward the area they attacked.</p>"
         },
         "action->Troop Movement": {
           "name": "Troop Movement",
@@ -3301,7 +3310,7 @@
         },
         "action->Adhesive": {
           "name": "Adhesive",
-          "description": "<p>The mimic is coated in an adhesive slime. Any creature that hits the mimic, is hit by the mimic, or otherwise touches the mimic must succeed at a @Check[reflex|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} (Escape DC 23). A weapon that hits the mimic is stuck to the mimic and can be removed with a successful @Check[athletics|dc:23] check (made as a single action).</p>\n<p>A mimic can have any number of objects or creatures stuck to it at a time. The mimic can release a stuck creature or object by using a single action, and the adhesive dissolves 1 minute after the mimic dies, releasing all stuck objects and creatures.</p>"
+          "description": "<p>The mimic is coated in an adhesive slime. Any creature that hits the mimic, is hit by the mimic, or otherwise touches the mimic must succeed at a @Check[reflex|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} ([[/act escape dc=23]]). A weapon that hits the mimic is stuck to the mimic and can be removed with a successful @Check[athletics|dc:23] check (made as a single action).</p>\n<p>A mimic can have any number of objects or creatures stuck to it at a time. The mimic can release a stuck creature or object by using a single action, and the adhesive dissolves 1 minute after the mimic dies, releasing all stuck objects and creatures.</p>"
         },
         "action->Object Lesson": {
           "name": "Object Lesson",

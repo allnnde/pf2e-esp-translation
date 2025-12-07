@@ -85,7 +85,7 @@
       "blurb": "Male human alchemist",
       "items": {
         "weapon->Frost Vial (Moderate)": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls, the bomb deals 2d6 cold damage and 2 cold splash damage, and the target takes a -10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls, the bomb deals 2d6 cold damage and 2 cold splash damage, and the target takes a –10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
         },
         "armor->Chain Shirt": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
@@ -138,11 +138,11 @@
         },
         "action->Troop Defenses": {
           "name": "Troop Defenses",
-          "description": "<p><strong>Thresholds</strong> 50 (12 squares), 25 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+          "description": "<p><strong>Thresholds</strong> 50 (3 segments), 25 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "action->Pitchforks and Torches": {
           "name": "Pitchforks and Torches",
-          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round.</p>\n<hr />\n<p><strong>Effect</strong> The angry townsfolk engage in a coordinated melee attack against each enemy within @Template[emanation|distance:10]{10 feet}, with a @Check[reflex|dc:19|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d10[piercing]] damage or @Damage[1d10[fire]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d10+7)[piercing]] damage or @Damage[(1d10+7)[fire]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(1d10+10)[piercing]] damage or @Damage[(1d10+10)[fire]] damage</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round.</p>\n<hr />\n<p><strong>Effect</strong> The angry townsfolk engage in a coordinated melee attack against each enemy within @Template[emanation|distance:10]{10 feet}, with a @Check[reflex|dc:19|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d10[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d10+7)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(1d10+10)[untyped]|options:area-damage] damage</p>"
         },
         "action->Troop Movement": {
           "name": "Troop Movement",
@@ -185,6 +185,9 @@
       "name": "Ascended Disciple",
       "blurb": "Human disciple of the Sandpoint Devil",
       "items": {
+        "weapon->Machete": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.O7IZBvVoe7W2XnBa]\n<p>This medium-length sword has a wide blade and long grip. Though it is typically used to hack through heavy foliage, the machete can also be used as a deadly weapon.</p>"
+        },
         "equipment->Religious Symbol": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\nReligious Symbol"
         },
@@ -199,7 +202,7 @@
         },
         "action->Devil's Breath": {
           "name": "Devil's Breath",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The ascended disciple cuts their tongue with a slashing weapon held in a hand (taking @Damage[1[slashing]] damage), then exhales a @Template[cone|distance:15] of burning smoke. Each creature in the area must attempt a @Check[reflex|dc:22|options:area-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d8[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[4d8[fire]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the agonizing pain of the burns.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d8[fire]] damage, is sickened 1 by the agonizing pain of the burns, and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} by the smoke for 1 minute.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The ascended disciple cuts their tongue with a slashing weapon held in a hand (taking @Damage[1[slashing]] damage), then exhales a @Template[cone|distance:15] of burning smoke. Each creature in the area must attempt a @Check[reflex|dc:22|options:area-effect,damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d8[fire]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[4d8[fire]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the agonizing pain of the burns.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d8[fire]|options:area-damage] damage, is sickened 1 by the agonizing pain of the burns, and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} by the smoke for 1 minute.</p>"
         },
         "lore->Sandpoint Devil Lore": {
           "name": "Sandpoint Devil Lore"
@@ -216,6 +219,14 @@
         "spellcastingEntry->Sorcerer Bloodline Spells": {
           "name": "Sorcerer Bloodline Spells"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
+        "weapon->Machete": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.O7IZBvVoe7W2XnBa]\n<p>This medium-length sword has a wide blade and long grip. Though it is typically used to hack through heavy foliage, the machete can also be used as a deadly weapon.</p>"
+        },
         "equipment->Religious Symbol": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\nReligious Symbol"
         },
@@ -227,7 +238,7 @@
         },
         "action->Devil's Cursed Breath": {
           "name": "Devil's Cursed Breath",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Asmerelli bites down on her tongue (taking @Damage[1[slashing]] damage), then exhales a @Template[cone|distance:15] of burning smoke. Each creature in the area must attempt a @Check[reflex|dc:24] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d8[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[6d8[fire]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the agonizing pain of the burns.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d8[fire]] damage, is sickened 1 by the agonizing pain of the burns, and becomes cursed. The victim's burns never fully vanish, and the cursed creature takes a –2 status penalty to all attacks from the constant pain. Healing doesn't alter the appearance of the burns or lessen the penalty, but removing the curse does.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.khL2A1slsnufpJp4]{Effect: Devil's Cursed Breath}</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Asmerelli bites down on her tongue (taking @Damage[1[slashing]] damage), then exhales a @Template[cone|distance:15] of burning smoke. Each creature in the area must attempt a @Check[reflex|dc:24|options:area-effect,damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d8[fire]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[6d8[fire]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the agonizing pain of the burns.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d8[fire]|options:area-damage] damage, is sickened 1 by the agonizing pain of the burns, and becomes cursed. The victim's burns never fully vanish, and the cursed creature takes a –2 status penalty to all attacks from the constant pain. Healing doesn't alter the appearance of the burns or lessen the penalty, but removing the curse does.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.khL2A1slsnufpJp4]{Effect: Devil's Cursed Breath}</p>"
         },
         "action->Reach Spell": {
           "name": "Reach Spell",
@@ -375,7 +386,7 @@
         },
         "action->Shattering Rattle": {
           "name": "Shattering Rattle",
-          "description": "<p><strong>Requirements</strong> The clockwork serpent is in rattlesnake mode</p>\n<hr />\n<p><strong>Effect</strong> The clockwork serpent rattles its tail, then snaps it like a whip to create a devastating blast of sonic energy in a @Template[cone|distance:30]. Creatures in the area take @Damage[9d6[sonic]] damage (@Check[fortitude|dc:26|basic] save).</p>"
+          "description": "<p><strong>Requirements</strong> The clockwork serpent is in rattlesnake mode</p>\n<hr />\n<p><strong>Effect</strong> The clockwork serpent rattles its tail, then snaps it like a whip to create a devastating blast of sonic energy in a @Template[cone|distance:30]. Creatures in the area take @Damage[9d6[sonic]|options:area-damage] damage (@Check[fortitude|dc:26|basic|options:area-effect] save).</p>"
         }
       }
     },
@@ -480,7 +491,7 @@
       "items": {
         "action->Exhale Smoke": {
           "name": "Exhale Smoke",
-          "description": "<p><strong>Trigger</strong> A non-goblin creature approaches within 10 feet of the taxidermy Sandpoint Devil</p>\n<hr />\n<p><strong>Effect</strong> The taxidermy Sandpoint Devil lurches forward, opens its jaws, and emits a blood-curdling howl and a blast of foul-smelling gray smoke. All creatures in a @Template[cone|distance:30] directed south of the trap (which reaches all the way to the door leading out to the Pit) must attempt a @Check[fortitude|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 8 hours on a critical failure).</p>"
+          "description": "<p><strong>Trigger</strong> A non-goblin creature approaches within 10 feet of the taxidermy Sandpoint Devil</p>\n<hr />\n<p><strong>Effect</strong> The taxidermy Sandpoint Devil lurches forward, opens its jaws, and emits a blood-curdling howl and a blast of foul-smelling gray smoke. All creatures in a @Template[cone|distance:30] directed south of the trap (which reaches all the way to the door leading out to the Pit) must attempt a @Check[fortitude|dc:22|options:area-effect,inflicts:enfeebled] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 8 hours on a critical failure).</p>"
         }
       }
     },
@@ -488,6 +499,9 @@
       "name": "Devil's Disciple",
       "blurb": "Human and half-elf cultists",
       "items": {
+        "weapon->Machete": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.O7IZBvVoe7W2XnBa]\n<p>This medium-length sword has a wide blade and long grip. Though it is typically used to hack through heavy foliage, the machete can also be used as a deadly weapon.</p>"
+        },
         "strike-melee->Machete": {
           "name": "Machete"
         },
@@ -496,7 +510,7 @@
         },
         "action->Devil's Breath": {
           "name": "Devil's Breath",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The Devil's Disciple cuts their tongue with a slashing weapon held in a hand (taking @Damage[1[slashing]] damage), then exhales a @Template[cone|distance:15] of burning smoke. Each creature in the area must attempt a @Check[reflex|dc:18] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[1d8[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[2d8[fire]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the agonizing pain of the burns.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[4d8[fire]] damage, is sickened 1 by the agonizing pain of the burns, and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} by the smoke for 1 minute.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The Devil's Disciple cuts their tongue with a slashing weapon held in a hand (taking @Damage[1[slashing]] damage), then exhales a @Template[cone|distance:15] of burning smoke. Each creature in the area must attempt a @Check[reflex|dc:18|options:area-effect,damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[1d8[fire]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[2d8[fire]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the agonizing pain of the burns.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[4d8[fire]|options:area-damage] damage, is sickened 1 by the agonizing pain of the burns, and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} by the smoke for 1 minute.</p>"
         },
         "lore->Sandpoint Devil Lore": {
           "name": "Sandpoint Devil Lore"
@@ -522,7 +536,7 @@
         },
         "action->Divine Destruction": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.jD0M3yV6gjkXafsJ]\nDivine Destruction",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.jD0M3yV6gjkXafsJ]\n<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[emanation|distance:30], dealing @Damage[4d6[void]] damage. Each creature in the area must attempt a @Check[will|dc:17|traits:damaging-effect] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.jD0M3yV6gjkXafsJ]\n<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[emanation|distance:30], dealing @Damage[4d6[void]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|dc:17|options:area-effect,damaging-effect] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
         },
         "action->Faith Bound": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.OPGu0WsUHpHSmu80]\nFaith Bound"
@@ -604,7 +618,7 @@
     "Flesh for the Hollow Star": {
       "name": "Flesh for the Hollow Star",
       "description": "<p>The flesh and leather sculpture of Azathoth seems to ripple and churn before eyes open across its surface—eyes that then open into mouths that extend long whipping tendrils of rasping filaments to bless with warped flesh.</p>",
-      "disable": "<p>@Check[thievery|dc:23] twice to pull away one of the two primary anchor points for the sculpture to cause the leather and bones to slump harmlessly to the floor, @Check[religion|dc:26] from a worshipper of a lawful or good faith to banish Azathoth's influence from the hazard, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd level, counteract DC 20) to counteract the hazard</p>",
+      "disable": "<p>@Check[thievery|dc:23] twice to pull away one of the two primary anchor points for the sculpture to cause the leather and bones to slump harmlessly to the floor, @Check[religion|dc:26] from a worshipper of a lawful or good faith to banish Azathoth's influence from the hazard, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank, counteract DC 20) to counteract the hazard</p>",
       "reset": "<p>The trap deactivates and resets after a worshipper of Azathoth spends 1 hour in prayer before it.</p>",
       "routine": "<p>(2 actions; necromancy, occult) The eyes open like mouths to extrude a whipping tangle of filaments that lash out at a target in area <strong>F19</strong> or within 10 feet of any entrance into the room. The filaments can't attack a single target more than once per round. A creature targeted by a filament must attempt a @Check[fortitude|traits:necromancy,occult|dc:22] save. The body of a creature slain by poison damage from this hazard melts into a heap and then splits open to allow a gibbering mouther to slither free; this creature attacks any non-worshipper of Azathoth it sees, or otherwise slithers off to area <strong>F20</strong> to splash and gyre in the waters of the lake.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d6[poison]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(2d6+7)[poison]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} as their flesh and muscles grow limp and saggy.</p>\n<p><strong>Critical Failure</strong> As failure, but @Damage[(4d6+14)[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}.</p>",
       "stealth": "<p>(trained)</p>",
@@ -1006,7 +1020,7 @@
         },
         "action->Shove into Stone": {
           "name": "Shove into Stone",
-          "description": "<p>When the shaitan Pushes a creature into a stone barrier, the target must succeed at a @Check[reflex|dc:22] save or become merged with the barrier (as @UUID[Compendium.pf2e.spells-srd.Item.vh1RpbWfqdNC4L3P]{One with Stone}). The victim can attempt to Escape (DC 28).</p>"
+          "description": "<p>When the shaitan Pushes a creature into a stone barrier, the target must succeed at a @Check[reflex|dc:22] save or become merged with the barrier (as @UUID[Compendium.pf2e.spells-srd.Item.vh1RpbWfqdNC4L3P]{One with Stone}). The victim can attempt to [[/act escape dc=28]].</p>"
         },
         "action->Push 10 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]\nPush 10 feet"
@@ -1040,7 +1054,7 @@
         },
         "action->Ghostly Murder": {
           "name": "Ghostly Murder",
-          "description": "<p>Jervis Stoot raises a hand high, and a murder of ghostly crows manifests in a vortex above his hand. He then lowers his hand to point in a direction, and the murder of ghostly crows swarms out in a @Template[cone|distance:20]. All creatures caught in the area must attempt a @Check[reflex|dc:30] save. Jervis can't use Ghostly Murder again for [[/gmr 1d4 #Recharge Ghostly Murder]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[6d6[slashing]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[10d6[slashing],2d6[bleed]]{10d6 slashing damage and 2d6 bleed} damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[15d6[slashing],5d6[bleed]]{15d6 slashing damage, 5d6 bleed} damage, and is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}. The blindness persists until it's healed via an effect like restore senses.</p>"
+          "description": "<p>Jervis Stoot raises a hand high, and a murder of ghostly crows manifests in a vortex above his hand. He then lowers his hand to point in a direction, and the murder of ghostly crows swarms out in a @Template[cone|distance:20]. All creatures caught in the area must attempt a @Check[reflex|dc:30|options:area-effect,damaging-effect] save. Jervis can't use Ghostly Murder again for [[/gmr 1d4 #Recharge Ghostly Murder]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[6d6[slashing]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[10d6[slashing],2d6[bleed]|options:area-damage]{10d6 slashing damage and 2d6 bleed} damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[15d6[slashing],5d6[bleed]|options:area-damage]{15d6 slashing damage, 5d6 bleed} damage, and is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}. The blindness persists until it's healed via an effect like restore senses.</p>"
         },
         "action->Malevolent Possession": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.iwLj14liESK5OBN8]\nMalevolent Possession",
@@ -1075,7 +1089,7 @@
         },
         "action->Devil's Cursed Breath": {
           "name": "Devil's Cursed Breath",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Jordus bites down on his tongue (taking @Damage[1[slashing]] damage), then exhales a @Template[cone|distance:15] of burning smoke. Each creature in the area must attempt a @Check[reflex|dc:26] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d8[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[7d8[fire]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the agonizing pain of the burns.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[10d8[fire]] damage, is sickened 1 by the agonizing pain of the burns, and becomes cursed. The victim's burns never fully vanish, and the cursed creature takes a –2 status penalty to all attacks from the constant pain. Healing doesn't alter the appearance of the burns or lessen the penalty, but removing the curse does.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.khL2A1slsnufpJp4]{Effect: Devil's Cursed Breath}</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Jordus bites down on his tongue (taking @Damage[1[slashing]] damage), then exhales a @Template[cone|distance:15] of burning smoke. Each creature in the area must attempt a @Check[reflex|dc:26|options:area-effect,damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d8[fire]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[7d8[fire]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the agonizing pain of the burns.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[10d8[fire]|options:area-damage] damage, is sickened 1 by the agonizing pain of the burns, and becomes cursed. The victim's burns never fully vanish, and the cursed creature takes a –2 status penalty to all attacks from the constant pain. Healing doesn't alter the appearance of the burns or lessen the penalty, but removing the curse does.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.khL2A1slsnufpJp4]{Effect: Devil's Cursed Breath}</p>"
         }
       }
     },
@@ -1212,7 +1226,7 @@
     "Lightlock": {
       "name": "Lightlock",
       "description": "<p>The strange fog layer on the walls swirls and churns, then suddenly fires several beams of dark mist into the room.</p>",
-      "disable": "<p>@Check[thievery|dc:27] (master) to disrupt some of the hidden runes that focus the trap's energies, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th level, counteract DC 25) or any spell with the Light trait to counteract the trap</p>",
+      "disable": "<p>@Check[thievery|dc:27] (master) to disrupt some of the hidden runes that focus the trap's energies, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank, counteract DC 25) or any spell with the Light trait to counteract the trap</p>",
       "reset": "<p>The lightlock takes 1 minute to restore its energy, after which it can be triggered again.</p>",
       "stealth": "<p>(expert)</p>",
       "items": {
@@ -1253,7 +1267,7 @@
         },
         "action->Whistle Up Cursed Flames": {
           "name": "Whistle Up Cursed Flames",
-          "description": "<p>Minargul whistles a high-pitched shrill note, breathing out a blast of fire and foul-smelling smoke as she does so. All creatures in a @Template[cone|distance:15] must attempt a @Check[reflex|dc:24] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d6[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[6d6[fire]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the agonizing pain of the burns.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d6[fire]] damage and is cursed. The burns caused by the fire linger, and the charred flesh remains blistered. The cursed creature takes a –1 status penalty to all checks from the constant pain. Healing doesn't alter the appearance of the burns or lessen the penalty, but removing the curse does.</p>"
+          "description": "<p>Minargul whistles a high-pitched shrill note, breathing out a blast of fire and foul-smelling smoke as she does so. All creatures in a @Template[cone|distance:15] must attempt a @Check[reflex|dc:24|options:area-effect,damaging-effect,inflicts:sickened] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d6[fire]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[6d6[fire]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the agonizing pain of the burns.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d6[fire]|options:area-damage] damage and is cursed. The burns caused by the fire linger, and the charred flesh remains blistered. The cursed creature takes a –1 status penalty to all checks from the constant pain. Healing doesn't alter the appearance of the burns or lessen the penalty, but removing the curse does.</p>"
         }
       }
     },
@@ -1323,6 +1337,9 @@
         "spellcastingEntry->Revelation Spells": {
           "name": "Revelation Spells"
         },
+        "weapon->Staff of Air (Greater)": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.9GUSQFJZarLs5tQC]\n<p>Carved from white ash wood, a <em>staff of air</em> crackles with electrical sparks, and a breeze always follows the wielder. While wielding a staff of air, you feel lighter on your feet, and you can Step into difficult terrain once per round.</p>\n<hr />\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.dDiOnjcsBFbAvP6t]{Gale Blast}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.W69zswpj0Trdy5rj]{Air Bubble}, @UUID[Compendium.pf2e.spells-srd.Item.g8QqHpv2CWDwmIm1]{Gust of Wind}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.23cv1p49NFd0Onng]{Ash Cloud}, @UUID[Compendium.pf2e.spells-srd.Item.9XHmC2JgTUIQ1CCm]{Mist}</li>\n<li><strong>3rd</strong> @UUID[Compendium.pf2e.spells-srd.Item.KEkPxx7Sm6Xf4W3s]{Blazing Dive}, @UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]{Lightning Bolt}, @UUID[Compendium.pf2e.spells-srd.Item.it4ZsAi6XgvGcodc]{Wall of Wind}</li>\n</ul>\n<hr />\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>"
+        },
         "strike-melee->Staff": {
           "name": "Staff"
         },
@@ -1332,7 +1349,7 @@
         },
         "action->Swarming Curse": {
           "name": "Swarming Curse",
-          "description": "<p>Hundreds of biting flies crawl over Narlo's bones, filling out his armor almost like his flesh once did. When these flies burn, they harm Narlo as well, imparting weakness to fire 5. Whenever Narlo casts a spell, these flies burst from his body to fill a @Template[emanation|distance:10] around him in a buzzing, biting cloud until the start of his next turn. During this time, he loses his weakness to fire, and any creature that ends their turn within the emanation takes @Damage[4d6[piercing]] damage (@Check[reflex|dc:23|basic] save) from the biting flies.</p>"
+          "description": "<p>Hundreds of biting flies crawl over Narlo's bones, filling out his armor almost like his flesh once did. When these flies burn, they harm Narlo as well, imparting weakness to fire 5. Whenever Narlo casts a spell, these flies burst from his body to fill a @Template[emanation|distance:10] around him in a buzzing, biting cloud until the start of his next turn. During this time, he loses his weakness to fire, and any creature that ends their turn within the emanation takes @Damage[4d6[piercing]|options:area-damage] damage (@Check[reflex|dc:23|basic|options:area-effect] save) from the biting flies.</p>"
         }
       }
     },
@@ -1355,11 +1372,11 @@
         },
         "action->Frightful Moan": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.aiwlPSmNY9b6Psvd]\nFrightful Moan",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.aiwlPSmNY9b6Psvd]\n<p>The ghost laments its fate, forcing each living creature within @Template[emanation|distance:30]{30 feet} to attempt a @Check[will|dc:29] save. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.aiwlPSmNY9b6Psvd]\n<p>The ghost laments its fate, forcing each living creature within @Template[emanation|distance:30]{30 feet} to attempt a @Check[will|dc:29|options:area-effect,inflicts:frightened] save. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.</p>"
         },
         "action->Telekinetic Assault": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.0K3vhX14UEPftqu8]\nTelekinetic Assault",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.0K3vhX14UEPftqu8]\n<p>The ghost cries out in pain and anguish as small objects and debris fly about in a @Template[emanation|distance:30]. Creatures in this area take @Damage[6d6[bludgeoning]] damage, subject to a @Check[reflex|dc:29|basic] save.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.0K3vhX14UEPftqu8]\n<p>The ghost cries out in pain and anguish as small objects and debris fly about in a @Template[emanation|distance:30]. Creatures in this area take @Damage[6d6[bludgeoning]|options:area-damage] damage, subject to a @Check[reflex|dc:29|basic|options:area-effect] save.</p>"
         }
       }
     },
@@ -1500,7 +1517,7 @@
         },
         "action->Devastating Blast": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\nDevastating Blast",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\n<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[4d12[fire]] damage (@Check[reflex|dc:24|basic] save).</p>\n<p>The graveknight can use this ability once every [[/gmr 1d4 #Recharge Devastating Blast]]{1d4 rounds}.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\n<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[4d12[fire]|options:area-damage] damage (@Check[reflex|dc:24|basic|options:area-effect] save).</p>\n<p>The graveknight can use this ability once every [[/gmr 1d4 #Recharge Devastating Blast]]{1d4 rounds}.</p>"
         },
         "action->Dogslicer Cruelty": {
           "name": "Dogslicer Cruelty",
@@ -1659,7 +1676,7 @@
     "Skulls of Fear and Flame": {
       "name": "Skulls of Fear and Flame",
       "description": "<p>A line of skulls adorned with black candles sit on the floor, and use darkvision to spot intruders. The red arrows on the map indicate the direction the skulls are looking.</p>",
-      "disable": "<p>@Check[stealth|dc:27] to move through the room unseen by the skulls (this does not disable the trap but does prevent it from triggering), @Check[thievery|dc:27] three times to \"blind\" an adjacent skull by deftly scraping hidden runes away from the inside of the eye sockets, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th level, counteract DC 25) to counteract the trap</p>",
+      "disable": "<p>@Check[stealth|dc:27] to move through the room unseen by the skulls (this does not disable the trap but does prevent it from triggering), @Check[thievery|dc:27] three times to \"blind\" an adjacent skull by deftly scraping hidden runes away from the inside of the eye sockets, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank, counteract DC 25) to counteract the trap</p>",
       "hpDetails": "Skulls",
       "reset": "<p>If there are no visible targets, the trap deactivates at the end of its turn, then automatically resets.</p>",
       "routine": "<p>(6 actions) On its initiative the trap uses its first action to rotate a skull that can't see targets a full 360 degrees, stopping as soon as the skull spots a target. It repeats this action until all six skulls are looking at targets, then uses its remaining actions to shoot beams of fire from their eyes. The trap can only target a creature once per round, so if there are fewer targets than actions, any additional actions possessed by the trap are lost. The trap loses one action for each skull that is destroyed.</p>",
@@ -1719,7 +1736,7 @@
         },
         "action->Spray Webbing": {
           "name": "Spray Webbing",
-          "description": "<p><strong>Trigger</strong> A creature steps on the pressure plate adjacent to the sticky greeter</p>\n<hr />\n<p><strong>Effect</strong> The sticky greeter lurches as its abdomen snaps forward, opens, and sprays the triggering creature with thick sheets of alchemical webbing. At the same time, the sticky greeter emits a high-pitched whistling sound. The creature must make a @Check[reflex|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and held in place, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} on a critical failure until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 22) or the webbing binding it is destroyed.</p>"
+          "description": "<p><strong>Trigger</strong> A creature steps on the pressure plate adjacent to the sticky greeter</p>\n<hr />\n<p><strong>Effect</strong> The sticky greeter lurches as its abdomen snaps forward, opens, and sprays the triggering creature with thick sheets of alchemical webbing. At the same time, the sticky greeter emits a high-pitched whistling sound. The creature must make a @Check[reflex|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and held in place, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} on a critical failure until it [[/act escape dc=22]]{Escapes} or the webbing binding it is destroyed.</p>"
         }
       }
     },
@@ -1966,7 +1983,7 @@
     "Whispers from Long Ago": {
       "name": "Whispers from Long Ago",
       "description": "<p>As the door is opened, unsettling whispering radiates outward, worming its way into the mind of the one who dared intrude.</p>",
-      "disable": "<p>@Check[thievery|dc:27] (master) to deface the subtly hidden triggering runes around the door's circumference, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th level; counteract DC 23) to counteract the trap</p>",
+      "disable": "<p>@Check[thievery|dc:27] (master) to deface the subtly hidden triggering runes around the door's circumference, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank; counteract DC 23) to counteract the trap</p>",
       "reset": "<p>The trap resets over the course of a round and is ready to whisper at the next person who attempts to open the door 1 round later.</p>",
       "stealth": "<p>(expert)</p>",
       "items": {
@@ -2102,7 +2119,7 @@
         },
         "action->Web Trap": {
           "name": "Web Trap",
-          "description": "<p>A creature hit by a drider's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 28).</p>"
+          "description": "<p>A creature hit by a drider's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface ([[/act escape dc=28]]).</p>"
         }
       }
     },

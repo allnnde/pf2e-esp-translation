@@ -246,6 +246,11 @@
         "spell->Fear (At-Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]\nFear (At-Will)"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "strike-melee->Jaws": {
           "name": "Jaws"
         },
@@ -336,7 +341,7 @@
         },
         "action->Haunting Wail": {
           "name": "Haunting Wail",
-          "description": "<p>The bugul noz lets out a hair-raising keen. Other creatures within @Template[emanation|distance:30]{30 feet} must attempt a @Check[fortitude|dc:31|traits:damaging-effect] save.</p>\n<p>The bugul noz can't use this ability again for [[/gmr 1d4 #Recharge Haunting Wail]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes @Damage[2d10[sonic]] damage.</p>\n<p><strong>Failure</strong> The target takes @Damage[4d10[sonic]] damage and gains sonic weakness 10 for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and the target becomes @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>"
+          "description": "<p>The bugul noz lets out a hair-raising keen. Other creatures within @Template[emanation|distance:30]{30 feet} must attempt a @Check[fortitude|dc:31|options:area-effect,damaging-effect] save.</p>\n<p>The bugul noz can't use this ability again for [[/gmr 1d4 #Recharge Haunting Wail]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes @Damage[2d10[sonic]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> The target takes @Damage[4d10[sonic]|options:area-damage] damage and gains sonic weakness 10 for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.EoSs09JUy4Maq296]{Effect: Haunting Wail}</p>\n<p><strong>Critical Failure</strong> As failure, and the target becomes @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>"
         },
         "lore->Forest Lore": {
           "name": "Forest Lore"
@@ -428,7 +433,7 @@
         },
         "action->Frost Susceptibility": {
           "name": "Frost Susceptibility",
-          "description": "<p>Whenever the counteflora takes cold damage, it takes a -10-foot circumstance penalty to Speed for 1 round.</p>"
+          "description": "<p>Whenever the counteflora takes cold damage, it takes a –10-foot circumstance penalty to Speed for 1 round.</p>"
         },
         "action->Tighten Bracts": {
           "name": "Tighten Bracts",
@@ -536,6 +541,11 @@
         },
         "spell->Fear (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]\nFear (At Will)"
+        },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
         },
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -655,7 +665,7 @@
         },
         "action->Acidic Effluence": {
           "name": "Acidic Effluence",
-          "description": "<p>The giant aukashungi releases an acidic gas from its ventral glands in a @Template[burst|distance:30]. Each creature that starts its turn in the area takes @Damage[10d8[acid],2d8[persistent,acid]]{10d8 acid damage plus 2d8 persistent acid damage} (@Check[fortitude|dc:32|basic] save). The gas moves 10 feet away from the giant aukashungi each round and lasts for 1 minute. The giant aukashungi can't use Acidic Effluence again for 1 minute.</p>"
+          "description": "<p>The giant aukashungi releases an acidic gas from its ventral glands in a @Template[burst|distance:30]. Each creature that starts its turn in the area takes @Damage[10d8[acid],2d8[persistent,acid]|options:area-damage]{10d8 acid damage plus 2d8 persistent acid damage} (@Check[fortitude|dc:32|basic|options:area-effect] save). The gas moves 10 feet away from the giant aukashungi each round and lasts for 1 minute. The giant aukashungi can't use Acidic Effluence again for 1 minute.</p>"
         },
         "action->Roll Up": {
           "name": "Roll Up",
@@ -771,11 +781,11 @@
           "description": "<p>A creature that begins its turn inside Iffdahsil takes @Damage[10d6[void]] damage. Iffdahsil gains temporary HP for 1 minute equal to half the damage dealt.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:43], @Damage[10d6[void]], Escape DC 43, Rupture 45</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:43], @Damage[10d6[void]], [[/act escape dc=43]], Rupture 45</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Tentacular Burst": {
           "name": "Tentacular Burst",
-          "description": "<p>Iffdahsil deals @Damage[8d8[piercing]] damage to each creature in a @Template[emanation|distance:10] (@Check[reflex|dc:43|basic] save) and can also attempt to @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab} any creatures who critically fail their save as a free action. Iffdahsil is then @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>"
+          "description": "<p>Iffdahsil deals @Damage[8d8[piercing]|options:area-damage] damage to each creature in a @Template[emanation|distance:10] (@Check[reflex|dc:43|basic|options:area-effect] save) and can also attempt to @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab} any creatures who critically fail their save as a free action. Iffdahsil is then @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>"
         }
       }
     },
@@ -805,7 +815,7 @@
         },
         "action->Trunk Beam": {
           "name": "Trunk Beam",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The iridescent elephant blasts a beam of light from its trunk in a @Template[line|distance:30]. Each creature in the area must attempt a @Check[fortitude|dc:22] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is blinded permanently.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The iridescent elephant blasts a beam of light from its trunk in a @Template[line|distance:30]. Each creature in the area must attempt a @Check[fortitude|dc:22|options:area-effect] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is blinded permanently.</p>"
         },
         "action->Grabbing Trunk": {
           "name": "Grabbing Trunk",
@@ -916,7 +926,7 @@
         },
         "action->Grand Finale": {
           "name": "Grand Finale",
-          "description": "<p><strong>Requirements</strong> The muse phantom's thespian aura is active</p>\n<hr />\n<p><strong>Effect</strong> The muse ceases its thespian aura and deals @Damage[4d8[mental]] damage to creatures in a @Template[burst|distance:30], including the creature it is possessing, if any (@Check[will|dc:22|basic] save). Creatures that fail their Will saves are @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the muse phantom for 1 minute.</p>\n<p data-pf2-show-dc=\"gm\">The muse phantom can't use Grand Finale again for [[/gmr 1d4 #Recharge Grand Finale]]{1d4 rounds}.</p>"
+          "description": "<p><strong>Requirements</strong> The muse phantom's thespian aura is active</p>\n<hr />\n<p><strong>Effect</strong> The muse ceases its thespian aura and deals @Damage[4d8[mental]|options:area-damage] damage to creatures in a @Template[burst|distance:30], including the creature it is possessing, if any (@Check[will|dc:22|basic|options:area-effect] save). Creatures that fail their Will saves are @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the muse phantom for 1 minute.</p>\n<p data-pf2-show-dc=\"gm\">The muse phantom can't use Grand Finale again for [[/gmr 1d4 #Recharge Grand Finale]]{1d4 rounds}.</p>"
         },
         "action->Muse Possession": {
           "name": "Muse Possession",
@@ -998,7 +1008,7 @@
         },
         "action->Fling Shards": {
           "name": "Fling Shards",
-          "description": "<p>The obsidian golem slings razor-sharp shards of itself in a @Template[cone|distance:15].</p>\n<p>Creatures in the area take @Damage[(4d8+9)[slashing]] damage (@Check[reflex|dc:37|basic]).</p>"
+          "description": "<p>The obsidian golem slings razor-sharp shards of itself in a @Template[cone|distance:15].</p>\n<p>Creatures in the area take @Damage[(4d8+9)[slashing]|options:area-damage] damage (@Check[reflex|dc:37|basic|options:area-effect]).</p>"
         },
         "action->Shred Armor": {
           "name": "Shred Armor",
@@ -1083,7 +1093,7 @@
         },
         "action->Boneshaking Roar": {
           "name": "Boneshaking Roar",
-          "description": "<p>The saurian warmonger bellows, evoking the power of the primordial world.</p>\n<p>Non-dinosaur creatures within @Template[emanation|distance:30]{30 feet} take @Damage[10d6[sonic]] damage (@Check[fortitude|dc:34|basic] save). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} [[/r 1d4 #Stunned Value]]{1d4} on a critical failure).</p>\n<p>The saurian can't use Boneshaking Roar again for [[/gmr 1d4 #Recharge Boneshaking Roar]]{1d4 rounds}.</p>"
+          "description": "<p>The saurian warmonger bellows, evoking the power of the primordial world.</p>\n<p>Non-dinosaur creatures within @Template[emanation|distance:30]{30 feet} take @Damage[10d6[sonic]|options:area-damage] damage (@Check[fortitude|dc:34|basic|options:area-effect] save). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} [[/r 1d4 #Stunned Value]]{1d4} on a critical failure).</p>\n<p>The saurian can't use Boneshaking Roar again for [[/gmr 1d4 #Recharge Boneshaking Roar]]{1d4 rounds}.</p>"
         },
         "action->Primordial Balance": {
           "name": "Primordial Balance",
@@ -1137,7 +1147,7 @@
         },
         "action->Boneshaking Roar": {
           "name": "Boneshaking Roar",
-          "description": "<p>The saurian worldwatcher bellows, evoking the power of the primordial world.</p>\n<p>Non-dinosaur creatures within @Template[emanation|distance:30]{30 feet} take @Damage[10d6[sonic]] damage (@Check[fortitude|dc:38|basic] save). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} [[/r 1d4 #Stunned Value]]{1d4} on a critical failure).</p>\n<p>The saurian can't use Boneshaking Roar again for [[/gmr 1d4 #Recharge Boneshaking Roar]]{1d4 rounds}.</p>"
+          "description": "<p>The saurian worldwatcher bellows, evoking the power of the primordial world.</p>\n<p>Non-dinosaur creatures within @Template[emanation|distance:30]{30 feet} take @Damage[10d6[sonic]|options:area-damage] damage (@Check[fortitude|dc:38|basic|options:area-effect] save). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} [[/r 1d4 #Stunned Value]]{1d4} on a critical failure).</p>\n<p>The saurian can't use Boneshaking Roar again for [[/gmr 1d4 #Recharge Boneshaking Roar]]{1d4 rounds}.</p>"
         },
         "action->Stunning Blow": {
           "name": "Stunning Blow",
@@ -1150,7 +1160,7 @@
       "publicNotes": "<p>For all their advancement in agriculture, horticulture, and animal husbandry, shoonies subscribe to a remarkably antiquated form of leadership; the role of hierarch is normally inherited, passed on to the oldest living child of the village's previous hierarch. In the instance that the village's hierarch does not produce an heir, the village holds a general election. Elected hierarchs hold the term for life and are just as highly regarded as hierarchs raised from birth. When the settlement comes under attack, it is up to the hierarch to decide when to fight and when to flee. In most cases, shoonies prefer to elect individuals with a preference toward the latter.</p>",
       "saveDetails": "blunt snout",
       "items": {
-        "consumable->Signal Arrows": {
+        "ammo->Signal Arrows": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.w2ENw2VMPcsbif8g]\nSignal Arrows"
         },
         "strike-melee->Staff": {
@@ -1268,7 +1278,7 @@
           "description": "<p>10 feet. Any creature that starts its turn in or enters a square in the area must attempt a @Check[acrobatics|dc:30|traits:aura,action:balance] check to Balance. A creature that takes a Step doesn't need to roll this check.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:30], @Damage[4d10[bludgeoning]], Escape DC 26, Rupture 25</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:30], @Damage[4d10[bludgeoning]], [[/act escape dc=26]], Rupture 25</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Residual Grease": {
           "name": "Residual Grease",
@@ -1318,7 +1328,7 @@
         },
         "action->Necrotic Decay": {
           "name": "Necrotic Decay",
-          "description": "<p>When an urdefhan dies, its invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around the body.</p>\n<p>This gas deals @Damage[15d6[void]] damage to creatures in this area as their flesh curdles and rots as well (@Check[fortitude|dc:34|basic] save).</p>"
+          "description": "<p>When an urdefhan dies, its invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around the body.</p>\n<p>This gas deals @Damage[15d6[void]|options:area-damage] damage to creatures in this area as their flesh curdles and rots as well (@Check[fortitude|dc:34|basic|options:area-effect] save).</p>"
         },
         "action->Wicked Bite": {
           "name": "Wicked Bite",
@@ -1360,7 +1370,7 @@
         },
         "action->Necrotic Decay": {
           "name": "Necrotic Decay",
-          "description": "<p>When an urdefhan dies, its invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around the body.</p>\n<p>This gas deals @Damage[10d6[void]] damage to creatures in this area as their flesh curdles and rots as well (@Check[fortitude|dc:29|basic] save).</p>"
+          "description": "<p>When an urdefhan dies, its invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around the body.</p>\n<p>This gas deals @Damage[10d6[void]|options:area-damage] damage to creatures in this area as their flesh curdles and rots as well (@Check[fortitude|dc:29|basic|options:area-effect] save).</p>"
         },
         "action->Stoke the Fervent": {
           "name": "Stoke the Fervent",
@@ -1402,7 +1412,7 @@
         },
         "action->Necrotic Decay": {
           "name": "Necrotic Decay",
-          "description": "<p>When an urdefhan dies, its invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around the body.</p>\n<p>This gas deals @Damage[12d6[void]] damage to creatures in this area as their flesh curdles and rots as well (@Check[fortitude|dc:32|basic] save).</p>"
+          "description": "<p>When an urdefhan dies, its invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[emanation|distance:5] around the body.</p>\n<p>This gas deals @Damage[12d6[void]|options:area-damage] damage to creatures in this area as their flesh curdles and rots as well (@Check[fortitude|dc:32|basic|options:area-effect] save).</p>"
         },
         "action->Deadly Aim": {
           "name": "Deadly Aim",
@@ -1477,7 +1487,7 @@
         },
         "action->Soulfire Breath": {
           "name": "Soulfire Breath",
-          "description": "<p>The vavakia exhales ghostly green fire in a @Template[cone|distance:60].</p>\n<p>Living creatures in the area take @Damage[20d6[void]] damage (@Check[reflex|dc:42|basic] save). A good creature that fails this save is becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 minute (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} on a critical failure).</p>\n<p>A creature slain by Soulfire Breath can't be resurrected except by powerful magic such as a @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish} spell.</p>\n<p>The vavakia can't use Soulfire Breath again for [[/gmr 1d4 #Recharge Soulfire Breath]]{1d4 rounds}.</p>"
+          "description": "<p>The vavakia exhales ghostly green fire in a @Template[cone|distance:60].</p>\n<p>Living creatures in the area take @Damage[20d6[void]|options:area-damage] damage (@Check[reflex|dc:42|basic|options:area-effect,inflicts:stupefied] save). A good creature that fails this save is becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 minute (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} on a critical failure).</p>\n<p>A creature slain by Soulfire Breath can't be resurrected except by powerful magic such as a @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish} spell.</p>\n<p>The vavakia can't use Soulfire Breath again for [[/gmr 1d4 #Recharge Soulfire Breath]]{1d4 rounds}.</p>"
         },
         "action->Soulfire Inhalation": {
           "name": "Soulfire Inhalation",
@@ -1489,50 +1499,6 @@
         },
         "action->Trample": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Large or smaller, claw, @Check[reflex|dc:40|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
-        }
-      }
-    },
-    "Vermlek": {
-      "name": "Vermlek",
-      "acDetails": "(19 while inhabiting a body)",
-      "languages": "telepathy 100 feet",
-      "publicNotes": "<p>Vermleks, also called worm demons, manifest from the souls of mortals who desecrated the dead, such as grave robbers or necromancers. These fiends take their violations to a new extreme, using their demonic powers to horrifically core their living victims and don the flesh-husk that remains.</p>\n<p>In its natural form, a vermlek resembles an oversized pinkish worm with four long tails that end in writhing fibrils. Its mouth splits into four segments like a profane tulip lined with rows of dozens of pointed teeth. More often than not, however, these fiends are encountered only after they have crawled into the body of a dead humanoid and made the hollowed-out flesh their temporary host. Vermleks use their powers of deception and disguise to infiltrate mortal settlements and influence unwitting acquaintances of the bodies they wear. Particularly intelligent or conniving vermleks might even reach stations of real power within the ranks of an army or government, at which point exposure of their true form can wreak havoc among the populace they have so thoroughly duped.</p>",
-      "skillSpecialDeception": {
-        "0": {
-          "label": "to impersonate while inhabiting a body"
-        }
-      },
-      "items": {
-        "spellcastingEntry->Divine Innate Spells": {
-          "name": "Divine Innate Spells"
-        },
-        "strike-melee->Bite": {
-          "name": "Bite"
-        },
-        "strike-melee->Fist": {
-          "name": "Fist"
-        },
-        "strike-melee->Longsword": {
-          "name": "Longsword"
-        },
-        "action->Telepathy 100 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
-        },
-        "action->Recoil from Wasted Opportunities": {
-          "name": "Recoil from Wasted Opportunities",
-          "description": "<p>Worm demons can't stand the sight of a good meal presented and then swiftly taken away. Whenever a @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} creature within sight of the worm demon has its dying condition removed, the worm demon takes @Damage[1d6[mental]] damage.</p>"
-        },
-        "action->Abandon Body": {
-          "name": "Abandon Body",
-          "description": "<p><strong>Requirements</strong> The worm demon is Inhabiting a Body</p>\n<hr />\n<p><strong>Effect</strong> The worm demon crawls out of the body it is inhabiting, devouring much of the body's remaining flesh and regaining 10 Hit Points in the process. The corpse it leaves behind is little more than a husk.</p>"
-        },
-        "action->Inhabit Body": {
-          "name": "Inhabit Body",
-          "description": "<p>The worm demon crawls into the body of an adjacent dead Medium humanoid, consuming the bulk of the victim's skeleton and internal organs as it does so and cramming itself into the cavity.</p>\n<p>As long as it Inhabits a Body, the worm demon loses its bite attack, can wield weapons like a humanoid, gains a +3 circumstance bonus to AC, and gains a +3 circumstance bonus to <span data-pf2-action=\"impersonate\">Deception</span> checks to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} the creature it is inhabiting. It cannot use this ability if it is already Inhabiting a Body.</p>"
-        },
-        "action->Unsettling Movement": {
-          "name": "Unsettling Movement",
-          "description": "<p>Whenever the vermlek Abandons a Body or Inhabits a Body, all creatures within @Template[emanation|distance:30]{30 feet} who can see the vermlek must succeed at a @Check[will|dc:19] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. On a critical failure, the creature is frightened 1 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p>Regardless of the result, creatures are immune to the same vermlek's unsettling movement for 24 hours.</p>"
         }
       }
     },
@@ -1685,11 +1651,11 @@
         },
         "action->Stench": {
           "name": "Stench",
-          "description": "<p>30 feet. A creature entering the aura must attempt a @Check[fortitude|dc:16] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, the creature also takes a -5-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths' stench for 1 minute.</p>\n<p>A xulgath bilebearer can activate or deactivate its stench aura as a free action.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uB3CVn3momZO9h0L]{Effect: Xulgath Stench}</p>"
+          "description": "<p>30 feet. A creature entering the aura must attempt a @Check[fortitude|dc:16] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, the creature also takes a –5-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths' stench for 1 minute.</p>\n<p>A xulgath bilebearer can activate or deactivate its stench aura as a free action.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uB3CVn3momZO9h0L]{Effect: Xulgath Stench}</p>"
         },
         "action->Putrid Blast": {
           "name": "Putrid Blast",
-          "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> All adjacent creatures must attempt a @Check[fortitude|dc:18] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) until the end of its next turn and takes a -2 circumstance penalty to Fortitude saves against xulgath bile for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.hQsqr2sRPp9rNm4U]{Effect: Putrid Blast}</p>"
+          "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> All adjacent creatures must attempt a @Check[fortitude|dc:18|options:inflicts:slowed] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) until the end of its next turn and takes a -2 circumstance penalty to Fortitude saves against xulgath bile for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.hQsqr2sRPp9rNm4U]{Effect: Putrid Blast}</p>"
         },
         "action->Xulgath Bile": {
           "name": "Xulgath Bile",
@@ -1752,7 +1718,7 @@
         },
         "action->Stench": {
           "name": "Stench",
-          "description": "<p>30 feet. A creature that enters the area must attempt a @Check[fortitude|dc:28] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, the creature also takes a -5-foot status penalty to its Speeds for 1 round.</p>\n<p>While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition.</p>\n<p>A creature that succeeds at its save is temporarily immune to all xulgaths' stenches for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uB3CVn3momZO9h0L]{Effect: Xulgath Stench}</p>"
+          "description": "<p>30 feet. A creature that enters the area must attempt a @Check[fortitude|dc:28] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, the creature also takes a –5-foot status penalty to its Speeds for 1 round.</p>\n<p>While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition.</p>\n<p>A creature that succeeds at its save is temporarily immune to all xulgaths' stenches for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uB3CVn3momZO9h0L]{Effect: Xulgath Stench}</p>"
         },
         "action->Devourer's Dictum": {
           "name": "Devourer's Dictum",
@@ -1783,7 +1749,7 @@
         },
         "action->Self-Detonate": {
           "name": "Self-Detonate",
-          "description": "<p><strong>Requirements</strong> The gutrager has 45 or fewer HP</p>\n<hr />\n<p><strong>Effect</strong> The gutrager compresses its gut and explodes in a burst of viscera, dying instantly and dealing @Damage[8d8[acid]] damage to creatures and unattended objects in a @Template[emanation|distance:20] centered on the gutrager (@Check[reflex|dc:31|basic] save).</p>"
+          "description": "<p><strong>Requirements</strong> The gutrager has 45 or fewer HP</p>\n<hr />\n<p><strong>Effect</strong> The gutrager compresses its gut and explodes in a burst of viscera, dying instantly and dealing @Damage[8d8[acid]|options:area-damage] damage to creatures and unattended objects in a @Template[emanation|distance:20] centered on the gutrager (@Check[reflex|dc:31|basic|options:area-effect] save).</p>"
         },
         "action->Corrosive Kiss": {
           "name": "Corrosive Kiss",
@@ -1806,7 +1772,7 @@
         },
         "action->Stench": {
           "name": "Stench",
-          "description": "<p>30 feet. A creature entering the aura must attempt a @Check[fortitude|dc:21] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, the creature also takes a -5-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths' stench for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uB3CVn3momZO9h0L]{Effect: Xulgath Stench}</p>"
+          "description": "<p>30 feet. A creature entering the aura must attempt a @Check[fortitude|dc:21] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, the creature also takes a –5-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths' stench for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uB3CVn3momZO9h0L]{Effect: Xulgath Stench}</p>"
         },
         "action->Brutal Blow": {
           "name": "Brutal Blow",
@@ -1839,7 +1805,7 @@
         },
         "action->Stench": {
           "name": "Stench",
-          "description": "<p>30 feet. A creature entering the aura must attempt a @Check[fortitude|dc:24] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, the creature also takes a -5-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths' stench for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uB3CVn3momZO9h0L]{Effect: Xulgath Stench}</p>"
+          "description": "<p>30 feet. A creature entering the aura must attempt a @Check[fortitude|dc:24] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, the creature also takes a –5-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths' stench for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uB3CVn3momZO9h0L]{Effect: Xulgath Stench}</p>"
         },
         "action->Earthen Blow": {
           "name": "Earthen Blow",
@@ -1847,7 +1813,7 @@
         },
         "action->Earthen Torrent": {
           "name": "Earthen Torrent",
-          "description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Requirements</strong> The stoneliege is standing on or next to at least 10 cubic feet of dirt, stone, or other earthen material</p>\n<hr />\n<p><strong>Effect</strong> The stoneliege creates a violent wave of roiling earth. Creatures in a @Template[cone|distance:15] take @Damage[7d8[bludgeoning]] damage (@Check[reflex|dc:26|basic] save; on a critical failure, creatures are also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}).</p>"
+          "description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Requirements</strong> The stoneliege is standing on or next to at least 10 cubic feet of dirt, stone, or other earthen material</p>\n<hr />\n<p><strong>Effect</strong> The stoneliege creates a violent wave of roiling earth. Creatures in a @Template[cone|distance:15] take @Damage[7d8[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:26|basic|options:area-effect] save; on a critical failure, creatures are also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}).</p>"
         },
         "action->Stone Throes": {
           "name": "Stone Throes",
@@ -1932,6 +1898,11 @@
         "spell->Burning Hands": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]\nBurning Hands"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "strike-melee->Candle Fingers": {
           "name": "Candle Fingers"
         },
@@ -1944,11 +1915,11 @@
         },
         "action->Vulnerability to Extinguishing": {
           "name": "Vulnerability to Extinguishing",
-          "description": "<p>A yaganty who is doused with water or otherwise has their candle fingers extinguished takes @Damage[3d6[persistent,mental]], becomes @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1}, and screams in agony until they reignite their candles (typically by casting @UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Produce Flame} and lighting their fingers with an Interact action).</p>"
+          "description": "<p>A yaganty who is doused with water or otherwise has their candle fingers extinguished takes @Damage[3d6[persistent,mental]], becomes @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1}, and screams in agony until they reignite their candles (typically by casting @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition} and lighting their fingers with an Interact action).</p>"
         },
         "action->Fling Wax": {
           "name": "Fling Wax",
-          "description": "<p>The yaganty whips a stream of scalding wax in a @Template[line|distance:30]. Each glob deals @Damage[1d6[persistent,fire]] damage. An affected creature or adjacent ally can remove one glob of wax by spending an Interact action to scrape it off. The yaganty can't use Fling Wax again for [[/gmr 1d4 #Recharge Fling Wax]]{1d4 rounds}. Creatures in the area must attempt a @Check[reflex|dc:27|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is splattered with [[/r 1d2+1]]{1d2+1 globs of wax}.</p>\n<p><strong>Failure</strong> The creature is splattered with [[/r 1d4+2]]{1d4+2 globs of wax}.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until it removes the globs of wax.</p>"
+          "description": "<p>The yaganty whips a stream of scalding wax in a @Template[line|distance:30]. Each glob deals @Damage[1d6[persistent,fire]] damage. An affected creature or adjacent ally can remove one glob of wax by spending an Interact action to scrape it off. The yaganty can't use Fling Wax again for [[/gmr 1d4 #Recharge Fling Wax]]{1d4 rounds}. Creatures in the area must attempt a @Check[reflex|dc:27|options:area-effect,damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is splattered with [[/r 1d2+1]]{1d2+1 globs of wax}.</p>\n<p><strong>Failure</strong> The creature is splattered with [[/r 1d4+2]]{1d4+2 globs of wax}.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until it removes the globs of wax.</p>"
         }
       }
     },
@@ -2004,10 +1975,6 @@
     "skillSpecialAthletics": {
       "converter": "translateSkillSpecial",
       "path": "system.skills.athletics.special"
-    },
-    "skillSpecialDeception": {
-      "converter": "translateSkillSpecial",
-      "path": "system.skills.deception.special"
     },
     "skillSpecialStealth": {
       "converter": "translateSkillSpecial",

@@ -120,11 +120,11 @@
         },
         "action->Plant Empathy": {
           "name": "Plant Empathy",
-          "description": "<p>The ardande gardener can use Diplomacy to Make an Impression and make very simple requests of plants.</p>"
+          "description": "<p>The ardande gardener can use Diplomacy to [[/act make-an-impression]] and make very simple [[/act request]]{Requests} of plants.</p>"
         },
         "action->Decompose": {
           "name": "Decompose",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Void energy seeps out of the ardande gardener, decaying everything within a @Template[emanation|distance:5] and causing plants and foliage to age and decompose. Natural difficult terrain is destroyed, and creatures in the area with the plant or wood trait take @Damage[1d6[void]] damage (@Check[fortitude|dc:16|basic]).</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Void energy seeps out of the ardande gardener, decaying everything within a @Template[emanation|distance:5] and causing plants and foliage to age and decompose. Natural difficult terrain is destroyed, and creatures in the area with the plant or wood trait take @Damage[1d6[void]|options:area-damage] damage (@Check[fortitude|dc:16|basic|options:area-effect]).</p>"
         }
       }
     },
@@ -242,7 +242,7 @@
     },
     "Avalanche Legion": {
       "name": "Avalanche Legion",
-      "hpDetails": "16 squares Thresholds 160 (12 squares), 80 (8 squares)",
+      "hpDetails": "16 squares Thresholds 160 (3 segments), 80 (2 segments)",
       "publicNotes": "<p>Elementals of the Plane of Earth can be fiercely territorial. Some more solitary elementals protect their lairs on their own, but occasionally others band together to defend larger regions that serve as shared turf. Notable among these alliances are avalanche legions, who patrol the perimeter of these shared territories, driving off intruders who dare to trespass upon their home ground.</p>\n<h2>Familial Instincts</h2>\n<p>Although elementals don't reproduce like typical creatures, living landslides sometimes develop bonds with smaller or weaker earth elementals, such as earth wisps, living boulders, and sod hounds. When several of these smaller elementals are gathered in one place, living landslides who cared for the creatures often continue to watch over their wards. Avalanche legions sometimes form from these gatherings, as multiple living landslides join forces to protect the smaller elementals.</p>",
       "speed": "earth glide, troop movement",
       "items": {
@@ -262,11 +262,11 @@
         },
         "action->Pummeling Boulders": {
           "name": "Pummeling Boulders",
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The avalanche legion unleashes an onslaught of blows against each enemy within 5 feet (@Check[reflex|dc:28|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+8)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+11)[bludgeoning]] damage</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The avalanche legion unleashes an onslaught of blows against each enemy in a @Template[emanation|distance:5] (@Check[reflex|dc:28|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+8)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+11)[bludgeoning]|options:area-damage] damage</p>"
         },
         "action->Spinning Stones": {
           "name": "Spinning Stones",
-          "description": "<p>The avalanche legion spins in place, kicking up a barrage of stones. Each creature in a @Template[burst|distance:10] within 30 feet of the troop takes @Damage[(2d12+10)[bludgeoning]] damage (@Check[reflex|dc:28|basic] save). When the troop is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>"
+          "description": "<p>The avalanche legion spins in place, kicking up a barrage of stones. Each creature in a @Template[burst|distance:10] within 30 feet of the troop takes @Damage[(1d12+8)[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:28|basic|options:area-effect] save). When the troop is reduced to 2 or fewer segments, this area decreases to a @Template[burst|distance:5].</p>"
         },
         "action->Trample into the Earth": {
           "name": "Trample into the Earth",
@@ -280,7 +280,7 @@
     },
     "Blustering Gale": {
       "name": "Blustering Gale",
-      "hpDetails": "(16 squares); Thresholds 100 (12 squares), 50 (8 squares)",
+      "hpDetails": "(16 squares); Thresholds 100 (3 segments), 50 (2 segments)",
       "publicNotes": "<p>Blustering gales are among the least of air elementals: spirits of the small breezes who sometimes arise in the wake of mightier creatures, like the downdraft of a swallow's wing or the sharp expulsion of a vigorous cough. Unwilling or unable to act effectively alone, they form into \"gales,\" collections of weak elementals that use their combined power to hurl insults and pummel those who defy them in a misguided attempt to rise above their humble origins.</p>\n<p>Together, they force other creatures to do their bidding, then move on when they grow bored. While most gales claim their abandoned minions were useless, in truth, blustering gales lack the commanding presence and confidence to retain vassals for long.</p>\n<h2>Lackeys</h2>\n<p>Blustering gales sometimes serve as heralds or enforcers for other creatures (including cloud dragons, jaathooms, and other powerful air elementals), bullying and intimidating others at the behest of a more influential overlord. While blustering gales often feel secure and confident in these roles, they rankle at subservience, and rarely feel content with such an arrangement for long.</p>",
       "speed": "troop movement",
       "items": {
@@ -293,7 +293,7 @@
         },
         "action->Pummeling Winds": {
           "name": "Pummeling Winds",
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The blustering gale bashes, batters, and pummels each adjacent enemy (@Check[reflex|dc:27|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+12)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+15)[bludgeoning]] damage</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The blustering gale bashes, batters, and pummels each adjacent enemy (@Check[reflex|dc:27|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+12)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+15)[bludgeoning]] damage</p>"
         },
         "action->Troop Movement": {
           "name": "Troop Movement",
@@ -301,7 +301,7 @@
         },
         "action->Windstorm": {
           "name": "Windstorm",
-          "description": "<p>The blustering gale exhales as a unit, creating a powerful windstorm. This windstorm is a @Template[burst|distance:10] within 100 feet that deals @Damage[(3d8+10)[bludgeoning]] damage (@Check[reflex|dc:30|basic] save). Creatures that fail their saving throw are pushed 10 feet in any direction (plus knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a critical failure). When the troop is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5] and the distance pushed decreases to 5 feet.</p>"
+          "description": "<p>The blustering gale exhales as a unit, creating a powerful windstorm. This windstorm is a @Template[burst|distance:10] within 100 feet that deals @Damage[(3d8+10)[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:30|basic|options:area-effect,forced-movement,inflicts:prone] save). Creatures that fail their saving throw are pushed 10 feet in any direction (plus knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a critical failure). When the troop is reduced to 2 or fewer segments, this area decreases to a @Template[burst|distance:5] and the distance pushed decreases to 5 feet.</p>"
         }
       }
     },
@@ -330,11 +330,11 @@
         },
         "action->Freeze and Shatter": {
           "name": "Freeze and Shatter",
-          "description": "<p>If the boiling spring is destroyed with cold damage, their body freezes over and explodes, sending out a wave of frigid air and ice shards that deal @Damage[4d6[piercing],4d6[cold]]{4d6 piercing damage plus 4d6 cold damage} to creatures in a @Template[emanation|distance:20] (@Check[reflex|dc:36|basic] save).</p>"
+          "description": "<p>If the boiling spring is destroyed with cold damage, their body freezes over and explodes, sending out a wave of frigid air and ice shards that deal @Damage[4d6[piercing],4d6[cold]|options:area-damage]{4d6 piercing damage plus 4d6 cold damage} to creatures in a @Template[emanation|distance:20] (@Check[reflex|dc:36|basic|options:area-effect] save).</p>"
         },
         "action->Scalding Breath": {
           "name": "Scalding Breath",
-          "description": "<p>The boiling spring breathes out a cloud of steam in a @Template[cone|distance:30] that deals @Damage[14d6[fire]] damage to each creature in the area (@Check[reflex|dc:33|basic] save). The boiling spring can't use Scalding Breath again for [[/gmr 1d4 #Recharge Scalding Breath]]{1d4 rounds}.</p>"
+          "description": "<p>The boiling spring breathes out a cloud of steam in a @Template[cone|distance:30] that deals @Damage[14d6[fire]|options:area-damage] damage to each creature in the area (@Check[reflex|dc:33|basic|options:area-effect] save). The boiling spring can't use Scalding Breath again for [[/gmr 1d4 #Recharge Scalding Breath]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -429,11 +429,11 @@
         },
         "action->Molten Demise": {
           "name": "Molten Demise",
-          "description": "<p>When a brass bastion is destroyed, its body explodes in a flurry of elemental flame and superheated brass, dealing @Damage[4d6[piercing],4d6[fire]]{4d6 piercing damage and 4d6 fire} damage to creatures in a @Template[emanation|distance:20] (@Check[reflex|dc:34|basic] save).</p>"
+          "description": "<p>When a brass bastion is destroyed, its body explodes in a flurry of elemental flame and superheated brass, dealing @Damage[4d6[piercing],4d6[fire]|options:area-damage]{4d6 piercing damage and 4d6 fire damage} to creatures in a @Template[emanation|distance:20] (@Check[reflex|dc:34|basic|options:area-effect] save).</p>"
         },
         "action->Breathe Smoke": {
           "name": "Breathe Smoke",
-          "description": "<p>The brass bastion exhales superheated smoke and cinders in a @Template[burst|distance:10] centered on a corner of its space. The smoke persists for 1 round. Any creature in the area (or that later enters the area) takes @Damage[15d6[fire]] damage (@Check[reflex|dc:34|basic] save); on a critical failure, the creature catches fire, taking @Damage[2d6[persistent,fire]] damage as well. All creatures in the smoke become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the smoke become concealed to creatures within it. The brass bastion can't Breathe Smoke again for [[/gmr 1d4 #Recharge Breathe Smoke]]{1d4 rounds}.</p>"
+          "description": "<p>The brass bastion exhales superheated smoke and cinders in a @Template[burst|distance:10] centered on a corner of its space. The smoke persists for 1 round. Any creature in the area (or that later enters the area) takes @Damage[15d6[fire]|options:area-damage] damage (@Check[reflex|dc:34|basic|options:area-effect] save); on a critical failure, the creature catches fire, taking @Damage[2d6[persistent,fire]] damage as well. All creatures in the smoke become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the smoke become concealed to creatures within it. The brass bastion can't Breathe Smoke again for [[/gmr 1d4 #Recharge Breathe Smoke]]{1d4 rounds}.</p>"
         },
         "action->Heat Weapon": {
           "name": "Heat Weapon",
@@ -553,7 +553,7 @@
         },
         "action->Flash Flood": {
           "name": "Flash Flood",
-          "description": "<p>Water surges out of the coldmire pond in a @Template[emanation|distance:20] and crashes into nearby creatures, knocking them off their feet. Creatures in the area, as well as any creatures currently sharing the coldmire pond's space, take @Damage[4d8[bludgeoning]] damage and are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} (@Check[reflex|dc:26|basic] save). Creatures standing inside the coldmire pond treat their result as one step worse.</p>"
+          "description": "<p>Water surges out of the coldmire pond in a @Template[emanation|distance:20] and crashes into nearby creatures, knocking them off their feet. Creatures in the area, as well as any creatures currently sharing the coldmire pond's space, take @Damage[4d8[bludgeoning]|options:area-damage] damage and are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} (@Check[reflex|dc:26|basic|options:area-effect] save). Creatures standing inside the coldmire pond treat their result as one step worse.</p>"
         }
       }
     },
@@ -566,7 +566,7 @@
         },
         "action->Plasmatic Form": {
           "name": "Plasmatic Form",
-          "description": "<p>Unlike other incorporeal creatures, a comozant wyrd can't move into or through solid objects. If a comozant wyrd isn't adjacent to a solid object or surface of its size or larger at the end of its turn, it loses [[/r 10]] HP. This HP loss cannot be mitigated or avoided in any way.</p>"
+          "description": "<p>Unlike other incorporeal creatures, a comozant wyrd can't move into or through solid objects. If a comozant wyrd isn't adjacent to a solid object or surface of its size or larger at the end of its turn, it loses @Damage[10[untyped]] HP. This HP loss cannot be mitigated or avoided in any way.</p>"
         },
         "action->Illuminating Flames": {
           "name": "Illuminating Flames",
@@ -726,7 +726,7 @@
         },
         "action->Stone Grip": {
           "name": "Stone Grip",
-          "description": "<p>Great fingers of stone arise to grasp up to two Medium or smaller creatures on the ground in the outcrop's aura. Each target must succeed at a @Check[reflex|dc:33] save or be @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the stone hand (or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} on a critical failure; @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 33). A creature grabbed or restrained by a stone hand at the end of its turn becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} or increases its existing slowed condition by 1. When a creature is unable to act due to the slowed condition from this effect, the creature is permanently petrified.</p>"
+          "description": "<p>Great fingers of stone arise to grasp up to two Medium or smaller creatures on the ground in the outcrop's aura. Each target must succeed at a @Check[reflex|dc:33] save or be @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the stone hand (or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} on a critical failure; [[/act escape dc=33]]). A creature grabbed or restrained by a stone hand at the end of its turn becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} or increases its existing slowed condition by 1. When a creature is unable to act due to the slowed condition from this effect, the creature is permanently @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified}.</p>"
         }
       }
     },
@@ -745,7 +745,7 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(1d12+7)[bludgeoning]], @Check[fortitude|dc:30|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:30], @Damage[(8d10)[bludgeoning]] damage, Escape DC 27, Rupture 20</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:30], @Damage[(8d10)[bludgeoning]] damage, [[/act escape dc=27]], Rupture 20</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Entangling Growth": {
           "name": "Entangling Growth",
@@ -847,9 +847,7 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Interplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe only)": {
-          "name": "Interplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe only)",
-          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
-          "target": "up to 8 willing creatures"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nInterplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe only)"
         },
         "spell->Control Water (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.zfn5RqAdF63neqpP]\nControl Water (At Will)"
@@ -862,10 +860,6 @@
         },
         "spell->Truespeech (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTruespeech (Constant)"
-        },
-        "spell->Mirage": {
-          "name": "Mirage",
-          "description": "<p>You create an illusion that causes natural terrain to look, sound, feel, and smell like a different kind of terrain. This doesn't disguise any structures or creatures in the area.</p>\n<p>Any creature that touches the illusion or uses the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to examine it can attempt to disbelieve your illusion.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> Your image can also disguise structures or create illusory structures (but still doesn't disguise creatures).</p>"
         },
         "spell->Befitting Attire (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.q5qmNn144ZJGxnvJ]\nBefitting Attire (At Will)"
@@ -997,7 +991,7 @@
         },
         "action->Attach": {
           "name": "Attach",
-          "description": "<p>The geode Leaps up to 15 feet and makes a crystal teeth Strike. If it hits a creature larger than itself, it can attach to that creature. Doing so is like Grabbing the creature (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 17), but the geode moves with that creature rather than holding it in place. The geode is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while attached. If the geode is killed or pushed away while attached to a creature, that creature takes @Damage[1[bleed]]{1 persistent bleed} damage. Escaping the attached geode or removing the geode in other ways doesn't cause bleed damage.</p>"
+          "description": "<p>The geode Leaps up to 15 feet and makes a crystal teeth Strike. If it hits a creature larger than itself, it can attach to that creature. Doing so is like Grabbing the creature ([[/act escape dc=17]]), but the geode moves with that creature rather than holding it in place. The geode is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while attached. If the geode is killed or pushed away while attached to a creature, that creature takes @Damage[1[bleed]]{1 persistent bleed} damage. Escaping the attached geode or removing the geode in other ways doesn't cause bleed damage.</p>"
         },
         "action->Gnaw": {
           "name": "Gnaw",
@@ -1024,11 +1018,11 @@
         },
         "action->Seed Volley": {
           "name": "Seed Volley",
-          "description": "<p>The harvest regiment spits an orderly volley of hard seeds drawn from within their bodies. This volley is a @Template[burst|distance:10] within 120 feet that deals @Damage[3d10[bludgeoning]] damage (@Check[reflex|dc:23|basic] save). When the harvest regiment is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>"
+          "description": "<p>The harvest regiment spits an orderly volley of hard seeds drawn from within their bodies. This volley is a @Template[burst|distance:10] within 120 feet that deals @Damage[2d10[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:23|basic|options:area-effect] save). When the harvest regiment is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>"
         },
         "action->Shell Smash": {
           "name": "Shell Smash",
-          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round;</p>\n<hr />\n<p><strong>Effect</strong> The harvest regiment engages in a coordinated melee attack against each enemy within 5 feet, with a @Check[reflex|dc:23|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+3)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+9)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+12)[bludgeoning]] damage</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The harvest regiment engages in a coordinated melee attack against each enemy in a @Template[emanation|distance:5], with a @Check[reflex|dc:23|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+3)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+9)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+12)[bludgeoning]|options:area-damage] damage</p>"
         },
         "action->Troop Movement": {
           "name": "Troop Movement",
@@ -1045,9 +1039,7 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Interplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe Only)": {
-          "name": "Interplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe Only)",
-          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
-          "target": "up to 8 willing creatures"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nInterplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe Only)"
         },
         "spell->Truespeech (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTruespeech (Constant)"
@@ -1094,9 +1086,7 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Interplanar Teleport (At Will; To Astral Plane, Elemental Planes, or Universe Only)": {
-          "name": "Interplanar Teleport (At Will; To Astral Plane, Elemental Planes, or Universe Only)",
-          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
-          "target": "up to 8 willing creatures"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nInterplanar Teleport (At Will; To Astral Plane, Elemental Planes, or Universe Only)"
         },
         "weapon->+1 Striking Jambiya": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rQWaJhI5Bko5x14Z]\n+1 Striking Jambiya"
@@ -1149,9 +1139,7 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Interplanar Teleport (To Astral Plane, Elemental Planes, or the Universe Only)": {
-          "name": "Interplanar Teleport (To Astral Plane, Elemental Planes, or the Universe Only)",
-          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
-          "target": "up to 8 willing creatures"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nInterplanar Teleport (To Astral Plane, Elemental Planes, or the Universe Only)"
         },
         "spell->Truespeech (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTruespeech (Constant)"
@@ -1191,7 +1179,7 @@
         },
         "action->Stone Clutch": {
           "name": "Stone Clutch",
-          "description": "<p>When the jabali Pushes a creature into a stone barrier, the surface grips it with fingers of stone. The target must succeed at a @Check[reflex|dc:30] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the surface (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 36).</p>"
+          "description": "<p>When the jabali Pushes a creature into a stone barrier, the surface grips it with fingers of stone. The target must succeed at a @Check[reflex|dc:30] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the surface ([[/act escape dc=36]]).</p>"
         },
         "action->Stone Crush": {
           "name": "Stone Crush",
@@ -1214,9 +1202,7 @@
           "name": "All Made One Spells"
         },
         "spell->Interplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe only)": {
-          "name": "Interplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe only)",
-          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
-          "target": "up to 8 willing creatures"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nInterplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe only)"
         },
         "spell->Truespeech (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTruespeech (Constant)"
@@ -1281,9 +1267,7 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Interplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe Only)": {
-          "name": "Interplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe Only)",
-          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
-          "target": "up to 8 willing creatures"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nInterplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe Only)"
         },
         "spell->Nature's Pathway (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.F1qxaqsEItmBura2]\nNature's Pathway (At Will)"
@@ -1295,8 +1279,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]\nSpeak with Plants (Constant)"
         },
         "spell->One With Plants": {
-          "name": "One With Plants",
-          "description": "<p>You can either transform into a plant or merge with plant matter. While transformed, you can't move or affect anything outside the plant, but you can cast spells as long as they don't require line of effect beyond the plant. You can Dismiss this spell.</p>\n<ul>\n<li><strong>Merge with Plants</strong> The spell's duration is 10 minutes. While casting the spell, you must touch a plant with enough volume to fit you and your possessions or the spell is disrupted. While merged, you can hear, but not see, what's going on outside the plant. If the plant takes damage while you're inside it, you're expelled from the plant and take 10d6 damage. <em>Magic passage</em> expels you without dealing damage. The spell ends if you're ever outside the plant.</li>\n<li><strong>Turn into a Plant</strong> The spell's duration is 8 hours. You become a Large plant—typically a tree. Perception checks don't reveal your true nature, but a successful Nature or Survival check against your spell DC reveals that you appear to be a plant that is strangely new to the area. While in this form, you can observe everything around you, using your normal senses. As a plant, your AC is 20, and only status bonuses, status penalties, circumstance bonuses, and circumstance penalties affect you. Any successes and critical successes you roll on Reflex saves are failures\n</li>\n</ul>"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]\nOne With Plants"
         },
         "shield->Wooden Shield": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ezVp13Uw8cWW08Da]\n<p>Though they come in a variety of shapes and sizes, the protection offered by wooden shields comes from the stoutness of their materials. While wooden shields are less expensive than steel shields, they break more easily.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>3</td>\n<td>12</td>\n<td>6</td>\n</tr>\n</tbody>\n</table>"
@@ -1337,9 +1320,7 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Interplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe Only)": {
-          "name": "Interplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe Only)",
-          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
-          "target": "up to 8 willing creatures"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nInterplanar Teleport (At Will; To Astral Plane, Elemental Planes, or the Universe Only)"
         },
         "spell->Nature's Pathway (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.F1qxaqsEItmBura2]\nNature's Pathway (At Will)"
@@ -1354,8 +1335,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J6vNvrUT3b1hx2iA]\nEntangling Flora (At Will)"
         },
         "spell->One With Plants": {
-          "name": "One With Plants",
-          "description": "<p>You can either transform into a plant or merge with plant matter. While transformed, you can't move or affect anything outside the plant, but you can cast spells as long as they don't require line of effect beyond the plant. You can Dismiss this spell.</p>\n<ul>\n<li><strong>Merge with Plants</strong> The spell's duration is 10 minutes. While casting the spell, you must touch a plant with enough volume to fit you and your possessions or the spell is disrupted. While merged, you can hear, but not see, what's going on outside the plant. If the plant takes damage while you're inside it, you're expelled from the plant and take 10d6 damage. <em>Magic passage</em> expels you without dealing damage. The spell ends if you're ever outside the plant.</li>\n<li><strong>Turn into a Plant</strong> The spell's duration is 8 hours. You become a Large plant—typically a tree. Perception checks don't reveal your true nature, but a successful Nature or Survival check against your spell DC reveals that you appear to be a plant that is strangely new to the area. While in this form, you can observe everything around you, using your normal senses. As a plant, your AC is 20, and only status bonuses, status penalties, circumstance bonuses, and circumstance penalties affect you. Any successes and critical successes you roll on Reflex saves are failures\n</li>\n</ul>"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]\nOne With Plants"
         },
         "shield->Wooden Shield": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ezVp13Uw8cWW08Da]\n<p>Though they come in a variety of shapes and sizes, the protection offered by wooden shields comes from the stoutness of their materials. While wooden shields are less expensive than steel shields, they break more easily.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>3</td>\n<td>12</td>\n<td>6</td>\n</tr>\n</tbody>\n</table>"
@@ -1449,6 +1429,9 @@
         "spell->Wall of Stone (Echo the Past)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.kOa055FIrO9Smnya]\nWall of Stone (Echo the Past)"
         },
+        "strike-melee->Ancient Stone": {
+          "name": "Ancient Stone"
+        },
         "action->Tremorsense (Imprecise) 60 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense (Imprecise) 60 feet"
         },
@@ -1458,7 +1441,7 @@
         },
         "action->Bury": {
           "name": "Bury",
-          "description": "<p>Any creature hit by the locus's ancient stone Strike is partially buried in a tide of earth and rock, becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 34).</p>"
+          "description": "<p>Any creature hit by the locus's ancient stone Strike is partially buried in a tide of earth and rock, becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} ([[/act escape dc=34]]).</p>"
         },
         "action->Echo the Past": {
           "name": "Echo the Past",
@@ -1494,7 +1477,7 @@
           "description": "<p>The living grove can @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} in natural environments even if it doesn't have cover. While Hiding, its root system is safely covered in dirt, granting the grove a +3 status bonus to AC. A critical hit cracks this protective layer of earth to disperse in the wind, ending the effect.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:22], @Damage[5d8[bludgeoning]] damage, Escape DC 20, Rupture 10</p>\n<p>A creature Engulfed by the living grove must also attempt a @Check[fortitude|dc:22|basic] save as it's battered between the thin, tightly packed trunks.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 4}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:22], @Damage[5d8[bludgeoning]] damage, [[/act escape dc=20]], Rupture 10</p>\n<p>A creature Engulfed by the living grove must also attempt a @Check[fortitude|dc:22|basic] save as it's battered between the thin, tightly packed trunks.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 4}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         }
       }
     },
@@ -1553,11 +1536,11 @@
           "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> A creature hits the living magma with a melee weapon</p>\n<hr />\n<p><strong>Effect</strong> The living magma attempts an @Check[athletics|defense:athletics] check against the triggering creature's Athletics DC. On a success, the living magma traps the weapon in its body and pulls it from the attacker's grasp. A creature can Interact to retrieve the weapon, but the attempt fails unless the creature succeeds at an @Check[athletics|against:fortitude|rollerRole:target] check against the living magma's Fortitude DC (typically 36). If the living magma uses Engulf, it also absorbs all trapped weapons, rendering them unreachable until it dies.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:33], @Damage[2d10[bludgeoning],4d6[fire]] damage, Escape DC 33, Rupture 25</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:33], @Damage[2d10[bludgeoning],4d6[fire]] damage, [[/act escape dc=33]], Rupture 25</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Launch Lava": {
           "name": "Launch Lava",
-          "description": "<p>The living magma hurls an exploding glob of lava up to 120 feet. Each creature in a @Template[burst|distance:10] takes @Damage[7d6[fire]] damage (@Check[reflex|dc:33|basic] save).</p>"
+          "description": "<p>The living magma hurls an exploding glob of lava up to 120 feet. Each creature in a @Template[burst|distance:10] takes @Damage[7d6[fire]|options:area-damage] damage (@Check[reflex|dc:33|basic|options:area-effect] save).</p>"
         },
         "action->Reignite": {
           "name": "Reignite",
@@ -1587,7 +1570,7 @@
         },
         "action->Take Root": {
           "name": "Take Root",
-          "description": "<p><strong>Requirements</strong> The lomori sprout is on the ground</p>\n<hr />\n<p><strong>Effect</strong> The lomori sprout plants themself in the ground. Grasping roots erupt from the ground in a @Template[burst|distance:5] within 60 feet of the lomori sprout, dealing @Damage[4d4[bludgeoning]] damage (@Check[reflex|dc:20|basic] save) to creatures in the area; on a failed save, a creature gains the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition until it Escapes (DC 20). The roots also make the area difficult terrain for 1 minute, after which they decompose into fertile mulch; the area is no longer difficult terrain, and any creatures still immobilized by the roots automatically @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}.</p>"
+          "description": "<p><strong>Requirements</strong> The lomori sprout is on the ground</p>\n<hr />\n<p><strong>Effect</strong> The lomori sprout plants themself in the ground. Grasping roots erupt from the ground in a @Template[burst|distance:5] within 60 feet of the lomori sprout, dealing @Damage[4d4[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:20|basic|options:area-effect,inflicts:immobilized] save) to creatures in the area; on a failed save, a creature gains the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition until it [[/act escape dc=20]]{Escapes}. The roots also make the area difficult terrain for 1 minute, after which they decompose into fertile mulch; the area is no longer difficult terrain, and any creatures still immobilized by the roots automatically Escape.</p>"
         },
         "lore->Gardening Lore": {
           "name": "Gardening Lore"
@@ -1618,7 +1601,7 @@
         },
         "action->Scream": {
           "name": "Scream",
-          "description": "<p>The melomach unleashes a guttural, ear-piercing wail. All creatures in a @Template[cone|distance:120] take @Damage[7d12[sonic]] damage with a @Check[fortitude|dc:32] save.</p>\n<p>The melomach can't Scream again for [[/gmr 1d4 #Recharge Scream]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage, is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}, and is deafened permanently.</p>"
+          "description": "<p>The melomach unleashes a guttural, ear-piercing wail. All creatures in a @Template[cone|distance:120] take @Damage[7d12[sonic]|options:area-damage] damage with a @Check[fortitude|dc:32|options:area-effect,damaging-effect,inflicts:deafened,inflicts:stunned] save.</p>\n<p>The melomach can't Scream again for [[/gmr 1d4 #Recharge Scream]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage, is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}, and is deafened permanently.</p>"
         }
       }
     },
@@ -1744,7 +1727,7 @@
         },
         "action->Self-Destruct": {
           "name": "Self-Destruct",
-          "description": "<p>When the munsahir is reduced to 0 HP, their armor explodes at the start of their next turn, dealing @Damage[5d6[fire]] damage in a @Template[emanation|distance:10] (@Check[reflex|dc:19|basic]).</p>"
+          "description": "<p>When the munsahir is reduced to 0 HP, their armor explodes at the start of their next turn, dealing @Damage[5d6[fire]|options:area-damage] damage in a @Template[emanation|distance:10] (@Check[reflex|dc:19|basic|options:area-effect]).</p>"
         },
         "action->Blazing Rush": {
           "name": "Blazing Rush",
@@ -1778,7 +1761,7 @@
         },
         "action->Self-Destruct": {
           "name": "Self-Destruct",
-          "description": "<p>When the munsahir is reduced to 0 HP, their armor explodes at the start of their next turn, dealing @Damage[5d6[fire]] damage in a @Template[emanation|distance:10] (@Check[reflex|dc:19|basic]).</p>"
+          "description": "<p>When the munsahir is reduced to 0 HP, their armor explodes at the start of their next turn, dealing @Damage[5d6[fire]|options:area-damage] damage in a @Template[emanation|distance:10] (@Check[reflex|dc:19|basic|options:area-effect]).</p>"
         },
         "action->Burning Touch": {
           "name": "Burning Touch",
@@ -1862,7 +1845,7 @@
         },
         "action->Engulf (Swarm Form)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\nEngulf (Swarm Form)",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:27], @Damage[(2d8+6)[bludgeoning]] damage, Escape DC 27, Rupture 18</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:27], @Damage[(2d8+6)[bludgeoning]] damage, [[/act escape dc=27]], Rupture 18</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Swarm Form": {
           "name": "Swarm Form",
@@ -1964,6 +1947,7 @@
     "Ore Louse": {
       "name": "Ore Louse",
       "publicNotes": "<p>Ore lice are six-legged insectile creatures that roost either just beneath or above the water's surface. They're highly territorial toward both strangers and each other, able to detect an intruder through the ripples in the water. Due to their diet, ore lice have incredibly tough chitin that's infused with metal. Cannibalism between ore lice is common when they're unable to locate other prey.</p>\n<p>Though there are far more suitable environments for ore lice bordering the Plane of Air, the creatures are often found where the Plane of Earth meets the Plane of Water. This was a mystery that puzzled many—until the Plane of Metal returned between the Planes of Earth and Water. Planar researchers realized that ore lice must have hunted here before the planar schism. On the Plane of Metal, ore lice often appear in horror stories chasing down metal elementals and ferociously devouring them. Their connection to Ferrumnestra adds to their infamy.</p>",
+      "senses": "metal scent 30 feet",
       "speed": "water stride",
       "items": {
         "strike-melee->Mandibles": {
@@ -1981,7 +1965,7 @@
         },
         "action->Consume Living Metal": {
           "name": "Consume Living Metal",
-          "description": "<p><strong>Requirements</strong> The ore louse is adjacent to a creature that died within the last hour and had the metal trait or was another ore louse</p>\n<hr />\n<p><strong>Effect</strong> An ore louse can replenish its health by eating the remains of its kin or a once-living metal creature. The ore louse feasts upon the corpse, regaining 3d6 Hit Points. The ore louse can regain Hit Points from a given corpse only once.</p>"
+          "description": "<p><strong>Requirements</strong> The ore louse is adjacent to a creature that died within the last hour and had the metal trait or was another ore louse</p>\n<hr />\n<p><strong>Effect</strong> An ore louse can replenish its health by eating the remains of its kin or a once-living metal creature. The ore louse feasts upon the corpse, regaining @Damage[3d6[healing]] Hit Points. The ore louse can regain Hit Points from a given corpse only once.</p>"
         },
         "action->Metal Snack": {
           "name": "Metal Snack",
@@ -1989,7 +1973,7 @@
         },
         "action->Rust": {
           "name": "Rust",
-          "description": "<p>An ore louse's Strikes causes metal to rapidly rust and corrode. If it succeeds at a mandibles or oxidizing spit Strike, the ore louse deals 3d6 damage (or double damage on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness. If the ore louse hits an unattended metal item, the item takes this damage automatically. If a creature uses the Shield Block reaction with a metal shield against the attacks, the shield is automatically broken, but no other item is rusted on that attack.</p>"
+          "description": "<p>An ore louse's Strikes causes metal to rapidly rust and corrode. If it succeeds at a mandibles or oxidizing spit Strike, the ore louse deals @Damage[3d6[untyped]] damage (or double damage on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness. If the ore louse hits an unattended metal item, the item takes this damage automatically. If a creature uses the Shield Block reaction with a metal shield against the attacks, the shield is automatically broken, but no other item is rusted on that attack.</p>"
         },
         "action->Water Stride": {
           "name": "Water Stride",
@@ -2022,7 +2006,7 @@
         },
         "action->Searing Spew": {
           "name": "Searing Spew",
-          "description": "<p>The oregorger belches forth a cloud of caustic, rusted debris from its maw, filling a cube adjacent to itself that's @Template[line|distance:10|width:10] feet on each side. Any creature in this area takes @Damage[6d6[acid],6d6[slashing]] damage (@Check[reflex|dc:30|basic]). The ground under the cloud is difficult terrain for 1 hour, after which the shrapnel crumbles to dust.</p>\n<p>The oregorger can't use Searing Spew again for [[/gmr 1d4 #rounds]]{1d4 rounds}, but the ability recharges if the oregorger damages an item with devour metal.</p>"
+          "description": "<p>The oregorger belches forth a cloud of caustic, rusted debris from its maw, filling a cube adjacent to itself that's @Template[cube|distance:10]{10 feet} on each side. Any creature in this area takes @Damage[6d6[acid],6d6[slashing]|options:area-damage] damage (@Check[reflex|dc:30|basic|options:area-effect]). The ground under the cloud is difficult terrain for 1 hour, after which the shrapnel crumbles to dust.</p>\n<p>The oregorger can't use Searing Spew again for [[/gmr 1d4 #Recharge Searing Spew]]{1d4 rounds}, but the ability recharges if the oregorger damages an item with devour metal.</p>"
         }
       }
     },
@@ -2051,7 +2035,7 @@
     },
     "Pelegox Cube": {
       "name": "Pelegox Cube",
-      "hpDetails": "140 (12 squares), 70 (8 squares)",
+      "hpDetails": "140 (3 segments), 70 (2 segments)",
       "languages": "telepathy 30 feet",
       "publicNotes": "<p>Pelegoxes are beings of condensed magnetic energy that fashion bodies for themselves using their surroundings. Though a pelegox's true form is a spherical core, it pulls metal fragments of various shapes and sizes to form a polyhedral shell. Though pelegoxes might develop preferences for a particular form when at rest, they continue to look for new configurations to call their own, happiest when they can experiment with endless possibilities, even if it means dismantling other metallic entities.</p>\n<p>These piecemeal creatures move by a combination of magnetic levitation and propulsion, and when that doesn't work, by continuously piercing the ground and shifting their weight forward, looking almost like moving caltrops. Over time, the magnetic signature of a pelegox becomes visible, etched into its body in patterns of concentric lines. These unique designs make it possible to distinguish between individual pelegoxes even when their surface has eroded.</p>\n<p>Pelegoxes are quick to form relationships with others of their kind. They delight in combining their individual bodies into ever larger, more elaborate structures and patterns. As such, it is rare to find a pelegox on their own—they prefer to travel in a clustered form.</p>",
       "senses": "metalsense (imprecise) 60 feet",
@@ -2069,15 +2053,15 @@
         },
         "action->Entrancing Shapes": {
           "name": "Entrancing Shapes",
-          "description": "<p>The pelegox cube rapidly shifts, creating a display of seemingly impossible geometric patterns. Creatures in a @Template[cone|distance:60] take @Damage[9d6[mental]] damage (@Check[will|dc:29|basic] save). A creature that fails is also @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with the pelegox cube and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</p>"
+          "description": "<p>The pelegox cube rapidly shifts, creating a display of seemingly impossible geometric patterns. Creatures in a @Template[cone|distance:60] take @Damage[9d6[mental]|options:area-damage] damage (@Check[will|dc:29|basic|options:area-effect] save). A creature that fails is also @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with the pelegox cube and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</p>"
         },
         "action->Scrambled Strike": {
           "name": "Scrambled Strike",
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The pelegox cube rearranges to create jutting spikes, attacking each enemy within 10 feet (@Check[reflex|dc:27|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d6[piercing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d6+10)[piercing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(5d6+10)[piercing]] damage</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The pelegox cube rearranges to create jutting spikes, attacking each enemy within 10 feet (@Check[reflex|dc:27|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d6[piercing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d6+10)[piercing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(5d6+10)[piercing]] damage</p>"
         },
         "action->Shard Volley": {
           "name": "Shard Volley",
-          "description": "<p>The pelegox cube magnetizes fragments of metal at range. This is a @Template[burst|distance:10] within 30 feet that deals @Damage[(2d6+10)[piercing]] damage (@Check[reflex|dc:27|basic] save). When the troop is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>"
+          "description": "<p>The pelegox cube magnetizes fragments of metal at range. This is a @Template[burst|distance:10] within 30 feet that deals @Damage[(2d6+10)[piercing]|options:area-damage] damage (@Check[reflex|dc:27|basic|options:area-effect] save). When the troop is reduced to 2 or fewer segments, this area decreases to a @Template[burst|distance:5].</p>"
         },
         "action->Troop Movement": {
           "name": "Troop Movement",
@@ -2110,7 +2094,7 @@
         },
         "action->Elephant Blast": {
           "name": "Elephant Blast",
-          "description": "<p><strong>Requirements</strong> The picture-in-clouds is in elephant shape</p>\n<hr />\n<p><strong>Effect</strong> The picture-in-clouds breathes out a @Template[cone|distance:30] of air from their cloudy trunk. Creatures in the area must attempt a @Check[fortitude|dc:30] save to stand their ground. A creature pushed into a solid object stops moving and takes @Damage[4d10[bludgeoning]] damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed 20 feet.</p>\n<p><strong>Failure</strong> The creature is pushed 40 feet.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 40 feet and knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+          "description": "<p><strong>Requirements</strong> The picture-in-clouds is in elephant shape</p>\n<hr />\n<p><strong>Effect</strong> The picture-in-clouds breathes out a @Template[cone|distance:30] of air from their cloudy trunk. Creatures in the area must attempt a @Check[fortitude|dc:30|options:area-effect,forced-movement] save to stand their ground. A creature pushed into a solid object stops moving and takes @Damage[4d10[bludgeoning]] damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed 20 feet.</p>\n<p><strong>Failure</strong> The creature is pushed 40 feet.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 40 feet and knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
         },
         "action->Feather Storm": {
           "name": "Feather Storm",
@@ -2118,7 +2102,7 @@
         },
         "action->Slicing Wind": {
           "name": "Slicing Wind",
-          "description": "<p><strong>Requirements</strong> The picture-in-clouds is in sword shape</p>\n<hr />\n<p><strong>Effect</strong> The picture-in-clouds spins, forming a whirlwind that deals @Damage[5d8[slashing]] damage in a @Template[emanation|distance:15] (@Check[reflex|dc:30|basic] save).</p>"
+          "description": "<p><strong>Requirements</strong> The picture-in-clouds is in sword shape</p>\n<hr />\n<p><strong>Effect</strong> The picture-in-clouds spins, forming a whirlwind that deals @Damage[5d8[slashing]|options:area-damage] damage in a @Template[emanation|distance:15] (@Check[reflex|dc:30|basic|options:area-effect] save).</p>"
         },
         "action->Swiftness": {
           "name": "Swiftness",
@@ -2191,7 +2175,7 @@
         },
         "action->Exploding Guts": {
           "name": "Exploding Guts",
-          "description": "<p>When the rakkatak is critically hit or critically fails a Fortitude save, one of its organs bursts. Roll [[/gmr 1d4]] to determine what effect this has.</p>\n<p><strong>1</strong> Trapped noxious gas rushes out. The rakkatak is pushed 10 feet away from the source of the triggering attack or effect.</p>\n<p><strong>2</strong> Pus showers those nearby. Each creature in a @Template[emanation|distance:5] is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>3</strong> The damage is severe. The rakkatak takes @Damage[1d6[persistent,bleed]] damage.</p>\n<p><strong>4</strong> Gelatinous rakkatak eggs explode forth and instantly hatch. Each creature in a @Template[emanation|distance:5] takes @Damage[1d6[persistent,piercing]] damage from the ravenous larvae.</p>"
+          "description": "<p>When the rakkatak is critically hit or critically fails a Fortitude save, one of its organs bursts. Roll [[/gmr 1d4]] to determine what effect this has.</p>\n<p><strong>1</strong> Trapped noxious gas rushes out. The rakkatak is pushed 10 feet away from the source of the triggering attack or effect.</p>\n<p><strong>2</strong> Pus showers those nearby. Each creature in a @Template[emanation|distance:5] is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>3</strong> The damage is severe. The rakkatak takes @Damage[1d6[persistent,bleed]] damage.</p>\n<p><strong>4</strong> Gelatinous rakkatak eggs explode forth and instantly hatch. Each creature in a @Template[emanation|distance:5] takes @Damage[1d6[persistent,piercing]|options:area-damage] damage from the ravenous larvae.</p>"
         },
         "action->Predator's Stare": {
           "name": "Predator's Stare",
@@ -2247,7 +2231,7 @@
       "items": {
         "action->Troop Defenses": {
           "name": "Troop Defenses",
-          "description": "<p><strong>Thresholds</strong> 160 (12 squares), 80 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+          "description": "<p><strong>Thresholds</strong> 160 (3 segments), 80 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "action->Lightlure": {
           "name": "Lightlure",
@@ -2263,7 +2247,7 @@
         },
         "action->Scour the Bones": {
           "name": "Scour the Bones",
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The saltborn stalkers use their teeth and claws to vivisect each enemy within 5 feet (@Check[reflex|dc:30|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d10[slashing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d10+8)[slashing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d10+16)[slashing]] damage</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The saltborn stalkers use their teeth and claws to vivisect each enemy within 5 feet (@Check[reflex|dc:30|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d10[slashing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d10+8)[slashing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d10+16)[slashing]] damage</p>"
         },
         "action->Troop Movement": {
           "name": "Troop Movement",
@@ -2363,7 +2347,7 @@
         },
         "action->Blinding Heat": {
           "name": "Blinding Heat",
-          "description": "<p>The solar crow expands its wings and unleashes blazing hot, blinding light in a @Template[emanation|distance:120]. Each creature in the area takes @Damage[9d6[fire]] damage with a @Check[reflex|dc:29] save. The crow can't use Blinding Heat again for [[/gmr 1d4 #Recharge Blinding Heat]]{1d4 rounds}, and its glow aura is deactivated during this time.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is blinded for 1 minute.</p>"
+          "description": "<p>The solar crow expands its wings and unleashes blazing hot, blinding light in a @Template[emanation|distance:120]. Each creature in the area takes @Damage[9d6[fire]|options:area-damage] damage with a @Check[reflex|dc:29|options:area-effect,damaging-effect] save. The crow can't use Blinding Heat again for [[/gmr 1d4 #Recharge Blinding Heat]]{1d4 rounds}, and its glow aura is deactivated during this time.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is blinded for 1 minute.</p>"
         },
         "action->Burning Talons": {
           "name": "Burning Talons",
@@ -2380,7 +2364,7 @@
     },
     "Sootsoldiers": {
       "name": "Sootsoldiers",
-      "hpDetails": "(16 squares); Thresholds 110 (12 squares), 55 (8 squares);",
+      "hpDetails": "(16 squares); Thresholds 110 (3 segments), 55 (2 segments);",
       "publicNotes": "<p>Powerful deities and warlords strive for dominance over the Plane of Fire and the rest of the Inner Sphere in order to prove fire's supremacy. Armies of flaming soldiers go to war against each other on battlefields of smoke and smoldering char, all unable to bring their full power to bear. Ymeri, the vicious and victorious Queen of the Inferno, commands legions of sootsoldiers: elementals capable of battling the armies of her foes and, even when destroyed, rising from the ashes of the Eternal Furnace, scorched and triumphant.</p>",
       "senses": "smoke vision",
       "speed": "troop movement",
@@ -2394,11 +2378,11 @@
         },
         "action->Incinerating Grasp": {
           "name": "Incinerating Grasp",
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The sootsoldiers reach to constrain each enemy within 5 feet in their fiery clutches (@Check[reflex|dc:26|basic] save). The damage and additional effects depend on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[fire]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+7)[fire]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+7)[fire]] damage plus grabbed</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The sootsoldiers reach to constrain each enemy within 5 feet in their fiery clutches (@Check[reflex|dc:26|basic] save). The damage and additional effects depend on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[fire]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+7)[fire]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+7)[fire]] damage plus grabbed</p>"
         },
         "action->Seething Flash": {
           "name": "Seething Flash",
-          "description": "<p>The sootsoldiers reignite and rush across the battlefield, Forming Up and Striding twice. At the end of this movement, a wave of flame and heat pours off the sootsoldiers, dealing @Damage[4d8[fire]] damage to other creatures in a @Template[emanation|distance:10], with a @Check[reflex|dc:29|basic] save. A creature that critically fails its save is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+          "description": "<p>The sootsoldiers reignite and rush across the battlefield, Forming Up and Striding twice. At the end of this movement, a wave of flame and heat pours off the sootsoldiers, dealing @Damage[4d8[fire]|options:area-damage] damage to other creatures in a @Template[emanation|distance:10], with a @Check[reflex|dc:29|basic|options:area-effect,inflicts:prone] save. A creature that critically fails its save is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
         },
         "action->Smoke Vision": {
           "name": "Smoke Vision",
@@ -2418,7 +2402,7 @@
     },
     "Sootsoldiers (The Radiant Host)": {
       "name": "Sootsoldiers (The Radiant Host)",
-      "hpDetails": "(16 squares); Thresholds 110 (12 squares), 55 (8 squares);",
+      "hpDetails": "(16 squares); Thresholds 110 (3 segments), 55 (2 segments);",
       "publicNotes": "<p>Powerful deities and warlords strive for dominance over the Plane of Fire and the rest of the Inner Sphere in order to prove fire's supremacy. Armies of flaming soldiers go to war against each other on battlefields of smoke and smoldering char, all unable to bring their full power to bear. Ymeri, the vicious and victorious Queen of the Inferno, commands legions of sootsoldiers: elementals capable of battling the armies of her foes and, even when destroyed, rising from the ashes of the Eternal Furnace, scorched and triumphant.</p>",
       "senses": "smoke vision",
       "speed": "troop movement",
@@ -2432,11 +2416,11 @@
         },
         "action->Incinerating Grasp": {
           "name": "Incinerating Grasp",
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The sootsoldiers reach to constrain each enemy within 5 feet in their fiery clutches (@Check[reflex|dc:26|basic] save). The damage and additional effects depend on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[fire]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+7)[fire]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+7)[fire]] damage plus grabbed</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The sootsoldiers reach to constrain each enemy within 5 feet in their fiery clutches (@Check[reflex|dc:26|basic] save). The damage and additional effects depend on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[fire]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+7)[fire]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+7)[fire]] damage plus grabbed</p>"
         },
         "action->Seething Flash": {
           "name": "Seething Flash",
-          "description": "<p>The sootsoldiers reignite and rush across the battlefield, Forming Up and Striding twice. At the end of this movement, a wave of flame and heat pours off the sootsoldiers, dealing @Damage[4d8[fire]] damage to other creatures in a @Template[emanation|distance:10], with a @Check[reflex|dc:29|basic] save. A creature that critically fails its save is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+          "description": "<p>The sootsoldiers reignite and rush across the battlefield, Forming Up and Striding twice. At the end of this movement, a wave of flame and heat pours off the sootsoldiers, dealing @Damage[4d8[fire]|options:area-damage] damage to other creatures in a @Template[emanation|distance:10], with a @Check[reflex|dc:29|basic|options:area-effect,inflicts:prone] save. A creature that critically fails its save is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
         },
         "action->Smoke Vision": {
           "name": "Smoke Vision",
@@ -2473,7 +2457,7 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nybZVDfQWMhwvL2C]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<hr />\n<p>These sets of rockets come in pairs and strap onto existing footwear (or a creature's feet). Inserting them and aligning them properly takes 1 minute. When you Activate the blast boots, you can @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{High Jump} or @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Long Jump}, without the need to Stride first.</p>"
         },
         "consumable->Explosive Mine (Lesser)": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.7e57yUVtRgYLOFwT]\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<hr />\n<p>When you Activate an explosive mine, you place it on the ground in a square within your reach, priming it to explode when a creature steps on that square. If you have time in advance to prepare, you can place the mine on the ground before activating it, and you or an ally can try to use Stealth to Conceal an Object before you Activate the mine. If you don't Conceal the mine, its position is obvious at a glance. Once activated, the mine is primed to explode when enough pressure is placed on the square where it's located. Typically, this occurs when a Small or larger creature moves onto the square, though it could happen if a creature intentionally places pressure on the square from a distance to safely trigger the mine. Once triggered, the mine explodes, dealing the listed fire damage to any creatures in the area of effect with a basic Reflex save.</p>\n<hr />\n<p>The mine deals @Damage[2d6[fire]] damage, in a @Template[emanation|distance:5]{5-foot emanation}, and a @Check[reflex|dc:15|basic|name:Reflex|traits:fire].</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.7e57yUVtRgYLOFwT]\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<hr />\n<p>When you Activate an explosive mine, you place it on the ground in a square within your reach, priming it to explode when a creature steps on that square. If you have time in advance to prepare, you can place the mine on the ground before activating it, and you or an ally can try to use Stealth to Conceal an Object before you Activate the mine. If you don't Conceal the mine, its position is obvious at a glance. Once activated, the mine is primed to explode when enough pressure is placed on the square where it's located. Typically, this occurs when a Small or larger creature moves onto the square, though it could happen if a creature intentionally places pressure on the square from a distance to safely trigger the mine. Once triggered, the mine explodes, dealing the listed fire damage to any creatures in the area of effect with a basic Reflex save.</p>\n<hr />\n<p>The mine deals @Damage[2d6[fire]|options:area-damage] damage, in a @Template[emanation|distance:5], and a @Check[reflex|dc:15|basic|options:area-effect].</p>"
         },
         "consumable->Ablative Armor Plating (Lesser)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.U9XNSFQzCOo6KMD1]\n<p>Ablative armor plating is additional plating, combined with springs, clever clockwork, and improvised padding, to absorb damage by knocking the additional pieces free. The pieces slowly come apart on their own with time and movement. The process of attaching the plating takes 10 minutes and grants the wearer of the armor the 5 Hit Points for 1 minute or until lost. Removing the plating early destroys it.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.jlVYoiPVRRVGBj5G]{Effect: Ablative Armor Plating (Lesser)}</p>"
@@ -2553,7 +2537,7 @@
         },
         "action->Lifespring Burst": {
           "name": "Lifespring Burst",
-          "description": "<p>Once per day, the twins of rowan can strike the ground with their sword, releasing a @Template[burst|distance:30] of life energy centered on the twins that deals @Damage[14d6[vitality]] damage (@Check[fortitude|dc:30|basic] save); the twins of rowan is immune. The area affected by this burst then becomes greater difficult terrain as vibrant new plant life ruptures through it.</p>"
+          "description": "<p>Once per day, the twins of rowan can strike the ground with their sword, releasing a @Template[burst|distance:30] of life energy centered on the twins that deals @Damage[14d6[vitality]|options:area-damage] damage (@Check[fortitude|dc:30|basic|options:area-effect] save); the twins of rowan is immune. The area affected by this burst then becomes greater difficult terrain as vibrant new plant life ruptures through it.</p>"
         },
         "action->Throw Stump": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.a0tx6exmB9v9CUsj]\nThrow Stump",
@@ -2578,8 +2562,7 @@
           "target": "1 creature or unattended object"
         },
         "spell->Speak With Stones (At Will)": {
-          "name": "Speak With Stones (At Will)",
-          "description": "<p>You can ask questions of and receive answers from natural or worked stone. While stone is not intelligent, you speak with the natural spirits of the stone, which have a personality colored by the type of stone, as well as by the type of structure the stone is part of, for worked stone. A stone's perspective, perception, and knowledge give it a worldview different enough from a human's that it doesn't consider the same details important. Stones can mostly answer questions about creatures that touched them in the past and what is concealed beneath or behind them.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The duration is 8 hours.</p>"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.YIMampGpij4Y30yE]\nSpeak With Stones (At Will)"
         },
         "spell->Shape Stone (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.McnPlLFvKtQVXNcG]\nShape Stone (At Will)"
@@ -2634,7 +2617,7 @@
         },
         "action->Crystal Burst": {
           "name": "Crystal Burst",
-          "description": "<p>An explosion of razor-sharp splinters deals @Damage[24d6[piercing]|traits:item:frequency:limited] damage in a @Template[burst|distance:30] within 120 feet, with a @Check[reflex|dc:46|basic] save. The vault keeper can't use Crystal Burst again for [[/gmr 1d4 #Recharge Crystal Burst]]{1d4 rounds}.</p>"
+          "description": "<p>An explosion of razor-sharp splinters deals @Damage[24d6[piercing]|options:area-damage|traits:item:frequency:limited] damage in a @Template[burst|distance:30] within 120 feet, with a @Check[reflex|dc:46|basic|options:area-effect] save. The vault keeper can't use Crystal Burst again for [[/gmr 1d4 #Recharge Crystal Burst]]{1d4 rounds}.</p>"
         },
         "action->Earth Glide": {
           "name": "Earth Glide",
@@ -2660,8 +2643,7 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Speak With Stones (At Will)": {
-          "name": "Speak With Stones (At Will)",
-          "description": "<p>You can ask questions of and receive answers from natural or worked stone. While stone is not intelligent, you speak with the natural spirits of the stone, which have a personality colored by the type of stone, as well as by the type of structure the stone is part of, for worked stone. A stone's perspective, perception, and knowledge give it a worldview different enough from a human's that it doesn't consider the same details important. Stones can mostly answer questions about creatures that touched them in the past and what is concealed beneath or behind them.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The duration is 8 hours.</p>"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.YIMampGpij4Y30yE]\nSpeak With Stones (At Will)"
         },
         "spell->Shape Stone (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.McnPlLFvKtQVXNcG]\nShape Stone (At Will)"
@@ -2710,7 +2692,7 @@
         },
         "action->Crystal Burst": {
           "name": "Crystal Burst",
-          "description": "<p>An explosion of razor-sharp splinters deals @Damage[15d6[piercing]|traits:item:frequency:limited] damage in a @Template[burst|distance:30] within 120 feet, with a @Check[reflex|dc:35|basic] save. The vault keeper can't use Crystal Burst again for [[/gmr 1d4 #Recharge Crystal Burst]]{1d4 rounds}.</p>"
+          "description": "<p>An explosion of razor-sharp splinters deals @Damage[15d6[piercing]|options:area-damage|traits:item:frequency:limited] damage in a @Template[burst|distance:30] within 120 feet, with a @Check[reflex|dc:35|basic|options:area-effect] save. The vault keeper can't use Crystal Burst again for [[/gmr 1d4 #Recharge Crystal Burst]]{1d4 rounds}.</p>"
         },
         "action->Slashing Surge": {
           "name": "Slashing Surge",
@@ -2757,7 +2739,7 @@
         },
         "action->Envelop": {
           "name": "Envelop",
-          "description": "<p><strong>Requirements</strong> The veiled current begins their turn with a target of their size or smaller @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The veiled current maintains the Grab and coalesces around the creature, stretching themself into a semisolid veil that smothers the creature within. This thereafter has the same effect as if the veiled current had @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]{Engulfed} the creature (DC 26, 1d8+8 bludgeoning, @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 26, Rupture 17). As engulfing a creature is a hostile action, the veiled current is @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} instead of undetected every round it has a creature engulfed.</p>"
+          "description": "<p><strong>Requirements</strong> The veiled current begins their turn with a target of their size or smaller @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The veiled current maintains the Grab and coalesces around the creature, stretching themself into a semisolid veil that smothers the creature within. This thereafter has the same effect as if the veiled current had @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]{Engulfed} the creature (DC 26, 1d8+8 bludgeoning, [[/act escape dc=26]], Rupture 17). As engulfing a creature is a hostile action, the veiled current is @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} instead of undetected every round it has a creature engulfed.</p>"
         }
       }
     },
@@ -2779,7 +2761,7 @@
         },
         "action->Vacuum": {
           "name": "Vacuum",
-          "description": "<p><strong>Requirements</strong> The veldenar doesn't have a creature engulfed</p>\n<hr />\n<p><strong>Effect</strong> The veldenar forcefully unlocks then expands its jaws to inhale the air in a @Template[cone|distance:15] before it, pulling Large or smaller creatures into its cavernous maw. The veldenar @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]{Engulfs} the creatures in the area (@Check[reflex|dc:27], @Damage[(1d10+10)[cold]], @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 27, Rupture 25).</p>"
+          "description": "<p><strong>Requirements</strong> The veldenar doesn't have a creature engulfed</p>\n<hr />\n<p><strong>Effect</strong> The veldenar forcefully unlocks then expands its jaws to inhale the air in a @Template[cone|distance:15] before it, pulling Large or smaller creatures into its cavernous maw. The veldenar @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]{Engulfs} the creatures in the area (@Check[reflex|dc:27|options:area-effect,damaging-effect], @Damage[(1d10+10)[cold]|options:area-damage], [[/act escape dc=27]], Rupture 25).</p>"
         }
       }
     },
@@ -2948,9 +2930,7 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Interplanar Teleport (At Will) (To Astral Plane, Elemental Planes, or Universe only)": {
-          "name": "Interplanar Teleport (At Will) (To Astral Plane, Elemental Planes, or Universe only)",
-          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
-          "target": "up to 8 willing creatures"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nInterplanar Teleport (At Will) (To Astral Plane, Elemental Planes, or Universe only)"
         },
         "spell->Truespeech (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTruespeech (Constant)"
@@ -2992,9 +2972,7 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Interplanar Teleport (At Will) (To Astral Plane, Elemental Planes, or Universe only)": {
-          "name": "Interplanar Teleport (At Will) (To Astral Plane, Elemental Planes, or Universe only)",
-          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
-          "target": "up to 8 willing creatures"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nInterplanar Teleport (At Will) (To Astral Plane, Elemental Planes, or Universe only)"
         },
         "spell->Truespeech (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTruespeech (Constant)"
@@ -3031,7 +3009,7 @@
         },
         "action->Magnetic Storm": {
           "name": "Magnetic Storm",
-          "description": "<p><strong>Requirements</strong> The shuyookh's magnetic field is active</p>\n<hr />\n<p><strong>Effect</strong> The shuyookh electromagnetically flings razor-sharp metal scraps. Each creature in a @Template[emanation|distance:30] takes @Damage[8d6[slashing],3d12[electricity]] damage, with a @Check[fortitude|dc:32|basic] save.</p>\n<p>The shuyookh's magnetic field is deactivated for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+          "description": "<p><strong>Requirements</strong> The shuyookh's magnetic field is active</p>\n<hr />\n<p><strong>Effect</strong> The shuyookh electromagnetically flings razor-sharp metal scraps. Each creature in a @Template[emanation|distance:30] takes @Damage[8d6[slashing],3d12[electricity]|options:area-damage] damage, with a @Check[fortitude|dc:32|basic|options:area-effect] save.</p>\n<p>The shuyookh's magnetic field is deactivated for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
         },
         "action->Mercurial Wish": {
           "name": "Mercurial Wish",

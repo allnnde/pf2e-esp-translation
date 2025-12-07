@@ -25,7 +25,7 @@
         },
         "action->Forge Breath": {
           "name": "Forge Breath",
-          "description": "<p>The accursed forge-spurned breathes a cloud of stinging soot, ash, and glowing embers. This can affect either a @Template[cone|distance:30] or a @Template[burst|distance:20] centered on the accursed forge-spurned and persists for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p>Creatures that move into or start their turn in the area take @Damage[12d6[fire]] damage (@Check[reflex|dc:36|basic] save).</p>\n<p>A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute. Creatures within the cloud are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, though not from the accursed forge-spurned.</p>\n<p>The accursed forge-spurned can't use Forge Breath again until it has used Inflate Bellows.</p>"
+          "description": "<p>The accursed forge-spurned breathes a cloud of stinging soot, ash, and glowing embers. This can affect either a @Template[cone|distance:30] or a @Template[burst|distance:20] centered on the accursed forge-spurned and persists for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p>Creatures that move into or start their turn in the area take @Damage[12d6[fire]|options:area-damage] damage (@Check[reflex|dc:36|basic|options:area-effect,inflicts:blinded] save).</p>\n<p>A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute. Creatures within the cloud are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, though not from the accursed forge-spurned.</p>\n<p>The accursed forge-spurned can't use Forge Breath again until it has used Inflate Bellows.</p>"
         },
         "action->Inflate Bellows": {
           "name": "Inflate Bellows",
@@ -62,6 +62,7 @@
     },
     "Aiudara Wraith": {
       "name": "Aiudara Wraith",
+      "hpDetails": "void healing",
       "publicNotes": "<p>Dahak's influence in Alseta's Landing created a soul-draining effect that slays unprotected creatures within, transforming them into ghostly creatures known as aiudara wraiths, but these rare undead can rise within modern aiudara portals as well. Each time an individual travels through an aiudara, there's a chance their passage could leave a faint imprint of their subconscious in the network. Normally this imprint simply fades away, but when an aiudara is damaged or the individual is suffering from necromantic contagions, these imprints can accumulate and, in time, coalesce on the Astral Plane or within Alseta's Landing as a full-fledged aiudara wraith. The wraith is forced to live with an incomplete sense of self, always seeking its own memories and swiftly growing violent and vengeful as its quest to reclaim these ephemeral notions constantly meets with failure.</p>",
       "speed": "instantaneous movement",
       "items": {
@@ -81,7 +82,7 @@
         },
         "action->Drain Life": {
           "name": "Drain Life",
-          "description": "<p>When an aiudara wraith damages a living creature with its spectral hand Strike, the aiudara wraith gains 18 temporary Hit Points and the target must succeed at a @Check[fortitude|dc:40] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} as long as it is drained. Further damage dealt by the aiudara wraith's spectral hand Strikes increases the value of the drained and stupefied conditions by 1 each on a failed save, to a maximum of 10 for both.</p>"
+          "description": "<p>When an aiudara wraith damages a living creature with its spectral hand Strike, the aiudara wraith gains 18 temporary Hit Points and the target must succeed at a @Check[fortitude|dc:40|options:inflicts:drained,inflicts:stupefied] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} as long as it is drained. Further damage dealt by the aiudara wraith's spectral hand Strikes increases the value of the drained and stupefied conditions by 1 each on a failed save, to a maximum of 10 for both.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
         },
         "action->Instantaneous Movement": {
           "name": "Instantaneous Movement",
@@ -129,7 +130,7 @@
         },
         "action->Soul Shriek": {
           "name": "Soul Shriek",
-          "description": "<p>The aluum enforcer emits a keening wail in a @Template[cone|distance:15] that deals @Damage[9d6[sonic]] damage (@Check[fortitude|dc:27|basic] save). A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure.</p>\n<p>The aluum can't use Soul Shriek again for [[/gmr 1d4 #Recharge Soul Shriek]]{1d4 rounds}.</p>"
+          "description": "<p>The aluum enforcer emits a keening wail in a @Template[cone|distance:15] that deals @Damage[9d6[sonic]|options:area-damage] damage (@Check[fortitude|dc:27|basic|options:area-effect,inflicts:stunned] save). A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure.</p>\n<p>The aluum can't use Soul Shriek again for [[/gmr 1d4 #Recharge Soul Shriek]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -141,11 +142,11 @@
         },
         "action->Vulnerable to Dispelling": {
           "name": "Vulnerable to Dispelling",
-          "description": "<p>The animated dragonstorm can be targeted by disjunction and dispel magic. If targeted by such a spell of 9th rank or higher, the construct loses its resistance to acid, cold, electricity, fire, and physical damage and is slowed 1 for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+          "description": "<p>The animated dragonstorm can be targeted by @UUID[Compendium.pf2e.spells-srd.Item.ihbRf964JDXztcy3]{Disjunction} and @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}. If targeted by such a spell of 9th rank or higher, the construct loses its resistance to acid, cold, electricity, fire, and physical damage and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
         },
         "action->Channel Dragonstorm": {
           "name": "Channel Dragonstorm",
-          "description": "<p>The animated dragonstorm directs a @Template[cone|distance:30] of dragonstorm energy. This deals @Damage[3d8[acid],3d8[cold],3d8[electricity],3d8[fire],3d8[poison]]{3d8 acid, 3d8 cold, 3d8 electricity, 3d8 fire, and 3d8 poison damage} to creatures in the cone (@Check[reflex|dc:40|basic] save). The animated dragonstorm can't use Channel Dragonstorm again for [[/gmr 1d4 #Recharge Channel Dragonstorm]]{1d4 rounds}.</p>"
+          "description": "<p>The animated dragonstorm directs a @Template[cone|distance:30] of dragonstorm energy. This deals @Damage[3d8[acid],3d8[cold],3d8[electricity],3d8[fire],3d8[poison]|options:area-damage]{3d8 acid, 3d8 cold, 3d8 electricity, 3d8 fire, and 3d8 poison damage} to creatures in the cone (@Check[reflex|dc:40|basic|options:area-effect] save). The animated dragonstorm can't use Channel Dragonstorm again for [[/gmr 1d4 #Recharge Channel Dragonstorm]]{1d4 rounds}.</p>"
         },
         "action->Destructive Strikes": {
           "name": "Destructive Strikes",
@@ -153,7 +154,7 @@
         },
         "action->Dragonstorm Strike": {
           "name": "Dragonstorm Strike",
-          "description": "<p>On a critical hit, the animated dragonstorm's fist bursts with dragonstorm energy. The target takes @Damage[1d6[acid],1d6[cold],1d6[electricity],1d6[fire],1d6[poison]]{1d6 acid, 1d6 cold, 1d6 electricity, 1d6 fire, and 1d6 poison damage}.</p>"
+          "description": "<p>On a critical hit, the animated dragonstorm's fist bursts with dragonstorm energy. The target takes 1d6 acid, 1d6 cold, 1d6 electricity, 1d6 fire, and 1d6 poison damage.</p>"
         }
       }
     },
@@ -284,6 +285,11 @@
         },
         "spell->Burning Hands": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]\nBurning Hands"
+        },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
         },
         "spell->Ray of Enfeeblement": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
@@ -454,7 +460,7 @@
         },
         "action->Shield Breaker": {
           "name": "Shield Breaker",
-          "description": "<p>When the target of Bshez's javelin Strike uses Shield Block, the Strike deals an additional [[/r 4d6 #Shield Breaker]]{4d6 damage} to the shield.</p>"
+          "description": "<p>When the target of Bshez's javelin Strike uses Shield Block, the Strike deals an additional @Damage[4d6[untyped]] damage to the shield.</p>"
         },
         "action->Weapon Master": {
           "name": "Weapon Master",
@@ -485,7 +491,7 @@
         },
         "action->Keen Eyes": {
           "name": "Keen Eyes",
-          "description": "<p>Calmont's eyes are sharp, allowing him to make out small details about @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} or even @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} creatures that others might miss. He gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures within 30 feet of him. When Calmont target an opponent that is concealed from him or hidden from him, reduce the DC of the flat check to 3 for a concealed target or 9 for a hidden one.</p>",
+          "description": "<p>Calmont's eyes are sharp, allowing him to make out small details about @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} or even @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} creatures that others might miss. He gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures within 30 feet of him. When Calmont target an opponent that is concealed from him or hidden from him, reduce the DC of the flat check to @Check[flat|dc:3] for a concealed target or @Check[flat|dc:9] for a hidden one.</p>",
           "rules": {
             "2": {
               "text": "The target is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, make a @Check[flat|dc:3|traits:target:condition:concealed] check"
@@ -562,11 +568,11 @@
         },
         "action->Frightful Moan": {
           "name": "Frightful Moan",
-          "description": "<p>Candlaron's echo laments its fate, forcing each living creature within 30 feet to attempt a @Check[will|dc:44] save.</p>\nOn a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to the echo's frightful moan for 1 minute."
+          "description": "<p>Candlaron's echo laments its fate, forcing each living creature within @Template[emanation|distance:30]{30 feet} to attempt a @Check[will|dc:44|options:area-effect,inflicts:frightened] save.</p>\nOn a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to the echo's frightful moan for 1 minute."
         },
         "action->Telekinetic Assault": {
           "name": "Telekinetic Assault",
-          "description": "<p>The echo cries out in pain and anguish as small objects and debris fly about in a @Template[emanation|distance:30]. Creatures in this area take @Damage[12d6[bludgeoning]] damage subject to a @Check[reflex|dc:44|basic] save.</p>"
+          "description": "<p>The echo cries out in pain and anguish as small objects and debris fly about in a @Template[emanation|distance:30]. Creatures in this area take @Damage[12d6[bludgeoning]|options:area-damage] damage subject to a @Check[reflex|dc:44|basic|options:area-effect] save.</p>"
         }
       }
     },
@@ -594,7 +600,7 @@
           "description": "<p><strong>Requirements</strong> The crystal has a creature engulfed.</p>\n<hr />\n<p><strong>Effect</strong> The engulfed creature must succeed at a @Check[fortitude|dc:28|name:Crystalize] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until it is no longer engulfed. If the creature is already slowed, it becomes petrified as it is turned into crystal and expelled by the carnivorous crystal onto the ground.</p>\n<p>In [[/gmr 1d4 #hours]]{1d4 hours}, the petrified victim shatters and a new carnivorous crystal emerges from the remains.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:28|traits:damaging-effect], @Damage[2d6[slashing]] damage, Escape DC 28, Rupture 25 (bludgeoning only).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:28|traits:damaging-effect], @Damage[2d6[slashing]] damage, [[/act escape dc=28]], Rupture 25 (bludgeoning only).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Freeze": {
           "name": "Freeze",
@@ -660,6 +666,11 @@
         "spell->Burning Hands": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]\nBurning Hands"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "spell->Ray of Enfeeblement": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]\nRay of Enfeeblement"
         },
@@ -687,7 +698,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The priest breathes fire that deals @Damage[7d6[fire]] damage in a @Template[cone|distance:30] (@Check[reflex|dc:23|basic] save).</p>\n<p>It can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>The priest breathes fire that deals @Damage[7d6[fire]|options:area-damage] damage in a @Template[cone|distance:30] (@Check[reflex|dc:23|basic|options:area-effect] save).</p>\n<p>It can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         },
         "action->Shrieking Frenzy": {
           "name": "Shrieking Frenzy",
@@ -699,7 +710,7 @@
         },
         "action->Volcanic Eruption": {
           "name": "Volcanic Eruption",
-          "description": "<p><strong>Requirement</strong> The priest is standing on the ground.</p>\n<hr />\n<p><strong>Effect</strong> The priest slams his fists into the ground, causing fire to erupt from the earth. Each non-worshipper of Dahak standing on the ground in a @Template[emanation|distance:15] must succeed at a @Check[reflex|dc:25|traits:damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[1d6[bludgeoning],2d6[fire]]{1d6 bludgeoning damage and 2d6 fire damage}.</p>"
+          "description": "<p><strong>Requirement</strong> The priest is standing on the ground.</p>\n<hr />\n<p><strong>Effect</strong> The priest slams his fists into the ground, causing fire to erupt from the earth. Each non-worshipper of Dahak standing on the ground in a @Template[emanation|distance:15] must succeed at a @Check[reflex|dc:25|options:area-effect,damaging-effect,inflicts:prone] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[1d6[bludgeoning],2d6[fire]|options:area-damage]{1d6 bludgeoning damage and 2d6 fire damage}.</p>"
         }
       }
     },
@@ -775,7 +786,7 @@
     "Dahak's Shell": {
       "name": "Dahak's Shell",
       "description": "<p>A ring of eight dragon pillar replicas mark the border of a dome of magical prismatic energy that entirely contains the Fortress of Sorrow.</p>",
-      "disable": "<p>Each dragon pillar that is destroyed removes the corresponding color's effect from Dahak's shell; as long as even one color remains active, the pillars marking the shell's border cannot be damaged themselves, but a successful @Check[thievery|dc:32|name:Disable Color|traits:magical,trap,hazard] (master) check or a successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th level; counteract DC 30) against one of the eight pillars can cause a randomly determined active color in the shell defense (below) to become deactivated for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>",
+      "disable": "<p>Each dragon pillar that is destroyed removes the corresponding color's effect from Dahak's shell; as long as even one color remains active, the pillars marking the shell's border cannot be damaged themselves, but a successful @Check[thievery|dc:32|name:Disable Color|traits:magical,trap,hazard] (master) check or a successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th rank; counteract DC 30) against one of the eight pillars can cause a randomly determined active color in the shell defense (below) to become deactivated for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>",
       "stealth": "<p>or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</p>",
       "items": {
         "strike-ranged->Eye Beam": {
@@ -827,7 +838,7 @@
     "Dahak's Skull": {
       "name": "Dahak's Skull",
       "description": "<p>A pair of magical gems inside the dragon skull's eye sockets act as magical sensors with a 30-foot radius.</p>",
-      "disable": "<p>@Check[thievery|dc:27|name:Pry Out the Embedded Gems|traits:complex,magical,fire,trap,hazard] (expert) two times to pry the gems embedded deep in the skull's eye sockets without triggering the sensor, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th level, counteract DC 22) twice to dispel both eyes.</p>",
+      "disable": "<p>@Check[thievery|dc:27|name:Pry Out the Embedded Gems|traits:complex,magical,fire,trap,hazard] (expert) two times to pry the gems embedded deep in the skull's eye sockets without triggering the sensor, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank, counteract DC 22) twice to dispel both eyes.</p>",
       "routine": "<p>(2 actions) On its initiative, Dahak's skull fires up to two eye beams; it must target a different creature with each attack. The eye beams can't target creatures directly below the skull.</p>",
       "stealth": "<p>but @Check[perception|dc:24|name:Notice Lights in Eyes|traits:complex,magical,fire,trap,hazard] to notice that the fiery lights within the skull's eye sockets seem to be looking around the room.</p>",
       "items": {
@@ -859,7 +870,7 @@
         },
         "action->Magma Splash": {
           "name": "Magma Splash",
-          "description": "<p>Whenever the dalos takes damage from a melee Strike, magma splashes from its open wound and sticks to nearby creatures. Each creature in a @Template[emanation|distance:10] must attempt a @Check[reflex|dc:31|traits:damaging-effect] save. On a failure, the creature takes @Damage[3d6[persistent,fire]] damage as the superheated rock sticks to them and cools. The DC to end this persistent damage decreases by 5 each turn after the first as the magma cools.</p>"
+          "description": "<p>Whenever the dalos takes damage from a melee Strike, magma splashes from its open wound and sticks to nearby creatures. Each creature in a @Template[emanation|distance:10] must attempt a @Check[reflex|dc:31|options:area-effect,damaging-effect] save. On a failure, the creature takes @Damage[3d6[persistent,fire]|options:area-damage] damage as the superheated rock sticks to them and cools. The DC to end this persistent damage decreases by 5 each turn after the first as the magma cools.</p>"
         },
         "action->Volcanic Heat": {
           "name": "Volcanic Heat",
@@ -875,7 +886,7 @@
         },
         "action->Lava Bomb": {
           "name": "Lava Bomb",
-          "description": "<p>The dalos causes a volcanic explosion to erupt from its head, lobbing a mass of molten rock up to 100 feet. This lava bomb deals @Damage[6d8[fire],6d8[bludgeoning]]{6d8 fire damage and 6d8 bludgeoning damage} to each creature in a @Template[burst|distance:20]{20-foot radius} of its impact point, with a @Check[reflex|dc:33|basic] save.</p>\n<p>The dalos can't use Lava Bomb again for [[/gmr 1d4 #Recharge Lava Bomb]]{1d4 rounds}.</p>"
+          "description": "<p>The dalos causes a volcanic explosion to erupt from its head, lobbing a mass of molten rock up to 100 feet. This lava bomb deals @Damage[6d8[fire],6d8[bludgeoning]|options:area-damage]{6d8 fire damage and 6d8 bludgeoning damage} to each creature in a @Template[burst|distance:20]{20-foot radius} of its impact point, with a @Check[reflex|dc:33|basic|options:area-effect] save.</p>\n<p>The dalos can't use Lava Bomb again for [[/gmr 1d4 #Recharge Lava Bomb]]{1d4 rounds}.</p>"
         },
         "action->Throw Rock": {
           "name": "Throw Rock"
@@ -1026,7 +1037,7 @@
     "Dragon Pillar": {
       "name": "Dragon Pillar",
       "description": "<p>A 10-foot-tall wooden pole topped by a wooden carving of Dahak's head. Each dragon pillar's head has been treated with something to give it a distinct color, as indicated in the specific encounter, but regardless of color, plumes of smoke waft up from the mouth.</p>",
-      "disable": "<p>@Check[athletics|dc:26|name:Push the Pillar Over|traits:complex,magical,trap,hazard] (expert) to push the pillar over, or @Check[thievery|dc:26|name:Erase Magic Runes|traits:complex,magical,trap,hazard] (expert) on the pillar to erase the magic runes that power it, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th level; counteract DC 22) to dispel the pillar's magic.</p>",
+      "disable": "<p>@Check[athletics|dc:26|name:Push the Pillar Over|traits:complex,magical,trap,hazard] (expert) to push the pillar over, or @Check[thievery|dc:26|name:Erase Magic Runes|traits:complex,magical,trap,hazard] (expert) on the pillar to erase the magic runes that power it, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank; counteract DC 22) to dispel the pillar's magic.</p>",
       "reset": "<p>The dragon pillar deactivates and resets as soon as it perceives no appropriate targets in range.</p>",
       "routine": "<p>(1 action) On its initiative, the dragon pillar fires an eye beam at the closest target within 120 feet.</p>",
       "stealth": "<p>or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</p>",
@@ -1191,7 +1202,7 @@
         "spell->Levitate (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.fI20AVwOzJMHXRdo]\nLevitate (At Will)"
         },
-        "consumable->Sack With 5 Rocks": {
+        "ammo->Sack With 5 Rocks": {
           "name": "Sack With 5 Rocks"
         },
         "strike-melee->Greatsword": {
@@ -1508,7 +1519,7 @@
         },
         "action->Forge Breath": {
           "name": "Forge Breath",
-          "description": "<p>The forge-spurned breathes a cloud of stinging soot, ash, and glowing embers. This can affect either a @Template[cone|distance:30] or a @Template[burst|distance:20] centered on the forge-spurned and persists for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p>Each creature that moves into or starts their turn in the area takes @Damage[6d6[fire]] damage, with a @Check[reflex|dc:21|basic] save. A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>\n<p>Creatures within the cloud are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, though not from the forge-spurned.</p>\n<p>The forge-spurned can't use Forge Breath again until it has used Inflate Bellows.</p>"
+          "description": "<p>The forge-spurned breathes a cloud of stinging soot, ash, and glowing embers. This can affect either a @Template[cone|distance:30] or a @Template[burst|distance:20] centered on the forge-spurned and persists for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p>Each creature that moves into or starts their turn in the area takes @Damage[6d6[fire]|options:area-damage] damage, with a @Check[reflex|dc:21|basic|options:area-effect,inflicts:blinded] save. A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>\n<p>Creatures within the cloud are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, though not from the forge-spurned.</p>\n<p>The forge-spurned can't use Forge Breath again until it has used Inflate Bellows.</p>"
         },
         "action->Inflate Bellows": {
           "name": "Inflate Bellows",
@@ -1529,23 +1540,23 @@
       "items": {
         "equipment->Shoddy Blunderbuss": {
           "name": "Shoddy Blunderbuss",
-          "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">2</span></p>\n<p>The blunderbuss fires an explosive shot that deals @Damage[4d6[bludgeoning],2d10[fire]]{4d6 bludgeoning damage plus 2d10 fire damage} to all creatures in a @Template[cone|distance:30] (@Check[reflex|dc:26|basic|name:Shoddy Blunderbuss Reflex Save|showDC:owner] save).</p>\n<p>When firing the blunderbuss, you must critically succeed at a @Check[crafting|dc:20|name:Shoddy Blunderbuss Crafting] or @Check[engineering|dc:20|name:Shoddy Blunderbuss Engineering Lore|showDC:owner]{Engineering Lore} check or the weapon explodes, damaging you for the same amount as the creatures in the cone and destroying itself. A successful @Check[crafting|dc:22|name:Shoddy Blunderbuss Reveal Unstable Nature|showDC:owner] check is enough to confirm the weapon's unstable nature if someone examines it beforehand.</p>\n<p>Reloading the blunderbuss takes 3 Interact actions: adding 1 dose of gunpowder, adding 1 grapeshot canister, and packing the contents.</p>"
+          "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">2</span></p>\n<p>The blunderbuss fires an explosive shot that deals @Damage[4d6[bludgeoning],2d10[fire]|options:area-damage]{4d6 bludgeoning damage plus 2d10 fire damage} to all creatures in a @Template[cone|distance:30] (@Check[reflex|dc:26|basic|name:Shoddy Blunderbuss Reflex Save|options:area-effect|showDC:owner] save).</p>\n<p>When firing the blunderbuss, you must critically succeed at a @Check[crafting|dc:20|name:Shoddy Blunderbuss Crafting] or @Check[engineering-lore|dc:20|name:Shoddy Blunderbuss Engineering Lore|showDC:owner]{Engineering Lore} check or the weapon explodes, damaging you for the same amount as the creatures in the cone and destroying itself. A successful @Check[crafting|dc:22|name:Shoddy Blunderbuss Reveal Unstable Nature|showDC:owner] check is enough to confirm the weapon's unstable nature if someone examines it beforehand.</p>\n<p>Reloading the blunderbuss takes 3 Interact actions: adding 1 dose of gunpowder, adding 1 grapeshot canister, and packing the contents.</p>"
         },
         "equipment->Monocle": {
           "name": "Monocle"
         },
         "consumable->Black Powder (Keg)": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3bZcqRUWQcPe2y8M]\n<p>A black powder keg explodes if it takes any fire damage, inflicting @Damage[5d6[fire]] damage on all creatures in a @Template[emanation|distance:20] (@Check[reflex|dc:24|basic|name:Gunpowder Detonation] save).</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3bZcqRUWQcPe2y8M]\n<p>A black powder keg explodes if it takes any fire damage, inflicting @Damage[5d6[fire]|options:area-damage] damage on all creatures in a @Template[emanation|distance:20] (@Check[reflex|dc:24|basic|options:area-effect|name:Gunpowder Detonation] save).</p>"
         },
         "consumable->Gunpower": {
           "name": "Gunpower"
         },
-        "consumable->Grapeshot": {
-          "name": "Grapeshot"
-        },
         "consumable->Tindertwig": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ylUdMTsfOQGJ3MN3]\nTindertwig",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ylUdMTsfOQGJ3MN3]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>An alchemical substance applied to one end of this tiny wooden stick ignites when struck against a rough surface. Creating a flame with a tindertwig is much faster than creating a flame with flint and steel. You can ignite the tindertwig and touch it to a flammable object as part of the same Interact action.</p>"
+        },
+        "ammo->Grapeshot": {
+          "name": "Grapeshot"
         },
         "backpack->Bag of Holding (Type I)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.jaEEvuQ32GjAa8jy]\nBag of Holding (Type I)",
@@ -1573,7 +1584,7 @@
         },
         "action->Shoddy Blunderbuss": {
           "name": "Shoddy Blunderbuss",
-          "description": "<p>Gerhard fires an explosive shot from his blunderbuss that deals @Damage[4d6[bludgeoning],2d10[fire]]{4d6 bludgeoning damage plus 2d10 fire damage} to all creatures in a @Template[cone|distance:30] (@Check[reflex|dc:26|basic]).</p>\n<p>When firing the blunderbuss, Gerhard must succeed at a @Check[crafting|dc:20] or @Check[engineering-lore|dc:20]{Engineering Lore} check or the weapon explodes, damaging him for the same amount as the creatures in the cone and destroying itself. If someone other than Gerhard uses the weapon, they must critically succeed at the check. A successful @Check[crafting|dc:22] check is enough to confirm the weapon's unstable nature if someone examines it beforehand.</p>\n<p>Reloading the blunderbuss takes 3 Interact actions: adding 1 dose of gunpowder, adding 1 grapeshot canister, and packing the contents.</p>"
+          "description": "<p>Gerhard fires an explosive shot from his blunderbuss that deals @Damage[4d6[bludgeoning],2d10[fire]|options:area-damage]{4d6 bludgeoning damage plus 2d10 fire damage} to all creatures in a @Template[cone|distance:30] (@Check[reflex|dc:26|basic|options:area-effect]).</p>\n<p>When firing the blunderbuss, Gerhard must succeed at a @Check[crafting|dc:20] or @Check[engineering-lore|dc:20]{Engineering Lore} check or the weapon explodes, damaging him for the same amount as the creatures in the cone and destroying itself. If someone other than Gerhard uses the weapon, they must critically succeed at the check. A successful @Check[crafting|dc:22] check is enough to confirm the weapon's unstable nature if someone examines it beforehand.</p>\n<p>Reloading the blunderbuss takes 3 Interact actions: adding 1 dose of gunpowder, adding 1 grapeshot canister, and packing the contents.</p>"
         },
         "action->Whip Swing": {
           "name": "Whip Swing",
@@ -1653,7 +1664,7 @@
         },
         "action->Body Slam": {
           "name": "Body Slam",
-          "description": "<p><strong>Requirements</strong> More than one enemy is adjacent to the grauladon.</p>\n<hr />\n<p><strong>Effect</strong> The grauladon swings its tail at each adjacent enemy and attempts to <span data-pf2-action=\"trip\" data-pf2-glyph=\"A\">Trip</span> each creature adjacent to it. It rolls only a single Athletics check and compares the result to the Fortitude DC of each target.</p>"
+          "description": "<p><strong>Requirements</strong> More than one enemy is adjacent to the grauladon.</p>\n<hr />\n<p><strong>Effect</strong> The grauladon swings its tail at each adjacent enemy and attempts to [[/act trip]] each creature adjacent to it. It rolls only a single Athletics check and compares the result to the Fortitude DC of each target.</p>"
         },
         "action->Deep Breath": {
           "name": "Deep Breath",
@@ -1750,6 +1761,11 @@
         "spell->Pass Without Trace": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.zlnXpME1T2uvn8Lr]\nPass Without Trace"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "spell->Tanglefoot": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
         },
@@ -1761,7 +1777,7 @@
         },
         "action->Green Empathy": {
           "name": "Green Empathy",
-          "description": "<p>The greenspeaker can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and make very simple Requests of plants and fungi.</p>"
+          "description": "<p>The greenspeaker can use Diplomacy to [[/act make-an-impression]] on and make very simple [[/act request]]{Requests} of plants and fungi.</p>"
         },
         "action->Jungle Stride": {
           "name": "Jungle Stride",
@@ -1860,7 +1876,7 @@
       "blurb": "Female kobold researcher",
       "items": {
         "weapon->Staff of Fire (Greater)": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.KcjaeMgrsBGgwUWL]\n<p>This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Produce Flame}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire} @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}</li>\n<li><strong>3rd</strong> @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame} @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}</li>\n</ul>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.KcjaeMgrsBGgwUWL]\n<p>This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire} @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}</li>\n<li><strong>3rd</strong> @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame} @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}</li>\n</ul>"
         },
         "consumable->Antidote (Greater)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.XWkeL34yJK6t5qUE]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +4 item bonus to Fortitude saving throws against poisons for 6 hours.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.TjBxxlTvb6tJP1jS]{Effect: Antidote}</p>"
@@ -1886,7 +1902,7 @@
         },
         "action->Kobold Explosives": {
           "name": "Kobold Explosives",
-          "description": "<p><strong>Cost</strong> 1 batch of infused reagents.</p>\n<hr />\n<p><strong>Effect</strong> Hezle quickly cobbles together an explosive bomb and lobs it up to 30 feet. All creatures in a @Template[burst|distance:5] take @Damage[5d6[fire]] damage (@Check[reflex|dc:26|basic|traits:interact] save).</p>"
+          "description": "<p><strong>Cost</strong> 1 batch of infused reagents.</p>\n<hr />\n<p><strong>Effect</strong> Hezle quickly cobbles together an explosive bomb and lobs it up to 30 feet. All creatures in a @Template[burst|distance:5] take @Damage[5d6[fire]|options:area-damage] damage (@Check[reflex|dc:26|basic|options:area-effect] save).</p>"
         },
         "action->Smoky Retreat": {
           "name": "Smoky Retreat",
@@ -1945,7 +1961,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]\nMagic Missile"
         },
         "weapon->Staff of Fire (Major)": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qx4Cq99vng6GhzEh]\n<p>This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Produce Flame}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire} @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}</li>\n<li><strong>3rd</strong> @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame} @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}</li>\n<li><strong>4th</strong> @UUID[Compendium.pf2e.spells-srd.Item.YrzBLPLd3r9m6t1p]{Fire Shield}, @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball} @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire}</li>\n<li><strong>5th</strong> @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball} @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire}</li>\n</ul>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.qx4Cq99vng6GhzEh]\n<p>This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire} @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}</li>\n<li><strong>3rd</strong> @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame} @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}</li>\n<li><strong>4th</strong> @UUID[Compendium.pf2e.spells-srd.Item.YrzBLPLd3r9m6t1p]{Fire Shield}, @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball} @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire}</li>\n<li><strong>5th</strong> @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball} @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire}</li>\n</ul>"
         },
         "strike-melee->Dagger": {
           "name": "Dagger"
@@ -2069,7 +2085,7 @@
         },
         "action->Resanguinate": {
           "name": "Resanguinate",
-          "description": "<p>The immortal ichor draws blood from the pores of living creatures around it. Any living creature within 30 feet that has blood takes [[/r {4d6}]]{4d6 damage} (@Check[fortitude|dc:33|basic] save). The immortal ichor regains HP equal to the total damage dealt. A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure).</p>"
+          "description": "<p>The immortal ichor draws blood from the pores of living creatures around it. Any living creature within @Template[emanation|distance:30]{30 feet} that has blood takes @Damage[4d6[untyped]|options:area-damage] damage (@Check[fortitude|dc:33|basic|options:area-effect,inflicts:drained] save). The immortal ichor regains HP equal to the total damage dealt. A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure).</p>"
         },
         "lore->Ancient History Lore": {
           "name": "Ancient History Lore"
@@ -2093,7 +2109,7 @@
         },
         "weapon->Frost Vial (Major) [Infused]": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4DJQID8GIlxQ7b9C]\nFrost Vial (Major) [Infused]",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4DJQID8GIlxQ7b9C]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +3 item bonus to attack rolls, the bomb deals 4d6 cold damage and 4 cold splash damage, and the target takes a -15-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4DJQID8GIlxQ7b9C]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +3 item bonus to attack rolls, the bomb deals 4d6 cold damage and 4 cold splash damage, and the target takes a –15-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
         },
         "armor->Chain Shirt": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
@@ -2172,7 +2188,7 @@
         },
         "action->Death Throes": {
           "name": "Death Throes",
-          "description": "<p>When one of Ingnovim's assistants dies, it bursts open in a foul-sounding and smelling explosion of toxic viscera and poisonous vapors. All creatures within a @Template[burst|distance:20] must attempt a @Check[fortitude|dc:38] save to resist this blast of poison.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[7d8[poison]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[14d8[poison],2d8[persistent,poison]]{14d8 poison damage and 2d8 persistent poison damage}.</p>"
+          "description": "<p>When one of Ingnovim's assistants dies, it bursts open in a foul-sounding and smelling explosion of toxic viscera and poisonous vapors. All creatures within a @Template[burst|distance:20] must attempt a @Check[fortitude|dc:38|options:area-effect,damaging-effect] save to resist this blast of poison.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[7d8[poison]|options:area-damage] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[14d8[poison],2d8[persistent,poison]|options:area-damage]{14d8 poison damage and 2d8 persistent poison damage}.</p>"
         }
       }
     },
@@ -2206,7 +2222,7 @@
         },
         "action->Weapon Supremacy": {
           "name": "Weapon Supremacy",
-          "description": "<p>Inizra is permanently @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1}. She can use her extra action only to Strike.</p>"
+          "description": "<p>Inizra is permanently @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened}. She can use her extra action only to Strike.</p>"
         },
         "lore->Hermea Lore": {
           "name": "Hermea Lore"
@@ -2669,14 +2685,14 @@
         },
         "action->Necrotic Pulse": {
           "name": "Necrotic Pulse",
-          "description": "<p>Each creature in a @Template[emanation|distance:10] must succeed at a @Check[fortitude|dc:32] save or take @Damage[1d6[persistent,void]] damage and be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute as their flesh and bones temporarily atrophy. The golem can't use Necrotic Pulse again for [[/gmr 1d4 #Recharge Necrotic Pulse]]{1d4 rounds}.</p>"
+          "description": "<p>Each creature in a @Template[emanation|distance:10] must succeed at a @Check[fortitude|dc:32|options:area-effect,damaging-effect] save or take @Damage[1d6[persistent,void]|options:area-damage] damage and be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute as their flesh and bones temporarily atrophy. The golem can't use Necrotic Pulse again for [[/gmr 1d4 #Recharge Necrotic Pulse]]{1d4 rounds}.</p>"
         }
       }
     },
     "Lesser Dragonstorm": {
       "name": "Lesser Dragonstorm",
       "description": "<p>A small-scale version of a dragonstorm-a churning vortex of wind infused with fire, acid, lightning, poison, and ice-fills Alseta's Ring.</p>",
-      "disable": "<p>@Check[religion|dc:40|name:Call for Divine Intervention] (legendary) to call out to a non-evil deity for direct intervention to disperse the lesser dragonstorm (prayers to Apsu allow characters who are masters in Religion to attempt the check as if they were legendary instead), @Check[thievery|dc:42|name:Deactivate Vengegate|traits:action:disable-a-device] (legendary) to deactivate Vengegate while the manifestation is forcing it open, or a successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (10th level; DC 40) to counteract the lesser dragonstorm.</p>",
+      "disable": "<p>@Check[religion|dc:40|name:Call for Divine Intervention] (legendary) to call out to a non-evil deity for direct intervention to disperse the lesser dragonstorm (prayers to Apsu allow characters who are masters in Religion to attempt the check as if they were legendary instead), @Check[thievery|dc:42|name:Deactivate Vengegate|traits:action:disable-a-device] (legendary) to deactivate Vengegate while the manifestation is forcing it open, or a successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (10th rank; DC 40) to counteract the lesser dragonstorm.</p>",
       "routine": "<p>(1 action) On its initiative, the lesser dragonstorm reaches out and blasts all creatures within Alseta's Ring. Affected creatures take @Damage[2d8[acid],2d8[cold],2d8[electricity],2d8[fire],2d8[poison]]{10d8 damage} (@Check[reflex|dc:46|basic]), evenly split between acid, cold, fire, electricity, and poison. Creatures that fail their save are pulled 20 feet toward the center of Alseta's Ring (or are knocked prone and pulled 30 feet on a critical failure). After 10 rounds, the lesser dragonstorm is destroyed, but a much greater dragonstorm manifests in the surrounding region-see The Dragonstorm.</p>",
       "stealth": "<p>(legendary)</p>",
       "items": {
@@ -2771,7 +2787,7 @@
           "description": "<p>A creature that Strikes a living sap with a melee weapon must succeed at a @Check[reflex|dc:24] save or be disarmed of that weapon. If the creature critically fails, the weapon ends up in the living sap's space. A creature that hits a living sap with an unarmed attack must succeed at a @Check[reflex|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the living sap until the end of its next turn.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:22|traits:damaging-effect] save, @Damage[2d6[acid]], @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 24, Rupture 10</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:22|traits:damaging-effect] save, @Damage[2d6[acid]], [[/act escape dc=24]], Rupture 10</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Entangling Residue": {
           "name": "Entangling Residue",
@@ -2782,7 +2798,7 @@
     "Luminous Ward": {
       "name": "Luminous Ward",
       "description": "<p>A burst of radiance explodes from the door.</p>",
-      "disable": "<p>@Check[thievery|dc:40|name:|traits:action:disable-a-device] (master) to disable the wards or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th level; counteract DC 38) to counteract the ward</p>",
+      "disable": "<p>@Check[thievery|dc:40|name:|traits:action:disable-a-device] (master) to disable the wards or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th rank; counteract DC 38) to counteract the ward</p>",
       "reset": "<p>The trap resets after 1 hour.</p>",
       "stealth": "<p>(master)</p>",
       "items": {
@@ -2990,7 +3006,7 @@
         },
         "action->Contingency": {
           "name": "Contingency",
-          "description": "<p><strong>Trigger</strong> Mengkare fails a saving throw against a spell.</p>\n<hr />\n<p><strong>Effect</strong> @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th level) attempts to counteract the triggering spell.</p>"
+          "description": "<p><strong>Trigger</strong> Mengkare fails a saving throw against a spell.</p>\n<hr />\n<p><strong>Effect</strong> @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th rank) attempts to counteract the triggering spell.</p>"
         },
         "action->Extra Reaction": {
           "name": "Extra Reaction",
@@ -3005,7 +3021,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>Mengkare breathes in one of two ways. He can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<ul>\n<li><strong>Flame</strong> (arcane,evocation,fire); Mengkare breathes a blast of flame in a @Template[cone|distance:80] that deals @Damage[24d6[fire]|options:area-damage] damage (@Check[reflex|dc:46|basic|name:Breath Weapon (Flame)] save).</li>\n<li><strong>Weakening Gas</strong> (arcane,necromancy); The dragon breathes a blast of weakening gas. Each creature within a @Template[cone|distance:30] must succeed at a @Check[fortitude|dc:46|name:Breath Weapon (Weakening Gas)] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} for 1 minute (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 5} on a critical failure).</li>\n</ul>"
+          "description": "<p>Mengkare breathes in one of two ways. He can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<ul>\n<li><strong>Flame</strong> (arcane,evocation,fire); Mengkare breathes a blast of flame in a @Template[cone|distance:80] that deals @Damage[24d6[fire]|options:area-damage] damage (@Check[reflex|dc:46|basic|name:Breath Weapon (Flame)|traits:arcane,evocation,fire|options:area-effect] save).</li>\n<li><strong>Weakening Gas</strong> (arcane,necromancy); The dragon breathes a blast of weakening gas. Each creature within a @Template[cone|distance:30] must succeed at a @Check[fortitude|dc:46|name:Breath Weapon (Weakening Gas)|traits:arcane,necromancy|options:area-effect,inflicts:enfeebled] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} for 1 minute (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 5} on a critical failure).</li>\n</ul>"
         },
         "action->Change Shape": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.mEbrInCpag7YThH2]\nChange Shape",
@@ -3021,7 +3037,7 @@
         },
         "action->Explosive Breath": {
           "name": "Explosive Breath",
-          "description": "<p>When Mengkare uses Breath Weapon, he can expel an explosive orb of flame instead of a cone. When he does, he fires the orb at the corner of a square within 60 feet. The orb immediately detonates and deals @Damage[24d6[fire]] damage (@Check[reflex|dc:48|basic|name:Explosive Orb|traits:fire] save) to all creatures within a @Template[burst|distance:30]. Creatures that critically fail their save catch on fire and take @Damage[4d6[persistent,fire]] damage.</p>"
+          "description": "<p>When Mengkare uses Breath Weapon, he can expel an explosive orb of flame instead of a cone. When he does, he fires the orb at the corner of a square within 60 feet. The orb immediately detonates and deals @Damage[24d6[fire]|options:area-damage] damage (@Check[reflex|dc:48|basic|name:Explosive Orb|options:area-effect|traits:fire] save) to all creatures within a @Template[burst|distance:30]. Creatures that critically fail their save catch on fire and take @Damage[4d6[persistent,fire]] damage.</p>"
         }
       }
     },
@@ -3437,7 +3453,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>Racharak breathes flames that deals @Damage[9d6[fire]|options:area-damage] damage to all creatures in a @Template[cone|distance:30] (@Check[reflex|dc:26|basic] save).</p>\n<p>She can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}</p>"
+          "description": "<p>Racharak breathes flames that deals @Damage[9d6[fire]|options:area-damage] damage to all creatures in a @Template[cone|distance:30] (@Check[reflex|dc:26|basic|options:area-effect] save).</p>\n<p>She can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}</p>"
         },
         "action->Draconic Frenzy": {
           "name": "Draconic Frenzy",
@@ -3626,7 +3642,7 @@
         },
         "action->Bonds of Iron": {
           "name": "Bonds of Iron",
-          "description": "<p>Once per day, Rusty Mae can cause a cage built of cold iron fingernails to spring out of nothingness at a range of up to 30 feet, attempting an Athletics check to [[/act grapple]] against the target's Fortitude DC; if the target has a weakness to cold iron, Rusty Mae gains a +2 circumstance bonus to this check. Unlike a normal Grapple, Rusty Mae doesn't need to be within reach and can move as she pleases, and a successful attempt lasts until the creature [[/act escape dc=29]]{Escapes} (DC 29), causing the cage to crumble into rust. Any creature can attempt to destroy the cage by attacking it. It has an AC of 25, Hardness 14, and 56 Hit Points.</p>"
+          "description": "<p>Once per day, Rusty Mae can cause a cage built of cold iron fingernails to spring out of nothingness at a range of up to 30 feet, attempting an Athletics check to [[/act grapple]] against the target's Fortitude DC; if the target has a weakness to cold iron, Rusty Mae gains a +2 circumstance bonus to this check. Unlike a normal Grapple, Rusty Mae doesn't need to be within reach and can move as she pleases, and a successful attempt lasts until the creature [[/act escape dc=29]]{Escapes}, causing the cage to crumble into rust. Any creature can attempt to destroy the cage by attacking it. It has an AC of 25, Hardness 14, and 56 Hit Points.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>Rusty Mae can take on the appearance of any Medium female humanoid. This doesn't change her Speed or her attack and damage bonuses with her Strikes but might change the damage type her Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -3636,7 +3652,7 @@
         },
         "action->Rust": {
           "name": "Rust",
-          "description": "<p>Rusty Mae's claws cause metal to rapidly rust and corrode. If she succeeds at a claws Strike or @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} attempt, she deals [[/r {2d6}]]{2d6 damage} (doubled on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness, in addition to the damage she deals to the target with her claws. If she hits an unattended metal item, the item takes [[/r {2d6}]]{2d6 damage} automatically. If a creature uses the Shield Block reaction with a metal shield against Rusty Mae's claw attack, the shield is automatically @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Broken}, but no other item is affected on that attack.</p>"
+          "description": "<p>Rusty Mae's claws cause metal to rapidly rust and corrode. If she succeeds at a claws Strike or @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} attempt, she deals @Damage[2d6[untyped]] damage (doubled on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness, in addition to the damage she deals to the target with her claws. If she hits an unattended metal item, the item takes 2d6 damage automatically. If a creature uses the Shield Block reaction with a metal shield against Rusty Mae's claw attack, the shield is automatically @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Broken}, but no other item is affected on that attack.</p>"
         }
       }
     },
@@ -3716,7 +3732,7 @@
         },
         "action->Precise Debilitations": {
           "name": "Precise Debilitations",
-          "description": "<p><strong>Trigger</strong> The Scarlet Triad agent's Strike hits an off-guard creature and deals damage.</p>\n<hr />\n<p><strong>Effect</strong> The Scarlet Triad agent applies one of the following debilitations to the creature, which lasts until the end of their next turn.</p>\n<ul>\n<li><em>Brow Gash</em> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</li>\n<li><em>Deep Cut</em> The target takes an additional 2d6 precision damage from the Scarlet Triad agent's attacks.</li>\n<li><em>Hamstring</em> The target takes a -10-foot status penalty to its Speeds.</li>\n<li><em>Low Blow</em> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.otUESSH8BDdPKHtb]{Effect: Hamstring}</p>",
+          "description": "<p><strong>Trigger</strong> The Scarlet Triad agent's Strike hits an off-guard creature and deals damage.</p>\n<hr />\n<p><strong>Effect</strong> The Scarlet Triad agent applies one of the following debilitations to the creature, which lasts until the end of their next turn.</p>\n<ul>\n<li><em>Brow Gash</em> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</li>\n<li><em>Deep Cut</em> The target takes an additional 2d6 precision damage from the Scarlet Triad agent's attacks.</li>\n<li><em>Hamstring</em> The target takes a –10-foot status penalty to its Speeds.</li>\n<li><em>Low Blow</em> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.otUESSH8BDdPKHtb]{Effect: Hamstring}</p>",
           "rules": {
             "0": {
               "text": "<span class=\"action-glyph\">f</span> The Scarlet Triad agent applies one of the following debilitations to the creature, which lasts until the end of their next turn."
@@ -3755,7 +3771,7 @@
         },
         "action->Darting Shot": {
           "name": "Darting Shot",
-          "description": "<p>The Scarlet Triad boss <span data-pf2-action=\"feint\" data-pf2-glyph=\"A\">Feints</span> a target, Strides up to their Speed, and makes a Strike with their shortbow in any order. They can Feint any target within 30 feet when using this ability.</p>"
+          "description": "<p>The Scarlet Triad boss [[/act feint]]{Feints} a target, Strides up to their Speed, and makes a Strike with their shortbow in any order. They can Feint any target within 30 feet when using this ability.</p>"
         },
         "action->Sneak Attack": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The scarlet triad boss deals 4d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
@@ -4031,7 +4047,7 @@
     "Seismic Spears Trap": {
       "name": "Seismic Spears Trap",
       "description": "<p>Lines of searing lava lance through the area, causing targets to shake as if caught in an earthquake and potentially become petrified.</p>",
-      "disable": "<p>@Check[thievery|dc:43|name:Disable the Wards|traits:magical,trap] (master) to disable the wards or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th level; counteract DC 38) to counteract the ward.</p>",
+      "disable": "<p>@Check[thievery|dc:43|name:Disable the Wards|traits:magical,trap] (master) to disable the wards or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th rank; counteract DC 38) to counteract the ward.</p>",
       "reset": "<p>The trap resets after 1 minute.</p>",
       "stealth": "<p>(master)</p>",
       "items": {
@@ -4092,11 +4108,11 @@
         },
         "action->Vulnerability to Exorcism": {
           "name": "Vulnerability to Exorcism",
-          "description": "<p>When a soulbound ruin fails a saving throw against a spell that would banish tormented spirits or manipulate souls, such as @UUID[Compendium.pf2e.spells-srd.Item.bay4AfSu2iIozNNW]{Banishment} or @UUID[Compendium.pf2e.spells-srd.Item.GYmXvS9NJ7QwfWGg]{Seize Soul}, instead of experiencing the listed effects, it takes [[/r 10]]{10 damage} per spell rank.</p>"
+          "description": "<p>When a soulbound ruin fails a saving throw against a spell that would banish tormented spirits or manipulate souls, such as @UUID[Compendium.pf2e.spells-srd.Item.bay4AfSu2iIozNNW]{Banishment} or @UUID[Compendium.pf2e.spells-srd.Item.GYmXvS9NJ7QwfWGg]{Seize Soul}, instead of experiencing the listed effects, it takes @Damage[10[untyped]] damage per spell rank.</p>"
         },
         "action->Collapse Ceiling": {
           "name": "Collapse Ceiling",
-          "description": "<p>The ruin collapses up to three 10-foot by 10-foot sections of its ceiling. The ruin takes [[/r {10}]]{10 damage} per section it collapses, and it can't collapse the same section until it has been repaired.</p>\n<p>Each creature in one of these areas takes @Damage[8d10[bludgeoning]] damage with a @Check[reflex|dc:35|basic] save. On a failed save, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} under the rubble until it Escapes (DC 33).</p>"
+          "description": "<p>The ruin collapses up to three @Template[square|distance:10]{10-foot by 10-foot} sections of its ceiling. The ruin takes @Damage[10[untyped]] damage per section it collapses, and it can't collapse the same section until it has been repaired.</p>\n<p>Each creature in one of these areas takes @Damage[8d10[bludgeoning]|options:area-damage] damage with a @Check[reflex|dc:35|basic|options:area-effect,inflicts:restrained] save. On a failed save, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} under the rubble until it [[/act escape dc=33]]{Escapes}.</p>"
         },
         "action->Pervasive Attacks": {
           "name": "Pervasive Attacks",
@@ -4126,7 +4142,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The spawn breathes flames that deals @Damage[9d6[fire]|options:area-damage] damage to all creatures in a @Template[cone|distance:30] (@Check[reflex|dc:26|basic] save).</p>\n<p>They can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}</p>"
+          "description": "<p>The spawn breathes flames that deals @Damage[9d6[fire]|options:area-damage] damage to all creatures in a @Template[cone|distance:30] (@Check[reflex|dc:26|basic|options:area-effect] save).</p>\n<p>They can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}</p>"
         },
         "action->Draconic Frenzy": {
           "name": "Draconic Frenzy",
@@ -4177,7 +4193,7 @@
         },
         "action->Obliteration Beam": {
           "name": "Obliteration Beam",
-          "description": "<p><strong>Requirements</strong> The spiritbound aluum has bound a soul using its @UUID[Compendium.pf2e.spells-srd.Item.GYmXvS9NJ7QwfWGg]{Seize Soul} innate spell</p>\n<hr />\n<p><strong>Effect</strong> The spiritbound aluum transforms the captured soul's essence into raw magical energy, channeling the spirit into a beam that deals @Damage[20d6[force]] damage in a @Template[line|distance:30] (@Check[reflex|dc:38|basic] save). The remaining fragments of the captured soul are released to the Great Beyond.</p>\n<p>The spiritbound aluum can't use Obliteration Beam again for [[/gmr 1d4 #Recharge Obliteration Beam]]{1d4 rounds}.</p>"
+          "description": "<p><strong>Requirements</strong> The spiritbound aluum has bound a soul using its @UUID[Compendium.pf2e.spells-srd.Item.GYmXvS9NJ7QwfWGg]{Seize Soul} innate spell</p>\n<hr />\n<p><strong>Effect</strong> The spiritbound aluum transforms the captured soul's essence into raw magical energy, channeling the spirit into a beam that deals @Damage[20d6[force]|options:area-damage] damage in a @Template[line|distance:30] (@Check[reflex|dc:38|basic|options:area-effect] save). The remaining fragments of the captured soul are released to the Great Beyond.</p>\n<p>The spiritbound aluum can't use Obliteration Beam again for [[/gmr 1d4 #Recharge Obliteration Beam]]{1d4 rounds}.</p>"
         },
         "action->Paralyzing Force": {
           "name": "Paralyzing Force",
@@ -4189,7 +4205,7 @@
         },
         "action->Soul Shriek": {
           "name": "Soul Shriek",
-          "description": "<p>The aluum enforcer emits a keening wail in a @Template[cone|distance:15] that deals @Damage[16d6[sonic]] damage (@Check[fortitude|dc:27|basic] save). A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure.</p>\n<p>The aluum can't use Soul Shriek again for [[/gmr 1d4 #Recharge Soul Shriek]]{1d4 rounds}.</p>"
+          "description": "<p>The aluum enforcer emits a keening wail in a @Template[cone|distance:15] that deals @Damage[16d6[sonic]|options:area-damage] damage (@Check[fortitude|dc:27|basic|options:area-effect,inflicts:stunned] save). A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure.</p>\n<p>The aluum can't use Soul Shriek again for [[/gmr 1d4 #Recharge Soul Shriek]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -4240,7 +4256,7 @@
         },
         "action->Telekinetic Crystalline Assault": {
           "name": "Telekinetic Crystalline Assault",
-          "description": "<p>Talamira fills the air with whirling crystals, dealing @Damage[7d6[slashing]] damage to all creatures in a @Template[emanation|distance:30] (@Check[reflex|dc:33|basic] save).</p>"
+          "description": "<p>Talamira fills the air with whirling crystals, dealing @Damage[7d6[slashing]|options:area-damage] damage to all creatures in a @Template[emanation|distance:30] (@Check[reflex|dc:33|basic|options:area-effect] save).</p>"
         },
         "lore->Aiudara Lore": {
           "name": "Aiudara Lore"
@@ -4420,9 +4436,9 @@
     },
     "Town Hall Fire": {
       "name": "Town Hall Fire",
-      "description": "<p>A fire engulfs the western door and a @Template[line|distance:10|width:10]{10-foot-by-10-foot area} immediately east of it, then spreads on each of its turns.</p>",
-      "disable": "<p>Eliminating the hazard requires dousing the flames. Water typically clears a 5-foot square if the amount is small (such as that from @UUID[Compendium.pf2e.spells-srd.Item.WzLKjSw6hsBhuklC]{Create Water} or @UUID[Compendium.pf2e.spells-srd.Item.jfVCuOpzC6mUrf6f]{Hydraulic Push}). Larger amounts of water, such as a full bucket, typically douse a @Template[line|distance:10|width:10]{10-foot-by-10-foot area} (or 4 squares in some other shape). Throwing a bucket of water on flames requires an Interact action. A waterskin doesn't contain enough water to put out even 1 square of fire. Cold can also put out fire, but only if the cold can affect an area; cold is usually less effective than water, so a @UUID[Compendium.pf2e.equipment-srd.Item.EpxmUtLpCkE8R6KJ]{Frost Vial} typically puts out 1 square of fire, and @UUID[Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh]{Ray of Frost} is ineffective.</p>\n<p>Fountain Circle, located outside town hall, has several working water pumps. These are far enough away that it's impractical for a PC to bring water back and forth. However, a PC might instruct the more steely nerved spectators to create a bucket brigade. It takes 15 spectators (which can include those rescued by councilors as well as by PCs) to set this up, and 2 rounds for the townspeople to line up and begin pumping water from Fountain Circle. As of the 3rd round, there is a bucket of water available for the PCs to use at the chamber's southern entrance at the beginning of each PC's turn. Members of a bucket brigade are lined up outside the chamber, and don't take damage from smoke inhalation.</p>\n<p>If a PC does want to carry the water, it's 150 feet from the chamber's southern door to a pump, so it 6 actions are usually needed to reach the pumps or return. Filling a bucket requires an Interact action.</p>\n<p>Other methods might also help control the fire, as you determine. For example, the PCs might be able to find something to barricade the fire with to control its path, or use a cloak to beat out some of the fire.</p>",
-      "routine": "<p>On its turn, the fire spreads into a number of additional squares equal to half the number of squares the fire currently occupies, with a minimum of 1 square. You determine the squares the fire spreads into-typically those with the most flammable materials. Any creature that ends its turn next to the flames takes @Damage[1d6[fire]] damage, and any creature within the flames takes @Damage[4d6[fire]] damage. Both of these have a @Check[reflex|dc:17|basic|traits:complex,environmental,fire,hazard] save. A creature can take damage from flames only once per round. (For simplicity, track damage only for the NPCs and their allies, not for the spectators; Turn 5 and Turn 7 have instructions regarding the spectators' health).</p>\n<p>The fire has an additional effect on each of its turns after the first.</p>\n<p><strong>Turn 2</strong> The chamber's northern door flies open and flames burst through, igniting the @Template[line|distance:10|width:10]{10-foot-by-10-foot area} in front of the door. All fires spread on subsequent turns, at the same rate listed above. Any fires that join together become one fire for this purpose.</p>\n<p><strong>Turn 4+</strong> Creatures in the room take [[/r 1d6 #Smoke Inhalation Damage]]{1d6 damage} from smoke inhalation at the ends of their turns. Anyone who uses an Interact action to tie a wet rag around their nose and mouth (or uses another creative solution) halves the damage.</p>\n<p><strong>Turn 5</strong> Spectators still inside the room fall @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} from burns and smoke inhalation.</p>\n<p><strong>Turn 7</strong> Spectators still in the room die.</p>",
+      "description": "<p>A fire engulfs the western door and a @Template[square|distance:10]{10-foot-by-10-foot area} immediately east of it, then spreads on each of its turns.</p>",
+      "disable": "<p>Eliminating the hazard requires dousing the flames. Water typically clears a 5-foot square if the amount is small (such as that from @UUID[Compendium.pf2e.spells-srd.Item.WzLKjSw6hsBhuklC]{Create Water} or @UUID[Compendium.pf2e.spells-srd.Item.jfVCuOpzC6mUrf6f]{Hydraulic Push}). Larger amounts of water, such as a full bucket, typically douse a @Template[square|distance:10]{10-foot-by-10-foot area} (or 4 squares in some other shape). Throwing a bucket of water on flames requires an Interact action. A waterskin doesn't contain enough water to put out even 1 square of fire. Cold can also put out fire, but only if the cold can affect an area; cold is usually less effective than water, so a @UUID[Compendium.pf2e.equipment-srd.Item.EpxmUtLpCkE8R6KJ]{Frost Vial} typically puts out 1 square of fire, and @UUID[Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh]{Ray of Frost} is ineffective.</p>\n<p>Fountain Circle, located outside town hall, has several working water pumps. These are far enough away that it's impractical for a PC to bring water back and forth. However, a PC might instruct the more steely nerved spectators to create a bucket brigade. It takes 15 spectators (which can include those rescued by councilors as well as by PCs) to set this up, and 2 rounds for the townspeople to line up and begin pumping water from Fountain Circle. As of the 3rd round, there is a bucket of water available for the PCs to use at the chamber's southern entrance at the beginning of each PC's turn. Members of a bucket brigade are lined up outside the chamber, and don't take damage from smoke inhalation.</p>\n<p>If a PC does want to carry the water, it's 150 feet from the chamber's southern door to a pump, so it 6 actions are usually needed to reach the pumps or return. Filling a bucket requires an Interact action.</p>\n<p>Other methods might also help control the fire, as you determine. For example, the PCs might be able to find something to barricade the fire with to control its path, or use a cloak to beat out some of the fire.</p>",
+      "routine": "<p>On its turn, the fire spreads into a number of additional squares equal to half the number of squares the fire currently occupies, with a minimum of 1 square. You determine the squares the fire spreads into-typically those with the most flammable materials. Any creature that ends its turn next to the flames takes @Damage[1d6[fire]] damage, and any creature within the flames takes @Damage[4d6[fire]] damage. Both of these have a @Check[reflex|dc:17|basic|traits:complex,environmental,fire,hazard] save. A creature can take damage from flames only once per round. (For simplicity, track damage only for the NPCs and their allies, not for the spectators; Turn 5 and Turn 7 have instructions regarding the spectators' health).</p>\n<p>The fire has an additional effect on each of its turns after the first.</p>\n<p><strong>Turn 2</strong> The chamber's northern door flies open and flames burst through, igniting the @Template[square|distance:10]{10-foot-by-10-foot area} in front of the door. All fires spread on subsequent turns, at the same rate listed above. Any fires that join together become one fire for this purpose.</p>\n<p><strong>Turn 4+</strong> Creatures in the room take @Damage[1d6[untyped]] damage from smoke inhalation at the ends of their turns. Anyone who uses an Interact action to tie a wet rag around their nose and mouth (or uses another creative solution) halves the damage.</p>\n<p><strong>Turn 5</strong> Spectators still inside the room fall @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} from burns and smoke inhalation.</p>\n<p><strong>Turn 7</strong> Spectators still in the room die.</p>",
       "stealth": "<p>Initiative modifier is [[/r 1d20+5 #Initiative]]{+5}</p>"
     },
     "Trapped Lathe": {
@@ -4630,7 +4646,7 @@
         },
         "action->Dimensional Tether": {
           "name": "Dimensional Tether",
-          "description": "<p>A creature hit by a vazgorlu's web Strike is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface until it Escapes (DC 42). As long as it remains immobilized by the web, the web attempts to counteract any effect that would move the webbed creature to another plane, with a counteract rank of 10 and using the vazgorlu's [[/r 1d20+38 #Dimensional Tether Counteract]]{Arcana} skill to attempt the counteract check.</p>"
+          "description": "<p>A creature hit by a vazgorlu's web Strike is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface until it [[/act escape dc=42]]{Escapes}. As long as it remains immobilized by the web, the web attempts to counteract any effect that would move the webbed creature to another plane, with a counteract rank of 10 and using the vazgorlu's [[/r 1d20+38 #Dimensional Tether Counteract]]{Arcana} skill to attempt the counteract check.</p>"
         },
         "action->Redirect Portal": {
           "name": "Redirect Portal",
@@ -4658,6 +4674,11 @@
         "spell->Burning Hands (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]\nBurning Hands (At Will)"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "strike-melee->Jaws": {
           "name": "Jaws"
         },
@@ -4679,7 +4700,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>Veshumirix breathes a blast of magma that deals @Damage[9d6[fire],4d12[bludgeoning]|options:area-damage]{9d6 fire damage and 4d12 bludgeoning damage} in a @Template[cone|distance:60] (@Check[reflex|dc:42|basic] save).</p>\n<p>He can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>Veshumirix breathes a blast of magma that deals @Damage[9d6[fire],4d12[bludgeoning]|options:area-damage]{9d6 fire damage and 4d12 bludgeoning damage} in a @Template[cone|distance:60] (@Check[reflex|dc:42|basic|options:area-effect] save).</p>\n<p>He can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         },
         "action->Draconic Frenzy": {
           "name": "Draconic Frenzy",
@@ -4695,14 +4716,14 @@
         },
         "action->Volcanic Purge": {
           "name": "Volcanic Purge",
-          "description": "<p>If the next action Veshumirix uses is Breath Weapon, the magma clings to those it damages. Each creature that fails its save against the Breath Weapon takes @Damage[4d6[persistent,fire]] damage, and as long as it has this persistent fire damage, it also takes a -10-foot status penalty to its Speeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.7qoZauizAKfPIXeu]{Effect: Volcanic Purge}</p>"
+          "description": "<p>If the next action Veshumirix uses is Breath Weapon, the magma clings to those it damages. Each creature that fails its save against the Breath Weapon takes @Damage[4d6[persistent,fire]] damage, and as long as it has this persistent fire damage, it also takes a –10-foot status penalty to its Speeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.7qoZauizAKfPIXeu]{Effect: Volcanic Purge}</p>"
         }
       }
     },
     "Vision of Dahak": {
       "name": "Vision of Dahak",
       "description": "<p>Blasts of fire and smoke pour out of the tunnel walls to coalesce into the burning form of Dahak himself; a PC who succeeds at a @Check[religion|dc:20|name:Recognize Depiction of Dahak|traits:hazard,complex,fire,magical,trap,action:recall-knowledge] check to Recall Knowledge notes that the fiery dragon closely resembles classical depictions of the draconic god of destruction.</p>",
-      "disable": "<p>@Check[religion|dc:26|name:Counteract Dahak With Prayers|traits:complex,fire,magical,trap,hazard] (expert) to utter prayers to a non-evil deity to counteract Dahak's presence (prayers to Apsu allow this check to be made if the character is merely trained in Religion), @Check[thievery|dc:30|name:Divert the Hazard's Energy Back|traits:complex,fire,magical,trap,hazard] (expert) to divert the hazard's energies back upon themselves, or a successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th level; counteract DC 26).</p>",
+      "disable": "<p>@Check[religion|dc:26|name:Counteract Dahak With Prayers|traits:complex,fire,magical,trap,hazard] (expert) to utter prayers to a non-evil deity to counteract Dahak's presence (prayers to Apsu allow this check to be made if the character is merely trained in Religion), @Check[thievery|dc:30|name:Divert the Hazard's Energy Back|traits:complex,fire,magical,trap,hazard] (expert) to divert the hazard's energies back upon themselves, or a successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank; counteract DC 26).</p>",
       "reset": "<p>The vision of Dahak deactivates and resets automatically once no creatures remain within the Huntergate way station.</p>",
       "routine": "<p>(2 actions) The vision of Dahak manifests next to the creature that is closest to the center of the way station, then uses its Breath Weapon in a direction that catches the most possible targets in its area.</p>",
       "stealth": "<p>(expert)</p>",
@@ -4908,7 +4929,7 @@
     "Wrath of the Destroyer": {
       "name": "Wrath of the Destroyer",
       "description": "<p>These heavy doors, carved with an image of Dahak, echo with a hatred so powerful that it can kill anyone who comes nearby, manifesting a vision of Dahak's head emerging from the doors to strike at a foe.</p>",
-      "disable": "<p>@Check[thievery|dc:29|name:Disrupt the Divine Magic|traits:complex,magical,trap,hazard] (expert) to disrupt the divine magic, @Check[religion|dc:29|name:Placate Wrathful Energies|traits:complex,magical,trap,hazard] (expert) to placate the wrathful energies, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th level; counteract DC 26).</p>",
+      "disable": "<p>@Check[thievery|dc:29|name:Disrupt the Divine Magic|traits:complex,magical,trap,hazard] (expert) to disrupt the divine magic, @Check[religion|dc:29|name:Placate Wrathful Energies|traits:complex,magical,trap,hazard] (expert) to placate the wrathful energies, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th rank; counteract DC 26).</p>",
       "reset": "<p>The trap deactivates and resets if 1 minute passes without any creature being in range.</p>",
       "routine": "<p>(1 action) On its initiative, the wrath of the destroyer targets the closest target in area <strong>C6</strong> with Face of the Fatal Divine.</p>",
       "stealth": "<p>(expert) to notice subtle vapors of magical energy seething across the doors</p>",
@@ -4994,7 +5015,7 @@
         },
         "action->Firebleed": {
           "name": "Firebleed",
-          "description": "<p><strong>Trigger</strong> Xotani is damaged</p>\n<hr />\n<p><strong>Effect</strong> Xotani's wound erupts with magma in a @Template[cone|distance:30], dealing @Damage[6d8[fire],6d8[persistent,fire]]{6d8 fire damage and 6d8 persistent fire damage} (@Check[reflex|dc:42|basic] save).</p>"
+          "description": "<p><strong>Trigger</strong> Xotani is damaged</p>\n<hr />\n<p><strong>Effect</strong> Xotani's wound erupts with magma in a @Template[cone|distance:30], dealing @Damage[6d8[fire],6d8[persistent,fire]|options:area-damage]{6d8 fire damage and 6d8 persistent fire damage} (@Check[reflex|dc:42|basic|options:area-effect] save).</p>"
         },
         "action->Frightful Presence": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>300 feet. @Check[will|dc:39]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
@@ -5013,7 +5034,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>Xotani breathes a blast of flame that deals @Damage[18d6[fire],4d6[persistent,fire]|options:area-damage]{18d6 fire damage plus 4d6 persistent fire damage} to all creatures in a @Template[cone|distance:70] (@Check[reflex|dc:42|basic] save).</p>\n<p>It can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>Xotani breathes a blast of flame that deals @Damage[18d6[fire],4d6[persistent,fire]|options:area-damage]{18d6 fire damage plus 4d6 persistent fire damage} to all creatures in a @Template[cone|distance:70] (@Check[reflex|dc:42|basic|options:area-effect] save).</p>\n<p>It can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         },
         "action->Swallow Whole": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Huge, @Damage[(8d6+8)[bludgeoning],12d6[fire]], Rupture 35</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
@@ -5037,7 +5058,7 @@
         },
         "action->Explosion": {
           "name": "Explosion",
-          "description": "<p>When a Xotanispawn dies, it explodes, dealing @Damage[15d8[fire]] damage to creatures in a @Template[emanation|distance:30] (@Check[reflex|dc:39|basic] save).</p>"
+          "description": "<p>When a Xotanispawn dies, it explodes, dealing @Damage[15d8[fire]|options:area-damage] damage to creatures in a @Template[emanation|distance:30] (@Check[reflex|dc:39|basic|options:area-effect] save).</p>"
         },
         "action->Frightful Presence": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>60 feet. @Check[will|dc:36]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
@@ -5048,7 +5069,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The Xotanispawn sprays a @Template[cone|distance:60] of magma that deals @Damage[10d10[fire],2d6[persistent,fire]|options:area-damage]{10d10 fire damage and 2d6 persistent fire damage} to all creatures in the area (@Check[reflex|dc:39|basic] save).</p>\n<p>The Xotanispawn can't use its Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>The Xotanispawn sprays a @Template[cone|distance:60] of magma that deals @Damage[10d10[fire],2d6[persistent,fire]|options:area-damage]{10d10 fire damage and 2d6 persistent fire damage} to all creatures in the area (@Check[reflex|dc:39|basic|options:area-effect] save).</p>\n<p>The Xotanispawn can't use its Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         },
         "action->Heat Surge": {
           "name": "Heat Surge",
@@ -5071,7 +5092,7 @@
         },
         "action->Hampering Shot": {
           "name": "Hampering Shot",
-          "description": "<p>The Zephyr Guard makes a heavy crossbow Strike that deals one additional weapon damage die. If the Strike hits, the target takes a -10-foot status penalty to its Speeds and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. These last for 1 round, or 2 rounds if the Strike was a critical success.</p>"
+          "description": "<p>The Zephyr Guard makes a heavy crossbow Strike that deals one additional weapon damage die. If the Strike hits, the target takes a –10-foot status penalty to its Speeds and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. These last for 1 round, or 2 rounds if the Strike was a critical success.</p>"
         },
         "action->Subduing Strikes": {
           "name": "Subduing Strikes",
@@ -5097,7 +5118,7 @@
         },
         "weapon->Frost Vial (Greater) [Infused]": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]\nFrost Vial (Greater) [Infused]",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +2 item bonus to attack rolls, the bomb deals 3d6 cold damage and 3 cold splash damage, and the target takes a -10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +2 item bonus to attack rolls, the bomb deals 3d6 cold damage and 3 cold splash damage, and the target takes a –10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
         },
         "weapon->Thunderstone (Greater) [Infused]": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dsMkvuLgpOOGLWDy]\nThunderstone (Greater) [Infused]",
@@ -5166,7 +5187,7 @@
         },
         "action->True Debilitating Bomb": {
           "name": "True Debilitating Bomb",
-          "description": "<p>When Zuferian uses Debilitating Bomb, add the following to the list of effects Zuferian can choose from:</p>\n<ul>\n<li>@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}</li>\n<li>@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}</li>\n<li>a -15-foot status penalty to Speeds.</li>\n</ul>\n<p>If Zuferian instead applies one of the effects listed in Debilitating Bomb, the target avoids the effect only if the result of its saving throw is a critical success.</p>"
+          "description": "<p>When Zuferian uses Debilitating Bomb, add the following to the list of effects Zuferian can choose from:</p>\n<ul>\n<li>@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}</li>\n<li>@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}</li>\n<li>a –15-foot status penalty to Speeds.</li>\n</ul>\n<p>If Zuferian instead applies one of the effects listed in Debilitating Bomb, the target avoids the effect only if the result of its saving throw is a critical success.</p>"
         },
         "action->Uncanny Bombs": {
           "name": "Uncanny Bombs",

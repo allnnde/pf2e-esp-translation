@@ -105,7 +105,7 @@
       "name": "Ambrost Mugland",
       "blurb": "Male halfling criminal mogul",
       "items": {
-        "consumable->Eroding Bullet": {
+        "ammo->Eroding Bullet": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rab0x5F9KpRxxlnH]\n<p><strong>Ammunition</strong> round</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p>Eroding bullets cast a faint green glow, and smell like the sickly- sweet organic gases that rise from corpses. Handling an eroding bullet without gloves deals @Damage[1[acid]] damage and leaves the putrid scent coated on your fingers. Upon Striking an enemy, the glass casing inside the bullet bursts, releasing a splattering of bubbling green acid that coats the target. The target takes @Damage[2d6[persistent,acid]] damage in addition to the damage normally dealt by the attack.</p>"
         },
         "strike-ranged->Cane Pistol": [
@@ -193,7 +193,7 @@
         },
         "action->Plant Pyronite Charge": {
           "name": "Plant Pyronite Charge",
-          "description": "<p>After making a successful melee Strike against a creature, Anjelique makes a @Check[thievery|defense:perception] check against the target's Perception DC. On a success, she activates and secretly plants a specially formulated sticky pyronite charge on the creature. This charge detonates after 3 rounds, dealing @Damage[4d8[fire]] damage to all creatures within a @Template[emanation|distance:10]{10-foot radius} (@Check[reflex|dc:34|basic]) and detonating any other pyronite charges within the area. After making a successful ranged Strike against a creature stuck with a planted charge, Anjelique can choose to shoot a bullet through the charge, dealing normal damage and detonating the charge immediately. A creature can use an Interact action to find and remove a planted charge from itself or an adjacent creature. These pyronite charges have the infused trait and are inert until activated by Anjelique.</p>"
+          "description": "<p>After making a successful melee Strike against a creature, Anjelique makes a @Check[thievery|defense:perception] check against the target's Perception DC. On a success, she activates and secretly plants a specially formulated sticky pyronite charge on the creature. This charge detonates after 3 rounds, dealing @Damage[4d8[fire]|options:area-damage] damage to all creatures within a @Template[emanation|distance:10]{10-foot radius} (@Check[reflex|dc:34|basic|options:area-effect]) and detonating any other pyronite charges within the area. After making a successful ranged Strike against a creature stuck with a planted charge, Anjelique can choose to shoot a bullet through the charge, dealing normal damage and detonating the charge immediately. A creature can use an Interact action to find and remove a planted charge from itself or an adjacent creature. These pyronite charges have the infused trait and are inert until activated by Anjelique.</p>"
         },
         "action->Tormenting Shot": {
           "name": "Tormenting Shot",
@@ -284,6 +284,9 @@
       "name": "Bristlebane",
       "blurb": "Female gnoll pack leader",
       "items": {
+        "weapon->Bola": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.YUzPv0i8d8p2J9yx]\n<p>This throwing weapon consists of weights tied to the end of long cords, which can be used to bludgeon foes or entangle their legs.</p>"
+        },
         "equipment->Crude map of Alkenstar sewers": {
           "name": "Crude map of Alkenstar sewers"
         },
@@ -336,7 +339,7 @@
         },
         "action->Misaligned Gears": {
           "name": "Misaligned Gears",
-          "description": "<p>The spiral centurion loses access to its Rev Up ability, and if it Strides more than once per round, it takes [[/r 1d10]] damage per Stride after the first.</p>"
+          "description": "<p>The spiral centurion loses access to its Rev Up ability, and if it Strides more than once per round, it takes @Damage[1d10[untyped]] damage per Stride after the first.</p>"
         },
         "action->Top-Heavy": {
           "name": "Top-Heavy",
@@ -344,7 +347,7 @@
         },
         "action->Hurl Blade": {
           "name": "Hurl Blade",
-          "description": "<p>The spiral centurion hurls one of its blades with an angled spin to ensure a swooping flight path. The blade deals @Damage[6d6[slashing]] damage to each creature in a @Template[line|distance:40] (@Check[reflex|dc:30|basic] save).</p>\n<p>At the start of the spiral centurion's next turn, the blade swoops around and returns along the same flight path, again dealing @Damage[6d6[slashing]] damage (@Check[reflex|dc:30|basic] save) to each creature along the same line.</p>"
+          "description": "<p>The spiral centurion hurls one of its blades with an angled spin to ensure a swooping flight path. The blade deals @Damage[6d6[slashing]|options:area-damage] damage to each creature in a @Template[line|distance:40] (@Check[reflex|dc:30|basic|options:area-effect] save).</p>\n<p>At the start of the spiral centurion's next turn, the blade swoops around and returns along the same flight path, again dealing 6d6 slashing damage (DC 30 basic Reflex save) to each creature along the same line.</p>"
         },
         "action->Reload Guns": {
           "name": "Reload Guns",
@@ -359,7 +362,7 @@
         },
         "action->Whirling Fire": {
           "name": "Whirling Fire",
-          "description": "<p><strong>Requirements</strong> The spiral centurion has used Reload Guns three times since the last time it used Whirling Fire</p>\n<hr />\n<p><strong>Effect</strong> The spiral centurion spins furiously in place, firing its guns wildly and dealing @Damage[8d6[piercing]] damage to creatures in a @Template[emanation|distance:60]{60-foot radius} (@Check[reflex|dc:28|basic]). Creatures further than 30 feet away gain a +4 circumstance bonus on their save against this attack.</p>"
+          "description": "<p><strong>Requirements</strong> The spiral centurion has used Reload Guns three times since the last time it used Whirling Fire</p>\n<hr />\n<p><strong>Effect</strong> The spiral centurion spins furiously in place, firing its guns wildly and dealing @Damage[8d6[piercing]|options:area-damage] damage to creatures in a @Template[emanation|distance:60]{60-foot radius} (@Check[reflex|dc:28|basic|options:area-effect]). Creatures further than 30 feet away gain a +4 circumstance bonus on their save against this attack.</p>"
         }
       }
     },
@@ -418,7 +421,7 @@
         },
         "action->Quenchable Death Throes": {
           "name": "Quenchable Death Throes",
-          "description": "<p>When a chemical zombie dies, its body explodes in a @Template[burst|distance:30] of fire and debris that deals @Damage[2d10[bludgeoning],2d10[fire]]{2d10 bludgeoning and 2d10 fire damage} to each creature in the area (@Check[reflex|dc:21|basic]). If the chemical zombie is soaked with water before it dies (such as by dousing it with a bucket of water or hitting it with a water spell like @UUID[Compendium.pf2e.spells-srd.Item.jfVCuOpzC6mUrf6f]{Hydraulic Push}), the chemicals are neutralized and this ability doesn't trigger.</p>"
+          "description": "<p>When a chemical zombie dies, its body explodes in a @Template[burst|distance:30] of fire and debris that deals @Damage[2d10[bludgeoning],2d10[fire]|options:area-damage]{2d10 bludgeoning and 2d10 fire damage} to each creature in the area (@Check[reflex|dc:21|basic|options:area-effect]). If the chemical zombie is soaked with water before it dies (such as by dousing it with a bucket of water or hitting it with a water spell like @UUID[Compendium.pf2e.spells-srd.Item.jfVCuOpzC6mUrf6f]{Hydraulic Push}), the chemicals are neutralized and this ability doesn't trigger.</p>"
         },
         "action->Slow": {
           "name": "Slow",
@@ -584,7 +587,7 @@
         },
         "action->Water Jet": {
           "name": "Water Jet",
-          "description": "<p><strong>Requirements</strong> The clockwork buccaneer has a full water tank</p>\n<hr />\n<p><strong>Effect</strong> The clockwork buccaneer fires a narrow but highly pressurized blast of water in a @Template[line|distance:60], dealing @Damage[10d6[bludgeoning]] damage to creatures and unattended objects in the area (@Check[fortitude|dc:28|basic]; unattended objects automatically fail). Creatures and objects that fail the save are also knocked back 5 feet (10 feet on a critical failure). This empties the buccaneer's water tank.</p>"
+          "description": "<p><strong>Requirements</strong> The clockwork buccaneer has a full water tank</p>\n<hr />\n<p><strong>Effect</strong> The clockwork buccaneer fires a narrow but highly pressurized blast of water in a @Template[line|distance:60], dealing @Damage[10d6[bludgeoning]|options:area-damage] damage to creatures and unattended objects in the area (@Check[fortitude|dc:28|basic|options:area-effect,forced-movement]; unattended objects automatically fail). Creatures and objects that fail the save are also knocked back 5 feet (10 feet on a critical failure). This empties the buccaneer's water tank.</p>"
         },
         "action->Water Jump": {
           "name": "Water Jump",
@@ -608,7 +611,7 @@
         },
         "action->Furnace Belch": {
           "name": "Furnace Belch",
-          "description": "<p>The clockwork disposer coughs up a cloud of hot ash and embers that deals @Damage[6d6[fire]] damage in a @Template[cone|distance:15] (@Check[reflex|dc:22|basic]). The clockwork disposer can't use Furnace Belch again for [[/gmr 1d4 #Recharge Furnace Belch]]{1d4 rounds}.</p>"
+          "description": "<p>The clockwork disposer coughs up a cloud of hot ash and embers that deals @Damage[6d6[fire]|options:area-damage] damage in a @Template[cone|distance:15] (@Check[reflex|dc:22|basic|options:area-effect]). The clockwork disposer can't use Furnace Belch again for [[/gmr 1d4 #Recharge Furnace Belch]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -863,7 +866,7 @@
         },
         "action->Troop Defenses": {
           "name": "Troop Defenses",
-          "description": "<p><strong>Thresholds</strong> 160 (12 squares), 80 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+          "description": "<p><strong>Thresholds</strong> 160 (3 segments), 80 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "action->Grave Tide": {
           "name": "Grave Tide",
@@ -871,7 +874,7 @@
         },
         "action->Shambling Onslaught": {
           "name": "Shambling Onslaught",
-          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">2</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The shamblers lash out at any enemies in their squares or within 5 feet (@Check[reflex|dc:25|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(3d6+9)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+13)[bludgeoning]] damage</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">2</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The shamblers lash out at any enemies in their squares or within 5 feet (@Check[reflex|dc:25|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(3d6+9)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+13)[bludgeoning]|options:area-damage] damage</p>"
         },
         "action->Troop Movement": {
           "name": "Troop Movement",
@@ -892,7 +895,7 @@
         },
         "action->Self-Destruct": {
           "name": "Self-Destruct",
-          "description": "<p>When a clockwork sphinx is reduced to 0 Hit Points, it collapses and emits a steady ticking sound. At the beginning of what would've been its next turn, the sphinx explodes into a @Template[emanation|distance:20] of shrapnel, dealing @Damage[6d10[piercing]] damage (@Check[reflex|dc:26|basic]). An adjacent creature can cancel the self-destruct sequence by succeeding at a [[/act disable-device dc=26]]{DC 26 Thievery} check to @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable a Device} at any point before the sphinx explodes, but on a critical failure, it explodes immediately.</p>"
+          "description": "<p>When a clockwork sphinx is reduced to 0 Hit Points, it collapses and emits a steady ticking sound. At the beginning of what would've been its next turn, the sphinx explodes into a @Template[emanation|distance:20] of shrapnel, dealing @Damage[6d10[piercing]|options:area-damage] damage (@Check[reflex|dc:26|basic|options:area-effect]). An adjacent creature can cancel the self-destruct sequence by succeeding at a [[/act disable-device dc=26]]{DC 26 Thievery} check to @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable a Device} at any point before the sphinx explodes, but on a critical failure, it explodes immediately.</p>"
         },
         "action->Pounce": {
           "name": "Pounce",
@@ -903,7 +906,7 @@
     "Color Spray Trap": {
       "name": "Color Spray Trap",
       "description": "<p>A loud pop sounds when this door is opened, followed immediately by a blast of colorful lights that washes over whoever opened the door.</p>",
-      "disable": "<p>@Check[thievery|dc:25|traits:action:disable-a-device] (trained) to disable the glyph, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1st level; counteract DC 22) to counteract the glyph</p>",
+      "disable": "<p>@Check[thievery|dc:25|traits:action:disable-a-device] (trained) to disable the glyph, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1st rank; counteract DC 22) to counteract the glyph</p>",
       "stealth": "<p>(trained) to notice the glyph on the doorjamb</p>",
       "items": {
         "action->Color Spray": {
@@ -1042,7 +1045,7 @@
         },
         "action->Jettison Cranium": {
           "name": "Jettison Cranium",
-          "description": "<p>The cranium preserver ejects one of its preserved-head jars at a point within 100 feet. The jar explodes, and all creatures in a @Template[burst|distance:10] must attempt a @Check[will|dc:28] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d8[mental],2d8[void]]{2d8 mental damage and 2d8 void damage}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[4d8[mental],4d8[void]]{4d8 mental damage and 4d8 void damage}. The discharged mental anguish released from the preserved head causes the creature to become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[8d8[mental],8d8[void]]{8d8 mental and 8d8 void damage}. The discharged mental anguish released from the preserved head causes the creature to become confused for 2 rounds.</p>"
+          "description": "<p>The cranium preserver ejects one of its preserved-head jars at a point within 100 feet. The jar explodes, and all creatures in a @Template[burst|distance:10] must attempt a @Check[will|dc:28|options:area-effect,damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d8[mental],2d8[void]|options:area-damage]{2d8 mental damage and 2d8 void damage}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[4d8[mental],4d8[void]|options:area-damage]{4d8 mental damage and 4d8 void damage}. The discharged mental anguish released from the preserved head causes the creature to become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[8d8[mental],8d8[void]|options:area-damage]{8d8 mental and 8d8 void damage}. The discharged mental anguish released from the preserved head causes the creature to become confused for 2 rounds.</p>"
         },
         "action->Slosh": {
           "name": "Slosh",
@@ -1159,7 +1162,7 @@
       "items": {
         "weapon->Tanglefoot Bag (Moderate)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.evBPzM1VsuYcoenn]\nTanglefoot Bag (Moderate)",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.evBPzM1VsuYcoenn]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a -15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.evBPzM1VsuYcoenn]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
         },
         "consumable->Healing Potion (Minor)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
@@ -1314,9 +1317,6 @@
         "armor->Chain Shirt": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
         },
-        "consumable->Black Powder (Horn)": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.sHBk2pY0I6dCW2Mw]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p>Black powder is a volatile and explosive alchemical substance commonly used in the production of firearm munitions. Black powder becomes inert and useless when wet and must be kept in a sealed, water-tight container.</p>\n<p>A horn contains 500 doses worth of black powder. A horn can be detonated by leaving a small trail of black powder and then lighting it. Each 5-foot square requires one dose of black powder to create a trail through. As long as the horn is mostly full (at least 400 doses remaining) it can be detonated to deal @Damage[1d6[fire]] damage in a @Template[burst|distance:5] (@Check[reflex|dc:16|basic|name:Gunpowder Detonation] save). It takes 1 round per 15 feet of powder trail laid down for a horn to detonate after the trail is lit. If multiple horns detonate simultaneously, it can increase the area of the explosion, but the damage in overlapping areas doesn't increase.</p>"
-        },
         "strike-ranged->Dagger": {
           "name": "Dagger"
         },
@@ -1347,6 +1347,9 @@
         },
         "consumable->Invisibility Potion": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.bikFUFRLwfdvX2x2]\n<p>An invisibility potion is colorless and oddly lightweight. Upon drinking it, you gain the effects of a 2nd-rank invisibility spell.</p>"
+        },
+        "consumable->Pyronite": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.6CnuU7AhzzAMGzAM]\n<p>A stick of pyronite is a devastating explosive that fills an area with fire and concussive force when it detonates—as long as its fuse has been lit!</p>\n<p>Pyronite is an unstable material with a limited shelf life. Sticks of pyronite must be kept dry and cool; otherwise, the raw pyronite will leak out of the rods and collect as a semi-transparent goo that explodes on any impact or loud noise, with an explosive effect equal to half the number of rods.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> or <span class=\"action-glyph\">2</span> Interact</p>\n<hr />\n<p><strong>Effect</strong> Activating a stick of pyronite is usually a two-action activity. First, you interact with the pyronite to light its fuse with a source of fire. This fire source can be an object you hold in another hand, such as a tindertwig or a lit torch, or it can be a free-standing adjacent fire. Once the fuse is lit, you throw it (an Interact action with the ranged trait) up to 50 feet away—if you hurl it into an existing fire, you don't need to take the initial action to light its fuse and can Activate the pyronite with only one action. You can toss the pyronite anywhere within 50 feet, though at the GM's discretion, you might need to make an attack roll if the throw is unusually challenging.</p>\n<p>Once a stick of pyronite's fuse is lit, it explodes at the end of your turn, regardless of whether you've thrown it or not. (A lit fuse can be extinguished with an Interact action.) If multiple sticks of pyronite detonate at the end of your turn, you can increase the area, but not the damage, of this effect. When the pyronite explodes, all creatures in a @Template[burst|distance:20] must attempt a @Check[reflex|dc:28|options:area-effect,inflicts:deafened,inflicts:prone,inflicts:stunned] save or take @Damage[3d6[fire],3d6[bludgeoning]|options:area-damage]{3d6 fire damage and 3d6 bludgeoning damage}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>\n<p><strong>Failure</strong> The creature takes full damage and is deafened for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, and deafened for 1 hour.</p>"
         },
         "strike-ranged->Dagger": {
           "name": "Dagger"
@@ -1404,7 +1407,7 @@
         },
         "action->Water Jet": {
           "name": "Water Jet",
-          "description": "<p><strong>Requirements</strong> The clockwork buccaneer has a full water tank</p>\n<hr />\n<p><strong>Effect</strong> The clockwork buccaneer fires a narrow but highly pressurized blast of water in a @Template[line|distance:60], dealing @Damage[10d6[bludgeoning]] damage to creatures and unattended objects in the area (@Check[fortitude|dc:28|basic]; unattended objects automatically fail). Creatures and objects that fail the save are also knocked back 5 feet (10 feet on a critical failure). This empties the buccaneer's water tank.</p>"
+          "description": "<p><strong>Requirements</strong> The clockwork buccaneer has a full water tank</p>\n<hr />\n<p><strong>Effect</strong> The clockwork buccaneer fires a narrow but highly pressurized blast of water in a @Template[line|distance:60], dealing @Damage[10d6[bludgeoning]|options:area-damage] damage to creatures and unattended objects in the area (@Check[fortitude|dc:28|basic|options:area-effect,forced-movement]; unattended objects automatically fail). Creatures and objects that fail the save are also knocked back 5 feet (10 feet on a critical failure). This empties the buccaneer's water tank.</p>"
         },
         "action->Water Jump": {
           "name": "Water Jump",
@@ -1625,7 +1628,7 @@
       "items": {
         "weapon->Tanglefoot Bag (Moderate)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.evBPzM1VsuYcoenn]\nTanglefoot Bag (Moderate)",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.evBPzM1VsuYcoenn]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a -15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.evBPzM1VsuYcoenn]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
         },
         "consumable->Healing Potion (Minor)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
@@ -1723,7 +1726,7 @@
         },
         "action->Throw Skull": {
           "name": "Throw Skull",
-          "description": "<p><strong>Frequency</strong> once (until a new clockwork skull is crafted)</p>\n<hr />\n<p><strong>Effect</strong> The headless rustler throws its clockwork skull at a target within 30 feet. The skull explodes, dealing @Damage[8d6[fire]] damage to creatures in a @Template[burst|distance:15]{15-foot radius} (@Check[reflex|dc:23|basic]).</p>"
+          "description": "<p><strong>Frequency</strong> once (until a new clockwork skull is crafted)</p>\n<hr />\n<p><strong>Effect</strong> The headless rustler throws its clockwork skull at a target within 30 feet. The skull explodes, dealing @Damage[8d6[fire]|options:area-damage] damage to creatures in a @Template[burst|distance:15]{15-foot radius} (@Check[reflex|dc:23|basic|options:area-effect]).</p>"
         }
       }
     },
@@ -1739,7 +1742,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.dgCH2E0gMLMUgyFl]\nShockwave (At Will)"
         },
         "equipment->Thunder Helm": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.GVgA0w4CUP4lanPl]\n<p>The creator of the original <em>thunder helm</em> tried and failed time and again to craft a reliable, helmet-mounted firearm that enabled hands-free gunplay, but even after resorting to magical enhancements, they were never quite able to realize their vision. The allure of the <em>thunder helm</em> continues to compel certain mindsets in the Mana Wastes, and these items continue to be crafted to this day.</p>\n<p>A <em>thunder helm</em> appears as a cylindrical iron helmet adorned with a crown-like display of gun barrels extending out in all directions. A slit in the front allows for limited visibility, while sound is muffled by the inner lining. As long as a creature wears a <em>thunder helm</em>, it takes a -1 circumstance penalty to auditory and visual Perception checks but also gain a +1 circumstance bonus to saving throws against auditory and visual effects.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The helm's gun barrels swivel and aim randomly, then conjure enough gunpowder and bullets to fire in all directions around you. Every creature within a @Template[emanation|distance:20] takes @Damage[4d6[piercing]] damage (@Check[reflex|dc:19|basic]). When determining a creature's resistance or immunity to this damage, use the weaker of the target's resistance or immunity to piercing or bludgeoning.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.GVgA0w4CUP4lanPl]\n<p>The creator of the original <em>thunder helm</em> tried and failed time and again to craft a reliable, helmet-mounted firearm that enabled hands-free gunplay, but even after resorting to magical enhancements, they were never quite able to realize their vision. The allure of the <em>thunder helm</em> continues to compel certain mindsets in the Mana Wastes, and these items continue to be crafted to this day.</p>\n<p>A <em>thunder helm</em> appears as a cylindrical iron helmet adorned with a crown-like display of gun barrels extending out in all directions. A slit in the front allows for limited visibility, while sound is muffled by the inner lining. As long as a creature wears a <em>thunder helm</em>, it takes a -1 circumstance penalty to auditory and visual Perception checks but also gain a +1 circumstance bonus to saving throws against auditory and visual effects.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The helm's gun barrels swivel and aim randomly, then conjure enough gunpowder and bullets to fire in all directions around you. Every creature within a @Template[emanation|distance:20] takes @Damage[4d6[piercing]|options:area-damage] damage (@Check[reflex|dc:19|basic|options:area-effect]). When determining a creature's resistance or immunity to this damage, use the weaker of the target's resistance or immunity to piercing or bludgeoning.</p>"
         },
         "strike-melee->Arm": {
           "name": "Arm"
@@ -1925,7 +1928,7 @@
         },
         "action->Speak with Bats": {
           "name": "Speak with Bats",
-          "description": "<p>Kreeth-Ni can communicate with bats and use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on bats and Request things from bats.</p>"
+          "description": "<p>Kreeth-Ni can communicate with bats and use Diplomacy to [[/act make-an-impression]] on bats and [[/act request]] things from bats.</p>"
         },
         "action->Wrath of Spurned Hospitality": {
           "name": "Wrath of Spurned Hospitality",
@@ -2057,7 +2060,7 @@
         },
         "action->Sandstorm Breath": {
           "name": "Sandstorm Breath",
-          "description": "<p>The desert drake spits a ball of electrically charged sand to a range of 60 feet that explodes into a cloud with a @Template[burst|distance:15]. Creatures in the area take @Damage[9d6[electricity]] damage (@Check[reflex|dc:28|basic] save). The cloud remains for [[/gmr 1d4 #Cloud Duration]]{1d4 rounds}, granting @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} to everything within. The desert drake can't use Sandstorm Breath again for [[/gmr 1d6 #Recharge Sandstorm Breath]]{1d6 rounds}.</p>"
+          "description": "<p>The desert drake spits a ball of electrically charged sand to a range of 60 feet that explodes into a cloud with a @Template[burst|distance:15]. Creatures in the area take @Damage[9d6[electricity]|options:area-damage] damage (@Check[reflex|dc:28|basic|options:area-effect] save). The cloud remains for [[/gmr 1d4 #Cloud Duration]]{1d4 rounds}, granting @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} to everything within. The desert drake can't use Sandstorm Breath again for [[/gmr 1d6 #Recharge Sandstorm Breath]]{1d6 rounds}.</p>"
         },
         "action->Speed Surge": {
           "name": "Speed Surge",
@@ -2098,7 +2101,7 @@
         },
         "action->Squirt Acid": {
           "name": "Squirt Acid",
-          "description": "<p>The mutant giant toad squirts a @Template[line|distance:60] of acid from the pustules on its back. Creatures in the area take @Damage[3d6[acid]] damage (@Check[reflex|dc:20|basic]). The mutant giant toad can't Squirt Acid for [[/gmr 1d4 #Recharge Squirt Acid]]{1d4 rounds}.</p>"
+          "description": "<p>The mutant giant toad squirts a @Template[line|distance:60] of acid from the pustules on its back. Creatures in the area take @Damage[3d6[acid]|options:area-damage] damage (@Check[reflex|dc:20|basic|options:area-effect]). The mutant giant toad can't Squirt Acid for [[/gmr 1d4 #Recharge Squirt Acid]]{1d4 rounds}.</p>"
         },
         "action->Swallow Whole": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Medium, @Damage[(1d8+3)[bludgeoning]] damage, Rupture 8</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
@@ -2136,7 +2139,7 @@
         },
         "action->Throw Powder Keg": {
           "name": "Throw Powder Keg",
-          "description": "<p><strong>Frequency</strong> once (until the ogre acquires another powder keg)</p>\n<hr />\n<p><strong>Effect</strong> The ogre lights and hurls a powder keg of gunpowder at a point within 40 feet. The fuse continues to burn for 1 round, during which time an adjacent creature can use an Interact action to remove the lit fuse, rendering the keg harmless. At the start of the ogre's next turn, if the fuse is still lit, the keg explodes, dealing @Damage[3d8[fire],3d8[bludgeoning]]{3d8 fire damage and 3d8 bludgeoning damage} to creatures in a @Template[burst|distance:15] (@Check[reflex|dc:20|basic]).</p>"
+          "description": "<p><strong>Frequency</strong> once (until the ogre acquires another powder keg)</p>\n<hr />\n<p><strong>Effect</strong> The ogre lights and hurls a powder keg of gunpowder at a point within 40 feet. The fuse continues to burn for 1 round, during which time an adjacent creature can use an Interact action to remove the lit fuse, rendering the keg harmless. At the start of the ogre's next turn, if the fuse is still lit, the keg explodes, dealing @Damage[3d8[fire],3d8[bludgeoning]|options:area-damage]{3d8 fire damage and 3d8 bludgeoning damage} to creatures in a @Template[burst|distance:15] (@Check[reflex|dc:20|basic|options:area-effect]).</p>"
         }
       }
     },
@@ -2226,7 +2229,7 @@
         },
         "action->Explode": {
           "name": "Explode",
-          "description": "<p>Parsus pushes their necromechanical innovation beyond its normal limits, dealing @Damage[10d6[void]] damage in a @Template[emanation|distance:10] (@Check[reflex|dc:31|basic]). Parsus can choose to include themself in this effect.</p>"
+          "description": "<p>Parsus pushes their necromechanical innovation beyond its normal limits, dealing @Damage[10d6[void]|options:area-damage] damage in a @Template[emanation|distance:10] (@Check[reflex|dc:31|basic|options:area-effect]). Parsus can choose to include themself in this effect.</p>"
         },
         "action->Necromantic Winding": {
           "name": "Necromantic Winding",
@@ -2326,7 +2329,7 @@
         },
         "action->Dirt Breath": {
           "name": "Dirt Breath",
-          "description": "<p>The prairie drake spits a ball of dirt that explodes into a shower of rocks and mud. The attack has a range of 30 feet and explodes in a @Template[burst|distance:5]. Creatures within the burst take @Damage[3d6[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:16|basic]). Plant creatures in the area take no damage on a successful save; regardless, once per day, plant creatures can spend 10 minutes in the area to absorb the nutrients and heal @Damage[1d8[healing]] Hit Points. The prairie drake can't use Dirt Breath again for [[/gmr 1d6 #Recharge Breath weapon]]{1d6 rounds}.</p>"
+          "description": "<p>The prairie drake spits a ball of dirt that explodes into a shower of rocks and mud. The attack has a range of 30 feet and explodes in a @Template[burst|distance:5]. Creatures within the burst take @Damage[3d6[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:16|basic|options:area-effect]). Plant creatures in the area take no damage on a successful save; regardless, once per day, plant creatures can spend 10 minutes in the area to absorb the nutrients and heal @Damage[1d8[healing]] Hit Points. The prairie drake can't use Dirt Breath again for [[/gmr 1d6 #Recharge Dirt Breath]]{1d6 rounds}.</p>"
         },
         "action->Draconic Frenzy": {
           "name": "Draconic Frenzy",
@@ -2386,11 +2389,11 @@
         },
         "action->Split": {
           "name": "Split",
-          "description": "<p>When a Large pyronite ooze is hit by an attack that would deal bludgeoning or fire damage and it has 10 or more HP, it explodes, dealing @Damage[6d6[fire]] damage to creatures in a @Template[emanation|distance:10]{10-foot radius} (@Check[reflex|dc:29|basic]). This explosion can't cause other pyronite oozes to split. After exploding, the ooze splits into two Medium pyronite oozes, each with half the original's HP, which each fly through the air and land 15 feet from the original ooze in a random direction. If no space is unoccupied where the ooze would land, it automatically pushes creatures and objects out of the way to fill a space (the GM decides if an object or creature is too big or sturdy to push).</p>"
+          "description": "<p>When a Large pyronite ooze is hit by an attack that would deal bludgeoning or fire damage and it has 10 or more HP, it explodes, dealing @Damage[6d6[fire]|options:area-damage] damage to creatures in a @Template[emanation|distance:10]{10-foot radius} (@Check[reflex|dc:29|basic|options:area-effect]). This explosion can't cause other pyronite oozes to split. After exploding, the ooze splits into two Medium pyronite oozes, each with half the original's HP, which each fly through the air and land 15 feet from the original ooze in a random direction. If no space is unoccupied where the ooze would land, it automatically pushes creatures and objects out of the way to fill a space (the GM decides if an object or creature is too big or sturdy to push).</p>"
         },
         "action->Exploding Split": {
           "name": "Exploding Split",
-          "description": "<p><strong>Requirements</strong> The pyronite ooze is Large</p>\n<hr />\n<p><strong>Effect</strong> The pyronite ooze explodes in a violent conflagration, dealing @Damage[3d6[fire],3d6[bludgeoning]]{3d6 fire and 3d6 bludgeoning damage} to all creatures in a @Template[emanation|distance:30]{30-foot radius} (@Check[reflex|dc:29|basic]). This explosion can't cause other pyronite oozes to split. After exploding, the ooze splits into two Medium pyronite oozes (see above), but this splitting doesn't deal additional damage.</p>"
+          "description": "<p><strong>Requirements</strong> The pyronite ooze is Large</p>\n<hr />\n<p><strong>Effect</strong> The pyronite ooze explodes in a violent conflagration, dealing @Damage[3d6[fire],3d6[bludgeoning]|options:area-damage]{3d6 fire and 3d6 bludgeoning damage} to all creatures in a @Template[emanation|distance:30]{30-foot radius} (@Check[reflex|dc:29|basic|options:area-effect]). This explosion can't cause other pyronite oozes to split. After exploding, the ooze splits into two Medium pyronite oozes (see above), but this splitting doesn't deal additional damage.</p>"
         }
       }
     },
@@ -2427,7 +2430,7 @@
         },
         "action->Dirt Breath": {
           "name": "Dirt Breath",
-          "description": "<p>The prairie drake spits a ball of dirt that explodes into a shower of rocks and mud. The attack has a range of 30 feet and explodes in a @Template[burst|distance:5]. Creatures within the burst take @Damage[3d6[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:16|basic]). Plant creatures in the area take no damage on a successful save; regardless, once per day, plant creatures can spend 10 minutes in the area to absorb the nutrients and heal @Damage[1d8[healing]] Hit Points. The prairie drake can't use Dirt Breath again for [[/gmr 1d6 #Recharge Breath weapon]]{1d6 rounds}.</p>"
+          "description": "<p>The prairie drake spits a ball of dirt that explodes into a shower of rocks and mud. The attack has a range of 30 feet and explodes in a @Template[burst|distance:5]. Creatures within the burst take @Damage[3d6[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:16|basic|options:area-effect]). Plant creatures in the area take no damage on a successful save; regardless, once per day, plant creatures can spend 10 minutes in the area to absorb the nutrients and heal @Damage[1d8[healing]] Hit Points. The prairie drake can't use Dirt Breath again for [[/gmr 1d6 #Recharge Dirt Breath]]{1d6 rounds}.</p>"
         },
         "action->Draconic Frenzy": {
           "name": "Draconic Frenzy",
@@ -2481,8 +2484,8 @@
       "name": "Sabora Sharkosa",
       "blurb": "Female half-elf martial artist gang leader",
       "items": {
-        "consumable->Meteor Shot": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.2Rnw5hTlMd0YSozb]\n<p><strong>Ammunition</strong> round</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p>This craggy stone ammunition is warm to the touch. When you fire an activated meteor shot, it explodes into a small swarm of meteors as it reaches its target, scorching nearby creatures and littering the ground with rubble. In addition to the weapon's normal damage, the meteor shot deals fire damage and the ground in the area becomes difficult terrain.</p>\n<p>The ammunition deals @Damage[3d6[fire]] damage in a @Template[emanation|distance:5] around the target (@Check[reflex|dc:23|basic] save).</p>\n<p>In addition, the Strike gains the following critical failure effect.</p>\n<hr />\n<p><strong>Critical Failure</strong> The weapon misfires.</p>"
+        "ammo->Meteor Shot": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.2Rnw5hTlMd0YSozb]\n<p><strong>Ammunition</strong> round</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p>This craggy stone ammunition is warm to the touch. When you fire an activated meteor shot, it explodes into a small swarm of meteors as it reaches its target, scorching nearby creatures and littering the ground with rubble. In addition to the weapon's normal damage, the meteor shot deals fire damage and the ground in the area becomes difficult terrain.</p>\n<p>The ammunition deals @Damage[3d6[fire]|options:area-damage] damage in a @Template[emanation|distance:5] around the target (@Check[reflex|dc:23|basic|options:area-effect] save).</p>\n<p>In addition, the Strike gains the following critical failure effect.</p>\n<hr />\n<p><strong>Critical Failure</strong> The weapon misfires.</p>"
         },
         "strike-melee->Knuckle Duster": {
           "name": "Knuckle Duster"
@@ -2571,7 +2574,7 @@
       "items": {
         "action->Spinning Gears": {
           "name": "Spinning Gears",
-          "description": "<p><strong>Trigger</strong> A creature Strides in the engine nacelle</p>\n<hr />\n<p><strong>Effect</strong> The creature's clothing or limbs get caught in the spinning gears and axles of the engine. The creature must attempt a @Check[reflex|dc:24] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[(2d8+9)[bludgeoning]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(4d8+18)[bludgeoning]] damage.</p>\n<p><strong>Critical Failure</strong> The creature's clothing is pulled into the clockworks. The creature takes @Damage[(4d8+18)[bludgeoning]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}. Until the creature @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 24), it takes @Damage[(2d8+9)[bludgeoning]] damage each round as it's pulled into the spinning rotors. A creature wearing clothing can automatically Escape by doffing its caught clothing; this destroys the doffed clothing.</p>"
+          "description": "<p><strong>Trigger</strong> A creature Strides in the engine nacelle</p>\n<hr />\n<p><strong>Effect</strong> The creature's clothing or limbs get caught in the spinning gears and axles of the engine. The creature must attempt a @Check[reflex|dc:24] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[(2d8+9)[bludgeoning]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(4d8+18)[bludgeoning]] damage.</p>\n<p><strong>Critical Failure</strong> The creature's clothing is pulled into the clockworks. The creature takes @Damage[(4d8+18)[bludgeoning]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}. Until the creature [[/act escape dc=24]]{Escapes}, it takes @Damage[(2d8+9)[bludgeoning]] damage each round as it's pulled into the spinning rotors. A creature wearing clothing can automatically Escape by doffing its caught clothing; this destroys the doffed clothing.</p>"
         }
       }
     },
@@ -2607,7 +2610,7 @@
         },
         "weapon->Tanglefoot Bag (Lesser) [Infused]": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.T6Appwwl6nUl56Xj]\nTanglefoot Bag (Lesser) [Infused]",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.T6Appwwl6nUl56Xj]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a -10-foot status penalty to its Speeds for 1 minute. The Escape DC is 17.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.T6Appwwl6nUl56Xj]\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –10-foot status penalty to its Speeds for 1 minute. The Escape DC is 17 ([[/act escape dc=17]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
         },
         "weapon->Acid Flask (Moderate) [Infused]": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.SgtqZxt26BdjUmEB]\nAcid Flask (Moderate) [Infused]",
@@ -2744,6 +2747,9 @@
       "name": "Sludgespine Killer",
       "blurb": "Mutated gnoll murderers",
       "items": {
+        "weapon->Bola": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.YUzPv0i8d8p2J9yx]\n<p>This throwing weapon consists of weights tied to the end of long cords, which can be used to bludgeon foes or entangle their legs.</p>"
+        },
         "strike-melee->Jaws": {
           "name": "Jaws"
         },
@@ -2897,12 +2903,7 @@
         },
         "action->Bar Brawler": {
           "name": "Bar Brawler",
-          "description": "<p>The barkeep has been in enough bar fights to know how to throw a few punches. When fighting in their bar and making a nonlethal attack, the barkeep gains a +1 circumstance bonus to attack rolls and deals an additional [[/r {1d4}]]{1d4 damage}.</p>",
-          "rules": {
-            "0": {
-              "label": "Fighting in their own bar"
-            }
-          }
+          "description": "<p>The barkeep has been in enough bar fights to know how to throw a few punches. When fighting in their bar and making a nonlethal attack, the barkeep gains a +1 circumstance bonus to attack rolls and deals an additional 1d4 damage.</p>"
         },
         "action->Barkeep's Advice": {
           "name": "Barkeep's Advice",
@@ -3044,15 +3045,15 @@
       "items": {
         "action->Cling": {
           "name": "Cling",
-          "description": "<p><strong>Trigger</strong> A creature leaves the trapjaw tangle's space</p>\n<hr />\n<p><strong>Effect</strong> The swarm takes [[/r 1d6]]{1d6 damage} as individual traps cling to the creature and continue chewing, dealing @Damage[2d10[persistent,slashing]] damage. High winds or electricity damage reduces the DC of the flat check to end this persistent damage by 5. Any area damage dealt to the creature destroys these clinging trapjaws.</p>"
+          "description": "<p><strong>Trigger</strong> A creature leaves the trapjaw tangle's space</p>\n<hr />\n<p><strong>Effect</strong> The swarm takes @Damage[1d6[untyped]] damage as individual traps cling to the creature and continue chewing, dealing @Damage[2d10[persistent,slashing]] damage. High winds or electricity damage reduces the DC of the flat check to end this persistent damage by 5. Any area damage dealt to the creature destroys these clinging trapjaws.</p>"
         },
         "action->Snapping Jaws": {
           "name": "Snapping Jaws",
-          "description": "<p>Each enemy in the swarm's space takes @Damage[2d10[slashing]] damage (@Check[reflex|dc:22|basic]). Creatures that fail this save become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} from the numerous painful wounds caused by the swarm.</p>"
+          "description": "<p>Each enemy in the swarm's space takes @Damage[2d10[slashing]] damage (@Check[reflex|dc:22|basic|options:inflicts:sickened]). Creatures that fail this save become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} from the numerous painful wounds caused by the swarm.</p>"
         },
         "action->Trip and Tangle": {
           "name": "Trip and Tangle",
-          "description": "<p><strong>Requirements</strong> A creature in the trapjaw tangle's space took damage from the swarm during this round</p>\n<hr />\n<p><strong>Effect</strong> The trapjaw tangle attempts an @Check[athletics|traits:trip-tangle] check with a +10 modifier against the creature's Fortitude DC. On a success, the creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of the trapjaw tangle's next turn. On a critical success, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+          "description": "<p><strong>Requirements</strong> A creature in the trapjaw tangle's space took damage from the swarm during this round</p>\n<hr />\n<p><strong>Effect</strong> The trapjaw tangle attempts an @Check[athletics|against:fortitude|options:trip-tangle] check with a +10 modifier against the creature's Fortitude DC. On a success, the creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of the trapjaw tangle's next turn. On a critical success, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
         }
       }
     },
@@ -3124,7 +3125,7 @@
         },
         "action->Versatile Performance": {
           "name": "Versatile Performance",
-          "description": "<p>The mastermind can use Performance instead of Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} and instead of Intimidation to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}.</p>\n<p>The mastermind can also use an acting Performance instead of Deception to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate}.</p>"
+          "description": "<p>The mastermind can use Performance instead of Diplomacy to [[/act make-an-impression statistic=performance]] and instead of Intimidation to [[/act demoralize statistic=performance]].</p>\n<p>The mastermind can also use an acting Performance instead of Deception to [[/act impersonate statistic=performance]].</p>"
         },
         "action->Scoundrel's Feint": {
           "name": "Scoundrel's Feint",

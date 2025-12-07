@@ -101,7 +101,6 @@
     "Caligni Dancer (BB)": {
       "name": "Caligni Dancer (BB)",
       "publicNotes": "<p>Caligni lurk in subterranean cities, and they relish the chance to creep above ground at night to steal resources, spy on surface dwellers, or simply cause mischief.</p>",
-      "senses": "darkvision",
       "tokenName": "Caligni Dancer",
       "items": {
         "strike-melee->Mace": {
@@ -147,7 +146,7 @@
         },
         "action->Final Fate": {
           "name": "Final Fate",
-          "description": "<p>When a caligni hunter dies, their body explodes. All creatures within @Template[emanation|distance:20]{20 feet} must take @Damage[5d6[fire]]. Each creature in the area must attempt a @Check[reflex|dc:19|basic] save.</p>"
+          "description": "<p>When a caligni hunter dies, their body explodes. All creatures within @Template[emanation|distance:20]{20 feet} must take @Damage[5d6[fire]|options:area-damage]. Each creature in the area must attempt a @Check[reflex|dc:19|basic|options:area-effect] save.</p>"
         },
         "action->Darkening Poison": {
           "name": "Darkening Poison",
@@ -158,7 +157,6 @@
     "Caligni Skulker (BB)": {
       "name": "Caligni Skulker (BB)",
       "publicNotes": "<p>Caligni lurk in subterranean cities, and they relish the chance to creep above ground at night to steal resources, spy on surface dwellers, or simply cause mischief.</p>",
-      "senses": "darkvision",
       "tokenName": "Caligni Skulker",
       "items": {
         "strike-melee->Dagger": {
@@ -423,7 +421,7 @@
         },
         "action->Frightful Moan": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.aiwlPSmNY9b6Psvd]\nFrightful Moan",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.aiwlPSmNY9b6Psvd]\n<p>Each living creature within @Template[emanation|distance:30]{30 feet} who hears the ghost must attempt a @Check[will|dc:21] save. On a failure, a creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} condition (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure).</p>\n<p>On a success, a creature can't be affected by this ghost's Frightful Moan for 1 minute.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.aiwlPSmNY9b6Psvd]\n<p>Each living creature within @Template[emanation|distance:30]{30 feet} who hears the ghost must attempt a @Check[will|dc:21|options:area-effect,inflicts:frightened] save. On a failure, a creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} condition (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure).</p>\n<p>On a success, a creature can't be affected by this ghost's Frightful Moan for 1 minute.</p>"
         }
       }
     },
@@ -458,7 +456,6 @@
     "Giant Ant (BB)": {
       "name": "Giant Ant (BB)",
       "publicNotes": "<p>Giant ants form vast underground colonies, excavating deep burrows or infesting existing caverns. Giant ants look identical to their smaller kin, but their size makes them a deadly threat to farms and travelers alike.</p>",
-      "senses": "darkvision",
       "tokenName": "Giant Ant",
       "items": {
         "strike-melee->Mandible": {
@@ -527,7 +524,7 @@
         },
         "action->Web Trap": {
           "name": "Web Trap",
-          "description": "<p>A creature hit by the giant spider's web Strike gets stuck to the nearest surface. It can't move until it successfully @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 17).</p>"
+          "description": "<p>A creature hit by the giant spider's web Strike gets stuck to the nearest surface. It can't move until it successfully [[/act escape dc=17]]{Escapes}.</p>"
         }
       }
     },
@@ -613,11 +610,6 @@
     "Harpy (BB)": {
       "name": "Harpy (BB)",
       "publicNotes": "<p>Harpies are an amalgamation of human and bird, using their ancestral control of the wind to lure prey or even directly pull in their next meal. Harpies can eat most creatures, but prefer to eat humans and elves in particular. Harpies live in family groups or larger clans, although they rarely hunt in big groups, preferring to keep most meals for themselves.</p>",
-      "skillSpecialPerformance": {
-        "0": {
-          "label": "singing"
-        }
-      },
       "tokenName": "Harpy",
       "items": {
         "strike-melee->Talon": {
@@ -731,7 +723,7 @@
         },
         "action->Poison Breath": {
           "name": "Poison Breath",
-          "description": "<p>The dragon breathes a toxic cloud that deals @Damage[5d6[poison]] damage in a @Template[cone|distance:30]. Each creature in the area must attempt a @Check[reflex|dc:21|basic] save.</p>\n<p>The dragon can't use their Poison Breath again for [[/gmr 1d4 #Recharge Poison Breath]]{1d4 rounds}.</p>"
+          "description": "<p>The dragon breathes a toxic cloud that deals @Damage[5d6[poison]|options:area-damage] damage in a @Template[cone|distance:30]. Each creature in the area must attempt a @Check[reflex|dc:21|basic|options:area-effect] save.</p>\n<p>The dragon can't use their Poison Breath again for [[/gmr 1d4 #Recharge Poison Breath]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -1035,7 +1027,6 @@
     "Minotaur Hunter (BB)": {
       "name": "Minotaur Hunter (BB)",
       "publicNotes": "<p>A minotaur is a large humanoid with a bovine head and hooves. Though often mistaken for aggressive brutes, many minotaurs are skilled artisans. Lone minotaurs tend to make their lairs within a maze or old ruin, hunting anyone who dares to invade their labyrinthine home.</p>",
-      "senses": "darkvision",
       "tokenName": "Minotaur Hunter",
       "items": {
         "strike-melee->Greataxe": {
@@ -1193,10 +1184,9 @@
     "Reefclaw (BB)": {
       "name": "Reefclaw (BB)",
       "publicNotes": "<p>Reefclaws are aquatic monsters that resemble huge shrimp or lobsters. Though reefclaws can't speak, they are intelligent enough to understand the local language of humanoids near their hunting grounds.</p>",
-      "senses": "darkvision",
       "skillSpecialAthletics": {
         "0": {
-          "label": "to swim"
+          "label": "to Swim"
         }
       },
       "tokenName": "Reefclaw",
@@ -1261,7 +1251,7 @@
         },
         "action->Filth Wave": {
           "name": "Filth Wave",
-          "description": "<p>The sewer ooze unleashes a wave of filth, covering all creatures within 20 feet of itself. Each creature in the area must succeed at a @Check[reflex|dc:17|traits:damaging-effect] save or take @Damage[1d4[acid]] damage and a -10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls over and gains the @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} condition). A creature can Interact to clean someone off. This decreases the Speed penalty to -5 feet after 1 action, or to no penalty after 2 actions. After using Filth Wave, the ooze can't use it again for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Qomp2EujVCbzJb4X]{Effect: Filth Wave}</p>"
+          "description": "<p>The sewer ooze unleashes a wave of filth, covering all creatures within @Template[emanation|distance:20]{20 feet} of itself. Each creature in the area must succeed at a @Check[reflex|dc:17|options:area-effect,damaging-effect] save or take @Damage[1d4[acid]|options:area-damage] damage and a –10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls over and gains the @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} condition). A creature can Interact to clean someone off. This decreases the Speed penalty to -5 feet after 1 action, or to no penalty after 2 actions. After using Filth Wave, the ooze can't use it again for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Qomp2EujVCbzJb4X]{Effect: Filth Wave}</p>"
         }
       }
     },
@@ -1415,7 +1405,6 @@
     "Warg (BB)": {
       "name": "Warg (BB)",
       "publicNotes": "<p>Wargs are often mistaken for wolves, but they have a cunning intelligence and the ability to speak. Wargs often form hunting parties with orcs and hobgoblins. Most wargs are amenable to this arrangement, but if food should run out, wargs are more than willing to integrate goblinoid flesh into their diet.</p>",
-      "senses": "darkvision",
       "tokenName": "Warg",
       "items": {
         "strike-melee->Jaws": {
@@ -1463,7 +1452,7 @@
         },
         "action->Web Trap": {
           "name": "Web Trap",
-          "description": "<p>A creature hit by the web lurker's web attack gets stuck to the nearest surface. It can't move until it successfully @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 20).</p>"
+          "description": "<p>A creature hit by the web lurker's web attack gets stuck to the nearest surface. It can't move until it successfully [[/act escape dc=20]]{Escapes}.</p>"
         }
       }
     },
@@ -1632,10 +1621,6 @@
     "skillSpecialCrafting": {
       "converter": "translateSkillSpecial",
       "path": "system.skills.crafting.special"
-    },
-    "skillSpecialPerformance": {
-      "converter": "translateSkillSpecial",
-      "path": "system.skills.performance.special"
     },
     "skillSpecialStealth": {
       "converter": "translateSkillSpecial",

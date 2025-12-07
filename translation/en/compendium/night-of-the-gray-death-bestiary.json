@@ -174,7 +174,6 @@
     "Gray Death": {
       "name": "Gray Death",
       "languages": "telepathy 100 feet",
-      "senses": "lifesense 1,000 feet",
       "items": {
         "strike-melee->Hand": {
           "name": "Hand"
@@ -536,7 +535,7 @@
         },
         "action->Entangling Train": {
           "name": "Entangling Train",
-          "description": "<p><strong>Trigger</strong> A creature moves adjacent to the pakalchi</p>\n<hr />\n<p><strong>Effect</strong> Writhing, pitch-black vines wrap around the creature. The creature takes @Damage[1d6[slashing]] damage and takes a -15-foot circumstance penalty to its Speeds until the end of its next turn.</p>"
+          "description": "<p><strong>Trigger</strong> A creature moves adjacent to the pakalchi</p>\n<hr />\n<p><strong>Effect</strong> Writhing, pitch-black vines wrap around the creature. The creature takes @Damage[1d6[slashing]] damage and takes a –15-foot circumstance penalty to its Speeds until the end of its next turn.</p>"
         },
         "action->Betrayal Toxin": {
           "name": "Betrayal Toxin",
@@ -559,15 +558,15 @@
           "description": "<p>The automatons don't have shields or weapons. Their Strike as One ability uses their fists and deals bludgeoning damage instead of slashing damage.</p>"
         },
         "action->Shield Block": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.m4HQ2o5aPxjXf2kY]\n<p><strong>Thresholds</strong> 160 (12 squares), 80 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.m4HQ2o5aPxjXf2kY]\n<p><strong>Thresholds</strong> 160 (3 segments), 80 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "action->Troop Defenses": {
           "name": "Troop Defenses",
-          "description": "<p><strong>Thresholds</strong> 160 (12 squares), 80 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+          "description": "<p><strong>Thresholds</strong> 160 (3 segments), 80 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "action->Strike as One": {
           "name": "Strike as One",
-          "description": "<p><span class=\"action-glyph\">A</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The garrison makes a melee attack against each enemy within 5 feet (@Check[reflex|dc:30|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">A</span> @Damage[(2d8+2)[bludgeoning]] damage.</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(8d8+12)[bludgeoning]] damage.</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+15)[bludgeoning]] damage.</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The garrison makes a melee attack against each enemy in a @Template[emanation|distance:5] (@Check[reflex|dc:30|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d8+2)[bludgeoning]|options:area-damage] damage.</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(8d8+12)[bludgeoning]|options:area-damage] damage.</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+15)[bludgeoning]|options:area-damage] damage.</p>"
         },
         "action->Troop Movement": {
           "name": "Troop Movement",
@@ -578,7 +577,7 @@
     "Pendulum Pit": {
       "name": "Pendulum Pit",
       "description": "<p>Several swinging pendulums of force cleave through the room across the platforms, knocking people into the pit.</p>",
-      "disable": "<p>@Check[arcana|dc:48|name:Deactivate a Pendulum Blade|traits:complex,magical,mechanical,trap] (legendary), @Check[thievery|dc:44|name:Deactivate a Pendulum Blade|traits:complex,magical,mechanical,trap] (master), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th level; counteract DC 44) on a platform to deactivate its pendulum blade; once all five platforms have been deactivated, the trap is disabled and the room rotates back into position along the exits. @Check[thievery|dc:48|name:Rotate the Room Open|traits:complex,magical,mechanical,trap] (legendary) from any blocked exit to activate the rotating mechanism and rotate the room back into position before the trap has been disabled.</p>",
+      "disable": "<p>@Check[arcana|dc:48|name:Deactivate a Pendulum Blade|traits:complex,magical,mechanical,trap] (legendary), @Check[thievery|dc:44|name:Deactivate a Pendulum Blade|traits:complex,magical,mechanical,trap] (master), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th rank; counteract DC 44) on a platform to deactivate its pendulum blade; once all five platforms have been deactivated, the trap is disabled and the room rotates back into position along the exits. @Check[thievery|dc:48|name:Rotate the Room Open|traits:complex,magical,mechanical,trap] (legendary) from any blocked exit to activate the rotating mechanism and rotate the room back into position before the trap has been disabled.</p>",
       "reset": "<p>The trap resets after 1 hour. If the @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Darkness} throughout the room has been dispelled, the <em>darkness</em> in the room returns when the trap resets.</p>",
       "routine": "<p>(5 actions) For each active platform, the trap uses an action to create a pendulum of force to swing down along a straight line between the platform and one other creature in the room that isn't on the platform (if any). The trap makes a pendulum blade attack against any creature in that line. For each platform deactivated, reduce the number of actions the trap takes in its routine by 1.</p>",
       "stealth": "<p>(legendary) to realize the chamber is a complex rotating trap before it triggers. No check is necessary to notice the platforms and the pit.</p>",
@@ -720,7 +719,7 @@
         },
         "action->Entombing Echoes": {
           "name": "Entombing Echoes",
-          "description": "<p>A creature struck by the tumblak's fist or impacted by Claustrophobic Nightmares must succeed on a @Check[will|dc:44] save or feel itself confined on all sides. The creature is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until it Escapes (DC 44).</p>"
+          "description": "<p>A creature struck by the tumblak's fist or impacted by Claustrophobic Nightmares must succeed on a @Check[will|dc:44] save or feel itself confined on all sides. The creature is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until it [[/act escape dc=44]]{Escapes}.</p>"
         },
         "action->Skip Between": {
           "name": "Skip Between",
@@ -880,7 +879,6 @@
     },
     "reset": "system.details.reset",
     "routine": "system.details.routine",
-    "senses": "system.perception.details",
     "skillSpecialDeception": {
       "converter": "translateSkillSpecial",
       "path": "system.skills.deception.special"

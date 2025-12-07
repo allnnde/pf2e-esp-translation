@@ -66,12 +66,20 @@
         },
         "Title": "Arcane Slam"
       },
+      "AreaFire": {
+        "Description": "You hit each creature in the designated area with a range equal to the weapon's range increment (for cone or line) or the designated radius of the explosion (for burst). For burst, you can position the center point anywhere within your first range increment. Any creatures in the area must succeed at a basic reflex save against your class DC plus the tracking value of the weapon. This damage is area damage. Creatures who critically fail this save are subject to effects that occur on a critical hit with this weapon, including the weapon's critical specialization effect. Area Fire has an expend equal to the value listed on the weapon.",
+        "Title": "Area Fire"
+      },
       "ArrestAFall": {
         "Description": "<p><strong>Trigger</strong> You fall.</p><p><strong>Requirements</strong> You have a fly Speed.</p><hr><p>You attempt your choice of an Acrobatics check or Reflex save to slow your fall. The DC is typically 15, but it might be higher due to air turbulence or other circumstances.</p><p><strong>Success</strong> You take no damage from the fall.</p>",
         "Notes": {
           "success": "<strong>Success</strong> You take no damage from the fall."
         },
         "Title": "Arrest A Fall"
+      },
+      "AutoFire": {
+        "Description": "You hit each creature in a cone with a range equal to half the weapon's range increment without making an attack roll. Any creatures in the area take damage equal to the weapon's damage (basic reflex save against your class DC plus the tracking value of the weapon). This damage is area damage. Creatures that critically fail this save are subject to effects that occur on a critical hit with this weapon, including the weapon's critical specialization effect. Automatic Fire has an expend equal to the number of targets in the area × 2.",
+        "Title": "Auto-Fire"
       },
       "AvertGaze": {
         "Description": "<p>You avert your gaze from danger, such as a medusa's gaze. You gain a +2 circumstance bonus to saves against visual abilities that require you to look at a creature or object, such as a medusa's petrifying gaze. Your gaze remains averted until the start of your next turn.</p>",
@@ -134,7 +142,7 @@
         "Title": "Climb"
       },
       "Coerce": {
-        "Description": "<p>With threats either veiled or overt, you attempt to bully a creature into doing what you want. You must spend at least 1 minute of conversation with a creature you can see and that can either see or sense you. At the end of the conversation, attempt an Intimidation check against the target's Will DC, modified by any circumstances the GM determines. The attitudes referenced in the effects below are summarized in the Changing Attitudes sidebar and described in full in the Conditions Appendix.</p><p><strong>Critical Success</strong> The target gives you the information you seek or agrees to follow your directives so long as they aren't likely to harm the target in any way. The target continues to comply for an amount of time determined by the GM but not exceeding 1 day, at which point the target becomes unfriendly (if they weren't already unfriendly or hostile). However, the target is too scared of you to retaliate - at least in the short term.<br><strong>Success</strong> As critical success, but once the target becomes unfriendly, they might decide to act against you — for example, by reporting you to the authorities or assisting your enemies.<br><strong>Failure</strong> The target doesn't do what you say, and if they were not already unfriendly or hostile, they become unfriendly.<br><strong>Critical Failure</strong> The target refuses to comply, becomes hostile if they weren't already, and can't be Coerced by you for at least 1 week.</p>",
+        "Description": "<p>With threats either veiled or overt, you attempt to bully a creature into doing what you want. You must spend at least 1 minute of conversation with a creature you can see and that can either see or sense you. At the end of the conversation, attempt an Intimidation check against the target's Will DC, modified by any circumstances the GM determines. The attitudes referenced in the effects below are summarized in the Changing Attitudes sidebar and described in full in the Conditions Appendix.</p><p><strong>Critical Success</strong> The target gives you the information you seek or agrees to follow your directives so long as they aren't likely to harm the target in any way. The target continues to comply for an amount of time determined by the GM but not exceeding 1 day, at which point the target becomes unfriendly (if they weren't already unfriendly or hostile). However, the target is too scared of you to retaliate — at least in the short term.<br><strong>Success</strong> As critical success, but once the target becomes unfriendly, they might decide to act against you — for example, by reporting you to the authorities or assisting your enemies.<br><strong>Failure</strong> The target doesn't do what you say, and if they were not already unfriendly or hostile, they become unfriendly.<br><strong>Critical Failure</strong> The target refuses to comply, becomes hostile if they weren't already, and can't be Coerced by you for at least 1 week.</p>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> The target refuses to comply, becomes hostile if they weren't already, and can't be Coerced by you for at least 1 week.",
           "criticalSuccess": "<strong>Critical Success</strong> The target gives you the information you seek or agrees to follow your directives so long as they aren't likely to harm the target in any way. The target continues to comply for an amount of time determined by the GM but not exceeding 1 day, at which point the target becomes unfriendly (if they weren't already unfriendly or hostile). However, the target is too scared of you to retaliate—at least in the short term.",
@@ -161,7 +169,7 @@
         "Title": "Conceal an Object"
       },
       "CoverTracks": {
-        "Description": "<p>You cover your tracks, moving up to half your travel Speed, using the @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.YVLMgNxXTUQuDJgp]{Travel Speed} rules. You don't need to attempt a Survival check to cover your tracks, but anyone tracking you must succeed at a Survival check against your Survival DC if it is higher than the normal DC to Track.</p><p>In some cases, you might Cover Tracks in an encounter. In this case, Cover Tracks is a single action and doesn't have the exploration trait.</p>",
+        "Description": "<p>You cover your tracks, moving up to half your travel Speed, using the @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.DUOb8QrlC5t0adkL]{Travel Speed} rules. You don't need to attempt a Survival check to cover your tracks, but anyone tracking you must succeed at a Survival check against your Survival DC if it is higher than the normal DC to Track.</p><p>In some cases, you might Cover Tracks in an encounter. In this case, Cover Tracks is a single action and doesn't have the exploration trait.</p>",
         "Title": "Cover Tracks"
       },
       "Craft": {
@@ -484,6 +492,15 @@
           "Description": "{actor} draws their {weapon}.",
           "Title": "Draw (2H)"
         },
+        "ExchangeItems": {
+          "Description": "{actor} and {other} exchange items.",
+          "Title": "Exchange Items"
+        },
+        "GiveItem": {
+          "AnItem": "an item",
+          "Description": "{actor} gives {item} to {other}.",
+          "Title": "Give Item"
+        },
         "Grip": {
           "Description": "{actor} grips their {weapon} with two hands.",
           "Title": "Change Grip (2H)"
@@ -500,6 +517,10 @@
         "PickUp2H": {
           "Description": "{actor} picks up {weapon} from the ground.",
           "Title": "Pick Up (2H)"
+        },
+        "Reload": {
+          "Description": "{actor} loads {weapon} with {ammo}.",
+          "Title": "Reload"
         },
         "Retrieve1H": {
           "Description": "{actor} retrieves their {weapon}.",
@@ -596,7 +617,7 @@
         "Title": "Parry"
       },
       "Perform": {
-        "Description": "<p>When making a brief performance - one song, a quick dance, or a few jokes - you use the Perform action. This action is most useful when you want to prove your capability or impress someone quickly. Performing rarely has an impact on its own, but it might influence the DCs of subsequent Diplomacy checks against the observers, or even change their attitudes if the GM sees fit.</p><p><strong>Critical Success</strong> Your performance impresses the observers, and they're likely to share stories of your ability.<br><strong>Success</strong> You prove yourself, and observers appreciate the quality of your performance.<br><strong>Failure</strong> Your performance falls flat.<br><strong>Critical Failure</strong> You demonstrate only incompetence.</p>",
+        "Description": "<p>When making a brief performance — one song, a quick dance, or a few jokes — you use the Perform action. This action is most useful when you want to prove your capability or impress someone quickly. Performing rarely has an impact on its own, but it might influence the DCs of subsequent Diplomacy checks against the observers, or even change their attitudes if the GM sees fit.</p><p><strong>Critical Success</strong> Your performance impresses the observers, and they're likely to share stories of your ability.<br><strong>Success</strong> You prove yourself, and observers appreciate the quality of your performance.<br><strong>Failure</strong> Your performance falls flat.<br><strong>Critical Failure</strong> You demonstrate only incompetence.</p>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> You demonstrate only incompetence.",
           "criticalSuccess": "<strong>Critical Success</strong> Your performance impresses the observers, and they're likely to share stories of your ability.",
@@ -643,11 +664,11 @@
         }
       },
       "PickALock": {
-        "Description": "<p>Opening a lock without a key is very similar to Disable a Device, but the DC of the Thievery check is determined by the complexity and construction of the lock you are attempting to pick (locks and their DCs are found in their description). Locks of higher qualities might require multiple successes to unlock, since otherwise even an unskilled burglar could easily crack the lock by attempting the check until they rolled a natural 20. If you lack the proper tools, the GM might let you used improvised picks, which are treated as shoddy tools</p><p><strong>Critical Success</strong> You unlock the lock, or you achieve two successes toward opening a complex lock. You leave no trace of your tampering.</p><p><strong>Success</strong> You open the lock, or you achieve one success toward opening a complex lock.</p><p><strong>Critical Failure</strong> You break your tools. Fixing them requires using Crafting to @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repair} them or else swapping in @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{Replacement Picks}.</p>",
+        "Description": "<p>Opening a lock without a key is very similar to Disabling a Device, but the DC of the check is determined by the complexity and construction of the lock you are attempting to pick. Locks of higher quality might require multiple successes to unlock. If you lack the proper tools, the GM might let you use improvised picks, which are treated as a shoddy toolkit.</p><p><strong>Critical Success</strong> You unlock the lock, or you achieve two successes toward opening a lock that requires more than one success. You leave no trace of your tampering.</p><p><strong>Success</strong> You open the lock, or you achieve one success toward opening a lock that requires more than one success. You leave behind damage that indicates the lock was picked on close scrutiny.</p><p><strong>Critical Failure</strong> You break your toolkit and leave behind obvious damage. Fixing a broken toolkit requires using Crafting to @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repair} it or else swapping in @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{replacement picks}.</p>",
         "Notes": {
-          "criticalFailure": "<strong>Critical Failure</strong> You break your tools. Fixing them requires using Crafting to @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repair} them or else swapping in @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{Replacement Picks}.",
+          "criticalFailure": "<strong>Critical Failure</strong> You break your toolkit and leave behind obvious damage. Fixing a broken toolkit requires using Crafting to @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repair} it or else swapping in @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{replacement picks}.",
           "criticalSuccess": "<strong>Critical Success</strong> You unlock the lock, or you achieve two successes toward opening a complex lock. You leave no trace of your tampering.",
-          "success": "<strong>Success</strong> You open the lock, or you achieve one success toward opening a complex lock."
+          "success": "<strong>Success</strong> You open the lock, or you achieve one success toward opening a lock that requires more than one success. You leave behind damage that indicates the lock was picked on close scrutiny."
         },
         "Title": "Pick a Lock"
       },
@@ -922,7 +943,7 @@
         "Title": "Tamper"
       },
       "Track": {
-        "Description": "<p>You follow tracks, moving at up to half your travel Speed, using the @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.YVLMgNxXTUQuDJgp]{Travel Speed} rules. After a successful check to Track, you can continue following the tracks at half your Speed without attempting additional checks for up to 1 hour.</p><p>In some cases, you might Track in an encounter. In this case, Track is a single action and doesn't have the exploration trait, but you might need to roll more often because you're in a tense situation. The GM determines how often you must attempt this check.</p><p>You attempt your Survival check when you start Tracking, once every hour you continue tracking, and any time something significant changes in the trail. The GM determines the DCs for such checks, depending on the freshness of the trail, the weather, and the type of ground.</p><p><strong>Success</strong> You find the trail or continue to follow the one you're already following.</p><p><strong>Failure</strong> You lose the trail but can try again after a 1-hour delay.</p><p><strong>Critical Failure</strong> You lose the trail and can't try again for 24 hours.</p>",
+        "Description": "<p>You follow tracks, moving at up to half your travel Speed, using the @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.DUOb8QrlC5t0adkL]{Travel Speed} rules. After a successful check to Track, you can continue following the tracks at half your Speed without attempting additional checks for up to 1 hour.</p><p>In some cases, you might Track in an encounter. In this case, Track is a single action and doesn't have the exploration trait, but you might need to roll more often because you're in a tense situation. The GM determines how often you must attempt this check.</p><p>You attempt your Survival check when you start Tracking, once every hour you continue tracking, and any time something significant changes in the trail. The GM determines the DCs for such checks, depending on the freshness of the trail, the weather, and the type of ground.</p><p><strong>Success</strong> You find the trail or continue to follow the one you're already following.</p><p><strong>Failure</strong> You lose the trail but can try again after a 1-hour delay.</p><p><strong>Critical Failure</strong> You lose the trail and can't try again for 24 hours.</p>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> You lose the trail and can't try again for 24 hours.",
           "failure": "<strong>Failure</strong> You lose the trail but can try again after a 1-hour delay.",
@@ -997,9 +1018,9 @@
       "WhirlingThrow": {
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> You don't throw the creature, and it's no longer @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by you.",
-          "criticalSuccess": "<strong>Critical Success</strong> You throw the creature the desired distance and it lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.",
+          "criticalSuccess": "<strong>Critical Success</strong> You throw the creature [[/r 10+(5*@actor.abilities.str.mod)]] feet, dealing @Damage[((floor((10+(5*@actor.abilities.str.mod))/10))d6 + @actor.abilities.str.mod)[bludgeoning]] damage, and it lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.",
           "failure": "<strong>Failure</strong> You don't throw the creature.",
-          "success": "<strong>Success</strong> You throw the creature the desired distance."
+          "success": "<strong>Success</strong> You throw the creature [[/r 10+(5*@actor.abilities.str.mod)]] feet and deal @Damage[((floor((10+(5*@actor.abilities.str.mod))/10))d6 + @actor.abilities.str.mod)[bludgeoning]] damage."
         },
         "Title": "Whirling Throw"
       }

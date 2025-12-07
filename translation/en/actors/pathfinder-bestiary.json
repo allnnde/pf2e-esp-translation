@@ -79,7 +79,7 @@
         },
         "action->Vent": {
           "name": "Vent",
-          "description": "<p>The golem vents a @Template[cone|distance:30] of superheated steam from its internal forge. This deals @Damage[15d6[fire]] damage to all creatures in the cone (@Check[reflex|dc:40|basic]).</p>\n<p>The golem can't use Vent again for [[/gmr 1d6 #Recharge Vent]]{1d6 rounds}.</p>"
+          "description": "<p>The golem vents a @Template[cone|distance:30] of superheated steam from its internal forge. This deals @Damage[15d6[fire]|options:area-damage] damage to all creatures in the cone (@Check[reflex|dc:40|basic|options:area-effect]).</p>\n<p>The golem can't use Vent again for [[/gmr 1d6 #Recharge Vent]]{1d6 rounds}.</p>"
         }
       }
     },
@@ -119,7 +119,7 @@
         },
         "action->Alchemical Rupture": {
           "name": "Alchemical Rupture",
-          "description": "<p>When an alchemical golem takes physical damage from a critical hit or is affected by a @UUID[Compendium.pf2e.spells-srd.Item.1xbFBQDRs0hT5xZ9]{Shatter} spell, one glass chamber within its body shatters, spewing alchemical liquid in a @Template[emanation|distance:5]{5-foot emanation}.</p>\n<p>Roll on the alchemical chambers list to determine which one shatters-on a roll of 1-5, creatures in the area take 10d6 damage of the appropriate type (@Check[reflex|dc:28|basic]). On a roll of 6, creatures must instead save against the sickness effect.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>[[/gmr 1d6 #Alchemical Rupture]]</th>\n<th>Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>@Damage[10d6[acid]] damage @Check[reflex|dc:28|basic|traits:acid]</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Damage[10d6[cold]] damage @Check[reflex|dc:28|basic|traits:cold]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Damage[10d6[electricity]] damage @Check[reflex|dc:28|basic|traits:electricity]</td>\n</tr>\n<tr>\n<td>4</td>\n<td>@Damage[10d6[fire]] damage @Check[reflex|dc:28|basic|traits:fire]</td>\n</tr>\n<tr>\n<td>5</td>\n<td>@Damage[10d6[poison]] damage @Check[reflex|dc:28|basic|traits:poison]</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Sickness: @Check[fortitude|dc:26|name:Alchemical Sickness|traits:disease] save or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure)</td>\n</tr>\n</tbody>\n</table>"
+          "description": "<p>When an alchemical golem takes physical damage from a critical hit or is affected by a @UUID[Compendium.pf2e.spells-srd.Item.1xbFBQDRs0hT5xZ9]{Shatter} spell, one glass chamber within its body shatters, spewing alchemical liquid in a @Template[emanation|distance:5]{5-foot emanation}.</p>\n<p>Roll on the alchemical chambers list to determine which one shatters-on a roll of 1-5, creatures in the area take 10d6 damage of the appropriate type (@Check[reflex|dc:28|basic|options:area-effect]). On a roll of 6, creatures must instead save against the sickness effect.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>[[/gmr 1d6 #Alchemical Rupture]]</th>\n<th>Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>@Damage[10d6[acid]|options:area-damage] damage @Check[reflex|dc:28|basic|options:area-effect|traits:acid]</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Damage[10d6[cold]|options:area-damage] damage @Check[reflex|dc:28|basic|options:area-effect|traits:cold]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Damage[10d6[electricity]|options:area-damage] damage @Check[reflex|dc:28|basic|options:area-effect|traits:electricity]</td>\n</tr>\n<tr>\n<td>4</td>\n<td>@Damage[10d6[fire]|options:area-damage] damage @Check[reflex|dc:28|basic|options:area-effect|traits:fire]</td>\n</tr>\n<tr>\n<td>5</td>\n<td>@Damage[10d6[poison]|options:area-damage] damage @Check[reflex|dc:28|basic|options:area-effect|traits:poison]</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Sickness: @Check[fortitude|dc:26|name:Alchemical Sickness|options:area-effect|traits:disease] save or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure)</td>\n</tr>\n</tbody>\n</table>"
         },
         "action->Golem Antimagic": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.r34QDwKiWZoVymJa]\nGolem Antimagic",
@@ -135,7 +135,7 @@
         },
         "action->Generate Bomb": {
           "name": "Generate Bomb",
-          "description": "<p>The golem fills an empty vial from one of its alchemical chambers to create a bomb and then makes a bomb Strike.</p>\n<p>Determine the type of bomb created by rolling 1d6 on the alchemical chambers list.</p>\n<p>On a roll of 1-4, it creates the corresponding greater alchemical bomb: an @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]{Acid Flask} from chamber 1, a @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]{Frost Vial} from chamber 2, @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]{Bottled Lightning} from chamber 3, or @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{Alchemist's Fire} from chamber 4.</p>\n<p>On a roll of 5, it creates a poisonous bomb that deals 3d10 poison damage and 3 poison splash damage with no other effects.</p>\n<p>On a roll of 6, it creates a sickness bomb, which exposes the target and all creatures in the splash radius to the sickness effect; creatures hit by only the splash receive a +2 circumstance bonus to their Fortitude saves.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>[[/gmr 1d6 #Generate Bomb]]</th>\n<th>Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>Acid Flask: @Damage[1[acid],3d6[persistent,acid],(3[splash])[acid]] damage</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Frost Vial: @Damage[3d6[cold],(3[splash])[cold]] damage, and -10-foot status penalty to Speeds until end of targets next turn @UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Bottled Lightning: @Damage[3d6[electricity],(3[splash])[electricity]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until start of targets next turn</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Alchemist's Fire: @Damage[3d8[fire],3[persistent,fire],(3[splash])[fire]] damage</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Poisonous Bomb: @Damage[3d10[poison],(3[splash])[poison]] damage</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Sickness: @Check[fortitude|dc:26|name:Alchemical Sickness|traits:disease] save or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure)</td>\n</tr>\n</tbody>\n</table>"
+          "description": "<p>The golem fills an empty vial from one of its alchemical chambers to create a bomb and then makes a bomb Strike.</p>\n<p>Determine the type of bomb created by rolling 1d6 on the alchemical chambers list.</p>\n<p>On a roll of 1-4, it creates the corresponding greater alchemical bomb: an @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]{Acid Flask} from chamber 1, a @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]{Frost Vial} from chamber 2, @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]{Bottled Lightning} from chamber 3, or @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{Alchemist's Fire} from chamber 4.</p>\n<p>On a roll of 5, it creates a poisonous bomb that deals 3d10 poison damage and 3 poison splash damage with no other effects.</p>\n<p>On a roll of 6, it creates a sickness bomb, which exposes the target and all creatures in the splash radius to the sickness effect; creatures hit by only the splash receive a +2 circumstance bonus to their Fortitude saves.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>[[/gmr 1d6 #Generate Bomb]]</th>\n<th>Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>Acid Flask: @Damage[1[acid],3d6[persistent,acid],(3[splash])[acid]] damage</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Frost Vial: @Damage[3d6[cold],(3[splash])[cold]] damage, and –10-foot status penalty to Speeds until end of targets next turn @UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Bottled Lightning: @Damage[3d6[electricity],(3[splash])[electricity]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until start of targets next turn</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Alchemist's Fire: @Damage[3d8[fire],3[persistent,fire],(3[splash])[fire]] damage</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Poisonous Bomb: @Damage[3d10[poison],(3[splash])[poison]] damage</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Sickness: @Check[fortitude|dc:26|name:Alchemical Sickness|traits:disease] save or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure)</td>\n</tr>\n</tbody>\n</table>"
         }
       }
     },
@@ -212,7 +212,7 @@
         },
         "action->Bonds of Iron": {
           "name": "Bonds of Iron",
-          "description": "<p>Once per day, an annis hag can cause a cage built of cold iron fingernails to spring out of nothingness at a range of up to 30 feet, attempting an Athletics check to [[/act grapple]] against the target's Fortitude DC; if the target has a weakness to cold iron, the annis hag gains a +2 circumstance bonus to this check.</p>\n<p>Unlike a normal Grapple, the annis hag doesn't need to be within reach and can move as she pleases, and a successful attempt lasts until the creature [[/act escape dc=24]]{Escapes} (DC 24), causing the cage to crumble into rust.</p>\n<p>Any creature can attempt to destroy the cage by attacking it. It has an AC of 19, Hardness 10, and 40 Hit Points.</p>"
+          "description": "<p>Once per day, an annis hag can cause a cage built of cold iron fingernails to spring out of nothingness at a range of up to 30 feet, attempting an Athletics check to [[/act grapple]] against the target's Fortitude DC; if the target has a weakness to cold iron, the annis hag gains a +2 circumstance bonus to this check.</p>\n<p>Unlike a normal Grapple, the annis hag doesn't need to be within reach and can move as she pleases, and a successful attempt lasts until the creature [[/act escape dc=24]]{Escapes}, causing the cage to crumble into rust.</p>\n<p>Any creature can attempt to destroy the cage by attacking it. It has an AC of 19, Hardness 10, and 40 Hit Points.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The hag can take on the appearance of any Medium female humanoid. This doesn't change her Speed or her attack and damage bonuses with her Strikes but might change the damage type her Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -271,7 +271,7 @@
         },
         "action->Death Throes": {
           "name": "Death Throes",
-          "description": "<p>When a balor dies, their body explodes in a @Template[emanation|distance:100]{100-Foot Aura} of intense demonic flame. All creatures and objects in range take @Damage[16d10[fire]] damage (@Check[reflex|dc:45|basic] save). Because the flame is infused with Abyssal energy, creatures in the area apply only half their usual fire resistance. Creatures with immunity to fire use an outcome one degree of success better than what they rolled, instead of gaining the usual benefit of immunity. The bodies of creatures reduced to 0 Hit Points by a balor's death throes are completely incinerated into fine ash.</p>"
+          "description": "<p>When a balor dies, their body explodes in a @Template[emanation|distance:100]{100-foot aura} of intense demonic flame. All creatures and objects in range take @Damage[16d10[fire]|options:area-damage] damage (@Check[reflex|dc:45|basic|options:area-effect] save). Because the flame is infused with Abyssal energy, creatures in the area apply only half their usual fire resistance. Creatures with immunity to fire use an outcome one degree of success better than what they rolled, instead of gaining the usual benefit of immunity. The bodies of creatures reduced to 0 Hit Points by a balor's death throes are completely incinerated into fine ash.</p>"
         },
         "action->Dimensional Dervish": {
           "name": "Dimensional Dervish",
@@ -324,7 +324,7 @@
         },
         "action->Shell Rake": {
           "name": "Shell Rake",
-          "description": "<p>The baomal Swims or Strides alongside a creature or the hull of a vessel, dealing damage with the strong spikes on its shell. Each creature or ship the baomal is adjacent to at any point during its movement takes @Damage[(6d6+10)[slashing],(6d6+10)[piercing]]{6d6+10 slashing and piercing damage} (@Check[reflex|dc:42|basic] save). Against vessels, Shell Rake ignores the first 5 Hardness and creates an explosion of splinters that deals [[/r {3d6+5}]]{3d6+5 damage} to every creature within @Template[burst|distance:10]{10 feet} of the deck's edge (@Check[reflex|dc:42|basic] save).</p>"
+          "description": "<p>The baomal Swims or Strides alongside a creature or the hull of a vessel, dealing damage with the strong spikes on its shell. Each creature or ship the baomal is adjacent to at any point during its movement takes @Damage[(6d6+10)[slashing],(6d6+10)[piercing]]{6d6+10 slashing and piercing damage} (@Check[reflex|dc:42|basic] save). Against vessels, Shell Rake ignores the first 5 Hardness and creates an explosion of splinters that deals @Damage[(3d6+5)[untyped]|options:area-damage] damage to every creature within @Template[burst|distance:10]{10 feet} of the deck's edge (@Check[reflex|dc:42|basic|options:area-effect] save).</p>"
         },
         "action->Two-Headed Strike": {
           "name": "Two-Headed Strike",
@@ -789,7 +789,7 @@
         },
         "action->Blood Drain": {
           "name": "Blood Drain",
-          "description": "<p><strong>Requirements</strong> The bloodseeker is attached to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The bloodseeker uses its proboscis to drain blood from the creature it's attached to. This deals [[/r {1d4}]]{1d4 damage}, and the bloodseeker gains temporary Hit Points equal to the damage dealt.</p>\n<p>A creature that has its blood drained by a bloodseeker is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives healing (of any kind or amount).</p>"
+          "description": "<p><strong>Requirements</strong> The bloodseeker is attached to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The bloodseeker uses its proboscis to drain blood from the creature it's attached to. This deals @Damage[1d4[untyped]] damage, and the bloodseeker gains temporary Hit Points equal to the damage dealt.</p>\n<p>A creature that has its blood drained by a bloodseeker is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives healing (of any kind or amount).</p>"
         }
       }
     },
@@ -1693,7 +1693,7 @@
         },
         "action->Vortex Pull": {
           "name": "Vortex Pull",
-          "description": "<p><strong>Trigger</strong> A creature in the dragon's vortex uses a Swim action.</p>\n<hr />\n<p><strong>Effect</strong> The dragon creates a current of water, forcing the triggering creature to attempt a <span data-pf2-action=\"swim\" data-pf2-dc=\"40\" data-pf2-label=\"Vortex Pull DC\" data-pf2-glyph=\"A\" data-pf2-show-dc=\"gm\">Athletics</span> check to Swim. If the creature fails, it's pulled 30 feet toward the dragon and the triggering action is lost. If it succeeds, it can Swim normally (using the result of that roll if it doesn't have a Swim speed).</p>"
+          "description": "<p><strong>Trigger</strong> A creature in the dragon's vortex uses a Swim action.</p>\n<hr />\n<p><strong>Effect</strong> The dragon creates a current of water, forcing the triggering creature to attempt a [[/act swim dc=40]]{Athletics} check to Swim. If the creature fails, it's pulled 30 feet toward the dragon and the triggering action is lost. If it succeeds, it can Swim normally (using the result of that roll if it doesn't have a Swim speed).</p>"
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
@@ -2031,84 +2031,7 @@
         },
         "action->Vicious Wounds": {
           "name": "Vicious Wounds",
-          "description": "<p>On a successful jaws or claw Strike, the ceustodaemon viciously tears into its victim as similar wounds appear on its own body. The target takes an extra [[/r {1d6}]]{1d6 amount of damage}, and the ceustodaemon takes the same extra damage.</p>\n<p>If this extra damage to the target is doubled, due to a critical hit, the ceustodaemon takes double damage as well.</p>"
-        }
-      }
-    },
-    "Choral": {
-      "name": "Choral",
-      "languages": "tongues",
-      "publicNotes": "<p>Choral angels are incredible singers who fill the halls of Nirvana with pious chants and sacred hymns. They form from the souls of talented bards and other performers. While they shy away from conflict, they occasionally brave the mortal realm to deliver good omens and auspicious messages. Choral angels often serve the goddess Shelyn, but they can also serve other good deities and empyreal lords.</p>\n<hr />\n<p>The celestial hosts of angels are messengers and warriors, divided into choirs based on their abilities and purviews. The majority of angels are neutral good and live in Nirvana, the plane of virtue and enlightenment. However, some angels, including several angelic deities, have different alignments, and some even dwell on other planes. Regardless of alignment, angels remain benevolent messengers possessed with magical auras to aid their allies.</p>",
-      "saveDetails": "+1 status to all saves vs. magic",
-      "items": {
-        "spellcastingEntry->Divine Innate Spells": {
-          "name": "Divine Innate Spells"
-        },
-        "spell->Divine Decree (See Harmonize)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.sX2o0HH4RjJDAZ8C]\nDivine Decree (See Harmonize)"
-        },
-        "spell->Tongues (Constant)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues (Constant)"
-        },
-        "spell->Heroism (See Harmonize)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.KqvqNAfGIE5a9wSv]\nHeroism (See Harmonize)"
-        },
-        "spell->Remove Curse": {
-          "name": "Remove Curse",
-          "description": "<p>Your touch grants a reprieve to a cursed creature. You attempt to counteract one curse afflicting the target. If the curse comes from a cursed item or other external source, a success indicates that the target creature can rid itself of the cursed item, but it doesn't remove the curse from the item.</p>",
-          "target": "1 creature"
-        },
-        "spell->Remove Disease": {
-          "name": "Remove Disease",
-          "description": "<p>Healing magic purges disease from a creature's body. You attempt to counteract one disease afflicting the target.</p>",
-          "target": "1 creature"
-        },
-        "spell->Calm Emotions (See Harmonize)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]\nCalm Emotions (See Harmonize)"
-        },
-        "spell->Invisibility (At Will) (Self Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (At Will) (Self Only)",
-          "target": "self"
-        },
-        "spell->Remove Fear (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.EfFMLVbmkBWmzoLF]\nRemove Fear (At Will)",
-          "target": "1 creature"
-        },
-        "spell->Sound Burst": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.wzLkNU3AAqOSKFPR]\nSound Burst"
-        },
-        "spell->Sound Burst (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.wzLkNU3AAqOSKFPR]\nSound Burst (At Will)"
-        },
-        "spell->Sound Burst (See Harmonize)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.wzLkNU3AAqOSKFPR]\nSound Burst (See Harmonize)"
-        },
-        "spell->Counter Performance (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.WILXkjU5Yq3yw10r]\nCounter Performance (At Will)"
-        },
-        "spell->Inspire Competence": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.f0Z5mqGA6Yu79B8x]\nInspire Competence"
-        },
-        "spell->Inspire Courage": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.IAjvwqgiDr3qGYxY]\nInspire Courage"
-        },
-        "strike-melee->Fist": {
-          "name": "Fist"
-        },
-        "strike-ranged->Piercing Hymn": {
-          "name": "Piercing Hymn"
-        },
-        "action->Harmonizing Aura": {
-          "name": "Harmonizing Aura",
-          "description": "<p>20 feet. Allies in the area gain a +2 status bonus to sonic damage rolls and a +1 status bonus to AC and all saves against sonic and auditory effects. Enemies in the area take a -2 status bonus to sonic damage rolls and a -1 status bonus to AC and all saves against sonic and auditory effects.</p>"
-        },
-        "action->Deafening Aria": {
-          "name": "Deafening Aria",
-          "description": "<p>On a critical hit with piercing hymn, the target is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for one minute.</p>"
-        },
-        "action->Harmonize": {
-          "name": "Harmonize",
-          "description": "<p>The choral angel adds its harmony to a choral angel ally within its harmonizing aura.</p>\n<p>The ally can cast @UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]{Calm} or @UUID[Compendium.pf2e.spells-srd.Item.KqvqNAfGIE5a9wSv]{Heroism} on its next turn in place of its 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.wzLkNU3AAqOSKFPR]{Noise Blast} or heighten its 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.wzLkNU3AAqOSKFPR]{Noise Blast} by 1 level.</p>\n<p>If five different choral angels use Harmonize on the same choral angel ally, it can instead cast @UUID[Compendium.pf2e.spells-srd.Item.sX2o0HH4RjJDAZ8C]{Divine Decree} in place of its 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.wzLkNU3AAqOSKFPR]{Noise Blast}.</p>"
+          "description": "<p>On a successful jaws or claw Strike, the ceustodaemon viciously tears into its victim as similar wounds appear on its own body. The target takes an extra 1d6 amount of damage, and the ceustodaemon takes the same extra damage.</p>\n<p>If this extra damage to the target is doubled, due to a critical hit, the ceustodaemon takes double damage as well.</p>"
         }
       }
     },
@@ -2855,7 +2778,7 @@
         },
         "action->Web Trap": {
           "name": "Web Trap",
-          "description": "<p>A creature hit by a drider's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface (Escape DC 21).</p>"
+          "description": "<p>A creature hit by a drider's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface ([[/act escape dc=21]]).</p>"
         }
       }
     },
@@ -3039,6 +2962,11 @@
         "spell->Detect Magic (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]\nDetect Magic (Constant)"
         },
+        "spell->Produce Flame": {
+          "name": "Produce Flame",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "target": "1 creature"
+        },
         "armor->Breastplate": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.r0ifJfoz8aqf0mwk]\n<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
         },
@@ -3121,7 +3049,7 @@
         },
         "action->Rope Snare": {
           "name": "Rope Snare",
-          "description": "<p>An erinys carries a coil of rope woven of their hair (use the statistics for @UUID[Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS]{Rope}) that animates in their hands.</p>\n<p>When a creature is hit by the erinys's rope, a segment of the rope tears loose and wraps itself around the creature, imposing a 10-foot circumstance penalty to Speed. The piece that tears off is 10 feet long for a Medium or smaller creature, and doubles in length for each size larger than Medium.</p>\n<p>When a creature @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} the effect (DC 26), the detached segment of rope withers away into useless black sludge.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.o0zqsH5kYopRanav]{Effect: Rope Snare}</p>"
+          "description": "<p>An erinys carries a coil of rope woven of their hair (use the statistics for @UUID[Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS]{Rope}) that animates in their hands.</p>\n<p>When a creature is hit by the erinys's rope, a segment of the rope tears loose and wraps itself around the creature, imposing a 10-foot circumstance penalty to Speed. The piece that tears off is 10 feet long for a Medium or smaller creature, and doubles in length for each size larger than Medium.</p>\n<p>When a creature [[/act escape dc=26]]{Escapes} the effect, the detached segment of rope withers away into useless black sludge.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.o0zqsH5kYopRanav]{Effect: Rope Snare}</p>"
         }
       }
     },
@@ -3145,7 +3073,7 @@
         },
         "action->Ethereal Web Trap": {
           "name": "Ethereal Web Trap",
-          "description": "<p>A creature hit by the ether spider's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface (Escape DC 22).</p>"
+          "description": "<p>A creature hit by the ether spider's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface ([[/act escape dc=22]]).</p>"
         },
         "action->Web Burst": {
           "name": "Web Burst",
@@ -3248,7 +3176,7 @@
           "description": "<p>A gelatinous cube is so clear that it's difficult to spot. A successful @Check[perception|dc:23|traits:action:search] check is required to notice a stationary cube, and a creature must be @UUID[Compendium.pf2e.actionspf2e.Item.TiNDYUGlMmxzxBYU]{Searching} to attempt this check.</p>\n<p>A creature that walks into the cube is automatically Engulfed (this usually causes the GM to call for initiative).</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:19|traits:damaging-effect], @Damage[2d6[acid]], Escape DC 19, Rupture 7</p>\n<p>A creature Engulfed by the gelatinous cube must also attempt a saving throw against paralysis.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:19|traits:damaging-effect], @Damage[2d6[acid]], [[/act escape dc=19]], Rupture 7</p>\n<p>A creature Engulfed by the gelatinous cube must also attempt a saving throw against paralysis.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Paralysis": {
           "name": "Paralysis",
@@ -3492,7 +3420,7 @@
           "description": "<p>A creature that takes damage from a gibbering mouther's spittle must succeed at a @Check[fortitude|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (or @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round on a critical failure).</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:22|traits:damaging-effect], @Damage[3d8[piercing]], Escape DC 22, Rupture 8</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:22|traits:damaging-effect], @Damage[3d8[piercing]], [[/act escape dc=22]], Rupture 8</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Ground Manipulation": {
           "name": "Ground Manipulation",
@@ -4423,7 +4351,7 @@
         },
         "action->Fiddle": {
           "name": "Fiddle",
-          "description": "<p>A grig can rub its legs together to create a catchy fiddling tune that compels others within @Template[emanation|distance:30]{30 feet} to dance about, with varying effects depending on a @Check[will|dc:18] save. A listener is temporarily immune for 10 minutes on a success, but otherwise, if the grig continues to Fiddle each round, the creature receives no additional saves.</p>\n<hr />\n<p><strong>Success</strong> No effect</p>\n<p><strong>Failure</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and -10-foot status penalty to Speeds</p>\n<p><strong>Critical Failure</strong> As failure, and also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wJsOZsYI2ZUVcGxc]{Effect: Fiddle}</p>"
+          "description": "<p>A grig can rub its legs together to create a catchy fiddling tune that compels others within @Template[emanation|distance:30]{30 feet} to dance about, with varying effects depending on a @Check[will|dc:18] save. A listener is temporarily immune for 10 minutes on a success, but otherwise, if the grig continues to Fiddle each round, the creature receives no additional saves.</p>\n<hr />\n<p><strong>Success</strong> No effect</p>\n<p><strong>Failure</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and –10-foot status penalty to Speeds</p>\n<p><strong>Critical Failure</strong> As failure, and also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wJsOZsYI2ZUVcGxc]{Effect: Fiddle}</p>"
         }
       }
     },
@@ -4522,7 +4450,7 @@
         "equipment->Sack for Holding Rocks": {
           "name": "Sack for Holding Rocks"
         },
-        "consumable->Rock": {
+        "ammo->Rock": {
           "name": "Rock"
         },
         "strike-melee->Greatclub": {
@@ -4563,7 +4491,7 @@
         },
         "action->Spray Acid": {
           "name": "Spray Acid",
-          "description": "<p>The hive mother spews acid in a @Template[cone|distance:60], dealing @Damage[8d6[acid],1d6[persistent,acid]]{8d6 acid damage and 1d6 persistent acid damage} (@Check[reflex|dc:26|basic] save).</p>\n<p>It can't spew acid again for [[/gmr 1d4 #Recharge spew acid]]{1d4 rounds}.</p>"
+          "description": "<p>The hive mother spews acid in a @Template[cone|distance:60], dealing @Damage[8d6[acid],1d6[persistent,acid]|options:area-damage]{8d6 acid damage and 1d6 persistent acid damage} (@Check[reflex|dc:26|basic|options:area-effect] save).</p>\n<p>It can't spew acid again for [[/gmr 1d4 #Recharge Spray Acid]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -4680,7 +4608,7 @@
         },
         "action->Elemental Endurance": {
           "name": "Elemental Endurance",
-          "description": "<p>A janni can survive on any Elemental Plane for up to 48 hours, after which it takes [[/r {1}]]{1 damage} per hour until it leaves or dies.</p>"
+          "description": "<p>A janni can survive on any Elemental Plane for up to 48 hours, after which it takes @Damage[1[untyped]] damage per hour until it leaves or dies.</p>"
         },
         "action->Change Size": {
           "name": "Change Size",
@@ -5065,25 +4993,6 @@
         }
       }
     },
-    "Manticore": {
-      "name": "Manticore",
-      "publicNotes": "<p>The manticore is a monstrous amalgamation of lion, dragon, and human with a penchant for feasting on human flesh. Its distinctive tail is festooned with large quills like those of a porcupine, which the manticore flings at prey by whipping its tail like a sling. These deadly spikes give the manticore the power to slaughter even well-armed warriors from the safety of the sky.</p>\n<p>Although the anthropomorphic face of the manticore suggests a keen intellect, most creatures of its kind are simple-minded killers. They can be clever liars, however, and their voices have a strangely musical sound that has lured many unwitting travelers into an ambush. A manticore discovered by uneducated humanoids can sometimes become the center of adoration and even worship; a manticore in this situation swiftly gives in to its laziness and allows its acolytes to bring it tribute in the form of food and treasure, feasting upon its own followers when offerings become scarce. Stronger humanoids who encounter a manticore can cow it through intimidation and violence, sometimes even forcing it into service as a mount. As long as the manticore is well fed with human flesh and its master leads it to victory, a manticore mount can prove surprisingly loyal.</p>",
-      "items": {
-        "strike-melee->Jaws": {
-          "name": "Jaws"
-        },
-        "strike-melee->Claw": {
-          "name": "Claw"
-        },
-        "strike-ranged->Spike": {
-          "name": "Spike"
-        },
-        "action->Spike Volley": {
-          "name": "Spike Volley",
-          "description": "<p>The manticore flings up to two spikes from its tail, targeting either two different creatures or a single creature. If the manticore targets two different creatures, these creatures must be within 20 feet of one another, and the manticore makes a separate Strike against each; this counts as only one Strike for the manticore's multiple attack penalty, and the penalty doesn't increase until after both attacks. If the manticore fires both spikes at the same creature, it makes a single Strike. If the attack hits, it deals the damage of a single spike, but the target is pinned in place, rendering it @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}. A creature that succeeds at a @Check[athletics|dc:23|name:Remove Spike] check (attempted as a single action) can pull the spike free.</p>\n<p>A manticore can hurl no more than 12 spikes in 24 hours.</p>"
-        }
-      }
-    },
     "Marid": {
       "name": "Marid",
       "publicNotes": "<p>Marids are capricious but powerful genies from the Plane of Water; among geniekind, they are rivaled in power only by the fiery efreet. Marids embody the strength of the ocean's waves and currents, but they also have a gentler side, loving performance and art such as dancing, music, and storytelling.</p>\n<p>Marids regard efreet with hostility but rarely encounter them in their native environment. They get along with djinn, jann, and shaitans, although the latter consider marids flighty and annoying, associating only long enough to close trade deals. Marid society has strict rules of hospitality, and many marid cities have a magically sealed foreign quarter where marid shahzadas conduct business with air-breathers.</p>\n<hr />\n<p>A unique type of genie exists for each Elemental Plane, and the bodies of genies are formed out of elemental matter corresponding to their native plane: djinn are formed from wind, clouds, and storms; efreet are fire made flesh; marids are beings of water; and shaitans are composed of metal, gems, and stone. Lastly, the jann are formed out of all four elements, and are the weakest of geniekind.</p>",
@@ -5140,7 +5049,7 @@
         },
         "action->Rush of Water": {
           "name": "Rush of Water",
-          "description": "<p>The marid releases a jet of water in a @Template[line|distance:60], dealing @Damage[9d6[bludgeoning]] damage (@Check[reflex|dc:28|basic] save). A creature that fails its save is also pushed 10 feet (20 feet on a critical failure).</p>\n<p>The marid can't use Rush of Water again for [[/gmr 1d4 #Recharge Rush of Water]]{1d4 rounds}.</p>"
+          "description": "<p>The marid releases a jet of water in a @Template[line|distance:60], dealing @Damage[9d6[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:28|basic|options:area-effect,forced-movement] save). A creature that fails its save is also pushed 10 feet (20 feet on a critical failure).</p>\n<p>The marid can't use Rush of Water again for [[/gmr 1d4 #Recharge Rush of Water]]{1d4 rounds}.</p>"
         },
         "action->Skewer": {
           "name": "Skewer",
@@ -5203,11 +5112,12 @@
         },
         "action->Defensive Assault": {
           "name": "Defensive Assault",
-          "description": "<p>The marilith makes two Strikes, each with a different weapon, and they use the remaining weapons for protection. The demon gains a circumstance bonus to AC for 1 round equal to the number of weapons not used for attacks. If the marilith later uses any of those weapons to attack (including for an Attack of Opportunity), the bonus to AC decreases by 1 for each weapon used.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.pMPe01GWvfwcYwUR]{Effect: Defensive Assault}</p>"
+          "description": "<p>The marilith makes two Strikes, each with a different weapon, and they use the remaining weapons for protection. The demon gains a circumstance bonus to AC for 1 round equal to the number of weapons not used for attacks. If the marilith later uses any of those weapons to attack (including for an Attack of Opportunity), the bonus to AC decreases by 1 for each weapon used.</p>",
+          "selfEffect": "Effect: Defensive Assault"
         },
         "action->Focused Assault": {
           "name": "Focused Assault",
-          "description": "<p>The marilith attacks a single target with all the weapons they wield in their arms, overwhelming the target with multiple attacks and leaving almost nowhere to dodge. The demon makes a longsword Strike. On a successful attack, the marilith deals longsword damage to the target, plus an additional @Damage[1d8[slashing]] damage for every longsword they wield beyond the first (typically @Damage[5d8[slashing]] damage). Even on a failed attack, the marilith deals the damage from one longsword to the target, though they still miss completely on a critical failure. This counts toward the marilith's multiple attack penalty as a number of attacks equal to the number of longswords the pride demon wields.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.7wDH2q0UcFdu2w58]{Effect: Focused Assault}</p>"
+          "description": "<p>The marilith attacks a single target with all the weapons they wield in their arms, overwhelming the target with multiple attacks and leaving almost nowhere to dodge. The demon makes a longsword Strike. On a successful attack, the marilith deals longsword damage to the target, plus an additional 1d8 slashing damage for every longsword they wield beyond the first (typically 5d8 slashing damage). Even on a failed attack, the marilith deals the damage from one longsword to the target, though they still miss completely on a critical failure. This counts toward the marilith's multiple attack penalty as a number of attacks equal to the number of longswords the pride demon wields.</p>"
         },
         "action->Greater Constrict": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[(2d12+13)[bludgeoning]] damage, @Check[fortitude|dc:39|basic] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
@@ -5230,7 +5140,7 @@
         },
         "action->Adhesive": {
           "name": "Adhesive",
-          "description": "<p>The mimic is coated in an adhesive slime. Any creature that hits the mimic, is hit by the mimic, or otherwise touches the mimic must succeed at a @Check[reflex|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} (Escape DC 23). A weapon that hits the mimic is stuck to the mimic and can be removed with a successful @Check[athletics|dc:23] check (made as a single action).</p>\n<p>A mimic can have any number of objects or creatures stuck to it at a time. The mimic can release a stuck creature or object by using a single action, and the adhesive dissolves 1 minute after the mimic dies, releasing all stuck objects and creatures.</p>"
+          "description": "<p>The mimic is coated in an adhesive slime. Any creature that hits the mimic, is hit by the mimic, or otherwise touches the mimic must succeed at a @Check[reflex|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} ([[/act escape dc=23]]). A weapon that hits the mimic is stuck to the mimic and can be removed with a successful @Check[athletics|dc:23] check (made as a single action).</p>\n<p>A mimic can have any number of objects or creatures stuck to it at a time. The mimic can release a stuck creature or object by using a single action, and the adhesive dissolves 1 minute after the mimic dies, releasing all stuck objects and creatures.</p>"
         },
         "action->Object Lesson": {
           "name": "Object Lesson",
@@ -5278,7 +5188,7 @@
         },
         "action->Cough Spores": {
           "name": "Cough Spores",
-          "description": "<p>The mu spore releases a cloud of burrowing spores in a @Template[cone|distance:400]. The spores deal @Damage[22d6[piercing]] damage to all creatures, objects, and wooden structures in the area, but not to plants or fungi (@Check[reflex|dc:46|basic] save).</p>\n<p>The mu spore can't use this ability again for [[/gmr 1d4 #Recharge Cough Spores]]{1d4 rounds}.</p>"
+          "description": "<p>The mu spore releases a cloud of burrowing spores in a @Template[cone|distance:400]. The spores deal @Damage[22d6[piercing]|options:area-damage] damage to all creatures, objects, and wooden structures in the area, but not to plants or fungi (@Check[reflex|dc:46|basic|options:area-effect] save).</p>\n<p>The mu spore can't use this ability again for [[/gmr 1d4 #Recharge Cough Spores]]{1d4 rounds}.</p>"
         },
         "action->Enormous Inhalation": {
           "name": "Enormous Inhalation",
@@ -5342,8 +5252,8 @@
         "action->Fast Healing 2": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ]\nFast Healing 2"
         },
-        "action->Protean Anatomy": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IOk0MRs3f9FrarKL]\nProtean Anatomy"
+        "action->Protean Anatomy 10": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IOk0MRs3f9FrarKL]\nProtean Anatomy 10"
         },
         "action->Adaptive Strike": {
           "name": "Adaptive Strike",
@@ -6236,7 +6146,7 @@
         },
         "action->Rust": {
           "name": "Rust",
-          "description": "<p>A rust monster's antenna causes metal to rapidly rust and corrode.</p>\n<p>If it succeeds at an antenna Strike or Disarm attempt with its antenna, the rust monster deals [[/r {2d6}]]{2d6 damage} (doubled on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness.</p>\n<p>If the rust monster hits an unattended metal item, the item takes this damage automatically.</p>\n<p>If a creature uses the @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Shield Block} reaction with a metal shield against an antenna attack, the shield is automatically broken, but no other item is rusted on that attack.</p>"
+          "description": "<p>A rust monster's antenna causes metal to rapidly rust and corrode.</p>\n<p>If it succeeds at an antenna Strike or Disarm attempt with its antenna, the rust monster deals @Damage[2d6[untyped]] damage (doubled on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness.</p>\n<p>If the rust monster hits an unattended metal item, the item takes this damage automatically.</p>\n<p>If a creature uses the @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Shield Block} reaction with a metal shield against an antenna attack, the shield is automatically broken, but no other item is rusted on that attack.</p>"
         }
       }
     },
@@ -6433,7 +6343,7 @@
         },
         "action->Shove into Stone": {
           "name": "Shove into Stone",
-          "description": "<p>When the shaitan Pushes a creature into a stone barrier, the target must succeed at a @Check[reflex|dc:22] save or become merged with the barrier (as @UUID[Compendium.pf2e.spells-srd.Item.vh1RpbWfqdNC4L3P]{One with Stone}). The victim can attempt to Escape (DC 28).</p>"
+          "description": "<p>When the shaitan Pushes a creature into a stone barrier, the target must succeed at a @Check[reflex|dc:22] save or become merged with the barrier (as @UUID[Compendium.pf2e.spells-srd.Item.vh1RpbWfqdNC4L3P]{One with Stone}). The victim can attempt to [[/act escape dc=28]].</p>"
         },
         "action->Push 10 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]\nPush 10 feet"
@@ -6563,7 +6473,7 @@
           "description": "<p>A creature that begins its turn inside the shoggoth takes @Damage[9d6[acid]] damage.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:40|traits:damaging-effect], @Damage[6d6[acid]] damage, Escape DC 40, Rupture 40</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:40|traits:damaging-effect], @Damage[6d6[acid]] damage, [[/act escape dc=40]], Rupture 40</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         }
       }
     },
@@ -7280,7 +7190,7 @@
         "equipment->Sack for Holding Rocks": {
           "name": "Sack for Holding Rocks"
         },
-        "consumable->Rock": {
+        "ammo->Rock": {
           "name": "Rock"
         },
         "strike-melee->Greatsword": {
@@ -7327,46 +7237,6 @@
         },
         "action->Push 5 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]\nPush 5 feet"
-        }
-      }
-    },
-    "Terotricus": {
-      "name": "Terotricus",
-      "hpDetails": "regeneration 25 (deactivated by cold)",
-      "publicNotes": "<p>The legendary terotricus is a massive slime-mold that hails from the Abyss. Its collective consciousness encapsulates entire regions, spreading as far as its ever-growing cloud of spores will take it. Once it has seeped onto the Material Plane from the Abyssal realm, a terotricus's agenda is to feed on all living creatures, infecting them with its spores, and its presence can spell doom for any in its way.</p>\n<p>Terotricuses move by rapidly expanding and contracting their slimy \"bodies,\" which are capable of burrowing through soil, gliding across water, and scrabbling up steep slopes. These behemoths of rot don't need to travel to see their plans come to fruition, though; their spores easily latch onto demons and other denizens of the Abyss, who in turn bring this blight to the Material Plane when the flends are summoned.</p>\n<p>When a terotricus infects a creature with its spores, web-like fungal growths start appearing on the victim's skin until they cover the entire body, at which point the victim's mind is also subdued and bent to the terotricus's will. The terotricus's favored victims include animals, elves, and fey, though it is happy to infect any creature it can catch. Cults of Treerazer occasionally attempt to make contact with a terotricus, but such acts almost always simply result in a new sect of spore-blighted slaves.</p>",
-      "saveDetails": "+1 status to all saves vs. magic",
-      "items": {
-        "strike-melee->Tentacle": {
-          "name": "Tentacle",
-          "description": "<p>Either Improved Grab or Improved Push</p>"
-        },
-        "strike-ranged->Spores": {
-          "name": "Spores"
-        },
-        "action->Tremorsense (Imprecise) 120 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense (Imprecise) 120 feet"
-        },
-        "action->Regeneration 25 (Deactivated by Cold)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.lR9R5Vld8Eu2Dha5]\nRegeneration 25 (Deactivated by Cold)"
-        },
-        "action->Spore Cloud": {
-          "name": "Spore Cloud",
-          "description": "<p>30 feet. A creature entering the aura or starting its turn there is exposed to spore blight.</p>"
-        },
-        "action->Infest Environs": {
-          "name": "Infest Environs",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> The terotricus is in a swamp or forested area.</p>\n<hr />\n<p><strong>Effect</strong> The terotricus drains nutrients from nearby trees and undergrowth while simultaneously infesting them with fungal growth. All non-magical plant life (though not plant creatures) within a @Template[emanation|distance:60] withers and sprouts foul mold and slimy mushrooms, removing any cover and concealment provided by trees and undergrowth. The terotricus is healed @Damage[200[healing]] Hit Points.</p>"
-        },
-        "action->Spore Blight": {
-          "name": "Spore Blight",
-          "description": "<p>Plants and fungi are immune.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:40]</p>\n<hr />\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled} by the terotricus (as @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate}; [[/br 5d8 #Duration Controlled]]{5d8 days})</p>\n<p><strong>Stage 4</strong> dead</p>"
-        },
-        "action->Sticky Spores": {
-          "name": "Sticky Spores",
-          "description": "<p>A creature hit by a terotricus's spores must succeed at a @Check[reflex|dc:40] save or take a -10-foot status penalty to all its Speeds for 1 minute. On a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it Escapes (DC 40).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.g4CRjb2zS1pkVDbk]{Effect: Sticky Spores}</p>"
-        },
-        "action->Improved Push 20 feet (40 feet on a Critical Hit)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.6l7e7CHQLESlI57U]\nImproved Push 20 feet (40 feet on a Critical Hit)"
         }
       }
     },
@@ -7466,7 +7336,7 @@
         },
         "action->Lightning Crash": {
           "name": "Lightning Crash",
-          "description": "<p>The uthul unleashes a powerful bolt of lightning and a stunning thunderclap. The bolt deals @Damage[6d12[electricity]] damage to all creatures in a @Template[line|distance:30], with a @Check[reflex|dc:34|basic] save, and every creature in a @Template[emanation|distance:20] must attempt a @Check[fortitude|dc:34] save.</p>\n<p>The uthul can't use Lightning Crash again for [[/gmr 1d4 #Recharge Lightning Crash]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is stunned for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+          "description": "<p>The uthul unleashes a powerful bolt of lightning and a stunning thunderclap. The bolt deals @Damage[6d12[electricity]|options:area-damage] damage to all creatures in a @Template[line|distance:30], with a @Check[reflex|dc:34|basic|options:area-effect] save, and every creature in a @Template[emanation|distance:20] must attempt a @Check[fortitude|dc:34|options:area-effect,inflicts:stunned] save.</p>\n<p>The uthul can't use Lightning Crash again for [[/gmr 1d4 #Recharge Lightning Crash]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is stunned for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
         },
         "action->Swiftness": {
           "name": "Swiftness",
@@ -7474,7 +7344,7 @@
         },
         "action->Whirlwind Form": {
           "name": "Whirlwind Form",
-          "description": "<p>The uthul transforms itself into a swirling vortex of storm and fury 10 feet wide and up to 40 feet tall. It stays in this form for 3 rounds or until it Dismisses the effect. While in this form, the uthul gains resistance 10 to physical damage and can move through other creatures.</p>\n<p>Its aura remains active, but it can't make debris Strikes nor use Lightning Crash. Instead, any creature the uthul moves through takes @Damage[4d6[bludgeoning],2d12[electricity]] damage. A creature can take this damage only once per round. A Large or smaller creature must also succeed at a @Check[reflex|dc:32] save or be picked up and held suspended within the vortex. Suspended creatures move with the uthul. A creature can attempt to escape by spending an action to attempt a @Check[reflex|dc:32] save (or a <span data-pf2-action=\"maneuverInFlight\" data-pf2-dc=\"32\" data-pf2-label=\"Whirlwind Form DC\" data-pf2-glyph=\"A\" data-pf2-show-dc=\"gm\">Acrobatics</span> check to maneuver in flight if it has a fly Speed). Upon escaping, or when the uthul transforms back into its storm cloud form, a suspended creature is hurled [[/gmr 1d4*10]]{1d4 x 10 feet} in a random direction, then falls unless it can fly or otherwise remain aloft.</p>\n<p>After returning to its normal form, the uthul must wait 1 minute before it can use Whirlwind Form again.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.rpxdrOlzY2SOtMWB]{Effect: Whirlwind Form}</p>"
+          "description": "<p>The uthul transforms itself into a swirling vortex of storm and fury 10 feet wide and up to 40 feet tall. It stays in this form for 3 rounds or until it Dismisses the effect. While in this form, the uthul gains resistance 10 to physical damage and can move through other creatures.</p>\n<p>Its aura remains active, but it can't make debris Strikes nor use Lightning Crash. Instead, any creature the uthul moves through takes @Damage[4d6[bludgeoning],2d12[electricity]] damage. A creature can take this damage only once per round. A Large or smaller creature must also succeed at a @Check[reflex|dc:32] save or be picked up and held suspended within the vortex. Suspended creatures move with the uthul. A creature can attempt to escape by spending an action to attempt a @Check[reflex|dc:32] save (or a [[/act maneuver-in-flight dc=32]]{Acrobatics} check to maneuver in flight if it has a fly Speed). Upon escaping, or when the uthul transforms back into its storm cloud form, a suspended creature is hurled [[/gmr 1d4*10]]{1d4 x 10 feet} in a random direction, then falls unless it can fly or otherwise remain aloft.</p>\n<p>After returning to its normal form, the uthul must wait 1 minute before it can use Whirlwind Form again.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.rpxdrOlzY2SOtMWB]{Effect: Whirlwind Form}</p>"
         }
       }
     },
@@ -7518,11 +7388,11 @@
         },
         "action->Dance of Ruin": {
           "name": "Dance of Ruin",
-          "description": "<p>The vrock dances in flight and chants to create a ruinous explosion of electricity. If more vrocks within 30 feet want to join the dance, the vrock can delay the dance to wait for more vrocks; in that case, the effect occurs after the last vrock uses Dance of Ruin or one of the vrocks chooses to complete that round of the dance. Each non-demon creature in a @Template[emanation|distance:20] from any of the dancing vrocks takes @Damage[2d12[electricity]] damage (@Check[reflex|dc:28|basic] save). For each additional vrock that joins the dance, the damage increases by 1d12 and the save DC increases by 1 (to a maximum of four vrocks dealing 5d12 electricity damage with a DC 31 save). The vrocks can continue dancing by using Dance of Ruin each round, for up to 3 rounds in total. The emanation's size increases by 20 feet each round, and the damage increases by 1d12 per vrock each round.</p>\n<hr />\n<ul>\n<li><strong>1 Vrock Dancing</strong>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[emanation|distance:20] @Damage[2d12[electricity]] damage @Check[reflex|dc:28|basic]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[emanation|distance:40] @Damage[3d12[electricity]] damage @Check[reflex|dc:28|basic]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[emanation|distance:60] @Damage[4d12[electricity]] damage @Check[reflex|dc:28|basic]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>2 Vrocks Dancing</strong>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[emanation|distance:20] @Damage[3d12[electricity]] damage @Check[reflex|dc:29|basic]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[emanation|distance:40] @Damage[5d12[electricity]] damage @Check[reflex|dc:29|basic]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[emanation|distance:60] @Damage[7d12[electricity]] damage @Check[reflex|dc:29|basic]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>3 Vrocks Dancing</strong>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[emanation|distance:20] @Damage[4d12[electricity]] damage @Check[reflex|dc:30|basic]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[emanation|distance:40] @Damage[7d12[electricity]] damage @Check[reflex|dc:30|basic]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[emanation|distance:60] @Damage[10d12[electricity]] damage @Check[reflex|dc:30|basic]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>4 Vrocks Dancing</strong>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[emanation|distance:20] @Damage[5d12[electricity]] damage @Check[reflex|dc:31|basic]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[emanation|distance:40] @Damage[9d12[electricity]] damage @Check[reflex|dc:31|basic]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[emanation|distance:60] @Damage[13d12[electricity]] damage @Check[reflex|dc:31|basic]</td>\n</tr>\n</tbody>\n</table>\n</li>\n</ul>"
+          "description": "<p>The vrock dances in flight and chants to create a ruinous explosion of electricity. If more vrocks within 30 feet want to join the dance, the vrock can delay the dance to wait for more vrocks; in that case, the effect occurs after the last vrock uses Dance of Ruin or one of the vrocks chooses to complete that round of the dance. Each non-demon creature in a @Template[emanation|distance:20] from any of the dancing vrocks takes @Damage[2d12[electricity]|options:area-damage] damage (@Check[reflex|dc:28|basic|options:area-effect] save). For each additional vrock that joins the dance, the damage increases by 1d12 and the save DC increases by 1 (to a maximum of four vrocks dealing 5d12 electricity damage with a DC 31 save). The vrocks can continue dancing by using Dance of Ruin each round, for up to 3 rounds in total. The emanation's size increases by 20 feet each round, and the damage increases by 1d12 per vrock each round.</p>\n<hr />\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Emanation Size</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[emanation|distance:20]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[emanation|distance:40]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[emanation|distance:60]</td>\n</tr>\n</tbody>\n</table>"
         },
         "action->Spore Cloud": {
           "name": "Spore Cloud",
-          "description": "<p>The vrock emits a cloud of spores from their body, dealing @Damage[2d8[poison]] damage to all adjacent creatures. Each creature damaged this way must succeed at a @Check[fortitude|dc:28|traits:damaging-effect] save or take @Damage[2d8[persistent,piercing]] damage as the spores penetrate its skin and grow into thick, green vines. The vines cease growing after 10 rounds, and they wither away in [[/gmr 1d4 #Spore Cloud Duration]]{1d4 days} if not shaved off before then. The vines can be destroyed if the creature is affected by a good spell or if <em>@UUID[Compendium.pf2e.equipment-srd.Item.z9T4c1hXwOotsMCp]{Holy Water}</em> is applied to the vines (with an Interact action).</p>\n<p>Once the vrock uses Spore Cloud, the ability can't be used for [[/gmr 1d6 #Recharge Spore Cloud]]{1d6 rounds}.</p>"
+          "description": "<p>The vrock emits a cloud of spores from their body, dealing @Damage[2d8[poison]|options:area-damage] damage to all adjacent creatures. Each creature damaged this way must succeed at a @Check[fortitude|dc:28|options:damaging-effect] save or take @Damage[2d8[persistent,piercing]] damage as the spores penetrate its skin and grow into thick, green vines. The vines cease growing after 10 rounds, and they wither away in [[/gmr 1d4 #Spore Cloud Duration]]{1d4 days} if not shaved off before then. The vines can be destroyed if the creature is affected by a good spell or if <em>@UUID[Compendium.pf2e.equipment-srd.Item.z9T4c1hXwOotsMCp]{Holy Water}</em> is applied to the vines (with an Interact action).</p>\n<p>Once the vrock uses Spore Cloud, the ability can't be used for [[/gmr 1d6 #Recharge Spore Cloud]]{1d6 rounds}.</p>"
         },
         "action->Stunning Screech": {
           "name": "Stunning Screech",
@@ -7590,7 +7460,7 @@
         },
         "action->Web Trap": {
           "name": "Web Trap",
-          "description": "<p>A creature hit by the web lurker's web attack is immobilized and stuck to the nearest surface until it succeeds at @Check[acrobatics|dc:20|traits:action:escape] check to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}.</p>"
+          "description": "<p>A creature hit by the web lurker's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface until it succeeds at DC 20 Acrobatics check to [[/act escape statistic=acrobatics dc=20]].</p>"
         }
       }
     },
@@ -7617,7 +7487,7 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(2d12+10)[bludgeoning]] damage, @Check[fortitude|dc:37|basic] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:37|traits:damaging-effect], @Damage[4d8[bludgeoning]] damage, Escape DC 35, Rupture 36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:37|traits:damaging-effect], @Damage[4d8[bludgeoning]] damage, [[/act escape dc=35]], Rupture 36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Thorny Mass": {
           "name": "Thorny Mass",
@@ -7730,7 +7600,7 @@
         },
         "action->Ground Slam": {
           "name": "Ground Slam",
-          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:29|traits:damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[3d6[bludgeoning]] damage.</p>\n<p>The dragon can then Step.</p>"
+          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:29|options:area-effect,damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[3d6[bludgeoning]|options:area-damage] damage.</p>\n<p>The dragon can then Step.</p>"
         },
         "action->Ice Climb": {
           "name": "Ice Climb",
@@ -7810,7 +7680,7 @@
         },
         "action->Ground Slam": {
           "name": "Ground Slam",
-          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:29|traits:damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[3d6[bludgeoning]] damage.</p>\n<p>The dragon can then Step.</p>"
+          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:29|options:area-effect,damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[3d6[bludgeoning]|options:area-damage] damage.</p>\n<p>The dragon can then Step.</p>"
         },
         "action->Ice Climb": {
           "name": "Ice Climb",
@@ -7883,7 +7753,7 @@
         },
         "action->Ground Slam": {
           "name": "Ground Slam",
-          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:37|traits:damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[5d6[bludgeoning]] damage.</p>\n<p>The dragon can then Step.</p>"
+          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:37|options:area-effect,damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[5d6[bludgeoning]|options:area-damage] damage.</p>\n<p>The dragon can then Step.</p>"
         },
         "action->Ice Climb": {
           "name": "Ice Climb",
@@ -7982,7 +7852,7 @@
         },
         "action->Ground Slam": {
           "name": "Ground Slam",
-          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:37|traits:damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[5d6[bludgeoning]] damage.</p>\n<p>The dragon can then Step.</p>"
+          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:37|options:area-effect,damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[5d6[bludgeoning]|options:area-damage] damage.</p>\n<p>The dragon can then Step.</p>"
         },
         "action->Ice Climb": {
           "name": "Ice Climb",
@@ -8034,7 +7904,7 @@
         },
         "action->Ground Slam": {
           "name": "Ground Slam",
-          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:24|traits:damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[2d6[bludgeoning]] damage.</p>\n<p>The dragon can then Step.</p>"
+          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:24|options:area-effect,damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[2d6[bludgeoning]|options:area-damage] damage.</p>\n<p>The dragon can then Step.</p>"
         },
         "action->Ice Climb": {
           "name": "Ice Climb",
@@ -8091,7 +7961,7 @@
         },
         "action->Ground Slam": {
           "name": "Ground Slam",
-          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:24|traits:damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[2d6[bludgeoning]] damage.</p>\n<p>The dragon can then Step.</p>"
+          "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[emanation|distance:10]{10 feet} must succeed at a @Check[reflex|dc:24|options:area-effect,damaging-effect] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and take @Damage[2d6[bludgeoning]|options:area-damage] damage.</p>\n<p>The dragon can then Step.</p>"
         },
         "action->Ice Climb": {
           "name": "Ice Climb",
@@ -8176,7 +8046,7 @@
           "description": "<p>Until the next time it acts, the zaramuun appears to be a sand dune. It has an automatic result of 47 (50 in sandy terrain) on Deception and Stealth checks and DCs to pass as a sand dune. Any creature that walks onto the zaramuun moves into its body and is Engulfed.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:35|traits:damaging-effect], @Damage[4d12[bludgeoning]] damage and @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Planar Tether}, Escape DC 32, Rupture 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:35|traits:damaging-effect], @Damage[4d12[bludgeoning]] damage and @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Planar Tether}, [[/act escape dc=32]], Rupture 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Raking Sand": {
           "name": "Raking Sand",
@@ -8188,7 +8058,7 @@
         },
         "action->Sandblast": {
           "name": "Sandblast",
-          "description": "<p>The zaramuun sprays a blast of sand that deals @Damage[11d10[slashing]] damage to all creatures in a @Template[line|distance:60] (@Check[reflex|dc:38|traits:damaging-effect]).</p>\n<p>It can't Sandblast again for [[/gmr 1d4 #Recharge Sandblast]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> Half damage.</p>\n<p><strong>Failure</strong> Full damage.</p>\n<p><strong>Critical Failure</strong> Full damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>"
+          "description": "<p>The zaramuun sprays a blast of sand that deals @Damage[11d10[slashing]|options:area-damage] damage to all creatures in a @Template[line|distance:60] (@Check[reflex|dc:38|options:area-effect,damaging-effect,inflicts:blinded]).</p>\n<p>It can't Sandblast again for [[/gmr 1d4 #Recharge Sandblast]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> Half damage.</p>\n<p><strong>Failure</strong> Full damage.</p>\n<p><strong>Critical Failure</strong> Full damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>"
         }
       }
     }

@@ -1,14 +1,9 @@
 import { readFileSync, writeFileSync } from "fs";
-import { getZipContentFromURL, saveFileWithDirectories, writeFilesFromBlob } from "../helper/src/util/file-handler.js";
-import { extractAndReadPacksFromZip } from "../helper/src/util/level-db.js";
-import { replaceProperties } from "../helper/src/util/utilities.js";
-import {
-    buildItemDatabase,
-    extractPack,
-    extractPackGroupList,
-    postExtractMessage,
-} from "../helper/src/pack-extractor/pack-extractor.js";
-import { PF2_DEFAULT_MAPPING } from "../helper/src/pack-extractor/constants.js";
+import { PF2_DEFAULT_MAPPING } from "../helper/pack-extractor/constants.js";
+import { buildItemDatabase, extractPack, extractPackGroupList, postExtractMessage } from "../helper/pack-extractor/pack-extractor.js";
+import { getZipContentFromURL, saveFileWithDirectories, writeFilesFromBlob } from "../helper/util/file-handler.js";
+import { extractAndReadPacksFromZip } from "../helper/util/level-db.js";
+import { replaceProperties } from "../helper/util/utilities.js";
 
 // Read config file
 const configFile = JSON.parse(readFileSync("./src/pack-extractor/pack-extractor-config.json", "utf-8"));
@@ -31,13 +26,10 @@ const extractedPackGroupList = extractPackGroupList(packs, CONFIG.packs, itemDat
 
 // Write extracted packs to target directories
 Object.keys(extractedPackGroupList.extractedPackGroups).forEach((packGroup) => {
-    const path = CONFIG.packs[packGroup].savePath;
-    Object.keys(extractedPackGroupList.extractedPackGroups[packGroup]).forEach((pack) => {
-        writeFileSync(
-            `${path}/${pack}.json`,
-            JSON.stringify(extractedPackGroupList.extractedPackGroups[packGroup][pack], null, 2)
-        );
-    });
+  const path = CONFIG.packs[packGroup].savePath;
+  Object.keys(extractedPackGroupList.extractedPackGroups[packGroup]).forEach((pack) => {
+    writeFileSync(`${path}/${pack}.json`, JSON.stringify(extractedPackGroupList.extractedPackGroups[packGroup][pack], null, 2));
+  });
 });
 
 // Write dictionary to target directory
@@ -45,46 +37,35 @@ writeFileSync(CONFIG.filePaths.dictionary, JSON.stringify(extractedPackGroupList
 
 // Extract and write i18n files
 writeFilesFromBlob(
-    packs.filter((pack) => CONFIG.i18nFiles.includes(`${pack.fileName}.${pack.fileType}`)),
-    CONFIG.filePaths.i18n,
-    "i8n files"
+  packs.filter((pack) => CONFIG.i18nFiles.includes(`${pack.fileName}.${pack.fileType}`)),
+  CONFIG.filePaths.i18n,
+  "i8n files"
 );
 
 // Extract and write i18n files and compendiums for modules
 postExtractMessage("module localizations", true);
 for (const [moduleId, moduleData] of Object.entries(configFile.moduleLocalizations.modules ?? {})) {
+  const zipEntries = await getZipContentFromURL(moduleData.url);
 
-    const zipEntries = await getZipContentFromURL(moduleData.url);
-
-    // Get i18n file
-    if (moduleData.i18nFile) {
-        const i18nFile = zipEntries.find((o) => `${o.path}${o.fileName}.${o.fileType}` === moduleData.i18nFile);
-        if (!i18nFile) {
-            console.warn(`${moduleId}: File not found`);
-        } else {
-            postExtractMessage(`i18n for ${moduleId}`);
-            saveFileWithDirectories(
-                `${configFile.moduleLocalizations.savePathi18n}/${moduleId}.json`,
-                JSON.stringify(JSON.parse(i18nFile.content), null, 2)
-            );
-        }
+  // Get i18n file
+  if (moduleData.i18nFile) {
+    const i18nFile = zipEntries.find((o) => `${o.path}${o.fileName}.${o.fileType}` === moduleData.i18nFile);
+    if (!i18nFile) {
+      console.warn(`${moduleId}: File not found`);
+    } else {
+      postExtractMessage(`i18n for ${moduleId}`);
+      saveFileWithDirectories(`${configFile.moduleLocalizations.savePathi18n}/${moduleId}.json`, JSON.stringify(JSON.parse(i18nFile.content), null, 2));
     }
+  }
 
-    // Extract compendiums
-    if (moduleData.compendiums) {
-        for (const comp of moduleData.compendiums) {
-            const extractedDBs = await extractAndReadPacksFromZip(zipEntries, comp.subDirName, comp.levelDBs);
-            for (const extractedDB of extractedDBs) {
-                const extractedPack = extractPack(
-                    extractedDB.fileName,
-                    extractedDB.fileContent.packData,
-                    CONFIG.mappings[extractedDB.mapping]
-                );
-                saveFileWithDirectories(
-                    `${configFile.moduleLocalizations.savePathCompendium}/${extractedDB.fileName}`,
-                    JSON.stringify(extractedPack.extractedPack, null, 2)
-                );
-            }
-        }
+  // Extract compendiums
+  if (moduleData.compendiums) {
+    for (const comp of moduleData.compendiums) {
+      const extractedDBs = await extractAndReadPacksFromZip(zipEntries, comp.subDirName, comp.levelDBs);
+      for (const extractedDB of extractedDBs) {
+        const extractedPack = extractPack(extractedDB.fileName, extractedDB.fileContent.packData, CONFIG.mappings[extractedDB.mapping]);
+        saveFileWithDirectories(`${configFile.moduleLocalizations.savePathCompendium}/${extractedDB.fileName}`, JSON.stringify(extractedPack.extractedPack, null, 2));
+      }
     }
+  }
 }
