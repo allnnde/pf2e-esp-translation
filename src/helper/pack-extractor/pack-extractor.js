@@ -178,7 +178,7 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
         addToDictionary: false, // Defines if values should get extracted to a dictionary
         addToMapping: true, // Defines if keys should get added to mapping if data is found
         convertArray: true, // Defines if an array should get converted to an object list
-        specialExtraction: false, // Defines special extractions: actorItems, nameAsKey, nameCollection, tableResults, textCollection, adventureActor, sourceId
+        specialExtraction: false, // Defines special extractions: actorItems, nameAsKey, nameCollection, tableResults, textCollection, adventureActor, sourceId, compendiumSource
         extractValue: true, // Defines if value should get extracted
         extractOnActorItem: true, // Defines if value should get extracted for items within actors
         extractOnAdventureActor: false, // For special extraction adventureActor, only data for non-compendium actors gets extracted by default. Set to true in order to extract the data
@@ -213,9 +213,10 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
         }
 
         // Check if the current field exists in the compendium entry and extract its value
-        let extractedValue = resolvePath(entry, mappingData.path).exists
-            ? unifyLineBreaks(resolveValue(entry, mappingData.path))
-            : false;
+        let extractedValue =
+            resolvePath(entry, mappingData.path).exists && !Array.isArray(entry) //Check gegen Array notwendig seit path-value 0.10.0
+                ? unifyLineBreaks(resolveValue(entry, mappingData.path))
+                : false;
 
         // Add mappings that should always be included
         if (extractOptions.alwaysAddMapping) {
@@ -237,8 +238,11 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
             continue;
         }
 
-        // For special extraction sourceId, only extract value if redirected; use redirected value instead
-        if (extractOptions.specialExtraction === "sourceId") {
+        // For special extraction sourceId or compendiumSource, only extract value if redirected; use redirected value instead
+        if (
+            extractOptions.specialExtraction === "sourceId" ||
+            extractOptions.specialExtraction === "compendiumSource"
+        ) {
             let redirected = false;
             for (const actorRedirect of actorRedirects) {
                 if (extractedValue === actorRedirect.linkOld) {
@@ -290,9 +294,12 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
                     subEntryKey = extractedValue[subEntry].name;
                     nestedEntry = "adventureActors";
                     if (
-                        resolvePath(extractedValue[subEntry], "flags.core.sourceId").exists &&
-                        extractedValue[subEntry].flags.core.sourceId !== null &&
-                        extractedValue[subEntry].flags.core.sourceId.includes("Compendium.pf2e.")
+                        (resolvePath(extractedValue[subEntry], "flags.core.sourceId").exists &&
+                            extractedValue[subEntry].flags.core.sourceId !== null &&
+                            extractedValue[subEntry].flags.core.sourceId.includes("Compendium.pf2e.")) ||
+                        (resolvePath(extractedValue[subEntry], "_stats.compendiumSource").exists &&
+                            extractedValue[subEntry]._stats.compendiumSource !== null &&
+                            extractedValue[subEntry]._stats.compendiumSource.includes("Compendium.pf2e."))
                     ) {
                         nestedEntry = "adventureCompendiumActors";
                     }
@@ -331,7 +338,6 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
                 // For table results, build special key consisting of the roll ranges
                 if (extractOptions.specialExtraction === "tableResults") {
                     subEntryKey = `${extractedValue[subEntry].range[0]}-${extractedValue[subEntry].range[1]}`;
-                    nestedEntry = "plainData";
                 }
 
                 // For tokens, set nested entry type to token
@@ -463,7 +469,7 @@ export function extractEntry(entry, mapping, itemDatabase = {}, nestedEntryType 
         }
 
         // For plain data collections, return the plain value instead of an object using the mapping key
-        // This is neccessary due to the required babele data structure for rollable tables
+        // This is neccessary due to the required babele data structure for some standard converters
         if (nestedEntryType === "plainData") {
             extractedEntryData.extractedEntry = extractedValue;
             continue;
@@ -635,6 +641,9 @@ function checkLocalizationRelevance(data) {
  */
 function checkStrikeType(strike) {
     let strikeType = "strike-melee";
+    if (strike.system.range) {
+        strikeType = "strike-ranged";
+    }
     strike.system.traits.value.forEach((trait) => {
         if (trait.startsWith("range-") || trait.startsWith("thrown-")) {
             strikeType = "strike-ranged";

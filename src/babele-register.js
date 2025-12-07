@@ -58,6 +58,34 @@ function AACreateItemNameProxy(item, realName) {
     });
 }
 
+// Patch spell range function - thanks to Kromko from the russian localization for the coding
+// Required, because the pf2 system currently checks spell range based on thetext in the range field
+// This updates the system's logic to match the localized ranges
+
+function patchSpellRange() {
+    libWrapper?.register(
+        "pf2e-es",
+        "CONFIG.PF2E.Item.documentClasses.spell.prototype.isMelee",
+        function (wrapped) {
+            return game.pf2e.system.sluggify(this.system.range.value) === "berührung" || wrapped();
+        },
+        "MIXED"
+    );
+
+    libWrapper?.register(
+        "pf2e-es",
+        "CONFIG.PF2E.Item.documentClasses.spell.prototype.isRanged",
+        function (wrapped) {
+            const res = wrapped();
+            if (res) return res;
+            const slug = game.pf2e.system.sluggify(this.system.range.value);
+            const rangeFeet = Math.floor(Math.abs(Number(/^(\d+)-(fuß|ft|feet)(?!\w)/.exec(slug)?.at(1))));
+            return Number.isInteger(rangeFeet) ? { increment: null, max: rangeFeet } : null;
+        },
+        "MIXED"
+    );
+}
+
 Hooks.once("babele.init", () => {
     if (game.babele) {
         game.settings.register("pf2e-es", "dual-language-names", {
@@ -76,6 +104,11 @@ Hooks.once("babele.init", () => {
             module: "pf2e-es",
             lang: "es",
             dir: "translation/es/compendium",
+        });
+        game.babele.register({
+            module: "pf2e-es",
+            lang: "es",
+            dir: "translation/de/modules/compendium",
         });
 
         game.babele.registerConverters({
@@ -106,6 +139,9 @@ Hooks.once("babele.init", () => {
             translateAdventureScenes: (data, translation) => {
                 return game.langEsPf2e.translateArrayOfObjects(data, translation, "adventureScene");
             },
+            translateAdventureTables: (data, translation) => {
+                return game.langEsPf2e.translateArrayOfObjects(data, translation, "adventureTable");
+            },
             translateDualLanguage: (data, translation) => {
                 return game.langEsPf2e.translateDualLanguage(data, translation);
             },
@@ -118,6 +154,9 @@ Hooks.once("babele.init", () => {
                     translation,
                     game.langEsPf2e.getMapping("heightening", true)
                 );
+            },
+            translatePrerequisites: (data, translation) => {
+                return game.langEsPf2e.translatePrerequisites(data, translation);
             },
             translateRange: (data) => {
                 return game.langEsPf2e.translateValue("range", data);
@@ -142,8 +181,11 @@ Hooks.once("babele.init", () => {
                     game.langEsPf2e.getMapping("item", true)
                 );
             },
+            translateTableResults: (data, translation) => {
+                return game.langEsPf2e.translateTableResults(data, translation);
+            },
             translateTiles: (data, translation) => {
-                return game.langEsPf2e.dynamicArrayMerge(data, translation, game.langEsPf2e.getMapping("tile", true));
+                return game.langEsPf2e.dynamicArrayMerge(data, translation, game.langDePf2e.getMapping("tile", true));
             },
             translateTime: (data) => {
                 return game.langEsPf2e.translateValue("time", data);
@@ -163,6 +205,8 @@ Hooks.once("babele.init", () => {
         });
 
         hookOnAutoAnimations();
+
+        patchSpellRange();
     }
 });
 

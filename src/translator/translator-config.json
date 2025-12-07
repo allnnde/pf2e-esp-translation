@@ -36,7 +36,7 @@
                 "gmNote": "system.description.gm",
                 "heightening": { "path": "system.heightening.levels", "converter": "translateHeightening" },
                 "materials": "system.materials.value",
-                "prerequisites": "system.prerequisites.value",
+                "prerequisites": { "path": "system.prerequisites.value", "converter": "translatePrerequisites" },
                 "primarycheck": "system.ritual.primary.check",
                 "range": { "path": "system.range.value", "converter": "translateRange" },
                 "requirements": { "path": "system.requirements" },
@@ -49,7 +49,8 @@
                 "target": "system.target.value",
                 "time": { "path": "system.time.value", "converter": "translateTime" },
                 "trainedLore": "system.trainedSkills.lore",
-                "unidentifiedName": "system.identification.unidentified.name"
+                "unidentifiedName": "system.identification.unidentified.name",
+                "unidentifiedDescription": "system.identification.unidentified.data.description.value"
             }
         },
         "skillSpecial": { "entryType": "Actor", "mappingEntries": { "label": "label" } },
@@ -60,6 +61,7 @@
                 "name": "name",
                 "acDetails": "system.attributes.ac.details",
                 "blurb": "system.details.blurb",
+                "compendiumSource": "_stats.compendiumSource",
                 "sourceId": "flags.core.sourceId",
                 "tokenName": { "path": "prototypeToken.name", "converter": "translateTokenName" },
                 "items": { "path": "items", "converter": "translateAdventureActorItems" }
@@ -87,7 +89,19 @@
                 "tokens": { "path": "tokens", "converter": "translateTokens" }
             }
         },
+        "adventureTable": {
+            "entryType": "RollTable",
+            "mappingEntries": {
+                "name": "name",
+                "description": "description",
+                "results": { "path": "results", "converter": "translateTableResults" }
+            }
+        },
         "rule": { "entryType": "Item", "mappingEntries": { "label": "label", "prompt": "prompt", "text": "text" } },
+        "tableResult": {
+            "entryType": "RollTable",
+            "mappingEntries": { "name": "name", "description": "description", "text": "text" }
+        },
         "token": {
             "entryType": "Actor",
             "mappingEntries": { "name": "name", "items": { "path": "delta.items", "converter": "translateActorItems" } }

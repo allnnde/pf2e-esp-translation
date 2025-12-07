@@ -1,7 +1,8 @@
-import { BlobReader, BlobWriter, ZipReader } from "@zip.js/zip.js";
 import { copyFileSync, existsSync, lstatSync, mkdirSync, readdirSync, rmdirSync, unlinkSync, writeFileSync } from "fs";
 import { dirname, join } from "path";
+import { BlobReader, BlobWriter, ZipReader } from "@zip.js/zip.js";
 import { postExtractMessage } from "../pack-extractor/pack-extractor.js";
+import { isBinaryEntry } from "./utilities.js";
 
 /**
  * Read zip file, return array of objects containing filename, file type, file path, and file content (as string)
@@ -11,23 +12,36 @@ import { postExtractMessage } from "../pack-extractor/pack-extractor.js";
 export async function getContentFromZip(file) {
     const zipReader = new ZipReader(new BlobReader(file));
     const zipContent = await zipReader.getEntries();
+
+    // Ignore directories
     const zipFiles = zipContent.filter((entry) => !entry.filename.endsWith("/"));
-    const fileContentPromises = [];
-    zipFiles.forEach((entry) => {
-        fileContentPromises.push(entry.getData(new BlobWriter()).then((blobRes) => blobRes.text()));
+
+    const parsed = zipFiles.map((entry) => {
+        const p = parsePath(entry.filename);
+        return { entry, ...p };
     });
-    const fileContents = await Promise.all(fileContentPromises);
-    let i = 0;
-    const results = zipFiles.map((entry) => {
-        const parsedPath = parsePath(entry.filename);
-        const mappedEntry = {
-            ...parsedPath,
-            ["content"]: fileContents[i],
-        };
-        i = i + 1;
-        return mappedEntry;
+
+    // Read contents
+    const contentPromises = parsed.map(async ({ entry, fileName, fileType }) => {
+        const blob = await entry.getData(new BlobWriter());
+        if (isBinaryEntry(fileName, fileType)) {
+            const ab = await blob.arrayBuffer();
+            return new Uint8Array(ab);
+        } else {
+            return await blob.text();
+        }
     });
-    return results;
+
+    const contents = await Promise.all(contentPromises);
+
+    await zipReader.close();
+
+    return parsed.map(({ entry: _e, path, fileName, fileType }, i) => ({
+        path,
+        fileName,
+        fileType,
+        content: contents[i],
+    }));
 }
 
 /**
@@ -47,12 +61,23 @@ export async function getFileFromURL(url) {
  * @returns {{path: string, fileName: string, fileType: string}}    Object containing path, file name und file type
  */
 export function parsePath(filePath) {
-    const parts = filePath.split(/\/|\\/g);
-    const fileNameParts = parts.pop().split(".");
-    const fileType = fileNameParts.pop();
-    const fileName = fileNameParts.join(".");
-    const path = parts.join("/") + "/";
-    return { path: path, fileName: fileName, fileType: fileType };
+    const parts = filePath.split(/[/\\]+/);
+    const fullName = parts.pop() || "";
+    const lastDotIndex = fullName.lastIndexOf(".");
+
+    let fileName, fileType;
+
+    if (lastDotIndex > 0) {
+        fileName = fullName.slice(0, lastDotIndex);
+        fileType = fullName.slice(lastDotIndex + 1);
+    } else {
+        fileName = fullName;
+        fileType = "";
+    }
+
+    const path = parts.length > 0 ? parts.join("/") + "/" : "";
+
+    return { path, fileName, fileType };
 }
 
 /**

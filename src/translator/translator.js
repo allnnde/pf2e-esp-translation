@@ -77,7 +77,7 @@ class Translator {
                 ? path.concat(`/portraits/`)
                 : path.concat(`/${imageType}/`);
             const images = {};
-            await FilePicker.browse("data", imagePath).then((picker) =>
+            await foundry.applications.apps.FilePicker.implementation.browse("data", imagePath).then((picker) =>
                 picker.files.forEach((file) => {
                     const actorName = file.split("\\").pop().split("/").pop().replace(".webp", "");
 
@@ -154,6 +154,9 @@ class Translator {
     // Check if strike is ranged or melee and return the type
     checkStrikeType(strike) {
         let strikeType = "strike-melee";
+        if (strike.system.range) {
+            strikeType = "strike-ranged";
+        }
         strike.system.traits.value.forEach((trait) => {
             if (trait.startsWith("range-") || trait.startsWith("thrown-")) {
                 strikeType = "strike-ranged";
@@ -405,6 +408,27 @@ class Translator {
         return data;
     }
 
+    /**
+     * translate prerequisites and converts incomplete translation objects into arrays
+     * @param {[{ value: String }]} data
+     * @param {[{ value: String }] | { [number]: { value: String } }} translation
+     * @returns {[{ value: String }]}
+     */
+    translatePrerequisites(data = [], translation = []) {
+        if (!Object.keys(translation).length) return data;
+        if (!Array.isArray(translation)) {
+            Object.entries(translation).forEach(([index, v]) => {
+                data[index] = v;
+            });
+        } else if (translation.length === data.length) return translation;
+        else {
+            translation.forEach((t, index) => {
+                data[index] = t;
+            });
+        }
+        return data;
+    }
+
     // Translates a specified value within an object using the dictionary
     translateObject(type, fieldName, sourceObject) {
         const translatedObject = {};
@@ -453,6 +477,19 @@ class Translator {
             }
         }
         return data;
+    }
+
+    // Translate the various table results for a rollable table
+    translateTableResults(tableResults, translation) {
+        if (translation) {
+            for (let i = 0; i < tableResults.length; i++) {
+                const range = tableResults[i].range.join("-");
+                if (translation[range]) {
+                    this.dynamicMerge(tableResults[i], translation[range], this.getMapping("tableResult", true));
+                }
+            }
+        }
+        return tableResults;
     }
 
     // Use a unique token name if provided, otherwise use the translated actor name

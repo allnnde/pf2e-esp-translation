@@ -339,3 +339,21 @@ export function isObj(obj) {
 export function isDoc(obj) {
     return isObj(obj) && obj._id;
 }
+
+/**
+ * Checks if a file is a binary file
+ *
+ * @param {string} fileName     The file's name
+ * @param {string} fileType     The file's type
+ * @returns {boolean}           Result
+ */
+export function isBinaryEntry(fileName, fileType) {
+    const name = fileName;
+    const ext = (fileType || "").toLowerCase();
+
+    if (ext === "ldb" || ext === "sst") return true; // LevelDB tables
+    if (name === "LOCK" || name === "CURRENT") return true; // LevelDB metadata
+    if (name.startsWith("MANIFEST-")) return true; // LevelDB matadata
+
+    return false; // everything else is string
+}
