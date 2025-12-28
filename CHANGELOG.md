@@ -1,3 +1,7 @@
+## [6.37.1](https://github.com/allnnde/pf2e-esp-translation/compare/v6.37.0...v6.37.1) (2025-12-28)
+
+
+
 # [6.37.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.36.1...v6.37.0) (2025-12-23)
 
 
@@ -21,10 +25,6 @@
 
 
 ## [6.35.5](https://github.com/allnnde/pf2e-esp-translation/compare/v6.35.4...v6.35.5) (2025-12-10)
-
-
-
-## [6.35.4](https://github.com/allnnde/pf2e-esp-translation/compare/v6.35.3...v6.35.4) (2025-12-07)
 
 
 
