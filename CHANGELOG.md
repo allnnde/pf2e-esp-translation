@@ -1,3 +1,7 @@
+## [6.39.1](https://github.com/allnnde/pf2e-esp-translation/compare/v6.39.0...v6.39.1) (2026-01-09)
+
+
+
 # [6.39.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.38.0...v6.39.0) (2026-01-08)
 
 
@@ -22,15 +26,6 @@
 
 
 ## [6.37.1](https://github.com/allnnde/pf2e-esp-translation/compare/v6.37.0...v6.37.1) (2025-12-28)
-
-
-
-# [6.37.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.36.1...v6.37.0) (2025-12-23)
-
-
-### Features
-
-* automatic json extract to traslate ([0930583](https://github.com/allnnde/pf2e-esp-translation/commit/0930583d9eee2153843cc720d395b08c75b9094b))
 
 
 
