@@ -25,10 +25,6 @@
       "name": "Controlado",
       "description": "<p>Te han dado una orden, te han dominado mágicamente o por lo demás han subvertido tu voluntad. Tu controlador dicta cómo actúas y puede hacer que uses cualquiera de sus acciones, incluyendo ataques, reacciones o incluso @UUID[Compendium.pf2e.actionspf2e.Item.A72nHGUtNXgY5Ey9]{Retrasar}. Por lo general, el controlador no tiene que gastar acciones propias cuando te controla.</p>"
     },
-    "Cursebound": {
-      "name": "Maldito",
-      "description": "<p>Tu maldición oracular se constriñe a tu alrededor mientras recibes el castigo divino tras haber usado demasiado los poderes de tu misterio. Cursebound es una condición que afecta únicamente a criaturas con una maldición oracular, y cursebound siempre incluye un valor. Tu maldición oracular específica impone efectos negativos únicos dependiendo del valor de cursebound. Solo puedes eliminar la condición cursebound mediante Reenfoque.</p>"
-    },
     "Dazzled": {
       "name": "Deslumbrado",
       "description": "<p>Tus ojos han sido sobreestimulados o se te ha nublado la vista. Si la vista es tu único sentido preciso, todas las criaturas y objetos están @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{ocultos} de ti.</p>"
@@ -76,6 +72,10 @@
     "Frightened": {
       "name": "Asustado",
       "description": "<p>Eres presa del pánico y luchas para controlar los nervios. El estado asustado siempre incluye un valor. Sufres un penalizador por estatus igual a dicho valor a todas tus pruebas y CD. Si no se indica lo contrario, al final de cada uno de tus turnos el valor de tu estado asustado disminuye en 1.</p>"
+    },
+    "Glitching": {
+      "name": "Glitching",
+      "description": "<p>A glitching creature, hazard, or object with the tech trait experiences a combination of debilitating effects and moments of seizing up. The glitching condition always includes a value. If you have glitching equipment and take any action involving that equipment, you must attempt a flat check to see what occurs. If you have the glitching condition, you must attempt this @Check[flat|dc:resolve(5 + @item.badge.value)|showDC:all] at the beginning of each of your turns. The DC of the flat check equals 5 plus your condition value or the item's condition value.</p>\n<hr />\n<p><strong>Critical Success</strong> Reduce your glitching value by 1.</p>\n<p><strong>Success</strong> You act as normal or use your equipment as normal.</p>\n<p><strong>Failure</strong> You take an item penalty to all your checks and DCs equal to your glitching value or the glitching value of the item you're attempting to use, including saving throws, attack modifiers, and the DCs of abilities, effects, and spells you use.</p>\n<p><strong>Critical Failure</strong> A glitching object you tried to use doesn't function, and you lose the actions you took to attempt to use it. A glitching creature uses the same effect as a failure and is also @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}. A glitching hazard uses the same effect as a failure.</p>"
     },
     "Grabbed": {
       "name": "Agarrado",
@@ -138,8 +138,7 @@
       "description": "<p>Estás atado y apenas puedes moverte, o una criatura te tiene sujeto. Sufres los estados @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} e ​​@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado}, y no puedes utilizar ningún ataque o acción de manipular excepto tratar de @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Huir} o @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Abrir por la fuerza} tus ligaduras. Neutralizado prevalece sobre @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado}.</p>"
     },
     "Sickened": {
-      "name": "Indispuesto",
-      "description": "<p>Te sientes enfermo. Sickened siempre incluye un valor. Recibes una penalización de estado igual a este valor en todas tus tiradas de chequeo y en tus CD. No puedes ingerir voluntariamente nada, incluidos elixires y pociones, mientras estés enfermo.</p>\n<p>Puedes gastar una única acción para vomitar en un intento de recuperarte, lo que te permite intentar inmediatamente una tirada de salvación @Check[fortitude] contra la CD del efecto que te provocó el estado de Indispuesto. Si tienes éxito, reduces tu valor de Indispuesto en 1 (o en 2 si es un éxito crítico).</p>"
+      "name": "Indispuesto"
     },
     "Slowed": {
       "name": "Lentificado",
@@ -152,6 +151,10 @@
     "Stupefied": {
       "name": "Anonadado",
       "description": "<p>Tus pensamientos y tus instintos están nublados. Anonadado siempre incluye un valor. Sufres un penalizador por estatus igual a dicho valor a las pruebas y a las CD basadas en la Inteligencia, la Sabiduría y el Carisma, incluyendo las salvaciones de Voluntad, los modificadores al ataque de conjuros, las CD de conjuros y las pruebas de habilidad que utilizan dichos modificadores por atributo. Si @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Lanzas un conjuro} estando anonadado, quedará perturbado a menos que tengas éxito en una @Check[type:flat|showDC:all|dc:resolve(5+@item.badge.value)] con una CD igual a 5 + tu valor de anonadado .</p>"
+    },
+    "Suppressed": {
+      "name": "Suppressed",
+      "description": "<p>You've been affected by a high volume of incoming fire or a particularly dangerous attack that forces you to act less efficiently for your own safety. You take a –1 circumstance penalty to attack rolls and a –10-foot status penalty to all your Speeds.</p>"
     },
     "Unconscious": {
       "name": "Inconsciente",
@@ -168,6 +171,10 @@
     "Unnoticed": {
       "name": "Inadvertido",
       "description": "<p>Si estás inadvertido para una criatura, dicha criatura no tiene ni idea de que estás presente. Cuando estás inadvertido, también estás @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{No detectado}. Esto sólo importa para las aptitudes que se pueden utilizar sólo contra objetivos totalmente ignorantes de tu presencia.</p>"
+    },
+    "Untethered": {
+      "name": "Untethered",
+      "description": "<p>You're in a zero gravity (or similar) environment without a means of movement and float without support. You can't take move actions unless they specify they can be used in your current environment. At the end of your turn, you move 5 feet in the last direction you moved. You can take the Push Off action to change directions and the distance moved. Once you gain a means of moving in your environment, you lose this condition. Typically, a creature with the untethered condition in zero-gravity also gains the @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} conditions while untethered.</p>"
     },
     "Wounded": {
       "name": "Herido",
