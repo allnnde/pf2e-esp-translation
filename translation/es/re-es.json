@@ -1099,7 +1099,7 @@
           "NoSanctification": "No santificado"
         },
         "DragonHead": "Tradición mágica de la cabeza de dragón",
-        "PrimalHead": ""
+        "PrimalHead": "Energy Type of Dragon Breath"
       },
       "ChyzaeduAlienVestment": "Vestimenta alienígena destrozada",
       "ClayEffigy": {
@@ -2492,7 +2492,7 @@
       },
       "AldoriDuelist": {
         "AldoriSwordlord": {
-          "Note": "Whenever you successfully Strike a creature with an Aldori dueling sword, you gain 5 temporary Hit Points (or 10 temporary Hit Point on a critical success) that last for 1 round. @UUID[Compendium.pf2e.feat-effects.Item.eJyyBqrXLOE4R9JI]{Effect: Aldori Swordlord (Temporary Hit Points)}."
+          "Note": "Whenever you successfully Strike a creature with an Aldori dueling sword, you gain 5 temporary Hit Points (or 10 temporary Hit Point on a critical success) that last for 1 round. @UUID[Compendium.pf2e.feat-effects.Item.eJyyBqrXLOE4R9JI]{Effect: Aldori Swordlord (Tempory Hit Points)}."
         },
         "DuelistsEdge": {
           "Note": "You can immediately Interact to draw your Aldori dueling sword."
@@ -2865,8 +2865,8 @@
       },
       "BlinkCharge": {
         "Note": {
-          "CriticalFailure": "On a critical failure, the Strike deals no damage and you take @Damage[(ceil((@actor.flags.system.blinkCharge - 4)/2))d8[force]] damage.",
-          "Failure": "On a failure, the Strike deals no damage, but the target takes @Damage[(ceil((@actor.flags.system.blinkCharge - 4)/2))d8[force]] damage."
+          "CriticalFailure": "On a critical failure, the Strike deals no damage and you take @Damage[(ceil((@actor.flags.pf2e.blinkCharge - 4)/2))d8[force]] damage.",
+          "Failure": "On a failure, the Strike deals no damage, but the target takes @Damage[(ceil((@actor.flags.pf2e.blinkCharge - 4)/2))d8[force]] damage."
         }
       },
       "BloodlettingKukri": {
@@ -2907,11 +2907,11 @@
         "Shape": {
           "Cone": {
             "Label": "Cone",
-            "Description": "Your eidolon exhales a blast of destructive energy. Your eidolon deals @Damage[((ceil(@actor.level/2))d6)[@actor.flags.system.breathweapon.breathDamage]|options:area-damage] damage to all creatures in a @Template[cone|distance:30], with a basic Reflex save against your spell DC."
+            "Description": "Your eidolon exhales a blast of destructive energy. Your eidolon deals @Damage[((ceil(@actor.level/2))d6)[@actor.flags.pf2e.breathweapon.breathDamage]|options:area-damage] damage to all creatures in a @Template[cone|distance:30], with a basic Reflex save against your spell DC."
           },
           "Line": {
             "Label": "Line",
-            "Description": "Your eidolon exhales a blast of destructive energy. Your eidolon deals @Damage[((ceil(@actor.level/2))d6)[@actor.flags.system.breathweapon.breathDamage]|options:area-damage] damage to all creatures in a @Template[line|distance:60], with a basic Reflex save against your spell DC."
+            "Description": "Your eidolon exhales a blast of destructive energy. Your eidolon deals @Damage[((ceil(@actor.level/2))d6)[@actor.flags.pf2e.breathweapon.breathDamage]|options:area-damage] damage to all creatures in a @Template[line|distance:60], with a basic Reflex save against your spell DC."
           }
         },
         "Cooldown": "Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.",
@@ -3680,33 +3680,33 @@
       "Dragonblood": {
         "BreathOfTheDragon": {
           "Cone": {
-            "Fortitude": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[cone|distance:15], dealing @Damage[ceil(@actor.level/2)d4[@actor.flags.system.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[fortitude|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
-            "Reflex": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[cone|distance:15], dealing @Damage[ceil(@actor.level/2)d4[@actor.flags.system.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[reflex|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
-            "Will": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[cone|distance:15], dealing @Damage[ceil(@actor.level/2)d4[@actor.flags.system.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}."
+            "Fortitude": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[cone|distance:15], dealing @Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[fortitude|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
+            "Reflex": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[cone|distance:15], dealing @Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[reflex|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
+            "Will": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[cone|distance:15], dealing @Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}."
           },
           "Line": {
-            "Fortitude": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[line|distance:30], dealing @Damage[ceil(@actor.level/2)d4[@actor.flags.system.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[fortitude|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
-            "Reflex": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[line|distance:30], dealing @Damage[ceil(@actor.level/2)d4[@actor.flags.system.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[reflex|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
-            "Will": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[line|distance:30], dealing @Damage[ceil(@actor.level/2)d4[@actor.flags.system.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}."
+            "Fortitude": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[line|distance:30], dealing @Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[fortitude|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
+            "Reflex": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[line|distance:30], dealing @Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[reflex|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
+            "Will": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[line|distance:30], dealing @Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}."
           }
         },
         "FormidableBreath": {
           "Cone": {
-            "Fortitude": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[cone|distance:30], dealing @Damage[ceil(@actor.level/2)d6[@actor.flags.system.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[fortitude|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
-            "Reflex": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[cone|distance:30], dealing @Damage[ceil(@actor.level/2)d6[@actor.flags.system.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[reflex|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
-            "Will": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[cone|distance:30], dealing @Damage[ceil(@actor.level/2)d6[@actor.flags.system.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}."
+            "Fortitude": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[cone|distance:30], dealing @Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[fortitude|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
+            "Reflex": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[cone|distance:30], dealing @Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[reflex|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
+            "Will": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[cone|distance:30], dealing @Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}."
           },
           "Line": {
-            "Fortitude": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[line|distance:60], dealing @Damage[ceil(@actor.level/2)d6[@actor.flags.system.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[fortitude|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
-            "Reflex": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[line|distance:60], dealing @Damage[ceil(@actor.level/2)d6[@actor.flags.system.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[reflex|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
-            "Will": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[line|distance:60], dealing @Damage[ceil(@actor.level/2)d6[@actor.flags.system.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}."
+            "Fortitude": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[line|distance:60], dealing @Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[fortitude|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
+            "Reflex": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[line|distance:60], dealing @Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[reflex|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}.",
+            "Will": "Tapping into the physiology of your draconic ancestor, you can exhale a torrent of energy in a @Template[line|distance:60], dealing @Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|against:class-spell|basic]. You can't use this ability again for [[/r 1d4 #Recharge this ability]]{1d4 rounds}."
           }
         },
         "HeartOfEarth": {
           "RollOptionLabel": "Heart of Earth — Use precise tremorsense"
         },
         "LingeringBreath": {
-          "Description": "When you use Breath of the Dragon, the area of your breath becomes difficult terrain for 1 minute. In addition, a creature who fails or critically fails its saving throw takes @Damage[2d6[persistent,@actor.flags.system.dragonblood.damageType]] damage of the same type"
+          "Description": "When you use Breath of the Dragon, the area of your breath becomes difficult terrain for 1 minute. In addition, a creature who fails or critically fails its saving throw takes @Damage[2d6[persistent,@actor.flags.pf2e.dragonblood.damageType]] damage of the same type"
         },
         "ScalyHide": {
           "BracersOfArmor": "Scaly Hide w/ Bracers of Armor",
@@ -4273,7 +4273,7 @@
           "WhoseCryIsThunder": {
             "CriticalSpecialization": "When you critically succeed on a Strike, the target must make a @Check[fortitude|against:exemplar|traits:sonic] saving throw against your class DC. On a failure, they are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute. This is a sonic effect.",
             "DamageNote": "The attacker takes @Damage[1d6[electricity]] damage",
-            "Description": "When you Spark Transcendence, you can choose to become electrically charged until the start of your next turn. Any creature that touches you or damages you with an unarmed attack or non-reach melee weapon while you're charged takes @Damage[1d6[electricity]] damage as lightning courses back to them. @UUID[Compendium.pf2e.feat-effects.Item.nP3k4N52NzrR3KKf]{Effect: Whose Cry is Thunder}"
+            "Description": "When you Spark Transcendence, you can choose to become electrically charged until the start of your next turn. Any creature that touches you or damages you with an unarmed attack or non-reach melee weapon while you're charged takes @Damage[1d6[electricity]] damage as lightning courses back to them."
           }
         },
         "EternityIncineratingBlaze": {
@@ -4960,7 +4960,7 @@
           "Vitriol": "Vitriolo (ácido)"
         },
         "Overdrive": {
-          "CriticalFailure": "Whoops! Something explodes. You take @Damage[(ceil(@actor.level / 2))[@actor.flags.system.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage] damage, and you can't use Overdrive again for [[/r 1d4 #Recharge Overdrive]]{1d4 rounds} as your gizmos reset.",
+          "CriticalFailure": "Whoops! Something explodes. You take @Damage[(ceil(@actor.level / 2))[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage] damage, and you can't use Overdrive again for [[/r 1d4 #Recharge Overdrive]]{1d4 rounds} as your gizmos reset.",
           "CriticalSuccess": "Tus artilugios entran en un estado de increíble eficiencia llamado crítico @UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]{Overdrive}, añadiendo un gran poder a tus ataques.",
           "Failure": "Your gizmos whine concerningly and begin to smoke. Your Strikes deal 1 additional fire damage. @UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]{Overdrive}",
           "FireDamage": "Sobremarcha: daño por incendio",
@@ -4972,7 +4972,7 @@
         "Unstable": {
           "FailureNote": "You can not use further unstable actions. As the innovation's creator, you can spend 10 minutes retuning your innovation and making adjustments to return it to functionality, at which point you can use unstable actions with that innovation again.",
           "FlatCheck": {
-            "CriticalFailure": "The innovation becomes incapable of being used for further unstable actions, and you also take @Damage[(floor(@actor.level / 2))[@actor.flags.system.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage] damage. @UUID[Compendium.pf2e.feat-effects.Item.olpkQDGDzmYZCvQH]{Effect: Unstable Check Failure}",
+            "CriticalFailure": "The innovation becomes incapable of being used for further unstable actions, and you also take @Damage[(floor(@actor.level / 2))[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage] damage. @UUID[Compendium.pf2e.feat-effects.Item.olpkQDGDzmYZCvQH]{Effect: Unstable Check Failure}",
             "Failure": "La innovación se vuelve incapaz de ser utilizada para futuras acciones inestables.",
             "Label": "Comprobación inestable"
           },
@@ -5610,7 +5610,7 @@
         "Label": "El objetivo está dentro del alcance de al menos dos aliados"
       },
       "Parry": {
-        "Prompt": "Does your weapon have the parry trait?"
+        "Prompt": "Are you wielding a weapon with the parry trait?"
       },
       "PathfinderAgentDedication": {
         "ThoroughReports": "Thorough Reports"
@@ -5920,8 +5920,8 @@
         "MasterfulHunter": {
           "Flurry": "If you have master proficiency with your weapon, your multiple attack penalty for attacks against your hunted prey is –2 (–1 with an agile weapon) on your second attack of the turn, and –4 (–2 with an agile weapon) on your third and subsequent attacks of the turn.",
           "Label": "Masterful Hunter",
-          "Outwit": "If you have master proficiency in Deception, Intimidation, Stealth, or the skill you use to Recall Knowledge about your prey, increase the circumstance bonus against the prey with that skill from +2 to +4. If you have master proficiency with your armor, increase the circumstance bonus to AC against the prey from +1 to +2.",
-          "Precision": "The second time in a round you hit your hunted prey, you also deal 1d8 precision damage. At 19th level, your second hit in a round against your hunted prey deals 2d8 precision damage, and your third hit in a round against your hunted prey deals 1d8 precision damage."
+          "Outwit": "Your mastery of skills allows you to overwhelm your prey. If you have master proficiency in Deception, Intimidation, Stealth, or the skill you use to Recall Knowledge about your prey, increase the circumstance bonus against the prey with that skill from +2 to +4. If you have master proficiency with your armor, increase the circumstance bonus to AC against the prey from +1 to +2.",
+          "Precision": "Your weapon mastery allows you to hit your prey's vital areas multiple times. The second time in a round you hit your hunted prey, you also deal 1d8 precision damage. At 19th level, your second hit in a round against your hunted prey deals 2d8 precision damage, and your third hit in a round against your hunted prey deals 1d8 precision damage."
         },
         "SharedPrey": {
           "HuntPreyAddendum": "When you use Hunt Prey and select only one prey, you can grant your Hunt Prey benefits and hunter's edge to an ally in addition to gaining them yourself. The ally retains these benefits until you use Hunt Prey again."
@@ -6070,7 +6070,7 @@
           "Prompt": "Selecciona una raqueta."
         },
         "TheHarderTheyFall": {
-          "CriticalSuccess": "On a critical success, your target takes @Damage[1d6[bludgeoning],(((@actor.flags.system.sneakAttackDamage.number)d(@actor.flags.system.sneakAttackDamage.faces))[precision])[bludgeoning]] damage.",
+          "CriticalSuccess": "On a critical success, your target takes @Damage[1d6[bludgeoning],(((@actor.flags.pf2e.sneakAttackDamage.number)d(@actor.flags.pf2e.sneakAttackDamage.faces))[precision])[bludgeoning]] damage.",
           "Success": "On a success, your target takes @Damage[1d6[bludgeoning]] damage."
         },
         "TrainSkill": {
@@ -6480,7 +6480,7 @@
         },
         "Label": "Embaucador de conjuros",
         "LarcenousHand": {
-          "Description": ""
+          "Description": "When you cast _telekinetic hand_, you can remove its duration, modify its range to 20 feet, and modify its target to be an attended object within the spell's Bulk limit that wouldn't be time-consuming to remove. Add the following to the spell's standard effects: If the creature attending the object is willing to have you take the item, Telekinetic Hand carries the item to you. If the creature is unwilling, you must attempt to [[/act steal]] the target object with a Thievery check. The usual restrictions on attempts to Steal an object apply, including the restrictions that you can't steal objects that would be extremely noticeable or time-consuming to remove (like worn shoes or armor or actively wielded objects) and you can't Steal from a creature in combat or otherwise on guard. On a successful Steal check, the Telekinetic Hand carries the item to you, and on a critical failure, you can't use this modification again for 1 hour. If you're a master in Thievery, you can attempt to Steal from a creature in combat or otherwise on guard, though if you do so, the spell's casting time increases by 1 action."
         },
         "LingeringFlames": {
           "Description": "When you cast _fireball_, you can modify its effects, decreasing the base damage to 5d6 and causing it to deal @Damage[(2*(@item.level - 2))[fire,persistent]] damage to creatures that fail their save, doubled as normal on a critical failure. If you do, replace its heightened entry with the following.",
@@ -6586,7 +6586,7 @@
         "EchoingChannel": "Choose one additional creature in range. Target that creature with a 1-action version of the same spell. This spell is the same rank as the 2-action harm or heal you cast and doesn't cost another spell slot",
         "EnergyAblation": "If your next action is to Cast a Spell that deals at least one type of energy damage (acid, cold, electricity, fire, force, sonic, vitality, or void), you gain resistance to an energy damage type of your choice equal to the spell's rank. The resistance lasts until the end of your next turn. You get the resistance regardless of whether or not your spell dealt damage.",
         "EnergyFusion": "Select a non-cantrip spell in your spell repertoire that deals a different type of energy damage, and expend an additional spell slot of the same rank as this secondary spell. The spell you cast deals additional damage equal to the rank of the secondary spell slot expended. The spell's total damage is divided evenly between the energy type of the spell you cast and the energy type of the secondary spell.",
-        "ExplosiveArrival": "All creatures in a @Template[emanation|distance:10] around the creature you summoned take @Damage[(@item.level)d4[@actor.flags.system.spellshape.explosiveArrivalDamage]|options:area-damage] damage. If the creature summoned has the acid, cold, electricity, sonic, or spirit trait, you can deal damage of that type instead.",
+        "ExplosiveArrival": "All creatures in a @Template[emanation|distance:10] around the creature you summoned take @Damage[(@item.level)d4[@actor.flags.pf2e.spellshape.explosiveArrivalDamage]|options:area-damage] damage. If the creature summoned has the acid, cold, electricity, sonic, or spirit trait, you can deal damage of that type instead.",
         "FamiliarsResolve": "If the next action you use is to Cast a Spell, you or an ally within 30 feet gain a +2 status bonus to saving throws against effects that would cause you to be doomed or frightened for 1 round. At 14th level, you or an ally gain a +3 status bonus to saving throws against these effects instead. @UUID[Compendium.pf2e.feat-effects.Item.6I4qWkHzxj4MAt6g]{Effect: Familiar's Resolve}",
         "ForcibleEnergy": "If your next action is to Cast a Spell that deals acid, cold, electricity, fire, or sonic damage, you can select one target that was damaged to gain weakness 5 to that damage type until the end of your next turn. If a spell deals multiple types of energy damage, choose one that the target gains weakness to. This has no effect on creatures with resistance or immunity to the energy type you choose. @UUID[Compendium.pf2e.feat-effects.Item.0Ai0u9kNJrEudPnN]{Effect: Forcible Energy}",
         "FormControl": "The spell's rank is 2 lower than normal (minimum 1st rank), but you can remain transformed for up to 1 hour or the listed duration (whichever is longer). You can still Dismiss untamed form as normal.",
@@ -6613,8 +6613,8 @@
         "Martyr": "You lose @Damage[(@item.rank)d8] Hit Points, which can't be reduced or mitigated in any way, and your ally regains an equal number of Hit Points.",
         "MelodiousSpell": "The spell gains the Subtle trait. The trait hides only the spell's spellcasting actions and manifestations, not its effects. As part of using Melodious Spell, you can choose to @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Create a Diversion}, @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}, @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Perform}, or Request. If you do so, the spell you cast must have the auditory, emotion, sonic, or visual trait to gain the subtle trait.",
         "NonLethal": "If your next action is to Cast a Spell that deals damage and doesn't have the death or void trait, that spell gains the nonlethal trait.",
-        "OstentatiousArrivalManifestEidolon": "All creatures except you in a @Template[type:emanation|distance:10] around the creature you summoned or manifested take @Damage[(@actor.level)d4[@actor.flags.system.spellshape.arrivalDamage]|options:area-damage]. If the creature you summoned or manifested has the acid, cold, electricity, fire, sonic, or water trait, the damage is that type instead (or cold damage for the water trait). If the creature has more than one of these traits, you choose which damage type to deal.",
-        "OstentatiousArrivalSummonSpell": "All creatures in a @Template[type:emanation|distance:10] around the creature you summoned or manifested take @Damage[(@item.level)d4[@actor.flags.system.spellshape.arrivalDamage]|options:area-damage] damage. If the creature you summoned or manifested has the acid, cold, electricity, fire, sonic, or water trait, the damage is that type instead (or cold damage for the water trait). If the creature has more than one of these traits, you choose which damage type to deal.",
+        "OstentatiousArrivalManifestEidolon": "All creatures except you in a @Template[type:emanation|distance:10] around the creature you summoned or manifested take @Damage[(@actor.level)d4[@actor.flags.pf2e.spellshape.arrivalDamage]|options:area-damage]. If the creature you summoned or manifested has the acid, cold, electricity, fire, sonic, or water trait, the damage is that type instead (or cold damage for the water trait). If the creature has more than one of these traits, you choose which damage type to deal.",
+        "OstentatiousArrivalSummonSpell": "All creatures in a @Template[type:emanation|distance:10] around the creature you summoned or manifested take @Damage[(@item.level)d4[@actor.flags.pf2e.spellshape.arrivalDamage]|options:area-damage] damage. If the creature you summoned or manifested has the acid, cold, electricity, fire, sonic, or water trait, the damage is that type instead (or cold damage for the water trait). If the creature has more than one of these traits, you choose which damage type to deal.",
         "OverwhelmingBreath": "If you use your next action to Cast a Spell that has the monk trait and no duration, the spell and any Strikes you make as a result of casting it ignore an amount of the target's resistance to physical damage equal to your level.",
         "OverwhelmingEnergy": "If the next action you use is to Cast a Spell, the spell ignores an amount of the target's resistance to acid, cold, electricity, fire, or sonic damage equal to your level. This applies to all damage the spell deals, including persistent damage and damage caused by an ongoing effect of the spell, such as the wall created by wall of fire. A creature's immunities are unaffected.",
         "PitchPerfectProjection": "If your next action this round is to Cast a Spell or use an action that creates an auditory effect with a range, increase that range by 30 feet.",
@@ -6823,7 +6823,7 @@
           "Lethal": "Letal",
           "Mobile": "Móvil",
           "Perfect": "Perfecto",
-          "PreciseNote": "On a failure, you apply your @Damage[((@actor.flags.system.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{full precise strike damage} instead of half.",
+          "PreciseNote": "On a failure, you apply your @Damage[((@actor.flags.pf2e.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{full precise strike damage} instead of half.",
           "Retreating": "Retreating",
           "RetreatingNote": "You Step as a free action.",
           "Revitalizing": "Revitalizing",
