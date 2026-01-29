@@ -133,40 +133,6 @@
         }
       }
     },
-    "Berberoka": {
-      "name": "Berberoka",
-      "publicNotes": "<p>Los berberokas son humanoides gigantes que habitan entre bosques y pantanos, donde usan su capacidad de tragar enormes cantidades de agua para vaciar pequeños estanques y lagos. Las criaturas que visitan su lugar de agua favorito y solo encuentran un estanque vacío se convierten en presa del berberoka, que se oculta entre la maleza y abate a su objetivo con una enorme avalancha de agua regurgitada.</p>\n<p>El dorso moteado de un berberoka—que se asemeja a un conjunto de plantas locales, pequeños árboles y grandes rocas—les proporciona un camuflaje natural que les permite esconderse a plena vista. Los berberokas tienden a disfrazarse como formaciones rocosas en el centro de un lecho de agua seco mientras esperan a los transeúntes. En las regiones tropicales donde los berberokas son más comunes, los locales saben mantener los estanques vacíos a distancia, sin importar los peces que parezcan moverse en ellos. Los viajeros hambrientos, en cambio, pueden ver tal abundancia como una bendición de los dioses, solo para ser arrastrados por la mortal avalancha del berberoka.</p>",
-      "skillSpecialDeception": {
-        "0": {
-          "label": "para hacerse pasar por un pequeño montículo o isla en su entorno natural"
-        }
-      },
-      "speed": "15 mientras está empapado de agua",
-      "items": {
-        "strike-melee->Fist": {
-          "name": "Puño"
-        },
-        "action->Deep Breath": {
-          "name": "Contener la respiración ",
-          "description": "<p>Un berberoka puede mantener la respiración durante 2 horas</p>"
-        },
-        "action->Fear of Crabs": {
-          "name": "Miedo a los Cangrejos",
-          "description": "<p>Si un berberoka ve un cangrejo o una criatura similar a un cangrejo, debe intentar una tirada de salvación de @Check[will|dc:33]. Luego, se vuelve inmune a la vista de esa criatura durante 10 minutos.</p> <hr /> <p><strong>Éxito crítico</strong> El berberoka no se ve afectado.</p> <p><strong>Éxito</strong> El berberoka se vuelve @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2}.</p> <p><strong>Fracaso</strong> El berberoka gana la condición @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} durante 1 asalto y se vuelve @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 4}.</p>"
-        },
-        "action->Consume Lake": {
-          "name": "Absorber Lago",
-          "description": "<p>El berberoka bebe una gran cantidad de agua de una fuente adyacente. Si la fuente de agua tiene un volumen igual o mayor que él, el berberoka puede consumir hasta 1,500 galones de agua por minuto y se vuelve saturado de agua. Puede liberar agua a la misma velocidad. Mientras esté saturado de agua, el berberoka puede usar Rociar Agua, su tamaño aumenta a Gargantuesco y su Velocidad se reduce a 15 pies.</p> <p>@UUID[Compendium.pf2e.bestiary-effects.Item.UxNq9uo1GpDYTi5Z]{Efecto: Saturado de agua}</p>"
-        },
-        "action->Greater Constrict": {
-          "description": "La etiqueta <Compendium> será reemplazada por el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[(2d12+12)[bludgeoning]] de daño, @Check[fortitude|dc:33|basic]</p> <hr /> <p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
-        },
-        "action->Spray Water": {
-          "name": "Rociar agua",
-          "description": "<p><strong>Requisitos</strong> El berberoka está saturado de agua.</p> <hr /> <p><strong>Efecto</strong> El berberoka lanza un chorro de agua en una @Template[line|distance:60]. Todas las criaturas en la línea reciben @Damage[6d8[bludgeoning]|options:area-damage] de daño (@Check[reflex|dc:35|basic|options:area-effect,inflicts:prone,inflicts:forced-movement] tirada de salvación). Si falla la tirada, la criatura queda @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Derribada} y empujada 5 pies (10 pies en caso de fallo crítico).</p>"
-        }
-      }
-    },
     "Canopy Elder": {
       "name": "Anciano del Dosel",
       "languages": "hablar con animales, hablar con plantas",
@@ -775,10 +741,6 @@
       "path": "system.details.publicNotes"
     },
     "senses": "system.perception.details",
-    "skillSpecialDeception": {
-      "converter": "translateSkillSpecial",
-      "path": "system.skills.deception.special"
-    },
     "skillSpecialStealth": {
       "converter": "translateSkillSpecial",
       "path": "system.skills.stealth.special"
