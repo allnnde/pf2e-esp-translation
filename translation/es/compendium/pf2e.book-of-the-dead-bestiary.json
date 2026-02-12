@@ -64,7 +64,7 @@
       "items": {
         "action->Weep Blood": {
           "name": "Weep Blood",
-          "description": "<p><strong>Trigger</strong> A creature approaches within 15 feet</p>\n<hr />\n<p><strong>Effect</strong> Blood seeps from the eyes of all creatures within @Template[type:emanation|distance:30]{30 feet}, dealing persistent bleed damage. Each creature in the area must attempt a @Check[type:fortitude|dc:33] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[(2d8+3)[bleed]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} for 1 round.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(4d8+6)[bleed]] damage and is dazzled for as long as the persistent damage lasts.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(8d8+12)[bleed]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} for as long as the persistent damage lasts.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura se acerca a 15 pies (4,5 m)</p>\n<hr />\n<p><strong>Efecto</strong> La sangre rezuma de los ojos de todas las criaturas a @Template[emanation|distance:30]{30 pies (9 m)}, causando daño persistente por sangrado. Cada criatura en el área debe hacer una salvación de @Check[fortitude|dc:33].</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no sufre ningún efecto.</p>\n<p><strong>Éxito</strong> La criatura sufre  @Damage[(2d8+3)[bleed]]{2d8+3 daño persistente por sangrado} y queda @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrada} durante 1 asalto.</p>\n<p><strong>Fallo</strong> La criatura sufre @Damage[(4d8+6)[bleed]]{4d8+6 daño persistente por sangrado} y queda deslumbrada en tanto dura el daño persistente.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre @Damage[(8d8+12)[bleed]]{8d8+12 daño persistente por sangrado} y queda @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegada} en tanto dura el daño persistente.</p>"
         }
       }
     },
@@ -84,7 +84,7 @@
     "Bloodthirsty Toy": {
       "name": "Bloodthirsty Toy",
       "description": "<p>A scruffy stuffed bear animates, biting whoever disturbs it.</p>",
-      "disable": "<p>@Check[type:thievery|dc:20|name:Handle the Toy] (trained) to handle the toy without disturbing it or @Check[type:occultism|dc:21|name:Suppress the Memories] (trained) to suppress the memories suffusing the toy</p>",
+      "disable": "<p>@Check[thievery|dc:20|name:Tocar el juguete] (entrenada) para tocar el juguete sin perturbarlo u @Check[occultism|dc:21|name:Suprimir los recuerdos imbuidos] (entrenada) para suprimir los recuerdos imbuidos en el juguete.</p>",
       "reset": "<p>1 hour</p>",
       "stealth": "<p>(trained) to hear a child imitate an animal's roar</p>",
       "items": {
@@ -165,7 +165,7 @@
       "items": {
         "action->Feast": {
           "name": "Feast",
-          "description": "<p><strong>Trigger</strong> A living creature approaches within 10 feet</p>\n<hr />\n<p><strong>Effect</strong> The spirits bite and chew, dealing @Damage[(6d12+35)[piercing]] damage to each creature within @Template[type:emanation|distance:30]{30 feet}. Affected creatures must each attempt a @Check[type:reflex|dc:41] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage, @Damage[2d8[bleed]], and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, @Damage[4d8[bleed]], and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 2}.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura viva se aproxima a 10 pies (3 m)</p>\n<hr />\n<p><strong>Efecto</strong> Los espíritus muerden y mastican, causando @Damage[(6d12+35)[piercing]]{6d12+35 daño perforante} a cada criatura a @Template[emanation|distance:30]{30 pies (9 m)}. Las criaturas afectadas deben hacer una salvación de @Check[reflex|dc:41].</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no sufre ningún efecto.</p>\n<p><strong>Éxito</strong> La criatura sufre mitad de daño.</p>\n<p><strong>Fallo</strong> La criatura sufre daño completo, @Damage[2d8[bleed]]{2d8 daño persistente por sangrado} y queda @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenada 1}.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre doble daño, @Damage[4d8[bleed]]{4d8 daño persistente por sangrado} y queda @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenada 2}.</p>"
         }
       }
     },
@@ -210,7 +210,7 @@
       "items": {
         "action->Sudden Chill": {
           "name": "Sudden Chill",
-          "description": "<p><strong>Trigger</strong> A living creature enters the area</p>\n<hr />\n<p><strong>Effect</strong> The temperature drops as @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} spirits gather around the living. Living creatures within 15 feet take @Damage[(2d4+5)[cold]] damage (@Check[type:fortitude|dc:17|basic:true]). Creatures that critically fail their save are additionally @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1}.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura entra en el área</p>\n<hr />\n<p><strong>Efecto</strong> La temperatura cae mientras los espíritus @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisibles} se congregan alrededor de los vivos. Las criaturas vivas en 15 pies (4,5 m) sufren @Damage[(2d4+5)[cold]]{2d4+5 daño por frío} (salvación @Check[fortitude|dc:17|basic]). Las criaturas que sufren un fallo crítico en su tirada de salvación además quedan @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1}.</p>"
         }
       }
     },
@@ -458,7 +458,7 @@
       "items": {
         "action->Desperate Meal": {
           "name": "Desperate Meal",
-          "description": "<p><strong>Trigger</strong> A creature approaches within 10 feet</p>\n<hr />\n<p><strong>Effect</strong> Creatures within @Template[type:emanation|distance:30]{30 feet} are filled with painful hunger and must succeed at a @Check[type:fortitude|dc:32] save or feel their stomachs fill with rocks, dirt, and worse, dealing @Damage[(6d10+20)[piercing]] damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1}.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 4}, and takes a -10-foot status penalty to its Speeds for as long as it's sickened.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura se acerca a 10 pies (3 m)</p>\n<hr />\n<p><strong>Efecto</strong> Las criaturas a @Template[emanation|distance:30]{30 pies (9 m)} se llenan de hambre dolorosa y deben tener éxito en una salvación de @Check[fortitude|dc:32] o llenan sus estómagos con rocas, polvo y cosas peores, sufriendo @Damage[(6d10+20)[piercing]]{6d10+20 daño perforante}.</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no sufre ningún efecto.</p>\n<p><strong>Éxito</strong> La criatura sufre mitad de daño y queda @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesta 1}.</p>\n<p><strong>Fallo</strong> La criatura sufre daño completo y queda @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesta 2}.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre doble daño y queda @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesta 4}, sufre un penalizador -10 pies (3 m) por estatus a su Velocidad mientras está indispuesta.</p>"
         }
       }
     },
@@ -471,7 +471,7 @@
       "items": {
         "action->Whisper": {
           "name": "Whisper",
-          "description": "<p><strong>Trigger</strong> A creature enters the haunt's area</p>\n<hr />\n<p><strong>Effect</strong> The haunt deals @Damage[(1d6+4)[mental]] damage to creatures in the area (@Check[type:will|dc:19|basic:true]). On a failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura entra en el área embrujada</p>\n<hr />\n<p><strong>Efecto</strong> La aparición causa @Damage[(1d6+4)[mental]]{1d6+4 daño mental}} a las criaturas en el área (salvación @Check[will|dc:19|basic]). Con un fallo, la criatura también queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 1}.</p>"
         }
       }
     },
@@ -540,7 +540,7 @@
       "items": {
         "action->Squeeze": {
           "name": "Squeeze",
-          "description": "<p><strong>Trigger</strong> A creature moves over the haunt's area</p>\n<hr />\n<p><strong>Effect</strong> The hand forms out of ectoplasm and squeezes the triggering creature, dealing @Damage[(3d8+14)[bludgeoning]] damage (@Check[type:fortitude|dc:22|basic:true]). On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 22).</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura se mueve por el área embrujada</p>\n<hr />\n<p><strong>Efecto</strong> La mano de ectoplasma se forma y estruja a la criatura desencadenante, causando @Damage[(3d8+14)[bludgeoning]]{3d8+14 daño contundente} (salvación @Check[fortitude|dc:22|basic]). Con un fallo la criatura queda @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizada} ([[/act escape dc=22]] CD 22).</p>"
         }
       }
     },
@@ -761,7 +761,7 @@
       "items": {
         "action->Carve in Flesh": {
           "name": "Carve in Flesh",
-          "description": "<p><strong>Trigger</strong> A creature reads the letter</p>\n<hr />\n<p><strong>Effect</strong> The haunt deals @Damage[(2d8+11)[slashing]] damage to the triggering creature as the words are carved into its flesh (@Check[type:will|dc:21|basic:true]). On a failure, the creature takes @Damage[2d8[bleed]].</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura lee la carta</p>\n<hr />\n<p><strong>Efecto</strong> La aparición causa @Damage[(2d8+11)[slashing]]{2d8+11 daño cortante} a la criatura desencadenante, grabando las palabras en su carne (salvación @Check[will|dc:21|basic]). Con un fallo, la criatura sufre @Damage[2d8[bleed]]{2d8 daño persistente por sangrado}.</p>"
         }
       }
     },
@@ -825,7 +825,7 @@
       "items": {
         "action->Musical Assault": {
           "name": "Musical Assault",
-          "description": "<p><strong>Trigger</strong> A creature touches the instrument</p>\n<hr />\n<p><strong>Effect</strong> The musician's bone-shaking musical performance deals @Damage[(4d10+22)[sonic]] damage to creatures within @Template[type:emanation|distance:30]{30 feet} (@Check[type:will|dc:30|basic:true]).</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura toca el instrumento</p>\n<hr />\n<p><strong>Efecto</strong> La interpretación del músico sacude los huesos de tal manera que causa @Damage[(4d10+22)[sonic]]{4d10+22 daño sónico} a las criaturas en @Template[emanation|distance:30]{30 pies (9 m)} (salvación @Check[will|dc:30|basic]).</p>"
         }
       }
     },
@@ -2005,7 +2005,7 @@
       "items": {
         "action->Capture": {
           "name": "Capture",
-          "description": "<p><strong>Trigger</strong> A creature touches the manacles</p>\n<hr />\n<p><strong>Effect</strong> The spirit attempts to lock the manacles around the triggering creature's wrists. The triggering creature must attempt a @Check[type:reflex|dc:23] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The spirit loosely places manacles around the creature's wrists. Removing the manacles requires a single action.</p>\n<p><strong>Failure</strong> The spirit clamps the manacles around the creature's wrists but fails to lock them. The creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} until the manacles are removed as a 3-action activity.</p>\n<p><strong>Critical Failure</strong> The spirit clamps the manacles around the creature's wrists and locks them. The creature is off-guard and clumsy 1 until the manacles are removed (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 23, simple lock).</p>"
+          "description": "<p><strong>Desencadenante</strong> una criatura toca los grilletes</p>\n<hr />\n<p><strong>Efecto</strong> El espíritu trata de poner los grilletes a la criatura desencadenante. La criatura desencadenante debe tener éxito en una salvación de @Check[reflex|dc:23].</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no sufre ningún efecto.</p>\n<p><strong>Éxito</strong> El espíritu coloca los grilletes medio sueltos en las muñecas de la criatura. Quitarse los grilletes requiere una acción individual.</p>\n<p><strong>Fallo</strong> El espíritu aprieta los grilletes en torno a las muñecas de la criatura, pero no logra cerrarlos con llave. La criatura queda @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenida} y @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} hasta que se quita los grilletes como una actividad de 3 acciones.</p>\n<p><strong>Fallo crítico</strong> El espíritu aprieta los grilletes en torno a las muñecas de la criatura y los cierra con llave. La criatura queda desprevenida y torpe 1 hasta que se quita los grilletes ([[/act escape dc=23]], cerradura sencilla).</p>"
         }
       }
     },
@@ -2506,7 +2506,7 @@
       "items": {
         "action->Shatter": {
           "name": "Shatter",
-          "description": "<p><strong>Trigger</strong> A creature moves adjacent to the window</p>\n<hr />\n<p><strong>Effect</strong> The window shatters, dealing @Damage[(2d6+5)[slashing]] damage to creatures within 5 feet (@Check[type:reflex|dc:17|basic:true]).</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura pasa adyacente a la ventana</p>\n<hr />\n<p><strong>Efecto</strong> La ventana se rompe causando @Damage[(2d6+5)[slashing]]{2d6+5 daño cortante} a las criaturas a 5 pies (1,5 m) (salvación @Check[reflex|dc:17|basic]).</p>"
         }
       }
     },
@@ -2812,7 +2812,7 @@
       "items": {
         "action->Topple Furniture": {
           "name": "Topple Furniture",
-          "description": "<p><strong>Trigger</strong> A creature moves adjacent to the furniture</p>\n<hr />\n<p><strong>Effect</strong> The spirit shoves the furniture over in an attempt to crush the triggering creature. The triggering creature takes @Damage[(2d10+7)[bludgeoning]] damage (@Check[type:reflex|dc:22|basic:true]). On a failure, the creature is additionally knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura se mueve adyacente al mueble</p>\n<hr />\n<p><strong>Efecto</strong> El espíritu vuelca el mueble en un intento de aplastar a la criatura desencadenante. La criatura desencadenante sufre @Damage[(2d10+7)[bludgeoning]]{2d10+7 daño contundente} (salvación @Check[reflex|dc:22|basic]). Con un fallo, la criatura además queda @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbada}.</p>"
         }
       }
     },
@@ -3091,7 +3091,7 @@
       "items": {
         "action->Shove": {
           "name": "Shove",
-          "description": "<p><strong>Trigger</strong> A creature moves adjacent to the haunted wall</p>\n<hr />\n<p><strong>Effect</strong> A powerful force sweeps across the room, shoving all creatures in the room toward the wall. Each creature in the area must attempt a @Check[type:fortitude|dc:20] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed 5 feet toward the wall. If the creature would collide with the wall, they take @Damage[(1d10+5)[bludgeoning]] damage.</p>\n<p><strong>Failure</strong> The creature is pushed 10 feet toward the wall. If the creature would collide with the wall, they take @Damage[(2d10+10)[bludgeoning]] damage.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 15 feet toward the wall. If the creature would collide with the wall, they take @Damage[(3d10+15)[bludgeoning]] damage and are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura se mueve adyacente a la pared embrujada</p>\n<hr />\n<p><strong>Efecto</strong> Una poderosa fuerza recorre la habitación, empujando a todas las criaturas hacia la pared. Cada criatura debe realizar una salvación de Fortaleza CD 20.</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no sufre ningún efecto.</p>\n<p><strong>Éxito</strong> La criatura es empujada 5 pies (1,5 m) hacia la pared. Si choca contra la pared, sufre @Damage[(1d10+5)[bludgeoning]]{1d10+5 daño contundente}.</p>\n<p><strong>Fallo</strong> La criatura es empujada 10 pies (3 m) hacia la pared. Si choca contra la pared, sufre @Damage[(2d10+10)[bludgeoning]]{2d10+10 daño contundente}.</p>\n<p><strong>Fallo crítico</strong> La criatura es empujada 15 pies (4,5 m) hacia la pared. Si choca contra la pared, sufre @Damage[(3d10+15)[bludgeoning]]{3d10+15 daño contundente} y queda @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbada}.</p>"
         }
       }
     },
@@ -3149,7 +3149,7 @@
       "items": {
         "action->Mental Bind": {
           "name": "Mental Bind",
-          "description": "<p><strong>Trigger</strong> A creature enters the area</p>\n<hr />\n<p><strong>Effect</strong> Each creature within 30 feet becomes wrapped in heavy spectral chains forged from its own sins and regrets. Each must attempt a @Check[type:will|dc:25] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes a -10-foot status penalty to its Speeds for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado} until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 25).</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is overwhelmed with guilt, becoming @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} for 1 day.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura entra en el área</p>\n<hr />\n<p><strong>Efecto</strong> Cada criatura en 30 pies (9 m) queda envuelta en pesadas cadenas espectrales forjadas a partir de sus propios pecados y remordimientos. Cada una debe tener éxito en una salvación de @Check[will|dc:25].</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no sufre ningún efecto.</p>\n<p><strong>Éxito</strong> La criatura sufre un penalizador -10 pies (3 m) por estatus a la Velocidad durante 1 asalto.</p>\n<p><strong>Fallo</strong> La criatura queda @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizada} hasta que [[/act escape dc=25]]{Huye} (CD 25).</p> \n<p><strong>Fallo crítico</strong> Como el fallo, pero la criatura queda abrumada por la culpa, quedando @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadada 2} durante 1 día.</p>"
         }
       }
     },
