@@ -56,44 +56,44 @@
       }
     },
     "Blood Tears": {
-      "name": "Blood Tears",
-      "description": "<p>A wailing spirit appears and gouges their own eyes. As they do, blood seeps from the eyes of those who witness the act, obscuring their vision.</p>",
-      "disable": "<p>@Check[type:diplomacy|dc:30|name:Talk to the spirit] (master) to talk the spirit out of gouging its eyes or @Check[type:religion|dc:32|name:Ease the spirit's sorrows] (trained) to ease the spirit's sorrows</p>",
-      "reset": "<p>1 day</p>",
-      "stealth": "<p>(master) to notice your vision tint red</p>",
+      "name": "Lágrimas de sangre",
+      "description": "<p>Un espíritu gimiente aparece y se saca los ojos. Al hacerlo la sangre de sus ojos salpica a quienes lo ven, oscureciendo\nsu visión.</p>",
+      "disable": "<p>@Check[diplomacy|dc:30|name:Convencer al espíritu] (maestro) para convencer al espíritu de no sacarse los ojos o @Check[religion|dc:32|name:Aliviar la pena del espíritu] (entrenada) para aliviar la pena del espíritu.</p>",
+      "reset": "<p>1 día</p>",
+      "stealth": "<p>(maestro) para percibir que tu visión se tiñe de rojo.</p>",
       "items": {
         "action->Weep Blood": {
-          "name": "Weep Blood",
+          "name": "Llorar sangre",
           "description": "<p><strong>Desencadenante</strong> Una criatura se acerca a 15 pies (4,5 m)</p>\n<hr />\n<p><strong>Efecto</strong> La sangre rezuma de los ojos de todas las criaturas a @Template[emanation|distance:30]{30 pies (9 m)}, causando daño persistente por sangrado. Cada criatura en el área debe hacer una salvación de @Check[fortitude|dc:33].</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no sufre ningún efecto.</p>\n<p><strong>Éxito</strong> La criatura sufre  @Damage[(2d8+3)[bleed]]{2d8+3 daño persistente por sangrado} y queda @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrada} durante 1 asalto.</p>\n<p><strong>Fallo</strong> La criatura sufre @Damage[(4d8+6)[bleed]]{4d8+6 daño persistente por sangrado} y queda deslumbrada en tanto dura el daño persistente.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre @Damage[(8d8+12)[bleed]]{8d8+12 daño persistente por sangrado} y queda @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegada} en tanto dura el daño persistente.</p>"
         }
       }
     },
     "Blood-Soaked Soil": {
-      "name": "Blood-Soaked Soil",
-      "description": "<p>The blood of those who died in the area bubbles up from the earth, soaking the soil and turning it into a bloody morass.</p>",
-      "disable": "<p>@Check[type:diplomacy|dc:18|name:Settle the Spirits] or @Check[type:occultism|dc:18|name:Settle the Spirits] (trained) to settle the spirits or @Check[type:religion|dc:19|name:Bless the Area] (trained) to bless the area</p>",
-      "reset": "<p>1 day</p>",
-      "stealth": "<p>(trained) to smell blood</p>",
+      "name": "Suelo empapado de sangre",
+      "description": "<p>La sangre de quienes murieron en el área borbotea desde la tierra, empapando el suelo y convirtiéndolo en un pantano de sangre.</p>",
+      "disable": "<p>@Check[diplomacy|dc:18|name:Apaciguar a los espíritus] u @Check[occultism|dc:18|name:Apaciguar a los espíritus] (entrenada) para apaciguar a los espíritus o Religión CD 19 (entrenada) para bendecir el área.</p>",
+      "reset": "<p>1 día</p>",
+      "stealth": "<p>(entrenado) para oler sangre</p>",
       "items": {
         "action->Seep Blood": {
-          "name": "Seep Blood",
+          "name": "Filtrar sangre",
           "description": "<p><strong>Desencadenante</strong> Una criatura entra en el área\n<hr />\n<p><strong>Efecto</strong> La sangre se filtra desde la tierra convirtiendo el área en un pegajoso barro sangriento. El área se convierte en terreno difícil durante 1 hora. Todas las criaturas que se mueven a través del área deben tener éxito en una salvación de @Check[reflex|dc:16] o quedan @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizadas} hasta que pueden [[/act escape dc=16]] (CD 16).</p>"
         }
       }
     },
     "Bloodthirsty Toy": {
-      "name": "Bloodthirsty Toy",
-      "description": "<p>A scruffy stuffed bear animates, biting whoever disturbs it.</p>",
+      "name": "Juguete sediento de sangre",
+      "description": "<p>Desaliñados osos de peluche animados que muerden a quienes los perturban.</p>",
       "disable": "<p>@Check[thievery|dc:20|name:Tocar el juguete] (entrenada) para tocar el juguete sin perturbarlo u @Check[occultism|dc:21|name:Suprimir los recuerdos imbuidos] (entrenada) para suprimir los recuerdos imbuidos en el juguete.</p>",
-      "reset": "<p>1 hour</p>",
-      "stealth": "<p>(trained) to hear a child imitate an animal's roar</p>",
+      "reset": "<p>1 hora</p>",
+      "stealth": "<p>(entrenada) para oír a un niño imitar el rugido de un animal</p>",
       "items": {
         "strike-melee->Jaws": {
-          "name": "Jaws"
+          "name": "Mandíbulas"
         },
         "action->Chomp": {
-          "name": "Chomp",
-          "description": "<p><strong>Trigger</strong> A creature touches the toy</p>\n<hr />\n<p><strong>Effect</strong> The toy animates for a split second, biting the triggering creature with a ferocious jaws Strike.</p>"
+          "name": "Mordisco",
+          "description": "<p><strong>Desencadenante</strong> Una criatura toca el juguete</p>\n<hr />\n<p><strong>Efecto</strong> El juguete se anima durante un segundo, mordiendo a la criatura desencadenante con un feroz Golpe de mandíbulas.</p>"
         }
       }
     },
@@ -157,14 +157,14 @@
       }
     },
     "Cannibalistic Echoes": {
-      "name": "Cannibalistic Echoes",
-      "description": "<p>A pack of cannibalistic spirits swarm through the area, devouring living creatures.</p>",
-      "disable": "<p>@Check[type:intimidation|dc:40|name:Drive off the spirits] (master) to drive the spirits off with a ferocious display or @Check[type:occultism|dc:42|name:Exorcise the spirits] (expert) to exorcise the spirits</p>",
-      "reset": "<p>1 day</p>",
-      "stealth": "<p>(master) to sense something unusual lurking in the area's echoes</p>",
+      "name": "Ecos caníbales",
+      "description": "<p>Un grupo de espíritus caníbales bullen por el área, devorando criaturas vivas.</p>",
+      "disable": "<p>@Check[intimidation|dc:40|name:Alejar a los espíritus] (maestro) para alejar a los espíritus con una actuación feroz u @Check[occultism|dc:42|name:Exorcizar a los espíritus] (experto) para exorcizar a los espíritus.</p>",
+      "reset": "<p>1 día</p>",
+      "stealth": "<p> (maestro) para sentir algo inusual acechando en el área.</p>",
       "items": {
         "action->Feast": {
-          "name": "Feast",
+          "name": "Atracón",
           "description": "<p><strong>Desencadenante</strong> Una criatura viva se aproxima a 10 pies (3 m)</p>\n<hr />\n<p><strong>Efecto</strong> Los espíritus muerden y mastican, causando @Damage[(6d12+35)[piercing]]{6d12+35 daño perforante} a cada criatura a @Template[emanation|distance:30]{30 pies (9 m)}. Las criaturas afectadas deben hacer una salvación de @Check[reflex|dc:41].</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no sufre ningún efecto.</p>\n<p><strong>Éxito</strong> La criatura sufre mitad de daño.</p>\n<p><strong>Fallo</strong> La criatura sufre daño completo, @Damage[2d8[bleed]]{2d8 daño persistente por sangrado} y queda @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenada 1}.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre doble daño, @Damage[4d8[bleed]]{4d8 daño persistente por sangrado} y queda @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenada 2}.</p>"
         }
       }
@@ -202,14 +202,14 @@
       }
     },
     "Cold Spot": {
-      "name": "Cold Spot",
-      "description": "<p>The temperature suddenly drops as spectral forces gather in the area.</p>",
-      "disable": "<p>@Check[type:religion|dc:19|name:Banish the Cold Spot] (trained) to banish the cold spot with ritual prayers or @Check[type:occultism|dc:20|name:Foil the Arrival of Outside Forces] (trained) to foil the arrival of outside forces</p>",
-      "reset": "<p>1 hour</p>",
-      "stealth": "<p><span class=\"fontstyle0\">(trained)</span></p>",
+      "name": "Punto frío",
+      "description": "<p>La temperatura baja de golpe al concentrarse fuerzas espectrales en el área.</p>",
+      "disable": "<p>@Check[religion|dc:19|name:Expulsar el frío] (entrenada) para expulsar el frío con plegarias rituales u @Check[occultism|dc:20|name:Frustrar la llegada de las fuerzas exteriores] (entrenada) para frustrar la llegada de las fuerzas exteriores</p>",
+      "reset": "<p>1 hora</p>",
+      "stealth": "<p><span class=\"fontstyle0\">(entrenada)</span></p>",
       "items": {
         "action->Sudden Chill": {
-          "name": "Sudden Chill",
+          "name": "Escalofrío repentino",
           "description": "<p><strong>Desencadenante</strong> Una criatura entra en el área</p>\n<hr />\n<p><strong>Efecto</strong> La temperatura cae mientras los espíritus @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisibles} se congregan alrededor de los vivos. Las criaturas vivas en 15 pies (4,5 m) sufren @Damage[(2d4+5)[cold]]{2d4+5 daño por frío} (salvación @Check[fortitude|dc:17|basic]). Las criaturas que sufren un fallo crítico en su tirada de salvación además quedan @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1}.</p>"
         }
       }
@@ -450,27 +450,27 @@
       }
     },
     "Desperate Hunger": {
-      "name": "Desperate Hunger",
-      "description": "<p>A skeletally thin spirit appears, weeping as it shoves earth and stones down its throat in an effort to stave off hunger.</p>",
-      "disable": "<p>@Check[type:deception|dc:36|name:Convince the spirit it's not hungry] (master) to convince the spirit it's no longer hungry or @Check[type:occultism|dc:38|name:Feed the spirit] (trained) to ritually feed the spirit</p>",
-      "reset": "<p>1 day</p>",
-      "stealth": "<p>(master) to feel an odd sense of hunger</p>",
+      "name": "Hambre desesperada",
+      "description": "<p>Un delgado espíritu esquelético aparece llorando mientras traga tierra y piedras en un intento de apaciguar su hambre.</p>",
+      "disable": "<p>@Check[deception|dc:36|name:Convencer al espíritu de que ya no tiene hambre] para convencer al espíritu de que ya no tiene hambre u @Check[occultism|dc:38|name:Alimentar ritualmente al espíritu] (entrenado) para alimentar ritualmente al espíritu</p>",
+      "reset": "<p>1 día</p>",
+      "stealth": "<p>(maestro) para sentir una extraña sensación de hambre</p>",
       "items": {
         "action->Desperate Meal": {
-          "name": "Desperate Meal",
+          "name": "Comida desesperada",
           "description": "<p><strong>Desencadenante</strong> Una criatura se acerca a 10 pies (3 m)</p>\n<hr />\n<p><strong>Efecto</strong> Las criaturas a @Template[emanation|distance:30]{30 pies (9 m)} se llenan de hambre dolorosa y deben tener éxito en una salvación de @Check[fortitude|dc:32] o llenan sus estómagos con rocas, polvo y cosas peores, sufriendo @Damage[(6d10+20)[piercing]]{6d10+20 daño perforante}.</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no sufre ningún efecto.</p>\n<p><strong>Éxito</strong> La criatura sufre mitad de daño y queda @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesta 1}.</p>\n<p><strong>Fallo</strong> La criatura sufre daño completo y queda @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesta 2}.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre doble daño y queda @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesta 4}, sufre un penalizador -10 pies (3 m) por estatus a su Velocidad mientras está indispuesta.</p>"
         }
       }
     },
     "Disembodied Voices": {
-      "name": "Disembodied Voices",
-      "description": "<p>Angry spirits breathe down the necks of intruders and whisper haunting threats or messages in their ears.</p>",
-      "disable": "<p>@Check[type:religion|dc:15|name:Ward Yourself From Evil] (trained) to ward yourself from evil or @Check[type:performance|dc:16|name:Drown Out the Spirits' Voices] to drown out the spirits' voices</p>",
-      "reset": "<p>1 hour</p>",
-      "stealth": "<p>(trained) to feel breath upon your neck</p>",
+      "name": "Voces incorporales",
+      "description": "<p>Espíritus furiosos respiran en la nuca de los intrusos y les susurran amenazas o mensajes.</p>",
+      "disable": "<p>@Check[religion|dc:15|name:Protegerte del mal] (entrenada) para protegerte del mal o @Check[performance|dc:16|name:Ahogar las voces de los espíritus] para ahogar las voces de los espíritus.</p>",
+      "reset": "<p>1 hora</p>",
+      "stealth": "<p>(entrenada) para sentir el aliento en tu nuca</p>",
       "items": {
         "action->Whisper": {
-          "name": "Whisper",
+          "name": "Susurro",
           "description": "<p><strong>Desencadenante</strong> Una criatura entra en el área embrujada</p>\n<hr />\n<p><strong>Efecto</strong> La aparición causa @Damage[(1d6+4)[mental]]{1d6+4 daño mental}} a las criaturas en el área (salvación @Check[will|dc:19|basic]). Con un fallo, la criatura también queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 1}.</p>"
         }
       }
@@ -532,28 +532,28 @@
       }
     },
     "Ectoplasmic Grasp": {
-      "name": "Ectoplasmic Grasp",
-      "description": "<p>A massive ectoplasmic hand forms around a creature and squeezes it.</p>",
-      "disable": "<p>@Check[type:occultism|dc:24|name:Send the ectoplasm back] (trained) to send the ectoplasm back to the Ethereal Plane or @Check[type:acrobatics|dc:26|name:Move through the ectoplasm] to move through and disrupt the coalescing ectoplasm before it takes hold</p>",
-      "reset": "<p>1 day</p>",
-      "stealth": "<p>(trained) to notice ectoplasm coalescing</p>",
+      "name": "Agarrón ectoplásmico",
+      "description": "<p>Una gran mano de ectoplasma se forma alrededor de una criatura y la estruja.</p>",
+      "disable": "<p>@Check[occultism|dc:24|name:Enviar al ectoplasma de vuelta] (entrenada) para enviar al ectoplasma de vuelta al Plano Etéreo o @Check[acrobatics|dc:26|name:Atravesarlo y perturbar la masa ectoplásmica] para atravesarlo y perturbar la masa ectoplásmica mientras se forma antes de que pueda aferrarte.</p>",
+      "reset": "<p>1 día</p>",
+      "stealth": "<p>(entrenada) para notar un ectoplasma formándose.</p>",
       "items": {
         "action->Squeeze": {
-          "name": "Squeeze",
+          "name": "Estrujar",
           "description": "<p><strong>Desencadenante</strong> Una criatura se mueve por el área embrujada</p>\n<hr />\n<p><strong>Efecto</strong> La mano de ectoplasma se forma y estruja a la criatura desencadenante, causando @Damage[(3d8+14)[bludgeoning]]{3d8+14 daño contundente} (salvación @Check[fortitude|dc:22|basic]). Con un fallo la criatura queda @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizada} ([[/act escape dc=22]] CD 22).</p>"
         }
       }
     },
     "Entombed Spirit": {
-      "name": "Entombed Spirit",
-      "description": "<p>The wall bulges out in the shape of a howling humanoid face as it twists and forms tendrils reaching for nearby creatures. This haunt is formed when a murder victim is entombed within a wall before or after their death.</p>",
-      "disable": "<p>@Check[type:occultism|dc:17] (trained) to weaken the spirit, @Check[type:athletics|dc:18] (trained) to force the spirit's face back inside the wall, or @Check[type:diplomacy|dc:19] (trained) to talk down the spirit; two total successes across all skills are required to disable the haunt</p>",
-      "reset": "<p>The haunt deactivates 1 minute after all creatures leave the area and resets immediately thereafter. If disabled, the haunt resets after 1 day. The haunt is permanently destroyed if the remains of the deceased are removed from the wall.</p>",
-      "routine": "<p>(3 actions) The spirit attempts to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} up to two creatures within 10 feet with a [[/r 1d20+14 #Athletics]]{+14 Athletics modifier}, then squeezes each creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado}, dealing @Damage[(1d10+4)[damage]] damage. The haunt doesn't apply a multiple attack penalty to the second attempt to Grapple.</p>",
-      "stealth": "<p>(trained)</p>",
+      "name": "Espíritu emparedado",
+      "description": "<p>La pared se abulta con la forma del rostro de un humanoide que aúlla mientras se retuerce y forma zarcillos que tratan de alcanzar a las criaturas cercanas. Esta aparición se forma cuando una víctima de asesinato es emparedada antes o después de su muerte.</p>",
+      "disable": "<p>@Check[occultism|dc:17] (entrenado) para debilitar al espíritu, @Check[athletics|dc:18] (entrenado) para forzar al espíritu de vuelta a la pared, o @Check[diplomacy|dc:19] (entrenado) para calmar al espíritu; se requieren dos pruebas con éxito de entre todas las habilidades para inutilizar la aparición</p>",
+      "reset": "<p>La aparición se desactiva 1 minuto después de que todas las criaturas abandonan el área y se rearma inmediatamente después. Si se inutiliza, la aparición se rearma en 1 día. La aparición se destruye permanentemente si los restos del fallecido son quitados de la pared.</p>",
+      "routine": "<p>(3 acciones) El espíritu trata de @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Apresar} hasta a dos criaturas a 10 pies (3 m) con un modificador por [[/r 1d20+14 #Athletics]]{Atletismo de +14}, y luego las estruja causando @Damage[(1d10+4)[untyped]]{1d10+4 daño}. La aparición no aplica penalizador por ataque múltiple al segundo intento de Apresar.</p>",
+      "stealth": "<p>(entrenado)</p>",
       "items": {
         "action->Gasp": {
-          "name": "Gasp",
+          "name": "Bocanada",
           "description": "<p><strong>Desencadenante</strong> Una criatura se mueve adyacente a la pared donde está el cadáver emparedado</p>\n<hr />\n<p><strong>Efecto</strong> El espíritu da una bocanada y grita pidiendo ayuda mientras la pared adopta la forma de su rostro y le crecen zarcillos. Todas las criaturas a @Template[emanation|distance:10]{10 pies (3 m)} deben tener éxito en una salvación de  @Check[will|dc:18] o quedan @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustadas 1} en tanto la aparición permanezca activo. Tras esto, la aparición tira iniciativa.</p>"
         }
       }
@@ -753,27 +753,27 @@
       }
     },
     "Final Words": {
-      "name": "Final Words",
-      "description": "<p>As a creature touches a hand-written letter, they witness the letter's author scribe it in the past; each pen stroke across the page carves the letter's text into the creature's flesh.</p>",
-      "disable": "<p>@Check[type:religion|dc:24|name:Ward off the haunt] (trained) to ward off the haunt or @Check[type:thievery|dc:25|name:Dispose of the letter] (trained) to dispose of the letter with extreme care before the haunt can form</p>",
-      "reset": "<p>1 minute</p>",
-      "stealth": "<p>(trained) to hear the scratch of a quill upon paper</p>",
+      "name": "Últimas palabras",
+      "description": "<p>Una criatura toca una carta escrita a mano, es testigo de cómo el autor escribió la carta en el pasado; cada trazo de pluma de la página graba las letras del texto en la piel de la criatura.</p>",
+      "disable": "<p>@Check[religion|dc:24|name:Protegerse de la aparición] (entrenada) para protegerse de la aparición o @Check[thievery|dc:25|name:Deshacerse de la carta] (entrenada) para deshacerse de la carta con extremo cuidado antes de que la aparición pueda tomar forma</p>",
+      "reset": "<p>1 minuto</p>",
+      "stealth": "<p>(entrenada) para oír el rascar de una pluma contra el papel</p>",
       "items": {
         "action->Carve in Flesh": {
-          "name": "Carve in Flesh",
+          "name": "Grabar en la carne",
           "description": "<p><strong>Desencadenante</strong> Una criatura lee la carta</p>\n<hr />\n<p><strong>Efecto</strong> La aparición causa @Damage[(2d8+11)[slashing]]{2d8+11 daño cortante} a la criatura desencadenante, grabando las palabras en su carne (salvación @Check[will|dc:21|basic]). Con un fallo, la criatura sufre @Damage[2d8[bleed]]{2d8 daño persistente por sangrado}.</p>"
         }
       }
     },
     "Flood of Spirits": {
-      "name": "Flood of Spirits",
-      "description": "<p>A wave of spirits fly through the area, passing right through the living.</p>",
-      "disable": "<p>@Check[type:occultism|dc:48|name:Divert the spirits] (expert) or @Check[type:religion|dc:48|name:Divert the spirits] (master) to divert the spirits</p>",
-      "reset": "<p>1 day</p>",
-      "stealth": "<p>(trained) to hear the flood of spirits coalescing</p>",
+      "name": "Riada de espíritus",
+      "description": "<p> Una ola de espíritus vuela por el área atravesando a los vivos.</p>",
+      "disable": "<p>@Check[occultism|dc:48|name:Evitar a los espíritus] (experto) o @Check[religion|dc:48|name:Evitar a los espíritus] (maestro) para evitar a los espíritus</p>",
+      "reset": "<p>1 día</p>",
+      "stealth": "<p>(entrenado) para oír el torrente de espíritus formarse.</p>",
       "items": {
         "action->Surge Through": {
-          "name": "Surge Through",
+          "name": "Oleada",
           "description": "<p><strong>Desencadenante</strong> Una criatura se pasa por el área</p>\n<hr />\n<p><strong>Efecto</strong> La aparición causa @Damage[(3d12+20)[void],(3d12+20)[cold]]{3d12+20 daño negativo y 3d12+20 daño por frío} a todas las criaturas en el área (salvación @Check[reflex|dc:40|basic]). Con un fallo, la criatura queda @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadada 2} durante 1 minuto, y con un fallo crítico también queda @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confusa} durante 1 minuto.</p>"
         }
       }
@@ -817,14 +817,14 @@
       }
     },
     "Frenetic Musician": {
-      "name": "Frenetic Musician",
-      "description": "<p>A spirit musician rises out of an instrument and plays a frantic, bone-shaking melody.</p>",
-      "disable": "<p>@Check[type:performance|dc:26|name:Bring the music to a close|traits:action:perform] (trained) to bring the spirit's music to a close or @Check[type:occultism|dc:28|name:Banish the spirit] check (expert) to banish the spirit</p>",
-      "reset": "<p>1 hour</p>",
-      "stealth": "<p>(expert) to hear phantom tones</p>",
+      "name": "Músico frenético",
+      "description": "<p>El espíritu de un músico coge un instrumento y toca una melodía frenética que hace temblar los huesos.</p>",
+      "disable": "<p>@Check[performance|dc:26|name:Llevar al espíritu del músico|traits:action:perform] (entrenada) para llevar al espíritu del músico a un acorde final u @Check[occultism|dc:28|name:Expulsar al espíritu] (experto) para expulsar al espíritu</p>",
+      "reset": "<p>1 hora</p>",
+      "stealth": "<p>(experto) para oír unas notas fantasmales</p>",
       "items": {
         "action->Musical Assault": {
-          "name": "Musical Assault",
+          "name": "Asalto musical",
           "description": "<p><strong>Desencadenante</strong> Una criatura toca el instrumento</p>\n<hr />\n<p><strong>Efecto</strong> La interpretación del músico sacude los huesos de tal manera que causa @Damage[(4d10+22)[sonic]]{4d10+22 daño sónico} a las criaturas en @Template[emanation|distance:30]{30 pies (9 m)} (salvación @Check[will|dc:30|basic]).</p>"
         }
       }
@@ -989,21 +989,21 @@
       }
     },
     "Ghost Stampede": {
-      "name": "Ghost Stampede",
-      "description": "<p>Four massive skulls of aurochs, enormous wild cattle, rise into the air, each trailing its ghostly body behind it.</p>",
-      "disable": "<p>@Check[type:nature|dc:36] (master) to calm one of the four aurochs or @Check[type:religion|dc:40] (trained) to exorcise them</p>",
-      "hpDetails": "per aurochs skull",
-      "reset": "<p>The haunt deactivates 1 minute after all living creatures leave the area or after all four aurochs skulls are destroyed. After 1 hour, if at least one aurochs skull remains, the haunt reactivates.</p>",
-      "routine": "<p>(4 actions) For each aurochs skull disabled or destroyed, the haunt has 1 fewer action. On each action, a different aurochs moves up to 60 feet and attempts a horn Strike against a different living creature. A creature critically hit by a horn Strike also takes @Damage[2d6[bleed]] and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}.</p>",
-      "stealth": "<p>(master)</p>",
+      "name": "Estampida fantasma",
+      "description": "<p>Cuatro enormes calaveras de uros, enormes rumiantes salvajes, se alzan en el aire, cada una con un cuerpo fantasmal tras ella.</p>",
+      "disable": "<p>@Check[nature|dc:36] (maestro) para calmar a uno de los cuatro uros o @Check[religion|dc:40] (entrenado) para exorcizarlos.</p>",
+      "hpDetails": "por cabeza de uro",
+      "reset": "<p>La aparición se desactiva 1 minuto después de que todas las criaturas abandonan el área o si los cuatro uros son destruidos. Tras 1 hora, si al menos queda una de las calaveras de uro, la aparición se reactiva.</p>",
+      "routine": "<p>(4 acciones) Por cada cabeza de uro desarmada o destruida la aparición tiene una acción menos. En cada acción, un uro diferente se mueve hasta 60 pies (18 m) y da un Golpe de cuerno contra una criatura viva diferente. Una criatura impactada con un crítico por el cuerno también sufre @Damage[2d6[bleed]]{2d6 daño persistente por sangrado} y queda @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbada}.</p>",
+      "stealth": "<p>(maestro)</p>",
       "items": {
         "action->Defend Territory": {
-          "name": "Defend Territory",
-          "description": "<p><strong>Trigger</strong> A creature approaches within 10 feet of an aurochs skull</p>\n<hr />\n<p><strong>Effect</strong> The skulls rise into the air, form ghostly bodies, and bellow in rage. Each creature within @Template[type:emanation|distance:60]{60 feet} of an aurochs skull must attempt a @Check[type:will|dc:36] saving throw. The haunt then rolls initiative.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(1d12+6)[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(2d12+12)[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 4}.</p>"
+          "name": "Defender territorio",
+          "description": "<p><strong>Desencadenante</strong> Una criatura se acerca a 10 pies (3 m) de la calavera de un uro</p>\n<hr />\n<p><strong>Efecto</strong> La calavera se alza en el aire, forma cuerpos fantasmales y muge airada. Cada criatura a @Template[emanation|distance:60]{60 pies (18 m)} de las calaveras de uros debe tener éxito en una salvación de @Check[will|dc:36]. Tras esto, la aparición tira iniciativa.</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no sufre ningún efecto.</p>\n<p><strong>Éxito</strong> La criatura queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 1}.</p>\n<p><strong>Fallo</strong> La criatura sufre @Damage[(1d12+6)[mental]]{1d12+6 daño mental} y queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 2}.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre @Damage[(2d12+12)[mental]]{2d12+12 daño mental} y queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 4}.</p>"
         },
         "strike-melee->Horn": {
-          "name": "Horn",
-          "description": "<p>No multiple attack penalty</p>"
+          "name": "Cuerno",
+          "description": "<p>Sin penalizador por ataque múltiple</p>"
         }
       }
     },
@@ -1033,14 +1033,14 @@
       }
     },
     "Glimpse Grave": {
-      "name": "Glimpse Grave",
-      "description": "<p>A tombstone bears the name of those who look upon it, causing their hearts to seize.</p>",
-      "disable": "<p>@Check[type:religion|dc:45|name:Bless the tombstone] (legendary) to bless the tombstone or @Check[type:occultism|dc:50|name:Ward off the spirits] (trained) to ward off spirits</p>",
-      "reset": "<p>1 day</p>",
-      "stealth": "<p>(expert) to notice the words on the tombstone waver</p>",
+      "name": "Atisbo de la tumba",
+      "description": "<p>Una lápida lleva el nombre de quienes la miran, haciendo que tengan un ataque al corazón.</p>",
+      "disable": "<p>@Check[religion|dc:45|name:Bendecir la lápida] (legendario) para bendecir la lápida u @Check[occultism|dc:50|name:Alejar a los espíritus] (entrenado) para alejar a los espíritus.</p>",
+      "reset": "<p>1 día</p>",
+      "stealth": "<p> (experto) para notar las palabras en la lápida.</p>",
       "items": {
         "action->Stop Heart": {
-          "name": "Stop Heart",
+          "name": "Detener el corazón",
           "description": "<p><strong>Desencadenante</strong> Una criatura lee o toca la lápida</p>\n<hr />\n<p><strong>Efecto</strong> La aparición causa @Damage[(8d10+44)[void]]{8d10+44 daño negativo} (salvación @Check[will|dc:47|basic]) a todas las criaturas a @Template[emanation|distance:60]{60 pies (18 m)} que pueden ver la lápida y saben leer en algún idioma. Con un fallo crítico, la criatura muere.</p>"
         }
       }
@@ -1093,16 +1093,16 @@
       }
     },
     "Grasping Dead": {
-      "name": "Grasping Dead",
-      "description": "<p>Hands of the buried dead rise from the ground, grabbing and tearing at creatures in the area to drag them underground.</p>",
-      "disable": "<p>@Check[type:religion|dc:22] (trained) to ritually pray for the dead or @Check[type:occultism|dc:24] (trained) to exorcise the spirits' anger; two total successes are required to disable the haunt</p>",
-      "reset": "<p>The haunt deactivates 1 minute after all living creatures leave the area. After 1 hour, the haunt reactivates.</p>",
-      "routine": "<p>(1 action) The grasping hands batter all creatures in the area, dealing @Damage[(2d6+7)[bludgeoning]] damage (@Check[type:reflex|dc:26|basic:true] save). On a critical failure, a creature is dragged partially into the earth, becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 26). If already immobilized, it's fully submerged and must hold its breath to avoid suffocation.</p>",
-      "stealth": "<p>(trained)</p>",
+      "name": "Muerte aferrante",
+      "description": "<p>Las manos de los muertos se alzan desde el suelo aferrando y rasgando a las criaturas del área para arrastrarlas bajo tierra.</p>",
+      "disable": "<p>@Check[religion|dc:22] (entrenado) para rezar ritualmente por los muertos u @Check[occultism|dc:24] (entrenado) para exorcizar la ira de los espíritus; se requieren dos pruebas con éxito para inutilizar la aparición</p>",
+      "reset": "<p>La aparición se desactiva 1 minuto después de que todas las criaturas vivas abandonen el área. Tras una hora la aparición se rearma.</p>",
+      "routine": "<p>(1 acción) Las manos aferrantes apalean a todas las criaturas del área causando @Damage[(2d6+7)[bludgeoning]]{2d6+7 daño contundente} (salvación @Check[reflex|dc:26|basic]). Con un fallo crítico, una criatura es arrastrada parcialmente bajo tierra, quedando @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizada} hasta que [[/act escape dc=26]]{Huye}. Si ya está inmovilizada, se sumerge completamente y debe contener el aliento para evitar ahogarse.</p>",
+      "stealth": "<p>(entrenado)",
       "items": {
         "action->Shifting Earth": {
-          "name": "Shifting Earth",
-          "description": "<p><strong>Trigger</strong> At least two creatures enter the area</p>\n<hr />\n<p><strong>Effect</strong> The earth shifts wildly as the hands of the dead spring forth from the ground. The area becomes difficult terrain. Creatures within the area are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} unless they succeed at a @Check[type:reflex|dc:26] save. The haunt then rolls initiative.</p>"
+          "name": "Tierra cambiante",
+          "description": "<p><strong>Desencadenante</strong> Al menos dos criaturas entran en el área</p>\n<hr />\n<p><strong>Efecto</strong> La tierra se mueve salvajemente mientras las manos de los muertos se alzan desde el suelo. El área se convierte en terreno difícil. Las criaturas en el área quedan @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbadas} a menos que pasen una salvación de @Check[reflex|dc:26]. Tras esto, la aparición tira iniciativa.</p>"
         }
       }
     },
@@ -1669,13 +1669,13 @@
       }
     },
     "Locking Door": {
-      "name": "Locking Door",
-      "description": "<p>A door (or other portal) slams shut and locks.</p>",
-      "disable": "<p>@Check[type:athletics|dc:14|name:Push Back Against the Door] to push back against the door, @Check[type:crafting|dc:14|name:Wedge the Door Open] to wedge the door open, or @Check[type:thievery|dc:20|name:Jam the Lock] (trained) to jam the lock or open the lock afterward</p>",
+      "name": "Puerta que se cierra",
+      "description": "<p>Una puerta (u otro portal) se cierra de golpe y se bloquea.</p>",
+      "disable": "<p>@Check[athletics|dc:14|name:Empujar la puerta] para empujar la puerta, @Check[crafting|dc:14|name:Poner una cuña en la puerta] para poner una cuña en la puerta que la mantenga abierta, o @Check[thievery|dc:20|name:Atascar la cerradura] (entrenada) para atascar la cerradura para que siga abierta o abrirla posteriormente.</p>",
       "stealth": "<p>para notar que la puerta se mueve levemente, incluso sin haber brisa alguna.</p>",
       "items": {
         "action->Shut In": {
-          "name": "Shut In",
+          "name": "Encerrado",
           "description": "<p><strong>Desencadenante</strong> Una criatura acaba su movimiento tras pasar por el portal</p>\n<hr />\n<p><strong>Efecto</strong> Con una brisa etérea en el aire, la puerta chirría dando un portazo y cerrándose con llave. La puerta embrujada empuja a cualquiera en su espacio a una casilla adyacente en la habitación. Una criatura que sería empujada ha de tener éxito en una salvación de @Check[reflex|dc:16] para elegir a qué lado de la puerta acabar.</p>"
         }
       }
@@ -1985,26 +1985,26 @@
       }
     },
     "Phantom Footsteps": {
-      "name": "Phantom Footsteps",
-      "description": "<p>Audible footsteps approach from behind, but their source is not apparent.</p>",
-      "disable": "<p>@Check[type:religion|dc:17|name:Ward Off Lesser Spirits] (trained) to ritually ward off lesser spirits or @Check[type:occultism|dc:18|name:Excorcise the Spirit] to exorcise the spirit</p>",
-      "reset": "<p>1 hour</p>",
+      "name": "Pisadas fantasmales",
+      "description": "<p>Pisadas audibles se aproximan desde detrás, pero sin causa aparente.</p>",
+      "disable": "<p>@Check[religion|dc:17|name:Proteger ritualmente de espiritus menores] (entrenada) para proteger ritualmente de espíritus menores u @Check[occultism|dc:18|name:Exorcizar al espíritu] para exorcizar al espíritu</p>",
+      "reset": "<p>1 hora</p>",
       "items": {
         "action->Stalk": {
-          "name": "Stalk",
+          "name": "Acechar",
           "description": "<p><strong>Desencadenante</strong> Una criatura pasa por el camino de las pisadas fantasmales</p>\n<hr />\n<p><strong>Efecto</strong> Sin ninguna fuente visible, las pisadas fantasmales siguen de cerca a la criatura desencadenante, luego de repente se detienen. La criatura debe hacer una salvación de Voluntad CD 16.</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no resulta afectada.</p>\n<p><strong>Éxito</strong> La criatura queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 1}.</p>\n<p><strong>Fallo</strong> La criatura queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 2}.</p>\n<p><strong>Fallo crítico</strong> La criatura queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 3}.</p>"
         }
       }
     },
     "Phantom Jailer": {
-      "name": "Phantom Jailer",
-      "description": "<p>A spirit appears and arrests the creature by clamping manacles around their wrists.</p>",
-      "disable": "<p>@Check[type:athletics|dc:18|name:Seize the manacles] to seize the manacles from the spirit, @Check[type:intimidation|dc:19|name:Order the spirit to stand down] (trained) to order the spirit to stand down, or @Check[type:occultism|dc:20|name:Exorcise the spirit] to exorcise the spirit</p>",
-      "reset": "<p>1 day</p>",
-      "stealth": "<p>(trained) to notice the manacles twitch</p>",
+      "name": "Cercelero fantasma",
+      "description": "<p>Un espíritu aparece para arrestar a la criatura poniéndole unos grilletes en las muñecas.</p>",
+      "disable": "<p>@Check[athletics|dc:18|name:Quitarle los grilletes] para quitarle los grilletes al espíritu, @Check[intimidation|dc:19|name:Ordenar al espíritu que pare] (entrenada) para ordenar al espíritu que pare, u @Check[occultism|dc:20|name:Exorcise the spirit] para exorcizar al espíritu.</p>",
+      "reset": "<p>1 día</p>",
+      "stealth": "<p>(entrenada) para ver que los grilletes se mueven</p>",
       "items": {
         "action->Capture": {
-          "name": "Capture",
+          "name": "Capturar",
           "description": "<p><strong>Desencadenante</strong> una criatura toca los grilletes</p>\n<hr />\n<p><strong>Efecto</strong> El espíritu trata de poner los grilletes a la criatura desencadenante. La criatura desencadenante debe tener éxito en una salvación de @Check[reflex|dc:23].</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no sufre ningún efecto.</p>\n<p><strong>Éxito</strong> El espíritu coloca los grilletes medio sueltos en las muñecas de la criatura. Quitarse los grilletes requiere una acción individual.</p>\n<p><strong>Fallo</strong> El espíritu aprieta los grilletes en torno a las muñecas de la criatura, pero no logra cerrarlos con llave. La criatura queda @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenida} y @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} hasta que se quita los grilletes como una actividad de 3 acciones.</p>\n<p><strong>Fallo crítico</strong> El espíritu aprieta los grilletes en torno a las muñecas de la criatura y los cierra con llave. La criatura queda desprevenida y torpe 1 hasta que se quita los grilletes ([[/act escape dc=23]], cerradura sencilla).</p>"
         }
       }
@@ -2412,17 +2412,17 @@
       }
     },
     "Sadistic Conductor": {
-      "name": "Sadistic Conductor",
-      "description": "<p>A phantom conductor appears with a flourish, causing spectral instruments with razor-like strings to appear in the hands of those present. As the conductor gestures for the performance to begin, creatures are compelled to play the instruments.</p>",
-      "disable": "<p>@Check[type:perfomance|dc:18] to perform so well the conductor releases you from your instrument, banishing it voluntarily; @Check[type:occultism|dc:22] (trained) or @Check[type:religion|dc:22] (trained) to banish one instrument; or @Check[type:thievery|dc:25] (trained) to sabotage one instrument; each instrument must be banished, sabotaged, or destroyed to disable the haunt</p>",
-      "hpDetails": "per instrument",
-      "reset": "<p>The haunt deactivates when all conjured instruments are destroyed or there has been silence for 1 minute. It resets after 1 hour.</p>",
-      "routine": "<p>(1 action; enchantment, mental, occult) The conductor urges each creature within 30 feet to play the hazardous instrument it holds. Each creature that is compelled to play its instrument does so, and those who succeeded on their save can choose to do so. Playing the instrument, either from the haunt's routine or of a creature's own volition during an attempt to disable the haunt, deals @Damage[(1d6+3)[slashing]] damage (@Check[type:reflex|dc:21|basic:true|traits:enchantment,mental,occult] save), and the creature must attempt a @Check[type:performance|dc:18|traits:enchantment,mental,occult,damaging-effect] check. On a success, the conductor accepts the performance and dismisses that creature's instrument, and on a critical failure, the discordant sound and conductor's jeers deal an additional @Damage[(1d6+3)[sonic]] damage.</p>",
-      "stealth": "<p>(trained)</p>",
+      "name": "Director sádico",
+      "description": "<p>Un director de orquesta fantasmal aparece haciendo que instrumentos espectrales con cuerdas afiladas aparezcan en manos de los presentes. Cuando el director hace el gesto de empezar, las criaturas se sienten obligadas a tocar los instrumentos.</p>",
+      "disable": "<p>@Check[perfomance|dc:18] para tocar tan bien que el director te libere de tu instrumento, @Check[occultism|dc:22] o @Check[religion|dc:22] (entrenado) para hacer desaparecer un instrumento, o @Check[thievery|dc:25] CD 25 (entrenado) para sabotear un instrumento; cada instrumento debe hacerse desaparecer o ser saboteado o destruido para inutilizar la aparición.</p>",
+      "hpDetails": "por instrumento",
+      "reset": "<p>La aparición se desactiva cuando todos los instrumentos conjurados son destruidos o ha habido silencio durante 1 minuto. Se rearma tras 1 hora.</p>",
+      "routine": "<p>(1 acción; encantamiento, mental, ocultismo) El director urge a cada criatura a 30 pies (9 m) a tocar el peligroso instrumento que sujeta. Cada criatura impelida a tocar lo hace, quienes pasaron su salvación pueden decidir hacerlo o no. Tocar el instrumento por obligación de la aparición o por voluntad propia de la criatura causa @Damage[(1d6+3)[slashing]]{1d6+3 daño cortante} (salvación @Check[reflex|dc:21|basic|traits:enchantment,mental,occult]) y la criatura debe hacer una prueba de @Check[performance|dc:18|traits:enchantment,mental,occult,damaging-effect]. Con un éxito el director acepta la interpretación y hace desaparecer el instrumento de manos de la criatura, con un fallo crítico el sonido discordante y los abucheos del director causan @Damage[(1d6+3)[sonic]]{1d6+3 daño sónico} adicional.</p>",
+      "stealth": "<p>(entrenado)</p>",
       "items": {
         "action->Conjure Instruments": {
-          "name": "Conjure Instruments",
-          "description": "<p><strong>Trigger</strong> A creature approaches within 15 feet</p>\n<hr />\n<p><strong>Effect</strong> The conductor conjures a hazardous spectral instrument into the hands of each sentient creature within 30 feet. Even a creature whose hands are full finds a spectral instrument superimposed over the other items it's carrying. Affected creatures must each attempt a @Check[type:will|dc:19] save. The haunt then rolls initiative.</p>\n<hr />\n<p><strong>Critical Success</strong> The conjuration fails and no instrument appears in the creature's hands.</p>\n<p><strong>Success</strong> A conjured instrument appears in the creature's hands, but it isn't compelled to play it.</p>\n<p><strong>Failure</strong> A conjured instrument appears in the creature's hands and it's compelled to play it. The creature can't willingly put down the instrument while compelled to play.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature needs a critical success on its Performance in order for the conductor to be satisfied and dismiss its instrument.</p>"
+          "name": "Conjurar instrumentos",
+          "description": "<p><strong>Desencadenante</strong> Una criatura se aproxima a 15 pies (4,5 m)</p>\n<hr />\n<p><strong>Efecto</strong> El director conjura un peligroso instrumento espectral en las manos de cada criatura inteligente a 30 pies (9 m). Incluso una criatura cuyas manos estén ocupadas se encuentra con un instrumento superpuesto a los demás objetos que lleva encima. Las criaturas afectadas deben hacer una salvación de @Check[will|dc:19]. Tras esto la aparición tira iniciativa.</p>\n<hr />\n<p><strong>Éxito crítico</strong> El conjuro falla y no aparece ningún instrumento en manos de la criatura.</p>\n<p><strong>Éxito</strong> El instrumento conjurado aparece en manos de la criatura, pero no está obligada a tocar.</p>\n<p><strong>Fallo</strong> Un instrumento conjurado aparece en manos de la criatura y está obligada a tocarlo (ver rutina más adelante). La criatura no puede soltar voluntariamente el instrumento mientras está obligada a tocar.</p>\n<p><strong>Fallo crítico</strong> Como fallo, pero la criatura necesita un éxito crítico en su Interpretación para que el director esté satisfecho y haga desaparecer el instrumento.</p>"
         }
       }
     },
@@ -2499,13 +2499,13 @@
       }
     },
     "Shattered Window": {
-      "name": "Shattered Window",
-      "description": "<p>The anger trapped within a structure shatters a window, showering glass in adjacent spaces.</p>",
-      "disable": "<p>@Check[type:occultism|dc:19|name:Suppress the Spiritual Energy] or @Check[type:religion|dc:19|name:Suppress the Spiritual Energy] (trained) to suppress the spiritual energy or @Check[type:diplomacy|dc:20|name:Soothe the Latent Anger] (trained) to soothe the latent anger</p>",
-      "stealth": "<p>(trained) to notice cracks spider-webbing across the window</p>",
+      "name": "Ventana rota",
+      "description": " <p>El enfado de la criatura atrapada en la estructura rompe una ventana, lanzando cristales a los espacios adyacentes.</p>",
+      "disable": "<p>@Check[occultism|dc:19|name:Suprimir la energía espiritual] o @Check[religion|dc:19|name:Suprimir la energía espiritual] (entrenada) para suprimir la energía espiritual o @Check[diplomacy|dc:20|name:Apaciguar el enfado latente] para apaciguar el enfado latente</p>",
+      "stealth": "<p>(entrenada) para notar las grietas en la ventana</p>",
       "items": {
         "action->Shatter": {
-          "name": "Shatter",
+          "name": "Rotura",
           "description": "<p><strong>Desencadenante</strong> Una criatura pasa adyacente a la ventana</p>\n<hr />\n<p><strong>Efecto</strong> La ventana se rompe causando @Damage[(2d6+5)[slashing]]{2d6+5 daño cortante} a las criaturas a 5 pies (1,5 m) (salvación @Check[reflex|dc:17|basic]).</p>"
         }
       }
@@ -2669,16 +2669,16 @@
       }
     },
     "Siphoning Spirit": {
-      "name": "Siphoning Spirit",
-      "description": "<p>A formless spirit drains life from the living, becoming progressively visible as its victims weaken.</p>",
-      "disable": "<p>@Check[type:occultism|dc:48] (expert) or @Check[type:religion|dc:48] (expert) to weaken the spirit; four total successes are required to disable the haunt</p>",
-      "reset": "<p>After 1 minute, the spirit is satiated, and the haunt deactivates as it returns to a resting state. Over the course of 1 hour, the spirit's siphoned life energy disperses and the haunt resets.</p>",
-      "routine": "<p>(1 action; death, divine, necromancy, void) The spirit inhales, siphoning the souls of the living and becoming more visible. Each creature within @Template[type:burst|distance:60]{60 feet} takes @Damage[(4d10+20)[void]] damage, with a @Check[type:fortitude|dc:41|traits:death,divine,necromancy,void,damaging-effect] save. If no creatures are within the area, the haunt moves up to 120 feet into the largest concentration of living creatures and then inhales.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and increases its @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado} value by 1, to a maximum of drained 4.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and increases its drained value by 2, to a maximum of drained 4. If the creature was already drained 4, it dies.</p>",
-      "stealth": "<p>(trained)</p>",
+      "name": "Espíritu sifón",
+      "description": "<p>Un espíritu carente de forma drena vida de los vivos, haciéndose cada vez más visible conforme sus víctimas se debilitan.</p>",
+      "disable": "<p>@Check[occultism|dc:48] o @Check[religion|dc:48] (experto) para debilitar al espíritu, se requieren cuatro éxitos en total para inutilizar la aparición.</p>",
+      "reset": "<p>Tras 1 minuto el espíritu se sacia y la aparición se desactiva volviendo a su estado de descanso. En la siguiente hora, la\nenergía del espíritu se dispersa y la aparición se rearma.</p>",
+      "routine": "<p>(1 acción; divino, muerte, vacío, nigromancia) El espíritu inhala, absorbiendo las almas de los vivos y haciéndose más\nvisible. Cada criatura en @Template[burst|distance:60]{60 pies (18 m)} sufre @Damage[(4d10+20)[void]]{4d10+20 daño del vacío}, con una salvación de @Check[fortitude|dc:41|traits:death,divine,necromancy,void,damaging-effect]. Si no hay criaturas en el área, la aparición se mueve hasta 120 pies (36 m) hacia la concentración mayor de seres vivos y luego inhala.</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no resulta afectada.</p>\n<p><strong>Éxito</strong> La criatura sufre mitad de daño.</p>\n<p><strong>Fallo</strong> La criatura sufre daño completo y aumenta su valor de @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado} en 1, máximo drenado 4.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre doble daño y aumenta su valor de drenado en 2, hasta un máximo de 4. Si la criatura ya está drenada 4, muere.</p>",
+      "stealth": "<p> (entrenada)</p>",
       "items": {
         "action->Sudden Siphon": {
-          "name": "Sudden Siphon",
-          "description": "<p><strong>Trigger</strong> A living creature passes within 15 feet of the spirit</p>\n<hr />\n<p><strong>Effect</strong> The invisible spirit latches onto the life essence of the living, dealing @Damage[(4d10+20)[void]] damage to all living creatures within @Template[type:burst|distance:60]{60 feet} (@Check[type:fortitude|dc:41|basic:true] save). The haunt then rolls initiative.</p>"
+          "name": "Sifón repentino",
+          "description": "<p><strong>Desencadenante</strong> Una criatura viva pasa a 15 pies (4,5 m) del espíritu</p>\n<hr />\n<p><strong>Efecto</strong> El espíritu invisible se fija a la esencia vital de los vivos, causando @Damage[(4d10+20)[void]]{4d10+20 daño del vacío} a todas las criaturas en @Template[burst|distance:60]{60 pies (18 m)} (salvación @Check[fortitude|dc:41|basic]). Tras esto la aparición tira iniciativa.</p>"
         }
       }
     },
@@ -2761,16 +2761,16 @@
       }
     },
     "Spirit Cyclone": {
-      "name": "Spirit Cyclone",
-      "description": "<p>A cyclone of angry spirits surges around the area.</p>",
-      "disable": "<p>@Check[type:occultism|dc:30] (trained) or @Check[type:religion|dc:30] (trained) to weaken the haunt; three total successes in any combination are required to disable the haunt</p>",
-      "reset": "<p>The spirit cyclone disperses after 1 minute and resets after 1 day.</p>",
-      "routine": "<p>(3 actions) The spirit cyclone uses 3 actions to move, traveling up to 30 feet with each action and dealing @Damage[(2d10+13)[void]] damage to each creature in its path (@Check[type:reflex|dc:32|basic:true] save). A creature needs to attempt only one save during the cyclone's movement, even if the cyclone moves over its space more than once. On a critical failure, a creature is swept up into the cyclone, becoming @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 32). A creature grabbed by the cyclone moves along with the cyclone and takes @Damage[(1d10+6)[void]] damage at their beginning of its turn, and it must attempt a Reflex save against the cyclone on the cyclone's turn, no matter where the cyclone moves. A creature that successfully Escapes from the cyclone falls from a height of [[/r {1d12*5} #Falling Distance]]{1d12 x 5 feet}.</p>",
-      "stealth": "<p>(expert)</p>",
+      "name": "Ciclón espiritual",
+      "description": "<p>Un ciclón de espíritus furiosos aparece en el área.</p>",
+      "disable": "<p>@Check[occultism|dc:30] (entrenado) o @Check[religion|dc:30] (entrenado) para debilitar la aparición; se necesitan tres éxitos en cualquier combinación para inutilizar la aparición.</p>",
+      "reset": "<p>El ciclón espiritual se dispersa tras 1 minuto y se rearma en 1 día.</p>",
+      "routine": "<p>(3 acciones) El ciclón espiritual usa tres acciones para moverse, viajando hasta 30 pies (9 m) con cada acción y causando @Damage[(2d10+13)[void]]{2d10+13 daño del vacío} a cada criatura en su camino (salvación @Check[reflex|dc:32|basic]). Una criatura solo necesita tener éxito en una salvación, aunque el ciclón se mueva por su espacio más de una vez. Con un fallo crítico, la criatura es arrastrada por el ciclón, quedando @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrada} ([[/act escape dc=32]]). Una criatura agarrada por el ciclón se mueve con él y sufre @Damage[(1d10+6)[void]]{1d10+6 daño del vacío} adicional al inicio de su turno, debe realizar una salvación de Reflejos contra el ciclón en el turno de éste sin importar si el ciclón se mueve o no. Una criatura que Huye con éxito del ciclón cae de una altura de [[/r {1d12*5} #Falling Distance]]{1d12 x 5 pies (1,5 - 18 m)}.</p>",
+      "stealth": "<p>(experto)</p>",
       "items": {
         "action->Gather Spirit": {
-          "name": "Gather Spirit",
-          "description": "<p><strong>Trigger</strong> Two or more creatures enter the area</p>\n<hr />\n<p><strong>Effect</strong> A spiraling column of spirits gather, becoming a whirling cyclone of souls @Template[type:burst|distance:5]{10 feet wide} and 60 feet tall. The haunt then rolls initiative.</p>"
+          "name": "Copngregar espíritus",
+          "description": "<p><strong>Desencadenante</strong> Dos o más criaturas entran en el área</p>\n<hr />\n<p><strong>Efecto</strong> Una columna de espíritus en espiral se congrega, convirtiéndose en un ciclón de almas de @Template[burst|distance:5]{10 pies (3 m) de ancho} y 60 pies (18 m) de alto. Tras esto, la aparición tira iniciativa.</p>"
         }
       }
     },
@@ -2804,14 +2804,14 @@
       }
     },
     "Toppling Furniture": {
-      "name": "Toppling Furniture",
-      "description": "<p>A mischievous spirit pushes a bookshelf over onto a creature.</p>",
-      "disable": "<p>@Check[type:athletics|dc:16|name:Hold the furniture upright] to hold the furniture upright or @Check[type:occultism|dc:18|name:Foil the spirit's influence] (trained) to foil the spirit's efforts to influence matter</p>",
-      "reset": "<p>If the haunt successfully damages a creature with Topple Furniture, the spirit laughs for [[/gmr 1d4 #Laughing Duration]]{1d4 rounds} as the haunt resets; each subsequent time the haunt activates, it must topple a different piece of upright furniture. If the haunt fails to damage a creature, the spirit wails in frustration and resets after pouting for [[/gmr 1d4 #Haunt Reset]]{1d4 hours}.</p>",
-      "stealth": "<p>(trained) to hear the spirit's grunt of exertion as it works to topple the furniture</p>",
+      "name": "Derribo de muebles",
+      "description": "<p>Un espíritu travieso empuja una estantería sobre una criatura.</p>",
+      "disable": "<p>@Check[athletics|dc:16|name:Sujetar el mueble] para sujetar el mueble u @Check[occultism|dc:18|name:Frustrar los intentos del espíritu] (entrenada) para frustrar los intentos del espíritu de influir en la materia</p>",
+      "reset": "<p>Si la aparición daña a una criatura, el espíritu se ríe durante [[/gmr 1d4 #Duración de la risa]]{1d4 asaltos} mientras la aparición se rearma; cada vez que se active la aparición de nuevo, deberá derribar un mueble diferente que esté en pie. Si la aparición no daña a la criatura, el espíritu gime de frustración y lo rearma tras hacer pucheros durante [[/gmr 1d4 #Rearme aparición]]{1d4 horas}.</p>",
+      "stealth": "<p>(entrenada) para oír al espíritu gruñir por el esfuerzo mientras trata de derribar los muebles.</p>",
       "items": {
         "action->Topple Furniture": {
-          "name": "Topple Furniture",
+          "name": "Derribo de mueble",
           "description": "<p><strong>Desencadenante</strong> Una criatura se mueve adyacente al mueble</p>\n<hr />\n<p><strong>Efecto</strong> El espíritu vuelca el mueble en un intento de aplastar a la criatura desencadenante. La criatura desencadenante sufre @Damage[(2d10+7)[bludgeoning]]{2d10+7 daño contundente} (salvación @Check[reflex|dc:22|basic]). Con un fallo, la criatura además queda @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbada}.</p>"
         }
       }
@@ -3083,14 +3083,14 @@
       }
     },
     "Violent Shove": {
-      "name": "Violent Shove",
-      "description": "<p>An invisible force bats creatures aside, hurling them into a nearby wall.</p>",
-      "disable": "<p>@Check[type:occultism|dc:19|name:Disperse the Force] (trained) to disperse the force or @Check[type:religion|dc:20|name:Ward yourself from harm] (trained) to ward yourself from harm</p>",
-      "reset": "<p>1 day</p>",
-      "stealth": "<p>(trained) to feel an ominous presence in the room</p>",
+      "name": "Empujón violento",
+      "description": "<p>Una fuerza invisible empuja a un lado a las criaturas, lanzándolas contra la pared más cercana.</p>",
+      "disable": "<p>@Check[occultism|dc:19|name:Dispersar la fuerza] (entrenada) para dispersar la fuerza o @Check[religion|dc:20|name:Protegerte del daño] (entrenada) para protegerte del daño.</p>",
+      "reset": "<p>1 día</p>",
+      "stealth": "<p>(entrenada) para sentir una presencia ominosa en la habitación.</p>",
       "items": {
         "action->Shove": {
-          "name": "Shove",
+          "name": "Empujón",
           "description": "<p><strong>Desencadenante</strong> Una criatura se mueve adyacente a la pared embrujada</p>\n<hr />\n<p><strong>Efecto</strong> Una poderosa fuerza recorre la habitación, empujando a todas las criaturas hacia la pared. Cada criatura debe realizar una salvación de Fortaleza CD 20.</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no sufre ningún efecto.</p>\n<p><strong>Éxito</strong> La criatura es empujada 5 pies (1,5 m) hacia la pared. Si choca contra la pared, sufre @Damage[(1d10+5)[bludgeoning]]{1d10+5 daño contundente}.</p>\n<p><strong>Fallo</strong> La criatura es empujada 10 pies (3 m) hacia la pared. Si choca contra la pared, sufre @Damage[(2d10+10)[bludgeoning]]{2d10+10 daño contundente}.</p>\n<p><strong>Fallo crítico</strong> La criatura es empujada 15 pies (4,5 m) hacia la pared. Si choca contra la pared, sufre @Damage[(3d10+15)[bludgeoning]]{3d10+15 daño contundente} y queda @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbada}.</p>"
         }
       }
@@ -3141,14 +3141,14 @@
       }
     },
     "Weight of Guilt": {
-      "name": "Weight of Guilt",
-      "description": "<p>Influenced by the guilt and regrets of the dead, creatures are wrapped in weighted chains that embody their own sins.</p>",
-      "disable": "<p>@Check[type:religion|dc:26|name:Disrupt the haunt] (expert) to disrupt the haunt through prayer or @Check[type:deception|dc:27|name:Openly defy your regrets] (expert) to openly defy your regrets and banish the haunt. Creatures who haven't committed sins or already made amends for their transgressions are immune to the effects of this haunt.</p>",
-      "reset": "<p>1 day</p>",
-      "stealth": "<p>(expert) to sense an oppressive aura of sorrow</p>",
+      "name": "El peso de la culpa",
+      "description": "<p>Las criaturas, influidas por la culpa y el remordimiento de los muertos, son envueltas por cadenas que representan sus propios pecados.</p>",
+      "disable": "<p>@Check[religion|dc:26|name:Dispersar la aparición] (experto) para dispersar la aparición mediante la oración o @Check[deception|dc:27|name:Desafiar abiertamente tus remordimientos] (experto) para desafiar abiertamente tus remordimientos y desterrar la aparición. Las criaturas que no han cometido pecados o que han hecho penitencia por sus transgresiones son inmunes a los efectos de este aparición.</p>",
+      "reset": "<p>1 día</p>",
+      "stealth": "<p>(experto) para sentir una opresiva aura de pena.</p>",
       "items": {
         "action->Mental Bind": {
-          "name": "Mental Bind",
+          "name": "Atadura mental",
           "description": "<p><strong>Desencadenante</strong> Una criatura entra en el área</p>\n<hr />\n<p><strong>Efecto</strong> Cada criatura en 30 pies (9 m) queda envuelta en pesadas cadenas espectrales forjadas a partir de sus propios pecados y remordimientos. Cada una debe tener éxito en una salvación de @Check[will|dc:25].</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no sufre ningún efecto.</p>\n<p><strong>Éxito</strong> La criatura sufre un penalizador -10 pies (3 m) por estatus a la Velocidad durante 1 asalto.</p>\n<p><strong>Fallo</strong> La criatura queda @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizada} hasta que [[/act escape dc=25]]{Huye} (CD 25).</p> \n<p><strong>Fallo crítico</strong> Como el fallo, pero la criatura queda abrumada por la culpa, quedando @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadada 2} durante 1 día.</p>"
         }
       }
