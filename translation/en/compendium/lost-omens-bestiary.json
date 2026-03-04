@@ -1049,7 +1049,7 @@
         },
         "action->Intense Chill": {
           "name": "Intense Chill",
-          "description": "<p>30 feet. @Damage[5d6[cold]] damage (@Check[reflex|dc:41|basic]). On a failure, the creature takes a –15-foot status penalty to its Speeds for 1 round.</p>"
+          "description": "<p>30 feet. @Damage[5d6[cold]|options:area-damage] damage (@Check[reflex|dc:41|basic|options:area-effect]). On a failure, the creature takes a –15-foot status penalty to its Speeds for 1 round.</p>"
         },
         "action->Tail Sweep": [
           {
@@ -2391,7 +2391,7 @@
         },
         "action->Dragon Heat": {
           "name": "Dragon Heat",
-          "description": "<p>5 feet, @Damage[5d6[fire]] damage (@Check[reflex|dc:40|basic] save)</p>"
+          "description": "<p>5 feet. @Damage[5d6[fire]|options:area-damage] damage (@Check[reflex|dc:40|basic|options:area-effect] save)</p>"
         },
         "action->Frightful Presence": {
           "name": "Frightful Presence",
@@ -2466,7 +2466,7 @@
         },
         "action->Dragon Heat": {
           "name": "Dragon Heat",
-          "description": "<p>5 feet, @Damage[5d6[fire]] damage (@Check[reflex|dc:40|basic] save)</p>"
+          "description": "<p>5 feet. @Damage[5d6[fire]|options:area-damage] damage (@Check[reflex|dc:40|basic|options:area-effect] save)</p>"
         },
         "action->Frightful Presence": {
           "name": "Frightful Presence",
@@ -3189,7 +3189,7 @@
         },
         "action->Kaleidoscopic Display": {
           "name": "Kaleidoscopic Display",
-          "description": "<p>90 feet. The coral formations covering the dragon's body shimmer with vivid colors, overwhelming the senses. Any creature entering or beginning its turn in the aura must attempt a @Check[will|dc:42] save. Regardless of outcome, the creature is temporarily immune to the dragon's Kaleidoscopic Display for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is blinded for 1 round and dazzled for 1 minute.</p>"
+          "description": "<p>90 feet. The coral formations covering the dragon's body shimmer with vivid colors, overwhelming the senses. Any creature entering or beginning its turn in the aura must attempt a @Check[will|dc:42|options:area-effect,inflicts:dazzled,inflicts:blinded] save. Regardless of outcome, the creature is temporarily immune to the dragon's Kaleidoscopic Display for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is blinded for 1 round and dazzled for 1 minute.</p>"
         },
         "action->Reef Bond": {
           "name": "Reef Bond",
@@ -3253,7 +3253,7 @@
         },
         "action->Kaleidoscopic Display": {
           "name": "Kaleidoscopic Display",
-          "description": "<p>90 feet. The coral formations covering the dragon's body shimmer with vivid colors, overwhelming the senses. Any creature entering or beginning its turn in the aura must attempt a @Check[will|dc:42] save. Regardless of outcome, the creature is temporarily immune to the dragon's Kaleidoscopic Display for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is blinded for 1 round and dazzled for 1 minute.</p>"
+          "description": "<p>90 feet. The coral formations covering the dragon's body shimmer with vivid colors, overwhelming the senses. Any creature entering or beginning its turn in the aura must attempt a @Check[will|dc:42|options:area-effect,inflicts:dazzled,inflicts:blinded] save. Regardless of outcome, the creature is temporarily immune to the dragon's Kaleidoscopic Display for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is blinded for 1 round and dazzled for 1 minute.</p>"
         },
         "action->Reef Bond": {
           "name": "Reef Bond",
@@ -6846,7 +6846,7 @@
         },
         "action->Miasma": {
           "name": "Miasma",
-          "description": "<p>20 feet.</p>\n<p>After the dragon uses their Poison Breath, a cloud of poison gas continues to emanate from their body for 1 round. Any creature that ends its turn in the miasma takes @Damage[6d6[poison]] damage (@Check[fortitude|dc:43|basic] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>"
+          "description": "<p>20 feet.</p>\n<p>After the dragon uses their Poison Breath, a cloud of poison gas continues to emanate from their body for 1 round. Any creature that ends its turn in the miasma takes @Damage[6d6[poison]|options:area-damage] damage (@Check[fortitude|dc:43|basic|options:area-effect] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>"
         },
         "action->Twisting Tail": {
           "name": "Twisting Tail",
@@ -6924,7 +6924,7 @@
         },
         "action->Miasma": {
           "name": "Miasma",
-          "description": "<p>20 feet.</p>\n<p>After the dragon uses their Poison Breath, a cloud of poison gas continues to emanate from their body for 1 round. Any creature that ends its turn in the miasma takes @Damage[6d6[poison]] damage (@Check[fortitude|dc:43|basic] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>"
+          "description": "<p>20 feet.</p>\n<p>After the dragon uses their Poison Breath, a cloud of poison gas continues to emanate from their body for 1 round. Any creature that ends its turn in the miasma takes @Damage[6d6[poison]|options:area-damage] damage (@Check[fortitude|dc:43|basic|options:area-effect] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>"
         },
         "action->Twisting Tail": {
           "name": "Twisting Tail",
