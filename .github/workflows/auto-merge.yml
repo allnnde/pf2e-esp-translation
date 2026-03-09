@@ -1,8 +1,8 @@
-name: Auto merge PR
+name: Auto merge Crowdin PR
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, synchronize, reopened]
 
 jobs:
   automerge:
@@ -13,7 +13,10 @@ jobs:
       pull-requests: write
 
     steps:
-      - name: Enable auto merge
-        run: gh pr merge ${{ github.event.pull_request.number }} --merge --auto --body "Auto merge"
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Merge PR
+        run: gh pr merge ${{ github.event.pull_request.number }} --merge --auto --body "Auto merge desde Crowdin"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
