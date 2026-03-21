@@ -25,6 +25,10 @@
       "name": "Controlado",
       "description": "<p>Te han dado una orden, te han dominado mágicamente o por lo demás han subvertido tu voluntad. Tu controlador dicta cómo actúas y puede hacer que uses cualquiera de sus acciones, incluyendo ataques, reacciones o incluso @UUID[Compendium.pf2e.actionspf2e.Item.A72nHGUtNXgY5Ey9]{Retrasar}. Por lo general, el controlador no tiene que gastar acciones propias cuando te controla.</p>"
     },
+    "Cursebound": {
+      "name": "Cursebound",
+      "description": "<p>Your oracular curse is constricting around you as you receive divine punishment after drawing too deeply on your mystery's powers. Cursebound is a condition that affects only creatures with an oracular curse, and cursebound always includes a value. Your specific oracular curse imposes unique negative effects depending on your cursebound value. You can remove the cursebound condition only by Refocusing.</p>"
+    },
     "Dazzled": {
       "name": "Deslumbrado",
       "description": "<p>Tus ojos han sido sobreestimulados o se te ha nublado la vista. Si la vista es tu único sentido preciso, todas las criaturas y objetos están @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{ocultos} de ti.</p>"
@@ -72,10 +76,6 @@
     "Frightened": {
       "name": "Asustado",
       "description": "<p>Eres presa del pánico y luchas para controlar los nervios. El estado asustado siempre incluye un valor. Sufres un penalizador por estatus igual a dicho valor a todas tus pruebas y CD. Si no se indica lo contrario, al final de cada uno de tus turnos el valor de tu estado asustado disminuye en 1.</p>"
-    },
-    "Glitching": {
-      "name": "Glitching",
-      "description": "<p>A glitching creature, hazard, or object with the tech trait experiences a combination of debilitating effects and moments of seizing up. The glitching condition always includes a value. If you have glitching equipment and take any action involving that equipment, you must attempt a flat check to see what occurs. If you have the glitching condition, you must attempt this @Check[flat|dc:resolve(5 + @item.badge.value)|showDC:all] at the beginning of each of your turns. The DC of the flat check equals 5 plus your condition value or the item's condition value.</p>\n<hr />\n<p><strong>Critical Success</strong> Reduce your glitching value by 1.</p>\n<p><strong>Success</strong> You act as normal or use your equipment as normal.</p>\n<p><strong>Failure</strong> You take an item penalty to all your checks and DCs equal to your glitching value or the glitching value of the item you're attempting to use, including saving throws, attack modifiers, and the DCs of abilities, effects, and spells you use.</p>\n<p><strong>Critical Failure</strong> A glitching object you tried to use doesn't function, and you lose the actions you took to attempt to use it. A glitching creature uses the same effect as a failure and is also @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}. A glitching hazard uses the same effect as a failure.</p>"
     },
     "Grabbed": {
       "name": "Agarrado",
@@ -152,10 +152,6 @@
       "name": "Anonadado",
       "description": "<p>Tus pensamientos y tus instintos están nublados. Anonadado siempre incluye un valor. Sufres un penalizador por estatus igual a dicho valor a las pruebas y a las CD basadas en la Inteligencia, la Sabiduría y el Carisma, incluyendo las salvaciones de Voluntad, los modificadores al ataque de conjuros, las CD de conjuros y las pruebas de habilidad que utilizan dichos modificadores por atributo. Si @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Lanzas un conjuro} estando anonadado, quedará perturbado a menos que tengas éxito en una @Check[type:flat|showDC:all|dc:resolve(5+@item.badge.value)] con una CD igual a 5 + tu valor de anonadado .</p>"
     },
-    "Suppressed": {
-      "name": "Suppressed",
-      "description": "<p>You've been affected by a high volume of incoming fire or a particularly dangerous attack that forces you to act less efficiently for your own safety. You take a –1 circumstance penalty to attack rolls and a –10-foot status penalty to all your Speeds.</p>"
-    },
     "Unconscious": {
       "name": "Inconsciente",
       "description": "<p>Estás dormido o te han noqueado. No puedes actuar. Sufres un penalizador -4 por estatus a la CA, la Percepción y las salvaciones de Reflejos, además de los estados @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} y @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido}. Cuando sufres este estado, caes @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} y sueltas los objetos que sostienes, si el efecto no indica lo contrario o el DJ no determina que estás en una posición que no te lo permite. </p>\n<p> Si estás inconsciente porque estás @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Moribundo}, no podrás despertar mientras estés a 0 Puntos de Golpe. Si se te devuelve a 1 Punto de Golpe o más mediante la curación, pierdes los estados moribundo e inconsciente y puedes actuar normalmente en tu siguiente turno. </p>\n<p>Si estás inconsciente y a 0 Puntos de Golpe, pero no moribundo, vuelves a 1 Punto de Golpe y despiertas una vez ha pasado el tiempo suficiente. El DJ es quien determina cuánto tiempo permaneces inconsciente, desde un mínimo de 10 minutos hasta varias horas. Si te curan, pierdes el estado inconsciente y puedes actuar normalmente en tu siguiente turno.</p>\n<p>Si estás inconsciente y tienes más de 1 Punto de Golpe (típicamente porque estás dormido o inconsciente debido a un efecto), despiertas de una de las siguientes formas.</p>\n<ul>\n<li>Sufres daño, aunque si el daño te reduce a 0 Puntos de Golpe, quedas inconsciente y sufres el estado moribundo de la forma normal.</li>\n<li>Recibes curación, diferente a la natural que obtienes del descanso.</li>\n<li>Alguien te mueve para despertarte mediante una acción de @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interactuar}.</li>\n<li>Hay mucho ruido a tu alrededor que podría despertarte. Al inicio de tu turno, haces automáticamente una prueba de Percepción contra la CD del ruido (o contra una CD menor si hay más de un ruido), despertando si tienes éxito. Si hay criaturas intentando no hacer ruido a tu alrededor, esta prueba de Percepción utiliza su CD de Sigilo. Algunos efectos te hacen dormir de forma tan profunda que no permiten esta prueba de Percepción.</li>\n<li>Si simplemente estás dormido el DJ decide que te despiertas, o bien porque has tenido una noche de sueño reparador, o bien porque algo ha interrumpido tu descanso.</li>\n</ul>"
@@ -171,10 +167,6 @@
     "Unnoticed": {
       "name": "Inadvertido",
       "description": "<p>Si estás inadvertido para una criatura, dicha criatura no tiene ni idea de que estás presente. Cuando estás inadvertido, también estás @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{No detectado}. Esto sólo importa para las aptitudes que se pueden utilizar sólo contra objetivos totalmente ignorantes de tu presencia.</p>"
-    },
-    "Untethered": {
-      "name": "Untethered",
-      "description": "<p>You're in a zero gravity (or similar) environment without a means of movement and float without support. You can't take move actions unless they specify they can be used in your current environment. At the end of your turn, you move 5 feet in the last direction you moved. You can take the Push Off action to change directions and the distance moved. Once you gain a means of moving in your environment, you lose this condition. Typically, a creature with the untethered condition in zero-gravity also gains the @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} conditions while untethered.</p>"
     },
     "Wounded": {
       "name": "Herido",
