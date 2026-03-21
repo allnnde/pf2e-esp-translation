@@ -2,7 +2,7 @@
   "label": "Conjuros",
   "entries": {
     "500 Toads": {
-      "name": "",
+      "name": "500 Toads",
       "description": "<p>You conjure hundreds of magical toads to fill the area and hop around. The vast quantity of hopping toads provides enough weight and height for the creatures to trigger any potential trap in the area that could be triggered by the weight, movement, or position of a Medium creature. The area is difficult terrain, and the magic reconstructs any toads destroyed by traps to keep the area full of toads for the duration of the spell.</p>"
     },
     "Aberrant Form": {
@@ -1529,6 +1529,7 @@
       "cost": "un espejo adornado que vale al menos 100 po, fruta redonda natural del tamaño y número de los ojos del objetivo, y la misma cantidad de agujas plateadas impecables que valen al menos 1 po cada una.",
       "description": "<p> Al anochecer durante 5 días, alineas la fruta frente al espejo, cantas el nombre del objetivo y visualizas sus ojos en tu mente. Exactamente a la medianoche del último día, clavas los alfileres a través de las frutas, imitando la acción de cegar metódicamente al objetivo para ti y tus compañeros. El objetivo se ve inmediatamente afectado y no puede detectar visualmente a ninguno de los lanzadores involucrados en el ritual; siempre que el ritual haya sido exitoso, el objetivo no es consciente de los efectos. desde elel ritual afecta la capacidad del objetivo para ver a los lanzadores, en lugar de hacer que los lanzadores @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}, efectos como la visión verdadera son ineficaces contra la cortina de ocultación; en cambio, el objetivo necesitaría eliminar la maldición con efectos como eliminar maldición. Para realizar este ritual, debes haber estado a menos de 5 pies del objetivo al menos una vez, lo suficientemente cerca como para poder ver bien sus ojos. El objetivo es temporalmente inmune a nuevos lanzamientos de la cortina de ocultación durante 1 año. </p><hr />\n <p> <strong> Éxito crítico </strong> El objetivo no puede detectar visualmente a los lanzadores mientras dura, y los hechizos de detección del objetivo no detectan a los objetivos. </p>\n <p> <strong> Éxito </strong> El objetivo no puede detectar visualmente a los lanzadores mientras dura, pero sus hechizos de detección funcionan normalmente. </p>\n <p> <strong> Fracaso </strong> El ritual no tiene efecto. </p>\n <p><strong> Fallo crítico </strong> El ritual fracasa y todos los lanzadores que participan en él son @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} durante las próximas 24 horas. </p>\n <hr />\n <p> <strong> Intensificado (8vo) </strong> No estás satisfecho con simplemente ocultarte del objetivo. El coste del espejo ritual aumenta a 1.000 po y se requiere un efecto personal del objetivo. Después de completar el ritual, el objetivo sufre 6d6 de daño mental y queda cegado durante 1semana, lo que requiere eliminar la maldición y restaurar los sentidos para finalizar el efecto antes de tiempo. El objetivo es consciente de que el ritual fue lanzado sobre él; sin embargo, no tiene ninguna información adicional. </p>",
       "primarycheck": "Ocultismo",
+      "secondarycheck": "Arcana, Deception, Stealth",
       "target": "1 criatura viviente"
     },
     "Concordant Choir": {
@@ -2272,6 +2273,14 @@
       "name": "Inspiración divina",
       "description": "<p> Infundes a un objetivo con energía espiritual, renovando su magia. Si prepara conjuros, recupera un conjuro de 6.º rango o inferior previamente lanzado ese mismo día, que puede lanzar de nuevo. Si lanza conjuros espontáneamente, recupera uno de sus espacios de conjuro de 6.º rango o inferior. Si dispone de reserva de foco, recupera sus Puntos de Foco como si hubiera Reenfocado. </p>",
       "target": "1 criatura voluntaria"
+    },
+    "Divine Keystone": {
+      "name": "Divine Keystone",
+      "cost": "holy water, powdered silver, and purified chalk worth 200 gp",
+      "description": "<p>You magically remove and consecrate the cornerstone of a building or ruin in the center of a settlement before returning the stone to its structure to spread its divine protection into the settlement around it. Once the final hammer strike returns the stone to its structure, the area protected by the sanctified stone becomes a sacred space, protecting the living from undead. Within the protected area, the consecrated site is holy, undead creatures can't be created or raised, and living creatures are @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} to the undead.</p>\n<p>A successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} used on a specific effect removes only that effect (such as the invisibility effect). However, destroying or removing the keystone ends the entire ritual and all its effects.</p>\n<hr />\n<p><strong>Critical Success</strong> You create the effects described above, and the keystone's consecration effect doubles its radius.</p>\n<p><strong>Success</strong> You create the effects described above.</p>\n<p><strong>Failure</strong> The ritual has no effect.</p>\n<p><strong>Critical Failure</strong> The area becomes a font of power for undead for the next month. All undead creatures in the ritual's area gain fast healing 3 and resistance 3 to holy.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.LiQDQYAYYE6Qg4yI]{Spell Effect: Divine Keystone (Critical Failure)}</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The emanation protected by the keystone increases by 20 feet.</p>",
+      "primarycheck": "Arcana (master) or Religion (expert)",
+      "requirements": "cornerstone from the structure of the casting area used as a locus",
+      "secondarycheck": "Architecture Lore, Crafting, or Engineering Lore"
     },
     "Divine Lance": {
       "name": "Lanza divina",
@@ -4201,14 +4210,6 @@
     "Imaginary Weapon": {
       "name": "Imaginary Weapon",
       "description": " <p> You create a simple weapon of force. Make a melee spell attack roll against your target's AC. If you hit, you deal 2d8 bludgeoning or slashing damage (your choice). On a critical success, you deal double damage and can choose to detonate your weapon to push the target 10 feet away from you. </p> \n <hr /> \n <p>  <strong> Heightened (+1) </strong>  The damage increases by 1d8. </p> ",
-      "spellVariants": {
-        "DXSeNnk6UK2ScLGI": {
-          "name": "Imaginary Weapon (Bludgeoning)"
-        },
-        "uqBNqB55cCGnzmcX": {
-          "name": "Imaginary Weapon (Slashing)"
-        }
-      },
       "target": "1 criatura"
     },
     "Imitate Fauna": {
@@ -6649,8 +6650,8 @@
       "name": "Roaring Applause",
       "description": " <p> Your flamboyant flourish invokes such powerful feelings in your audience that you incite cheers and applause. Targets of this spell must be able to see, hear, or otherwise understand you. The targets must attempt a Will save. </p> \n <hr /> \n <p>  <strong> Critical Success </strong>  The target is unaffected. </p> \n <p>  <strong> Success </strong>  The target becomes mildly distracted by your display and applauds while it isn't fully occupied. It can't use reactions. </p> \n <p>  <strong> Failure </strong>  The target applauds you so vigorously that it can't use reactions and is  @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]  {Lentificado 1} . The applause is so involved that it has the manipulate trait. This triggers reactions based on the manipulate trait at the start of the target's turn. </p> \n <p>  <strong> Critical Failure </strong>  As failure, plus the target is so distracted by its vigorous applauding of you that it's  @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]  {Fascinado}  with you. </p> \n <hr /> \n <p>  <strong> Heightened (6th) </strong>  You can target up to 10 creatures. </p> ",
       "heightening": {
-        "4": {
-          "target": "10 criaturas"
+        "6": {
+          "target": "10 creatures"
         }
       },
       "target": "1 criatura"
@@ -6921,15 +6922,7 @@
     },
     "Shadow Blast": {
       "name": "Explosión de sombra",
-      "description": "<p>Das forma a la sustancia sombría del Inframundo en forma de explosión. Elige entre daño por ácido, contundente, cortante, electricidad, espiritual, frío, fuego, fuerza, perforante y sónico y elige entre un @Template[cone|distance:30]{cono de 30 pies (9 m)}, una @Template[burst|distance:15]{explosión de 15 pies (4,5 m)} a 120 pies (36 m) o menos o una @Template[line|distance:50]{línea de 50 pies (15 m)}. La explosión inflige 6d8 daño del tipo elegido a cada criatura en el área (@Damage[(@item.rank+1)d8[acid]], @Damage[(@item.rank+1)d8[bludgeoning]], @Damage[(@item.rank+1)d8[cold]], @Damage[(@item.rank+1)d8[electricity]], @Damage[(@item.rank+1)d8[fire]], @Damage[(@item.rank+1)d8[force]], @Damage[(@item.rank+1)d8[piercing]], @Damage[(@item.rank+1)d8[slashing]], @Damage[(@item.rank+1)d8[sonic]] o @Damage[(@item.rank+1)d8[spirit]]).</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 1d8.</p>",
-      "spellVariants": {
-        "UTMlHk0o5FXLlwwM": {
-          "name": "Explosión de sombra (Voluntad)"
-        },
-        "zjyfdrWBaUVi4O7b": {
-          "name": "Explosión de sombra (Reflejos)"
-        }
-      }
+      "description": "<p>Das forma a la sustancia sombría del Inframundo en forma de explosión. Elige entre daño por ácido, contundente, cortante, electricidad, espiritual, frío, fuego, fuerza, perforante y sónico y elige entre un @Template[cone|distance:30]{cono de 30 pies (9 m)}, una @Template[burst|distance:15]{explosión de 15 pies (4,5 m)} a 120 pies (36 m) o menos o una @Template[line|distance:50]{línea de 50 pies (15 m)}. La explosión inflige 6d8 daño del tipo elegido a cada criatura en el área (@Damage[(@item.rank+1)d8[acid]], @Damage[(@item.rank+1)d8[bludgeoning]], @Damage[(@item.rank+1)d8[cold]], @Damage[(@item.rank+1)d8[electricity]], @Damage[(@item.rank+1)d8[fire]], @Damage[(@item.rank+1)d8[force]], @Damage[(@item.rank+1)d8[piercing]], @Damage[(@item.rank+1)d8[slashing]], @Damage[(@item.rank+1)d8[sonic]] o @Damage[(@item.rank+1)d8[spirit]]).</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 1d8.</p>"
     },
     "Shadow Double": {
       "name": "Shadow Double",
@@ -8092,7 +8085,15 @@
     },
     "Telekinetic Bombardment": {
       "name": "Telekinetic Bombardment",
-      "description": " <p> You grasp a piece of the landscape-such as a tree, carriage, or piece of masonry-and lob it in your foe's direction. Your missile crashes down in either a 10-foot burst (for most missiles) or a 30-foot line (for something long and tall, like a tree or a ship's mast), dealing 14d6 bludgeoning damage and turning its area into difficult terrain as it breaks into rubble. All creatures in the area must attempt a Reflex save. If the area is a line, it doesn't have to start from your square but can instead start anywhere in range, as long as the entire area remains within range. </p> \n <hr /> \n <p>  <strong> Critical Success </strong>  The creature is unaffected. </p> \n <p>  <strong> Success </strong>  The creature takes half damage. </p> \n <p>  <strong> Failure </strong>  The creature takes full damage and is knocked  @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]  {Tumbado} . </p> \n <p>  <strong> Critical Failure </strong>  The creature takes double damage, is knocked prone, and is  @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]  {Aturdido 1} . </p> \n <hr /> \n <p>  <strong> Heightened (+1) </strong>  The damage increases by 2d6. </p> "
+      "description": " <p> You grasp a piece of the landscape-such as a tree, carriage, or piece of masonry-and lob it in your foe's direction. Your missile crashes down in either a 10-foot burst (for most missiles) or a 30-foot line (for something long and tall, like a tree or a ship's mast), dealing 14d6 bludgeoning damage and turning its area into difficult terrain as it breaks into rubble. All creatures in the area must attempt a Reflex save. If the area is a line, it doesn't have to start from your square but can instead start anywhere in range, as long as the entire area remains within range. </p> \n <hr /> \n <p>  <strong> Critical Success </strong>  The creature is unaffected. </p> \n <p>  <strong> Success </strong>  The creature takes half damage. </p> \n <p>  <strong> Failure </strong>  The creature takes full damage and is knocked  @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]  {Tumbado} . </p> \n <p>  <strong> Critical Failure </strong>  The creature takes double damage, is knocked prone, and is  @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]  {Aturdido 1} . </p> \n <hr /> \n <p>  <strong> Heightened (+1) </strong>  The damage increases by 2d6. </p> ",
+      "spellVariants": {
+        "y9tYfMAFOxWWvgBi": {
+          "name": "10-foot Burst"
+        },
+        "ys8q58qeRiAyeRzV": {
+          "name": "30-foot Line"
+        }
+      }
     },
     "Telekinetic Hand": {
       "name": "Mano telecinética",
@@ -8372,6 +8373,11 @@
     "Time Skip": {
       "name": "Time Skip",
       "description": " <p> You manipulate time around your ally, pushing them forward a few moments in time. The target is  @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]  {Acelerado}  on its next turn and can use the action only to Step, Stride, or Strike. </p> \n <hr /> \n <p>  <strong> Heightened (+1) </strong>  You can one additional willing creature other than yourself within range. </p> ",
+      "heightening": {
+        "6": {
+          "target": "up to 4 willing creatures other than yourself"
+        }
+      },
       "target": "1 willing creature other than yourself"
     },
     "Timely Tutor": {
@@ -8814,7 +8820,12 @@
     },
     "Vanishing Tracks": {
       "name": "Desvanecer rastros",
-      "description": "<p>Escondes los rastros que vas dejando tras de ti. La CD de las pruebas para Rastrearte obtendrá un bonificador +4 por estatus o será igual a tu CD de conjuros, lo que arroje un resultado mayor.</p>\n<hr />\n<p><strong>Potenciado (2.º)</strong> La duración se incrementa a 8 horas.</p>\n<p><strong>Potenciado (4.º)</strong> La duración se incrementa a 8 horas. El conjuro tiene un alcance de 20 pies (6 m) y un área de una emanación de 20 pies (6 m), afectando hasta 10 criaturas a tu elección en dicha área.</p>"
+      "description": "<p>Escondes los rastros que vas dejando tras de ti. La CD de las pruebas para Rastrearte obtendrá un bonificador +4 por estatus o será igual a tu CD de conjuros, lo que arroje un resultado mayor.</p>\n<hr />\n<p><strong>Potenciado (2.º)</strong> La duración se incrementa a 8 horas.</p>\n<p><strong>Potenciado (4.º)</strong> La duración se incrementa a 8 horas. El conjuro tiene un alcance de 20 pies (6 m) y un área de una emanación de 20 pies (6 m), afectando hasta 10 criaturas a tu elección en dicha área.</p>",
+      "heightening": {
+        "4": {
+          "target": "up to 10 creatures"
+        }
+      }
     },
     "Vapor Form": {
       "name": "Forma de vapor",
@@ -9436,18 +9447,19 @@
     }
   },
   "folders": {
-    "10th Rank": "10th Rank",
-    "1st Rank": "1st Rank",
-    "2nd Rank": "2nd Rank",
-    "4th Rank": "4th Rank",
-    "6th Rank": "6th Rank",
-    "7th Rank": "7th Rank",
-    "8th Rank": "8th Rank",
-    "9th Rank": "9th Rank",
     "Cantrip": "Cantrip",
+    "Rank 1": "Rank 1",
+    "Spells": "Spells",
+    "Rank 2": "Rank 2",
+    "Rank 3": "Rank 3",
+    "Rank 4": "Rank 4",
+    "Rank 5": "Rank 5",
+    "Rank 6": "Rank 6",
+    "Rank 7": "Rank 7",
+    "Rank 8": "Rank 8",
+    "Rank 9": "Rank 9",
+    "Rank 10": "Rank 10",
     "Focus": "Focus",
-    "Ritual": "Ritual",
-    "3rd Rank": "3rd Rank",
-    "5th Rank": "5th Rank"
+    "Rituals": "Rituals"
   }
 }
