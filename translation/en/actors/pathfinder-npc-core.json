@@ -960,7 +960,6 @@
     "Bone Mother": {
       "name": "Bone Mother",
       "publicNotes": "<p>The bone mother—a warren's oracle—cuts an imposing figure. Bone mothers can be any gender despite the name, wearing the skull of a giant rat and covering their clothing in dangling bones. When a member of the warren dies, they gift a bone (usually a finger bone) to the oracle, who exists as both a physical repository of those who came before and a living history of their warren.</p>\n<hr />\n<p>Ysoki (or, as outsiders call them, ratfolk) in their warrens have a society that is both stern and democratic, caring and ever vigilant. And at the top is a handful of intimidating and protective figures who make sure the swarm remains safe.</p>",
-      "speed": "swarming",
       "items": {
         "spellcastingEntry->Occult Spontaneous Spells": {
           "name": "Occult Spontaneous Spells"
@@ -979,7 +978,11 @@
         },
         "action->Rattling Bones": {
           "name": "Rattling Bones",
-          "description": "<p>The bone mother or another ratfolk in their square takes damage from a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> Spirits from the bones emerge to deal @Damage[2d6[spirit]] damage to the attacker with a @Check[will|dc:24|basic] save.</p>"
+          "description": "<p><strong>Trigger</strong> The bone mother or another ratfolk in their square takes damage from a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> Spirits from the bones emerge to deal @Damage[2d6[spirit]] damage to the attacker with a @Check[will|dc:24|basic] save.</p>"
+        },
+        "action->Swarming": {
+          "name": "Swarming",
+          "description": "<p>A ysoki can end their movement in the same square as an ally that also has this ability. Only two such creatures can share the same space.</p>"
         },
         "lore->Fortune-Telling Lore": {
           "name": "Fortune-Telling Lore"
@@ -1570,7 +1573,7 @@
         },
         "action->By Design": {
           "name": "By Design",
-          "description": "<p>The construction worker spends 1 minute inspecting the layout of a room and attempts a @Check[Architecture Lore|dc:22] check. On a success, they learn the size and layout of all adjacent rooms on the same floor (or all rooms on the floor on a critical success). They can inspect each room only once per day.</p>"
+          "description": "<p>The construction worker spends 1 minute inspecting the layout of a room and attempts a @Check[architecture-lore|dc:22] check. On a success, they learn the size and layout of all adjacent rooms on the same floor (or all rooms on the floor on a critical success). They can inspect each room only once per day.</p>"
         },
         "action->Specialty Contractor": {
           "name": "Specialty Contractor",
@@ -2547,7 +2550,7 @@
         },
         "action->Hogtie": {
           "name": "Hogtie",
-          "description": "<p><strong>Requirements</strong> A creature is grappled or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the drover's lasso</p>\n<hr />\n<p><strong>Effect</strong> The drover can pull the grappled creature up to 20 feet. Then, if the creature is within reach, the drover hogties it, attempting to [[/act grapple]] it again. On a success, the creature is restrained with the lasso, and the drover doesn't need to maintain the grapple. The hogtie lasts until the creature @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} or the lasso is @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Forced Open}. The drover can Interact to free a hogtied creature within reach.</p>"
+          "description": "<p><strong>Requirements</strong> A creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the drover's lasso</p>\n<hr />\n<p><strong>Effect</strong> The drover can pull the grabbed creature up to 20 feet. Then, if the creature is within reach, the drover hogties it, attempting to [[/act grapple]] it again. On a success, the creature is restrained with the lasso, and the drover doesn't need to maintain the grapple. The hogtie lasts until the creature @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} or the lasso is @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Forced Open}. The drover can Interact to free a hogtied creature within reach.</p>"
         },
         "action->Lasso": {
           "name": "Lasso",
@@ -2631,7 +2634,7 @@
         },
         "action->Bombing Barrage": {
           "name": "Bombing Barrage",
-          "description": "<p>he dwarf battalion draws alchemical bombs, then hurls them at distant foes. This volley is a @Template[type:burst|distance:10] within 60 feet that deals @Damage[3d6[@item.flags.pf2e.rulesSelections.bombingBarrage]|options:area-damage] damage with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage is either acid, fire, or electricity damage, depending on which type of bombs the battalion used. When the dwarf battalion is reduced to 2 or fewer segments, this area decreases to a @Template[type:burst|distance:5].</p>"
+          "description": "<p>he dwarf battalion draws alchemical bombs, then hurls them at distant foes. This volley is a @Template[type:burst|distance:10] within 60 feet that deals @Damage[3d6[@item.flags.system.rulesSelections.bombingBarrage]|options:area-damage] damage with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage is either acid, fire, or electricity damage, depending on which type of bombs the battalion used. When the dwarf battalion is reduced to 2 or fewer segments, this area decreases to a @Template[type:burst|distance:5].</p>"
         },
         "action->Coordinated Pummel": {
           "name": "Coordinated Pummel",
@@ -4989,7 +4992,7 @@
         },
         "action->On the Hunt": {
           "name": "On the Hunt",
-          "description": "<p>The hunter designates one creature they're observing or tracking as their prey.</p>\n<p>The hunter gains a +2 circumstance bonus to Perception checks to [[/act seek]] the prey and to Survival checks to [[/act track]] the prey.</p>\n<p>The first time the hunter hits the designated prey in a round, they deal an additional 1d4 precision damage. These effects last until the poacher uses On the Hunt again.</p>"
+          "description": "<p>The hunter designates one creature they're observing or tracking as their prey.</p>\n<p>The hunter gains a +2 circumstance bonus to Perception checks to [[/act seek]] the prey and to Survival checks to [[/act track]] the prey.</p>\n<p>The first time the hunter hits the designated prey in a round, they deal an additional 1d8 precision damage. These effects last until the hunter uses On the Hunt again.</p>"
         },
         "lore->Forest Lore": {
           "name": "Forest Lore"
@@ -5064,7 +5067,7 @@
         },
         "action->A Favor for a Favor": {
           "name": "A Favor for a Favor",
-          "description": "<p>The infernal registrar has the authority to make limited infernal contracts with other mortals. They summon a contract with the legal language they desire. Detecting @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} clauses in the contract requires a successful @Check[society|dc:43] or a @Check[Legal Lore|dc:38] check. Once signed, the contract vanishes into the infernal filing system in Hell. The infernal registrar cannot grant any boons beyond their own personal power (usually limited to information, advice, or access to elements of the infernal bureaucracy).</p>"
+          "description": "<p>The infernal registrar has the authority to make limited infernal contracts with other mortals. They summon a contract with the legal language they desire. Detecting @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} clauses in the contract requires a successful @Check[society|dc:43] or a @Check[legal-lore|dc:38] check. Once signed, the contract vanishes into the infernal filing system in Hell. The infernal registrar cannot grant any boons beyond their own personal power (usually limited to information, advice, or access to elements of the infernal bureaucracy).</p>"
         },
         "action->Request Document": {
           "name": "Request Document",
@@ -5379,11 +5382,11 @@
         },
         "action->Self-Destruct": {
           "name": "Self-Destruct",
-          "description": "<p><strong>Trigger</strong> The juggernaut is reduced to 0 Hit Points</p>\n<hr />\n<p><strong>Effect</strong> The juggernaut collapses and their armor emits a steady ticking sound. At the beginning of what would have been the juggernaut's next turn, the armor's power source explodes, destroying it completely and dealing @Damage[10d6[@actor.flags.pf2e.powerSource]|options:area-damage] damage in a @Template[type:emanation|distance:30] with a @Check[reflex|dc:33|basic|options:area-effect] save. The explosion deals the damage type of the armor's power source. An adjacent creature can cancel the self-destruct sequence by succeeding at a DC 33 Thievery check to [[/act disable-device dc=33]].</p>"
+          "description": "<p><strong>Trigger</strong> The juggernaut is reduced to 0 Hit Points</p>\n<hr />\n<p><strong>Effect</strong> The juggernaut collapses and their armor emits a steady ticking sound. At the beginning of what would have been the juggernaut's next turn, the armor's power source explodes, destroying it completely and dealing @Damage[10d6[@actor.flags.system.powerSource]|options:area-damage] damage in a @Template[type:emanation|distance:30] with a @Check[reflex|dc:33|basic|options:area-effect] save. The explosion deals the damage type of the armor's power source. An adjacent creature can cancel the self-destruct sequence by succeeding at a DC 33 Thievery check to [[/act disable-device dc=33]].</p>"
         },
         "action->Energy Projector": {
           "name": "Energy Projector",
-          "description": "<p>A juggernaut carries a powerful cannon-like projectile weapon that requires two hands to wield and deals @Damage[14d6[@actor.flags.pf2e.powerSource]|options:area-damage] damage to all creatures in its area with a DC 31 basic save; the damage type, area, and save are based on the armor's power source, as listed below. Once activated, Energy Projector can't be used again for [[/gmr 1d4 #Recharge Energy Projector]]{1d4 rounds}.</p>\n<ul>\n<li><strong>Cold</strong> @Template[type:cone|distance:30] of cold (@Check[reflex|basic|dc:31|options:area-effect|traits:cold])</li>\n<li><strong>Electricity</strong> @Template[type:line|distance:60] of electricity (@Check[reflex|basic|dc:31|options:area-effect|traits:electricity])</li>\n<li><strong>Fire</strong> @Template[type:cone|distance:30] of fire (@Check[reflex|basic|dc:31|options:area-effect|traits:fire])</li>\n<li><strong>Poison</strong> @Template[type:cone|distance:30] of poison gas (@Check[fortitude|basic|dc:31|options:area-effect|traits:poison])</li>\n</ul>"
+          "description": "<p>A juggernaut carries a powerful cannon-like projectile weapon that requires two hands to wield and deals @Damage[14d6[@actor.flags.system.powerSource]|options:area-damage] damage to all creatures in its area with a DC 31 basic save; the damage type, area, and save are based on the armor's power source, as listed below. Once activated, Energy Projector can't be used again for [[/gmr 1d4 #Recharge Energy Projector]]{1d4 rounds}.</p>\n<ul>\n<li><strong>Cold</strong> @Template[type:cone|distance:30] of cold (@Check[reflex|basic|dc:31|options:area-effect|traits:cold])</li>\n<li><strong>Electricity</strong> @Template[type:line|distance:60] of electricity (@Check[reflex|basic|dc:31|options:area-effect|traits:electricity])</li>\n<li><strong>Fire</strong> @Template[type:cone|distance:30] of fire (@Check[reflex|basic|dc:31|options:area-effect|traits:fire])</li>\n<li><strong>Poison</strong> @Template[type:cone|distance:30] of poison gas (@Check[fortitude|basic|dc:31|options:area-effect|traits:poison])</li>\n</ul>"
         },
         "action->Jump Jets": {
           "name": "Jump Jets",
@@ -6440,7 +6443,7 @@
     },
     "Monster Hunter": {
       "name": "Monster Hunter",
-      "publicNotes": "<p>Bounty hunters are constantly on the move, whether within city walls or the wilderness, trailing their fugitive quarries for capture... or disposal. Often relying on stealth or deception as much as martial skill, bounty hunters employ a vast array of talents to accomplish their goals and collect the hefty payout.</p>\n<hr />\n<p>Whether they're hired to wage war, protect a caravan, or infiltrate an impenetrable fortress, there's ample work for mercenaries all over Golarion.</p>",
+      "publicNotes": "<p>Some mercenaries eschew the complications of politics and fealty and just get paid to hunt monsters. It's a straightforward form of mercenary service, often dangerous in the extreme, but one that can yield glory and fame.</p>\n<hr />\n<p>Whether they're hired to wage war, protect a caravan, or infiltrate an impenetrable fortress, there's ample work for mercenaries all over Golarion.</p>",
       "items": {
         "strike-melee->Greataxe": {
           "name": "Greataxe"
@@ -7048,7 +7051,7 @@
         },
         "action->Threatening Aura": {
           "name": "Threatening Aura",
-          "description": "<p>60 feet, @Check[will|dc:30]. The duelist's presence makes foes hesitate. Any enemy that enters or starts its turn in the aura must succeed at the Will save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. Regardless of the result of its save, the creature is temporarily immune for 1 day.</p>"
+          "description": "<p>60 feet. @Check[will|dc:30|options:area-effect,inflicts:stunned]. The duelist's presence makes foes hesitate. Any enemy that enters or starts its turn in the aura must succeed at the Will save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. Regardless of the result of its save, the creature is temporarily immune for 1 day.</p>"
         },
         "action->Ace Shooter": {
           "name": "Ace Shooter",
@@ -8074,7 +8077,7 @@
         },
         "action->Expanded Splash": {
           "name": "Expanded Splash",
-          "description": "<p>The siegebreaker's grenades deal splash damage in a @Template[burst|distance:10]{10-foot radius}.</p>"
+          "description": "<p>The siegebreaker's grenades deal splash damage in a @Template[emanation|distance:10]{10-foot radius}.</p>"
         },
         "action->Quick Grenadier": {
           "name": "Quick Grenadier",
@@ -8940,7 +8943,7 @@
         },
         "action->On the Hunt": {
           "name": "On the Hunt",
-          "description": "<p>The tracker designates one creature they're observing or tracking as their prey.</p>\n<p>The tracker gains a +2 circumstance bonus to Perception checks to [[/act seek]] the prey and to Survival checks to [[/act track]] the prey.</p>\n<p>The first time the tracker hits the designated prey in a round, they deal an additional 1d4 precision damage. These effects last until the poacher uses On the Hunt again.</p>"
+          "description": "<p>The tracker designates one creature they're observing or tracking as their prey.</p>\n<p>The tracker gains a +2 circumstance bonus to Perception checks to [[/act seek]] the prey and to Survival checks to [[/act track]] the prey.</p>\n<p>The first time the tracker hits the designated prey in a round, they deal an additional 1d4 precision damage. These effects last until the tracker uses On the Hunt again.</p>"
         },
         "lore->Forest Lore": {
           "name": "Forest Lore"
@@ -9138,7 +9141,7 @@
         },
         "action->Harness Wickedness": {
           "name": "Harness Wickedness",
-          "description": "<p>The tripkee fiend keeper isn't stupefied</p>\n<hr />\n<p><strong>Effect</strong> The tripkee fiend keeper allows a portion of the fiendish power they have absorbed to flow through their body. For the next minute, the tripkee fiend keeper's Strikes deal an additional die of damage and gain the unholy trait. The tripkee fiend keeper also gains 10 temporary Hit Points, a +5-foot status bonus to Speed for the duration, and weakness 5 to holy. At the end of the duration, the tripkee fiend keeper is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 hour.</p>",
+          "description": "<p><strong>Requirements</strong> The tripkee fiend keeper isn't stupefied</p>\n<hr />\n<p><strong>Effect</strong> The tripkee fiend keeper allows a portion of the fiendish power they have absorbed to flow through their body. For the next minute, the tripkee fiend keeper's Strikes deal an additional die of damage and gain the unholy trait. The tripkee fiend keeper also gains 10 temporary Hit Points, a +5-foot status bonus to Speed for the duration, and weakness 5 to holy. At the end of the duration, the tripkee fiend keeper is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 hour.</p>",
           "selfEffect": "Effect: Harness Wickedness"
         }
       }
