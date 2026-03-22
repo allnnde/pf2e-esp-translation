@@ -1,3 +1,7 @@
+## [6.41.10](https://github.com/allnnde/pf2e-esp-translation/compare/v6.41.9...v6.41.10) (2026-03-22)
+
+
+
 ## [6.41.9](https://github.com/allnnde/pf2e-esp-translation/compare/v6.41.8...v6.41.9) (2026-03-22)
 
 
@@ -16,10 +20,6 @@
 
 
 ## [6.41.6](https://github.com/allnnde/pf2e-esp-translation/compare/v6.41.5...v6.41.6) (2026-03-21)
-
-
-
-## [6.41.5](https://github.com/allnnde/pf2e-esp-translation/compare/v6.41.4...v6.41.5) (2026-03-21)
 
 
 
