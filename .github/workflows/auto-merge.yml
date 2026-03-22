@@ -19,4 +19,4 @@ jobs:
       - name: Merge PR
         run: gh pr merge ${{ github.event.pull_request.number }} --merge --auto --body "Auto merge desde Crowdin"
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.AUTO_MERGE_TOKEN }}
