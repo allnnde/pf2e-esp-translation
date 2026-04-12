@@ -46,6 +46,10 @@
       "name": "Primeros auxilios",
       "description": "<p><strong>Requisitos</strong>Tienes en tus manos @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]{material de curas} o dispones de él.</p>\n<hr />\n<p>Administras Primeros auxilios a una criatura adyacente que está @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Moribunda} o @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Sangrando}. Si una criatura está a la vez moribunda y sangrando, elige cuál de las aflicciones vas a tratar antes de hacer la tirada. Puedes administrar Primeros auxilios de nuevo para intentar remediar el otro efecto.</p>\n<ul>\n<li><strong>Estabilizar</strong> Haz una prueba de <span data-pf2-action=\"administerFirstAid\" data-pf2-variant=\"stabilize\" data-pf2-glyph=\"D\">Medicina</span> sobre una criatura que \nestá a 0 Puntos de Golpe y tiene el estado moribundo. La CD es igual a 5 + la CD de la tirada de recuperación de dicha criatura (típicamente 15 + su valor de moribundo).</li>\n<li><strong>Detener la hemorragia</strong> Haz una prueba de <span data-pf2-action=\"administerFirstAid\" data-pf2-variant=\"stop-bleeding\" data-pf2-glyph=\"D\">Medicina</span> sobre una criatura que está sufriendo daño daño por sangrado. La CD suele ser la misma del efecto que causó el sangrado.</li>\n</ul>\n<hr />\n<p><strong>Éxito</strong> Si estás intentando estabilizar, el objetivo pierde el estado moribundo (pero permanece @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Inconsciente}). Si intentas detener la hemorragia, el objetivo se beneficia de una recuperación asistida con la CD rebajada por una ayuda particularmente apropiada.</p>\n<p><strong>Fallo crítico</strong> Si intentabas estabilizar, el valor de moribundo del objetivo se incrementa en 1. Si intentabas detener la hemorragia, el objetivo sufre de inmediato una cantidad de daño igual a su daño persistente por sangrado.</p>"
     },
+    "Adopt Persona": {
+      "name": "Adopt Persona",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Your tattoo helps you create a temporary cover to infiltrate a protected area or escape a dangerous situation. It casts 2nd-rank @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise} and 2nd-rank @UUID[Compendium.pf2e.spells-srd.Item.yV7Ouzaoe7DHLESI]{Ventriloquism} on you. The duration of both effects is 10 minutes.</p>"
+    },
     "Aegis of Envy": {
       "name": "Aegis of Envy",
       "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Spend 1 Mythic Point. The spirits of eight runelords of envy (Naaft, Tannaris, Ivamura, Jurah, Chalsardra, Esedrea, Zarve, Desamelia, and Phirandi) swirl about you for 1 minute. While at least one of the spirits remains, whenever you take damage, you can use a reaction that has the concentrate trait to gain resistance 10 to that damage, or resistance 20 if the damage was dealt by Xanderghul, the runelord of pride. Each time you use this feat to gain resistance, one of the spirits disappears.</p>"
@@ -606,10 +610,6 @@
       "name": "Drenar objeto vinculado",
       "description": "<p><strong>Frecuencia</strong> una vez al día</p>\n<p><strong>Requisitos</strong> Tu objeto vinculado está en tu persona.</p>\n<hr />\n<p>Gastas el poder mágico almacenado en tu objeto vinculado. Durante el turno actual, puedes lanzar un conjuro que preparaste hoy y ya lanzaste, sin gastar un espacio de conjuro. Aún sigues teniendo que Lanzar el conjuro y cumplir los demás requisitos de este.</p>"
     },
-    "Drain Familiar": {
-      "name": "Drenar familiar",
-      "description": "<p> <strong> Frecuencia </strong> una vez al día </p>\n <p> <strong> Requisitos </strong> Tu familiar está contigo. </p>\n <hr />\n <p> Gastas el poder mágico almacenado en tu familiar. Durante el turno actual, puedes lanzar un hechizo que preparaste hoy y ya lanzaste, sin gastar un espacio de hechizo. Aún debes lanzar el hechizo y cumplir con los demás requisitos del hechizo. </p>"
-    },
     "Drain Life": {
       "name": "Drenar La Vida",
       "description": "<p> Tu eidolon ataca a una criatura viviente y drena parte de la fuerza vital de la criatura para alimentar tu vínculo compartido. Tu eidolon ataca a un enemigo vivo. Si el Golpe impacta y causa daño, el objetivo debe intentar una salvación de Fortaleza, con los siguientes efectos. En un golpe crítico, el enemigo usa el resultado un grado peor de lo que obtuvo. </p>\n <p> <strong> Éxito crítico </strong> Sin efecto. </p>\n <p> <strong> Éxito </strong> Tu eidolondrena una pequeña cantidad de fuerza vital. El enemigo sufre un daño de vacío adicional equivalente a la mitad de tu nivel. </p>\n <p> <strong> Fracaso </strong> Tu eidolon drena suficiente fuerza vital para satisfacerse. El enemigo recibe daño de vacío adicional equivalente a la mitad de tu nivel y es @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}. Tu eidolon gana puntos de vida temporales iguales al nivel del enemigo, que duran 1 minuto. </p>\n <p> <strong> Fallo crítico </strong> Tu eidolonDrena una cantidad increíble de fuerza vital y está completamente repleto de energía. Como fracaso, pero el enemigo es @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 2} y ​​los puntos de vida temporales equivalen al doble del nivel del enemigo. </p>"
@@ -1157,6 +1157,10 @@
       "name": "Liar's Hidden Blade",
       "description": "<p><strong>Requirements</strong> Your previous action was an unsuccessful Strike with the weapon from the @UUID[Compendium.pf2e.classfeatures.Item.ktgzHtKoeUZ5H8KA]{Shadow Sheath}</p>\n<hr />\n<p><strong>Effect</strong> The shadow weapon you threw fades, the distraction covering your true intention all along—a second strike in hidden in the blind spot of the first! Interact to draw another weapon from the shadow sheath, then Strike with it at the same multiple attack penalty as the unsuccessful attack. The opponent is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to this attack.</p>\n<p>This Strike counts toward your multiple attack penalty as normal. After the Strike resolves, you can Interact to draw another weapon from the shadow sheath.</p>"
     },
+    "Liberate Self": {
+      "name": "Liberate Self",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> You're @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> Attempt to Escape, rolling the check twice and taking the better result.</p>"
+    },
     "Liberating Step": {
       "name": "Paso Liberador",
       "description": "<p> <strong> Desencadenante </strong> Un enemigo daña, @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarra} o @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Apresa} a un aliado tuyo, y ambos se encuentran a 15 pies (4,5 m) o menos de ti.</p>\n <hr />\n <p> Liberas a un aliado de toda restricción. </p>\n <p> Si el desencadenante ha sido que un aliado sufra daño, éste obtiene tanta resistencia a todo tipo de daño contra el daño desencadenante como 2 + tu nivel. </p>\n <p> El aliado puede intentar liberarse de los efectos que le apresan, neutralizan, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizan} , o @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralizan}. O bien puede hacer una nueva salvación contra uno de dichos efectos que permite una salvación, o intentar @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapar} de un efecto como acción gratuita. </p>\n <p> Si puede moverse, el aliado puede dar un Paso como acción gratuita, incluso si no necesita escapar. </p>\n <p> @UUID[Compendium.pf2e.feat-effects.Item.DawVHfoPKbPJsz4k]{Effect: Reacción del campeón} </p>"
@@ -1442,6 +1446,10 @@
     "Psychometric Assessment": {
       "name": "evaluación psicometrica",
       "description": "<p> <strong> Requisitos </strong> Tus manos desnudas tocan un objeto en el que detectaste resonancia psicométrica </p>\n <hr />\n <p> <strong> Efecto </strong> Pasas 1 minuto concentrándote en el objeto para tener una visión del rostro de la persona que imbuyó al objeto con tal emoción en primer lugar. Si la emoción asociada es dolorosamente negativa, podrías sufrir @Damage[1d6[mental]] de daño, según lo determine el DJ. </p>"
+    },
+    "Puncture Flesh": {
+      "name": "Puncture Flesh",
+      "description": "<p><strong>Trigger</strong> Your last action was to deal piercing damage to an enemy within your reach</p>\n<hr />\n<p><strong>Effect</strong> Attempt an Athletics check to [[/act grapple]] the same enemy. The weapon that dealt the triggering damage gains the grapple trait for this check. On a success, the target also takes @Damage[1d8[persistent,piercing]] damage (or @Damage[2d8[persistent,piercing]] damage on a critical success). When the target is no longer @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by you, the persistent damage ends.</p>"
     },
     "Pursue a Lead": {
       "name": "Seguir una pista",
@@ -1808,6 +1816,11 @@
       "name": "Rompedor de asedio",
       "description": "<p><strong>Requirements</strong> You're wielding a firearm that has the kickback or scatter trait, or a two-handed crossbow.</p>\n<hr />\n<p>With unbelievable force, you charge and smash your weapon into a target before digging in your heels and pulling the trigger. @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap} or Stride, then make a Strike with the required firearm or crossbow against an adjacent target. This Strike deals an additional @Damage[3d8[bludgeoning]] damage and ignores 10 points of the target's Hardness (if any), or of their shield's Hardness if the target uses Shield Block.</p>\n<p>After the Strike, you become @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and position the required weapon defensively, as the parry trait, gaining a +1 circumstance bonus to AC, or a +2 circumstance bonus if the chosen weapon has the parry trait. Both effects last until the start of your next turn. If a force would move you while you're immobilized in this way, it must succeed at an appropriate check against your class DC.</p>"
     },
+    "Size Up": {
+      "name": "Size Up",
+      "description": "<p>You designate a single, non-mindless creature as your focus and assess its motivations. You must be able to see and hear the creature. You gain a +2 circumstance bonus to Perception checks when you Sense the Motive of your focus and a +2 circumstance bonus to your Perception DC should your focus attempt to Lie or [[/act feint]] against you. You gain a +2 circumstance bonus to Deception, Diplomacy, and Intimidation checks against your focus. You can only have one creature designated as your focus at a time. If you use Size Up against a creature when you already have a creature designated, the prior creature loses the designation and the new focus gains the designation. Your designation otherwise lasts until your next daily preparations.</p>",
+      "selfEffect": "Effect: Size Up"
+    },
     "Skirt the Underworld": {
       "name": "Skirt the Underworld",
       "description": "<p>You skirt into the world of the dead, becoming @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} for 1 round, then Fly up to your Speed. Each enemy adjacent to you at any point during this movement must succeed at a @Check[fortitude|against:exemplar|options:inflicts:blinded] save against your class DC or become @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute (or permanently on a critical failure).</p>\n<p>For each creature blinded by this effect, the duration of the granted invisibility extends by 1 round. Undead and other creatures with strong ties to the world of the dead, such as psychopomps, are immune to this effect.</p>"
@@ -1850,7 +1863,7 @@
     },
     "Spellsling": {
       "name": "Hechizo",
-      "description": "<p><strong>Requirements</strong> You're wielding your bonded beast gun or another magic firearm</p>\n<hr />\n<p><strong>Effect</strong> You Cast a Spell that takes 1 or 2 actions to cast and requires a spell attack roll. The effects of the spell do not occur immediately but are imbued into the beast gun you're wielding. Make a Strike with that beast gun. Your spell flies with the ammunition, using your attack roll result to determine the effects of both the Strike and the spell. This counts as two attacks for the purposes of determining your multiple attack penalty, but you don't apply the penalty until after you've completed resolving the attack and spell.</p>\n<hr />\n<p><strong>Special</strong> If you also have the @UUID[Compendium.pf2e.actionspf2e.Item.3MiV0maH8imtnVwS]{Spell-Woven Shot} action you can load and activate a piece of magical ammunition as a free action before making a Spellsling attack once per 10 minutes.</p>"
+      "description": "<p><strong>Requirements</strong> You're wielding your bonded beast gun or another magic firearm</p>\n<hr />\n<p><strong>Effect</strong> You Cast a Spell that takes 1 or 2 actions to cast and requires a spell attack roll. The effects of the spell do not occur immediately but are imbued into the beast gun you're wielding. Make a Strike with that beast gun. Your spell flies with the ammunition, using your attack roll result to determine the effects of both the Strike and the spell. Combine the Strike and spell's damage for the purpose of resistances and weaknesses. This counts as two attacks for the purposes of determining your multiple attack penalty, but you don't apply the penalty until after you've completed resolving the attack and spell.</p>\n<hr />\n<p><strong>Special</strong> If you also have the @UUID[Compendium.pf2e.actionspf2e.Item.3MiV0maH8imtnVwS]{Spell-Woven Shot} action you can load and activate a piece of magical ammunition as a free action before making a Spellsling attack once per 10 minutes.</p>"
     },
     "Spellstrike": {
       "name": "Golpe de hechizo",
@@ -2163,6 +2176,10 @@
       "description": "<p>Your ostilli glows a faint yellow as it establishes a barrier. Choose acid, cold, electricity, fire, or sonic damage. Until the beginning of your next turn, you gain resistance against the chosen damage type equal to half your level.</p>",
       "selfEffect": "Effect: Turn Aside Ambient Magic"
     },
+    "Twist Design": {
+      "name": "Twist Design",
+      "description": "<p>You transform your tattoo to a different form of approximately the same size. You can Dismiss this effect.</p>"
+    },
     "Ultimatum of Liberation": {
       "name": "Ultimatum of Liberation",
       "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You proclaim an ultimatum against a creature you believe is oppressing others and all who follow their orders. All other creatures (including you) who hear your ultimatum, or learn about it later on, are emboldened by your words for 1 day, and gain a +2 status bonus to their Will saving throws against effects produced by the oppressing creature and their allies, which increases to +3 if they are within 30 feet of you.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.RPfpy4WzUzdwTeo0]{Effect: Ultimatum of Liberation}</p>\n<p>Additionally, the first time each day that creature and each of its allies comes within 30 feet of you, they must succeed on a @Check[will|against:class-spell|traits:emotion,fear,mental] save against your class DC or spell DC (whichever is higher) or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). This second effect has the emotion, fear, and mental traits. The oppressing creature may end all the effects as a free action by truthfully agreeing to permanently end their oppression. Otherwise, your Ultimatum of Liberation has no duration, though you can have only one Ultimatum of Liberation active at a time. If you pronounce a second Ultimatum of Liberation, the effects of the first one end.</p>"
@@ -2208,6 +2225,10 @@
     "Vital Shot": {
       "name": "Tiro vital",
       "description": "<p>Your careful shot against an unsuspecting opponent pierces a vital artery or organ. Make a ranged Strike. If the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, the Strike deals an extra die of weapon damage, and the foe takes persistent bleed damage equal to the amount of precision damage from your @UUID[Compendium.pf2e.actionspf2e.Item.Tlrde2xh7AhesXNB]{One Shot, One Kill}.</p>"
+    },
+    "Warding Shift": {
+      "name": "Warding Shift",
+      "description": "<p><strong>Requirements</strong> You're adjacent to a willing ally</p>\n<hr />\n<p><strong>Effect</strong> You move the adjacent willing ally 5 feet in any direction and can Step into the space the ally vacated.</p>"
     },
     "Warding Sign": {
       "name": "Señal de protección",
@@ -2299,6 +2320,7 @@
     "Gunslinger": "Gunslinger",
     "Halfling": "Halfling",
     "Hellbreaker": "Hellbreaker",
+    "Hellknight": "Hellknight",
     "Hexploration": "Hexploration",
     "Hobgoblin": "Hobgoblin",
     "Infiltration": "Infiltration",
@@ -2333,10 +2355,12 @@
     "Scion of Domora": "Scion of Domora",
     "Shared": "Shared",
     "Shisk": "Shisk",
+    "Sister of the Golden Erinys": "Sister of the Golden Erinys",
     "Skeleton": "Skeleton",
     "Stalwart Defender": "Stalwart Defender",
     "Stamina": "Stamina",
     "Starlit Sentinel": "Starlit Sentinel",
+    "Starstone Aspirant": "Starstone Aspirant",
     "Stone Brawler": "Stone Brawler",
     "Summoner": "Summoner",
     "Surki": "Surki",
@@ -2418,6 +2442,8 @@
     "Knights of Lastwall": "Knights of Lastwall",
     "Unexpected Sharpshooter": "Unexpected Sharpshooter",
     "Bullet Dancer": "Bullet Dancer",
-    "Worm Caller": "Worm Caller"
+    "Worm Caller": "Worm Caller",
+    "Steel Falcon": "Steel Falcon",
+    "Twilight Talon": "Twilight Talon"
   }
 }
