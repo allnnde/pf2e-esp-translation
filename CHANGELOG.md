@@ -1,3 +1,7 @@
+## [6.41.38](https://github.com/allnnde/pf2e-esp-translation/compare/v6.41.37...v6.41.38) (2026-04-13)
+
+
+
 ## [6.41.37](https://github.com/allnnde/pf2e-esp-translation/compare/v6.41.36...v6.41.37) (2026-04-12)
 
 
@@ -21,10 +25,6 @@
 ### Bug Fixes
 
 * test ([0c0ff9c](https://github.com/allnnde/pf2e-esp-translation/commit/0c0ff9ce52265ffde6bb6c616973c81270b8a046))
-
-
-
-## [6.41.33](https://github.com/allnnde/pf2e-esp-translation/compare/v6.41.32...v6.41.33) (2026-04-10)
 
 
 
