@@ -7,7 +7,7 @@ on:
       - main
 env:
   ZIP_FILENAME: "pf2e-es"
-  PACKAGE_CONTENT: "module.json src/babele-register.js src/translator/ lang/ translation/ styles/"
+  PACKAGE_CONTENT: "module.json src/babele-register.js src/translator/ translation/ styles/"
 
 jobs:
   versioning:
@@ -62,12 +62,12 @@ jobs:
         if: ${{ needs.versioning.outputs.skipped == 'false' }}
         run: npx @ghost-fvtt/foundry-publish
         env:
-          FVTT_MANIFEST_URL: 'https://github.com/allnnde/pf2e-esp-translation/releases/latest/download/module.json'
+          FVTT_MANIFEST_URL: 'https://github.com/HonzoNebro/pf2e-esp-translation/releases/latest/download/module.json'
           FVTT_PACKAGE_ID: ${{ secrets.FVTT_PACKAGE_ID }}
           FVTT_USERNAME: ${{ secrets.FVTT_USERNAME }}
           FVTT_PASSWORD: ${{ secrets.FVTT_PASSWORD }}
-          FVTT_MINIMUM_CORE_VERSION: 11
+          FVTT_MINIMUM_CORE_VERSION: 14.360
           FVTT_PACKAGE_VERSION: ${{ needs.versioning.outputs.tag }}
-          FVTT_VERIFIED_CORE_VERSION: 11
-          FVTT_COMPATIBLE_CORE_VERSION: 11
+          FVTT_VERIFIED_CORE_VERSION: 14.361
+          FVTT_COMPATIBLE_CORE_VERSION: 14
           FVTT_TOKEN: ${{ secrets.FVTT_TOKEN }}

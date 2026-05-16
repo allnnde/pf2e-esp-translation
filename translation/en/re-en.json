@@ -121,12 +121,14 @@
         "Bite": "Bite",
         "Blade": "Blade",
         "Body": "Body",
+        "BodySlam": "Body Slam",
         "BoneDart": "Bone Dart",
         "BoneShard": "Bone Shard",
         "BoneSpike": "Bone Spike",
         "Boot": "Boot",
         "Boulder": "Boulder",
         "Branch": "Branch",
+        "BurningTendril": "Burning Tendril",
         "CarapaceFist": "Carapace Fist",
         "Claw": "Claw",
         "CubeFace": "Cube Face",
@@ -137,6 +139,7 @@
         "FlameHair": "Flame-Hair",
         "FlamingSword": "Flaming Sword",
         "Foot": "Foot",
+        "FootOrb": "Foot Orb",
         "Foreleg": "Foreleg",
         "Gust": "Gust",
         "HolyMace": "Holy Mace",
@@ -155,9 +158,12 @@
         "MetalShard": "Metal Shard",
         "Moonbeam": "Moonbeam",
         "Nectar": "Nectar",
+        "PhasicBlade": "Phasic Blade",
         "PiercingHymn": "Piercing Hymn",
         "Pincer": "Pincer",
         "Pseudopod": "Pseudopod",
+        "Proboscis": "Proboscis",
+        "ProjectileVomit": "Projectile Vomit",
         "Quill": "Quill",
         "Rock": "Rock",
         "Root": "Root",
@@ -169,18 +175,22 @@
         "Spoke": "Spoke",
         "Stinger": "Stinger",
         "SpiritTouch": "Spirit Touch",
+        "SolarFlare": "Solar Flare",
         "StoneBall": "Stone Ball",
         "StrikingSurface": "Striking Surface",
         "Sunbeam": "Sunbeam",
         "Tail": "Tail",
+        "TailScourgeDischarge": "Tail Scourge Discharge",
         "Talon": "Talon",
         "Tendril": "Tendril",
         "Tentacle": "Tentacle",
         "TentacleArm": "Tentacle Arm",
+        "Thorn": "Thorn",
         "Thorns": "Thorns",
         "Tongue": "Tongue",
         "Trunk": "Trunk",
         "Tusk": "Tusk",
+        "Tusks": "Tusks",
         "Vine": "Vine",
         "WaterSpout": "Water Spout",
         "Wave": "Wave",
@@ -246,10 +256,21 @@
       "MonstrosityForm": {
         "ChoiceSet": {
           "CaveWorm": "Cave Worm",
+          "DustManta": "Dust Manta",
           "Phoenix": "Phoenix",
-          "SeaSerpent": "Sea Serpent"
+          "Nyssholora": "Nyssholora",
+          "SeaSerpent": "Sea Serpent",
+          "SpaceWorm": "Space Worm"
         },
-        "ShroudOfFlame": "Shroud of Flame"
+        "PhasicStrike": {
+          "Label": "Phasic Strike",
+          "Note": "Your phasic blade Strikes treat any object or construct they hit as if it had half as much Hardness as usual."
+        },
+        "ShroudOfFlame": "Shroud of Flame",
+        "TongueGrab": {
+          "Label": "Tongue Grab",
+          "Note": "A creature hit by your tongue becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by you. The creature isn't @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but it can't move beyond the reach of your tongue. A creature can sever the tongue with a Strike against your AC that deals at least 30 slashing damage. This deals no damage to you but prevents you from using your tongue Strike until you regrow your tongue, such as by casting the spell again later."
+        }
       },
       "NatureIncarnate": {
         "GreenMan": "Green Man",
@@ -906,6 +927,11 @@
       "AlchemicalGrenades": {
         "Label": "Alchemical Grenade"
       },
+      "Alendreu": {
+        "ChoppingFrenzy": {
+          "ToggleLabel": "Chopping Frenzy — Second Strike"
+        }
+      },
       "AmbushCopse": {
         "RollOptionLabel": "Ambush Copse is hiding in Forests"
       },
@@ -966,31 +992,66 @@
           "Unusable": "This ability is not usable in your current form."
         },
         "Form": {
-          "Animal": "Animal",
-          "AnimalAerial": "Aerial Animal",
-          "AnimalAquatic": "Aquatic Animal",
-          "AnimalMedium": "Medium Animal",
-          "AnimalSmall": "Small Animal",
-          "AnimalTiny": "Tiny Animal",
-          "Ape": "Ape",
-          "Azuretzi": "Azuretzi",
-          "Barghest": "Barghest",
-          "Bat": "Bat",
-          "BatGiant": "Giant Bat",
-          "Boar": "Boar",
-          "Cacodaemon": "Cacodaemon",
-          "Cassisian": "Cassisian",
-          "CaveWorm": "Cave Worm",
-          "Cobra": "Cobra",
-          "Coyote": "Coyote",
-          "Devil": {
-            "Insidiator": "Insidiator"
+          "Ancestry": {
+            "Human": "Human",
+            "Orc": "Orc"
           },
-          "Dog": "Dog",
-          "Dove": "Dove",
-          "Dragon": "Dragon",
+          "Angel": {
+            "Cassisian": "Cassisian"
+          },
+          "Animal": {
+            "Aerial": "Aerial Animal",
+            "Animal": "Animal",
+            "Aquatic": "Aquatic Animal",
+            "Medium": "Medium Animal",
+            "Small": "Small Animal",
+            "Specific": {
+              "Ape": "Ape",
+              "Bat": "Bat",
+              "BatGiant": "Giant Bat",
+              "Boar": "Boar",
+              "Cobra": "Cobra",
+              "Coyote": "Coyote",
+              "Dog": "Dog",
+              "Dove": "Dove",
+              "Fish": "Fish",
+              "Fox": "Fox",
+              "Lizard": "Lizard",
+              "Mantis": "Mantis",
+              "Moose": "Moose",
+              "Octopus": "Octopus",
+              "PorcupineGiant": "Giant Porcupine",
+              "RacoonDog": "Raccoon Dog",
+              "Rat": "Rat",
+              "Raven": "Raven",
+              "Scorpion": "Scorpion",
+              "Shark": "Shark",
+              "Spider": "Spider",
+              "Tiger": "Tiger",
+              "Wolf": "Wolf",
+              "WolfDire": "Dire Wolf",
+              "Wasp": "Wasp",
+              "WormCave": "Cave Worm"
+            },
+            "Tiny": "Tiny Animal"
+          },
+          "Azata": {
+            "Gancanagh": "Gancanagh"
+          },
+          "Barghest": "Barghest",
+          "Daemon": {
+            "Cacodaemon": "Cacodaemon"
+          },
+          "Demon": {
+            "Miastrilek": "Miastrilek",
+            "Succubus": "Succubus"
+          },
+          "Devil": {
+            "Gylou": "Gylou",
+            "Imp": "Imp",
+            "Insidiator": "Indsidiator"
+          },
           "Drude": "Drude",
-          "DryadQueen": "Dryad Queen",
           "Elemental": {
             "Air": {
               "Elemental": "Air Elemental",
@@ -1026,79 +1087,70 @@
               "Small": "Small Wood Elemental"
             }
           },
-          "Faydhaan": "Faydhaan",
-          "Fish": "Fish",
-          "Fox": "Fox",
-          "Fungus": "Fungus",
-          "Gancanagh": "Gancanagh",
+          "Genie": {
+            "Faydhaan": "Faydhaan",
+            "Ifrit": "Ifrit",
+            "Jaathoom": "Jaathoom",
+            "Jabali": "Jabali",
+            "Jann": "Jann"
+          },
           "Ghost": "Ghost",
           "Gimmerling": "Gimmerling",
           "Gosreg": "Gosreg",
-          "Gourd": "Gourd",
-          "Gylou": "Gylou",
           "Hag": "Hag",
-          "Human": "Human",
-          "Humanoid": "Humanoid",
-          "HumanoidLarge": "Large Humanoid",
-          "HumanoidMedium": "Medium Humanoid",
-          "HumanoidSmall": "Small Humanoid",
+          "Humanoid": {
+            "Humanoid": "Humanoid",
+            "Large": "Large Humanoid",
+            "Medium": "Medium Humanoid",
+            "Small": "Small Humanoid",
+            "Winged": "Winged Humanoid"
+          },
           "Hybrid": "Hybrid",
-          "Ifrit": "Ifrit",
-          "Imp": "Imp",
-          "Jaathoom": "Jaathoom",
-          "Jann": "Jann",
-          "Keketar": "Keketar",
           "LamiaMatriarch": "Lamia Matriarch",
-          "Leshy": "Leshy",
-          "LeshyMob": "Leshy Mob",
-          "Lizard": "Lizard",
-          "Mantis": "Mantis",
-          "Miastrilek": "Miastrilek",
-          "Moose": "Moose",
-          "Morrigna": "Morrigna",
-          "Mushroom": "Mushroom",
-          "NaiadQueen": "Naiad Queen",
-          "Nymph": "Nymph",
+          "Nymph": {
+            "DryadQueen": "Dryad Queen",
+            "HesperidQueen": "Hesperid Queen",
+            "LampadQueen": "Lampad Queen",
+            "NaiadQueen": "Naiad Queen",
+            "Nymph": "Nymph",
+            "Queen": "Nymph Queen"
+          },
           "Object": {
-            "Inanimate": "Inanimate Object",
-            "InanimateTiny": "Tiny Inanimate Object"
+            "Tiny": "Tiny Inanimate Object"
           },
-          "ObjectTiny": "Tiny Inanimate Object",
-          "Octopus": "Octopus",
           "Oni": "Oni",
-          "Orc": "Orc",
           "Owlbear": "Owlbear",
-          "Plant": "Plant",
-          "PorcupineGiant": "Giant Porcupine",
-          "Pukwudgie": "Pukwudgie",
-          "RacoonDog": "Raccoon Dog",
-          "RajaKrodha": "Raja-Krodha",
-          "Raktavarna": "Raktavarna",
-          "Rat": "Rat",
-          "Raven": "Raven",
-          "Scorpion": "Scorpion",
-          "SeaSerpent": "Sea Serpent",
-          "Shark": "Shark",
-          "Skeleton": "Skeleton",
-          "SnappingFlytrap": "Snapping Flytrap",
-          "Spider": "Spider",
-          "SublimeBreath": "Sublime Breath",
-          "Succubus": "Succubus",
-          "Swarm": {
-            "Flies": "Swarm of Flies"
+          "Plant": {
+            "Fungus": "Fungus",
+            "Gourd": "Gourd",
+            "Leshy": "Leshy",
+            "LeshyMob": "Leshy Mob",
+            "Mushroom": "Mushroom",
+            "Plant": "Plant",
+            "SnappingFlytrap": "Snapping Flytrap"
           },
+          "Protean": {
+            "Azuretzi": "Azuretzi",
+            "Keketar": "Keketar",
+            "Voidworm": "Voidworm"
+          },
+          "Psychopomp": {
+            "Morrigna": "Morrigna"
+          },
+          "Pukwudgie": "Pukwudgie",
+          "Rakshasa": {
+            "RajaKrodha": "Raja-Krodha",
+            "Raktavarna": "Raktavarna"
+          },
+          "SeaSerpent": "Sea Serpent",
+          "Skeleton": "Skeleton",
+          "SublimeBreath": "Sublime Breath",
           "Tailless": "Tailless",
-          "Tiger": "Tiger",
           "Tree": "Tree",
           "Unicorn": "Unicorn",
           "Vampire": "Vampire",
           "Vidileth": "Vidileth",
           "Vilderavn": "Vilderavn",
-          "Voidworm": "Voidworm",
-          "Wasp": "Wasp",
-          "WingedHumanoid": "Winged Humanoid",
-          "Wolf": "Wolf",
-          "WolfDire": "Dire Wolf",
           "Yaoguai": "Yaoguai",
           "Zombie": "Zombie"
         },
@@ -1408,6 +1460,11 @@
         "TargetMurderedPaleStranger": "Target Murdered Pale Stranger",
         "TargetNeverKilled": "Target has Never Killed"
       },
+      "PathRiverPeeler": {
+        "SensitiveEars": {
+          "Note": "Whenever the Peeler takes sonic damage, it must succeed at a @Check[will|dc:16|options:inflicts:frightened] saving throw or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure)."
+        }
+      },
       "PeacockPhoenix": {
         "RadiantWing": "Radiant Wing"
       },
@@ -1496,6 +1553,14 @@
           "RuneOfSmiting": {
             "Label": "Rune of Smiting",
             "Text": "When the weapon hits, the giant can @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Push} the target back 10 feet, or 20 feet on a critical hit."
+          }
+        }
+      },
+      "Sangrist": {
+        "BloodVigor": {
+          "FastHealing": {
+            "Details": "While adjacent to a creature taking persistent bleed damage",
+            "Toggle": "Blood Vigor — Fast Healing"
           }
         }
       },
@@ -1659,6 +1724,11 @@
         },
         "PowerfulUtterance": {
           "ImmunityLabel": "powerful utterance"
+        }
+      },
+      "Volodmyra": {
+        "OverhandSmash": {
+          "Note": "If the attack hits, the opponent must succeed at a @Check[fortitude|dc:17|options:inflicts:prone] save to avoid being knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
         }
       },
       "Vordine": {
@@ -3563,6 +3633,12 @@
       "ContinualRecovery": {
         "Note": "When you Treat Wounds, your patient becomes immune for only 10 minutes instead of 1 hour. This applies only to your Treat Wounds activities, not any other the patient receives."
       },
+      "Copaxi": {
+        "AggressiveAntlersStrike": "Antlers",
+        "RepurposeMysticPower": {
+          "Note": "Whenever you succeed at a saving throw against a spell or magical effect, you gain temporary Hit Points equal to double the spell's rank, or equal to the level of the magical effect if it isn't a spell. These temporary Hit Points last until the end of your next turn."
+        }
+      },
       "Convergent": {
         "Tactics": "An ally with Convergent Tactics is within reach of the target."
       },
@@ -3718,28 +3794,6 @@
         }
       },
       "DragonDisciple": {
-        "DragonChoice": {
-          "Black": "Black Dragon",
-          "Blue": "Blue Dragon",
-          "Brass": "Brass Dragon",
-          "Brine": "Brine Dragon",
-          "Bronze": "Bronze Dragon",
-          "Cloud": "Cloud Dragon",
-          "Copper": "Copper Dragon",
-          "Crystal": "Crystal Dragon",
-          "Forest": "Forest Dragon",
-          "Gold": "Gold Dragon",
-          "Green": "Green Dragon",
-          "Magma": "Magma Dragon",
-          "Red": "Red Dragon",
-          "Sea": "Sea Dragon",
-          "Silver": "Silver Dragon",
-          "Sky": "Sky Dragon",
-          "Sovereign": "Sovereign Dragon",
-          "Umbral": "Umbral Dragon",
-          "Underworld": "Underworld Dragon",
-          "White": "White Dragon"
-        },
         "Prompt": "Select a dragon.",
         "ScalesOfTheDragon": {
           "BracersOfArmor": "Scales of the Dragon w/ Bracers of Armor",
@@ -3878,6 +3932,9 @@
         "RockRunner": {
           "Note": "When you use the Acrobatics skill to Balance on narrow surfaces or uneven ground made of stone or earth, you aren't off-guard, and when you roll a success at one of these Acrobatics checks, you get a critical success instead."
         },
+        "SpacewyrmSlayer": {
+          "Label": "Spacewyrm Slayer (Dragon)"
+        },
         "SparkFist": {
           "Note": "Each time you succeed on a fist Strike, you take @Damage[(1+@weapon.system.runes.striking)[fire]]{fire damage}."
         },
@@ -3942,6 +3999,14 @@
         },
         "Woodcraft": {
           "Note": "When in a forest or jungle environment, if you roll a critical failure on a Survival skill check to Sense Direction, Subsist, or Cover Tracks, you get a failure instead, and if you roll a success, you get a critical success instead."
+        }
+      },
+      "EntuColony": {
+        "EntuSporeCaps": {
+          "Note": "You deal @Damage[(ternary(gte(@actor.level,17),5,ternary(gte(@actor.level,13),4,ternary(gte(@actor.level,9),3,2))))[poison]] to any creature that has you grabbed or an adjacent creature that hits you with an attack."
+        },
+        "MyceliumArmor": {
+          "RollOptionLabel": "Mycelium Armor — Extra poison damage"
         }
       },
       "EnvenomCompanion": {
@@ -4120,6 +4185,9 @@
           "TitanicLabel": "Titanic",
           "WyrmhideLabel": "Wyrmhide"
         },
+        "GlacierHammer": {
+          "ToggleLabel": "Glacier Hammer — Grow Icicles"
+        },
         "GoldenGreaves": {
           "ToggleLabel": "Golden Greaves — Increase Fortitude and Reflex DC"
         },
@@ -4131,6 +4199,9 @@
         },
         "HumbugPocket": {
           "ConcealAnObjectLabel": "Humbug Pocket (Conceal an Object in the Pocket)"
+        },
+        "HuntersBow": {
+          "ToggleLabel": "Hunter's Bow — Target can't see you"
         },
         "HydraHeadClub": "Hydra Head Club — Reactive Snap",
         "InstinctCrown": {
@@ -4462,7 +4533,7 @@
             "Label": "Heaven Rains an Ending"
           },
           "Label": "Infinite Blades Celestial Arrow",
-          "Note": "Whenever you successfully Strike an enemy with your weapon ikon, up to two enemies adjacent to the target take @Damage[@item.system.damage.dice@item.system.damage.die[spirit]] damage as they are struck by duplicated missiles."
+          "Note": "Whenever you successfully Strike an enemy with your weapon ikon, up to two enemies adjacent to the target take @Damage[@item.system.damage.dice@item.system.damage.die[spirit]|options:exemplar-spirit-damage] damage as they are struck by duplicated missiles."
         },
         "MatedBirdsInPairedFlight": {
           "Pair": "Two separate ikons.",
@@ -4538,6 +4609,11 @@
         "DuosAim": {
           "Note": "Ignore the target's Concealed condition."
         },
+        "Evangelize": {
+          "CriticalSuccess": "The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round.",
+          "Failure": "The target is unaffected.",
+          "Success": "The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round."
+        },
         "ExperiencedProfessional": {
           "Note": "If you're an expert in Lore, you gain twice as much income from a failed check to Earn Income, unless it was originally a critical failure."
         },
@@ -4593,6 +4669,14 @@
         },
         "RiskySurgery": {
           "Note": "When you Treat Wounds, you can deal @Damage[1d8[slashing]] damage to your patient just before applying the effects of the Treat Wounds. If you do, gain a +2 circumstance bonus to your Medicine check to Treat Wounds, and if you roll a success, you get a critical success instead."
+        },
+        "SkillMastery": {
+          "Investigator": "Increase your proficiency rank in one of your skills from expert to master and in another of your skills from trained to expert. You gain a skill feat associated with one of the skills you chose.",
+          "Rogue": "Increase your proficiency rank in one of your skills from expert to master and in another of your skills from trained to expert. You gain a skill feat associated with one of the skills you chose; you must meet all its prerequisites.",
+          "Special": {
+            "Text": "You can select this feat up to five times.",
+            "Title": "Special"
+          }
         },
         "SkillfulTail": {
           "Geniekin": "You were born with a tail, and with practice you've learned how to perform simple Interact actions with it, such as opening an unlocked door. Your tail can't perform actions that require fingers or significant manual dexterity, including any action that would require a check to accomplish, and you can't use it to hold items.",
@@ -4698,6 +4782,15 @@
       "FollowTheExpert": {
         "Prompt": "Select expert's proficiency in skill."
       },
+      "Formian": {
+        "Mageslayer": {
+          "MageslayerClaw": "Mageslayer Claw",
+          "Note": {
+            "Title": "Mageslayer",
+            "Text": "A creature you Strike with your mageslayer claw must attempt a @Check[will|against:class-spell] save against the higher of your class DC or spell DC. On a failure, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute (or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure)."
+          }
+        }
+      },
       "FortificationLikeEffect": {
         "Fortification": "If your armor has a fortification or greater fortification rune, you roll only one flat check.",
         "Fourteen": "Each time you're critically hit, attempt a @Check[flat|dc:14|showDC:all]. On a success, it becomes a normal hit.",
@@ -4725,6 +4818,11 @@
           "SaveNote": "When you roll a success on a save against an emotion or fear effect, you get a critical success instead."
         },
         "Resistance": "Ganzi Resistance"
+      },
+      "GapTouched": {
+        "GlitchShot": {
+          "Addendum": "You can use Glitching Memory at a range of 60 feet."
+        }
       },
       "GeneralTraining": {
         "Prompt": "Select a 1st-level general feat."
@@ -4759,6 +4857,9 @@
           "Underground": "For 1 round, you gain darkvision as well as imprecise tremorsense out to 15 feet."
         }
       },
+      "Gfolian": {
+        "FlameBelch": "FlameBelch"
+      },
       "GhostScarfLit": "Ghost Scarf is shedding light",
       "Ghoul": {
         "FullySatiated": "Fully Satiated",
@@ -4783,11 +4884,51 @@
         "ExtraSquishy": {
           "Note": "If you roll a success to Squeeze, you get a critical success instead."
         },
+        "MutantGoblin": {
+          "Prompt": "Select a mutation.",
+          "Bioelectricity": {
+            "Label": "Bioelectricity",
+            "Description": "You gain a bioshock unarmed attack that deals 1d4 electricity damage. Your bioshock attack is in the shock group and has the finesse, nonlethal, and unarmed traits.",
+            "Bioshock": "Bioshock"
+          },
+          "Chromatophores": {
+            "Label": "Chromatophores",
+            "Description": "You become trained in Stealth. If you would automatically become trained in Stealth (from your background or class, for example), you instead become trained in a skill of your choice. You gain the @UUID[Compendium.pf2e.feats-srd.Item.beyw5bdA5hkQbmaG]{Terrain Stalker} skill feat, except instead of a selected difficult terrain, you can use this feat while adjacent to or within areas of bright artificial light, such as a large neon sign or nightclub."
+          },
+          "ExtraLimbs": {
+            "Label": "Extra Limbs",
+            "Description": "You grow a second pair of arms. You can select the @UUID[Compendium.sf2e.feats.Item.EPeo604ByeeAx3AL]{All Hands on Deck} and @UUID[Compendium.sf2e.feats.Item.61txGmMLr22B93cU]{Double Draw} standardized ancestry feats."
+          },
+          "Flight": {
+            "Label": "Flight",
+            "Description": "You gain a fly Speed of 20 feet."
+          },
+          "Gills": {
+            "Label": "Gills",
+            "Description": "You gain a swim Speed of 25 feet and can breathe underwater for 1 minute at a time."
+          },
+          "LimitedTelepathy": {
+            "Label": "Limited Telepathy",
+            "Description": "You can communicate mentally with creatures within 15 feet. You can communicate only with creatures that share a language with you. This doesn't give you any access to their thoughts, and it communicates no more information than normal speech would."
+          },
+          "MutantMagic": {
+            "Label": "Mutant Magic",
+            "Description": "You gain the @UUID[Compendium.sf2e.feats.Item.IEQmMRA1uMPb0rJo]{Ancestral Cantrip} (primal; @UUID[Compendium.pf2e.spells-srd.Item.thAHF1zxNplLCJPO]{Caustic Blast}) standardized ancestry feat, except the spell doesn't have the manipulate trait as you hock the glob of acid from your mouth."
+          },
+          "Suckers": {
+            "Label": "Suckers",
+            "Description": "You gain a climb Speed of 20 feet."
+          }
+        },
         "RecklessAbandon": {
           "Note": "If you roll a failure or critical failure on a saving throw against a harmful effect, you get a success instead."
         },
         "ScaldingSpit": {
           "BoilingSpit": "Boiling Spit"
+        },
+        "TankmeatGoblin": {
+          "Doomed": "Tankmeat Goblin (Doomed)",
+          "Wounded": "Tankmeat Goblin (Wounded)"
         },
         "TorchGoblin": {
           "Note": "As long as you are suffering persistent fire damage, all your melee attacks against adjacent creatures deal an additional @Damage[1[fire]]{1 fire damage} per weapon damage die."
@@ -4926,6 +5067,11 @@
       "Harrowing": {
         "RerollLabel": "Rerolling roll using the Harrowing result"
       },
+      "Hellknight": {
+        "RevealBeasts": {
+          "Note": "Whenever you critically succeed at a check to Recall Knowledge against an animal, beast, fungus, or plant, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}."
+        }
+      },
       "HeroPointDeck": {
         "AncestralMight": {
           "FirstBoostPrompt": "Select one of your ancestry boosts, or pick any if it only had free boosts.",
@@ -4964,9 +5110,6 @@
         "UntwistingIron": "Untwisting Iron"
       },
       "Human": {
-        "SaocAstrology": {
-          "Prompt": "Select the circumstance penalty or bonus you obtained when using the Saoc Astrology action."
-        },
         "VikingShieldbearer": {
           "Prompt": "Select a weapon to become trained in."
         },
@@ -4988,6 +5131,14 @@
         "Lavasoul": {
           "MagmaSpike": "Magma Spike",
           "MagmaSpikeCriticalSpecialization": "Instead of the normal critical specialization effect, the target takes @Damage[1d6[persistent,fire]] damage; you gain a bonus on this persistent damage equal to your item bonus to attack rolls on unarmed attacks."
+        }
+      },
+      "Ijtikri": {
+        "AllGrabberStance": {
+          "LashingLimb": "Lashing Limb"
+        },
+        "SacrificialShell": {
+          "RollOptionLabel": "Sacrificial Shell — Block Damage"
         }
       },
       "ImpeccableFlow": {
@@ -5106,6 +5257,11 @@
         }
       },
       "ItemStrike": "{item} Strike",
+      "Izalgun": {
+        "IntimidatingAthlete": {
+          "Note": "You can attempt an [[/act demoralize skill=athletics]]{Athletics} or Intimidation check to [[/act demoralize]] one creature within 30 feet."
+        }
+      },
       "Jotunborn": {
         "IivlarsBoundaryBreak": {
           "DescriptionAddendum": "When you Sustain this spell, increase the distance you teleport to 15 feet."
@@ -5249,6 +5405,14 @@
         "ThirdAttempt": "Third Attempt",
         "WeaknessType": "Weakness Type"
       },
+      "Lashunta": {
+        "AscendantPsychic": {
+          "TelepathyRange": "Increase the range of your limited telepathy to 120 feet."
+        },
+        "Glowsilk": {
+          "LabelFungus": "Glowsilk Lashunta (fungus)"
+        }
+      },
       "LepidstadtSurgeon": {
         "Dedication": {
           "StabilizeNote": "When you successfully Administer First Aid to stabilize a dying creature that doesn't yet have the @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded} condition, it regains @Damage[(2d8 + 10*max(0,(@actor.system.skills.medicine.rank - 2)))[healing]] Hit Points.",
@@ -5256,6 +5420,12 @@
         }
       },
       "Leshy": {
+        "Inexorable": {
+          "RollOptionLabel": "Inexorable — On home world"
+        },
+        "MoonflowerLeshy": {
+          "ToggleLabel": "You shed light"
+        },
         "Seedpod": {
           "Note": "On a critical hit, a seedpod bursts, issuing forth a tangle of vegetation that imposes a -10-foot circumstance penalty on the target's Speed for 1 round. @UUID[Compendium.pf2e.feat-effects.Item.wQDHpOKY3GZqvS2v]{Effect: Seedpod}"
         },
@@ -5289,6 +5459,11 @@
           "Hundred": "At least 100 creatures"
         },
         "Prompt": "Select a crowd size."
+      },
+      "Madrosarai": {
+        "ScorchingLifeblood": {
+          "Note": "Any adjacent creature that touches you, deals piercing or slashing damage to you, or hits you with a melee unarmed attack takes @Damage[3d6[fire]] damage."
+        }
       },
       "MagicalExperiment": {
         "EnhancedSenses": "Enhanced Senses",
@@ -5332,6 +5507,11 @@
         "ToweringTrunk": "Towering Trunk",
         "UnyieldingWill": "Unyielding Will"
       },
+      "Maraquoi": {
+        "DiveBomb": {
+          "Note": "Your target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to this attack."
+        }
+      },
       "MarkForDeath": {
         "DeceiveMark": "To use Deception to Feint your Mark",
         "SeekMark": "To Seek your Mark",
@@ -5359,10 +5539,8 @@
         "AdvancedFirearmsCrossbows": "Advanced Firearms & Crossbows",
         "AdvancedGeniekinWeapons": "Advanced Geniekin Weapons",
         "AdvancedGhoranWeapons": "Advanced Ghoran Weapons",
-        "AdvancedGnollWeapons": "Advanced Gnoll Weapons",
         "AdvancedGnomeWeapons": "Advanced Gnome Weapons",
         "AdvancedGoblinWeapons": "Advanced Goblin Weapons",
-        "AdvancedGrippliWeapons": "Advanced Grippli Weapons",
         "AdvancedGroup": {
           "axe": "Advanced Axes",
           "bomb": "Advanced Bombs",
@@ -5387,12 +5565,16 @@
         "AdvancedJotunbornWeapons": "Advanced Jotunborn Weapons",
         "AdvancedKholoWeapons": "Advanced Kholo Weapons",
         "AdvancedKoboldWeapons": "Advanced Kobold Weapons",
-        "AdvancedMonasticWeaponry": "Advanced Monastic Weaponry",
+        "AdvancedLashuntaWeapons": "Advanced Lashunta Weapons",
         "AdvancedMerfolkWeapons": "Advanced Merfolk Weapons",
+        "AdvancedMonasticWeaponry": "Advanced Monastic Weaponry",
         "AdvancedOrcWeapons": "Advanced Orc Weapons",
+        "AdvancedPahtraWeapons": "Advanced Pahtra Weapons",
+        "AdvancedRyphorianWeapons": "Advanced Ryphorian Weapons",
         "AdvancedSamsaranWeapons": "Advanced Samsaran Weapons",
         "AdvancedStudentOfArchery": "Advanced Student of Archery Weapon",
         "AdvancedSurkiWeapons": "Advanced Surki Weapons",
+        "AdvancedTalphiWeapons": "Advanced Talphi Weapons",
         "AdvancedTenguWeapons": "Advanced Tengu Weapons",
         "AdvancedTripkeeWeapons": "Advanced Tripkee Weapons",
         "AdvancedTwoHandedMeleeWeapons": "Advanced Two-Handed Melee Weapons",
@@ -5402,6 +5584,8 @@
         "BayonetsAndReinforcedStocks": "Bayonets and Reinforced Stocks",
         "BountyHunterWeapons": "Bounty Hunter Tools of the Trade",
         "HandCrossbowGauntletBow": "Hand Crossbow & Gauntlet Bow",
+        "HellknightBreastplate": "Hellknight Breastplate",
+        "HellknightPlates": "Hellknight Half-Plate & Hellknight Plate",
         "MartialAthamaruWeapons": "Martial Athamaru Weapons",
         "MartialAzarketiWeapons": "Martial Azarketi Weapons",
         "MartialBombsFirearms": "Martial Bombs & Firearms",
@@ -5415,10 +5599,8 @@
         "MartialFirearmsCrossbows": "Martial Firearms & Crossbows",
         "MartialGeniekinWeapons": "Martial Geniekin Weapons",
         "MartialGhoranWeapons": "Martial Ghoran Weapons",
-        "MartialGnollWeapons": "Martial Gnoll Weapons",
         "MartialGnomeWeapons": "Martial Gnome Weapons",
         "MartialGoblinWeapons": "Martial Goblin Weapons",
-        "MartialGrippliWeapons": "Martial Grippli Weapons",
         "MartialGroup": {
           "axe": "Martial Axes",
           "bomb": "Martial Bombs",
@@ -5443,13 +5625,17 @@
         "MartialJotunbornWeapons": "Martial Jotunborn Weapons",
         "MartialKholoWeapons": "Martial Kholo Weapons",
         "MartialKoboldWeapons": "Martial Kobold Weapons",
+        "MartialLashuntaWeapons": "Martial Lashunta Weapons",
         "MartialMerfolkWeapons": "Martial Merfolk Weapons",
         "MartialOniWeapons": "Martial Oni Weapons",
         "MartialOrcWeapons": "Martial Orc Weapons",
+        "MartialPahtraWeapons": "Martial Pahtra Weapons",
         "MartialPolearmsAndSpears": "Martial Polearms & Spears",
+        "MartialRyphorianWeapons": "Martial Ryphorian Weapons",
         "MartialSamsaranWeapons": "Martial Samsaran Weapons",
         "MartialStudentOfArchery": "Martial Student of Archery Weapon",
         "MartialSurkiWeapons": "Martial Surki Weapons",
+        "MartialTalphiWeapons": "Martial Talphi Weapons",
         "MartialTenguWeapons": "Martial Tengu Weapons",
         "MartialTripkeeWeapons": "Martial Tripkee Weapons",
         "MartialTwoHandedMeleeWeapons": "Martial Two-Handed Melee Weapons",
@@ -5542,6 +5728,14 @@
         "BracersOfArmor": "Mountain Stance w/ Bracers of Armor",
         "ExplorersClothing": "Mountain Stance w/ Explorer's Clothing",
         "MageArmor": "Mountain Stance w/ Mage Armor"
+      },
+      "Moyishuu": {
+        "Soulfeel": {
+          "Fury": "Fury",
+          "Joy": "Joy",
+          "Sorrow": "Sorrow",
+          "Wonder": "Wonder"
+        }
       },
       "Multitalented": {
         "Prompt": "Select a multiclass dedication feat."
@@ -5699,6 +5893,13 @@
           "Unknown": "The Unknown"
         }
       },
+      "Orocoran": {
+        "PlentifulBile": {
+          "CoatInBile": "Coat in Bile",
+          "Slitherskin": "Slitherskin",
+          "SpewAcidicBile": "Spew Acidic Bile"
+        }
+      },
       "Organsight": {
         "Organs": "Organsight (Organs)",
         "Skin": "Organsight (Skin)",
@@ -5720,6 +5921,11 @@
       },
       "PathfinderAgentDedication": {
         "ThoroughReports": "Thorough Reports"
+      },
+      "Pahtra": {
+        "Oozebonded": {
+          "LabelEscape": "Oozebonded Pahtra (Escape)"
+        }
       },
       "PlayingItem": "Playing {item}",
       "PFS": {
@@ -5773,6 +5979,7 @@
         "Feature": "Select a feature.",
         "FirstImplement": "Select a first implement.",
         "Form": "Select a form.",
+        "Heritage": "Select a heritage.",
         "Immunity": "Select an immunity.",
         "Item": "Select an item.",
         "Lesson": "Select a lesson.",
@@ -6059,6 +6266,21 @@
           "Note": "When you Sense Direction, you get a result one degree of success better than you rolled."
         }
       },
+      "Raxilite": {
+        "FloralShifter": {
+          "Flowering": "Flowering",
+          "Seeding": "Seeding"
+        },
+        "Inheritor": {
+          "Prompt": "Choose a field.",
+          "Bioengineer": "Bioengineer",
+          "Daredevil": "Daredevil",
+          "Emissary": "Emissary",
+          "Interstellar Pilot": "Interstellar Pilot",
+          "Physician": "Physician",
+          "Software Architect": "Software Architect"
+        }
+      },
       "RelicGift": {
         "DivineRetribution": {
           "CriticalSuccess": "If the target is evil, it is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the start of your next turn on a critical hit.",
@@ -6197,6 +6419,11 @@
           "Wrath": "Wrath"
         }
       },
+      "Ryphorian": {
+        "BondedTandemFeint": {
+          "Note": "The target is also @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to melee and ranged attacks that you or your bonded partner attempt against it until the end of your next turn."
+        }
+      },
       "SaveCriticalFailureToFailure": {
         "FailureHalfDamage": {
           "Fortitude": "When you roll a failure on a Fortitude save against a damaging effect, you take half damage.",
@@ -6292,6 +6519,12 @@
       "SkillMastery": {
         "ExpertPrompt": "Select a skill to become expert in.",
         "MasterPrompt": "Select a skill to become master in."
+      },
+      "Skittermander": {
+        "Fluffy": {
+          "SummerCoat": "Summer Coat",
+          "WinterCoat": "Winter Coat"
+        }
       },
       "SmokingSword": {
         "StokeFlames": "Smoking Sword — Stoke Flames"
@@ -7161,6 +7394,11 @@
         }
       },
       "TrinityGeodeLabel": "Trinity Geode",
+      "Trox": {
+        "FortifiedTrox": {
+          "ChitinousPlates": "Chitinous Plates"
+        }
+      },
       "TwinnedDefense": {
         "Prompt": "Are you wielding a parry weapon?"
       },
@@ -7201,6 +7439,11 @@
         "UntamedJaws": "Untamed Jaws",
         "Wings": "Wings"
       },
+      "Urog": {
+        "CrystalCarapace": {
+          "Shell": "Shell"
+        }
+      },
       "UrsineAvenger": {
         "GreatBear": {
           "Description": "When you transform, you can take on a bear's bulk and size. You can spend an additional action when using Ursine Avenger Form to gain the effects of a 1st-rank *enlarge* spell, which lasts for the spell's normal duration or until you leave your Ursine Avenger Form, whichever comes first.",
@@ -7221,6 +7464,12 @@
       "VenomGlands": {
         "Label": "Poison Spray",
         "Note": "On a critical hit, the target is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}."
+      },
+      "Vesk": {
+        "ForkTongued": {
+          "CriticalNote": "On a critical hit, the target takes persistent poison damage equal to the number of weapon damage dice.",
+          "VenomousJaws": "Venomous Jaws"
+        }
       },
       "VirtuosicPerformer": {
         "Acting": "Acting",
@@ -7555,6 +7804,15 @@
           "UsedMoveAction": "Used action that has the move trait."
         }
       },
+      "Ysoki": {
+        "TestSubject": {
+          "Prompt": "Select test subject.",
+          "ExtraLimbs": "Extra Limbs",
+          "PsychicAugmentation": "Psychic Augmentation",
+          "CyberneticAugmentation": "Cybernetic Augmentation",
+          "Radioactive": "Radioactive"
+        }
+      },
       "Zombie": {
         "Deteriorated": "Deteriorated"
       }
@@ -7565,11 +7823,17 @@
       "Desert": "Desert",
       "Forest": "Forest",
       "Mountain": "Mountain",
+      "Muddy": "Muddy",
       "Plains": "Plains",
+      "Rocky": "Rocky",
+      "Sandy": "Sandy",
       "Sky": "Sky",
+      "Sloped": "Sloped",
       "Space": "Space",
       "Swamp": "Swamp",
-      "Underground": "Underground"
+      "Underground": "Underground",
+      "Undergrowth": "Undergrowth",
+      "ZeroGravity": "Zero Gravity"
     },
     "UI": {
       "RuleElements": {
@@ -7701,6 +7965,9 @@
     },
     "SpecificRule": {
       "Android": {
+        "Hellforged": {
+          "HellforgedPlates": "Hellforged Plates"
+        },
         "MachineSaboteur": {
           "Note": "The target becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}."
         }
@@ -7708,6 +7975,20 @@
       "Astrazoan": {
         "DigestiveOutburst": {
           "Label": "Stomach"
+        }
+      },
+      "Bantrid": {
+        "BouncyBall": {
+          "SecondJump": "Second Jump"
+        },
+        "HollowOrb": {
+          "RollOptionLabel": "Hollow Orb — Moving across liquid surface"
+        },
+        "MagneticOrb": {
+          "RollOptionLabel": "Magnetic Orb — On metal surface"
+        },
+        "OnARoll": {
+          "RollOptionLabel": "On a Roll — Moved last turn"
         }
       },
       "Barathu": {
@@ -7721,6 +8002,9 @@
         },
         "ManifoldEvolution": {
           "Prompt": "Select a 17th-level or lower ancestry feat."
+        },
+        "RuggedExplorer": {
+          "Shell": "Shell"
         }
       },
       "CairnForm": {
@@ -7953,6 +8237,10 @@
         }
       },
       "Kasatha": {
+        "IgnoreRadiation": {
+          "Poison": "Ignore Radiation (Poison)",
+          "Radiation": "Ignore Radiation (Radiation)"
+        },
         "WeaponFamiliarity": {
           "AdvancedWeapons": "Advanced Kasathan Weapons",
           "MartialWeapons": "Martial Kasathan Weapons"
@@ -8348,6 +8636,14 @@
           "DebrisZone": "Debris Zone becomes greater difficult terrain.",
           "RadiantZone": "The zone overlap forces creatures to attempt another saving throw.",
           "TwistedDarkZone": "Twisted Dark Zone ignores the temporary immunity of creatures that previously critically succeeded at the save for 1 round."
+        }
+      },
+      "XenometricAndroid": {
+        "HomebrewedCore": {
+          "Prompt": "Choose one of the following",
+          "Larger": "One size larger",
+          "Smaller": "One size smaller",
+          "AdditionalLimbs": "Additional pair of limbs"
         }
       }
     }

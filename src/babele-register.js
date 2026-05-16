@@ -67,7 +67,7 @@ function patchSpellRange() {
         "pf2e-es",
         "CONFIG.PF2E.Item.documentClasses.spell.prototype.isMelee",
         function (wrapped) {
-            return game.pf2e.system.sluggify(this.system.range.value) === "berührung" || wrapped();
+            return game.pf2e.system.sluggify(this.system.range.value) === "toque" || wrapped();
         },
         "MIXED"
     );
@@ -79,7 +79,7 @@ function patchSpellRange() {
             const res = wrapped();
             if (res) return res;
             const slug = game.pf2e.system.sluggify(this.system.range.value);
-            const rangeFeet = Math.floor(Math.abs(Number(/^(\d+)-(fuß|ft|feet)(?!\w)/.exec(slug)?.at(1))));
+            const rangeFeet = Math.floor(Math.abs(Number(/^(\d+)-(pies|pie|ft|feet)(?!\w)/.exec(slug)?.at(1))));
             return Number.isInteger(rangeFeet) ? { increment: null, max: rangeFeet } : null;
         },
         "MIXED"
@@ -108,7 +108,7 @@ Hooks.once("babele.init", () => {
         game.babele.register({
             module: "pf2e-es",
             lang: "es",
-            dir: "translation/de/modules/compendium",
+            dir: "translation/es/modules/compendium",
         });
 
         game.babele.registerConverters({
@@ -185,7 +185,7 @@ Hooks.once("babele.init", () => {
                 return game.langEsPf2e.translateTableResults(data, translation);
             },
             translateTiles: (data, translation) => {
-                return game.langEsPf2e.dynamicArrayMerge(data, translation, game.langDePf2e.getMapping("tile", true));
+                return game.langEsPf2e.dynamicArrayMerge(data, translation, game.langEsPf2e.getMapping("tile", true));
             },
             translateTime: (data) => {
                 return game.langEsPf2e.translateValue("time", data);

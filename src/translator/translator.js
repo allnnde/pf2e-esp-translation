@@ -148,7 +148,9 @@ class Translator {
                     [entry]: this.dynamicMerge(sourceObjectList[entry], translations[entry], mapping),
                 });
             });
+            return mergedObjectList;
         }
+        return sourceObjectList;
     }
 
     // Check if strike is ranged or melee and return the type
