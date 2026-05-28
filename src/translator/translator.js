@@ -1,4 +1,4 @@
-import { CompendiumMapping } from "../../../babele/script/compendium-mapping.js";
+import { iconList, itemBlacklist, mappings, paths } from "./translator-config.js";
 
 // Create Translator instance and register settings
 Hooks.once("init", () => {
@@ -26,20 +26,11 @@ class Translator {
 
     // Initialize translator
     async initialize() {
-        // Read config file
-        const config = await Promise.all([
-            fetch("modules/pf2e-es/src/translator/translator-config.json")
-                .then((r) => r.json())
-                .catch((_e) => {
-                    console.error("pf2e-es: Couldn't find translator config file.");
-                }),
-        ]);
-
         // Initialize artwork lists
         this.artworkLists = {};
 
         // Load translations from dictionary
-        const dictionaryPath = config[0]?.paths?.dictionary ?? undefined;
+        const dictionaryPath = paths.dictionary ?? undefined;
         if (dictionaryPath) {
             const dict = await Promise.all([
                 fetch(dictionaryPath)
@@ -54,13 +45,13 @@ class Translator {
         }
 
         // Create list of icons
-        this.icons = config[0]?.iconList ?? {};
+        this.icons = iconList;
 
         // Create item blacklist for items. Actor items with compendium sources on this list won't get synchronized with the compendium data
-        this.itemBlacklist = config[0]?.itemBlacklist ?? [];
+        this.itemBlacklist = itemBlacklist;
 
         // Create list of mappings
-        this.mappings = config[0]?.mappings ?? {};
+        this.mappings = mappings;
 
         // Signalize translator is ready
         Hooks.callAll("langEsPf2e.ready");
@@ -107,9 +98,7 @@ class Translator {
     // Get mapping
     getMapping(mapping, compendium = false) {
         if (compendium) {
-            return this.mappings[mapping]
-                ? new CompendiumMapping(this.mappings[mapping].entryType, this.mappings[mapping].mappingEntries)
-                : {};
+            return this.mappings[mapping] ? game.babele.documentMappings.mappingFor(mapping) : {};
         }
         return this.mappings[mapping];
     }
