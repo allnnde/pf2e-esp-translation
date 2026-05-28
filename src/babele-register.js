@@ -1,3 +1,5 @@
+import { mappings } from "./translator/translator-config.js";
+
 // Prevent errors due to data structure changes - thanks to n1xx1 from the italian localization for the coding
 function removeMismatchingTypes(fallback, other = {}) {
     for (let k of Object.keys(other)) {
@@ -86,8 +88,8 @@ function patchSpellRange() {
     );
 }
 
-Hooks.once("babele.init", () => {
-    if (game.babele) {
+Hooks.once("babele.init", (babele) => {
+    if (babele) {
         game.settings.register("pf2e-es", "dual-language-names", {
             name: "Nombres en español e ingles",
             hint: "No solo muestra los nombres en español sino tambien en ingles.",
@@ -100,18 +102,15 @@ Hooks.once("babele.init", () => {
             }, 100),
         });
 
-        game.babele.register({
+        babele.register({
             module: "pf2e-es",
             lang: "es",
-            dir: "translation/es/compendium",
-        });
-        game.babele.register({
-            module: "pf2e-es",
-            lang: "es",
-            dir: "translation/de/modules/compendium",
+            dirs: ["translation/es/compendium", "translation/es/modules/compendium"],
         });
 
-        game.babele.registerConverters({
+        babele.registerMapping(mappings);
+
+        babele.registerConverters({
             normalizeName: (_data, translation) => {
                 return game.langEsPf2e.normalizeName(translation);
             },
@@ -185,7 +184,7 @@ Hooks.once("babele.init", () => {
                 return game.langEsPf2e.translateTableResults(data, translation);
             },
             translateTiles: (data, translation) => {
-                return game.langEsPf2e.dynamicArrayMerge(data, translation, game.langDePf2e.getMapping("tile", true));
+                return game.langEsPf2e.dynamicArrayMerge(data, translation, game.langEsPf2e.getMapping("tile", true));
             },
             translateTime: (data) => {
                 return game.langEsPf2e.translateValue("time", data);
