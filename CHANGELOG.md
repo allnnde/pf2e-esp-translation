@@ -1,3 +1,14 @@
+# [6.45.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.44.0...v6.45.0) (2026-06-27)
+
+
+### Features
+
+* automatic json extract to traslate ([83a2445](https://github.com/allnnde/pf2e-esp-translation/commit/83a2445b114b36f230a0e0ec70117c473e8e04c6))
+* automatic json extract to traslate ([e0a776d](https://github.com/allnnde/pf2e-esp-translation/commit/e0a776dad2287b6b798a9a9e7162b8526c47c607))
+* automatic json extract to traslate ([2e75f96](https://github.com/allnnde/pf2e-esp-translation/commit/2e75f96b03de45356b0425a89e4f79f319966ca1))
+
+
+
 # [6.44.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.43.1...v6.44.0) (2026-06-24)
 
 
@@ -37,10 +48,6 @@
 
 
 ## [6.41.51](https://github.com/allnnde/pf2e-esp-translation/compare/v6.41.50...v6.41.51) (2026-04-27)
-
-
-
-## [6.41.50](https://github.com/allnnde/pf2e-esp-translation/compare/v6.41.49...v6.41.50) (2026-04-26)
 
 
 
