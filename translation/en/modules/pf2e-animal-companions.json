@@ -31,6 +31,21 @@
           "Note": "The target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
         }
       },
+      "Eidolon": {
+        "Prompt": {
+          "EidolonKeyAttribute": "Select your Eidolon's Key attribute",
+          "Strikes": {
+            "Choices": {
+              "D6DeadlyFinesse": "1d6 damage (deadly d8 and finesse)",
+              "D6Fatal": "1d6 damage (fatal d10)",
+              "D6ForcefulSweep": "1d6 damage (forceful and sweep)",
+              "D8": "1d8 damage (choose one of disarm, nonlethal, shove, or trip)"
+            },
+            "Damage": "Select the Damage Type.",
+            "Primary": "Select the Details of the Primary Strike. You can change the name and icons afterwards"
+          }
+        }
+      },
       "Elephant": {
         "EffectNote": "Targets within your elephant's reach that you hit and deal damage take a –4 status penalty to purely auditory Perception checks. @UUID[Compendium.pf2e-animal-companions.AC-effects.Item.3EGbKKD73gGbSWIa]{Effect: Elephant Support Benefit (Penalty)}"
       },
@@ -46,8 +61,9 @@
         },
         "ExperiencedAdvancement": {
           "Label": "Experienced Advancement",
-          "Medic": {
-            "Note": "When a creature takes damage from a sharpshooter's ranged Strike, it takes a –5-foot circumstance penalty to its Speeds for 1 round, or a –10-foot circumstance penalty if the attack was a critical hit. @UUID[Compendium.pf2e-animal-companions.AC-effects.Item.GXWxbmqTJApVu0f3]{Effect: Experienced Sharpshooter}"
+          "Sharpshooter": {
+            "Note": "When a creature takes damage from a sharpshooter's ranged Strike, it takes a –5-foot circumstance penalty to its Speeds for 1 round, or a –10-foot circumstance penalty if the attack was a critical hit. @UUID[Compendium.pf2e-animal-companions.AC-effects.Item.GXWxbmqTJApVu0f3]{Effect: Experienced Sharpshooter}",
+            "Note-SF": "When a creature takes damage from a sharpshooter's ranged Strike, it takes a –5-foot circumstance penalty to its Speeds for 1 round, or a –10-foot circumstance penalty if the attack was a critical hit. @UUID[Compendium.pf2e-animal-companions.sf-AC-effects.Item.GXWxbmqTJApVu0f3]{Effect: Experienced Sharpshooter}"
           }
         },
         "FollowerAbility": {
@@ -101,6 +117,12 @@
       "Hyena": {
         "EffectNote": "When you hit a creature in the hyena's reach with a Strike, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}."
       },
+      "IridescentSalamander": {
+        "EffectNote": {
+          "PF": "The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the start of your next turn unless its level is higher than yours.",
+          "SF": "The creature is @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the start of your next turn unless its level is higher than yours."
+        }
+      },
       "IsgeriBoarhound": {
         "DesignatedFoe": {
           "RollOptionLabel": "Designated Foe"
@@ -108,7 +130,7 @@
       },
       "MetalElemental": {
         "SpikedBunker": {
-          "DamageNote": "You take @Damage[(@actor.flags.pf2e.rulesSelections.isSpecialized)d6[piercing]] damage."
+          "DamageNote": "You take @Damage[(@actor.flags.system.rulesSelections.isSpecialized)d6[piercing]] damage."
         }
       },
       "Mole": {
@@ -147,6 +169,12 @@
       },
       "ShadowHound": {
         "EffectNote": "When you damage a creature with a Strike and that creature is within reach of your shadow hound, both you and your shadow hound become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} to the creature."
+      },
+      "SiltFrog": {
+        "EffectNote": {
+          "PF": "The creature is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} until the start of your next turn.",
+          "SF": "The creature is @UUID[Compendium.sf2e.conditions.Item.9PR9y0bi4JPKnHPR]{Deafened} until the start of your next turn."
+        }
       },
       "SkeletalBirdOfPrey": {
         "EffectNote": "When you damage a creature in the bird's reach with a Strike, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}."
@@ -198,10 +226,12 @@
       }
     },
     "UnarmedAttacks": {
+      "Arm": "Arm",
       "Bite": "Bite",
       "Blade": "Blade",
       "Claws": "Claws",
       "Slam": "Slam",
+      "Spines": "Spines",
       "TailSlam": "Tail Slam"
     }
   }
