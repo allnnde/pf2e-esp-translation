@@ -30,7 +30,12 @@
   },
   "DOCUMENT": {
     "Combat": "Encuentro",
-    "Combats": "Encuentros"
+    "Combats": "Encuentros",
+    "FIELDS": {
+      "z": {
+        "label": "Z"
+      }
+    }
   },
   "PF2E": {
     "AbilityBoost": "Aumento de atributos",
@@ -115,7 +120,7 @@
     "ActionsActionsHeader": "Acciones",
     "ActionsFreeActionsHeader": "Acciones gratuitas",
     "ActionsReactionsHeader": "Reacciones",
-    "ActionWithDC": "{label} (DC {dc})",
+    "ActionWithDC": "{label} (CD {dc})",
     "Actor": {
       "ApplyDamage": {
         "AtFullHealth": "<actor>{actor}</actor> ya está al máximo de salud.",
@@ -133,9 +138,14 @@
         "ShieldDamagedForNBroken": "Su escudo también recibe {shieldDamage} de daño, rompiéndolo.",
         "ShieldDamagedForNDestroyed": "Su escudo también recibe {shieldDamage} de daño, destruyéndolo.",
         "ShieldNotRaised": "{actor} no ha levantado su escudo.",
+        "PersistentEntry": {
+          "bleed": "{formula} {damageType}",
+          "default": "{formula} de daño persistente {damageType}"
+        },
+        "StartsTakingDamage": "<actor>{actor}</actor> empieza a sufrir {persistentDamages}.",
         "TakesNoDamage": "<actor>{actor}</actor> no sufre daño.",
         "TheTarget": "El objetivo",
-        "TroopThresholdReached": "The troop has reached their next threshold ({segments} segments remaining)."
+        "TroopThresholdReached": "La tropa ha alcanzado el siguiente umbral ({segments} segmentos restantes)."
       },
       "AttackEffects": {
         "PlusList": "(más {list})"
@@ -144,6 +154,7 @@
       "Character": {
         "ABCPicker": {
           "SearchPlaceholder": "Buscar {items}",
+          "SearchResults": "Coincidencias de {items}: {count}",
           "Title": "Selección {type}",
           "Tooltip": {
             "ConfirmSelection": "Confirmar selección",
@@ -169,23 +180,23 @@
           "Boosts": "Mejoras",
           "ClassMissingHelp": "Elija una clase para seleccionar mejoras.",
           "Complete": "Completo",
-          "DoubleFlaw": "Double Flaw",
+          "DoubleFlaw": "Doble defecto",
           "Flaw": "Defecto",
           "Flaws": "Defectos",
           "Increase": "Incremento",
           "KeyIcon": "Clave",
           "LegacyFlaws": "Defectos heredados",
-          "Locked": "locked",
+          "Locked": "bloqueado",
           "NotSelected": "No seleccionado",
           "Partial": "Parcial",
-          "Selected": "selected",
+          "Selected": "seleccionado",
           "Title": "Asigna tus mejoras",
           "Aria": {
-            "AncestrySection": "Ancestry boosts for {name}",
-            "BackgroundSection": "Background boosts for {name}",
-            "ClassSection": "Class key attribute for {name}",
-            "LevelSection": "Free boosts at {level}",
-            "Remaining": "{count} selections remaining"
+            "AncestrySection": "Mejoras de ascendencia para {name}",
+            "BackgroundSection": "Mejoras de bagaje para {name}",
+            "ClassSection": "Atributo clave de clase para {name}",
+            "LevelSection": "Mejoras libres en {level}",
+            "Remaining": "{count} elecciones restantes"
           },
           "VoluntaryFlaw": {
             "Description": "Puedes recibir una o más penalizaciones adicionales simplemente por interpretar a un personaje con muchos defectos.",
@@ -237,12 +248,13 @@
           "FreeCraftingTooltip": "Con esta opción activada, crea objetos inmediatamente sin gastar oro",
           "IncreaseQuantity": "Incrementar cantidad",
           "MissingResource": "Recursos insuficientes para completar la elaboración",
-          "PrepareHint": "Seleccione los objetos que desea elaborar",
+          "PrepareHint": "Selecciona los objetos que quieres preparar ({remaining} restantes)",
           "RemainingSlots": "Ranura Vacía({remaining} restante)",
-          "Search": "Buscar fórmulas"
+          "Search": "Buscar fórmulas",
+          "SearchResults": "Fórmulas coincidentes: {count}"
         },
         "CreateFeat": "Crear dote",
-        "EmptyLabel": "Empty",
+        "EmptyLabel": "Vacío",
         "EmptyMultipleLabel": "{value} Vacío",
         "FeatSlot": {
           "AncestryHeader": "Dotes de ascendencia",
@@ -322,6 +334,7 @@
         },
         "CriticalSpecialization": "Especialización crítica",
         "Language": {
+          "acsie": "Acsie",
           "aballonian": "Aballonian",
           "adlet": "adlet",
           "aishmayar": "Aishmayar",
@@ -335,8 +348,10 @@
           "anugobu": "anugobu",
           "arboreal": "arboral",
           "arcadian": "arcadiano",
+          "atraxid": "Atraxid",
           "azlanti": "azlante",
           "bantridi": "Bantridi",
+          "binnaquid": "Binnaquid",
           "boggard": "boggard",
           "brenneri": "Brenneri",
           "brethedan": "Brethedan",
@@ -347,12 +362,14 @@
           "common": "común",
           "CommonLanguage": "común ({language})",
           "copaxi": "Copaxi",
+          "coshyco": "Coshyco",
           "cyclops": "cíclope",
           "daemonic": "daimónico",
           "destrachan": "destrachan",
           "DetailsPlaceholder": "Advertencias y otros detalles inusuales",
           "diabolic": "diabólico",
           "diasporan": "Diasporan",
+          "dorjosh": "Dorjosh",
           "draconic": "dracónico",
           "drooni": "drooni",
           "dwarven": "enano",
@@ -373,11 +390,12 @@
           "garundi": "garundi",
           "gfolian": "G'folian",
           "girtablilu": "girtablilu",
+          "gnarefuroid": "Gnarefuroid",
           "gnomish": "gnomo",
           "goblin": "goblin",
           "goloma": "goloma",
           "grioth": "grioth",
-          "grippli": "gripo",
+          "tripkee": "Tripkee",
           "halfling": "mediano",
           "hallit": "hállido",
           "hwan": "hwan",
@@ -402,11 +420,15 @@
           "kitsune": "kitsune",
           "kothama": "Kothama",
           "kovintal": "kovintal",
+          "krethiskarian": "Krethiskarian",
           "kucharn": "Kucharn",
+          "kuxoran": "Kuxoran",
           "lashunta": "lashunta",
+          "lazelan": "Lazelan",
           "lirgeni": "lirgeno",
           "madrosarai": "Madrosarai",
           "mahwek": "mahwek",
+          "maraquoi": "Maraquoi",
           "maratan": "Maratan",
           "migo": "mi-go",
           "minaten": "minatan",
@@ -488,11 +510,13 @@
           "vishkanyan": "Vishkanya",
           "vlaka": "Vlaka",
           "vudrani": "vudrano",
+          "vulkari": "Vulkari",
           "wayang": "wayang",
           "wildsong": "canción salvaje",
           "worlanisi": "Worlanisi",
           "wyrwood": "wyrwood",
           "xanmba": "xanmba",
+          "xofirthian": "Xofirthian",
           "yaksha": "yaksha",
           "yithian": "yithiano",
           "ysoki": "ysoki"
@@ -513,7 +537,7 @@
             "Bloodsense": "Sentido de la sangre",
             "Darkvision": "Visión en la oscuridad",
             "Echolocation": "Ecolocalización",
-            "ElectromagneticSense": "Electromagnetic Sense",
+            "ElectromagneticSense": "Sentido electromagnético",
             "GreaterDarkvision": "Visión en la oscuridad mayor",
             "Hearing": "Auditivo",
             "InfraredVision": "Visión infrarroja",
@@ -547,9 +571,14 @@
           }
         },
         "SpellPreparation": {
+          "CantripPrepared": "Los trucos solo necesitan prepararse una vez",
+          "EmptyGroup": "No hay conjuros conocidos",
           "Hint": "Para preparar un conjuro, arrastra uno de la lista a un espacio de la hoja de personaje.",
           "HintFlexible": "Para preparar un conjuro, actívalo aquí. Para preparar un truco, arrastra uno de la lista a un espacio en la hoja de personaje.",
-          "Search": "Buscar conjuros",
+          "NoFreeSlots": "No hay espacios libres de un rango válido",
+          "NotPrepared": "Sin preparar",
+          "Prepare": "Preparar conjuro",
+          "RemovePreparation": "Eliminar preparación",
           "Title": "{actor}: Preparación de conjuros"
         },
         "Spellcasting": {
@@ -560,7 +589,7 @@
           "MagicItemTypesLabel": "Tipos de objetos mágicos",
           "Rituals": "Rituales",
           "ShortLabel": "Lanzamiento de conjuros",
-          "TraditionSpellcasting": "Lanzamiento de conjuros {tradición} ",
+          "TraditionSpellcasting": "Lanzamiento de conjuros {tradition}",
           "ValidItemTypes": {
             "All": "Todos los objetos mágicos",
             "Scroll": "Sólo pergaminos"
@@ -631,7 +660,7 @@
         "Type": "Tipo"
       },
       "Speed": {
-        "BaseLabel": "Velocidad base {type}",
+        "BaseLabel": "Velocidad ({type}): {value} pies",
         "BaseWithSource": "{value}-Pies {type} Velocidad ({source})",
         "Plural": "Velocidades",
         "Label": "Velocidad",
@@ -642,7 +671,8 @@
           "Fly": "Volar",
           "Label": "Velocidad {type}",
           "Land": "Terrestre",
-          "Swim": "Nadar"
+          "Swim": "Nadar",
+          "Travel": "Viaje"
         }
       },
       "NPC": {
@@ -652,9 +682,10 @@
         },
         "Configure": {
           "Lootable": {
+            "AutomationSettings": "Configuración de automatización",
             "DefaultLootable": "Predeterminado global (saqueable)",
             "DefaultNotLootable": "Predeterminado global (no saqueable)",
-            "Hint": "Establece si los jugadores podrán saquear este PNJ tras su desaparición. El valor predeterminado global se puede configurar en <a> Configuración de automatización </a>.",
+            "Hint": "Establece si los jugadores pueden saquear este PNJ tras su muerte. El valor predeterminado global puede configurarse en {settings}.",
             "Label": "¿Saqueable?",
             "Lootable": "Saqueable",
             "NotLootable": "No saqueable"
@@ -668,8 +699,8 @@
           },
           "Label": "Generar ataque",
           "Notification": {
-            "New": "Generated NPC attack: {attack}",
-            "Relinked": "Relinked NPC Attack: {attack}"
+            "New": "Ataque de PNJ generado: {attack}",
+            "Relinked": "Ataque de PNJ vinculado de nuevo: {attack}"
           }
         },
         "Identification": {
@@ -683,21 +714,24 @@
           }
         },
         "LevelN": "Criatura {level}",
-        "SegmentsN": "{n} Segments",
+        "SegmentsN": "{n} segmentos",
         "SimpleSheet": "Hoja de PNJ sencilla",
         "SpecialSkill": "+{mod} {label}",
         "SkillsEditor": {
+          "AddLore": "Añadir Saber",
           "AddSpecial": "Añadir especial",
           "Error": {
             "PredicateArray": "El predicado debe ser un conjunto"
           },
+          "LoreAlreadyExists": "Ya existe un Saber con este nombre",
           "LorePlaceholder": "Saber (carpintería)",
           "Note": "Notas",
           "Predicate": "Predicado",
+          "RemoveSpecial": "Eliminar especial",
           "Special": "Especial",
           "Title": "Editor de habilidades ({actor})"
         },
-        "Thresholds": "Thresholds"
+        "Thresholds": "Umbrales"
       },
       "Party": {
         "BlankSlate": "Este grupo no tiene miembros. Arrastra una criatura de la barra lateral de actores para empezar.",
@@ -705,14 +739,16 @@
           "AdjustDifficulty": "Ajustar la dificultad",
           "ChooseLores": "Elige Saberes",
           "ChooseSaves": "Elige salvaciones",
-          "ChooseSkills": "Elige Habilidades/Percepción",
-          "LevelDC": "CD basado en niveles",
-          "Post": "Generar mensaje",
+          "DCTabs": {
+            "level": "CD basada en el nivel",
+            "simple": "CD simple",
+            "static": "CD fija"
+          },
+          "PreviewPlaceholder": "Salida sin formato",
           "PromptTitle": "Título del mensaje",
           "SecretCheck": "Tirada secreta",
-          "SetDC": "Establecer CD",
-          "SimpleDC": "CD Simple",
           "SkillsPerception": "Habilidades/Percepción",
+          "Submit": "Generar solicitud",
           "Title": "Generar mensaje de tirada",
           "TitleShort": "Verificar mensaje"
         },
@@ -821,6 +857,7 @@
         "cylinder": "cilindro",
         "emanation": "emanación",
         "line": "línea",
+        "ring": "anillo",
         "square": "cuadrado"
       },
       "Size": {
@@ -837,14 +874,14 @@
     "ArmorClassShortLabel": "CA",
     "ArmorDexLabel": "Tope Des.",
     "ArmorGreaterResilientRune": "Resilente mayor",
-    "ArmorGroupCeramic": "Ceramic",
+    "ArmorGroupCeramic": "Cerámica",
     "ArmorGroupChain": "Malla",
     "ArmorGroupCloth": "Ropa",
     "ArmorGroupComposite": "Compuesta",
     "ArmorGroupLabel": "Grupo",
     "ArmorGroupLeather": "Cuero",
     "ArmorGroupPlate": "Placas",
-    "ArmorGroupPolymer": "Polymer",
+    "ArmorGroupPolymer": "Polímero",
     "ArmorGroupSkeletal": "Esquelético",
     "ArmorGroupWood": "Madera",
     "ArmorMajorResilientRune": "Resilente superior",
@@ -860,6 +897,7 @@
     "ArmorPropertyRuneAssisting": "Asistida",
     "ArmorPropertyRuneBitter": "Amarga",
     "ArmorPropertyRuneColdResistant": "Resistente al frío",
+    "ArmorPropertyRuneConvincing": "Convincente",
     "ArmorPropertyRuneDeathless": "Imperecedera",
     "ArmorPropertyRuneElectricityResistant": "Resistente a la electricidad",
     "ArmorPropertyRuneEnergyAdaptive": "Adaptación energética",
@@ -871,16 +909,19 @@
     "ArmorPropertyRuneGreaterAcidResistant": "Resistencia al ácido mayor",
     "ArmorPropertyRuneGreaterAdvancing": "Avanzada mayor",
     "ArmorPropertyRuneGreaterColdResistant": "Resistencia al frío mayor",
+    "ArmorPropertyRuneGreaterConvincing": "Convincente mayor",
     "ArmorPropertyRuneGreaterDread": "Pavorosa mayor",
     "ArmorPropertyRuneGreaterElectricityResistant": "Resistencia a la electricidad mayor",
     "ArmorPropertyRuneGreaterFireResistant": "Resistencia al fuego mayor",
     "ArmorPropertyRuneGreaterFortification": "Fortificación mayor",
     "ArmorPropertyRuneGreaterInvisibility": "Invisibilidad mayor",
+    "ArmorPropertyRuneGreaterMoonweave": "Tejido lunar mayor",
     "ArmorPropertyRuneGreaterQuenching": "Apagado mayor",
     "ArmorPropertyRuneGreaterReady": "Preparación mayor",
     "ArmorPropertyRuneGreaterShadow": "Sombra mayor",
     "ArmorPropertyRuneGreaterSlick": "Resbaladizo mayor",
     "ArmorPropertyRuneGreaterStanching": "Restañante mayor",
+    "ArmorPropertyRuneGreaterSunweave": "Tejido solar mayor",
     "ArmorPropertyRuneGreaterSwallowSpike": "Pico de golondrina mayor",
     "ArmorPropertyRuneGreaterWinged": "Alado mayor",
     "ArmorPropertyRuneImmovable": "Inamovible",
@@ -888,29 +929,39 @@
     "ArmorPropertyRuneInvisibility": "Invisibilidad",
     "ArmorPropertyRuneLesserDread": "Pavorosa menor",
     "ArmorPropertyRuneMagnetizing": "Magnetizando",
+    "ArmorPropertyRuneMajorConvincing": "Convincente superior",
+    "ArmorPropertyRuneMajorMoonweave": "Tejido lunar superior",
     "ArmorPropertyRuneMajorQuenching": "Apagado mayor",
     "ArmorPropertyRuneMajorShadow": "Sombra superior",
     "ArmorPropertyRuneMajorSlick": "Resbaladizo superior",
     "ArmorPropertyRuneMajorStanching": "Restañante superior",
+    "ArmorPropertyRuneMajorSunweave": "Tejido solar superior",
     "ArmorPropertyRuneMajorSwallowSpike": "Pico de golondrina mayor",
     "ArmorPropertyRuneMalleable": "Maleable",
     "ArmorPropertyRuneMisleading": "Engañoso",
+    "ArmorPropertyRuneMobile": "Móvil",
     "ArmorPropertyRuneModerateDread": "Pavorosa moderado",
+    "ArmorPropertyRuneMoonweave": "Tejido lunar",
     "ArmorPropertyRunePortable": "Portátil",
     "ArmorPropertyRuneQuenching": "Apagado",
     "ArmorPropertyRuneRaiment": "Vestido",
     "ArmorPropertyRuneReady": "Listo",
     "ArmorPropertyRuneRockBraced": "Reforzado con roca",
+    "ArmorPropertyRuneSafeguarding": "Salvaguarda",
+    "ArmorPropertyRuneSelfSealing": "Autosellante",
     "ArmorPropertyRuneShadow": "Sombra",
+    "ArmorPropertyRuneSidestepping": "Esquiva",
     "ArmorPropertyRuneSinisterKnight": "Caballero siniestro",
     "ArmorPropertyRuneSizeChanging": "Cambio de tamaño",
     "ArmorPropertyRuneSlick": "Resbaladizo",
     "ArmorPropertyRuneSoaring": "Ascendente",
     "ArmorPropertyRuneSpellwatch": "Guardaconjuros",
     "ArmorPropertyRuneStanching": "Restañante",
+    "ArmorPropertyRuneSunweave": "Tejido solar",
     "ArmorPropertyRuneSwallowSpike": "Pico de golondrina",
     "ArmorPropertyRuneTrueQuenching": "Apagado verdadero",
     "ArmorPropertyRuneTrueStanching": "Restañante verdadero",
+    "ArmorPropertyRuneUnnerving": "Inquietante",
     "ArmorPropertyRuneWinged": "Alado",
     "ArmorResilientRune": "Resiliente",
     "ArmorSpeedLabel": "Penalización por velocidad",
@@ -1004,6 +1055,8 @@
       "DiceRollOptionsHint": "Las opciones de dado y de modificador de tirada se utilizan al predicar elementos de las reglas que alteran el daño",
       "FlatCheckNoModifiers": "Las pruebas planas nunca incluyen modificadores, bonificadores o penalizadores.",
       "RollOptions": "Opciones de tirada",
+      "Search": "Buscar opciones de tirada",
+      "SearchResults": "Opciones de tirada coincidentes: {count}",
       "Select": "Inspeccionar tirada",
       "Title": "Inspector de tiradas"
     },
@@ -1074,6 +1127,14 @@
       "FailedToBuyItemWithSomeCharacters": "No se pudo comprar {item} con algunos de los actores seleccionados.",
       "Filter": {
         "Alignments": "Alineamiento",
+        "Aria": {
+          "ExcludeTrait": "Excluir {trait}",
+          "LevelFrom": "Nivel mínimo",
+          "LevelTo": "Nivel máximo",
+          "RangeMax": "Máximo de {label}",
+          "RangeMin": "Mínimo de {label}",
+          "RemoveTrait": "Eliminar {trait}"
+        },
         "Ancestries": "Ascendencias",
         "ArmorFilters": "Filtros de armadura",
         "ClearFilter": "Borrar",
@@ -1114,7 +1175,8 @@
         "PacksLabel": "Paquetes",
         "Saved": "Los ajustes se han guardado",
         "SourcesLabel": "Fuentes",
-        "Title": "Ajustes del navegador del compendio"
+        "Title": "Ajustes del navegador del compendio",
+        "ToggleVisibleSources": "Alternar todas las fuentes visibles"
       },
       "TabAbilities": "Atributos",
       "TabBestiary": "Bestiarios",
@@ -1132,11 +1194,13 @@
     },
     "CompendiumMigrationStatus": {
       "Document": "Documento",
+      "FailedDocuments": "Documentos fallidos",
       "Foundry": "Foundry",
       "FoundryOld": "0.7 o mayor",
       "Invalid": "Inválido",
       "LockedTooltip": "No se puede migrar: el compendio está bloqueado",
       "MigrateCompendium": "Migrar Compendio",
+      "OutOfDate": "Desactualizado",
       "Schema": "Esquema",
       "Size": "Tamaño",
       "Title": "Estado de la migración",
@@ -1247,7 +1311,7 @@
     "CriticalDamageLabel": "Crítico",
     "CriticalFumbleCardButtonTitle": "Robar una carta de error crítico",
     "CriticalHitCardButtonTitle": "Robar una carta de golpe crítico",
-    "CurrencyLabel": "Currency",
+    "CurrencyLabel": "Moneda",
     "CurrencyAbbreviations": {
       "cp": "pc",
       "gp": "po",
@@ -1302,7 +1366,7 @@
         "Type": {
           "abysium": "abisio",
           "adamantine": "adamantita",
-          "aging": "aging",
+          "aging": "envejecimiento",
           "alchemical": "alquímico",
           "all-damage": "todo el daño",
           "arcane": "arcano",
@@ -1374,7 +1438,7 @@
           "polymorph": "polimorfía",
           "possession": "posesión",
           "primal": "primigenio",
-          "prediction": "prediction",
+          "prediction": "predicción",
           "prone": "tumbado",
           "protean-anatomy": "anatomía proteica",
           "radiation": "radiación",
@@ -1591,6 +1655,7 @@
         "XPBudget": "Ganancia de XP",
         "XPNeeded": "XP necesarios"
       },
+      "CalculateXP": "Calcular PX",
       "CreatureXPAndRole": {
         "CreatureLevel": "Nivel de criatura",
         "CreatureLevels": {
@@ -1621,10 +1686,12 @@
           }
         },
         "Budget": "Ganancias: {spent} / {max} XP (Nivel de grupo {partyLevel})",
+        "PartySize": "Tamaño del grupo: {size}",
         "Threat": "Amenaza: <threat>{threat}</threat>"
       },
       "NoActiveEncounter": "No hay ningún encuentro activo.",
       "NoTokenInScene": "{actor} no tiene ficha en la escena.",
+      "PartyInformation": "Información del grupo",
       "RevealName": "Revelar nombre",
       "XP": "PX"
     },
@@ -1659,6 +1726,7 @@
       "ItemNotFoundByUUID": "No se ha encontrado el objeto con el UUID \"{uuid}\".",
       "MinimumProfLevelSetByFeatures": "La competencia seleccionada está por debajo de la competencia establecida por las características.",
       "NoCreatureTokenSelected": "Selecciona al menos una ficha asociada con una criatura.",
+      "NoOppositionTokenSelected": "Selecciona al menos una ficha de enemigo o peligro y, si lo deseas, todas las fichas de los PJ.",
       "NoPCTokenSelected": "Seleccione al menos un token asociado con una PC.",
       "NoTokenSelected": "Seleccione al menos una ficha.",
       "NoUpdatePermission": "No tienes permiso para actualizar este actor.",
@@ -1666,7 +1734,7 @@
       "NotEnoughCoins": "Monedas insuficientes",
       "MissingStatisticSelected": "Falta estadística {statistic} en los actores seleccionados",
       "RuleElementSyntax": "Error de sintaxis en la definición del elemento de regla: {message}",
-      "ModuleTooOld": "{module} is unmaintained and may introduce stability issues to your game.",
+      "ModuleTooOld": "{module} ya no recibe mantenimiento y puede causar problemas de estabilidad en tu partida.",
       "WeaponNoDamage": "Esta arma no causa daño.",
       "WeaponQuantityZero": "No tienes más de estas armas equipadas."
     },
@@ -1787,8 +1855,8 @@
       "Base": "Base: {formula}"
     },
     "InlineTemplateErrors": {
+      "DistanceInvalid": "Error en @Template: la distancia {distance} no es válida",
       "DistanceMissing": "Error en @Template: el parámetro de distancia es obligatorio",
-      "DistanceNoNumber": "Error en @Template: la dimensión {distance} no es un número",
       "TypeMissing": "Error en @Template: el parámetro de tipo es obligatorio",
       "TypeUnsupported": "Error en @Template: el tipo {type} no es compatible",
       "WidthNoNumber": "Error en @Template: el ancho {width} no es un número"
@@ -2084,35 +2152,35 @@
               "label": "Armas sencillas"
             },
             "martial": {
-              "label": "Martial Weapons"
+              "label": "Armas marciales"
             },
             "advanced": {
-              "label": "Advanced Weapons"
+              "label": "Armas avanzadas"
             },
             "unarmed": {
-              "label": "Unarmed Attacks"
+              "label": "Ataques sin armas"
             }
           },
           "defenses": {
             "light": {
-              "label": "Light Armor"
+              "label": "Armadura ligera"
             },
             "medium": {
-              "label": "Medium Armor"
+              "label": "Armadura intermedia"
             },
             "heavy": {
-              "label": "Heavy Armor"
+              "label": "Armadura pesada"
             },
             "unarmored": {
-              "label": "Unarmored Defense"
+              "label": "Defensa sin armadura"
             }
           },
           "spellcasting": {
-            "label": "Spell Attack Modifiers & DCs"
+            "label": "Modificadores de ataque de conjuro y CD"
           },
           "trainedSkills": {
             "additional": {
-              "label": "Additional Skills"
+              "label": "Habilidades adicionales"
             }
           }
         },
@@ -2131,10 +2199,10 @@
           },
           "Dialog": {
             "Add": "Agregar daño persistente",
-            "DamageType": "Damage Type",
-            "DC": "DC",
-            "Edit": "Edit Persistent Damage",
-            "Formula": "Formula",
+            "DamageType": "Tipo de daño",
+            "DC": "CD",
+            "Edit": "Editar daño persistente",
+            "Formula": "Fórmula",
             "Invalid": "La fórmula no es válida.",
             "Remove": "Eliminar daño persistente",
             "Title": "Daño persistente ({actor})"
@@ -2160,7 +2228,7 @@
           "elixir": "Elixir",
           "fulu": "Fulú",
           "gadget": "Artilugio",
-          "spell-gem": "Spell Gem",
+          "spell-gem": "Gema de conjuro",
           "mutagen": "Mutageno",
           "oil": "Aceite",
           "other": "Otro",
@@ -2174,8 +2242,8 @@
         },
         "Plural": "Consumibles",
         "Spell": {
-          "Empty": "Empty",
-          "Label": "Embedded Spell"
+          "Empty": "Vacío",
+          "Label": "Conjuro incorporado"
         },
         "Uses": {
           "AutoDestroy": "Destruir al usar",
@@ -2590,7 +2658,7 @@
       },
       "Equipment": {
         "Category": {
-          "upgrade": "Upgrade"
+          "upgrade": "Mejora"
         }
       },
       "FIELDS": {
@@ -2603,7 +2671,7 @@
           "Ancestry": "Dote de ascendencia",
           "AncestryFeature": "Característica de ascendencia",
           "Bonus": "Dote adicional",
-          "Calling": "Mythic Calling",
+          "Calling": "Llamamiento mítico",
           "Class": "Dote de clase",
           "ClassFeature": "Característica de clase",
           "Curse": "Maldición Divina",
@@ -2619,6 +2687,7 @@
         "LevelN": "Dote {level}",
         "OnlyLevel1": "Debe elegirse a nivel 1.",
         "Plural": "Dotes",
+        "PublicationSource": "Fuente: {publication}",
         "Subfeatures": {
           "KeyAbilityOptions": {
             "Label": "Opciones de atributos clave",
@@ -2634,7 +2703,7 @@
           },
           "SuppressedFeatures": {
             "Label": "Dotes de Clase Suprimidas",
-            "Hint": "To remove a feature from data preparation and the feats tab, drag and drop one onto this sheet."
+            "Hint": "Para eliminar un rasgo de la preparación de datos y de la pestaña de dotes, arrástralo y suéltalo sobre esta ficha."
           },
           "Senses": {
             "Darkvision": {
@@ -2679,23 +2748,23 @@
       "NPCAttack": {
         "FIELDS": {
           "subjectToMAP": {
-            "label": "Subject to MAP?",
-            "hint": "Does this attack increase or become affected by a multiple attack penalty?"
+            "label": "¿Sujeto al penalizador por ataques múltiples?",
+            "hint": "¿Este ataque aumenta el penalizador por ataques múltiples o se ve afectado por él?"
           },
           "range": {
             "increment": {
-              "label": "Range Increment"
+              "label": "Incremento de alcance"
             },
             "max": {
-              "label": "Max Range"
+              "label": "Alcance máximo"
             }
           }
         },
-        "LinkedWeapon": "Linked Weapon",
+        "LinkedWeapon": "Arma vinculada",
         "Tags": {
-          "MagN": "Mag {n}",
-          "RangeN": "Range {n} Feet",
-          "RangeIncrementN": "Range Increment {n} Feet"
+          "MagN": "Cargador {n}",
+          "RangeN": "Alcance {n} pies",
+          "RangeIncrementN": "Incremento de alcance {n} pies"
         }
       },
       "OtherTags": {
@@ -2705,7 +2774,7 @@
       "Physical": {
         "FIELDS": {
           "grade": {
-            "label": "Grade"
+            "label": "Grado"
           }
         },
         "Attach": {
@@ -2745,16 +2814,16 @@
           "WithLight": "{bulk}, {light}L"
         },
         "ChangeEquipmentSystem": {
-          "Title": "Change System",
-          "ToPathfinder": "Removing the {removedTrait} trait changes this {type} from Starfinder to Pathfinder. Your grade will be lost. Are you sure? Alternatively, you could swap it to {otherTrait}.",
-          "ToPathfinderOrSwap": "Removing the {removedTrait} trait changes this {type} from Starfinder to Pathfinder. Your grade will be lost. Are you sure? Alternatively, you could swap it to {otherTrait}.",
-          "ToStarfinder": "Adding the {newTrait} trait changes this {type} from Pathfinder to Starfinder. All runes will be lost. Are you sure?"
+          "Title": "Cambiar sistema",
+          "ToPathfinder": "Eliminar el rasgo {removedTrait} cambia este objeto de tipo {type} de Starfinder a Pathfinder. Perderá su grado. ¿Estás seguro?",
+          "ToPathfinderOrSwap": "Eliminar el rasgo {removedTrait} cambia este objeto de tipo {type} de Starfinder a Pathfinder. Perderá su grado. ¿Estás seguro? También puedes sustituirlo por {otherTrait}.",
+          "ToStarfinder": "Añadir el rasgo {newTrait} cambia este objeto de tipo {type} de Pathfinder a Starfinder. Perderá todas sus runas. ¿Estás seguro?"
         },
         "Destroyed": "Destruido",
         "FromSpell": {
           "CantripDeck5": "Baraja de trucos de {name} (paquete de 5)",
           "Scroll": "Pergamino de {name} (Rango {level})",
-          "spell-gem": "Spell Gem of {name} (Rank {level})",
+          "spell-gem": "Gema de conjuro de {name} (rango {level})",
           "Wand": "Varita de {name} (Rango {level})"
         },
         "GeneratedName": {
@@ -2796,18 +2865,18 @@
           "TwoPropertiesMaterial": "{property1} {property2} {material} {base}"
         },
         "Grade": {
-          "commercial": "Commercial",
-          "tactical": "Tactical",
-          "advanced": "Advanced",
+          "commercial": "Comercial",
+          "tactical": "Táctico",
+          "advanced": "Avanzado",
           "superior": "Superior",
-          "elite": "Elite",
-          "ultimate": "Ultimate",
-          "paragon": "Paragon"
+          "elite": "Élite",
+          "ultimate": "Supremo",
+          "paragon": "Ejemplar"
         },
         "LevelLabel": "Objeto {level}",
         "OtherTag": {
-          "AlchemicalFood": "Alchemical Food",
-          "AlchemicalTool": "Alchemical Tool",
+          "AlchemicalFood": "Comida alquímica",
+          "AlchemicalTool": "Herramienta alquímica",
           "HandwrapsOfMightyBlows": "Vendas de Golpes Poderosos",
           "Herbal": "Herbario",
           "Improvised": "Improvisado",
@@ -2873,7 +2942,7 @@
       "Rules": {
         "Apply": "Aplicar",
         "Close": "Cerrar",
-        "CopyToClipboard": "Copy to Clipboard",
+        "CopyToClipboard": "Copiar al portapapeles",
         "Edit": "Editar JSON",
         "Hint": {
           "Slug": "Un identificador estable y legible por humanos: si se establece, permanecerá en su lugar incluso si se cambia el nombre del elemento.",
@@ -2935,8 +3004,8 @@
         "Area": "{size}-{unit} {shape}",
         "BaseValue": "Base: {value}",
         "Cast": {
-          "Noun": "Cast",
-          "Verb": "Cast"
+          "Noun": "Lanzamiento",
+          "Verb": "Lanzar"
         },
         "Cost": "Coste",
         "Counteract": {
@@ -2985,8 +3054,8 @@
           "SheetTitle": "{originalName} (Variante)"
         },
         "Warning": {
-          "CantripToRankedSlots": "{conjuro} es un truco y debe agregarse a una lista de trucos.",
-          "InvalidRank": "{conjuro} es {rangodeConjuro}, pero estos espacios son para {rango de Objetivo}.",
+          "CantripToRankedSlots": "{spell} es un truco y debe añadirse a una lista de trucos.",
+          "InvalidRank": "{spell} es de rango {spellRank}, pero estos espacios son para el rango {targetRank}.",
           "NonCantripToCantrips": "{spell} no es un truco y no se puede agregar a una lista de trucos.",
           "WrongSpellType": "No se puede agregar el conjuro {type} a esta entrada de lanzamiento de conjuros."
         }
@@ -3000,7 +3069,7 @@
               "coin": "Moneda",
               "gem": "Gema",
               "material": "Material",
-              "credstick": "Credstick"
+              "credstick": "Tarjeta de crédito"
             }
           }
         }
@@ -3058,6 +3127,7 @@
         "Damage": {
           "DiceNumber": "Número de dados"
         },
+        "ExpendN": "Gasto {n}",
         "Forceful": {
           "Second": "Segundo ataque vigoroso",
           "Third": "Tercer (o más) ataque vigoroso"
@@ -3076,8 +3146,8 @@
           "Label": "Uso cuerpo a cuerpo"
         },
         "Modular": {
-          "Default": "B, P, or S",
-          "Title": "Modular Configurations"
+          "Default": "Co, P o C",
+          "Title": "Configuraciones modulares"
         },
         "NoRangeMelee": "Ninguno (cuerpo a cuerpo)",
         "RangeIncrementN": {
@@ -3136,19 +3206,19 @@
         "gift": "Dar",
         "move": "Transferir",
         "purchase": "Comprar",
-        "credits": "Transfer"
+        "credits": "Transferir"
       },
       "Prompt": {
         "gift": "¿Dar este objeto a {actor}?",
         "move": "¿Transferir este objeto a {actor}?",
         "purchase": "¿Quiere el {actor} comprar este objeto?",
-        "credits": "Transfer credits to {actor}"
+        "credits": "Transferir créditos a {actor}"
       },
       "Title": {
         "gift": "Dar {item}",
         "move": "Transferir {item}",
         "purchase": "Comprar {item}",
-        "credits": "Transfer Credits"
+        "credits": "Transferir créditos"
       }
     },
     "ItemsLabel": "Objetos",
@@ -3176,7 +3246,7 @@
     },
     "KitItems": "Objetos",
     "KitWorldItem": "Este artículo no se encuentra en un Compendio y no funcionará en otros mundos.",
-    "LackCastConsumableCapability": "{actor} no tiene  competencia para usar {conjuro} y ​​no tiene la dote Trucar objeto mágico.",
+    "LackCastConsumableCapability": "{actor} no tiene la competencia necesaria para usar {spell} y no posee la dote Trucar objeto mágico.",
     "LanguagesAdditional": "Idiomas adicionales",
     "LegalNotice": {
       "Title": "Aviso legal",
@@ -3263,17 +3333,27 @@
       "OutsideSchemaRange": "El rango especificado está fuera del rango de versiones del esquema del sistema (entre {minimum} y ​​{maximum}).",
       "Running": "Ejecutando la migración del sistema...",
       "Starting": "Aplicando la migración del sistema PF2E a la versión {version}. Tenga paciencia y no cierre su juego ni apague su servidor.",
+      "StillOutdated": "La migración ha terminado, pero {count} documentos siguen utilizando un esquema anterior",
       "Summary": {
+        "Complete": "Completa",
         "Documents": "Documentos",
+        "Download": "Descargar",
         "HelpResources": "Se encontró un error inesperado al migrar algunos actores o elementos. Si desea obtener más ayuda, no dude en informar un problema en el <a href=\"https://github.com/foundryvtt/pf2e/issues\">repositorio del sistema</a> o visítenos en <a href=\"https://discord.gg/SajryVzCyf\">Discord</a> para obtener apoyo de la comunidad.",
+        "Incomplete": "Incompleta",
         "Migrated": "Migrado",
         "Remigrate": "Remigrar",
+        "RemigrateFailed": "Un error ha interrumpido la nueva migración: consulta la consola (F12) para obtener más detalles.",
+        "ReportDownloaded": "Informe de migración descargado.",
+        "Status": "Estado",
         "Title": "Resumen de migración",
         "Total": "Total",
         "Troubleshoot": {
           "Hint": "Aquí puede ejecutar una nueva migración, que intentará solucionar automáticamente los problemas con los actores y elementos.",
           "Title": "Solución de problemas del sistema"
-        }
+        },
+        "UnmigratedDocuments": "Documentos sin migrar",
+        "UnmigratedDocumentsHint": "Haz clic en un documento para abrirlo. Pasa el cursor sobre uno marcado con un icono de advertencia para ver por qué no se ha podido migrar.",
+        "UnmigratedDocumentsHintRemigrate": "Haz clic en un documento para abrirlo o vuelve a migrar para obtener detalles sobre los documentos que no se han podido migrar."
       },
       "Troubleshooting": "Solución de problemas",
       "WorldNotReady": "El mundo del juego no está listo: inténtalo de nuevo en unos segundos."
@@ -3296,6 +3376,7 @@
     "ModifiersTitle": "Modificadores",
     "MultipleAttackPenalty": "Penalizador por ataque múltiple",
     "MysticStrikes": "Golpes místicos",
+    "NameLabel": "Nombre",
     "NPC": {
       "Abilities": {
         "Glossary": {
@@ -3353,7 +3434,8 @@
           "Tremorsense": "<p>El sentido de la vibración permite un monstruo notar las vibraciones que causa el movimiento a través de una superficie sólida. Suele ser un sentido impreciso con un alcance limitado (que se indica en la aptitud). El sentido de la vibración solo funciona si el monstruo está en la misma superficie que el sujeto, y solo si este se está moviendo por la superficie (o excavando a través de ella).</p>",
           "TroopDefenses": "<p>Troops are composed of many individuals, represented by four \"segments\" on a battle grid. Each segment is 10 feet on each side and as tall as the individual members of the troop. Segments must remain contiguous. Each one has to share at least 5 feet of one of its edges with another segment—being adjacent on a diagonal isn't sufficient! You can measure flanking, cover, and the like using the center of any segment.</p>\n<p>A troop has two Hit Point thresholds in its HP entry and loses segments as it crosses thresholds. Typically, the higher threshold is at 2/3 of the troop's maximum Hit Points and the lower is at 1/3 of its maximum. Once the troop drops below the higher threshold, it loses one segment, leaving three segments (12 squares) remaining and setting the first threshold as the troop's new maximum Hit Points. This repeats when the troop drops below the lower threshold, leaving two segments (8 squares). At 0 Hit Points, the troop disperses entirely, with the few remaining members surrendering, @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing}, or easily dispatched, as determined by the GM. Typically the creature who caused the troop to lose a segment decides which to remove, or the GM decides when a specific creature wasn't responsible. To restore lost segments and maximum Hit Points, a troop needs to spend downtime to use long-term treatment on casualties or recruit new members to replace the fallen.</p>\n<p>Troops are typically immune to non-damaging effects that target a single creature, such as a @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell or the @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} action. An ability that can target 5 or more creatures can target an entire segment, increasing to two segments if it can target 10 or more creatures and to the entire troop if it can target 20 or more creatures. An ability that affects all creatures in a certain range affects all segments in range (make any checks or saves separately for each segment). As examples, an 8th rank <em>charm</em> spell (with 10 targets) can affect two segments, and an ability that Demoralizes all creatures within 30 feet of you would affect all segments that are fully within that range. A non-damaging ability that would prevent a segment from acting, cause them to flee, or otherwise make them unable to function as part of the troop for a round or more removes the segment entirely. The troop loses a number of HP required to bring it to the next threshold. If an ability both deals damage and has a non-damaging effect, apply the damage then the rest of the effect.</p>",
           "TroopMovement": "<p>Whenever a troop moves, you move one of its segments and the other segments follow behind it. At the end of the movement, you can group the other segments adjacent to the one you moved as you see fit, provided none of them moves farther than the moving segment. If you choose not to move the troop any distance, you can instead reshape the position of all the segments as long as one stays in place.</p>",
-          "Wavesense": "<p>Este sentido permite a un monstruo notar las vibraciones causadas por el movimiento a través de un líquido. Por lo general es un sentido impreciso con un rango de distancia limitado (que se indica en la aptitud). El sentido de las olas solo funciona si el monstruo y el sujeto están en la misma masa de líquido y solo si el sujeto se mueve a través del mismo.</p>"
+          "Wavesense": "<p>Este sentido permite a un monstruo notar las vibraciones causadas por el movimiento a través de un líquido. Por lo general es un sentido impreciso con un rango de distancia limitado (que se indica en la aptitud). El sentido de las olas solo funciona si el monstruo y el sujeto están en la misma masa de líquido y solo si el sujeto se mueve a través del mismo.</p>",
+          "WindUp": "<p>Para que una criatura mecánica pueda actuar, otra criatura debe darle cuerda con una llave única. Esto lleva 1 minuto. Una vez que se le ha dado cuerda, permanece operativa durante el tiempo indicado, normalmente 24 horas. Después deja de percibir su entorno y no puede actuar hasta que se le vuelva a dar cuerda. Algunas aptitudes de las criaturas mecánicas requieren gastar parte del tiempo de funcionamiento que les queda. No pueden gastar más tiempo del que tienen y se apagan inmediatamente cuando su tiempo restante llega a 0. Si no está claro cuándo se dio cuerda por última vez a una criatura mecánica, la mayoría de sus cuidadores les dan cuerda a todas a una hora fija, normalmente a las 8 de la mañana.</p>\n<p>Una criatura puede intentar @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Inutilizar un mecanismo} para reducir la cuerda de una criatura mecánica (con la CD indicada en la entrada Dar cuerda). Con cada éxito, la criatura mecánica pierde 1 hora de funcionamiento (o 2 horas con un éxito crítico). Esto puede hacerse incluso si está en modo de espera.</p>\n<p>Una criatura mecánica cuya entrada Dar cuerda indique que dispone de un modo de espera tiene la siguiente acción.</p>\n<p><strong>Entrar en espera</strong> <span class='pf2-icon'>3</span> La criatura mecánica entra en modo de espera. Su tiempo de funcionamiento no disminuye mientras está en espera, pero puede percibir su entorno (con un penalizador –2 por circunstancia a Percepción). No puede actuar, con una excepción: cuando percibe a una criatura, puede salir del modo de espera como reacción (tirando iniciativa si procede).</p>"
         }
       },
       "ActionsList": {
@@ -3436,7 +3518,7 @@
     "NewLoreSkill": "Nueva habilidad",
     "NewPlaceholders": {
       "Action": "Nueva acción",
-      "Ammo": "New Ammunition",
+      "Ammo": "Nueva munición",
       "Ancestry": "Nueva ascendencia",
       "Armor": "Nueva armadura",
       "Background": "Nuevo bagaje",
@@ -3551,11 +3633,13 @@
     "PreciousMaterialSovereignSteel": "Acero soberano",
     "PreciousMaterialSovereignSteelDescription": "Creada por el Soberano Negro Kevoth-Kul, esta aleación única de hierro frío y metal celeste noqual puede brindar protección contra ataques mágicos. El proceso de forjar en frío los dos materiales juntos es bastante complicado y preciso. Es casi seguro que los personajes que busquen armas y armaduras de acero soberano tendrán que viajar a Starfall para conseguir equipo hecho con esta rara aleación. Si bien algunos creen que también es posible fabricar escudos de acero soberano, en uno de sus ataques, Kevoth-Kul gritó queNo los necesitaba y prohibió a cualquiera hacer tal cosa. Hasta ahora, sus herreros han tenido demasiado miedo para confirmar si se trataba de una broma o no. Todos los objetos de acero soberano (incluidas las armas y armaduras que aparecen a continuación) tienen una bonificación de circunstancia de +4 en las salvaciones contra la magia que realiza el objeto, y otorgan su bonificación a las salvaciones que el propietario realiza específicamente para proteger el objeto de la magia (como contra el hechizo de agarre oxidado). ).",
     "PreciousMaterialStandardGrade": "Calidad normal",
+    "PreciousMaterialThroneglass": "Vidrio del trono",
+    "PreciousMaterialThroneglassDescription": "El vidrio del trono es un recurso increíblemente escaso creado durante la violencia de la Caída de la Tierra, hace 10 000 años, cuando el impacto de estrellas caídas potenció ciertos paneles rotos de vidrio verde que formaban parte de la arquitectura de edificios importantes de Azlant, en particular del Palacio Imperial. Como material, el vidrio del trono es tan resistente como el acero, pero los antiguos métodos para convertirlo en armas se han perdido hace mucho tiempo. El vidrio del trono de calidad baja no aporta ningún beneficio adicional a un arma fabricada con él más allá de su valor estético y del valor intrínseco del material precioso, pero el de calidad estándar y alta puede retener poder psíquico y liberarlo después mediante un Golpe. Cuando una criatura que empuña un arma de vidrio del trono de calidad estándar o alta tiene éxito en una salvación contra un efecto mental, el arma almacena parte de esa energía para un ataque futuro. Un arma de calidad estándar puede retener esta energía durante 1 asalto antes de que se disipe sin causar daño, mientras que una de calidad alta puede retenerla durante 1 minuto. La próxima vez que Golpees a una criatura con un arma de vidrio del trono que tenga energía almacenada, el objetivo debe hacer una salvación de Voluntad (CD 24 para el vidrio del trono de calidad estándar o CD 35 para el de calidad alta) para evitar quedar @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} durante 1 asalto (o @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} con un fallo crítico).",
     "PreciousMaterialWarpglass": "Vidrio de urdimbre",
     "PreciousMaterialWarpglassDescription": "Esta extraña sustancia está formada a partir de la cruda y caótica quintaesencia del Torbellino. Se puede transformar en armas y objetos, pero es demasiado inestable para convertirlo en armaduras o escudos útiles. El vidrio de urdimbre en bruto es un material vítreo opalescente con una resistencia sorprendente. Cuando se trabaja, cambia su apariencia (aunque no sus propiedades) para aparecer como estrías aleatorias de otros metales y tipos de piedra.",
     "PreparationTypeInnate": "Innato",
     "PreparationTypeItems": "Sólo objetos",
-    "PreparationTypeFocus": "Focus",
+    "PreparationTypeFocus": "Foco",
     "PreparationTypePrepared": "Preparado",
     "PreparationTypeRitual": "Ritual",
     "PreparationTypeSpontaneous": "Espontáneo",
@@ -3579,7 +3663,7 @@
     "PropertyRuneLabel2": "Propiedad de runa (2.º)",
     "PropertyRuneLabel3": "Propiedad de runa (3.º)",
     "PropertyRuneLabel4": "Propiedad de runa (4.º)",
-    "PropertyRuneLabel5": "Property Rune (5th)",
+    "PropertyRuneLabel5": "Runa de propiedad (5.ª)",
     "Publication": {
       "Authors": "Autor(es)",
       "Label": "Publicación",
@@ -3593,16 +3677,16 @@
     },
     "QuantityLabel": "Cantidad",
     "QuantityShortLabel": "Cant.",
-    "Rank1": "Rank 1",
-    "Rank2": "Rank 2",
-    "Rank3": "Rank 3",
-    "Rank4": "Rank 4",
-    "Rank5": "Rank 5",
-    "Rank6": "Rank 6",
-    "Rank7": "Rank 7",
-    "Rank8": "Rank 8",
-    "Rank9": "Rank 9",
-    "Rank10": "Rank 10",
+    "Rank1": "Rango 1",
+    "Rank2": "Rango 2",
+    "Rank3": "Rango 3",
+    "Rank4": "Rango 4",
+    "Rank5": "Rango 5",
+    "Rank6": "Rango 6",
+    "Rank7": "Rango 7",
+    "Rank8": "Rango 8",
+    "Rank9": "Rango 9",
+    "Rank10": "Rango 10",
     "RangePenalty": "Penalización de rango",
     "Rarity": "Rareza",
     "Reach": "Alcance (pies)",
@@ -3630,8 +3714,8 @@
     },
     "Region": {
       "DifficultTerrain": {
-        "DifficultTerrain": "Difficult Terrain",
-        "GreaterDifficultTerrain": "Greater Difficult Terrain"
+        "DifficultTerrain": "Terreno difícil",
+        "GreaterDifficultTerrain": "Terreno difícil mayor"
       },
       "Environment": {
         "Mode": {
@@ -3687,7 +3771,7 @@
       "KeepHigher": "Vuelve a tirar y mantén el resultado más alto.",
       "KeepNew": "Vuelva a tirar y mantén el nuevo resultado.",
       "KeepLower": "Vuelva a tirar y mantén el resultado inferior.",
-      "MessageHeroPoints": "Rerolled using a Hero Point",
+      "MessageHeroPoints": "Nueva tirada utilizando un Punto de Héroe",
       "MessageKeep": {
         "higher": "Se volvió a tirar y se mantuvo el resultado más alto.",
         "new": "Se volvió a tirar y se mantuvo el nuevo resultado.",
@@ -3726,6 +3810,11 @@
           "TitleCritical": "Tirada de daño crítico",
           "Title": "Tirada de daño"
         },
+        "ModifierDamageCategory": "Categoría de daño",
+        "ModifierDamageType": "Tipo de daño",
+        "ModifierName": "Nombre del modificador",
+        "ModifierType": "Tipo de modificador",
+        "ModifierValue": "Valor del modificador",
         "ShowDefault": "Mostrar siempre",
         "ShowDefaultHint": "Si está habilitado, este cuadro de diálogo siempre se muestra a menos que mantenga presionada la tecla Mayús. Si está deshabilitado, puede abrir este cuadro de diálogo manteniendo presionada la tecla Mayús."
       },
@@ -3775,11 +3864,11 @@
         },
         "Name": "Automatización",
         "ReachEnforcement": {
-          "corpses": "Corpses",
-          "doors": "Doors",
+          "corpses": "Cadáveres",
+          "doors": "Puertas",
           "Hint": "Impón el alcance cuando los jugadores traten de interactuar con determinados objetos en el lienzo.",
-          "loot": "Loot",
-          "merchants": "Traders",
+          "loot": "Botín",
+          "merchants": "Comerciantes",
           "Name": "Imposición de alcance"
         },
         "RemoveExpiredEffects": {
@@ -3836,11 +3925,11 @@
         "Name": "Icono de muerte"
       },
       "DistanceDisplay": {
-        "Hint": "Display the distance between controlled and mouse-hovered tokens on the canvas.",
-        "Name": "Token Distance Display",
-        "always": "Always",
-        "encounters": "During Encounters",
-        "never": "Never"
+        "Hint": "Muestra la distancia entre las fichas controladas y las fichas sobre las que se sitúa el cursor en el lienzo.",
+        "Name": "Mostrar distancia entre fichas",
+        "always": "Siempre",
+        "encounters": "Durante los encuentros",
+        "never": "Nunca"
       },
       "EnabledDisabled": {
         "Enabled": "Activado",
@@ -3990,8 +4079,8 @@
         }
       },
       "MinimumRulesUI": {
-        "Hint": "The minimum role required to see and utilize the rule elements panel on item sheets.",
-        "Name": "Minimum Rule Elements Access Role"
+        "Hint": "El rol mínimo necesario para ver y utilizar el panel de elementos de reglas en las fichas de objetos.",
+        "Name": "Rol mínimo de acceso a elementos de reglas"
       },
       "NathMode": {
         "Hint": "Utilizar mejores iconos de fichas por defecto",
@@ -4046,26 +4135,26 @@
         "Hint": "Habilite y configure reglas variantes como Competencia sin nivel o el sistema de resistencia.",
         "Label": "Selecciones de variantes de reglas",
         "Mythic": {
-          "Hint": "Enables the assignment of mythic callings, feats, and destinies. Alternate Mythic Progression, published in Alternate Mythic Rules, sets characters to advance independently of gaining level.",
-          "Name": "Mythic Rules",
+          "Hint": "Permite asignar llamamientos, dotes y destinos míticos. La progresión mítica alternativa, publicada en Reglas míticas alternativas, permite que los personajes avancen de forma independiente a su subida de nivel.",
+          "Name": "Reglas míticas",
           "Choices": {
-            "disabled": "Disabled",
-            "enabled": "Enabled",
-            "variant-tiers": "Alternate Mythic Progression"
+            "disabled": "Desactivadas",
+            "enabled": "Activadas",
+            "variant-tiers": "Progresión mítica alternativa"
           }
         },
         "Name": "Variantes de reglas",
         "Proficiency": {
           "Hint": "Juega con la variante de competencia sin nivel del Manual de dirección.",
-          "Legend": "Proficiency without Level",
+          "Legend": "Competencia sin nivel",
           "ModifiersHint": "Establezca el valor del modificador para cada rango de competencia.",
           "Name": "Competencia sin nivel",
           "Rank": {
             "Expert": "E",
             "Legendary": "L",
             "Master": "M",
-            "Trained": "T",
-            "Untrained": "U"
+            "Trained": "Ent.",
+            "Untrained": "SE"
           }
         },
         "Stamina": {
@@ -4076,11 +4165,11 @@
       },
       "WorldClock": {
         "DateThemes": {
-          "AD": "Earth (Gregorian Calendar)",
-          "AR": "Golarion (Absalom Reckoning)",
-          "AG": "Pact Standard (After Gap)",
-          "CE": "Unthemed (Gregorian Calendar)",
-          "IC": "Golarion (Imperial Calendar)"
+          "AD": "Tierra (calendario gregoriano)",
+          "AR": "Golarion (cómputo de Absalom)",
+          "AG": "Calendario estándar del Pacto (después del Intervalo)",
+          "CE": "Sin ambientación (calendario gregoriano)",
+          "IC": "Golarion (calendario imperial)"
         },
         "Hint": "Configure la apariencia de la aplicación Reloj de mundo.",
         "Label": "Configurar el reloj de mundo",
@@ -4092,32 +4181,41 @@
             "Warning2": "Esta acción no se puede deshacer."
           },
           "Hint": "Restablece el tiempo transcurrido de este mundo a cero.",
-          "Label": "Reset World Date/Time"
+          "Label": "Restablecer fecha y hora del mundo"
         },
+        "TheSun": "El Sol",
         "TimeConventions": {
-          "12": "12-Hour",
-          "24": "24-Hour"
+          "12": "12 horas",
+          "24": "24 horas"
         },
         "FIELDS": {
           "dateTheme": {
-            "hint": "Set the theme of the World Clock application.",
-            "label": "Date Theme"
+            "hint": "Establece la ambientación de la aplicación Reloj del mundo.",
+            "label": "Ambientación de la fecha"
+          },
+          "dawnTime": {
+            "hint": "El inicio del crepúsculo matutino",
+            "label": "Hora del alba"
+          },
+          "duskTime": {
+            "hint": "El final del crepúsculo vespertino",
+            "label": "Hora del anochecer"
           },
           "playersCanView": {
-            "hint": "Set whether players can view the World Clock.",
-            "label": "Player Access"
+            "hint": "Establece si los jugadores pueden ver el Reloj del mundo.",
+            "label": "Acceso de los jugadores"
           },
           "showClockButton": {
-            "hint": "Set whether to show the clock button at all (requires refresh).",
-            "label": "Show Clock Button"
+            "hint": "Establece si se muestra el botón del reloj (requiere recargar).",
+            "label": "Mostrar botón del reloj"
           },
           "syncDarkness": {
-            "hint": "Set whether any scene's Darkness Level will reflect the time of day.",
-            "label": "Synchronize Darkness"
+            "hint": "Establece si el nivel de oscuridad de las escenas refleja la hora del día.",
+            "label": "Sincronizar oscuridad"
           },
           "timeConvention": {
-            "hint": "Display either a 24-hour or 12-hour clock.",
-            "label": "Time Convention"
+            "hint": "Muestra un reloj de 24 o de 12 horas.",
+            "label": "Formato de hora"
           }
         }
       },
@@ -4160,13 +4258,13 @@
       "HearingRange": {
         "Caveat": "*Por motivos de rendimiento, el radio es una medida real y no basada en una cuadrícula.",
         "Hint": "Limita el alcance* que las criaturas pueden escuchar en esta escena como una representación de \"un entorno que distorsiona el sentido, como una habitación ruidosa\" (CRB pág. 464). Requiere que se habilite la visión basada en reglas.",
-        "Label": "Hearing Range (ft.)",
+        "Label": "Alcance auditivo (pies)",
         "Unlimited": "Ilimitado"
       },
       "SyncDarkness": {
-        "Label": "Synchronize Darkness to Time",
-        "ManagedBy": "Synchronized with <wt>world time</wt>.",
-        "Hint": "When the time of day changes in this scene, automatically adjust the darkness level to match (darker toward evening hours, lighter toward daytime)."
+        "Label": "Sincronizar oscuridad con la hora",
+        "ManagedBy": "Sincronizado con la <wt>hora del mundo</wt>.",
+        "Hint": "Cuando cambia la hora del día en esta escena, ajusta automáticamente el nivel de oscuridad para que coincida (más oscuro al anochecer y más claro durante el día)."
       }
     },
     "ScoreTitle": "Puntuación",
@@ -4189,7 +4287,7 @@
       "Acrobatics": "Acrobacias",
       "Arcana": "Arcanos",
       "Athletics": "Atletismo",
-      "Computers": "Computers",
+      "Computers": "Informática",
       "Crafting": "Artesanía",
       "Deception": "Engaño",
       "Diplomacy": "Diplomacia",
@@ -4198,7 +4296,7 @@
       "Nature": "Naturaleza",
       "Occultism": "Ocultismo",
       "Performance": "Interpretación",
-      "Piloting": "Piloting",
+      "Piloting": "Pilotaje",
       "Religion": "Religión",
       "Society": "Sociedad",
       "Stealth": "Sigilo",
@@ -4226,6 +4324,12 @@
     "SpellLevelBase": "Base: {level}",
     "SpellLevelHeightened": "Potenciado: +{heightened}",
     "SpellLevelLabel": "Rango del conjuro",
+    "SpellList": {
+      "Search": "Buscar conjuros",
+      "SearchResults": "Conjuros coincidentes: {count}",
+      "SortAscending": "orden ascendente",
+      "SortDescending": "orden descendente"
+    },
     "SpellPreparedLabel": "Preparado",
     "SpellRequirementsLabel": "Requisitos",
     "SpellScalingInterval": {
@@ -4247,16 +4351,26 @@
     "SpellUnlimitedLabel": "Ilimitado",
     "SpellUsesLabel": "Usos",
     "SpellcastingItemCreator": {
-      "CantripDeck5": "Cantrip Deck (5-pack)",
-      "ItemType": "Item type",
-      "Label": "Create an item from {name}",
-      "NoValidRanks": "No Valid Ranks",
-      "Title": "Creating Spellcasting Item",
-      "ViewItem": "View Item"
+      "CantripDeck5": "Baraja de trucos (paquete de 5)",
+      "ItemType": "Tipo de objeto",
+      "Label": "Crear un objeto a partir de {name}",
+      "NoValidRanks": "No hay rangos válidos",
+      "Title": "Crear objeto de lanzamiento de conjuros",
+      "ViewItem": "Ver objeto"
     },
     "SpellcastingSettings": {
+      "AttributeSetBy": "Determinado por {statistic}.",
       "AutoHeightenDefault": "Predeterminado (Usar nivel de actor)",
       "AutoHeightenLabel": "Rango de potenciamiento automático",
+      "Groups": {
+        "Casting": "Lanzamiento",
+        "Preparation": "Preparación"
+      },
+      "Preview": {
+        "Label": "Ataque de conjuro / CD",
+        "Value": "{attack} / CD {dc}"
+      },
+      "ProficiencyHint": "La mayoría de los conjuros utilizan la competencia en lanzamiento de conjuros. Elige una CD de clase solo si la aptitud lo indica.",
       "Title": "Configuración de lanzamiento de conjuros"
     },
     "SpellcastingTypeLabel": "Tipo de lanzamiento de conjuros",
@@ -4289,7 +4403,7 @@
       "Ranged": {
         "Description": "Atacas con un arma que empuñas, designando como objetivo a una criatura dentro del rango de distancia. Haz una tirada de ataque utilizando el modificador al ataque para el arma que estás utilizando, y compara el resultado con la CA de la criatura objetivo para determinar el efecto.",
         "NoAmmo": "No se ha asignado munición a {weapon}. Consulta la pestaña Acciones de la hoja de personaje de {actor}.",
-        "InsufficientAmmo": "Not enough ammunition is left in {weapon}. Check the Actions tab of {actor}'s sheet.",
+        "InsufficientAmmo": "No queda suficiente munición en {weapon}. Consulta la pestaña Acciones de la ficha de {actor}.",
         "Success": "Infliges daño de acuerdo con el arma o el ataque desarmado, incluidos los modificadores, bonificadores y penalizadores que tienes para hacer daño."
       },
       "Unarmed": {
@@ -4336,15 +4450,15 @@
     "ToggleWithName": "Alternar: {property}",
     "TogglesLabel": "Alterna",
     "Token": {
-      "ActorLinkForced": "{type} actors cannot be unlinked.",
+      "ActorLinkForced": "Los actores de tipo {type} deben permanecer vinculados.",
       "Appearance": "Apariencia",
-      "Distance": "Distancia: {distance} pies",
+      "Distance": "Distancia: {distance} {unit}",
       "Flanking": "Flanquear",
       "Mystified": {
-        "TheCreature": "The creature",
-        "TheObject": "The object"
+        "TheCreature": "La criatura",
+        "TheObject": "El objeto"
       },
-      "OutOfReach": "{token} is out of reach.",
+      "OutOfReach": "{token} está fuera de alcance.",
       "SecretDisposition": {
         "Label": "Disposición secreta",
         "Hint": "Active la disposición \"secreta\", que muestra un borde morado para los propietarios y ningún borde o cambio de cursor para todos los demás."
@@ -4359,62 +4473,66 @@
       }
     },
     "TotalCoinage": "Total de monedas",
-    "TotalCurrency": "Total Currency",
+    "TotalCurrency": "Total de monedas",
     "TotalWealth": "Riqueza total",
     "TotalTreasure": "Tesoro total",
     "TradeDialog": {
-      "Aborted": "{user} has ended the trade: no items were exchanged.",
+      "Aborted": "{user} ha terminado el intercambio: no se han intercambiado objetos.",
       "Acceptance": {
-        "Accepted": "{user} has accepted your offer.",
-        "Accept": "Accept Offer",
-        "NotAccepted": "{user} has not accepted your offer.",
-        "Rescind": "Rescind Acceptance"
+        "Accepted": "{user} ha aceptado tu oferta.",
+        "Accept": "Aceptar oferta",
+        "NotAccepted": "{user} no ha aceptado tu oferta.",
+        "Rescind": "Retirar aceptación"
       },
       "Error": {
-        "Engaged": "{user} is currently engaged in a trade.",
-        "LoggedOut": "Ending trade: {user} is no longer logged in.",
-        "NotTrading": "Ending trade: {user} is not longer trading.",
-        "OutOfReach": "{self} and {trader} are not in reach of each other.",
-        "SelectToken": "Select exactly one token associated with a PC or NPC to represent you in a trade.",
-        "Timeout": "Ending trade: there was no response from {user} after {timeout} seconds",
-        "Unavailable": "Ending trade: {user} has become unavailable."
+        "Engaged": "{user} está participando en un intercambio.",
+        "LoggedOut": "Intercambio terminado: {user} ya no está conectado.",
+        "NotTrading": "Intercambio terminado: {user} ya no está intercambiando.",
+        "OutOfReach": "{self} y {trader} están fuera del alcance mutuo.",
+        "SelectToken": "Selecciona exactamente una ficha asociada a un PJ o PNJ que te represente en el intercambio.",
+        "Timeout": "Intercambio terminado: {user} no ha respondido tras {timeout} segundos",
+        "Unavailable": "Intercambio terminado: {user} ya no está disponible."
       },
       "Gift": {
-        "Accepted": "{trader} has received your item.",
-        "Declined": "{trader} has declined your item.",
+        "Accepted": "{trader} ha recibido tu objeto.",
+        "Declined": "{trader} ha rechazado tu objeto.",
         "Prompt": {
-          "Content": "{trader} ({user}) would like to give {quantity}x {item} to {self}.",
-          "Title": "Receive Item(s)?"
+          "Content": "{trader} ({user}) quiere entregar {quantity}x {item} a {self}.",
+          "Title": "¿Recibir objetos?"
         },
-        "Received": "{self} has received the item from {trader}."
+        "Received": "{self} ha recibido el objeto de {trader}."
       },
       "ImgAlt": {
-        "Actor": "Portrait of {actor}, representing {user}",
-        "Item": "Icon for {item}"
+        "Actor": "Retrato de {actor}, que representa a {user}",
+        "Item": "Icono de {item}"
       },
       "Quantity": {
-        "Decrement": "Decrement Item Quantity",
-        "Increment": "Increment Item Quantity",
-        "Label": "Quantity of {item}"
+        "Decrement": "Reducir cantidad de objetos",
+        "Increment": "Aumentar cantidad de objetos",
+        "Label": "Cantidad de {item}"
       },
-      "Receiving": "Receiving: {list}",
+      "Receiving": "Recibiendo: {list}",
       "Request": {
-        "Declined": "{trader} ({user}) has declined your request to trade.",
-        "Requesting": "Requesting to trade with {trader} ...",
-        "Prompt": {
-          "Content": "{trader} ({user}) would like to trade with {self}.",
-          "Title": "Trade with {trader}?"
+        "Declined": "{trader} ({user}) ha rechazado tu solicitud de intercambio.",
+        "Expired": {
+          "Initiator": "{user} no ha respondido a tu solicitud de intercambio tras 30 segundos.",
+          "Receiver": "No has respondido a la solicitud de intercambio de {trader} ({user}) tras 30 segundos."
         },
-        "MenuLabel": "Request Trade",
-        "Timeout": "There was no response from {user} to your trade request after 30 seconds."
+        "Requesting": "Solicitando un intercambio con {trader} ...",
+        "Prompt": {
+          "Content": "{trader} ({user}) quiere intercambiar con {self}.",
+          "Title": "¿Intercambiar con {trader}?"
+        },
+        "MenuLabel": "Solicitar intercambio"
       },
-      "Sending": "Sending: {list}",
+      "SearchResults": "Objetos coincidentes: {count}",
+      "Sending": "Enviando: {list}",
       "Success": {
-        "Finished": "{self} has finished trading with {trader}.",
-        "NoItems": "The trade has concluded, but no items were exchanged."
+        "Finished": "{self} ha terminado el intercambio con {trader}.",
+        "NoItems": "El intercambio ha terminado, pero no se han intercambiado objetos."
       },
-      "Title": "Trading With {trader}",
-      "You": "You"
+      "Title": "Intercambio con {trader}",
+      "You": "Tú"
     },
     "TrainedSkillsLabel": "Habilidades entrenadas",
     "TraitAberration": "Aberración",
@@ -4477,6 +4595,7 @@
     "TraitAmphibious": "Anfibio",
     "TraitAnadi": "Anadi",
     "TraitAnalog": "Analog",
+    "TraitAncestry": "Ascendencia",
     "TraitAnchoring": "Anchoring",
     "TraitAndroid": "Androide",
     "TraitAngel": "Ángel",
@@ -4524,6 +4643,7 @@
     "TraitAstrazoan": "Astrazoan",
     "TraitAsura": "Asura",
     "TraitAthamaru": "Athamaru",
+    "TraitAtraxid": "Atraxid",
     "TraitAttached": "Fijada",
     "TraitAttachedToAThrownWeapon": "Fijado a un arma arrojadiza",
     "TraitAttachedToCrossbowOrFirearm": "Fijado a ballesta o arma de fuego",
@@ -4553,6 +4673,7 @@
     "TraitBarding": "Bardas",
     "TraitBeast": "Bestia",
     "TraitBeastkin": "P. Bestia",
+    "TraitBinnaquid": "Binnaquid",
     "TraitBiotech": "Biotech",
     "TraitBleed": "Sangrado",
     "TraitBlight": "Blight",
@@ -4603,7 +4724,7 @@
     "TraitClimbing": "Escalada",
     "TraitClockwork": "Aparato de relojería",
     "TraitCoagulant": "Coagulant",
-    "TraitCobbled": "Adoquinada",
+    "TraitCobbled": "Remendada",
     "TraitCoda": "Coda",
     "TraitCold": "Frío",
     "TraitColdiron": "Hierro Frío",
@@ -4630,6 +4751,7 @@
     "TraitContract": "Contrato",
     "TraitCopaxi": "Copaxi",
     "TraitCorpsefolk": "Corpsefolk",
+    "TraitCoshyco": "Coshyco",
     "TraitCosmic": "Cosmic",
     "TraitCouatl": "Coatl",
     "TraitCriticalBrawling": "Critical (Brawling)",
@@ -4643,8 +4765,9 @@
     "TraitCriticalShock": "Critical (Shock)",
     "TraitCriticalSonic": "Critical (Sonic)",
     "TraitCurse": "Maldición",
-    "TraitCursebound": "Maldecido",
+    "TraitCursebound": "Ligado a la maldición",
     "TraitCursed": "Maldito",
+    "TraitCyborg": "Cíborg",
     "TraitCycle": "Cycle",
     "TraitDaemon": "Daimonion",
     "TraitDarkness": "Oscuridad",
@@ -4696,6 +4819,7 @@
     "TraitDescriptionAmphibious": "Una criatura anfibia puede respirar agua y aire, incluso fuera de su entorno preferido, normalmente de forma indefinida, pero al menos durante horas. Estas criaturas suelen tener velocidad de nado. Sus golpes contundentes y cortantes desarmados no reciben la penalización habitual de -2 por estar bajo el agua.",
     "TraitDescriptionAnadi": "Un pueblo solitario de Garund que se parece a las arañas y puede asumir formas humanas.",
     "TraitDescriptionAnalog": "Esta arma no utiliza electrónica avanzada, sistemas de ordenadores ni fuentes de energía eléctrica, pero fue f fabricada utilizando tecnología avanzada. Es inmune a las aptitudes que tienen como objetivo la tecnología. Las runas de arma no funcionan en esta arma a menos que la misma tenga el rasgo arcaica.",
+    "TraitDescriptionAncestry": "Puedes elegir una dote de ascendencia estandarizada en lugar de una dote de ascendencia cada vez que obtengas una, siempre que cumplas sus prerrequisitos y figure entre las opciones de dotes de ascendencia estandarizadas de tu ascendencia. Estas dotes tienen el rasgo infrecuente para recordar que solo están disponibles cuando la entrada de una ascendencia las incluye expresamente entre sus opciones. El rasgo ascendencia representa la ascendencia de tu personaje.",
     "TraitDescriptionAnchoring": "You can use abilities with the anchoring trait only while your quantum field is activated. If you use the ability on your turn, in addition to their stated effects, they automatically Sustain your quantum field.",
     "TraitDescriptionAndroid": "Una ascendencia humanoide sintética creada por medios artificiales. Más común en Numeria.",
     "TraitDescriptionAngel": "Esta familia de celestiales es nativa del plano del Nirvana. La mayor parte de los ángeles son neutrales buenos, tienen visión en la oscuridad y debilidad ante el daño maligno.",
@@ -4729,6 +4853,7 @@
     "TraitDescriptionAzata": "Esta familia de celestiales es nativa del Elíseo. Típicamente son caóticos buenos y tienen visión en la oscuridad y debilidad ante el mal y el hierro frío.",
     "TraitDescriptionBackstabber": "Cuando aciertas a una criatura desprevenida, esta arma inflige 1 daño de precisión además de su daño normal. El daño de precisión se incrementa a 2 si el arma es un arma +3.",
     "TraitDescriptionBackswing": "Puedes utilizar el impulso de un ataque fallido con esta arma para iniciar tu siguiente ataque. Tras fallar con esta arma en tu turno, obtienes un bonificador +1 por circunstancia a tu siguiente ataque con la misma antes del final de tu turno.",
+    "TraitDescriptionBantrid": "Una criatura con este rasgo pertenece a la ascendencia bantrid. Estas pequeñas aberraciones sin sentido del olfato tienen un cuerpo en forma de columna sobre un pie esférico orgánico que les permite rodar, y les cuesta permanecer quietas. Una aptitud con este rasgo solo puede ser utilizada o elegida por bantrids.",
     "TraitDescriptionBarbarian": "Esto indica habilidades de la clase bárbara.",
     "TraitDescriptionBard": "Esto indica habilidades de la clase bardo.",
     "TraitDescriptionBarding": "Puedes comprar armaduras especiales para animales, llamadas bardas. Todos los animales tienen un rango de competencia entrenado en bardas ligeras, y los animales entrenados en combate están entrenados en bardas pesadas. La barda usa las mismas reglas que la armadura excepto por lo siguiente. El precio y el volumen de la barda dependen del tamaño del animal. A diferencia de una armadura, la entrada de Fuerza de la barda aparece como un modificador, no como una puntuación. Las bardas no se pueden grabar con runas mágicas, aunque es posible que haya bardas mágicas especiales disponibles.",
@@ -4739,11 +4864,13 @@
     "TraitDescriptionBoggard": "Los boggards son humanoides similares a ranas. Suelen tener visión en la oscuridad.",
     "TraitDescriptionBomb": "Una bomba alquímica combina componentes alquímicos volátiles que explotan cuando la bomba golpea una criatura u objeto. La mayoría de las bombas alquímicas causan daño, aunque algunas producen otros efectos.",
     "TraitDescriptionBoost": "You can boost this weapon with an Interact action to add an additional damage die of the listed size to the next damaging attack you make with the weapon until the end of your next turn. The damage from this trait increases to 2 dice for advanced-grade and superior-grade weapons, 3 dice for elite-grade and ultimate-grade weapons, and 4 dice for paragon-grade weapons. On a critical hit, roll these after doubling the weapon's damage. Multiple boosts have no effect.",
+    "TraitDescriptionBorai": "Una criatura con este rasgo tiene la herencia versátil borai. Una aptitud con este rasgo solo puede ser utilizada o elegida por borais.",
     "TraitDescriptionBottledBreath": "Las botellas de aliento son botellas encantadas de nubes y niebla, desarrolladas por primera vez por los habitantes del Plano del Aire. Puedes activar un objeto con el rasgo de aliento embotellado mientras lo inhalas o hacer que otra criatura lo inhale.",
     "TraitDescriptionBrace": "Un arma de refuerzo es eficaz para dañar a los oponentes en movimiento. Cuando estás listo para atacar a un oponente que se mueve dentro de tu alcance, hasta el comienzo de tu siguiente turno, los golpes con el arma de refuerzo infligen 2 daños de precisión adicionales por cada dado de daño de arma que tenga.",
     "TraitDescriptionBrandish": "The brandish trait indicates an ability that involves you waving or otherwise actively displaying your banner. To use an ability that has the brandish trait, you must be holding your banner in one hand or wielding a weapon it is attached to. Since you have to be actively signaling with your banner to direct your squadmates while using a tactic with the brandish trait, you cannot use free actions or reactions granted as part of a brandish tactic unless specifically noted otherwise.",
     "TraitDescriptionBravado": "Actions with this trait can grant panache, depending on the result of the check involved. If you succeed at the check on a bravado action, you gain panache, and if you fail (but not critically fail) the check, you gain panache but only until the end of your next turn. These effects can be applied even if the action had no other effect due to a failure or a creature's immunity.",
     "TraitDescriptionBreakdown": "This weapon can be taken apart into multiple small pieces. While broken down, the weapon is treated as small object with light bulk. Breaking down or reassembling a breakdown weapon is a 3-action activity, which has the manipulate trait and requires two hands.",
+    "TraitDescriptionBrenneri": "Una criatura con este rasgo pertenece a la ascendencia brenneri. Son humanoides amistosos parecidos a nutrias que pueden nadar y contener la respiración durante largos periodos. Una aptitud con este rasgo solo puede ser utilizada o elegida por brenneris.",
     "TraitDescriptionBrutal": "Un ataque a distancia con este rasgo utiliza su modificador de Fuerza en lugar de Destreza en la tirada de ataque.",
     "TraitDescriptionBugbear": "Una criatura con este rasgo es un pariente peludo y sigiloso de los goblins. Los bugbears suelen tener visión en la oscuridad.",
     "TraitDescriptionBulwark": "La armadura te cubre de forma tan completa que te proporciona beneficios contra algunos efectos dañinos. A las salvaciones de Reflejos para evitar un efecto dañino, como por ejemplo una bola de fuego, sumas un modificador +3 en lugar de tu modificador por Destreza.",
@@ -4790,12 +4917,15 @@
     "TraitDescriptionContact": "Este veneno se libera por contacto con la piel.",
     "TraitDescriptionContingency": "Los hechizos con este rasgo te otorgan una acción durante los efectos del hechizo, generalmente una reacción con un desencadenante especial. Suelen tener una duración prolongada, como 24 horas. Sólo puedes tener un hechizo con el rasgo de contingencia, o un hechizo de contingencia, activo a la vez. Si lanzas otro hechizo con el rasgo de contingencia o contingencia, el lanzamiento más nuevo reemplaza al anterior.",
     "TraitDescriptionContract": "Un contrato es un tipo de elemento que establece mágicamente un acuerdo entre varias partes y normalmente otorga beneficios mágicos.",
+    "TraitDescriptionCopaxi": "Una criatura con este rasgo pertenece a la ascendencia copaxi. Son colonias de pólipos genéticamente idénticos, con forma humanoide y un exoesqueleto similar al coral, que pueden manipular la gravedad. Una aptitud con este rasgo solo puede ser utilizada o elegida por copaxis.",
+    "TraitDescriptionCorpsefolk": "Una criatura con este rasgo tiene la herencia versátil Corpsefolk. Una aptitud con este rasgo solo puede ser utilizada o elegida por criaturas con esa herencia.",
     "TraitDescriptionCosmic": "Creatures with this trait can survive in the harsh vacuum of space and the vast distances between planets and stars. They don't breathe while in space or in a vacuum. Creatures with this trait can use their fly Speed to Fly normally in a vacuum or zero gravity environment. Unless the creature possesses a bespoke ability (such as No Breath), they remain susceptible to effects that require breathing while in normal atmosphere.",
     "TraitDescriptionCritical": "This weapon uses the critical weapon specialization of the listed weapon type rather than its own.",
     "TraitDescriptionCriticalFusion": "La fusión crítica es un nuevo rasgo para las armas combinadas que te otorga dos opciones adicionales para el efecto de especialización crítica cuando usas la versión cuerpo a cuerpo del arma combinada para realizar un ataque cuerpo a cuerpo mientras el arma de fuego está cargada. Si eliges usar uno de ellos, reemplazan el efecto de especialización crítica normal del uso cuerpo a cuerpo. Primero, puedes disparar el arma de fuego para crear un fuerte estallido y una conmoción cerebral, usando el efecto de especialización crítica para armas de fuego en lugar del arma cuerpo a cuerpo.efecto de especialización crítica del grupo. En segundo lugar, puedes optar por descargar el arma de fuego para aumentar el impulso del golpe crítico o disparar al enemigo mientras lo atacas cuerpo a cuerpo, causando 2 daños adicionales por cada dado de daño del arma. Ambas opciones descargan el arma de fuego, lo que generalmente significa que debes recargarla antes de volver a disparar.",
     "TraitDescriptionCurse": "Una maldición es un efecto que impone alguna aflicción de largo plazo a una criatura. Las maldiciones siempre son mágicas y, típicamente, el resultado de un conjuro o de una trampa. Los efectos con este rasgo sólo se pueden eliminar mediante efectos que designan específicamente como objetivo a las maldiciones.",
-    "TraitDescriptionCursebound": "Los hechizos con este rasgo aumentan la gravedad de tu maldición oracular cuando se lanzan. Por lo general, sólo los hechizos de revelación tienen este rasgo. No puedes lanzar un hechizo vinculado a una maldición si no tienes una maldición oracular.",
+    "TraitDescriptionCursebound": "Las aptitudes con este rasgo refuerzan el dominio de tu maldición oracular sobre tu alma a cambio de revelaciones divinas y te imponen el estado ligado a la maldición (ver más abajo). Cuando usas una aptitud ligada a la maldición, pasas a estar ligado a la maldición 1 o, si ya lo estabas, aumentas en 1 el valor de este estado. Estas aptitudes están directamente vinculadas a tu maldición oracular: no puedes usarlas si no tienes una maldición oracular o si ya has alcanzado tu valor máximo de ligado a la maldición. No puedes mitigar ni eludir sus inconvenientes con conjuros u otros efectos. Los efectos de estas aptitudes terminan cuando Reenfocas y eliminas el estado ligado a la maldición. Una aptitud ligada a la maldición que permita una defensa utiliza tu modificador de ataque de conjuro o tu CD de conjuro, salvo que se indique lo contrario.",
     "TraitDescriptionCursed": "Un objeto con este rasgo está condenado a causar problemas a su propietario. No se detecta una maldición cuando se identifica el objeto, aunque un éxito crítico revela tanto la presencia como la naturaleza exacta de la maldición. Los objetos malditos no se pueden descartar una vez que se han activado o invertido por primera vez. El objeto sólo se puede eliminar si se elimina la maldición.",
+    "TraitDescriptionCyborg": "Una criatura con este rasgo pertenece a la ascendencia cíborg. Los cíborgs son individuos de cualquier ascendencia que han modificado profundamente sus cuerpos mediante tecnología. Una aptitud con este rasgo solo puede ser utilizada o elegida por cíborgs.",
     "TraitDescriptionCycle": "Actions with the cycle trait change your current stellar attunement to its opposite state. When you take such an action with this trait, you benefit from the additional effect of your current attunement if the action had the attuned trait, but once you complete the action, your attunement changes to its counterpart (so graviton-attuned if you were photon-attuned before taking the action, or vice versa).",
     "TraitDescriptionDaemon": "Una familia de infernales que proviene del desolado Plano de Abaddon; la mayoría de los daimonions son irremisiblemente sacrílegos. Suelen tener visión en la oscuridad y debilidad a sagrado.",
     "TraitDescriptionDarkness": "Los efectos de oscuridad extinguen la luz no mágica en el área y pueden contrarrestar la luz mágica menos poderosa. Por lo general, debes apuntar a la magia de luz con tu magia de oscuridad directamente para contrarrestar la luz, pero algunos hechizos de oscuridad intentan automáticamente contrarrestar la luz.",
@@ -4836,6 +4966,7 @@
     "TraitDescriptionElixir": "Los elixires son líquidos alquímicos que se utilizan bebiéndolos.",
     "TraitDescriptionEmotion": "Este efecto altera las emociones de una criatura. Los efectos con este rasgo siempre tienen también el rasgo mental. Las criaturas con entrenamiento especial o que tienen inteligencia mecánica o artificial son inmunes a los efectos de las emociones.",
     "TraitDescriptionEntrench": "Puedes posicionarte en la armadura o reposicionar sus piezas articuladas para protegerte mejor contra algunos ataques. Si estás entrenado con esta armadura, mientras la usas puedes gastar una sola acción para obtener una bonificación de circunstancia +1 a la CA contra cierto tipo de ataque hasta el comienzo de tu siguiente turno. El rasgo de atrincheramiento enumera el tipo de ataque contra el que se aplica esta bonificación, normalmente atrincheramiento cuerpo a cuerpo o atrincheramiento a distancia.",
+    "TraitDescriptionEntu": "Una criatura con este rasgo pertenece a la ascendencia colonia entu. Son colonias de hongos telepáticos que se alimentan de emociones y dotan de inteligencia a anfitriones voluntarios. Una aptitud con este rasgo solo puede ser utilizada o elegida por colonias entu.",
     "TraitDescriptionEnvironmental": "A hazard with this trait is something dangerous that's part of the natural world, such as quicksand or harmful mold.",
     "TraitDescriptionEsoterica": "El rasgo esotérico está presente en muchas dotes de taumaturgo y rasgos de clase que incorporan los diversos talismanes, baratijas sobrenaturales y otros objetos que llevas contigo. Las habilidades que tienen el rasgo esotérico requieren que estés en posesión de tu esoterismo para usarlas. Normalmente, se supone que siempre tienes tu esoterismo contigo, pero en algunas circunstancias excepcionales, es posible que no los tengas a mano o que te quiten el equipo.",
     "TraitDescriptionEthereal": "Las criaturas etéreas son nativas del Plano Etéreo, y pueden sobrevivir a los efectos ambientales básicos del mismo.",
@@ -4864,24 +4995,28 @@
     "TraitDescriptionFocus": "Los conjuros de foco son un tipo especial de conjuro que se obtiene directamente de una rama de estudio, de un dios o de otro origen específico. Sólo puedes aprender conjuros de foco mediante rasgos de clase especiales o dotes en lugar de elegirlos de una lista. Además, se lanzan utilizando una reserva especial de Puntos de Foco; no puedes preparar un conjuro de foco en un espacio de conjuro o utilizar los espacios de conjuro para lanzar conjuros de foco; similarmente, no puedes gastar tus Puntos de Foco para lanzar conjuros que  no son de foco.",
     "TraitDescriptionFocused": "Un objeto con este rasgo puede darte un punto de foco adicional. Este punto de foco está separado de tu reserva de foco y no cuenta para el límite de tu reserva de foco. Puedes obtener este beneficio solo si tienes una reserva de foco y puede haber restricciones sobre cómo se puede utilizar el punto. No puedes ganar más de 1 punto de foco por día a partir de objetos enfocados.",
     "TraitDescriptionFoldaway": "<p> Este escudo puede colapsar en una forma más pequeña unida a un guante para mayor estabilidad y fácil desplazamiento. Puedes utilizar una acción de Interactuar para desplegar o guardar el escudo. Mientras está desplegado, puedes Levantar el Escudo siempre y cuando tengas esa mano libre o sostengas un objeto de gran volumen ligero que no sea un arma en esa mano. El escudo impide el uso de la mano mientras está desplegado. Aunque todavía puedes sostener objetos en esa mano, no puedes empuñar armas en esa mano, operar cualquier cosa que requierados manos, o atacar con el guantelete. </p> <p> Se debe colocar un escudo plegable en un guantelete para mayor estabilidad. Se puede fijar a un objeto con 10 minutos de trabajo y una prueba exitosa de Elaboración CD 10; esto incluye el tiempo necesario para quitar el escudo de un guantelete anterior, si es necesario. Si se destruye el guantelete, normalmente se puede salvar el escudo plegable. La naturaleza plegable del escudo hace imposible fijarle un arma. </p>",
+    "TraitDescriptionFonqugon": "Una criatura con este rasgo pertenece a la ascendencia fonqugon. Son cienos con múltiples cerebros que valoran la inteligencia y el cuidado del medio ambiente. Una aptitud con este rasgo solo puede ser utilizada o elegida por fonqugons.",
     "TraitDescriptionForce": "Los efectos con este rasgo causan daño por fuerza o crean objetos hechos de pura fuerza mágica.",
     "TraitDescriptionForceful": "Esta arma se hace más peligrosa conforme más impulso acumulas. Cuando atacas con ella más de una vez en tu turno, el segundo ataque obtiene un bonificador por circunstancia al daño igual al número de dados de daño de arma y cada ataque posterior obtiene un bonificador por circunstancia al daño igual al doble del número de dados de daño.",
+    "TraitDescriptionFormian": "Una criatura con este rasgo pertenece a la ascendencia formiana. Son criaturas similares a hormigas procedentes de colonias con una mente colectiva, que experimentan una «Llamada» a partir como seres individuales. Una aptitud con este rasgo solo puede ser utilizada o elegida por formianos.",
     "TraitDescriptionFortune": "Un efecto de fortuna altera beneficiosamente la forma en que tiras los dados. Nunca puedes tener más de un efecto de fortuna alterando una sola tirada. Si se podrían aplicar múltiples efectos de fortuna, tú eliges cuál aplicar. Si un efecto de fortuna y un efecto de desventura se aplican a la misma tirada, se neutralizan mutuamente y tiras con normalidad.",
     "TraitDescriptionFreeHand": "Esta arma no ocupa tu mano, por lo general debido a estar incorporada a tu armadura. No se te puede desarmar de un arma de mano libre. Puedes utilizar la mano cubierta por tu arma de mano libre para empuñar otros objetos, llevar a cabo acciones de manipular, etc. No puedes atacar con un arma de mano libre si empuñas otra cosa con esa mano o la estás usando para otra cosa. Cuando no empuñas nada y no estás usando la mano para otra cosa, puedes utilizar aptitudes que requieren tener una mano libre, así como las que requieren que estés empuñando un arma en esa mano. Sólo puedes tener un arma de mano libre en cada una de tus manos.",
     "TraitDescriptionFulu": "Los fulus son pequeños amuletos de papel que se pueden colocar en una armadura, un escudo, un arma, una criatura o incluso una estructura. Algunos fulus se componen de múltiples amuletos de este tipo y surten efecto solo una vez que todos se han colocado. Los fulus normales tienen efectos inmediatamente una vez colocados, mientras que los talismanes fulu tienen un efecto solo una vez activados. Una vez que se ha activado un fulu, dura el tiempo indicado y luego se apaga. A menos que se indique lo contrario, los fulus caducan un año después de su creación y vuelven a ser mundanos.papel. Todos los fulus tienen los rasgos fulu y consumibles. Los Fulus también tienen un rasgo de tradición, ya sea arcano, divino, oculto o primario, determinado por la tradición mágica de su creador. Por ejemplo, un fulu creado por un sacerdote tendría el rasgo divino, mientras que una bruja que incursiona en el destino podría crear un fulu con el rasgo oculto. Algunos fulus también tienen el rasgo de talismán, si funcionan de manera similar a los talismanes (como estar adheridos a una armadura, un escudo o un arma). El bloque de estadísticas de cada fuluindica el tipo de objeto o criatura al que se puede colocar. Colocar o quitar un fulu requiere usar la actividad Colocar un Fulu, o la acción Colocar un Talismán en su lugar si el fulu también es un talismán.",
     "TraitDescriptionFungus": "Las criaturas fúngicas tienen el rasgo hongo. Son distintas de los hongos normales.",
     "TraitDescriptionGadget": "Los gadgets son inventos tecnológicos consumibles con usos innovadores.",
     "TraitDescriptionGanzi": "Un vástago planario descendiente de un ser del Torbellino, como un proteico.",
+    "TraitDescriptionGapTouched": "Una criatura con este rasgo tiene la herencia versátil Gap-touched. Son criaturas con una fuerte conexión con el Intervalo. Una aptitud con este rasgo solo puede ser utilizada o elegida por criaturas con esa herencia.",
     "TraitDescriptionGeneral": "Un tipo de dote que cualquier personaje puede seleccionar, independientemente de su ascendencia y clase, siempre que cumpla con los requisitos previos. Puedes seleccionar una dote con este rasgo cuando tu clase otorga una dote general.",
     "TraitDescriptionGenie": "Las diversas familias de genios detentan posiciones de prominencia en los Planos Elementales. Tienen poderosas aptitudes mágicas.",
     "TraitDescriptionGeniekin": "Un término general para los vástagos planarios que descienden de seres de los Planos Elementales.",
+    "TraitDescriptionGfolian": "Una criatura con este rasgo pertenece a la ascendencia g'folian. Son bestias inteligentes que exhalan fuego y destacan por su profundo aprecio por la filosofía. Una aptitud con este rasgo solo puede ser utilizada o elegida por g'folians.",
     "TraitDescriptionGhoran": "Una ascendencia vegetal inteligente que mantiene una larga vida rejuveneciéndose a partir de semillas.",
     "TraitDescriptionGhost": "Las almas perdidas que acechan el mundo como muertos vivientes incorporales se denominan fantasmas.",
     "TraitDescriptionGhoul": "Los guls son crueles criaturas muertas vivientes que se alimentan de carne",
     "TraitDescriptionGhul": "Los muertos vivientes codiciosos y glotones se formaron originalmente a partir de un genio.",
     "TraitDescriptionGiant": "Los gigantes son criaturas humanoides enormes.",
     "TraitDescriptionGirtablilu": "Girtablilus have humanoid upper bodies and the lower bodies of massive scorpions.",
-    "TraitDescriptionGnoll": "Los kholos son humanoides que se parecen a las hienas",
+    "TraitDescriptionGnarefuroid": "Una criatura con este rasgo pertenece a la ascendencia gnarefuroid. Los gnarefuroids son aberraciones que recogen basura y prosperan aferrándose al exterior de la estación. Una aptitud con este rasgo solo puede ser utilizada o elegida por gnarefuroids.",
     "TraitDescriptionGnome": "Una criatura con este rasgo es miembro de la ascendencia de los gnomos. Los gnomos son un pueblo pequeño y hábil en la magia, que siempre busca nuevas experiencias y que suele tener visión en la penumbra. Una habilidad con este rasgo puede ser utilizada o seleccionada sólo por gnomos. Un arma con este rasgo solo puede ser creada o utilizada por gnomos.",
     "TraitDescriptionGoblin": "Una criatura con este rasgo es un miembro pequeño y frenético de las razas goblin. Los goblins tienden a tener visión en la oscuridad. Una habilidad con este rasgo sólo puede ser utilizada o elegida por goblins. Un arma con este rasgo es creada y utilizada por goblins.",
     "TraitDescriptionGoloma": "Humanoides insulares que tienen innumerables ojos.",
@@ -4891,7 +5026,6 @@
     "TraitDescriptionGrenade": "Weapons with this trait can be thrown as a single action using the Area Fire action as though it had the area (burst) trait.",
     "TraitDescriptionGrimoire": "Los libros de hechizos son herramientas útiles para que cualquier usuario de magia escriba encantamientos y runas de poder, pero mientras que la mayoría de los libros de hechizos no son más que tinta sobre pergamino, los grimorios han absorbido la magia de los hechizos que contienen, magia que los lanzadores de hechizos expertos pueden usar para aumentar sus hechizos.",
     "TraitDescriptionGrioth": "A grioth is a batlike alien that wields occult powers and can exist in the dark vacuum of space. They have darkvision and echolocation.",
-    "TraitDescriptionGrippli": "Los Gripplis son una familia de humanoides parecidos a ranas.",
     "TraitDescriptionGunslinger": "Esto indica habilidades de la clase pistolero.",
     "TraitDescriptionHag": " Estas maléficas lanzadoras de conjuros forman aquelarres.",
     "TraitDescriptionHalfling": "Una criatura con este rasgo es un miembro de la ascendencia mediana. Esta gente pequeña son vagabundos amistosos, y se les\nconsidera afortunados. Una habilidad con este rasgo sólo puede ser utilizada o seleccionada por medianos. Un arma con este rasgo es creada y utilizada por medianos.",
@@ -4909,8 +5043,10 @@
     "TraitDescriptionHuman": "Una criatura con este rasgo es un miembro de la ascendencia humana. Los humanos conforman un amplio abanico de gente, conocida por su adaptabilidad. Una habilidad con este rasgo puede ser utilizada o seleccionada sólo por humanos.",
     "TraitDescriptionHumanoid": "Las criaturas humanoides razonan y actúan en gran medida como los humanos. Suelen caminar erguidas y disponen de dos brazos y dos piernas.",
     "TraitDescriptionIfrit": "Un tipo de progenie de genios descendiente de un ser del Plano de Fuego.",
+    "TraitDescriptionIjtikri": "Una criatura con este rasgo pertenece a la ascendencia ijtikri. Son aberraciones parecidas a calamares que respiran aire y tienen una cabeza alargada y endurecida y numerosos brazos tentaculares. Una aptitud con este rasgo solo puede ser utilizada o elegida por ijtikris.",
     "TraitDescriptionIkon": "An item with the ikon trait is a special item provided or created by an exemplar's divinity that is so tied to that exemplar that it can serve as a sacred vessel for their might. You gain three ikons at first level. Each ikon has a passive immanence ability and an activated transcendence ability. A feat with the ikon trait imbues one of your ikons with further capabilities. Whenever you gain a feat with the ikon trait, choose which of your ikons gains that ability; if you have multiple ikons that meet the feat's usage requirements, you can take the feat multiple times to apply its effects to another one of your ikons. These feats list what ikon they can be imbued into, and any number of them can be imbued into a single ikon.",
     "TraitDescriptionIllusion": "Los efectos y objetos mágicos con este rasgo implican estímulos sensoriales falsos.",
+    "TraitDescriptionImpossible": "Todos los conjuros imposibles tienen el rasgo imposible, que indica que solo pueden lanzarse una vez en la existencia de una criatura. Tras lanzar un conjuro con este rasgo, esa criatura no puede volver a lanzar ningún conjuro con el rasgo imposible. Una hora después de lanzarlo, el lanzador empieza a sufrir las consecuencias detalladas en la entrada de la marca letológica del conjuro. Esa entrada también indica cómo pueden curarse los efectos de la marca. Los conjuros con este rasgo también son más difíciles de contrarrestar. Cualquier prueba para contrarrestar el conjuro obtiene un resultado un grado de éxito peor que el obtenido en la tirada, y cualquier efecto que lo contrarreste automáticamente falla. Los efectos de moldeo de conjuros no pueden aplicarse a conjuros imposibles.",
     "TraitDescriptionImpulse": "Las principales acciones mágicas que utilizan los cinéticos se llaman impulsos. Puedes usar un impulso sólo si tu aura cinética está activa y canalizando ese elemento, y sólo si tienes una mano libre para dar forma al flujo elemental. El rasgo de impulso significa que la acción tiene el rasgo de concentración a menos que otra habilidad cambie esto. Si un impulso te permite elegir un elemento, puedes elegir cualquier elemento que estés canalizando y el impulso adquiere el rasgo de ese elemento.",
     "TraitDescriptionIncapacitation": "Una aptitud con este rasgo puede eliminar del combate por completo a un PJ o incluso matarle, y es más difícil de usar contra un PJ más poderoso. Si un conjuro tiene el rasgo incapacitación, cualquier criatura de más del doble del rango del conjuro trata el resultado de su prueba para evitar ser incapacitada por el conjuro como un grado de éxito mayor, o el resultado de cualquier prueba que el lanzador de conjuros ha hecho para incapacitarla como un grado de éxito peor. Si cualquier otro efecto tiene el rasgo incapacitación, una criatura de nivel superior al del objeto, criatura o riesgo que genera el efecto obtiene los mismos beneficios",
     "TraitDescriptionIncarnate": "Un hechizo con el rasgo encarnado es similar en tema a los hechizos que invocan criaturas, pero no evoca a un siervo con el rasgo invocado. En cambio, cuando se invoca, la criatura encarnada realiza su acción de Llegada cuando terminas de lanzar el hechizo. Al final de tu siguiente turno, la criatura encarnada puede dar un paso, caminar o realizar la acción de otro tipo de movimiento que tenga (como trepar o excavar) y luego realiza su acción de salida. Entonces el hechizo termina. Los nombres de llegadas y salidas específicas.Las acciones se enumeran en cursiva después de la palabra \"Llegar\" o \"Salir\", respectivamente, junto con cualquier característica. Una criatura convocada por un hechizo encarnado actúa según tus intereses, dirige sus efectos lejos de ti y de tus aliados tanto como sea posible y puede escuchar tus peticiones, pero en última instancia toma sus propias decisiones. Si el hechizo indica que el encarnado toma una decisión, el DJ determina qué haría el encarnado. Incluso podría volverse más propenso a hacer precisamente lo que desee en múltiples ocasiones.convocatorias. El encarnado no es plenamente una criatura. No puede realizar ninguna otra acción, ni puede ser objetivo o daño por golpes, hechizos u otros efectos a menos que puedan apuntar o finalizar el efecto de un hechizo (como disipar magia). Tiene un tamaño para determinar su ubicación para efectos, pero no bloquea el movimiento. Si corresponde, sus efectos usan la CD de tu hechizo y el modificador de tirada de ataque de hechizo.",
@@ -4929,6 +5065,8 @@
     "TraitDescriptionInventor": "Esto indica habilidades de la clase inventora.",
     "TraitDescriptionInvested": "Un personaje solo puede llevar 10 objetos mágicos que tengan el rasgo investido. Ninguno de los efectos mágicos de un objeto se aplica si el personaje no lo ha investido, aunque sigue obteniendo los beneficios normales de llevar puesto el objeto físico (como un sombrero que evita que la lluvia caiga sobre su cabeza).",
     "TraitDescriptionInvestigator": "Esto indica habilidades de la clase de investigador.",
+    "TraitDescriptionInvocation": "Una acción de invocación permite a un forjador de runas hacer surgir poder a través de su runa al pronunciar su nombre verdadero. La invocación requiere que puedas hablar con claridad y con voz firme, y que estés a un máximo de 30 pies de la runa o runas objetivo, a menos que otra aptitud modifique esta condición. Estas acciones incluyen Invocar runa, que desencadena la invocación de la runa y después hace que se desvanezca. Normalmente, Invocar runa permite invocar dos runas, pero otras aptitudes que incluyen esta acción suelen modificar ese número o las runas concretas que puedes invocar.",
+    "TraitDescriptionIzalguun": "Una criatura con este rasgo pertenece a la ascendencia izalguun. Son grandes humanoides aislacionistas de seis extremidades, capaces de adoptar una postura bípeda o cuadrúpeda. Una aptitud con este rasgo solo puede ser utilizada o elegida por izalguuns.",
     "TraitDescriptionJousting": "El arma es adecuada para el combate montado, mediante un arnés o medio similar. Cuando vas montado, si has movido por lo menos 10 pies (3 m) en la acción anterior a tu ataque, suma al daño un bonificador por circunstancia para dicho ataque igual al número de dados de daño para el arma. Además, cuando vas montado puedes empuñar el arma a una mano, cambiando el dado de daño al valor indicado. ",
     "TraitDescriptionKami": "Kami are spirits of the Material Plane that bond with a specific object or place.",
     "TraitDescriptionKashrishi": "Una ascendencia robusta que porta cuernos de cristal distintivos y habilidades psíquicas inherentes.",
@@ -4941,18 +5079,23 @@
     "TraitDescriptionLaminar": "La armadura está formada por secciones en capas, por lo que cuando se rompe, no es un gran problema. La penalización de estado a la CA si esta armadura está rota es -1 por armadura media rota, -2 por armadura pesada rota o ninguna penalización por armadura ligera rota.",
     "TraitDescriptionLaunching": "Un mecanismo dentro de este escudo puede disparar proyectiles, lo que hace que el escudo también funcione como un arma a distancia. El rasgo enumera el tipo de arma, como \"lanzar dardos\". Golpear con el lanzador requiere la misma cantidad de manos que de forma normal, excepto que la mano que sostiene el escudo cuenta para este total, por lo que un arma a distancia con una sola mano requeriría solo una mano. La recarga requiere el número normal de acciones de Interactuar, hasta un mínimo de 1 acción, y no puedes usar la mano que sostiene tu escudo pararecargar.",
     "TraitDescriptionLeshy": "Una criatura con este rasgo es un miembro de la ascendencia leshy. Estas pequeñas criaturas vegetales o fúngicas tienen forma humanoide.",
+    "TraitDescriptionLFAN": "Las dotes con el rasgo LFAN representan mejoras funcionales opcionales para el LFAN de un raxilite.",
     "TraitDescriptionLight": "Los efectos de luz superan la oscuridad no mágica del área y pueden contrarrestar la oscuridad mágica. Por lo general, debes apuntar a la magia de oscuridad con tu magia de luz directamente para contrarrestar la oscuridad, pero algunos hechizos de luz intentan contrarrestar automáticamente la oscuridad.",
     "TraitDescriptionLineage": "A feat with this trait indicates a character's descendance from a particular type of creature. You can have only one lineage feat. You can select a lineage feat only at 1st level, and you can't retrain into or out of these feats.",
     "TraitDescriptionLinguistic": "Un efecto con este rasgo depende de la comprensión del lenguaje. Un efecto lingüístico que apunta a una criatura funciona sólo si el objetivo entiende el idioma que estás usando.",
     "TraitDescriptionLitany": "Las letanías son hechizos de devoción especiales, normalmente utilizados por campeones y que requieren una sola acción, que normalmente otorgan inmunidad temporal a más letanías.",
+    "TraitDescriptionLivingHologram": "Una criatura con este rasgo pertenece a la ascendencia holograma viviente. Los hologramas vivientes son inteligencias artificiales independientes que habitan cuerpos de luz sólida. Una aptitud con este rasgo solo puede ser utilizada o elegida por hologramas vivientes.",
     "TraitDescriptionLizardfolk": "Los hombres lagarto son una familia de humanoides reptilianos. Estos humanoides reptilianos, también conocidos como iruxi, son extremadamente adaptables y pacientes.",
     "TraitDescriptionLozenge": "Activas una pastilla alquímica poniéndola en tu boca. Permanece allí, disolviéndose lentamente y liberando sus ingredientes con el tiempo. Puedes morder una pastilla para obtener un efecto secundario. La acción que esto toma se indica en el artículo. Una vez pasado este efecto secundario, la pastilla se agota y sus beneficios para usted terminan. Puedes beber elixires, pociones y bebidas con una pastilla en la boca, pero no puedes beneficiarte de más de una pastilla a la vez. Si tienes dos pastillas en la bocaal mismo tiempo, ambos se vuelven inertes. También puedes escupir una pastilla como acción única para finalizar su efecto y volverla inerte. Una pastilla se disuelve gracias a sus ingredientes alquímicos, por lo que normalmente funciona incluso si no tienes saliva.",
+    "TraitDescriptionMadrosarai": "Una criatura con este rasgo pertenece a la ascendencia madrosarai. Son humanoides conocidos por su temperamento tranquilo, sus vivos colores y su fuerte conexión con la magia. Una aptitud con este rasgo solo puede ser utilizada o elegida por madrosarais.",
     "TraitDescriptionMaftet": "Maftets have humanoid upper bodies, leonine lower bodies, and hawk-like wings.",
     "TraitDescriptionMagical": "Algo con el rasgo mágico está imbuido de energías mágicas no vinculadas a una tradición de magia específica. Algunos objetos o efectos están fuertemente vinculados a una tradición de magia en particular. En dichos casos, el objeto tiene el rasgo arcano, divino,\nocultista o primigenio en lugar del rasgo mágico. Cualquiera de estos rasgos indica que el objeto es mágico.",
     "TraitDescriptionMagitech": "Magitech augmentations are a combination of cybernetic and magical components, containing elements such as mystically charged crystals, starmetal alloys, and rune-engraved microchips. Magitech augmentations are magical, but they can't be dispelled unless the effect or attack specifies that it affects augmentations.",
     "TraitDescriptionMagus": "Esto indica habilidades de la clase magus.",
     "TraitDescriptionManifestation": "Feats with this trait enhance or alter your solar manifestations (flare, nimbus, and weapon), or allow you to create a new type of solar manifestation.",
     "TraitDescriptionManipulate": "Debes manipular físicamente un objeto o hacer gestos para utilizar una acción con este rasgo. Las criaturas sin un apéndice adecuado no pueden realizar acciones con este rasgo. Las acciones manipuladas a menudo desencadenan reacciones.",
+    "TraitDescriptionMaraquoi": "Una criatura con este rasgo pertenece a la ascendencia maraquoi. Son humanoides simiescos con cola y siete sexos reproductivos que aprecian a su familia, lloran profundamente a sus muertos y perciben el sonido a través de la piel. Una aptitud con este rasgo solo puede ser utilizada o elegida por maraquois.",
+    "TraitDescriptionMechanic": "Este rasgo indica aptitudes de la clase mecánico.",
     "TraitDescriptionMechanical": "Un peligro con este rasgo es un objeto físico construido.",
     "TraitDescriptionMental": "Un efecto mental puede alterar la mente del objetivo. No tiene efecto sobre un objeto o sobre una criatura descerebrada.",
     "TraitDescriptionMerfolk": "Estos humanoides acuáticos tienen la parte superior del cuerpo parecida a la de un humano y la parte inferior parecida a la de un pez.",
@@ -4973,6 +5116,7 @@
     "TraitDescriptionMortic": "Mortics are living humanoids with close ties to undeath. They have darkvision, negative healing, and vulnerabilities to sacred ground, and they can become undead by holding their breath.",
     "TraitDescriptionMounted": "Las armas de asedio montadas ocupan un cierto tamaño y espacio y, por lo general, tienen estadísticas que permiten ser atacadas. Se utilizan para guerras a gran escala.",
     "TraitDescriptionMove": "Una acción con este rasgo implica pasar de un espacio a otro.",
+    "TraitDescriptionMoyishuu": "Una criatura con este rasgo pertenece a la ascendencia moyishuu. Son fatas perspicaces de piel colorida y pelo cristalino que pueden percibir, imitar y aprovechar las emociones. Una aptitud con este rasgo solo puede ser utilizada o elegida por moyishuus.",
     "TraitDescriptionMulticlass": "Los arquetipos con el rasgo multiclase representan la diversificación de tu entrenamiento hacia las especialidades de otra clase. No puedes seleccionar la dote de dedicación de un arquetipo multiclase si eres miembro de la clase del mismo nombre.",
     "TraitDescriptionMummy": "Una momia es una criatura muerta viviente creada a partir de un cuerpo conservado.",
     "TraitDescriptionMunavri": "Amicable humanoids living in the Darklands, munavris have powerful telekinetic and psychic abilities.",
@@ -4980,12 +5124,15 @@
     "TraitDescriptionMutant": "El monstruo ha mutado o evolucionado, lo que le concede beneficios inusuales, inconvenientes inusuales o ambas cosas.",
     "TraitDescriptionMythic": "Options with this trait grant or utilize mythic power. Feats with the mythic trait can only be taken by mythic characters, who are typically characters with a mythic Calling.</p><p>Monsters with the mythic trait have access to a pool of Mythic Points and are particularly strong for creatures of their level. Many mythic monsters are either resistant or entirely immune to attacks from non-mythic creatures and weapons.</p><p>Spells with the mythic trait require the expenditure of a Mythic Point in order to be cast, and items with the mythic trait require the expenditure of a Mythic Point in order to use their activated abilities.</p><p>Weapons with the mythic trait overcome the resistances and immunities of mythic monsters.",
     "TraitDescriptionNagaji": "Una ascendencia tradicionalista con rasgos reptilianos y cabezas serpentinas.",
+    "TraitDescriptionNecromancer": "Este rasgo indica aptitudes de la clase nigromante.",
     "TraitDescriptionNephilim": "Una criatura con este rasgo tiene la herencia versátil nefilim. Los nefilim son vástagos planarios que descienden de seres inmortales de otros Planos. Una habilidad con este rasgo puede ser utilizada o seleccionada sólo por nefilim.",
     "TraitDescriptionNightmare": "Nightmare hazards are unique to Leng. In many ways, nightmare hazards resemble a haunt, and the dire truth might not reveal itself to potential victims until they discover that attempts to disable it through exorcism are ineffective.",
     "TraitDescriptionNindoru": "Los nindorus son demonios caóticos malignos que surgen de la corrupción del ciclo de almas reencarnantes y viven en el Universo. Aunque suelen tener elementos en su apariencia que los hacen parecer muertos vivientes, en realidad son seres vivos. La mayoría de los nindorus tienen visión en la oscuridad, son inmunes a los efectos de muerte, tienen debilidad por la plata y poseen el poder de manifestar objetos o criaturas a partir de sus pensamientos.",
     "TraitDescriptionNoisy": "Esta armadura rechina y es probable que alerte a otros de tu presencia. El penalizador por armadura a las pruebas se aplica a las de Sigilo, incluso si tienes el modificador por Fuerza requerido.",
     "TraitDescriptionNone": "Este rasgo no tiene descripción.",
     "TraitDescriptionNonlethal": "Los ataques con esta arma no son letales y se utilizan para dejar a las criaturas inconscientes en lugar de matarlas. Puedes utilizar un arma no letal para llevar a cabo un ataque letal con un penalizador -2 por circunstancia.",
+    "TraitDescriptionNovian": "Una criatura con este rasgo pertenece a la ascendencia novian. Son pequeños soles flotantes nacidos de la muerte de una estrella que emiten potentes campos gravitatorios. Una aptitud con este rasgo solo puede ser utilizada o elegida por novians.",
+    "TraitDescriptionNuar": "Una criatura con este rasgo pertenece a la ascendencia nuar. Los nuars son humanoides bovinos de origen misterioso. Una aptitud con este rasgo solo puede ser utilizada o elegida por nuars.",
     "TraitDescriptionNymph": "Esta familia de bellas criaturas feéricas tiene fuertes vínculos con las ubicaciones naturales.",
     "TraitDescriptionOath": "Los juramentos añaden un principio adicional a su código. Normalmente sólo puedes tener una dote con este rasgo.",
     "TraitDescriptionOccult": "Esta magia procede de la tradición ocultista, que se basa en misterios extraños y efímeros. Cualquier cosa con este rasgo es mágica. Una criatura con este rasgo esta principalmente constituida de magia ocultista o tiene una fuerte conexión con ella.",
@@ -4996,6 +5143,8 @@
     "TraitDescriptionOracle": "Esto indica habilidades de la clase oráculo.",
     "TraitDescriptionOrc": "Una criatura con este rasgo es miembro de la ascendencia orca. Esta gente de piel verde tiende a tener visión en la oscuridad. Un arma con este rasgo es un arma que los orcos fabrican y usan.",
     "TraitDescriptionOread": "Un tipo de progenie de genios descendiente de un ser del Plano de la Tierra.",
+    "TraitDescriptionOrocoran": "Una criatura con este rasgo pertenece a la ascendencia orocoran. Son aberraciones esqueléticas mutadas por los fluidos sobrenaturales de Aucturn que anhelan una nueva identidad. Una aptitud con este rasgo solo puede ser utilizada o elegida por orocorans.",
+    "TraitDescriptionOsharu": "Una criatura con este rasgo pertenece a la ascendencia osharu. Son humanoides parecidos a babosas que pueden nadar y excretar una baba pegajosa. Dedican su vida a acumular conocimientos. Una aptitud con este rasgo solo puede ser utilizada o elegida por osharus.",
     "TraitDescriptionOverflow": "Impulsos poderosos sobrepasan temporalmente la energía de tu puerta cinética. Cuando usas un impulso que tiene el rasgo de desbordamiento, tu aura cinética se desactiva hasta que la revitalizas (normalmente con elementos de canal). Extinguir tu elemento de esta manera es agotador y, en consecuencia, solo puedes usar un impulso de desbordamiento por asalto, incluso si reactivas tu puerta cinética.",
     "TraitDescriptionPaaridar": "A paaridar is a humanoid who has gained physical aspects and abilities of a powerful beast through corrupted magical rituals.",
     "TraitDescriptionPalinthanos": "When a cosmic event like Godsrain disturbs all that exists, the River of Souls sometimes flows backward for a brief moment, literally, from the shockwave. Unwilling and confused souls that are forced back far enough can have the agonizing experience of enduring death in reversed time. Some of these souls manage to re-enter the river once the flow returns to normal, but those who are stranded on the metaphorical shores of the living can become palinthanos: powerful undead born from their reversed demise who struggle futilely until their predestined banishment back to the River.",
@@ -5023,6 +5172,7 @@
     "TraitDescriptionPrediction": "Los efectos con este rasgo determinan lo que es probable que suceda en el futuro cercano. La mayoría de las predicciones son adivinaciones.",
     "TraitDescriptionPress": "Las acciones con este rasgo te permiten continuar ataques anteriores. Una acción con el rasgo aprovechar sólo se puede utilizar si en ese momento te está afectando un penalizador por ataque múltiple. No puedes usar una acción con el rasgo aprovechar si no es tu turno, ni siquiera con la actividad Preparar. Algunas acciones con el rasgo aprovechar también conceden un efecto en caso de fallo. Los efectos que se añaden en caso de fallo no se aplican en caso de fallo crítico. Si tu acción de aprovechar tiene éxito, en su lugar puedes aplicar el efecto de fallo (por ejemplo, podría interesarte hacerlo cuando un ataque no inflige daño debido a alguna resistencia)",
     "TraitDescriptionPrimal": "Esta magia procede de la tradición primigenia, que conecta con el mundo natural y los instintos. Cualquier cosa con este rasgo es mágica. Una criatura con este rasgo esta principalmente constituida de magia primigenia o tiene una fuerte conexión con ella.",
+    "TraitDescriptionPrismeni": "Una criatura con este rasgo tiene la herencia versátil prismeni. Una aptitud con este rasgo solo puede ser utilizada o elegida por prismenis.",
     "TraitDescriptionProcessed": "Se puede crear un consumible alquímico con el rasgo procesado con Quick Alchemy, pero es demasiado complejo para crearlo en una sola acción.",
     "TraitDescriptionProfessional": "A weapon with this trait can be used as a tool for the listed skill. Add the weapon's item bonus to attack rolls as an item bonus to skill checks using the listed skill. For purposes of proficiency, you can choose to treat this martial weapon as a simple weapon or this advanced weapon as a martial weapon, up to your proficiency with the listed skill.",
     "TraitDescriptionPropulsive": "Sumas la mitad de tu modificador por Fuerza (si es positivo) a las tiradas de daño con una arma a distancia propulsiva. Si tienes un modificador por Fuerza negativo, en su lugar sumas tu modificador por Fuerza completo.",
@@ -5040,6 +5190,7 @@
     "TraitDescriptionRanger": "Esto indica habilidades de la clase de guardabosques.",
     "TraitDescriptionRare": "Esta rareza indica que un elemento de reglas es muy difícil de encontrar en el mundo del juego. Una dote, hechizo, objeto o similar raro está disponible para los jugadores sólo si el DJ decide incluirlo en el juego, generalmente a través del descubrimiento durante el juego. Las criaturas con este rasgo son raras. Por lo general, no pueden ser convocados. La CD de las pruebas de Recordar conocimiento relacionadas con estas criaturas aumenta en 5.",
     "TraitDescriptionRatfolk": "Los rátidos son humanoides que se parecen a las ratas.",
+    "TraitDescriptionRaxilite": "Una criatura con este rasgo pertenece a la ascendencia raxilite. Son pequeñas plantas amables e inteligentes que utilizan injertos biotecnológicos llamados LFAN. Una aptitud con este rasgo solo puede ser utilizada o elegida por raxilites.",
     "TraitDescriptionRazing": "Las armas arrasadoras son particularmente buenas para dañar objetos, estructuras y vehículos. Siempre que infliges daño a un objeto (incluidos escudos y objetos animados), estructura o vehículo con un arma arrasadora, el objeto sufre una cantidad de daño adicional igual al doble de la cantidad de dados de daño del arma.",
     "TraitDescriptionReach": "Los ataques naturales con este rasgo se pueden usar para atacar criaturas que se encuentren hasta la distancia indicada en lugar de solo criaturas adyacentes. Las armas con este rasgo son largas y pueden usarse para atacar criaturas a una distancia de hasta 10 pies en lugar de solo criaturas adyacentes. Para las criaturas que ya tienen alcance con la extremidad o extremidades que empuñan el arma, el arma aumenta su alcance en 5 pies.",
     "TraitDescriptionReckless": "Las acciones con el rasgo imprudente corren el riesgo de que el piloto pierda el control de un vehículo. Al realizar una acción imprudente, el piloto primero debe intentar una verificación de pilotaje adecuada para mantener el control del vehículo.",
@@ -5054,6 +5205,8 @@
     "TraitDescriptionRetractable": "This shield can collapse into a smaller form attached to an armguard, gauntlet, glove, or jewelry for ease of travel and to free up hands. You can use an Interact action to deploy or retract the shield. You can't Raise a Shield if the shield is retracted. While the shield is deployed, it has the compact trait.",
     "TraitDescriptionRevelation": "Los efectos con este rasgo ven las cosas como realmente son.",
     "TraitDescriptionRogue": "Esto indica habilidades de la clase pícara.",
+    "TraitDescriptionRunesmith": "Este rasgo indica aptitudes de la clase forjador de runas.",
+    "TraitDescriptionRyphorian": "Una criatura con este rasgo pertenece a la ascendencia ryphorian. Son humanoides trimórficos parecidos a elfos, con un oído excepcional y una apariencia que cambia con las estaciones. Una aptitud con este rasgo solo puede ser utilizada o elegida por ryphorians.",
     "TraitDescriptionSaggorak": "Los antiguos herreros enanos de Saggorak diseñaron una serie de runas espectacularmente poderosas. Sólo alguien con una competencia legendaria en artesanía, o un artesano enano muy versado de la ciudad de Kovlar, puede aplicar, transferir o eliminar una runa con el rasgo Saggorak. Debido a su considerable poder, todas las runas de Saggorak ocupan dos espacios de runas de propiedad y, en consecuencia, sólo pueden aplicarse a armaduras y armas con al menos una runa de potencia +2.",
     "TraitDescriptionSahkil": "Sahkils are fiends that delight in spreading fear and unease among mortal creatures. They typically have darkvision, immunity to fear, and weakness to good.",
     "TraitDescriptionSamsaran": "Blue-skinned people native to Zi Ha, who reincarnate upon death and recall pieces of their past lives.",
@@ -5076,6 +5229,7 @@
     "TraitDescriptionSkeleton": "Este muerto viviente se construye animando el esqueleto de una criatura muerta con energía del vacío. Una habilidad con este rasgo solo puede ser utilizada o seleccionada por esqueletos.",
     "TraitDescriptionSkelm": "These creatures are monstrous, wrathful misanthropes who seek to control others through anger and spite.",
     "TraitDescriptionSkill": "Una dote general con el rasgo habilidad mejora tus habilidades y sus acciones o te brinda nuevas acciones para una habilidad. Se puede seleccionar una dote con este rasgo cuando una clase otorga una dote de habilidad o una dote general. Las dotes de arquetipo con el rasgo habilidad se pueden seleccionar en lugar de una dote de habilidad si tienes la dote de dedicación de dicho arquetipo.",
+    "TraitDescriptionSkirmish": "Este rasgo indica aptitudes que solo pueden utilizarse durante encuentros de escaramuza.",
     "TraitDescriptionSkulk": "Skulks are a family of humanoids whose skin can shift coloration to aid in stealth.",
     "TraitDescriptionSleep": "Este efecto hace que la criatura se quede dormida o somnolienta.",
     "TraitDescriptionSnare": "Las trampas, típicamente hechas por guardabosques, siguen reglas especiales que permiten construirlas rápidamente y usarlas en el campo de batalla.",
@@ -5091,6 +5245,7 @@
     "TraitDescriptionSplash10": "Cuando usas un arma arrojadiza con el rasgo de salpicadura, no agregas tu modificador de Fuerza a la tirada de daño. Si un ataque con un arma de salpicadura falla, tiene éxito o tiene un éxito crítico, todas las criaturas dentro de 10 pies del objetivo (incluido el objetivo) reciben el daño de salpicadura indicado. En caso de fallo (pero no crítico), el objetivo del ataque sigue sufriendo el daño por salpicadura. Agregue daño por salpicadura junto con el daño inicial contra el objetivo antes de aplicar las debilidades del objetivo oresistencias. No multiplicas el daño por salpicadura en un golpe crítico.",
     "TraitDescriptionSpriggan": "Kin to gnomes, spriggans tend to be evil and can grow in size to resemble giants.",
     "TraitDescriptionSprite": "Una familia de diminutas hadas aladas con una fuerte conexión con la magia primigenia.",
+    "TraitDescriptionSRO": "Una criatura con este rasgo pertenece a la ascendencia SRO. Los organismos robóticos sintientes son máquinas con alma y libre albedrío. Una aptitud con este rasgo solo puede ser utilizada o elegida por SRO.",
     "TraitDescriptionStaff": "Este objeto mágico contiene hechizos de un tema particular y permite al lanzador de hechizos lanzar hechizos adicionales al preparar el bastón.",
     "TraitDescriptionStance": "Una posición es una estrategia general de combate que inicias utilizando una acción con el rasgo posición, y en la que permaneces durante algún tiempo. Una posición dura hasta que eres derribado, hasta que sus requisitos (si los hay) son violados, hasta que acaba el encuentro o hasta que utilizas de nuevo una acción de posición, lo que primero sucede. Una vez llevas a cabo una acción con el rasgo posición, no puedes llevar a cabo otra durante 1 asalto. Sólo puedes entrar en una posición o estar en la misma en el modo encuentro. ",
     "TraitDescriptionSteam": "Los artículos con esta característica funcionan con motores que hierven agua para producir vapor y mover sus componentes.",
@@ -5112,6 +5267,7 @@
     "TraitDescriptionTactic": "Tactics are special abilities that involve you signaling your allies to perform predetermined maneuvers. To use a tactic ability, you must have one or more willing allies you have instructed beforehand during your daily preparations, called squadmates. Your squadmates must also be able to perceive your signal, either when you speak or shout it (in which case the tactic action gains the auditory trait), or by physically signaling them, typically by waving your banner (in which case it gains the visual trait). While you can use multiple tactic actions in a round, a character cannot respond to more than one tactic per round, regardless of source. You can't Ready a tactic. Tactics often grant actions or abilities that can be used as a free action; these can be used outside the squadmate's turn just like reactions.",
     "TraitDescriptionTalisman": "<p> Un objeto con el rasgo talismán es un amuleto, una gema, una piedra u otro pequeño objeto mágico fijado a una armadura, un escudo o una arma (llamado objeto fijado). Cada talismán contiene una pizca de conocimiento de combate o de energía mágica que se puede liberar para obtener un impulso momen- táneo de poder o una aptitud mejorada. Muchos pueden activarse como una acción gratuita al realizar una determinada acción o actividad. Un talismán es un consumible y tiene el rasgo talismán. </p>\n<p> Tienes que estar empuñando o llevando puesto un objeto para activar un talismán fijado a él. Una vez activado, un talismán se quema permanentemente y suele desmenuzarse hasta convertirse en polvo fino.</p>",
     "TraitDescriptionTalos": "Los talosos son vástagos planos que descienden de los zuhras.",
+    "TraitDescriptionTalphi": "Una criatura con este rasgo pertenece a la ascendencia talphi. Son pequeños humanoides parecidos a topos, conocidos por su excepcional habilidad para excavar y por utilizar pinturas y tintes luminosos. Una aptitud con este rasgo solo puede ser utilizada o elegida por talphis.",
     "TraitDescriptionTandem": "Las acciones con este rasgo implican que tú y tu eidolón actúen en concierto. No puedes usar una acción en tándem si tú o tu eidolon no pueden actuar, si no has Manifestado tu Eidolon, o si has Manifestado tu Eidolon de una manera en la que no sea un ser separado (como con la hazaña Fusionar en Eidolon). Las acciones en tándem a menudo te permiten a ti y a tu eidolon realizar acciones separadas, pero estas deben ser acciones realizadas por ti y tu eidolon por separado; no puedes usar una acción tándem para realizar otra acción tándem.",
     "TraitDescriptionTane": "Los Tane son criaturas poderosas creadas hace eras por los Primordiales del Primer Mundo. Todos los Tane tratan cualquier Plano\nen el que están como su Plano natal.",
     "TraitDescriptionTanggal": "This family of cannibalistic aberrations consists of various humanoid-shaped creatures that can separate their body into two pieces while hunting.",
@@ -5119,12 +5275,14 @@
     "TraitDescriptionTea": "<p> El té mágico es un tipo de poción. Se activa cuando lo bebes, lo que lo consume. El té mágico tiene los rasgos de poción y té. Cuando elaboras una dosis de té mágico, las materias primas que suministras son hojas de té inusuales y costosas. El proceso de elaboración del té mágico incluye infundir reactivos mágicos en las hojas, purificar el agua y remojar el té en el agua, lo que da como resultado lo que es esencialmente una poción de sabor particularmente delicioso. Puedes activar el té mágico con unInteractúa la acción mientras la bebes o se la das de comer a otra criatura, como si fuera una poción. También puedes activar el té mágico con una actividad de 10 minutos que requiere utensilios de té de primera ley (estas herramientas artesanales pueden ser compartidas por hasta cuatro personas que realizan esta actividad simultáneamente) para preparar el té y luego consumirlo o presentárselo a alguien durante una breve ceremonia del té, tras la cual comienzan los efectos del té mágico; Activar el té mágico de esta manera mejora su efecto, como se detalla en el Té de cada entrada.Ceremonia. </p> <p> Una vez que bebes una dosis de té mágico, eres temporalmente inmune a ese tipo particular de té mágico durante 24 horas. </p>",
     "TraitDescriptionTearing": "This weapon is edged with curved teeth that leave bleeding wounds. When you hit a creature with this weapon, it deals an additional 1 persistent bleed damage. This increases to 2 persistent bleed damage if the weapon has a greater striking rune.",
     "TraitDescriptionTech": "Los objetos con este rasgo están asociados con la tecnología de Numeria.",
+    "TraitDescriptionTechnomancer": "Este rasgo indica aptitudes de la clase tecnomante.",
     "TraitDescriptionTelepathy": "Una criatura con telepatía puede comunicarse mentalmente con cualquier criatura. Esto no le concede ningún acceso especial a sus pensamientos, ni comunica más información de lo que haría el habla normal.",
     "TraitDescriptionTeleportation": "Los efectos de teletransporte mueven instantáneamente algo de un punto del espacio a otro. El teletransporte no suele desencadenar reacciones basadas en el movimiento.",
     "TraitDescriptionTengu": "Una criatura con este rasgo es miembro de la ascendencia tengu. Los tengus son humanoides que se parecen a los cuervos. Una habilidad con este rasgo puede ser utilizada o seleccionada solo por tengus. Los tengus crean y utilizan un objeto con este rasgo.",
     "TraitDescriptionTethered": "Esta arma está unida a un trozo de cuerda o cadena que te permite recuperarla después de que haya salido de tu mano. Si tienes una mano libre mientras empuñas esta arma, puedes usar una acción de Interactuar para recuperar el arma después de haberla lanzado como un ataque a distancia o después de haberla desarmado (a menos que esté siendo sostenida por otra criatura). .",
     "TraitDescriptionThaumaturge": "Esto indica habilidades de la clase taumaturgo.",
     "TraitDescriptionThought": "Weapons with this trait are living creatures that can be communicated with using telepathy. When you wield this weapon and are capable of communicating with it, you can ignore any of the other traits the weapon normally has; this only applies to the other traits listed in the weapon entry, not traits the weapon or actions receive from the use of other abilities or effects. If you can communicate with this weapon, your proficiency with this weapon is equal to your proficiency with simple weapons.",
+    "TraitDescriptionThrall": "Los muertos vivientes sin mente que puedes crear como nigromante se llaman siervos. Los conjuros o aptitudes que crean siervos tienen el rasgo siervo.",
     "TraitDescriptionThrown": "Puedes arrojar esta arma como un ataque a distancia; cuando se arroja se convierte en una arma a distancia. Sumas tu modificador por Fuerza al daño como harías en un arma cuerpo a cuerpo. Cuando este rasgo aparece en un arma cuerpo a cuerpo, también incluye el incremento de rango de distancia.",
     "TraitDescriptionTime": "Time creatures are natives of the Dimension of Time. They don't age, and while some might be driven by supernatural hungers, they don't need to eat or drink to survive. They can survive the basic environmental effects of the Dimension of Time.",
     "TraitDescriptionTitan": "Titans are enormous, primordial creatures of neargodlike power who predate the mortal races.",
@@ -5134,8 +5292,10 @@
     "TraitDescriptionTransfer": "These actions reduce Hit Points from your vitality network. You must have Hit Points in your vitality network equal to or greater than the transfer cost to use these actions. If you can't pay the cost, the action is disrupted.",
     "TraitDescriptionTrap": "Un peligro o elemento con este rasgo se construye para obstaculizar a los intrusos.",
     "TraitDescriptionTrip": "Puedes utilizar esta arma para Derribar con la habilidad Atletismo, incluso si no tienes una mano libre. Esto utiliza el alcance del arma (si es distinto del tuyo) y suma el bonificador por objeto de la misma a las tiradas de ataque como un bonificador por objeto a la prueba de Atletismo. Si sufres un fallo critico en una prueba de Derribar utilizando el arma, puedes dejarla caer para sufrir los efectos de un fallo en lugar de los de un fallo crítico.",
+    "TraitDescriptionTripkee": "Los tripkees son una familia de humanoides parecidos a ranas.",
     "TraitDescriptionTroll": "Los troles son criaturas gigantes y brutales, bien conocidas por transformarse en materiales inanimados.",
     "TraitDescriptionTroop": "A troop is an organized collection of component creatures, typically Small or Medium in size, working as a cohesive whole. Over the course of enough attacks and downed comrades, troops shrink in size. A troop typically has the troop defenses and troop movement abilities, and most troops have weaknesses to area damage and splash damage. Because they consist of multiple discrete creatures, they can't be summoned.",
+    "TraitDescriptionTrox": "Una criatura con este rasgo pertenece a la ascendencia trox. Son grandes y robustos humanoides artrópodos con múltiples brazos vestigiales y una apariencia temible que contrasta con su pacífica espiritualidad. Una aptitud con este rasgo solo puede ser utilizada o elegida por troxes.",
     "TraitDescriptionTrueName": "Ciertos conjuros, dotes y objetos tienen el rasgo de nombre verdadero. Este rasgo significa que requieren que sepas el verdadero nombre de una criatura para usarlos.",
     "TraitDescriptionTwin": "Estas armas se utilizan por parejas. Cuando atacas con un arma gemela, sumas un bonificador por circunstancia a la tirada de daño igual al número de dados de daño del arma si ya has atacado previamente con otra arma del mismo tipo este turno. Las armas deben ser del mismo tipo, pero no hace falta que tengan las mismas runas.",
     "TraitDescriptionTwoHand": "Esta arma se puede empuñar a dos manos para cambiar su dado de daño al valor indicado. Este cambio se aplica a todos los dados de daño del arma.",
@@ -5149,12 +5309,14 @@
     "TraitDescriptionUnwieldy": "Weapons with this trait are large and awkward, can't be fired without cooling down first, or are otherwise difficult to use with repeated attacks. You can't use an unwieldy weapon more than once per round and can't use it to Strike as part of a reaction, such as Reactive Strike.",
     "TraitDescriptionUpgrade": "Weapons can be customized with upgrades, which include technological weapon modifications and weapon fusions. This indicates how many upgrades the weapon can utilize.",
     "TraitDescriptionUrdefhan": "Urdefhans are humanoids who have pacts with daemons, have transparent skin, and drink blood.",
+    "TraitDescriptionUrog": "Una criatura con este rasgo pertenece a la ascendencia urog. Son bestias telepáticas exigentes, semiconductoras y basadas en silicio, que buscan la perfección mediante el aprendizaje y la comprensión. Una aptitud con este rasgo solo puede ser utilizada o elegida por urogs.",
     "TraitDescriptionVampire": "Criaturas muertas vivientes sedientas de sangre, los vampiros son notoriamente versátiles y difíciles de destruir.",
     "TraitDescriptionVanara": "Una ascendencia curiosa con rasgos parecidos a los de los primates y colas prensiles.",
     "TraitDescriptionVehicular": "Un arma vehicular está sujeta a un vehículo o es usada por una montura y, por lo general, solo puede ser empuñada por el conductor del vehículo o el jinete principal de la montura. El conductor o jinete puede controlar un arma vehicular con las mismas manos que usa para conducir el vehículo o guiar la montura. Un arma vehicular se puede desarmar quitando los controles (normalmente las riendas de una montura o el dispositivo de dirección de un vehículo) de las manos del portador.",
     "TraitDescriptionVelstrac": "A family of fiends from the Shadow Plane that are associated with pain and agony. All velstracs possess some form of disturbing gaze.",
     "TraitDescriptionVenomous": "These weapons inject poison into every hit. When you hit a creature with this weapon, it deals an additional 1 persistent poison damage. This increases to 2 persistent poison damage if the weapon has a greater striking rune.",
     "TraitDescriptionVersatile": "Un arma versátil se puede utilizar para infligir un tipo de daño diferente al indicado. Este rasgo indica el tipo de daño alternativo. Por ejemplo, un arma perforante con versátil Cor puede infligir daño perforante o cortante. Tú eliges el tipo de daño cada vez que atacas.",
+    "TraitDescriptionVerthani": "Una criatura con este rasgo pertenece a la ascendencia verthani. Los verthanis son humanoides con una larga historia de uso de la tecnología, especialmente de mejoras cibernéticas. Una aptitud con este rasgo solo puede ser utilizada o elegida por verthanis.",
     "TraitDescriptionVigilante": "Your class feats and vigilante feats are associated with your vigilante identity, and using them while in your social identity may risk exposing you as a vigilante. If your identity is exposed to the public, you lose the benefits of Vigilante Dedication to disguising yourself, but you can spend 1 week of downtime to create a new social identity.",
     "TraitDescriptionVirtual": "Items with the virtual trait are programs that must be installed on other computers, such as comm units. They require the Programmer feat to craft.",
     "TraitDescriptionVirulent": "Las aflicciones con el rasgo virulento son más difíciles de eliminar. Debes tener éxito en dos salvaciones consecutivas para reducir el nivel de una aflicción virulenta en 1. Un éxito crítico reduce el nivel de una aflicción virulenta en solo 1 en lugar de 2.",
@@ -5163,6 +5325,7 @@
     "TraitDescriptionVitality": "Los efectos con este rasgo curan a criaturas vivas con energía de la Forja de la Creación, infligen daño de energía de vitalidad a los muertos vivientes o manipulan la energía de vitalidad.",
     "TraitDescriptionVoid": "Los efectos con este rasgo curan a criaturas no muertas con energía del Vacío, causan daño del Vacío a criaturas vivas o manipulan la energía del Vacío.",
     "TraitDescriptionVolley": "Este ataque a distancia es menos efectivo a corta distancia. Tus ataques contra objetivos que están a una distancia dentro del incremento de rango indicado sufren un penalizador -2.",
+    "TraitDescriptionVulkarisu": "Los vulkarisu son humanoides inteligentes y bípedos que parecen una mezcla de zorro y ardilla.",
     "TraitDescriptionWand": "Una varita contiene un único conjuro que puedes lanzar una vez al día.",
     "TraitDescriptionWandering": "Wandering identifies animist feats attuned to particular types of apparitions. These feats require you to have attuned to an apparition who matches their prerequisites when you select them, and represent knowledge and ability pulled from that specific bond. When you make your daily preparations, you can retrain any wandering feat you know for any other wandering feat available at the level you took the exchanged feat (including lower-level wandering feats, as usual). You must meet all the new feat's other prerequisites.",
     "TraitDescriptionWater": "Los efectos con el rasgo agua, o bien manipulan, o bien conjuran agua. Los que manipulan agua carecen de efecto en un área sin agua. Las criaturas con este rasgo están hechas principalmente de agua o tienen una conexión con el agua mágica.",
@@ -5174,8 +5337,10 @@
     "TraitDescriptionWitch": "Esto indica habilidades de la clase brujo.",
     "TraitDescriptionWizard": "Esto indica habilidades de la clase de mago.",
     "TraitDescriptionWood": "Los efectos con el rasgo de madera evocan o manipulan la madera. Los que manipulan madera no tienen ningún efecto en una zona sin madera. Las criaturas con este rasgo se componen principalmente de madera o tienen una conexión con la madera mágica.",
+    "TraitDescriptionWorlanisi": "Una criatura con este rasgo pertenece a la ascendencia worlanisi. Son pequeños telépatas de cuatro brazos, increíblemente afortunados y con piel de color azul brillante. Una aptitud con este rasgo solo puede ser utilizada o elegida por worlanisis.",
     "TraitDescriptionWraith": "Un wraith es una criatura muerta viviente incorporal infundida con energía del vacío y empujada por el odio a todo tipo de vida.",
     "TraitDescriptionWyrwood": "A wyrwood is a small, sapient living construct crafted of wood and powered with an aeon stone or a similar magical stone.",
+    "TraitDescriptionXenometricAndroid": "Una criatura con este rasgo tiene la herencia versátil androide xenométrico. Estos seres construidos artificialmente están hechos para parecerse a una especie concreta. Una aptitud con este rasgo solo puede ser utilizada o elegida por androides xenométricos.",
     "TraitDescriptionXulgath": "Estas criaturas reptilianas subterráneas tienden a tener visión en la oscuridad y un tremendo hedor.",
     "TraitDescriptionZombie": "Estos muertos vivientes son cadáveres descerebrados en putrefacción, que ansían la carne viva.",
     "TraitDescriptionZone": "These actions apply an additional effect to your quantum field. You may apply the effects of a zone only to a quantum field that doesn't have a zone effect.",
@@ -5256,9 +5421,9 @@
     "TraitExposed": "Exposed",
     "TraitExtradimensional": "Extradimensional",
     "TraitFatal": "Crítico",
-    "TraitFatalAim": "Punteria fatal",
-    "TraitFatalAimD10": "Punteria fatal d10",
-    "TraitFatalAimD12": "Punteria fatal d12",
+    "TraitFatalAim": "Puntería fatal",
+    "TraitFatalAimD10": "Puntería fatal d10",
+    "TraitFatalAimD12": "Puntería fatal d12",
     "TraitFatalD10": "Fatal d10",
     "TraitFatalD12": "Fatal d12",
     "TraitFatalD8": "Fatal d8",
@@ -5300,7 +5465,7 @@
     "TraitGiant": "Gigante",
     "TraitGigas": "Gigas",
     "TraitGirtablilu": "Girtablilu",
-    "TraitGnoll": "Kholo",
+    "TraitGnarefuroid": "Gnarefuroid",
     "TraitGnome": "Gnomo",
     "TraitGoblin": "Goblin",
     "TraitGolem": "Gólem",
@@ -5313,7 +5478,6 @@
     "TraitGrenade": "Grenade",
     "TraitGrimoire": "Grimorio",
     "TraitGrioth": "Grioth",
-    "TraitGrippli": "Grippli",
     "TraitGuardian": "Guardian",
     "TraitGunslinger": "Pistolero",
     "TraitHag": "Saga",
@@ -5321,6 +5485,7 @@
     "TraitHalfling": "Mediano",
     "TraitHampering": "Obstaculizado",
     "TraitHantu": "Hantu",
+    "TraitHardor": "Hardor",
     "TraitHarnessed": "Canalizado",
     "TraitHarrowCourt": "Corte de grada",
     "TraitHaunt": "Guarida",
@@ -5346,6 +5511,7 @@
     "TraitIkeshti": "ikeshti",
     "TraitIkon": "Ikon",
     "TraitIllusion": "Ilusión",
+    "TraitImpossible": "Imposible",
     "TraitImplanted": "Implanted",
     "TraitImpulse": "Impulso",
     "TraitIncapacitation": "Incapacitación",
@@ -5381,6 +5547,7 @@
     "TraitInventor": "Inventor",
     "TraitInvested": "Investido",
     "TraitInvestigator": "Investigador",
+    "TraitInvocation": "Invocación",
     "TraitIzalguun": "Izalguun",
     "TraitJinsul": "Jinsul",
     "TraitJotunborn": "Jotunborn",
@@ -5395,6 +5562,7 @@
     "TraitKasatha": "Kasatha",
     "TraitKashrishi": "Kashrishi",
     "TraitKhizar": "Khizar",
+    "TraitKholo": "Kholo",
     "TraitKickback": "Contragolpe",
     "TraitKineticist": "cinético",
     "TraitKingdom": "Reino",
@@ -5407,11 +5575,13 @@
     "TraitLashunta": "Lashunta",
     "TraitLaunching": "Lanzamiento",
     "TraitLeshy": "Leshy",
+    "TraitLFAN": "LFAN",
     "TraitLight": "Luz",
     "TraitLilu": "Lilu",
     "TraitLineage": "Linaje",
     "TraitLinguistic": "Lingüístico",
     "TraitLitany": "Letanía",
+    "TraitLivingHologram": "Holograma viviente",
     "TraitLizardfolk": "Hombre lagarto",
     "TraitLocathah": "Locathah",
     "TraitLozenge": "Pastilla",
@@ -5424,6 +5594,8 @@
     "TraitManifestation": "Manifestation",
     "TraitManipulate": "Manipular",
     "TraitMaraquoi": "Maraquoi",
+    "TraitMecenaic": "Mecenaic",
+    "TraitMechanic": "Mecánico",
     "TraitMechanical": "Mecánico",
     "TraitMental": "Mental",
     "TraitMerfolk": "Sirénidos",
@@ -5457,12 +5629,14 @@
     "TraitNagaji": "Nagaji",
     "TraitNanite": "Nanite",
     "TraitNecrograft": "Necrograft",
+    "TraitNecromancer": "Nigromante",
     "TraitNephilim": "Nefilim",
     "TraitNightmare": "Nightmare",
     "TraitNindoru": "Nindoru",
     "TraitNoisy": "Ruidosa",
     "TraitNonlethal": "No letal",
     "TraitNovian": "Novian",
+    "TraitNuar": "Nuar",
     "TraitNymph": "Ninfa",
     "TraitOath": "Juramento",
     "TraitOccult": "Ocultista",
@@ -5473,6 +5647,7 @@
     "TraitOperative": "Operative",
     "TraitOracle": "Oráculo",
     "TraitOrc": "Orco",
+    "TraitOrd": "Ord",
     "TraitOread": "Oreada",
     "TraitOrocoran": "Orocoran",
     "TraitOsharu": "Osharu",
@@ -5493,6 +5668,7 @@
     "TraitPervasiveMagic": "Magia omnipresente",
     "TraitPetitioner": "Peticionario",
     "TraitPhantom": "Espanto",
+    "TraitPhasorq": "Phasorq",
     "TraitPhysical": "Físico",
     "TraitPiercing": "Perforante",
     "TraitPlant": "Planta",
@@ -5567,6 +5743,7 @@
     "TraitRevelation": "Revelación",
     "TraitRobot": "Robot",
     "TraitRogue": "Pícaro",
+    "TraitRunesmith": "Forjador de runas",
     "TraitRyphorian": "Ryphorian",
     "TraitSaggorak": "Saggorak",
     "TraitSahkil": "Sahkil",
@@ -5602,6 +5779,7 @@
     "TraitSkeleton": "Esqueleto",
     "TraitSkelm": "Esquelmo",
     "TraitSkill": "Habilidad",
+    "TraitSkirmish": "Escaramuza",
     "TraitSkittermander": "Skittermander",
     "TraitSkulk": "Skulk",
     "TraitSlashing": "Cortante",
@@ -5626,6 +5804,7 @@
     "TraitSporeborn": "Nacido de esporas",
     "TraitSpriggan": "Spriggan",
     "TraitSprite": "Duende",
+    "TraitSRO": "SRO",
     "TraitStaff": "Bastón",
     "TraitStamina": "Resistencia",
     "TraitStance": "Posición",
@@ -5659,12 +5838,14 @@
     "TraitTearing": "Tearing",
     "TraitTech": "Tecnología",
     "TraitTechnological": "Tecnológico",
+    "TraitTechnomancer": "Tecnomante",
     "TraitTelepathy": "Telepatía",
     "TraitTeleportation": "Teletransporte",
     "TraitTengu": "Tengu",
     "TraitTethered": "atado",
     "TraitThaumaturge": "Taumaturgo",
     "TraitThought": "Thought",
+    "TraitThrall": "Siervo",
     "TraitThrown": "Arrojadiza",
     "TraitThrown10": "Arrojadiza 10 pies.",
     "TraitThrown100": "Arrojadiza 100 pies.",
@@ -5690,6 +5871,7 @@
     "TraitTraversal": "Traversal",
     "TraitTrial": "Trial",
     "TraitTrip": "Derribo",
+    "TraitTripkee": "Tripkee",
     "TraitTroll": "Trol",
     "TraitTroop": "Tropa",
     "TraitTrox": "Trox",
@@ -5733,6 +5915,7 @@
     "TraitVersatileVitality": "Versátil Vitalidad",
     "TraitVersatileVoid": "Versátil Vacío",
     "TraitVersatileX": "Versátil {x}",
+    "TraitVerthani": "Verthani",
     "TraitVesk": "Vesk",
     "TraitVigilante": "Vigilante",
     "TraitVirtual": "Virtual",
@@ -5748,6 +5931,7 @@
     "TraitVolley50": "Volea 50 pies.",
     "TraitVolley60": "Volley 60 ft.",
     "TraitVorpalFear": "Miedo vorpal",
+    "TraitVulkarisu": "Vulkarisu",
     "TraitWand": "Varita",
     "TraitWandering": "Wandering",
     "TraitWater": "Agua",
@@ -5894,7 +6078,7 @@
     "ValueLabel": "Valor",
     "Wall": {
       "Door": {
-        "OutOfReach": "The door is out of reach."
+        "OutOfReach": "La puerta está fuera de alcance."
       }
     },
     "WeaknessesLabel": "Debilidades",
@@ -6389,10 +6573,16 @@
         "Name": "Animado"
       },
       "decaying": {
-        "Name": "Decadente"
+        "Name": "Decadente",
+        "Note": {
+          "criticalSuccess": "Con un impacto crítico, el objetivo sufre 2d4 de daño persistente de vacío; si tiene un escudo alzado, el escudo sufre la misma cantidad de daño persistente (su portador hace la prueba plana para ver si el daño persistente termina, o la hace el DJ si el escudo ya no está en posesión de nadie). A diferencia del daño de vacío normal, el daño de vacío de una runa decadente daña objetos, constructos y similares al erosionarlos."
+        }
       },
       "deathdrinking": {
         "Name": "Bebida mortal"
+      },
+      "deflecting": {
+        "Name": "Deflectora"
       },
       "demolishing": {
         "Name": "Demoledor"
@@ -6402,6 +6592,9 @@
       },
       "energizing": {
         "Name": "Energizante"
+      },
+      "energyVulnerability": {
+        "Name": "Vulnerabilidad energética"
       },
       "extending": {
         "Name": "Extendido"
@@ -6500,6 +6693,9 @@
         "Note": {
           "criticalSuccess": "En un golpe crítico, la criatura no-muerta es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} y ​​@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} siempre que tenga el daño persistente de esta runa."
         }
+      },
+      "greaterEnergyVulnerability": {
+        "Name": "Vulnerabilidad energética mayor"
       },
       "greaterExtending": {
         "Name": "Extensión mayor"
@@ -6757,7 +6953,7 @@
     "Weight": "Peso",
     "WorldClock": {
       "AD": {
-        "Era": "AD"
+        "Era": "d. C."
       },
       "AR": {
         "Era": "AR",
@@ -6819,13 +7015,13 @@
       "AG": {
         "Era": "AG",
         "Weekdays": {
-          "Friday": "Fifthday",
-          "Monday": "Firstday",
-          "Saturday": "Sixthday",
-          "Sunday": "Seventhday",
-          "Thursday": "Fourthday",
-          "Tuesday": "Seconday",
-          "Wednesday": "Thirday"
+          "Friday": "Quintodía",
+          "Monday": "Primerdía",
+          "Saturday": "Sextodía",
+          "Sunday": "Séptimodía",
+          "Thursday": "Cuartodía",
+          "Tuesday": "Segundodía",
+          "Wednesday": "Tercerdía"
         }
       },
       "Placeholder": "Número",
@@ -6864,8 +7060,8 @@
         "summary": "Otra criatura determina tus acciones."
       },
       "cursebound": {
-        "name": "Cursebound",
-        "rules": "<p>Your oracular curse is constricting around you as you receive divine punishment after drawing too deeply on your mystery's powers. Cursebound is a condition that affects only creatures with an oracular curse, and cursebound always includes a value. Your specific oracular curse imposes unique negative effects depending on your cursebound value. You can remove the cursebound condition only by Refocusing.</p>"
+        "name": "Ligado a la maldición",
+        "rules": "<p>Tu maldición oracular se cierra sobre ti al recibir el castigo divino por recurrir demasiado al poder de tu misterio. Ligado a la maldición es un estado que solo afecta a criaturas con una maldición oracular y siempre incluye un valor. Tu maldición oracular concreta impone efectos negativos únicos según tu valor de ligado a la maldición. Solo puedes eliminar este estado Reenfocando.</p>"
       },
       "dazzled": {
         "name": "Deslumbrado",
@@ -7060,6 +7256,12 @@
       }
     },
     "identification": {
+      "Breakdown": {
+        "Adjustment": "{adjustment} {value}",
+        "Base": "Nivel {level} CD {dc}",
+        "OffTradition": "Otra tradición {value}"
+      },
+      "Difficulty": "Dificultad",
       "DisplayDetails": "Mostrar detalles",
       "Identified": "Identificado",
       "Identify": "Identificar objeto",
@@ -7107,7 +7309,7 @@
       }
     },
     "loot": {
-      "AllowConversion": "Allow coin type conversion",
+      "AllowConversion": "Permitir la conversión entre tipos de moneda",
       "BuySubtitle": "Comprar objeto",
       "DepositMessage": "{depositor} deposita {quantity} × {item} en {container} .",
       "DepositSubtitle": "Depositar objeto",
@@ -7123,9 +7325,10 @@
       "LootDescription": "Permite la distribución de monedas entre jugadores.",
       "LootLabel": "Botín",
       "LootMessage": "{looter} saquea {quantity} × {item} de {corpse}.",
-      "LootUnknownNPCMessage": "an unidentified creature",
+      "LootUnknownNPCMessage": "una criatura sin identificar",
       "LootNPCsLabel": "Saquea las fichas seleccionadas",
       "LootNPCsPopupHeader": "Elige fichas para saquear",
+      "LootNPCsTitle": "Saquear PNJ",
       "LootNamePlaceholder": "Botín",
       "LootSubtitle": "Objeto de botín",
       "MerchantDescription": "Permite a los jugadores comprar objetos directamente desde la hoja.",
@@ -7140,14 +7343,14 @@
       "Quantity": "Cantidad",
       "SellMessage": "{seller} vende {quantity} × {item} a {buyer} .",
       "SellSubtitle": "Vender objeto",
-      "SendToPartyStash": "Send to Party Stash",
+      "SendToPartyStash": "Enviar al alijo del grupo",
       "SheetType": "Tipo de hoja",
       "SplitCoinsLabel": "Distribuir monedas",
       "SplitCoinsPopupHeader": "Elige actores para recibir una acción.",
-      "NoPlayerCharacters": "There are no player characters to distribute to",
-      "NothingToDistribute": "Nothing to distribute",
-      "DistributeMessage": "Distributed {share} from {container} to {recipients}.",
-      "DistributeEachMessage": "Distributed {share} each from {container} to {recipients}.",
+      "NoPlayerCharacters": "No hay personajes jugadores entre los que distribuir",
+      "NothingToDistribute": "No hay nada que distribuir",
+      "DistributeMessage": "Se han distribuido {share} de {container} entre {recipients}.",
+      "DistributeEachMessage": "Se han distribuido {share} a cada uno de {recipients} desde {container}.",
       "Stack": "¿Crear un nuevo montón?",
       "TakeMessage": "{taker} toma {quantity} × {item} de {container} .",
       "TakeSubtitle": "Tomar objeto",
@@ -7196,22 +7399,22 @@
     "MOVEMENT": {
       "ACTIONS": {
         "deploy": {
-          "label": "Deploy"
+          "label": "Desplegar"
         },
         "drive": {
-          "label": "Drive"
+          "label": "Conducir"
         },
         "jump": {
-          "label": "Leap"
+          "label": "Saltar"
         },
         "travel": {
-          "label": "Travel"
+          "label": "Viajar"
         },
         "walk": {
-          "label": "Stride"
+          "label": "Zancada"
         },
         "blink": {
-          "label": "Teleport"
+          "label": "Teletransportarse"
         }
       }
     }
@@ -7231,7 +7434,7 @@
     "Item": {
       "action": "Habilidad",
       "affliction": "Aflicción",
-      "ammo": "Ammunition",
+      "ammo": "Munición",
       "ancestry": "Ascendencia",
       "armor": "Armadura",
       "background": "Bagaje",
@@ -7256,7 +7459,7 @@
       "weapon": "Arma"
     },
     "RegionBehavior": {
-      "modifyMovementCost": "Difficult Terrain"
+      "modifyMovementCost": "Terreno difícil"
     }
   }
 }
