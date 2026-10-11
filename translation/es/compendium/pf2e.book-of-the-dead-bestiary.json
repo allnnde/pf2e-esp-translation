@@ -1,5 +1,5 @@
 {
-  "label": "book-of-the-dead-bestiary",
+  "label": "El libro de los muertos",
   "entries": {
     "Bhuta": {
       "name": "Bhuta",
@@ -228,7 +228,7 @@
         },
         "action->Intense Heat": {
           "name": "Calor intenso",
-          "description": "<p>5 feet. @Damage[2d6[fire]], @Check[type:reflex|dc:17|basic:true]</p>"
+          "description": "<p>5 pies. @Damage[2d6[fire]], @Check[type:reflex|dc:17|basic:true]</p>"
         },
         "action->Water Vulnerability": {
           "name": "Vulnerabilidad al agua",
@@ -523,11 +523,7 @@
         "action->Wear Skin": {
           "name": "Vestir piel",
           "description": "<strong>Requisitos</strong> El desollado está sosteniendo la piel de una criatura Pequeña, Mediana o Grande pero aún no se la ha puesto</p>\n<hr />\n<p><strong>Efecto</strong> El desollado viste la piel como disfraz. Asume el tamaño, apariencia y voz de la criatura. Vestir la piel cuenta como crear un disfraz para el uso de @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Imitar} de la habilidad de Engaño. La transformación del desollado supera automáticamente las CD de las pruebas de Percepción para determinar el tipo de criatura o ascendencia en la que se ha transformado, y obtiene un bonificador +4 por estatus a las CD de Engaño para impedir que los demás vean a través de su disfraz.</p>\n<p>Vestir una piel otorga al desollado un bonificador +2 por objeto a la CA y 75 PG temporales. Si sufre más de @Damage[50[slashing]]{50 puntos daño cortante} de una única fuente, la piel se rompe. Cuando está rota, la piel no proporciona ninguno de sus beneficios (cualquier PG temporal que quedara se pierde inmediatamente), pero aún puede usarse para Rasgar la piel.</p>",
-          "rules": {
-            "0": {
-              "label": "Vistiendo piel"
-            }
-          }
+          "selfEffect": "Effect: Wear Skin"
         }
       }
     },
@@ -1008,7 +1004,7 @@
       }
     },
     "Ghul": {
-      "name": "Ghul",
+      "name": "Gul",
       "hpDetails": "curación del vacío",
       "languages": "una lengua de los Planos (normalmente, acuano, aurano, ígnaro o terrano)",
       "publicNotes": "<p>Las leyendas afirman que los dioses, en los primeros días de la creación, expulsaron a algunos genios malvados, avaros y glotones al Plano Material. Allí, los genios se transformaron en los primeros ghuls, muertos vivientes crueles que se alimentan de la carne de los vivos. La naturaleza avara y glotona de los primeros ghuls vive en ellos, maldiciéndoles con una insaciable necesidad de alimentarse. Acechan rutas de comercio, cementerios y otras localizaciones con buenos lugares para ocultarse y un flujo regular de viajeros. Desde allí, utilizan sus habilidades para confundir y cautivar a los transeúntes, atrayéndolos hacia sus guaridas donde pueden atiborrarse de su carne desprevenida. A diferencia de un gul, un ghul no devora cadáveres, se alimenta de los vivos.</p>",
@@ -1102,20 +1098,20 @@
       "items": {
         "action->Shifting Earth": {
           "name": "Tierra cambiante",
-          "description": "<p><strong>Trigger</strong> At least two creatures enter the area</p>\n<hr />\n<p><strong>Effect</strong> The earth shifts wildly as the hands of the dead spring forth from the ground. The area becomes difficult terrain. Creatures within the area are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} unless they succeed at a @Check[type:reflex|dc:26] save. The haunt then rolls initiative.</p>"
+          "description": "<p><strong>Desencadenante</strong> Al menos dos criaturas entran en el área</p>\n<hr /> <p><strong>Efecto</strong> La tierra se mueve salvajemente mientras las manos de los muertos brotan del suelo. La zona se convierte en terreno difícil. Las criaturas dentro del área son golpeadas @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} a menos que tengan éxito en un salvación @Check[type:reflex|dc:26]. El espectáculo entonces tira la iniciativa.</p>"
         }
       }
     },
     "Harlo Krant": {
       "name": "Harlo Krant",
-      "blurb": "Male variant zombie lord",
+      "blurb": "Señor zombie de variante masculina",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
-          "name": "Divine Innate Spells"
+          "name": "Conjuros divinos innatos"
         },
         "spell->Chill Touch": {
           "name": "Chill Touch",
-          "target": "1 living or undead creature"
+          "target": "1 criatura viva o no muerta"
         },
         "spell->Ray of Enfeeblement": {
           "name": "Ray of Enfeeblement"
@@ -1131,29 +1127,29 @@
           "description": "<p>Though it appears to be a cloth sack decorated with panels of richly colored silk or stylish embroidery, a <em>bag of holding</em> opens into an extradimensional space larger than its outside dimensions. The Bulk held inside the bag doesn't change the Bulk of the <em>bag of holding</em> itself. The amount of Bulk the bag's extradimensional space can hold depends on its type.</p>\n<p>You can Interact with the <em>bag of holding</em> to stow items in it or remove them just like a mundane sack. Though the bag can hold a great amount of material, an object still needs to be able to fit through the opening of the sack to be stored inside.</p>\n<p>If the bag is overloaded or broken, it ruptures and is ruined, causing the items inside to be lost forever. If it's turned inside out, the items inside spill out unharmed, but the bag must be put right before it can be used again. A living creature placed inside the bag has enough air for 10 minutes before it begins to suffocate, and it can attempt to Escape against a DC of 13. An item inside the bag provides no benefits unless it's retrieved first. An item in the bag can't be detected by magic that detects only things on the same plane.</p>\n<hr />\n<p><strong>Capacity</strong> 25 Bulk</p>"
         },
         "strike-melee->Scythe": {
-          "name": "Scythe"
+          "name": "Guadaña"
         },
         "strike-melee->Fist": {
-          "name": "Fist"
+          "name": "Puño"
         },
         "action->Command Zombie": {
-          "name": "Command Zombie",
-          "description": "<p>Krant intones blasphemous words to gain control over a zombie he can see within 100 feet. A zombie that is mindless and not under someone else's control falls under his control automatically; otherwise, the zombie or its controller can attempt a @Check[type:will|dc:22] save to avoid being controlled (whichever has the higher modifier). The target zombie is temporarily immune for 24 hours if successful. The attempt fails if the zombie is the same level as Krant or higher.</p>\n<p>The zombie remains controlled by Krant until either is destroyed. Krant can control up to 8 zombies at a time. If Krant would control a number of zombies over this limit, he chooses which to release.</p>"
+          "name": "Comandar zombi",
+          "description": "<p>Krant entona palabras blasfemas para ganar control sobre un zombi que puede ver dentro de 100 pies. Un zombi que no tiene mente y no está bajo el control de otra persona cae bajo su control automáticamente; de lo contrario, el zombi o su controlador puede intentar un @Check[type:will|dc:22] para evitar ser controlado (el que tenga el modificador más alto). El zombi objetivo es temporalmente inmune durante 24 horas si tiene éxito. El intento falla si el zombie es del mismo nivel que Krant o superior.</p>\n<p>El zombi permanece controlado por Krant hasta que se destruye. Krant puede controlar hasta 8 zombies a la vez. Si Krant controla un número de zombis por encima de este límite, elige cuál liberar.</p>"
         },
         "action->Create Zombies": {
-          "name": "Create Zombies",
-          "description": "<p>Krant can create lesser zombies with a 1-hour ritual. During this time, Krant chants and performs an unholy dance over the corpses he intends to animate. Unlike normal rituals, this doesn't require a skill check or Cost. At the end of this hour, Krant can create one 1st- or 2nd-level zombie, or two zombies of level 0 or lower. These are automatically under Krant's control and count toward the limit of Command Zombie. Any zombies created by Krant still count toward the XP budget of an encounter normally.</p>\n<p>Krant has created enough individual zombies to form shambler troops, which are effectively 4th-level creatures. Rather than creating them directly, he needed to train weaker zombies to work as troops.</p>\n<hr />\n<p><strong>Level -1 Zombies</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.pathfinder-monster-core.Actor.Xo4IGzw28hivgMmM]{Zombie Shambler}</li>\n</ul>\n<p><strong>Level 0 Zombies</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.book-of-the-dead-bestiary.Actor.ZqZlji7aCGCGATMP]{Zombie Snake}</li>\n</ul>\n<p><strong>Level 1 Zombies</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.blog-bestiary.Actor.uPeDOylL6zsZKSIs]{Goblin Zombie}</li>\n<li>@UUID[Compendium.pf2e.pathfinder-monster-core.Actor.aWiTcxAySoYjUP6T]{Plague Zombie}</li>\n</ul>\n<p><strong>Level 2 Zombies</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.book-of-the-dead-bestiary.Actor.qO20so7Mv2pmsLL1]{Husk Zombie}</li>\n<li>@UUID[Compendium.pf2e.pathfinder-monster-core.Actor.WioQ6rOeMRuTOliY]{Zombie Brute}</li>\n</ul>"
+          "name": "Crear zombis",
+          "description": "<p>Krant puede crear zombis menores con un ritual de 1 hora. Durante este tiempo, Krant canta y realiza una danza profana sobre los cadáveres que pretende animar. A diferencia de los rituales normales, esto no requiere una comprobación de habilidad o costo. Al final de esta hora, Krant puede crear un zombi de nivel 1.º o 2.º, o dos zombis de nivel 0 o inferior. Estos están automáticamente bajo el control de Krant y cuentan hacia el límite de Command Zombie. Cualquier zombi creado por Krant sigue contando para el presupuesto de XP de un encuentro normalmente.</p>\n<p>Krant ha creado suficientes zombis individuales para formar tropas de chamarles, que son efectivamente criaturas de nivel 4.º. En lugar de crearlos directamente, necesitaba entrenar a los zombis más débiles para que trabajaran como tropas.</p>\n<hr /> <p><strong>Nivel -1 Zombies</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.pathfinder-bestiary.Actor.0plBflWwrCWQO2RO]{Zombi tambaleante}</li>\n</ul> <p><strong>Nivel 0 Zombies</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.book-of-the-dead-bestiary.Actor.ZqZlji7aCGCGATMP]{Zombi serpiente}</li>\n</ul> <p><strong>Nivel 1 Zombies</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.blog-bestiary.Actor.uPeDOylL6zsZKSIs]{Zombi goblin}</li>\n<li>@UUID[Compendium.pf2e.pathfinder-bestiary.Actor.KxN9aGFGPxl6oLGF]{Zombi de la peste}</li>\n</ul> <p><strong>Nivel 2 Zombies</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.book-of-the-dead-bestiary.Actor.qO20so7Mv2pmsLL1]{Zombi carcasa}</li>\n<li>@UUID[Compendium.pf2e.pathfinder-bestiary.Actor.Ix1PziAEk9IIMYBz]{Zombi bruto}</li>\n</ul>"
         },
         "action->Shamble Forth": {
           "name": "Shamble Forth",
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> Each zombie controlled by Krant Strides 5 feet (or Burrows, Climbs, Flies, or Swims 5 feet if it has the corresponding movement type).</p>"
+          "description": "<p><strong>Frecuencia</strong> una vez por asaltos</p>\n<hr /> <p><strong>Efecto</strong> Cada zombi controlado por Krant camina 5 pies (o se esconde, sube, vuela o nada 5 pies si tiene el tipo de movimiento correspondiente).</p>"
         },
         "action->Whispering Scythe": {
-          "name": "Whispering Scythe",
-          "description": "<p><strong>Trigger</strong> An undead controlled by Krant and within 20 feet of him is destroyed</p>\n<p><strong>Requirements</strong> Krant is holding his scythe</p>\n<hr />\n<p><strong>Effect</strong> Krant draws the creature's soul into his scythe. The next time he makes a scythe Strike, the soul is released and the Strike deals an extra @Damage[1d6[void]] damage. The scythe can hold only one soul at a time.</p>"
+          "name": "Guadaña susurrante",
+          "description": "<p><strong>Desencadenante</strong> Un no muerto controlado por Krant y a menos de 20 pies de él es destruido</p>\n<p><strong>Requisitos</strong> Krant está sosteniendo su guadaña</p>\n<hr /> <p><strong>Efecto</strong> Krant atrae el alma de la criatura hacia su guadaña. La próxima vez que haga un Golpe de Guadaña, el alma se libera y el Golpe inflige @Damage[1d6[void]] daño adicional. La guadaña solo puede contener un alma a la vez.</p>"
         },
         "lore->Mercantile Lore": {
-          "name": "Mercantile Lore"
+          "name": "Conocimiento mercantil"
         }
       }
     },
@@ -1230,8 +1226,8 @@
         },
         "spell->Veil": {
           "name": "Velo",
-          "description": "<p>You disguise the targets as other creatures of the same body shape and roughly similar height (within 6 inches) and weight (within 50 pounds). The disguise can hide the targets' identities or let them appear to be of another ancestry, but it's not precise enough to impersonate specific individuals. The spell doesn't change voice, scent, or mannerisms. You choose the disguise for each target; for example, you could make one target appear to be a dwarf and another an elf. Casting veil counts as setting up a disguise for the purpose of the Impersonate action. It allows the target to ignore any circumstance penalties they might take for being disguised as dissimilar creatures, and it gives the targets a +4 status bonus to Deception checks to prevent others from seeing through their disguises, and add their level even if untrained. You can Dismiss any or all of these disguises.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The spell also disguises the targets' voices and scents; it gains the auditory and olfactory traits.</p>\n<p><strong>Heightened (7th)</strong> The targets can appear as any creature of the same size, even specific individuals. You must have seen an individual to reproduce their appearance. The spell also disguises the targets' voices and scents; it gains the auditory and olfactory traits.</p>",
-          "target": "up to 10 creatures"
+          "description": "<p>Disfrazas a los objetivos como otras criaturas de la misma forma corporal y altura (dentro de 6 pulgadas) y peso (dentro de 50 libras) aproximadamente similares. El disfraz puede ocultar las identidades de los objetivos o hacer que parezcan ser de otro origen, pero no es lo suficientemente preciso como para suplantar a individuos específicos. El conjuro no cambia la voz, el olor o los modales. Tú eliges el disfraz para cada objetivo; por ejemplo, puedes hacer que un objetivo parezca un enano y otro un elfo. Lanza el velo, que cuenta como un disfraz para el propósito de la acción de Impersonar. Permite al objetivo ignorar cualquier penalización de circunstancia que puedan tomar por estar disfrazados como criaturas diferentes, y les da a los objetivos un + 4 bonificador por estatus a las comprobaciones de engaño para evitar que otros vean a través de sus disfraces, y aumentar su nivel incluso si no están entrenados. Puedes Desestimar cualquiera o todos estos disfraces.</p>\n<hr /> <p><strong>Elevado ( 5.º )</strong> El conjuro también disfraza las voces y olores de los objetivos; gana los rasgos auditivos y olfativos.</p>\n<p><strong>Elevado ( 7.º )</strong> Los objetivos pueden aparecer como cualquier criatura del mismo tamaño, incluso individuos específicos. Debes haber visto a un individuo para reproducir su apariencia. El conjuro también disfraza las voces y olores de los objetivos; gana los rasgos auditivos y olfativos.</p>",
+          "target": "hasta 10 criaturas"
         },
         "spell->Hideous Laughter": {
           "name": "Terribles carcajadas"
@@ -1248,15 +1244,15 @@
         "consumable->Scroll of Teleport (Level 6)": {
           "name": "Pergamino de teletransportar (nivel 6)",
           "consumableSpellName": "Teletransportar",
-          "consumableSpellDescription": "<p>You and the targets are instantly transported to any location within range, as long as you can identify the location precisely both by its position relative to your starting position and by its appearance (or other identifying features). Incorrect knowledge of the location's appearance usually causes the spell to fail, but it could instead lead to teleporting to an unwanted location or some other unusual mishap determined by the GM. Teleport is not precise over great distances. The targets appear at a distance from the intended destination equal to roughly 1 percent of the total distance traveled, in a direction determined by the GM. For short journeys, this lack of precision is irrelevant, but for long distances this could be up to 1 mile.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You and the other targets can travel to any location within 1,000 miles.</p>\n<p><strong>Heightened (8th)</strong> You and the other targets can travel to any location on the same planet. If you travel more than 1,000 miles, you arrive only 10 miles off target.</p>\n<p><strong>Heightened (9th)</strong> You and the other targets can travel to any location on another planet within the same solar system. Assuming you have accurate knowledge of the location's position and appearance, you arrive on the new planet 100 miles off target.</p>\n<p><strong>Heightened (10th)</strong> As the 9th-rank version, but you and the other targets can travel to any planet within the same galaxy.</p>",
-          "consumableSpellTarget": "you and up to 4 targets touched, either willing creatures or objects roughly the size of a creature.",
+          "consumableSpellDescription": "<p>Tú y los objetivos se transportan instantáneamente a cualquier ubicación dentro del alcance, siempre y cuando puedas identificar la ubicación con precisión tanto por su posición relativa a tu posición inicial como por su apariencia (u otras características identificativas). El conocimiento incorrecto de la apariencia de la ubicación generalmente causa que el conjuro falle, pero podría conducir a teletransportarse a una ubicación no deseada o algún otro contratiempo inusual determinado por el DJ. Teletransporte no es preciso a grandes distancias. Los objetivos aparecen a una distancia del destino previsto igual a aproximadamente el 1 por ciento de la distancia total recorrida, en una dirección determinada por el DJ. Para viajes cortos, esta falta de precisión es irrelevante, pero para largas distancias esto podría ser hasta 1 millas.</p>\n<hr /> <p><strong>Elevado ( 7.º )</strong> Tú y los otros objetivos pueden viajar a cualquier lugar dentro de 1,000 millas.</p>\n<p><strong>Elevado ( 8.º )</strong> Tú y los otros objetivos pueden viajar a cualquier lugar en el mismo planeta. Si viajas más de 1,000 millas, llegas solo 10 millas fuera del objetivo.</p>\n<p><strong>Elevado ( 9.º )</strong> Tú y los otros objetivos pueden viajar a cualquier lugar en otro planeta dentro del mismo sistema solar. Suponiendo que tienes un conocimiento preciso de la posición y apariencia de la ubicación, llegas al nuevo planeta 100 millas fuera del objetivo.</p>\n<p><strong>Elevado ( 10.º )</strong> Como la versión de rango 9.º, pero tú y los otros objetivos pueden viajar a cualquier planeta dentro de la misma galaxia.</p>",
+          "consumableSpellTarget": "tú y hasta 4 objetivos tocados, o criaturas voluntarias u objetos de aproximadamente el tamaño de una criatura",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4sGIy77COooxhQuC]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.69L70wKfGDY66Mk9]{Teleport}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "consumable->Wand of Dispel Magic (Level 6)": {
           "name": "Wand of Dispel Magic (Level 6)",
           "consumableSpellName": "Disipar magia",
-          "consumableSpellDescription": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-          "consumableSpellTarget": "1 spell effect or unattended magic item",
+          "consumableSpellDescription": "<p>Descoses la magia que hay tras un conjuro o efecto. Haz una prueba de contrarrestar contra el objetivo. Si contrarrestas con éxito un objeto mágico, se convierte en un objeto mundano de su tipo durante 10 minutos. Esto no cambia las propiedades no mágicas del objeto Si el objetivo es un artefacto u objeto similar, fallas automáticamente. </p>",
+          "consumableSpellTarget": "1 efecto de conjuro u objeto mágico desatendido",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.kiXh4SUWKr166ZeM]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Hand": {
@@ -1671,12 +1667,12 @@
     "Locking Door": {
       "name": "Puerta que se cierra",
       "description": "<p>Una puerta (u otro portal) se cierra de golpe y se bloquea.</p>",
-      "disable": "<p>@Check[type:athletics|dc:14|name:Push Back Against the Door] para empujar la puerta, @Check[type:crafting|dc:14|name:Wedge the Door Open] para poner una cuña en la puerta que la mantenga abierta, o @Check[type:thievery|dc:20|name:Jam the Lock] (trained) para atascar la cerradura para que siga abierta o abrirla posteriormente.</p>",
+      "disable": "<p>@Check[type:athletics|dc:14|name:Empujar contra la puerta] para empujar la puerta, @Check[type:crafting|dc:14|name:Mantener abierta la puerta con una cuña] para poner una cuña en la puerta que la mantenga abierta, o @Check[type:thievery|dc:20|name:Atascar la cerradura] (trained) para atascar la cerradura para que siga abierta o abrirla posteriormente.</p>",
       "stealth": "<p>para notar que la puerta se mueve levemente, incluso sin haber brisa alguna.</p>",
       "items": {
         "action->Shut In": {
           "name": "Encerrado",
-          "description": "<p><strong>Trigger</strong> A creature ends their move after passing through the doorway</p>\n<hr />\n<p><strong>Effect</strong> With an ethereal gust shimmering in the air, the door creaks as it swings shut and locks. The haunted door pushes anyone in its space into an adjacent space in the connecting chamber. A creature that would be pushed and succeeds at a @Check[type:reflex|dc:16] save selects which side of the door they end up on.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura termina su movimiento después de pasar por la puerta</p>\n<hr /> <p><strong>Efecto</strong> Con una ráfaga etérea brillando en el aire, la puerta cruje mientras se cierra y se bloquea. La puerta encantada empuja a cualquiera en su espacio a un espacio adyacente en la cámara de conexión. Una criatura que sería empujada y tiene éxito en un salvación @Check[type:reflex|dc:16] selecciona en qué lado de la puerta termina.</p>"
         }
       }
     },
@@ -1907,6 +1903,10 @@
         },
         "spell->Air Walk (Constant)": {
           "name": "Caminar por el aire (constante)"
+        },
+        "spell->Garden of Death": {
+          "cost": "water infused with a dozen deadly toxins worth a total of 50 gp",
+          "secondarycheck": "Crafting, Medicine"
         },
         "spell->Enthrall (At Will)": {
           "name": "Cautivar (a voluntad)"
@@ -2366,7 +2366,7 @@
         "consumable->Wand of Wall of Force (Level 6)": {
           "name": "Wand of Wall of Force (Level 6)",
           "consumableSpellName": "Muro de fuerza",
-          "consumableSpellDescription": "<p>You form an @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} wall of pure magical force up to 50 feet long and up to 20 feet high. The wall has no discernible thickness. You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. The wall has AC 10, Hardness 30, and 60 Hit Points, and it's immune to critical hits and precision damage. The wall blocks physical effects from passing through it, and because it's made of force, it blocks incorporeal and ethereal creatures as well. Teleportation effects can pass through the barrier, as can visual effects (since the wall is invisible). Wall of force is immune to counteracting effects of its level or lower, but the wall is automatically destroyed by a disintegrate spell of any level or by contact with a rod of cancellation or sphere of annihilation.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of the wall increases by 20.</p>",
+          "consumableSpellDescription": "<p>Formas un muro de @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} fuerza mágica pura de hasta 50 pies de largo y hasta 20 pies de alto. La pared no tiene espesor discernible. Debes crear el muro en un espacio abierto sin romper para que sus bordes no pasen a través de ninguna criatura u objeto, o el conjuro se pierde. El muro tiene CA 10, Dureza 30, y 60 Puntos de Golpe, y es inmune a golpes críticos y daño de precisión. El muro bloquea los efectos físicos de pasar a través de él, y debido a que está hecho de fuerza, bloquea a las criaturas incorpóreas y etéreas también. Los efectos de teletransporte pueden pasar a través de la barrera, al igual que los efectos visuales (ya que la pared es invisible). El muro de fuerza es inmune a los efectos contrarrectores de su nivel o inferior, pero el muro es destruido automáticamente por un conjuro de desintegración de cualquier nivel o por contacto con una varilla de cancelación o esfera de aniquilación.</p>\n<hr /> <p><strong>Elevado (+2 )</strong> Los Puntos de Golpe de la pared aumentan en 20.</p>",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.kiXh4SUWKr166ZeM]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.7Iela4GgVeO3LfAo]{Wall of Force}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Battle Axe": {
@@ -2501,7 +2501,7 @@
     "Shattered Window": {
       "name": "Ventana rota",
       "description": "<p>El enfado de la criatura atrapada en la estructura rompe una ventana, lanzando cristales a los espacios adyacentes.</p>",
-      "disable": "<p>@Check[type:occultism|dc:19|name:Suprimir la energía espiritual] or @Check[type:religion|dc:19|name:Suppress the Spiritual Energy] (entrenado) para suprimir la energía espiritual o @Check[type:diplomacy|dc:20|name:Apaciguar el enfado latente] (entrenado) para apaciguar el enfado latente.</p>",
+      "disable": "<p>@Check[type:occultism|dc:19|name:Suprimir la energía espiritual] or @Check[type:religion|dc:19|name:Suprimir la energía espiritual] (entrenado) para suprimir la energía espiritual o @Check[type:diplomacy|dc:20|name:Apaciguar el enfado latente] (entrenado) para apaciguar el enfado latente.</p>",
       "stealth": "<p>(entrenado) para notar las grietas en la ventana</p>",
       "items": {
         "action->Shatter": {
@@ -2572,8 +2572,8 @@
           "name": "Spider Climb"
         },
         "spell->Dancing Lights": {
-          "name": "Dancing Lights",
-          "description": "<p>You create up to four floating lights, no two of which are more than 10 feet apart. Each sheds light like a torch. When you Sustain the Spell, you can move any number of lights up to 60 feet. Each light must remain within 120 feet of you and within 10 feet of all others, or it winks out.</p>"
+          "name": "Luces danzantes",
+          "description": "<p> Creas hasta cuatro luces flotantes, ninguna de las cuales está a más de 10 pies de distancia. Cada uno arroja luz como una antorcha. Cuando sostienes el hechizo, puedes mover cualquier cantidad de luces hasta 60 pies. Cada luz debe permanecer a 120 pies de usted y a 10 pies de todas las demás, o parpadeará. </p>"
         },
         "spell->Longstrider": {
           "name": "Longstrider"
@@ -2601,7 +2601,7 @@
         "consumable->Scroll of True Seeing (Level 6)": {
           "name": "Scroll of True Seeing (Level 6)",
           "consumableSpellName": "Visión verdadera",
-          "consumableSpellDescription": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion or transmutation in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>",
+          "consumableSpellDescription": "<p>Usted ve las cosas dentro de 60 pies como realmente son. El DJ lanza un prueba secreto contra cualquier ilusión o transmutación en el área, pero solo con el propósito de determinar si ves a través de ella (por ejemplo, si el prueba tiene éxito contra un conjuro polimorfo, puedes ver la forma verdadera de la criatura, pero no terminas el conjuro polimorfo).</p>",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.4sGIy77COooxhQuC]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]{Truesight}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
         },
         "strike-melee->Stone Antler": {
@@ -2625,7 +2625,7 @@
         },
         "action->Steady Spellcasting": {
           "name": "Lanzamiento de conjuros firme",
-          "description": "<p>If a reaction would disrupt the siabrae's spellcasting action, the siabrae attempts a @Check[type:flat|dc:15]. On a success, the action isn't disrupted.</p>"
+          "description": "<p>Si una reacción interrumpiera la acción de hechicería del siabrae, el siabrae intenta un @Check[type:flat|dc:15]. En caso de éxito, la acción no se interrumpe.</p>"
         },
         "action->Stony Shards": {
           "name": "Fragmentos de piedra",
@@ -2763,7 +2763,7 @@
     "Spirit Cyclone": {
       "name": "Ciclón espiritual",
       "description": "<p>Un ciclón de espíritus furiosos aparece en el área.</p>",
-      "disable": "<p>@Check[type:occultism|dc:30] (trained) or @Check[type:religion|dc:30] (trained) to weaken the haunt; three total successes in any combination are required to disable the haunt</p>",
+      "disable": "<p>@Check[type:occultism|dc:30] (entrenado) o @Check[type:religion|dc:30] (entrenado) para debilitar el fantasma; se requieren tres éxitos totales en cualquier combinación para desactivar el fantasma</p>",
       "reset": "<p>El ciclón espiritual se dispersa tras 1 minuto y se rearma en 1 día.</p>",
       "routine": "<p>(3 acciones) El ciclón espiritual usa tres acciones para moverse, viajando hasta 30 pies (9 m) con cada acción y causando @Damage[(2d10+13)[void]]{2d10+13 daño del vacío} a cada criatura en su camino (salvación @Check[reflex|dc:32|basic]). Una criatura solo necesita tener éxito en una salvación, aunque el ciclón se mueva por su espacio más de una vez. Con un fallo crítico, la criatura es arrastrada por el ciclón, quedando @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrada} ([[/act escape dc=32]]). Una criatura agarrada por el ciclón se mueve con él y sufre @Damage[(1d10+6)[void]]{1d10+6 daño del vacío} adicional al inicio de su turno, debe realizar una salvación de Reflejos contra el ciclón en el turno de éste sin importar si el ciclón se mueve o no. Una criatura que Huye con éxito del ciclón cae de una altura de [[/r {1d12*5} #Distancia de caída]]{1d12 x 5 pies (1,5 - 18 m)}.</p>",
       "stealth": "<p>(experto)</p>",
