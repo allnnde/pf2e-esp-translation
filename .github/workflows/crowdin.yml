@@ -9,15 +9,24 @@ on:
 jobs:
   update-files:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4.2.2
         with:
-          ref: l10n_main
+          ref: main
       - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - run: npm install
+      - run: npm test
       - run: npm run pack-extractor
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
 
       # Commit all changed files back to the repository
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "feat: automatic json extract to traslate"
+          branch: main
+          file_pattern: 'translation/en/ src/pack-extractor/pf2e-source.json'
+          commit_message: "feat: update translation sources from stable PF2e release"

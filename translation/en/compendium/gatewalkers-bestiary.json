@@ -554,7 +554,7 @@
         },
         "action->Starburst": {
           "name": "Starburst",
-          "description": "<p>A creature that takes damage from a crownbound constellation's attack must succeed at a @Check[fortitude|dc:23] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute.</p>"
+          "description": "<p>A creature that takes damage from a crownbound constellation's attack must succeed at a @Check[fortitude|dc:23|options:inflicts:dazzled] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute.</p>"
         },
         "action->Swarm Shape": {
           "name": "Swarm Shape",
@@ -1031,13 +1031,13 @@
           "name": "Cold Snap",
           "description": "<p><strong>Trigger</strong> A creature steps on the white bricks</p>\n<hr />\n<p><strong>Effect</strong> The trap makes a frost jet Strike against the triggering creature and rolls initiative.</p>"
         },
-        "strike-melee->Frost Jet": {
+        "strike-ranged->Frost Jet": {
           "name": "Frost Jet",
-          "description": "<p>No multiple attack penalty.</p>"
+          "description": "<p>No multiple attack penalty</p>"
         },
         "action->Frostbite": {
           "name": "Frostbite",
-          "description": "<p>A creature that takes persistent cold damage from the trap's frost jet Strike must attempt a @Check[fortitude|dc:18] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature isn't affected and is immune to this frostbite effect for 24 hours.</p>\n<p><strong>Success</strong> The creature isn't affected.</p>\n<p><strong>Failure</strong> The creature can't stop shivering and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>"
+          "description": "<p>A creature that takes persistent cold damage from the trap's frost jet Strike must attempt a @Check[fortitude|dc:18|options:inflicts:clumsy,inflicts:fatigued] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature isn't affected and is immune to this frostbite effect for 24 hours.</p>\n<p><strong>Success</strong> The creature isn't affected.</p>\n<p><strong>Failure</strong> The creature can't stop shivering and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>"
         }
       }
     },
@@ -1082,7 +1082,7 @@
         },
         "action->Camouflage": {
           "name": "Camouflage",
-          "description": "<p>The glimmervine can Hide in natural environments even if it doesn't have cover.</p>"
+          "description": "<p>The glimmervine can [[/act hide]] in natural environments even if it doesn't have cover.</p>"
         },
         "action->Constrict": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(2d6+4)[bludgeoning]], @Check[fortitude|dc:21|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
@@ -1185,7 +1185,7 @@
         },
         "action->Siphon Mind": {
           "name": "Siphon Mind",
-          "description": "<p><strong>Requirements</strong> The target creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by Ilakni, is helpless, or is willing, and is adjacent to Ilakni</p>\n<hr />\n<p><strong>Effect</strong> Ilakni extrudes a seething forest of tendrils from his mouth to wrap around the target's head. These tendrils begin siphoning away the target's mind to make them an empty vessel, ready to be inhabited by Osoyo in the future. The target must attempt a @Check[will|dc:30] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and is temporarily immune to Siphon Mind for 24 hours.</p>\n<p><strong>Success</strong> The target takes @Damage[3d6[mental]].</p>\n<p><strong>Failure</strong> The target takes @Damage[6d6[mental]] and becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}, or increases its stupefied value by 1 to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4}. If the creature dies as a result of this mental damage, its body remains alive while its mind and soul move on. The body can remain alive without its soul and mind for many years, as long as it is cared for. If Osoyo escapes from its prison, a body in this state becomes animated by Osoyo's will, transforming into an entity with the same statistics as Ilakni but directly controlled by the Blackfrost Whale. If the body is restored to life before this event, this development can be avoided.</p>\n<p><strong>Critical Failure</strong> As critical failure, but @Damage[12d6[mental]] and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (or increases its stupefied value by 2, to a maximum of 4).</p>"
+          "description": "<p><strong>Requirements</strong> The target creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by Ilakni, is helpless, or is willing, and is adjacent to Ilakni</p>\n<hr />\n<p><strong>Effect</strong> Ilakni extrudes a seething forest of tendrils from his mouth to wrap around the target's head. These tendrils begin siphoning away the target's mind to make them an empty vessel, ready to be inhabited by Osoyo in the future. The target must attempt a @Check[will|dc:30|options:damaging-effect,inflicts:stupefied] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and is temporarily immune to Siphon Mind for 24 hours.</p>\n<p><strong>Success</strong> The target takes @Damage[3d6[mental]].</p>\n<p><strong>Failure</strong> The target takes @Damage[6d6[mental]] and becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}, or increases its stupefied value by 1 to a maximum of stupefied 4. If the creature dies as a result of this mental damage, its body remains alive while its mind and soul move on. The body can remain alive without its soul and mind for many years, as long as it is cared for. If Osoyo escapes from its prison, a body in this state becomes animated by Osoyo's will, transforming into an entity with the same statistics as Ilakni but directly controlled by the Blackfrost Whale. If the body is restored to life before this event, this development can be avoided.</p>\n<p><strong>Critical Failure</strong> As critical failure, but @Damage[12d6[mental]] and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (or increases its stupefied value by 2, to a maximum of 4).</p>"
         }
       }
     },
@@ -2231,8 +2231,9 @@
         "weapon->War Razor": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nOFcCidD5AwVZWTv]\n<p>A war razor is an exaggerated version of the barbers' tool. It is a brittle but extremely sharp weapon that is very easy to slip into a pocket or sleeve.</p>"
         },
-        "equipment->Keys to the Front Door and Dungeon Cell": {
-          "name": "Keys to the Front Door and Dungeon Cell"
+        "equipment->Keys": {
+          "name": "Keys",
+          "gmNote": "<p>Valmar's keys to the front door (area <strong>E2</strong>) and dungeon cell (area <strong>E12</strong>).</p>"
         },
         "strike-melee->Claw": {
           "name": "Claw"

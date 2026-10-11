@@ -228,7 +228,7 @@
         },
         "action->Paralysis": {
           "name": "Paralysis",
-          "description": "<p>Any living creature hit by an angheuvore's jaws Strike must succeed at a @Check[fortitude|dc:15] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}.</p>\n<p>It can attempt a new save to end the condition at the end of each of its turns, and the DC cumulatively decreases by 1 on each save.</p>"
+          "description": "<p>Any living creature hit by an angheuvore's jaws Strike must succeed at a @Check[fortitude|dc:15|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}.</p>\n<p>It can attempt a new save to end the condition at the end of each of its turns, and the DC cumulatively decreases by 1 on each save.</p>"
         }
       }
     },
@@ -328,58 +328,6 @@
         "action->Wasting Curse": {
           "name": "Wasting Curse",
           "description": "<p>The baykok steals life from its victim and leaves listless dread in its place.</p>\n<p>If a target fails its save against Devour Life, it becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>\n<p>Each time the target gets a full night's rest, it must succeed at a @Check[fortitude|dc:26] save or its drained value increases rather than decreasing. The curse ends if the creature recovers from the drained condition, but if the creature would reach drained 5 from this effect, it dies.</p>"
-        }
-      }
-    },
-    "Bone Ship": {
-      "name": "Bone Ship",
-      "acDetails": "all-around vision",
-      "languages": "(can't speak any language)",
-      "publicNotes": "<p>Rarely does anything living remain after a bone ship's passing-only death, destruction, and waves red as blood that clash and foam in its wake. When a bone ship forms, necromantic magic dredges great bones from the seabed and slowly bends them into place with malicious intent. Whales' ribs typically form the timbers of the hull, and their great spinal columns twist into towering masts. Muscles and tendons lash the ship together, tightening and loosening to precisely turn the ship as it sails.</p>\n<p>When a bone ship encounters another vessel or finds some other opportunity to sow death, smaller corpses strewn throughout the ship animate to form a crew and boarding party. Each crew member resembles a humanoid skeleton, but they might be made of bones from multiple creatures. For battle, the ship also creates magical cannons formed of bone that propel bone shards and debris with blasts of magic. The small black gemstones stippled across the ship's structure hold the souls of a drowned crew, for a bone ship is the cursed legacy of dead sailors.</p>\n<p>When mass death happens at sea-often from an entire ship sinking far from shore-the anguish of the dying victims can spawn a bone ship. This event might occur when a sailor makes a final plea to a dark god or when a deity takes the opportunity to bind many dead sailors' souls together as a destructive show of divine power. When not created through divine intervention, a bone ship can grow slowly and organically from one of the ships piloted by the undead sailors known as @UUID[Compendium.pf2e.pathfinder-monster-core-2.Actor.lCDygpomjUnutb5b]{Draugr}. As draugr ships plague the seas and sink other vessels, they can collect more souls and bones, eventually becoming bone ships. These vessels look different from many other bone ships with patchwork or asymmetrical appearances.</p>\n<p>A bone ship is almost gluttonous, possessing an unceasing appetite for death, destruction, and new souls to add to its number. These desires stem from an underlying cause, either placed within the ship by its creator or accreted from the scattered final wishes of its component dead souls. For example, a deity might send a bone ship on a special mission to carry a message or dispose of a particularly persistent adversary or annoyance. Though bone ships usually travel upon the waves, they have no need to breathe and can carry out underwater missions at the behest of their creator.</p>\n<p>Bone ships hold a legendary reputation among sailors. These undead can appear out of nowhere to wreak destruction, and if a crew's bodies are absent from a shipwreck, the calamity might be blamed on a bone ship. The sea can bring death suddenly in many ways, but eternal enslavement of the soul presents a more terrifying fate than death alone.</p>",
-      "items": {
-        "strike-melee->Hull": {
-          "name": "Hull"
-        },
-        "strike-melee->Skeleton Crew": {
-          "name": "Skeleton Crew"
-        },
-        "strike-ranged->Bone Cannon": {
-          "name": "Bone Cannon"
-        },
-        "action->Skeleton Crew": {
-          "name": "Skeleton Crew",
-          "description": "<p>The bone ship is compelled not by a single mind, but by the collective consciousness of dead sailors' souls.</p>\n<p>The ship is immune to mental effects that target only a specific number of creatures. It's still subject to mental effects that affect all creatures in an area.</p>\n<p>Any creature that tries to communicate with the ship via telepathy or read its thoughts hears the dying screams and gasps of the crew, and is targeted with a 9th-rank @UUID[Compendium.pf2e.spells-srd.Item.8kJbiBEjMWG4VUjs]{Warp Mind} spell (@Check[will|dc:41|traits:magical,enchantment,emotion,incapacitation,mental|overrideTraits:true]).</p>\n<p>The ship animates skeletal crew members out of its own bones, arming them with rusty old cutlasses or other armaments so they can attack anyone who comes next to the ship. These entities have appearances matching those the bound souls had in life but aren't truly individuals; anything that targets them in fact targets the bone ship they're a part of.</p>\n<p>Hundreds of black soul gems decorate the ship's exterior, each holding one soul. These gems can hold souls of creatures whose level was 16th or lower, and they have no value. If the ship is destroyed, all these gems shatter, freeing the souls within.</p>"
-        },
-        "action->Trawl for Bones": {
-          "name": "Trawl for Bones",
-          "description": "<p>The bone ship spends 1 day scavenging bones from the sea and restores itself to full Hit Points.</p>"
-        },
-        "action->Blood Wake": {
-          "name": "Blood Wake",
-          "description": "<p>30 feet. The churning water around the bone ship tinges red with seeping blood. A living creature that enters water in the aura sees visions of itself drowning in the blood and must attempt a @Check[will|dc:37] save. After attempting this saving throw, the creature is temporarily immune for 1 hour.</p>\n<p>On a failure, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4} on a critical failure) and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, and it takes a -4 status penalty to Athletics checks to Swim.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.oORIapm28xioxPDp]{Effect: Blood Wake}</p>"
-        },
-        "action->Cannonade": {
-          "name": "Cannonade",
-          "description": "<p>The bone ship makes four bone cannon Strikes, each targeting a different creature.</p>"
-        },
-        "action->Chain Shot": {
-          "name": "Chain Shot",
-          "description": "<p>The bone ship makes a special bone cannon Strike, firing a chain made of bones. A creature hit by this Strike is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the chain ([[/act escape dc=41]]).</p>\n<p>The bone ship can use Interact actions to reel in a grabbed creature 50 feet per action spent, and when the ship moves, it pulls the grabbed creature along with it.</p>"
-        },
-        "action->Crew's Call": {
-          "name": "Crew's Call",
-          "description": "<p>The crew let out an anguished cry in unison. This is a @UUID[Compendium.pf2e.spells-srd.Item.FEsuyf203wTNE2et]{Wails of the Damned} spell with @Template[emanation|distance:100] (@Check[fortitude|dc:39|traits:magical,necromancy,auditory,death,void]). In addition, any creature within 5 feet of the ship is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the crew.</p>\n<p>The ship can't use Crew's Call again for [[/gmr 1d4+1 #Recharge Crew's Call]]{1d4+1 rounds}.</p>"
-        },
-        "action->Keelhaul": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\nKeelhaul",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>As Trample (Huge or smaller, hull, @Check[reflex|dc:43|basic]), but the bone ship Swims up to double its swim Speed instead of Striding, and each creature that fails its save is also dragged under the ship.</p>\n<p>The GM places each creature dragged along in an underwater space adjacent to the bone ship at the end of the ship's movement.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
-        },
-        "action->Pressgang Soul": {
-          "name": "Pressgang Soul",
-          "description": "<p>The bone ship casts @UUID[Compendium.pf2e.spells-srd.Item.GYmXvS9NJ7QwfWGg]{Seize Soul}. The target must have died due to the bone ship's assault or from drowning. The creature's soul becomes part of the ghostly crew.</p>\n<p>A new soul gem grows on the ship, and the bone ship is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for 1 minute. It can use the extra action only to Strike or Swim.</p>"
-        },
-        "lore->Sailing Lore": {
-          "name": "Sailing Lore"
         }
       }
     },
@@ -524,7 +472,7 @@
         },
         "action->Hurl Net": {
           "name": "Hurl Net",
-          "description": "<p><strong>Requirements</strong> The cecaelia is holding a net in two appendages.</p>\n<hr />\n<p><strong>Effect</strong> The cecaelia hurls their net, attempting to hamper a foe. The cecaelia makes a ranged Strike (with a [[/r 1d20+15 #Hurl Net]]{+15} modifier) against a Medium or smaller creature within 20 feet.</p>\n<p>On a hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and takes a –10-foot circumstance penalty to its Speeds. On a critical hit, the creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}. The DC to [[/act escape dc=16]]{Escape} the net is 16. A creature adjacent to the target can Interact with the net to remove it from the target.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.q2D1QBalqBQfKzTc]{Effect: Hurl Net}</p>"
+          "description": "<p><strong>Requirements</strong> The cecaelia is holding a net in two appendages.</p>\n<hr />\n<p><strong>Effect</strong> The cecaelia hurls their net, attempting to hamper a foe. The cecaelia makes a ranged Strike (with a @Check[hurl-net|against:ac]{+15} modifier) against a Medium or smaller creature within 20 feet.</p>\n<p>On a hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and takes a –10-foot circumstance penalty to its Speeds. On a critical hit, the creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}. The DC to [[/act escape dc=16]] the net is 16. A creature adjacent to the target can Interact with the net to remove it from the target.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.q2D1QBalqBQfKzTc]{Effect: Hurl Net}</p>"
         },
         "action->Ink Cloud": {
           "name": "Ink Cloud",
@@ -702,23 +650,6 @@
         }
       }
     },
-    "Coral Capuchin": {
-      "name": "Coral Capuchin",
-      "publicNotes": "<p>A coral capuchin resembles a hairless pink monkey with large eyes and batlike wings. Something of a tropical nuisance, these amphibious creatures follow trade ships, hoping to filch small valuables they can take home or perhaps find a sailor they can befriend to secure a regular supply of food.</p>\n<p>Coral capuchins live in tropical climates, and while they can breathe water or air with equal ease, their membranous skin means they rely heavily on having a nearby source of water. Fresh- and saltwater serve equally well for this purpose, though the creatures generally congregate near oceans and seas for other reasons. Jungles, islands, and warm coastlines are their most common nesting sites, though they usually hide their nests high in trees or in other locations out of easy reach of predators, scavengers, or anything that might steal the trinkets they've collected.</p>\n<p>These little flyers are insatiably curious, and they love to follow humanoids around. Capuchins largely agree that humanoids have the best food and trinkets. Smarter than animals and capable of rudimentary speech, the creatures can be quite useful with the right training, learning how seek out sunken treasures or hunt down rats and other pests on a ship. Some spellcasters residing along tropical coastlines have taken coral capuchins as familiars, though many claim the critters as far more trouble than any benefits they provide are worth. A capuchin familiar might pilfer spellcasting components, gemstones, vials, crafting materials, and other trinkets from their master, though a clever magic user will intersperse more appealing (and less valuable) baubles to draw their familiar's attention away from actually important items.</p>\n<p>Capuchin clans live together under a single matriarch, a slightly larger female who can be identified by her unusually prismatic skin and colorful eyes. These females refuse to be tamed or kept as pets and violently resist all forms of capture. The most powerful among them even possess divine powers which they call upon to protect their homes and kin. In return, the remainder of the clan fights fiercely to protect their matriarch, defending her (and her trinkets) from threats far larger than themselves.</p>",
-      "items": {
-        "strike-melee->Jaws": {
-          "name": "Jaws"
-        },
-        "action->Moisture Dependency": {
-          "name": "Moisture Dependency",
-          "description": "<p>A coral capuchin must stay in or near water, or else it begins drying out. It can remain away from water for only 12 hours before its membranous skin starts to turn brittle and flake, taking @Damage[1d6[untyped]] damage per hour until it is doused in water.</p>"
-        },
-        "action->Capuchin's Curse": {
-          "name": "Capuchin's Curse",
-          "description": "<p>If a capuchin damages a creature with its jaws Strike, the creature gains both a blessing and a curse that last for [[/gmr 1d6 #Duration Capuchin's Curse]]{1d6 hours}.</p>\n<p>While the blessing doubles the amount of time that the affected creature can hold its breath, the curse imposes a quickened version of the capuchin's moisture dependency, taking @Damage[1d6[untyped]] damage every 10 minutes they go without water.</p>\n<p>A cursed creature can fully immerse itself in water as a 3-action activity to attempt a @Check[fortitude|dc:17] save, ending both the blessing and the curse on a success.</p>"
-        }
-      }
-    },
     "Corrupted Relic": {
       "name": "Corrupted Relic",
       "hpDetails": "void healing",
@@ -821,7 +752,7 @@
         },
         "action->Divine Destruction": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.jD0M3yV6gjkXafsJ]\nDivine Destruction",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.jD0M3yV6gjkXafsJ]\n<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[emanation|distance:30], dealing @Damage[5d6[void]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|dc:19|options:area-effect,damaging-effect] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.jD0M3yV6gjkXafsJ]\n<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[emanation|distance:30], dealing @Damage[5d6[void]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|dc:19|options:area-effect,damaging-effect,inflicts:enfeebled,inflicts:stupefied] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
         },
         "action->Faith Bound": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.OPGu0WsUHpHSmu80]\nFaith Bound"
@@ -1176,7 +1107,7 @@
         },
         "action->Ectoplasmic Secretions": {
           "name": "Ectoplasmic Secretions",
-          "description": "<p>Any creature that hits the etioling with an unarmed attack, tries to @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grapple} them, or otherwise touches them becomes partially coated in ectoplasm.</p>\n<p>The creature takes @Damage[1d6[void]] damage and must succeed at a @Check[reflex|dc:27|traits:damaging-effect] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the ectoplasm is removed.</p>\n<p>The ectoplasm can be removed with a total of 3 Interact actions by the creature or creatures adjacent to the creature. These actions don't need to be consecutive or made by the same creature.</p>"
+          "description": "<p>Any creature that hits the etioling with an unarmed attack, tries to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} them, or otherwise touches them becomes partially coated in ectoplasm.</p>\n<p>The creature takes @Damage[1d6[void]] damage and must succeed at a @Check[reflex|dc:27|options:damaging-effect,inflicts:enfeebled] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the ectoplasm is removed.</p>\n<p>The ectoplasm can be removed with a total of 3 Interact actions by the creature or creatures adjacent to the creature. These actions don't need to be consecutive or made by the same creature.</p>"
         },
         "action->Ectoplasmic Shield": {
           "name": "Ectoplasmic Shield",
@@ -1396,7 +1327,7 @@
         },
         "action->Fossilization": {
           "name": "Fossilization",
-          "description": "<p>The first time each round a creature takes damage from the fossil golem's jaws, the target must attempt a @Check[fortitude|dc:32] save.</p>\n<p>If it fails and has not already been slowed by this ability, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute. If the creature was already slowed by this ability, a failed save causes it to be @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} permanently.</p>"
+          "description": "<p>The first time each round a creature takes damage from the fossil golem's jaws, the target must attempt a @Check[fortitude|dc:32|options:inflicts:slowed,inflicts:petrified] save.</p>\n<p>If it fails and has not already been slowed by this ability, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute. If the creature was already slowed by this ability, a failed save causes it to be @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} permanently.</p>"
         },
         "action->Reassemble": {
           "name": "Reassemble",
@@ -1619,7 +1550,7 @@
         },
         "action->Camouflage": {
           "name": "Camouflage",
-          "description": "<p>The giant seahorse can change its coloration to match its surroundings. It doesn't need cover to attempt to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} with a Stealth check.</p>"
+          "description": "<p>The giant seahorse can change its coloration to match its surroundings. It doesn't need cover to attempt to [[/act hide]] with a Stealth check.</p>"
         },
         "action->Anchor": {
           "name": "Anchor",
@@ -1698,7 +1629,7 @@
         },
         "action->Radiant Mantle": {
           "name": "Radiant Mantle",
-          "description": "<p>30 feet. The gliminal emits bright light in the area, and dim light out to 60 feet. When a creature enters or starts its turn in the area of bright light, it must succeed at a @Check[fortitude|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of its turn.</p>\n<p>If the mantle is counteracted or suppressed, the gliminal loses their resistance and can't use Bond in Light until the mantle returns.</p>"
+          "description": "<p>30 feet. The gliminal emits bright light in the area, and dim light out to 60 feet. When a creature enters or starts its turn in the area of bright light, it must succeed at a @Check[fortitude|dc:25|options:area-effect,inflicts:dazzled] save or become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of its turn.</p>\n<p>If the mantle is counteracted or suppressed, the gliminal loses their resistance and can't use Bond in Light until the mantle returns.</p>"
         },
         "action->Bond in Light": {
           "name": "Bond in Light",
@@ -1773,7 +1704,7 @@
         },
         "action->Rotting Flesh": {
           "name": "Rotting Flesh",
-          "description": "<p>Any creature that hits the gurgist with an unarmed attack, tries to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} them, or otherwise touches the gurgist is covered with rotten flesh and putrid fluids.</p>\n<p>The creature must succeed at a @Check[fortitude|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>"
+          "description": "<p>Any creature that hits the gurgist with an unarmed attack, tries to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} them, or otherwise touches the gurgist is covered with rotten flesh and putrid fluids.</p>\n<p>The creature must succeed at a @Check[fortitude|dc:22|options:inflicts:sickened] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>"
         },
         "action->Calculated Blow": {
           "name": "Calculated Blow",
@@ -2006,14 +1937,14 @@
         },
         "action->Absorbed Language": {
           "name": "Absorbed Language",
-          "description": "<p>While a creature is taking @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Damage} from the ioton, the ioton gains the ability to speak and understand one of that creature's languages, selected at random.</p>"
+          "description": "<p>While a creature is taking persistent damage from the ioton, the ioton gains the ability to speak and understand one of that creature's languages, selected at random.</p>"
         },
         "action->Thoughtsense (Imprecise) 60 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.JcaIJLGGmst79f1Y]\nThoughtsense (Imprecise) 60 feet"
         },
         "action->Leech Thought": {
           "name": "Leech Thought",
-          "description": "<p>While a creature is taking @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Mental Damage} from the ioton, the ioton takes the shape of a creature familiar to the target, such as an acquaintance, pet, or common animal, though the appearance is imperfect and grants no benefit to Impersonate an individual.</p>\n<p>While transformed, the ioton loses its incorporeal trait, immunities, and resistances, but it gains an unarmed melee Strike with a +6 attack modifier ([[/r 1d20+6 #Unarmed Strike]]{+6}/[[/r 1d20+1 #Unarmed Strike]]{+1}/[[/r 1d20-4 #Unarmed Strike]]{-4}) that deals @Damage[(1d8+2)[bludgeoning]] damage. The ioton immediately returns to its original form once no creature is taking persistent mental damage from it.</p>"
+          "description": "<p>While a creature is taking persistent mental damage from the ioton, the ioton takes the shape of a creature familiar to the target, such as an acquaintance, pet, or common animal, though the appearance is imperfect and grants no benefit to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} an individual.</p>\n<p>While transformed, the ioton loses its incorporeal trait, immunities, and resistances, but it gains an unarmed melee Strike with a +6 attack modifier that deals 1d8+2 bludgeoning damage. The ioton immediately returns to its original form once no creature is taking persistent mental damage from it.</p>"
         }
       }
     },
@@ -2035,7 +1966,7 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[1d8[bludgeoning]], @Check[fortitude|dc:18|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:18], @Damage[(1d8+2)[bludgeoning]] damage, Escape DC 18, Rupture 5</p>\n<p>The ittan-momen can Engulf only one creature. They can Engulf a creature of a larger size so long as the creature's head can feasibly be covered by the ittan-momen's body.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:18|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[(1d8+2)[bludgeoning]] damage, [[/act escape dc=18]], Rupture 5</p>\n<p>The ittan-momen can Engulf only one creature. They can Engulf a creature of a larger size so long as the creature's head can feasibly be covered by the ittan-momen's body.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         }
       }
     },
@@ -2150,7 +2081,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]\nCalm Emotions (At Will)"
         },
         "spell->Detect Alignment (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will)"
+          "name": "Detect Alignment (At Will)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Light": {
           "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
@@ -2446,11 +2378,11 @@
         },
         "action->Brawling Critical": {
           "name": "Brawling Critical",
-          "description": "<p>When the kurobozu scores a critical hit with an unarmed attack, the target must succeed at a @Check[fortitude|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn.</p>"
+          "description": "<p>When the kurobozu scores a critical hit with an unarmed attack, the target must succeed at a @Check[fortitude|dc:22|options:inflicts:slowed] save or be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn.</p>"
         },
         "action->Sagebane": {
           "name": "Sagebane",
-          "description": "<p>When the kurobozu damages a living creature with an unarmed Strike, the target must succeed at a @Check[fortitude|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</p>\n<p>Further damage dealt by the kurobozu resets the duration to 1 minute and increases the stupefied value by 1 on a failed save, to a maximum of stupefied 4.</p>"
+          "description": "<p>When the kurobozu damages a living creature with an unarmed Strike, the target must succeed at a @Check[fortitude|dc:24|options:inflicts:stupefied] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</p>\n<p>Further damage dealt by the kurobozu resets the duration to 1 minute and increases the stupefied value by 1 on a failed save, to a maximum of stupefied 4.</p>"
         },
         "action->Steal Breath": {
           "name": "Steal Breath",
@@ -2458,7 +2390,7 @@
         },
         "action->Stunning Flurry": {
           "name": "Stunning Flurry",
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The kurobozu makes two unarmed Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses, and the target must succeed at a @Check[fortitude|dc:22|traits:incapacitation] save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure); this save has the incapacitation trait.</p>"
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The kurobozu makes two unarmed Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses, and the target must succeed at a @Check[fortitude|dc:22|options:inflicts:stunned|traits:incapacitation] save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure); this save has the incapacitation trait.</p>"
         },
         "lore->Monastic Lore": {
           "name": "Monastic Lore"
@@ -2592,7 +2524,7 @@
         },
         "action->Paralysis": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FW4KAUHb7r8WkxUc]\nParalysis",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FW4KAUHb7r8WkxUc]\n<p>Any living creature hit by a Leng ghoul's attack must succeed at a @Check[fortitude|dc:28] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FW4KAUHb7r8WkxUc]\n<p>Any living creature hit by a Leng ghoul's attack must succeed at a @Check[fortitude|dc:28|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
         },
         "action->Sneak Attack": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>A Leng ghoul deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
@@ -2910,7 +2842,8 @@
           "target": "1 container or a 10-foot-by-10-foot area"
         },
         "spell->Detect Alignment (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will)"
+          "name": "Detect Alignment (At Will)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "strike-ranged->Electrical Blast": {
           "name": "Electrical Blast"
@@ -3731,7 +3664,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]\nSee Invisibility (Constant)"
         },
         "spell->Detect Alignment (Constant)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Constant)"
+          "name": "Detect Alignment (Constant)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Illusory Disguise (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]\nIllusory Disguise (At Will)"
@@ -4177,49 +4111,6 @@
         }
       }
     },
-    "Rhu-Chalik": {
-      "name": "Rhu-Chalik",
-      "acDetails": "all-around vision",
-      "languages": "telepathy 100 feet",
-      "publicNotes": "<p>The alien entities known as rhu-chaliks serve as scouts for a conglomeration of deep-space conquerors called the Dominion of the Black. Their masters use them as spies, tasking them with harvesting the thoughts and memories of sentient creatures into a vast repository of knowledge designed to eventually unravel every secret of existence.</p>\n<p>Also called void wanderers, rhu-chaliks can survive the depths of space indefinitely. They are extremely long-lived and capable of traversing the vastness of space between worlds. Rhu-chaliks prefer to work alone in order to reduce potential overlap in their mind predations. The furtive beings are calculating and infinitely patient, seeking only the most exceptional minds to cast beyond the stars to their masters.</p>",
-      "items": {
-        "spellcastingEntry->Occult Innate Spells": {
-          "name": "Occult Innate Spells"
-        },
-        "spell->Modify Memory": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.FhOaQDTSnsY7tiam]\nModify Memory"
-        },
-        "spell->Mind Reading (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.KHnhPHL4x1AQHfbC]\nMind Reading (At Will)"
-        },
-        "spell->Invisibility (At Will) (Self Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (At Will) (Self Only)",
-          "target": "self"
-        },
-        "strike-melee->Tendril": {
-          "name": "Tendril"
-        },
-        "action->Telepathy 100 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
-        },
-        "action->No Breath": {
-          "name": "No Breath",
-          "description": "<p>A rhu-chalik doesn't breathe and is immune to effects that require breathing (such as inhaled poisons).</p>"
-        },
-        "action->Excruciating Enzyme": {
-          "name": "Excruciating Enzyme",
-          "description": "<p>A rhu-chalik's tendrils secrete an enzyme that causes intense pain. A living creature hit by a tendril Strike must succeed at a @Check[fortitude|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} from the pain.</p>"
-        },
-        "action->Project Terror": {
-          "name": "Project Terror",
-          "description": "<p><strong>Requirements</strong> The rhu-chalik has successfully affected the target with @UUID[Compendium.pf2e.spells-srd.Item.9BnhadUO8FMLmeZ3]{Mind Probe}, @UUID[Compendium.pf2e.spells-srd.Item.KHnhPHL4x1AQHfbC]{Mind Reading}, or Project Terror in the last minute</p>\n<hr />\n<p><strong>Effect</strong> The rhu-chalik creates nightmarish visions in the target's mind. The target must attempt a @Check[will|dc:24] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target creature is unaffected and temporarily immune to Project Terror for 1 minute.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}. Failing additional saves against this effect increases the frightened condition value by 2; if this would increase the target's frightened value beyond frightened 4, the target is @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4}.</p>\n<p><strong>Critical Failure</strong> As failure, but the target becomes @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} for 30 minutes instead of fleeing.</p>"
-        },
-        "action->Void Transmission": {
-          "name": "Void Transmission",
-          "description": "<p><strong>Requirements</strong> The rhu-chalik is adjacent to an @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} creature</p>\n<hr />\n<p><strong>Effect</strong> The rhu-chalik spends 10 minutes copying the creature's entire consciousness and mentally sends this copied consciousness through the void of space to their waiting masters.</p>\n<p>The target creature is deeply disoriented by this procedure, becoming @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 day afterward. If the creature is revived or moved away from the rhu-chalik during the process, Void Transmission fails and the target is unaffected.</p>"
-        }
-      }
-    },
     "Ringhorn Ram": {
       "name": "Ringhorn Ram",
       "publicNotes": "<p>Ringhorn rams, named for the massive, curving spirals protruding from their heads, travel the plains. Though these rams tend to be slightly more playful and less vindictive than those in the mountains, they are no less stubborn or hardy.</p>\n<hr />\n<p>Rams are sturdy, stubborn herd animals suited to rugged terrain and cold weather. Regardless of their territory, all share a stubborn nature and surefootedness, navigating uncertain terrain with ease and weathering all seasons in scattered herds.</p>",
@@ -4274,7 +4165,7 @@
           "description": "<p>A roiling incant is made of evocation energy. Any time it would be affected by another creature's non-cantrip evocation spell, after applying its immunity, it also regains @Damage[5[healing]] Hit Points.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:28], @Damage[2d8[force],4d4[fire]]{2d8 force damage plus 4d4 fire damage}, [[/act escape dc=28]], Rupture 20</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:28|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[2d8[force],4d4[fire]] damage, [[/act escape dc=28]], Rupture 20</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Unstable Magic": {
           "name": "Unstable Magic",
@@ -4442,7 +4333,7 @@
         },
         "action->Sea Spray": {
           "name": "Sea Spray",
-          "description": "<p>A seaweed leshy's water jet has enough salt in it to temporarily impair their target's vision.</p>\n<p>On a hit, the target must succeed at a @Check[fortitude|dc:20] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute or until it spends 3 Interact actions wiping the salt out of its eyes. On a critical hit, a target that fails its Fortitude save is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>"
+          "description": "<p>A seaweed leshy's water jet has enough salt in it to temporarily impair their target's vision.</p>\n<p>On a hit, the target must succeed at a @Check[fortitude|dc:20|options:inflicts:dazzled,inflicts:blinded] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute or until it spends 3 Interact actions wiping the salt out of its eyes. On a critical hit, a target that fails its Fortitude save is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>"
         },
         "lore->Ocean Lore": {
           "name": "Ocean Lore"
@@ -4795,7 +4686,8 @@
         },
         "action->Bully the Departed": {
           "name": "Bully the Departed",
-          "description": "<p>The skelm draws upon the spirit of one of his deceased victims, tormenting their soul beyond the grave. Until the end of his next turn, the soul skelm gains regeneration 15 (deactivated by force or good), and he deals an extra @Damage[1d8[spirit]] damage on his Strikes.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.gHczZWA34WQx4px0]{Effect: Bully the Departed}</p>"
+          "description": "<p>The skelm draws upon the spirit of one of his deceased victims, tormenting their soul beyond the grave. Until the end of his next turn, the soul skelm gains regeneration 15 (deactivated by force or holy), and he deals an extra 1d8 spirit damage on his Strikes.</p>",
+          "selfEffect": "Effect: Bully the Departed"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The soul skelm can take on the appearance of any Medium male humanoid. This doesn't change his Speed or his attack and damage bonuses with his Strikes but might change the damage type his Strikes deal.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"

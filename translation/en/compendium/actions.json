@@ -13,6 +13,11 @@
       "name": "A Quick Glimpse Beyond",
       "description": "<p><strong>Trigger</strong> You attempt a secret check</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You can roll the secret check yourself rather than have the GM roll it. As you roll, draw a harrow card. If the card drawn is from the suit of Stars, the next secret check you make during the next 24 hours can also be rolled by you. Each time you roll your own additional secret check in this way, draw a new harrow card, and each time you draw a card from the suit of Stars, your next secret check in the next 24 hours can also be rolled by you. If you ever critically fail a secret check that you roll yourself as a result of this ability, fate turns away from you, and your Pilgrim's Token no longer functions until the next time you make your daily preparations.</p>"
     },
+    "Absorb Magic": {
+      "name": "Absorb Magic",
+      "description": "<p><strong>Requirements</strong> You are not overflowing</p>\n<p><strong>Trigger</strong> Another creature within 30 feet Casts a Spell or uses an action, activity, or reaction with the arcane, divine, magical, occult, or primal trait</p>\n<hr />\n<p><strong>Effect</strong> You breathe in a small fraction of the magic produced by the triggering effect, storing it in your internal nexus. You become overflowing. You remain overflowing for up to 1 minute before the stored magical energy fades. While overflowing, you gain a +1 status bonus to saving throws against effects with the arcane, divine, magical, occult, and primal traits. This bonus becomes +2 at 15th level.</p>",
+      "selfEffect": "Effect: Overflowing"
+    },
     "Absorb into the Aegis": {
       "name": "Absorb into the Aegis",
       "description": "<p><strong>Trigger</strong> An enemy casts a spell that targets you or an ally within 15 feet of you</p>\n<hr />\n<p>You interpose your shield's ward against the spell. Attempt a counteract check, using your Religion modifier as your counteract modifier. On a success, the spell is counteracted and your shield takes damage equal to four times the spell rank as it absorbs and disperses the magical energy. On a failure, the shield takes damage equal to twice the spell's rank.</p>"
@@ -28,11 +33,11 @@
     },
     "Acrid Barrage": {
       "name": "Acrid Barrage",
-      "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> Each enemy in your aura takes @Damage[ternary(gte(@actor.level, 18), 7, ternary(gte(@actor.level, 15), 6, 5))d6[acid]] damage and @Damage[2d6[persistent,acid]] damage with a @Check[reflex|against:class-spell|basic] save against your class DC or spell DC, whichever is higher. The initial damage increases to 6d6 at 15th level and 7d6 at 18th level.</p>"
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> Each enemy in your aura takes @Damage[ternary(gte(@actor.level, 18), 7, ternary(gte(@actor.level, 15), 6, 5))d6[acid],2d6[persistent,acid]|options:area-damage] damage with a @Check[reflex|against:class-spell|basic|options:area-effect] save against your class DC or spell DC, whichever is higher. The initial damage increases to 6d6 at 15th level and 7d6 at 18th level.</p>"
     },
     "Act Together": {
       "name": "Act Together",
-      "description": "<p><strong>Frequency</strong> once per round</p>\n<p>You and your eidolon act as one. Either you or your eidolon takes an action or activity using the same number of actions as Act Together, and the other takes a single action.</p>\n<p>For example, if you spent 2 actions to Act Together, you could cast @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire} (2 actions) and your eidolon could Strike (1 action), or your eidolon could use its Breath Weapon (2 actions) and you could Stride (1 action).</p>\n<p>This lets you each use separate exploration activities like @UUID[Compendium.pf2e.actionspf2e.Item.IE2nThCmoyhQA0Jn]{Avoid Notice} as you travel.</p>"
+      "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p>You and your eidolon act as one. Either you or your eidolon takes an action or activity using the same number of actions as Act Together, and the other takes a single action.</p>\n<p>For example, if you spent 2 actions to Act Together, you could cast @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire} (2 actions) and your eidolon could Strike (1 action), or your eidolon could use their @UUID[Compendium.pf2e.actionspf2e.Item.Vr3w3t028ZKDg0mO]{Dragon Breath} (2 actions) and you could Stride (1 action).</p>"
     },
     "Activate Resonant Reflection": {
       "name": "Activate Resonant Reflection",
@@ -89,7 +94,7 @@
     },
     "Arcane Cascade": {
       "name": "Arcane Cascade",
-      "description": "<p><strong>Requirements</strong> You used your most recent action this turn to Cast a Spell or make a @UUID[Compendium.pf2e.actionspf2e.Item.QDW9H8XLIjuW2fE4]{Spellstrike}. You need to meet this requirement only to enter the stance, not to remain in it.</p>\n<hr />\n<p>You divert a portion of the spell's magical power and keep it cycling through your body and weapon using specialized forms, breathing, or footwork. While you're in the stance, your melee Strikes deal 1 extra force damage. This damage increases to 2 if you have weapon specialization and 3 if you have greater weapon specialization. Any Strike that benefits from this damage gains the arcane trait, making it magical.</p>\n<p>If your most recent spell before entering the stance was one that can deal damage, the damage from the stance is instead the same type that spell could deal (or one type of your choice if the spell could deal multiple types of damage).</p>",
+      "description": "<p>You cycle arcane power through your body and weapon using specialized forms, breathing, or footwork. While you're in the stance, your melee Strikes gain the arcane trait (making them magical) and deal 1 extra force damage, and you gain resistance 1 to damage from spells. If you have the @UUID[Compendium.pf2e.classfeatures.Item.9EqIasqfI8YIM3Pt]{Weapon Specialization} class feature, the damage and resistance increase to 2, and if you have @UUID[Compendium.pf2e.classfeatures.Item.Z7HX6TeFsaup7Dx9]{Greater Weapon Specialization}, they increase to 3.</p>\n<p>If you Cast a Spell and then enter Arcane Cascade on the same turn, you can change the damage from the stance to any one damage type that spell could deal instead of force.</p>",
       "selfEffect": "Stance: Arcane Cascade"
     },
     "Armor Up!": {
@@ -151,7 +156,7 @@
     },
     "Beast's Charge": {
       "name": "Beast's Charge",
-      "description": "<p>Your eidolon rushes forward, using its momentum to increase the power of its attack. Your eidolon Strides twice and then Strikes. If the eidolon moved at least 20 feet away from its starting position and moved entirely in a straight line, it gains a +1 circumstance bonus to this attack roll.</p>"
+      "description": "<p>Your eidolon rushes forward, using their momentum to increase the power of their attack. Your eidolon Strides twice and then Strikes. If the eidolon moved at least 20 feet away from their starting position and moved entirely in a straight line, they gain a +1 circumstance bonus to this attack roll.</p>"
     },
     "Bend Time": {
       "name": "Bend Time",
@@ -225,10 +230,6 @@
     "Break the Sun's Legs": {
       "name": "Break the Sun's Legs",
       "description": "<p>You make a slashing motion over the brightest source of light, whether it's a torch or the sun in the sky. A gash appears over the light source, visible to all, and devours the light. The entire area within a @Template[type:burst|distance:120] around you is affected by a 9th-rank @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Darkness} spell for 1 minute. The stolen light is channeled to your eyes, granting you greater darkvision for the duration of the effect.</p>"
-    },
-    "Breath Weapon": {
-      "name": "Breath Weapon",
-      "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals 1d6 damage to all creatures in the area, with a basic Reflex save against your spell DC. The area and damage type of the Breath Weapon are chosen when the eidolon gains this ability. Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6.</p>"
     },
     "Bribe Contact": {
       "name": "Bribe Contact",
@@ -337,7 +338,7 @@
     },
     "Cleanse Soul Path": {
       "name": "Cleanse Soul Path",
-      "description": "<p>You meditate, pray, or otherwise try to reinforce your soul's connection to your soulforged armament. This takes 10 minutes. Attempt a counteract check against your <em>soulforged corruption</em>. The counteract rank is half your level rounded up, and the counteract check modifier is your Religion modifier. If successful, reduce the stage of your <em>soulforged corruption</em> by 1 (to a minimum of Stage 1).</p>"
+      "description": "<p>You meditate, pray, or otherwise try to reinforce your soul's connection to your armament. This takes 10 minutes. Attempt a counteract check against your <em>soulforged corruption</em>. The counteract rank is half your level rounded up, and the counteract check modifier is your Religion modifier. If successful, reduce the stage of <em>soulforged corruption</em> by 1 (to a minimum of stage 1).</p>"
     },
     "Clear a Path": {
       "name": "Clear a Path",
@@ -371,6 +372,10 @@
       "name": "Command a Construct",
       "description": "<p>You instruct your construct companion to act as you instruct it, and according to its programming. Your construct companion gains 2 actions during this turn. See the minion trait for details.</p>"
     },
+    "Command a Thrall": {
+      "name": "Command a Thrall",
+      "description": "<p>You make one of your thralls Crawl, Drop Prone, Escape, Interact, Stand, Stride, or Strike. A thrall can take only simple Interact actions, not ones that require skill checks or complicated movements. However, they can make checks to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} using your spell attack modifier. Escaping this way uses and counts toward your multiple attack penalty.</p>"
+    },
     "Command an Animal": {
       "name": "Command an Animal",
       "description": "<p>You issue an order to an animal. Attempt a [[/act command-an-animal]]{Nature} check against the animal's Will DC. The GM might adjust the DC if the animal has a good attitude toward you, you suggest a course of action it was predisposed toward, or you offer it a treat.</p>\n<p>You automatically fail if the animal is hostile or unfriendly to you. If the animal is helpful to you, increase your degree of success by one step. You might be able to Command an Animal more easily with a feat like @UUID[Compendium.pf2e.feats-srd.Item.Rq5wkA8DtsmbzoGV]{Ride}.</p>\n<p>Most animals know the @UUID[Compendium.pf2e.actionspf2e.Item.HYNhdaPtF1QmQbR3]{Drop Prone}, @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap}, @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek}, @UUID[Compendium.pf2e.actionspf2e.Item.OdIUybJ3ddfL7wzj]{Stand}, @UUID[Compendium.pf2e.actionspf2e.Item.Bcxarzksqt9ezrs6]{Stride}, and @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{Strike} basic actions. If an animal knows an activity, such as a horse's Gallop, you can Command the Animal to perform the activity, but you must spend as many actions on Command an Animal as the activity's number of actions. You can also spend multiple actions to Command the Animal to perform that number of basic actions on its next turn; for instance, you could spend 3 actions to Command an Animal to Stride three times or to Stride twice and then make a Strike.</p>\n<hr />\n<p><strong>Success</strong> The animal does as you command on its next turn.</p>\n<p><strong>Failure</strong> The animal is hesitant or resistant, and it does nothing.</p>\n<p><strong>Critical Failure</strong> The animal misbehaves or misunderstands, and it takes some other action determined by the GM.</p>"
@@ -399,6 +404,10 @@
       "name": "Consume Flesh",
       "description": "<p><strong>Requirements</strong> You are adjacent to the corpse of a Small or larger creature that died in the last hour</p>\n<hr />\n<p>You devour a chunk of the corpse. You become satiated for 1 hour.</p>"
     },
+    "Consume Thrall": {
+      "name": "Consume Thrall",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> You have 0 Focus Points and at least one thrall with 30 feet of you</p>\n<hr />\n<p><strong>Effect</strong> You destroy one thrall within 30 feet of you and regain 1 Focus Point. You can spend this focus point only to cast a grave spell.</p>"
+    },
     "Convocation of Greed": {
       "name": "Convocation of Greed",
       "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Spend 1 Mythic Point. The spirits of the eight runelords of greed (Kaladurnae, Fethryr, Gimmel, Ligniya, Mazmiranna, Aethusa, Haphrama, and Karzoug) appear and bolster the armaments of you and your companions. For each of the spirits, one creature of your choice within 60 feet gains a +2 item bonus to AC, attack rolls, or saving throws (chosen by the creature) for 1 minute. These bonuses increase to +4 while the creature is within 100 feet of Xanderghul, the Runelord of Pride. A creature can receive bonuses from multiple runelords at once (gaining bonuses to both AC and attack rolls, for example), but the bonuses aren't cumulative.</p>"
@@ -406,6 +415,10 @@
     "Coordinating Maneuvers": {
       "name": "Coordinating Maneuvers",
       "description": "<p>Your team works to slip enemies into a disadvantageous position. Signal one squadmate within the aura of your banner; that squadmate can immediately Step as a free action. If they end this movement next to an opponent, they can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{Reposition} that target as a reaction.</p>"
+    },
+    "Corpse Crenellation": {
+      "name": "Corpse Crenellation",
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p>With methodical, shocking efficiency, some Chelaxian and Hellknight squads can turn the corpses of their slain foes into temporary earthworks. Signal up to two squadmates within the aura of your commander's banner. These squadmates can Stride up to half their Speed and attempt a melee or ranged Strike against one enemy you designate as a reaction. If the enemy is reduced to 0 Hit Points by these Strikes, the enemy's body provides lesser cover to all squadmates in or adjacent to the enemy's space until the end of your next turn or until the enemy is no longer @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} or dead. During this time, any squadmate who Takes Cover can also first Stride up to half their Speed, but they must end this movement in or adjacent to the fallen enemy's space. A squadmate who's at least two sizes smaller than the fallen enemy instead gains standard cover.</p>\n<hr />\n<p><strong>Special</strong> If one of your squadmates knows or has prepared a cantrip that deals damage and requires 2 or fewer actions to cast, they can cast it targeting the designated enemy instead of taking the other actions normally granted by this tactic, gaining all other listed benefits.</p>"
     },
     "Coughing Dragon": {
       "name": "Coughing Dragon",
@@ -421,15 +434,11 @@
     },
     "Craft": {
       "name": "Craft",
-      "description": "<p>You can make an item from raw materials. You need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to create alchemical items and the @UUID[Compendium.pf2e.feats-srd.Item.xWY5omyIcILNR7y1]{Magical Crafting} feat to create magic items.</p>\n<p>To craft an item, you must meet the following requirements:</p>\n<ul>\n<li>The item is your level or lower. An item that doesn't list a level is level 0. If the item is 9th level or higher, you must be a master in Crafting, and if it's 17th or higher, you must be legendary.</li>\n<li>The item must be common, or you must otherwise have access to it.</li>\n<li>You have an appropriate set of tools and, in many cases, a workshop. For example, you need access to a smithy to forge a metal shield, or an @UUID[Compendium.pf2e.equipment-srd.Item.k6xZkDUpF7E1Totd]{Alchemist's Lab} to produce alchemical items.</li>\n<li>You must supply raw materials worth at least half the item's Price. You always expend at least that amount of raw materials when you Craft successfully. If you're in a settlement, you can usually spend currency to get the amount of raw materials you need, except in the case of rarer precious materials.</li>\n</ul>\n<p>You attempt a @Check[crafting] check after you spend 2 days of work setting up, or 1 day if you have the item's formula. The GM determines the DC to Craft the item based on its level, rarity, and other circumstances.</p>\n<p>If your attempt to create the item is successful, you expend the raw materials you supplied. You can pay the remaining portion of the item's Price in materials to complete the item immediately, or you can spend additional downtime days working on it. For each additional day you spend, reduce the value of the materials you need to expend to complete the item. This amount is determined using the Income Earned table, based on your proficiency rank in Crafting and using your own level instead of a task level.</p>\n<p>After any of these downtime days, you can complete the item by spending the remaining portion of its Price in materials. If the downtime days you spend are interrupted,you can return to finish the item later, continuing where you left off.</p>\n<hr />\n<p><strong>Critical Success</strong> Your attempt is successful. Each additional day spent Crafting reduces the materials needed to complete the item by an amount based on your level + 1 and your proficiency rank in Crafting.</p>\n<p><strong>Success</strong> Your attempt is successful. Each additional day spent Crafting reduces the materials needed to complete the item by an amount based on your level and your proficiency rank.</p>\n<p><strong>Failure</strong> You fail to complete the item. You can salvage the raw materials you supplied for their full value. If you want to try again, you must start over.</p>\n<p><strong>Critical Failure</strong> You fail to complete the item. You ruin 10% of the raw materials you supplied, but you can salvage the rest. If you want to try again, you must start over.</p>"
+      "description": "<p>You can make an item from raw materials. You need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to create alchemical items and the @UUID[Compendium.pf2e.feats-srd.Item.xWY5omyIcILNR7y1]{Magical Crafting} feat to create magic items.</p>\n<p>To craft an item, you must meet the following requirements:</p>\n<ul>\n<li>The item is your level or lower. An item that doesn't list a level is level 0. If the item is 9th level or higher, you must be a master in Crafting, and if it's 17th or higher, you must be legendary.</li>\n<li>The item must be common, or you must otherwise have access to it.</li>\n<li>You have an appropriate set of tools and, in many cases, a workshop. For example, you need access to a smithy to forge a metal shield, or an @UUID[Compendium.pf2e.equipment-srd.Item.k6xZkDUpF7E1Totd]{Alchemist's Lab} to produce alchemical items.</li>\n<li>You must supply raw materials worth at least half the item's Price. You always expend at least that amount of raw materials when you Craft successfully. If you're in a settlement, you can usually spend currency to get the amount of raw materials you need, except in the case of rarer precious materials.</li>\n</ul>\n<p>You attempt a @Check[crafting] check after you spend 2 days of work setting up, or 1 day if you have the item's formula. The GM determines the DC to Craft the item based on its level, rarity, and other circumstances.</p>\n<p>If your attempt to create the item is successful, you expend the raw materials you supplied. You can pay the remaining portion of the item's Price in materials to complete the item immediately, or you can spend additional downtime days working on it. For each additional day you spend, reduce the value of the materials you need to expend to complete the item. This amount is determined using the Income Earned table, based on your proficiency rank in Crafting and using your own level instead of a task level.</p>\n<p>After any of these downtime days, you can complete the item by spending the remaining portion of its Price in materials. If the downtime days you spend are interrupted, you can return to finish the item later, continuing where you left off.</p>\n<hr />\n<p><strong>Critical Success</strong> Your attempt is successful. Each additional day spent Crafting reduces the materials needed to complete the item by an amount based on your level + 1 and your proficiency rank in Crafting.</p>\n<p><strong>Success</strong> Your attempt is successful. Each additional day spent Crafting reduces the materials needed to complete the item by an amount based on your level and your proficiency rank.</p>\n<p><strong>Failure</strong> You fail to complete the item. You can salvage the raw materials you supplied for their full value. If you want to try again, you must start over.</p>\n<p><strong>Critical Failure</strong> You fail to complete the item. You ruin 10% of the raw materials you supplied, but you can salvage the rest. If you want to try again, you must start over.</p>"
     },
     "Craft Disharmonic Instrument": {
       "name": "Craft Disharmonic Instrument",
       "description": "<p><strong>Requirements</strong> Legendary in Crafting</p>\n<hr />\n<p>You use legendary Vudran techniques to craft a disharmonic instrument that incorporates pieces of Kothogaz's heart. This is likely a tanpura, but legends mention other instruments and even voice enhancers. A disharmonic instrument is a virtuoso musical instrument.</p>\n<p>This activity requires seven disharmonic heartslivers, the formula for a disharmonic instrument, 55,000 gp worth of rare materials, and 7 days of work. At the end of the 7 days, attempt a @Check[crafting|dc:40|traits:action:craft] check to Craft.</p>\n<hr />\n<p><strong>Critical Success</strong> You masterfully complete the disharmonic instrument. Holding the instrument grants immunity to Kothogaz's tympanic heartbeat and many-eyed blight.</p>\n<p><strong>Success</strong> You complete the disharmonic instrument.</p>\n<p><strong>Failure</strong> You don't complete the disharmonic instrument, and you contract many-eyed blight from the heartslivers.</p>\n<p><strong>Critical Failure</strong> As failure, and whenever you're on the same plane as Kothogaz, it can immediately teleport to you with its Disharmonic Door ability.</p>"
-    },
-    "Cram": {
-      "name": "Cram",
-      "description": "<p><strong>Requirements</strong> You are an initiate, attendant, or conversant, and your branch level for either your primary or secondary branch is 2 or more levels below the limit.</p>\n<hr />\n<p>Realizing that you're falling behind in your studies, you cram more than you probably should. You Study twice, each in a branch that satisfies the activity requirements. However, the extra studying comes at a price. Until the next time you take the Study downtime activity, you're particularly tired from all the extra hours cramming; at the start of each day of adventuring, you must succeed at a @Check[flat|dc:8] check or be @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} for that day.</p>"
     },
     "Crash Against Me": {
       "name": "Crash Against Me",
@@ -570,6 +579,10 @@
       "name": "Discover",
       "description": "<p>You watch or study an NPC to learn more about that NPC's preferences. Attempt a Perception check or an appropriate skill check determined by the GM. The DC is found in the NPC's influence stat block.</p>\n<hr />\n<p><strong>Critical Success</strong> Choose two of the options detailed in Success below; you can choose the same option twice to learn two pieces of information from the same category.</p>\n<p><strong>Success</strong> Choose one of the following: You learn which skill that can Influence the NPC has the lowest DC (skipping any skills that you already know), one of the NPC's personal biases, one of the NPC's resistances, or one of the NPC's weaknesses.</p>\n<p><strong>Failure</strong> You learn no information.</p>\n<p><strong>Critical Failure</strong> Choose a piece of information to learn about, as success, but the information is incorrect.</p>"
     },
+    "Disengage": {
+      "name": "Disengage",
+      "description": "<p><strong>Requirements</strong> You are piloting a sea vehicle during boarding combat.</p>\n<hr />\n<p>You attempt to break your ship free and escape the battle. Attempt a check to pilot against a very hard DC. This is typically a Sailing Lore check against the standard DC of the vessel's level + 5 (for the very hard adjustment).</p>\n<p><strong>Success</strong> The vehicle pulls free and moves up to its Speed. It can turn normally provided it moves away from the ship it disengaged from.</p>\n<p><strong>Failure</strong> The boarding combat continues.</p>"
+    },
     "Dismiss": {
       "name": "Dismiss",
       "description": "<p>You end an effect that states you can Dismiss it. Dismissing ends the entire effect unless noted otherwise.</p>"
@@ -582,13 +595,17 @@
       "name": "Divert Lightning",
       "description": "<p><strong>Requirements</strong> You aren't immune to electricity</p>\n<p><strong>Trigger</strong> A creature within 30 feet of you is targeted by an electricity effect or is in the area of an electricity effect.</p>\n<hr />\n<p><strong>Effect</strong> You draw the electricity to yourself like a lightning rod in order to shield the target. If the triggering effect was targeted, it targets you instead of the triggering creature. If it was an area effect, it leaps from the triggering creature's space to fill your space instead. This doesn't divert lightning from any other creatures targeted by or in the area of the lightning. You're automatically hit by or automatically fail your save against the effect. You then can't Divert Lightning for [[/r 1d4 #rounds]]{1d4 rounds}.</p>"
     },
+    "Double Spellstrike": {
+      "name": "Double Spellstrike",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Your @UUID[Compendium.pf2e.actionspf2e.Item.QDW9H8XLIjuW2fE4]{Spellstrike} is charged.</p>\n<hr />\n<p>You Spellstrike, but you cast two spells instead of one. The combined rank of the spells must be 10 or less, and they must both meet the normal criteria for spells you can cast in a Spellstrike.</p>"
+    },
     "Double Team": {
       "name": "Double Team",
       "description": "<p>Your team works together to set an enemy up for a vicious attack. Signal one squadmate who has an opponent within their reach. That ally can @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} or @UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{Reposition} an opponent as a free action. If their maneuver is successful and the target ends their movement adjacent to a different squadmate, the second squadmate can attempt a melee Strike against that target as a reaction.</p>"
     },
     "Draconic Frenzy": {
       "name": "Draconic Frenzy",
-      "description": "<p>Your eidolon makes one Strike with their primary unarmed attack and two Strikes with their secondary unarmed attack (in any order). If any of these attacks critically hits an enemy, your eidolon instantly recovers the use of their Breath Weapon.</p>"
+      "description": "<p>Your eidolon makes one Strike with their primary unarmed attack and two Strikes with their secondary unarmed attack (in any order). If any of these attacks critically hits an enemy, your eidolon instantly recovers the use of their Dragon Breath.</p>"
     },
     "Draconic Salvation": {
       "name": "Draconic Salvation",
@@ -602,6 +619,10 @@
       "name": "Dragon Breath (Dragon Form)",
       "description": "<p>You exhale deadly magical energy in an area, dealing @Damage[10d6[untyped]|options:area-damage] damage to each creature in the area with a basic save against your spell DC. The shape, damage type, and save type match that of your chosen dragon's breath. If the chosen dragon's breath can deal more than one type of damage, choose one when you cast <em>dragon form</em>. The shape is a @Template[type:cone|distance:30] or a @Template[type:line|distance:100]. Once activated, Dragon Breath can't be used again for [[/gmr 1d4 #Recharge Dragon Breath]]{1d4 rounds}. Dragon Breath has the tradition trait matching the type of dragon and the damage trait matching the type of damage it deals, if applicable.</p>"
     },
+    "Dragon Breath (Eidolon)": {
+      "name": "Dragon Breath (Eidolon)",
+      "description": "<p>Your eidolon exhales a blast of destructive energy that deals @Damage[(ceil(@actor.level / 2))d6[untyped]|options:area-damage] damage to all creatures in an area with a basic Reflex save against your spell DC. Your eidolon then can't use Dragon Breath again for the next [[/r 1d4 #rounds]]{1d4 rounds}. At 3rd level and every 2 levels thereafter, the damage increases by 1d6.</p>\n<p>When the eidolon gains this ability, you choose the area—a @Template[type:line|distance:60] or a @Template[type:cone|distance:30]—as well as the damage type—acid, cold, electricity, fire, piercing, poison, or void. You can instead choose force if your eidolon has the arcane trait, spirit if they have the divine trait, or mental if they have the occult trait. If you model your eidolon after a specific type of dragon, your GM might allow you to choose from additional damage types.</p>\n<p>Dragon Breath has the tradition trait of your eidolon and the trait matching the damage type chosen (unless you choose piercing damage).</p>"
+    },
     "Dragon's Protection": {
       "name": "Dragon's Protection",
       "description": "<p><strong>Trigger</strong> An enemy you can see would reduce this spell's target to 0 Hit Points</p>\n<hr />\n<p><strong>Effect</strong> The dragon intercepts, preventing the spell's target from being knocked out; the spell's target remains at 1 Hit Point. As the dragon disappears, it flies over the triggering enemy and releases its retributive breath, dealing @Damage[5d4[spirit]] damage to it with a @Check[reflex|basic] save.</p>"
@@ -612,7 +633,7 @@
     },
     "Drain Life": {
       "name": "Drain Life",
-      "description": "<p>Your eidolon attacks a living creature and drains some of the creature's life force to feed your shared link. Your eidolon Strikes a living enemy. If the Strike hits and deals damage, the target must attempt a Fortitude save, with the following effects. On a critical hit, the enemy uses the result one degree worse than it rolled.</p>\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> Your eidolon drains a small amount of life force. The enemy takes additional void damage equal to half your level.</p>\n<p><strong>Failure</strong> Your eidolon drains enough life force to satisfy itself. The enemy takes additional void damage equal to half your level and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Your eidolon gains temporary Hit Points equal to the enemy's level, which last for 1 minute.</p>\n<p><strong>Critical Failure</strong> Your eidolon drains an incredible amount of life force and is thoroughly glutted with energy. As failure, but the enemy is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and the temporary Hit Points are equal to double the enemy's level.</p>"
+      "description": "<p>Your eidolon attacks a living creature and drains some of the creature's life force to feed your shared link. Your eidolon Strikes a living enemy. If the Strike hits and deals damage, the target must attempt a @Check[fortitude|options:damaging-effect,inflicts:drained] save against your spell DC, with the following effects. On a critical hit, the enemy uses the result one degree worse than it rolled.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> Your eidolon drains a small amount of life force. The enemy takes additional void damage equal to half your level.</p>\n<p><strong>Failure</strong> Your eidolon drains enough life force to satisfy itself. The enemy takes additional void damage equal to half your level and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Your eidolon gains temporary Hit Points equal to the enemy's level, which last for 1 minute.</p>\n<p><strong>Critical Failure</strong> Your eidolon drains an incredible amount of life force and is thoroughly glutted with energy. As failure, but the enemy is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and the temporary Hit Points are equal to double the enemy's level.</p>"
     },
     "Drain Realm": {
       "name": "Drain Realm",
@@ -657,7 +678,7 @@
     },
     "Dutiful Retaliation": {
       "name": "Dutiful Retaliation",
-      "description": "<p><strong>Trigger</strong> An enemy within 15 feet of you hits you with a Strike and deals damage to you.</p>\n<p><strong>Requirements</strong> Your eidolon is within 15 feet of you.</p>\n<p>Your eidolon instinctively flashes with ectoplasmic energy, allowing them to strike back against an enemy who dares to harm you. Your eidolon makes a melee unarmed Strike against the triggering enemy, even if that enemy isn't within your eidolon's reach.</p>"
+      "description": "<p><strong>Trigger</strong> An enemy within 15 feet of you hits you with a Strike and deals damage to you</p>\n<p><strong>Requirements</strong> Your eidolon is within 15 feet of you</p>\n<hr />\n<p><strong>Effect</strong> Your eidolon instinctively flashes with ectoplasmic energy, allowing them to strike back against an enemy who dares to harm you. Your eidolon makes a melee unarmed Strike against the triggering enemy, even if that enemy isn't within your eidolon's reach.</p>"
     },
     "Earn Income": {
       "name": "Earn Income",
@@ -682,6 +703,10 @@
     "Embrace of Destiny": {
       "name": "Embrace of Destiny",
       "description": "<p>Choose an enemy within 20 feet of you. It must succeed at a @Check[will|against:exemplar] save against your class DC or be pulled directly toward you into a square adjacent to you.</p>"
+    },
+    "Empower Breath": {
+      "name": "Empower Breath",
+      "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> Your eidolon gathers the power of the mightiest archdragons to make their magical breath even more spectacular. If your eidolon's next action is to use @UUID[Compendium.pf2e.actionspf2e.Item.Vr3w3t028ZKDg0mO]{Dragon Breath}, both the number of damage dice and area of Dragon Breath are doubled.</p>"
     },
     "Empty Vessel": {
       "name": "Empty Vessel",
@@ -799,7 +824,7 @@
     },
     "Field of Roots": {
       "name": "Field of Roots",
-      "description": "<p>Your eidolon extends its roots underground to entangle and possibly damage all foes nearby. All enemies within your eidolon's reach take damage of the same type and amount as your eidolon's most damaging Strike, depending on their Reflex saves against your spell DC. Any ongoing effects of the save last until the enemy either Escapes or leaves your eidolon's reach.</p>\n<p>After using Field of Roots, your eidolon is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it takes a single action, which has the manipulate trait, to detach from the ground; this also ends any remaining effects on enemies from Field of Roots.</p>\n<hr />\n<p><strong>Critical Success</strong> The enemy is unaffected.</p>\n<p><strong>Success</strong> The enemy takes no damage, but takes a -10 foot circumstance penalty to its Speeds.</p>\n<p><strong>Failure</strong> The enemy takes half damage, takes a –10-foot circumstance penalty to its Speeds, and, at the end of each of its turns, takes half damage again.</p>\n<p><strong>Critical Failure</strong> The enemy is immobilized, takes full damage, and, at the end of each of its turns, takes full damage again.</p>"
+      "description": "<p>Your eidolon extends their roots underground to entangle and possibly damage all foes nearby. All enemies within your eidolon's reach take damage of the same type and amount as your eidolon's most damaging Strike, depending on their @Check[reflex|options:area-effect,damaging-effect] saves against your spell DC. Any ongoing effects of the save last until the enemy either Escapes or leaves your eidolon's reach. After using Field of Roots, your eidolon is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until they take an Interact action to detach from the ground; this also ends any remaining effects on enemies from Field of Roots.</p>\n<hr />\n<p><strong>Critical Success</strong> The enemy is unaffected.</p>\n<p><strong>Success</strong> The enemy takes no damage, but takes a –10 foot circumstance penalty to its Speeds.</p>\n<p><strong>Failure</strong> The enemy takes half damage, takes a –10-foot circumstance penalty to its Speeds, and at the end of each of its turns, takes half damage again.</p>\n<p><strong>Critical Failure</strong> The enemy is immobilized, takes full damage, and at the end of each of its turns, takes full damage again.</p>"
     },
     "Fight with Fear": {
       "name": "Fight with Fear",
@@ -841,6 +866,10 @@
       "name": "Fling Magic",
       "description": "<p><strong>Requirements</strong> You are holding your wand implement.</p>\n<hr />\n<p>You fling magical energy at a target within 60 feet, dealing @Damage[(ceil(@actor.level/2)+2)d4[untyped]] damage, with a @Check[reflex|against:thaumaturge|basic] save against your class DC. The damage is of the type you selected when you gained your wand implement. At 3rd level and every 2 levels thereafter, the damage increases by 1d4.</p>\n<p>You can expend more energy than usual to boost the effect of Fling Magic, dealing @Damage[(ceil(@actor.level/2)+2)d6[untyped]]{d6s of damage} instead of d4s. After you do, the wand's extra energy is discharged; you can't boost the wand's damage again, but can continue to Fling Magic normally. The extra energy recharges at the end of your next turn.</p>\n<hr />\n<p><strong>Special</strong> This activity has the trait corresponding to the damage type you selected.</p>"
     },
+    "Flowing Engulf": {
+      "name": "Flowing Engulf",
+      "description": "<p>Your eidolon Strides up to double their Speed and can move through the spaces of any creatures in their path. Any creature of the eidolon's size or smaller whose space your eidolon moves through is engulfed unless it succeeds at a @Check[reflex|options:inflicts:grabbed,inflicts:slowed] save against your spell DC. Your eidolon can attempt to engulf the same creature only once in a single use of Flowing Engulf, and they can contain as many creatures as can fit in their space.</p>\n<p>An engulfed creature is pulled into your eidolon's body. It is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}, and moves along with your eidolon as long as it is engulfed. It can get free by @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escaping} against your spell DC, moving to a space of its choice adjacent to your eidolon.</p>"
+    },
     "Flowing Spirit Strike": {
       "name": "Flowing Spirit Strike",
       "description": "<p>Make two Strikes with the gleaming blade, each against the same target and using your current multiple attack penalty. If the @UUID[Compendium.pf2e.classfeatures.Item.o8Q7wWx2oKvKMi1s]{Gleaming Blade} doesn't have the agile trait, the second Strike takes a –2 penalty. If both attacks hit, you combine their damage, which is all dealt as spirit damage.</p>\n<p>You add any precision damage only once. Combine the damage from both Strikes and apply resistances and weaknesses only once. This counts as two attacks when calculating your multiple attack penalty.</p>"
@@ -861,6 +890,14 @@
       "name": "Follow the Expert",
       "description": "<p>Choose an ally attempting a recurring skill check while exploring, such as climbing, or performing a different exploration tactic that requires a skill check (like @UUID[Compendium.pf2e.actionspf2e.Item.IE2nThCmoyhQA0Jn]{Avoiding Notice}). The ally must be at least an expert in that skill and must be willing to provide assistance. While Following the Expert, you match their tactic or attempt similar skill checks.</p>\n<p>Thanks to your ally's assistance, you can add your level as a proficiency bonus to the associated skill check, even if you're untrained. Additionally, you gain a circumstance bonus to your skill check based on your ally's proficiency (+2 for expert, +3 for master, and +4 for legendary).</p>\n<p>@UUID[Compendium.pf2e.other-effects.Item.VCSpuc3Tf3XWMkd3]{Effect: Follow The Expert}</p>"
     },
+    "For My House!": {
+      "name": "For My House!",
+      "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> You announce your house affiliation, either by declaring it aloud (giving this ability the auditory trait) or openly displaying your house heraldry (giving this ability the visual trait). Until the beginning of your next turn, your weapon Strikes and spells deal an additional 1 damage to any creature that witnessed the display. If you're an expert in Cheliax Lore, Genealogy Lore, Heraldry Lore, Performance, or Warfare Lore, the additional damage increases to 2. The damage increases to 3 if you're a master in the skill or 4 if you're legendary in the skill.</p>"
+    },
+    "For Talmandor! For Freedom!": {
+      "name": "For Talmandor! For Freedom!",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You raise your banner high with a reminder of what you and your allies truly fight for, granting them unshakable conviction. For yourself and each squadmate in your banner's aura when you use this tactic, you can attempt to counteract one effect affecting that creature. Your counteract modifier is your Warfare Lore modifier. The effect must have the mental trait or impose the clumsy, controlled, @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing}, frightened, @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, slowed, or stunned condition.</p>"
+    },
     "Force Open": {
       "name": "Force Open",
       "description": "<p>Using your body, a lever, or some other tool, you attempt to forcefully open a door, window, container or heavy gate. With a high enough result, you can even smash through walls. Without a crowbar, prying something open takes a –2 item penalty to the [[/act force-open]]{Athletics} check to Force Open.</p>\n<hr />\n<p><strong>Critical Success</strong> You open the door, window, container, or gate and can avoid damaging it in the process.</p>\n<p><strong>Success</strong> You break the door, window, container, or gate open, and it gains the @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Broken} condition. If it's especially sturdy, the GM might have it take damage but not be broken.</p>\n<p><strong>Critical Failure</strong> Your attempt jams the door, window, container, or gate shut, imposing a –2 circumstance penalty on future attempts to Force it Open.</p>\n<h2>Sample Force Open Tasks</h2>\n<ul>\n<li><strong>Untrained</strong> fabric, flimsy glass</li>\n<li><strong>Trained</strong> ice, sturdy glass</li>\n<li><strong>Expert</strong> flimsy wooden door, wooden portcullis</li>\n<li><strong>Master</strong> sturdy wooden door, iron portcullis, metal bar</li>\n<li><strong>Legendary</strong> stone or iron door</li>\n</ul>"
@@ -877,6 +914,10 @@
       "name": "Forge Documents",
       "description": "<p>You prepare forgeries that might serve as convincing props. Attempt a hard or very hard Society check.</p>\n<hr />\n<p><strong>Success</strong> You create convincing forgeries and gain 1 EP you can use only when presenting some form of paperwork.</p>\n<p><strong>Failure</strong> You create unconvincing documents. You gain 1 EP that (unknown to you) grants no benefit when used.</p>\n<p><strong>Critical Failure</strong> As a failure, but a PC who tries to use the Edge Point gets a critical failure, even if they use the Edge Point after rolling a failure.</p>"
     },
+    "Forged in Fire": {
+      "name": "Forged in Fire",
+      "description": "<p><strong>Trigger</strong> You take fire damage</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You gain fire resistance equal to half your level (minimum 1) against the triggering damage.</p>"
+    },
     "Fortify Camp": {
       "name": "Fortify Camp",
       "description": "<p>You can spend time fortifying your camp for defense with a successful Crafting check (typically at a trained or expert DC). Anyone keeping watch or defending the camp gains a +2 circumstance bonus to initiative rolls and Perception checks to Seek creatures attempting to sneak up on the camp.</p>"
@@ -889,9 +930,13 @@
       "name": "Fracture Mountains",
       "description": "<p>Your spirit is so dense it takes on tangible force. Make a melee Strike with the @UUID[Compendium.pf2e.classfeatures.Item.jpS7wcMnBXK1rS4J]{Titan's Breaker}. This counts as two attacks when calculating your multiple attack penalty. If this Strike hits, your additional spirit damage from the ikon's immanence increases to 4 plus an extra die of weapon damage.</p>\n<p>If you're at least 10th level, it's increased to 6 spirit damage and two extra dice, and if you're at least 18th level, it's increased to 8 spirit damage and three extra dice.</p>"
     },
+    "Fuel Impossible Spell": {
+      "name": "Fuel Impossible Spell",
+      "description": "<p>You put more of yourself on the line to draw forth the hidden potentials behind an impossible spell. You empower the effect of one of your active impossible spells further as detailed under the spell's description. Every time you Fuel an Impossible Spell, you become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} or increase your doomed condition by 1 if you're already doomed.</p>"
+    },
     "Furious Strike": {
       "name": "Furious Strike",
-      "description": "<p>Your eidolon channels its anger into a furious attack. It makes a melee Strike. This counts as two attacks when calculating your multiple attack penalty. If this Strike hits, your eidolon deals an extra die of weapon damage and gains a +1 circumstance bonus to the damage roll.</p>\n<p>If you're at least 10th level, increase this to two extra dice with a +2 circumstance bonus, and if you're at least 18th level, increase it to three extra dice with a +3 circumstance bonus.</p>"
+      "description": "<p>Your eidolon makes a melee Strike. This counts as two attacks when calculating your multiple attack penalty. If this Strike hits, your eidolon deals an extra die of weapon damage and gains a +1 circumstance bonus to the damage roll.</p>\n<p>If you're at least 10th level, increase this to two extra dice with a +2 circumstance bonus, and if you're at least 18th level, increase it to three extra dice with a +3 circumstance bonus.</p>"
     },
     "Gain Contact": {
       "name": "Gain Contact",
@@ -919,7 +964,7 @@
     },
     "Glimpse of Redemption": {
       "name": "Glimpse of Redemption",
-      "description": "<p><strong>Trigger</strong> An enemy damages your ally, and both are in your champion's aura;</p>\n<hr />\n<p><strong>Effect</strong> Your enemy hesitates under the weight of sin as visions of redemption play in their mind's eye. The enemy must choose to repent or refuse, with the following effects. If the enemy is mindless or otherwise unable to repent, use the refuse result.</p>\n<ul>\n<li><strong>Repent</strong> The ally is unharmed by the triggering damage.</li>\n<li>\n<p><strong>Refuse</strong> The ally gains resistance to all damage against the triggering damage equal to 2 + your level. After the damaging effect is applied, the enemy becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the end of its next turn</p>\n</li>\n</ul>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.DawVHfoPKbPJsz4k]{Effect: Champion's Resistance}</p>"
+      "description": "<p><strong>Trigger</strong> An enemy damages your ally, and both are in your champion's aura</p>\n<hr />\n<p><strong>Effect</strong> Your enemy hesitates under the weight of sin as visions of redemption play in their mind's eye. The enemy must choose to repent or refuse, with the following effects. If the enemy is mindless or otherwise unable to repent, use the refuse result.</p>\n<ul>\n<li>\n<p><strong>Repent</strong> The ally is unharmed by the triggering damage.</p>\n</li>\n<li>\n<p><strong>Refuse</strong> The ally gains resistance to all damage against the triggering damage equal to 2 + your level. After the damaging effect is applied, the enemy becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the end of its next turn.</p>\n</li>\n</ul>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.DawVHfoPKbPJsz4k]{Effect: Champion's Resistance}</p>"
     },
     "Gluttonous Feast": {
       "name": "Gluttonous Feast",
@@ -981,6 +1026,10 @@
     "Hellbreaker Strike": {
       "name": "Hellbreaker Strike",
       "description": "<p>Make a weapon or unarmed Strike. This counts as two attacks when determining your multiple attack penalty. If your Strike hits, you deal an additional 2d8 spirit damage. At 18th level, this increases to 3d8 spirit damage.</p>"
+    },
+    "Hellish Impression": {
+      "name": "Hellish Impression",
+      "description": "<p><strong>Trigger</strong> You fail a Diplomacy check to [[/act make-an-impression]]</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You cast 1st-rank @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} as a divine innate spell on the target of the triggering action.</p>"
     },
     "Hide": {
       "name": "Hide",
@@ -1045,9 +1094,17 @@
       "name": "Indomitable Act",
       "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You are about to attempt a check</p>\n<p><strong>Requirements</strong> You are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}</p>\n<hr />\n<p><strong>Effect</strong> You lean into your fear, using it to embolden you. You can roll the triggering check twice and take the higher result. This is a fortune effect.</p>"
     },
+    "Inevitable Return": {
+      "name": "Inevitable Return",
+      "description": "<p><strong>Trigger</strong> A Small or Medium enemy within 30 feet dies.</p>\n<hr />\n<p>The deaths of those around you simply fuel your undead army. You create a thrall in the triggering corpse's space. This thrall is the same size as the triggering creature.</p>"
+    },
     "Infiltrator's Draw": {
       "name": "Infiltrator's Draw",
       "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> You Interact to draw a gauntlet bow, hand crossbow, or repeating hand crossbow, then Strike with it. Alternatively, you can Strike with a loaded hand crossbow or repeating hand crossbow you're already holding and then Interact to stow it.</p>"
+    },
+    "Inflict Punishment": {
+      "name": "Inflict Punishment",
+      "description": "<p><strong>Trigger</strong> You are hit with an unarmed Strike or a Strike with a non-reach melee weapon</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You twist your body so that the attacker hits a hard edge of bone or armor, injuring themselves. You deal @Damage[(floor(@actor.level/2))d8[piercing]] damage to the triggering creature (basic Reflex save using your class DC or spell DC, whichever is higher). At 3rd level, and every 2 levels thereafter, this damage increases by 1d8.</p>"
     },
     "Influence": {
       "name": "Influence",
@@ -1112,6 +1169,26 @@
     "Invoke Celestial Privilege": {
       "name": "Invoke Celestial Privilege",
       "description": "<p><strong>Trigger</strong> You attempt a saving throw against a divine effect, but you haven't rolled yet.</p>\n<hr />\n<p>You rise above the triggering effect, refusing to be harmed by it. You gain a +1 circumstance bonus to the triggering saving throw and to any other saving throws you attempt against divine effects until the start of your next turn.</p>"
+    },
+    "Invoke Infernal Bargain": {
+      "name": "Invoke Infernal Bargain",
+      "description": "<p><strong>Requirements</strong> You are not doomed</p>\n<hr />\n<p><strong>Effect</strong> You call upon your infernal pact to surge with devilish power. You gain a +2 status bonus to the next attack roll, skill check, or saving throw you attempt before the end of your next turn. You then become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>"
+    },
+    "Invoke Infernal Flames": {
+      "name": "Invoke Infernal Flames",
+      "description": "<p><strong>Trigger</strong> You critically hit a creature with an unarmed attack granted by this feat</p>\n<p><strong>Requirements</strong> You are doomed</p>\n<hr />\n<p><strong>Effect</strong> You deal an additional die of weapon damage and @Damage[1d4[persistent,fire]] damage. Then, increase the value of your doomed condition by 1.</p>"
+    },
+    "Invoke Infernal Focus": {
+      "name": "Invoke Infernal Focus",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> You are doomed</p>\n<hr />\n<p><strong>Effect</strong> You regain 1 Focus Point and then increase the value of your doomed condition by 1.</p>"
+    },
+    "Invoke Infernal Potency": {
+      "name": "Invoke Infernal Potency",
+      "description": "<p><strong>Requirements</strong> You are doomed</p>\n<hr />\n<p><strong>Effect</strong> If your next action is to cast either fear or spiritual armament as an innate spell, you can heighten the spell to a rank 1 lower than half your level rounded up. You then increase the value of your doomed condition by 1.</p>"
+    },
+    "Invoke Rune": {
+      "name": "Invoke Rune",
+      "description": "<p>You utter the names of up to two of your runes within 30 feet, and each of which blazes with power, applying the effect in its Invocation entry. An invoked rune then fades away, its task completed. Though you can invoke up to two runes with a single Invoke Rune action, creatures that would be affected by multiple copies of the same rune are affected only once, as normal for duplicate effects.</p>"
     },
     "Iron Command": {
       "name": "Iron Command",
@@ -1209,7 +1286,7 @@
     },
     "Manifest Eidolon": {
       "name": "Manifest Eidolon",
-      "description": "<p>Your eidolon appears in an open space adjacent to you, and can then take a single action. If your eidolon was already manifested, you unmanifest it instead.</p>\n<p>The conduit that allows your eidolon to manifest is also a tether between you. Your eidolon must remain within 100 feet of you at all times and can't willingly go beyond that limit. If forced beyond this distance, or if you are reduced to 0 Hit Points, your eidolon's physical form dissolves: your eidolon unmanifests, and you need to use Manifest Eidolon to manifest it again.</p>\n<hr />\n<p><strong>Special</strong> This activity has the trait matching your eidolon's tradition (arcane, divine, occult, or primal).</p>"
+      "description": "<p>Your eidolon appears in an open space adjacent to you, and can then take a single action. If your eidolon was already manifested, you unmanifest them instead. The conduit that allows your eidolon to manifest is also a tether between you. Your eidolon must remain within 100 feet of you at all times and can't willingly go beyond that limit. If forced beyond this distance, or if you are reduced to 0 Hit Points or your eidolon were to die, your eidolon's physical form unmanifests, and you need to use Manifest Eidolon to manifest them again.</p>\n<hr />\n<p><strong>Special</strong> This activity has the trait matching your eidolon's tradition (arcane, divine, occult, or primal).</p>"
     },
     "Manifest Realm": {
       "name": "Manifest Realm",
@@ -1217,7 +1294,7 @@
     },
     "Manifest Soulforged Armament": {
       "name": "Manifest Soulforged Armament",
-      "description": "<p><strong>Requirements</strong> If summoning a weapon or shield, you have the hands free to wield it; if summoning armor, you aren't wearing any armor</p>\n<hr />\n<p><strong>Effect</strong> You immediately wield or wear the soulforged armament bound to you. The soulforged armament remains manifested until you Dismiss this effect.</p>\n<p>Once per day when you use this ability, you can manifest the armament's essence form. You gain the armament's essence power until it's Dismissed. After 1 minute, the essence form armament is automatically Dismissed.</p>"
+      "description": "<p><strong>Requirements</strong> If summoning a soulforged weapon or shield, you have the hands free to wield it; if summoning soulforged armor, you aren't wearing any armor</p>\n<hr />\n<p><strong>Effect</strong> You immediately wield or wear the soulforged armament bound to you. The soulforged armament remains manifested until you Dismiss this effect.</p>\n<p>Once per day when you use this ability, you can manifest the armament's essence form. You gain the armament's essence power until it's Dismissed. After 1 minute, the essence form armament is automatically Dismissed.</p>"
     },
     "Map the Area": {
       "name": "Map the Area",
@@ -1343,6 +1420,10 @@
       "name": "Overdrive",
       "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p>Temporarily cranking the gizmos on your body into overdrive, you try to add greater power to your attacks. Attempt a @Check[crafting|dc:@self.level] check that has a standard DC for your level.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]{Effect: Overdrive}</p>\n<hr />\n<p><strong>Critical Success</strong> Your gizmos go into a state of incredible efficiency called critical overdrive, adding great power to your attacks. Your Strikes deal additional damage equal to your Intelligence modifier for 1 minute. After the Overdrive ends, your gizmos become unusable as they cool down or reset, and you can't use Overdrive for 1 minute.</p>\n<p><strong>Success</strong> Your gizmos go into overdrive, adding power to your attacks. As critical success, except the additional damage is equal to half your Intelligence modifier.</p>\n<p><strong>Failure</strong> Your gizmos whine concerningly and begin to smoke. Your Strikes deal 1 additional fire damage for 1 minute.</p>\n<p><strong>Critical Failure</strong> Whoops! Something explodes. You take fire damage equal to half your level (rounded up), and you can't use Overdrive again for [[/r 1d4 #Recharge Overdrive]] rounds as your gizmos reset.</p>\n<hr />\n<p><strong>Special</strong> When under the effects of Overdrive, you can still use the Overdrive action. You can't extend your Overdrive's duration this way, but you can turn an overdrive into a critical overdrive if you critically succeed. A failure has no effect on your current Overdrive, and you end your Overdrive on a critical failure.</p>"
     },
+    "Overflowing Blade": {
+      "name": "Overflowing Blade",
+      "description": "<p><strong>Requirements</strong> You are overflowing</p>\n<hr />\n<p><strong>Effect</strong> You conduct the magic in your internal nexus to coat your weapon or unarmed strike, empowering it with magical energy for a devastating attack. Make a melee Strike. If the Strike hits, you deal an additional 1d4 force damage. At 10th level, the additional damage increases to 2d4 force damage. At 18th level, the additional damage increases to 3d4 force damage. You are no longer overflowing.</p>"
+    },
     "Overload Vision": {
       "name": "Overload Vision",
       "description": "<p><strong>Trigger</strong> A creature within 60 feet would make an attack roll against you</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of the current turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until the end of the current turn.</p>\n<p><strong>Critical Failure</strong> The target is blinded until the end of the current turn and dazzled for 1 minute.</p>"
@@ -1358,6 +1439,10 @@
     "Palm an Object": {
       "name": "Palm an Object",
       "description": "<p>You pick up a small, unattended object and try not to be noticed. Roll a single [[/act palm-an-object]]{Thievery} check against the Perception DCs of all creatures who are currently observing you. You can typically only Palm Objects of negligible Bulk, though the GM might determine otherwise depending on the situation.</p>\n<hr />\n<p><strong>Success</strong> The creature doesn't notice you Palming the Object.</p>\n<p><strong>Failure</strong> The creature notices you Palming the Object.</p>"
+    },
+    "Part the Veil": {
+      "name": "Part the Veil",
+      "description": "<p><strong>Requirements</strong> You are not observed by any enemies</p>\n<hr />\n<p><strong>Effect</strong> You phase yourself into the interstices, veiling yourself from physical reality. You become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}. You can use this concealment to [[/act hide]] or [[/act sneak]] as your disassociation from reality makes you difficult to focus on. If you use a hostile action, this effect ends after the action is complete; otherwise, it lasts for 1 minute.</p>"
     },
     "Passage of Lines": {
       "name": "Passage of Lines",
@@ -1395,6 +1480,10 @@
       "name": "Pitch-Perfect Projection",
       "description": "<p>By using your perfect pitch, you can amplify your voice to cause magical auditory effects to reach further. If your next action this round is to Cast a Spell or use an action that creates an auditory effect with a range, increase that range by 30 feet.</p>"
     },
+    "Plaintive Plea": {
+      "name": "Plaintive Plea",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You make an emotional appeal to convince someone during a diplomatic encounter. If your next activity is to attempt a Diplomacy check to [[/act make-an-impression]] or Request, or to attempt to influence a creature during an influence encounter, you can roll twice and take the better result.</p>"
+    },
     "Plant Thirty Barbs": {
       "name": "Plant Thirty Barbs",
       "description": "<p>You snap off a fragment of your ikon within your opponent's body, which threatens to burst into numerous barbs. Make a Strike with your ikon. If successful, barbs fill the target, dealing two die of weapon damage the first time the creature uses a move action on each of its turns; the barbs are made out of the same material as your weapon ikon and bypass resistances and such accordingly (for instance, a cold iron spear would create cold iron barbs). The barbs last for [[/gmr 1d4 #rounds]]{1d4 rounds}. If the target dies while the barbs are still in their body, the barbs burst forth in a forest of thorns covering the creature's space, which are greater difficult terrain and deal piercing damage equal to half your level for each square that is moved into.</p>"
@@ -1415,17 +1504,13 @@
       "name": "Pop, Drop, and Lock",
       "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p>You command your squadmates to perform a devastating coordinated takedown. Signal up to three squadmates within the aura of your commander's banner who all have the same enemy within their reach; the squadmates can attempt to Strike, @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip}, or @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} the opponent as a reaction. Each squadmate can only attempt one specific action granted by this tactic, the actions can be attempted in any order and a specific action can only be attempted once as part of this tactic.</p>"
     },
-    "Practical Research": {
-      "name": "Practical Research",
-      "description": "<p><strong>Requirement</strong> You are a conversant or lore-speaker.</p>\n<hr />\n<p>You identify something interesting in the field and perform special research on it. This requires an appropriate check, which the GM will describe when the opportunity arises. The results of the check vary. While they typically include all the benefits of the Study activity, some opportunities for Practical Research also offer unique benefits, such as access to new character options.</p>"
-    },
     "Primal Howl": {
       "name": "Primal Howl",
       "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> Your animal companion screeches and howls, empowered with natural magic. All creatures in a @Template[cone|distance:30] take @Damage[(floor(@actor.level/2))d6[sonic]|options:area-damage] damage for every 2 levels your companion has, with a @Check[fortitude|against:spell|basic|options:area-effect] save against your spell DC. Creatures that fail become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, and creatures that critically fail become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}. The fright is an emotion, fear, and mental effect.</p>"
     },
     "Primal Roar": {
       "name": "Primal Roar",
-      "description": "<p>Your eidolon unleashes a primal roar or other such terrifying noise that fits your eidolon's form. Your eidolon attempts Intimidation checks to [[/act demoralize]] each enemy that can hear the roar; these Demoralize attempts don't take any penalty for not sharing a language.</p>"
+      "description": "<p>Your eidolon unleashes a primal roar or other terrifying noise that fits your eidolon's form. Your eidolon attempts to [[/act demoralize]] each enemy that can hear the roar, comparing the result of a single Intimidation check to the Will DC of each target; this check doesn't take any penalty for not sharing a language.</p>"
     },
     "Prophecy's Pawn": {
       "name": "Prophecy's Pawn",
@@ -1434,10 +1519,6 @@
     "Protective Screen": {
       "name": "Protective Screen",
       "description": "<p>You've trained your allies in a technique designed to protect war mages. Signal one squadmate; as a reaction, that squadmate Strides directly toward any other squadmate who is within the aura of your banner. If the first squadmate ends their movement adjacent to another squadmate, the second squadmate does not trigger reactions when casting spells or making ranged attacks until the end of their next turn or until they are no longer adjacent to the first squadmate, whichever comes first. If the first squadmate ends their movement adjacent to more than one other squadmate, the first squadmate must choose which of the adjacent squadmates gains this benefit.</p>"
-    },
-    "Prove Peace": {
-      "name": "Prove Peace",
-      "description": "<p><strong>Requirements</strong> You know the conflict that created a specific siege shard, and the siege shard is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}.</p>\n<hr />\n<p>You touch the siege shard, establish a mental connection, and relay facts of the conflict's resolution.</p>\n<p>Attempt a check to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge} about the conflict that created the shard, using the siege shard's Will DC. If you succeed, you prove the conflict's end, and the siege shard reverts to ordinary stone. On a critical failure, images of the past conflict overwhelm you, and you are @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} until the end of your next turn.</p>"
     },
     "Psychic Defense": {
       "name": "Psychic Defense",
@@ -1585,9 +1666,17 @@
       "name": "Release",
       "description": "<p>You release something you're holding in your hand or hands. This might mean dropping an item, removing one hand from your weapon while continuing to hold it in another hand, releasing a rope suspending a chandelier, or performing a similar action. Unlike most manipulate actions, Release does not trigger reactions that can be triggered by actions with the manipulate trait (such as Reactive Strike).</p>\n<p>If you want to prepare to Release something outside of your turn, use the @UUID[Compendium.pf2e.actionspf2e.Item.dLgAMt3TbkmLkUqE]{Ready} activity.</p>"
     },
+    "Relentless Assault": {
+      "name": "Relentless Assault",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> A creature would succeed or critically succeed at a saving throw against the offensive ability of a troop you command</p>\n<hr />\n<p><strong>Effect</strong> With an encouraging command, you direct your troop to make a few additional attacks. The triggering creature rerolls its saving throw and uses the worse result.</p>"
+    },
     "Reload!": {
       "name": "Reload!",
       "description": "<p>Your drill instruction kicks in, and your allies rapidly reload their weapons to prepare for the next volley. Signal all squadmates; each can immediately Interact to reload as a reaction.</p>\n<hr />\n<p><strong>Special</strong> When leading a siege weapon crew, you can use this tactic to command your squadmates to Load a siege weapon instead.</p>"
+    },
+    "Reloading Cascade": {
+      "name": "Reloading Cascade",
+      "description": "<p>You use @UUID[Compendium.pf2e.actionspf2e.Item.HbejhIywqIufrmVM]{Arcane Cascade} and Interact to reload a firearm.</p>"
     },
     "Reloading Strike": {
       "name": "Reloading Strike",
@@ -1666,6 +1755,10 @@
       "name": "Roaring Charge",
       "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p>You and your squad surge forward with a mighty roar. Signal all squadmates within the aura of your commander's banner. As a reaction, these squadmates can Stride up to twice their Speed directly toward any enemy they are observing.</p>\n<p>Any creature within 10 feet of a squadmate once all movement from this tactic has been completed must attempt a @Check[will|against:commander|options:inflicts:frightened,inflicts:fleeing|traits:emotion,fear,incapacitation,mental] save against your class DC with the following results. This is an emotion, fear, incapacitation, and mental effect.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>"
     },
+    "Rouse the World": {
+      "name": "Rouse the World",
+      "description": "<p>The flora, fauna, and elements in a @Template[type:burst|distance:10] within 30 feet stir, aiding you and your allies and whispering in your ear. This area is known as your waking world. While in your waking world, you and your allies gain a +1 circumstance bonus to Athletics and Acrobatics checks, and you gain a +1 circumstance bonus to Nature checks to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge} about creatures and hazards in the area.</p>\n<p>The effect lasts for 10 minutes, but you can Dismiss it. Once per round on subsequent turns, you can Sustain this ability to increase the burst's size by 10 feet. You can Rouse the World in only one area at a time; if you use this ability again, the first area returns to normal.</p>"
+    },
     "Royal Grace": {
       "name": "Royal Grace",
       "description": "<p>You spend 10 minutes conferring with one of your knights who has the doomed condition. By discussing plans for your future kingdom with them and describing the benefits of your rule, you can attempt to soothe their spirits. Attempt a Diplomacy or Society check against a hard DC of your knight's level. Regardless of the result, that knight gains the benefits of the Refocus activity (if they have a focus pool) but is temporarily immune to Royal Grace for 24 hours.</p>\n<p><strong>Critical Success</strong> The knight's doomed condition is reduced by 2 (minimum 0).</p>\n<p><strong>Success</strong> The knight's doomed condition is reduced by 1 (minimum 0).</p>\n<p><strong>Failure</strong> The knight's doomed condition isn't reduced.</p>"
@@ -1694,6 +1787,10 @@
       "name": "Scout Location",
       "description": "<p>You spend time observing the place or group you wish to infiltrate. Attempt a normal, hard, or very hard DC Perception, Society or Stealth check.</p>\n<hr />\n<p><strong>Success</strong> You make observations that provide 1 EP.</p>\n<p><strong>Failure</strong> You learn nothing particularly noteworthy.</p>\n<p><strong>Critical Failure</strong> You misjudge some aspect of what you observed, gaining 1 EP that results in a critical failure instead of a success when used, even if a PC uses the Edge Point after rolling a failure.</p>"
     },
+    "Scrappy Defiance": {
+      "name": "Scrappy Defiance",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> Your turn begins, and you are commanding a troop</p>\n<hr />\n<p><strong>Effect</strong> You encourage your followers to persevere against all hardships. The troop you command gains temporary Hit Points equal to twice your level which last for 1 minutes. If your troop's size would be reduced due to damage, you can attempt a @Check[flat|dc:16]; on a success, your troop's size isn't reduced at that threshold until the end of your next turn.</p>"
+    },
     "Search": {
       "name": "Search",
       "description": "<p>You @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} meticulously for hidden doors, concealed hazards, and so on. You can usually make an educated guess as to which locations are best to check and move at half speed, but if you want to be thorough and guarantee you checked everything, you need to travel at a Speed of no more than 300 feet per minute, or 150 feet per minute to ensure you check everything before you walk into it. You can always move more slowly while Searching to cover the area more thoroughly, and the @UUID[Compendium.pf2e.feats-srd.Item.GdZLxDtFXaQI3Fop]{Expeditious Search} feat increases these maximum Speeds. If you come across a secret door, item, or hazard while Searching, the GM will attempt a free secret check to Seek to see if you notice the hidden object or hazard. In locations with many objects to search, you have to stop and spend significantly longer to search thoroughly.</p>"
@@ -1706,9 +1803,13 @@
       "name": "Seek",
       "description": "<p>You scan an area for signs of creatures or objects, possibly including secret doors or hazards. Choose an area to scan. The GM determines the area you can scan with one Seek action—almost always 30 feet or less in any dimension. The GM might impose a penalty if you search far away from you or adjust the number of actions it takes to Seek a particularly cluttered area.</p>\n<p>The GM attempts a single secret [[/act seek]]{Perception} check for you and compares the result to the Stealth DCs of any @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} or @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} creatures in the area, or the DC to detect each object in the area (as determined by the GM or by someone @UUID[Compendium.pf2e.actionspf2e.Item.qVNVSmsgpKFGk9hV]{Concealing the Object}). A creature you detect might remain hidden, rather than becoming @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Observed}, if you're using an imprecise sense or if an effect (such as @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility}) prevents the subject from being observed.</p>\n<hr />\n<p><strong>Critical Success</strong> Any undetected or hidden creature you critically succeeded against becomes observed by you. You learn the location of objects in the area you critically succeeded against.</p>\n<p><strong>Success</strong> Any undetected creature you suceeded against becomes hidden from you instead of undetected, and any hidden creature you succeeded against becomes observed by you. You learn the location of any object or get a clue to its whereabouts, as determined by the GM.</p>"
     },
+    "Seek and Destroy": {
+      "name": "Seek and Destroy",
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p>You direct your team to uncover hidden foes and exploit newly discovered weaknesses. Signal up to two squadmates within the aura of your commander's banner; they can immediately [[/act seek]] as a free action. Afterward, each can spend a reaction to either Point Out an enemy, Stride toward an enemy they're observing, or attempt to Strike an enemy they're observing. Each of the squadmates deals additional precision damage equal to half your level with their next successful Strike before the end of your next turn against a creature that has become observed by them from a successful Perception check to Seek.</p>"
+    },
     "Seething Frenzy": {
       "name": "Seething Frenzy",
-      "description": "<p>Your eidolon's fury boils over into a reckless, out-of-control frenzy. While frenzied, your eidolon is affected by <em>boost eidolon</em> and gains temporary Hit Points equal to your level, but it takes a -2 penalty to AC. Your eidolon can't voluntarily end the frenzy or start another frenzy while in the frenzy.</p>\n<p>The frenzy lasts for 1 minute, after which it's @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} for 1 minute and can't start another frenzy for 1 minute.</p>"
+      "description": "<p>Your eidolon's fury boils over into a reckless, out-of-control frenzy. While frenzied, your eidolon is affected by @UUID[Compendium.pf2e.spells-srd.Item.HStu2Yhw3iQER9tY]{Boost Eidolon} and gains temporary Hit Points equal to your level, but takes a –1 penalty to AC. Your eidolon can't voluntarily end the frenzy or start another frenzy while in the frenzy. The frenzy and the accompanying temporary Hit Points last for 1 minute or until your eidolon is no longer manifested, whichever comes first, after which they can't start another frenzy for 1 minute.</p>\n<p>When your eidolon makes a Furious Strike while in a Seething Frenzy, the status bonus from boost eidolon is 3 per damage die. The extra damage die from Furious Strike still doesn't count toward <em>boost eidolon</em>'s bonus, as normal for weapon dice added by abilities.</p>"
     },
     "Selfish Shield": {
       "name": "Selfish Shield",
@@ -1740,7 +1841,7 @@
     },
     "Sever Conduit": {
       "name": "Sever Conduit",
-      "description": "<p><strong>Trigger</strong> Your eidolon takes damage that would bring you to 0 Hit Points and comes from an effect other than a death effect</p>\n<hr />\n<p><strong>Effect</strong> You quickly shut the buffer in your link with your eidolon, causing your bonded ally to wink out of existence before you can be laid low. Your eidolon unmanifests, and you can't Manifest your Eidolon for 1 minute. In exchange, you don't take the triggering damage, though your eidolon still suffers any other adverse effects that accompanied the damage.</p>"
+      "description": "<p><strong>Trigger</strong> Your eidolon takes damage that would bring you to 0 Hit Points and comes from an effect other than a death effect</p>\n<hr />\n<p><strong>Effect</strong> You quickly extinguish the link with your eidolon, causing your bonded ally to wink out of existence before you can be laid low. Your eidolon unmanifests, and you can't Manifest your Eidolon for 1 minute. In exchange, you don't take the triggering damage, though your eidolon still suffers any other adverse effects that accompanied the damage.</p>"
     },
     "Sever Four Dragonfly Wings": {
       "name": "Sever Four Dragonfly Wings",
@@ -1749,6 +1850,10 @@
     "Shadow Step": {
       "name": "Shadow Step",
       "description": "<p><strong>Requirements</strong> The familiar is in dim light or darkness.</p>\n<hr />\n<p><strong>Effect</strong> The familiar teleports itself up to 30 feet. The destination must be in dim light or darkness and must be within your familiar's line of sight and line of effect.</p>\n<p>This action has the trait matching your tradition of magic, or occult if you aren't a spellcaster.</p>"
+    },
+    "Shadows in the Moonlight": {
+      "name": "Shadows in the Moonlight",
+      "description": "<p>Your commands help your team evade notice. Signal all squadmates within your banner's aura; until the end of your next turn, you and each ally count as Following the Expert for any checks to [[/act hide]] or [[/act sneak]] and can ignore the noisy trait on any armor you wear. If you spend 2 actions to use this tactic, up to two squadmates within your banner's aura can also either Hide or Sneak as a free action.</p>\n<hr />\n<p><strong>Special</strong> If you have this tactic prepared, you can use Warfare Lore in place of Stealth for checks you attempt to Hide and Sneak.</p>"
     },
     "Shake It Off": {
       "name": "Shake It Off",
@@ -1764,7 +1869,7 @@
     },
     "Share Senses": {
       "name": "Share Senses",
-      "description": "<p><strong>Requirements</strong> Your eidolon is manifested.</p>\n<p>You project your senses into your eidolon, allowing you to perceive through it. When you do, you lose all sensory information from your own body, but can sense through your eidolon's body for up to 1 minute. You can @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo]{Dismiss} this effect.</p>\n<hr />\n<p><strong>Special</strong> This action has the trait matching your eidolon's tradition (arcane, divine, occult, or primal). Your eidolon can also use this ability. When it does, it projects its senses into your body.</p>"
+      "description": "<p><strong>Requirements</strong> Your eidolon is manifested.</p>\n<hr />\n<p>You project your senses into your eidolon, allowing you to perceive through it. When you do, you lose all sensory information from your own body, but can sense through your eidolon's body for up to 1 minute. You can @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo]{Dismiss} this effect.</p>\n<hr />\n<p><strong>Special</strong> This action has the trait matching your eidolon's tradition (arcane, divine, occult, or primal). Your eidolon can also use this ability. When it does, it projects its senses into your body.</p>"
     },
     "Shatter Glass": {
       "name": "Shatter Glass",
@@ -1790,6 +1895,10 @@
     "Shift Immanence": {
       "name": "Shift Immanence",
       "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p>You shift your power, filling one of your ikons with your divine spark. That ikon softly glows with radiant light, emits subtle chimes as it moves, or is otherwise obviously empowered in a way that matches your growing divinity, granting the ikon the divine trait and granting you that ikon's immanence effects for as long as your divine spark is empowering it. Your spark is indivisible, so it can empower only one ikon at a time. You can also Shift Immanence to return your spark to the depths of your soul, leaving none of your ikons empowered.</p>\n<hr />\n<p><strong>Special</strong> In addition to the above usage, you can also Shift Immanence as a free action triggered when you roll initiative.</p>"
+    },
+    "Shift Spell": {
+      "name": "Shift Spell",
+      "description": "<p><strong>Requirements</strong> You are within the affected area of an ongoing spell, or you can physically touch an object or creature under the effects of a spell, and you are holding your conduit</p>\n<hr />\n<p><strong>Effect</strong> Choose a spellshift and attempt an Arcana check against the DC of the spell (or the spell DC of the spellcaster if the spell does not normally have a DC). The caster immediately becomes aware that you're trying to shift their spell and intuitively knows the potential effects of the shift, but not the result of your skill check. A willing caster can allow you to achieve one degree of success higher than the result of your check. The effects of the check are dependent on the chosen spellshift. Regardless of the result, the spell becomes immune to Shift Spell for 24 hours.</p>"
     },
     "Shove": {
       "name": "Shove",
@@ -1818,7 +1927,7 @@
     },
     "Size Up": {
       "name": "Size Up",
-      "description": "<p>You designate a single, non-mindless creature as your focus and assess its motivations. You must be able to see and hear the creature. You gain a +2 circumstance bonus to Perception checks when you Sense the Motive of your focus and a +2 circumstance bonus to your Perception DC should your focus attempt to Lie or [[/act feint]] against you. You gain a +2 circumstance bonus to Deception, Diplomacy, and Intimidation checks against your focus. You can only have one creature designated as your focus at a time. If you use Size Up against a creature when you already have a creature designated, the prior creature loses the designation and the new focus gains the designation. Your designation otherwise lasts until your next daily preparations.</p>",
+      "description": "<p>You designate a single, non-mindless creature as your focus and assess its motivations. You must be able to see and hear the creature. You gain a +2 circumstance bonus to Perception checks when you @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense the Motive} of your focus and a +2 circumstance bonus to your Perception DC should your focus attempt to @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie} or @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} against you. You gain a +2 circumstance bonus to Deception, Diplomacy, and Intimidation checks against your focus. You can only have one creature designated as your focus at a time. If you use Size Up against a creature when you already have a creature designated, the prior creature loses the designation and the new focus gains the designation. Your designation otherwise lasts until your next daily preparations.</p>",
       "selfEffect": "Effect: Size Up"
     },
     "Skirt the Underworld": {
@@ -1845,6 +1954,10 @@
       "name": "Soaring Flight",
       "description": "<p><strong>Frequency</strong> Once per day</p>\n<hr />\n<p>To be a tengu is to be unburdened by the concerns of the world below. You grow a pair of magical wings or expand your existing ones. For 5 minutes, you gain a @UUID[Compendium.pf2e.actionspf2e.Item.cS9nfDRGD83bNU1p]{Fly} Speed equal to your land Speed or 20 feet, whichever is greater.</p>"
     },
+    "Solitary Invocation": {
+      "name": "Solitary Invocation",
+      "description": "<p>You utter the name of one of your runes within 30 feet, which blazes with power, applying the effect in its Invocation entry. An invoked rune then fades away, its task complete.</p>"
+    },
     "Sorshen's Devotion": {
       "name": "Sorshen's Devotion",
       "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You or an ally within 60 feet uses @UUID[Compendium.pf2e.actionspf2e.Item.SNjmjFw30KQxIP4A]{Rewrite Fate} to reroll a saving throw</p>\n<hr />\n<p><strong>Effect</strong> Spend 1 Mythic Point. The triggering creature regains @Damage[(7d10+28)[healing]] Hit Points. The amount of healing increases to @Damage[(10d10+40)[healing]] Hit Points if Xanderghul, the Runelord of Pride, was the source of the triggering effect.</p>"
@@ -1867,7 +1980,7 @@
     },
     "Spellstrike": {
       "name": "Spellstrike",
-      "description": "<p><strong>Frequency</strong> until recharged (see below)</p>\n<hr />\n<p>You channel a spell into a punch or sword thrust to deliver a combined attack. You cast a spell that takes 1 or 2 actions to cast and requires either a spell attack roll or a saving throw. You imbue its effects into an attack instead of executing the spell normally. Make a melee Strike with a weapon or unarmed attack. This counts as two attacks for your multiple attack penalty, but you don't apply the penalty until after you've completed the Spellstrike. The infusion of spell energy grants your Strike the arcane trait, making it magical. If the spell required a spell attack roll, use your Strike's results to determine the effects of both the Strike and the spell. If it required a save, the target of the Strike rolls its saving throw normally, though if your Strike was a critical failure, the target is unaffected.</p>\n<p>After you use Spellstrike, you can't do so again until you recharge your Spellstrike as a single action, which has the concentrate trait. You also recharge your Spellstrike when you cast a conflux spell that takes at least 1 action to cast; casting a focus spell of another type doesn't recharge your Spellstrike.</p>"
+      "description": "<p><strong>Frequency</strong> until recharged (see below)</p>\n<hr />\n<p>You channel a spell into a punch or sword thrust to deliver a combined attack. You cast a spell that takes 1 or 2 actions to cast and requires either a spell attack roll or a saving throw. You imbue its effects into an attack instead of executing the spell normally. Make a melee Strike with a weapon or unarmed attack. This counts as two attacks for your multiple attack penalty, but you don't apply the penalty until after you've completed the Spellstrike. The infusion of spell energy grants your Strike the arcane trait, making it magical. If the spell required a spell attack roll, use your Strike's results to determine the effects of both the Strike and the spell. If the spell required a save, the target of the Strike rolls its saving throw normally regardless of your attack roll's result unless your Strike was a critical failure, in which case your spell is disrupted. Combine the Strike and spell's damage for the purpose of resistances and weaknesses.</p>\n<p>After you use Spellstrike, you can't do so again until you recharge your Spellstrike as a single action, which has the concentrate trait. You also recharge your Spellstrike when you cast a conflux spell that takes at least 1 action to cast; casting a focus spell of another type doesn't recharge your Spellstrike.</p>"
     },
     "Spin Tale": {
       "name": "Spin Tale",
@@ -1889,6 +2002,10 @@
     "Spiritual Aid": {
       "name": "Spiritual Aid",
       "description": "<p><strong>Trigger</strong> You fail a Reflex or Will saving throw</p>\n<hr />\n<p><strong>Effect</strong> You reroll the triggering saving throw. You must use the second result, even if it's worse. If you roll a success, you get a critical success instead.</p>"
+    },
+    "Spiritual Scar": {
+      "name": "Spiritual Scar",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You would take spirit damage from a fiend</p>\n<hr />\n<p><strong>Effect</strong> You gain resistance to spirit damage equal to twice your level plus your Charisma modifier against the triggering damage. If this resistance prevents you from taking any damage at all, the spiritual backlash against the fiend who attempted to damage you forces them to attempt a @Check[will|against:class|options:inflicts:slowed] save against your class DC to avoid being @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for one round.</p>"
     },
     "Spit Ambient Magic": {
       "name": "Spit Ambient Magic",
@@ -1968,10 +2085,6 @@
       "name": "Strike, Breathe, Rend",
       "description": "<p><strong>Requirements</strong> Your last action this turn was a successful Strike with the @UUID[Compendium.pf2e.classfeatures.Item.ndSCXO9Dg57fmZIY]{Noble Branch}</p>\n<hr />\n<p><strong>Effect</strong> You channel a rending pulse of energy down your weapon in the moment of contact. The target of the Strike takes spirit damage equal to the noble branch's weapon damage dice. This includes any extra dice from striking runes, but not from special abilities, property runes, or the like.</p>"
     },
-    "Study": {
-      "name": "Study",
-      "description": "<p><strong>Requirements</strong> You are an initiate, attendant, or conversant.</p>\n<hr />\n<p>You give everything you have to your studies, in keeping with your branch. Choose either your primary or secondary branch and attempt a skill check with one of the branch's associated skills against a standard DC of the branch's level.</p>\n<hr />\n<p><strong>Critical Success</strong> Incredible results! You ace every exam and cause a stir that all the instructors notice. Increase the level of the branch you chose by 2.</p>\n<p><strong>Success</strong> You succeed in your studies admirably. Increase the level of the branch you chose by 1.</p>\n<p><strong>Failure</strong> You need to work harder and try again. Your branch level remains the same.</p>\n<p><strong>Critical Failure</strong> You make a major mistake that requires you to perform remedial studies. The next time you would get an opportunity to attempt this activity, you must skip that opportunity to catch up.</p>"
-    },
     "Stupefying Raid": {
       "name": "Stupefying Raid",
       "description": "<p>Your team dashes about in a series of maneuvers that leave the enemy befuddled. Signal up to two squadmates within the aura of your commander's banner; these squadmates can Stride up to their Speed as a reaction. Each enemy they are adjacent to at any point during this movement must attempt a @Check[will|against:commander|options:inflicts:stupefied|traits:mental] save against your class DC or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure); this is a mental effect.</p>"
@@ -1983,6 +2096,10 @@
     "Summon Sloth": {
       "name": "Summon Sloth",
       "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Spend 1 Mythic Point. You summon the spirit of one of the seven runelords of sloth (Xirie, Ilthyrius, Azeradni, Zalelet, Krenlith, Ivarinna, or Krune) into an unoccupied space within 30 feet. Allies can move through a space occupied by one of these spirits, but a spirit's space is greater difficult terrain for your enemies.</p>\n<p>For the next minute, you can use a two-action activity with the concentrate trait to summon another runelord spirit in a different space within 30 feet, to a maximum of seven spirits. While you are within 120 feet of Xanderghul, the Runelord of Pride, you can summon an additional spirit as a single action (instead of as a two-action activity). At the end of the each of your turns, each spirit fires arcane energy at a different enemy of your choice within 120 feet of it (or does nothing if no enemy is within range), dealing @Damage[(2d4+2)[force]] damage. After 1 minute, all spirits disappear.</p>"
+    },
+    "Surprising Anatomy": {
+      "name": "Surprising Anatomy",
+      "description": "<p><strong>Trigger</strong> An enemy adjacent to your eidolon deals damage to your eidolon</p>\n<hr />\n<p><strong>Effect</strong> Your eidolon's form shifts horribly to retaliate against the attacker. Your eidolon makes a melee unarmed Strike against the triggering enemy.</p>"
     },
     "Survive the Wilds": {
       "name": "Survive the Wilds",
@@ -2012,6 +2129,10 @@
     "Swim": {
       "name": "Swim",
       "description": "<p>You attempt an [[/act swim]]{Athletics} check to move a maximum distance of 10 feet through water. The GM determines the DC based on the turbulence or danger of the water; in most instances of calm water, you get an automatic critical success. If your land Speed is 40 feet or higher, increase the maximum possible distance by 5 feet for every 20 feet of Speed above 20 feet.</p>\n<p>If you end your turn in water and haven't succeeded at a Swim action that turn, you sink 10 feet or get moved by the current, as determined by the GM. This doesn't apply if your last action on your turn was to enter the water.</p>\n<hr />\n<p><strong>Critical Success</strong> You move through the water, increasing the maximum distance by 5 feet.</p>\n<p><strong>Success</strong> You move through the water.</p>\n<p><strong>Critical Failure</strong> You make no progress. If you're holding your breath, you lose 1 round of air.</p>\n<h2>Sample Swim Tasks</h2>\n<p><strong>Untrained</strong> lake or other still water</p>\n<p><strong>Trained</strong> flowing water, like a river</p>\n<p><strong>Expert</strong> swiftly flowing river</p>\n<p><strong>Master</strong> stormy sea</p>\n<p><strong>Legendary</strong> maelstrom, waterfall</p>"
+    },
+    "Swing the Censer": {
+      "name": "Swing the Censer",
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Requirements</strong> You are holding your censer implement.</p>\n<hr />\n<p>You swing your censer in a wide arc, causing the smoke it issues to thicken. Until the start of your next turn, creatures within the smoke are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the smoke are concealed to those within it.</p>"
     },
     "Swirl Crimson Shroud": {
       "name": "Swirl Crimson Shroud",
@@ -2085,7 +2206,7 @@
     },
     "Tendril Strike": {
       "name": "Tendril Strike",
-      "description": "<p>Stretching to extend its body to its limits, your eidolon attacks a foe that would normally be beyond its reach. Your eidolon makes a melee unarmed Strike, increasing its reach by 5 feet for that Strike.</p>\n<p>If the unarmed attack has the disarm, shove, or trip trait, the eidolon can use the corresponding action instead of a Strike.</p>"
+      "description": "<p>Stretching to extend their body to its limits, your eidolon attacks a foe that would normally be beyond their reach. Your eidolon makes a melee unarmed Strike, increasing their reach by 5 feet for that Strike. If the unarmed attack has the disarm, shove, or trip trait, the eidolon can use the corresponding action instead of a Strike.</p>"
     },
     "That's My Number": {
       "name": "That's My Number",
@@ -2131,6 +2252,10 @@
       "name": "Toxic Touch",
       "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Your most recent action was to @UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{Tumble Through}, and you successfully moved through an enemy's space</p>\n<hr />\n<p><strong>Effect</strong> Make a melee unarmed Strike against the enemy whose space you moved through. On a hit, the target takes @Damage[1d6[persistent,poison]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or takes @Damage[2d6[persistent,poison]] and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical hit).</p>"
     },
+    "Trace Rune": {
+      "name": "Trace Rune",
+      "description": "<p><span class=\"action-glyph\">1</span> or <span class=\"action-glyph\">2</span></p>\n<hr />\n<p>Your fingers dance, glowing light leaving behind the image of a rune. You apply one rune to an adjacent target matching the rune's Usage entry. You can have any number of runes traced at a time, but each rune remains only until the end of your next turn.</p>\n<p>If you spend 2 actions to Trace a Rune, you draw the rune in the air, causing it to appear on a target within 30 feet.</p>"
+    },
     "Track": {
       "name": "Track",
       "description": "<p>You follow tracks, moving at up to half your travel Speed, using the @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.DUOb8QrlC5t0adkL]{Travel Speed} rules. After a successful check to Track, you can continue following the tracks at half your Speed without attempting additional checks for up to 1 hour.</p>\n<p>In some cases, you might Track in an encounter. In this case, Track is a single action and doesn't have the exploration trait, but you might need to roll more often because you're in a tense situation. The GM determines how often you must attempt this check.</p>\n<p>You attempt your [[/act track]]{Survival} check when you start Tracking, once every hour you continue tracking, and any time something significant changes in the trail. The GM determines the DCs for such checks, depending on the freshness of the trail, the weather, and the type of ground.</p>\n<section class=\"sample-tasks\">\n<h2>Sample Track Tasks</h2>\n<ul>\n<li><strong>Untrained</strong> the path of a large army following a road</li>\n<li><strong>Trained</strong> relatively fresh tracks of a rampaging bear through the plains</li>\n<li><strong>Expert</strong> a nimble panther's tracks through a jungle, tracks obscured by rainfall</li>\n<li><strong>Master</strong> tracks obscured by winter snow, tracks of a mouse or smaller creature, tracks left on surfaces that can't hold prints like bare rock</li>\n<li><strong>Legendary</strong> old tracks through a windy desert's sands, tracks obscured by a major blizzard or hurricane</li>\n</ul>\n</section>\n<hr />\n<p><strong>Success</strong> You find the trail or continue to follow the one you're already following.</p>\n<p><strong>Failure</strong> You lose the trail but can try again after a 1-hour delay.</p>\n<p><strong>Critical Failure</strong> You lose the trail and can't try again for 24 hours.</p>"
@@ -2153,7 +2278,7 @@
     },
     "Treat Wounds": {
       "name": "Treat Wounds",
-      "description": "<p><strong>Requirements</strong> You're wearing or holding a @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]{Healer's Toolkit}.</p>\n<hr />\n<p>You spend 10 minutes treating one injured living creature (targeting yourself, if you so choose). The target is then temporarily @UUID[Compendium.pf2e.feat-effects.Item.Lb4q2bBAgxamtix5]{immune} to Treat Wounds actions for 1 hour, but this interval overlaps with the time you spent treating (so a patient can be treated once per hour, not once per 70 minutes).</p>\n<p>The Medicine check DC is usually 15, though the GM might adjust it based on the circumstances, such as treating a patient outside in a storm, or treating magically cursed wounds. If you're an expert in Medicine, you can instead attempt a DC 20 check to increase the Hit Points regained by 10; if you're a master of Medicine, you can instead attempt a DC 30 check to increase the Hit Points regained by 30; and if you're legendary, you can instead attempt a DC 40 check to increase the Hit Points regained by 50. The damage dealt on a critical failure remains the same.</p>\n<p>If you succeed at your check, you can continue treating the target to grant additional healing. If you treat it for a total of 1 hour, double the Hit Points it regains from Treat Wounds.</p>\n<p>The result of your Medicine check determines how many Hit Points the target regains.</p>\n<p>@UUID[Compendium.pf2e.pf2e-macros.Macro.6duZj0Ygiqv712rq]{Treat Wounds}</p>\n<hr />\n<p><strong>Critical Success</strong> The target regains [[/r 4d8[healing] #Treat Wounds]] Hit Points and loses the @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded} condition.</p>\n<p><strong>Success</strong> The target regains [[/r 2d8[healing] #Treat Wounds]] Hit Points, and loses the wounded condition.</p>\n<p><strong>Critical Failure</strong> The target takes [[/r 1d8[damage] #Treat Wounds (Critical Failure)]] damage.</p>"
+      "description": "<p><strong>Requirements</strong> You're wearing or holding a @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]{Healer's Toolkit}.</p>\n<hr />\n<p>You spend 10 minutes treating one injured living creature (targeting yourself, if you so choose). The target is then temporarily @UUID[Compendium.pf2e.feat-effects.Item.Lb4q2bBAgxamtix5]{immune} to Treat Wounds actions for 1 hour, but this interval overlaps with the time you spent treating (so a patient can be treated once per hour, not once per 70 minutes).</p>\n<p>The [[/act treat-wounds]]{Medicine} check DC is usually 15, though the GM might adjust it based on the circumstances, such as treating a patient outside in a storm, or treating magically cursed wounds. If you're an expert in Medicine, you can instead attempt a DC 20 check to increase the Hit Points regained by 10; if you're a master of Medicine, you can instead attempt a DC 30 check to increase the Hit Points regained by 30; and if you're legendary, you can instead attempt a DC 40 check to increase the Hit Points regained by 50. The damage dealt on a critical failure remains the same.</p>\n<p>If you succeed at your check, you can continue treating the target to grant additional healing. If you treat it for a total of 1 hour, double the Hit Points it regains from Treat Wounds.</p>\n<p>The result of your Medicine check determines how many Hit Points the target regains.</p>\n<hr />\n<p><strong>Critical Success</strong> The target regains @Damage[4d8[healing]] Hit Points and loses the @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded} condition.</p>\n<p><strong>Success</strong> The target regains @Damage[2d8[healing]] Hit Points, and loses the wounded condition.</p>\n<p><strong>Critical Failure</strong> The target takes @Damage[1d8[untyped]] damage.</p>"
     },
     "Trench Digging": {
       "name": "Trench Digging",
@@ -2220,11 +2345,15 @@
     },
     "Visions of Sin": {
       "name": "Visions of Sin",
-      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p>Your eidolon summons images of its sin into the mind of a target creature within 30 feet, tormenting and confusing the target. The target must attempt a Will save against your spell DC with the following effects. The effects last until the end of your next turn, but your eidolon can use a single action, which has the concentrate trait, to extend the effects until the end of your next turn (like Sustaining a Spell), to a maximum duration of 1 minute.</p>\n<p>If the target is evil, it takes a -2 circumstance penalty to its save. Regardless of whether it succeeds, the target becomes temporarily immune for 1 day.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target can't use reactions.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>\n<p><strong>Critical Failure</strong> As failure, and the target is also @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round. The confusion can't be extended, but the other effects can.</p>"
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> Your eidolon summons images of their sin into the mind of a target creature within 30 feet, tormenting and confusing the target. The target must attempt a Will save against your spell DC with the following effects. The effects last until the end of your next turn, but your eidolon can Sustain the effects to a maximum duration of 1 minute. If the target is unholy, it takes a –2 circumstance penalty to its save. Regardless of whether it succeeds, the target becomes temporarily immune for 1 day.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target can't use reactions.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>\n<p><strong>Critical Failure</strong> As failure, and the target is also @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round. The confusion can't be extended, but the other effects can.</p>"
     },
     "Vital Shot": {
       "name": "Vital Shot",
       "description": "<p>Your careful shot against an unsuspecting opponent pierces a vital artery or organ. Make a ranged Strike. If the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, the Strike deals an extra die of weapon damage, and the foe takes persistent bleed damage equal to the amount of precision damage from your @UUID[Compendium.pf2e.actionspf2e.Item.Tlrde2xh7AhesXNB]{One Shot, One Kill}.</p>"
+    },
+    "Wait For It...": {
+      "name": "Wait For It...",
+      "description": "<p>Your team intuitively keeps their guard up even while waiting for the ideal moment to act. Signal up to two squadmates within the aura of your commander's banner; while these squadmates Delay or Ready an action, they gain a +1 circumstance bonus to AC and saving throws. A squadmate's bonus lasts until the end of your next turn, until they stop Delaying, or until the end of the current creature's turn when the squadmate uses the designated action they Readied, whichever happens first. In addition, you can grant one of the squadmates an extra reaction from your drilled reactions class feature, but it can be used only to perform a designated action they Readied.</p>"
     },
     "Warding Shift": {
       "name": "Warding Shift",
@@ -2240,7 +2369,8 @@
     },
     "Weaponsight": {
       "name": "Weaponsight",
-      "description": "<p>Close your eyes and concentrate on your warshard weapon. You perceive the world as if you were observing it from your weapon rather than your own eyes. You can see in all directions simultaneously and therefore can't be flanked. If you're not holding your weapon, this ability fails if your warshard weapon is on a different plane than you. If you spend a Mythic Point as part of this action, you attempt saving throws against visual effects at mythic proficiency while observing through your warshard weapon. You can observe through your weapon for up to 1 minute or until you open your eyes as a free action, whichever comes first.</p>"
+      "description": "<p>Close your eyes and concentrate on your warshard weapon. You perceive the world as if you were observing it from your weapon rather than your own eyes. You can see in all directions simultaneously and therefore can't be flanked. If you're not holding your weapon, this ability fails if your warshard weapon is on a different plane than you. If you spend a Mythic Point as part of this action, you attempt saving throws against visual effects at mythic proficiency while observing through your warshard weapon. You can observe through your weapon for up to 1 minute or until you open your eyes as a free action, whichever comes first.</p>",
+      "selfEffect": "Effect: Weaponsight"
     },
     "Whirlwind Maul": {
       "name": "Whirlwind Maul",
@@ -2262,10 +2392,6 @@
       "name": "Wish for Luck",
       "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You are about to roll an attack roll, saving throw, or skill check</p>\n<hr />\n<p><strong>Effect</strong> You wish aloud for success. Roll the check twice and take the higher result.</p>",
       "selfEffect": "Effect: Wish for Luck"
-    },
-    "Wyrm's Breath": {
-      "name": "Wyrm's Breath",
-      "description": "<p><strong>Frequency</strong> once per minute</p>\n<p>Your eidolon gathers the power of the mightiest wyrms to make its magical breath even more spectacular. If your eidolon's next action is to use Breath Weapon, both the number of damage dice and area of the Breath Weapon are doubled.</p>"
     }
   },
   "mapping": {
@@ -2296,6 +2422,7 @@
     "Celebrity": "Celebrity",
     "Centaur": "Centaur",
     "Champion": "Champion",
+    "Chelaxian Scion": "Chelaxian Scion",
     "Commander": "Commander",
     "Conrasu": "Conrasu",
     "Dandy": "Dandy",
@@ -2319,10 +2446,12 @@
     "Guardian": "Guardian",
     "Gunslinger": "Gunslinger",
     "Halfling": "Halfling",
+    "Hellbound Aspirant": "Hellbound Aspirant",
     "Hellbreaker": "Hellbreaker",
     "Hellknight": "Hellknight",
     "Hexploration": "Hexploration",
     "Hobgoblin": "Hobgoblin",
+    "Impossible Spells": "Impossible Spells",
     "Infiltration": "Infiltration",
     "Influence": "Influence",
     "Inventor": "Inventor",
@@ -2332,6 +2461,7 @@
     "Kobold": "Kobold",
     "Leshy": "Leshy",
     "Ley Lines": "Ley Lines",
+    "Living Nexus": "Living Nexus",
     "Lizardfolk": "Lizardfolk",
     "Magaambyan Attendant": "Magaambyan Attendant",
     "Magus": "Magus",
@@ -2340,6 +2470,7 @@
     "Monk": "Monk",
     "Mythic": "Mythic",
     "Necrologist": "Necrologist",
+    "Necromancer": "Necromancer",
     "Oracle": "Oracle",
     "Orc": "Orc",
     "Palatine Detective": "Palatine Detective",
@@ -2351,12 +2482,14 @@
     "Red Mantis Assassin": "Red Mantis Assassin",
     "Reflection": "Reflection",
     "Rogue": "Rogue",
+    "Runesmith": "Runesmith",
     "Samsaran": "Samsaran",
     "Scion of Domora": "Scion of Domora",
     "Shared": "Shared",
     "Shisk": "Shisk",
     "Sister of the Golden Erinys": "Sister of the Golden Erinys",
     "Skeleton": "Skeleton",
+    "Spellshifter": "Spellshifter",
     "Stalwart Defender": "Stalwart Defender",
     "Stamina": "Stamina",
     "Starlit Sentinel": "Starlit Sentinel",
@@ -2375,11 +2508,13 @@
     "Undead Slayer": "Undead Slayer",
     "Undine": "Undine",
     "Vehicles": "Vehicles",
+    "Veil Dancer": "Veil Dancer",
     "Venture-Gossip": "Venture-Gossip",
     "Vishkanya": "Vishkanya",
     "Wayang": "Wayang",
     "Witch": "Witch",
     "Wizard": "Wizard",
+    "World Rouser": "World Rouser",
     "Zombie": "Zombie",
     "Barbarian": "Barbarian",
     "Draconic Acolyte": "Draconic Acolyte",

@@ -1,0 +1,1156 @@
+{
+  "mapping": {
+    "blurb": "system.details.blurb",
+    "crew": "system.details.crew",
+    "description": {
+      "converter": "translateActorDescription",
+      "path": "system.details.description"
+    },
+    "disable": "system.details.disable",
+    "items": {
+      "converter": "translateActorItems",
+      "path": "items"
+    },
+    "languages": "system.details.languages.details",
+    "name": {
+      "converter": "translateDualLanguage",
+      "path": "name"
+    },
+    "pilotingCheck": "system.details.pilotingCheck",
+    "portrait": {
+      "converter": "updateActorImage",
+      "path": "img"
+    },
+    "publicNotes": {
+      "converter": "translateActorDescription",
+      "path": "system.details.publicNotes"
+    },
+    "reset": "system.details.reset",
+    "routine": "system.details.routine",
+    "saveDetails": "system.attributes.allSaves.value",
+    "senses": "system.perception.details",
+    "skillSpecialCrafting": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.crafting.special"
+    },
+    "skillSpecialIntimidation": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.intimidation.special"
+    },
+    "source": {
+      "converter": "translateSource",
+      "path": "system.details.publication.title"
+    },
+    "speed": "system.details.speed",
+    "stealth": "system.attributes.stealth.details",
+    "tokenImage": {
+      "converter": "updateTokenImage",
+      "path": "prototypeToken.texture.src"
+    },
+    "tokenName": {
+      "converter": "translateTokenName",
+      "path": "prototypeToken.name"
+    }
+  },
+  "entries": {
+    "Azlanti Mystic": {
+      "blurb": "Astrónomo",
+      "items": {
+        "spellcastingEntry->Arcane Prepared Spells": {
+          "name": "Conjuros arcanos preparados"
+        },
+        "equipment->Spellbook": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE]\nSpellbook"
+        },
+        "strike-melee->Staff": {
+          "name": "Bastón"
+        },
+        "strike-melee->Fist": {
+          "name": "Puño"
+        },
+        "lore->Astronomy Lore": {
+          "name": "Saber (astronomía)"
+        },
+        "equipment->Astrolabe": {
+          "name": "Astrolabio"
+        },
+        "action->Living Sextant": {
+          "name": "Sextante viviente",
+          "description": "<p>Si el astrónomo puede ver el cielo nocturno, puede [[/act sense-direction skill=astronomy-lore]]{Orientarse} usando Saber de astronomía.</p>"
+        },
+        "action->Reject Myth": {
+          "name": "Rechazar el mito",
+          "description": "<p><strong>Desencadenante</strong> Una criatura a 30 pies o menos Lanza un conjuro o usa una aptitud con el rasgo fortuna o desgracia</p>\n<hr />\n<p><strong>Efecto</strong> El rechazo del astrónomo a semejantes fantasías se hace manifiesto. El astrónomo intenta contrarrestar el efecto desencadenante con un modificador de contrarrestar de [[/r 1d20+9 #Counteract]]{+9} y un rango de contrarrestar de 1.</p>"
+        }
+      },
+      "publicNotes": "<p>El verdadero poder viene del conocimiento: el poder de dar forma al crecimiento de los reinos con meros susurros, mantenerse tres pasos por delante de los adversarios, o incluso saber qué flora es la mejor para crear venenos invisibles.</p>"
+    },
+    "Blostin": {
+      "tokenName": "PNJ",
+      "items": {
+        "weapon->Greatpick Handle": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.c58wczIzH2gzeXQL]\nGreatpick Handle"
+        },
+        "armor->Leather Apron": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB]\nLeather Apron"
+        },
+        "action->Quick Repair": {
+          "name": "Reparación rápida",
+          "description": "<p>Para Blostin, la actividad de reparación pierde el rasgo de exploración y tarda 1 minuto en lugar de 10 minutos.</p>"
+        },
+        "lore->Gladiatorial Lore": {
+          "name": "Saber (gladiadores)"
+        },
+        "lore->Labor Lore": {
+          "name": "Saber (trabajo)"
+        },
+        "strike-melee->Greatpick Handle": {
+          "name": "Mango de Greatpick"
+        }
+      },
+      "blurb": "Aprendiz humano masculino de armero"
+    },
+    "Cherub": {
+      "items": {
+        "spellcastingEntry->Divine Innate Spells": {
+          "name": "Conjuros divinos innatos"
+        },
+        "strike-melee->Rapier": {
+          "name": "Espada ropera"
+        },
+        "strike-ranged->Shortbow": {
+          "name": "Arco corto"
+        },
+        "action->Cherub’s Arrow": {
+          "description": "<p>El querubín se concentra en una flecha que han clavado en su arco, impregnándola con poder sobrenatural antes de dispararla a un objetivo dentro de 30 pies. La flecha no inflige daño en un golpe, y en su lugar tiene uno de los siguientes efectos, elegido por el querubín. Mientras que el querubín puede usar esta habilidad cada asaltos si así lo decide, nunca puede elegir el mismo efecto dos veces seguidas. Una criatura golpeada debe tener éxito en un salvación de @Check[will|dc:16] o ser afectada de la siguiente manera, dependiendo de la elección del querubín (en un golpe crítico, la criatura recibe una penalizador de –2 al lanzamiento salvador).</p>\n<p><strong>Delight</strong> El objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} a medida que se distrae por todas las maravillas de la vida hasta el inicio del siguiente turno del querubín.</p>\n<p><strong>Amor</strong> El objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} durante 1 minuto por una segunda criatura no querubí dentro de 30 pies del querubín que el objetivo puede ver. Este efecto tiene el rasgo visual.</p>\n<p><strong>Paz</strong> El objetivo se llena de una sensación de tranquilidad y recibe una penalizador de estado de –1 para lanzar ataques durante 1 minuto.</p>\n<p><strong>Lamento</strong> El objetivo se llena de vergüenza y remordimiento, convirtiéndose en @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2} en un fracaso crítico).</p>"
+        }
+      },
+      "name": "Querubín",
+      "publicNotes": "<p>Sujetos de esculturas de fuentes de piedra y pinturas religiosas en todo el Universo, los querubines son celestiales menores que buscan promover la cooperación, la paz y, sobre todo, el amor entre las criaturas mortales. Para muchos querubines, la meta de cultivar el amor y el afecto entre dos enemigos diametralmente opuestos es la altura de la felicidad. Aunque tienen habilidades mágicas y conjuros innatos que pueden ayudarles en estas tareas, la mayoría de los querubines consideran estos métodos como tácticas de último recurso, o herramientas a las que acudir cuando la pasión se convierte en ira y la violencia estalla. A pesar de su creencia en el amor que lo conquista todo, los querubines no son ingenuos y entienden que en algunos casos, el amor simplemente no puede florecer. Ante tal dilema, el querubín busca minimizar el conflicto, esperando sentar las bases que en algún momento en el futuro puedan llevar a una resolución pacífica o, mejor aún, romántica.</p>\n<p>Mientras que los querubines son amables, compasivos y, en el peor de los casos, un poco traviesos, ciertos demonios los encuentran particularmente molestos. Estos agentes impíos de la corrupción tienen gran placer en capturar querubines y obligarlos a actuar de maneras contrarias a su propia naturaleza, en usar magia para disfrazarse de querubines con el fin de trabajar sus malas acciones mientras erosionan la confianza de una sociedad en la bondad querubínica, o simplemente confiando en ilusiones particularmente realistas para hacer lo mismo. Usar @UUID[Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly]{Criatura ilusoria} para crear un querubín siniestro es una táctica que muchos demonios adoran.</p>"
+    },
+    "Deravon": {
+      "senses": "visión en la oscuridad",
+      "items": {
+        "strike-melee->Destiny Blade": {
+          "name": "Hoja del destino"
+        },
+        "action->Proof of Undeath": {
+          "name": "Prueba de no-muerte",
+          "description": "<p>Un caballero del santuario se cree un inmortal viviente, pero si se le ofrece una prueba de que es un no muerto, debe tener éxito en un @Check[will|dc:20] o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} (o @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3} en un fallo crítico). En un éxito crítico, son temporalmente inmunes a este miedo durante 24 horas. Una vez que se recuperan de estar asustados, sus recuerdos de la prueba ofrecida se desvanecen y una vez más se consideran inmortales vivientes. La prueba de no-muerte incluye cuando reciben daño de vitalidad, cuando restauran PG como resultado de daño de vacío, o cuando un personaje dentro de 30 pies presenta evidencia o un argumento como una actividad de acción 2 con el rasgo lingüístico y tiene éxito en un @Check[deception|dc:17], @Check[diplomacy|dc:17], o @Check[intimidation|dc:17] prueba.</p>"
+        },
+        "action->Aeon Blast": {
+          "name": "Explosión de Aeon",
+          "description": "<p>El caballero del santuario elige una de las estrellas del eón, luego la dispara desde su órbita para detonar en una explosión de radio 20 pies en cualquier punto dentro de 120 pies, infligiendo @Damage[2d6[untyped]] de daño a las criaturas en el área (salvación básica @Check[reflex|dc:21]). El tipo de daño depende del color de la estrella de eón.</p>\n<p><strong>Estrella de Aeón Negro</strong> daño de vacío</p>\n<p><strong>Estrella de oro del eón</strong> daño de electricidad</p>\n<p><strong>Estrella verde del eón</strong> daño ácido</p>\n<p><strong>Estrella Blanca del Eón</strong> daño espiritual</p>"
+        },
+        "action->Aeon Stars": {
+          "name": "Estrellas de Aeon",
+          "description": "<p>Un caballero del santuario tiene cuatro diminutas manchas de luz que orbitan constantemente su cabeza. Estas cuatro estrellas de eón son negras, doradas, verdes y blancas, y cada una proporciona una iluminación equivalente a la de una vela encendida. Un caballero del santuario puede gastar una estrella de eón para hacer una explosión de eón (ver arriba), pero una vez que un caballero del santuario ha usado todas sus estrellas de eón, se convierten en @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1}. Una estrella de eón gastada vuelve a su órbita alrededor de la cabeza del caballero del santuario automáticamente después de 1 hora.</p>"
+        },
+        "action->Imperious Demand": {
+          "name": "Demanda imperiosa",
+          "description": "<p>Deravon le da órdenes a un caballero del santuario para que pase o golpee; ese caballero inmediatamente toma la acción ordenada como reacción si es capaz.</p>"
+        },
+        "action->Muddle Mind": {
+          "description": "<p>La primera vez que una criatura recibe daño de un arma de cristal de trono empuñada por un caballero del santuario, debe intentar un salvación @Check[will|dc:21] para evitar convertirse en @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} durante 1 minuto (o quedar anonadado 1 durante 24 horas en un fallo crítico). Independientemente del resultado de su salvación, la criatura es temporalmente inmune a confundir la mente durante 1 asalto.</p>"
+        },
+        "lore->Aroden Lore": {
+          "name": "Aroden Saber"
+        }
+      },
+      "skillSpecialIntimidation": {
+        "0": {
+          "label": "Desmoralizar"
+        }
+      },
+      "blurb": "Caballero masculino del sanctum"
+    },
+    "Deravon's Ghost": {
+      "senses": "visión en la oscuridad",
+      "items": {
+        "action->Rejuvenation": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB]\nRejuvenation",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB]\n<p>Destroying Deravon's link to the world—his magical helm—prevents him from rejuvenating and allows him to move on to the afterlife once he is destroyed.</p>\n<hr />\n<p>When a ghost is destroyed, it re-forms after [[/br 2d4 #days]]{2d4 days} within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>"
+        },
+        "action->Site Bound": {
+          "name": "Ligado a una ubicación",
+          "description": "<p>El fantasma de Deravon puede viajar a cualquier lugar del Santuario de Aroden (áreas <strong>B29-B34</strong> ) pero no más allá.</p>"
+        },
+        "strike-melee->Ghostly Sword": {
+          "name": "Espada fantasmal"
+        },
+        "action->Helm Dependent": {
+          "description": "<p>Deravon es incorpóreo, pero el casco mágico que lleva es físico, posado encima de su cabeza tan seguro como si fuera una criatura física. No puede pasar a través de objetos sólidos mientras lleva su helmo, pero sin él se debilita. Un PJ puede quitarle el timón con un prueba @Check[athletics|dc:27] a [[/act disarm]], y si el fantasma de Deravon falla críticamente un Reflejo, debe intentar inmediatamente un segundo Reflejo contra el mismo CD. En un fracaso, su timón se cae de su cabeza. Mientras que puede moverse a través de objetos sólidos mientras su timón está apagado, no puede usar Estrellas de Aeon o Arco ante mí, y es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} mientras permanezca sin su timón.</p>"
+        },
+        "action->Aeon Star's Curse": {
+          "name": "Maldición de Aeon Star",
+          "description": "<p>El fantasma de Deravon tiene cuatro diminutas manchas de oscuridad que orbitan constantemente el brillante timón encima de su cabeza. Cuando activa la Maldición de la Estrella del Aeón, uno de estos puntos de oscuridad se dispara desde su órbita para golpear a una criatura viviente dentro de 120 pies. Esa criatura recibe @Damage[5d6[spirit]] de daño y debe intentar un @Check[will|dc:28] de salvación. Una Estrella de Aeon gastada vuelve a su órbita alrededor de la cabeza de Deravon automáticamente después de 1 hora, pero si ninguna Estrella de Aeon orbita su cabeza, el fantasma de Deravon no puede activar la Maldición de la Estrella de Aeon, y el prueba de Atletismo a [[/act disarm]] su timón cae a CD 23.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura recibe @Damage[2d6[spirit]] de daño.</p>\n<p><strong>Fallo</strong> La criatura recibe @Damage[4d6[spirit]] de daño y se convierte en @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} con una duración ilimitada.</p>\n<p><strong>Fallo crítico</strong> La criatura recibe @Damage[8d6[spirit]] de daño y se convierte en @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} con una duración ilimitada. Además, sufren de una abrumadora convicción de que, en cualquier momento, la Estrella del Eón podría aparecer en el cielo arriba, presagiando el fin de todas las cosas. Mientras permanezcan al aire libre durante el día o en interiores o bajo tierra en cualquier momento del día, el personaje maldito está @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} de esta distracción constante. Mientras está al aire libre por la noche, el personaje maldito también está @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} de esta convicción espiritual.</p>"
+        },
+        "action->Bow Before Me": {
+          "name": "Inclínate ante mí"
+        },
+        "action->Slice of Death": {
+          "name": "El Recuerdo de la Muerte",
+          "description": "<p>El fantasma de Deravon agita su espada larga fantasmal en un arco delante de él, liberando un @Template[type:cone|distance:30] de energía vacía. Las criaturas en el área reciben @Damage[8d6[void]|options:area-damage] de daño y deben hacer un @Check[fortitude|dc:28] de salvación contra los siguientes efectos adicionales. El fantasma de Deravon no puede usar Rebanada de muerte para [[/gmr 1d4 #rounds]]{1d4 asaltos}.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no recibe daño y no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura recibe la mitad de daño.</p>\n<p><strong>Fallo</strong> La criatura recibe daño total y @Damage[2d6[persistent,void]|options:area-damage] daño adicional a medida que su carne comienza a pudrirse.</p>\n<p><strong>Fallo crítico</strong> La criatura recibe doble daño, @Damage[2d6[persistent,void]|options:area-damage] daño, y se convierte en @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} mientras continúe recibiendo el daño persistente del vacío mientras su cuerpo comienza a endurecerse como si fuera por rigor mortis.</p>"
+        },
+        "lore->Aroden Lore": {
+          "name": "Aroden Saber"
+        }
+      },
+      "skillSpecialIntimidation": {
+        "0": {
+          "label": "Desmoralizar"
+        }
+      },
+      "name": "El fantasma de Deravon",
+      "blurb": "Fantasma humano masculino"
+    },
+    "Elharris": {
+      "items": {
+        "equipment->Ragged Clothing": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ilbLQNy6TbBPW7sQ]\nRagged Clothing"
+        },
+        "strike-melee->Fist": {
+          "name": "Puño"
+        },
+        "lore->Academia Lore": {
+          "name": "Saber (académico)"
+        },
+        "lore->Art Lore": {
+          "name": "Academia Lore"
+        },
+        "action->Scholarly Assistance": {
+          "name": "Asistencia académica"
+        }
+      },
+      "blurb": "Estudiante de arte elfo femenino"
+    },
+    "Fate of the Iomedaeans": {
+      "stealth": "<p>(experto)</p>",
+      "name": "El destino de los iomedaeanos",
+      "description": "<p>Desde su prisión de espadas, Meloth desata una visión maligna que representa con precisión el destino de los iomedaeos que exploraron esta cámara hace seis décadas. Mientras los PJ experimentan la visión, la nave se sacude y se tambalea.</p>",
+      "disable": "<p>@Check[religion|dc:17] tres veces para oponerse a la influencia de Meloth y purgar la visión con oración o @Check[intimidation|dc:20] para establecer dominación espiritual sobre la visión; una vez deshabilitada de cualquier manera, la visión se juega hasta el final pero no tiene efectos perjudiciales en los PJ desde ese punto en adelante (aunque los imps todavía se manifiestan al comienzo de la asaltos 4 para atacar a los PJ).</p>",
+      "items": {
+        "action->We're all in Hell!": {
+          "name": "¡Estamos todos en el infierno!"
+        }
+      }
+    },
+    "Furnace Altar Mosaic": {
+      "stealth": "<p>(entrenado)</p>",
+      "tokenName": "Peligro",
+      "name": "Mosaico del altar del horno",
+      "disable": "<p>@Check[thievery|dc:17] (entrenado) en la bisagra oculta abre el panel de mosaico, dando acceso a los estantes más allá, mientras que también desarma la trampa</p>",
+      "reset": "<p>Si la trampa se activa para hacer una Explosión de horno, se restablece automáticamente al comienzo de la siguiente asaltos. Si se activa para hacer una Explosión Cataclística, se destruye y debe repararse.</p>",
+      "items": {
+        "action->Cataclysmic Blast": {
+          "name": "Explosión cataclísmica"
+        },
+        "action->Furnace Blast": {
+          "name": "Explosión de horno",
+          "description": "<p><strong>Desencadenante</strong> Una criatura alcanza la llama del mosaico mientras solo hay un brasero encendido</p>\n<hr /> <p><strong>Efecto</strong> Los fragmentos de mosaico se encienden, infligiendo @Damage[3d6[fire]] de daño a la criatura que los disparó ( @Check[reflex|dc:17|basic] salva).</p>"
+        }
+      }
+    },
+    "Greely": {
+      "items": {
+        "equipment->Ragged Clothing": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ilbLQNy6TbBPW7sQ]\nRagged Clothing"
+        },
+        "strike-melee->Fist": {
+          "name": "Puño"
+        },
+        "lore->Genealogy Lore": {
+          "name": "Conocimiento genealógico"
+        },
+        "lore->Heraldry Lore": {
+          "name": "Saber (heráldica)"
+        },
+        "lore->Mercantile Lore": {
+          "name": "Saber (mercantil)"
+        },
+        "action->Additional Information": {
+          "name": "Información adicional sobre el sitio"
+        }
+      },
+      "blurb": "Comerciante humano masculino"
+    },
+    "Heart of Sarnax": {
+      "items": {
+        "strike-melee->Fist": {
+          "name": "Puño"
+        },
+        "strike-ranged->Void Bolt": {
+          "name": "Perno del vacío"
+        },
+        "action->Hear Heartbeat": {
+          "name": "Escuchar el latido del corazón",
+          "description": "<p>El Corazón de Sarnax puede escuchar el latido del corazón de una criatura viva como un sentido preciso en el rango enumerado.</p>"
+        },
+        "action->Speak to Inner Evils": {
+          "name": "Habla con los males internos"
+        },
+        "action->Void Beam": {
+          "name": "Rayo del vacío",
+          "description": "<p>El Corazón de Sarnax dispara un @Template[type:line|distance:60] de energía espiral, sombría del vacío desde la cavidad en su pecho. Las criaturas en el área reciben @Damage[7d6[void]|options:area-damage] de daño ( @Check[fortitude|dc:24|basic] ). El Corazón de Sarnax no puede usar Rayo del Vacío de nuevo por [[/gmr 1d4 #Recharge Void Beam]]{1d4 asaltos}.</p>"
+        }
+      },
+      "name": "Corazón de Sarnax",
+      "publicNotes": "<p>Cuando Sarnax trató de purificar su alma de todos los males, el resultado fue una manifestación física de cristal que se aproximaba al tamaño y forma de su corazón. El mal contenido en su interior permaneció inmóvil mientras Sarnax vivió, pero tras su muerte, el objeto ganó poder, ya no controlado por el alma viva de Sarnax. Si se devuelve a cualquier versión del Sarnax vivo, este mal se manifiesta en una criatura hecha de rubí sólido cuyo objetivo principal es la destrucción de su fuente. Después, el Corazón de Sarnax puede volver su atención al mundo, ansioso por visitar en la realidad todos los males, tanto pequeños como potentes, que Sarnax podría haber perseguido si hubiera caído de la gracia mientras estaba vivo.</p>",
+      "senses": " Escuchar el latido del corazón (preciso) 60 pies"
+    },
+    "Irabel of Eiseth": {
+      "items": {
+        "strike-melee->Fist": {
+          "name": "Puño"
+        },
+        "action->Flurry of Blows": {
+          "name": "Ráfaga de golpes",
+          "description": "<p><strong>Frecuencia</strong> una vez por asaltos</p>\n<hr /> <p><strong>Efecto</strong> Irabel hace dos golpes de puño. Si ambos golpean a la misma criatura, combina el daño para el propósito de resistencias y debilidades. Aplica su penalizador por ataque múltiple a los Golpes normalmente.</p>",
+          "selfEffect": "Efecto: Bobina de Asp"
+        },
+        "action->Powerful Fist": {
+          "name": "Puño Poderoso",
+          "description": "<p>Irabel no recibe la penalizador normal de circunstancias –2 cuando realiza un ataque letal con su puño o cualquier otro ataque desarmado.</p>"
+        },
+        "lore->Underworld Lore": {
+          "name": "Historia del inframundo"
+        },
+        "action->Asp Stance": {
+          "name": "Posición de áspid",
+          "description": "<p>Irabel entra en una postura en la que adopta un fluido y sinuoso conjunto de movimientos que imitan el golpe de una serpiente venenosa. Sus puños golpean e infligen daño penetrante mientras está en Asp Stance, y gana un bonificador por circunstancia +1 a CA. Cuando selecciona a la misma criatura con dos Golpes de su Flujo de Golpes, si ambos Golpes golpean, el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} por el dolor.</p>",
+          "selfEffect": "Efecto: Posición de Asp"
+        },
+        "equipment->Ragged Clothing": {
+          "name": "Ropa de Ragged"
+        },
+        "lore->Eiseth Lore": {
+          "name": "Eiseth Saber"
+        }
+      },
+      "blurb": "Monje humano femenino",
+      "name": "Irabel de Eiseth"
+    },
+    "Jona Clay": {
+      "items": {
+        "spellcastingEntry->Occult Spontaneous Spells": {
+          "name": "Conjuros ocultistas espontaneos"
+        },
+        "spellcastingEntry->Bard Composition Spells": {
+          "name": "Hechizos de composición de bardo"
+        },
+        "equipment->Ragged Clothing": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ilbLQNy6TbBPW7sQ]\nRagged Clothing"
+        },
+        "strike-melee->Fist": {
+          "name": "Puño"
+        },
+        "action->Martial Performance": {
+          "name": "Interpretación marcial",
+          "description": "<p>Cuando Jona tiene un himno valiente, himno de reunión o canción de composición de fuerza activa, y daña a un enemigo con un Golpe, la duración del conjuro se extiende por 1 asalto.</p>"
+        },
+        "action->Signature Spells": {
+          "name": "Conjuros de signatura",
+          "description": "<p>Jona puede lanzar flexiblemente magia de disipación, heroísmo y calmar, y es capaz de aumentar estos conjuros libremente.</p>"
+        },
+        "lore->Absalom Lore": {
+          "name": "Absalón Lore"
+        },
+        "lore->Pathfinder Society Lore": {
+          "name": "Historia de la Sociedad Pathfinder"
+        }
+      },
+      "blurb": "Bardo humano masculino"
+    },
+    "Kalatryx": {
+      "publicNotes": "<p>Los dragones espejismo son maestros de la magia de ilusión, que utilizan sus poderes para engañar a otros y promover sus propios planes. Además de su pericia con la magia, disponen de cierta cantidad de rasgos adicionales que les ayudan a cazar o a confundir a sus atacantes, como por ejemplo sus escamas de camuflaje y un aliento alucinatorio que puede confundir a la vez a múltiples enemigos. Los dragones espejismo son figuras vanas y egoístas. En definitiva, se preocupan más de sí mismos que de otros.</p>\n<hr />\n<p>Los dragones adoptan miles de formas, y muchos de ellos tienen aptitudes mágicas o conexiones con la magia. Algunos extraen un poder mayor de la magia que otros, lo que les permite manifestar aptitudes o alterar su físico mediante una exposición prolongada a la magia. Estos se hacen más poderosos con la edad y refuerzan sus conexiones con sus orígenes mágicos. Los eruditos discuten la clasificación de estos dragones, con algunos prefiriendo el nombre de dragones mágicos y otros llamándoles dragones tradicionales debido a su conexión con tradiciones mágicas específicas. Sea cual sea su nombre, dichos dragones comparten cierto número de características: su aptitud para extraer energía mágica, un poder y una astucia intensificados conforme envejecen y una inclinación a amasar enormes cantidades de tesoros y de riquezas.</p>",
+      "saveDetails": "+2 por estatus a todas las salvaciones contra arcano",
+      "items": {
+        "spellcastingEntry->Arcane Innate Spells": {
+          "name": "Conjuros arcanos innatos"
+        },
+        "spell->Illusory Object (At Will)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.2oH5IufzdESuYxat]\nIllusory Object (At Will)"
+        },
+        "strike-melee->Jaws": {
+          "name": "Mandíbulas"
+        },
+        "strike-melee->Claws": {
+          "name": "Garras"
+        },
+        "strike-melee->Tail": {
+          "name": "Cola"
+        },
+        "action->Camouflage": {
+          "name": "Camuflaje"
+        },
+        "action->+2 Status to All Saves vs. Arcane": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Arcane"
+        },
+        "action->Scintillating Defense": {
+          "name": "Defensa brillante",
+          "description": "<p><strong>Desencadenante</strong> El dragón es designado como objetivo de un ataque</p>\n<hr />\n<p><strong>Efecto</strong> El dragón hace brillar sus escamas iridiscentes frente a la criatura atacante para desviar el ataque. El dragón obtiene @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Ocultación} contra el ataque desencadenante.</p>"
+        },
+        "action->Draconic Frenzy": {
+          "name": "Frenesí dracónico",
+          "description": "<p>El dragón da dos Golpes de garra y un Golpe de cola en cualquier orden.</p>"
+        },
+        "action->Draconic Momentum": {
+          "name": "Impulso dracónico",
+          "description": "<p>El dragón recarga su Aliento alucinatorio siempre que obtiene un impacto crítico con un golpe.</p>"
+        },
+        "action->Hallucinatory Breath": {
+          "name": "Aliento alucinatorio",
+          "description": "<p>El dragón respira una nube que ataca los sentidos e inflige @Damage[5d6[mental]|options:area-damage] de daño en un @Template[cone|distance:30] (@Check[will|dc:25|options:area-effect] salvado). Una criatura que falla en su salvación también es @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confundido} por 1 asalto (1 minuto en un fallo crítico) y es temporalmente inmune a ser confundida por Aliento alucinatorio por 1 hora.</p>\n<p>El dragón no puede usar Respiración alucinatoria de nuevo por [[/gmr 1d4 #Recharge Hallucinatory Breath]]{1d4 asaltos}.</p>"
+        },
+        "action->Lunging Bite": {
+          "name": "Mordisco en embestida ",
+          "description": "<p>El dragón embiste con la cabeza, dando un Golpe de mandíbulas con un alcance extendido de 20 pies (6 m).</p>"
+        },
+        "action->Sneak Attack": {
+          "name": "Ataque furtivo",
+          "description": "<p>Los Golpes del dragón infligen 1d6 de daño de precisión adicional a los objetivos de @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido}.</p>"
+        },
+        "lore->Illusion Lore": {
+          "name": "Saber (ilusiones)"
+        }
+      },
+      "blurb": "Variante femenina joven dragón de espejismo"
+    },
+    "Kaltos Orthux": {
+      "saveDetails": "+2 por estatus a todas las salvaciones contra la magia, mente de hierro",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Conjuros ocultistas innatos"
+        },
+        "spell->Blood Vendetta": {
+          "requirements": "Puedes sangrar"
+        },
+        "treasure->Gold ring": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.P7jMpOYmusKse1Yu]\nGold ring"
+        },
+        "backpack->Belt Pouch": {
+          "name": "Bolsa para cinturón"
+        },
+        "strike-ranged->Crossbow": {
+          "name": "Ballesta"
+        },
+        "action->+2 Status to All Saves vs. Magic": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Magic"
+        },
+        "action->Iron Mind": {
+          "name": "Mente de hierro",
+          "description": "<p>Los hryngar capataces descreen automáticamente todas las ilusiones de 1.er rango o inferior.</p>"
+        },
+        "action->Raise a Shield": {
+          "selfEffect": "Efecto: levantar un escudo"
+        },
+        "action->Take Them Down!": {
+          "name": "¡Abatidlos!",
+          "description": "<p>El capataz golpea el suelo con su pico e invoca el nombre de Droskar para reagrupar a sus aliados de cara a la acción. Todos los hryngars aliados de nivel igual o inferior a @Template[emanation|distance:20]{20 pies (6 m)} o menos del capataz obtienen un bonificador +1 por estatus a las tiradas de ataque y de daño hasta el final del siguiente turno de este.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.u1Z7i2RyL6Sd9OVU]{Efecto: ¡Abatidlos!}</p>"
+        },
+        "strike-melee->Chimera's Claw": {
+          "name": "Garra de quimera"
+        },
+        "equipment->Key to area A8": {
+          "name": "Llave para el área A8"
+        },
+        "equipment->Key to area A17": {
+          "name": "Llave para el área A17"
+        },
+        "equipment->Tripartite Key Amulet": {
+          "name": "Amuleto de llave tripartita"
+        },
+        "equipment->Slender Ivory plaque painted with a stylized design of a Chimera": {
+          "name": "Placa de marfil delgada pintada con un diseño estilizado de una quimera",
+          "description": "<p>La pieza faltante del conjunto de drogue encontrado en el área <strong>A18</strong></p>"
+        }
+      },
+      "name": "Cultos Orthux",
+      "publicNotes": "<p>En lo más profundo de la superficie, los enanos oscuros conocidos como hryngars trabajan con obstinación, reclamando los hogares subterráneos ancestrales de otros enanos como propios. Hace mucho tiempo, los líderes hryngar se negaron a aventurarse a la superficie junto con sus \"primos\", abandonando la búsqueda del cielo. Una deidad enana exiliada llamada Droskar ofreció a los hryngars la salvación de los horrores que los asediaban en las Tierras Oscuras, ofreciéndoles poder, astucia y conocimiento a cambio de su interminable servidumbre. Muchos hryngar creen que trabajando más duro que sus hermanos, pueden construir una sociedad mucho más grande que cualquier cosa bajo el sol, reclamando riquezas infinitas de las venas metálicas del planeta en días de trabajo incesante.</p>\n<p>Gracias a las bendiciones de Droskar y a su propia ética de trabajo, los reinos hryngar ahora gobiernan una parte significativa de la región de NarVoth de las Tierras Oscuras superiores, y es común ver caravanas hryngar moviéndose por los túneles, atraídas por grupos de escarabajos inmensos. El liderazgo de los Hryngar suele estar formado por poderosos sirvientes divinos de Droskar, junto con temibles guerreros implacables cuya destreza marcial, respaldada por la magia oculta innata, les asegura que pueden superar cualquier amenaza directa al dominio de los Hryngar. Casi todos los aspectos de la sociedad hryngar están controlados por una estricta jerarquía de liderazgo, con jefes de tareas dirigiendo a subordinados de todos los ámbitos de la vida.</p>"
+    },
+    "Krell": {
+      "items": {
+        "equipment->Ragged Clothing": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ilbLQNy6TbBPW7sQ]\nRagged Clothing"
+        },
+        "strike-melee->Fist": {
+          "name": "Puño"
+        },
+        "action->Sneak Attack": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Krell does an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} targets.</p>"
+        },
+        "action->Distracting Halfling": {
+          "name": "Distrayendo a Halfling",
+          "description": "<p><strong>Requisitos</strong> Krell ha tomado 2 acciones</p>\n<hr /> <p><strong>Efecto</strong> Krell se mueve bajo los pies y detrás de un enemigo para dejarlo abierto a un ataque de un aliado. Intenta [[/act tumble-through]] el espacio de una sola criatura. Si tiene éxito, esa criatura es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} al siguiente ataque que se haga contra ella antes del siguiente turno de Krell.</p>"
+        }
+      },
+      "blurb": "Ladrón de halfling masculino"
+    },
+    "Labella": {
+      "items": {
+        "equipment->Ragged Clothing": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ilbLQNy6TbBPW7sQ]\nRagged Clothing"
+        },
+        "strike-melee->Fist": {
+          "name": "Puño"
+        },
+        "lore->Absalom Lore": {
+          "name": "Absalón Lore"
+        },
+        "lore->Theater Lore": {
+          "name": "Saber (Teatro)"
+        }
+      },
+      "blurb": "Acróbata humano femenino"
+    },
+    "Lord Pandelay": {
+      "languages": "alghollthu",
+      "tokenName": "PNJ",
+      "items": {
+        "weapon->Twinslayer": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\nTwinslayer"
+        },
+        "armor->Ebon Regalia": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Gq1cZWSKOtJhKd2p]\nEbon Regalia"
+        },
+        "action->Nauseating Glyphs": {
+          "name": "Glifos nauseabundos"
+        },
+        "action->Activate Glyph": {
+          "name": "Activar el glifo",
+          "description": "<p>Lord Pandelay centra su atención en Twinslayer, haciendo que uno de los glifos de la hoja brille y le otorgue a la espada uno de los tres efectos diferentes, elegidos desde abajo.</p>\n<ul>\n<li>\n<p><strong>Glifo de enervación</strong> (vacío) Gemelosassassin brilla con una energía negra hirviendo, y luego Pandelay dispara un rayo de oscuridad desde la hoja, apuntando a una criatura dentro de 30 pies e infligiendo @Damage[4d6[void]] daño ( @Check[fortitude|dc:24|basic] guardar)</p>\n</li>\n<li>\n<p><strong>Glifo pálido</strong> (mental) El Asesino de gemelos brilla con un pálido brillo blanco que inflige un dolor abrumador. Esta activación dura 1 minuto o hasta que Pandelay vuelva a activar el glifo. Cuando una criatura recibe daño de un Golpe de Gemelos, debe intentar un salvación @Check[fortitude|dc:24] con los siguientes efectos.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no se ve afectada y es temporalmente inmune al glifo pálido durante 24 horas.</p>\n<p><strong>Éxito</strong> La criatura no se ve afectada.</p>\n<p><strong>Fallo</strong> La criatura se convierte en @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} por el dolor hasta el final del siguiente turno de Pandelay.</p>\n<p><strong>Fallo crítico</strong> Como fracaso, pero la criatura también cae @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} por el dolor.</p>\n</li>\n<li>\n<p><strong>Glifo de Golpe Gemelo</strong> El Asesino de gemelos brilla con una luz roja durante 1 minuto o hasta que Pandelay vuelva a activar el glifo. Durante este tiempo, una criatura que recibe daño de un golpe de Twinslayer se marca, la herida brilla con un parpadeo de radiación roja hasta el final del turno de Pandelay.</p>\n<p>Si Pandelay daña a una criatura diferente con un Golpe de Asesino de Gemelos mientras una víctima anterior ha sido marcada antes en ese mismo turno, la nueva criatura golpeada se marca, y el objetivo anterior pierde la marca. Si ese objetivo está a menos de 30 pies de Pandelay cuando pierde su marca, recibe @Damage[1d6[persistent,bleed]] de daño mientras la sangre se derrama de la herida marcada anteriormente.</p>\n</li>\n</ul>"
+        }
+      },
+      "blurb": "Altivo Azlanti nobleman"
+    },
+    "Mullun": {
+      "items": {
+        "strike-melee->Greatclub": {
+          "name": "Gran clava"
+        },
+        "equipment->Tripartite Key Amulet": {
+          "name": "Amuleto de llave tripartita"
+        },
+        "action->Recognizable Stench": {
+          "name": "Hedor reconocible",
+          "description": "<p>10 pies. Mientras que el olor de Mullun no es normalmente abrumador, la mezcla de sudor de ogro, suciedad y sangre que lo rodea es suficiente para desencadenar un trauma persistente en las mentes de cualquier ex cautivo del Clan Orthux (incluyendo a los PJ y sus aliados PNJ). Un PJ que termina su turno en el aura debe tener éxito en un salvado @Check[will|dc:18].</p>\n<hr /> <p><strong>Éxito crítico</strong> El personaje no se ve afectado e inmune al aura.</p>\n<p><strong>Éxito</strong> El personaje no se ve afectado.</p>\n<p><strong>Fallo</strong> El personaje se convierte en @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>\n<p><strong>Fallo crítico</strong> El personaje se convierte en @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2}.</p>"
+        },
+        "action->Spooked": {
+          "description": "<p>Durante el encuentro, Mullun tiene la condición @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}, pero a diferencia de los guardias Orthux, su condición de miedo se reduce normalmente una vez que comienza el combate; sus estadísticas no se han ajustado para tener en cuenta esta condición.</p>"
+        },
+        "action->Flea Infested": {
+          "name": "Infestado de pulgas",
+          "description": "<p>Un personaje que golpea a Mullun con éxito con un arma desarmada o un arma ligera, o que es Agarrado o Empujado por Mullun, debe tener éxito en un @Check[fortitude|dc:14] o quedar infestado de pulgas.</p>\n<hr /> <p><strong>Pulgas</strong> (enfermedad)</p>\n<p><strong>Tirada de salvación</strong> @Check[fortitude|dc:14]</p>\n<p><strong>Etapa 1</strong> infestada pero sin efectos obvios ( 1 hora)</p>\n<p><strong>Etapa 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} ( 1 hora)</p>\n<p><strong>Etapa 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2} y no puede reducir su valor de enfermo por debajo de 1 ( 1 día)</p>"
+        }
+      },
+      "publicNotes": "<p>Para muchas sociedades, los ogros encarnan la violencia brutal, amoral y crueldad codiciosa. De pie 10 pies de altura y densamente musculosos, los ogros son generalmente tan fuertes como son feroces. Los peores ogros son sádicos, disfrutando del asesinato sin piedad, tortura y violencia en todas sus formas. Aunque prefieren desahogar sus impulsos violentos en otros humanoides, cuanto más pequeños mejor, el cautiverio de los ogros puede terminar en un destino horrible para cualquiera que tenga la mala suerte de caer en sus garras carnosas: convertirse en cena. Pero a pesar de toda su creatividad para infligir dolor, los ogros a menudo olvidan que sus juguetes carecen de su propia fortaleza robusta y alta tolerancia al dolor, y muchos de sus cautivos mueren antes de lo que los ogros podrían preferir. Mientras tanto, aquellos que logran sobrevivir al cautiverio en la despensa de un ogro a menudo salen con cicatrices mentales duraderas. Un cautivo capaz de mantener su ingenio sobre ellos, sin embargo, a veces puede engañar a los brutos prometiendo tesoros, fuentes de alimento más abundantes, u otras diversiones crudas, aprovechando el intelecto a menudo limitado de un ogro para diseñar oportunidades para escapar o ganar venganza.</p>\n<p>Los ogros son criaturas sociales solo en el sentido más degradado. Se reúnen en grupos llamados familias, aunque los miembros no siempre están relacionados por sangre. El ogro más poderoso en cualquier familia es el \"jefe\", generalmente el patriarca o matriarca de la familia, a quien los otros ogros de la familia aprenden a obedecer rápidamente o arriesgarse a ser brutalizados por el pariente leal del jefe. Los ogros se esconden en cuevas, ruinas desmoronadas o chozas en ruinas lo suficientemente cerca de asentamientos humanoides o senderos de animales como para que sea fácil atacarlos. Sus guaridas son sucias y frecuentemente contienen evidencia reconocible de su depravación, junto con tesoros robados de los cautivos pasados.</p>"
+    },
+    "Orthux Guard": {
+      "saveDetails": "+2 estado a todas las salvaciones vs. magia",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Conjuros ocultistas innatos"
+        },
+        "armor->Chain Shirt": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
+        },
+        "strike-melee->Light Mace": {
+          "name": "Maza ligera"
+        },
+        "strike-ranged->Crossbow": {
+          "name": "Ballesta"
+        },
+        "strike-melee->Dagger": {
+          "name": "Daga"
+        },
+        "strike-ranged->Dagger": {
+          "name": "Daga"
+        },
+        "action->+2 Status to All Saves vs. Magic": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Magic"
+        }
+      },
+      "name": "Guardia de Orthux",
+      "blurb": "Variant clusters",
+      "publicNotes": "<p>En lo más profundo de la superficie, los enanos oscuros conocidos como hryngars trabajan con obstinación, reclamando los hogares subterráneos ancestrales de otros enanos como propios. Hace mucho tiempo, los líderes hryngar se negaron a aventurarse a la superficie junto con sus \"primos\", abandonando la búsqueda del cielo. Una deidad enana exiliada llamada Droskar ofreció a los hryngars la salvación de los horrores que los asediaban en las Tierras Oscuras, ofreciéndoles poder, astucia y conocimiento a cambio de su interminable servidumbre. Muchos hryngar creen que trabajando más duro que sus hermanos, pueden construir una sociedad mucho más grande que cualquier cosa bajo el sol, reclamando riquezas infinitas de las venas metálicas del planeta en días de trabajo incesante.</p>\n<p>Gracias a las bendiciones de Droskar y a su propia ética de trabajo, los reinos hryngar ahora gobiernan una parte significativa de la región de NarVoth de las Tierras Oscuras superiores, y es común ver caravanas hryngar moviéndose por los túneles, atraídas por grupos de escarabajos inmensos. El liderazgo de los Hryngar suele estar formado por poderosos sirvientes divinos de Droskar, junto con temibles guerreros implacables cuya destreza marcial, respaldada por la magia oculta innata, les asegura que pueden superar cualquier amenaza directa al dominio de los Hryngar. Casi todos los aspectos de la sociedad hryngar están controlados por una estricta jerarquía de liderazgo, con jefes de tareas dirigiendo a subordinados de todos los ámbitos de la vida.</p>"
+    },
+    "Provarion": {
+      "crew": "1 piloto, 8 tripulantes",
+      "pilotingCheck": "Conocimiento de la navegación (CD 26), Diplomacia (CD 28) o Intimidación (CD 28)",
+      "speed": "nadar 40 pies (viento)",
+      "items": {
+        "action->Sluggish": {
+          "name": "Lento",
+          "description": "<p> Este vehículo debe moverse el doble de su longitud por cada giro de 90 grados que realiza. </p>"
+        },
+        "action->Activate—Into the Great Beyond": {
+          "name": "Activar: hacia el Gran Más Allá",
+          "description": "<p>10 minutos</p>\n<p><strong>Requisitos</strong> El Provarion está equipado con <em> velas de éter </em> y un <em> timón cúbico </em>, y se ha utilizado el Curso de Plot para prepararse para el viaje</p>\n<p><strong>Frecuencia</strong> una vez al día</p>\n<hr /> <p><strong>Efecto</strong> Al concentrarse en el timón cúbico y pasar 10 minutos ajustando y girando el artefacto en el castillo trasero de la nave, el <em> Provarion </em> lanza teletransporte interplanar según tus especificaciones, transportándolo y a cada criatura a bordo a un destino planar en el plano hacia el que se dirigen las velas de éter. Esto incluye cualquier cosa enorme o más pequeña que se adhiera a los lados del barco, o cualquier criatura ubicada en el aire entre el aparejo del barco o ubicada por encima de la cubierta pero por debajo de su mástil más alto. Si la nave no está volando en ese momento, aparece en el cuerpo de líquido más cercano capaz de sostenerla dentro de 1d20 × 25 millas de su destino, o si no hay tal cuerpo de líquido disponible, se queda varado en el suelo. Las velas de éter de la nave funcionan como la <em> clave planar </em> para el plano de destino.</p>"
+        },
+        "action->Activate—Plot Course": {
+          "name": "Activar—Curso de trama",
+          "description": "<p>10 minutos</p>\n<p><strong>Requisitos</strong> El Provarion está equipado con velas de éter</p>\n<hr /> <p><strong>Efecto</strong> Pasas 10 minutos moviéndote entre el aparejo y las velas del barco, haciendo pequeños ajustes a su posición para que estén en la orientación precisa para permitir el paso a otro plano. Al trazar el curso, selecciona el plano al que se dirigen las velas, eligiendo entre cualquiera de los planos, con la excepción de la Dimensión del Tiempo. Para viajar a la Dimensión del Tiempo u otros planos no mencionados aquí, también debes tener una llave planar para el plano de destino, que debe ser colocada en el mástil del Provarion como parte de esta activación.</p>"
+        },
+        "action->Activate—Soar Above": {
+          "name": "Activar—Volar por encima",
+          "description": "<p><strong>Requisitos</strong> El <em> Provarion </em> está equipado con <em> velas de éter </em> y un pico de fase, y estás estacionado en el <em> timón del Provarion </em></p>\n<hr /> <p><strong>Efecto</strong> Ordenas a las <em> velas de éter </em> que se llenen de magia y levanten al <em> Provarion </em> al aire, otorgando a la nave una velocidad de vuelo mágica de 40 pies. Este efecto termina tan pronto como aterrizas en algo capaz de sostener el Provarion (líquido o de otro tipo). El Provarion continúa su velocidad y rumbo hacia adelante si no sigues dirigiendo su vuelo con Soar Above, pero cada asaltos que lo hace, su altitud disminuye en una distancia igual a la distancia que recorrió en la asaltos anterior. Si <em> Provarion </em> es ordenado a través de Soar Above para ralentizar hasta detenerse, puede permanecer flotando indefinidamente (salvo que sea arrastrado por el clima, otras naves o inmensas criaturas voladoras).</p>"
+        }
+      }
+    },
+    "Reglok": {
+      "languages": "habla verdadera",
+      "publicNotes": "<p>Entre las creaciones más sutiles de los alghollthus estaban los ugothols, también conocidos como acechadores sin rostro. Estos retorcidos seres utilizaban su capacidad de cambiar de forma para infiltrarse en asentamientos y asesinar a objetivos clave. Sembraban la discordia y reemplazaban a los líderes haciendo que las organizaciones indeseadas se hundieran desde dentro y que las personas problemáticas quedaran desacreditadas y acabaran por desaparecer.</p>\n<hr />\n<p>Hace milenios, unos monstruos acuáticos conocidos como alghollthus utilizaron sus poderes ocultos para conquistar y gobernar amplias franjas del mundo, y moldearon a sus servidores y a otras criaturas utilizando la manipulación mental y la magia físicamente transformadora. Sus gobernantes, los llamados «amos velados» influenciaron a civilizaciones enteras adoptando las formas de aquellos a quienes controlaban.</p>\n<p>En un momento dado, los alghollthus se frustraron con la impertinencia de las sociedades de la superficie y con la interferencia de los dioses. Utilizaron un increíble poder mágico para provocar un cataclismo, esperando destruir a las rebeldes sociedades a las que\nhabían manipulado. Y sin embargo calcularon mal la voluntad de sobrevivir de sus peones y con el tiempo el mundo se recuperó, esta vez libre de la influencia de los alghollthus.</p>\n<p>Hoy en día, han permanecido principalmente en los profundos reinos acuáticos donde siguen gobernando sin oposición. Pero aún no han abandonado por completo sus tramas, y la reaparición de servidores como los acechadores sin rostro sugiere que han vuelto de nuevo su odiosa mirada hacia la superficie.</p>\n\n",
+      "saveDetails": "+2 por estatus a todas las salvaciones contra auditivo y visual",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Conjuros ocultistas innatos"
+        },
+        "spell->Truespeech (Constant)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTruespeech (Constant)"
+        },
+        "strike-melee->Longsword": {
+          "name": "Espada larga"
+        },
+        "strike-melee->Claw": {
+          "name": "Garra"
+        },
+        "strike-ranged->Blowgun": {
+          "name": "Cerbatana"
+        },
+        "action->+2 Status to All Saves vs. Auditory and Visual": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Auditory and Visual"
+        },
+        "action->Assume Form": {
+          "name": "Adaptar forma",
+          "description": "<p>El ugothol invierte 10 minutos reformando su apariencia para adoptar la forma de cualquier humanoide Pequeño o Mediano. Obtiene un bonificador por +4 por circunstancia a las pruebas de Engaño llevadas a cabo para hacerse pasar por dicha criatura.</p>"
+        },
+        "action->Blood Nourishment": {
+          "name": "Alimentarse de sangre",
+          "description": "<p>El ugothol utiliza su lengua de tres púas para beber la sangre de una criatura cercana @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizada} o @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Inconsciente}, que sufre @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenada 1}.</p>"
+        },
+        "action->Compression": {
+          "name": "Compresión",
+          "description": "<p>Cuando el ugothol con éxito @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeezes}, se mueve a través del espacio estrecho a toda velocidad. Los confines estrechos no son terreno difícil para un ugothol.</p>"
+        },
+        "action->Revert Form": {
+          "name": "Revertir forma",
+          "description": "<p><strong>Requisitos</strong> El ugothol está en una forma adoptada</p>\n<hr />\n<p><strong>Efecto</strong> El ugothol recupera su verdadera forma. Hasta el inicio de su siguiente turno, obtiene un bonificador +2 por estatus a las tiradas de ataque, las de daño, las de salvación y las pruebas de habilidad.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.SA5f54t1dVah5fJm]{Efecto: Revertir forma}</p>"
+        },
+        "action->Sneak Attack": {
+          "name": "Ataque furtivo",
+          "description": "<p>El ugothol inflige 1d6 daño de precisión adicional a las criaturas @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenidas}.</p>"
+        }
+      },
+      "blurb": "Variante masculina ugothol"
+    },
+    "Reglok's Mount": {
+      "publicNotes": "<p>Los dientes de una víbora gigante son una visión intimidante, con tubos de inyección largos como dagas. Tal es la cantidad de veneno inyectada por una víbora gigante, que puede provocar severos coágulos y dejar a la víctima absolutamente drenada de vitalidad.</p>\n<hr />\n<p>Hay muchos tipos de serpientes, desde constrictoras que habitan en la selva y se enroscan alrededor de sus presas hasta víboras venenosas cuya mordedura es letal. Aun así, todas las serpientes consumen a sus presas enteras a base de desencajar su mandíbula\ny usar sus poderosos músculos para mover la comida cuello abajo hasta su estómago.</p>",
+      "items": {
+        "strike-melee->Fangs": {
+          "name": "colmillos"
+        },
+        "action->Coiled Strike (Special)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O]\nCoiled Strike (Special)",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O]\n<p>As Reactive Strike, but the snake can use this reaction only if it's Coiled.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ReactiveStrike]</p>"
+        },
+        "action->Coil": {
+          "name": "Bobina",
+          "description": "<p>La víbora gigante usa una acción para enrollarse. Mientras está enrollado, el alcance de sus colmillos es de 10 pies y tiene la reacción de Golpe Reactivo. Después de que la víbora gigante golpea con sus colmillos, se desenrolla.</p>"
+        },
+        "action->Giant Viper Venom": {
+          "name": "Veneno de víbora gigante",
+          "description": "<p><strong>Tirada de salvación</strong> @Check[fortitude|dc:17]</p>\n<hr /> <p><strong>Duración máxima</strong> 6 asaltos</p>\n<p><strong>Etapa 1</strong> @Damage[1d6[poison]] daño ( 1 asalto)</p>\n<p><strong>Etapa 2</strong> @Damage[1d6[poison]] daño y @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}</p>"
+        }
+      },
+      "name": "El Monte de Reglok"
+    },
+    "Releasing Laibuson": {
+      "stealth": "<p>(experto)</p>",
+      "name": "Liberando a Laibuson",
+      "description": "<p>Cinco coloridas gemas rodean la barrera de cristal que separa a los PJ del quartermaster. La manipulación cuidadosa de las gemas, que se pueden girar como perillas, podría sobrecargar una o más de ellas.</p>",
+      "disable": "<p>Pulsa @Check[arcana|dc:27] o @Check[occultism|dc:27] o @Check[thievery|dc:30] en el círculo de gemas para desactivar una gema, extinguiendo su resplandor. Un éxito crítico en el prueba desactiva dos gemas, mientras que un fracaso desencadena la trampa y un fracaso crítico no solo desencadena la trampa sino que restablece una gema previamente desactivada. Cuando las cinco gemas son desactivadas o destruidas, la trampa se vuelve inerte, liberando a Laibuson.</p>",
+      "reset": "<p>La trampa se desactiva si una asaltos pasa sin ningún intento de deshabilitar o dañar las gemas, luego se restablece y puede reactivarse de nuevo inmediatamente.</p>",
+      "routine": "<p>(1 acción; arcano, mental) En su turno, la trampa continúa antagonizando a Laibuson y a un PJ determinado al azar, infligiendo @Damage[4d8[mental]] daño ( @Check[will|dc:25|basic] salvación) a cada uno. En caso de un fallo crítico, la criatura también se convierte en @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} por el resto de esta visión.</p>",
+      "items": {
+        "action->Customer Feedback": {
+          "name": "Comentarios de clientes",
+          "description": "<p><strong>Desencadenante</strong> Una criatura daña cualquiera de las gemas o falla un prueba al intentar Inhabilitar una</p>\n<hr /> <p><strong>Efecto</strong> Un colorido arco de energía salta desde las gemas brillantes para rodear a Laibuson y a la criatura que lo desencadenó, infligiendo @Damage[4d8[mental]] de daño ( @Check[will|dc:25|basic] de salvación) a cada uno. La trampa entonces lanza la iniciativa.</p>"
+        }
+      }
+    },
+    "Sanctum Knight": {
+      "items": {
+        "strike-melee->Longsword": {
+          "name": "Espada larga"
+        },
+        "action->Proof of Undeath": {
+          "name": "Prueba de no-muerte",
+          "description": "<p>Un caballero del santuario se cree un inmortal viviente, pero si se le ofrece una prueba de que es un no muerto, debe tener éxito en un @Check[will|dc:20] o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} (o @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3} en un fallo crítico). En un éxito crítico, son temporalmente inmunes a este miedo durante 24 horas. Una vez que se recuperan de estar asustados, sus recuerdos de la prueba ofrecida se desvanecen y una vez más se consideran inmortales vivientes. La prueba de no-muerte incluye cuando reciben daño de vitalidad, cuando restauran PG como resultado de daño de vacío, o cuando un personaje dentro de 30 pies presenta evidencia o un argumento como una actividad de acción 2 con el rasgo lingüístico y tiene éxito en un @Check[deception|dc:17], @Check[diplomacy|dc:17], o @Check[intimidation|dc:17] prueba.</p>"
+        },
+        "action->Aeon Blast": {
+          "name": "Explosión de Aeon",
+          "description": "<p>El caballero del santuario elige una de las estrellas del eón, luego la dispara desde su órbita para detonar en una explosión de radio 20 pies en cualquier punto dentro de 120 pies, infligiendo @Damage[2d6[untyped]] de daño a las criaturas en el área (salvación básica @Check[reflex|dc:18]). El tipo de daño depende del color de la estrella de eón.</p>\n<p><strong>Estrella de Aeón Negro</strong> daño de vacío</p>\n<p><strong>Estrella de oro del eón</strong> daño de electricidad</p>\n<p><strong>Estrella verde del eón</strong> daño ácido</p>\n<p><strong>Estrella Blanca del Eón</strong> daño espiritual</p>"
+        },
+        "action->Aeon Stars": {
+          "name": "Estrellas de Aeon",
+          "description": "<p>Un caballero del santuario tiene cuatro diminutas manchas de luz que orbitan constantemente su cabeza. Estas cuatro estrellas de eón son negras, doradas, verdes y blancas, y cada una proporciona una iluminación equivalente a la de una vela encendida. Un caballero del santuario puede gastar una estrella de eón para hacer una explosión de eón (ver arriba), pero una vez que un caballero del santuario ha usado todas sus estrellas de eón, se convierten en @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1}. Una estrella de eón gastada vuelve a su órbita alrededor de la cabeza del caballero del santuario automáticamente después de 1 hora.</p>"
+        },
+        "action->Muddle Mind": {
+          "description": "<p>La primera vez que una criatura recibe daño de un arma de cristal de trono empuñada por un caballero del santuario, debe intentar un salvación @Check[will|dc:18] para evitar convertirse en @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} durante 1 minuto (o quedar anonadado 1 durante 24 horas en un fallo crítico). Independientemente del resultado de su salvación, la criatura es temporalmente inmune a confundir la mente durante 1 asalto.</p>"
+        }
+      },
+      "name": "Caballero del santuario"
+    },
+    "Shevala Iorae": {
+      "items": {
+        "spellcastingEntry->Arcane Spontaneous Spells": {
+          "name": "Conjuros arcanos espontáneos"
+        },
+        "equipment->Ragged Clothing": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ilbLQNy6TbBPW7sQ]\nRagged Clothing"
+        },
+        "strike-melee->Fist": {
+          "name": "Puño"
+        },
+        "action->Sorcerer Bloodline Spells": {
+          "name": "Conjuros de linaje de hechicero",
+          "description": "<p>Mientras el linaje de Shevala permanezca drenado, no podrá usar ninguno de sus conjuros de linaje.</p>"
+        },
+        "lore->Absalom Lore": {
+          "name": "Absalón Lore"
+        },
+        "lore->Academia Lore": {
+          "name": "Saber (académico)"
+        },
+        "lore->Pathfinder Society Lore": {
+          "name": "Historia de la Sociedad Pathfinder"
+        },
+        "action->Drained Bloodline": {
+          "name": "Línea de sangre drenada",
+          "description": "<p>Shevala está @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 7} cuando los PJ la rescatan por primera vez. Además, los horribles experimentos que el torturador anadi Shulgurk realizó en ella en su intento de extraer la magia de su linaje han limitado sus conjuros: su CD es 7 más bajo que lo normal, y actualmente solo puede lanzar conjuros y trucos de rango 1.º, y no tiene acceso a sus conjuros de linaje imperial.</p>"
+        },
+        "action->Identification Knack": {
+          "name": "Knack de identificación",
+          "description": "<p>Shevala ha estudiado durante mucho tiempo los objetos mágicos y sus propiedades, convirtiéndose en una leyenda local por su habilidad para descubrir cómo funcionan los objetos mágicos oscuros. Cuando usa la actividad Identificar magia para examinar un objeto mágico, solo necesita 1 minuto para realizar la actividad, y gana un bonificador por circunstancia +2 en el prueba.</p>"
+        }
+      },
+      "blurb": "Hechicero humano femenino"
+    },
+    "Shevala Iorae (Recovered)": {
+      "items": {
+        "spellcastingEntry->Arcane Spontaneous Spells": {
+          "name": "Conjuros arcanos espontáneos"
+        },
+        "spellcastingEntry->Sorcerer Bloodline Spells": {
+          "name": "Conjuros de linaje de hechicero"
+        },
+        "consumable->Scroll of Create Food (Rank 2)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\nScroll of Create Food (Rank 2)",
+          "consumableSpellName": "crear comida",
+          "consumableSpellDescription": "<p> Creas suficiente comida para alimentar a seis criaturas medianas durante un día. Esta comida es insípida y poco atractiva, pero es nutritiva. Después de 1 día, si nadie ha comido la comida, se descompone y se vuelve no comestible. La mayoría de las criaturas Pequeñas comen un cuarto de lo que come una criatura Mediana (un dieciseisavo para la mayoría de las criaturas Diminutas), y la mayoría de las criaturas Grandes comen 10 veces más (100 veces más para las criaturas Enormes, etc.). </p>\n <hr />\n <p> <strong> Intensificado (4to) </strong>Puedes alimentar a 12 criaturas medianas. </p>\n <p> <strong> Aumentado (6º) </strong> Puedes alimentar a 50 criaturas medianas. </p>\n <p> <strong> Aumentado (8º) </strong> Puedes alimentar a 200 criaturas medianas. </p>",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.Mt6ZzkVX8Q4xigFq]{Create Food}</p>\n<hr />\n<p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+        },
+        "consumable->Scroll of Marvelous Mount (Rank 2)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\nScroll of Marvelous Mount (Rank 2)",
+          "consumableSpellName": "Montura maravillosa",
+          "consumableSpellDescription": "<p>Conjuras una criatura fantástica de tamaño Grande para que sirva de montura al objetivo. La montura es el esbirro del objetivo, tiene una Velocidad de 40 pies (12 m) y podrá llevar a lomos al objetivo con cualquier posesión que éste lleve encima. No puede llevar a ninguna otra criatura. La montura usa la CA y las salvaciones del objetivo, pero resulta destruida si sufre más de 10 daño en un momento dado, acabando el conjuro.</p> \n<hr /> \n<p><strong>Potenciado (3.º)</strong> La montura puede caminar sobre las aguas, pero tiene \nque acabar su turno en terreno sólido o se hunde. </p> \n<p><strong>Potenciado (4.º)</strong> La montura tiene una Velocidad de 60 pies (18 m) y puede caminar sobre las aguas. </p> \n<p><strong>Potenciado (5.º)</strong> La montura tiene una Velocidad de 60 pies (18 m) y puede caminar sobre las aguas. También tiene una Velocidad de vuelo de 60 pies (18 m), pero debe acabar su turno sobre una superficie o caer. </p> \n<p><strong>Potenciado (6.º)</strong> La montura tiene una Velocidad terrestre y de vuelo de 80 pies (24 m). </p> ",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.WPKJOhEihhcIm2uQ]{Marvelous Mount}</p>\n<hr />\n<p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>",
+          "consumableSpellTarget": "Una criatura única"
+        },
+        "consumable->Wand of Dream Message (Rank 3)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.wrDmWkGxmwzYtfiA]\nWand of Dream Message (Rank 3)",
+          "consumableSpellName": "Mensaje onírico",
+          "consumableSpellTarget": "1 criatura cuyo nombre conoces y con la que te has reunido en persona",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.wrDmWkGxmwzYtfiA]\n<p>@UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Dream Message}</p>\n<hr />\n<p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of the spell at the listed rank.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>",
+          "consumableSpellDescription": "<p>Envías un mensaje al sueño de tu objetivo. El mensaje es unidireccional, hasta 1 minuto de conversación (aproximadamente 150 palabras). Si el objetivo está dormido, recibe el mensaje al instante. Si no, lo reciben la próxima vez que duermen. Tan pronto como lo reciben, el conjuro termina, y sabes que el mensaje fue enviado.</p>\n<hr /> <p><strong>Elevado ( 4.º )</strong> Puedes apuntar hasta 10 criaturas que conoces por su nombre y que has conocido en persona. Debes enviar el mismo mensaje a todas ellas; el conjuro termina para cada criatura individualmente</p>"
+        },
+        "strike-melee->Fist": {
+          "name": "Puño"
+        },
+        "strike-melee->Sickle": {
+          "name": "Hoz"
+        },
+        "action->Blood Magic": {
+          "name": "Magia de sangre",
+          "description": "<p>Cuando Shevala lanza detecte magia, disipe magia, force barrage, apresure, transloque, o lance un conjuro de linaje usando un Punto de Enfoque, gana su opción de un +1 bonificador por estatus a CA o un +1 bonificador por estatus a tiradas de salvación.</p>"
+        },
+        "action->Reach Spell": {
+          "name": "Alcanzar hechizo",
+          "description": "<p>Si la siguiente acción de Shevala es lanzar un conjuro que tenga un alcance, aumenta el alcance de ese conjuro en 30 pies.</p>"
+        },
+        "action->Signature Spells": {
+          "name": "Conjuros de signatura",
+          "description": "<p>Shevala puede aumentar libremente los siguientes conjuros en lugar de tener que aprender versiones de rango más alto de ellos por separado: respirar fuego, disipar magia, bola de fuego y muro de fuego.</p>"
+        },
+        "action->Steady Spellcasting": {
+          "name": "Lanzador de conjuros seguro",
+          "description": "<p>Si una reacción interrumpe la acción de lanzamiento de conjuros de Shevala, ella intenta un @Check[flat|dc:15]. Si tiene éxito, la acción no se interrumpe.</p>"
+        },
+        "lore->Absalom Lore": {
+          "name": "Absalón Lore"
+        },
+        "lore->Academia Lore": {
+          "name": "Saber (académico)"
+        },
+        "lore->Pathfinder Society Lore": {
+          "name": "Historia de la Sociedad Pathfinder"
+        },
+        "action->Identification Knack": {
+          "name": "Knack de identificación",
+          "description": "<p>Shevala ha estudiado durante mucho tiempo los objetos mágicos y sus propiedades, convirtiéndose en una leyenda local por su habilidad para descubrir cómo funcionan los objetos mágicos oscuros. Cuando usa la actividad Identificar magia para examinar un objeto mágico, solo necesita 1 minuto para realizar la actividad, y gana un bonificador por circunstancia +2 en el prueba.</p>"
+        }
+      },
+      "blurb": "Hechicero humano femenino",
+      "name": "Shevala Iorae (recobrada)"
+    },
+    "Shulgurk": {
+      "tokenName": "PNJ",
+      "items": {
+        "action->Web Sense": {
+          "name": "Sentido de la telaraña",
+          "description": "<p>Shulgurk tiene un temblor impreciso para detectar las vibraciones de las criaturas que tocan cualquier telaraña en las áreas <strong>A12-A15</strong>.</p>"
+        },
+        "action->Anadi Venom": {
+          "name": "Veneno Anadi",
+          "description": "<p><strong>Tirada de salvación</strong> @Check[fortitude|dc:17]</p>\n<p><strong>Duración máxima</strong> 4 asaltos</p>\n<p><strong>Etapa 1</strong> @Damage[1d6[poison]] daño y @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} ( 1 asalto)</p>\n<p><strong>Etapa 2</strong> @Damage[1d6[poison]] daño, desprotegido, y @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} ( 1 asalto)</p>"
+        },
+        "action->Change Shape": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>Shulgurk changes into his hybrid form, spider form, or human form. The above statistics assume he's in his hybrid form. While in human form, he can't use his fangs attack and loses his climb speed. While in spider form, he can't use weapons.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+        },
+        "strike-melee->Infernal Machine Hose": {
+          "name": "Manguera de máquina infernal"
+        },
+        "action->Spider-speak": {
+          "name": "Araña-hablar",
+          "description": "<p>Shulgurk puede hablar con arañas, con los mismos efectos y limitaciones que hablar con animales.</p>"
+        },
+        "action->Attach Sanguine Hose": {
+          "name": "Conectar la manguera de Sanguine",
+          "description": "<p>Shulgurk intenta insertar un esfínter dentado en el extremo de una manguera de cuero unida a su máquina infernal en la carne de una criatura viva que también está dentro de 10 pies de la máquina infernal. El torturador hace un Golpe de manguera de máquina infernal contra la criatura @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado}, con un golpe que conecta con éxito la manguera a la criatura, que es después @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} y susceptible a Exsanguinate Subject hasta que la manguera se desprenda.</p>\n<p>Para retirar de forma segura una manguera sanguínea de un sujeto vivo se requiere pasar una acción para intentar un prueba @Check[crafting|dc:16] o @Check[medicine|dc:16], o un prueba @Check[athletics|dc:20] (estos CD aumentan por 4 (@Check[crafting|dc:20], @Check[medicine|dc:20], @Check[athletics|dc:24] ) si el Golpe para conectar la manguera fue un golpe crítico), con los siguientes resultados.</p>\n<hr /> <p><strong>Éxito crítico</strong> La manguera se desprende sin daño adicional al sujeto.</p>\n<p><strong>Éxito</strong> La manguera se separa del sujeto de forma bastante limpia, pero el esfínter dentado en su extremo consigue tomar un trozo de carne como recuerdo, infligiendo @Damage[1d4[piercing]] daño al sujeto.</p>\n<p><strong>Fallo</strong> La manguera se separa de la piel con un repugnante \"plop\" y un chorro de sangre fresca. El sujeto recibe @Damage[1d4[piercing],1d6[persistent,bleed]] de daño</p>\n<p><strong>Fallo crítico</strong> Como fracaso, pero el sujeto también se convierte en @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}.</p>"
+        },
+        "action->Fire Cone": {
+          "name": "Cono de fuego"
+        },
+        "action->Spin Silk": {
+          "description": "<p>Al pasar varios minutos, Shulgurk puede producir seda para fabricar objetos hechos de cintas o tela. Puede producir suficiente seda en un día para elaborar una sola prenda.</p>"
+        }
+      },
+      "skillSpecialCrafting": {
+        "0": {
+          "label": "Para fabricar trampas y lazos"
+        }
+      },
+      "senses": "web sense (impreciso)"
+    },
+    "Thorgrim": {
+      "senses": "visión en la oscuridad",
+      "items": {
+        "equipment->Filthy Clothing": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ilbLQNy6TbBPW7sQ]\nFilthy Clothing"
+        },
+        "strike-melee->Fist": {
+          "name": "Puño"
+        },
+        "action->Sneak Attack": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Thorgrim deals an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} foes.</p>"
+        },
+        "action->You're Next": {
+          "name": "Ahora te toca a ti",
+          "description": "<p><strong>Desencadenante</strong> Thorgrim reduce a un enemigo a 0 Puntos de Golpe</p>\n<hr /> <p><strong>Efecto</strong> Thorgrim intenta [[/act demoralize]] una criatura dentro de 60 pies, con un bonificador por circunstancia de +2.</p>"
+        },
+        "action->Bravado in Numbers": {
+          "name": "Bravado en números",
+          "description": "<p>Mientras Thorgrim esté adyacente a un aliado, gana un bonificador por circunstancia +1 a todos los salvamentos de Will.</p>"
+        },
+        "lore->Razmir Lore": {
+          "name": "Razmir Saber"
+        }
+      },
+      "blurb": "Espía enano masculino"
+    },
+    "Tripartite Lock": {
+      "stealth": "<p>(experto)</p>",
+      "name": "Cerradura de triple",
+      "description": "<p>Tres engranajes masivos destacan entre una caótica serie de engranajes más pequeños que componen virtualmente toda la superficie de un conjunto de enormes puertas dobles. Las pequeñas ranuras en el centro de cada uno de los enormes engranajes coinciden perfectamente con los dientes que emergen de la reversa de uno de los amuletos de llaves tripartitas del clan.</p>",
+      "disable": "<p>@Check[thievery|dc:26] (experto) para bloquear los engranajes en su lugar, evitando que la trampa use Engranajes Gritantes (y simultáneamente bloqueando la puerta cerrada); un éxito crítico desbloquea las puertas sin la llave tripartita</p>",
+      "reset": "<p>La trampa deja de emitir su grito al final de la asaltos y se reinicia inmediatamente.</p>",
+      "items": {
+        "action->Screaming Gears": {
+          "description": "<p><strong>Desencadenante</strong> Una criatura intenta manipular cualquiera de los engranajes de la puerta, excepto para girar simultáneamente tres amuletos de llave tripartita en sentido contrario a las agujas del reloj desde las depresiones en el centro de los tres engranajes masivos de la trampa, o cualquier intento de [[/act force-open]] o dañar las puertas mismas.</p>\n<hr /> <p><strong>Efecto</strong> Todos los engranajes de las puertas muelen y giran en un patrón diseñado para emitir una cacofonía de metal torcido y mecanismos gritando que dividen los oídos. Cualquier criatura dentro de 40 pies de la puerta debe intentar un @Check[fortitude|dc:26] salvación.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido} para 1 asalto.</p>\n<p><strong>Fallo</strong> La criatura recibe @Damage[3d6[sonic]] de daño y queda sorprendida durante 1 minuto.</p>\n<p><strong>Fallo crítico</strong> La criatura recibe @Damage[6d6[sonic]] de daño y queda sorprendida durante 1 hora.</p>"
+        }
+      }
+    },
+    "Ugothol Wretch": {
+      "publicNotes": "<p>Entre las creaciones más sutiles de los alghollthus estaban los ugothols, también conocidos como acechadores sin rostro. Estos retorcidos seres utilizaban su capacidad de cambiar de forma para infiltrarse en asentamientos y asesinar a objetivos clave. Sembraban la discordia y reemplazaban a los líderes haciendo que las organizaciones indeseadas se hundieran desde dentro y que las personas problemáticas quedaran desacreditadas y acabaran por desaparecer.</p>\n<hr />\n<p>Hace milenios, unos monstruos acuáticos conocidos como alghollthus utilizaron sus poderes ocultos para conquistar y gobernar amplias franjas del mundo, y moldearon a sus servidores y a otras criaturas utilizando la manipulación mental y la magia físicamente transformadora. Sus gobernantes, los llamados «amos velados» influenciaron a civilizaciones enteras adoptando las formas de aquellos a quienes controlaban.</p>\n<p>En un momento dado, los alghollthus se frustraron con la impertinencia de las sociedades de la superficie y con la interferencia de los dioses. Utilizaron un increíble poder mágico para provocar un cataclismo, esperando destruir a las rebeldes sociedades a las que\nhabían manipulado. Y sin embargo calcularon mal la voluntad de sobrevivir de sus peones y con el tiempo el mundo se recuperó, esta vez libre de la influencia de los alghollthus.</p>\n<p>Hoy en día, han permanecido principalmente en los profundos reinos acuáticos donde siguen gobernando sin oposición. Pero aún no han abandonado por completo sus tramas, y la reaparición de servidores como los acechadores sin rostro sugiere que han vuelto de nuevo su odiosa mirada hacia la superficie.</p>\n\n",
+      "saveDetails": "+2 por estatus a todas las salvaciones contra auditivo y visual",
+      "items": {
+        "strike-melee->Claw": {
+          "name": "Garra"
+        },
+        "action->+2 Status to All Saves vs. Auditory and Visual": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Auditory and Visual"
+        },
+        "action->Blood Nourishment": {
+          "name": "Alimentarse de sangre",
+          "description": "<p>El ugothol utiliza su lengua de tres púas para beber la sangre de una criatura cercana @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizada} o @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Inconsciente}, que sufre @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenada 1}.</p>"
+        },
+        "action->Compression": {
+          "name": "Compresión",
+          "description": "<p>Cuando el ugothol con éxito @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeezes}, se mueve a través del espacio estrecho a toda velocidad. Los confines estrechos no son terreno difícil para un ugothol.</p>"
+        },
+        "action->Sneak Attack": {
+          "name": "Ataque furtivo",
+          "description": "<p>El ugothol inflige 1d4 de daño de precisión extra a @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} criaturas.</p>"
+        }
+      },
+      "blurb": "Variante de acosador sin rostro"
+    },
+    "Vidileth": {
+      "languages": "habla verdadera",
+      "publicNotes": "<p>Los poderosos vidileths son los insidiosos amos velados de los alghollthus. Estos manipuladores tanto de la mente como del cuerpo lideran abiertamente su especie usando su capacidad de cambiar de forma para caminar entre los humanos y otras especies inteligentes y engañarlas.</p>\n<hr />\n<p>Hace milenios, unos monstruos acuáticos conocidos como alghollthus utilizaron sus poderes ocultos para conquistar y gobernar amplias franjas del mundo, y moldearon a sus servidores y a otras criaturas utilizando la manipulación mental y la magia físicamente transformadora. Sus gobernantes, los llamados «amos velados» influenciaron a civilizaciones enteras adoptando las formas de aquellos a quienes controlaban.</p>\n<p>En un momento dado, los alghollthus se frustraron con la impertinencia de las sociedades de la superficie y con la interferencia de los dioses. Utilizaron un increíble poder mágico para provocar un cataclismo, esperando destruir a las rebeldes sociedades a las que habían manipulado. Y sin embargo calcularon mal la voluntad de sobrevivir de sus peones y con el tiempo el mundo se recuperó, esta vez libre de la influencia de los alghollthus.</p>\n<p>Hoy en día, han permanecido principalmente en los profundos reinos acuáticos donde siguen gobernando sin oposición. Pero aún no han abandonado por completo sus tramas, y la reaparición de servidores como los acechadores sin rostro sugiere que han vuelto de nuevo su odiosa mirada hacia la superficie.</p>",
+      "saveDetails": "+2 estado a todas las salvaciones vs. magia",
+      "senses": "visión en la oscuridad",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Conjuros ocultistas innatos"
+        },
+        "spell->Truespeech (Constant)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTruespeech (Constant)"
+        },
+        "spell->Levitate (At Will)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.fI20AVwOzJMHXRdo]\nLevitate (At Will)"
+        },
+        "spell->Mind Reading (At Will)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.KHnhPHL4x1AQHfbC]\nMind Reading (At Will)"
+        },
+        "spell->Water Breathing (At Will)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.MZGkMsPBztFN0pUO]\nWater Breathing (At Will)"
+        },
+        "strike-melee->Claw": {
+          "name": "Garra"
+        },
+        "strike-melee->Fangs": {
+          "name": "colmillos"
+        },
+        "strike-melee->Tentacle": {
+          "name": "Tentáculo"
+        },
+        "action->Numbing Lights": {
+          "name": "Luces entumecedoras",
+          "description": "<p>30 pies (9 m)</p>\n<p>El vidileth exuda luz tenue. Las criaturas en el interior de la misma deben hacer la salvación de @Check[will|dc:21|options:area-effect,inflicts:stupefied] cada asalto, quedando @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadadas 1} con un fallo (o aumentando en 1 su valor de anonadado debido a este efecto, hasta un máximo de 4).</p>"
+        },
+        "action->+2 Status to All Saves vs. Magic": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Magic"
+        },
+        "action->Change Shape": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> A vidileth takes on the appearance of a humanoid of Large, Medium, or Small size or resumes its true form. While in humanoid form, the vidileth's Speed is 30 feet, and it loses its numbing lights aura and swim Speed. If the humanoid form assumed lacks the aquatic trait, the vidileth loses its own aquatic trait as well. In humanoid form, the vidileth can use weapons or make Strikes that work like its tentacle attack but use the reach of its current form. If the form has fangs or claws, the vidileth can also make such Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+        },
+        "action->Consume Memories": {
+          "name": "Consumir recuerdos",
+          "description": "<p>Cuando el vidileth golpea con un Golpe de colmillos, el objetivo debe tener éxito en un @Check[will|dc:24] salvación o recibir @Damage[1d6[mental]] daño. El vidileth gana Puntos de Golpe temporales iguales al daño infligido y aprende algunos de los recuerdos de la criatura (sujeto a la discreción del DJ).</p>"
+        },
+        "action->Shape Flesh": {
+          "name": "Moldear la carne"
+        },
+        "action->Tentacle Flurry": {
+          "name": "Ráfaga de tentáculos",
+          "description": "<p>El vidileth da un Golpe de tentáculos contra cada criatura a su alcance. Haz una sola tirada de ataque y una sola tirada de daño para todos los objetivos.</p>"
+        },
+        "action->Thoughtlance": {
+          "name": "Lanza mental",
+          "description": "<p>Una criatura tocada por los tentáculos del vidileth debe hacer una salvación de @Check[will|dc:24], quedando @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificada 1} con un fallo o @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificada 2} con un fallo crítico. Cada vez que la criatura afectada acaba su turno, su valor de lentificada disminuye en 1.</p>"
+        }
+      }
+    },
+    "Vision of Netherspace": {
+      "stealth": "<p>(entrenado)</p>",
+      "name": "Visión de Netherspace",
+      "description": "<p>Un trono de madera decorado con el Ojo de Aroden ofrece una visión desgarradora y muy realista a los que se sientan en él.</p>",
+      "disable": "<p>@Check[thievery|dc:22] para desfigurar las runas ocultas que activan la trampa o @Check[arcana|dc:24] o @Check[religion|dc:24] para amortiguar los efectos mágicos de la trampa. Una vez desactivada de cualquiera de estas maneras, la visión del espacio inferior todavía otorga la visión compleja, pero la criatura que la dispara ignora los efectos de un fracaso o fracaso crítico, tratando ambos como éxitos.</p>",
+      "items": {
+        "action->Impart Vision": {
+          "name": "Impart Visión",
+          "description": "<p><strong>Desencadenante</strong> Una criatura se sienta en el trono</p>\n<hr /> <p><strong>Efecto</strong> La criatura experimenta una visión breve pero compleja durante el transcurso de una asaltos que parece que le toma un poco más de tiempo. En la visión, la criatura que desencadena de repente ve monstruosas figuras sombrías que se mueven por la cubierta del barco: hombres mecánicos, manchas amorfas, gigantes reptiles, etc. Las figuras se mueven a velocidades irregulares e inconsistentes y se cruzan a veces, como si el espectador estuviera viendo una serie de imágenes grabadas tomadas a lo largo de décadas interpuestas unas sobre otras y reproducidas todas a la vez.</p>\n<p>En su mente, el cuidador escucha varias voces susurrando hablando con ellos a la vez en una docena de idiomas diferentes. Muchos suenan humanos, pero otros suenan como el giro de las manivelas, el sibilante de un enjambre de serpientes, el zumbido de los insectos, y más extraño. Cualquiera capaz de hablar incluso un solo idioma puede entender el sentido de lo que las voces están diciendo: \"Llévame a casa\", \"Libéranos de nuestra prisión\", y así sucesivamente. Una voz particularmente fuerte grita: \"Apoderarse del timón cúbico. Libera la nave. Déjate llevar y te mostraremos cómo hacerlo.\"</p>\n<p>La criatura que dispara debe intentar un salvación @Check[will|dc:21] en este momento.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura obtiene un conocimiento exacto de cómo funciona una nave etérica y sus componentes (incluyendo el timón cúbico, las velas etéricas y el pico de fase).</p>\n<p><strong>Éxito</strong> La criatura obtiene un conocimiento exacto de cómo funciona un timón cúbico. La percepción de la criatura de la visión se siente como si persistiera durante horas; emergen de la visión con un dolor de cabeza, pero sin conocimientos sobre la función de la nave o sus componentes. El PJ recibe @Damage[2d8[mental]] de daño.</p>\n<p><strong>Fallo crítico</strong> Como fracaso, pero la visión se siente como el paso de días, no horas. La criatura recibe @Damage[4d8[mental]] de daño y se convierte en @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigado}.</p>"
+        }
+      }
+    },
+    "Weary": {
+      "name": "Cansado",
+      "senses": "visión en la oscuridad",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Mandíbulas"
+        },
+        "action->Corpse": {
+          "description": "<p>Hasta la próxima vez que actúan, el cansado parece ser un cadáver inanimado. Tienen un resultado automático de 22 en prueba de engaño y DCs para pasar como un cadáver.</p>"
+        },
+        "action->Empty Yawn": {
+          "name": "Bostezo vacío",
+          "description": "<p><strong>Frecuencia</strong> una vez por hora</p>\n<hr /> <p><strong>Efecto</strong> Las mandíbulas del cansado se abren hasta un grado poco natural, dando un grito a un horrible y escalofriante gemido de agotamiento que corta en las mentes de las criaturas vivientes cercanas. Infundida en sus pensamientos está la sensación de la angustia de estar muerto, pero consciente de la lenta descomposición del cuerpo. Las criaturas vivientes dentro de @Template[type:emanation|distance:20] reciben @Damage[1d6[mental]|options:area-damage] de daño con un @Check[will|dc:16] de salvación.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura recibe la mitad de daño.</p>\n<p><strong>Fallo</strong> La criatura recibe daño completo y es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>\n<p><strong>Fallo crítico</strong> La criatura recibe daño doble y es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2}.</p>"
+        },
+        "action->Exhausting Torpor": {
+          "name": "Torpor agotador",
+          "description": "<p>Cuando una criatura viva es mordida por un cansado, el no muerto infecta la carne viva con el agotamiento de la tumba. La criatura mordida debe intentar un @Check[fortitude|dc:16] salvar o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} para 1 asalto (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} para 1 asalto en un fracaso crítico).</p>"
+        },
+        "action->Overwhelming Numbers": {
+          "name": "Números abrumadores",
+          "description": "<p>Un cansado gana un bonificador por circunstancia +2 en lanzamientos de ataque cuerpo a cuerpo contra un objetivo que ha sido golpeado anteriormente en esa asaltos por un cansado diferente.</p>"
+        }
+      },
+      "publicNotes": "<p>Aunque el método de crear a los cansados es un secreto bien guardado de los adoradores hryngar de Droskar, no hay nada que impida a otros hechiceros impíos transformar a aquellos que se han metido en una tumba temprana en estos monstruos miserables y inquietantes. Los cansados no entienden que han muerto, solo que están abrumados por un profundo y doloroso agotamiento que los llena de un odio miserable. Conforme a estar acostados en un montón de putrefacción lenta hasta que sienten el acercamiento de criaturas vivientes, cuando los cansados se tambalean en la actividad es con gritos de dolor y desesperación. Estas criaturas no muertas aparecen como cadáveres podridos que se arrastran y se arrastran a cuatro patas, cuerpos demasiado gastados para mantenerse correctamente completamente erguidos.</p>\n<p>A diferencia de los zombis, con los que a veces se confunde a los cansados, estos no muertos conservan sus mentes y recuerdos de las últimas semanas agonizantes que condujeron a su muerte. Rara vez pueden recordar más atrás que estas semanas finales y casi nunca recuerdan sus propios nombres. Mientras que son capaces de comunicarse, por lo general no tienen nada más que decir que gemir y agonizante sobre su dolor, y para pedir a aquellos que atacan para poner fin a su sufrimiento, incluso cuando hacen todo lo posible para masticar y roer la carne viva que les molesta tanto.</p>"
+    },
+    "Web Noose": {
+      "name": "Horca de telaraña",
+      "tokenName": "Peligro",
+      "items": {
+        "action->Web Noose": {
+          "name": "Horca de telaraña"
+        },
+        "strike-melee->Noose": {
+          "name": "Horca",
+          "description": "<p>El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} y se ha levantado del suelo ( [[/act escape dc=23]] ). El objetivo recibe @Damage[1d6[bludgeoning]] de daño al final de cada turno mientras esté atrapado en el lazo.</p>"
+        }
+      },
+      "description": "<p>Una longitud de correa en bucle atrapa a una criatura que camina en ella y los tira dolorosamente del suelo.</p>",
+      "disable": "<p>@Check[survival|dc:19] (entrenado) o @Check[thievery|dc:19] (experto) para reorganizar las correas</p>"
+    },
+    "Zulgara": {
+      "saveDetails": "+2 estado a todas las salvaciones vs. magia",
+      "tokenName": "PNJ",
+      "items": {
+        "spellcastingEntry->Divine Prepared Spells": {
+          "name": "Conjuros divinos preparados"
+        },
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Conjuros ocultistas innatos"
+        },
+        "spell->Blood Vendetta": {
+          "requirements": "Puedes sangrar"
+        },
+        "equipment->Religious Symbol of Droskar": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\nReligious Symbol of Droskar"
+        },
+        "backpack->Belt Pouch": [
+          {
+            "name": "Bolsa para cinturón",
+            "id": "RycMX2CwOy9dHkeP"
+          },
+          {
+            "name": "Bolsa para cinturón",
+            "id": "rMdBvaD7MBV78awJ"
+          }
+        ],
+        "strike-melee->Light Hammer": {
+          "name": "Martillo ligero"
+        },
+        "strike-ranged->Light Hammer": {
+          "name": "Martillo ligero"
+        },
+        "strike-ranged->Crossbow": {
+          "name": "Ballesta"
+        },
+        "action->+2 Status to All Saves vs. Magic": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Magic"
+        },
+        "equipment->Tripartite Key Amulet": {
+          "name": "Amuleto de llave tripartita"
+        },
+        "treasure->Incense": {
+          "name": "Incienso"
+        },
+        "action->Command Brazier": {
+          "description": "<p>Zulgara enfoca su mirada en uno de los braseros en el área <strong>A19</strong> mientras ella también está en la habitación. Si el brasero está apagado pero contiene material inflamable, se ilumina con un flash (algo que a veces usa delante de otros hryngars para asustarlos y cegarlos momentáneamente). Si el brasero está encendido, se extingue inmediatamente.</p>"
+        }
+      },
+      "blurb": "Clérigo hryngar de Droskar",
+      "publicNotes": "<p>En lo más profundo de la superficie, los enanos oscuros conocidos como hryngars trabajan con obstinación, reclamando los hogares subterráneos ancestrales de otros enanos como propios. Hace mucho tiempo, los líderes hryngar se negaron a aventurarse a la superficie junto con sus \"primos\", abandonando la búsqueda del cielo. Una deidad enana exiliada llamada Droskar ofreció a los hryngars la salvación de los horrores que los asediaban en las Tierras Oscuras, ofreciéndoles poder, astucia y conocimiento a cambio de su interminable servidumbre. Muchos hryngar creen que trabajando más duro que sus hermanos, pueden construir una sociedad mucho más grande que cualquier cosa bajo el sol, reclamando riquezas infinitas de las venas metálicas del planeta en días de trabajo incesante.</p>\n<p>Gracias a las bendiciones de Droskar y a su propia ética de trabajo, los reinos hryngar ahora gobiernan una parte significativa de la región de NarVoth de las Tierras Oscuras superiores, y es común ver caravanas hryngar moviéndose por los túneles, atraídas por grupos de escarabajos inmensos. El liderazgo de los Hryngar suele estar formado por poderosos sirvientes divinos de Droskar, junto con temibles guerreros implacables cuya destreza marcial, respaldada por la magia oculta innata, les asegura que pueden superar cualquier amenaza directa al dominio de los Hryngar. Casi todos los aspectos de la sociedad hryngar están controlados por una estricta jerarquía de liderazgo, con jefes de tareas dirigiendo a subordinados de todos los ámbitos de la vida.</p>"
+    },
+    "Garenne": {
+      "items": {
+        "strike-melee->Destiny Blade": {
+          "name": "Hoja del destino"
+        },
+        "action->Proof of Undeath": {
+          "name": "Prueba de no-muerte",
+          "description": "<p>Un caballero del santuario se cree un inmortal viviente, pero si se le ofrece una prueba de que es un no muerto, debe tener éxito en un @Check[will|dc:20] o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} (o @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3} en un fallo crítico). En un éxito crítico, son temporalmente inmunes a este miedo durante 24 horas. Una vez que se recuperan de estar asustados, sus recuerdos de la prueba ofrecida se desvanecen y una vez más se consideran inmortales vivientes. La prueba de no-muerte incluye cuando reciben daño de vitalidad, cuando restauran PG como resultado de daño de vacío, o cuando un personaje dentro de 30 pies presenta evidencia o un argumento como una actividad de acción 2 con el rasgo lingüístico y tiene éxito en un @Check[deception|dc:17], @Check[diplomacy|dc:17], o @Check[intimidation|dc:17] prueba.</p>"
+        },
+        "action->Aeon Blast": {
+          "name": "Explosión de Aeon",
+          "description": "<p>El caballero del santuario elige una de las estrellas del eón, luego la dispara desde su órbita para detonar en una explosión de radio 20 pies en cualquier punto dentro de 120 pies, infligiendo @Damage[2d6[untyped]] de daño a las criaturas en el área (salvación básica @Check[reflex|dc:21]). El tipo de daño depende del color de la estrella de eón.</p>\n<p><strong>Estrella de Aeón Negro</strong> daño de vacío</p>\n<p><strong>Estrella de oro del eón</strong> daño de electricidad</p>\n<p><strong>Estrella verde del eón</strong> daño ácido</p>\n<p><strong>Estrella Blanca del Eón</strong> daño espiritual</p>"
+        },
+        "action->Aeon Stars": {
+          "name": "Estrellas de Aeon",
+          "description": "<p>Un caballero del santuario tiene cuatro diminutas manchas de luz que orbitan constantemente su cabeza. Estas cuatro estrellas de eón son negras, doradas, verdes y blancas, y cada una proporciona una iluminación equivalente a la de una vela encendida. Un caballero del santuario puede gastar una estrella de eón para hacer una explosión de eón (ver arriba), pero una vez que un caballero del santuario ha usado todas sus estrellas de eón, se convierten en @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1}. Una estrella de eón gastada vuelve a su órbita alrededor de la cabeza del caballero del santuario automáticamente después de 1 hora.</p>"
+        },
+        "action->Muddle Mind": {
+          "description": "<p>La primera vez que una criatura recibe daño de un arma de cristal de trono empuñada por un caballero del santuario, debe intentar un salvación @Check[will|dc:21] para evitar convertirse en @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} durante 1 minuto (o quedar anonadado 1 durante 24 horas en un fallo crítico). Independientemente del resultado de su salvación, la criatura es temporalmente inmune a confundir la mente durante 1 asalto.</p>"
+        },
+        "lore->Aroden Lore": {
+          "name": "Aroden Saber"
+        }
+      },
+      "blurb": "Caballero femenino del sanctum"
+    },
+    "The Doom of Azlant": {
+      "stealth": "<p>(sin capacitación)</p>",
+      "name": "La Maldición de Azlant",
+      "description": "<p>Rocas ardientes del espacio chocan contra el techo de la sala del trono de Azlanti, arrojando a los que están debajo cascadas incesantes de fuego y cristales rotos.</p>",
+      "disable": "<p>Este es el fin de los días. La Maldición de Azlant no puede ser desactivada o evitada de ninguna manera.</p>",
+      "items": {
+        "action->Falling Star": {
+          "name": "Estrella cayendo",
+          "description": "<p><strong>Desencadenante</strong> El turno de Delharia comienza en la asaltos 6 de la batalla</p>\n<hr /> <p><strong>Efecto</strong> ¡El desastre golpea! Un meteorito en llamas explota a través del techo de la cámara en una cacofonía de vidrio roto y fuerza explosiva y golpea directamente en el punto a lo largo de la pared occidental donde Delharia y sus protectores hacen su última posición (segmento de la habitación 3 ). La explosión resultante aniquila completamente a Delharia, sus protectores y los guardias del palacio que la atacan. El pilar en esta sección contra la pared se derrumba al suelo con un enorme choque, chisporroteando con un fuerte silbido cuando las aguas dentro salpican contra la repentina conflagración. Si hay PJ en el segmento de habitación 3, también se ven afectados por la estrella cayendo, como se detalla en la rutina a continuación. La Maldición de Azlant no lanza iniciativa; su rutina se juega al final de cada asaltos siguiente, comenzando con la asaltos 7.</p>"
+        }
+      },
+      "routine": "<p>(1 acción) Al final de cada asaltos, comenzando en la asaltos 7, tira 1d8 para determinar qué sección de la sala del trono de Azlant es golpeada por otra estrella cayendo, re-rolling resultados que indican las secciones que ya han sido destruidas. La Estrella Caída destruye esa sección de la habitación, así como cualquier pilar no destruido que potencialmente contenga maestros velados. Los PNJ no-establecidos en esa sección de la habitación son asesinados instantáneamente, consumidos por llamas extraterrestres y aplastados por escombros voladores. Todos los PJ, guardias de palacio y vidileths que no están actualmente en un pilar y que están en el segmento de la habitación reciben @Damage[(2d6+4)[bludgeoning]] daño y @Damage[2d6[fire]] daño (@Check[reflex|dc:24|basic] salvado). Un fallo crítico también golpea a la criatura @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}.</p>\n<p>Las secciones destruidas de la habitación funcionan como terreno difícil, pero también plantean peligros adicionales. La primera vez que durante el turno de un personaje realice una acción con el rasgo de movimiento que tenga lugar total o parcialmente en un segmento de habitación destruido, tire [[/r 1d6]] y consulte los siguientes peligros adicionales para ver lo que ese personaje debe soportar como resultado de su movimiento.</p>\n<p><strong>1–2 Cortesano desesperado</strong> Aparentemente de la nada, uno de los sirvientes o nobles menores @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} aterrorizado salta sobre el personaje, aferrándose desesperadamente a su ropa y miembros y haciendo que el movimiento sea más difícil. El personaje puede evitar al cortesano con un salvación exitoso @Check[reflex|dc:24], de lo contrario el personaje recibe una penalizador de circunstancia de –10 pies a su Velocidad hasta que pueda [[/act escape dc=20]] de las garras del desesperado cortesano. Los vidileths ignoran este resultado, ya que ningún cortesano está lo suficientemente desesperado como para aferrarse a uno de estos monstruos.</p>\n<p><strong>3–4 Granizo de meteoritos</strong> Una ráfaga roja brillante de desechos espaciales escalofriantes golpea al personaje infligiéndole @Damage[(1d6+4)[bludgeoning]] de daño y @Damage[1d6[fire]] de daño, con efectos adicionales determinados por un @Check[reflex|dc:24] de salvación.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no recibe daño.</p>\n<p><strong>Éxito</strong> La criatura recibe la mitad de daño.</p>\n<p><strong>Fallo</strong> La criatura recibe daño completo y es golpeada @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}.</p>\n<p><strong>Fallo crítico</strong> La criatura recibe daño completo, es golpeada de espaldas y recibe @Damage[2d6[persistent,fire]] daño adicional.</p>\n<p><strong>5–6 Vidrio cortante</strong> Una hoja de cristal verde afilado cae del techo y amenaza con bifurcar a la víctima. La criatura recibe @Damage[2d6[slashing]] de daño, con efectos adicionales determinados por un @Check[reflex|dc:24] de salvación. Si el daño cortante del cristal reduce a una criatura a 0 PG, un panel de cristal corta directamente a través del cuello de la víctima, cortando su cabeza y matando al instante.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no recibe daño.</p>\n<p><strong>Éxito</strong> La criatura recibe la mitad de daño.</p>\n<p><strong>Fallo</strong> La criatura recibe daño completo y @Damage[1d6[persistent,bleed]] daño.</p>\n<p><strong>Fallo crítico</strong> La criatura recibe daño doble y @Damage[2d6[persistent,bleed]] daño.</p>"
+    },
+    "Infested Pit": {
+      "name": "Pozo infestado",
+      "description": "<p>Una gruesa lámina de tela cubre un pozo de 10 por 10 pies que mide 20 pies de profundidad, el borde superior del cual está protegido por tuberías de rociado de llama y las profundidades de las cuales están infestadas de arañas.</p>",
+      "disable": "<p>@Check[thievery|dc:17] para obstruir el flujo de la tubería y evitar que dispare llamas (un éxito crítico hace que el fuego se vuelva contra ti, haciendo que el dispositivo de bomba en el área <strong>A16</strong> explote e inflija @Damage[4d6[fire]] daño [ @Check[reflex|dc:20|basic] guardar] a Shulgurk allí).</p>",
+      "reset": "<p>Shulgurk puede llenar una jarra con fuego de alquimista especialmente formulado una vez al día.</p>",
+      "routine": "<p>(1 acción) Por iniciativa de la trampa, Shulgurk manipula su artefacto alquímico en el área <strong>A16</strong> para rociar fuego a través del pozo a nivel del suelo. Esta espuma de fuego quema rápidamente el piso de la telaraña, y cualquier criatura que esté parada en él cae en el hoyo de 20 pies de profundidad a menos que Agarre un borde con un salvación exitoso de @Check[reflex|dc:17]. Las criaturas que están en el suelo de la telaraña o en el nivel del suelo en la entrada del pozo (incluyendo aquellas que han Agarrado un borde pero aún no se han movido fuera del peligro) reciben @Damage[(1d6+3)[fire]] de daño ( @Check[reflex|dc:17|basic] salvación). Las criaturas adyacentes al pozo al norte o al sur reciben @Damage[1d6[fire]] de daño ( @Check[reflex|dc:15|basic] de salvación). Las arañas en el pozo evitan salir del pozo por miedo a las llamas. Cada vez que dispara las llamas, Shulgurk, deleitado por el caos, grita alegremente insultos a través de las tuberías a los \"desgraciados miserables\", seguro de que sus \"pequeños amigos\" en el pozo se encargarán de ellos lo suficientemente bien. \"Devorados por arañas\", cacatea, \"un final apropiado para insectos insignificantes\".</p>\n<p>Cada vez que esta trampa toma su acción para la asaltos, disminuye el suministro de fuego de alquimista en una de las jarras unidas a la máquina infernal en el área <strong>A16</strong> por un uso; después de 3 asaltos (y por lo tanto después de que uno de los tres jarras de la máquina se vacíe), Shulgurk deja de usar la trampa, y se vuelve inerte.</p>",
+      "stealth": "<p>(entrenado); darse cuenta de que el piso da cuando se pisa sugiere que un pozo debajo tiene una CD de 0</p>",
+      "items": {
+        "action->Jostle Webbing": {
+          "description": "<p><strong>Desencadenante</strong> A Una criatura pequeña o grande se mete en la correa que cubre el pozo</p>\n<hr /> <p><strong>Efecto</strong> La telaraña empujada alerta a Shulgurk de los intrusos, así como del enjambre de arañas en el pozo de abajo. La trampa y el enjambre de arañas lanzan la iniciativa.</p>"
+        }
+      }
+    },
+    "Jona's Nightmare": {
+      "name": "Pesadilla de Jona",
+      "description": "<p>Un torrente de sangre burbujea desde el suelo, junto con docenas de brazos que intentan arrastrar a las víctimas dormidas hacia el fondo de la sangrienta profundidad.</p>",
+      "disable": "<p>@Check[religion|dc:23] para utilizar tu fe para debilitar el conjuro, @Check[occultism|dc:20] o @Check[perception|dc:26] para reconocer los indicios que sugieren que todo esto es solo una pesadilla y usar técnicas de sueño lúcido para minimizar la amenaza; se requieren tres éxitos totales para desactivar el conjuro</p>",
+      "reset": "<p>El espectáculo se desactiva después de 5 asaltos. Mientras que los PJ se despiertan como se detalla arriba, hasta que la atracción se desactiva, se restablece y puede dispararse de nuevo la próxima vez que los PJ y Jona duermen.</p>",
+      "routine": "<p>( 1 acción) El fantasma intenta ahogar a los PJ en sangre. La experiencia es desgarradora y violenta, y mientras la amenaza está en la mente de los PJ, aún puede matarlos. Todos los PJ afectados reciben @Damage[3d6[mental]] de daño (@Check[will|dc:22|basic] de salvación). Un PJ que falla en este lanzamiento de salvación también se convierte en @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} durante 24 horas (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} durante 24 horas en un fallo crítico).</p>",
+      "stealth": "<p>(experto) para notar la sangre que se hincha y \"despierta\" en la pesadilla</p>",
+      "items": {
+        "action->Blood Flood": {
+          "name": "Inundación de sangre",
+          "description": "<p><strong>Desencadenante</strong> Pasa una hora desde que los PJ se duermen en la cercanía de Jona</p>\n<hr /> <p><strong>Efecto</strong> Sangre y extremidades sangrientas se elevan hasta inundar y embragar. Cada PJ debe tener éxito en un @Check[will|dc:22] de salvado o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} en un fallo crítico). El espectáculo entonces tira la iniciativa.</p>"
+        }
+      }
+    },
+    "Twisted Fountain": {
+      "name": "Fuente retorcida",
+      "description": "<p>El agua fluye de la boca de este enano tallado y tiene un sabor agudo y oxidado.</p>",
+      "disable": "<p>@Check[thievery|dc:16] (entrenado) para tapar la boca y hacer que la fuente se desactive mientras permanezca tapada, @Check[religion|dc:21] (experto) para rezar a los dioses opuestos a Droskar para que exorcicen la magia y detengan permanentemente el flujo de agua, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (2.º rango; contrarrestar CD 16 ) para suprimir el efecto de sabor contaminado de la trampa durante 10 minutos</p>",
+      "reset": "<p>La fuente retorcida se reinicia instantáneamente.</p>",
+      "stealth": "<p>(entrenado) para darse cuenta de que el agua es peligrosa; detectar la fuente es CD 0</p>",
+      "items": {
+        "action->Tainted Taste": {
+          "name": "El sabor contaminado",
+          "description": "<p><strong>Desencadenante</strong> Una criatura no hryngar bebe de la fuente</p>\n<hr /> <p><strong>Efecto</strong> La criatura debe intentar un @Check[fortitude|dc:22] salvación con los siguientes efectos; el bebedor es entonces temporalmente inmune al Sabor Ensuciado del agua durante 24 horas.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo es sanado @Damage[4d8[healing]] Puntos de Golpe, y cualquier condición de herido que tenga es eliminada.</p>\n<p><strong>Éxito</strong> El objetivo recupera @Damage[2d8[healing]] puntos de vida y se elimina su estado de herido.</p>\n<p><strong>Fallo</strong> El objetivo recupera @Damage[1d8[healing]] Puntos de Golpe y gana la condición @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1}.</p>\n<p><strong>Fallo crítico</strong> El objetivo recibe @Damage[1d8[poison]] de daño y gana la condición @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}.</p>"
+        }
+      }
+    }
+  },
+  "label": "Bestiario de The Dead God’s Hand",
+  "folders": {
+    "Adventure Toolbox": "Caja de herramientas de aventura",
+    "1 - Captives of Clan Orthux": "1 - Captivos del Clan Orthux",
+    "2 - The Lost Sanctum": "2 - El Santuario perdido",
+    "3 - The Test of Aroden": "3 - La prueba de Aroden",
+    "Adventuring Companions": "Compañeros de aventura"
+  }
+}

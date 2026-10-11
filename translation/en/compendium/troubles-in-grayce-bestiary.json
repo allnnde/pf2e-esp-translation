@@ -1,0 +1,1196 @@
+{
+  "label": "troubles-in-grayce-bestiary",
+  "entries": {
+    "Acid Spray Trap": {
+      "name": "Acid Spray Trap",
+      "description": "<p>Hidden nozzles in the ceiling spray acid pumped in from a nearby reservoir to destroy the desk and all its documents, as well as anyone trying to retrieve those documents.</p>",
+      "disable": "<p>@Check[thievery|dc:20] (trained) to disable one of the two acid-spewing nozzles or @Check[crafting|dc:21] (trained) to rig a makeshift plug for one of the two nozzles</p>",
+      "hpDetails": "per nozzle",
+      "reset": "<p>The trap deactivates after 1 minute. To be reset, the trap's reserve tanks must be refilled with acid.</p>",
+      "routine": "<p>(1 action) The nozzles spray acid from the ceiling onto every creature adjacent to the desk. Each affected creature takes @Damage[4d6[acid]|options:area-damage] damage (@Check[reflex|dc:20|basic|options:area-effect] save). For each broken nozzle, this damage is reduced by 2d6.</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Ooze Surprise": {
+          "name": "Ooze Surprise",
+          "description": "<p><strong>Trigger</strong> A creature flips the switches on the underside of the desk in the wrong order or a creature attempts to open one of the desk drawers without first disabling the trap</p>\n<hr />\n<p><strong>Effect</strong> A hatch opens in the ceiling, releasing a string slime onto the desk. The string slime makes a pseudopod Strike against one creature within reach before rolling initiative. The trap then rolls initiative.</p>"
+        }
+      }
+    },
+    "Aezar": {
+      "name": "Aezar",
+      "blurb": "Variant elite ogre glutton",
+      "items": {
+        "strike-melee->Greataxe": {
+          "name": "Greataxe"
+        },
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "action->Gummy Hands": {
+          "name": "Gummy Hands",
+          "description": "<p>Candies' residue gives Aezar an especially strong grip on her greataxe, which grants her a +2 circumstance bonus to her Reflex DC against attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} her.</p>"
+        },
+        "action->Tooth Decay": {
+          "name": "Tooth Decay",
+          "description": "<p>Frequent candy consumption has worsened Aezar's already poor dental health. If she takes 10 or more bludgeoning damage from a single attack or effect, she must attempt a @Check[fortitude|dc:25] save.</p>\n<hr />\n<p><strong>Success</strong> Aezar yells in pain but is otherwise unaffected.</p>\n<p><strong>Failure</strong> Several of Aezar's teeth break. She takes a –2 penalty to damage with her jaws Strike as well as to Athletics checks made as part of her @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab} and @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]{Swallow Whole} abilities. These penalties last until Aezar is restored to her Hit Point maximum.</p>\n<p><strong>Critical Failure</strong> As failure, but so many of Aezar's teeth break that the penalty increases to –3 and she takes @Damage[(1d6-2)[persistent,bleed]] damage.</p>"
+        },
+        "action->Glutton's Feast": {
+          "name": "Glutton's Feast",
+          "description": "<p>If Aezar damages a living creature with her jaws Strike, she gains 1d6 temporary Hit Points for 1 minute</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LWFDNwi3iJuf476A]{Effect: Glutton's Feast (Aezar)}</p>"
+        },
+        "action->Glutton's Rush": {
+          "name": "Glutton's Rush",
+          "description": "<p>Aezar Strides twice and makes a jaws Strike. If she damages a living creature with this Strike, the temporary Hit Points she receives from glutton's feast is increased to 2d6.</p>"
+        },
+        "action->Sticky Axe": {
+          "name": "Sticky Axe",
+          "description": "<p><strong>Trigger</strong> Aezar succeeds at a greataxe Strike against a creature</p>\n<hr />\n<p><strong>Effect</strong> Aezar's axe has a lingering residue from striking various sweets, and the sticky blade clings to her most recent victim, giving Aezar momentary leverage. Aezar can attempt to [[/act reposition]] or [[/act trip]] the target using the greataxe's reach, even though she doesn't have a free hand.</p>\n<p>Alternatively, she can forgo either maneuver to drag the target toward her gaping mouth, granting her jaws unarmed Strike the agile trait for attacks made against the target until the end of her turn.</p>"
+        },
+        "action->Swallow Whole": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Small, @Damage[(2d4+4)[bludgeoning]], Rupture 18</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+        }
+      }
+    },
+    "Alendreu": {
+      "name": "Alendreu",
+      "blurb": "Male orc ghoul primarch",
+      "hpDetails": "void healing",
+      "items": {
+        "strike-melee->Orc Necksplitter": {
+          "name": "Orc Necksplitter"
+        },
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "action->Stench": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.PqGX4Dgy9siZJitH]\n<p>10 feet, @Check[fortitude|dc:18|options:area-effect,inflicts:sickened,inflicts:slowed]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
+        },
+        "action->Chopping Frenzy": {
+          "name": "Chopping Frenzy",
+          "description": "<p><strong>Requirements</strong> Alendreu is wielding an orc necksplitter in each hand</p>\n<hr />\n<p><strong>Effect</strong> Alendreu lashes out with both axes. He attempts two Strikes, one with each necksplitter, each using his current multiple attack penalty. Both Strikes must have the same target, and the second strike takes a –2 penalty.</p>\n<p>If both hit, combine their damage and apply resistances and weaknesses only once, and the target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} from the fury of the blow until the start of their next turn. This counts as two attacks when calculating Alendreu's multiple attack penalty.</p>"
+        },
+        "action->Consume Flesh": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\nConsume Flesh",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\n<p><strong>Requirements</strong> The ghoul is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The ghoul devours a chunk of the corpse and regains @Damage[(1+(max(0,floor(@actor.level/2))))d6[healing]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>"
+        },
+        "action->Ghoul Whispers": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.pOW2IvfVusdmD5v5]\nGhoul Whispers",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.pOW2IvfVusdmD5v5]\n<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} creature is within the ghoul's reach</p>\n<hr />\n<p><strong>Effect</strong> The ghoul whispers dark thoughts and vile cravings into the creature's ears. The creature must save against the forbidden cravings curse.</p>\n<p><strong>Forbidden Cravings</strong> (curse) A creature can still eat and drink while sickened by this curse</p>\n<p><strong>Saving Throw</strong> @Check[will|dc:21|traits:curse], using the high spell DC for the ghoul's level</p>\n<p><strong>Stage 1</strong> carrier with no ill effects (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} until it consumes raw meat (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2</p>\n<p><strong>Stage 4</strong> as stage 2 unless the target has consumed raw meat in the past 24 hours, then it takes @Damage[4d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} until it consumes raw meat;</p>\n<p><strong>Stage 5</strong> if the creature has eaten raw meat in the past 24 hours, it dies and rises as a ghoul, if not, it returns to stage 4</p>"
+        },
+        "action->Grave Knowledge": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.227zB1x6U0TyU1nd]\nGrave Knowledge",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.227zB1x6U0TyU1nd]\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The ghoul calls upon knowledge it retains from one creature it has consumed in the past 7 days. The ghoul attempts a skill check using a skill in which the consumed creature was trained (if it's unclear whether the creature was trained, the GM decides). The ghoul is treated as trained and uses the high skill modifier for the ghoul's level ([[/gmr 1d20+12]]). This takes the same amount of actions or time as usual for the check.</p>\n<p>The ghoul can instead automatically learn something specific known by a creature it consumed in the last 7 days, like the location of a hidden treasure or the name of a loved one. The ghoul can do this only once for a given creature, no matter how much of its flesh the ghoul consumed.</p>"
+        },
+        "action->Swift Leap": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.UU1Fp3PRuTFONjC9]\nSwift Leap"
+        }
+      }
+    },
+    "Animated Wardrobe": {
+      "name": "Animated Wardrobe",
+      "acDetails": "(17 when broken)",
+      "blurb": "Variant animated object",
+      "items": {
+        "strike-melee->Door": {
+          "name": "Door"
+        },
+        "strike-melee->Clothes Whip": {
+          "name": "Clothes Whip"
+        },
+        "action->Construct Armor (Hardness 7)": {
+          "name": "Construct Armor (Hardness 7)",
+          "description": "<p>Like normal objects, an animated wardrobe has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once an animated wardrobe is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 17.</p>"
+        },
+        "action->Clothes Grab": {
+          "name": "Clothes Grab",
+          "description": "<p>A creature hit by the animated wardrobe's clothes whip becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the animated wardrobe. The creature isn't @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but it can't move beyond the reach of the wardrobe's clothes whip. A creature can sever the clothes whip with a Strike against AC 15 that deals at least 5 slashing damage. This deals no damage to the animated wardrobe.</p>"
+        }
+      }
+    },
+    "Automatic Butler": {
+      "name": "Automatic Butler",
+      "languages": "one spoken by its creator (typically Common)",
+      "publicNotes": "<p>An automatic butler is a magical construct shaped like a wooden humanoid mannequin, usually tailored in a simple black suit and tie. It has only the barest hint of a face on its round head, though its jaw opens on a hinge to simulate regular mouth movements when it speaks. Its voice is often calm and measured, and it speaks quite politely. It follows the orders given to it by its creator (or anyone whom the creator has given permission to issue commands), which usually involves fetching items, keeping a room tidy, or ushering out guests. If unwanted guests become belligerent, an automatic butler can defend itself by battering intruders or using its innate magic to hurl objects with deadly force. Once a fight has ended, an automatic butler usually spends the next hour or so cleaning up the mess left behind. Automatic butlers are built on designs similar to soulbound dolls. Like other soulbound constructs, an automatic butler is animated by a fragment of the soul of a deceased mortal. This fragment can come from either a willing donor or an unwilling victim, who can resist the process with a successful Will save against the creator's Crafting DC. While resisting ruins the construct, the soul extraction process is often fatal, and the person dies regardless. Unlike with other soulbound constructs, the personality of the soul used to create an automatic butler is wholly suppressed. Instead, the automatic butler comports itself in the way a stereotypical servant would. Some automatic butlers are created with slightly different skill sets. They can be created to speak more languages beyond that of their creator, making them passable family diplomats who might welcome foreign guests. Some are trained to take care of tasks that require specialization, such as tutoring the youth of the household or tailoring the family's clothes. The sidebar covers some other options for a whole domestic staff of constructed servants.</p>\n<h2>Automatic Cooks and Gardeners</h2>\n<p>Should the designs for creating automatic butlers reach the wider world, someone would likely end up creating variations of the magical construct. These creatures would use the same basic statistics as an automatic butler, with a few minor changes. An automatic cook might have cleanse cuisine as an innate spell, a knife Strike, and the ability to shoot a jet of boiling hot water. An automatic gardener might have scatter scree and other spells with the earth or plant traits as innate spells, a hoe or shovel Strike, and the ability to pelt foes at range with seeds.</p>",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Occult Innate Spells"
+        },
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "action->Soul Fragment": {
+          "name": "Soul Fragment",
+          "description": "<p>Like other soulbound constructs, an automatic butler is animated by soul energy, though the donor soul's personality is suppressed in favor of a simple demeanor, either politely helpful or stoically pragmatic. It also has none of that creature's memories. This soul fragment removes the immunity to spirit most constructs have, but because the automatic butler's personality overrides that of the original creature, the butler does have some resistance to spirit damage.</p>"
+        },
+        "action->Right This Way": {
+          "name": "Right This Way",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The automatic butler attempts to usher a creature along while removing their coat. The automatic butler attempts an Athletics check to [[/act reposition]] a Large or smaller creature within reach. On a success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} on a critical success) as the automatic butler pulls at some part of their clothing or gear. The target can remove this condition by taking an Interact action.</p>"
+        }
+      }
+    },
+    "Balance Point": {
+      "name": "Balance Point",
+      "description": "<p>A 40-foot deep pit is obscured by a false floor set over a single balance point. Pressure on either side to the east or west causes occupants to fall into the depths below.</p>",
+      "disable": "<p>@Check[thievery|dc:20] (trained) to attach the balanced stone floor piece to the actual floor and lock it in place, or @Check[crafting|dc:23] (trained) to jury-rig a quick bit of extra support to prevent the floor from tilting</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Tipping Floor": {
+          "name": "Tipping Floor",
+          "description": "<p><strong>Trigger</strong> A creature walks onto one side of the false floor</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature falls into the pit and takes @Damage[20[bludgeoning]] damage from the fall unless they [[/act grab-an-edge dc=23]]. It's a @Check[athletics|dc:20] check to climb the pit walls.</p>"
+        }
+      }
+    },
+    "Barrow Claw Leshy": {
+      "name": "Barrow Claw Leshy",
+      "blurb": "Variant fungus leshy",
+      "languages": "Speak with Plants (Fungi Only)",
+      "items": {
+        "spellcastingEntry->Primal Innate Spells": {
+          "name": "Primal Innate Spells"
+        },
+        "spell->Speak with Plants (Constant, Fungi Only)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]\nSpeak with Plants (Constant, Fungi Only)"
+        },
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "strike-ranged->Spore Pod": {
+          "name": "Spore Pod"
+        },
+        "action->Constant Spells": {
+          "name": "Constant Spells"
+        },
+        "action->Verdant Burst": {
+          "name": "Verdant Burst",
+          "description": "<p>When a fungus leshy dies, a burst of primal energy explodes from its body, restoring @Damage[2d8[healing]] Hit Points to each fungi creature in a @Template[emanation|distance:30]. This area is filled with fungi, becoming difficult terrain.</p>\n<p>If the terrain is not a viable environment for this fungi, they wither after 24 hours.</p>"
+        },
+        "action->Change Shape": {
+          "name": "Change Shape",
+          "description": "<p>The fungus leshy transforms into a giant mushroom or patch of fungi. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+        },
+        "action->Spore Cloud": {
+          "name": "Spore Cloud",
+          "description": "<p>A fungus leshy can unleash a cloud of spores that irritates the eyes and throats of non-fungus creatures in a @Template[emanation|distance:15]. Each creature must succeed at a @Check[fortitude|dc:16|options:area-effect,damaging-effect] save or take @Damage[1[persistent,poison]|options:area-damage] damage.</p>\n<p>A creature has its vision reduced as long as the persistent damage continues and can see only within 20 feet.</p>"
+        },
+        "action->Spores": {
+          "name": "Spores",
+          "description": "<p>A creature that takes damage from a fungus leshy's spore pod Strike must attempt a saving throw with the same DC (@Check[fortitude|dc:16]) and effect as its Spore Cloud ability</p>"
+        }
+      }
+    },
+    "Bitter Butler": {
+      "name": "Bitter Butler",
+      "blurb": "Variant automatic butler",
+      "languages": "one spoken by its creator (typically Common)",
+      "publicNotes": "<p>An automatic butler is a magical construct shaped like a wooden humanoid mannequin, usually tailored in a simple black suit and tie. It has only the barest hint of a face on its round head, though its jaw opens on a hinge to simulate regular mouth movements when it speaks. Its voice is often calm and measured, and it speaks quite politely. It follows the orders given to it by its creator (or anyone whom the creator has given permission to issue commands), which usually involves fetching items, keeping a room tidy, or ushering out guests. If unwanted guests become belligerent, an automatic butler can defend itself by battering intruders or using its innate magic to hurl objects with deadly force. Once a fight has ended, an automatic butler usually spends the next hour or so cleaning up the mess left behind. Automatic butlers are built on designs similar to soulbound dolls. Like other soulbound constructs, an automatic butler is animated by a fragment of the soul of a deceased mortal. This fragment can come from either a willing donor or an unwilling victim, who can resist the process with a successful Will save against the creator's Crafting DC. While resisting ruins the construct, the soul extraction process is often fatal, and the person dies regardless. Unlike with other soulbound constructs, the personality of the soul used to create an automatic butler is wholly suppressed. Instead, the automatic butler comports itself in the way a stereotypical servant would. Some automatic butlers are created with slightly different skill sets. They can be created to speak more languages beyond that of their creator, making them passable family diplomats who might welcome foreign guests. Some are trained to take care of tasks that require specialization, such as tutoring the youth of the household or tailoring the family's clothes. The sidebar covers some other options for a whole domestic staff of constructed servants.</p>\n<h2>Automatic Cooks and Gardeners</h2>\n<p>Should the designs for creating automatic butlers reach the wider world, someone would likely end up creating variations of the magical construct. These creatures would use the same basic statistics as an automatic butler, with a few minor changes. An automatic cook might have cleanse cuisine as an innate spell, a knife Strike, and the ability to shoot a jet of boiling hot water. An automatic gardener might have scatter scree and other spells with the earth or plant traits as innate spells, a hoe or shovel Strike, and the ability to pelt foes at range with seeds.</p>",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Occult Innate Spells"
+        },
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "action->Bitter Invective": {
+          "name": "Bitter Invective",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The automatic butler spews a surprisingly hateful tirade at a creature it can see within 30 feet, who must attempt a @Check[will|dc:20|options:inflicts:stupefied] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure). Regardless of the result, the creature is then temporarily immune to this ability for 24 hours.</p>"
+        },
+        "action->Soul Fragment": {
+          "name": "Soul Fragment",
+          "description": "<p>Like other soulbound constructs, an automatic butler is animated by soul energy, though the donor soul's personality is suppressed in favor of a simple demeanor, either politely helpful or stoically pragmatic. It also has none of that creature's memories. This soul fragment removes the immunity to spirit most constructs have, but because the automatic butler's personality overrides that of the original creature, the butler does have some resistance to spirit damage.</p>"
+        },
+        "action->Right This Way": {
+          "name": "Right This Way",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The automatic butler attempts to usher a creature along while removing their coat. The automatic butler attempts an Athletics check to [[/act reposition]] a Large or smaller creature within reach. On a success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} on a critical success) as the automatic butler pulls at some part of their clothing or gear. The target can remove this condition by taking an Interact action.</p>"
+        }
+      }
+    },
+    "Bittersweet Surprise": {
+      "name": "Bittersweet Surprise",
+      "description": "<p>A magic circle made of royal icing seals the trap door to the gristmill's basement shut and plays a nasty trick on anyone who tries to open it without all three of its gumdrop keys.</p>",
+      "disable": "<p>If the three magical gumdrops which act as this hazard's keys are placed at the correct points of the magic circle, its enchantment is disabled. Deciphering the correct locations requires a successful @Check[arcana|dc:20] or @Check[occultism|dc:20] check; on a critical failure, the mere act of placing the gumdrops activates the Malicious Metamorphosis reaction. Once the enchantment is disabled, the magic circles can be wiped away like any regular icing.</p>",
+      "reset": "<p>If the trap door is closed without the magic circles being disturbed, the enchantment resumes as normal.</p>",
+      "stealth": "<p>@Check[arcana|dc:22] or @Check[occultism|dc:22] to unravel the circle's meaning without triggering its reaction.</p>",
+      "items": {
+        "action->Malicious Metamorphosis": {
+          "name": "Malicious Metamorphosis",
+          "description": "<p><strong>Trigger</strong> A creature touches the trap door without first placing the three enchanted gumdrop keys in their proper arrangement</p>\n<hr />\n<p><strong>Effect</strong> The magic circles prevent the trap door from opening and maliciously transform a portion of the triggering creature's body, with effects based on the result of the triggering creature's @Check[fortitude|dc:18|options:forced-movement,inflicts:clumsy,inflicts:off-guard,inflicts:prone,inflicts:slowed] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The triggering creature is blown 10 feet away from the trap door and knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, but otherwise unaffected.</p>\n<p><strong>Success</strong> The target is blown 10 feet away from the trap door, knocked prone, and has three fingers on one of their hands transformed into gingerbread. They cannot use weapons with the two-hand or twin traits for as long as the transformation persists.</p>\n<p><strong>Failure</strong> As success, except the transformation also extends to the creature's entire hand and a portion of the adjoining arm. The affected creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for as long as the transformation persists.</p>\n<p><strong>Critical Failure</strong> As failure, except the transformation also applies to one of the triggering creature's legs. For the duration of the transformation, it takes a –10-foot circumstance penalty to all of its speeds, is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, in addition to the effects listed above.</p>"
+        }
+      }
+    },
+    "Bristles": {
+      "name": "Bristles",
+      "blurb": "Variant animated broom",
+      "items": {
+        "strike-melee->Bristles": {
+          "name": "Bristles"
+        },
+        "action->Construct Armor (Hardness 4)": {
+          "name": "Construct Armor (Hardness 4)",
+          "description": "<p>Like normal objects, an animated broom has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once an animated broom is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and reducing its Armor Class to 13.</p>"
+        },
+        "action->Dust": {
+          "name": "Dust",
+          "description": "<p>A creature hit by an animated broom's bristles must succeed at a @Check[fortitude|dc:19] save or spend its next action coughing. Even if hit by multiple bristle attacks, the creature has to spend only 1 action coughing to clear the dust out. A creature who doesn't breathe is immune to this effect.</p>"
+        }
+      }
+    },
+    "Carexilia": {
+      "name": "Carexilia",
+      "blurb": "Female elf ghoul conspirator",
+      "hpDetails": "void healing",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Occult Innate Spells"
+        },
+        "strike-melee->Shortsword": {
+          "name": "Shortsword"
+        },
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Stench": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.PqGX4Dgy9siZJitH]\n<p>10 feet. @Check[fortitude|dc:17|options:area-effect,inflicts:sickened,inflicts:slowed]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
+        },
+        "action->Consume Flesh": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\nConsume Flesh",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\n<p><strong>Requirements</strong> The ghoul is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The ghoul devours a chunk of the corpse and regains @Damage[(1+(max(0,floor(@actor.level/2))))d6[healing]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>"
+        },
+        "action->Ghoul Whispers": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.pOW2IvfVusdmD5v5]\nGhoul Whispers",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.pOW2IvfVusdmD5v5]\n<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} creature is within the ghoul's reach</p>\n<hr />\n<p><strong>Effect</strong> The ghoul whispers dark thoughts and vile cravings into the creature's ears. The creature must save against the forbidden cravings curse.</p>\n<p><strong>Forbidden Cravings</strong> (curse) A creature can still eat and drink while sickened by this curse</p>\n<p><strong>Saving Throw</strong> @Check[will|dc:20|traits:curse], using the high spell DC for the ghoul's level</p>\n<p><strong>Stage 1</strong> carrier with no ill effects (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} until it consumes raw meat (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2</p>\n<p><strong>Stage 4</strong> as stage 2 unless the target has consumed raw meat in the past 24 hours, then it takes @Damage[4d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} until it consumes raw meat;</p>\n<p><strong>Stage 5</strong> if the creature has eaten raw meat in the past 24 hours, it dies and rises as a ghoul, if not, it returns to stage 4</p>"
+        },
+        "action->Grave Knowledge": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.227zB1x6U0TyU1nd]\nGrave Knowledge",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.227zB1x6U0TyU1nd]\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The ghoul calls upon knowledge it retains from one creature it has consumed in the past 7 days. The ghoul attempts a skill check using a skill in which the consumed creature was trained (if it's unclear whether the creature was trained, the GM decides). The ghoul is treated as trained and uses the high skill modifier for the ghoul's level ([[/gmr 1d20+10]]). This takes the same amount of actions or time as usual for the check.</p>\n<p>The ghoul can instead automatically learn something specific known by a creature it consumed in the last 7 days, like the location of a hidden treasure or the name of a loved one. The ghoul can do this only once for a given creature, no matter how much of its flesh the ghoul consumed.</p>"
+        },
+        "action->Sneak Attack": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Carexilia deals an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+        },
+        "action->Swift Leap": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.UU1Fp3PRuTFONjC9]\nSwift Leap"
+        }
+      }
+    },
+    "Collapsing Ceiling": {
+      "name": "Collapsing Ceiling",
+      "description": "<p>A 5-foot-square section in the ceiling is in danger of collapsing. A character can use a Crafting check instead of a Perception check to detect the hazard.</p>",
+      "disable": "<p>@Check[crafting|dc:21] (trained) to support the damaged area against a collapse</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Falling Rocks": {
+          "name": "Falling Rocks",
+          "description": "<p><strong>Trigger</strong> A creature enters a square where the ceiling's structure is weakened</p>\n<hr />\n<p><strong>Effect</strong> Rocks fall in the square, dealing @Damage[(4d8+10)[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:25|basic|options:area-effect] save) to anyone in that square. The square also turns into greater difficult terrain.</p>"
+        }
+      }
+    },
+    "Cruel Automatic Butler": {
+      "name": "Cruel Automatic Butler",
+      "blurb": "Elite automatic butler",
+      "languages": "one spoken by its creator (typically Common)",
+      "publicNotes": "<p>An automatic butler is a magical construct shaped like a wooden humanoid mannequin, usually tailored in a simple black suit and tie. It has only the barest hint of a face on its round head, though its jaw opens on a hinge to simulate regular mouth movements when it speaks. Its voice is often calm and measured, and it speaks quite politely. It follows the orders given to it by its creator (or anyone whom the creator has given permission to issue commands), which usually involves fetching items, keeping a room tidy, or ushering out guests. If unwanted guests become belligerent, an automatic butler can defend itself by battering intruders or using its innate magic to hurl objects with deadly force. Once a fight has ended, an automatic butler usually spends the next hour or so cleaning up the mess left behind. Automatic butlers are built on designs similar to soulbound dolls. Like other soulbound constructs, an automatic butler is animated by a fragment of the soul of a deceased mortal. This fragment can come from either a willing donor or an unwilling victim, who can resist the process with a successful Will save against the creator's Crafting DC. While resisting ruins the construct, the soul extraction process is often fatal, and the person dies regardless. Unlike with other soulbound constructs, the personality of the soul used to create an automatic butler is wholly suppressed. Instead, the automatic butler comports itself in the way a stereotypical servant would. Some automatic butlers are created with slightly different skill sets. They can be created to speak more languages beyond that of their creator, making them passable family diplomats who might welcome foreign guests. Some are trained to take care of tasks that require specialization, such as tutoring the youth of the household or tailoring the family's clothes. The sidebar covers some other options for a whole domestic staff of constructed servants.</p>\n<h2>Automatic Cooks and Gardeners</h2>\n<p>Should the designs for creating automatic butlers reach the wider world, someone would likely end up creating variations of the magical construct. These creatures would use the same basic statistics as an automatic butler, with a few minor changes. An automatic cook might have cleanse cuisine as an innate spell, a knife Strike, and the ability to shoot a jet of boiling hot water. An automatic gardener might have scatter scree and other spells with the earth or plant traits as innate spells, a hoe or shovel Strike, and the ability to pelt foes at range with seeds.</p>",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Occult Innate Spells"
+        },
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "action->Soul Fragment": {
+          "name": "Soul Fragment",
+          "description": "<p>Like other soulbound constructs, an automatic butler is animated by soul energy, though the donor soul's personality is suppressed in favor of a simple demeanor, either politely helpful or stoically pragmatic. It also has none of that creature's memories. This soul fragment removes the immunity to spirit most constructs have, but because the automatic butler's personality overrides that of the original creature, the butler does have some resistance to spirit damage.</p>"
+        },
+        "action->Cruel Bash": {
+          "name": "Cruel Bash",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The automatic butler makes a fist Strike. If it hits, it deals an additional 2d6 bludgeoning damage. This counts as two attacks for the automatic butler's multiple attack penalty.</p>"
+        },
+        "action->Right This Way": {
+          "name": "Right This Way",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The automatic butler attempts to usher a creature along while removing their coat. The automatic butler attempts an Athletics check to [[/act reposition]] a Large or smaller creature within reach. On a success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} on a critical success) as the automatic butler pulls at some part of their clothing or gear. The target can remove this condition by taking an Interact action.</p>"
+        }
+      }
+    },
+    "Crumbrunk": {
+      "name": "Crumbrunk",
+      "blurb": "Variant jinkin",
+      "skillSpecialCrafting": {
+        "0": {
+          "label": "traps"
+        }
+      },
+      "items": {
+        "spellcastingEntry->Primal Innate Spells": {
+          "name": "Primal Innate Spells"
+        },
+        "weapon->Dart (Coated with Giant Viper Venom)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Tt4Qw64fwrxhr5gT]\nDart (Coated with Giant Viper Venom)"
+        },
+        "strike-melee->Shortsword": {
+          "name": "Shortsword"
+        },
+        "strike-ranged->Blowgun": {
+          "name": "Blowgun"
+        },
+        "action->Giant Viper Venom": {
+          "name": "Giant Viper Venom",
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:17|options:damaging-effect,inflicts:drained]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 round)</p>"
+        },
+        "action->Sneak Attack": {
+          "name": "Sneak Attack",
+          "description": "<p>The jinkin deals 1d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+        },
+        "action->Tinker": {
+          "name": "Tinker",
+          "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[flat|dc:5] check or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>"
+        }
+      }
+    },
+    "Cursed Digging Machine": {
+      "name": "Cursed Digging Machine",
+      "description": "<p>A large, wheeled cart with a multi-sectioned pole in the middle. Each section of pole has several shovels sticking out of it like makeshift arms.</p>",
+      "disable": "<p>@Check[thievery|dc:18] (trained) twice on the cart to dismantle core connected pieces, or @Check[nature|dc:20] or @Check[occultism|dc:20] (trained) check to temporarily disable the jinkins' curse and render the machine inert for an hour</p>",
+      "routine": "<p>(3 actions) The digging machine spends an action to move 20 feet toward the nearest creature. If it starts next to a creature, it moves 20 feet toward the next closest creature. It then makes two slashing shovels attacks against any creature within 10 feet.</p>",
+      "items": {
+        "action->Speed 20 Feet": {
+          "name": "Speed 20 Feet"
+        },
+        "strike-melee->Slashing Shovels": {
+          "name": "Slashing Shovels"
+        },
+        "action->Crash and Slash": {
+          "name": "Crash and Slash",
+          "description": "<p><strong>Trigger</strong> A creature comes within 30 feet of the digging machine</p>\n<hr />\n<p><strong>Effect</strong> The digging machine rattles to life and rolls toward the triggering creature. It moves 30 feet toward the creature, attacking every creature within 10 feet with slashing shovels. The machine then rolls initiative.</p>"
+        }
+      }
+    },
+    "Damarys": {
+      "name": "Damarys",
+      "blurb": "Female changeling",
+      "items": {
+        "spellcastingEntry->Occult Spontaneous Spells": {
+          "name": "Occult Spontaneous Spells"
+        },
+        "spell->Blood Vendetta": {
+          "requirements": "You can bleed"
+        },
+        "strike-melee->Claws": {
+          "name": "Claws"
+        },
+        "strike-melee->Staff": {
+          "name": "Staff"
+        },
+        "strike-ranged->Dagger": {
+          "name": "Dagger"
+        }
+      }
+    },
+    "Death of the Dollmaker": {
+      "name": "Death of the Dollmaker",
+      "description": "<p>The death of Thalleus Jongrim—in his bed, surrounding by ritualistic implements—repeats in ghostly form.</p>",
+      "disable": "<p>@Check[occultism|dc:21] (trained) to snuff out one of four ghostly candles or @Check[religion|dc:23] (trained) three times to calm what is left of Thalleus's fractured spirit</p>",
+      "reset": "<p>The haunt deactivates 1 minute after all living creatures have left the room. One hour after this or being Disabled, the haunt is ready to trigger again. Putting Thalleus's spirit to rest permanently destroys the haunt.</p>",
+      "routine": "<p>(1 action) The haunt recreates the moment when Thalleus dies, causing the ritual to go awry. This releases a wave of void energy, dealing @Damage[4d8[void]|options:area-damage] damage in a @Template[type:emanation|distance:10] from the bed (@Check[fortitude|dc:21|basic|options:area-effect] save). This damage is reduced by 1d8 for every ghostly candle that has been snuffed out.</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Deathbed Ritual": {
+          "name": "Deathbed Ritual",
+          "description": "<p><strong>Trigger</strong> A living creature is adjacent to the bed</p>\n<hr />\n<p><strong>Effect</strong> Four ghostly candles appear around the bed—one at each corner—followed by a transparent image of a frail Thalleus reading from a tome in a wavering voice. Each living creature who can hear these words must succeed at a @Check[will|dc:23|options:area-effect,inflicts:frightened] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). The haunt then rolls initiative.</p>"
+        }
+      }
+    },
+    "Durtik": {
+      "name": "Durtik",
+      "publicNotes": "<p>Unlike other gremlins who are satisfied with causing discomfort or pain to a few individuals, durtiks think big. They enjoy overwrought plans and complicated devices that often cause chaos. Durtiks live on the outskirts of societies that possess great engineering prowess, gleaning technical knowledge and expertise. They use these gathered skills to build elaborate death traps. A durtik will happily spend years building a device that chips away at a mountain until it causes an avalanche that destroys a town. Fortunately for the civilizations they lurk near, durtik plans almost never reach fruition; the fey abhor simplicity and directness, insisting on complexity and grandiosity, making their plans easy to disrupt. Often, these plans overlook a crucial detail or avoid some basic truth that causes them to implode halfway through without anyone in the nearby town any wiser there was a plan at all. This penchant for self-sabotage, however, doesn't make durtiks less dangerous. Their desire for grand destruction makes them uniquely inspiring among other gremlins. It's common to find a durtik surrounded by other gremlins inspired by their vision, even if those followers don't fully understand it. The gremlins stick around until they lose interest or the plans implode. Until then, a durtik and their crew concentrate their chaos and spread plenty of misfortune as they enact their ill-fated scheme.</p>\n<h2>Smarter Than You</h2>\n<p>Because durtiks are often smarter than other gremlins around them, they think they are the smartest person in the room wherever they go. Canny adventurers who are aware of this can butter them up with grandiose compliments, distracting the durtik and making them more likely to accidentally share information.</p>",
+      "items": {
+        "spellcastingEntry->Primal Innate Spells": {
+          "name": "Primal Innate Spells"
+        },
+        "strike-ranged->Shortbow": {
+          "name": "Shortbow"
+        },
+        "strike-melee->Shortsword": {
+          "name": "Shortsword"
+        },
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "action->Highly Confusing Scheme": {
+          "name": "Highly Confusing Scheme",
+          "description": "<p>The durtik provides so much detail about their confusing scheme that it overwhelms their target. The durtik attempts a Deception check to [[/act feint]] against an opponent up to 30 feet away. If they succeed, the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} penalty applies when the durtik or any construct it controls with Mechanized Animus makes a melee or ranged Strike.</p>"
+        },
+        "action->Mechanized Animus": {
+          "name": "Mechanized Animus",
+          "description": "<p>The durtik channels their antipathy and disdain for others into a construct within 60 feet, seizing control or making it come to life. The durtik attempts a @Check[crafting|against:will|options:inflicts:stupefied,inflicts:stunned] check against the construct's Will DC or its controller's (if any) Will DC, whichever is higher. The durtik can't use Mechanized Animus again for [[/gmr 1d4 #Recharge Mechanized Animus]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The construct immediately takes two basic actions of the durtik's choosing and is then @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>\n<p><strong>Success</strong> The construct immediately takes one basic action of the durtik's choosing and is then @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> The destructive antipathy rebounds, and the durtik is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 minute.</p>"
+        },
+        "action->Sneak Attack": {
+          "name": "Sneak Attack",
+          "description": "<p>The durtik's Strikes deal an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+        },
+        "lore->Engineering Lore": {
+          "name": "Engineering Lore"
+        }
+      }
+    },
+    "Ecaterina Tache": {
+      "name": "Ecaterina Tache",
+      "blurb": "Female elf inspector",
+      "items": {
+        "armor->Destroyed Explorer's Clothing": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB]\nDestroyed Explorer's Clothing"
+        },
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "action->Hazard Finder": {
+          "name": "Hazard Finder",
+          "description": "<p>Ecaterina gains a +1 circumstance bonus to Perception checks to find traps or environmental hazards (but not to finding haunts), to AC against attacks made by traps, and to saves against traps.</p>"
+        },
+        "action->Perception +15 to Seek or Search": {
+          "name": "Perception +15 to Seek or Search"
+        },
+        "action->Last Second Warning": {
+          "name": "Last Second Warning",
+          "description": "<p><strong>Trigger</strong> A creature Ecaterina can see triggers a hazard</p>\n<hr />\n<p><strong>Effect</strong> Ecaterina notices the danger a split-second before it activates and calls out a warning to the creature that triggered it. If that creature can hear and understand her warning, it gains a +1 circumstance bonus to its AC against attacks made by the hazard, and to saves against the triggering hazard.</p>"
+        },
+        "lore->Engineering Lore": {
+          "name": "Engineering Lore"
+        },
+        "lore->Mining Lore": {
+          "name": "Mining Lore"
+        }
+      }
+    },
+    "Enchanted Sweets": {
+      "name": "Enchanted Sweets",
+      "description": "<p>The enchanted pile of cookies and pastries arranged in this tasteful display case emit a supernaturally delicious aroma that compels those who fall under its smell to eat, eat, eat. No matter how many are consumed, the case always fills with more.</p>",
+      "disable": "<p>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank; counteract DC 20); destroying the case and its contents also shatters the enchantment and prevents further compulsion or poisonings.</p>",
+      "routine": "<p>(1 action) On the hazard's turn, if any creature is within the range of eatable enticement that is neither compelled by nor immune to it, the enchanted sweets target that creature with the same effect. Otherwise, it targets all creatures who have consumed some of its contents with a gut-rotting magical poison. Any creature who has consumed some of the enchanted sweets takes @Damage[2d12[poison]] damage with a @Check[fortitude|dc:22|basic] save.</p>",
+      "stealth": "<p>(expert)</p>",
+      "items": {
+        "action->Eatable Enticement": {
+          "name": "Eatable Enticement",
+          "description": "<p><strong>Trigger</strong> A creature passes within 5 feet of the open northern side of the glass display case</p>\n<hr />\n<p><strong>Effect</strong> The tantalizing smell of the enchanted sweets overrides the target's olfactory senses. The target must attempt a @Check[will|dc:24|options:inflicts:sickened] save. On a failure or critical failure, the enchanted sweets roll Initiative.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected, immune to the enchanted sweets for 1 minute, and aware that the hazard was attempting to compel them.</p>\n<p><strong>Success</strong> The target is unaffected but remains unaware that the enchanted sweets were attempting to compel them.</p>\n<p><strong>Failure</strong> The target is compelled to remain beside the display case on its next turn and spend at least 2 of its actions consuming the enchanted sweets. It can repeat the Will save at the end of each of its turns, ending the effect on a success. If compelled to consume the sweets for more than 2 consecutive rounds, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The target is compelled to spend all of its actions consuming the enchanted sweets and immediately becomes sickened 1. It can repeat the Will save at the end of each of its turns, ending the compulsion on a success.</p>\n<p>The sickened condition increases by 1 for each turn the target is compelled to spend all of its actions consuming sweets, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}.</p>"
+        }
+      }
+    },
+    "Floor Chute Trap": {
+      "name": "Floor Chute Trap",
+      "description": "<p>A pivoted section of a seemingly normal hallway becomes a chute that deposits victims into a more dangerous room.</p>",
+      "disable": "<p>@Check[thievery|dc:22] (trained) to prevent the floor from pivoting</p>",
+      "reset": "<p>Provided no creature is on the slide, the trap resets after 1 minute, returning the hallway floor to its normal, unassuming state.</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Look Out Below": {
+          "name": "Look Out Below",
+          "description": "<p><strong>Trigger</strong> A creature attempts to open the door at the end of the hallway</p>\n<hr />\n<p><strong>Effect</strong> The section of floor marked on the map drops down, becoming a steep ramp. Creatures in the easternmost square fall 5 feet, creatures in the middle square fall 10 feet, and creatures in the western square fall 15 feet (DC 21 to [[/act grab-an-edge dc=21]]). In that order, all creatures who fall are moved to one of the squares immediately east of the marked squares in area <strong>A11</strong>. If any destination square is occupied, the creature in that square is pushed 5 feet to the east as the second creature takes its place, and both creatures take an additional @Damage[2d6[bludgeoning]|traits:nonlethal]{2d6 nonlethal bludgeoning damage} (@Check[reflex|dc:21|basic] save).</p>"
+        }
+      }
+    },
+    "Gauntling": {
+      "name": "Gauntling",
+      "hpDetails": "void healing",
+      "publicNotes": "<p>In places like the Gravelands, undeath permeates the very soil of the land. This unholy pollution can have significant effects on regional flora and fauna over the course of generations, causing plants to become twisted and diseased looking and contaminates wildlife so their remains spontaneously rise as mindless undead.</p>\n<p>Yet in some cases, particularly for those beasts who forage primarily through the act of scavenging, the consumption of undead flesh can have an entirely different effect over the course of months. How quickly an animal is affected depends on whether it ate from the remains of an undead creature left behind after its destruction or consumed it \"fresh\" from an undead in a desperate throe of starvation. Assuming the unfortunate creature survives any onset of disease or other afflictions brought on by their ghastly repast, these scavengers sometimes undergo a transformation into a twisted, ravenous beast known as a gauntling.</p>\n<p>Most gauntlings arise from scavengers, carnivores, or omnivores, but in certain cases, desperate herbivores can become transformed as well—these creatures are perhaps the most disturbing type of gauntling, due to the significant change in their behaviors pushing them toward diets of fresh meat. Once animals become gauntlings, these creatures abandon their previous wilderness habitats in favor of those near more settled regions and often choose sewers or other underground locales as dens from which they emerge to hunt. In their transformation into a gauntling, regardless of what the creature's previous dietary leanings might have been, all gauntlings share one horrific hunger—the flesh of sapient humanoids. A gauntling looks similar to the animal it was before its transformation, but with large sharp fangs and with painfully emaciated frames, regardless of how much they eat.</p>\n<p>This gauntling (as are all of those encountered in Troubles in Grayce) were once boars, but you can use these statistics to represent any terrestrial Medium animal that's succumbed to this unholy transformation. Regardless of its original form, all gauntlings share a mouthful of sharp, twisted fangs.</p>\n<h2>Other Gauntlings</h2>\n<p>The gauntling presented here comes from a Medium terrestrial animal (a boar, to be precise), but other animals can be transformed in this way by consuming undead flesh. To represent one from a swimming or flying Medium animal, simply grant it a swim or fly speed equal to its base speed. To represent a smaller or larger creature, use the statistics presented here as a starting point, then rebuild the statistics using the guidelines for building creatures that begin on page 112 of GM Core</p>",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "action->Frightful Presence": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>20 feet @Check[will|dc:15|options:inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+        },
+        "action->Rend": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1]\n<p>Jaws</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
+        },
+        "action->Soul Ravage": {
+          "name": "Soul Ravage",
+          "description": "<p>A gauntling's fangs carry with them a potent curse that eagerly seeps into living flesh. The first time in a round that a creature takes damage from a gauntling's jaws Strike, they must attempt a @Check[fortitude|dc:18|options:inflicts:sickened] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} and can't reduce its sickened value below 1 for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, but for 1 hour. A creature that dies while under this curse's effects rises within 24 hours as a zombie.</p>"
+        }
+      }
+    },
+    "Genevye": {
+      "name": "Genevye",
+      "blurb": "Variant herexen",
+      "items": {
+        "spellcastingEntry->Divine Prepared Spells": {
+          "name": "Divine Prepared Spells"
+        },
+        "spellcastingEntry->Cleric Domain Spells": {
+          "name": "Cleric Domain Spells"
+        },
+        "equipment->Defiled Religios Symbol of Iomedae": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.upzjwQ96cZG0Xlmx]\nDefiled Religios Symbol of Iomedae"
+        },
+        "strike-melee->Longsword": {
+          "name": "Longsword"
+        },
+        "action->Final Blasphemy": {
+          "name": "Final Blasphemy",
+          "description": "<p>When the herexen is destroyed, it explodes in a wave of void energy with the effects of a 3-action @UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm} spell (@Check[fortitude|dc:22]).</p>\n<p>The herexen is destroyed, so it doesn't gain any Hit Points from this use of <em>harm</em>, and it doesn't need to have any <em>harm</em> spells remaining to use this ability</p>"
+        },
+        "action->Heretic's Smite": {
+          "name": "Heretic's Smite",
+          "description": "<p>While wielding a longsword, Genevye's Strikes deal an additional @Damage[1d6[spirit]] damage to creatures with the holy trait.</p>"
+        }
+      }
+    },
+    "Grasping Gems": {
+      "name": "Grasping Gems",
+      "description": "<p>Four magically treated gems used to store fragments of souls begin glowing with an eerie malevolence.</p>",
+      "disable": "<p>@Check[arcana|dc:22] (trained), @Check[occultism|dc:22] (trained), or @Check[nature|dc:22] (trained) to quiet one of the four grasping gems</p>",
+      "hpDetails": "per gem",
+      "reset": "<p>The haunt deactivates 1 minute after all living creatures have left the room. One hour after this or being Disabled, the haunt is ready to trigger again. Putting Thalleus's spirit to rest permanently destroys the haunt.</p>",
+      "routine": "<p>(2 actions) During the haunt's first action, the grasping gems attempt an Athletics check (at a [[/r 1d20+4#Athletics]]{+14 modifier}) to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} each non-@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} living creature in the room, rolling once and comparing the result to each target's Fortitude DC. For every gem that is disabled or destroyed, the haunt takes a cumulative –1 circumstance penalty to the check. For the haunt's second action, the gems' ghostly hands squeeze their victims. Each creature immobilized by the haunt takes @Damage[(2d8+5)[bludgeoning]] damage (@Check[fortitude|dc:21|basic] save).</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Phantom Hands": {
+          "name": "Phantom Hands",
+          "description": "<p><strong>Trigger</strong> A living creature is adjacent to a grasping gem's shelf</p>\n<hr />\n<p><strong>Effect</strong> The room becomes awash with eerie light as ghostly hands reach out from all directions. Each living creature in the room must attempt a @Check[fortitude|dc:24|options:area-effect,inflicts:immobilized] save. The haunt then rolls initiative.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The phantom hands interfere with the creature's movements. The creature takes a –2 status penalty to its initiative roll.</p>\n<p><strong>Failure</strong> The phantom hands hold the creature in place. The creature takes a –2 status penalty to its initiative roll and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} ([[/act escape dc=24]]) for the first round.</p>\n<p><strong>Critical Failure</strong> As failure, but if the creature attempts to Escape during the first round, it must roll twice and take the worse result. This is a misfortune effect.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.aBtlxHM9ChGywyrH]{Effect: Phantom Hands}</p>"
+        }
+      }
+    },
+    "Hampering Web (Troubles in Grayce)": {
+      "name": "Hampering Web (Troubles in Grayce)",
+      "description": "<p>Semitransparent sheets of webbing are strategically placed in the basement, ready to capture small insects or hamper larger creatures that pass through.</p>",
+      "disable": "<p>@Check[survival|dc:17] (trained) to dislodge a web</p>",
+      "stealth": "<p>(expert)</p>",
+      "items": {
+        "action->Ensnare": {
+          "name": "Ensnare",
+          "description": "<p><strong>Trigger</strong> A creature that isn't a spider walks into the web</p>\n<hr />\n<p><strong>Effect</strong> The web wraps around the triggering creature's body, clinging to its limbs. The triggering creature must succeed at a @Check[reflex|dc:20|options:inflicts:sickened] save or take a –10-foot circumstance penalty to all its Speeds until it [[/act escape dc=20]]{Escapes} the web. On a critical failure, the webbing also clings to the creature's face, making it @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and it can't attempt to reduce this condition until it Escapes the web.</p>"
+        }
+      }
+    },
+    "Haunted Doll Cabinet": {
+      "name": "Haunted Doll Cabinet",
+      "description": "<p>Three shelves inside a dusty cabinet each hold a row of dolls infused with the Doll House's malevolent spiritual energy.</p>",
+      "disable": "<p>@Check[occultism|dc:16] (trained) or @Check[religion|dc:16] (trained) to calm the spirits of one of three shelves in the cabinet</p>",
+      "hpDetails": "per shelf",
+      "reset": "<p>The haunt deactivates 1 minute after all living creatures have left the area or when the soulbound dolls in the northwestern cabinet are destroyed. After 1 hour, the haunt is ready to trigger again. Putting Thalleus's spirit to rest permanently destroys the haunt.</p>",
+      "routine": "<p>(3 actions) For each shelf that remains, the haunt takes 1 action to target a living, non-construct creature in the room. Phantom dolls escape from the cabinet to rush that creature, clamber over them, and punch, kick, and bite them. The target takes @Damage[(1d6+2)[spirit]] damage (@Check[reflex|dc:17|basic] save).</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->On Display": {
+          "name": "On Display",
+          "description": "<p><strong>Trigger</strong> At least two living creatures are in the room for more than a minute</p>\n<hr />\n<p><strong>Effect</strong> The dolls in the cabinet begin to shake and shudder, filling the area with a feeling of overwhelming dread about what might happen next. Each living creature who can see the cabinet must succeed at a @Check[will|dc:20|options:inflicts:frightened] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). The haunt then rolls initiative.</p>"
+        }
+      }
+    },
+    "Hot Oven": {
+      "name": "Hot Oven",
+      "description": "<p>This fiery hot oven needs to be extra-large to keep up with the demands of the bakery—large enough for a Medium creature to crawl inside. Or be pushed.</p>",
+      "disable": "<p>1 Interact action and a @Check[athletics|dc:18] check to close the oven door after it's been opened.</p>",
+      "reset": "<p>The oven door can be opened and closed freely, as described above, for the course of the entire combat. If left to its own devices, the oven burns through its fuel and goes out roughly 1 hour after it's lit.</p>",
+      "items": {
+        "action->Hot to the Touch": {
+          "name": "Hot to the Touch",
+          "description": "<p><strong>Trigger</strong> A creature attempts to open the closed oven door without the protection of an oven mitt</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature takes @Damage[(1d10+3)[fire]] damage (@Check[reflex|dc:22|basic] save).</p>"
+        },
+        "action->In You Go!": {
+          "name": "In You Go!",
+          "description": "<p><strong>Trigger</strong> A creature moves or is forcibly moved into the open oven</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature takes @Damage[3d10[fire]] damage (@Check[fortitude|dc:25|basic] save) and @Damage[2d6[persistent,fire]] damage. This damage repeats at the beginning of the creature's turn for as long as it remains inside the oven.</p>"
+        }
+      }
+    },
+    "Krethark": {
+      "name": "Krethark",
+      "blurb": "Male bugbear ghoul outcast",
+      "hpDetails": "void healing",
+      "items": {
+        "weapon->Inheritor's Kiss": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.6KWYmeRMxsQfWhhJ]\nInheritor's Kiss"
+        },
+        "strike-melee->Inheritor's Kiss": {
+          "name": "Inheritor's Kiss"
+        },
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Stench": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.PqGX4Dgy9siZJitH]\n<p>10 feet, @Check[fortitude|dc:18|options:area-effect,inflicts:sickened,inflicts:slowed]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
+        },
+        "action->Consume Flesh": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\nConsume Flesh",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\n<p><strong>Requirements</strong> The ghoul is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The ghoul devours a chunk of the corpse and regains @Damage[(1+(max(0,floor(@actor.level/2))))d6[healing]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>"
+        },
+        "action->Frightful Snarl": {
+          "name": "Frightful Snarl",
+          "description": "<p>Krethark snarls and glares at a creature within 30 feet that he can see, and then attempts to [[/act demoralize]] that creature; he doesn't take a penalty if the creature doesn't understand his language. A creature that becomes frightened by Frightful Snarl is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of their turn.</p>"
+        },
+        "action->Ghoul Whispers": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.pOW2IvfVusdmD5v5]\nGhoul Whispers",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.pOW2IvfVusdmD5v5]\n<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} creature is within the ghoul's reach</p>\n<hr />\n<p><strong>Effect</strong> The ghoul whispers dark thoughts and vile cravings into the creature's ears. The creature must save against the forbidden cravings curse.</p>\n<p><strong>Forbidden Cravings</strong> (curse) A creature can still eat and drink while sickened by this curse</p>\n<p><strong>Saving Throw</strong> @Check[will|dc:21|traits:curse], using the high spell DC for the ghoul's level</p>\n<p><strong>Stage 1</strong> carrier with no ill effects (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} until it consumes raw meat (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2</p>\n<p><strong>Stage 4</strong> as stage 2 unless the target has consumed raw meat in the past 24 hours, then it takes @Damage[4d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} until it consumes raw meat;</p>\n<p><strong>Stage 5</strong> if the creature has eaten raw meat in the past 24 hours, it dies and rises as a ghoul, if not, it returns to stage 4</p>"
+        },
+        "action->Grave Knowledge": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.227zB1x6U0TyU1nd]\nGrave Knowledge",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.227zB1x6U0TyU1nd]\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The ghoul calls upon knowledge it retains from one creature it has consumed in the past 7 days. The ghoul attempts a skill check using a skill in which the consumed creature was trained (if it's unclear whether the creature was trained, the GM decides). The ghoul is treated as trained and uses the high skill modifier for the ghoul's level ([[/gmr 1d20+12]]). This takes the same amount of actions or time as usual for the check.</p>\n<p>The ghoul can instead automatically learn something specific known by a creature it consumed in the last 7 days, like the location of a hidden treasure or the name of a loved one. The ghoul can do this only once for a given creature, no matter how much of its flesh the ghoul consumed.</p>"
+        },
+        "action->Sneak Attack": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>Krethark deals 1d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+        },
+        "action->Swift Leap": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.UU1Fp3PRuTFONjC9]\nSwift Leap"
+        }
+      }
+    },
+    "Nether Rift": {
+      "name": "Nether Rift",
+      "description": "<p>A chill wind blows from a fissure in the cavern wall.</p>",
+      "disable": "<p>@Check[arcana|dc:18], @Check[nature|dc:18], @Check[occultism|dc:18], or @Check[religion|dc:18] (trained) to seal the rift, three successes total; or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank; counteract DC 17)</p>",
+      "reset": "<p>The rift reopens after [[/gmr 2d10 #Years to reopen]] years. Killing the Path River Peeler permanently seals the rift.</p>",
+      "routine": "<p>(2 actions) The hazard uses its first action to repeat its Wind from the Netherworld reaction. If any patch of barrow claw remains, one of the patches chosen by the GM releases a cloud of spores. The spores fill the barrow claw's space and last until the beginning of the hazard's next turn. Creatures within the spores become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creature outside the spores become concealed to creatures within it.</p>\n<p>A creature that enters the spores or starts their turn in the area takes @Damage[1d6[persistent,cold]] damage until they brush off the spores as an Interact action.</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Wind from the Netherworld": {
+          "name": "Wind from the Netherworld",
+          "description": "<p><strong>Trigger</strong> The Path River Peeler enters the cave</p>\n<hr />\n<p><strong>Effect</strong> A gust of ice-cold wind from the Netherworld blasts from the rift in a @Template[type:cone|distance:15]. Creatures in the area take @Damage[2d4[cold]|options:area-damage] damage (@Check[fortitude|dc:20|basic|options:area-effect] save). The hazard then rolls initiative.</p>"
+        }
+      }
+    },
+    "Old Murder Holes": {
+      "name": "Old Murder Holes",
+      "description": "<p>Several dozen spear holes line the sides of the cavern walls, triggered by a false stone in the partially paved surface of the cavern floor. However, most of the spears used to arm the trap are broken and long forgotten on the dusty cavern floor.</p>",
+      "disable": "<p>@Check[thievery|dc:20] (trained) to deactivate the trigger on the floor, or @Check[athletics|dc:23] to pry up the floor plate to dislodge it from the trigger.</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Spear Launcher": {
+          "name": "Spear Launcher",
+          "description": "<p><strong>Trigger</strong> Downward pressure (such as by a footstep) is applied to the false stone</p>\n<hr />\n<p><strong>Effect</strong> The trap shoots several spears, making an attack against the triggering creature or object on the stone.</p>"
+        },
+        "strike-ranged->Spear Volley": {
+          "name": "Spear Volley"
+        }
+      }
+    },
+    "Path River Peeler": {
+      "name": "Path River Peeler",
+      "publicNotes": "<p>Like many cryptids, even the name of the Path River Peeler is a matter of dispute. Some say the creature earns its name from the corpses of its victims, which are often found stripped clean of skin but otherwise untouched. Others claim that corpses left in such condition are the exception to the rule. More frequently, no trace of the Peeler's victims is ever found—perhaps these skinless kills were simply abandoned by the Peeler before it could finish with its meal. Those who subscribe to this theory argue that a better name would be the \"Pealer,\" after the echoing cries the beast makes while on the hunt. But what sense does it make to call it the Pealer, when everyone knows loud noises are the best way to drive off the monster? The arguments go round and round, with no end to the debate in sight.</p>\n<p>The Peeler is most frequently encountered in a wild and largely unoccupied area north of Grayce called the Shivering Bluffs. Most people in Grayce, with the exception of the elderly who have tales from their youth, think the Peeler is just a story to frighten children and explain the killed and missing sheep that fall victim to wolves or other predators. Even so, everyone who grew up in Grayce can sing a few lines of a popular skipping rhyme the children in town sing while playing.</p>\n<h2>Barrow Claw</h2>\n<p>Purported sightings of the Path River Peeler often coincide with an outbreak of barrow claw: a rare, disease-bearing fungus that is cold to the touch and devastates nearby vegetation. Outbreaks of barrow claw have led some enthusiastic scholars to postulate that the cryptid itself is the source of the fungus. A more likely theory is that the Peeler and barrow claw share a habitat in the Netherworld, and that the former simply carries spores of the latter on its bristly hide.</p>",
+      "items": {
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Echolocation": {
+          "name": "Echolocation",
+          "description": "<p>The Path River Peeler can use its hearing as a precise sense at the listed range.</p>"
+        },
+        "action->Flight Response": {
+          "name": "Flight Response",
+          "description": "<p><strong>Trigger</strong> The Path River Peeler gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition or its frightened condition increases</p>\n<hr />\n<p><strong>Effect</strong> The Peeler Strides or Climbs up to its Speed. The Peeler gains a +2 circumstance bonus to AC against reactions triggered by this movement.</p>"
+        },
+        "action->Sensitive Ears": {
+          "name": "Sensitive Ears",
+          "description": "<p>The Path River Peeler's oversized ears make it particularly sensitive to loud noises. A creature that attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} the Peeler by shouting, banging on a shield, or similar tactic ignores the usual –4 circumstance penalty for not sharing a language with the Peeler. Whenever the Peeler takes sonic damage, it must succeed at a @Check[will|dc:16|options:inflicts:frightened] saving throw or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+        },
+        "action->Blood Run Cold": {
+          "name": "Blood Run Cold",
+          "description": "<p>The Path River Peeler extends a bony finger at a creature it can see within 60 feet, draining heat from the creature's body and sapping the strength from their muscles. The creature takes @Damage[4d6[cold]] damage with a @Check[will|dc:20|basic|options:inflicts:enfeebled] save. On a failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 10 minutes (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for an hour on a critical failure). The Peeler can't use Blood Run Cold again for [[/gmr 1d4 #Recharge Blood Run Cold]]{1d4 rounds}.</p>"
+        },
+        "action->Otherworldly Cry": {
+          "name": "Otherworldly Cry",
+          "description": "<p>The Path River Peeler makes an eerie, spine-tingling vocalization that can be heard up to a mile away. Each creature in a @Template[type:emanation|distance:60] must attempt a @Check[will|dc:20|options:area-effect,inflicts:frightened,inflicts:fleeing] save. Regardless of the result, a creature is temporarily immune to the Peeler's Otherworldly Cry for 10 minutes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>"
+        },
+        "action->Rend": {
+          "name": "Rend",
+          "description": "<p>Claw</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
+        }
+      }
+    },
+    "Rolling Death": {
+      "name": "Rolling Death",
+      "description": "<p>A trip wire hidden in the dust of the midway point of the floor releases a large boulder to roll from the northwestern corridor toward <strong>A4</strong>, crushing anything it meets.</p>",
+      "disable": "<p>@Check[thievery|dc:22] (trained) to set the trip wire to a different anchor point without changing the tension</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Tumbling Boulder": {
+          "name": "Tumbling Boulder",
+          "description": "<p><strong>Trigger</strong> The trip wire is pulled or severed</p>\n<hr />\n<p><strong>Effect</strong> The boulder careens from its holding area to crush anything in its path. Anyone in area <strong>A3</strong> path takes @Damage[(2d12+4)[bludgeoning]] damage (@Check[reflex|dc:25|basic] save).</p>"
+        }
+      }
+    },
+    "Rope Pull": {
+      "name": "Rope Pull",
+      "description": "<p>This trap appears to be an obvious 10-foot-deep pit with angled walls to prevent easy escape, but the true danger is represented not by the hole in the ground but from a set of loose stones in the ceiling. A knotted rope hangs from a beam above, seemingly to provide an option to swing across the pit, but any weight on the rope pulls down large, heavy boulders stacked far above.</p>",
+      "disable": "<p>@Check[thievery|dc:20] (trained) to tie off the rope to a more solid support</p>",
+      "items": {
+        "action->Boulders from Above": {
+          "name": "Boulders from Above",
+          "description": "<p><strong>Trigger</strong> A Small or larger creature or equivalent weight pulls on the rope</p>\n<hr />\n<p><strong>Effect</strong> All creatures within the pit or adjacent to the pit take @Damage[(4d6+10)[bludgeoning]] damage (@Check[reflex|dc:23|basic] save) from falling rocks dislodged from above.</p>"
+        }
+      }
+    },
+    "Sangrist": {
+      "name": "Sangrist",
+      "hpDetails": "void healing",
+      "publicNotes": "<p>Sangrists are born from the bodies of those who bled out completely, often when they are left unburied without proper rites in places tainted by void energy, though the strong presence of void energy is not a requirement. Some victims who rise as sangrists suffered an accident or attack in a remote region and were never found and properly laid to rest, be it a slip of a blade when cleaning game or being gored by a wild hog.</p>\n<p>After rising as undead, these tragic creatures are drawn to sites of past carnage where the scent of blood and death lingers. They are commonly found in the war-torn lands of Lastwall, the haunted ruins of Ustalav, and the cursed battlefields of Geb, embodying a relentless hunger for the life they lost.</p>\n<p>Sangrists rely on stealth and ambushes, becoming more active at night. During times of inactivity, they fall into a strange stupor. In this state, they rock back and forth and frequently twitch, sometimes emitting a haunting humming sound.</p>\n<p>Some sangrists are solitary hunters, often stalking a solitary target for hours if not days. Others form packs, especially if they shared a bond in life. These packs exhibit a chilling, coordinated cunning, reminiscent of wolves on the prowl. Sangrists are patient hunters, sometimes tracking their victims for miles or observing them for hours before making a move. They target the weak and isolated, picking off those they can easily wound so that they bleed out even if they manage to outrun the sangrists. Retaining only a shadow of their former selves, sangrists rarely utter more than single-word sentences, usually to express their hatred for the living, their unending hunger, or where victims can be found.</p>\n<p>Although sangrists can't drink blood or gain nourishment from it, they sometimes pool blood in their cupped hands and pour it on their faces and bodies. They may also lie down next to the body of a slain enemy. This macabre ritual seems to be a desperate attempt to reconnect with the life they once had. These strange proclivities toward blood, nighttime activity, and the yearning for some semblance of their previous lives lead some sangrists to associate with vampires. Vampires generally don't find sangrists distasteful and find the undead creatures easy to manipulate into serving them as guardians and attendants.</p>\n<h2>Taste for Blood</h2>\n<p>These rare creatures have been mistaken for either feral vampires or blood obsessed zombies by soldiers and adventurers who don't have a firm understanding of the myriad forms undeath can come in. Those familiar with sangrists and who aim to hunt them often set out blood, frequently pig blood, as a lure.</p>",
+      "senses": "blood scent 30 feet",
+      "items": {
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Blood Scent": {
+          "name": "Blood Scent",
+          "description": "<p>A sangrist can detect creatures taking persistent bleed damage as an imprecise sense at the listed range.</p>"
+        },
+        "action->Blood Vigor": {
+          "name": "Blood Vigor",
+          "description": "<p>While adjacent to a creature taking persistent bleed damage, the sangrist gains fast healing 3 and is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} until the start of its next turn. The sangrist can use its extra action only to Step or Stride.</p>"
+        },
+        "action->Bloodletter": {
+          "name": "Bloodletter",
+          "description": "<p>A sangrist intuitively exacerbates open cuts on living creatures with its attacks. The sangrint's claw Strikes deal an additional 1 precision damage to living creatures taking persistent bleed damage.</p>"
+        }
+      }
+    },
+    "Shiverscale Kobold": {
+      "name": "Shiverscale Kobold",
+      "blurb": "Variant kobold warrior",
+      "items": {
+        "strike-ranged->Crossbow": {
+          "name": "Crossbow"
+        },
+        "strike-melee->Shortsword": {
+          "name": "Shortsword"
+        },
+        "action->Scamper": {
+          "name": "Scamper",
+          "description": "<p><strong>Requirements</strong> The kobold warrior is adjacent to at least one enemy</p>\n<hr />\n<p><strong>Effect</strong> The kobold warrior Strides up to their Speed plus 5 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. They must end this movement in a space that's not adjacent to any enemy.</p>"
+        },
+        "action->Sneak Attack": {
+          "name": "Sneak Attack",
+          "description": "<p>The Shiverscale kobold deals an extra 1d4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+        }
+      }
+    },
+    "Spear Launcher (Troubles in Grayce)": {
+      "name": "Spear Launcher (Troubles in Grayce)",
+      "description": "<p>A wall socket loaded with a spear connects to a floor tile in one 5-foot square.</p>",
+      "disable": "<p>@Check[thievery|dc:18|name:Disable Thievery] (trained) on the floor tile or wall socket</p>",
+      "reset": "<p>The launchers require manual reload.</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Spear": {
+          "name": "Spear",
+          "description": "<p><strong>Trigger</strong> Pressure is applied to the floor tile.</p>\n<hr />\n<p><strong>Effect</strong> The trap shoots a spear, making a Strike against the creature or object on the floor tile.</p>"
+        },
+        "strike-melee->Spear": {
+          "name": "Spear"
+        }
+      }
+    },
+    "Spiked Walls": {
+      "name": "Spiked Walls",
+      "description": "<p>A low trip wire connects to a lattice panel covered with wooden spikes.</p>",
+      "disable": "<p>[[/act disable-device dc=15]]{Thievery} (trained) to snip the trip wire or jam the panel</p>",
+      "items": {
+        "action->Spiked Wall": {
+          "name": "Spiked Wall",
+          "description": "<p><strong>Trigger</strong> A creature triggers the trip wire</p>\n<hr />\n<p><strong>Effect</strong> A lattice panel lashed with wooden spikes swings shut across the passage. The triggering creature takes @Damage[3d6[piercing]] damage (@Check[reflex|dc:17|basic] save). The panel provides lesser @UUID[Compendium.pf2e.other-effects.Item.I9lfZUiCwMiGogVi]{Cover} and prevents movement along the passage. The panel can be pushed open like a door with an Interact action, but it swings shut again unless wedged open with a heavy object.</p>"
+        }
+      }
+    },
+    "Spitting Hot Candy Pot": {
+      "name": "Spitting Hot Candy Pot",
+      "description": "<p>A massive bronze cauldron of molten candy bubbles on the stove, spraying sticky-sweet hot caramel in all directions.</p>",
+      "disable": "<p>Breaking the pot disables it as soon as its rupture reaction is resolved.</p>",
+      "routine": "<p>(2 actions) On each of the pot's actions, it targets one creature hostile against Larmine within 30 feet of the pot, spitting a glob of hot molten candy that deals @Damage[(1d8+4)[fire]] damage; the target creature must attempt a @Check[reflex|dc:16|options:damaging-effect,inflicts:slowed] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as the sticky molten candy glues them to the floor.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2}, and takes @Damage[1d4[persistent,fire]] damage as the hot candy sticks to their exposed skin.</p>",
+      "items": {
+        "action->Bubble Bubble": {
+          "name": "Bubble Bubble",
+          "description": "<p><strong>Trigger</strong> Larmine rolls initiative</p>\n<hr />\n<p><strong>Effect</strong> With a wave of her hand, Larmine instantly brings her candy pot to a violent boil. The pot blows its top and targets all creatures hostile to Larmine within 20 feet of it, dealing @Damage[2d8[fire]|options:area-damage] damage with a @Check[reflex|dc:16|basic|options:area-effect] save. On a critical failure, the targeted creature also takes @Damage[1d4[persistent,fire]|options:area-damage] damage as the hot candy sticks to their exposed skin. The spitting hot candy pot then rolls initiative.</p>"
+        },
+        "action->Rupture": {
+          "name": "Rupture",
+          "description": "<p><strong>Trigger</strong> The spitting hot candy pot Breaks</p>\n<hr />\n<p><strong>Effect</strong> The pot splits open, spilling its remaining contents in a @Template[type:cone|distance:15] that deals @Damage[2d12[fire]|options:area-damage] damage with a @Check[reflex|dc:20|options:area-effect,damaging-effect] save. The area covered by this reaction lingers as difficult terrain for the rest of the encounter.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes tangled in the sticky mess of hot candy, which imposes a –10-foot circumstance penalty to its Speeds until it leaves the area of the rupture's effect. Until the creature leaves the area of effect, it also takes @Damage[1d4[persistent,fire]|options:area-damage] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} (DC 18 to [[/act escape dc=18]]), after which it takes a –10-foot circumstance penalty to its Speeds and @Damage[1d4[persistent,fire]|options:area-damage] damage as failure.</p>"
+        }
+      }
+    },
+    "Sticky Toffee Hound": {
+      "name": "Sticky Toffee Hound",
+      "publicNotes": "<p>Sweet hags have an affinity for baking and take delight in corrupting all that is sweet and scrumptious. Like most bakers, each hag cultivates a personal collection of favorite recipes they keep coming back to. For Larmine, the hag occupying Dalmira's Bakery, the most loyal of her specialties are her sticky toffee hounds.</p>\n<p>Though modeled after noble hunting hounds, there's only so much magic can do to hold sponge cake and toffee sauce in a roughly canine shape. These sticky-sweet creations therefore have all the loyalty of a dog and all the versatility of an ooze, to the point that they practically hold themselves together through sheer force of devotion to their creator. However, the saccharine hounds have little awareness of their creator's mortality; were Larmine ever to die, Grayce would be serenaded nightly for weeks by the burbling howls of her mourning pets. In fact, the toffee oozes might eventually become so desperate for attention that they latch onto defenseless civilians, even suffocating their new (and unwitting) owners in a desperate quest for affection.</p>\n<p>A sticky toffee hound is an irresistible trap for insects, whose congregation can give away the ooze's presence. The hound's body is ultimately lethal, though, trapping animals in its gooey hide like mosquitoes in amber.</p>\n<h2>Half Baked Creations</h2>\n<p>Sticky toffee hounds aren't the only option for enterprising sweet hags who want to make companions. Creatures like this can be in any form and shape, but animal shapes and behaviors are the most often mimicked. Sweet hags can also make companions out of breads, doughs, and other confections, lending to a buffet of dangerous and potentially tasty allies.</p>",
+      "items": {
+        "strike-melee->Headbutt": {
+          "name": "Headbutt"
+        },
+        "strike-melee->Jaws": {
+          "name": "Jaws"
+        },
+        "strike-ranged->Spit Dates": {
+          "name": "Spit Dates"
+        },
+        "action->Motion Sense": {
+          "name": "Motion Sense",
+          "description": "<p>A sticky toffee hound can sense nearby creatures through vibration and air movement.</p>"
+        },
+        "action->Overcooked": {
+          "name": "Overcooked",
+          "description": "<p><strong>Trigger</strong> The sticky toffee hound is reduced to 0 hit points by any method other than its water soluble weakness</p>\n<hr />\n<p><strong>Effect</strong> The sticky toffee hound explodes, dealing @Damage[1d4[bludgeoning],1d4[fire]|options:area-damage] damage in a @Template[type:emanation|distance:15] with a @Check[reflex|dc:15|basic|options:area-effect] save.</p>"
+        },
+        "action->Water Soluble": {
+          "name": "Water Soluble",
+          "description": "<p>When exposed to at least 1 bulk of water, or a spell or effect with the water trait (even one that normally doesn't do any damage), the sticky toffee hound takes @Damage[10[acid]] damage as the sugar that makes up their body melts away, in addition to any damage that would normally be applied.</p>"
+        },
+        "action->Sticky Paws": {
+          "name": "Sticky Paws",
+          "description": "<p>A sweet residue cakes the tracks left by a sticky toffee hound. A creature @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Tracking} the hound can roll a [[/act track skill=cooking-lore]]{Cooking Lore} or [[/act track skill=crafting]]{Crafting} check instead of a Survival check. The creature can apply any modifiers to this check that involve identifying or preparing food, such as those granted by the @UUID[Compendium.pf2e.feats-srd.Item.1Eceqc6zbMj2x0q9]{Seasoned} skill feat or the @UUID[Compendium.pf2e.feats-srd.Item.fOIUmDGa9gkeCHA0]{Supertaster} general feat.</p>"
+        },
+        "action->Toffee Sauce": {
+          "name": "Toffee Sauce",
+          "description": "<p>A creature hit by the sticky toffee hound's headbutt Strike is splattered by the sticky toffee sauce that soaks the creature's body, becoming @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the end of their next turn. On a critical hit, the creature instead becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}.</p>"
+        }
+      }
+    },
+    "Studious Butler": {
+      "name": "Studious Butler",
+      "blurb": "Variant automatic butler",
+      "languages": "one spoken by its creator (typically Common)",
+      "publicNotes": "<p>An automatic butler is a magical construct shaped like a wooden humanoid mannequin, usually tailored in a simple black suit and tie. It has only the barest hint of a face on its round head, though its jaw opens on a hinge to simulate regular mouth movements when it speaks. Its voice is often calm and measured, and it speaks quite politely. It follows the orders given to it by its creator (or anyone whom the creator has given permission to issue commands), which usually involves fetching items, keeping a room tidy, or ushering out guests. If unwanted guests become belligerent, an automatic butler can defend itself by battering intruders or using its innate magic to hurl objects with deadly force. Once a fight has ended, an automatic butler usually spends the next hour or so cleaning up the mess left behind. Automatic butlers are built on designs similar to soulbound dolls. Like other soulbound constructs, an automatic butler is animated by a fragment of the soul of a deceased mortal. This fragment can come from either a willing donor or an unwilling victim, who can resist the process with a successful Will save against the creator's Crafting DC. While resisting ruins the construct, the soul extraction process is often fatal, and the person dies regardless. Unlike with other soulbound constructs, the personality of the soul used to create an automatic butler is wholly suppressed. Instead, the automatic butler comports itself in the way a stereotypical servant would. Some automatic butlers are created with slightly different skill sets. They can be created to speak more languages beyond that of their creator, making them passable family diplomats who might welcome foreign guests. Some are trained to take care of tasks that require specialization, such as tutoring the youth of the household or tailoring the family's clothes. The sidebar covers some other options for a whole domestic staff of constructed servants.</p>\n<h2>Automatic Cooks and Gardeners</h2>\n<p>Should the designs for creating automatic butlers reach the wider world, someone would likely end up creating variations of the magical construct. These creatures would use the same basic statistics as an automatic butler, with a few minor changes. An automatic cook might have cleanse cuisine as an innate spell, a knife Strike, and the ability to shoot a jet of boiling hot water. An automatic gardener might have scatter scree and other spells with the earth or plant traits as innate spells, a hoe or shovel Strike, and the ability to pelt foes at range with seeds.</p>",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Occult Innate Spells"
+        },
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "action->Soul Fragment": {
+          "name": "Soul Fragment",
+          "description": "<p>Like other soulbound constructs, an automatic butler is animated by soul energy, though the donor soul's personality is suppressed in favor of a simple demeanor, either politely helpful or stoically pragmatic. It also has none of that creature's memories. This soul fragment removes the immunity to spirit most constructs have, but because the automatic butler's personality overrides that of the original creature, the butler does have some resistance to spirit damage.</p>"
+        },
+        "action->Right This Way": {
+          "name": "Right This Way",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The automatic butler attempts to usher a creature along while removing their coat. The automatic butler attempts an Athletics check to [[/act reposition]] a Large or smaller creature within reach. On a success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} on a critical success) as the automatic butler pulls at some part of their clothing or gear. The target can remove this condition by taking an Interact action.</p>"
+        },
+        "action->Studious Strike": {
+          "name": "Studious Strike",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The automatic butler learns from its mistakes. If the butler's last action was to attempt a fist Strike that missed (but not critically missed) its target, the butler makes a fist Strike against the same target. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the attack, and on a hit, the butler deals an additional 1d6 precision damage.</p>"
+        }
+      }
+    },
+    "The Count of Petals": {
+      "name": "The Count of Petals",
+      "blurb": "Variant vampire count",
+      "hpDetails": "coffin restoration, fast healing 7, void healing",
+      "items": {
+        "strike-melee->Rapier": {
+          "name": "Rapier"
+        },
+        "strike-melee->Claw": {
+          "name": "Claw"
+        },
+        "action->Children of the Night": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.noOXyIXmwYN2rRd1]\nChildren of the Night"
+        },
+        "action->Fast Healing 7": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ]\nFast Healing 7"
+        },
+        "action->Coffin Restoration": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FXHjmH1oce7Z3tZb]\nCoffin Restoration"
+        },
+        "action->Mist Escape": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.sAyR4uJbsWukZFZf]\nMist Escape",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.sAyR4uJbsWukZFZf]\n<p><strong>Trigger</strong> The Count of Petals is reduced to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The Count of Petals uses Turn to Mist. He can take move actions to move toward his coffin even though he's at 0 HP. While at 0 HP in this form, the Count is unaffected by further damage. He automatically returns to his corporeal form, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, if he reaches his coffin or after 2 hours, whichever comes first.</p>"
+        },
+        "action->Vampire Vulnerabilities": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5DuBTf37u88IrphJ]\nVampire Vulnerabilities"
+        },
+        "action->Change Shape": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZMTnwyXjyfy7Ryi6]\nChange Shape",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZMTnwyXjyfy7Ryi6]\n<p>The vampire transforms into one of its animal forms or back into its normal form. Most vampires can turn into a bat, but some can turn into a different creature, such as a rat or a wolf.</p>\n<ul>\n<li><strong>Giant Bat</strong>\n<ul>\n<li><strong>Senses</strong> echolocation 40 feet,</li>\n<li><strong>Speed</strong> 20 feet, fly 30 feet,</li>\n<li><strong>Melee</strong> fangs +15 <strong>Damage</strong> 1d8+9 piercing</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+        },
+        "action->Create Servitor": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.wqptDG0IW6ExnISC]\nCreate Servitor",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.wqptDG0IW6ExnISC]\n<p>If a creature dies after being reduced to 0 HP by Drink Blood, the Count of Petals can turn this victim into a vampire servitor by donating some of his own blood to the victim and burying them in earth for 3 nights. A vampiric servitor is compelled to obey its creator, but if the Count of Petals controls too many vampiric servitors at once (as determined by the GM), or if the servitor is a higher level than the vampire that created it, strong-willed servitors can free themselves by succeeding at a Will saving throw against the vampire's Will DC.</p>"
+        },
+        "action->Dominate": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.AjTkksppymqzCivT]\nDominate",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.AjTkksppymqzCivT]\n<p>The Count of Petals can cast @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate} at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait. The save DC for this ability is 22, and a creature that succeeds is temporarily immune to his Dominate for 24 hours. Fully destroying the Count of Petals ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.</p>"
+        },
+        "action->Drink Blood": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.XHut4MN0JBgm7WaN]\nDrink Blood",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.XHut4MN0JBgm7WaN]\n<p><strong>Requirement</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the vampire's reach.</p>\n<hr />\n<p><strong>Effect</strong> The vampire sinks its fangs into that creature to drink its blood. This requires an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions.</p>\n<p>The victim is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and the vampire regains @Damage[10[healing]]{10 HP}, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the vampire but increases the victim's drained value by 1, killing the victim when it reaches drained 5. A vampire can also consume blood that's been emptied into a vessel for sustenance, but it gains no HP from doing so.</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a @Check[medicine|dc:20|name:Blood Transfusion] check and sufficient blood or a blood donor, reduces the drain by 1 after 10 minutes.</p>"
+        },
+        "action->Soporific Stench": {
+          "name": "Soporific Stench",
+          "description": "<p>10 feet. For 3 rounds, the Count of Petals reeks of the perfumed sweetness of spoiled flowers, which makes others sluggish and confused. A creature entering the aura or starting its turn in the aura must attempt a @Check[fortitude|dc:22|options:area-effect,inflicts:stupefied,inflicts:slowed] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
+        },
+        "action->Turn to Mist": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.Nnl5wg6smOzieTop]\nTurn to Mist",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.Nnl5wg6smOzieTop]\n<p>The Count of Petals turns into a cloud of vapor, as the @UUID[Compendium.pf2e.spells-srd.Item.V8wXOsoejQhe6CyG]{Vapor Form} spell, or back to his normal form. He loses fast healing while turned to mist. The count can remain in this form indefinitely.</p>"
+        }
+      }
+    },
+    "The Dig Beast": {
+      "name": "The Dig Beast",
+      "items": {
+        "strike-melee->Shovel Teeth": {
+          "name": "Shovel Teeth"
+        },
+        "action->Wild Curse": {
+          "name": "Wild Curse",
+          "description": "<p>The Dig Beast is loaded with cursed energy but also is hard to control. At the start of its turn, roll [[/gmr 1d6 #Wild Curse]]. On a 1–2 it is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until end of its turn, on a 3–4 it is neither slowed nor @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} (unless from another effect), and on a 5–6 it is quickened until the end of its turn.</p>"
+        },
+        "action->Crashing Ram": {
+          "name": "Crashing Ram",
+          "description": "<p>The Dig Beast rushes at a target and crashes into it. The Dig Beast strides twice and performs a shovel teeth attack against each adjacent target. These attacks count against its multiple attack penalty, but the multiple attack penalty doesn't increase until after all the attacks.</p>"
+        }
+      }
+    },
+    "Trial by Flame Trap": {
+      "name": "Trial by Flame Trap",
+      "description": "<p>Nozzles connected to reservoirs of alchemist's fire are hidden just under the packed dirt of the floor, ready to spew burning jets when deployed.</p>",
+      "disable": "<p>@Check[thievery|dc:23] (trained) to disable the nozzles or @Check[arcana|dc:26] (expert) or @Check[occultism|dc:26] (expert) to disable the nearby magical sensor</p>",
+      "reset": "<p>The trap resets when an operator at the maze console in area <strong>A13</strong> pulls the associated lever. The trap can be reset only once per minute.</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Burning Jets": {
+          "name": "Burning Jets",
+          "description": "<p><strong>Trigger</strong> An operator at the maze console in area <strong>A13</strong> pulls the associated lever</p>\n<hr />\n<p><strong>Effect</strong> Three hidden nozzles rise from the ground, and each makes a flame jet Strike against a creature in the area marked on the map. A creature can be hit more than once if there are fewer than three targets. On a critical hit, the target takes 1d10 persistent fire damage.</p>"
+        },
+        "strike-ranged->Flame Jet": {
+          "name": "Flame Jet",
+          "description": "<p>No multiple attack penalty</p>"
+        }
+      }
+    },
+    "Trial by Ice Trap": {
+      "name": "Trial by Ice Trap",
+      "description": "<p>A hidden vent in the ceiling is attached to a reservoir of freezing alchemical reagents that can create a bone-chilling cloud.</p>",
+      "disable": "<p>@Check[thievery|dc:23] (trained) to jam the vent closed or @Check[arcana|dc:26] (expert) or @Check[occultism|dc:26] (expert) to disable the nearby magical sensor</p>",
+      "reset": "<p>The trap resets when an operator at the maze console in area <strong>A13</strong> pulls the associated lever. The trap can be reset only once per minute.</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Frozen Mist": {
+          "name": "Frozen Mist",
+          "description": "<p><strong>Trigger</strong> An operator at the maze console in area <strong>A13</strong> pulls the associated lever</p>\n<hr />\n<p><strong>Effect</strong> A vent opens in the ceiling, issuing forth a cloud of frigid fog that quickly fills the area marked on the map. Each creature in the area takes @Damage[6d8[cold]|options:area-damage] damage (@Check[fortitude|dc:26|basic|options:area-effect] save). Creatures that fail the save also take @Damage[1d8[persistent,cold]|options:area-damage] damage (@Damage[2d8[persistent,cold]|options:area-damage] damage on a critical failure). The area remains cold for the next minute, dealing @Damage[2d6[cold]|options:area-damage] damage (@Check[fortitude|dc:22|basic|options:area-effect] save) to any creature who ends their turn in the area.</p>"
+        }
+      }
+    },
+    "Trial by Poison Trap": {
+      "name": "Trial by Poison Trap",
+      "description": "<p>A dart launcher embedded in the ceiling holds a cartridge of darts tipped with deadly poison.</p>",
+      "disable": "<p>@Check[thievery|dc:23] (trained) to disable the launcher or @Check[arcana|dc:26] (expert) or @Check[occultism|dc:26] (expert) to disable the nearby magical sensor</p>",
+      "reset": "<p>The trap resets when an operator at the maze console in area <strong>A13</strong> pulls the associated lever. The trap can be reset only once per minute.</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Toxic Barrage": {
+          "name": "Toxic Barrage",
+          "description": "<p><strong>Trigger</strong> An operator at the maze console in area <strong>A13</strong> pulls the associated lever</p>\n<hr />\n<p><strong>Effect</strong> A dart launcher emerges from the ceiling and makes a poison dart Strike against two different creatures in the area marked on the map. A single creature can't be targeted more than once.</p>"
+        },
+        "strike-ranged->Poison Dart": {
+          "name": "Poison Dart",
+          "description": "<p>No multiple attack penalty</p>"
+        }
+      }
+    },
+    "Unlucky Collapsing Tunnel": {
+      "name": "Unlucky Collapsing Tunnel",
+      "description": "<p>At the unluckiest time, the shoddily supported tunnel wall collapses in on itself and floods the tunnel with dirt and stone.</p>",
+      "disable": "<p>@Check[nature|dc:18] check to counteract the aura of unluck that pervades the tunnels for 1 minute, or @Check[survival|dc:20] to support the tunnel ceiling properly without triggering a collapse</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Collapse": {
+          "name": "Collapse",
+          "description": "<p><strong>Trigger</strong> A creature enters the tunnel</p>\n<hr />\n<p><strong>Effect</strong> The tunnel falls in, dealing @Damage[2d10[untyped]] damage to each creature in the area (@Check[reflex|dc:20|basic] save). Creatures in the area must spend at least 5 minutes digging themselves out to continue (@Check[survival|dc:20] halves this time).</p>"
+        }
+      }
+    },
+    "Unstable Floor": {
+      "name": "Unstable Floor",
+      "description": "<p>An unstable section of limestone crumbles under the weight of anyone who steps on it.</p>",
+      "disable": "<p>@Check[engineering-lore|dc:20], @Check[mining-lore|dc:20], or @Check[survival|dc:23] to determine the exact extent of the unstable ground and to optionally cause it to collapse safely into area <strong>A2</strong> below</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Deeper into the Darkness": {
+          "name": "Deeper into the Darkness",
+          "description": "<p><strong>Trigger</strong> A Small or larger creature walks onto the weak limestone</p>\n<hr />\n<p><strong>Effect</strong> The ground collapses, and the triggering creature falls 15 feet into area <strong>A2</strong> below. The creature can try to [[/act grab-an-edge dc=23]] to avoid falling, otherwise the fall inflicts @Damage[7[bludgeoning]] damage plus an additional @Damage[(4d6+3)[bludgeoning]] damage (@Check[reflex|dc:23|basic] save) from falling rubble.</p>"
+        }
+      }
+    },
+    "Unstable Overlook": {
+      "name": "Unstable Overlook",
+      "description": "<p>A ledge overlooks a yawning chasm.</p>",
+      "disable": "<p>@Check[acrobatics|dc:20] to tread lightly across the overlook onto more stable ground. Permanently disabling the hazard requires several hours of work and a successful @Check[crafting|dc:23] check (trained).</p>",
+      "items": {
+        "action->Collapse": {
+          "name": "Collapse",
+          "description": "<p><strong>Trigger</strong> A Small or larger creature moves onto the weakened section of the overlook</p>\n<hr />\n<p><strong>Effect</strong> The ledge collapses. Any creature on the ledge that fails to [[/act grab-an-edge dc=20]] plummets 40 feet into the chasm below.</p>"
+        }
+      }
+    },
+    "Wall Blades Trap": {
+      "name": "Wall Blades Trap",
+      "description": "<p>A series of rotating, serrated blades attached to long poles routinely slice out of grooves carved into the stone walls.</p>",
+      "disable": "<p>@Check[thievery|dc:20] (trained) to disengage the mechanisms that operate the blades in one wall</p>",
+      "hpDetails": "to destroy the mechanisms in one wall",
+      "reset": "<p>The trap deactivates when the room is empty and resets after 1 minute.</p>",
+      "routine": "<p>(3 actions) For each wall in which the mechanisms have been disabled or destroyed, the hazard has 1 fewer action. On each action, the hazard makes a serrated blade Strike against one creature within 10 feet of the west, east, or south wall. Each set of wall blades acts once per turn.</p>",
+      "stealth": "<p>(trained)</p>",
+      "items": {
+        "action->Slide and Dice": {
+          "name": "Slide and Dice",
+          "description": "<p><strong>Trigger</strong> A creature is within 10 feet of a trapped wall</p>\n<hr />\n<p><strong>Effect</strong> The hazard makes a serrated blade Strike against all creatures within 10 feet of the west, east, or south wall; these Strikes don't take a multiple attack penalty. The hazard then rolls initiative.</p>"
+        },
+        "strike-melee->Serrated Blade": {
+          "name": "Serrated Blade",
+          "description": "<p>No multiple attack penalty</p>"
+        }
+      }
+    },
+    "Whimsical Butler": {
+      "name": "Whimsical Butler",
+      "blurb": "Variant automatic butler",
+      "languages": "one spoken by its creator (typically Common)",
+      "publicNotes": "<p>An automatic butler is a magical construct shaped like a wooden humanoid mannequin, usually tailored in a simple black suit and tie. It has only the barest hint of a face on its round head, though its jaw opens on a hinge to simulate regular mouth movements when it speaks. Its voice is often calm and measured, and it speaks quite politely. It follows the orders given to it by its creator (or anyone whom the creator has given permission to issue commands), which usually involves fetching items, keeping a room tidy, or ushering out guests. If unwanted guests become belligerent, an automatic butler can defend itself by battering intruders or using its innate magic to hurl objects with deadly force. Once a fight has ended, an automatic butler usually spends the next hour or so cleaning up the mess left behind. Automatic butlers are built on designs similar to soulbound dolls. Like other soulbound constructs, an automatic butler is animated by a fragment of the soul of a deceased mortal. This fragment can come from either a willing donor or an unwilling victim, who can resist the process with a successful Will save against the creator's Crafting DC. While resisting ruins the construct, the soul extraction process is often fatal, and the person dies regardless. Unlike with other soulbound constructs, the personality of the soul used to create an automatic butler is wholly suppressed. Instead, the automatic butler comports itself in the way a stereotypical servant would. Some automatic butlers are created with slightly different skill sets. They can be created to speak more languages beyond that of their creator, making them passable family diplomats who might welcome foreign guests. Some are trained to take care of tasks that require specialization, such as tutoring the youth of the household or tailoring the family's clothes. The sidebar covers some other options for a whole domestic staff of constructed servants.</p>\n<h2>Automatic Cooks and Gardeners</h2>\n<p>Should the designs for creating automatic butlers reach the wider world, someone would likely end up creating variations of the magical construct. These creatures would use the same basic statistics as an automatic butler, with a few minor changes. An automatic cook might have cleanse cuisine as an innate spell, a knife Strike, and the ability to shoot a jet of boiling hot water. An automatic gardener might have scatter scree and other spells with the earth or plant traits as innate spells, a hoe or shovel Strike, and the ability to pelt foes at range with seeds.</p>",
+      "items": {
+        "spellcastingEntry->Occult Innate Spells": {
+          "name": "Occult Innate Spells"
+        },
+        "strike-melee->Fist": {
+          "name": "Fist"
+        },
+        "action->Soul Fragment": {
+          "name": "Soul Fragment",
+          "description": "<p>Like other soulbound constructs, an automatic butler is animated by soul energy, though the donor soul's personality is suppressed in favor of a simple demeanor, either politely helpful or stoically pragmatic. It also has none of that creature's memories. This soul fragment removes the immunity to spirit most constructs have, but because the automatic butler's personality overrides that of the original creature, the butler does have some resistance to spirit damage.</p>"
+        },
+        "action->Right This Way": {
+          "name": "Right This Way",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The automatic butler attempts to usher a creature along while removing their coat. The automatic butler attempts an Athletics check to [[/act reposition]] a Large or smaller creature within reach. On a success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} on a critical success) as the automatic butler pulls at some part of their clothing or gear. The target can remove this condition by taking an Interact action.</p>"
+        },
+        "action->Whimsical Twirl": {
+          "name": "Whimsical Twirl",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The automatic butler Strides up to its speed without triggering reactions. Any creature adjacent to the butler at the end of this movement must succeed at a @Check[reflex|dc:20|options:area-effect] save or be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the beginning of the butler's next turn.</p>"
+        }
+      }
+    },
+    "Zini": {
+      "name": "Zini",
+      "blurb": "Variant goblin commando",
+      "items": {
+        "strike-melee->Dogslicer": {
+          "name": "Dogslicer"
+        },
+        "strike-ranged->Sling": {
+          "name": "Sling"
+        },
+        "action->Goblin Scuttle": {
+          "name": "Goblin Scuttle",
+          "description": "<p><strong>Trigger</strong> A goblin ally ends a move action adjacent to the goblin.</p>\n<hr />\n<p><strong>Effect</strong> The goblin commando @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]{Steps}.</p>"
+        },
+        "action->Pent-Up Taunt": {
+          "name": "Pent-Up Taunt",
+          "description": "<p>Zini makes fun of either Aezar or Grizzle while she can observe them within 30 feet of her. She attempts a @Check[deception|against:will] check with a +2 circumstance bonus against the creature's Will DC. Zini cannot use this ability again against that creature until she spends at least 10 minutes thinking about a worthy second insult.</p>\n<hr />\n<p><strong>Critical Success</strong> As success, but the target also takes @Damage[(1d4+2)[mental]] damage.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the next attack an ally attempts against the target before the beginning of Zini's next turn.</p>\n<p><strong>Failure</strong> The target is unaffected.</p>"
+        }
+      }
+    },
+    "Zoti": {
+      "name": "Zoti",
+      "acDetails": "20 with shield raised",
+      "blurb": "Variant kobold warrior",
+      "items": {
+        "strike-melee->Spear": {
+          "name": "Spear"
+        },
+        "strike-ranged->Spear": {
+          "name": "Spear"
+        },
+        "action->Raise a Shield": {
+          "name": "Raise a Shield",
+          "description": "<p><strong>Requirements</strong> You are wielding a shield.</p>\n<hr />\n<p>You position your shield to protect yourself. When you have Raised a Shield, you gain its listed circumstance bonus to AC. Your shield remains raised until the start of your next turn.</p>",
+          "selfEffect": "Effect: Raise a Shield"
+        },
+        "action->Shield Block": {
+          "name": "Shield Block"
+        },
+        "action->Scamper": {
+          "name": "Scamper",
+          "description": "<p><strong>Requirements</strong> The kobold warrior is adjacent to at least one enemy</p>\n<hr />\n<p><strong>Effect</strong> The kobold warrior Strides up to their Speed plus 5 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. They must end this movement in a space that's not adjacent to any enemy.</p>"
+        },
+        "action->Sneak Attack": {
+          "name": "Sneak Attack",
+          "description": "<p>Zotri deals an extra 1d4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+        }
+      }
+    },
+    "Zurkurk": {
+      "name": "Zurkurk",
+      "blurb": "Male variant kobold cavern mage",
+      "publicNotes": "<p>Kobold cavern mages are born more than trained, hatching from eggs that absorbed particularly large amounts of primal earth energy. Although there are many elementals and even natural terrain features that can give rise to cavern mages, most are related to the cavern-dwelling earth nymphs known as lampads. These lonely and capricious fey are as enthusiastic to receive the company of a kobold tribe as the kobolds are for the protection they receive in return.</p>\n<hr />\n<p>Kobolds are small reptilian humanoids. They lurk in dark spaces, usually tunnels and mines beneath the earth, in either warrens of their own design or complexes discovered and colonized after the original builders have moved on. Though kobolds are far more pragmatic than courageous, they use every inch of their cunning to even the playing field between themselves and other, stronger creatures. They attack from the darkness and at range, and kobold artificers and engineers master the art of simple but effective traps, which they use to protect their lairs. Kobolds are skilled at working together by necessity, and they often set up ambushes or hit-and-run assaults that allow them to do the most damage possible without being harmed in return.</p>\n<p>Kobolds are diligent and hardworking creatures. While some kobolds live in communal collectives that maintain neutral relations with the creatures around them, they can be easily swayed into serving malevolent powers or megalomaniacal leaders. This is in part due to kobolds' innate pragmatism, as they would rather concede to servitude than risk being killed, but it is also in part due to a reverence for the power they generally lack. Notably, kobold eggs left in the proximity of magical creatures or places tend to absorb similar traits from the exposure. The resulting physical changes mark the appearance of each tribe, but a few lucky kobolds are also born with magical power that reflects their tribe's patron.</p>",
+      "items": {
+        "spellcastingEntry->Occult Spontaneous Spells": {
+          "name": "Occult Spontaneous Spells"
+        },
+        "strike-melee->Staff": {
+          "name": "Staff"
+        },
+        "action->Inspiring Display": {
+          "name": "Inspiring Display",
+          "description": "<p><strong>Requirements</strong> Zurkurk's previous action was to Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> Zurkurk uses his magical display to inspire another kobold within 30 feet. That kobold gains 4 temporary Hit Points that last until the start of Zurkurk's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.smk2cD6M3dsEPBCY]{Effect: Inspiring Display}</p>"
+        },
+        "action->Scamper": {
+          "name": "Scamper",
+          "description": "<p><strong>Requirements</strong> The kobold cavern mage is adjacent to at least one enemy</p>\n<hr />\n<p><strong>Effect</strong> The kobold cavern mage Strides up to their Speed plus 5 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. They must end this movement in a space that's not adjacent to any enemy.</p>"
+        }
+      }
+    }
+  },
+  "mapping": {
+    "acDetails": "system.attributes.ac.details",
+    "blurb": "system.details.blurb",
+    "description": {
+      "converter": "translateActorDescription",
+      "path": "system.details.description"
+    },
+    "disable": "system.details.disable",
+    "hpDetails": "system.attributes.hp.details",
+    "items": {
+      "converter": "translateActorItems",
+      "path": "items"
+    },
+    "languages": "system.details.languages.details",
+    "name": {
+      "converter": "translateDualLanguage",
+      "path": "name"
+    },
+    "portrait": {
+      "converter": "updateActorImage",
+      "path": "img"
+    },
+    "publicNotes": {
+      "converter": "translateActorDescription",
+      "path": "system.details.publicNotes"
+    },
+    "reset": "system.details.reset",
+    "routine": "system.details.routine",
+    "senses": "system.perception.details",
+    "skillSpecialCrafting": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.crafting.special"
+    },
+    "source": {
+      "converter": "translateSource",
+      "path": "system.details.publication.title"
+    },
+    "stealth": "system.attributes.stealth.details",
+    "tokenImage": {
+      "converter": "updateTokenImage",
+      "path": "prototypeToken.texture.src"
+    },
+    "tokenName": {
+      "converter": "translateTokenName",
+      "path": "prototypeToken.name"
+    }
+  },
+  "folders": {
+    "1 - The Path River Peeler": "1 - The Path River Peeler",
+    "2 - Sabotage!": "2 - Sabotage!",
+    "3 - They Hunger Below": "3 - They Hunger Below",
+    "4 - The Disgraced Dollmaker": "4 - The Disgraced Dollmaker",
+    "5 - Sweet Tooth": "5 - Sweet Tooth",
+    "6 - The Count of Petals": "6 - The Count of Petals"
+  }
+}
