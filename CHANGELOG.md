@@ -1,3 +1,12 @@
+# [6.48.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.47.0...v6.48.0) (2026-10-11)
+
+
+### Features
+
+* update PF2e 8.6.0 and expand Spanish translations ([090abac](https://github.com/allnnde/pf2e-esp-translation/commit/090abaccf7767d6354332d05338730fa44b49b10))
+
+
+
 # [6.47.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.46.0...v6.47.0) (2026-09-05)
 
 
@@ -72,10 +81,6 @@
 * automatic json extract to traslate ([76dcccf](https://github.com/allnnde/pf2e-esp-translation/commit/76dcccf2d4e049bb60e9d9595ff19ad158b33fb1))
 * automatic json extract to traslate ([c45b055](https://github.com/allnnde/pf2e-esp-translation/commit/c45b055d30a3f1edd356277974dc68944e917dde))
 * automatic json extract to traslate ([76cb66d](https://github.com/allnnde/pf2e-esp-translation/commit/76cb66dbae1589cb41b632716fad92b657ab69a1))
-
-
-
-## [6.43.1](https://github.com/allnnde/pf2e-esp-translation/compare/v6.43.0...v6.43.1) (2026-05-29)
 
 
 
