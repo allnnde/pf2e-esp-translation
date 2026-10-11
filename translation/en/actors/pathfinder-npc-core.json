@@ -469,6 +469,12 @@
       "publicNotes": "<p>Assassins commit murder, either for pay or due to their belief in a cause, such as a religion or a political movement. Many are members of assassins' guilds: organizations that accept contracts to kill in return for money, favors, or both.</p>\n<hr />\n<p>In the underbelly of society, the lawless reign supreme.</p>",
       "speed": "swift sneak",
       "items": {
+        "consumable->Giant Centipede Venom": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.txmX5ghhPS72GKXy]\n<p>Giant centipede venom causes severe muscle stiffness.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:17]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d4[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 round)</p>"
+        },
+        "consumable->Lethargy Poison": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zo0ophqfKunJFxZN]\n<p>Lethargy poison is commonly used in hit-and-run tactics by attackers who want their victims alive; the ambusher retreats until the poison sets in and the victim falls unconscious. Further exposure to lethargy poison does not require the target to attempt additional saving throws; only failing an saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 minute)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up ([[/gmr 1d4 #hours]]{1d4 hours}).</p>"
+        },
         "strike-melee->Rapier": {
           "name": "Rapier"
         },
@@ -841,13 +847,16 @@
     },
     "Black Belt": {
       "name": "Black Belt",
-      "publicNotes": "<p>Martial artists strive to master the art of hand-to-hand fighting.</p>",
+      "publicNotes": "<p>Many martial arts schools use colored belts to differentiate skill levels. Above all is the black belt, an advanced practitioner who can counter any attack.</p>\n<hr />\n<p>Martial artists strive to master the art of hand-to-hand fighting.</p>",
       "items": {
         "spellcastingEntry->Monk Focus Spells": {
           "name": "Monk Focus Spells"
         },
         "weapon->+1 Striking Handwraps of Mighty Blows": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO]\n+1 Striking Handwraps of Mighty Blows"
+        },
+        "equipment->Bands of Force": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.02q8s6sSicMkhs1l]\n<p>Decorated with clear gemstones, these thick metal bands spread an inflexible layer of force over your body. The force grants you a +1 item bonus to AC and saving throws, and a maximum Dexterity modifier of +5 as armor. You can affix talismans to the bands as though they were light armor.</p>\n<p><strong>Activate—Return Force</strong> <span class=\"action-glyph\">R</span> (force, manipulate)</p>\n<p><strong>Trigger</strong> A creature critically misses you with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> You Shove the creature using the bands' Athletics modifier of [[/r d20+14]]{+14}.</p>"
         },
         "strike-melee->Bo Staff": {
           "name": "Bo Staff"
@@ -1852,7 +1861,7 @@
     },
     "Cultist": {
       "name": "Cultist",
-      "publicNotes": "<p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
+      "publicNotes": "<p>Cultists have passed an initiation ritual to a secret sect or organization; now, they devote themselves to achieving their most perfect spiritual form.</p>\n<hr />\n<p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
       "saveDetails": "(Will +2 vs. higher-ranking members of the cult)",
       "items": {
         "armor->Cultist Garb (Functions as Leather Armor)": {
@@ -1953,8 +1962,8 @@
           "name": "Fascinating Dance",
           "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The dancer Strides up to their Speed. Once during this movement, when the dancer is adjacent to a creature, the dancer can attempt to mesmerize that creature, who attempts a @Check[will|dc:17|options:inflicts:fascinated] save. On a failure, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with the dancer until the end of its next turn.</p>"
         },
-        "lore->Theatre Lore": {
-          "name": "Theatre Lore"
+        "lore->Theater Lore": {
+          "name": "Theater Lore"
         }
       }
     },
@@ -2067,7 +2076,7 @@
         },
         "action->Mark of Fate": {
           "name": "Mark of Fate",
-          "description": "<p>A creature that slays the deific vessel must succeed at a @Check[will|dc:35] save or be visibly marked as anathema to @UUID[Compendium.pf2e.deities.Item.22n3N47sqbqbDxbp]{Urgathoa}. It gains weakness 10 to unholy and takes a –2 circumstance penalty to Charisma-based skill checks against followers of Urgathoa. Creatures attempting to @UUID[Compendium.pf2e.actionspf2e.Item.plBGdZhqq5JBl1D8]{Gather Information} about or @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the marked creature gain a +2 circumstance bonus to their checks.</p>\n<p>The mark can't be hidden and can be removed only by participating in an atone ritual led by a worshipper of Urgathoa who is 12th level or higher.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.yHI1DhZkAyqwRpDh]{Effect: Mark of Fate}</p>"
+          "description": "<p>A creature that slays the deific vessel must succeed at a @Check[will|dc:35] save or be visibly marked as anathema to @UUID[Compendium.pf2e.deities.Item.22n3N47sqbqbDxbp]{Urgathoa}. It gains weakness 10 to unholy and takes a –2 circumstance penalty to Charisma-based skill checks against followers of Urgathoa. Creatures attempting to @UUID[Compendium.pf2e.actionspf2e.Item.plBGdZhqq5JBl1D8]{Gather Information} about or @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the marked creature gain a +2 circumstance bonus to their checks.</p>\n<p>The mark can't be hidden and can be removed only by participating in an atone ritual led by a worshipper of Urgathoa who is 12th level or higher.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.yHI1DhZkAyqwRpDh]{Effect: Mark of Fate (Urgathoa)}</p>"
         },
         "action->Limited Lifespan": {
           "name": "Limited Lifespan",
@@ -2634,7 +2643,7 @@
         },
         "action->Bombing Barrage": {
           "name": "Bombing Barrage",
-          "description": "<p>he dwarf battalion draws alchemical bombs, then hurls them at distant foes. This volley is a @Template[type:burst|distance:10] within 60 feet that deals @Damage[3d6[@item.flags.system.rulesSelections.bombingBarrage]|options:area-damage] damage with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage is either acid, fire, or electricity damage, depending on which type of bombs the battalion used. When the dwarf battalion is reduced to 2 or fewer segments, this area decreases to a @Template[type:burst|distance:5].</p>"
+          "description": "<p>The dwarf battalion draws alchemical bombs, then hurls them at distant foes. This volley is a @Template[type:burst|distance:10] within 60 feet that deals @Damage[3d6[@item.flags.system.rulesSelections.bombingBarrage]|options:area-damage] damage with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage is either acid, fire, or electricity damage, depending on which type of bombs the battalion used. When the dwarf battalion is reduced to 2 or fewer segments, this area decreases to a @Template[type:burst|distance:5].</p>"
         },
         "action->Coordinated Pummel": {
           "name": "Coordinated Pummel",
@@ -2878,6 +2887,9 @@
         "spell->Planar Displacement": {
           "requirements": "planar key for the destination plane used as a locus"
         },
+        "equipment->Bands of Force (Greater)": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.8mhSUxEvNuXDP8Ki]\n<p>Decorated with clear gemstones, these thick metal bands spread an inflexible layer of force over your body. The force grants you a +2 item bonus to AC and saving throws, and a maximum Dexterity modifier of +5 as armor. You can affix talismans to the bands as though they were light armor.</p>\n<p><strong>Activate—Return Force</strong> <span class=\"action-glyph\">R</span> (force, manipulate)</p>\n<p><strong>Trigger</strong> A creature critically misses you with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> You Shove the creature using the bands' Athletics modifier of [[/r d20+21]]{+21}.</p>"
+        },
         "equipment->Ornate Ritual Book": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE]\nOrnate Ritual Book"
         },
@@ -3036,6 +3048,9 @@
       "publicNotes": "<p>Forces hire an exiled revolutionary because they were once part of the enemy. A lost scion, noble who spoke against tyranny, or wrongly persecuted politician possesses an intimate knowledge of their foe's tactics, logistics, and territory.</p>\n<hr />\n<p>Whether they're hired to wage war, protect a caravan, or infiltrate an impenetrable fortress, there's ample work for mercenaries all over Golarion.</p>",
       "senses": "(+20 to Sense Motive)",
       "items": {
+        "consumable->Wyvern Poison": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WL4O32qFifxnMj0H]\n<p>Properly harvested and preserved, the poison from a wyvern's sting is effective and direct.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:26]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[3d10[poison]] damage (1 round)</p>"
+        },
         "treasure->Signet Ring": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Mm3xgz27Q94wZhti]\nSignet Ring"
         },
@@ -3127,7 +3142,7 @@
         },
         "action->Think Fast!": {
           "name": "Think Fast!",
-          "description": "<p><strong>Requirements</strong> The expedition leader has a hand free</p>\n<hr />\n<p><strong>Effect</strong> The expedition leader scoops up a handful of rubble and throws it. Each creature in a @Template[type:cone|distance:15] must succeed at a @Check[reflex|dc:27] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of the expedition leader's next turn.</p>"
+          "description": "<p><strong>Requirements</strong> The expedition leader has a hand free</p>\n<hr />\n<p><strong>Effect</strong> The expedition leader scoops up a handful of rubble and throws it. Each creature in a @Template[type:cone|distance:15] must succeed at a @Check[reflex|dc:27|options:area-effect,inflicts:dazzled,inflicts:off-guard] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of the expedition leader's next turn.</p>"
         },
         "lore->Scouting Lore": {
           "name": "Scouting Lore"
@@ -3300,7 +3315,7 @@
     },
     "Fiend Caller": {
       "name": "Fiend Caller",
-      "publicNotes": "<p>Villains pursue selfish and cruel goals, trampling over anyone in their way.</p>",
+      "publicNotes": "<p>Fiend callers act as intermediaries to help mortals sell their souls or make other deals with fiends. You can adjust a fiend caller to be accompanied by a bound fiend. The fiend gains the minion trait, and you can replace the fiend caller's @UUID[Compendium.pf2e.spells-srd.Item.WPu3UE3kTXSLqO40]{Spiritual Armament} spell with @UUID[Compendium.pf2e.spells-srd.Item.x0rWq0wS06dns4G2]{Final Sacrifice}.</p>\n<hr />\n<p>Villains pursue selfish and cruel goals, trampling over anyone in their way.</p>",
       "items": {
         "spellcastingEntry->Occult Prepared Spells": {
           "name": "Occult Prepared Spells"
@@ -3622,9 +3637,6 @@
         }
       },
       "items": {
-        "equipment->Set of six ivory dice": {
-          "name": "Set of six ivory dice"
-        },
         "strike-melee->Beak": {
           "name": "Beak"
         },
@@ -4132,13 +4144,16 @@
     },
     "Grandmaster": {
       "name": "Grandmaster",
-      "publicNotes": "<p>Martial artists strive to master the art of hand-to-hand fighting.</p>",
+      "publicNotes": "<p>Beyond the black belt, there is the grandmaster. If a battle breaks out, this incredible warrior possesses unparalleled qi adeptness and punches that can kill.</p>\n<hr />\n<p>Martial artists strive to master the art of hand-to-hand fighting.</p>",
       "items": {
         "spellcastingEntry->Monk Focus Spells": {
           "name": "Monk Focus Spells"
         },
         "weapon->+2 Greater Striking Handwraps of Mighty Blows": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO]\n+2 Greater Striking Handwraps of Mighty Blows"
+        },
+        "equipment->Bands of Force": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.02q8s6sSicMkhs1l]\n<p>Decorated with clear gemstones, these thick metal bands spread an inflexible layer of force over your body. The force grants you a +1 item bonus to AC and saving throws, and a maximum Dexterity modifier of +5 as armor. You can affix talismans to the bands as though they were light armor.</p>\n<p><strong>Activate—Return Force</strong> <span class=\"action-glyph\">R</span> (force, manipulate)</p>\n<p><strong>Trigger</strong> A creature critically misses you with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> You Shove the creature using the bands' Athletics modifier of [[/r d20+14]]{+14}.</p>"
         },
         "strike-melee->Temple Sword": {
           "name": "Temple Sword"
@@ -4250,8 +4265,8 @@
         "strike-ranged->Crossbow": {
           "name": "Crossbow"
         },
-        "action->+1 Bonus on Perception to Find concealed objects": {
-          "name": "+1 Bonus on Perception to Find concealed objects"
+        "action->+1 Bonus on Perception to Find Concealed Objects": {
+          "name": "+1 Bonus on Perception to Find Concealed Objects"
         },
         "lore->Legal Lore": {
           "name": "Legal Lore"
@@ -4475,6 +4490,9 @@
       "publicNotes": "<p>Halfling smugglers are sought out for their ability to deftly navigate the shadowy underworld to move illicit goods and information.</p>\n<hr />\n<p>Halflings thrive on simple pleasures—having a pint at the pub or warming their feet by the hearth.</p>",
       "senses": "keen eyes",
       "items": {
+        "consumable->Arsenic": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.OIirLySQDLZgT15S]\n<p>This toxin is a compound of arsenic and other substances. You can't reduce your sickened condition while affected.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Maximum Duration</strong> 5 minutes</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 minute)</p>\n<p><strong>Stage 3</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} (1 minute)</p>"
+        },
         "strike-melee->Filcher's Fork": {
           "name": "Filcher's Fork"
         },
@@ -4845,7 +4863,7 @@
       "name": "Hobgoblin Battalion",
       "hpDetails": "Thresholds 60 (3 segments), 30 (2 segments)",
       "publicNotes": "<p>A hobgoblin battalion is usually composed of multiple soldiers and archers commanded by a single captain, although every battalion also has its own internal hierarchy that clearly defines the chain of command should the current captain fall in battle.</p>\n<hr />\n<p>Hobgoblins are respected across Golarion for their unmatched expertise in the art of war. The recent foundation of the hobgoblin nation of Oprak and its unprecedented acts of diplomacy, including non-aggression pacts with the neighboring nations of Nidal and Nirmathas, has given some hope that a lasting peace might finally be established; however, there remains no shortage of unaffiliated hobgoblin raiders and pillagers.</p>",
-      "speed": "troop movement ",
+      "speed": "troop movement",
       "items": {
         "action->Troop Defenses": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.EawOw47nHueUPnYc]\n<p><strong>Thresholds</strong> 60 (3 segments), 30 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
@@ -4935,9 +4953,6 @@
       "items": {
         "spellcastingEntry->Primal Prepared Spells": {
           "name": "Primal Prepared Spells"
-        },
-        "spell->Reincarnate": {
-          "secondarycheck": "Occultism,  Religion"
         },
         "weapon->+1 Striking Staff of Healing": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.3OkOKxCee9WruGU5]\n+1 Striking Staff of Healing"
@@ -5233,7 +5248,7 @@
         },
         "action->Starry Presence": {
           "name": "Starry Presence",
-          "description": "<p>30 feet. With a quick dance, the iruxi masked mummer surrounds themself with a starlight image resembling a figure from legend. The image lasts until the start of the mummer's next turn. An enemy that enters or starts its turn in the aura must succeed at a @Check[will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the start of its next turn.</p>"
+          "description": "<p>30 feet. With a quick dance, the iruxi masked mummer surrounds themself with a starlight image resembling a figure from legend. The image lasts until the start of the mummer's next turn. An enemy that enters or starts its turn in the aura must succeed at a @Check[will|dc:25|options:area-effect,inflicts:dazzled] save or become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the start of its next turn.</p>"
         },
         "lore->Iruxi Lore": {
           "name": "Iruxi Lore"
@@ -5265,7 +5280,7 @@
         },
         "action->Efficient Capture": {
           "name": "Efficient Capture",
-          "description": "<p><strong>Requirements</strong> The jailer has manacles in hand and is adjacent to a creature</p>\n<hr />\n<p><strong>Effect</strong> The jailer attempts to bind the creature's wrists or ankles with the manacles. If the jailer succeeds at an attack roll with a [[/r 1d20+9 #Manacles]]{+9 modifier} against the target's AC, they apply the manacles.</p>"
+          "description": "<p><strong>Requirements</strong> The jailer has manacles in hand and is adjacent to a creature</p>\n<hr />\n<p><strong>Effect</strong> The jailer attempts to bind the creature's wrists or ankles with the manacles. If the jailer succeeds at an attack roll with a @Check[efficient-capture|against:ac]{+9} modifier against the target's AC, they apply the manacles.</p>"
         },
         "action->Intimidating Strike": {
           "name": "Intimidating Strike",
@@ -6370,7 +6385,7 @@
     },
     "Mirror Seer": {
       "name": "Mirror Seer",
-      "publicNotes": "<p>Seeking to be the most powerful and perfect creature in their domain, a mirror seer forges a deal with a nefarious entity for more power. Through a magic mirror called a malefic mirror, they communicate with this entity and spy on the events that unfold in their realm.</p>\n<hr />\n<p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
+      "publicNotes": "<p>Seeking to be the most powerful and perfect creature in their domain, a mirror seer forges a deal with a nefarious entity for more power. Through a magic mirror called a <em>malefic mirror</em>, they communicate with this entity and spy on the events that unfold in their realm.</p>\n<hr />\n<p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
       "items": {
         "spellcastingEntry->Occult Spontaneous Spells": {
           "name": "Occult Spontaneous Spells"
@@ -7827,7 +7842,7 @@
         },
         "action->Combat Grab": {
           "name": "Combat Grab",
-          "description": "<p><strong>Trigger</strong> The ruffian has one hand free</p>\n<hr />\n<p><strong>Effect</strong> The ruffian makes a melee Strike while keeping one hand free. If this Strike hits, the ruffian Grabs the target using their free hand. The creature remains @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} until the end of the ruffian's next turn or until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes}, whichever comes first.</p>"
+          "description": "<p><strong>Requirements</strong> The ruffian has one hand free</p>\n<hr />\n<p><strong>Effect</strong> The ruffian makes a melee Strike while keeping one hand free. If this Strike hits, the ruffian Grabs the target using their free hand. The creature remains @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} until the end of the ruffian's next turn or until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes}, whichever comes first.</p>"
         },
         "action->Sneak Attack": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The ruffian deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
@@ -9174,7 +9189,7 @@
         },
         "action->Hurl Net": {
           "name": "Hurl Net",
-          "description": "<p><strong>Requirements</strong> The scout is wielding a net in two hands</p>\n<hr />\n<p><strong>Effect</strong> The scout makes a ranged Strike (with a [[/r 1d20+9 #Hurl Net]]{+9} modifier) against a Medium or smaller creature within 20 feet. On a hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and takes a –10-foot circumstance penalty to its Speeds. On a critical hit, the creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} instead. The DC to [[/act escape dc=16]]{Escape} the net is 16. A creature adjacent to the target can Interact with the net to remove it.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.q2D1QBalqBQfKzTc]{Effect: Hurl Net}</p>"
+          "description": "<p><strong>Requirements</strong> The scout is wielding a net in two hands</p>\n<hr />\n<p><strong>Effect</strong> The scout makes a ranged Strike (with a @Check[hurl-net|against:ac]{+9} modifier) against a Medium or smaller creature within 20 feet. On a hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and takes a –10-foot circumstance penalty to its Speeds. On a critical hit, the creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} instead. The DC to [[/act escape dc=16]] the net is 16. A creature adjacent to the target can Interact with the net to remove it.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.q2D1QBalqBQfKzTc]{Effect: Hurl Net}</p>"
         }
       }
     },
@@ -9230,8 +9245,8 @@
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Primal Innate Spells"
         },
-        "spell->Speak with Plants ((tumbleweeds and scrubland brush only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]\nSpeak with Plants ((tumbleweeds and scrubland brush only)"
+        "spell->Speak with Plants (tumbleweeds and scrubland brush only)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]\nSpeak with Plants (tumbleweeds and scrubland brush only)"
         },
         "strike-melee->Dagger": {
           "name": "Dagger"
@@ -9352,6 +9367,9 @@
       "items": {
         "equipment->Rat Trap": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.T8EopYZLT137CsdW]\nRat Trap"
+        },
+        "consumable->Arsenic": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.OIirLySQDLZgT15S]\n<p>This toxin is a compound of arsenic and other substances. You can't reduce your sickened condition while affected.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Maximum Duration</strong> 5 minutes</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 minute)</p>\n<p><strong>Stage 3</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} (1 minute)</p>"
         },
         "strike-melee->Club": {
           "name": "Club"
