@@ -6,7 +6,7 @@
       "description": "<p>Five nozzles hidden across the apartment's ceiling spew thick clouds of acidic poison from a reinforced tank behind the wall.</p>",
       "disable": "<p>@Check[thievery|dc:35|name:Block One Nozzle|traits:action:disable-a-device] (expert) to block one of the nozzles or @Check[thievery|dc:40|name:Shut Off the Tank|traits:action:disable-a-device] (master) to shut off the tank. The trap deactivates after 5 rounds, once the tank is empty.</p>",
       "hpDetails": "to destroy a nozzle; <strong>Tank Hardness</strong> 20; <strong>TankHP</strong> 100 (BT 50) to damage the tank enough to stop it from spewing gas",
-      "routine": "<p>(1 action) When it's triggered, the trap has five active nozzles, but at the end of its turn each round, one random nozzle deactivates. On the trap's turn, the active nozzles emit a cloud of acidic poison gas that expands to fill the apartment. The cloud deals @Damage[1d6[acid]] damage and @Damage[1d6[poison]] damage per active nozzle to each creature and object in the room (@Check[fortitude|dc:33|basic|name:Spew Cloud|traits:poison] save). Unattended objects automatically fail saves to avoid the damage.</p>",
+      "routine": "<p>(1 action) When it's triggered, the trap has five active nozzles, but at the end of its turn each round, one random nozzle deactivates. On the trap's turn, the active nozzles emit a cloud of acidic poison gas that expands to fill the apartment. The cloud deals @Damage[1d6[acid],1d6[poison]|options:area-damage] damage per active nozzle to each creature and object in the room (@Check[fortitude|dc:33|basic|name:Spew Cloud|options:area-effect|traits:poison] save). Unattended objects automatically fail saves to avoid the damage.</p>",
       "stealth": "<p>(master)</p>",
       "items": {
         "action->Spew Cloud": {
@@ -44,7 +44,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door (At Will)"
         },
         "spell->Detect Alignment (At Will) (Good Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Good Only)"
+          "name": "Detect Alignment (At Will) (Good Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -98,7 +99,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door (At Will)"
         },
         "spell->Detect Alignment (At Will) (Good Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Good Only)"
+          "name": "Detect Alignment (At Will) (Good Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "strike-melee->Claw": {
           "name": "Claw"
@@ -411,7 +413,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]\nDispel Magic (At Will)"
         },
         "spell->Detect Alignment (Constant)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Constant)"
+          "name": "Detect Alignment (Constant)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Tongues (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTongues (Constant)"
@@ -470,7 +473,8 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Detect Alignment (Constant)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Constant)"
+          "name": "Detect Alignment (Constant)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->True Seeing (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]\nTrue Seeing (Constant)"
@@ -540,7 +544,7 @@
         },
         "action->Paralysis": {
           "name": "Paralysis",
-          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}.</p>\n<p>It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:26|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}.</p>\n<p>It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
         }
       }
     },
@@ -642,10 +646,6 @@
         "ammo->Storm Arrow": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.RpvH9EDquO0jS3Jz]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>The head of this arrow is made from gleaming copper.</p>\n<p>When an activated <em>storm arrow</em> hits a target, it is buffeted by raging winds and struck by a bolt of lightning that deals @Damage[3d12[electricity]] damage and the target must attempt a @Check[reflex|dc:25] saving throw.</p>\n<p>If this arrow is shot from a weapon with a <em>shock</em> property rune, the save DC increases to 27, though the attack doesn't benefit from the <em>shock</em> property rune itself.</p>\n<hr />\n<p><strong>Critical Success</strong> The foe is unaffected.</p>\n<p><strong>Success</strong> The foe takes half damage and isn't affected by the wind.</p>\n<p><strong>Failure</strong> The foe takes full damage and is buffeted by winds for 1 round, taking a -2 circumstance penalty to ranged attack rolls and a –10-foot circumstance penalty to its fly Speed.</p>\n<p><strong>Critical Failure</strong> As failure, but the foe takes double damage.</p>"
         },
-        "ammo->Arrows": {
-          "name": "Arrows",
-          "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
-        },
         "strike-ranged->Club": {
           "name": "Club"
         },
@@ -686,10 +686,6 @@
       "items": {
         "ammo->Storm Arrow": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.RpvH9EDquO0jS3Jz]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>The head of this arrow is made from gleaming copper.</p>\n<p>When an activated <em>storm arrow</em> hits a target, it is buffeted by raging winds and struck by a bolt of lightning that deals @Damage[3d12[electricity]] damage and the target must attempt a @Check[reflex|dc:25] saving throw.</p>\n<p>If this arrow is shot from a weapon with a <em>shock</em> property rune, the save DC increases to 27, though the attack doesn't benefit from the <em>shock</em> property rune itself.</p>\n<hr />\n<p><strong>Critical Success</strong> The foe is unaffected.</p>\n<p><strong>Success</strong> The foe takes half damage and isn't affected by the wind.</p>\n<p><strong>Failure</strong> The foe takes full damage and is buffeted by winds for 1 round, taking a -2 circumstance penalty to ranged attack rolls and a –10-foot circumstance penalty to its fly Speed.</p>\n<p><strong>Critical Failure</strong> As failure, but the foe takes double damage.</p>"
-        },
-        "ammo->Arrows": {
-          "name": "Arrows",
-          "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
         },
         "strike-ranged->Club": {
           "name": "Club"
@@ -1010,7 +1006,8 @@
         },
         "action->Rage": {
           "name": "Rage",
-          "description": "<p><strong>Requirements</strong> Bolar isn't fatigued or raging</p>\n<hr />\n<p><strong>Effect</strong> Bolar gains 3 temporary Hit Points that last until the rage ends. While raging, he deals 2 additional damage with melee attacks and takes a -1 penalty to AC. The rage lasts for 1 minute, until there are no enemies Bolar can perceive, or until Bolar falls unconscious.</p>\n<p>Once the rage ends, Bolar can't Rage again for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.z3uyCMBddrPK5umr]{Effect: Rage}</p>"
+          "description": "<p><strong>Requirements</strong> Bolar isn't @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or raging</p>\n<hr />\n<p><strong>Effect</strong> Bolar gains 3 temporary Hit Points that last until the rage ends. While raging, he deals 2 additional damage with melee attacks and takes a -1 penalty to AC. The rage lasts for 1 minute, until there are no enemies Bolar can perceive, or until Bolar falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}.</p>\n<p>Once the rage ends, Bolar can't Rage again for 1 minute.</p>",
+          "selfEffect": "Effect: Rage"
         }
       }
     },
@@ -1100,10 +1097,6 @@
         "armor->+2 Resilient Hellknight Plate": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.lCgXeV52eYYl5cUX]\n+2 Resilient Hellknight Plate",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.lCgXeV52eYYl5cUX]\n<p>Few armors in the Inner Sea region are as memorable as the iconic Hellknight plate. While each order has its own flourishes, Hellknight plate is instantly recognizable to any who know of the Hellknights. Hellknights go to extreme measures to punish non-Hellknights who get their hands on Hellknight plate, and the reward is not usually worth the risk, since for non-Hellknights, the armor is functionally similar to @UUID[Compendium.pf2e.equipment-srd.Item.Gq1cZWSKOtJhKd2p]{Full Plate}.</p>"
-        },
-        "ammo->Bolts": {
-          "name": "Bolts",
-          "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
         },
         "strike-melee->Scourge": {
           "name": "Scourge",
@@ -1784,7 +1777,7 @@
         },
         "action->Hook and Flay": {
           "name": "Hook and Flay",
-          "description": "<p><strong>Requirements</strong> The Daemonic Skinner has a creature grabbed with her blood chain or a creature is affected by her bloody chain aura</p>\n<hr />\n<p><strong>Effect</strong> The Skinner pulls the creature into the nearest open adjacent square and makes a cleaver Strike against the creature.</p>"
+          "description": "<p><strong>Requirements</strong> The Daemonic Skinner has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} with her blood chain or a creature is affected by her bloody chain aura</p>\n<hr />\n<p><strong>Effect</strong> The Skinner pulls the creature into the nearest open adjacent square and makes a cleaver Strike against the creature.</p>"
         }
       }
     },
@@ -1931,7 +1924,7 @@
         },
         "action->Dreadsong": {
           "name": "Dreadsong",
-          "description": "<p>The dreadsong dancer whirls their howling songblades and cloaks themself in illusion magic. Each non-fiend creature in a @Template[emanation|distance:30] from the dreadsong dancer must attempt a @Check[will|dc:29] save.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect, and the creature is temporarily immune for 24 hours. The dreadsong dancer is affected by their performance anxiety.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}, and the dreadsong dancer is @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} by the creature for 1 minute. The creature can't use Seek to find the dreadsong dancer.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature can't reduce its frightened condition below 2 for 1 minute. In addition, the dreadsong dancer is affected by its performance anxiety.</p>"
+          "description": "<p>The dreadsong dancer whirls their howling songblades and cloaks themself in illusion magic. Each non-fiend creature in a @Template[emanation|distance:30] from the dreadsong dancer must attempt a @Check[will|dc:29|options:area-effect,inflicts:frightened] save.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect, and the creature is temporarily immune for 24 hours. The dreadsong dancer is affected by their performance anxiety.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}, and the dreadsong dancer is @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} by the creature for 1 minute. The creature can't use Seek to find the dreadsong dancer.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature can't reduce its frightened condition below 2 for 1 minute. In addition, the dreadsong dancer is affected by its performance anxiety.</p>"
         },
         "action->Rend": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.3JOi2cMcGhT3eze1]\n<p>Songblade</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
@@ -2086,6 +2079,7 @@
       "name": "Eyeball Tank",
       "description": "<p>A vat of thick glass stands 10 feet high and is filled with green slime and fist-sized eyeballs.</p>",
       "disable": "<p>@Check[thievery|dc:38|name:Acidify Slime|traits:action:disable-a-device] (master) or @Check[crafting|dc:34|name:Acidify Slime] (expert) to acidify the slime inside the tank, destroying the eyeballs</p>",
+      "reset": "<p>The trap can be reset by adding 100 new eyeballs to the tank and allowing them to grow in the slime for 1 week.</p>",
       "routine": "<p>(3 actions) Each round, the vat uses all three of its actions to shoot random eye rays at any living creatures (except Ixusoth) in range.</p>",
       "stealth": "<p>(master)</p>",
       "items": {
@@ -2094,17 +2088,20 @@
           "description": "<p><strong>Trigger</strong> Three or more living creatures remain within 20 feet of the trap for 1 round</p>\n<hr />\n<p><strong>Effect</strong> The trap rolls initiative.</p>"
         },
         "strike-ranged->Despair Ray": {
-          "name": "Despair Ray"
+          "name": "Despair Ray",
+          "description": "<p>Target is subjected to a @UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Crushing Despair} spell (@Check[will|dc:33|options:item:magical|traits:concentrate,emotion,manipulate,mental])</p>"
         },
-        "strike-melee->Feeblemind Ray": {
-          "name": "Feeblemind Ray"
+        "strike-ranged->Feeblemind Ray": {
+          "name": "Feeblemind Ray",
+          "description": "<p>Target is subjected to a @UUID[Compendium.pf2e.spells-srd.Item.5BbU1V6wGSGbrmRD]{Feeblemind} spell (@Check[will|dc:36|options:item:magical|traits:concentrate,curse,incapacitation,manipulate,mental])</p>"
         },
         "strike-ranged->Spirit Blast Ray": {
-          "name": "Spirit Blast Ray"
+          "name": "Spirit Blast Ray",
+          "description": "<p>Target is subjected to a @UUID[Compendium.pf2e.spells-srd.Item.PHVHBbdHeQRfjLmE]{Spirit Blast} spell (@Check[fortitude|basic|dc:36|options:item:magical|traits:concentrate,manipulate,spirit])</p>"
         },
         "action->Spill Eyeballs": {
           "name": "Spill Eyeballs",
-          "description": "<p><strong>Trigger</strong> The tank reaches its Broken Threshold</p>\n<hr />\n<p><strong>Effect</strong> The glass shatters, spilling eyeballs onto the floor in a @Template[emanation|distance:15]{15-foot radius} and casting <em>grease</em> (DC 33) on the affected area. The eyeball tank is permanently destroyed and can't be reset.<strong>Reset</strong> The trap can be reset by adding 100 new eyeballs to the tank and allowing them to grow in the slime for 1 week.</p>"
+          "description": "<p><strong>Trigger</strong> The tank reaches its Broken Threshold</p>\n<hr />\n<p><strong>Effect</strong> The glass shatters, spilling eyeballs onto the floor in a @Template[emanation|distance:15]{15-foot radius} and casting @UUID[Compendium.pf2e.spells-srd.Item.Wu0xFpewMKRK3HG8]{Grease} (@Check[reflex|dc:33|options:item:magical|traits:concentrate,manipulate]) on the affected area. The eyeball tank is permanently destroyed and can't be reset.</p>"
         }
       }
     },
@@ -2433,10 +2430,6 @@
         "equipment->Garrote Bolts": {
           "name": "Garrote Bolts"
         },
-        "ammo->Bolts": {
-          "name": "Bolts",
-          "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
-        },
         "strike-melee->Dagger": {
           "name": "Dagger"
         },
@@ -2513,7 +2506,8 @@
           "description": "<p>You create up to four floating lights, no two of which are more than 10 feet apart. Each sheds light like a torch. When you Sustain the Spell, you can move any number of lights up to 60 feet. Each light must remain within 120 feet of you and within 10 feet of all others, or it winks out.</p>"
         },
         "spell->Detect Alignment (At Will) (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Evil Only)"
+          "name": "Detect Alignment (At Will) (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Illusory Disguise (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]\nIllusory Disguise (At Will)"
@@ -2608,7 +2602,7 @@
         },
         "action->Feed on Fear": {
           "name": "Feed on Fear",
-          "description": "<p><strong>Requirement</strong> An enemy is under a fear effect or dying within 15 feet of the will-o'-wisp</p>\n<hr />\n<p><strong>Effect</strong> The will-o'-wisp feeds on the creature's terror. They regains 4d8 Hit Points, and if they've Gone Dark, their glow reignites. A will-o'-wisp can take this action only once per round.</p>"
+          "description": "<p><strong>Requirement</strong> An enemy is under a fear effect or @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} within 15 feet of the will-o'-wisp</p>\n<hr />\n<p><strong>Effect</strong> The will-o'-wisp feeds on the creature's terror. They regains @Damage[4d8[healing]] Hit Points, and if they've Gone Dark, their glow reignites. A will-o'-wisp can take this action only once per round.</p>"
         },
         "action->Go Dark": {
           "name": "Go Dark",
@@ -2843,10 +2837,6 @@
         "equipment->Tinted Goggles": {
           "name": "Tinted Goggles"
         },
-        "ammo->Bolts": {
-          "name": "Bolts",
-          "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
-        },
         "strike-melee->Longsword": {
           "name": "Longsword"
         },
@@ -3013,7 +3003,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]\nFreedom of Movement (Constant)"
         },
         "spell->Detect Alignment (At Will) (Self Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Self Only)"
+          "name": "Detect Alignment (At Will) (Self Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -3166,7 +3157,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]\nFreedom of Movement (Constant)"
         },
         "spell->Detect Alignment (At Will) (Self Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Self Only)"
+          "name": "Detect Alignment (At Will) (Self Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -3245,7 +3237,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door (At Will)"
         },
         "spell->Detect Alignment (At Will) (Lawful Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Lawful Only)"
+          "name": "Detect Alignment (At Will) (Lawful Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "strike-melee->Fist": {
           "name": "Fist"
@@ -3401,7 +3394,8 @@
       "routine": "<p>(6 actions) The hazard loses 1 action for every tentacle that is disabled or destroyed. The tentacles can combine their actions to use the hazard's Inky Imitator ability. A broken tentacle can still Strike, but it can't Grab. This hazard takes no multiple attack penalty.</p>",
       "items": {
         "strike-melee->Tentacle": {
-          "name": "Tentacle"
+          "name": "Tentacle",
+          "description": "<p>No multiple attack penalty</p>"
         },
         "action->Black Ink Delirium": {
           "name": "Black Ink Delirium",
@@ -3554,10 +3548,12 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\n<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
         },
         "strike-melee->Dagger": {
-          "name": "Dagger"
+          "name": "Dagger",
+          "description": "<p>Plus @UUID[Compendium.pf2e.spells-srd.Item.3x6eUCm17n6ROzUa]{Crisis of Faith}</p>"
         },
         "strike-ranged->Dagger": {
-          "name": "Dagger"
+          "name": "Dagger",
+          "description": "<p>Plus @UUID[Compendium.pf2e.spells-srd.Item.3x6eUCm17n6ROzUa]{Crisis of Faith}</p>"
         },
         "action->Call Toxins": {
           "name": "Call Toxins",
@@ -3609,10 +3605,6 @@
         },
         "weapon->+2 Striking Staff": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FVjTuBCIefAgloUU]\n+2 Striking Staff"
-        },
-        "equipment->Bracers of Armor II": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.8mhSUxEvNuXDP8Ki]\nBracers of Armor II",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.8mhSUxEvNuXDP8Ki]\n<p>These stiff leather armguards grant you a +2 item bonus to AC and saving throws, and a maximum Dexterity modifier of +5. You can affix talismans to <em>bracers of armor</em> as though they were light armor.</p>"
         },
         "equipment->Disguise Kit (Elite)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.YhkomhtKBK3i9C7Q]\n<p>This small wooden box contains cosmetics, false facial hair, spirit gum, and a few simple wigs. You usually need a disguise kit to set up a disguise in order to Impersonate someone using the Deception skill. An elite disguise kit adds a +1 item bonus to relevant checks. If you've crafted a large number of disguises, you can replenish your cosmetics supply with replacement cosmetics suitable for the type of your disguise kit.</p>"
@@ -4158,7 +4150,7 @@
         },
         "action->Supersonic Hearing": {
           "name": "Supersonic Hearing",
-          "description": "<p>Mobana has spent years in close proximity to the @UUID[Compendium.pf2e.equipment-srd.Item.k9BYXA4b7Z4Hy6lZ]{Deafening Music Box} in her possession and is immune to its effects. She also gains a +2 circumstance bonus against sonic effects and effects that impose the deafened condition</p>"
+          "description": "<p>Mobana has spent years in close proximity to the @UUID[Compendium.pf2e.equipment-srd.Item.k9BYXA4b7Z4Hy6lZ]{Deafening Music Box} in her possession and is immune to its effects. She also gains a +2 circumstance bonus against sonic effects and effects that impose the @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} condition.</p>"
         },
         "action->Swift Sneak": {
           "name": "Swift Sneak",
@@ -4339,7 +4331,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]\nSleep (At Will)"
         },
         "spell->Detect Alignment (All Alignments; constant)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (All Alignments; constant)"
+          "name": "Detect Alignment (All Alignments; constant)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "equipment->Cloak of the Bat (Greater)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ifAp8wHKBZltgHG0]\n<p>Sewn from several long strips of luxurious brown and black silk, this cloak grants you a +3 item bonus to Stealth checks as well as to Acrobatics checks to Maneuver in Flight. You can also use your feet to hang from any surface that can support your weight, without requiring any check, though you still must attempt Athletics checks to Climb in order to move around while inverted.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, Interact</p>\n<p><strong>Frequency</strong> any number of times per day</p>\n<hr />\n<p><strong>Effect</strong> You can either transform the cloak into bat-like wings that grant you a fly Speed of 30 feet for 10 minutes, or have the cloak turn you into a bat by casting a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.gfPjmG6Fe6D3MFjl]{Pest Form} spell on you.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.ioGzmVSmMGXWWBYb]{Effect: Cloak of the Bat}</p>",
@@ -4506,11 +4499,11 @@
         "spell->Dispel Magic (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]\nDispel Magic (At Will)"
         },
-        "spell->Mask of Terror (Constant) (See Tainted Backlash)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.O6VQC1Bs4aSYDa6R]\nMask of Terror (Constant) (See Tainted Backlash)"
-        },
         "spell->Mind Blank": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.C2w3YfBKjIRS07DP]\nMind Blank"
+        },
+        "spell->Mask of Terror (Constant) (See Tainted Backlash)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.O6VQC1Bs4aSYDa6R]\nMask of Terror (Constant) (See Tainted Backlash)"
         },
         "spell->Fear (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]\nFear (At Will)"
@@ -4759,7 +4752,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]\nFreedom of Movement (Constant)"
         },
         "spell->Detect Alignment (At Will) (Lawful Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Lawful Only)"
+          "name": "Detect Alignment (At Will) (Lawful Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -4987,10 +4981,6 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\nReligious Symbol (norgorber)",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\n<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
         },
-        "ammo->Arrows": {
-          "name": "Arrows",
-          "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
-        },
         "ammo->Arrows With Shadow Essence": {
           "name": "Arrows With Shadow Essence",
           "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>\n<p>Infused with @UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]{Shadow Essence}</p>"
@@ -5206,7 +5196,8 @@
           "target": "1 willing creature, or up to 8 willing creatures joining hands"
         },
         "spell->Detect Alignment (Constant) (Good Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Constant) (Good Only)"
+          "name": "Detect Alignment (Constant) (Good Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Dimension Door": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door"
@@ -5584,15 +5575,10 @@
         },
         "action->Exorcism": {
           "name": "Exorcism",
-          "description": "<p>Mental damage ignores a siege shard's hardness.</p>\n<p>Additionally, proving the siege shard's generative conflict is over with the @UUID[Compendium.pf2e.actionspf2e.Item.Ma93dpT4K7JbP9gu]{Prove Peace} activity reverts the creature to ordinary stone.</p>"
+          "description": "<p>Mental damage ignores a siege shard's hardness.</p>\n<p>Additionally, proving the siege shard's generative conflict is over with the @UUID[Compendium.pf2e.adventure-specific-actions.Item.QW2gYIKce3W31xXf]{Prove Peace} activity reverts the creature to ordinary stone.</p>"
         },
         "action->Hardness 5": {
-          "name": "Hardness 5",
-          "rules": {
-            "0": {
-              "label": "Broken"
-            }
-          }
+          "name": "Hardness 5"
         },
         "action->Surreptitious Siege": {
           "name": "Surreptitious Siege",
@@ -5604,7 +5590,7 @@
         },
         "action->Rejuvenation": {
           "name": "Rejuvenation",
-          "description": "<p>When a siege shard is destroyed within 100 feet of a structure, it reforms after [[/br 2d4 #days]] days within the nearest structure, fully healed.</p>\n<p>A siege shard within a structure can permanently destroyed by the @UUID[Compendium.pf2e.adventure-specific-actions.Item.QW2gYIKce3W31xXf]{Prove Peace} activity.</p>"
+          "description": "<p>When a siege shard is destroyed within 100 feet of a structure, it reforms after [[/gmr 2d4 #days]] days within the nearest structure, fully healed.</p>\n<p>A siege shard within a structure can permanently destroyed by the @UUID[Compendium.pf2e.adventure-specific-actions.Item.QW2gYIKce3W31xXf]{Prove Peace} activity.</p>"
         }
       }
     },
@@ -5767,10 +5753,6 @@
         "equipment->Badge": {
           "name": "Badge"
         },
-        "ammo->Arrows": {
-          "name": "Arrows",
-          "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
-        },
         "strike-melee->Temple Sword": {
           "name": "Temple Sword"
         },
@@ -5860,10 +5842,6 @@
         },
         "equipment->Tinted Goggles": {
           "name": "Tinted Goggles"
-        },
-        "ammo->Bolts": {
-          "name": "Bolts",
-          "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
         },
         "strike-melee->Longsword": {
           "name": "Longsword"
@@ -5996,7 +5974,7 @@
         },
         "action->Bone Drink": {
           "name": "Bone Drink",
-          "description": "<p><strong>Requirement</strong> The tenome has a creature grabbed or restrained</p>\n<hr />\n<p><strong>Effect</strong> The tenome makes a jaws Strike against the grabbed or restrained creature. If the Strike hits, the creature must succeed at a @Check[fortitude|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or the value of the creature's drained condition increases by 1 if it already has a drained value, to a maximum of drained 4).</p>\n<p>The tenome regains @Damage[1d8[healing]] Hit Points each time it uses Bone Drink.</p>"
+          "description": "<p><strong>Requirement</strong> The tenome has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> The tenome makes a jaws Strike against the grabbed or restrained creature. If the Strike hits, the creature must succeed at a @Check[fortitude|dc:18|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or the value of the creature's drained condition increases by 1 if it already has a drained value, to a maximum of drained 4).</p>\n<p>The tenome regains @Damage[1d8[healing]] Hit Points each time it uses Bone Drink.</p>"
         },
         "action->Burst of Speed": {
           "name": "Burst of Speed",
@@ -6004,7 +5982,7 @@
         },
         "action->Terrifying Gaze": {
           "name": "Terrifying Gaze",
-          "description": "<p>1 or 2 actions</p>\n<p>A tenome can gaze at a creature within 30 feet by presenting one of its eyes. The target must succeed at a @Check[will|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. If the tenome uses 2 actions and presents both of its eyes, the target is also @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} if it fails the save.</p>\n<p>A creature that successfully saves is temporarily immune for 24 hours.</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> or <span class=\"action-glyph\">2</span></p>\n<hr />\n<p>A tenome can gaze at a creature within 30 feet by presenting one of its eyes. The target must succeed at a @Check[will|dc:21|options:inflicts:frightened,inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. If the tenome uses 2 actions and presents both of its eyes, the target is also @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} if it fails the save.</p>\n<p>A creature that successfully saves is temporarily immune for 24 hours.</p>"
         }
       }
     },
@@ -6032,7 +6010,7 @@
         },
         "action->Impale": {
           "name": "Impale",
-          "description": "<p><strong>Requirement</strong> The teraphant has a creature grabbed</p>\n<hr />\n<p><strong>Effect</strong> The teraphant slams the creature onto one of its horns. The target must attempt a @Check[reflex|dc:27|basic] save or suffer @Damage[(3d6+9)[piercing]] damage and @Damage[1d6[bleed]] (@Damage[(6d6+18)[piercing]] damage on a critical failure).</p>"
+          "description": "<p><strong>Requirement</strong> The teraphant has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The teraphant slams the creature onto one of its horns. The target must attempt a @Check[reflex|dc:27|options:damaging-effect] save or suffer @Damage[(3d6+9)[piercing],1d6[bleed]] damage (@Damage[(6d6+18)[piercing],1d6[bleed]] damage on a critical failure).</p>"
         },
         "action->Psychokinetic Trumpet": {
           "name": "Psychokinetic Trumpet",
@@ -6043,7 +6021,7 @@
         },
         "action->Grabbing Trunk": {
           "name": "Grabbing Trunk",
-          "description": "<p>A Medium or smaller creature hit by the teraphant's trunk is grabbed. If the teraphant moves, it can bring the grabbed creature along with it.</p>"
+          "description": "<p>A Medium or smaller creature hit by the teraphant's trunk is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. If the teraphant moves, it can bring the grabbed creature along with it.</p>"
         }
       }
     },
@@ -6495,11 +6473,11 @@
           "selfEffect": "Effect: Metallify"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:23|traits:damaging-effect], @Damage[(2d8+9)[acid]] damage, [[/act escape dc=23]], Rupture 14 (19 when using Metallify)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:23|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[(2d8+9)[acid]] damage, [[/act escape dc=23]], Rupture 14 (19 when using Metallify)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Form Tool": {
           "name": "Form Tool",
-          "description": "<p>The vaultbreaker ooze instinctually shapes its pseudopod into a key, lockpick, or tool required to bypass a locking mechanism; it uses this pseudopod as thieves' tools to @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick a Lock} or @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable a Device}.</p>"
+          "description": "<p>The vaultbreaker ooze instinctually shapes its pseudopod into a key, lockpick, or tool required to bypass a locking mechanism; it uses this pseudopod as thieves' tools to [[/act pick-a-lock]] or [[/act disable-device]].</p>"
         }
       }
     },
@@ -6675,7 +6653,7 @@
           "description": "<p>Any member of the elemental vessel's spell circle can spend 3 actions to mentally inhabit the vessel for 1 round. While they inhabit the vessel, the inhabiter controls the vessel's actions, and the vessel uses the inhabiter's Intelligence, Wisdom, and Charisma modifiers for all checks. Only one creature can inhabit an elemental vessel at a time.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:35] save, no damage, [[/act escape dc=35]], Rupture 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:35|options:inflicts:grabbed,inflicts:slowed] save, no damage, [[/act escape dc=35]], Rupture 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Internal Spell Strike": {
           "name": "Internal Spell Strike",
@@ -6724,7 +6702,7 @@
           "description": "<p>Any member of the elemental vessel's spell circle can spend 3 actions to mentally inhabit the vessel for 1 round. While they inhabit the vessel, the inhabiter controls the vessel's actions, and the vessel uses the inhabiter's Intelligence, Wisdom, and Charisma modifiers for all checks. Only one creature can inhabit an elemental vessel at a time.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:35] save, no damage, [[/act escape dc=35]], Rupture 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:35|options:inflicts:grabbed,inflicts:slowed] save, no damage, [[/act escape dc=35]], Rupture 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Internal Spell Strike": {
           "name": "Internal Spell Strike",
@@ -6759,8 +6737,9 @@
         "weapon->Modified Spiked Chain": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zi9ovfoRp2fMhfpO]\nModified Spiked Chain"
         },
-        "equipment->Key to the Skinsaw Sanctum Vault": {
-          "name": "Key to the Skinsaw Sanctum Vault"
+        "equipment->Key": {
+          "name": "Key",
+          "gmNote": "<p>Wrent's key to the Skinsaw sanctum vault.</p>"
         },
         "strike-melee->Cleaver": {
           "name": "Cleaver"
@@ -6786,7 +6765,7 @@
         },
         "action->Hook and Flay": {
           "name": "Hook and Flay",
-          "description": "<p><strong>Requirements</strong> The Skinner has a creature grabbed with her spiked chain</p>\n<hr />\n<p><strong>Effect</strong> The Skinner pulls the creature into the nearest open adjacent square and makes a cleaver Strike against the creature.</p>"
+          "description": "<p><strong>Requirements</strong> The Skinner has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} with her spiked chain</p>\n<hr />\n<p><strong>Effect</strong> The Skinner pulls the creature into the nearest open adjacent square and makes a cleaver Strike against the creature.</p>"
         }
       }
     },
@@ -6861,7 +6840,7 @@
         },
         "action->Paralysis": {
           "name": "Paralysis",
-          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:27|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
         },
         "action->Swift Leap": {
           "name": "Swift Leap",
@@ -6889,10 +6868,6 @@
         },
         "armor->Breastplate": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.r0ifJfoz8aqf0mwk]\n<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
-        },
-        "ammo->Sling Bullets": {
-          "name": "Sling Bullets",
-          "description": "<p>These are small metal balls, typically either iron or lead, designed to be used as ammunition in slings.</p>"
         },
         "strike-melee->Morningstar": {
           "name": "Morningstar"

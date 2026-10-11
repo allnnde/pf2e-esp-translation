@@ -677,7 +677,7 @@
         },
         "action->Forbidden Cravings": {
           "name": "Forbidden Cravings",
-          "description": "<p>A creature can still eat and drink while sickened by this curse</p>\n<p><strong>Saving Throw</strong> @Check[will|dc:18]</p>\n<p><strong>Stage 1</strong> carrier with no ill effects (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} until it consumes raw meat (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2</p>\n<p><strong>Stage 4</strong> as stage 2 unless the target has consumed raw meat in the past 24 hours; then it takes @Damage[4d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} until it consumes raw meat</p>\n<p><strong>Stage 5</strong> If the creature has eaten raw meat in the past 24 hours, it dies and rises as a ghoul; if not, it returns to stage 4 .</p>"
+          "description": "<p>A creature can still eat and drink while sickened by this curse</p>\n<p><strong>Saving Throw</strong> @Check[will|dc:18]</p>\n<p><strong>Stage 1</strong> carrier with no ill effects (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} until it consumes raw meat (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2</p>\n<p><strong>Stage 4</strong> as stage 2 unless the target has consumed raw meat in the past 24 hours; then it takes @Damage[4d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} until it consumes raw meat</p>\n<p><strong>Stage 5</strong> If the creature has eaten raw meat in the past 24 hours, it dies and rises as a ghoul; if not, it returns to stage 4.</p>"
         },
         "action->Ghoul Whispers": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.pOW2IvfVusdmD5v5]\nGhoul Whispers",
@@ -998,12 +998,12 @@
       "description": "<p>A magical orb drives intruders to commit acts of mindless destruction.</p>",
       "disable": "<p>@Check[crafting|dc:27] (master) to reconfigure the locus, @Check[occultism|dc:30] or @Check[religion|dc:30] (expert) to counteract the locus's energies, @Check[thievery|dc:35] (master) to extricate the orb from the altar</p>",
       "reset": "<p>The haunt deactivates 1 minute after all living creatures leave the area. After 1 hour, the haunt reactivates.</p>",
-      "routine": "<p>(1 action; mental) The destructive impulses grow stronger. Affected creatures must attempt a @Check[will|dc:32|traits:mental] save; creatures who fail or critically fail can't attempt to disable the haunt that turn.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected this round.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round, targeting both creatures and objects.</p>\n<p><strong>Critical Failure</strong> As failure but the confusion lasts for 1 minute.</p>",
+      "routine": "<p>(1 action; mental) The destructive impulses grow stronger. Affected creatures must attempt a @Check[will|dc:32|options:inflicts:confused|traits:mental] save; creatures who fail or critically fail can't attempt to disable the haunt that turn.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected this round.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round, targeting both creatures and objects.</p>\n<p><strong>Critical Failure</strong> As failure but the confusion lasts for 1 minute.</p>",
       "stealth": "<p>(expert)</p>",
       "items": {
         "action->Destruction's Fury": {
           "name": "Destruction's Fury",
-          "description": "<p><strong>Trigger</strong> A creature touches the orb or attempts to disable the haunt</p>\n<hr />\n<p><strong>Effect</strong> A destructive fury fills the minds of all living creatures in the area, who must succeed at a @Check[will|dc:32] save or be @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure) for 1 minute. The haunt then rolls initiative.</p>"
+          "description": "<p><strong>Trigger</strong> A creature touches the orb or attempts to disable the haunt</p>\n<hr />\n<p><strong>Effect</strong> A destructive fury fills the minds of all living creatures in the area, who must succeed at a @Check[will|dc:32|options:inflicts:stupefied] save or be @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure) for 1 minute. The haunt then rolls initiative.</p>"
         },
         "action->Destruction Manifest": {
           "name": "Destruction Manifest",
@@ -1011,11 +1011,11 @@
         },
         "action->Unholy Repair": {
           "name": "Unholy Repair",
-          "description": "<p>The locus is sustained by the power of Tar-Baphon. The orb regains 10 Hit Points at the beginning of every round and is repaired by void damage.</p>"
+          "description": "<p>The locus is sustained by the power of Tar-Baphon. The orb regains @Damage[10[healing]] Hit Points at the beginning of every round and is repaired by void damage.</p>"
         },
         "strike-melee->Destructive Lash": {
           "name": "Destructive Lash",
-          "description": "<p>no multiple attack penalty</p>"
+          "description": "<p>No multiple attack penalty</p>"
         },
         "action->Destructive Backlash": {
           "name": "Destructive Backlash",
@@ -1049,7 +1049,7 @@
       "name": "Magical Forge",
       "acDetails": "(24 when broken); construct armor",
       "blurb": "Weak animated furnace",
-      "publicNotes": "<p>This huge forge or oven is animated to protect a workspace or kitchen, travel alongside its owner, or both.</p>\n<hr />\n<p>Many animated objects have useful functions but become dangers when uncontrolled.</p>",
+      "publicNotes": "<p>This huge forge or oven is animated to protect a workspace or kitchen, travel alongside its owner, or both.</p>\n<hr />\n<p>Many animated objects have useful functions but become dangerous when left uncontrolled.</p>",
       "items": {
         "strike-melee->Door": {
           "name": "Door"
@@ -1661,6 +1661,12 @@
       "items": {
         "equipment->Religious Symbol of Verex": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.upzjwQ96cZG0Xlmx]\nReligious Symbol of Verex"
+        },
+        "consumable->Spider Root": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.oOXvk18K4izaJzG7]\n<p>A paste made by mashing the fine, threadlike roots of a certain creeper vine, spider root renders a victim clumsy and maladroit.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:28]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 minutes</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 minute)</p>\n<p><strong>Stage 3</strong> @Damage[6d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3} (1 minute)</p>"
+        },
+        "consumable->Wyvern Poison": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.WL4O32qFifxnMj0H]\n<p>Properly harvested and preserved, the poison from a wyvern's sting is effective and direct.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:26]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[3d10[poison]] damage (1 round)</p>"
         },
         "strike-melee->Orc Knuckle Dagger": {
           "name": "Orc Knuckle Dagger"
@@ -2369,7 +2375,7 @@
         },
         "action->Piercing Fangs": {
           "name": "Piercing Fangs",
-          "description": "<p><strong>Requirements</strong> The warcat has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The warcat clamps on to the creature's neck. The creature takes @Damage[(3d12+10)[piercing]] damage plus @Damage[1d4[bleed]] damage (@Check[fortitude|dc:33|basic] save).</p>"
+          "description": "<p><strong>Requirements</strong> The warcat has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The warcat clamps on to the creature's neck. The creature takes @Damage[(3d12+10)[piercing],1d4[bleed]] damage (@Check[fortitude|dc:33|basic] save).</p>"
         },
         "action->Pounce": {
           "name": "Pounce",

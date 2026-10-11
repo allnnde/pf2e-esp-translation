@@ -51,7 +51,9 @@ export async function getContentFromZip(file) {
  * @returns {Promise<Blob>}     A Promise for the file's Blob data
  */
 export async function getFileFromURL(url) {
-    return fetch(url).then((res) => res.blob());
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Download failed: HTTP ${response.status} for ${url}`);
+    return response.blob();
 }
 
 /**

@@ -25,7 +25,7 @@
       "name": "(Beheaded) Bleeding",
       "description": "<p>The beheaded is covered in slimy blood. The target of a successful Strike is splattered with gore and must succeed at a @Check[fortitude|dc:] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>",
       "rules": {
-        "0": {
+        "1": {
           "text": "<p><strong>{item|name}</strong> {item|system.description.value}</p>"
         }
       }
@@ -34,7 +34,7 @@
       "name": "(Beheaded) Entangling",
       "description": "<p>Long, stringy hair clings to the beheaded's scalp. Its Strikes gain the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab} ability.</p>",
       "rules": {
-        "1": {
+        "2": {
           "text": "<div class='compact-text' data-visibility='gm'><strong>{item|name}</strong> @Localize[PF2E.NPC.Abilities.Glossary.Grab]</div>"
         }
       }
@@ -133,7 +133,7 @@
     },
     "(Clockwork Creature) Wind-Up": {
       "name": "(Clockwork Creature) Wind-Up",
-      "description": "<p>24 hours, [[/act disable-device dc=0]], standby</p>\n<hr />\n<p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p>\n<p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p>"
+      "description": "<p>24 hours, [[/act disable-device dc=0]], standby</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.WindUp]</p>"
     },
     "(Conspirator Dragon) Apex Paranoids": {
       "name": "(Conspirator Dragon) Apex Paranoids",
@@ -285,7 +285,7 @@
     },
     "(Divine Warden) Divine Destruction": {
       "name": "(Divine Warden) Divine Destruction",
-      "description": "<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[type:emanation|distance:30], dealing @Damage[1d6[spirit]|options:area-damage] damage per level. Each creature in the area must attempt a @Check[will|dc:0] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
+      "description": "<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[type:emanation|distance:30], dealing @Damage[1d6[spirit]|options:area-damage] damage per level. Each creature in the area must attempt a @Check[will|dc:0|options:area-effect,damaging-effect,inflicts:enfeebled,inflicts:stupefied] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
     },
     "(Divine Warden) Divine Domain Spells": {
       "name": "(Divine Warden) Divine Domain Spells",
@@ -297,7 +297,7 @@
     },
     "(Divine Warden) Faith Bound": {
       "name": "(Divine Warden) Faith Bound",
-      "description": "<p>A divine warden can't attack a creature that openly wears or displays the religious symbol of the divine warden's patron deity unless that creature uses a hostile action against the divine warden first. If the divine warden is intelligent, it can also attack a creature it believes isn't faithful to its deity or who wears the religious symbol as a ruse (typically after succeeding at a Perception check to @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive}).</p>"
+      "description": "<p>A divine warden can't attack a creature that openly wears or displays the religious symbol of the divine warden's patron deity unless that creature uses a hostile action against the divine warden first. If the divine warden is intelligent, it can also attack a creature it believes isn't faithful to its deity or who wears the religious symbol as a ruse (typically after succeeding at a Perception check to [[/act sense-motive]]).</p>"
     },
     "(Divine Warden) Faithful Weapon": {
       "name": "(Divine Warden) Faithful Weapon",
@@ -389,7 +389,7 @@
     },
     "(Ghast) Paralysis": {
       "name": "(Ghast) Paralysis",
-      "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+      "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
     },
     "(Ghast) Stench": {
       "name": "(Ghast) Stench",
@@ -497,7 +497,7 @@
     },
     "(Ghoul) Paralysis": {
       "name": "(Ghoul) Paralysis",
-      "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+      "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
     },
     "(Ghoul) Swift Leap": {
       "name": "(Ghoul) Swift Leap",
@@ -670,7 +670,7 @@
     },
     "(Leshy) Verdant Burst": {
       "name": "(Leshy) Verdant Burst",
-      "description": "<p>When the leshy dies, a burst of primal energy explodes from their body, restoring Hit Points based on the leshy's level to each plant creature in a @Template[type:emanation|distance:30]. This area is filled with plants, becoming difficult terrain. If the terrain is not a viable environment for these plants, they wither after 24 hours.</p>\n<table border=\"1\" class=\"pf2e remaster\">\n<thead>\n<tr style=\"text-align:right\">\n<th>Level</th>\n<th>Healing</th>\n<th>Level</th>\n<th>Healing</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>-1—0</td>\n<td>1d4</td>\n<td>10—11</td>\n<td>6d8</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1d8</td>\n<td>12—13</td>\n<td>7d8</td>\n</tr>\n<tr>\n<td>2—3</td>\n<td>2d8</td>\n<td>14—15</td>\n<td>8d8</td>\n</tr>\n<tr>\n<td>4—5</td>\n<td>3d8</td>\n<td>16—17</td>\n<td>9d8</td>\n</tr>\n<tr>\n<td>6—7</td>\n<td>4d8</td>\n<td>18—19</td>\n<td>10d8</td>\n</tr>\n<tr>\n<td>8—9</td>\n<td>5d8</td>\n<td>20+</td>\n<td>11d8</td>\n</tr>\n</tbody>\n</table>"
+      "description": "<p>When the leshy dies, a burst of primal energy explodes from their body, restoring Hit Points based on the leshy's level to each plant creature in a @Template[type:emanation|distance:30]. This area is filled with plants, becoming difficult terrain. If the terrain is not a viable environment for these plants, they wither after 24 hours.</p>\n<table border=\"1\" class=\"pf2e remaster\">\n<thead>\n<tr style=\"text-align:right\">\n<th>Level</th>\n<th>Healing</th>\n<th>Level</th>\n<th>Healing</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>-1–0</td>\n<td>1d4</td>\n<td>10–11</td>\n<td>6d8</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1d8</td>\n<td>12–13</td>\n<td>7d8</td>\n</tr>\n<tr>\n<td>2–3</td>\n<td>2d8</td>\n<td>14–15</td>\n<td>8d8</td>\n</tr>\n<tr>\n<td>4–5</td>\n<td>3d8</td>\n<td>16–17</td>\n<td>9d8</td>\n</tr>\n<tr>\n<td>6–7</td>\n<td>4d8</td>\n<td>18–19</td>\n<td>10d8</td>\n</tr>\n<tr>\n<td>8–9</td>\n<td>5d8</td>\n<td>20+</td>\n<td>11d8</td>\n</tr>\n</tbody>\n</table>"
     },
     "(Lich) Animate Cage": {
       "name": "(Lich) Animate Cage",
@@ -754,7 +754,7 @@
     },
     "(Mana Wastes Mutant) Energy Resistance": {
       "name": "(Mana Wastes Mutant) Energy Resistance",
-      "description": "<p>The mutant has strangely colored skin or fur and gains resistance to a single type of energy damage. The amount of energy resistance gained depends on the mutant's level.</p>\n<table style=\"width: 100.018%; height: 88.889px;\" border=\"1\"><colgroup><col style=\"width: 73.5726%;\"><col style=\"width: 26.2643%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17.7778px;\">\n<td style=\"height: 17.7778px;\">Mutant's Level</td>\n<td style=\"height: 17.7778px;\">Energy Resistance</td>\n</tr>\n<tr style=\"height: 17.7778px;\">\n<td style=\"height: 17.7778px;\">2 or lower</td>\n<td style=\"height: 17.7778px;\">2</td>\n</tr>\n<tr style=\"height: 17.7778px;\">\n<td style=\"height: 17.7778px;\">3-7</td>\n<td style=\"height: 17.7778px;\">5</td>\n</tr>\n<tr style=\"height: 17.7778px;\">\n<td style=\"height: 17.7778px;\">8-14</td>\n<td style=\"height: 17.7778px;\">10</td>\n</tr>\n<tr style=\"height: 17.7778px;\">\n<td style=\"height: 17.7778px;\">15+</td>\n<td style=\"height: 17.7778px;\">15</td>\n</tr>\n</tbody>\n</table>"
+      "description": "<p>The mutant has strangely colored skin or fur and gains resistance to a single type of energy damage. The amount of energy resistance gained depends on the mutant's level.</p>\n<table class=\"pf2e lost-omens\">\n<thead>\n<tr>\n<th>Mutant's Level</th>\n<th>Energy Resistance</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2 or lower</td>\n<td>2</td>\n</tr>\n<tr>\n<td>3-7</td>\n<td>5</td>\n</tr>\n<tr>\n<td>8-14</td>\n<td>10</td>\n</tr>\n<tr>\n<td>15+</td>\n<td>15</td>\n</tr>\n</tbody>\n</table>"
     },
     "(Mana Wastes Mutant) Grasping Tentacle": {
       "name": "(Mana Wastes Mutant) Grasping Tentacle",
@@ -999,6 +999,10 @@
       "name": "(Mythic) Unimpeded",
       "description": "<p><strong>Cost</strong> 1 Mythic Point</p>\n<hr />\n<p><strong>Effect</strong> The mythic striker automatically ends one effect that would give it a circumstance penalty to Speed. When it attempts to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} an effect that has it @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, it automatically succeeds.</p>"
     },
+    "(Naval Crew) Pistol Salvo": {
+      "name": "(Naval Crew) Pistol Salvo",
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> The naval crew draws and fires their flintlock pistols in a @Template[type:burst|distance:10] within 40 feet, dealing @Damage[7d4[piercing]|options:area-damage] damage (@Check[reflex|dc:23|basic|options:area-effect] save). Each creature uses the weaker of its resistance or immunity to piercing or bludgeoning damage, and any that critically fails its save takes an additional @Damage[10[piercing]|options:area-damage] damage after doubling. When the naval crew is reduced to 2 or fewer segments, this area decreases to a @Template[type:burst|distance:5].</p>"
+    },
     "(Nemesis) Additional Damage": {
       "name": "(Nemesis) Additional Damage",
       "description": "<p>Nemesis inflicts 1d6 extra damage (chosen from acid, cold, electricity, fire, poison, or sonic) on all Strikes.</p>"
@@ -1222,6 +1226,18 @@
       "name": "(Secret Society) Tag Team",
       "description": "<p>A secret society member works best with other members of the same society (whether they have the secret society member adjustment and this ability or not). Any creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against a secret society member's melee attacks due to flanking as long as the enemy is within both the secret society member's reach and the reach of one allied creature that is a member of the same secret society. Against a creature within the reach of two or more allied creatures that are members of the same secret society, the secret society member's Strikes deal an additional 1d6 precision damage.</p>"
     },
+    "(Shadowbound) Light Vulnerability": {
+      "name": "(Shadowbound) Light Vulnerability",
+      "description": "<p>Attacks against the shadowbound creature are treated as magical if made by a creature that's in magical light or with an object that's in magical light (such as from the light spell).</p>"
+    },
+    "(Shadowbound) Shadow Form": {
+      "name": "(Shadowbound) Shadow Form",
+      "description": "<p>A shadowbound creature can assume a shadowy form. In this state, the creature gains the incorporeal trait. It has resistance 10 to all damage (except force, ghost touch, spirit, or vitality; double resistance vs. non-magical), is immune to precision damage, and can't use any actions with the attack or manipulate trait. It has a fly Speed of 15 feet and can slip through tiny cracks. The shadowbound creature can Dismiss this effect to become solid again, but if it does so in an area of bright light, it's @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} for 1 round.</p>"
+    },
+    "(Shadowbound) Shadow Touch": {
+      "name": "(Shadowbound) Shadow Touch",
+      "description": "<p>The creature's Strikes affect incorporeal creatures with the effects of a ghost touch property rune.</p>"
+    },
     "(Siabrae) Blight Mastery": {
       "name": "(Siabrae) Blight Mastery",
       "description": "<p>Any of the siabrae's spells or effects that would normally be restricted to affecting animals can also affect undead animals. Furthermore, any animals the siabrae takes the form of or summons appear to be diseased, malnourished, or even dead and rotting. (This doesn't affect their statistics.)</p>"
@@ -1294,7 +1310,7 @@
       "name": "(Skeleton) Lacquered",
       "description": "<p>During the process to create the skeleton, it was covered with several layers of an alchemical lacquer, giving its bones a golden hue and granting added protection. The skeleton gains acid resistance 5 and a +2 status bonus to saves against effects that age or erode the target.</p>",
       "rules": {
-        "1": {
+        "2": {
           "label": "Against Effects that Age or Erode the Target"
         }
       }
@@ -1334,6 +1350,106 @@
     "(Spawning Soulrider) Monitor Escape": {
       "name": "(Spawning Soulrider) Monitor Escape",
       "description": "<p>The soulrider's form blurs as it exploits loopholes in the multiverse. It teleports to an empty space within 60 feet.</p>"
+    },
+    "(Special Forces Bond) Ambush Troop": {
+      "name": "(Special Forces Bond) Ambush Troop",
+      "description": "<p><strong>Prerequisites</strong> expert in Stealth</p>\n<hr />\n<p>You've trained your troop in several techniques that allows your group to remain stealthy despite your numbers. Any time you and your troop need to attempt a Stealth check, you roll only once and use the higher Stealth modifer. This benefit applies when you explore with your troop—such as when using the [[/act avoid-notice]] exploration activity—not only in a skirmish encounter.</p>\n<p>In addition, you let your troop take full advantage of creatures that are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to them, even though most troops can't coordinate their attacks precisely enough to do so. Creatures that are off-guard to your troop take a –2 circumstance penalty to saving throws and save DCs against your troop's ofensive abilities.</p>"
+    },
+    "(Special Forces Bond) Combo Attack": {
+      "name": "(Special Forces Bond) Combo Attack",
+      "description": "<p><strong>Prerequisite</strong> expert proficiency with one or more weapons or unarmed attacks</p>\n<hr />\n<p>You can attack in tandem with your troop, using your attacks to make openings for your troop to finish the job. When you make a Strike on your turn, any creature you hit takes a –1 status penalty to saving throws against any offensive ability your troop uses this turn.</p>"
+    },
+    "(Special Forces Bond) Coordinated Casting": {
+      "name": "(Special Forces Bond) Coordinated Casting",
+      "description": "<p><strong>Prerequisites</strong> You're a spellcaster, and your troop has spells or an offensive ability with the arcane, divine, magical, occult, or primal trait.</p>\n<hr />\n<p>You can cast spells in tandem with your troop. When you Cast a Spell on your turn, any creature that you hit with a spell attack for the spell or that fails its save against your spell takes a –1 status penalty to AC, save DCs, and saving throws against any spell your troop Casts this turn or magical ability your troop uses this turn.</p>"
+    },
+    "(Special Forces Bond) Desperate Fervor": {
+      "name": "(Special Forces Bond) Desperate Fervor",
+      "description": "<p><strong>Prerequisites</strong> expert in Diplomacy, Intimidation, or Performance</p>\n<hr />\n<p>When the chips are down, your troop becomes more dangerous. While your troop has 3 or fewer segments, it gains a +1 status bonus to AC, save DCs, and saving throws, and a status bonus to damage rolls equal to half your level. The damage bonus increases to your full level if the troop has only 2 segments.</p>"
+    },
+    "(Special Forces Bond) Discipline": {
+      "name": "(Special Forces Bond) Discipline",
+      "description": "<p><strong>Prerequisites</strong> expert in Will saves</p>\n<hr />\n<p>Your troop automatically critically succeeds at rout checks. If you're knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, your troop still improves its degree of success on rout checks by one step until the end of the encounter, as a troop with a leader does.</p>"
+    },
+    "(Special Forces Bond) Inescapable Troop": {
+      "name": "(Special Forces Bond) Inescapable Troop",
+      "description": "<p><strong>Prerequisites</strong> Reactive Strike</p>\n<hr />\n<p>Your troop locks down opposing forces, keeping them from repositioning on the battlefield. Your troop gains the @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.Fp5JEjsmiMp25Ica]{Inescapable Onslaught} reaction.</p>"
+    },
+    "(Special Forces Bond) Magical Defenses": {
+      "name": "(Special Forces Bond) Magical Defenses",
+      "description": "<p><strong>Prerequisites</strong> You're a spellcaster.</p>\n<hr />\n<p>You develop magical wards for your troops. Your troop gains a +1 status bonus to all defenses against magic.</p>"
+    },
+    "(Special Forces Bond) Mobile Troop": {
+      "name": "(Special Forces Bond) Mobile Troop",
+      "description": "<p><strong>Prerequisites</strong> expert in Acrobatics</p>\n<hr />\n<p>Your troop can move across the battlefield nimbly. When you and your troop are moving, the combined unit gains a +5-foot status bonus to all movement Speeds. In addition, if you or your troop uses a special action, spell, or other ability that allows a special type of movement, such as Wall Jump, translocate, or a fly Speed, you can move together even if that normally wouldn't be possible.</p>"
+    },
+    "(Special Forces Bond) Rage and Rule": {
+      "name": "(Special Forces Bond) Rage and Rule",
+      "description": "<p><strong>Prerequisites</strong> You have the Rage action.</p>\n<hr />\n<p>Your troop learns the incredible rush of raging in battle. When you Rage, your troop gains half the number of temporary Hit Points you do. These temporary Hit Points last for 1 minute, and the troop can't gain temporary HP from this ability again for 1 minute.</p>"
+    },
+    "(Special Forces Bond) Shield Wall": {
+      "name": "(Special Forces Bond) Shield Wall",
+      "description": "<p><strong>Prerequisites</strong> Shield Block</p>\n<p><strong>Requirements</strong> You're wielding a shield.</p>\n<hr />\n<p>You've equipped your troop with shields, and they raise them at your command. You Raise your Shield, and both you and your troop gain a +2 circumstance bonus to AC and Reflex saves until the start of your next turn.</p>"
+    },
+    "(Special Forces Bond) Troop Mascot": {
+      "name": "(Special Forces Bond) Troop Mascot",
+      "description": "<p><strong>Prerequisites</strong> You have a companion (such as an animal companion, eidolon, familiar, or pet).</p>\n<hr />\n<p>Your troop finds your companion creature charming, and the members of your troop have bonded with your pet. Your companion gains resistance equal to your troop's level to all damage. If you have an eidolon, when an effect damages both of you, this resistance applies after you determine the higher amount of damage.</p>\n<p>If you have an animal companion, its Support benefit applies to your troop as well as you.</p>"
+    },
+    "(Special Forces Bond) Under Command": {
+      "name": "(Special Forces Bond) Under Command",
+      "description": "<p><strong>Prerequisites</strong> You have the tactics class feature.</p>\n<hr />\n<p>Leading troops is second nature to you, and the lessons of your tactics apply to entire groups of allies. Your troop counts as one of your squadmates and doesn't count against your maximum number of squadmates.</p>\n<p>In addition, troops who are your squadmates can use an offensive ability instead of a Strike whenever you use a tactic that would allow them to Strike. If you specifically grant a melee Strike, they have to use an emanation ability; if you specifically grant a ranged Strike, they have to use a burst ability. They must use the 1-action or 2-action version of the offensive ability. These offensive abilities count against the number of Strikes you can grant with your tactic. This works with any troop squadmates, whether you're leading them or an ally is.</p>"
+    },
+    "(Special Forces) Combat Medicine": {
+      "name": "(Special Forces) Combat Medicine",
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The special forces unit counts many battle medics among its number. The troop attempts a @Check[warfare-lore|dc:40] check. On a success, the troop and its commander regain @Damage[(2d8+30)[healing]] Hit Points. On a critical success, this healing increases to @Damage[(4d8+50)[healing]] Hit Points.</p>"
+    },
+    "(Special Forces) Composite Bows": {
+      "name": "(Special Forces) Composite Bows",
+      "description": "<p>The special forces unit has trained snipers in its ranks. Increase the range of its Short Salvo ability to 120 feet and its damage to 5d10 piercing damage. Troops with these bows can't be war mages, can't have shields, and can't be mounted.</p>"
+    },
+    "(Special Forces) Dirty Fighting": {
+      "name": "(Special Forces) Dirty Fighting",
+      "description": "<p>The special forces unit tries to disrupt the enemy's ability to fight back by disarming their weapons, kicking dust in their eyes, and so on. Attempt an @Check[athletics|against:reflex] check against the Reflex DC of every enemy within a @Template[type:emanation|distance:5]. On a success, that enemy takes a –2 circumstance penalty to attack rolls for 1 round, or if affecting a troop, a –2 circumstance penalty to that troop's DCs for damaging effects for 1 round. On a critical success, this penalty lasts for 2 rounds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.G62fNtluvSHPdRdI]{Effect: Dirty Fighting (Success)}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.7Oet4xG6dzxRczer]{Effect: Dirty Fighting (Critical Success)}</p>"
+    },
+    "(Special Forces) Inescapable Onslaught": {
+      "name": "(Special Forces) Inescapable Onslaught",
+      "description": "<p><strong>Trigger</strong> A creature adjacent to the troop uses a move action that would cause it to no longer be adjacent</p>\n<hr />\n<p><strong>Effect</strong> The troop uses the 2-action version of one of its offensive abilities that has an emanation, but only the triggering creature is affected. In addition, if the creature critically fails its saving throw, the move action is disrupted. If the offensive ability could be used only once per round, this reaction ignores that limit.</p>"
+    },
+    "(Special Forces) Mounted Marauders": {
+      "name": "(Special Forces) Mounted Marauders",
+      "description": "<p>These special forces soldiers are mounted. Increase their Speed to 40 feet. While moving on land, this troop ignores difficult terrain. Effects that target only animals or humanoids might not work on this troop, subject to GM discretion. Mounted troops can't also have composite bows.</p>"
+    },
+    "(Special Forces) No Retreat": {
+      "name": "(Special Forces) No Retreat",
+      "description": "<p>These soldiers have been extensively trained to hold their ground no matter what the situation. If any effect would force the special forces unit to move, reduce the distance by 10 feet. Any time they would be affected by the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition, the special forces unit is instead @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for the same duration.</p>"
+    },
+    "(Special Forces) Planar Hunters": {
+      "name": "(Special Forces) Planar Hunters",
+      "description": "<p>The special forces unit is trained in dealing with outer planar threats. They gain a +4 circumstance bonus to Short Salvo and Slashing Blades damage rolls made against daemons, demons, and devils.</p>"
+    },
+    "(Special Forces) Punitive Attack": {
+      "name": "(Special Forces) Punitive Attack",
+      "description": "<p><strong>Trigger</strong> An enemy within 5 feet of the special forces unit uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using</p>\n<hr />\n<p><strong>Effect</strong> The special forces troops swing their weapons. The triggering enemy takes @Damage[(5d6+10)[slashing]] damage (@Check[reflex|dc:34|basic] save). If the creature critically fails its saving throw and the trigger was a manipulate action, the troop disrupts that action.</p>"
+    },
+    "(Special Forces) Quick Formation": {
+      "name": "(Special Forces) Quick Formation",
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The special forces unit uses @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.USyDPcSdzcm024zT]{Change Formation}. Special forces units typically know the loose and wedge formations. If the troops are shielded, they instead know the turtle shell and wedge formations.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeFormation]</p>"
+    },
+    "(Special Forces) Shielded": {
+      "name": "(Special Forces) Shielded",
+      "description": "<p>The special forces unit is equipped with large, heavy shields. This allows the troop to Raise its Shields, giving it and its commander a +2 circumstance bonus to AC until the start of its next turn. Additionally, this gives the troop the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.m4HQ2o5aPxjXf2kY]{Shield Block} reaction. Shielded troops can't also have composite bows or pikes.</p>"
+    },
+    "(Special Forces) Sprinting Charge": {
+      "name": "(Special Forces) Sprinting Charge",
+      "description": "<p>The special forces unit charges forward with ferocity. It Strides up to twice its Speed. At the end of its movement, each enemy within a @Template[type:emanation|distance:5] takes @Damage[(2d6+7)[slashing]|options:area-damage] damage with a @Check[reflex|dc:34|basic|options:area-effect] save.</p>"
+    },
+    "(Special Forces) Swords for Pikes": {
+      "name": "(Special Forces) Swords for Pikes",
+      "description": "<p>The special forces unit has elongated pikes as their primary weapon. Change the range of their Slashing Blades to a @Template[type:emanation|distance:10], and change the damage from slashing to piercing. Troops with pikes can't also have shields.</p>"
+    },
+    "(Special Forces) War Mages": {
+      "name": "(Special Forces) War Mages",
+      "description": "<p>This special forces unit has some battle mages among their number. War mages can't also have composite bows. The unit loses their Short Salvo ability but gains the following:</p>\n<p><strong>Arcane Prepared Spells</strong> DC 34, attack +26</p>\n<p><strong>7th</strong> @UUID[Compendium.pf2e.spells-srd.Item.0jadeyQIItIuRgeH]{Eclipse Burst}, @UUID[Compendium.pf2e.spells-srd.Item.9igi8LcrNQKwljK7]{Spell Riposte}</p>\n<p><strong>6th</strong> @UUID[Compendium.pf2e.spells-srd.Item.7PnjDM52lb4LEqHR]{Arrow Salvo}, @UUID[Compendium.pf2e.spells-srd.Item.TDNlDWbYb58Y55Da]{Chain Lightning}, @UUID[Compendium.pf2e.spells-srd.Item.7Iela4GgVeO3LfAo]{Wall of Force}</p>\n<p><strong>5th</strong> @UUID[Compendium.pf2e.spells-srd.Item.AnWCohzPgK4L9GVl]{Detect Scrying}, @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}, @UUID[Compendium.pf2e.spells-srd.Item.xFp4EwVcYwSG336t]{Slither}</p>\n<p><strong>Cantrips (8th)</strong> @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}, @UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light}, @UUID[Compendium.pf2e.spells-srd.Item.1Yoipc5jNcMehtEW]{Slashing Gust}</p>"
     },
     "(Sporeborn) Consume Biomatter": {
       "name": "(Sporeborn) Consume Biomatter",
@@ -1431,14 +1547,14 @@
       "name": "(Ulgrem-Axaan) Crocodile Tears",
       "description": "<p>Ulgrem-Axaan can mimic the sound of a wounded prey animal by attempting a Deception check to Lie. It has a +4 circumstance bonus to this check.</p>",
       "rules": {
-        "0": {
+        "1": {
           "label": "Crocodile Tears"
         }
       }
     },
     "(Ulgrem-Axaan) Crushing Weight": {
       "name": "(Ulgrem-Axaan) Crushing Weight",
-      "description": "<p><strong>Requirements</strong> Ulgrem-Axaan has a creature grabbed with its tail</p>\n<hr />\n<p><strong>Effect</strong> Ulgrem-Axaan's tail clamps down around the creature, dealing @Damage[(2d4+8)[bludgeoning]] damage (@Check[fortitude|dc:25|basic|name:Crushing Weight] save).</p>"
+      "description": "<p><strong>Requirements</strong> Ulgrem-Axaan has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} with its tail</p>\n<hr />\n<p><strong>Effect</strong> Ulgrem-Axaan's tail clamps down around the creature, dealing @Damage[(2d4+8)[bludgeoning]] damage (@Check[fortitude|dc:25|basic|name:Crushing Weight] save).</p>"
     },
     "(Ulgrem-Axaan) Fallen Victim": {
       "name": "(Ulgrem-Axaan) Fallen Victim",
@@ -1572,25 +1688,25 @@
       "name": "(Vampire, Nosferatu) Plagued Coffin Restoration",
       "description": "<p>Unlike other undead, a nosferatu isn't destroyed at 0 HP. Instead, they disperse into an immense number of rats heading in every direction in an attempt to return to their coffin. If even a single rat reaches the coffin, the nosferatu can recover. A nosferatu regains their strength through resting in earth taken from the grave of a creature that died of plague. If their body rests in their earth-filled coffin for 1 hour, the nosferatu gains 1 HP, after which their fast healing begins to function normally. If the coffin doesn't contain this plagued grave dirt, they instead need to rest in their coffin for 1 day before they gain 1 HP and regain their fast healing.</p>"
     },
-    "(Vampire, Strigoi Progenitor) Create Spawn": {
-      "name": "(Vampire, Strigoi Progenitor) Create Spawn",
-      "description": "<p>If a creature dies after being reduced to 0 HP by Drink Essence or Domain of Dusk, the vampire can turn this victim into a vampire by donating some of its own blood to the victim and burying the victim in earth for 3 nights.</p>\n<p>If the new vampire is lower level than its creator, it is under the creator's control. If a vampire controls too many spawn at once (as determined by the GM), strong-willed spawn can free themselves by succeeding at a @Check[will|against:will|name:Escape Thralldom] saving throw against the vampire's Will DC.</p>\n<p>A victim that is 8th level or higher becomes a strigoi servant, while a lower-level victim instead becomes a moroi vampire</p>"
+    "(Vampire, Strigoi Progenitor) Create Servitor": {
+      "name": "(Vampire, Strigoi Progenitor) Create Servitor",
+      "description": "<p>If a creature dies after being reduced to 0 HP by Domain of Dusk or Drink Essence, the strigoi can turn this victim into a vampire servitor by donating some of their own blood to the victim and burying the victim in earth for 3 nights.</p>\n<p>A victim that's 8th level or higher becomes a strigoi servant, while a lower-level victim instead becomes a moroi vampire.</p>\n<p>A vampiric servitor is compelled to obey its creator, but if a vampire controls too many vampiric servitors at once (as determined by the GM), or if the servitor is a higher level than the vampire that created it, strong-willed servitors can free themselves by succeeding at a @Check[will|against:will] saving throw against the vampire's Will DC.</p>"
+    },
+    "(Vampire, Strigoi Progenitor) Domain of Dusk": {
+      "name": "(Vampire, Strigoi Progenitor) Domain of Dusk",
+      "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> With a wave of their hand, the strigoi calls forth vile ruination from the surrounding shadows, causing coils of darkness and shadowy bats, rats, and wolves to lash out at living targets in a @Template[type:emanation|distance:30]. Living creatures in this area take @Damage[floor(1 + @actor.level/2)d6[void]|options:area-damage] damage + 1d6 void damage per 2 levels possessed by the strigoi with a @Check[fortitude|dc:|basic|options:area-effect,inflicts:dazzled,inflicts:blinded] save against the DC of the strigoi's level. A creature that fails this save is also @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} by the darkness for 1 round (or @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round and then dazzled for 1 round on a critical failure).</p>"
     },
     "(Vampire, Strigoi Progenitor) Drink Essence": {
       "name": "(Vampire, Strigoi Progenitor) Drink Essence",
-      "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the strigoi's reach</p>\n<hr />\n<p><strong>Effect</strong> The strigoi progenitor sinks their fangs into the targeted creature to drink its blood and draw out its vital essence. This requires an @Check[athletics|defense:fortitude] check against the creature's Fortitude DC if the creature is grabbed and is automatic for any of the other conditions. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}, and the strigoi regains HP equal to 10% of their maximum HP, gaining any excess HP as temporary Hit Points. Drinking Essence from a creature that's already drained or stupefied doesn't restore any HP, but increases either the creature's drained condition value or its stupefied condition value by 1 (whichever value is lesser is increased; if both values are equal, then the strigoi chooses which condition to increase the value of).</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a successful @Check[medicine|dc:20] check and sufficient blood or a blood donor, reduces the drained value by 1 after 10 minutes.</p>\n<p>A victim's stupefied condition decreases by 1 per day after performing daily preparations. If the daily preparations are done in full sunlight, the stupefied condition is removed entirely.</p>"
+      "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the strigoi's reach</p>\n<hr />\n<p><strong>Effect</strong> The strigoi progenitor sinks their fangs into the targeted creature to drink its blood and draw out its vital essence. This requires an @Check[athletics|against:fortitude] check against the creature's Fortitude DC if the creature is grabbed and is automatic for any of the other conditions. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}, and the strigoi regains HP equal to 10% of their maximum HP, gaining any excess HP as temporary Hit Points. Drinking Essence from a creature that's already drained or stupefied doesn't restore any HP, but increases either the creature's drained condition value or its stupefied condition value by 1 (whichever value is lesser is increased; if both values are equal, then the strigoi chooses which condition to increase the value of).</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a successful @Check[medicine|dc:20] check and sufficient blood or a blood donor, reduces the drained value by 1 after 10 minutes.</p>\n<p>A victim's stupefied condition decreases by 1 per day after performing daily preparations. If the daily preparations are done in full sunlight, the stupefied condition is removed entirely.</p>"
     },
     "(Vampire, Strigoi Progenitor) Shadow Escape": {
       "name": "(Vampire, Strigoi Progenitor) Shadow Escape",
-      "description": "<p><strong>Trigger</strong> The strigoi is reduced to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The strigoi uses Shadow Form. It can take move actions to move toward its coffin even though it's at 0 HP. While at 0 HP in this form, the strigoi is unaffected by further damage. Once the strigoi reaches its coffin, or if it hasn't done so within 2 hours, it automatically returns to its physical form, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}.</p>"
-    },
-    "(Vampire, Strigoi) Domain of Dusk": {
-      "name": "(Vampire, Strigoi) Domain of Dusk",
-      "description": "<p>With a wave of its hand, the strigoi calls fourth vile ruination from the surrounding shadows, causing coils of darkness and shadowy bats, rats, and wolves to lash out at living targets in a @Template[emanation|distance:30]. Living creatures in this area take @Damage[1d6[void]|options:area-damage] damage +1d6 per 2 levels possessed by the strigoi (@Check[fortitude|dc:|basic|options:area-effect] save against the DC of the strigoi's level). A creature that fails this save is also @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (or @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round and then dazzled for 1 round)</p>"
+      "description": "<p><strong>Trigger</strong> The strigoi is reduced to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The strigoi uses Shadow Form. They can take move actions to move toward their coffin even though they're at 0 HP. While at 0 HP in this form, the strigoi is unaffected by further damage. Once the strigoi reaches their coffin, or if they haven't done so within 2 hours, they automatically return to their physical form, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}.</p>"
     },
     "(Vampire, Strigoi) Drink Essence": {
       "name": "(Vampire, Strigoi) Drink Essence",
-      "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the strigoi's reach</p>\n<hr />\n<p><strong>Effect</strong> The strigoi sinks their fangs into the targeted creature to drink its blood and draw out its vital essence. This requires an @Check[athletics|defense:fortitude] check against the creature's Fortitude DC if the creature is grabbed and is automatic for any of the other conditions. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}, and the strigoi regains HP equal to 10% of their maximum HP, gaining any excess HP as temporary Hit Points. Drinking Essence from a creature that's already drained or stupefied doesn't restore any HP, but increases either the creature's drained condition value or its stupefied condition value by 1 (whichever value is lesser is increased; if both values are equal, then the strigoi chooses which condition to increase the value of).</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a successful @Check[medicine|dc:20] check and sufficient blood or a blood donor, reduces the drained value by 1 after 10 minutes.</p>\n<p>A victim's stupefied condition decreases by 1 per day after performing daily preparations. If the daily preparations are done in full sunlight, the stupefied condition is removed entirely.</p>"
+      "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the strigoi's reach</p>\n<hr />\n<p><strong>Effect</strong> The strigoi sinks their fangs into the targeted creature to drink its blood and draw out its vital essence. This requires an @Check[athletics|against:fortitude] check against the creature's Fortitude DC if the creature is grabbed and is automatic for any of the other conditions. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}, and the strigoi regains HP equal to 10% of their maximum HP, gaining any excess HP as temporary Hit Points. Drinking Essence from a creature that's already drained or stupefied doesn't restore any HP but increases either the creature's drained condition value or its stupefied condition value by 1 (whichever value is lesser is increased; if both values are equal, then the strigoi chooses which condition to increase the value of).</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a successful @Check[medicine|dc:20] check and sufficient blood or a blood donor, reduces the drained value by 1 after 10 minutes.</p>\n<p>A victim's stupefied condition decreases by 1 per day after performing daily preparations. If the daily preparations are done in full sunlight, the stupefied condition is removed entirely.</p>"
     },
     "(Vampire, Strigoi) Levitation": {
       "name": "(Vampire, Strigoi) Levitation",
@@ -1602,7 +1718,7 @@
     },
     "(Vampire, Strigoi) Strigoi Weaknesses": {
       "name": "(Vampire, Strigoi) Strigoi Weaknesses",
-      "description": "<p>All strigoi possess the following weaknesses:</p>\n<ul>\n<li><strong>Revulsion</strong> Strigoi are uncomfortable near mirrors or sources of bright light. Only a strigoi's shadow reflects in a mirror, and this often compels them to cover or destroy mirrors in their presence rather than risk their true nature being displayed. A strigoi can't voluntarily come within 10 feet of a brandished mirror or source of bright light. To brandish a mirror or light source, a creature must Interact to do so for 1 round (similar to Raising a Shield). If the strigoi involuntarily comes within 10 feet of a brandished mirror or light source, it gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition, running from the brandished object until it ends an action beyond 10 feet. After 1 round of being exposed to the subject of its revulsion, a strigoi can attempt a @Check[will|dc:25] save as a single action, which has the concentrate trait. On a success, it overcomes its revulsions for [[/gmr 1d6 #Overcome Revulsions Duration]]{1d6 rounds} (or 1 hour on a critical success). A strigoi can move normally around mirrors or bright light sources that are not brandished, although doing so causes them discomfort that can be noticed with a successful Perception check to @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive}.</li>\n<li><strong>Sunlight</strong> When exposed to direct sunlight, a strigoi immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and falls to the ground. It appears to be dead: it doesn't breathe, its body temperature matches its surroundings, and it doesn't react to pain or other stimuli. A successful @Check[perception|against:reflex] check against the strigoi's Reflex DC is enough to note one anomaly: the shadow cast by its \"dead\" body shifts and moves slightly, its edges twisting and active. Spells like @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]{Detect Alignment}, senses like lifesense, and the \"corpse\" taking damage from vitality energy still function normally, and could reveal the truth without needing a successful Perception check. Viewing the \"corpse\" in a mirror's reflection can also reveal the truth, for only the body's shadow reflects. While in sunlight and unconscious, the strigoi loses its resistance to physical damage. If the strigoi takes enough damage that it would be reduced to 0 Hit Points, its body quickly decomposes, and the strigoi is destroyed.</li>\n<li><strong>Water Revulsion</strong> A strigoi cannot cross a significant source of running water (such as a creek, river, or waves on a seashore). A strigoi capable of flight can cross running water provided it approaches no closer than 10 feet to the liquid's surface. If forced into running water against its will, the strigoi becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} and gains the fleeing condition as long as it remains in the water. At the end of any turn in which the strigoi remains in running water, it must succeed at a @Check[flat|dc:5] or be destroyed.</li>\n</ul>"
+      "description": "<p>All strigoi possess the following weaknesses:</p>\n<ul>\n<li>\n<p><strong>Revulsion</strong> Strigoi are uncomfortable near mirrors or sources of bright light. Only a strigoi's shadow reflects in a mirror, and this often compels them to cover or destroy mirrors in their presence rather than risk their true nature being displayed. A strigoi can't voluntarily come within 10 feet of a brandished mirror or source of bright light. To brandish a mirror or light source, a creature must Interact to do so for 1 round (similar to Raising a Shield). If the strigoi involuntarily comes within 10 feet of a brandished mirror or light source, they gain the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition, running from the brandished object until they end an action beyond 10 feet. After 1 round of being exposed to the subject of their revulsion, a strigoi can attempt a @Check[will|dc:25] save as a single action, which has the concentrate trait. On a success, they overcome their revulsions for [[/gmr 1d6 #Overcome Revulsions Duration]]{1d6 rounds} (or 1 hour on a critical success). A strigoi can move normally around mirrors or bright light sources that are not brandished, although doing so causes them discomfort that can be noticed with a successful Perception check to [[/act sense-motive]].</p>\n</li>\n<li>\n<p><strong>Sunlight</strong> When exposed to direct sunlight, a strigoi immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and falls to the ground. They appear to be dead: they don't breathe, their body temperature matches their surroundings, and they don't react to pain or other stimuli. A successful @Check[perception|against:reflex] check against the strigoi's Reflex DC is enough to note one anomaly: the shadow cast by their \"dead\" body shifts and moves slightly, its edges twisting and active. Certain detection spells, senses like lifesense, and the \"corpse\" taking damage from vitality energy still function normally and could reveal the truth without a successful Perception check. Viewing the \"corpse\" in a mirror's reflection can also reveal the truth, for only the body's shadow reflects. While in sunlight and unconscious, the strigoi loses their resistance to physical damage. If the strigoi takes enough damage that they would be reduced to 0 Hit Points, their body quickly decomposes, and the strigoi is destroyed.</p>\n</li>\n<li>\n<p><strong>Water Revulsion</strong> A strigoi cannot cross a significant source of running water (such as a creek, river, or waves on a seashore). A strigoi capable of flight can cross running water provided they approach no closer than 10 feet to the liquid's surface. If forced into running water against their will, the strigoi becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} and gains the fleeing condition as long as they remain in the water. At the end of any turn in which the strigoi remains in running water, they must succeed at a @Check[flat|dc:5] or be destroyed.</p>\n</li>\n</ul>"
     },
     "(Vampire, True) Change Shape": {
       "name": "(Vampire, True) Change Shape",
@@ -1668,7 +1784,7 @@
       "name": "(Vampire, Vrykolakas Master) Change Shape",
       "description": "<p>A vrykolakas master can transform into a form resembling the body it had in life, with the effects of humanoid form but with unlimited duration. It loses its fangs and claw Strikes but gains a +2 circumstance bonus to Deception checks to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} in this form.</p>",
       "rules": {
-        "0": {
+        "1": {
           "label": "Impersonating the Body It Had in Life"
         }
       }
@@ -1719,7 +1835,7 @@
     },
     "(Visitant) Visitant Spells": {
       "name": "(Visitant) Visitant Spells",
-      "description": "<p>Some visitants can cast the following innate occult spells. If you give a visitant the following spells, consider removing one of its other special abilities.</p>\n<p><strong>Occult Innate Spells</strong></p>\n<p><strong>DC</strong> varies</p>\n<p><strong>Spell Attack</strong> varies</p>\n<p><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear}, @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]{Enfeeble}</p>\n<p><strong>Constant (1st)</strong> @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]{Detect Alignment}</p>"
+      "description": "<p>Some visitants can cast the following innate occult spells. If you give a visitant the following spells, consider removing one of its other special abilities.</p>\n<p><strong>Occult Innate Spells</strong></p>\n<p><strong>DC</strong> varies</p>\n<p><strong>Spell Attack</strong> varies</p>\n<p><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear}, @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]{Enfeeble}</p>\n<p><strong>Constant (1st)</strong> <em>detect alignment</em></p>"
     },
     "(Visitant) Wrestle": {
       "name": "(Visitant) Wrestle",
@@ -1886,13 +2002,16 @@
     "Fortune Dragon": "Fortune Dragon",
     "Horned Dragon": "Horned Dragon",
     "Mirage Dragon": "Mirage Dragon",
+    "Naval Crew": "Naval Crew",
     "Omen Dragon": "Omen Dragon",
     "Phase Dragon": "Phase Dragon",
     "Planar Adaptations (Spawning Soulrider)": "Planar Adaptations (Spawning Soulrider)",
     "Requiem Dragon": "Requiem Dragon",
     "Resurrection Dragon": "Resurrection Dragon",
     "Rune Dragon": "Rune Dragon",
+    "Shadowbound": "Shadowbound",
     "Spawn of Rovagug": "Spawn of Rovagug",
+    "Special Forces": "Special Forces",
     "Swarm Strider": "Swarm Strider",
     "Whisper Dragon": "Whisper Dragon",
     "Spring-Heeled Jack": "Spring-Heeled Jack",

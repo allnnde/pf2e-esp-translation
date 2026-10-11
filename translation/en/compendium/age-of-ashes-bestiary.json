@@ -220,8 +220,9 @@
         "equipment->Manacles (Good) (Marked with the Symbol of the Scarlet Triad)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5g0rE5yMsTH3E2LJ]\nManacles (Good) (Marked with the Symbol of the Scarlet Triad)"
         },
-        "equipment->Keys to Each Dormitory Door and Slave Manacles": {
-          "name": "Keys to Each Dormitory Door and Slave Manacles"
+        "equipment->Keys": {
+          "name": "Keys",
+          "gmNote": "<p>Barushak's keys to each dormitory door and slave manacles.</p>"
         },
         "strike-melee->Morningstar": {
           "name": "Morningstar"
@@ -238,7 +239,7 @@
         },
         "action->Efficient Capture": {
           "name": "Efficient Capture",
-          "description": "<p><strong>Requirements</strong> Barushak has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> Barushak attempts to bind the creature's wrists or ankles with the manacles. He must succeed at an attack roll with a [[/r 1d20+21 #Manacles]]{+21} modifier against the target's AC.</p>"
+          "description": "<p><strong>Requirements</strong> Barushak has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> Barushak attempts to bind the creature's wrists or ankles with the manacles. He must succeed at an attack roll with a @Check[efficient-capture|against:ac]{+21} modifier against the target's AC.</p>"
         },
         "action->Fiend Summoner": {
           "name": "Fiend Summoner",
@@ -600,7 +601,7 @@
           "description": "<p><strong>Requirements</strong> The crystal has a creature engulfed.</p>\n<hr />\n<p><strong>Effect</strong> The engulfed creature must succeed at a @Check[fortitude|dc:28|options:inflicts:petrified,inflicts:slowed] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until it is no longer engulfed. If the creature is already slowed, it becomes @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} as it is turned into crystal and expelled by the carnivorous crystal onto the ground.</p>\n<p>In [[/gmr 1d4 #hours]]{1d4 hours}, the petrified victim shatters and a new carnivorous crystal emerges from the remains.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:28|traits:damaging-effect], @Damage[2d6[slashing]] damage, [[/act escape dc=28]], Rupture 25 (bludgeoning only).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:28|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[2d6[slashing]] damage, [[/act escape dc=28]], Rupture 25 (bludgeoning only).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Freeze": {
           "name": "Freeze",
@@ -717,8 +718,9 @@
     "Corrupt Guard": {
       "name": "Corrupt Guard",
       "items": {
-        "equipment->Key to Chiselrock's Prison": {
-          "name": "Key to Chiselrock's Prison"
+        "equipment->Key": {
+          "name": "Key",
+          "gmNote": "<p>Key to Chiselrock's Prison.</p>"
         },
         "strike-melee->Maul": {
           "name": "Maul"
@@ -754,7 +756,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (At Will)"
         },
         "spell->Detect Alignment (Constant) (Good Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Constant) (Good Only)"
+          "name": "Detect Alignment (Constant) (Good Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Phantom Pain (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD]\nPhantom Pain (At Will)"
@@ -899,7 +902,7 @@
       "disable": "<p>@Check[deception|dc:45] (legendary) to pretend to be Erveniss and ask for forgiveness, @Check[diplomacy|dc:45] (legendary) to convince Damurdiel to stand down (elves who are masters in Diplomacy can attempt the check as if they were legendary instead), or @Check[religion|dc:40] (legendary) to call upon Calistria to calm Damurdiel's spirit.</p>",
       "reset": "<p>Damurdiel's spirit subsides once she is destroyed or if she manages to reduce a creature to 0 Hit Points. She returns after 1 minute.</p>",
       "routine": "<p>(3 actions) The haunt attempts to Strike with the dagger.</p>",
-      "stealth": "<p>(legendary) or DC 47 to notice the dagger left in the pool start to move on its own.</p>",
+      "stealth": "<p>(legendary) or @Check[perception|dc:47] to notice the dagger left in the pool start to move on its own.</p>",
       "items": {
         "action->Surprise Strike": {
           "name": "Surprise Strike",
@@ -949,8 +952,9 @@
       "name": "Dmiri Yoltosha",
       "blurb": "Female hobgoblin ranger 4",
       "items": {
-        "equipment->Key to Chest": {
-          "name": "Key to Chest"
+        "equipment->Key": {
+          "name": "Key",
+          "gmNote": "<p>Dmiri's key to chest in area <strong>C4</strong>.</p>"
         },
         "strike-melee->Rapier": {
           "name": "Rapier"
@@ -1117,11 +1121,11 @@
         },
         "action->Breath-Seared Sword": {
           "name": "Breath-Seared Sword",
-          "description": "<p>The dragonscarred dead's weapon is magically scorched by a dragon's breath. When wielded by the dragonscarred dead who carried it in life, the sword deals an extra @Damage[2d6[void]] damage and @Damage[3d6[fire]] damage. In the hands of any other creature, it is merely a broken greatsword.</p>"
+          "description": "<p>The dragonscarred dead's weapon is magically scorched by a dragon's breath. When wielded by the dragonscarred dead who carried it in life, the sword deals an extra 2d6 void damage and 3d6 fire damage. In the hands of any other creature, it is merely a broken greatsword.</p>"
         },
         "action->Glare of Rage": {
           "name": "Glare of Rage",
-          "description": "<p>The dragonscarred dead focuses its boundless frustration in a gaze targeting one creature it can see within 30 feet. That creature must attempt a @Check[will|dc:30] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is stunned for [[/gmr 1d4 #rounds]]{1d4 rounds} and is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>"
+          "description": "<p>The dragonscarred dead focuses its boundless frustration in a gaze targeting one creature it can see within 30 feet. That creature must attempt a @Check[will|dc:30|options:inflicts:stunned,inflicts:fatigued] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is stunned for [[/gmr 1d4 #rounds]]{1d4 rounds} and is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>"
         },
         "lore->Dragon Lore": {
           "name": "Dragon Lore"
@@ -1231,14 +1235,18 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (Self Only)",
           "target": "self"
         },
-        "equipment->Key to the Temple of All Gods": {
-          "name": "Key to the Temple of All Gods"
+        "equipment->Key": {
+          "name": "Key",
+          "gmNote": "<p>Key to the Temple of All Gods.</p>"
         },
         "strike-melee->Hatchet": {
           "name": "Hatchet"
         },
         "strike-ranged->Composite Longbow": {
           "name": "Composite Longbow"
+        },
+        "action->+2 Status to All Saves vs. Magic": {
+          "name": "+2 Status to All Saves vs. Magic"
         },
         "action->Improved Evasion": {
           "name": "Improved Evasion",
@@ -1480,7 +1488,7 @@
         },
         "action->Paralysis": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.bVZ6KizWVTLJUBXi]\nParalysis",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.bVZ6KizWVTLJUBXi]\n<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.bVZ6KizWVTLJUBXi]\n<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:34|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
         },
         "action->Scoundrel": {
           "name": "Scoundrel",
@@ -1631,7 +1639,7 @@
         },
         "action->Paralysis": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.bVZ6KizWVTLJUBXi]\nParalysis",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.bVZ6KizWVTLJUBXi]\n<p>Any living creature hit by a ghastly bear's attack must succeed at a @Check[fortitude|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.bVZ6KizWVTLJUBXi]\n<p>Any living creature hit by a ghastly bear's attack must succeed at a @Check[fortitude|dc:26|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
         }
       }
     },
@@ -2023,7 +2031,7 @@
         },
         "action->Efficient Capture": {
           "name": "Efficient Capture",
-          "description": "<p><strong>Requirements</strong> Ilssrah has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> Ilssrah attempts to bind the creature's wrists or ankles with the manacles. If she succeeds at an attack roll with a [[/r 1d20+30 #attack]]{+30} modifier against the target's AC, she applies the manacles.</p>"
+          "description": "<p><strong>Requirements</strong> Ilssrah has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> Ilssrah attempts to bind the creature's wrists or ankles with the manacles. If she succeeds at an attack roll with a @Check[efficient-capture|against:ac]{+30} modifier against the target's AC, she applies the manacles.</p>"
         },
         "action->Hammer the Chained": {
           "name": "Hammer the Chained",
@@ -2612,8 +2620,9 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.EkZVXMdtqTTgahiJ]\nRing of Fire Resistance",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.EkZVXMdtqTTgahiJ]\n<p>This ring grants you resistance 5 against fire.</p>"
         },
-        "equipment->Key Ring (Opens Locks in Summershade Quarry)": {
-          "name": "Key Ring (Opens Locks in Summershade Quarry)"
+        "equipment->Key Ring": {
+          "name": "Key Ring",
+          "gmNote": "<p>Laslunn's key ring opens locks in Summershade Quarry.</p>"
         },
         "strike-melee->Scimitar": {
           "name": "Scimitar"
@@ -2638,7 +2647,7 @@
         },
         "action->Efficient Capture": {
           "name": "Efficient Capture",
-          "description": "<p><strong>Requirements</strong> Laslunn has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> Laslunn attempts to bind the creature's wrists or ankles with the manacles. If she succeeds at an attack roll with a [[/r 1d20+28 #Manacles]]{+28} modifier against the target's AC, she applies the manacles to the creature's wrists or legs.</p>"
+          "description": "<p><strong>Requirements</strong> Laslunn has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> Laslunn attempts to bind the creature's wrists or ankles with the manacles. If she succeeds at an attack roll with a @Check[efficient-capture|against:ac]{+28} modifier against the target's AC, she applies the manacles to the creature's wrists or legs.</p>"
         },
         "action->Rugged Travel": {
           "name": "Rugged Travel",
@@ -2787,7 +2796,7 @@
           "description": "<p>A creature that Strikes a living sap with a melee weapon must succeed at a @Check[reflex|dc:24] save or be disarmed of that weapon. If the creature critically fails, the weapon ends up in the living sap's space. A creature that hits a living sap with an unarmed attack must succeed at a @Check[reflex|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the living sap until the end of its next turn.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:22|traits:damaging-effect] save, @Damage[2d6[acid]], [[/act escape dc=24]], Rupture 10</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:22|options:damaging-effect,inflicts:grabbed,inflicts:slowed] save, @Damage[2d6[acid]] damage, [[/act escape dc=24]], Rupture 10</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Entangling Residue": {
           "name": "Entangling Residue",
@@ -2804,7 +2813,7 @@
       "items": {
         "action->Radiant Explosion": {
           "name": "Radiant Explosion",
-          "description": "<p><strong>Trigger</strong> A creature touches the door</p>\n<hr />\n<p><strong>Effect</strong> All creatures within 20 feet of the door are scorched with brilliant light, taking @Damage[20d6[fire]] damage (@Check[reflex|dc:40|basic] save). A creature that fails this save is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 hour (or permanently on a critical failure).</p>"
+          "description": "<p><strong>Trigger</strong> A creature touches the door</p>\n<hr />\n<p><strong>Effect</strong> All creatures within 20 feet of the door are scorched with brilliant light, taking @Damage[20d6[fire]|options:area-damage] damage (@Check[reflex|dc:40|basic|options:area-effect,inflicts:blinded] save). A creature that fails this save is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 hour (or permanently on a critical failure).</p>"
         }
       }
     },
@@ -3021,7 +3030,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>Mengkare breathes in one of two ways. He can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<ul>\n<li><strong>Flame</strong> (arcane,evocation,fire); Mengkare breathes a blast of flame in a @Template[cone|distance:80] that deals @Damage[24d6[fire]|options:area-damage] damage (@Check[reflex|dc:46|basic|name:Breath Weapon (Flame)|traits:arcane,evocation,fire|options:area-effect] save).</li>\n<li><strong>Weakening Gas</strong> (arcane,necromancy); The dragon breathes a blast of weakening gas. Each creature within a @Template[cone|distance:30] must succeed at a @Check[fortitude|dc:46|name:Breath Weapon (Weakening Gas)|traits:arcane,necromancy|options:area-effect,inflicts:enfeebled] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} for 1 minute (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 5} on a critical failure).</li>\n</ul>"
+          "description": "<p>Mengkare breathes in one of two ways. He can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<ul>\n<li><strong>Flame</strong> (arcane, evocation, fire); Mengkare breathes a blast of flame in a @Template[cone|distance:80] that deals @Damage[24d6[fire]|options:area-damage] damage (@Check[reflex|dc:46|basic|name:Breath Weapon (Flame)|traits:arcane,evocation,fire|options:area-effect] save).</li>\n<li><strong>Weakening Gas</strong> (arcane, necromancy); The dragon breathes a blast of weakening gas. Each creature within a @Template[cone|distance:30] must succeed at a @Check[fortitude|dc:46|name:Breath Weapon (Weakening Gas)|traits:arcane,necromancy|options:area-effect,inflicts:enfeebled] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} for 1 minute (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 5} on a critical failure).</li>\n</ul>"
         },
         "action->Change Shape": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.mEbrInCpag7YThH2]\nChange Shape",
@@ -3533,6 +3542,9 @@
         "spellcastingEntry->Spontaneous Divine Spells": {
           "name": "Spontaneous Divine Spells"
         },
+        "spellcastingEntry->Bloodline Spells": {
+          "name": "Bloodline Spells"
+        },
         "spell->Weapon of Judgment": {
           "requirements": "You have a deity."
         },
@@ -3599,6 +3611,10 @@
         },
         "spell->Protection": {
           "target": "1 creature"
+        },
+        "equipment->Circlet of Persuasion": {
+          "name": "Circlet of Persuasion",
+          "description": "<p>This elegant silver band often resembles curling fig leaves and fits around your brow. You gain a +2 item bonus to Deception and Diplomacy checks. When you invest the circlet, you either increase your Charisma modifier by 1 or increase it to +4, whichever would give you a higher value.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> You cast a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell (DC 38).</p>"
         },
         "strike-melee->Elven Curve Blade": {
           "name": "Elven Curve Blade"
@@ -3728,7 +3744,7 @@
         },
         "action->Efficient Capture": {
           "name": "Efficient Capture",
-          "description": "<p><strong>Requirements</strong> The Scarlet Triad agent has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The Scarlet Triad agent attempts to bind the creature's wrists or ankles with the manacles. If they succeed at an attack roll with a [[/r 1d20+24]]{+24 modifier} against the target's AC, they apply the manacles.</p>"
+          "description": "<p><strong>Requirements</strong> The Scarlet Triad agent has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The Scarlet Triad agent attempts to bind the creature's wrists or ankles with the manacles. If they succeed at an attack roll with a @Check[efficient-capture|against:ac]{+24} modifier against the target's AC, they apply the manacles.</p>"
         },
         "action->Precise Debilitations": {
           "name": "Precise Debilitations",
@@ -3806,7 +3822,7 @@
         },
         "action->Efficient Capture": {
           "name": "Efficient Capture",
-          "description": "<p><strong>Requirements</strong> The bruiser has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The bruiser attempts to bind the creature's wrists or ankles with the manacles. They must succeed at an attack roll with a [[/r 1d20+23 #Manacles]]{+23} modifier against the target's AC.</p>"
+          "description": "<p><strong>Requirements</strong> The bruiser has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The bruiser attempts to bind the creature's wrists or ankles with the manacles. They must succeed at an attack roll with a @Check[efficient-capture|against:ac]{+23} modifier against the target's AC.</p>"
         },
         "action->Pummeling Flurry": {
           "name": "Pummeling Flurry",
@@ -3839,7 +3855,7 @@
         },
         "action->Efficient Capture": {
           "name": "Efficient Capture",
-          "description": "<p><strong>Requirements</strong> The enforcer has manacles in hand and is adjacent to a creature</p>\n<hr />\n<p><strong>Effect</strong> The enforcer attempts to bind the creature's wrists or ankles with the manacles. If the enforcer succeeds at an attack roll with a [[/r 1d20+30 #Manacles]]{+30 modifier} against the target's AC, they apply the manacles.</p>"
+          "description": "<p><strong>Requirements</strong> The enforcer has manacles in hand and is adjacent to a creature</p>\n<hr />\n<p><strong>Effect</strong> The enforcer attempts to bind the creature's wrists or ankles with the manacles. If the enforcer succeeds at an attack roll with a @Check[efficient-capture|against:ac]{+30} modifier against the target's AC, they apply the manacles.</p>"
         },
         "lore->Underworld Lore": {
           "name": "Underworld Lore"
@@ -3888,13 +3904,6 @@
       "name": "Scarlet Triad Poisoner",
       "saveDetails": "+1 status to all saves vs. poison",
       "items": {
-        "equipment->Alchemist's Lab (Expanded)": {
-          "rules": {
-            "0": {
-              "label": "Alchemist's Lab, Expanded (craft alchemical items)"
-            }
-          }
-        },
         "equipment->Manacles (Good) (Marked with the Symbol of the Scarlet Triad)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5g0rE5yMsTH3E2LJ]\nManacles (Good) (Marked with the Symbol of the Scarlet Triad)"
         },
@@ -3966,7 +3975,7 @@
         },
         "action->Efficient Capture": {
           "name": "Efficient Capture",
-          "description": "<p><strong>Requirements</strong> The sneak has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The sneak attempts to bind the creature's wrists or ankles with the manacles. If the sneak succeeds at an attack roll with a [[/r 1d20+16 #Manacles]]{+16} modifier against the target's AC, they apply the manacles.</p>"
+          "description": "<p><strong>Requirements</strong> The sneak has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The sneak attempts to bind the creature's wrists or ankles with the manacles. If the sneak succeeds at an attack roll with a @Check[efficient-capture|against:ac]{+16} modifier against the target's AC, they apply the manacles.</p>"
         },
         "action->Sneak Attack": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The scarlet triad sneak deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
@@ -4036,7 +4045,7 @@
         },
         "action->Efficient Capture": {
           "name": "Efficient Capture",
-          "description": "<p><strong>Requirements</strong> The thug has manacles in hand and is next to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The thug attempts to bind the creature's wrists or ankles with the manacles. The thug must succeed at an attack roll with a [[/r 1d20+18 #Manacles]]{+18} modifier against the target's AC.</p>"
+          "description": "<p><strong>Requirements</strong> The thug has manacles in hand and is next to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The thug attempts to bind the creature's wrists or ankles with the manacles. The thug must succeed at an attack roll with a @Check[efficient-capture|against:ac]{+18} modifier against the target's AC.</p>"
         },
         "action->Pack Attack": {
           "name": "Pack Attack",
@@ -4516,7 +4525,7 @@
         },
         "action->Punish Imperfection": {
           "name": "Punish Imperfection",
-          "description": "<p><strong>Trigger</strong> A creature within Uri's reach fails an attack roll, saving throw, or skill check</p>\n<hr />\n<p><strong>Effect</strong> Uri makes an unarmed Strike against the triggering creature. If the attack hits, the target must succeed at a @Check[fortitude|dc:41] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} until the end of its next turn (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} on a critical failure).</p>"
+          "description": "<p><strong>Trigger</strong> A creature within Uri's reach fails an attack roll, saving throw, or skill check</p>\n<hr />\n<p><strong>Effect</strong> Uri makes an unarmed Strike against the triggering creature. If the attack hits, the target must succeed at a @Check[fortitude|dc:41|options:inflicts:enfeebled] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} until the end of its next turn (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} on a critical failure).</p>"
         },
         "action->Reactionary": {
           "name": "Reactionary",
@@ -4528,7 +4537,7 @@
         },
         "action->Swift Capture": {
           "name": "Swift Capture",
-          "description": "<p><strong>Requirements</strong> Uri has @UUID[Compendium.pf2e.equipment-srd.Item.5zkoqnp6X5yPCXVy]{Manacles} in his possession and is adjacent to a creature</p>\n<hr />\n<p><strong>Effect</strong> Uri sheathes a weapon he's carrying, then attempts to bind the creature's wrists or ankles with the @UUID[Compendium.pf2e.equipment-srd.Item.5zkoqnp6X5yPCXVy]{Manacles}. If Uri succeeds at an attack roll with a [[/r 1d20+36 #Manacles]]{+36 modifier} against the target's AC, he applies the @UUID[Compendium.pf2e.equipment-srd.Item.5zkoqnp6X5yPCXVy]{Manacles}.</p>"
+          "description": "<p><strong>Requirements</strong> Uri has manacles in his possession and is adjacent to a creature</p>\n<hr />\n<p><strong>Effect</strong> Uri sheathes a weapon he's carrying, then attempts to bind the creature's wrists or ankles with the manacles. If Uri succeeds at an attack roll with a @Check[swift-capture|against:ac]{+36} modifier against the target's AC, he applies the manacles.</p>"
         },
         "action->Swift Slash": {
           "name": "Swift Slash",
@@ -4975,7 +4984,7 @@
         },
         "action->Eerie Flexibility": {
           "name": "Eerie Flexibility",
-          "description": "<p>Despite his size, Xevalorg's multiple joints allow him to fit through tight spaces as if he were a Medium creature. While Squeezing, he can move at his full Speed.</p>"
+          "description": "<p>Despite his size, Xevalorg's multiple joints allow him to fit through tight spaces as if he were a Medium creature. While @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeezing}, he can move at his full Speed.</p>"
         },
         "action->Furious Claws": {
           "name": "Furious Claws",
@@ -5042,6 +5051,7 @@
     },
     "Xotanispawn": {
       "name": "Xotanispawn",
+      "publicNotes": "<p>Xotanispawn are monstrous versions of scavenging beetle larvae that have been corrupted and mutated by feeding on the remains of Xotani the Firebleeder, a slain Spawn of Rovagug buried beneath Pale Mountain in Katapesh. These creatures look vaguely like the minute insects they once were, with a sclerotized head and chitinous body plates, six legs, and numerous dorsal spines lining the joints and edges of each segment. However, by feeding on the unholy remains of Xotani, the spawn have manifested many of the traits of the infamous Firebleeder, most notably a blisteringly hot internal temperature and powerful fire attacks—to say nothing of their monstrous size.</p>\n<p>Internal heat radiates from every surface of a Xotanispawn, even from its mouth. Any contact with a Xotanispawn results in burns and the risk of catching on fire. Thankfully, Xotanispawn have also inherited Xotani's weaknesses to cold and sunlight. They are rarely encountered on the surface during the day, opting to emerge from their subterranean lairs only at night.</p>",
       "items": {
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -5065,11 +5075,11 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The Xotanispawn sprays a @Template[cone|distance:60] of magma that deals @Damage[10d10[fire],2d6[persistent,fire]|options:area-damage]{10d10 fire damage and 2d6 persistent fire damage} to all creatures in the area (@Check[reflex|dc:39|basic|options:area-effect] save).</p>\n<p>The Xotanispawn can't use its Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>The Xotanispawn sprays a @Template[cone|distance:60] of magma that deals @Damage[10d10[fire],2d6[persistent,fire]|options:area-damage] damage to all creatures in the area (@Check[reflex|dc:39|basic|options:area-effect] save).</p>\n<p>The Xotanispawn can't use its Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         },
         "action->Heat Surge": {
           "name": "Heat Surge",
-          "description": "<p>When the Xotanispawn critically hits, its body surges with heat, increasing the damage of its Internal Furnace to @Damage[10d8[persistent,fire]] damage until the start of its next turn.</p>"
+          "description": "<p>When the Xotanispawn critically hits, its body surges with heat, increasing the damage of its Internal Furnace to 10d8 until the start of its next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.eRxSdMi6Y2XTQWql]{Effect: Heat Surge}</p>"
         }
       }
     },

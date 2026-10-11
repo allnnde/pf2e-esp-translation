@@ -777,7 +777,7 @@
         },
         "action->Punishing Tail": {
           "name": "Punishing Tail",
-          "description": "<p>A creature struck by the ankylosaurus's tail must attempt a @Check[fortitude|dc:24] save.</p>\n<p>On a failure, it's @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}; on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>"
+          "description": "<p>A creature struck by the ankylosaurus's tail must attempt a @Check[fortitude|dc:24|options:inflicts:stunned] save.</p>\n<p>On a failure, it's @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}; on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>"
         },
         "action->Trample": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Medium or smaller, foot, @Check[reflex|dc:24|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
@@ -971,7 +971,7 @@
         },
         "action->Essence Drain": {
           "name": "Essence Drain",
-          "description": "<p>When an astradaemon hits with their claw, jaws, or tail, they drain the target's spiritual and vital essences.</p>\n<p>The target takes 2d10 void damage and the astradaemon regains an equal number of Hit Points. The target must succeed at a @Check[fortitude|dc:37] save or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. If the target was already drained or doomed, it instead increases both conditions' value by 1, to a maximum of 4.</p>"
+          "description": "<p>When an astradaemon hits with their claw, jaws, or tail, they drain the target's spiritual and vital essences.</p>\n<p>The target takes 2d10 void damage and the astradaemon regains an equal number of Hit Points. The target must succeed at a @Check[fortitude|dc:37|options:inflicts:drained,inflicts:doomed] save or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. If the target was already drained or doomed, it instead increases both conditions' value by 1, to a maximum of 4.</p>"
         }
       }
     },
@@ -1089,7 +1089,7 @@
         },
         "action->Crystalline Dust Form": {
           "name": "Crystalline Dust Form",
-          "description": "<p>The axiomite shifts their form to a cloud of crystalline dust in which strange symbols and equations flash.</p>\n<p>They gain a fly Speed of 40 feet and can fit through even tiny apertures, similar to vapor form. They can cast spells but can't make melee or ranged attacks.</p>\n<p>The axiomite can @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo]{Dismiss} this form to return to humanoid form.</p>",
+          "description": "<p>The axiomite shifts their form to a cloud of crystalline dust in which strange symbols and equations flash.</p>\n<p>They gain a fly Speed of 40 feet and can fit through even tiny apertures, similar to @UUID[Compendium.pf2e.spells-srd.Item.V8wXOsoejQhe6CyG]{Vapor Form}. They can cast spells but can't make melee or ranged attacks.</p>\n<p>The axiomite can Dismiss this form to return to humanoid form.</p>",
           "selfEffect": "Effect: Crystalline Dust Form"
         },
         "lore->Axis Lore": {
@@ -1306,7 +1306,7 @@
         },
         "action->Confusing Gaze": {
           "name": "Confusing Gaze",
-          "description": "<p>20 feet.</p>\n<p>When a creature ends its turn in the aura, it must succeed at a @Check[will|dc:35] save or become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>"
+          "description": "<p>20 feet.</p>\n<p>When a creature ends its turn in the aura, it must succeed at a @Check[will|dc:35|options:area-effect,inflicts:confused] save or become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>"
         },
         "action->Quick Recovery": {
           "name": "Quick Recovery",
@@ -1325,7 +1325,7 @@
         },
         "action->Pain": {
           "name": "Pain",
-          "description": "<p>A bandersnatch's quills create exceptionally painful wounds. The wounded creature must succeed at a @Check[fortitude|dc:38] save to resist becoming @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure) by this pain. Further bandersnatch Strikes that cause pain increase the amount of drain by 1 for each failed save to a maximum of drained 4.</p>"
+          "description": "<p>A bandersnatch's quills create exceptionally painful wounds. The wounded creature must succeed at a @Check[fortitude|dc:38|options:inflicts:drained] save to resist becoming @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure) by this pain. Further bandersnatch Strikes that cause pain increase the amount of drain by 1 for each failed save to a maximum of drained 4.</p>"
         },
         "action->Relentless Tracker": {
           "name": "Relentless Tracker",
@@ -1910,7 +1910,7 @@
         },
         "action->Final Dance": {
           "name": "Final Dance",
-          "description": "<p>When the dancer dies, their body dissolves into a swirling mass of darkness and light. All creatures in a @Template[emanation|distance:10] must succeed at a @Check[will|dc:17] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p>The dancer's possessions are left in a pile where they died.</p>"
+          "description": "<p>When the dancer dies, their body dissolves into a swirling mass of darkness and light. All creatures in a @Template[emanation|distance:10] must succeed at a @Check[will|dc:17|options:area-effect,inflicts:dazzled] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p>The dancer's possessions are left in a pile where they died.</p>"
         },
         "action->Dancer's Curse": {
           "name": "Dancer's Curse",
@@ -1950,7 +1950,7 @@
         },
         "action->Encircling Command": {
           "name": "Encircling Command",
-          "description": "<p>Each caligni skulker within @Template[emanation|distance:30]{30 feet} of the skulker can Step. Each creeper can benefit from Encircling Command only once per round.</p>"
+          "description": "<p>Each caligni skulker within @Template[emanation|distance:30]{30 feet} of the skulker can Step. Each skulker can benefit from Encircling Command only once per round.</p>"
         },
         "action->Sneak Attack": {
           "name": "Sneak Attack",
@@ -2478,7 +2478,7 @@
         },
         "action->Calcification": {
           "name": "Calcification",
-          "description": "<p>A peck from a cockatrice hardens the flesh of the creature struck. The target must succeed at a @Check[fortitude|dc:20|inflicts:slowed,inflicts:petrified] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure). Further failed saves against calcification increase the slowed condition. Once a creature's actions are reduced to 0 by calcification, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified}. If the creature isn't petrified, the slowed conditions end once 1 minute passes without the creature failing a save against calcification.</p>\n<p>Every 24 hours after it was petrified, the victim can attempt a @Check[fortitude|dc:20] save to recover. On a success, it becomes flesh again, but is slowed 1 for the next 24 hours. On a critical success, the creature recovers and isn't slowed. On a failure, the creature remains petrified but can try again in 24 hours. On a critical failure, the petrification is permanent, and the creature can't attempt any more saves.</p>"
+          "description": "<p>A peck from a cockatrice hardens the flesh of the creature struck. The target must succeed at a @Check[fortitude|dc:20|options:inflicts:slowed,inflicts:petrified] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure). Further failed saves against calcification increase the slowed condition. Once a creature's actions are reduced to 0 by calcification, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified}. If the creature isn't petrified, the slowed conditions end once 1 minute passes without the creature failing a save against calcification.</p>\n<p>Every 24 hours after it was petrified, the victim can attempt a @Check[fortitude|dc:20] save to recover. On a success, it becomes flesh again, but is slowed 1 for the next 24 hours. On a critical success, the creature recovers and isn't slowed. On a failure, the creature remains petrified but can try again in 24 hours. On a critical failure, the petrification is permanent, and the creature can't attempt any more saves.</p>"
         }
       }
     },
@@ -2499,6 +2499,9 @@
         },
         "spell->Ventriloquism (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.yV7Ouzaoe7DHLESI]\nVentriloquism (At Will)"
+        },
+        "consumable->Spider Venom": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.5RGNjhDxZ0yMhTds]\n<p>This venom erodes its target's defenses, aiding the spider in securing prey.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} (1 round)</p>"
         },
         "strike-melee->Shortsword": {
           "name": "Shortsword"
@@ -3148,11 +3151,11 @@
           "name": "Claw"
         },
         "action->Coven": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.52CdldlWMiVTZk1F]\n<p>A cuckoo hag adds @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate}, @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Nightmare}, @UUID[Compendium.pf2e.spells-srd.Item.KSAEhNfZyXMO7Z7V]{Outcast's Curse}, and scrying to their coven's spells.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Coven]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.52CdldlWMiVTZk1F]\n<p>A cuckoo hag adds @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate}, @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Nightmare}, @UUID[Compendium.pf2e.spells-srd.Item.KSAEhNfZyXMO7Z7V]{Outcast's Curse}, and @UUID[Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj]{Scrying} to their coven's spells.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Coven]</p>"
         },
         "action->Sound Imitation": {
           "name": "Sound Imitation",
-          "description": "<p>A cuckoo hag who succeeds at a Deception check to Lie can mimic the sound of any feminine voice they have heard (in cases where this may be unclear, the GM is the final arbiter) and have a +4 circumstance bonus to this check.</p>"
+          "description": "<p>A cuckoo hag who succeeds at a Deception check to [[/act lie options=sound-imitation]] can mimic the sound of any feminine voice they have heard (in cases where this may be unclear, the GM is the final arbiter) and have a +4 circumstance bonus to this check.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The cuckoo hag can take on the appearance of any Medium female humanoid. This doesn't change their Speed or their attack and damage bonuses with their Strikes but might change the damage type their Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -3349,6 +3352,9 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]\nCytillesh Toolkit",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]\n<p>These healer's toolkits are collections of crystalline scalpels and gritty salves made of cytillesh. They all glow the same sickly blue. While the toolkit is outside its opaque container, it sheds dim light in a 5-foot radius. Any non-dero using or wearing the toolkit is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} until 1 hour after they've stopped, which cannot be reduced during that time.</p>\n<hr />\n<p>This kit of bandages, herbs, and suturing tools is necessary for Medicine checks to @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Administer First Aid}, @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN]{Treat Disease}, @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison}, or @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}. If you wear your healer's toolkit, you can draw and replace it as part of the action that uses it.</p>"
         },
+        "consumable->Lethargy Poison": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zo0ophqfKunJFxZN]\n<p>Lethargy poison is commonly used in hit-and-run tactics by attackers who want their victims alive; the ambusher retreats until the poison sets in and the victim falls unconscious. Further exposure to lethargy poison does not require the target to attempt additional saving throws; only failing an saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 minute)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up ([[/gmr 1d4 #hours]]{1d4 hours}).</p>"
+        },
         "strike-melee->Club": {
           "name": "Club"
         },
@@ -3386,6 +3392,9 @@
         "equipment->Cytillesh Toolkit": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]\nCytillesh Toolkit",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]\n<p>These healer's toolkits are collections of crystalline scalpels and gritty salves made of cytillesh. They all glow the same sickly blue. While the toolkit is outside its opaque container, it sheds dim light in a 5-foot radius. Any non-dero using or wearing the toolkit is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} until 1 hour after they've stopped, which cannot be reduced during that time.</p>\n<hr />\n<p>This kit of bandages, herbs, and suturing tools is necessary for Medicine checks to @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Administer First Aid}, @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN]{Treat Disease}, @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison}, or @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}. If you wear your healer's toolkit, you can draw and replace it as part of the action that uses it.</p>"
+        },
+        "consumable->Lethargy Poison": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zo0ophqfKunJFxZN]\n<p>Lethargy poison is commonly used in hit-and-run tactics by attackers who want their victims alive; the ambusher retreats until the poison sets in and the victim falls unconscious. Further exposure to lethargy poison does not require the target to attempt additional saving throws; only failing an saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 minute)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up ([[/gmr 1d4 #hours]]{1d4 hours}).</p>"
         },
         "strike-melee->Spiked Chain": {
           "name": "Spiked Chain"
@@ -5161,7 +5170,7 @@
         },
         "action->Light Flash": {
           "name": "Light Flash",
-          "description": "<p>The flash beetle creates a brilliant flash of light. All creatures in its luminescent aura must succeed at a @Check[fortitude|dc:17] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute.</p>\n<p>The flash beetle's glow then goes out, disabling its aura for 24 hours, during which time it cannot use Light Flash.</p>"
+          "description": "<p>The flash beetle creates a brilliant flash of light. All creatures in its luminescent aura must succeed at a @Check[fortitude|dc:17|options:area-effect,inflicts:dazzled] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute.</p>\n<p>The flash beetle's glow then goes out, disabling its aura for 24 hours, during which time it cannot use Light Flash.</p>"
         }
       }
     },
@@ -5813,7 +5822,7 @@
           "description": "<p><strong>Trigger</strong> A creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the giant anaconda attempts to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}.</p>\n<hr />\n<p><strong>Effect</strong> The DC of the Escape check is increased by 2.</p>"
         },
         "action->Greater Constrict": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[(1d10+7)[bludgeoning]], @Check[fortitude|dc:26|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[(1d10+7)[bludgeoning]], @Check[fortitude|dc:26|basic|options:inflicts:unconscious]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
         },
         "action->Slither": {
           "name": "Slither",
@@ -5872,7 +5881,7 @@
         },
         "action->Haul Away": {
           "name": "Haul Away",
-          "description": "<p><strong>Requirements</strong> The giant ant has a Large or smaller creature grabbed</p>\n<hr />\n<p><strong>Effect</strong> The giant ant Strides up to its full Speed, carrying the grabbed creature with it. It is @UUID[Compendium.pf2e.conditionitems.Item.D5mg6Tc7Jzrj6ro7]{Encumbered} if the grabbed creature is Medium or larger.</p>"
+          "description": "<p><strong>Requirements</strong> The giant ant has a Large or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The giant ant Strides up to its full Speed, carrying the grabbed creature with it. It is @UUID[Compendium.pf2e.conditionitems.Item.D5mg6Tc7Jzrj6ro7]{Encumbered} if the grabbed creature is Medium or larger.</p>"
         }
       }
     },
@@ -5905,7 +5914,7 @@
         },
         "action->Giant Centipede Venom": {
           "name": "Giant Centipede Venom",
-          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:14]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d4[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 round)</p>"
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:14]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> 1d4 poison damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 3</strong> 1d4 poison damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 round)</p>"
         }
       }
     },
@@ -6099,7 +6108,7 @@
         },
         "action->Pharyngeal Jaws": {
           "name": "Pharyngeal Jaws",
-          "description": "<p><strong>Requirements</strong> The giant moray eel has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in its jaws</p>\n<hr />\n<p><strong>Effect</strong> The giant moray eel uses its second set of jaws to pull the prey into its gullet. The eel deals @Damage[(1d6+4)[piercing]] damage to the grabbed creature and gains a +2 circumstance bonus to its Swallow Whole attempts and to the DC for the creature to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}. This effect ends if the target Escapes or the giant moray eel Swallows it Whole.</p>"
+          "description": "<p><strong>Requirements</strong> The giant moray eel has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in its jaws</p>\n<hr />\n<p><strong>Effect</strong> The giant moray eel uses its second set of jaws to pull the prey into its gullet. The eel deals @Damage[(1d6+4)[piercing]] damage to the grabbed creature and gains a +2 circumstance bonus to its Swallow Whole attempts and to the DC for the creature to [[/act escape]]. This effect ends if the target Escapes or the giant moray eel Swallows it Whole.</p>"
         },
         "action->Swallow Whole": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Small, @Damage[(1d6+6)[bludgeoning]], Rupture 12</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
@@ -6517,7 +6526,7 @@
         },
         "action->Goblin Song": {
           "name": "Goblin Song",
-          "description": "<p>The war chanter sings annoying goblin songs, distracting foes with silly and repetitive lyrics. The chanter attempts a @Check[performance|traits:auditory,concentrate,linguistic] check against the Will DCs of up to two enemies within @Template[emanation|distance:30]{30 feet}. This has the usual traits and restrictions for a Performance check.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes a -1 status penalty to Perception checks and Will saves for 1 minute. @UUID[Compendium.pf2e.feat-effects.Item.bIRIS6mnynr72RDw]{Effect: Goblin Song (Critical Success)}</p>\n<p><strong>Success</strong> As critical success, but the target is affected for only one round. @UUID[Compendium.pf2e.feat-effects.Item.5veOBmMYQxywTudd]{Effect: Goblin Song (Success)}</p>\n<p><strong>Critical Failure</strong> The target is temporarily immune to Goblin Song for 1 hour.</p>"
+          "description": "<p>The war chanter sings annoying goblin songs, distracting foes with silly and repetitive lyrics. The chanter attempts a @Check[performance|against:will|traits:auditory,concentrate,linguistic] check against the Will DCs of up to two enemies within @Template[emanation|distance:30]{30 feet}. This has the usual traits and restrictions for a Performance check.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes a -1 status penalty to Perception checks and Will saves for 1 minute. @UUID[Compendium.pf2e.feat-effects.Item.bIRIS6mnynr72RDw]{Effect: Goblin Song (Critical Success)}</p>\n<p><strong>Success</strong> As critical success, but the target is affected for only one round. @UUID[Compendium.pf2e.feat-effects.Item.5veOBmMYQxywTudd]{Effect: Goblin Song (Success)}</p>\n<p><strong>Critical Failure</strong> The target is temporarily immune to Goblin Song for 1 hour.</p>"
         }
       }
     },
@@ -7097,7 +7106,7 @@
         },
         "action->Energy Drain": {
           "name": "Energy Drain",
-          "description": "<p>When the Grim Reaper hits and deals damage with its scythe, it regains @Damage[20[healing]] Hit Points, and the target must succeed at a @Check[fortitude|dc:43] save or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}. If the target is already doomed, the doomed value increases by 1 (to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 3}).</p>"
+          "description": "<p>When the Grim Reaper hits and deals damage with its scythe, it regains @Damage[20[healing]] Hit Points, and the target must succeed at a @Check[fortitude|dc:43|options:inflicts:doomed] save or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}. If the target is already doomed, the doomed value increases by 1 (to a maximum of doomed 3).</p>"
         },
         "action->Final Death": {
           "name": "Final Death",
@@ -7131,7 +7140,7 @@
         },
         "action->Clinging Suckers": {
           "name": "Clinging Suckers",
-          "description": "<p>When a grindylow successfully Grabs a creature larger than themself, they attach to that creature. The @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} creature is not @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but if it moves, the grindylow moves with it.</p>\n<p>If the creature is Medium or smaller, it takes a –5-foot status penalty to its Speeds while the grindylow is attached. The grindylow is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while attached to a creature.</p>"
+          "description": "<p>When a grindylow successfully @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grabs} a creature larger than themself, they attach to that creature. The @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} creature is not @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but if it moves, the grindylow moves with it.</p>\n<p>If the creature is Medium or smaller, it takes a –5-foot status penalty to its Speeds while the grindylow is attached. The grindylow is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while attached to a creature.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.FQX3YY3iFTtAtw1k]{Effect: Clinging Suckers}</p>"
         },
         "action->Jet": {
           "name": "Jet",
@@ -7334,7 +7343,7 @@
         },
         "action->Graffiti Egg": {
           "name": "Graffiti Egg",
-          "description": "<p>The halfling troublemaker throws an egg filled with paint, glitter, and confetti at a creature within 30 feet. The target must succeed a @Check[reflex|dc:17] saving throw or become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (or 1 minute on a critical failure).</p>"
+          "description": "<p>The halfling troublemaker throws an egg filled with paint, glitter, and confetti at a creature within 30 feet. The target must succeed a @Check[reflex|dc:17|options:inflicts:dazzled] saving throw or become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (or 1 minute on a critical failure).</p>"
         },
         "action->Keen Eyes": {
           "name": "Keen Eyes",
@@ -7700,7 +7709,7 @@
         },
         "action->Camouflage": {
           "name": "Camouflage",
-          "description": "<p>The dragon can Hide in natural environments even if they don't have cover.</p>"
+          "description": "<p>The dragon can [[/act hide]] in natural environments even if they don't have cover.</p>"
         },
         "action->+1 Status to All Saves vs. Primal": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+1 Status to All Saves vs. Primal"
@@ -7710,7 +7719,7 @@
         },
         "action->Miasma": {
           "name": "Miasma",
-          "description": "<p>20 feet.</p>\n<p>After the dragon uses their Poison Breath, a cloud of poison gas continues to emanate from their body for 1 round. Any creature that ends its turn in the miasma takes @Damage[4d6[poison]|options:area-damage] damage (@Check[fortitude|dc:37|basic|options:area-effect] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>"
+          "description": "<p>20 feet. After the dragon uses their Poison Breath, a cloud of poison gas continues to emanate from their body for 1 round. Any creature that ends its turn in the miasma takes @Damage[4d6[poison]|options:area-damage] damage (@Check[fortitude|dc:37|basic|options:area-effect] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.sHAbHKFNIDSSQDCg]{Effect: Miasma}</p>"
         },
         "action->Twisting Tail": {
           "name": "Twisting Tail",
@@ -7778,7 +7787,7 @@
         },
         "action->Camouflage": {
           "name": "Camouflage",
-          "description": "<p>The dragon can Hide in natural environments even if they don't have cover.</p>"
+          "description": "<p>The dragon can [[/act hide]] in natural environments even if they don't have cover.</p>"
         },
         "action->+1 Status to All Saves vs. Primal": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+1 Status to All Saves vs. Primal"
@@ -7788,7 +7797,7 @@
         },
         "action->Miasma": {
           "name": "Miasma",
-          "description": "<p>20 feet.</p>\n<p>After the dragon uses their Poison Breath, a cloud of poison gas continues to emanate from their body for 1 round. Any creature that ends its turn in the miasma takes @Damage[4d6[poison]|options:area-damage] damage (@Check[fortitude|dc:37|basic|options:area-effect] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>"
+          "description": "<p>20 feet. After the dragon uses their Poison Breath, a cloud of poison gas continues to emanate from their body for 1 round. Any creature that ends its turn in the miasma takes @Damage[4d6[poison]|options:area-damage] damage (@Check[fortitude|dc:37|basic|options:area-effect] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.sHAbHKFNIDSSQDCg]{Effect: Miasma}</p>"
         },
         "action->Twisting Tail": {
           "name": "Twisting Tail",
@@ -8047,7 +8056,7 @@
         },
         "action->Hunting Spider Venom": {
           "name": "Hunting Spider Venom",
-          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:16]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and off-guard (1 round)</p>"
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:16]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> 1d6 poison damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and off-guard (1 round)</p>"
         },
         "action->Web Trap": {
           "name": "Web Trap",
@@ -8363,7 +8372,7 @@
         },
         "strike-ranged->Thunderbolt": {
           "name": "Thunderbolt",
-          "description": "<p>(plus @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round)</p>"
+          "description": "<p>Plus @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round</p>"
         },
         "action->Mist Vision": {
           "name": "Mist Vision",
@@ -9020,7 +9029,7 @@
         },
         "action->Lamia's Caress": {
           "name": "Lamia's Caress",
-          "description": "<p>The lamia touches a creature, who must succeed at a @Check[will|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}. If the target fails additional saves against this ability, the condition value increases by 1 (to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4}). This condition value decreases by 1 every 24 hours.</p>"
+          "description": "<p>The lamia touches a creature, who must succeed at a @Check[will|dc:23|options:inflicts:stupefied] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}. If the target fails additional saves against this ability, the condition value increases by 1 (to a maximum of stupefied 4). This condition value decreases by 1 every 24 hours.</p>"
         },
         "lore->Cult Lore": {
           "name": "Cult Lore"
@@ -9399,7 +9408,7 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(1d8+7)[bludgeoning],1d6[acid]], @Check[fortitude|dc:26|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:22], @Damage[(4d6)[acid]] damage, [[/act escape dc=22]], Rupture 15</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:22|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[(4d6)[acid]] damage, [[/act escape dc=22]], Rupture 15</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         }
       }
     },
@@ -9960,7 +9969,7 @@
         },
         "action->Camouflage": {
           "name": "Camouflage",
-          "description": "<p>The dragon can Hide in natural environments even if they don't have cover.</p>"
+          "description": "<p>The dragon can [[/act hide]] in natural environments even if they don't have cover.</p>"
         },
         "action->Illusion Sense": {
           "name": "Illusion Sense",
@@ -9975,7 +9984,7 @@
         },
         "action->Captivating Display": {
           "name": "Captivating Display",
-          "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> The dragon opens the fins on their head, creating a radiant display of enthralling colors. Each creature in a @Template[emanation|distance:30] must succeed at a @Check[will|dc:33] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) for 1 round. Regardless of the result, a creature is then temporarily immune to Captivating Display for 1 minute.</p>"
+          "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> The dragon opens the fins on their head, creating a radiant display of enthralling colors. Each creature in a @Template[emanation|distance:30] must succeed at a @Check[will|dc:33|options:area-effect,inflicts:dazzled,inflicts:slowed] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) for 1 round. Regardless of the result, a creature is then temporarily immune to Captivating Display for 1 minute.</p>"
         },
         "action->Draconic Frenzy": {
           "name": "Draconic Frenzy",
@@ -10031,7 +10040,7 @@
         },
         "action->Camouflage": {
           "name": "Camouflage",
-          "description": "<p>The dragon can Hide in natural environments even if they don't have cover.</p>"
+          "description": "<p>The dragon can [[/act hide]] in natural environments even if they don't have cover.</p>"
         },
         "action->Illusion Sense": {
           "name": "Illusion Sense",
@@ -10046,7 +10055,7 @@
         },
         "action->Captivating Display": {
           "name": "Captivating Display",
-          "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> The dragon opens the fins on their head, creating a radiant display of enthralling colors. Each creature in a @Template[emanation|distance:30] must succeed at a @Check[will|dc:33] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) for 1 round. Regardless of the result, a creature is then temporarily immune to Captivating Display for 1 minute.</p>"
+          "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> The dragon opens the fins on their head, creating a radiant display of enthralling colors. Each creature in a @Template[emanation|distance:30] must succeed at a @Check[will|dc:33|options:area-effect,inflicts:dazzled,inflicts:slowed] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) for 1 round. Regardless of the result, a creature is then temporarily immune to Captivating Display for 1 minute.</p>"
         },
         "action->Hallucinatory Breath": {
           "name": "Hallucinatory Breath",
@@ -10093,7 +10102,7 @@
         },
         "action->Camouflage": {
           "name": "Camouflage",
-          "description": "<p>The dragon can Hide in natural environments even if they don't have cover.</p>"
+          "description": "<p>The dragon can [[/act hide]] in natural environments even if they don't have cover.</p>"
         },
         "action->Illusion Sense": {
           "name": "Illusion Sense",
@@ -10108,7 +10117,7 @@
         },
         "action->Captivating Display": {
           "name": "Captivating Display",
-          "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> The dragon opens the fins on their head, creating a radiant display of enthralling colors. Each creature in a @Template[emanation|distance:30] must succeed at a @Check[will|dc:41] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) for 1 round. Regardless of the result, a creature is then temporarily immune to Captivating Display for 1 minute.</p>"
+          "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> The dragon opens the fins on their head, creating a radiant display of enthralling colors. Each creature in a @Template[emanation|distance:30] must succeed at a @Check[will|dc:41|options:area-effect,inflicts:dazzled,inflicts:slowed] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) for 1 round. Regardless of the result, a creature is then temporarily immune to Captivating Display for 1 minute.</p>"
         },
         "action->Draconic Frenzy": {
           "name": "Draconic Frenzy",
@@ -10167,7 +10176,7 @@
         },
         "action->Camouflage": {
           "name": "Camouflage",
-          "description": "<p>The dragon can Hide in natural environments even if they don't have cover.</p>"
+          "description": "<p>The dragon can [[/act hide]] in natural environments even if they don't have cover.</p>"
         },
         "action->Illusion Sense": {
           "name": "Illusion Sense",
@@ -10182,7 +10191,7 @@
         },
         "action->Captivating Display": {
           "name": "Captivating Display",
-          "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> The dragon opens the fins on their head, creating a radiant display of enthralling colors. Each creature in a @Template[emanation|distance:30] must succeed at a @Check[will|dc:41] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) for 1 round. Regardless of the result, a creature is then temporarily immune to Captivating Display for 1 minute.</p>"
+          "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> The dragon opens the fins on their head, creating a radiant display of enthralling colors. Each creature in a @Template[emanation|distance:30] must succeed at a @Check[will|dc:41|options:area-effect,inflicts:dazzled,inflicts:slowed] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) for 1 round. Regardless of the result, a creature is then temporarily immune to Captivating Display for 1 minute.</p>"
         },
         "action->Hallucinatory Breath": {
           "name": "Hallucinatory Breath",
@@ -10223,7 +10232,7 @@
         },
         "action->Camouflage": {
           "name": "Camouflage",
-          "description": "<p>The dragon can Hide in natural environments even if they don't have cover.</p>"
+          "description": "<p>The dragon can [[/act hide]] in natural environments even if they don't have cover.</p>"
         },
         "action->+2 Status to All Saves vs. Arcane": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Arcane"
@@ -10283,7 +10292,7 @@
         },
         "action->Camouflage": {
           "name": "Camouflage",
-          "description": "<p>The dragon can Hide in natural environments even if they don't have cover.</p>"
+          "description": "<p>The dragon can [[/act hide]] in natural environments even if they don't have cover.</p>"
         },
         "action->+2 Status to All Saves vs. Arcane": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Arcane"
@@ -10803,7 +10812,7 @@
         },
         "action->Sever Fate": {
           "name": "Sever Fate",
-          "description": "<p>When a norn deals void damage with a Strike, she regains @Damage[10[healing]]{10 Hit Points}. The target must succeed at a @Check[fortitude|dc:39] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure).</p>\n<p>Further void damage dealt by the norn increases the drained condition value by 1 on a failed save (or by 2 on a critical failure), to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 4}.</p>"
+          "description": "<p>When a norn deals void damage with a Strike, she regains @Damage[10[healing]] Hit Points. The target must succeed at a @Check[fortitude|dc:39|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure).</p>\n<p>Further void damage dealt by the norn increases the drained condition value by 1 on a failed save (or by 2 on a critical failure), to a maximum of drained 4.</p>"
         },
         "action->Shift Fate": {
           "name": "Shift Fate",
@@ -10839,7 +10848,7 @@
         },
         "action->Haunting Melody": {
           "name": "Haunting Melody",
-          "description": "<p>The nosoi croons an entrancing song. Each living or undead creature within a @Template[emanation|distance:60] must attempt a @Check[will|dc:18] save. The effect lasts until the end of the nosoi's next turn, but the nosoi can Sustain it. A creature that succeeds at its save is temporarily immune for 24 hours. Despite being a mental effect, this ability affects mindless undead.</p>\n<p>Psychopomps are immune to this ability.</p>\n<hr />\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with the nosoi.</p>\n<p><strong>Critical Failure</strong> The creature is fascinated with the nosoi and must spend each of its actions on its turn to move closer to the nosoi as expediently as possible while avoiding obvious dangers. If a fascinated creature is adjacent to the nosoi, it stays still and doesn't act. If the creature is attacked, the fascination ends.</p>"
+          "description": "<p>The nosoi croons an entrancing song. Each living or undead creature within a @Template[emanation|distance:60] must attempt a @Check[will|dc:18|options:area-effect,inflicts:fascinated] save. The effect lasts until the end of the nosoi's next turn, but the nosoi can Sustain it. A creature that succeeds at its save is temporarily immune for 24 hours. Despite being a mental effect, this ability affects mindless undead.</p>\n<p>Psychopomps are immune to this ability.</p>\n<hr />\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with the nosoi.</p>\n<p><strong>Critical Failure</strong> The creature is fascinated with the nosoi and must spend each of its actions on its turn to move closer to the nosoi as expediently as possible while avoiding obvious dangers. If a fascinated creature is adjacent to the nosoi, it stays still and doesn't act. If the creature is attacked, the fascination ends.</p>"
         },
         "action->Shepherd's Touch": {
           "name": "Shepherd's Touch",
@@ -11401,7 +11410,7 @@
         },
         "action->Absorb Weapon": {
           "name": "Absorb Weapon",
-          "description": "<p><strong>Trigger</strong> A creature hits the omox with a melee weapon</p>\n<hr />\n<p><strong>Effect</strong> The omox attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} the creature. On a critical success, the weapon becomes subsumed within the omox's body rather than falling to the ground. Retrieving the weapon requires Disarming the omox of it.</p>"
+          "description": "<p><strong>Trigger</strong> A creature hits the omox with a melee weapon</p>\n<hr />\n<p><strong>Effect</strong> The omox attempts to [[/act disarm]] the creature. On a critical success, the weapon becomes subsumed within the omox's body rather than falling to the ground. Retrieving the weapon requires Disarming the omox of it.</p>"
         },
         "action->Liquid Leap": {
           "name": "Liquid Leap",
@@ -11505,7 +11514,7 @@
         },
         "action->Subservience": {
           "name": "Subservience",
-          "description": "<p>Orts have little drive of their own, but other devils can take command of them. A non-ort devil can issue a command to all orts within 60 feet of it with a single action, which has the auditory and concentrate traits. The devil picks one of the following orders orts can understand, and the orts follow that order. The command and its effects end once the commander is out of the ort's sight, when a new command is issued by the same or another devil, or when the ort dies.</p>\n<ul>\n<li><strong>Kill</strong> The ort attacks one target the commander singles out and gains a +1 circumstance bonus to attack rolls against the target.</li>\n<li><strong>Defend</strong> The ort circles the commander and attacks any creature that comes near. It gains a +1 circumstance bonus to AC and saves.</li>\n<li><strong>Fetch</strong> The ort gains a +10–foot circumstance bonus to its Speed and attempts to get an object or person the commander singles out. It attacks anyone and anything that gets in the way.</li>\n<li><strong>Work</strong> The ort performs drudge work dictated by the commander.\n\n</li>\n</ul>"
+          "description": "<p>Orts have little drive of their own, but other devils can take command of them. A non-ort devil can issue a command to all orts within 60 feet of it with a single action, which has the auditory and concentrate traits. The devil picks one of the following orders orts can understand, and the orts follow that order. The command and its effects end once the commander is out of the ort's sight, when a new command is issued by the same or another devil, or when the ort dies.</p>\n<ul>\n<li><strong>Kill</strong> The ort attacks one target the commander singles out and gains a +1 circumstance bonus to attack rolls against the target.</li>\n<li><strong>Defend</strong> The ort circles the commander and attacks any creature that comes near. It gains a +1 circumstance bonus to AC and saves.</li>\n<li><strong>Fetch</strong> The ort gains a +10–foot circumstance bonus to its Speed and attempts to get an object or person the commander singles out. It attacks anyone and anything that gets in the way.</li>\n<li><strong>Work</strong> The ort performs drudge work dictated by the commander.</li>\n</ul>"
         }
       }
     },
@@ -11535,7 +11544,7 @@
         },
         "action->Fossilization": {
           "name": "Fossilization",
-          "description": "<p>The first time each round a creature takes damage from the paleohemoth's jaws, the target must attempt a @Check[fortitude|dc:32] save. If it fails and has not already been slowed by this ability, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<p>If the creature was already slowed by this ability, a failed save causes it to be @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} permanently.</p>"
+          "description": "<p>The first time each round a creature takes damage from the paleohemoth's jaws, the target must attempt a @Check[fortitude|dc:32|options:inflicts:slowed,inflicts:petrified] save. If it fails and has not already been slowed by this ability, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<p>If the creature was already slowed by this ability, a failed save causes it to be @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} permanently.</p>"
         },
         "action->Reassemble": {
           "name": "Reassemble",
@@ -11828,7 +11837,7 @@
         },
         "action->Sprinkle Pixie Dust": {
           "name": "Sprinkle Pixie Dust",
-          "description": "<p>The pixie sprinkles pixie dust onto one of their arrows. If the pixie hits a creature with that arrow before the pixie's next turn, the arrow inflicts one of the following special effects of the pixie's choice instead of dealing damage. Each effect depends on the target's @Check[will|dc:21] save. On a critical hit, the target gets a result one degree worse than it rolled.</p>\n<ul>\n<li><strong>Charm</strong> (emotion, incapacitation, mental) The arrow has the effect of a @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell, except the target doesn't gain a bonus to its save if the only hostile act was the pixie firing its bow, and the pixie can choose to direct the target's adoration toward another creature rather than itself.</li>\n<li><strong>Memory Loss</strong> (mental) On a failed Will save, the target loses the last 5 minutes of its memory.</li>\n<li><strong>Sleep</strong> (incapacitation, mental, sleep) The target suffers the effects of a 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep} spell.</li>\n<li><strong>Subdual</strong> (mental, nonlethal) The target takes @Damage[4d6[mental]] damage, depending on its basic Will save.\n\n</li>\n</ul>"
+          "description": "<p>The pixie sprinkles pixie dust onto one of their arrows. If the pixie hits a creature with that arrow before the pixie's next turn, the arrow inflicts one of the following special effects of the pixie's choice instead of dealing damage. Each effect depends on the target's @Check[will|dc:21] save. On a critical hit, the target gets a result one degree worse than it rolled.</p>\n<ul>\n<li><strong>Charm</strong> (emotion, incapacitation, mental) The arrow has the effect of a @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell, except the target doesn't gain a bonus to its save if the only hostile act was the pixie firing its bow, and the pixie can choose to direct the target's adoration toward another creature rather than itself.</li>\n<li><strong>Memory Loss</strong> (mental) On a failed Will save, the target loses the last 5 minutes of its memory.</li>\n<li><strong>Sleep</strong> (incapacitation, mental, sleep) The target suffers the effects of a 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep} spell.</li>\n<li><strong>Subdual</strong> (mental, nonlethal) The target takes @Damage[4d6[mental]] damage, depending on its basic Will save.</li>\n</ul>"
         }
       }
     },
@@ -12303,7 +12312,7 @@
         },
         "action->Feed on Emotion": {
           "name": "Feed on Emotion",
-          "description": "<p><strong>Frequency</strong> once per round;</p>\n<hr />\n<p><strong>Effect</strong> The quelaunt feeds on the emotional unrest of a single creature within 30 feet that's under a harmful emotion effect. The target must succeed at a @Check[will|dc:37] save or take @Damage[4d10[mental]] damage and be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round.</p>\n<p>If the target fails its saving throw, the quelaunt regains the same number of Hit Points and regains the action it spent to Feed on Emotion. It can't use the regained action to Feed on Emotion again.</p>"
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The quelaunt feeds on the emotional unrest of a single creature within 30 feet that's under a harmful emotion effect. The target must succeed at a @Check[will|dc:37|options:damaging-effect,inflicts:stunned] save or take @Damage[4d10[mental]] damage and be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round.</p>\n<p>If the target fails its saving throw, the quelaunt regains the same number of Hit Points and regains the action it spent to Feed on Emotion. It can't use the regained action to Feed on Emotion again.</p>"
         },
         "action->Rapid Strikes": {
           "name": "Rapid Strikes",
@@ -12338,7 +12347,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
         },
         "action->Greater Constrict": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[(2d10+7)[bludgeoning]], @Check[fortitude|dc:29|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[(2d10+7)[bludgeoning]], @Check[fortitude|dc:29|basic|options:inflicts:unconscious]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
         },
         "action->Quetz Couatl Venom": {
           "name": "Quetz Couatl Venom",
@@ -12895,7 +12904,7 @@
         },
         "action->Invoke Rune": {
           "name": "Invoke Rune",
-          "description": "<p>The rune giant invokes one of the runes on their body, causing the rune to spray forth a @Template[cone|distance:30] of sparks that deals @Damage[6d12[electricity]|options:area-damage] damage to all creatures in the cone (@Check[reflex|dc:37|basic|options:area-effect] save).</p>\n<p>The giant can't use Invoke Rune again for [[/gmr 1d4 #Recharge Invoke Rune]]{1d4 rounds}.</p>\n<p>A glowing copy of the invoked rune appears on a single weapon the giant holds, granting the weapon one effect listed below of the giant's choice. The effect on the weapon lasts for 1 minute. If the giant places a new rune on a weapon, any previously placed rune immediately vanishes, ending its effect.</p>\n<ul>\n<li><strong>Rune of Destruction</strong> The weapon gains the deadly trait with three weapon damage dice of the same die size as for the base weapon, and a creature hit with the weapon is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} unless it succeeds at a @Check[fortitude|dc:35] save.</li>\n<li><strong>Rune of Flames</strong> The weapon deals an additional @Damage[3d6[fire]] damage on all attacks.</li>\n<li><strong>Rune of Smiting</strong> When the weapon hits, the giant can Push the target back 10 feet, or 20 feet on a critical hit.</li>\n<li><strong>Rune of Space</strong> During the rune giant's turn, the weapon's reach is increased to 60 feet.\n\n</li>\n</ul>",
+          "description": "<p>The rune giant invokes one of the runes on their body, causing the rune to spray forth a @Template[cone|distance:30] of sparks that deals @Damage[6d12[electricity]|options:area-damage] damage to all creatures in the cone (@Check[reflex|dc:37|basic|options:area-effect] save).</p>\n<p>The giant can't use Invoke Rune again for [[/gmr 1d4 #Recharge Invoke Rune]]{1d4 rounds}.</p>\n<p>A glowing copy of the invoked rune appears on a single weapon the giant holds, granting the weapon one effect listed below of the giant's choice. The effect on the weapon lasts for 1 minute. If the giant places a new rune on a weapon, any previously placed rune immediately vanishes, ending its effect.</p>\n<ul>\n<li><strong>Rune of Destruction</strong> The weapon gains the deadly trait with three weapon damage dice of the same die size as for the base weapon, and a creature hit with the weapon is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} unless it succeeds at a @Check[fortitude|dc:35] save.</li>\n<li><strong>Rune of Flames</strong> The weapon deals an additional @Damage[3d6[fire]] damage on all attacks.</li>\n<li><strong>Rune of Smiting</strong> When the weapon hits, the giant can Push the target back 10 feet, or 20 feet on a critical hit.</li>\n<li><strong>Rune of Space</strong> During the rune giant's turn, the weapon's reach is increased to 60 feet.</li>\n</ul>",
           "selfEffect": "Effect: Invoke Rune"
         },
         "action->Wide Swing": {
@@ -13640,7 +13649,7 @@
         },
         "action->Vitality Drain": {
           "name": "Vitality Drain",
-          "description": "<p>When a skulltaker hits with a melee Strike, the target must succeed at a @Check[fortitude|dc:40] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>"
+          "description": "<p>When a skulltaker hits with a melee Strike, the target must succeed at a @Check[fortitude|dc:40|options:inflicts:drained,inflicts:doomed] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>"
         },
         "lore->Skeletal Lore": {
           "name": "Skeletal Lore"
@@ -14347,7 +14356,7 @@
         },
         "action->Embrace": {
           "name": "Embrace",
-          "description": "<p>The succubus attempts to [[/act grapple skill=diplomacy]]{Grapple} a creature using their Diplomacy bonus instead of Athletics. If the creature is willing, the succubus automatically succeeds.</p>"
+          "description": "<p>The succubus attempts to [[/act grapple skill=diplomacy]] a creature using their Diplomacy bonus instead of Athletics. If the creature is willing, the succubus automatically succeeds.</p>"
         },
         "action->Passionate Kiss": {
           "name": "Passionate Kiss",
@@ -14618,7 +14627,7 @@
           "description": "<p>The thulgant causes a demon within 30 feet to suffer the effect of its sinful vulnerability.</p>"
         },
         "action->Greater Constrict": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[(2d6+17)[bludgeoning],1d6[acid]], @Check[fortitude|dc:40|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[(2d6+17)[bludgeoning],1d6[acid]], @Check[fortitude|dc:40|basic|options:inflicts:unconscious]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
         },
         "action->Mind-Rending Sting": {
           "name": "Mind-Rending Sting",
@@ -14754,7 +14763,7 @@
         },
         "action->Curse of Boiling Blood": {
           "name": "Curse of Boiling Blood",
-          "description": "<p>When a creature slays the linnorm, it must succeed at a @Check[will|dc:48] save or gain weakness to fire 20 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} from the agonizing pain it now endures at all times, with an unlimited duration.</p>\n<p>As long as a character continues to suffer this curse, its slowed condition can never be reduced below slowed 1.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.CUgmb7g65vYNT2hn]{Effect: Curse of Boiling Blood}</p>"
+          "description": "<p>When a creature slays the linnorm, it must succeed at a @Check[will|dc:48|options:inflicts:slowed] save or gain weakness to fire 20 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} from the agonizing pain it now endures at all times, with an unlimited duration.</p>\n<p>As long as a character continues to suffer this curse, its slowed condition can never be reduced below slowed 1.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.CUgmb7g65vYNT2hn]{Effect: Curse of Boiling Blood}</p>"
         },
         "action->Lava Affinity": {
           "name": "Lava Affinity",
@@ -15454,10 +15463,10 @@
         },
         "action->Coils of Knowledge": {
           "name": "Coils of Knowledge",
-          "description": "<p>The naga's grip is more spiritual than physical. A creature hit by a vicharamuni's tail must succeed at a @Check[will|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the tail until they @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}, the naga releases them with an Interact action, or the naga dies.</p>\n<p>A captive takes a –4 status penalty to Escape, but can choose to attempt an Occultism or Religion check to Escape instead of the usual options without taking this penalty</p>"
+          "description": "<p>The naga's grip is more spiritual than physical. A creature hit by a vicharamuni's tail must succeed at a @Check[will|dc:29|options:inflicts:grabbed] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the tail until they [[/act escape]], the naga releases them with an Interact action, or the naga dies.</p>\n<p>A captive takes a –4 status penalty to Escape, but can choose to attempt an [[/act escape skill=occultism]] or [[/act escape skill=religion]] check to Escape instead of the usual options without taking this penalty</p>"
         },
         "action->Greater Constrict": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[(3d8+5)[bludgeoning]], @Check[fortitude|dc:29|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[(3d8+5)[bludgeoning]], @Check[fortitude|dc:29|basic|options:inflicts:unconscious]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
         },
         "action->Spiritual Venom": {
           "name": "Spiritual Venom",
@@ -15758,7 +15767,7 @@
         },
         "action->Focused Flames": {
           "name": "Focused Flames",
-          "description": "<p>The vrolikai attacks a single target with all of their black flame knives. The demon makes a black flame knife Strike with the following additional effects. This counts toward the vrolikai's multiple attack penalty as a number of attacks equal to the number of back flame knives the vrolikai used.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes an additional 2d6 void damage for each knife beyond the first (typically @Damage[6d6[void]]{6d6 extra damage}) and takes @Damage[4d6[persistent,void]] damage.</p>\n<p><strong>Success</strong> The target takes an additional 2d6 void damage for each knife beyond the first.</p>\n<p><strong>Failure</strong> The vrolikai deals the damage their black flame knife Strike normally deals on a hit.</p>"
+          "description": "<p>The vrolikai attacks a single target with all of their black flame knives. The demon makes a black flame knife Strike with the following additional effects. This counts toward the vrolikai's multiple attack penalty as a number of attacks equal to the number of back flame knives the vrolikai used.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes an additional 2d6 void damage for each knife beyond the first (typically 6d6 extra damage) and takes 4d6 persistent void damage.</p>\n<p><strong>Success</strong> The target takes an additional 2d6 void damage for each knife beyond the first.</p>\n<p><strong>Failure</strong> The vrolikai deals the damage their black flame knife Strike normally deals on a hit.</p>"
         },
         "action->Mindwarping": {
           "name": "Mindwarping",
@@ -15850,7 +15859,7 @@
         },
         "action->Energy Drain": {
           "name": "Energy Drain",
-          "description": "<p>When a warsworn hits with a corpse wave Strike or damages a creature with Trample, the target must succeed at a @Check[fortitude|dc:35] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}. On a critical success, the target becomes temporarily immune to the warsworn's energy drain for 24 hours.</p>"
+          "description": "<p>When a warsworn hits with a corpse wave Strike or damages a creature with Trample, the target must succeed at a @Check[fortitude|dc:35|options:inflicts:drained,inflicts:doomed] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}. On a critical success, the target becomes temporarily immune to the warsworn's energy drain for 24 hours.</p>"
         },
         "action->Plummet": {
           "name": "Plummet",
@@ -16114,7 +16123,7 @@
         },
         "action->Feed on Fear": {
           "name": "Feed on Fear",
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> An enemy within 15 feet is under a fear effect or dying</p>\n<hr />\n<p><strong>Effect</strong> The will-o'-wisp feeds on the creature's terror. It regains @Damage[2d4[healing]]{2d4 Hit Points}, and if it has Gone Dark, its glow reignites.</p>"
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> An enemy within 15 feet is under a fear effect or @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying}</p>\n<hr />\n<p><strong>Effect</strong> The will-o'-wisp feeds on the creature's terror. It regains @Damage[2d4[healing]] Hit Points, and if it has Gone Dark, its glow reignites.</p>"
         },
         "action->Go Dark": {
           "name": "Go Dark",
@@ -16612,7 +16621,7 @@
         },
         "action->Behold!": {
           "name": "Behold!",
-          "description": "<p><strong>Frequency</strong> once per hour;</p>\n<hr />\n<p><strong>Effect</strong> The zoaem's rings and wings move in a complex pattern, mesmerizing creatures in the zoaem's choice of a @Template[emanation|distance:10] or a @Template[burst|distance:5] within 60 feet. Each creature must succeed at a @Check[will|dc:17] save or be @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with the zoaem for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or stunned for 1 round on a critical failure).</p>"
+          "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The zoaem's rings and wings move in a complex pattern, mesmerizing creatures in the zoaem's choice of a @Template[emanation|distance:10] or a @Template[burst|distance:5] within 60 feet. Each creature must succeed at a @Check[will|dc:17|options:area-effect,inflicts:fascinated,inflicts:stunned] save or be @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with the zoaem for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or stunned for 1 round on a critical failure).</p>"
         },
         "action->Light of Truth": {
           "name": "Light of Truth",

@@ -22,7 +22,7 @@
         },
         "action->Camouflage": {
           "name": "Camouflage",
-          "description": "<p>The assassin vine can @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} in natural environments even if it doesn't have cover.</p>"
+          "description": "<p>The assassin vine can [[/act hide]] in natural environments even if it doesn't have cover.</p>"
         },
         "action->Alchemical Resistance": {
           "name": "Alchemical Resistance",
@@ -568,7 +568,7 @@
         },
         "strike-melee->Darts": {
           "name": "Darts",
-          "description": "<p>Plus @Damage[1d10[poison]] damage (@Check[fortitude|dc:16] negates the poison damage)</p>"
+          "description": "<p>Plus @Damage[1d10[poison]] damage (@Check[fortitude|dc:16|options:damaging-effect] negates the poison damage)</p>"
         }
       }
     },
@@ -588,7 +588,8 @@
         },
         "action->Rage": {
           "name": "Rage",
-          "description": "<p><strong>Requirements</strong> The monster hunter isn't @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or raging</p>\n<hr />\n<p><strong>Effect</strong> The monster hunter gains 9 temporary Hit Points that last until the rage ends. While raging, they deal 8 additional damage with melee attacks, gain a +10-foot status bonus to their Speed, and take a -1 penalty to AC. The monster hunter can't use concentrate actions except @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} and rage actions.</p>\n<p>The rage lasts for 1 minute, until there are no enemies the monster hunter can perceive, or until the monster hunter falls unconscious.</p>\n<p>Once the rage ends, the monster hunter can't again for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.z3uyCMBddrPK5umr]{Effect: Rage}</p>"
+          "description": "<p><strong>Requirements</strong> The monster hunter isn't @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or raging</p>\n<hr />\n<p><strong>Effect</strong> The monster hunter gains 9 temporary Hit Points that last until the rage ends. While raging, they deal 8 additional damage with melee attacks, gain a +10-foot status bonus to their Speed, and take a -1 penalty to AC. The monster hunter can't use concentrate actions except @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} and rage actions.</p>\n<p>The rage lasts for 1 minute, until there are no enemies the monster hunter can perceive, or until the monster hunter falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}.</p>\n<p>Once the rage ends, the monster hunter can't again for 1 minute.</p>",
+          "selfEffect": "Effect: Rage"
         },
         "action->Sudden Charge": {
           "name": "Sudden Charge",
@@ -693,7 +694,7 @@
         },
         "action->Luminous Pattern": {
           "name": "Luminous Pattern",
-          "description": "<p>The sprites glow brightly, flying in a shifting pattern of light. All creatures within 20 feet become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute (@Check[will|dc:16] negates).</p>"
+          "description": "<p>The sprites glow brightly, flying in a shifting pattern of light. All creatures within @Template[emanation|distance:20]{20 feet} become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute (@Check[will|dc:16|options:area-effect,inflicts:dazzled] negates).</p>"
         },
         "action->Spark Bombardment": {
           "name": "Spark Bombardment",
@@ -977,7 +978,7 @@
         },
         "action->Paralysis": {
           "name": "Paralysis",
-          "description": "<p>Any living creature hit by a gray worm's stinger Strike must succeed at a @Check[fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+          "description": "<p>Any living creature hit by a gray worm's stinger Strike must succeed at a @Check[fortitude|dc:27|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
         },
         "action->Thrash": {
           "name": "Thrash",
@@ -1446,7 +1447,8 @@
         },
         "action->Rage": {
           "name": "Rage",
-          "description": "<p><strong>Requirements</strong> The monster hunter isn't @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or raging</p>\n<hr />\n<p><strong>Effect</strong> The monster hunter gains 9 temporary Hit Points that last until the rage ends. While raging, they deal 8 additional damage with melee attacks, gain a +10-foot status bonus to their Speed, and take a -1 penalty to AC. The monster hunter can't use concentrate actions except @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} and rage actions.</p>\n<p>The rage lasts for 1 minute, until there are no enemies the monster hunter can perceive, or until the monster hunter falls unconscious.</p>\n<p>Once the rage ends, the monster hunter can't again for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.z3uyCMBddrPK5umr]{Effect: Rage}</p>"
+          "description": "<p><strong>Requirements</strong> The monster hunter isn't @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or raging</p>\n<hr />\n<p><strong>Effect</strong> The monster hunter gains 9 temporary Hit Points that last until the rage ends. While raging, they deal 8 additional damage with melee attacks, gain a +10-foot status bonus to their Speed, and take a -1 penalty to AC. The monster hunter can't use concentrate actions except @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} and rage actions.</p>\n<p>The rage lasts for 1 minute, until there are no enemies the monster hunter can perceive, or until the monster hunter falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}.</p>\n<p>Once the rage ends, the monster hunter can't again for 1 minute.</p>",
+          "selfEffect": "Effect: Rage"
         },
         "action->Sudden Charge": {
           "name": "Sudden Charge",
@@ -1585,7 +1587,7 @@
         },
         "action->Spore Burst": {
           "name": "Spore Burst",
-          "description": "<p>When a hyphae tyrant dies, a burst of primal energy explodes from its body in a @Template[emanation|distance:30], restoring 3d8 to each fungus creature and dealing @Damage[3d8[void]|options:area-damage] damage (@Check[fortitude|dc:20|basic|options:area-effect] save) to each non-fungus creature in the area. This area is filled with fungus, becoming difficult terrain.</p>"
+          "description": "<p>When a hyphae tyrant dies, a burst of primal energy explodes from its body in a @Template[emanation|distance:30], restoring @Damage[3d8[healing]] to each fungus creature and dealing @Damage[3d8[void]|options:area-damage] damage (@Check[fortitude|dc:20|basic|options:area-effect] save) to each non-fungus creature in the area. This area is filled with fungus, becoming difficult terrain.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The hyphae tyrant transforms into a Small fungus. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -2424,7 +2426,7 @@
         },
         "action->Spore Burst": {
           "name": "Spore Burst",
-          "description": "<p>When a hyphae tyrant dies, a burst of primal energy explodes from its body in a @Template[emanation|distance:30], restoring 3d8 to each fungus creature and dealing @Damage[3d8[void]|options:area-damage] damage (@Check[fortitude|dc:20|basic|options:area-effect] save) to each non-fungus creature in the area. This area is filled with fungus, becoming difficult terrain.</p>"
+          "description": "<p>When a hyphae tyrant dies, a burst of primal energy explodes from its body in a @Template[emanation|distance:30], restoring @Damage[3d8[healing]] to each fungus creature and dealing @Damage[3d8[void]|options:area-damage] damage (@Check[fortitude|dc:20|basic|options:area-effect] save) to each non-fungus creature in the area. This area is filled with fungus, becoming difficult terrain.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The hyphae tyrant transforms into a Small fungus. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -2882,8 +2884,10 @@
     "Stoneriver": {
       "name": "Stoneriver",
       "hpDetails": "regeneration 30 (deactivated by cold or unholy)",
+      "languages": "tongues",
       "publicNotes": "<p>A servant of Torag, Stoneriver resembles a pangolin with glowing blue eyes and brassy, rune-covered scales. Stoneriver burrows through Golarion's mantle and crust as he hunts down subterranean fiends, aids virtuous communities, and defends sacred sites, often collaborating with dwarves.</p>\n<h2>Forgeheart Five</h2>\n<p>Stoneriver has fathered numerous children through the years, each clever, brave, and bold. Among these, five have joined together to combat evil as a team. Calling themselves the Forgeheart Five, these overly optimistic and bombastic creatures strive to be as virtuous and heroic as their father. Thus far, their methods have been more flashy than effective.</p>",
       "saveDetails": "+2 status to all saves vs. magic",
+      "senses": "(+33 to detect lies and illusions)",
       "items": {
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Divine Innate Spells"
@@ -2899,7 +2903,8 @@
           "target": "1 creature"
         },
         "spell->Detect Alignment (At Will, Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will, Evil Only)"
+          "name": "Detect Alignment (At Will, Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Light": {
           "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
@@ -2932,14 +2937,15 @@
         },
         "action->Measure Soul": {
           "name": "Measure Soul",
-          "description": "<p>Stoneriver mentally pries through the mind of a creature within 60 feet, dealing @Damage[10d8[mental]] damage (@Check[will|dc:29|basic] save). Stoneriver can choose to make this damage nonlethal or choose not to damage the creature at all. For 1 minute, Stoneriver gains a +1 circumstance bonus to attack rolls, damage rolls, and Perception checks against that creature. If the creature is evil and it failed its save, the creature is additionally @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4} on a critical failure). Stoneriver can't use Measure Soul again for 1d4 rounds.</p>"
+          "description": "<p>Stoneriver mentally pries through the mind of a creature within 60 feet, dealing @Damage[10d8[mental]] damage (@Check[will|dc:29|basic] save). Stoneriver can choose to make this damage nonlethal or choose not to damage the creature at all. For 1 minute, Stoneriver gains a +1 circumstance bonus to attack rolls, damage rolls, and Perception checks against that creature. If the creature is evil and it failed its save, the creature is additionally @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4} on a critical failure). Stoneriver can't use Measure Soul again for [[/gmr 1d4 #Recharge Measure Soul]]{1d4 rounds}.</p>",
+          "selfEffect": "Effect: Measure Soul"
         },
         "action->Rock Tunneler": {
           "name": "Rock Tunneler",
           "description": "<p>Stoneriver can burrow through solid stone, leaving behind a tunnel if he desires.</p>"
         },
         "action->Swallow Whole": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Large, @Damage[6d6[bludgeoning],2d6[fire]]{6d6 bludgeoning plus 2d6 fire} and devour magic, Rupture 40</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Large, @Damage[6d6[bludgeoning],2d6[fire]] and devour magic, Rupture 40</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "lore->Torag Lore": {
           "name": "Torag Lore"
@@ -3275,7 +3281,7 @@
         },
         "action->Adhesive": {
           "name": "Adhesive",
-          "description": "<p>The mimic is coated in an adhesive slime. Any creature that hits the mimic, is hit by the mimic, or otherwise touches the mimic must succeed at a @Check[reflex|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} ([[/act escape dc=23]]). A weapon that hits the mimic is stuck to the mimic and can be removed with a successful @Check[athletics|dc:23] check (made as a single action).</p>\n<p>A mimic can have any number of objects or creatures stuck to it at a time. The mimic can release a stuck creature or object by using a single action, and the adhesive dissolves 1 minute after the mimic dies, releasing all stuck objects and creatures.</p>"
+          "description": "<p>The mimic is coated in an adhesive slime. Any creature that hits the mimic, is hit by the mimic, or otherwise touches the mimic must succeed at a @Check[reflex|dc:23|options:inflicts:grabbed] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} ([[/act escape dc=23]]). A weapon that hits the mimic is stuck to the mimic and can be removed with a successful @Check[athletics|dc:23] check (made as a single action).</p>\n<p>A mimic can have any number of objects or creatures stuck to it at a time. The mimic can release a stuck creature or object by using a single action, and the adhesive dissolves 1 minute after the mimic dies, releasing all stuck objects and creatures.</p>"
         },
         "action->Object Lesson": {
           "name": "Object Lesson",
@@ -3307,7 +3313,7 @@
         },
         "action->Thrash": {
           "name": "Thrash",
-          "description": "<p>Zogototaru lashes her body, rattling the ground and splashing magma in a @Template[cone|distance:30]. Creatures in the area must attempt a @Check[reflex|dc:29] save.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The creature takes @Damage[4d6[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[4d6[fire]] damage and @Damage[4d6[bludgeoning]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d6[fire]] damage and @Damage[6d6[bludgeoning]] damage, and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<hr />\n<p><strong>Special</strong> The first time she Thrashes, Zogototaru destroys the pillars in area <strong>F2a</strong>. Anyone there can leap free as part of their Reflex saving throw, landing on the closest surface. For the remainder of combat, the rear half of the crimson worm's body floats in the magma there, creating an improvised bridge 10 feet wide and 30 feet long. Creatures on Zogototaru take a –2 circumstance penalty to their Reflex saves against her Thrashing.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.QzJv3TybABeCjwQc]{Effect: Riding Zogototaru}</p>"
+          "description": "<p>Zogototaru lashes her body, rattling the ground and splashing magma in a @Template[cone|distance:30]. Creatures in the area must attempt a @Check[reflex|dc:29|options:area-effect,damaging-effect,inflicts:clumsy,inflicts:prone] save.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The creature takes @Damage[4d6[fire]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[4d6[fire],4d6[bludgeoning]|options:area-damage] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d6[fire],6d6[bludgeoning]|options:area-damage] damage, and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<hr />\n<p><strong>Special</strong> The first time she Thrashes, Zogototaru destroys the pillars in area <strong>F2a</strong>. Anyone there can leap free as part of their Reflex saving throw, landing on the closest surface. For the remainder of combat, the rear half of the crimson worm's body floats in the magma there, creating an improvised bridge 10 feet wide and 30 feet long. Creatures on Zogototaru take a –2 circumstance penalty to their Reflex saves against her Thrashing.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.QzJv3TybABeCjwQc]{Effect: Riding Zogototaru}</p>"
         }
       }
     }
