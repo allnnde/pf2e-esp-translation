@@ -1969,7 +1969,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]\nSee Invisibility (Constant)"
         },
         "spell->Detect Alignment (At Will) (Good Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Good Only)"
+          "name": "Detect Alignment (At Will) (Good Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -2076,7 +2077,7 @@
         },
         "action->Envelop": {
           "name": "Envelop",
-          "description": "<p>The cloaker makes an attack roll with a [[/r 1d20+14 #Envelop Attack]]{+14 bonus} against an adjacent creature's Reflex DC. If it succeeds, it envelops the target, who is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}. Attacks that hit an enveloping cloaker deal half their damage to the cloaker and half to the trapped victim. The cloaker can't Fly, and when it moves using its land Speed it moves the enveloped creature with it. The cloaker can make only jaws Strikes against the restrained creature but can make tail Strikes against other creatures.</p>\n<p>A creature that voluntarily puts on the cloaker becomes engulfed automatically. A cloaker can engulf only Large or smaller creatures, and no more than one creature at a time.</p>"
+          "description": "<p>The cloaker makes an attack roll with a @Check[envelop|against:reflex]{+14} bonus against an adjacent creature's Reflex DC. If it succeeds, it envelops the target, who is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}. Attacks that hit an enveloping cloaker deal half their damage to the cloaker and half to the trapped victim. The cloaker can't Fly, and when it moves using its land Speed it moves the enveloped creature with it. The cloaker can make only jaws Strikes against the restrained creature but can make tail Strikes against other creatures.</p>\n<p>A creature that voluntarily puts on the cloaker becomes engulfed automatically. A cloaker can engulf only Large or smaller creatures, and no more than one creature at a time.</p>"
         },
         "action->Infrasonic Moan": {
           "name": "Infrasonic Moan",
@@ -2681,7 +2682,7 @@
         },
         "action->Spore Tendrils": {
           "name": "Spore Tendrils",
-          "description": "<p>The tendrils that cover the drakauthix's body reach out and infest adjacent creatures, dealing @Damage[4d6[poison]] damage and @Damage[1d6[persistent,poison]] damage. A creature can attempt a @Check[reflex|dc:27|basic] save to reduce this damage, but one @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the drakauthix takes a -4 circumstance penalty to this save.</p>"
+          "description": "<p>The tendrils that cover the drakauthix's body reach out and infest adjacent creatures, dealing @Damage[4d6[poison],1d6[persistent,poison]|options:area-damage] damage. A creature can attempt a @Check[reflex|dc:27|basic|options:area-effect] save to reduce this damage, but one @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the drakauthix takes a -4 circumstance penalty to this save.</p>"
         },
         "action->Whirlwind of Hooks": {
           "name": "Whirlwind of Hooks",
@@ -3053,7 +3054,7 @@
         },
         "action->Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The fire mephit breathes flames in a @Template[cone|distance:15] that deals @Damage[2d4[fire]|options:area-damage] damage and @Damage[1d4[persistent,fire]] damage to each creature within the area (@Check[reflex|dc:17|basic|options:area-effect] save).</p>\n<p>The fire mephit can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+          "description": "<p>The fire mephit breathes flames in a @Template[cone|distance:15] that deals @Damage[2d4[fire],1d4[persistent,fire]|options:area-damage] damage to each creature within the area (@Check[reflex|dc:17|basic|options:area-effect] save).</p>\n<p>The fire mephit can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -3107,11 +3108,11 @@
           "description": "<p>A gelatinous cube is so clear that it's difficult to spot. A successful @Check[perception|dc:23|traits:action:search] check is required to notice a stationary cube, and a creature must be @UUID[Compendium.pf2e.actionspf2e.Item.TiNDYUGlMmxzxBYU]{Searching} to attempt this check.</p>\n<p>A creature that walks into the cube is automatically Engulfed (this usually causes the GM to call for initiative).</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:19|traits:damaging-effect], @Damage[2d6[acid]], [[/act escape dc=19]], Rupture 7</p>\n<p>A creature Engulfed by the gelatinous cube must also attempt a saving throw against paralysis.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:19|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[2d6[acid]] damage, [[/act escape dc=19]], Rupture 7</p>\n<p>A creature Engulfed by the gelatinous cube must also attempt a saving throw against paralysis.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Paralysis": {
           "name": "Paralysis",
-          "description": "<p>A creature Engulfed by the cube or hit by its attack is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} unless it succeeds at a @Check[fortitude|dc:20] save. A victim can attempt a new save to recover at the end of each of its turn.</p>"
+          "description": "<p>A creature Engulfed by the cube or hit by its attack is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} unless it succeeds at a @Check[fortitude|dc:20|options:inflicts:paralyzed] save. A victim can attempt a new save to recover at the end of each of its turn.</p>"
         },
         "action->Weak Acid": {
           "name": "Weak Acid",
@@ -3203,7 +3204,8 @@
           "description": "<p>You create up to four floating lights, no two of which are more than 10 feet apart. Each sheds light like a torch. When you Sustain the Spell, you can move any number of lights up to 60 feet. Each light must remain within 120 feet of you and within 10 feet of all others, or it winks out.</p>"
         },
         "spell->Detect Alignment (At Will) (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Evil Only)"
+          "name": "Detect Alignment (At Will) (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Illusory Disguise (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]\nIllusory Disguise (At Will)"
@@ -3267,7 +3269,7 @@
         },
         "action->Paralysis": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.bVZ6KizWVTLJUBXi]\nParalysis",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.bVZ6KizWVTLJUBXi]\n<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:16] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.bVZ6KizWVTLJUBXi]\n<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:16|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
         },
         "action->Swift Leap": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.UU1Fp3PRuTFONjC9]\nSwift Leap",
@@ -3296,7 +3298,7 @@
         },
         "action->Paralysis": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FW4KAUHb7r8WkxUc]\nParalysis",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FW4KAUHb7r8WkxUc]\n<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:15] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FW4KAUHb7r8WkxUc]\n<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:15|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
         },
         "action->Swift Leap": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.UU1Fp3PRuTFONjC9]\nSwift Leap"
@@ -3348,10 +3350,10 @@
         },
         "action->Burn Eyes": {
           "name": "Burn Eyes",
-          "description": "<p>A creature that takes damage from a gibbering mouther's spittle must succeed at a @Check[fortitude|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (or @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round on a critical failure).</p>"
+          "description": "<p>A creature that takes damage from a gibbering mouther's spittle must succeed at a @Check[fortitude|dc:22|options:inflicts:dazzled,inflicts:blinded] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (or @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round on a critical failure).</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:22|traits:damaging-effect], @Damage[3d8[piercing]], [[/act escape dc=22]], Rupture 8</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:22|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[3d8[piercing]] damage, [[/act escape dc=22]], Rupture 8</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Ground Manipulation": {
           "name": "Ground Manipulation",
@@ -3445,7 +3447,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.LQzlKbYjZSMFQawP]\nLocate (Gems Only)"
         },
         "spell->Detect Alignment (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Evil Only)"
+          "name": "Detect Alignment (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -3509,7 +3512,8 @@
           "requirements": "3 gp silver bell focus"
         },
         "spell->Detect Alignment (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Evil Only)"
+          "name": "Detect Alignment (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Protection": {
           "target": "1 creature"
@@ -3555,7 +3559,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.LQzlKbYjZSMFQawP]\nLocate (Gems Only)"
         },
         "spell->Detect Alignment (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Evil Only)"
+          "name": "Detect Alignment (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -3629,7 +3634,8 @@
           "requirements": "3 gp silver bell focus"
         },
         "spell->Detect Alignment (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Evil Only)"
+          "name": "Detect Alignment (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Protection": {
           "target": "1 creature"
@@ -3679,7 +3685,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.LQzlKbYjZSMFQawP]\nLocate (Gems Only)"
         },
         "spell->Detect Alignment (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Evil Only)"
+          "name": "Detect Alignment (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -3736,7 +3743,8 @@
           "requirements": "3 gp silver bell focus"
         },
         "spell->Detect Alignment (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Evil Only)"
+          "name": "Detect Alignment (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Protection": {
           "target": "1 creature"
@@ -3959,14 +3967,14 @@
         },
         "action->Camouflage": {
           "name": "Camouflage",
-          "description": "<p>The dragon can @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} in natural environments even if it doesn't have cover.</p>"
+          "description": "<p>The dragon can [[/act hide]] in natural environments even if it doesn't have cover.</p>"
         },
         "action->Frightful Presence": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>90 feet. @Check[will|dc:37|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
         },
         "action->Miasma": {
           "name": "Miasma",
-          "description": "<p>20 feet. After the dragon uses its Breath Weapon, a cloud of poison gas continues to emanate from its body for 1 round. Any creature that ends its turn in the miasma takes @Damage[4d6[poison]|options:area-damage] damage (@Check[fortitude|dc:37|basic|options:area-effect] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.lJGAJF9QiXCOPd2I]{Effect: Draconic Breath Weapon Aura}</p>"
+          "description": "<p>20 feet. After the dragon uses its Breath Weapon, a cloud of poison gas continues to emanate from its body for 1 round. Any creature that ends its turn in the miasma takes @Damage[4d6[poison]|options:area-damage] damage (@Check[fortitude|dc:37|basic|options:area-effect] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.sHAbHKFNIDSSQDCg]{Effect: Miasma}</p>"
         },
         "action->Twisting Tail": {
           "name": "Twisting Tail",
@@ -4058,14 +4066,14 @@
         },
         "action->Camouflage": {
           "name": "Camouflage",
-          "description": "<p>The dragon can @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} in natural environments even if it doesn't have cover.</p>"
+          "description": "<p>The dragon can [[/act hide]] in natural environments even if it doesn't have cover.</p>"
         },
         "action->Frightful Presence": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]\n<p>90 feet. @Check[will|dc:37|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
         },
         "action->Miasma": {
           "name": "Miasma",
-          "description": "<p>20 feet. After the dragon uses its Breath Weapon, a cloud of poison gas continues to emanate from its body for 1 round. Any creature that ends its turn in the miasma takes @Damage[4d6[poison]|options:area-damage] damage (@Check[fortitude|dc:37|basic|options:area-effect] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.lJGAJF9QiXCOPd2I]{Effect: Draconic Breath Weapon Aura}</p>"
+          "description": "<p>20 feet. After the dragon uses its Breath Weapon, a cloud of poison gas continues to emanate from its body for 1 round. Any creature that ends its turn in the miasma takes @Damage[4d6[poison]|options:area-damage] damage (@Check[fortitude|dc:37|basic|options:area-effect] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.sHAbHKFNIDSSQDCg]{Effect: Miasma}</p>"
         },
         "action->Twisting Tail": {
           "name": "Twisting Tail",
@@ -4367,33 +4375,6 @@
         "action->Wide Swing": {
           "name": "Wide Swing",
           "description": "<p>The hill giant makes a single greatclub Strike and compares the attack roll result to the ACs of up to two foes within its reach.</p>\n<p>This counts as two attacks for the hill giant's multiple attack penalty.</p>"
-        }
-      }
-    },
-    "Hive Mother": {
-      "name": "Hive Mother",
-      "publicNotes": "<p>Ankhrav hive mothers are fearsome predators that one can easily distinguish from the typical ankhrav not only by their greater size, but the presence of a large pair of razor-sharp, mantis-like arms.</p>\n<hr />\n<p>Ankhravs are immense, burrowing, and insectile predators, considered by inhabitants of the rural areas of the world to be an all-too-common plague.</p>",
-      "items": {
-        "strike-melee->Mandibles": {
-          "name": "Mandibles"
-        },
-        "strike-ranged->Acid Spit": {
-          "name": "Acid Spit"
-        },
-        "action->Tremorsense (Imprecise) 90 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense (Imprecise) 90 feet"
-        },
-        "action->Armor-Rending Bite": {
-          "name": "Armor-Rending Bite",
-          "description": "<p>The hive mother makes a mandibles Strike; if the Strike hits, the target's armor takes the damage and the acid damage bypasses the armor's Hardness.</p>"
-        },
-        "action->Frenzy Pheromone": {
-          "name": "Frenzy Pheromone",
-          "description": "<p>The hive mother unleashes a pheromone that causes all other ankhravs within a @Template[emanation|distance:100] to become @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} until the start of the hive mother's next turn, and they can use the extra action only for Burrow, Stride, or Strike actions.</p>\n<p>The hive mother can't unleash the pheromone again for [[/gmr 1d4 #Recharge Frenzy Pheromone]]{1d4 rounds}.</p>"
-        },
-        "action->Spray Acid": {
-          "name": "Spray Acid",
-          "description": "<p>The hive mother spews acid in a @Template[cone|distance:60], dealing @Damage[8d6[acid],1d6[persistent,acid]|options:area-damage]{8d6 acid damage and 1d6 persistent acid damage} (@Check[reflex|dc:26|basic|options:area-effect] save).</p>\n<p>It can't spew acid again for [[/gmr 1d4 #Recharge Spray Acid]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -4788,7 +4769,8 @@
           "name": "Divine Innate Spells"
         },
         "spell->Detect Alignment (At Will) (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Evil Only)"
+          "name": "Detect Alignment (At Will) (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Light": {
           "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
@@ -4819,7 +4801,8 @@
           "name": "Divine Innate Spells"
         },
         "spell->Detect Alignment (At Will) (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Evil Only)"
+          "name": "Detect Alignment (At Will) (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Light": {
           "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
@@ -4922,7 +4905,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.3JG1t3T4mWn6vTke]\nBlur (At Will)"
         },
         "spell->Detect Alignment (Constant) (Good or Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Constant) (Good or Evil Only)"
+          "name": "Detect Alignment (Constant) (Good or Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Detect Magic (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]\nDetect Magic (Constant)"
@@ -5022,7 +5006,7 @@
           "description": "<p>The marilith attacks a single target with all the weapons they wield in their arms, overwhelming the target with multiple attacks and leaving almost nowhere to dodge. The demon makes a longsword Strike. On a successful attack, the marilith deals longsword damage to the target, plus an additional 1d8 slashing damage for every longsword they wield beyond the first (typically 5d8 slashing damage). Even on a failed attack, the marilith deals the damage from one longsword to the target, though they still miss completely on a critical failure. This counts toward the marilith's multiple attack penalty as a number of attacks equal to the number of longswords the pride demon wields.</p>"
         },
         "action->Greater Constrict": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[(2d12+13)[bludgeoning]] damage, @Check[fortitude|dc:39|basic] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[(2d12+13)[bludgeoning]], @Check[fortitude|dc:39|basic|options:inflicts:unconscious]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
         },
         "action->Infuse Weapons": {
           "name": "Infuse Weapons",
@@ -5077,7 +5061,7 @@
           "description": "<p><strong>Trigger</strong> The mu spore @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabs} a creature with its jaws.</p>\n<hr />\n<p><strong>Effect</strong> The spore uses Swallow Whole.</p>"
         },
         "action->Greater Constrict": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[15[bludgeoning]] damage, @Check[fortitude|dc:45|basic] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1]\n<p>@Damage[15[bludgeoning]], @Check[fortitude|dc:45|basic|options:inflicts:unconscious]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
         },
         "action->Overpowering Jaws": {
           "name": "Overpowering Jaws",
@@ -5090,7 +5074,7 @@
     },
     "Night Hag": {
       "name": "Night Hag",
-      "publicNotes": "<p>Night hags are thieves and merchants of mortal souls. These foul creatures collect souls in dark gems or crystalline jars to sell in fiendish markets, and are themselves empowered by potent magic jewels known as <em>@UUID[Compendium.pf2e.equipment-srd.Item.yhw1mr4oDhzMQc3D]{Heartstones}</em>. They haunt the Ethereal Plane, where they prey upon mortals in their dreams, debilitating them with horrific nightmares as they rest. A night hag may find a particular target and haunt them continuously over the course of weeks, slowly and cruelly breaking down the victim's will and ability to resist, until their soul is forfeit.</p>\n<p>A night hag is a canny mastermind and soul broker, willing to consider any deal as long as she is convinced she has the upper hand. Although a night hag finds it easy to travel the Ethereal Plane and prey upon helpless souls that can't fight back, these souls are also the least desirable to the evil outsiders the night hag bargains with, and so a night hag gathers allies and minions that allow her to prey on more potent souls without personally risking herself. Their favored minions are @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.qRUqoezeEnQ2KdyT]{Nightmares}, with whom they share a special bond.</p>\n<p>Above all, night hags avoid fighting foes that can harry them on the Ethereal Plane, picking fights only when they are certain they can escape.</p>\n<hr />\n<p>Malevolent crones who lurk at the edges of civilization, hags use their deceptive, magical abilities to prey upon humanoids, manipulating and corrupting them. Some say hags arose from fey that became twisted by their inner selfishness. Hags gather together in covens for greater power, craft unique magical items known as <em>@UUID[Compendium.pf2e.equipment-srd.Item.ACa9QlFqdmW4s2Th]{Hag Eyes}</em>, and are known to replace infant humanoids with their own offspring-these children are@UUID[Compendium.pf2e.pathfinder-monster-core.Actor.RqX0vfUjlycKjGyp]{Changelings} who have the potential to become hags themselves.</p>",
+      "publicNotes": "<p>Night hags are thieves and merchants of mortal souls. These foul creatures collect souls in dark gems or crystalline jars to sell in fiendish markets, and are themselves empowered by potent magic jewels known as <em>@UUID[Compendium.pf2e.equipment-srd.Item.yhw1mr4oDhzMQc3D]{Heartstones}</em>. They haunt the Ethereal Plane, where they prey upon mortals in their dreams, debilitating them with horrific nightmares as they rest. A night hag may find a particular target and haunt them continuously over the course of weeks, slowly and cruelly breaking down the victim's will and ability to resist, until their soul is forfeit.</p>\n<p>A night hag is a canny mastermind and soul broker, willing to consider any deal as long as she is convinced she has the upper hand. Although a night hag finds it easy to travel the Ethereal Plane and prey upon helpless souls that can't fight back, these souls are also the least desirable to the evil outsiders the night hag bargains with, and so a night hag gathers allies and minions that allow her to prey on more potent souls without personally risking herself. Their favored minions are @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.qRUqoezeEnQ2KdyT]{Nightmares}, with whom they share a special bond.</p>\n<p>Above all, night hags avoid fighting foes that can harry them on the Ethereal Plane, picking fights only when they are certain they can escape.</p>\n<hr />\n<p>Malevolent crones who lurk at the edges of civilization, hags use their deceptive, magical abilities to prey upon humanoids, manipulating and corrupting them. Some say hags arose from fey that became twisted by their inner selfishness. Hags gather together in covens for greater power, craft unique magical items known as <em>@UUID[Compendium.pf2e.equipment-srd.Item.ACa9QlFqdmW4s2Th]{Hag Eyes}</em>, and are known to replace infant humanoids with their own offspring-these children are @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.RqX0vfUjlycKjGyp]{Changelings} who have the potential to become hags themselves.</p>",
       "saveDetails": "+2 status to all saves vs. magic, -2 to all saves (if heartstone is lost)",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
@@ -5122,7 +5106,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (At Will)"
         },
         "spell->Detect Alignment (Constant) (All Alignments)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Constant) (All Alignments)"
+          "name": "Detect Alignment (Constant) (All Alignments)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Detect Magic (Constant) (3rd)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]\nDetect Magic (Constant) (3rd)"
@@ -5280,7 +5265,8 @@
           "target": "self"
         },
         "spell->Detect Alignment (At Will) (Good Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Good Only)"
+          "name": "Detect Alignment (At Will) (Good Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "strike-melee->Claw": {
           "name": "Claw"
@@ -6273,7 +6259,8 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Detect Alignment (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Evil Only)"
+          "name": "Detect Alignment (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -6343,7 +6330,8 @@
           "requirements": "3 gp silver bell focus"
         },
         "spell->Detect Alignment (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Evil Only)"
+          "name": "Detect Alignment (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Light": {
           "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
@@ -6395,7 +6383,8 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Detect Alignment (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Evil Only)"
+          "name": "Detect Alignment (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -6480,7 +6469,8 @@
           "requirements": "3 gp silver bell focus"
         },
         "spell->Detect Alignment (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Evil Only)"
+          "name": "Detect Alignment (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Light": {
           "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
@@ -6539,7 +6529,8 @@
           "name": "Arcane Innate Spells"
         },
         "spell->Detect Alignment (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Evil Only)"
+          "name": "Detect Alignment (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "strike-melee->Jaws": {
           "name": "Jaws"
@@ -6605,7 +6596,8 @@
           "requirements": "3 gp silver bell focus"
         },
         "spell->Detect Alignment (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (Evil Only)"
+          "name": "Detect Alignment (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Light": {
           "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
@@ -6662,7 +6654,8 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aewxsale5xWEPKLk]\nZone of Truth (At Will)"
         },
         "spell->Detect Alignment (At Will) (Evil Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Evil Only)"
+          "name": "Detect Alignment (At Will) (Evil Only)",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>"
         },
         "spell->Light": {
           "target": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
@@ -7800,7 +7793,7 @@
           "description": "<p>Until the next time it acts, the zaramuun appears to be a sand dune. It has an automatic result of 47 (50 in sandy terrain) on Deception and Stealth checks and DCs to pass as a sand dune. Any creature that walks onto the zaramuun moves into its body and is Engulfed.</p>"
         },
         "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:35|traits:damaging-effect], @Damage[4d12[bludgeoning]] damage and @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Planar Tether}, [[/act escape dc=32]], Rupture 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:35|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[4d12[bludgeoning]] damage and @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Planar Tether}, [[/act escape dc=32]], Rupture 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "action->Raking Sand": {
           "name": "Raking Sand",
