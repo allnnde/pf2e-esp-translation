@@ -1096,6 +1096,27 @@
       "pilotingCheck": "Atletismo (DC 39), Conocimiento de conducción (DC 34), Conocimiento de navegación (DC 34) o Naturaleza (DC 39)",
       "speed": "80 pies (viento)"
     },
+    "Sea Fort": {
+      "name": "Fuerte del Mar",
+      "crew": "1 piloto, 8 tripulantes",
+      "description": "<p>Los fuertes marítimos, enormes masas de acero mantenidas a flote por la magia, fueron desarrollados originalmente por la armada corentina para imponer bloqueos. Aunque no son particularmente rápidos o maniobrables, su alta resistencia al daño y la capacidad de expandir su alcance con paredes adicionales los hace difíciles de ignorar. Las armadas a menudo los mantienen anclados para proteger un canal estrecho o un objetivo vulnerable en tierra o los usan para proteger embarcaciones más pequeñas y ágiles mientras preparan un ataque.</p>",
+      "pilotingCheck": "Arcanos (CD 29 ) o Sailing Saber (CD 27 )",
+      "speed": "nadar 15 pies (mágico)",
+      "items": {
+        "action->Extend Blockade": {
+          "name": "Extender el bloqueo",
+          "description": "<p>El piloto despliega paredes de acero que se extienden desde el casco de la nave por 50 pies en cada dirección, aumentando su longitud a 250 pies. El fuerte marítimo puede extender el bloqueo solo mientras su velocidad de natación es 0, y extender el bloqueo no puede estar activo al mismo tiempo que levantar murallas.</p>"
+        },
+        "action->Hunker Down": {
+          "name": "Hunker Down",
+          "description": "<p>El piloto suelta el ancla del fuerte marítimo, reduciendo su velocidad de natación a 0 y asegurándolo en su posición actual en el mar. Mientras está anclado, gana un bonificador por circunstancia +2 a sus lanzamientos de CA y Fortaleza. El piloto puede usar esta actividad de nuevo para levantar el ancla.</p>"
+        },
+        "action->Raise Ramparts": {
+          "name": "Levantar murallas",
+          "description": "<p>El piloto despliega paredes de acero magnetizado que se extienden desde los lados del fuerte marítimo, aumentando su altura a 60 pies. Las murallas tienen un CA de 20, Dureza 10, y 80 PG (UR 40 ). Gracias a las runas magnéticas, los proyectiles de metal disparados contra el fuerte marítimo golpean primero las murallas y no pueden dañar el barco hasta que se rompen. El fuerte marítimo puede levantar murallas solo mientras su velocidad de natación es 0, y levantar murallas no puede estar activo al mismo tiempo que el bloqueo extendido. Si las murallas son destruidas, no se pueden usar hasta que sean reparadas.</p>"
+        }
+      }
+    },
     "Second Kiss": {
       "name": "Segundo beso",
       "crew": "1 piloto, 3 tripulantes",
@@ -1106,6 +1127,24 @@
         "action->Sluggish": {
           "name": "Lento",
           "description": "<p> Este vehículo debe moverse el doble de su longitud por cada giro de 90 grados que realiza. </p>"
+        }
+      }
+    },
+    "Shadow Chaser": {
+      "name": "Cazador de sombras",
+      "crew": "1 piloto, 4 tripulantes",
+      "description": "<p>Un <em> cazador de sombras </em> puede moverse por encima o por debajo de la superficie del agua, recopilando información sobre barcos y criaturas acuáticas usando magia sigilosa. <em> Los cazadores de sombras </em> están diseñados para la observación en lugar de combate directo, a menudo atrayendo a los perseguidores en conflicto con las naves de superficie más fuertemente armados.</p>",
+      "pilotingCheck": "Arcanos (CD 24 ), Sailing Saber (CD 22 ), o Sigilo (CD 24 )",
+      "speed": "wim 40 pies (mágicos)",
+      "items": {
+        "action->Air Bubble": {
+          "name": "Burbuja de aire",
+          "description": "<p><strong>Frecuencia</strong> una vez por hora</p>\n<hr /> <p><strong>Efecto</strong> El piloto activa runas que generan una burbuja de aire alrededor de la nave durante 10 minutos. El aire espesado permite que las criaturas a bordo respiren mientras el cazador de sombras está sumergido y desvía los proyectiles, otorgando al vehículo una bonificación de circunstancia +2 a CA contra ataques físicos a distancia.</p>",
+          "selfEffect": "Efecto: Burbuja de aire"
+        },
+        "action->Submerge": {
+          "name": "Hundir",
+          "description": "<p>El <em> cazador de sombras </em> se hunde 20 pies bajo la superficie del agua, convirtiéndose en @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} para todas las criaturas y objetos en la superficie. Esta actividad se puede utilizar de nuevo para volver a la superficie, y si el vehículo está debajo de otra criatura u objeto, el contacto se trata como una colisión.</p>"
         }
       }
     },
@@ -1543,44 +1582,6 @@
           "description": "<p>Con el tirón de una cuerda, el piloto o uno de los tripulantes despliega las velas amarillas por las que los freebooters de Okeno son tan famosos. Cada criatura enemiga dentro de un @Template[type:emanation|distance:100] que pueda ver las velas debe tener éxito en un @Check[will|dc:26] de salvación o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1} (o @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} en un fracaso crítico). Independientemente de los resultados del salvado, la criatura es temporalmente inmune a Despliegue de Velas Amarillas durante 24 horas.</p>"
         }
       }
-    },
-    "Sea Fort": {
-      "crew": "1 piloto, 8 tripulantes",
-      "items": {
-        "action->Raise Ramparts": {
-          "name": "Levantar murallas",
-          "description": "<p>El piloto despliega paredes de acero magnetizado que se extienden desde los lados del fuerte marítimo, aumentando su altura a 60 pies. Las murallas tienen un CA de 20, Dureza 10, y 80 PG (UR 40 ). Gracias a las runas magnéticas, los proyectiles de metal disparados contra el fuerte marítimo golpean primero las murallas y no pueden dañar el barco hasta que se rompen. El fuerte marítimo puede levantar murallas solo mientras su velocidad de natación es 0, y levantar murallas no puede estar activo al mismo tiempo que el bloqueo extendido. Si las murallas son destruidas, no se pueden usar hasta que sean reparadas.</p>"
-        },
-        "action->Extend Blockade": {
-          "name": "Extender el bloqueo",
-          "description": "<p>El piloto despliega paredes de acero que se extienden desde el casco de la nave por 50 pies en cada dirección, aumentando su longitud a 250 pies. El fuerte marítimo puede extender el bloqueo solo mientras su velocidad de natación es 0, y extender el bloqueo no puede estar activo al mismo tiempo que levantar murallas.</p>"
-        },
-        "action->Hunker Down": {
-          "description": "<p>El piloto suelta el ancla del fuerte marítimo, reduciendo su velocidad de natación a 0 y asegurándolo en su posición actual en el mar. Mientras está anclado, gana un bonificador por circunstancia +2 a sus lanzamientos de CA y Fortaleza. El piloto puede usar esta actividad de nuevo para levantar el ancla.</p>"
-        }
-      },
-      "name": "Fuerte del Mar",
-      "description": "<p>Los fuertes marítimos, enormes masas de acero mantenidas a flote por la magia, fueron desarrollados originalmente por la armada corentina para imponer bloqueos. Aunque no son particularmente rápidos o maniobrables, su alta resistencia al daño y la capacidad de expandir su alcance con paredes adicionales los hace difíciles de ignorar. Las armadas a menudo los mantienen anclados para proteger un canal estrecho o un objetivo vulnerable en tierra o los usan para proteger embarcaciones más pequeñas y ágiles mientras preparan un ataque.</p>",
-      "pilotingCheck": "Arcanos (CD 29 ) o Sailing Saber (CD 27 )",
-      "speed": "nadar 15 pies (mágico)"
-    },
-    "Shadow Chaser": {
-      "crew": "1 piloto, 4 tripulantes",
-      "items": {
-        "action->Air Bubble": {
-          "name": "Burbuja de aire",
-          "description": "<p><strong>Frecuencia</strong> una vez por hora</p>\n<hr /> <p><strong>Efecto</strong> El piloto activa runas que generan una burbuja de aire alrededor de la nave durante 10 minutos. El aire espesado permite que las criaturas a bordo respiren mientras el cazador de sombras está sumergido y desvía los proyectiles, otorgando al vehículo una bonificación de circunstancia +2 a CA contra ataques físicos a distancia.</p>",
-          "selfEffect": "Efecto: Burbuja de aire"
-        },
-        "action->Submerge": {
-          "name": "Hundir",
-          "description": "<p>El <em> cazador de sombras </em> se hunde 20 pies bajo la superficie del agua, convirtiéndose en @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} para todas las criaturas y objetos en la superficie. Esta actividad se puede utilizar de nuevo para volver a la superficie, y si el vehículo está debajo de otra criatura u objeto, el contacto se trata como una colisión.</p>"
-        }
-      },
-      "name": "Cazador de sombras",
-      "description": "<p>Un <em> cazador de sombras </em> puede moverse por encima o por debajo de la superficie del agua, recopilando información sobre barcos y criaturas acuáticas usando magia sigilosa. <em> Los cazadores de sombras </em> están diseñados para la observación en lugar de combate directo, a menudo atrayendo a los perseguidores en conflicto con las naves de superficie más fuertemente armados.</p>",
-      "pilotingCheck": "Arcanos (CD 24 ), Sailing Saber (CD 22 ), o Sigilo (CD 24 )",
-      "speed": "wim 40 pies (mágicos)"
     }
   },
   "mapping": {
