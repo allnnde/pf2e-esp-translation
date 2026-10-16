@@ -153,13 +153,6 @@
         "action->The Upper Hand": {
           "name": "Mano ganadora",
           "description": "<p><strong>Requisitos</strong> La última acción del zascandil ha sido un Golpe cuerpo a cuerpo que resultó en un impacto crítico</p>\n<hr />\n<p><strong>Efecto</strong> El zascandil cadavérico @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Desarma} a la criatura a la que ha golpeado, como con un éxito crítico en una prueba de Desarmar. El arma cae al suelo en un espacio adyacente a la criatura (a elección del zascandil).</p>"
-        },
-        "lore->Athletics": {
-          "skillVariants": {
-            "0": {
-              "label": "+21 para desarmar"
-            }
-          }
         }
       }
     },
@@ -312,20 +305,6 @@
         },
         "action->Swallow Whole": {
           "description": "<p>Mediano, @Damage[(2d8+9)[bludgeoning]]{ 2d8+9 contundente}, Liberarse 24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
-        },
-        "lore->Acrobatics": {
-          "skillVariants": {
-            "0": {
-              "label": "+21 a Maniobrar en Vuelo"
-            }
-          }
-        },
-        "lore->Survival": {
-          "skillVariants": {
-            "0": {
-              "label": "+21 para rastrear a cualquiera involucrado en la profanación que los creó"
-            }
-          }
         }
       }
     },
@@ -544,18 +523,7 @@
         "action->Wear Skin": {
           "name": "Vestir piel",
           "description": "<strong>Requisitos</strong> El desollado está sosteniendo la piel de una criatura Pequeña, Mediana o Grande pero aún no se la ha puesto</p>\n<hr />\n<p><strong>Efecto</strong> El desollado viste la piel como disfraz. Asume el tamaño, apariencia y voz de la criatura. Vestir la piel cuenta como crear un disfraz para el uso de @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Imitar} de la habilidad de Engaño. La transformación del desollado supera automáticamente las CD de las pruebas de Percepción para determinar el tipo de criatura o ascendencia en la que se ha transformado, y obtiene un bonificador +4 por estatus a las CD de Engaño para impedir que los demás vean a través de su disfraz.</p>\n<p>Vestir una piel otorga al desollado un bonificador +2 por objeto a la CA y 75 PG temporales. Si sufre más de @Damage[50[slashing]]{50 puntos daño cortante} de una única fuente, la piel se rompe. Cuando está rota, la piel no proporciona ninguno de sus beneficios (cualquier PG temporal que quedara se pierde inmediatamente), pero aún puede usarse para Rasgar la piel.</p>",
-          "rules": {
-            "0": {
-              "label": "Vistiendo piel"
-            }
-          }
-        },
-        "lore->Intimidation": {
-          "skillVariants": {
-            "0": {
-              "label": "+31 cuando está sin piel"
-            }
-          }
+          "selfEffect": "Effect: Wear Skin"
         }
       }
     },
@@ -740,13 +708,6 @@
         "action->Brain Rot": {
           "name": "Putrefacción cerebral",
           "description": "<p><strong>Salvación</strong> @Check[type:fortitude|dc:14]</p>\n<hr />\n<p><strong>Incubación</strong> 1 día</p>\n<p><strong>Etapa 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} (3 días)</p>\n<p><strong>Etapa 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} y @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} (1 día)</p>\n<p><strong>Etapa 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralizado} con espamos (1 día)</p>\n<p><strong>Etapa 4</strong> muerte</p>"
-        },
-        "lore->Acrobatics": {
-          "skillVariants": {
-            "0": {
-              "label": "+9 a Maniobrar en Vuelo"
-            }
-          }
         }
       }
     },
@@ -1327,13 +1288,6 @@
         "action->Steady Spellcasting": {
           "name": "Lanzador de conjuros seguro",
           "description": "<p>Si una reacción interrumpiría la acción de Lanzar un conjuro del liche, éste hace una @Check[flat|dc:15]. Con un éxito la acción no se ve interrumpida.</p>"
-        },
-        "lore->Crafting": {
-          "skillVariants": {
-            "0": {
-              "label": "Puede crear objetos mágicos"
-            }
-          }
         }
       }
     },
@@ -1606,13 +1560,6 @@
         "action->Paralyzing Spew": {
           "name": "Vómito paralizante",
           "description": "<p> El lacedon expulsa una rociada de vómito a una criatura a una distancia máxima de 20 pies (6 m), causando @Damage[1d6[poison]]{1d6 daño por veneno} con una salvación básica de @Check[fortitude|dc:17|basic|options:inflicts:paralyzed]. Cualquier criatura viva que no sea un elfo que falla su prueba de salvación también queda @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralizada}. Puede hacer una nueva salvación al final de cada uno de sus turnos y la CD se reduce en 1 de forma acumulativa con cada salvación. El lacedon no puede utilizar de nuevo Vómito paralizante durante [[/gmr 1d4 #Recarga Vómito paralizante]]{1d4 asaltos}.</p>"
-        },
-        "lore->Athletics": {
-          "skillVariants": {
-            "0": {
-              "label": "+11 a Nadar"
-            }
-          }
         }
       }
     },
@@ -1685,13 +1632,6 @@
         "action->Strangle": {
           "name": "Estrangular",
           "description": "<p><strong>Requisitos</strong> El hombrecillo del bosque tiene a una criatura @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]Agarrada} o {Neutralizada}</p>\n<hr />\n<p><strong>Efecto</strong> El hombrecillo del bosque aprieta su presa sobre la garganta de la criatura, ampliando el Agarrón, causando @Damage[(2d6+3)[bludgeoning]]{2d6+3 daño contundente} con una salvación @Check[fortitude|dc:24|basic], y estrangulando a la criatura mientras continúe agarrada o neutralizada. Una criatura que está siendo estrangulada no puede hablar, lo que le impide lanzar conjuros con componente verbal o activar objetos con componente de orden. La criatura debe aguantar el aliento para no empezar a ahogarse.</p>"
-        },
-        "lore->Athletics": {
-          "skillVariants": {
-            "0": {
-              "label": "+16 a la garra"
-            }
-          }
         }
       }
     },
@@ -1964,6 +1904,10 @@
         "spell->Air Walk (Constant)": {
           "name": "Caminar por el aire (constante)"
         },
+        "spell->Garden of Death": {
+          "cost": "water infused with a dozen deadly toxins worth a total of 50 gp",
+          "secondarycheck": "Crafting, Medicine"
+        },
         "spell->Enthrall (At Will)": {
           "name": "Cautivar (a voluntad)"
         },
@@ -2123,13 +2067,6 @@
         "action->Feral Leap": {
           "name": "Salto salvaje",
           "description": "<p>El conejo depredador salta a una altura y distancia máximas iguales a la mitad de su velocidad. Este movimiento no activa reacciones. En cualquier punto, el conejo depredador da un Golpe de mandíbulas.</p>"
-        },
-        "lore->Athletics": {
-          "skillVariants": {
-            "0": {
-              "label": "+4 al saltar"
-            }
-          }
         }
       }
     },
@@ -2471,13 +2408,6 @@
         "action->Summon Weapon": {
           "name": "Convocar arma",
           "description": "<p><strong>Requisitos</strong> El liche tiene un arma almacenada en su brazo y esa mano libre</p>\n<hr />\n<p><strong>Efecto</strong> El liche rúnico convoca su arma almacenada a su mano (la del brazo donde almacena el arma).</p>"
-        },
-        "lore->Crafting": {
-          "skillVariants": {
-            "0": {
-              "label": "Puede crear objetos mágicos"
-            }
-          }
         }
       }
     },
@@ -2870,20 +2800,6 @@
         "action->Incessant Goading": {
           "name": "Provocación constante",
           "description": "<p> La calavera elige a una criatura dentro de una emanación de 60 pies (18 m) y la provoca sin piedad. El objetivo debe\ntener éxito en una prueba de salvación de @Check[will|dc:22] para resistir el efecto.</p>\n<hr />\n<p><strong>Éxito crítico</strong> El objetivo no se ve afectado y es inmune temporalmente durante 1 minuto.</p>\n<p><strong>Éxito</strong> El objetivo no se ve afectado.</p>\n<p><strong>Fallo</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} 1 asalto. En su próximo turno, si el cráneo burlón está dentro de su alcance, el objetivo le ataca salvajemente tantas veces como puede.</p>\n<p><strong>Fallo crítico</strong> Como fallo, pero además el objetivo da un Golpe contra sí mismo; este Golpe no cuenta como una acción.</p>"
-        },
-        "lore->Acrobatics": {
-          "skillVariants": {
-            "0": {
-              "label": "+14 a Maniobra en Vuelo"
-            }
-          }
-        },
-        "lore->Intimidation": {
-          "skillVariants": {
-            "0": {
-              "label": "+14 para desmoralizar"
-            }
-          }
         }
       }
     },
@@ -3443,448 +3359,6 @@
           "description": "<p> Los estados indispuesto e inconsciente de la fiebre de la mugre no acaban o se reducen hasta que no se cura la enfermedad</p>\n<p><strong>Salvación</strong> @Check[fortitude|dc:14]</p>\n<hr />\n<p><strong>Etapa 1</strong> portador sin efectos negativos ([[/r 1d4 #Etapa 1]]{1d4 horas})</p>\n<p><strong>Etapa 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} (1 día)</p>\n<p><strong>Etapa 3</strong> indispuesto 1 y @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} (1 día)</p>\n<p><strong>Etapa 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Inconsciente} (1 día)</p>\n<p><strong>Etapa 5</strong> muerto.</p>"
         }
       }
-    },
-    "Beetle Carapace": {
-      "name": "Caparazón de escarabajo",
-      "hpDetails": "curación del vacío",
-      "items": {
-        "strike-melee->Mandible": {
-          "name": "Mandíbulas"
-        },
-        "strike-melee->Foot": {
-          "name": "Pie"
-        },
-        "action->Constrict": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(2d8+2)[piercing]], @Check[type:fortitude|dc:24|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
-        },
-        "action->Abdomen Cache": {
-          "name": "Caché de abdomen",
-          "description": "<p>El abdomen de un caparazón de escarabajo puede ser equipado con una bisagra simple, permitiendo que se abra y se utilice como almacenamiento. El abdomen puede contener hasta una criatura mediana o más pequeña, un enjambre grande o más pequeño, o una cantidad similar de carga. El escarabajo o una criatura almacenada en él puede interactuar para abrir la escotilla. Si el caparazón del escarabajo recibe un golpe crítico con un arma de golpeo, lanza un @Check[type:flat|dc:10]. Si la comprobación falla, el caché se viola, y su contenido se derrama fuera del escarabajo. La escotilla también puede ser forzada abierta ( @Check[type:athletics|dc:22] ).</p>"
-        }
-      },
-      "publicNotes": "<p>Creado a partir del exoesqueleto de un escarabajo ciervo gigante, este caparazón sin mente puede cortar a un enemigo por la mitad con sus poderosas mandíbulas. El abdomen de este no muerto que se arrastra está vacío, y más de un nigromante ha utilizado este espacio para ocultar valiosa carga.</p>\n<hr /> <p>Entre las filas de los muertos, ninguno es tan numeroso, ni tan variado, como el esqueleto. Mientras que la mayoría están casi completamente hechas de hueso, algunas mantienen algunos trozos de carne para ayudarles en el movimiento, como las membranas de las alas.</p>"
-    },
-    "Graveknight Warmaster": {
-      "name": "Maestro de guerra caballero sepulcral",
-      "hpDetails": "curación del vacío, rejuvenecimiento",
-      "items": {
-        "strike-melee->War Flail": {
-          "name": "Mangual de guerra"
-        },
-        "strike-melee->Fist": {
-          "name": "Puño"
-        },
-        "strike-ranged->Heavy Crossbow": {
-          "name": "Ballesta pesada"
-        },
-        "action->Rejuvenation": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\n<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/br 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>"
-        },
-        "action->Devastating Blast": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\nDevastating Blast",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IxJbFJ8dG5RbZWBD]\n<p>The graveknight unleashes a @Template[type:cone|distance:30] of energy. Creatures in the area take @Damage[8d12[electricity]] damage (@Check[type:reflex|dc:34|basic:true] save).</p>\n<p>The graveknight can use this ability once every [[/br 1d4 #Recharge Devastating Blast]]{1d4 rounds}.</p>"
-        },
-        "action->Graveknight's Curse": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5dbzWZbiTyPKgwKS]\nGraveknight's Curse",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.5dbzWZbiTyPKgwKS]\n<p>This curse affects anyone who wears a graveknight's armor for at least 1 hour.</p>\n<p><strong>Saving Throw</strong> @Check[type:will|dc:39] save</p>\n<hr />\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} and cannot remove the armor (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2}, the creature's Speed is reduced by 10, and cannot remove the armor (1 day)</p>\n<p><strong>Stage 3</strong> dies and transforms into the armor's graveknight.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.6rnB7nK6J6zF4vea]{Effect: Graveknight's Curse}</p>"
-        },
-        "action->Phantom Mount": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.BgbSHRdkGH7raOgA]\nPhantom Mount",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.BgbSHRdkGH7raOgA]\n<p>HP 85; AC 34, Fort +23, Ref +20, Will +20</p>\n<hr />\n<p>The graveknight summons a supernatural mount as per @UUID[Compendium.pf2e.spells-srd.Item.WPKJOhEihhcIm2uQ]{Marvelous Mount}, heightened to a level equal to half the graveknight's level.</p>\n<p>Unlike <em>phantom steed</em>, the steed's AC and saving throw bonuses are all 4 lower than the graveknight's, and the steed has one-third the graveknight's Hit Points (rounded down).</p>\n<p>If the steed is destroyed, the graveknight must wait 1 hour before using this ability again.</p>"
-        },
-        "action->Ruinous Weapons": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.7jWANvnDmNcQvFve]\nRuinous Weapons",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.7jWANvnDmNcQvFve]\n<p>Any weapon or unarmed attack the graveknight uses gains the effects of the <em>+1 greater striking</em> and <em>@UUID[Compendium.pf2e.equipment-srd.Item.TEa1oKZbwsOvC6TZ]{Greater Shock}</em> weapon runes.</p>"
-        },
-        "action->Weapon Master": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.6isn9nqnvfRrC1wW]\nWeapon Master"
-        },
-        "lore->Warfare Lore": {
-          "name": "Historia de la guerra"
-        },
-        "action->Hungry Armor": {
-          "name": "Armadura hambrienta"
-        },
-        "action->Sacrilegious Aura": {
-          "name": "Aura de Sacrilegious",
-          "description": "<p>30 pies. Cuando una criatura en el aura usa un conjuro o habilidad de vitalidad, el caballero de la tumba intenta contrarrestarlo automáticamente, con un [[/r 1d20+23 #Counteract]]{+23 counteract modifier}.</p>"
-        },
-        "action->Exemplar of Violence": {
-          "name": "Ejemplar de Violencia",
-          "description": "<p><strong>Frecuencia</strong> una vez por asaltos</p>\n<hr /> <p><strong>Efecto</strong> El caballero de la tumba intenta un Golpe mientras su armadura destello con un poder siniestro que incita a los aliados a la violencia. Después del Golpe, los aliados que pueden ver al caballero de la tumba pueden usar una reacción a Paso o Paso, pero deben terminar este movimiento en un espacio adyacente a un enemigo. Un aliado de la elección del caballero de la tumba puede usar una reacción a Golpe.</p>"
-        }
-      }
-    },
-    "Hungry Ghost": {
-      "name": "Fantasma hambriento",
-      "hpDetails": "curación del vacío, rejuvenecimiento",
-      "items": {
-        "action->Feed on the Living": {
-          "name": "Alimentarse de los vivos"
-        },
-        "action->Rejuvenation": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB]\nRejuvenation",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.unR8VVR4yyRnsmnB]\n<p>When destroyed, hungry ghosts reform after [[/br 2d4 #Rejuvenation]]{2d4 days} fully healed at whatever location they were at when last destroyed. They're only permanently destroyed when they have been given a proper burial, have had their grave cleaned and maintained for at least a year, or have been judged to be redeemed by Pharasma.</p>"
-        },
-        "strike-melee->Ghostly Touch": {
-          "name": "Toque fantasmal"
-        },
-        "action->Living Visage": {
-          "description": "<p>Mientras que tienen más de 30 PG, el fantasma hambriento parece ser una criatura viva. Tienen un resultado automático de 34 en los prueba de engaño y CD para ocultar su estado de no muertos y pueden alimentarse de los vivos en secreto.</p>",
-          "name": "Rostro vivo"
-        },
-        "action->Ravenous Undoing": {
-          "name": "Deshacer de manera voraz",
-          "description": "<p>En cada período de 24 horas, el fantasma hambriento debe usar Alimentar a los Vivientes para consumir 30 PG (cualquier PG que el fantasma gane contará para este total, incluso si el fantasma tiene suficiente PG que no recupere realmente la cantidad completa). Si el fantasma no ha consumido suficiente PG, se alimentan sin pensar y sin cuidado de cualquier criatura viva que encuentren hasta que estén saciados.</p>"
-        },
-        "lore->Ghost Lore": {
-          "name": "Ghost Saber"
-        }
-      },
-      "languages": "En otro idioma",
-      "publicNotes": "<p>Los fantasmas hambrientos surgen de aquellos que no recibieron un entierro apropiado o cuyas tumbas fueron descuidadas. No están atados a un lugar o objeto, sino que están obligados a ver oportunidades para cometer buenas obras con la esperanza de obtener favores que les ayuden a lograr un descanso final. Sin embargo, su necesidad de alimentarse de energía viva a menudo entra en conflicto con este objetivo.</p>\n<hr /> <p>Atados al mundo después de la muerte por emociones poderosas que no han sido resueltas, los fantasmas persiguen a los vivos como tristes ecos de sus antiguos yoes.</p>"
-    },
-    "Nasurgeth": {
-      "hpDetails": "curación del vacío",
-      "languages": "telepatía 100 pies (30 m)",
-      "items": {
-        "spellcastingEntry->Divine Innate Spells": {
-          "name": "Conjuros divinos innatos"
-        },
-        "spell->Plane Shift (to the Universe, Void, or Netherworld only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nPlane Shift (to the Universe, Void, or Netherworld only)",
-          "target": "1 criatura voluntaria, o hasta 8 criaturas voluntarias tomándose de las manos"
-        },
-        "spell->True Seeing": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]\nTrue Seeing"
-        },
-        "strike-melee->Jaws": {
-          "name": "Mandíbulas"
-        },
-        "strike-melee->Tail": {
-          "name": "Cola"
-        },
-        "action->Lifesense 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg]\nLifesense 60 feet"
-        },
-        "action->Sunlight Powerlessness": {
-          "name": "Impotencia hacia la luz del sol",
-          "description": "<p>Un nasurgeth atrapado en la luz solar es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 2} y @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2}.</p>"
-        },
-        "action->Swallow Whole": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Huge, @Damage[(2d10+9)[bludgeoning]], Rupture 40</p>\n<p>A living creature that ends its turn swallowed whole by a nasurgeth becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} or increases its drained condition by 1, and the nasurgeth gains 20 temporary Hit Points. A creature whose drained condition increases to 5 in this way dies.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
-        },
-        "action->Midnight Depths": {
-          "name": "Profundidades de medianoche",
-          "description": "<p>60 pies. La entropía de un nasurgeth crece aún más bajo el agua. Todo el agua dentro del aura es completamente oscura (como rango 4.º @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Oscuridad} ). La luz mágica con un rango de contraataque de nivel 4.º o inferior, junto con los trucos de luz mágica, se suprimen. Una criatura viva que entra o comienza su turno en el aura recibe @Damage[4d6[void]] de daño, y la criatura también recibe @Damage[2d10[cold]] de daño adicional si está en el agua ( @Check[type:fortitude|dc:39|basic:true] ). Si falla, también es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} por 1 minuto y se tira 10 pies hacia el nasurgeth.</p>"
-        },
-        "action->Spray Black Bile": {
-          "name": "Spray de bilis negra",
-          "description": "<p><strong>Desencadenante</strong> El nasurgeth recibe daño de corte o perforación de un golpe crítico, o una criatura tragada se corta a sí misma</p>\n<hr /> <p><strong>Efecto</strong> La oscuridad y la energía del vacío se derraman desde la herida del nasurgeth, infligiendo @Damage[8d8[void]] de daño a las criaturas dentro de 20 pies ( @Check[type:fortitude|dc:40|basic:true] ).</p>"
-        },
-        "action->Ravenous Void": {
-          "name": "Vacío voraz",
-          "description": "<p>El nasurgeth barriles hacia adelante con la boca abierta, nadando dos veces en línea recta y moviéndose a través de los espacios de criaturas enormes o más pequeñas. El nasurgeth inflige el daño de sus mandíbulas Golpe a cada criatura cuyo espacio entran ( @Check[type:reflex|dc:45|basic:true] ). Cualquier criatura que falla críticamente es automáticamente Tragada entera.</p>"
-        },
-        "lore->Shadow Plane Lore": {
-          "name": "Historia del Plano de Sombras"
-        },
-        "lore->The Void Lore": {
-          "name": "El Vacío de la Tierra"
-        },
-        "action->Broken Barb": {
-          "name": "Púa rota",
-          "description": "<p><strong>Requisitos</strong> Una criatura está @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado} en las mandíbulas del nasurgeth</p>\n<hr /> <p><strong>Efecto</strong> El nasurgeth rompe un diente en el objetivo, que toma @Damage[3d10[bleed]] y ya no está agarrado o restringido. Si el objetivo está adyacente a una superficie, el diente también lo fija en su lugar, haciéndolo @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} ( @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Huir} CD 45 ).</p>"
-        }
-      },
-      "publicNotes": "<p>Los Nasurgeths son vacíos hambrientos con ojos brillantes y miles de dientes. Se esconden bajo las olas donde la luz del sol no llega. Por la noche, suben a los cielos y llueven destrucción y ruina sobre todos los vivientes.</p>\n<hr /> <p>Los darvakkas, también llamados sombras de la noche, son un mal voraz compuesto por partes iguales de oscuridad y malicia. Originalmente criaturas de los Planos Exteriores que viajan a la convergencia del Plano Sombrío y el Vacío, donde el poder de la nada los oblitera, estas abominaciones no muertas son la encarnación física de la entropía. Arden con un intenso odio por toda vida, trabajando para traer una noche final y oscura al Plano Material donde nada más que ceniza y hielo permanecen.</p>\n<p>Como criaturas retorcidas por la oscuridad y la sombra, los darvakkas tienen una gran aversión a la luz solar y a todas las fuentes de energía vital. En el Plano Material, pasan las horas de luz del día escondidos bajo tierra, entre ruinas, o sumergidos en las profundidades de los abismos más oscuros del océano más allá del alcance de los rayos del sol, emergiendo cuando la oscuridad los protege por encima de sus cabezas.</p>\n<p>Los darvakkas tienen un aura de entropía que atrae a esclavos no muertos para que sirvan como guerreros y heraldos. Rara vez buscan alianzas entre sí o con otras criaturas, existiendo en soledad como jefes de ejércitos individuales de muertos.</p>"
-    },
-    "Skeletal Titan": {
-      "name": "Titán esquelético",
-      "hpDetails": "curación del vacío",
-      "speed": "caminar por el aire",
-      "items": {
-        "spellcastingEntry->Divine Innate Spells": {
-          "name": "Conjuros divinos innatos"
-        },
-        "strike-melee->Claw": {
-          "name": "Garra"
-        },
-        "strike-melee->Foot": {
-          "name": "Pie"
-        },
-        "action->Trample": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Huge or smaller, foot, @Check[type:reflex|dc:34|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
-        },
-        "strike-melee->Mountain Sword": {
-          "name": "Espada de Montaña"
-        },
-        "strike-ranged->Bone": {
-          "name": "Bueno"
-        },
-        "action->Bone Debris": {
-          "name": "Desechos de hueso",
-          "description": "<p>Los huesos que lanza un titán esquelético son lo suficientemente grandes como para llenar el campo de batalla. Cuando el titán esquelético golpea a una criatura con un ataque de hueso, el proyectil se convierte en terreno difícil en el cuadrado que ocupa la criatura (o, si la criatura ocupa más de un cuadrado, un cuadrado que ocupa a elección del titán). Si el titán falla con un ataque de hueso, en su lugar un cuadrado al azar adyacente a la criatura se convierte en terreno difícil.</p>"
-        },
-        "action->Mountain Slam": {
-          "name": "Slam de montaña",
-          "description": "<p>El titán esquelético golpea su espada de montaña en el suelo. La onda de choque reverbera, infligiendo daño de espada de montaña a todas las criaturas en un @Template[type:line|distance:20] ( @Check[type:reflex|dc:34|basic:true] ). Los que fallan también son golpeados @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}.</p>"
-        }
-      },
-      "publicNotes": "<p>Solo los poderosos y los tontos levantarían los huesos de un poderoso titán o de una criatura similarmente gigantesca como un esqueleto. Los practicantes expertos ven esto como un desperdicio de un cuerpo poderoso y los impregnan con magia de andar en el aire basada en la de los titanes, mientras que los sabios saben que es casi imposible controlar a un coloso así y que es tan probable aplastar a su creador bajo su poderoso pie como golpear a sus enemigos.</p>\n<hr /> <p>Entre las filas de los muertos, ninguno es tan numeroso, ni tan variado, como el esqueleto. Mientras que la mayoría están casi completamente hechas de hueso, algunas mantienen algunos trozos de carne para ayudarles en el movimiento, como las membranas de las alas.</p>"
-    },
-    "Sykever": {
-      "hpDetails": "curación del vacío",
-      "languages": "telepatía 100 pies (30 m)",
-      "speed": "caminar por el aire",
-      "items": {
-        "spellcastingEntry->Divine Innate Spells": {
-          "name": "Conjuros divinos innatos"
-        },
-        "spell->Plane Shift (to the Universe, Void, or Netherworld only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nPlane Shift (to the Universe, Void, or Netherworld only)",
-          "target": "1 criatura voluntaria, o hasta 8 criaturas voluntarias tomándose de las manos"
-        },
-        "spell->True Seeing": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]\nTrue Seeing"
-        },
-        "spell->Air Walk (Constant)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0]\nAir Walk (Constant)"
-        },
-        "spell->Darkness (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]\nDarkness (At Will)"
-        },
-        "strike-melee->Horn": {
-          "name": "Cuerno"
-        },
-        "action->Telepathy 100 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
-        },
-        "action->Lifesense 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg]\nLifesense 60 feet"
-        },
-        "action->Sunlight Powerlessness": {
-          "name": "Impotencia hacia la luz del sol",
-          "description": "<p>Un sykever atrapado en la luz del sol es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 2} y @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2}.</p>"
-        },
-        "lore->Warfare Lore": {
-          "name": "Historia de la guerra"
-        },
-        "action->Entropy's Shadow": {
-          "name": "Sombra de entropía",
-          "description": "<p>40 pies. Los Sykevers filtran entropía y corrupción desde su propio ser. Una criatura viva que entra o comienza su turno en el aura recibe @Damage[4d6[void]] de daño con un @Check[type:fortitude|dc:33|basic:true]. Si falla, también es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} por 1 minuto y se tira 10 pies hacia el sykever.</p>"
-        },
-        "action->Change Posture": {
-          "name": "Cambiar la postura",
-          "description": "<p>El sykever cambia entre su postura bípeda y cuadrúpeda. En su postura bípeda, el sykever puede usar todas las habilidades en su bloque de estadísticas excepto Horned Rush. En su posición cuadrúpeda, el sykever tiene una velocidad de 80 pies pero no puede hacer golpes de punta de brazo, desarme, lanzar conjuros, o usar objetos de aplastamiento.</p>"
-        },
-        "action->Crush Item": {
-          "name": "Artículo de Crush",
-          "description": "<p><strong>Desencadenante</strong> El sykever obtiene un éxito crítico para @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Desarmar}</p>\n<p><strong>Requisitos</strong> El sykever está en su postura bípeda</p>\n<hr /> <p><strong>Efecto</strong> El sykever agarra el objeto y lo perfora con sus puntas de brazo. El objeto se rompe y cae al suelo en el espacio del sykever. Los objetos que ya están rotos no se dañan más, y un objeto con 14 o más dureza no se ve afectado.</p>"
-        },
-        "action->Horned Rush": {
-          "name": "Rush de Horned",
-          "description": "<p><strong>Requisitos</strong> El sykever está en su postura cuadrúpeda</p>\n<hr /> <p><strong>Efecto</strong> El sykever da pasos y luego hace un golpe de cuerno.</p>"
-        },
-        "lore->Shadow Plane Lore": {
-          "name": "Historia del Plano de Sombras"
-        },
-        "lore->The Void Lore": {
-          "name": "El Vacío de la Tierra"
-        },
-        "strike-melee->Arm Spike": {
-          "name": "Spike del brazo"
-        },
-        "action->Draining Gaze": {
-          "name": "Mirada drenante",
-          "description": "<p>El sykever fija su mirada pesadilla en una criatura que puede ver, que debe intentar un salvación @Check[type:will|dc:36]. Independientemente del resultado, el objetivo es temporalmente inmune durante 10 minutos.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no se ve afectado.</p>\n<p><strong>Éxito</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} para 1 asalto si el sykever está en posición bípeda, o @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2} para 1 asalto si el sykever está en posición cuadrúpeda.</p>\n<p><strong>Fallo</strong> Como éxito, pero el efecto dura 1 minuto.</p>\n<p><strong>Fallo crítico</strong> Como éxito, pero @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 3} o @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 3}, y el efecto dura 10 minutos.</p>"
-        }
-      },
-      "publicNotes": "<p>Los darvakkas más comunes son los sykevers, caminantes en la noche. Sedientos de sangre pero calculadores, llevan legiones de muertos a la batalla en el Plano Material, trabajando hacia el simple objetivo de terminar con toda vida.</p>\n<hr /> <p>Los darvakkas, también llamados sombras de la noche, son un mal voraz compuesto por partes iguales de oscuridad y malicia. Originalmente criaturas de los Planos Exteriores que viajan a la convergencia del Plano Sombrío y el Vacío, donde el poder de la nada los oblitera, estas abominaciones no muertas son la encarnación física de la entropía. Arden con un intenso odio por toda vida, trabajando para traer una noche final y oscura al Plano Material donde nada más que ceniza y hielo permanecen.</p>\n<p>Como criaturas retorcidas por la oscuridad y la sombra, los darvakkas tienen una gran aversión a la luz solar y a todas las fuentes de energía vital. En el Plano Material, pasan las horas de luz del día escondidos bajo tierra, entre ruinas, o sumergidos en las profundidades de los abismos más oscuros del océano más allá del alcance de los rayos del sol, emergiendo cuando la oscuridad los protege por encima de sus cabezas.</p>\n<p>Los darvakkas tienen un aura de entropía que atrae a esclavos no muertos para que sirvan como guerreros y heraldos. Rara vez buscan alianzas entre sí o con otras criaturas, existiendo en soledad como jefes de ejércitos individuales de muertos.</p>"
-    },
-    "Unrisen": {
-      "name": "No resucitado",
-      "languages": "(no puede hablar ningún idioma)",
-      "items": {
-        "strike-melee->Jaws": {
-          "name": "Mandíbulas"
-        },
-        "strike-melee->Claw": {
-          "name": "Garra"
-        },
-        "action->Lifesense 30 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg]\nLifesense 30 feet"
-        },
-        "action->Resurrection Vulnerability": {
-          "name": "Vulnerabilidad de Resurrección",
-          "description": "<p>Una criatura con un conjuro preparado o espontáneo que puede restaurar a los muertos a la vida (como @UUID[Compendium.pf2e.spells-srd.Item.Hnc7eGi7vyZenAIm]{Aliento vital} o @UUID[Compendium.pf2e.spells-srd.Item.IkGYwHRLhkuoGReG]{Revivir a los muertos} ) puede gastar un espacio de conjuro apropiado como una actividad de acción 2 para destruir a un unriseen dentro de 30 pies. El intento falla si el no resucitado tiene éxito en un salvación de voluntad contra el conjuro CD de la criatura.</p>"
-        },
-        "action->Agonized Howl": {
-          "name": "Aullido en agonía",
-          "description": "<p>El no resucitado aulla de dolor ante su maldita existencia. Las criaturas dentro de un @Template[type:emanation|distance:30] reciben @Damage[9d8[mental]] de daño ( @Check[type:will|dc:30|basic:true] ). El no-resucitado no puede usar Aullido agonizante de nuevo por [[/br 1d4 #Recharge Agonized Howl]]{1d4 asaltos}.</p>"
-        },
-        "action->Awful Approach": {
-          "name": "Enfoque horrible"
-        },
-        "action->Death Grip": {
-          "name": "Grip de la muerte",
-          "description": "<p><strong>Requisitos</strong> El no resucitado tiene una criatura viviente @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado}</p><hr /> <p><strong>Efecto</strong> El no-resucitado intenta destruir la fuerza vital de su víctima para compartir su destino. La criatura debe tener éxito en un @Check[type:fortitude|dc:30] de salvación o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Condenado 1}. Mientras la maldición dure, la criatura recupera solo la mitad de los PG de los efectos de sanación de vitalidad; si muere, cualquier intento de levantarla de entre los muertos la hace volver como un no resucitado. La maldición termina automáticamente si el valor condenado de la criatura se reduce a 0.</p>"
-        },
-        "action->Meant to Live": {
-          "name": "Destinado a vivir"
-        },
-        "action->Rise Again": {
-          "name": "Levantarse de nuevo"
-        }
-      },
-      "hpDetails": "Me gustaría vivir, vacío de sanación",
-      "publicNotes": "<p>Un no resucitado es un conglomerado de huesos astillados, órganos en descomposición y carne podrida, creado cuando un ritual como el de resurgir sale catastróficamente mal. Se debe tener un cuidado inmenso, porque si el ritual es un fracaso crítico, un no-resucitado puede ser el resultado, como muchos ritualistas han aprendido para su horror.</p>\n<p>Los no resucitados apenas son inteligentes, conscientes solo de la agonía constantemente infligida por su creación defectuosa y su resentimiento por los vivos. Tienden a atacar a los lanzadores involucrados en el ritual mal hecho primero antes de atacar a todos los demás a su alrededor. Aunque la forma torcida de un no-resucitado es irreconocible como el objetivo previsto de la resurrección, sus aullidos sin palabras son a menudo perturbadoramente similares a la voz del difunto. Si un no-resucitado es destruido antes de que pueda resurgir de nuevo, se reduce a un puñado de sales metálicas azul-verdes conocidas como sales esenciales.</p>"
-    },
-    "Urveth": {
-      "hpDetails": "curación del vacío",
-      "languages": "telepatía 100 pies (30 m)",
-      "speed": "caminar por el aire",
-      "items": {
-        "spellcastingEntry->Divine Innate Spells": {
-          "name": "Conjuros divinos innatos"
-        },
-        "spell->Plane Shift (to the Universe, Void, or Netherworld only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nPlane Shift (to the Universe, Void, or Netherworld only)",
-          "target": "1 criatura voluntaria, o hasta 8 criaturas voluntarias tomándose de las manos"
-        },
-        "spell->True Seeing": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]\nTrue Seeing"
-        },
-        "spell->Air Walk (Constant)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0]\nAir Walk (Constant)"
-        },
-        "spell->Darkness (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]\nDarkness (At Will)"
-        },
-        "strike-melee->Jaws": {
-          "name": "Mandíbulas"
-        },
-        "strike-melee->Claw": {
-          "name": "Garra"
-        },
-        "strike-melee->Stinger": {
-          "name": "Aguijón"
-        },
-        "action->Telepathy 100 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
-        },
-        "action->Lifesense 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg]\nLifesense 60 feet"
-        },
-        "action->Attack of Opportunity (Special)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O]\nAttack of Opportunity (Special)",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O]\n<p>Claw only. An urveth gains 3 extra reactions each round that they can use only to make Attacks of Opportunity.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
-        },
-        "action->Sunlight Powerlessness": {
-          "name": "Impotencia hacia la luz del sol",
-          "description": "<p>Un urveth atrapado en la luz del sol es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 2} y @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2}.</p>"
-        },
-        "action->Frenzy": {
-          "name": "Frenesí",
-          "description": "<p>El urveth hace dos golpes de garra y un golpe de aguijón en cualquier orden.</p>"
-        },
-        "action->Swallow Whole": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Huge, @Damage[(2d10+5)[bludgeoning]], Rupture 35</p>\n<p>A living creature that ends its turn swallowed whole by an urveth becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} or increases its drained condition by 1, and the urveth gains 10 temporary Hit Points. A creature whose drained condition increases to 5 in this way dies.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
-        },
-        "action->Entropy's Shadow": {
-          "name": "Sombra de entropía",
-          "description": "<p>60 pies. Los Urveths filtran entropía y corrupción desde su propio ser. Una criatura viva que entra o comienza su turno en el aura recibe @Damage[5d6[void]] de daño con un @Check[type:fortitude|dc:38|basic:true]. Si falla, también es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} por 1 minuto y se tira 10 pies hacia el urveth.</p>"
-        },
-        "lore->Shadow Plane Lore": {
-          "name": "Historia del Plano de Sombras"
-        },
-        "lore->The Void Lore": {
-          "name": "El Vacío de la Tierra"
-        },
-        "action->Urveth Venom": {
-          "name": "Veneno de urveth"
-        }
-      },
-      "publicNotes": "<p>Un urveth es un terror enorme de cuatro brazos con un cuerpo como un gusano y una boca abierta que devora todo lo que puede. Los Urveths se esconden bajo tierra para esconderse del sol, y emergen bajo la cobertura de la oscuridad para matar y consumir.</p>\n<hr /> <p>Los darvakkas, también llamados sombras de la noche, son un mal voraz compuesto por partes iguales de oscuridad y malicia. Originalmente criaturas de los Planos Exteriores que viajan a la convergencia del Plano Sombrío y el Vacío, donde el poder de la nada los oblitera, estas abominaciones no muertas son la encarnación física de la entropía. Arden con un intenso odio por toda vida, trabajando para traer una noche final y oscura al Plano Material donde nada más que ceniza y hielo permanecen.</p>\n<p>Como criaturas retorcidas por la oscuridad y la sombra, los darvakkas tienen una gran aversión a la luz solar y a todas las fuentes de energía vital. En el Plano Material, pasan las horas de luz del día escondidos bajo tierra, entre ruinas, o sumergidos en las profundidades de los abismos más oscuros del océano más allá del alcance de los rayos del sol, emergiendo cuando la oscuridad los protege por encima de sus cabezas.</p>\n<p>Los darvakkas tienen un aura de entropía que atrae a esclavos no muertos para que sirvan como guerreros y heraldos. Rara vez buscan alianzas entre sí o con otras criaturas, existiendo en soledad como jefes de ejércitos individuales de muertos.</p>"
-    },
-    "Vanyver": {
-      "hpDetails": "curación del vacío",
-      "languages": "telepatía 100 pies (30 m)",
-      "items": {
-        "spellcastingEntry->Divine Innate Spells": {
-          "name": "Conjuros divinos innatos"
-        },
-        "spell->Plane Shift (to the Universe, Void, or Netherworld only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]\nPlane Shift (to the Universe, Void, or Netherworld only)",
-          "target": "1 criatura voluntaria, o hasta 8 criaturas voluntarias tomándose de las manos"
-        },
-        "spell->Dispel Magic (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]\nDispel Magic (At Will)"
-        },
-        "spell->See Invisibility": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]\nSee Invisibility"
-        },
-        "strike-melee->Talon": {
-          "name": "Garra"
-        },
-        "strike-melee->Wing": {
-          "name": "Ala"
-        },
-        "strike-melee->Jaws": {
-          "name": "Mandíbulas"
-        },
-        "action->Telepathy 100 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
-        },
-        "action->Lifesense 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg]\nLifesense 60 feet"
-        },
-        "action->Snatch": {
-          "name": "Llevar en vuelo",
-          "description": "<p>El vanyver puede volar a la mitad de velocidad mientras tiene una criatura @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado} en una o ambas garras, llevando esa criatura con ellos.</p>"
-        },
-        "action->Sunlight Powerlessness": {
-          "name": "Impotencia hacia la luz del sol",
-          "description": "<p>Un vanyver atrapado en la luz del sol es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 2} y @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2}.</p>"
-        },
-        "action->Constrict": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(3d10+5)[piercing]] @Check[type:fortitude|dc:33|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
-        },
-        "action->Catching Bite": {
-          "name": "Atrapar una mordedura",
-          "description": "<p><strong>Desencadenante</strong> Una criatura al alcance de las mandíbulas del vanyver hace un ataque cuerpo a cuerpo contra el vanyver con un arma</p>\n<hr /> <p><strong>Efecto</strong> El vanyver elige ser golpeado. Si el ataque hubiera fallado, golpea. El vanyver atrapa el arma en sus mandíbulas y usa Magia de Drenaje en él sin cumplir con los requisitos de Magia de Drenaje.</p>"
-        },
-        "action->Drain Magic": {
-          "name": "Magia de drenaje",
-          "description": "<p><strong>Requisitos</strong> La última acción del vanyver fue un golpe exitoso de mandíbulas contra una criatura, objeto o efecto de conjuro.</p>\n<hr /> <p><strong>Efecto</strong> El vanyver lanza un innato @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} en el mismo objetivo; si el objetivo era una criatura, el vanyver puede apuntar un conjuro que afecta a la criatura en su lugar. Si un efecto de conjuro o objeto es contrarrestado con éxito, el vanyver gana Puntos de Golpe temporales iguales al doble del rango de contrarresto del efecto que fue contrarrestado.</p>"
-        },
-        "action->Entropy's Shadow": {
-          "name": "Sombra de entropía",
-          "description": "<p>40 pies. Los Vanyvers filtran entropía y corrupción desde su propio ser. Una criatura viva que entra o comienza su turno en el aura recibe @Damage[3d6[void]] de daño con un @Check[type:fortitude|dc:30|basic:true]. Si falla, también es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} por 1 minuto y se tira 10 pies hacia el vanyver.</p>"
-        },
-        "lore->Shadow Plane Lore": {
-          "name": "Historia del Plano de Sombras"
-        },
-        "lore->The Void Lore": {
-          "name": "El Vacío de la Tierra"
-        }
-      },
-      "publicNotes": "<p>Los Vanyvers son grandes murciélagos humanoides formados por el vacío y las sombras, con ojos rojos que brillan como pequeñas estrellas en una noche sin luz. Aunque son poderosos, son los menos poderosos de los darvakkas, y los que más se someten a un amo, ya sea otro de su especie o un mortal con reputación de ser especialmente asesino y destructivo. Los Vanyvers aceptan seguir a sus amos como un medio temporal de maximizar la muerte y la destrucción que pueden decretar, pero rápidamente se volverán contra cualquier amo que sientan que vacila en este objetivo.</p>\n<hr /> <p>Los darvakkas, también llamados sombras de la noche, son un mal voraz compuesto por partes iguales de oscuridad y malicia. Originalmente criaturas de los Planos Exteriores que viajan a la convergencia del Plano Sombrío y el Vacío, donde el poder de la nada los oblitera, estas abominaciones no muertas son la encarnación física de la entropía. Arden con un intenso odio por toda vida, trabajando para traer una noche final y oscura al Plano Material donde nada más que ceniza y hielo permanecen.</p>\n<p>Como criaturas retorcidas por la oscuridad y la sombra, los darvakkas tienen una gran aversión a la luz solar y a todas las fuentes de energía vital. En el Plano Material, pasan las horas de luz del día escondidos bajo tierra, entre ruinas, o sumergidos en las profundidades de los abismos más oscuros del océano más allá del alcance de los rayos del sol, emergiendo cuando la oscuridad los protege por encima de sus cabezas.</p>\n<p>Los darvakkas tienen un aura de entropía que atrae a esclavos no muertos para que sirvan como guerreros y heraldos. Rara vez buscan alianzas entre sí o con otras criaturas, existiendo en soledad como jefes de ejércitos individuales de muertos.</p>"
-    },
-    "Wolf Skeleton": {
-      "name": "Esqueleto de lobo",
-      "hpDetails": "curación del vacío",
-      "items": {
-        "strike-melee->Jaws": {
-          "name": "Mandíbulas"
-        },
-        "action->Surge of Speed": {
-          "name": "Surge de velocidad",
-          "description": "<p>El esqueleto de lobo da tres pasos, pero está @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el inicio de su siguiente turno.</p>"
-        }
-      },
-      "publicNotes": "<p>Sin la carga de la carne, los lobos esqueléticos se lanzan a través del campo de batalla con una velocidad aterradora.</p>\n<hr /> <p>Entre las filas de los muertos, ninguno es tan numeroso, ni tan variado, como el esqueleto. Mientras que la mayoría están casi completamente hechas de hueso, algunas mantienen algunos trozos de carne para ayudarles en el movimiento, como las membranas de las alas.</p>"
     }
   },
   "mapping": {
