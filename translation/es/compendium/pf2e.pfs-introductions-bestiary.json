@@ -1,4 +1,257 @@
 {
+  "label": "Pathfinder Society: introducciones",
+  "entries": {
+    "Ancient Summoning Rune": {
+      "name": "Runa de invocación antigua",
+      "description": "<p>Una nube de sensores mágicos invisibles en un radio de 10 pies rodea la columna central de la habitación.</p>",
+      "disable": "<p>@Check[acrobatics|dc:15|name:Acercarse a la runa|traits:magical,trap] para acercarse sin activar la trampa seguido de @Check[thievery|dc:17|name:Borrar la runa|traits:action:disable-a-device,magical,trap] (entrenado) para borrar la runa, o @Check[athletics|dc:19|name:Retirar piedras|traits:magical,trap] para quitar suficientes piedras del pilar para interrumpir la magia, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (1.º rango; contrarrestar CD 15 ) para contrarrestar la runa.</p>",
+      "reset": "<p>La trampa se rearma cada día al amanecer.</p>",
+      "stealth": "<p>(entrenado)</p>",
+      "items": {
+        "action->Summon Weak Monster": {
+          "name": "Invocar monstruo débil",
+          "description": "<p><strong>Desencadenante</strong> Una criatura entra en la nube de sensores mágicos</p>\n<hr /> <p><strong>Efecto</strong> La trampa invoca una de las criaturas encontradas previamente en el área B con el ajuste débil. La criatura lanza iniciativa y permanece durante 7 turnos, después de lo cual el conjuro termina y la criatura desaparece. La criatura invocada también desaparece si una criatura desactiva la trampa antes de que expire la duración. La criatura invocada puede usar 3 acciones cada asaltos y puede usar reacciones, a diferencia de la mayoría de las criaturas invocadas.</p>"
+        }
+      }
+    },
+    "Befuddled Thoughts": {
+      "name": "Pensamientos confusos",
+      "description": "<p>La runa de calavera con colmillos comienza a hablar en tonos dulces y mielosos sobre la vida eterna.</p>",
+      "disable": "<p>@Check[religion|dc:20|name:Exorcizar espíritu|traits:complex,haunt] (entrenado) para exorcizar al espíritu, @Check[religion|dc:21|name:Cortar la conexión espiritual|traits:complex,haunt] o @Check[occultism|dc:21|name:Cortar la conexión espiritual|traits:complex,haunt] (entrenado) para cortar la conexión entre <em> Hunger's Call </em> y el templo, o @Check[athletics|dc:21|name:Agrietar el muro|traits:complex,haunt] para romper la pared en varios lugares; se requieren tres éxitos totales para desactivar la travesura.</p>",
+      "reset": "<p>El mosaico cesa sus asaltos rutinarias 2 después de que todas las criaturas vivas estén fuera de la vista de las escaleras. Después de 6 horas el haunt está listo para disparar de nuevo.</p>",
+      "routine": "<p>( 3 acciones) Una bola roja pulsante de energía vuela desde la pared y explota en energía negativa en la habitación. Cualquier persona en la habitación recibe @Damage[(1d10+4)[void]] de daño ( @Check[reflex|dc:20|basic|name:Evitar la energía|traits:complex,haunt,void] de salvación).</p>",
+      "stealth": "<p>(entrenado)</p>",
+      "items": {
+        "action->Hunger's Possession": {
+          "name": "Posesión del Hambre",
+          "description": "<p><strong>Desencadenante</strong> Una criatura viviente que lleva <em> Llamada del Hambre </em> se mueve a 30 pies de las escaleras de salida</p>\n<hr /> <p><strong>Efecto</strong> La mente de la criatura se vuelve borrosa y nebulosa cuando una voz invisible le dice que deje caer la reliquia y se aleje. La criatura debe intentar un salvación @Check[will|dc:20|name:Resistir la posesión del hambre|traits:haunt,complex], y el haunt entonces lanza la iniciativa.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no se ve afectado.</p>\n<p><strong>Éxito</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} para 1 asalto.</p>\n<p><strong>Fallo</strong> El objetivo es deslumbrado durante 1 minuto.</p>\n<p><strong>Fallo crítico</strong> El objetivo pierde el control de su mente y en su siguiente asaltos debe poner <em> Hunger's Call </em> en el suelo y mover su velocidad en una dirección lejos de la reliquia; esto hace que la reliquia se teletransporte de nuevo al área D1. Si tienen alguna acción restante, el objetivo pierde esas acciones. Al final de su turno, el objetivo recupera el control de su mente.</p>"
+        }
+      }
+    },
+    "Blood Hunger": {
+      "name": "Hambre de sangre",
+      "description": "<p>La sangre fluye de la runa de cráneo con colmillos como si fuera una herida abierta.</p>",
+      "disable": "<p>@Check[religion|dc:20|name:Exorcizar espíritu|traits:complex,haunt] (entrenado) para exorcizar al espíritu, @Check[religion|dc:21|name:Cortar la conexión espiritual|traits:complex,haunt] o @Check[occultism|dc:21|name:Cortar la conexión espiritual|traits:complex,haunt] (entrenado) para cortar la conexión entre <em> Hunger's Call </em> y el templo, o @Check[crafting|dc:21|name:Fragmentar el mural|traits:complex,haunt] (entrenado) para romper el patrón del mural; se requieren tres éxitos totales para desactivar la travesura.</p>",
+      "reset": "<p>El mosaico cesa sus asaltos rutinarias 2 después de que todas las criaturas vivas estén fuera de la vista de las escaleras. Después de 6 horas el haunt está listo para disparar de nuevo.</p>",
+      "routine": "<p>(3 acciones) El mosaico sangriento lanza fragmentos de cristal de colores a cualquier persona dentro de 10 pies del muro oriental, y cada uno recibe @Damage[1d10[slashing]] de daño más @Damage[1[bleed]] de daño (@Check[reflex|dc:20|basic|name:Evitar las esquirlas de cristal|traits:complex,haunt,slashing] salvado; el éxito crítico niega el daño de sangrado).</p>",
+      "stealth": "<p>(entrenado)</p>",
+      "items": {
+        "action->Hunger's Possession": {
+          "name": "Posesión del Hambre",
+          "description": "<p><strong>Desencadenante</strong> Una criatura viviente que lleva <em> Llamada del Hambre </em> se mueve a 30 pies de las escaleras de salida</p>\n<hr /> <p><strong>Efecto</strong> Las voces susurrantes llenan la mente de la criatura activadora con una compulsión por la sangre de los vivos. La criatura debe intentar un salvación @Check[will|dc:20|name:Resistir la posesión del hambre|traits:mental,occult,haunt,complex], y el haunt entonces lanza la iniciativa.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no se ve afectado.</p>\n<p><strong>Éxito</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1}.</p>\n<p><strong>Fallo</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 2}.</p>\n<p><strong>Fallo crítico</strong> El objetivo pierde el control de su mente y en su siguiente asaltos debe moverse al aliado más cercano y hacer un ataque de mordida desarmado. El aliado está @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} contra este ataque. La mordedura inflige @Damage[1d4[piercing]] de daño y un golpe crítico inflige @Damage[1[bleed]] de daño adicional. Al final de su turno, el objetivo recupera el control de su mente.</p>"
+        }
+      }
+    },
+    "Cheerful Tune": {
+      "name": "Melodía alegre",
+      "description": "<p>Una melodía alegre y sin palabras llena la habitación, obligando a todos a ponerse a trabajar.</p>",
+      "disable": "<p>@Check[religion|dc:20|name:Exorcizar espíritus|traits:complex,haunt] (entrenado) para exorcizar a los espíritus, o @Check[intimidation|dc:21|name:Tomarse un descanso|traits:complex,haunt] para convencer a los espíritus de que es hora de tomar un descanso; se requieren tres éxitos totales para desactivar el espectáculo.</p>",
+      "reset": "<p>Los trabajadores fantasma cesan sus asaltos rutinarias 2 después de que todas las criaturas vivas salgan de la habitación y se reinician después de 6 horas.</p>",
+      "routine": "<p>(3 acciones) Los trabajadores fantasma aparecen en la habitación y comienzan a raspar, fregar y salpicar productos químicos de limpieza en cualquier persona en el área. Cada criatura en la habitación recibe @Damage[(1d4+2)[slashing]] y @Damage[(1d4+2)[acid]] de daño (@Check[reflex|dc:20|basic|name:Evitar a los trabajadores|traits:haunt,complex] salva; lanza una vez para ambos).</p>",
+      "stealth": "<p>(entrenado)</p>",
+      "items": {
+        "action->Nose to the Grindstone": {
+          "name": "Nariz a la piedra de moler",
+          "description": "<p><strong>Desencadenante</strong> Una criatura viviente se acerca a 10 pies de la cara sonriente en el centro de la pared norte</p>\n<hr /> <p><strong>Efecto</strong> El silbido aumenta de volumen hasta alcanzar un tono doloroso e inflige @Damage[(1d8+4)[sonic]] p. de daño. La criatura afectada debe intentar un salvación @Check[will|dc:20|traits:damaging-effect], y el espectáculo entonces lanza iniciativa.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no recibe daño.</p>\n<p><strong>Éxito</strong> La criatura recibe la mitad de daño.</p>\n<p><strong>Fallo</strong> La criatura recibe daño completo y es @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido} durante 1 minuto.</p>\n<p><strong>Fallo crítico</strong> La criatura recibe daño doble, es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}, y está sorprendida durante 2 minutos.</p>"
+        }
+      }
+    },
+    "Cleaning Agents": {
+      "name": "Productos de limpieza",
+      "description": "<p>Los solventes y detergentes se rocían desde el techo y se deslizan por las paredes, donde se combinan de manera peligrosa.</p>",
+      "disable": "<p>@Check[engineering-lore|dc:20|name:Desactivar el panel de control|traits:mechanical,complex]{Conocimiento de la ingeniería} (entrenado) o @Check[thievery|dc:20|name:Desactivar el panel de control|traits:mechanical,complex] (entrenado) para desactivar el panel de control, o @Check[athletics|dc:21|name:Taponar las salidas|traits:mechanical,complex] o @Check[acrobatics|dc:21|name:Taponar las salidas|traits:mechanical,complex] para tapar los tubos que liberan los químicos; se requieren tres éxitos para desactivar la trampa.</p>",
+      "reset": "<p>La trampa se desactiva después de 1 minuto y se reinicia en 1 hora.</p>",
+      "routine": "<p>( 3 acciones) La trampa llena la habitación con una nube de vapor cáustico e inflige @Damage[(2d6+2)[acid]] de daño a todas las criaturas en el área ( @Check[fortitude|dc:20|basic|name:Agente limpiador|traits:acid] ).</p>",
+      "stealth": "<p>(entrenado)</p>",
+      "items": {
+        "action->Decontamination Spray": {
+          "name": "Spray de descontaminación",
+          "description": "<p><strong>Desencadenante</strong> Una criatura entra en la habitación.</p>\n<hr /> <p><strong>Efecto</strong> La trampa rocía productos químicos de limpieza en la criatura que la desencadenó, infligiendo @Damage[(1d8+4)[acid]] de daño. La criatura debe intentar un salvación @Check[reflex|dc:20|traits:acid,damaging-effect], y la trampa entonces lanza iniciativa.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura recibe la mitad de daño.</p>\n<p><strong>Fallo</strong> La criatura recibe daño completo y es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} por 1 turnos.</p>\n<p><strong>Fallo crítico</strong> La criatura recibe daño doble y es @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} por 1 turnos.</p>"
+        }
+      }
+    },
+    "Encouraging Supervision": {
+      "name": "Supervisión alentadora",
+      "description": "<p>La cara del supervisor Azlanti en la pared se anima y comienza a regañar a los que están en la habitación por sus malas actitudes en el trabajo.</p>",
+      "disable": "<p>@Check[deception|dc:20|name:Fingir una sonrisa|traits:complex,haunt] para fingir una actitud alegre y positiva, o @Check[crafting|dc:21|name:Demostrar habilidad en una tarea|traits:complex,haunt] (entrenado) para mostrar habilidad en una tarea; se requieren tres prueba exitosos para desactivar el espectáculo.</p>",
+      "reset": "<p>La voz fantasmal deja de emitirse después de 2 asaltos después de que todos los seres vivos abandonen la habitación y se reinicia después de 6 horas.</p>",
+      "routine": "<p>( 3 acciones) La voz del supervisor llena la habitación y obliga a todos a sonreír. Cada criatura en la habitación recibe @Damage[(1d8+4)[mental]] de daño y debe intentar un @Check[will|dc:20|name:Intentar no sonreír demasiado|traits:complex,haunt] de salvación.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no recibe daño.</p>\n<p><strong>Éxito</strong> El objetivo recibe la mitad de daño.</p>\n<p><strong>Fallo</strong> La criatura recibe daño completo.</p>\n<p><strong>Fallo crítico</strong> La criatura recibe daño completo y es @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}.</p>",
+      "stealth": "<p>(entrenado)</p>",
+      "items": {
+        "action->Smile! Smile!": {
+          "name": "¡Sonríe! ¡Sonríe!",
+          "description": "<p><strong>Desencadenante</strong> Una criatura viviente se acerca a 10 pies de la cara sonriente en el centro de la pared norte</p>\n<hr /> <p><strong>Efecto</strong> La cara grita en azlanti a la criatura para que ponga una sonrisa en su cara y vuelva a trabajar. La criatura recibe @Damage[(1d8+4)[mental]] de daño y debe intentar un @Check[will|dc:20|name:Resistir los gritos fuertes|traits:complex,haunt] de salvación. El espectáculo entonces tira la iniciativa.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no recibe daño.</p>\n<p><strong>Éxito</strong> La criatura recibe la mitad de daño.</p>\n<p><strong>Fallo</strong> La criatura recibe daño completo.</p>\n<p><strong>Fallo crítico</strong> La criatura recibe daño completo y es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1}.</p>"
+        }
+      }
+    },
+    "Ghoul (PFS Intro 2)": {
+      "name": "Gul (PFS Intro 2)",
+      "hpDetails": "curación del vacío",
+      "publicNotes": "<p>Los guls son muertos vivientes famélicos que acechan en los cementerios y se alimentan de cadáveres.</p>\n<hr />\n<p>Pocas criaturas son tan habituales en los lugares siniestros, como cementerios solitarios y criptas en ruinas, como los muertos vivientes caníbales conocidos como guls.</p>",
+      "tokenName": "Gul",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Mandíbulas"
+        },
+        "strike-melee->Claw": {
+          "name": "Garra"
+        },
+        "action->Consume Flesh": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\nConsume Flesh",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\n<p><strong>Requirements</strong> The ghoul is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The ghoul devours a chunk of the corpse and regains @Damage[1d6[healing]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>"
+        },
+        "action->Ghoul Fever": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]\nGhoul Fever",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:15]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[3d8[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
+        },
+        "action->Paralysis": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FW4KAUHb7r8WkxUc]\nParalysis",
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FW4KAUHb7r8WkxUc]\n<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:15|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+        },
+        "action->Swift Leap": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.UU1Fp3PRuTFONjC9]\nSwift Leap"
+        }
+      }
+    },
+    "Rain In Cloudy Day": {
+      "name": "Rain In Cloudy Day",
+      "languages": "hablar con plantas (solo hongos)",
+      "items": {
+        "spellcastingEntry->Focus Occult Spells": {
+          "name": "Enfoque los conjuros ocultos"
+        },
+        "spellcastingEntry->Innate Primal Spells": {
+          "name": "Hechizos Primitivos Innatos"
+        },
+        "spell->Inspire Courage": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.IAjvwqgiDr3qGYxY]\nInspire Courage"
+        },
+        "strike-melee->Fist": {
+          "name": "Puño"
+        },
+        "strike-ranged->Spore Pod": {
+          "name": "Vaina de esporas"
+        },
+        "action->Verdant Burst": {
+          "name": "Explosión verde",
+          "description": "<p>When Rain in Cloudy Day dies, a burst of primal energy explodes from his body, restoring @Damage[2d8[healing]] Hit Points to each plant creature in a @Template[emanation|distance:30]. This area is filled with fungi, becoming difficult terrain. If the terrain is not a viable environment for this fungus, it withers after 24 hours.</p>"
+        },
+        "action->Change Shape": {
+          "name": "Cambiar de Forma",
+          "description": "<p>Rain in Cloudy Day transforms into a Small giant mushroom or patch of fungi. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p>"
+        },
+        "action->Spore Cloud": {
+          "name": "Nube de esporas",
+          "description": "<p>Rain in Cloudy Day can unleash a cloud of spores that irritates the eyes and throats of nonfungi creatures in a @Template[emanation|distance:15]. Each creature must succeed at a @Check[fortitude|dc:16|options:area-effect,damaging-effect] save or take @Damage[1[persistent,poison]|options:area-damage] damage. A creature has its vision reduced as long as the persistent damage continues and can see only within 20 feet (10 feet on a critical failure).</p>"
+        },
+        "action->Spores": {
+          "name": "Esporas",
+          "description": "<p>A creature that takes damage from Rain in Cloudy Day's spore pod Strike must attempt a saving throw with the same DC and effect as his Spore Cloud ability.</p>"
+        },
+        "lore->Pathfinder Society Lore": {
+          "name": "Historia de la Sociedad Pathfinder"
+        }
+      }
+    },
+    "Spiked Pit": {
+      "name": "Foso con púas",
+      "description": "<p>Una trampilla de madera cubre un pozo que mide 10 pies cuadrados y 20 pies de profundidad. Picos afilados bordean el fondo del pozo.</p>",
+      "disable": "<p>@Check[thievery|dc:14|name:Retirar la trampilla|traits:mechanical,trap] para quitar la trampilla</p>",
+      "reset": "<p>Las criaturas pueden seguir cayendo en la trampa, pero la trampilla tiene que rearmarse manualmente para que vuelva a estar escondida.</p>",
+      "stealth": "<p>(entrenado, o 0 si la trampilla está desactivada o rota)</p>",
+      "items": {
+        "action->Pitfall": {
+          "name": "Trampa",
+          "description": "<p><strong>Desencadenante</strong> Una criatura camina hacia la trampilla</p>\n<hr /> <p><strong>Efecto</strong> La criatura desencadenante cae y recibe @Damage[10[bludgeoning]|options:fall-damage] de daño más @Damage[2d6[piercing]] de daño de implementos afilados en el fondo del pozo. Esa criatura puede usar la reacción @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Agarrarse a un saliente} para evitar caer.</p>"
+        }
+      }
+    },
+    "Spite of the Righteous": {
+      "name": "Rencor de los justos",
+      "description": "<p>La imagen de un guerrero fantasmal su símbolo sagrado goteando sangre y pulsando con energía negativa, se aleja de la pared y busca matar a cualquier criatura viva.</p>",
+      "disable": "<p>@Check[religion|dc:20|name:Exorcizar espíritu|traits:complex,haunt] (entrenado) para exorcizar al espíritu, @Check[religion|dc:21|name:Cortar la conexión espiritual|traits:complex,haunt] o @Check[occultism|dc:21|name:Cortar la conexión espiritual|traits:complex,haunt] (entrenado) para cortar la conexión entre <em> Hunger's Call </em> y el templo, o @Check[thievery|dc:21|name:Rayar los ojos del mural|traits:complex,haunt] (entrenado) para rascar los ojos del mural; se requieren tres éxitos totales para desactivar el espectáculo.</p>",
+      "reset": "<p>El guerrero espectral regresa a la pared y cesa 2 asaltos después de que todas las criaturas vivas estén fuera de la vista de las escaleras. Después de 6 horas el haunt está listo para disparar de nuevo.</p>",
+      "routine": "<p>(3 acciones) La espada del guerrero barre los cuerpos de cualquier criatura viva a la vista de las escaleras de salida, y cada una recibe @Damage[(1d10+4)[slashing]] de daño (@Check[fortitude|dc:20|basic|name:Evitar la hoja del guerrero|traits:complex,haunt,slashing] salvación). Las criaturas no muertas en el área ganan 5 puntos de vida temporales.</p>",
+      "stealth": "<p>(entrenado)</p>",
+      "items": {
+        "action->Racing Blood": {
+          "name": "Sangre de carreras",
+          "description": "<p><strong>Desencadenante</strong> Una criatura viviente que lleva <em> Llamada del Hambre </em> se mueve a 30 pies de las escaleras de salida</p>\n<hr /> <p><strong>Efecto</strong> La sangre se acumula en el cuerpo del objetivo mientras su corazón se acelera incontrolablemente. La criatura debe intentar un salvación @Check[will|dc:20|name:Resistir la aceleración del pulso|traits:complex], y el haunt entonces lanza la iniciativa.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no se ve afectado.</p>\n<p><strong>Éxito</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1}.</p>\n<p><strong>Fallo</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2}.</p>\n<p><strong>Fallo crítico</strong> Como fallo, y la velocidad de movimiento del objetivo se reduce en 10 durante 1 minuto.</p>"
+        }
+      }
+    },
+    "Sun-Scorched Shadow Drake": {
+      "name": "Draco de las sombras abrasado por el sol",
+      "publicNotes": "<p>Los dragones de las sombras son típicamente entre los más pequeños y menos poderosos de su especie. La mayoría son tan altos y largos como los gatos domésticos y tienen escamas de color carbón y alas membranosas lo suficientemente translúcidas como para pasar por sombras. Atraídos por los materiales brillantes, emplean el engaño, el trabajo en equipo e incluso trampas rudimentarias para crear oportunidades de hacerse con ganancias mal obtenidas. Los dragones de las sombras tienen una fascinación y admiración particular por los dragones umbral, una notable excepción a la norma para dragones y dragones.</p>",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Mandíbulas"
+        },
+        "strike-melee->Tail": {
+          "name": "Cola"
+        },
+        "action->Light Blindness": {
+          "name": "Ceguera a la luz"
+        },
+        "action->Shadow Blend": {
+          "name": "Mezcla de sombra",
+          "description": "<p>La forma del dragón de las sombras cambia y se mezcla reflexivamente con las sombras circundantes. Un dragón de las sombras gana una reacción adicional cada asaltos, pero solo puede usar esta reacción para Evasión de las sombras.</p>"
+        },
+        "action->Shadow Evade": {
+          "name": "Evadir de la sombra",
+          "description": "<p><strong>Desencadenante</strong> Una criatura ataca al dragón de las sombras mientras está en un área de luz tenue</p>\n<hr /> <p><strong>Efecto</strong> El dragón de las sombras oscurece aún más su posición. El atacante debe tener éxito en un chequeo @Check[flat|dc:11] para afectar al dragón de las sombras, como si el dragón fuera @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} para el ataque que lo desencadenó.</p>"
+        },
+        "action->Draconic Frenzy": {
+          "name": "Frenesí dracónico",
+          "description": "<p>El dragón de las sombras hace un Golpe de mandíbulas y dos Golpes de cola en cualquier orden.</p>"
+        },
+        "action->Shadow Breath": {
+          "name": "Aliento de Sombra",
+          "description": "<p>Un dragón de las sombras escupe una bola de líquido negro que explota en una nube de fría sombra negra. Este ataque tiene un alcance de 40 pies y explota en un @Template[burst|distance:5]{5-foot-radius burst}. Las criaturas dentro de la ráfaga reciben @Damage[2d6[cold]|options:area-damage] de daño (@Check[reflex|dc:16|basic|options:area-effect] de salvación). La explosión de sombra también apaga las fuentes de luz mundanas del tamaño de una antorcha, linterna o más pequeñas, e intenta contrarrestar la luz mágica con un modificador de contraataque [[/r 1d20+8 #Counteract Light]]{+8}.</p>\n<p>El dragón de las sombras no puede usar Respiración de las sombras de nuevo durante [[/gmr 1d6 #Recharge Shadow Breath]] asaltos.</p>"
+        },
+        "action->Speed Surge": {
+          "name": "Aumento de velocidad",
+          "description": "<p><strong>Frecuencia</strong> tres veces al día</p>\n<hr /> <p><strong>Efecto</strong> El dragón de las sombras da pasos o vuela dos veces.</p>"
+        }
+      }
+    },
+    "Swamp Ooze": {
+      "name": "Cieno del pantano",
+      "publicNotes": "<p>Estas masas amorfas de residuos y otros detritos se desplazan por las inmundas alcantarillas de ciudades grandes y pequeñas.</p>\n<hr />\n<p>Los limos, los mohos y otros cienos habitan en dungeons húmedos y bosques sombríos. Si bien no son necesariamente malignos, algunos crecen hasta un tamaño enorme y tienen un apetito insaciable.</p>",
+      "skillSpecialStealth": {
+        "0": {
+          "label": "en pantanos"
+        }
+      },
+      "items": {
+        "strike-melee->Pseudopod": {
+          "name": "Seudópodo"
+        },
+        "action->Motion Sense 60 feet": {
+          "name": "Sensor de movimiento 60 pies",
+          "description": "<p>A swamp ooze can sense nearby motion through vibration and air movement.</p>"
+        },
+        "action->Swamp Wave": {
+          "name": "Onda del pantano",
+          "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The swamp ooze unleashes a wave of swamp muck filled with sharp debris, covering all creatures within a @Template[emanation|distance:20]. Each creature in the area must succeed at a @Check[reflex|dc:17|options:area-effect,damaging-effect] save or take @Damage[1d4[piercing]|options:area-damage] damage and take a –10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}).</p>\n<p>A creature can spend an Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>"
+        }
+      }
+    },
+    "Swampy Quicksand": {
+      "name": "Arenas movedizas pantanosas",
+      "description": "<p>Una zona de agua y arena de 15 pies (4,5 m) de ancho intenta sumergir a las criaturas que la pisan.</p>",
+      "disable": "<p>@Check[survival|dc:16|name:Alterar la superficie|traits:environmental] (entrenado) para perturbar la superficie</p>",
+      "reset": "<p>El riesgo sigue sumergiendo a cualquiera que entra en él, pero la superficie no vuelve a estar escondida hasta que se asienta en el\ntranscurso de 24 horas.</p>",
+      "routine": "<p>( 1 acción) Por iniciativa propia, las arenas movedizas derriban a cada criatura que se encuentra dentro de ellas. Una criatura que estaba sumergida hasta la cintura se sumerge hasta el cuello, y una criatura que estaba sumergida hasta el cuello es arrastrada hacia abajo y tiene que contener la respiración para evitar la asfixia.</p>\n<p>Una criatura en las arenas movedizas puede intentar un chequeo @Check[athletics|dc:18|name:Salir de las arenas movedizas nadando|traits:action:swim,environmental] a Nadar para elevarse un paso si está sumergida hasta el cuello o peor, o moverse 5 pies si está sumergida solo hasta la cintura. En un fallo crítico, la criatura es arrastrada un paso hacia abajo. Una criatura que nada fuera de las arenas movedizas escapa del peligro y se encuentra en un espacio adyacente al parche de arenas movedizas. Otras criaturas pueden ayudar a la criatura, típicamente usando una cuerda o ayuda similar, o intentar sacar a la criatura con su propio prueba @Check[athletics|dc:18|name:Ayudar a otra criatura en las arenas movedizas], con los mismos resultados que si la criatura intentara el prueba.</p>",
+      "stealth": "<p>(entrenado), o CD 0 y sin competencia mínima si la superficie está perturbada.</p>",
+      "items": {
+        "action->Submerge": {
+          "name": "Hundir",
+          "description": "<p><strong>Desencadenante</strong> Una criatura Enorme o más pequeña pisa las arenas movedizas</p>\n<hr />\n<p><strong>Efecto</strong> La criatura desencadenante se hunde hasta la cintura. Las arenas movedizas tiran iniciativa si aún no lo han hecho.</p>"
+        }
+      }
+    }
+  },
   "mapping": {
     "description": {
       "converter": "translateActorDescription",
@@ -42,252 +295,5 @@
       "converter": "translateTokenName",
       "path": "prototypeToken.name"
     }
-  },
-  "entries": {
-    "Ancient Summoning Rune": {
-      "name": "Runa de invocación antigua",
-      "reset": "<p>La trampa se rearma cada día al amanecer.</p>",
-      "stealth": "<p>(entrenado)</p>",
-      "description": "<p>Una nube de sensores mágicos invisibles en un radio de 10 pies rodea la columna central de la habitación.</p>",
-      "disable": "<p>@Check[acrobatics|dc:15|name:Acercarse a la runa|traits:magical,trap] para acercarse sin activar la trampa seguido de @Check[thievery|dc:17|name:Borrar la runa|traits:action:disable-a-device,magical,trap] (entrenado) para borrar la runa, o @Check[athletics|dc:19|name:Retirar piedras|traits:magical,trap] para quitar suficientes piedras del pilar para interrumpir la magia, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (1.º rango; contrarrestar CD 15 ) para contrarrestar la runa.</p>",
-      "items": {
-        "action->Summon Weak Monster": {
-          "name": "Invocar monstruo débil",
-          "description": "<p><strong>Desencadenante</strong> Una criatura entra en la nube de sensores mágicos</p>\n<hr /> <p><strong>Efecto</strong> La trampa invoca una de las criaturas encontradas previamente en el área B con el ajuste débil. La criatura lanza iniciativa y permanece durante 7 turnos, después de lo cual el conjuro termina y la criatura desaparece. La criatura invocada también desaparece si una criatura desactiva la trampa antes de que expire la duración. La criatura invocada puede usar 3 acciones cada asaltos y puede usar reacciones, a diferencia de la mayoría de las criaturas invocadas.</p>"
-        }
-      }
-    },
-    "Befuddled Thoughts": {
-      "name": "Pensamientos confusos",
-      "stealth": "<p>(entrenado)</p>",
-      "description": "<p>La runa de calavera con colmillos comienza a hablar en tonos dulces y mielosos sobre la vida eterna.</p>",
-      "disable": "<p>@Check[religion|dc:20|name:Exorcizar espíritu|traits:complex,haunt] (entrenado) para exorcizar al espíritu, @Check[religion|dc:21|name:Cortar la conexión espiritual|traits:complex,haunt] o @Check[occultism|dc:21|name:Cortar la conexión espiritual|traits:complex,haunt] (entrenado) para cortar la conexión entre <em> Hunger's Call </em> y el templo, o @Check[athletics|dc:21|name:Agrietar el muro|traits:complex,haunt] para romper la pared en varios lugares; se requieren tres éxitos totales para desactivar la travesura.</p>",
-      "reset": "<p>El mosaico cesa sus asaltos rutinarias 2 después de que todas las criaturas vivas estén fuera de la vista de las escaleras. Después de 6 horas el haunt está listo para disparar de nuevo.</p>",
-      "routine": "<p>( 3 acciones) Una bola roja pulsante de energía vuela desde la pared y explota en energía negativa en la habitación. Cualquier persona en la habitación recibe @Damage[(1d10+4)[void]] de daño ( @Check[reflex|dc:20|basic|name:Evitar la energía|traits:complex,haunt,void] de salvación).</p>",
-      "items": {
-        "action->Hunger's Possession": {
-          "name": "Posesión del Hambre",
-          "description": "<p><strong>Desencadenante</strong> Una criatura viviente que lleva <em> Llamada del Hambre </em> se mueve a 30 pies de las escaleras de salida</p>\n<hr /> <p><strong>Efecto</strong> La mente de la criatura se vuelve borrosa y nebulosa cuando una voz invisible le dice que deje caer la reliquia y se aleje. La criatura debe intentar un salvación @Check[will|dc:20|name:Resistir la posesión del hambre|traits:haunt,complex], y el haunt entonces lanza la iniciativa.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no se ve afectado.</p>\n<p><strong>Éxito</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} para 1 asalto.</p>\n<p><strong>Fallo</strong> El objetivo es deslumbrado durante 1 minuto.</p>\n<p><strong>Fallo crítico</strong> El objetivo pierde el control de su mente y en su siguiente asaltos debe poner <em> Hunger's Call </em> en el suelo y mover su velocidad en una dirección lejos de la reliquia; esto hace que la reliquia se teletransporte de nuevo al área D1. Si tienen alguna acción restante, el objetivo pierde esas acciones. Al final de su turno, el objetivo recupera el control de su mente.</p>"
-        }
-      }
-    },
-    "Blood Hunger": {
-      "name": "Hambre de sangre",
-      "stealth": "<p>(entrenado)</p>",
-      "description": "<p>La sangre fluye de la runa de cráneo con colmillos como si fuera una herida abierta.</p>",
-      "disable": "<p>@Check[religion|dc:20|name:Exorcizar espíritu|traits:complex,haunt] (entrenado) para exorcizar al espíritu, @Check[religion|dc:21|name:Cortar la conexión espiritual|traits:complex,haunt] o @Check[occultism|dc:21|name:Cortar la conexión espiritual|traits:complex,haunt] (entrenado) para cortar la conexión entre <em> Hunger's Call </em> y el templo, o @Check[crafting|dc:21|name:Fragmentar el mural|traits:complex,haunt] (entrenado) para romper el patrón del mural; se requieren tres éxitos totales para desactivar la travesura.</p>",
-      "reset": "<p>El mosaico cesa sus asaltos rutinarias 2 después de que todas las criaturas vivas estén fuera de la vista de las escaleras. Después de 6 horas el haunt está listo para disparar de nuevo.</p>",
-      "routine": "<p>(3 acciones) El mosaico sangriento lanza fragmentos de cristal de colores a cualquier persona dentro de 10 pies del muro oriental, y cada uno recibe @Damage[1d10[slashing]] de daño más @Damage[1[bleed]] de daño (@Check[reflex|dc:20|basic|name:Evitar las esquirlas de cristal|traits:complex,haunt,slashing] salvado; el éxito crítico niega el daño de sangrado).</p>",
-      "items": {
-        "action->Hunger's Possession": {
-          "name": "Posesión del Hambre",
-          "description": "<p><strong>Desencadenante</strong> Una criatura viviente que lleva <em> Llamada del Hambre </em> se mueve a 30 pies de las escaleras de salida</p>\n<hr /> <p><strong>Efecto</strong> Las voces susurrantes llenan la mente de la criatura activadora con una compulsión por la sangre de los vivos. La criatura debe intentar un salvación @Check[will|dc:20|name:Resistir la posesión del hambre|traits:mental,occult,haunt,complex], y el haunt entonces lanza la iniciativa.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no se ve afectado.</p>\n<p><strong>Éxito</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1}.</p>\n<p><strong>Fallo</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 2}.</p>\n<p><strong>Fallo crítico</strong> El objetivo pierde el control de su mente y en su siguiente asaltos debe moverse al aliado más cercano y hacer un ataque de mordida desarmado. El aliado está @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} contra este ataque. La mordedura inflige @Damage[1d4[piercing]] de daño y un golpe crítico inflige @Damage[1[bleed]] de daño adicional. Al final de su turno, el objetivo recupera el control de su mente.</p>"
-        }
-      }
-    },
-    "Cheerful Tune": {
-      "name": "Melodía alegre",
-      "stealth": "<p>(entrenado)</p>",
-      "description": "<p>Una melodía alegre y sin palabras llena la habitación, obligando a todos a ponerse a trabajar.</p>",
-      "disable": "<p>@Check[religion|dc:20|name:Exorcizar espíritus|traits:complex,haunt] (entrenado) para exorcizar a los espíritus, o @Check[intimidation|dc:21|name:Tomarse un descanso|traits:complex,haunt] para convencer a los espíritus de que es hora de tomar un descanso; se requieren tres éxitos totales para desactivar el espectáculo.</p>",
-      "reset": "<p>Los trabajadores fantasma cesan sus asaltos rutinarias 2 después de que todas las criaturas vivas salgan de la habitación y se reinician después de 6 horas.</p>",
-      "routine": "<p>(3 acciones) Los trabajadores fantasma aparecen en la habitación y comienzan a raspar, fregar y salpicar productos químicos de limpieza en cualquier persona en el área. Cada criatura en la habitación recibe @Damage[(1d4+2)[slashing]] y @Damage[(1d4+2)[acid]] de daño (@Check[reflex|dc:20|basic|name:Evitar a los trabajadores|traits:haunt,complex] salva; lanza una vez para ambos).</p>",
-      "items": {
-        "action->Nose to the Grindstone": {
-          "name": "Nariz a la piedra de moler",
-          "description": "<p><strong>Desencadenante</strong> Una criatura viviente se acerca a 10 pies de la cara sonriente en el centro de la pared norte</p>\n<hr /> <p><strong>Efecto</strong> El silbido aumenta de volumen hasta alcanzar un tono doloroso e inflige @Damage[(1d8+4)[sonic]] p. de daño. La criatura afectada debe intentar un salvación @Check[will|dc:20|traits:damaging-effect], y el espectáculo entonces lanza iniciativa.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no recibe daño.</p>\n<p><strong>Éxito</strong> La criatura recibe la mitad de daño.</p>\n<p><strong>Fallo</strong> La criatura recibe daño completo y es @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Ensordecido} durante 1 minuto.</p>\n<p><strong>Fallo crítico</strong> La criatura recibe daño doble, es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}, y está sorprendida durante 2 minutos.</p>"
-        }
-      }
-    },
-    "Cleaning Agents": {
-      "name": "Productos de limpieza",
-      "stealth": "<p>(entrenado)</p>",
-      "description": "<p>Los solventes y detergentes se rocían desde el techo y se deslizan por las paredes, donde se combinan de manera peligrosa.</p>",
-      "disable": "<p>@Check[engineering-lore|dc:20|name:Desactivar el panel de control|traits:mechanical,complex]{Conocimiento de la ingeniería} (entrenado) o @Check[thievery|dc:20|name:Desactivar el panel de control|traits:mechanical,complex] (entrenado) para desactivar el panel de control, o @Check[athletics|dc:21|name:Taponar las salidas|traits:mechanical,complex] o @Check[acrobatics|dc:21|name:Taponar las salidas|traits:mechanical,complex] para tapar los tubos que liberan los químicos; se requieren tres éxitos para desactivar la trampa.</p>",
-      "reset": "<p>La trampa se desactiva después de 1 minuto y se reinicia en 1 hora.</p>",
-      "routine": "<p>( 3 acciones) La trampa llena la habitación con una nube de vapor cáustico e inflige @Damage[(2d6+2)[acid]] de daño a todas las criaturas en el área ( @Check[fortitude|dc:20|basic|name:Agente limpiador|traits:acid] ).</p>",
-      "items": {
-        "action->Decontamination Spray": {
-          "name": "Spray de descontaminación",
-          "description": "<p><strong>Desencadenante</strong> Una criatura entra en la habitación.</p>\n<hr /> <p><strong>Efecto</strong> La trampa rocía productos químicos de limpieza en la criatura que la desencadenó, infligiendo @Damage[(1d8+4)[acid]] de daño. La criatura debe intentar un salvación @Check[reflex|dc:20|traits:acid,damaging-effect], y la trampa entonces lanza iniciativa.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura recibe la mitad de daño.</p>\n<p><strong>Fallo</strong> La criatura recibe daño completo y es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} por 1 turnos.</p>\n<p><strong>Fallo crítico</strong> La criatura recibe daño doble y es @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} por 1 turnos.</p>"
-        }
-      }
-    },
-    "Encouraging Supervision": {
-      "name": "Supervisión alentadora",
-      "stealth": "<p>(entrenado)</p>",
-      "description": "<p>La cara del supervisor Azlanti en la pared se anima y comienza a regañar a los que están en la habitación por sus malas actitudes en el trabajo.</p>",
-      "disable": "<p>@Check[deception|dc:20|name:Fingir una sonrisa|traits:complex,haunt] para fingir una actitud alegre y positiva, o @Check[crafting|dc:21|name:Demostrar habilidad en una tarea|traits:complex,haunt] (entrenado) para mostrar habilidad en una tarea; se requieren tres prueba exitosos para desactivar el espectáculo.</p>",
-      "reset": "<p>La voz fantasmal deja de emitirse después de 2 asaltos después de que todos los seres vivos abandonen la habitación y se reinicia después de 6 horas.</p>",
-      "routine": "<p>( 3 acciones) La voz del supervisor llena la habitación y obliga a todos a sonreír. Cada criatura en la habitación recibe @Damage[(1d8+4)[mental]] de daño y debe intentar un @Check[will|dc:20|name:Intentar no sonreír demasiado|traits:complex,haunt] de salvación.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no recibe daño.</p>\n<p><strong>Éxito</strong> El objetivo recibe la mitad de daño.</p>\n<p><strong>Fallo</strong> La criatura recibe daño completo.</p>\n<p><strong>Fallo crítico</strong> La criatura recibe daño completo y es @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}.</p>",
-      "items": {
-        "action->Smile! Smile!": {
-          "name": "¡Sonríe! ¡Sonríe!",
-          "description": "<p><strong>Desencadenante</strong> Una criatura viviente se acerca a 10 pies de la cara sonriente en el centro de la pared norte</p>\n<hr /> <p><strong>Efecto</strong> La cara grita en azlanti a la criatura para que ponga una sonrisa en su cara y vuelva a trabajar. La criatura recibe @Damage[(1d8+4)[mental]] de daño y debe intentar un @Check[will|dc:20|name:Resistir los gritos fuertes|traits:complex,haunt] de salvación. El espectáculo entonces tira la iniciativa.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no recibe daño.</p>\n<p><strong>Éxito</strong> La criatura recibe la mitad de daño.</p>\n<p><strong>Fallo</strong> La criatura recibe daño completo.</p>\n<p><strong>Fallo crítico</strong> La criatura recibe daño completo y es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1}.</p>"
-        }
-      }
-    },
-    "Ghoul (PFS Intro 2)": {
-      "name": "Gul (PFS Intro 2)",
-      "hpDetails": "curación del vacío",
-      "publicNotes": "<p>Los guls son muertos vivientes famélicos que acechan en los cementerios y se alimentan de cadáveres.</p>\n<hr />\n<p>Pocas criaturas son tan habituales en los lugares siniestros, como cementerios solitarios y criptas en ruinas, como los muertos vivientes caníbales conocidos como guls.</p>",
-      "tokenName": "Gul",
-      "items": {
-        "strike-melee->Jaws": {
-          "name": "Mandíbulas"
-        },
-        "strike-melee->Claw": {
-          "name": "Garra"
-        },
-        "action->Consume Flesh": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\nConsume Flesh",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ixPqVlqLaYTB1b23]\n<p><strong>Requirements</strong> The ghoul is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The ghoul devours a chunk of the corpse and regains @Damage[1d6[healing]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>"
-        },
-        "action->Ghoul Fever": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]\nGhoul Fever",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:15]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[3d8[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
-        },
-        "action->Paralysis": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FW4KAUHb7r8WkxUc]\nParalysis",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.FW4KAUHb7r8WkxUc]\n<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:15|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
-        },
-        "action->Swift Leap": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.UU1Fp3PRuTFONjC9]\nSwift Leap"
-        }
-      }
-    },
-    "Rain In Cloudy Day": {
-      "name": "Rain In Cloudy Day",
-      "languages": "hablar con plantas (solo hongos)",
-      "items": {
-        "spellcastingEntry->Innate Primal Spells": {
-          "name": "Hechizos Primitivos Innatos"
-        },
-        "spell->Inspire Courage": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.IAjvwqgiDr3qGYxY]\nInspire Courage"
-        },
-        "strike-melee->Fist": {
-          "name": "Puño"
-        },
-        "action->Verdant Burst": {
-          "name": "Explosión verde"
-        },
-        "action->Change Shape": {
-          "name": "Cambiar de Forma"
-        },
-        "action->Spore Cloud": {
-          "name": "Nube de esporas"
-        },
-        "action->Spores": {
-          "name": "Esporas"
-        },
-        "lore->Pathfinder Society Lore": {
-          "name": "Historia de la Sociedad Pathfinder"
-        },
-        "spellcastingEntry->Focus Occult Spells": {
-          "name": "Enfoque los conjuros ocultos"
-        },
-        "strike-ranged->Spore Pod": {
-          "name": "Vaina de esporas"
-        }
-      }
-    },
-    "Spiked Pit": {
-      "name": "Foso con púas",
-      "reset": "<p>Las criaturas pueden seguir cayendo en la trampa, pero la trampilla tiene que rearmarse manualmente para que vuelva a estar escondida.</p>",
-      "items": {
-        "action->Pitfall": {
-          "name": "Trampa",
-          "description": "<p><strong>Desencadenante</strong> Una criatura camina hacia la trampilla</p>\n<hr /> <p><strong>Efecto</strong> La criatura desencadenante cae y recibe @Damage[10[bludgeoning]|options:fall-damage] de daño más @Damage[2d6[piercing]] de daño de implementos afilados en el fondo del pozo. Esa criatura puede usar la reacción @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Agarrarse a un saliente} para evitar caer.</p>"
-        }
-      },
-      "description": "<p>Una trampilla de madera cubre un pozo que mide 10 pies cuadrados y 20 pies de profundidad. Picos afilados bordean el fondo del pozo.</p>",
-      "disable": "<p>@Check[thievery|dc:14|name:Retirar la trampilla|traits:mechanical,trap] para quitar la trampilla</p>",
-      "stealth": "<p>(entrenado, o 0 si la trampilla está desactivada o rota)</p>"
-    },
-    "Spite of the Righteous": {
-      "name": "Rencor de los justos",
-      "stealth": "<p>(entrenado)</p>",
-      "description": "<p>La imagen de un guerrero fantasmal su símbolo sagrado goteando sangre y pulsando con energía negativa, se aleja de la pared y busca matar a cualquier criatura viva.</p>",
-      "disable": "<p>@Check[religion|dc:20|name:Exorcizar espíritu|traits:complex,haunt] (entrenado) para exorcizar al espíritu, @Check[religion|dc:21|name:Cortar la conexión espiritual|traits:complex,haunt] o @Check[occultism|dc:21|name:Cortar la conexión espiritual|traits:complex,haunt] (entrenado) para cortar la conexión entre <em> Hunger's Call </em> y el templo, o @Check[thievery|dc:21|name:Rayar los ojos del mural|traits:complex,haunt] (entrenado) para rascar los ojos del mural; se requieren tres éxitos totales para desactivar el espectáculo.</p>",
-      "reset": "<p>El guerrero espectral regresa a la pared y cesa 2 asaltos después de que todas las criaturas vivas estén fuera de la vista de las escaleras. Después de 6 horas el haunt está listo para disparar de nuevo.</p>",
-      "routine": "<p>(3 acciones) La espada del guerrero barre los cuerpos de cualquier criatura viva a la vista de las escaleras de salida, y cada una recibe @Damage[(1d10+4)[slashing]] de daño (@Check[fortitude|dc:20|basic|name:Evitar la hoja del guerrero|traits:complex,haunt,slashing] salvación). Las criaturas no muertas en el área ganan 5 puntos de vida temporales.</p>",
-      "items": {
-        "action->Racing Blood": {
-          "name": "Sangre de carreras",
-          "description": "<p><strong>Desencadenante</strong> Una criatura viviente que lleva <em> Llamada del Hambre </em> se mueve a 30 pies de las escaleras de salida</p>\n<hr /> <p><strong>Efecto</strong> La sangre se acumula en el cuerpo del objetivo mientras su corazón se acelera incontrolablemente. La criatura debe intentar un salvación @Check[will|dc:20|name:Resistir la aceleración del pulso|traits:complex], y el haunt entonces lanza la iniciativa.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no se ve afectado.</p>\n<p><strong>Éxito</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1}.</p>\n<p><strong>Fallo</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2}.</p>\n<p><strong>Fallo crítico</strong> Como fallo, y la velocidad de movimiento del objetivo se reduce en 10 durante 1 minuto.</p>"
-        }
-      }
-    },
-    "Sun-Scorched Shadow Drake": {
-      "name": "Draco de las sombras abrasado por el sol",
-      "items": {
-        "strike-melee->Jaws": {
-          "name": "Mandíbulas"
-        },
-        "strike-melee->Tail": {
-          "name": "Cola"
-        },
-        "action->Light Blindness": {
-          "name": "Ceguera a la luz"
-        },
-        "action->Draconic Frenzy": {
-          "name": "Frenesí dracónico",
-          "description": "<p>El dragón de las sombras hace un Golpe de mandíbulas y dos Golpes de cola en cualquier orden.</p>"
-        },
-        "action->Speed Surge": {
-          "name": "Aumento de velocidad",
-          "description": "<p><strong>Frecuencia</strong> tres veces al día</p>\n<hr /> <p><strong>Efecto</strong> El dragón de las sombras da pasos o vuela dos veces.</p>"
-        },
-        "action->Shadow Breath": {
-          "name": "Aliento de Sombra",
-          "description": "<p>Un dragón de las sombras escupe una bola de líquido negro que explota en una nube de fría sombra negra. Este ataque tiene un alcance de 40 pies y explota en un @Template[burst|distance:5]{5-foot-radius burst}. Las criaturas dentro de la ráfaga reciben @Damage[2d6[cold]|options:area-damage] de daño (@Check[reflex|dc:16|basic|options:area-effect] de salvación). La explosión de sombra también apaga las fuentes de luz mundanas del tamaño de una antorcha, linterna o más pequeñas, e intenta contrarrestar la luz mágica con un modificador de contraataque [[/r 1d20+8 #Counteract Light]]{+8}.</p>\n<p>El dragón de las sombras no puede usar Respiración de las sombras de nuevo durante [[/gmr 1d6 #Recharge Shadow Breath]] asaltos.</p>"
-        },
-        "action->Shadow Blend": {
-          "name": "Mezcla de sombra",
-          "description": "<p>La forma del dragón de las sombras cambia y se mezcla reflexivamente con las sombras circundantes. Un dragón de las sombras gana una reacción adicional cada asaltos, pero solo puede usar esta reacción para Evasión de las sombras.</p>"
-        },
-        "action->Shadow Evade": {
-          "name": "Evadir de la sombra",
-          "description": "<p><strong>Desencadenante</strong> Una criatura ataca al dragón de las sombras mientras está en un área de luz tenue</p>\n<hr /> <p><strong>Efecto</strong> El dragón de las sombras oscurece aún más su posición. El atacante debe tener éxito en un chequeo @Check[flat|dc:11] para afectar al dragón de las sombras, como si el dragón fuera @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} para el ataque que lo desencadenó.</p>"
-        }
-      },
-      "publicNotes": "<p>Los dragones de las sombras son típicamente entre los más pequeños y menos poderosos de su especie. La mayoría son tan altos y largos como los gatos domésticos y tienen escamas de color carbón y alas membranosas lo suficientemente translúcidas como para pasar por sombras. Atraídos por los materiales brillantes, emplean el engaño, el trabajo en equipo e incluso trampas rudimentarias para crear oportunidades de hacerse con ganancias mal obtenidas. Los dragones de las sombras tienen una fascinación y admiración particular por los dragones umbral, una notable excepción a la norma para dragones y dragones.</p>"
-    },
-    "Swamp Ooze": {
-      "name": "Cieno del pantano",
-      "publicNotes": "<p>Estas masas amorfas de residuos y otros detritos se desplazan por las inmundas alcantarillas de ciudades grandes y pequeñas.</p>\n<hr />\n<p>Los limos, los mohos y otros cienos habitan en dungeons húmedos y bosques sombríos. Si bien no son necesariamente malignos, algunos crecen hasta un tamaño enorme y tienen un apetito insaciable.</p>",
-      "items": {
-        "strike-melee->Pseudopod": {
-          "name": "Seudópodo"
-        },
-        "action->Motion Sense 60 feet": {
-          "name": "Sensor de movimiento 60 pies"
-        },
-        "action->Swamp Wave": {
-          "name": "Onda del pantano"
-        }
-      },
-      "skillSpecialStealth": {
-        "0": {
-          "label": "en pantanos"
-        }
-      }
-    },
-    "Swampy Quicksand": {
-      "name": "Arenas movedizas pantanosas",
-      "description": "<p>Una zona de agua y arena de 15 pies (4,5 m) de ancho intenta sumergir a las criaturas que la pisan.</p>",
-      "reset": "<p>El riesgo sigue sumergiendo a cualquiera que entra en él, pero la superficie no vuelve a estar escondida hasta que se asienta en el\ntranscurso de 24 horas.</p>",
-      "items": {
-        "action->Submerge": {
-          "name": "Hundir",
-          "description": "<p><strong>Desencadenante</strong> Una criatura Enorme o más pequeña pisa las arenas movedizas</p>\n<hr />\n<p><strong>Efecto</strong> La criatura desencadenante se hunde hasta la cintura. Las arenas movedizas tiran iniciativa si aún no lo han hecho.</p>"
-        }
-      },
-      "disable": "<p>@Check[survival|dc:16|name:Alterar la superficie|traits:environmental] (entrenado) para perturbar la superficie</p>",
-      "routine": "<p>( 1 acción) Por iniciativa propia, las arenas movedizas derriban a cada criatura que se encuentra dentro de ellas. Una criatura que estaba sumergida hasta la cintura se sumerge hasta el cuello, y una criatura que estaba sumergida hasta el cuello es arrastrada hacia abajo y tiene que contener la respiración para evitar la asfixia.</p>\n<p>Una criatura en las arenas movedizas puede intentar un chequeo @Check[athletics|dc:18|name:Salir de las arenas movedizas nadando|traits:action:swim,environmental] a Nadar para elevarse un paso si está sumergida hasta el cuello o peor, o moverse 5 pies si está sumergida solo hasta la cintura. En un fallo crítico, la criatura es arrastrada un paso hacia abajo. Una criatura que nada fuera de las arenas movedizas escapa del peligro y se encuentra en un espacio adyacente al parche de arenas movedizas. Otras criaturas pueden ayudar a la criatura, típicamente usando una cuerda o ayuda similar, o intentar sacar a la criatura con su propio prueba @Check[athletics|dc:18|name:Ayudar a otra criatura en las arenas movedizas], con los mismos resultados que si la criatura intentara el prueba.</p>",
-      "stealth": "<p>(entrenado), o CD 0 y sin competencia mínima si la superficie está perturbada.</p>"
-    }
-  },
-  "label": "Pathfinder Society: introducciones"
+  }
 }
