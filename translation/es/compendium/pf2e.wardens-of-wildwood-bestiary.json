@@ -9,7 +9,7 @@
           "name": "Mapas"
         },
         "consumable->Healing Potion (Lesser)": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>A <em>healing potion</em> is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a <em>healing potion</em>, you regain @Damage[(2d8+5)[healing]] Hit Points.</p>"
+          "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>A <em>healing potion</em> is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a <em>healing potion</em>, you regain [[/r (2d8+5)[healing]]]{2d8+5 Hit Points}.</p>"
         },
         "strike-melee->Rapier": {
           "name": "Espada ropera"
@@ -50,20 +50,20 @@
         },
         "action->Axe Vulnerability": {
           "name": "Vulnerabilidad a las hachas",
-          "description": "<p>An arboreal sapling takes 5 additional damage from axes.</p>"
+          "description": "<p>Un árbol de árboles arbóreo toma 5 más daño de los ejes.</p>"
         },
         "action->Shaky Footing": {
-          "name": "Shaky Footing",
-          "description": "<p>When an arboreal sapling critically fails an attack roll or Reflex saving throw, it becomes @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} unless it succeeds at a @Check[flat|dc:11].</p>"
+          "name": "Pies temblorosos",
+          "description": "<p>Cuando un árbol de árboles arbóreo falla críticamente un rollo de ataque o tirada de salvación de Reflejos, se convierte en @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} a menos que tenga éxito en un @Check[flat|dc:11].</p>"
         },
         "action->Timber!": {
           "name": "¡Timber!",
-          "description": "<p><strong>Trigger</strong> An arboreal sapling that is not @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} either becomes prone or is reduced to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The arboreal sapling topples over, dealing @Damage[2d6[bludgeoning]|options:area-damage] damage to itself and to creatures in a @Template[line|distance:10] (@Check[reflex|dc:16|basic|options:area-effect,inflicts:prone]). Creatures that critically fail the saving throw are also knocked prone.</p>"
+          "description": "<p><strong>Desencadenante</strong> Un árbol arbóreo que no es @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} o bien se vuelve propenso o se reduce a 0 PG</p>\n<hr />\n<p><strong>Efecto</strong> El árbol de los árboles se derrumba, traficando @Damage[2d6[bludgeoning]|options:area-damage] daño a sí mismo y a las criaturas en un @Template[line|distance:10] (@Check[reflex|dc:16|basic|options:area-effect,inflicts:prone]) Las criaturas que fallan críticamente el tirada de salvación también son golpeadas propensas.</p>"
         }
       }
     },
     "Arboreal Sapstriker": {
-      "name": "Arboreal Sapstriker",
+      "name": "Juegos de Arboreal Sapstriker",
       "publicNotes": "<p>Algunas coníferas arbóreas desarrollan savia viscosa que utilizan para atrapar a los intrusos. Decenas de arroyos semiendurecidos gotean de su corteza, listos para atrapar armas o incluso capturar partículas en el aire. Los Sapstrikers actúan como cazadores de recompensas que se deleitan en rastrear y castigar a los leñadores.</p>\n<hr /> <p>Las habilidades de un arboreal cambian gradualmente a medida que crece, explora y satisface las necesidades de su bosque. Después de décadas de vida como un árbol insignificante, un árbol arbóreo se desarraiga para descubrir su mayor propósito, a menudo guiado por los ancianos.</p>\n<h2>Nutrientes ocultos</h2>\n<p>Mientras extrae agua, nutrientes y trazas de energía primordial del suelo, un arbóreo absorbe a veces impresiones psíquicas que dan forma a su crecimiento. Establecer raíces en paisajes encantados o parques de atracciones abandonados puede resultar en arboles realmente siniestros o divertidos.</p>",
       "skillSpecialStealth": {
         "0": {
@@ -79,11 +79,11 @@
         },
         "action->Axe Vulnerability": {
           "name": "Vulnerabilidad a las hachas",
-          "description": "<p>An arboreal sapstriker takes 5 additional damage from axes.</p>"
+          "description": "<p>Un sapstriker arbóreo toma 5 más daño de los ejes.</p>"
         },
         "action->Primal Sink": {
           "name": "Sink de Primal",
-          "description": "<p><strong>Trigger</strong> An arboreal sapstriker succeeds or critically succeeds at a saving throw against a primal effect</p>\n<hr />\n<p><strong>Effect</strong> The sapstriker gains a +1 status bonus to attack rolls, saving throws, skill checks, and sap saving throw DC for [[/gmr 1d4 #rounds]] rounds.</p>",
+          "description": "<p><strong>Desencadenante</strong> Un sapstriker arbóreo tiene éxito o tiene éxito crítico en un tirada de salvación contra un efecto primario</p>\n<hr />\n<p><strong>Efecto</strong> El sapstriker gana un +1 bonificador por estado para atacar rollos, tiradas de salvación, controles de habilidad, y savia tirada de salvación CD para [[/gmr 1d4 #rounds]] asaltos.</p>",
           "selfEffect": "Efecto: Sink primordial"
         },
         "action->Amber Tomb": {
@@ -92,7 +92,7 @@
         },
         "action->Sap": {
           "name": "Cachiporra",
-          "description": "<p>A creature that takes damage from an arboreal sapstriker's branch or sap Strike must succeed at a @Check[reflex|dc:23] save or take @Damage[1d8[persistent,acid]] damage. While taking the persistent damage, a creature takes a –10-foot status penalty to its Speeds.</p>"
+          "description": "<p>Una criatura que toma daño de la rama o savia de un sapstriker arbóreo Golpe debe tener éxito en un @Check[reflex|dc:23] guardar o tomar @Damage[1d8[persistent,acid]] daño. Mientras toma el daño persistente, una criatura toma un –10 pie penalizador por estado a sus Velocidades.</p>"
         }
       }
     },
@@ -177,7 +177,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]\nDarkness (At Will)"
         },
         "spell->Shape Wood (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.CXICME10TkEJxz0P]\nShape Wood (At Will)"
+          "name": "Moldear la madera (a voluntad)"
         },
         "spell->Vanishing Tracks (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.zlnXpME1T2uvn8Lr]\nVanishing Tracks (Constant)"
@@ -186,7 +186,7 @@
           "name": "Mandíbulas"
         },
         "strike-melee->Razor Tail": {
-          "name": "Razor Tail"
+          "name": "Razor Cola"
         },
         "strike-melee->Shadow Claws": {
           "name": "Garras de la sombra"
@@ -195,7 +195,7 @@
           "name": "Tegumento"
         },
         "action->Shadowsense": {
-          "name": "Shadowsense",
+          "name": "Sentido de sombras",
           "description": "<p>Las sombras de Gloaming Arbor son una extensión de Avathrael, y pueden percibir criaturas en áreas de luz tenue u oscuridad.</p>"
         },
         "action->Floral Defense": {
@@ -272,14 +272,14 @@
       "stealth": "<p>(experto)</p>",
       "items": {
         "action->Batter Trespasser": {
-          "name": "Batter Trespasser",
+          "name": "Pasillo de bateador",
           "description": "<p><strong>Desencadenante</strong> Una criatura viva pasa por la puerta</p>\n<hr /> <p><strong>Efecto</strong> La puerta se cierra de golpe contra la criatura que la ha activado, infligiendo @Damage[(4d10+26)[bludgeoning]] de daño ( @Check[reflex|dc:28|basic] de salvación).</p>"
         }
       }
     },
     "Bee Covered Ohancanu": {
       "name": "Ohancanu cubierto de abejas",
-      "publicNotes": "<p>Ohancanus are gigantic fey who delight in destruction. It's not necessarily the sadistic torment of others they enjoy, but living in a devastated landscape seems to bring them peace. Despite their destructive drive, ohancanus are like wildfires: their damage often clears the way for new growth.</p>\n<p>Ohancanus resemble cyclopes, and they're covered in untamed hair. Scattered across their hirsute forms, each ohancanu has a few conspicuously white hairs. These are extremely sensitive and seem to anchor some part of an ohancanu's essence, wracking them with nausea and weakness if ever plucked.</p>\n<p>Though they habitually raze wildernesses, ohancanus rely on old growth forests for reproduction. When an ohancanu grows old, their companions murder and dissect them, planting their organs among the roots of the oldest trees around. About a year later, some of these organs sprout into young ohancanus who tear themselves free and seek out companions. From their first moments they understand language and basic survival skills, suggesting each generation retains some portion of their butchered progenitors' memories.</p>\n<h2>Riddles And Rage</h2>\n<p>Ohancanus delight in destroying wordplay almost as much as they love demolishing architecture. A clever riddle can captivate an ohancanu and even halt their rampage. However, such a tactic rarely provide more than a brief opportunity for escape; once an ohancanu solves the puzzle or grows frustrated, their destruction resumes.</p>",
+      "publicNotes": "<p>Ohancanus son fey gigantes que se deleitan en la destrucción. No es necesariamente el tormento sádico de otros que disfrutan, pero vivir en un paisaje devastado parece traerles paz. A pesar de su impulso destructivo, ohancanus son como incendios forestales: sus daño a menudo abre el camino para un nuevo crecimiento.</p>\n<p>Ohancanus se asemejan a los cíclopes, y están cubiertos de cabello indómito. Dispersos a través de sus formas hirsutas, cada oancanus tiene unos pocos pelos notablemente blancos. Estos son extremadamente sensibles y parecen anclar alguna parte de la esencia de un oancan, afligiéndolos con náuseas y debilidad si alguna vez arrancada.</p>\n<p>Aunque habitualmente arrasan los desiertos, ohancanos dependen de los bosques de crecimiento para la reproducción. Cuando un ohancano envejece, sus compañeros los matan y diseccionan, plantando sus órganos entre las raíces de los árboles más antiguos de alrededor. Alrededor de un año después, algunos de estos órganos brotan en el joven ohancano que se liberan y buscan compañeros. Desde sus primeros momentos entienden el lenguaje y las habilidades básicas de supervivencia, sugiriendo que cada generación retiene alguna parte de los recuerdos de sus progenitores carniceros.</p>\n<h2>Enigmas y Furia</h2>\n<p>Ohancanus se deleitan en destruir el juego de palabras casi tanto como les encanta demoler la arquitectura. Un enigma inteligente puede cautivar a un oancancanu e incluso detener su descontrol. Sin embargo, tal táctica rara vez proporciona más que una breve oportunidad de escapar; una vez que un ohancanu resuelve el rompecabezas o se frustra, su destrucción se reanuda.</p>",
       "items": {
         "equipment->Sack for Holding Rocks": {
           "name": "Saco para sostener rocas"
@@ -305,7 +305,7 @@
           "description": "<p>Docenas de abejas pican al ohancanu, infligiendo @Damage[2d6[persistent,piercing]] de daño. El daño persistente termina automáticamente si el ohancanu recibe 10 o más daño de un efecto de área.</p>"
         },
         "action->Denuded Outrage": {
-          "name": "Denuded Outrage",
+          "name": "Indignación denegada",
           "description": "<p><strong>Desencadenante</strong> Una criatura arranca uno de los cabellos blancos de ohancanu</p>\n<hr /> <p><strong>Efecto</strong> El ohancanu hace un Golpe de puño contra la criatura que lo desencadenó. Si el ohancanu es @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado}, pueden intentar @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Huir}.</p>"
         },
         "action->Sudden Charge": {
@@ -330,7 +330,7 @@
       "items": {
         "action->Troop Defenses": {
           "name": "Defensas de tropas",
-          "description": "<p><strong>Thresholds</strong> 40 (3 segments), 20 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+          "description": "<p><strong>Umbrales</strong> 40 (3 segmentos), 20 (2 segmentos)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "action->Hurl Axes": {
           "name": "Lanza hachas",
@@ -384,7 +384,7 @@
           "description": "<p>El hablante en esporas puede ver a través de las esporas que flotan en el aire, ignorando la cobertura. Este es un sentido impreciso y funciona solo en áreas sin corrientes de viento fuertes. Sporesight no funciona bajo el agua.</p>"
         },
         "action->Blight Walker": {
-          "name": "Blight Walker",
+          "name": "Caminante de la plaga",
           "description": "<p>El hablante en esporas se recupera de las condiciones @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralizado}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado} y @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido} al final de su turno. También son inmunes a las penalizaciones de su Velocidad e ignoran la cobertura, el ocultamento, el terreno difícil y el terreno más difícil resultante de plantas o hongos.</p>"
         },
         "action->Toxic Spores": {
@@ -402,14 +402,14 @@
       }
     },
     "Bloodletting Snare": {
-      "name": "Bloodletting Snare",
+      "name": "Sangrado Trampa",
       "description": "<p>Un alambre de afeitar delgado atrapa a una criatura, arrastrándola al aire mientras causa heridas profundas y sangrientas.</p>",
       "disable": "<p>@Check[survival|dc:25] (experto) o @Check[thievery|dc:25] (experto) para cortar el cable sin quedar atrapado</p>",
       "stealth": "<p>(experto)</p>",
       "items": {
         "action->Snare": {
           "name": "Trampa",
-          "description": "<p><strong>Trigger</strong> A creature steps into the square with the snare tripwire</p>\n<hr />\n<p><strong>Effect</strong> The bloodletting snare makes a snare Strike against the triggering creature.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura entra en la plaza con el cable de la trampa</p>\n<hr />\n<p><strong>Efecto</strong> La trampa de derramamiento de sangre hace una trampa Golpe contra la criatura que desencadena.</p>"
         },
         "strike-melee->Snare": {
           "name": "Trampa",
@@ -419,7 +419,7 @@
     },
     "Bonebleacher Bugbear": {
       "name": "Bugbear del Bonebleacher",
-      "blurb": "Bugbear poisoner",
+      "blurb": "Osgo Envenenador",
       "items": {
         "strike-melee->Battle Axe": {
           "name": "Hacha de batalla"
@@ -435,28 +435,28 @@
         },
         "action->Blighted Cloak": {
           "name": "Capa de Blighted",
-          "description": "<p><strong>Trigger</strong> A creature adjacent to the Bonebleacher bugbear hits them with a melee Strike;</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature is exposed to Ayrzul's Blight. The bugbear can't use Blighted Cloak again until they spend 10 minutes applying blighted plant matter to their cloak.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura adyacente al oso de insectos Bonebleacher les golpea con un cuerpo de ganado Golpe;</p>\n<hr />\n<p><strong>Efecto</strong> La criatura desencadenante está expuesta a La plaga de Ayrzul. El oso de insectos no puede usar Capa de Blighted de nuevo hasta que pasen 10 minutos aplicando materia vegetal manchada a su capa.</p>"
         },
         "action->Pinpoint Poisoner": {
           "name": "Envenenador preciso",
-          "description": "<p>When the Bonebleacher bugbear successfully Strikes an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creature with a poisoned weapon or exposes an off-guard creature to an inhaled poison, the creature takes a –2 circumstance penalty to its initial save against that poison.</p>"
+          "description": "<p>When the Bonebleacher bugbear successfully Strikes an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} la criatura con un arma envenenada o expone a una criatura desprevenido a un veneno inhalado, la criatura toma un –2 penalizador por circunstancia a su inicial salvación contra ese veneno.</p>"
         },
         "action->Poison Spray": {
           "name": "Spray de veneno",
-          "description": "<p><strong>Requirements</strong> The Bonebleacher bugbear is holding a contact or injury poison</p>\n<hr />\n<p><strong>Effect</strong> The Bonebleacher bugbear attaches the poison container to a nozzle on their mask, which then sprays the poison from the mask in a @Template[cone|distance:15]. The bugbear isn't exposed to the poison. All creatures in the cone are immediately exposed to the poison, and each creature must attempt a Fortitude save against the poison.</p>"
+          "description": "<p><strong>Requisitos</strong> El bugbear Bonebleacher tiene un contacto o un veneno para lesiones</p>\n<hr />\n<p><strong>Efecto</strong> El oso de insectos Bonebleacher une el recipiente de veneno a una boquilla en su máscara, que luego rocía el veneno de la máscara en un @Template[cone|distance:15]El oso de insectos no está expuesto al veneno. Todas las criaturas en el cono están inmediatamente expuestas al veneno, y cada criatura debe intentar un salvación de Fortaleza contra el veneno.</p>"
         },
         "action->Sneak Attack": {
           "name": "Ataque furtivo",
-          "description": "<p>The Bonebleacher bugbear deals an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+          "description": "<p>El oso de errores Bonebleacher ofrece un adicional 2d6 daño de precisión a @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} criaturas.</p>"
         },
         "action->Twin Feint": {
           "name": "Finta gemela",
-          "description": "<p><strong>Requirements</strong> The Bonebleacher bugbear is wielding two melee weapons, each in a different hand</p>\n<hr />\n<p><strong>Effect</strong> The Bonebleacher bugbear makes a dazzling series of attacks with two weapons, using the first attack to throw their foe @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against a second attack at a different angle. They make one Strike with each of their two melee weapons, both against the same target. The target is automatically off-guard against the second attack. Apply the bugbear's multiple attack penalty to the Strikes normally.</p>"
+          "description": "<p><strong>Requisitos</strong> El oso de los bugs Bonebleacher está usando dos armas de cuerpo a cuerpo, cada una en una mano diferente</p>\n<hr />\n<p><strong>Efecto</strong> El bugbear Bonebleacher hace una deslumbrante serie de ataques con dos armas, usando el primer ataque para lanzar a su enemigo @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} contra un segundo ataque en un ángulo diferente. Hacen uno Golpe con cada una de sus dos armas de cuerpo y cuerpo, ambas contra el mismo objetivo. El objetivo es automáticamente desprevenido contra el segundo ataque. Aplicar el del oso de error penalizador por ataques múltiples a la Golpes normalmente.</p>"
         }
       }
     },
     "Bystander": {
-      "name": "Bystander",
+      "name": "Transeúnte",
       "blurb": "Guardia de élite variante",
       "publicNotes": "<p>Los guardias son miembros de base de un guardia de la ciudad o guardia de la ciudad, entrenados para buscar problemas, derribar criminales y seguir órdenes. Son un partido para solo los más jóvenes aventureros y criminales, pero, dado el tiempo, el asentamiento puede reunirlos en número suficiente para neutralizar la mayoría de las amenazas.</p>\n<hr /> <p>Las sociedades más grandes dependen de aquellos con la autoridad y la capacidad de interpretar y hacer cumplir las leyes. En sociedades bien alineadas, estos funcionarios desempeñan sus funciones de manera justa. En los neutrales y los malvados, estos funcionarios pueden ser duros y crueles (con una alineación alterada para reflejar esto), imponiendo severos castigos a aquellos que no pueden pagar por la misericordia.</p>",
       "senses": "(+11 para encontrar objetos ocultos)",
@@ -484,19 +484,19 @@
         },
         "action->Aggravating Aura": {
           "name": "Aura agravante",
-          "description": "<p>10 feet. Acidic vapor surrounds the caustic wraith, making other creatures' bodies feel raw and especially sensitive to pain. A creature that begins in the area must succeed at a @Check[will|dc:28] save or gain weakness 3 to all damage for 1 round (weakness 5 on a critical failure).</p>\n<hr />\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.WQsMv2KlURI9OKQQ]{Effect: Aggravating Aura}</p>"
+          "description": "<p>10 pies. El vapor ácido rodea el espectro cáustico, haciendo que los cuerpos de otras criaturas se sientan crudos y especialmente sensibles al dolor. Una criatura que comienza en la zona debe tener éxito en un @Check[will|dc:28] salvación o ganar debilidad 3 a todos daño para 1 asalto (débil 5 en un fallo crítico).</p>\n<hr />\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.WQsMv2KlURI9OKQQ]{Efecto: Aura agravante}</p>"
         },
         "action->Dissolve From the Inside": {
           "name": "Disuelve desde el interior",
-          "description": "<p>The caustic wraith reaches into the body of a creature within 10 feet, melting its organs and inflicting pain. The target takes @Damage[4d8[acid]] damage with a @Check[fortitude|dc:28|basic] save. On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>"
+          "description": "<p>El espectro cáustico llega al cuerpo de una criatura dentro de 10 pies, fundiendo sus órganos e infligiendo dolor. @Damage[4d8[acid]] daño con una @Check[fortitude|dc:28|basic] salvación. En un fallo crítico, la criatura también está @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2}.</p>"
         },
         "action->Drain Life": {
           "name": "Drenar La Vida",
-          "description": "<p>When the caustic wraith damages a living creature with its caustic touch Strike, the wraith gains 10 temporary Hit Points, and the target must succeed at a @Check[fortitude|dc:28|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the caustic wraith increases the drained condition value by 1 on a failed save, to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
+          "description": "<p>Cuando el espectro cáustico daña a una criatura viva con su tacto cáustico Golpe, el espectro gana 10 Puntos de Golpe temporales y el objetivo debe tener éxito en un @Check[fortitude|dc:28|options:inflicts:drained] guardar o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}. Además daño tratado por el espectro cáustico aumenta el valor de condición drenada en 1 en un fallo salvación, hasta un máximo de drenado 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Efecto: Drenar La Vida}</p>"
         },
         "action->Wraith Spawn": {
           "name": "Spawn de Wraith",
-          "description": "<p>A living humanoid slain by a caustic wraith rises as a wraith spawn after [[/gmr 1d4 #rounds]]{1d4 rounds}. This wraith spawn is under the command of the wraith that killed it. It doesn't have drain life or wraith spawn and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}. After 24 hours, the wraith spawn dissipates and is destroyed.</p>"
+          "description": "<p>Un humanoide vivo muerto por un espectro cáustico se eleva como un espectro desove después de [[/gmr 1d4 #rounds]]{1d4 asaltos}Este espectro está bajo el mando de los espectros que lo mataron. No tiene vida de drenaje o espectros desove y se convierte en @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2}Después de 24 horas, el desove de los espectros se disipa y es destruido.</p>"
         }
       }
     },
@@ -511,7 +511,7 @@
           "name": "Garra"
         },
         "action->Buck": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.nZMQh4AaBr291TUf]\n<p>@Check[reflex|dc:17]</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Buck]</p>"
+          "description": "<p>@Check[reflex|dc:17]</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Buck]</p>"
         },
         "action->Forest Passage": {
           "name": "Paso forestal",
@@ -525,7 +525,7 @@
     },
     "Coiled Conifer": {
       "name": "Conífera enrollada",
-      "publicNotes": "<p>This bent and slithering entity is barely identifiable as a tree. Tentacle-like roots extend from its trunk in odd places, meeting tumorous knots filled with caustic sap.</p>\n<hr />\n<p>The Plane of Wood contains many unique ecosystems formed around species of wondrous trees; when Ayrzul's Blight mutates one of these trees rather than killing it, it can have a cascading effect on the tree's biome. Multiple species often mutate in tandem, becoming warped mockeries and a vector for Ayrzul's Blight. These \"blight bonded\" creature families are parasites and predators and typically form twisted symbiotic relationships.</p>",
+      "publicNotes": "<p>Esta entidad curvada y deslizándose apenas se identifica como un árbol. Las raíces de tipo tentáculo se extienden desde su tronco en lugares extraños, encontrando nudos tumorosos llenos de savia cáustica.</p>\n<hr />\n<p>El Plano de Madera contiene muchos ecosistemas únicos formados alrededor de especies de árboles maravillosos; cuando La plaga de Ayrzul muta uno de estos árboles en lugar de matarlo, puede tener un efecto en cascada en el bioma del árbol. Múltiples especies a menudo mutan en tándem, convirtiéndose en burlas deformadas y un vector para La plaga de Ayrzul. Estas familias de criaturas \"encadenadas brillantemente\" son parásitos y depredadores y típicamente forman relaciones simbióticas retorcidas.</p>",
       "skillSpecialStealth": {
         "0": {
           "label": "En bosques y pantanos"
@@ -533,13 +533,13 @@
       },
       "items": {
         "strike-melee->Branchy Maw": {
-          "name": "Branchy Maw"
+          "name": "Fauces de ramas"
         },
         "strike-melee->Root": {
           "name": "Raíz"
         },
         "action->Tremorsense (Imprecise) 120 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense (Imprecise) 120 feet"
+          "name": "Sentido de la vibración (impreciso) 120 pies (36 m)"
         },
         "action->Regurgitate Sap": {
           "name": "Regurgitación de Sap",
@@ -553,14 +553,14 @@
           "description": "<p>La conífera enrollada escupe savia como la bilis en un @Template[cone|distance:60]. Las criaturas en el área reciben @Damage[7d12[acid]|options:area-damage] de daño ( @Check[reflex|dc:33|basic|options:area-effect,inflicts:sickened] de salvación) y se convierten en @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} ( @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2} en un fracaso crítico).</p>\n<p>La conífera enrollada no puede usar esta habilidad de nuevo por [[/gmr 1d4 #Recharge Sap Spray]]{1d4 asaltos}.</p>"
         },
         "action->Slithering Roots": {
-          "name": "Slithering Roots",
+          "name": "Raíces deslizándose",
           "description": "<p><strong>Requisitos</strong> La conífera enroscada tiene @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrada} a al menos una criatura</p>\n<hr />\n<p><strong>Efecto</strong> La conífera enroscada da una Zancada hasta su Velocidad completa y lleva consigo a todas las criaturas que tiene agarradas.</p>"
         },
         "action->Swallow Whole": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Large, @Damage[(3d6+9)[bludgeoning]], Rupture 24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "action->Push 10 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]\nPush 10 feet"
+          "name": "Empujón 10 pies (3 m)"
         }
       }
     },
@@ -585,13 +585,13 @@
           "name": "Puerta"
         },
         "action->Batter": {
-          "name": "Batter",
+          "name": "Batidor",
           "description": "<p>El gabinete se sacude, infligiendo @Damage[(2d10+13)[bludgeoning]] de daño a todas las criaturas que tiene @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado}.</p>"
         }
       }
     },
     "Corazal Aflame": {
-      "name": "Corazal Aflame",
+      "name": "Corazón de Aflame",
       "description": "<p>El fuego quema Corazal y amenaza con extenderse al bosque circundante.</p>",
       "disable": "<p>@Check[nature|dc:30] o @Check[survival|dc:30] (experto) para apagar las llamas o @Check[athletics|dc:32] (experto) para sofocar las llamas; en el sexto prueba exitoso, las llamas se apagan. Lanzar un conjuro de agua no-truco sobre las llamas cuenta como un éxito.</p>",
       "routine": "<p>( 1 acción; fuego) En su turno, el fuego inflige @Damage[(2d8+13)[fire]] de daño a las criaturas en el bosque, más @Damage[6[fire]] de daño adicional a Corazal y cualquier criatura dentro de 15 pies de ellas ( @Check[reflex|dc:29|basic] salva).</p>",
@@ -604,21 +604,21 @@
     },
     "Creeping Cone Swarm": {
       "name": "Enjambre de cono creeping",
-      "publicNotes": "<p>Caustic fluid seeps out from the scales of these sluglike cones, which spawn in unsuspecting hosts until they're mature enough to seek a place to root. Moving in writhing swarms that seek a habitat flush with prey, creeping cones spread Ayrzul's Blight when destroyed, but leaving them to grow unchecked poses a great risk to other creatures.</p>\n<hr />\n<p>The Plane of Wood contains many unique ecosystems formed around species of wondrous trees; when Ayrzul's Blight mutates one of these trees rather than killing it, it can have a cascading effect on the tree's biome. Multiple species often mutate in tandem, becoming warped mockeries and a vector for Ayrzul's Blight. These \"blight bonded\" creature families are parasites and predators and typically form twisted symbiotic relationships.</p>",
+      "publicNotes": "<p>El fluido cáustico se filtra de las escamas de estos conos parecidos a babosos, que desovan en huestes desprevenidos hasta que son lo suficientemente maduros para buscar un lugar donde arraigarse. Moverse en enjambres retorcidos que buscan un hábitat enrojecido con presas, conos arrastrantes se propagan La plaga de Ayrzul cuando son destruidos, pero dejarlos crecer sin control plantea un gran riesgo para otras criaturas.</p>\n<hr />\n<p>El Plano de Madera contiene muchos ecosistemas únicos formados alrededor de especies de árboles maravillosos; cuando La plaga de Ayrzul muta uno de estos árboles en lugar de matarlo, puede tener un efecto en cascada en el bioma del árbol. Múltiples especies a menudo mutan en tándem, convirtiéndose en burlas deformadas y un vector para La plaga de Ayrzul. Estas familias de criaturas \"encadenadas brillantemente\" son parásitos y depredadores y típicamente forman relaciones simbióticas retorcidas.</p>",
       "items": {
         "action->Tremorsense (Imprecise) 60 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense (Imprecise) 60 feet"
         },
         "action->Blight Burst": {
           "name": "Explosión de Blight",
-          "description": "<p><strong>Trigger</strong> The creeping cone swarm is reduced to fewer than half its Hit Points or is reduced to 0 Hit Points</p>\n<hr />\n<p><strong>Effect</strong> A @Template[emanation|distance:15] of acid explodes from the creeping cone swarm. Creatures in the area take @Damage[3d12[acid]|options:area-damage] damage (@Check[reflex|dc:25|basic|options:area-effect] save). Non-blight bonded creatures damaged by this effect are exposed to Ayrzul's Blight.</p>"
+          "description": "<p><strong>Desencadenante</strong> El enjambre de cono rastrero se reduce a menos de la mitad de su Puntos de Golpe o se reduce a 0 Puntos de Golpe</p>\n<hr />\n<p><strong>Efecto</strong> Una @Template[emanation|distance:15] de ácido explota del enjambre de cono rastrero. Las criaturas en el área toman @Damage[3d12[acid]|options:area-damage] daño (@Check[reflex|dc:25|basic|options:area-effect] salvación). Las criaturas no-luz unidas dañadas por este efecto están expuestas a La plaga de Ayrzul.</p>"
         },
         "action->Jagged Scales": {
           "name": "Escalas deshilachadas",
           "description": "<p>Los conos arrastrados sacuden una lluvia de escamas irregulares y pedregosas. Cada criatura en un @Template[burst|distance:10] a 30 pies del enjambre recibe @Damage[(2d12+7)[slashing]|options:area-damage] de daño ( @Check[reflex|dc:29|basic|options:area-effect] de salvación).</p>"
         },
         "action->Pummeling Lurches": {
-          "name": "Pummeling Lurches",
+          "name": "Alforjas de pummeling",
           "description": "<p>Cada enemigo en el espacio del enjambre recibe @Damage[6d6[bludgeoning]] de daño (@Check[fortitude|dc:29|basic] de salvación). Una criatura que falla en su salvación cae @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}.</p>"
         },
         "action->Putrid Spores": {
@@ -628,7 +628,7 @@
       }
     },
     "Cythnophorian": {
-      "name": "Cythnophorian",
+      "name": "Cinnoforiano",
       "publicNotes": "<p>En su estado natural, un citonóforo completamente desarrollado se asemeja a una masa de zarcillos y crecimientos fibrosos aproximadamente del tamaño de un gato doméstico. Aunque totalmente capaz de locomoción en esta forma, un cytnophorian rara vez se encuentra fuera de un huésped, típicamente un cadáver humanoide o animal, en el que la criatura se enterra y anima desde dentro como un títere de carne horrible. Una vez encerrado, el citonóforo busca nuevas víctimas para infectarlas con sus esporas nocivas, tomando el control de sus cuerpos para sus propios fines hasta que sucumben a la toxina mortal y se convierten en incubadoras para nuevos citonóforos.</p>\n<p>Un cadáver de tamaño mediano es típicamente suficiente para mantener a un citonóforo durante dos semanas antes de que deba buscar uno nuevo. Si no puede localizar un nuevo huésped en ese tiempo, la criatura entra en un estado de reposo, retirándose a una vainilla de semillas poco notable del tamaño de un puño de niño, donde puede esperar durante años hasta que una víctima adecuada se presente.</p>\n<h2>Orígenes desconocidos</h2>\n<p>Las opiniones varían en cuanto a la naturaleza exacta de estas criaturas, con muchos estudiosos citando sus similitudes con los parásitos fúngicos conocidos como cytnigots como evidencia de alguna conexión qlippoth. Otros teorizan que comenzaron como una forma natural de vida vegetal que gradualmente se volvió torcida y corrupta, deliberadamente o de otra manera, por la exposición prolongada a las energías sucias de Cyth-V'sug, señor demoníaco de hongos y pudrición.</p>",
       "items": {
         "strike-melee->Tendril": {
@@ -636,19 +636,19 @@
         },
         "action->Horrifying Display": {
           "name": "Horripilante pantalla de visualización",
-          "description": "<p><strong>Trigger</strong> The cythnophorian uses Fungal Possession</p>\n<hr />\n<p><strong>Effect</strong> All creatures in a @Template[emanation|distance:10] must attempt a @Check[will|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure. Affected creatures are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for as long as they're sickened. Once a creature attempts this save, it's temporarily immune for 1 minute.</p>"
+          "description": "<p><strong>Desencadenante</strong> El citnoforiano utiliza Posesión de hongos</p>\n<hr />\n<p><strong>Efecto</strong> Todas las criaturas en un @Template[emanation|distance:10] debe intentar un @Check[will|dc:26] guardar o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1}o @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2} en un fallo crítico. Las criaturas afectadas son @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} Una vez que una criatura intenta esto salvación, es temporalmente inmune durante 1 minuto.</p>"
         },
         "action->Creeping Death": {
           "name": "Muerte reptante",
-          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Onset</strong> 1 round</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[6d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} (1 round)</p>\n<p><strong>Stage 4</strong> @Damage[6d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled} (1 round). A creature that dies while infected with creeping death immediately releases a burst of spores as if using the cythnophorian's Spore Cloud ability. If the corpse is not burned, it rises as the host of a new cythnophorian 12 hours later.</p>"
+          "description": "<p><strong>Tirada de salvación</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Comienzo</strong> 1 asalto</p>\n<p><strong>Etapa 1</strong> @Damage[2d6[poison]] daño y @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1} (1 asalto)</p>\n<p><strong>Etapa 2</strong> @Damage[4d6[poison]] daño y @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} (1 asalto)</p>\n<p><strong>Etapa 3</strong> @Damage[6d6[poison]] daño y @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confundido} (1 asalto)</p>\n<p><strong>Etapa 4</strong> @Damage[6d6[poison]] daño y @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlado} (1 asalto). Una criatura que muere mientras está infectada con una muerte en ciernes libera inmediatamente una ráfaga de esporas como si se utilizara la capacidad de la nube de esporas del cythnophorian. Si el cadáver no se quema, se eleva como el anfitrión de un nuevo cythnophorian 12 horas después.</p>"
         },
         "action->Fungal Possession": {
           "name": "Posesión de hongos",
-          "description": "<p><strong>Requirements</strong> The cythnophorian's last action was a Strike that killed a target of size Medium or smaller</p>\n<hr />\n<p><strong>Effect</strong> The cythnophorian rips itself out of its current host and burrows its way into the corpse of its latest victim, regaining @Damage[3d4[healing]] Hit Points and taking control of the corpse as its new host. The cythnophorian enters the space of its new host, and its former host's corpse falls to the ground in its previous space. Moving to a new host doesn't change the cythnophorian's abilities or movement Speeds.</p>"
+          "description": "<p><strong>Requisitos</strong> La última acción del cythnophorian fue un Golpe que mató a un objetivo de tamaño mediano o menor</p>\n<hr />\n<p><strong>Efecto</strong> El cythnophorian se arranca a sí mismo de su anfitrión actual y se abre camino en el cadáver de su última víctima, recuperando @Damage[3d4[healing]] Puntos de Golpe y tomar el control del cadáver como su nuevo anfitrión. El cythnophorian entra en el espacio de su nuevo anfitrión, y el cuerpo de su antiguo anfitrión cae al suelo en su espacio anterior. Mudándose a un nuevo anfitrión no cambia las habilidades del cythnophorian o el movimiento de las velocidades.</p>"
         },
         "action->Spore Cloud": {
           "name": "Nube De Esporas",
-          "description": "<p>The cythnophorian emits a cloud of toxic spores, exposing all creatures within a @Template[emanation|distance:15] to creeping death. The cythnophorian can't use Spore Cloud again for [[/gmr 1d4 #Recharge Spore Cloud]]{1d4 rounds}.</p>"
+          "description": "<p>El cithnophorian emite una nube de esporas tóxicas, exponiendo a todas las criaturas dentro de un @Template[emanation|distance:15] El cythnophorian no puede usar Nube de Espora otra vez para [[/gmr 1d4 #Recharge Spore Cloud]]{1d4 asaltos}.</p>"
         }
       }
     },
@@ -686,11 +686,11 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.tEP4ajRcD7cr644Z]\n<p><strong>Trigger</strong> The woodblessed is damaged by a creature within their reach</p>\n<hr />\n<p><strong>Effect</strong> Distracted by the pain, the woodblessed's concentration slips and splinters erupt from their body as they temporarily lose control of the planar energy within them. Both the triggering creature and the woodblessed take @Damage[6d6[piercing]] damage, with a @Check[reflex|dc:26|basic] save.</p>"
         },
         "action->Sneak Attack": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The sluagh reaper deals an additional 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+          "description": "<p>El sluagh segador causa 3d6 daño de precisión adicional a las criaturas @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenidas}.</p>"
         },
         "action->Steal Soul": {
           "name": "Robar alma",
-          "description": "<p>The sluagh reaper touches a dying creature or a creature that died within the past 1 hour. If the target is a dying creature, it must attempt a @Check[fortitude|dc:28] save-on a failure, its dying value increases by 1 (2 on a critical failure). If the target is dead, it receives no save and the sluagh imprisons its soul in a small, grimy sack that keeps stolen souls fresh.</p>\n<p>The sack is magically locked. Any sluagh can open it without difficulty, but any others must @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick the Lock} (@Check[thievery|dc:35|traits:action:pick-a-lock]) or use @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th rank; counteract DC 32). A creature can Interact to empty an unlocked sack, which frees the souls but doesn't return them to life. While a soul is imprisoned, it can't be brought back to life by any means short of a @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish} or @UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{Miracle}. The sack can hold 12 souls at a time. Sluagh reapers typically attempt to return the souls to a queen so she can devour them.</p>"
+          "description": "<p>El sluagh segador toca a una criatura viva o a una criatura que murió en la última hora. Si el objetivo es una criatura moribunda, esta debe tener éxito en una salvación de @Check[fortitude|dc:28] (con un fallo su valor de moribunda aumenta en 1, en 2 con un fallo crítico). Si el objetivo está muerto, no tiene salvación y el sluagh aprisiona su alma en un saquillo mugriento que la mantiene fresca.</p>\n<p>El saco está cerrado mágicamente. Cualquier sluagh puede abrirlo sin dificultad, pero cualquier otro debe tener éxito en @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Forzar cerradura} o utilizar @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (5.º rango; contrarrestar CD 32). Una criatura puede interactuar para vaciar un saco abierto, lo que libera las almas, pero no les devuelve la vida. Mientras el alma está apresada, no puede volver a la vida por nada menor a un @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Deseo} o @UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{Milagro}. El saco puede contener 12 almas a la vez. Los sluagh segadores tratan de llevar las almas a su reina para que pueda devorarlas.</p>"
         },
         "action->Tap Planar Gate": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.sQ2nzNDLMdGqECm6]\nTap Planar Gate",
@@ -743,16 +743,16 @@
           "name": "Garra"
         },
         "action->Battering Frill": {
-          "name": "Battering Frill",
+          "name": "Frill de bateo",
           "description": "<p><strong>Desencadenante</strong> Una criatura al alcance de la durnolita falla la durnolita con un Golpe</p>\n<hr /> <p><strong>Efecto</strong> El durnolito Golpea al atacante con su volante blindado. Si el golpe golpea, el durnolith empuja automáticamente el objetivo 10 pies.</p>"
         },
         "action->Battering Charge": {
           "name": "Carga de Battering",
-          "description": "<p>The durnolith Strides twice in a straight line and then makes an armored frill Strike. As long as it moved at least 10 feet, it gains a +2 circumstance bonus to its attack roll and the strike gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.6l7e7CHQLESlI57U]{Improved Push} 10 feet.</p>"
+          "description": "<p>El durnolito Zancadas dos veces en línea recta y luego hace un volante blindado Golpe. Mientras se mueva al menos 10 pies, gana un +2 bonificador por circunstancia a su rollo de ataque y las ganancias de huelga @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.6l7e7CHQLESlI57U]{Mejorado Empujar} 10 pies.</p>"
         },
         "action->Pain-Fueled Roar": {
           "name": "Rugido alimentado por el dolor",
-          "description": "<p>The durnolith unleashes a roar of pain and fury. The durnolith attempts a single Intimidation check to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} all living creatures within 60 feet that can hear the durnolith. Roll once and apply the results to all creatures. Each creature is then temporarily immune for 1 minute.</p>"
+          "description": "<p>El durnolito desata un rugido de dolor y furia. El durnolito intenta un solo cheque de la Intimidación para @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Desmoralizar} todas las criaturas vivientes dentro de 60 pies que pueden oír el durnolito. Rodar una vez y aplicar los resultados a todas las criaturas. Cada criatura es entonces temporalmente inmune durante 1 minuto.</p>"
         }
       }
     },
@@ -764,14 +764,11 @@
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Hechizos innatos primordiales"
         },
-        "spell->Reincarnate": {
-          "secondarycheck": "Occultism,  Religion"
-        },
         "spell->Speak with Plants (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]\nSpeak with Plants (Constant)"
         },
         "spell->Heartbond": {
-          "cost": "fine wine and a set of matching rings or other tokens worth 40 gp total"
+          "cost": "Vino fino y un juego de anillos a juego u otras fichas por valor de 40 gp total"
         },
         "spell->Speak with Animals (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.BBvV7qoXGdw09q1C]\nSpeak with Animals (Constant)"
@@ -788,14 +785,14 @@
         },
         "action->Read Nature's Omens": {
           "name": "Leer Naturaleza's Omens",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Emorga can see a naturally occurring pattern such as ripples in a pond, a murmuration of birds wheeling across the sky, or a tangle of interwoven vines and flowers</p>\n<hr />\n<p><strong>Effect</strong> Emorga spends 1 hour contemplating the pattern to receive a brief glimpse of possible futures, optionally posing a question about a specific person, place, or event. She attempts a @Check[nature|dc:30] or @Check[Soothsaying Lore|dc:30] check.</p>\n<hr />\n<p><strong>Critical Success</strong> Emorga receives a helpful premonition of one significant event that is to occur within one week. If she specified a specific subject, the premonition relates specifically to events affecting or involving that subject. These visions might be partial or unclear, but they are never purposely misleading.</p>\n<p><strong>Success</strong> As critical success, but Emorga can only receive visions of events that will occur within the next [[/gmr 1d4 #days]]{1d4 days}.</p>\n<p><strong>Failure</strong> Emorga receives no vision, or receives a vision of something insignificant or unrelated to her subject.</p>\n<p><strong>Critical Failure</strong> Emorga incorrectly interprets the omens and receives a false vision. Treat as a critical success, but the vision is either wholly inaccurate or presented in a way that actively distorts its meaning.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Emorga puede ver un patrón natural como ondas en un estanque, una murmuración de aves que recorren el cielo, o un enredo de vides y flores entretejidas</p>\n<hr />\n<p><strong>Effect</strong> Emorga spends 1 hour contemplating the pattern to receive a brief glimpse of possible futures, optionally posing a question about a specific person, place, or event. She attempts a @Check[nature|dc:30] or @Check[Soothsaying Lore|dc:30] check.</p>\n<hr />\n<p><strong>Critical Success</strong> Emorga recibe una premonición útil de un evento significativo que va a ocurrir en el plazo de una semana. Si ella especifica un tema específico, la premonición se refiere específicamente a eventos que afectan o involucran a ese tema. Estas visiones pueden ser parciales o poco claras, pero nunca son engañosas a propósito.</p>\n<p><strong>Success</strong> Como éxito crítico, pero Emorga sólo puede recibir visiones de eventos que ocurrirán dentro de la próxima [[/gmr 1d4 #days]]{1d4 days}.</p>\n<p><strong>Failure</strong> Emorga receives no vision, or receives a vision of something insignificant or unrelated to her subject.</p>\n<p><strong>Critical Failure</strong> Emorga interpreta incorrectamente los augurios y recibe una visión falsa. Tratar como una éxito crítico, pero la visión es totalmente inexacta o se presenta de una manera que distorsiona activamente su significado.</p>"
         },
         "action->Take Cover": {
           "name": "Ponerse a cubierto",
           "description": "<p>Emorga se retira en su caparazón, protegiendo su cabeza y extremidades de daño. No puede moverse ni atacar mientras está en este estado, pero gana un bonificador de +4 a la CA y resistencia 10 a los ataques físicos. Puede terminar el estado como una acción única.</p>"
         },
         "action->Trample": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Large or smaller, foot, @Check[reflex|dc:25|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+          "description": "<p>Grande o más pequeña, pata, @Check[reflex|dc:25|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
         },
         "lore->Soothsaying Lore": {
           "name": "Saber (adivinación)"
@@ -803,7 +800,7 @@
       }
     },
     "Eyelet": {
-      "name": "Eyelet",
+      "name": "Ojillo",
       "languages": "No puedo hablar ningún idioma",
       "publicNotes": "<p>Un ojo solitario es de poca amenaza y se esfuerza por operar en secreto.</p>\n<hr /> <p>Los Eyelets son pequeñas criaturas parecidas a murciélagos con alas de sombra y sensores mágicos de escucha incrustados en sus torsos. Utilizan estos sensores similares a los ojos para registrar eventos cercanos, ganando sustento en el proceso.</p>\n<h2>Estación de Scrying</h2>\n<p>Los ojitos viven en bandadas, anidando en una estación central de observación para la seguridad y la camaradería. En estas estaciones, los eventos que los ojales presencian son almacenados y vistos, y los sensores de escrying de los ojales son borrados. Los ojales salvajes suelen usar edificios abandonados o sistemas de cuevas protegidas como estaciones de observación. Los ojales en Gloaming Arbor trabajan para Avathrael y están vinculados con la aguja de los ojales (área <strong>T</strong> ).</p>",
       "items": {
@@ -812,11 +809,11 @@
         },
         "action->Send Signal": {
           "name": "Enviar señal",
-          "description": "<p>The eyelet sends an emergency signal through its scrying sensor to a linked scrying station (see Witness) up to 10 miles away. This transmits the eyelet's distance and direction from the station at the time of sending.</p>"
+          "description": "<p>El ojo envía una señal de emergencia a través de su sensor de escrying a una estación de escrying vinculada (ver testigo) hasta 10 millas de distancia. Esto transmite la distancia y dirección del ojo desde la estación en el momento del envío.</p>"
         },
         "action->Witness": {
           "name": "Testigo",
-          "description": "<p>The eyelet records whatever it perceives, storing it in an embedded, marble-sized sensor. The eyelet can record up to 1 hour of events, starting and stopping across a longer period. Removing the sensor erases its records. An eyelet can transfer everything it has recorded up to 10 miles to its linked scrying station, where the recordings are collected and can be viewed. Doing so empties the sensor so it can be used again. An eyelet can link, or sever its link, to a scrying station as a 10-minute activity with the concentrate trait.</p>"
+          "description": "<p>El ojo registra lo que percibe, almacenándolo en un sensor integrado del tamaño de una canica. El ojo puede grabar hasta 1 hora de eventos, comenzando y deteniendo durante un período más largo. Al quitar el sensor se borran sus registros. Un ojo puede transferir todo lo que ha grabado hasta 10 millas a su estación de escrying vinculada, donde las grabaciones se recogen y se pueden ver. Al hacerlo, se vacía el sensor para que pueda usarse de nuevo. Un ojo puede enlazar, o romper su enlace, a una estación de escrying como una actividad de 10 minutos con el rasgo concentrado.</p>"
         }
       }
     },
@@ -852,25 +849,21 @@
       "stealth": "<p>(experto)</p>",
       "items": {
         "action->Tool Volley": {
-          "name": "Tool Volley",
+          "name": "Herramienta Volley",
           "description": "<p><strong>Desencadenante</strong> Una criatura viva se acerca a 15 pies de la trampa</p>\n<hr /> <p><strong>Efecto</strong> La trampa hace un Golpe de herramienta contra la criatura que la desencadenó. La trampa entonces lanza la iniciativa.</p>"
-        },
-        "strike-melee->Tool": {
-          "name": "Tool",
-          "description": "<p>no multiple attack penalty</p>"
-        },
-        "action->Continuous Barrage": {
-          "name": "Descarga continua",
-          "description": "<p><strong>Desencadenante</strong> Una criatura a menos de 15 pies termina una acción</p>\n<hr /> <p><strong>Efecto</strong> La trampa hace un Golpe de herramienta contra la criatura que la desencadenó.</p>"
         },
         "strike-ranged->Tool": {
           "name": "Herramienta",
           "description": "<p> No se aplica ningún MAP a los ataques realizados con guadaña </p>"
+        },
+        "action->Continuous Barrage": {
+          "name": "Descarga continua",
+          "description": "<p><strong>Desencadenante</strong> Una criatura a menos de 15 pies termina una acción</p>\n<hr /> <p><strong>Efecto</strong> La trampa hace un Golpe de herramienta contra la criatura que la desencadenó.</p>"
         }
       }
     },
     "Glitterspore": {
-      "name": "Glitterspore",
+      "name": "Espora reluciente",
       "publicNotes": "<p>Una espora de brillo es una colonia de esporas de moho que funcionan como un conglomerado sin sentido pero astuto. Compuesto por esporas afiladas que brillan hipnóticamente, este hongo insidioso adopta la apariencia de plantas para atraer a sus presas, alterando su forma y coloración para personificar perfectamente una variedad de flora.</p>\n<p>Ghorus diseñó las esporas de brillo para ser perniciosas y mortales. Pueden obtener su sustento de una variedad de fuentes, incluyendo la luz solar y el suelo, pero su fuente de alimento preferida es la sangre. Cuando es posible, las esporas de brillo entran en sus presas a través de orificios abiertos o excavando directamente en su carne. Luego consumen a su presa desde el interior, cortando el músculo y el hueso para bañarse en sangre.</p>\n<h2>Living Legacy</h2>\n<p>Mientras Ghorus y sus seguidores están muertos desde hace mucho tiempo, muchas de las creaciones de Ghorus viven, incluyendo mortales criaturas vegetales como la espora de brillo, armas peligrosas y, por supuesto, los gorans. Desde el corazón del Bosque Verduran, estas exitosas creaciones y experimentos a medio terminar se han extendido por todo Golarion.</p>",
       "items": {
         "action->Tremorsense (Precise) 60 Feet": {
@@ -878,23 +871,23 @@
         },
         "action->Fascinating Mimicry": {
           "name": "Fascinante mimetismo",
-          "description": "<p>30 feet. While a glitterspore mimics a plant, its glittering spores and vibrant colors make it unnaturally beautiful. A creature that starts its turn in the aura must succeed at a @Check[will|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the glitterspore for 1 round. This aura activates automatically when a glitterspore uses Plant Mimicry, and it deactivates when the glitterspore reverts to its natural form.</p>"
+          "description": "<p>30 Mientras que un glitterspore imita a una planta, sus esporas brillantes y colores vibrantes lo hacen antinaturalmente hermoso. Una criatura que comienza su turno en el aura debe tener éxito en un @Check[will|dc:23] guardar o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} por el purpurina para 1 asalto. Este aura se activa automáticamente cuando un purpurina utiliza Mimetismo de plantas y se desactiva cuando el purpurina vuelve a su forma natural.</p>"
         },
         "action->Burrowing Spores": {
           "name": "Esporas de enterramiento",
-          "description": "<p>Each enemy in the glitterspore's space takes @Damage[4d8[piercing]] damage (@Check[reflex|dc:26|basic] save) and is exposed to spore rot.</p>"
+          "description": "<p>Cada enemigo en el espacio de los purpurina toma @Damage[4d8[piercing]] daño (@Check[reflex|dc:26|basic] salvación) y está expuesto a la podredumbre de la espora.</p>"
         },
         "action->Invade": {
           "name": "Invasión",
-          "description": "<p>The glitterspore enters the ears, mouth, and nostrils of a living non-fungus or non-plant creature, then bursts out through their flesh. One enemy in the glitterspore's space takes @Damage[7d8[piercing]] damage (@Check[reflex|dc:26|basic] save). On a failed save, the target also takes @Damage[1d8[persistent,bleed]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>"
+          "description": "<p>El purpurina entra en los oídos, boca y nariz de una criatura viviente no fungosa o no plantada, y luego estalla a través de su carne. Un enemigo en el espacio del purpurina toma @Damage[7d8[piercing]] daño (@Check[reflex|dc:26|basic] salvación). En un fallo salvación, el objetivo también toma @Damage[1d8[persistent,bleed]] daño y es @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}.</p>"
         },
         "action->Plant Mimicry": {
           "name": "Mimetismo de plantas",
-          "description": "<p>The glitterspore reconfigures its component spores to assume the shape and appearance of another plant, such as a flower bed, shrubbery, tree, or topiary. This doesn't change the glitterspore's texture or overall size but does alter its coloration and appearance. The glitterspore has an automatic result of 29 (33 in gardens, forests, or swamps) on Deception checks and DCs to pass as a non-creature plant. The glitterspore stays in this shape until it takes an action.</p>"
+          "description": "<p>El purpurina reconfigura sus esporas componentes para asumir la forma y apariencia de otra planta, como un lecho de flores, arbustos, árboles o topiares. Esto no cambia la textura del purpurina o tamaño total, sino que altera su coloración y apariencia. El purpurina tiene un resultado automático de 29 (33 en jardines, bosques o pantanos) en los controles de Decepción y DCs para pasar como una planta no-creativa. El purpurina permanece en esta forma hasta que toma una acción.</p>"
         },
         "action->Spore Cloud": {
           "name": "Nube De Esporas",
-          "description": "<p>A glitterspore unleashes a cloud of sparkling, hypnotic spores in a @Template[type:burst|distance:60]{60-foot-radius burst}. Each creature in the area is exposed to spore rot and must succeed at a @Check[will|dc:26|options:inflicts:fascinated] save or be @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+          "description": "<p>Un purpurinaje desata una nube de esporas hipnóticas y brillantes en un @Template[type:burst|distance:60]{60-pie-radio explosión}. Cada criatura en la zona está expuesta a la podredumbre de la espora y debe tener éxito en un @Check[will|dc:26|options:inflicts:fascinated] salvación o @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinado} para [[/gmr 1d4 #rounds]]{1d4 asaltos}.</p>"
         },
         "action->Spore Rot": {
           "name": "Spore Red",
@@ -903,7 +896,7 @@
       }
     },
     "Gritblight": {
-      "name": "Gritblight",
+      "name": "Plaga de grava",
       "publicNotes": "<p>Parecidos a pedazos retorcidos de grava fundida con extremidades cristalinas extrañamente inclinadas, los gritblights son tropas de choque que Ayrzul utiliza comúnmente para sembrar el terror y la enfermedad entre sus enemigos. Estas criaturas son el resultado de experimentos con elementales cristalinos que fueron aliados o sirvientes del señor rival de Ayrzul, Sairazul, el señor de la tierra elemental. Sus partes cristalinas del cuerpo parecen agrietadas y deformadas, solo su único \"ojo\" quedó intacto.</p>",
       "saveDetails": "+1 estado vs. efectos de la tierra",
       "senses": "Sentido de la enfermedad (preciso) 60 pies, visión de grano",
@@ -916,10 +909,10 @@
           "name": "Fragmento cáustico"
         },
         "action->Tremorsense (Imprecise) 120 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense (Imprecise) 120 feet"
+          "name": "Sentido de la vibración (impreciso) 120 pies (36 m)"
         },
         "action->Blight Sense": {
-          "name": "Blight Sense",
+          "name": "Sensación de la mancha",
           "description": "<p>Un gritblight puede detectar la ubicación de criaturas cercanas afectadas por Ayrzul's Blight como un sentido preciso en el rango listado.</p>"
         },
         "action->+1 Status to Saves vs. Earth Effects": {
@@ -973,8 +966,8 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The bear deals 2d6 extra precision damage to creatures who are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>"
         },
         "action->Vitriol": {
-          "name": "Vitriol",
-          "description": "<p>The hateful bear vomits a stream of caustic black sludge at a single foe it can detect within 15 feet. The bear and the target each gain a +1 circumstance bonus on all attack rolls made against each other until the bear chooses a different target for its Vitriol. The target must attempt a @Check[will|dc:22] save, with the following effects. The bear cannot use Vitriol again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The target's mind is clouded by feelings of rage and hate, causing it to be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the bear's next attack. It can't use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Failure</strong> As success, but the target is off-guard until the end of the bear's next turn. While off-guard, it is unable to use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is off-guard until the bear chooses a different target for its Vitriol.</p>"
+          "name": "Vitriolo",
+          "description": "<p>El oso odioso vomita una corriente de lodo negro cáustico en un solo enemigo que puede detectar dentro de 15 pies. El oso y el objetivo cada uno ganan un +1 bonificador por circunstancia en todos los rollos de ataque hechos uno contra el otro hasta que el oso elige un blanco diferente para su Vitriol. @Check[will|dc:22] salvación, con los siguientes efectos. El oso no puede utilizar Vitriol de nuevo para [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> La mente del objetivo está nublada por sentimientos de rabia y odio, causando que sea @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} No puede usar Acciones con el rasgo de concentrado a menos que también tengan el rasgo de rabia.</p>\n<p><strong>Failure</strong> Como éxito, pero el objetivo es desprevenido hasta el final del siguiente turno del oso. Mientras que desprevenido, no es capaz de utilizar Acciones con el rasgo de concentración a menos que también tienen el rasgo de rabia.</p>\n<p><strong>Critical Failure</strong> Como fallo, pero el objetivo es desprevenido hasta que el oso elige un objetivo diferente para su Vitriol.</p>"
         }
       }
     },
@@ -1014,8 +1007,8 @@
           "description": "<p>El hodag da pasos, luego hace un Golpe contra un objetivo al alcance. Si se mueve al menos 20 pies y tiene éxito en su Golpe, el hodag inflige daño normalmente y luego intenta un chequeo @Check[athletics|defense:fortitude] contra la CD de Fortaleza de la criatura para lanzar al enemigo al aire.</p>\n<p>En un éxito, la criatura lanzada es lanzada 10 pies en una línea recta en la dirección de la elección del hodag y luego aterriza @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}. Si la criatura es golpeada contra un objeto sólido, también recibe @Damage[1d6[bludgeoning]] de daño antes de aterrizar boca abajo. El hodag puede en cambio lanzar una criatura directamente en el aire. La criatura aterriza en el mismo cuadrado donde comenzó, recibe @Damage[1d6[bludgeoning]] de daño y aterriza con la cabeza hacia abajo.</p>"
         },
         "action->Vitriol": {
-          "name": "Vitriol",
-          "description": "<p>The hateful hodag vomits a stream of caustic black sludge at a single foe it can detect within 15 feet. The hodag and the target each gain a +1 circumstance bonus on all attack rolls made against each other until the hodag chooses a different target for its Vitriol. The target must attempt a @Check[will|dc:22] save, with the following effects. The hodag cannot use Vitriol again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The target's mind is clouded by feelings of rage and hate, causing it to be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the hodag's next attack. It can't use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Failure</strong> As success, but the target is off-guard until the end of the hodag's next turn. While off-guard, it is unable to use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is off-guard until the hodag chooses a different target for its Vitriol.</p>"
+          "name": "Vitriolo",
+          "description": "<p>El odioso hodag vomita un flujo de lodo negro cáustico en un solo enemigo que puede detectar dentro de 15 pies. El hodag y el objetivo cada uno ganan un +1 bonificador por circunstancia en todos los rollos de ataque hechos uno contra el otro hasta que el hodag elige un objetivo diferente para su Vitriol. @Check[will|dc:22] salvación, con los siguientes efectos. El hodag no puede usar Vitriol de nuevo para [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> La mente del objetivo está nublada por sentimientos de rabia y odio, causando que sea @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} No puede usar Acciones con el rasgo de concentración a menos que también tengan el rasgo de rabia.</p>\n<p><strong>Failure</strong> Como éxito, pero el objetivo es desprevenido hasta el final del siguiente turno del hodag. Mientras que desprevenido, no puede usar Acciones con el rasgo de concentrado a menos que también tengan el rasgo de rabia.</p>\n<p><strong>Critical Failure</strong> Como fallo, pero el objetivo es desprevenido hasta que el hodag elige un objetivo diferente para su Vitriol.</p>"
         }
       }
     },
@@ -1036,8 +1029,8 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The logger deals 1d6 extra precision damage to creatures who are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>"
         },
         "action->Vitriol": {
-          "name": "Vitriol",
-          "description": "<p>The hateful logger vomits a stream of caustic black sludge at a single foe it can detect within 15 feet. The logger and the target each gain a +1 circumstance bonus on all attack rolls made against each other until the logger chooses a different target for its Vitriol. The target must attempt a @Check[will|dc:19] save, with the following effects. The logger cannot use Vitriol again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The target's mind is clouded by feelings of rage and hate, causing it to be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the logger's next attack. It can't use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Failure</strong> As success, but the target is off-guard until the end of the logger's next turn. While off-guard, it is unable to use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is off-guard until the logger chooses a different target for its Vitriol.</p>"
+          "name": "Vitriolo",
+          "description": "<p>El logger odioso vomita un flujo de lodo negro cáustico en un solo enemigo que puede detectar dentro de 15 pies. El logger y el objetivo cada uno ganan un +1 bonificador por circunstancia en todos los rollos de ataque hechos uno contra el otro hasta que el logger elige un objetivo diferente para su Vitriol. El objetivo debe intentar un @Check[will|dc:19] salvación, con los siguientes efectos. El registrador no puede usar Vitriol de nuevo para [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> La mente del objetivo está nublada por sentimientos de rabia y odio, causando que sea @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} No puede usar Acciones con el rasgo de concentrado a menos que también tengan el rasgo de rabia.</p>\n<p><strong>Failure</strong> Como éxito, pero el objetivo es desprevenido hasta el final del siguiente turno del registrador. Mientras que desprevenido, no puede usar Acciones con el rasgo de concentrado a menos que también tengan el rasgo de rabia.</p>\n<p><strong>Critical Failure</strong> Como fallo, pero el objetivo es desprevenido hasta que el registrador elija un objetivo diferente para su Vitriol.</p>"
         },
         "lore->Forest Lore": {
           "name": "Conocimiento del bosque"
@@ -1189,7 +1182,7 @@
       }
     },
     "Leshy Mob": {
-      "name": "Leshy Mob",
+      "name": "Turba de leshy",
       "hpDetails": "Umbrales 130 (3 segmentoos), 65 (2 segmentoos)",
       "languages": "hablar con las plantas",
       "publicNotes": "<p>Un solo leshy es una molestia. Una horda de leches es un desastre natural. Cuando se enfrentan a amenazas existenciales o a una devastación ecológica maliciosa, los líderes leshy carismáticos pueden reunir a sus parientes en una turba. Estas bandas a menudo incluyen varios tipos de leshy, creando un huésped de trapo que puede comunicarse y extraer energía de casi cualquier planta en su camino. Cuanto más lejos viajan, mayor se vuelve el sentido de cohesión de la multitud, despertando gradualmente una mente empática de colmena, cambio de forma coordinado y conjuros comunes mucho más allá de lo que cualquier individuo podría lograr.</p>\n<p>Las criaturas Leshy rara vez sobreviven a lo que las reunió en primer lugar. Después de saquear un campamento de madera o liberar el contenido de un invernadero, los leshies gradualmente se libran de su mentalidad de mafia, a menudo con algún shock o vergüenza al reconocer cualquier crimen que acaban de cometer. Aunque los leshios se dispersan, a menudo conservan un débil sentido de camaradería con sus viejos compañeros, lo que hace más fácil que se reúnan de nuevo para enfrentar futuras amenazas.</p>\n<hr /> <p>A pesar de sus apariencias lindas y sus pretensiones inofensivas, los lechitos pueden convertirse en una fuerza formidable cuando se les enfada. Además, los leshios pueden crecer más grandes, más fuertes y más agresivos en regiones ricas en energía primordial. A continuación se presentan varias amenazas de leshy de nivel superior que crecen en bosques primordiales.</p>",
@@ -1207,14 +1200,14 @@
         },
         "action->Verdant Burst": {
           "name": "Explosión verde",
-          "description": "<p>When a leshy mob's Hit Points reach a threshold that would reduce its size, a burst of primal energy explodes from the fallen leshies and empowers the surviving fighters. The leshy mob gains [[/r 4d8]] temporary Hit Points that last for 10 minutes. In addition, all squares within 5 feet of the troop become filled with various plants, becoming difficult terrain. If the environment is not a viable environment for these plants, they wither after 24 hours.</p>"
+          "description": "<p>Cuando una turba leshy Puntos de Golpe alcanza un umbral que reduciría su tamaño, una explosión de energía primaria explota de los leshies caídos y empodera a los combatientes sobrevivientes. [[/r 4d8]] Puntos de Golpe temporales que duran 10 minutos. Además, todos los cuadrados dentro de 5 pies de la tropa se llenan de varias plantas, convirtiéndose en terreno difícil. Si el medio ambiente no es un ambiente viable para estas plantas, se marchitan después de 24 horas.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The leshies can transform into an assortment of Small plants that fills a @Template[burst|distance:15] centered on any one square the leshy mob occupies, creating difficult terrain. When the leshies return to their natural form, they Form Up anywhere within the burst. This otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
         },
         "action->One with the Foliage": {
           "name": "Uno con el follaje",
-          "description": "<p>The leshy mob ignores difficult terrain caused by plants and fungi, and it treats greater difficult terrain from such sources as difficult terrain.</p>"
+          "description": "<p>La turba leshy ignora el terreno difícil causado por plantas y hongos, y trata el terreno más difícil de tales fuentes como terreno difícil.</p>"
         },
         "action->Rain of Seeds": {
           "name": "Lluvia de semillas",
@@ -1222,10 +1215,10 @@
         },
         "action->Troop Movement": {
           "name": "Movimiento de tropas",
-          "description": "<p>Whenever the leshy mob Strides, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to their Speed. This works just like a Gargantuan creature moving; for instance, if any square of the troop enters difficult terrain, the extra movement cost applies to the whole troop.</p>"
+          "description": "<p>Cuando la turba de leshy usa Zancada, primero usa Formar como acción gratuita para concentrarse en un área de 20 pies por 20 pies (menos las casillas que falten), y después se mueve hasta su Velocidad. Esto funciona igual que el movimiento de una criatura Gargantuesca; por ejemplo, si alguna casilla de la tropa entra en terreno difícil, el coste de movimiento adicional se aplica a toda la tropa.</p>"
         },
         "action->Veggielante Justice": {
-          "name": "Veggielante Justice",
+          "name": "Veggielante Justicia",
           "description": "<p><span class=\"action-glyph\">1</span> a <span class=\"action-glyph\">3</span></p>\n<p><strong>Frecuencia</strong> una vez por asaltos</p>\n<hr /> <p><strong>Efecto</strong> Los lechitos atacan a cada criatura enemiga dentro de 5 pies, con un @Check[reflex|dc:30|basic|options:area-effect] salvación. El daño depende del número de acciones.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[3d8[untyped]|options:area-damage] daño</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+11)[untyped]|options:area-damage] daño</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+16)[untyped]|options:area-damage] daño</p>"
         }
       }
@@ -1239,7 +1232,7 @@
       "stealth": "<p>(experto)</p>",
       "items": {
         "action->Lurching Lichen": {
-          "name": "Lurching Lichen",
+          "name": "Liquen tambaleante",
           "description": "<p><strong>Desencadenante</strong> Tres o más criaturas no infectadas con sanguíneo entran en el área de peligro;</p>\n<hr /> <p><strong>Efecto</strong> La masa de líquenes se mueve hacia adelante, ocupando un 5-pie cuadrado y formando una forma parecida a una bestia. El peligro rueda la iniciativa.</p>"
         }
       }
@@ -1265,7 +1258,7 @@
         },
         "weapon->Sally Sharp-tongue": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nOFcCidD5AwVZWTv]\nSally Sharp-tongue",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.nOFcCidD5AwVZWTv]\n<p>A war razor is an exaggerated version of the barbers' tool. It is a brittle but extremely sharp weapon that is very easy to slip into a pocket or sleeve.</p>"
+          "description": "<p>A war razor is an exaggerated version of the barbers' tool. It is a brittle but extremely sharp weapon that is very easy to slip into a pocket or sleeve.</p>"
         },
         "equipment->Unmemorable Mantle": {
           "rules": {
@@ -1275,7 +1268,7 @@
           }
         },
         "strike-melee->Sally Sharp-tongue": {
-          "name": "Sally Sharp-tongue"
+          "name": "Sally Lengua aguda"
         },
         "action->Ghastly Visage": {
           "name": "El rostro horrible",
@@ -1293,8 +1286,8 @@
           "description": "<p><strong>Desencadenante</strong> Lloyd usa Vault</p>\n<hr /> <p><strong>Efecto</strong> Lloyd se convierte en @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} para la asaltos 1.</p>"
         },
         "action->Vault": {
-          "name": "Vault",
-          "description": "<p>Lloyd jumps up to 20 feet in any direction, including vertically. This movement doesn't trigger reactions based on movement.</p>"
+          "name": "Saltar",
+          "description": "<p>Lloyd salta hasta 20 pies en cualquier dirección, incluso verticalmente. Este movimiento no desencadena reacciones basadas en el movimiento.</p>"
         }
       }
     },
@@ -1328,7 +1321,7 @@
       }
     },
     "Ogre Bully": {
-      "name": "Ogre Bully",
+      "name": "Ogro Bully",
       "blurb": "Guerrero de ogro",
       "publicNotes": "<p>Los más cortos de luces de los ogros son masas de músculo, con los ojos llenos de odio, el rostro contrahecho y el cuerpo malformado. Siempre dispuestos a causar la muerte y la destrucción, los ogros combatientes se vuelven rápidamente contra los suyos en cuanto hay escasez de gente más pequeña a la que atormentar, por lo que quienes los dirigen hacen todo lo que pueden para mantenerlos constantemente distraídos con nuevas oportunidades de incursiones y destrozos.</p>\n<hr />\n<p>Para muchas sociedades, los ogros personifican la brutalidad, la violencia amoral y la crueldad avariciosa. De 10 pies (3 m) de altura y densamente musculados, suelen ser tan fuertes como crueles. Los peores son sádicos que disfrutan del asesinato, la tortura y la violencia en todas sus formas, sin remordimiento alguno. Aunque prefieren desahogar sus impulsos violentos contra otros humanoides (cuanto más pequeños, mejor) la cautividad a manos de un ogro puede acabar de forma terrorífica para cualquiera lo suficientemente desafortunado: siendo su cena. Pero con todo y su gran creatividad a la hora de infligir dolor, a menudo olvidan que sus juguetes carecen de su propia y robusta fortaleza y de su elevada tolerancia al dolor, por lo que muchos de sus cautivos mueren antes de lo que ellos querrían. Mientras tanto, quienes consiguen sobrevivir a la cautividad en la despensa de un ogro a menudo salen de la misma con cicatrices mentales duraderas. Sin embargo, un cautivo capaz de mantenerse alerta puede a veces engañar a los brutos prometiéndoles tesoro, fuentes de alimentación más abundantes u otras crudas diversiones, sacando partido de la inteligencia (a menudo limitada) del ogro para ingeniarse oportunidades de huir o de vengarse.</p>\n<p>Se reúnen en grupos llamados familias, aunque sus miembros no siempre tienen consanguinidad. El ogro más poderoso de cualquier familia es el «jefe», por lo general el patriarca o la matriarca de la familia, a quien los demás aprenden a obedecer rápidamente, so pena de ser apalizados por los leales a aquél. Los ogros anidan en cavernas, ruinas desmoronadas o cabañas dilapidadas, lo suficientemente cerca de los asentamientos humanoides o de los senderos de caza como para que les sea fácil hacer incursiones. Sus guaridas son asquerosas y frecuentemente contienen evidencias demasiado reconocibles de su depravación, junto a tesoros surtidos robados a cautivos del pasado.</p>",
       "items": {
@@ -1356,7 +1349,7 @@
     },
     "Ohancanu": {
       "name": "Ohancanu",
-      "publicNotes": "<p>Ohancanus are gigantic fey who delight in destruction. It's not necessarily the sadistic torment of others they enjoy, but living in a devastated landscape seems to bring them peace. Despite their destructive drive, ohancanus are like wildfires: their damage often clears the way for new growth.</p>\n<p>Ohancanus resemble cyclopes, and they're covered in untamed hair. Scattered across their hirsute forms, each ohancanu has a few conspicuously white hairs. These are extremely sensitive and seem to anchor some part of an ohancanu's essence, wracking them with nausea and weakness if ever plucked.</p>\n<p>Though they habitually raze wildernesses, ohancanus rely on old growth forests for reproduction. When an ohancanu grows old, their companions murder and dissect them, planting their organs among the roots of the oldest trees around. About a year later, some of these organs sprout into young ohancanus who tear themselves free and seek out companions. From their first moments they understand language and basic survival skills, suggesting each generation retains some portion of their butchered progenitors' memories.</p>\n<h2>Riddles And Rage</h2>\n<p>Ohancanus delight in destroying wordplay almost as much as they love demolishing architecture. A clever riddle can captivate an ohancanu and even halt their rampage. However, such a tactic rarely provide more than a brief opportunity for escape; once an ohancanu solves the puzzle or grows frustrated, their destruction resumes.</p>",
+      "publicNotes": "<p>Ohancanus son fey gigantes que se deleitan en la destrucción. No es necesariamente el tormento sádico de otros que disfrutan, pero vivir en un paisaje devastado parece traerles paz. A pesar de su impulso destructivo, ohancanus son como incendios forestales: sus daño a menudo abre el camino para un nuevo crecimiento.</p>\n<p>Ohancanus se asemejan a los cíclopes, y están cubiertos de cabello indómito. Dispersos a través de sus formas hirsutas, cada oancanus tiene unos pocos pelos notablemente blancos. Estos son extremadamente sensibles y parecen anclar alguna parte de la esencia de un oancan, afligiéndolos con náuseas y debilidad si alguna vez arrancada.</p>\n<p>Aunque habitualmente arrasan los desiertos, ohancanos dependen de los bosques de crecimiento para la reproducción. Cuando un ohancano envejece, sus compañeros los matan y diseccionan, plantando sus órganos entre las raíces de los árboles más antiguos de alrededor. Alrededor de un año después, algunos de estos órganos brotan en el joven ohancano que se liberan y buscan compañeros. Desde sus primeros momentos entienden el lenguaje y las habilidades básicas de supervivencia, sugiriendo que cada generación retiene alguna parte de los recuerdos de sus progenitores carniceros.</p>\n<h2>Enigmas y Furia</h2>\n<p>Ohancanus se deleitan en destruir el juego de palabras casi tanto como les encanta demoler la arquitectura. Un enigma inteligente puede cautivar a un oancancanu e incluso detener su descontrol. Sin embargo, tal táctica rara vez proporciona más que una breve oportunidad de escapar; una vez que un ohancanu resuelve el rompecabezas o se frustra, su destrucción se reanuda.</p>",
       "items": {
         "equipment->Sack for Holding Rocks": {
           "name": "Saco para sostener rocas"
@@ -1378,7 +1371,7 @@
           "description": "<p>Un ohancanu tiene [[/gmr 2d4 #White Hairs]] pelos blancos que están conectados a su esencia. Si se arranca un cabello, el ohancanu gana la condición @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}. Esto es acumulativo con otras condiciones drenadas, y si arrancar un cabello aumentaría su valor drenado a 5 o más, el ohancanu cae @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Inconsciente}. Una criatura puede @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Sustraer} robar un pelo blanco de un ohancanu desconocido, aunque siempre se dan cuenta de un robo exitoso. Si un ohancanu es @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado}, o @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido}, una criatura puede intentar arrancar un pelo blanco gastando una sola acción, que tiene los rasgos de ataque y manipulación, para intentar un prueba de atletismo contra el CD de Fortaleza del ohancanu o un prueba de robo.</p>"
         },
         "action->Denuded Outrage": {
-          "name": "Denuded Outrage",
+          "name": "Indignación denegada",
           "description": "<p><strong>Desencadenante</strong> Una criatura arranca uno de los cabellos blancos de ohancanu</p>\n<hr /> <p><strong>Efecto</strong> El ohancanu hace un Golpe de puño contra la criatura que lo desencadenó. Si el ohancanu es @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado}, pueden intentar @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Huir}.</p>"
         },
         "action->Sudden Charge": {
@@ -1391,7 +1384,7 @@
       }
     },
     "Old Thornbarker": {
-      "name": "Old Thornbarker",
+      "name": "Viejo Thornbarker",
       "blurb": "Archivo arbóreo de variante masculina",
       "languages": "hablar con las plantas",
       "publicNotes": "<p>Los archivos arbóreos son seres solitarios que se encuentran típicamente en el desierto remoto. Estos antiguos monolitos guardan los recuerdos de sus vastos territorios, manteniendo registros mentales de las estaciones que pasan del mundo que los rodea. Su conocimiento de los asuntos humanoides varía, ya que encuentran situaciones políticas cambiantes difíciles de comprender, pero a través de redes fúngicas, informes de guardianes arbóreos y otras charlas de bosques, los archivos arbóreos aprenden de cada tormenta, sequía o amenaza de tala que se encuentran a lo largo de sus largos años. Principalmente observan y registran más que interferir, pero voluntariamente ofrecen sabiduría a aquellos que respetuosamente los buscan. Los regentes arbóreos recurren a los archivos para obtener consejos en tiempos de conflicto, para decidir el mejor curso de acción para proteger sus reinos.</p>\n<p>Es raro que haya más de un archivo arbóreo en una región determinada. Cuando un archivo siente que se acerca al final de su larga vida, un grupo de regentes se reúne para nominar al más sabio entre ellos para convertirse en el siguiente archivo. Después de cuatro temporadas de deliberación, todos los arboreales del área se congregan para presenciar el ritual de sucesión, durante el cual el archivo arbóreo más viejo transfiere su sabiduría recopilada al reemplazo elegido antes de retirarse.</p>\n<hr /> <p>Los arbóreos son antiguos guardianes de los bosques, como los árboles, que nutren el crecimiento y mantienen un ecosistema equilibrado como si la vasta naturaleza fuera su jardín. Los arbóreos son pensativos y deliberados, hasta que algo amenaza sus reinos e invita a su ira.</p>",
@@ -1406,7 +1399,7 @@
           "name": "Hechizos innatos primordiales"
         },
         "spell->Earthbind (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]\nEarthbind (At Will)"
+          "name": "Ligadura terrestre (a voluntad)"
         },
         "spell->Speak with Plants (Constant)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]\nSpeak with Plants (Constant)"
@@ -1415,15 +1408,15 @@
           "name": "Rama"
         },
         "strike-ranged->Scamp": {
-          "name": "Scamp"
+          "name": "Bribón"
         },
         "action->Abeyance Rift": {
           "name": "Rift de Abeyance",
-          "description": "<p>If Old Thornbarker dies unexpectedly before passing on their knowledge in a succession ritual, the amassed lore within their roots and boughs explodes out in a shock wave that deals @Damage[8d10[mental]|options:area-damage] damage to creatures within @Template[emanation|distance:30]{30 feet} (@Check[will|dc:32|basic|options:area-effect] save) before dissipating; those who fail also fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+          "description": "<p>Si el viejo Thornbarker muere inesperadamente antes de transmitir sus conocimientos en un ritual de sucesión, la tradición acumulada dentro de sus raíces y ramas explota en una onda de choque que trata @Damage[8d10[mental]|options:area-damage] daño a criaturas dentro @Template[emanation|distance:30]{30 pies} (@Check[will|dc:32|basic|options:area-effect] salvación) antes de disiparse; los que fallan también caen @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}.</p>"
         },
         "action->Sycophantic Scamps": {
-          "name": "Sycophantic Scamps",
-          "description": "<p>Dozens of @UUID[Compendium.pf2e.rage-of-elements-bestiary.Actor.EjgbrWiEp37eIifZ]{Wood Scamps} clamber on, nest in, and flit around Old Thornbarker, feeding him their observations and gossip. The arboreal can grab a nearby scamp as if drawing a weapon, using it as a thrown weapon. The unlucky scamp impacts with a clatter of spines and toxic pollen, after which the dazed elemental scampers away to regain its senses.</p>\n<p>If Old Thornbarker takes 40 or more damage from an area effect, the scamps scatter and seek cover for [[/gmr 1d6 #rounds]]{1d6 rounds}, during which time Old Thornbarker can't make scamp Strikes and loses all-around vision.</p>"
+          "name": "Campamentos sicófanos",
+          "description": "<p>Docenas de @UUID[Compendium.pf2e.rage-of-elements-bestiary.Actor.EjgbrWiEp37eIifZ]{Campamentos de madera} El arbóreo puede agarrar un scamp cercano como si dibujara un arma, usándola como un arma arrojada. El scamp desafortunado impacta con un estrépito de espinas y polen tóxico, después de lo cual el aturdido elementol estafa para recuperar sus sentidos.</p>\n<p>Si Old Thornbarker toma 40 o más daño de un efecto de área, los scamps se dispersan y buscan la cobertura para [[/gmr 1d6 #rounds]]{1d6 asaltos}, durante el cual el viejo Thornbarker no puede hacer scamp Golpes y pierde la visión general.</p>"
         },
         "action->Memory Maelstrom": {
           "name": "Vorágine de recuerdos",
@@ -1436,7 +1429,7 @@
     },
     "Otis": {
       "name": "Otis",
-      "blurb": "Variant troll",
+      "blurb": "Troll variante",
       "hpDetails": "regeneración 20 (desactivada por electricidad o fuego)",
       "publicNotes": "<p>Los trols del bosque son gigantes que acechan en los márgenes de la civilización. Ellos confían en su increíble fuerza para vencer a los enemigos con sus garras y sus fauces dentadas. Estos trols miden entre 12 y 16 pies de altura, aunque prefieren sentarse para sentirse cómodos y para arrullar a los enemigos en una falsa sensación de seguridad. Los trols son verdaderas criaturas del bosque, profundamente vinculadas en carne y hueso a los hábitats verdes que consideran su territorio. De hecho, cuando un troll del bosque es asesinado, su carne se convierte en trozos ennegrecidos de carbón, a menudo todavía brillantes con carbones. A pesar de eso, estas criaturas vagan más lejos y más allá que la mayoría de sus parientes, en la medida en que son las primeras criaturas en las que una persona común piensa cuando escucha la palabra \"troll\".</p>\n<hr /> <p>Brutos esclavizadores, crueles e invencibles: esta es la descripción que los aldeanos dan a los monstruos temibles conocidos como troles. Las raíces de estas historias son indudablemente verdaderas. La carne de los trolls crece indefinidamente, llegando incluso a brotar extremidades aberrantes o cabezas adicionales si no se poda, y se requiere un hambre sin fondo para alimentar este crecimiento sin frenos. Incluso en el proceso de alimentarse, sin embargo, los trols encuentran oportunidades para burlarse de sus presas e infligir crueldades pequeñas.</p>\n<p>La capacidad de sobrevivir de un troll es tan fuerte que creen que incluso el más pequeño pedazo de carne se regenerará lentamente en una nueva forma, sufriendo mientras todos los poderes de la tierra se reúnen para revivirlos. A pesar del dolor, los trols hablan de esta vitalidad inexpugnable como una bendición de su creador. Pocos trolls han escuchado la risa de los demonios que afirman que el creador maldijo a los trolls y los arrojó desde las alturas, atándolos para que nunca pudieran levantarse de nuevo.</p>\n<p>Los trols prefieren permanecer solitarios, guardando cada pedazo de comida para ellos. En raras ocasiones, un troll viejo y poderoso viene a liderar grupos de trolls. Estos líderes poseen la astucia suficiente para dirigir a sus hordas en devastadoras incursiones y masacres, y su presencia altera permanentemente el ecosistema circundante. Este vínculo con su entorno es un aspecto a menudo mal entendido de la especie troll, y se vuelve más agudo con la edad y el poder de un troll. Eso no quiere decir que los trols sean valientes protectores de la naturaleza. Son viciosos y territoriales, y destruirán su propio territorio para siempre si significa más comer por un día.</p>",
       "items": {
@@ -1470,7 +1463,7 @@
       }
     },
     "Phytohydra": {
-      "name": "Phytohydra",
+      "name": "Fitohidra",
       "hpDetails": "Regeneración de phytohydra",
       "languages": "(no puedo hablar ningún idioma)",
       "publicNotes": "<p>Los brotes frescos que brotan de cortes especialmente graves a veces desarrollan mentes propias, eventualmente brotando de la planta lesionada para crear una fitohidra.</p>\n<hr /> <p>Los elementales de madera son casi tan variados como la vida vegetal misma. Los siguientes son elementales particularmente poderosos formados cuando plantas inmensas experimentan estrés ambiental.</p>",
@@ -1485,7 +1478,7 @@
           "name": "colmillos"
         },
         "action->Phytohydra Regeneration": {
-          "name": "Phytohydra Regeneration",
+          "name": "Fitohidra Regeneración",
           "description": "<p>La fitohidra tiene regeneración igual a 5 × el número de cabezas que tiene. Si el cuerpo de un phytohydra está faltando alguna cabeza y los restos de los muñones no han sido cauterizados, el phytohydra intenta un @Check[fortitude|dc:35] salvar después de recuperar los puntos de vida de la regeneración. En un éxito, un tocón descatalogado vuelve a crecer dos cabezas; en un éxito crítico, dos tocón descatalogados vuelven a crecer en dos cabezas cada uno. La fitohidra nunca puede crecer más del doble del número de cabezas que normalmente tiene. La regeneración de la fitohidra solo se desactiva completamente si se cortan todas sus cabezas y se sellan todos los tocónes, en cuyo momento muere.</p>"
         },
         "action->Coppice Regrowth": {
@@ -1493,26 +1486,26 @@
           "description": "<p>Una fitohidra normalmente tiene cinco cabezas. Una criatura puede intentar cortar una de las cabezas al seleccionarla específicamente e infligir daño igual a los Puntos de Golpe de la cabeza. Una cabeza que no está completamente cortada vuelve a tener todos sus Puntos de Golpe al final del turno de cualquier criatura.</p>\n<p>Una fitohidra puede volver a crecer una cabeza cortada usando la regeneración de fitohidra. Una criatura puede prevenir este crecimiento infligiendo daño de fuego al tocón, sellándolo. Los efectos de fuego de un solo objetivo deben dirigirse a un tronco específico, pero los efectos que infligen daño de salpicadura o afectan áreas que cubren todo el espacio de la hydra sellan todos los troncos si infligen daño de fuego. Si el ataque que corta una cabeza inflige daño de fuego o fue infligido por un hacha, el tocón se sella instantáneamente. Si las cinco cabezas están selladas, la fitohidra muere.</p>\n<hr /> <p><strong>Cabeza de Phytohydra</strong></p>\n<ul>\n<li>\n<p><strong>Puntos de Golpe</strong> 30</p>\n</li>\n<li>\n<p><strong>Inmunidades</strong> Daño de área, Sangrado, Paralizado, Veneno, Sueño</p>\n</li>\n<li>\n<p><strong>Debilidades</strong> Fuego 10, Cortar 5</p>\n</li>\n</ul> <p>@UUID[Compendium.pf2e.bestiary-effects.Item.PSRUF9Elf05KtgvF]{Efecto: Phytohydra Heads}</p>"
         },
         "action->Reactive Strike (See Reactive Heads)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.W7SbTykXrNwxDzJc]\nReactive Strike (See Reactive Heads)"
+          "name": "Golpe reactivo (ver Cabezas reactivas)"
         },
         "action->Focused Assault": {
           "name": "Asalto concentrado",
-          "description": "<p>The phytohydra attacks a single target with its many heads. The phytohydra Strikes with its branches or its fangs. On a successful attack, the phytohydra deals damage from its branches or fangs Strike to the target, plus an additional 2d6 damage for every head it has beyond the first. On a failure (but not a critical failure), the phytohydra deals the damage from one branch or fangs Strike to the target creature. This Strike counts as a number of attacks equal to the number of heads the phytohydra has toward its multiple attack penalty.</p>"
+          "description": "<p>La fitohidra ataca un solo blanco con sus muchas cabezas. La fitohidra Golpes con sus ramas o colmillos. En un ataque exitoso, la fitohidra trata daño de sus ramas o colmillos Golpe al blanco, más un adicional 2d6 daño por cada cabeza que tiene más allá de la primera. En un fallo (pero no un fallo crítico), la fitohidra trata el daño de una rama o colmillos Golpe a la criatura objetivo. Esto Golpe cuenta como un número de ataques igual al número de cabezas que tiene la fitohidra hacia su penalizador por ataques múltiples.</p>"
         },
         "action->Reactive Heads": {
           "name": "Cabezas reactivas",
           "description": "<p>Un phytohydra gana una reacción extra por asaltos para cada una de sus cabezas más allá de la primera, que solo puede usar para hacer Golpes Reactivos. No puede usar más de 1 reacción en la misma acción disparadora, incluso si una criatura deja varias casillas dentro de su alcance, y la fitohidra debe usar una cabeza diferente para cada Golpe Reactivo que haga. Cada vez que una de las cabezas de la fitohidra es cortada, la fitohidra pierde una de sus reacciones adicionales por asaltos.</p>"
         },
         "action->Splinter Breath": {
-          "name": "Splinter Breath",
-          "description": "<p>The phytohydra spews splinters in a @Template[cone|distance:60] that deals @Damage[4d6[piercing]|options:area-damage] damage to all creatures in the area (@Check[reflex|dc:32|basic|options:area-effect] save). The damage increases by 2d6 for each head the phytohydra has.</p>\n<p>The phytohydra can't use Splinter Breath again for [[/gmr 1d4 #Recharge Splinter Breath]]{1d4 rounds}.</p>"
+          "name": "Astillarse Respiración",
+          "description": "<p>La fitohidra arroja astillas en una @Template[cone|distance:60] que trata @Damage[4d6[piercing]|options:area-damage] daño a todas las criaturas de la zona (@Check[reflex|dc:32|basic|options:area-effect] salvación). El daño aumenta en 2d6 para cada cabeza que tiene la fitohidra.</p>\n<p>La fitohidra no puede usar Astillarse Respiración para [[/gmr 1d4 #Recharge Splinter Breath]]{1d4 asaltos}.</p>"
         },
         "action->Storm of Branches": {
           "name": "Tormenta de ramas",
-          "description": "<p>The phytohydra makes a number of Strikes up to its number of heads, each against a different target. These attacks count toward the phytohydra's multiple attack penalty, but the multiple attack penalty doesn't increase until after the phytohydra makes all its attacks.</p>"
+          "description": "<p>La fitohidra hace un número de Golpes hasta su número de cabezas, cada una contra un objetivo diferente. Estos ataques cuentan hacia el de la fitohidra penalizador por ataques múltiples, pero el penalizador por ataques múltiples no aumenta hasta después de que la fitohidra hace todos sus ataques.</p>"
         },
         "action->Push 10 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]\nPush 10 feet"
+          "name": "Empujón 10 pies (3 m)"
         }
       }
     },
@@ -1579,7 +1572,7 @@
         },
         "action->Primal Toll": {
           "name": "Toll primario",
-          "description": "<p>The primal mantis takes @Damage[2d6[mental]] damage whenever it casts a primal innate spell.</p>"
+          "description": "<p>La mantis primitiva toma @Damage[2d6[mental]] daño Cuando lanza un conjuro innato primitivo.</p>"
         },
         "action->Rending Mandibles": {
           "name": "Mandíbulas desgarradoras",
@@ -1602,38 +1595,38 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.F1qxaqsEItmBura2]\nNature's Pathway (At Will)"
         },
         "spell->Unfettered Movement (Constant)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]\nUnfettered Movement (Constant)"
+          "name": "Movimiento sin restricciones (constante)"
         },
         "spell->Speak with Plants (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]\nSpeak with Plants (At Will)"
         },
         "spell->Speak with Animals (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.BBvV7qoXGdw09q1C]\nSpeak with Animals (At Will)"
+          "name": "Hablar con los animales (a voluntad)"
         },
         "strike-melee->Flourishing Fist": {
-          "name": "Flourishing Fist"
+          "name": "Harina Puño"
         },
         "strike-ranged->Rotten Bark": {
           "name": "Corteza podrida"
         },
         "action->Aura of Decay": {
           "name": "Aura de la decadencia",
-          "description": "<p>30 feet.</p>\n<p>Plant objects and creatures in the emanation can't regain Hit Points unless the effect that attempts to heal them counteracts the aura, which has a counteract rank of 6 and a counteract DC of 32.</p>\n<p>A primal warden of Zibik can spend 1 action to reverse this aura; it becomes an aura of renewal with the healing trait, instead doubling the number of Hit Points of any healing effect received by a plant creature in the emanation.</p>"
+          "description": "<p>30 pies.</p>\n<p>Los objetos vegetales y las criaturas en la emanación no pueden recuperar Puntos de Golpe a menos que el efecto que intenta sanarlos contrarreste el aura, que tiene un rango de contrarrestar de 6 y un contrarreste CD de 32.</p>\n<p>Un director primario de Zibik puede pasar 1 acción para revertir este aura; se convierte en un aura de renovación con el rasgo curativo, en cambio duplicando el número de Puntos de Golpe de cualquier efecto curativo recibido por una criatura vegetal en la emanación.</p>"
         },
         "action->Primal Destruction": {
           "name": "Destrucción primitiva",
-          "description": "<p>When the primal warden of Zibik is reduced to 0 Hit Points, it erupts with primal energy in a @Template[emanation|distance:30], dealing @Damage[12d6[void]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|dc:32|options:area-effect,damaging-effect,inflicts:enfeebled,inflicts:stupefied] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by Zibik to be @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect with a counteract DC of 32.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
+          "description": "<p>Cuando el director primario de Zibik se reduce a 0 Puntos de Golpe, estalla con energía primal en un @Template[emanation|distance:30], traficando @Damage[12d6[void]|options:area-damage] daño. Cada criatura en la zona debe intentar un @Check[will|dc:32|options:area-effect,damaging-effect,inflicts:enfeebled,inflicts:stupefied] salvación con los siguientes resultados.</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura toma la mitad daño.</p>\n<p><strong>Éxito</strong> La criatura se lleva todo daño.</p>\n<p><strong>Fallo</strong> La criatura toma lleno daño y se convierte temporalmente maldito por Zibik para ser @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} y @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} para 1 día; esto es un efecto de maldición con un contraataque CD de 32.</p>\n<p><strong>Fallo crítico</strong> Como fracaso, excepto que la criatura se convierte en @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} y @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2}.</p>"
         },
         "action->Rotten Burst": {
           "name": "Juegos de Rotten Burst",
-          "description": "<p><strong>Trigger</strong> The primal warden of Zibik takes physical damage</p>\n<hr />\n<p><strong>Effect</strong> A chunk of rotten bark bursts from the warden's body at its attacker. The warden makes a rotten bark Strike against an adjacent creature without triggering reactions.</p>"
+          "description": "<p><strong>Desencadenante</strong> El director principal de Zibik toma física daño</p>\n<hr />\n<p><strong>Efecto</strong> Un trozo de corteza podrida estalla del cuerpo del alcaide en su atacante. El alcaide hace una corteza podrida Golpe contra una criatura adyacente sin desencadenar reacciones.</p>"
         },
         "action->Flourishing Growth": {
           "name": "Un crecimiento floreciente",
           "description": "<p>La primera vez que una criatura recibe daño de los puños del guardián, el objetivo debe intentar un salvación @Check[fortitude|dc:32]. En caso de fracaso, brotes diminutos estallarán de la carne de la criatura, y se convertirá en @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} por 1 asalto.</p>"
         },
         "action->Fractal Rot": {
-          "name": "Fractal Rot",
+          "name": "Roto fractal",
           "description": "<p>La primera vez que una criatura recibe daño de la corteza podrida del guardián, el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} mientras la carne donde fue golpeada momentáneamente se tuerce y se pudre, causando un dolor considerable.</p>"
         }
       }
@@ -1645,7 +1638,7 @@
       "stealth": "<p>(entrenado)</p>",
       "items": {
         "action->Pierce Realm": {
-          "name": "Pierce Realm",
+          "name": "Perforar el reino",
           "description": "<p><strong>Desencadenante</strong> Una criatura viva entra en el área</p>\n<hr /> <p><strong>Efecto</strong> Una espiral metálica de 60 pies de altura se eleva del suelo, perforando a la criatura que la desencadenó e infligiendo @Damage[(4d10+26)[piercing]] de daño ( @Check[reflex|dc:32|basic] salvación). En un fallo crítico, la criatura es empalada adicionalmente, convirtiéndose en @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} hasta que [[/act escape dc=30]]{Escapes}. Una criatura que Escapa está a 60 pies en el aire. Además, todas las criaturas dentro de 10 pies de la torre reciben @Damage[(2d10+13)[bludgeoning]] de daño (@Check[reflex|dc:32|basic] de salvación). En caso de fracaso, son golpeados @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}.</p>"
         }
       }
@@ -1666,7 +1659,7 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[2d12[bludgeoning]], @Check[fortitude|dc:33|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "strike-melee->Lash": {
-          "name": "Lash"
+          "name": "Latigazo"
         }
       }
     },
@@ -1683,13 +1676,13 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]\nSpeak with Plants (Constant)"
         },
         "spell->Entangling Flora (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J6vNvrUT3b1hx2iA]\nEntangling Flora (At Will)"
+          "name": "Flora enmarañante (a voluntad)"
         },
         "strike-melee->Rotting Fist": {
           "name": "Puño podrido"
         },
         "strike-ranged->Bursting Seedpod": {
-          "name": "Bursting Seedpod"
+          "name": "Bursting Tegumento"
         },
         "action->Emotional Vulnerability": {
           "name": "Vulnerabilidad emocional",
@@ -1701,15 +1694,15 @@
         },
         "action->Vengeful Exhalation": {
           "name": "Exhalación vengativa",
-          "description": "<p><strong>Trigger</strong> An adjacent creature damages the putrifer</p>\n<hr />\n<p><strong>Effect</strong> The putrifer exhales, exposing the triggering creature to noxious putrescence</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura adyacente daña el putrifer</p>\n<hr />\n<p><strong>Efecto</strong> El putrifer exhala, exponiendo a la criatura desencadenante a putrefacción nociva</p>"
         },
         "action->Noxious Putrescence": {
-          "name": "Noxious Putrescence",
+          "name": "Putrescencia nociva",
           "description": "<p><strong>Tirada de salvación</strong> @Check[fortitude|dc:28]</p>\n<p><strong>Duración máxima</strong> 6 asaltos</p>\n<p><strong>Etapa 1</strong> @Damage[2d6[poison]] daño y @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} ( 1 asalto)</p>\n<p><strong>Etapa 2</strong> @Damage[2d8[poison]] daño y @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2} ( 1 asalto)</p>\n<p><strong>Etapa 3</strong> @Damage[2d10[poison]] daño y @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 4} ( 1 asalto)</p>"
         },
         "action->Woodland Stride": {
           "name": "Zancada forestal",
-          "description": "<p>The putrifer ignores difficult terrain and greater difficult terrain from non-magical foliage.</p>"
+          "description": "<p>El putrifer ignora el terreno difícil y el terreno más difícil del follaje no mágico.</p>"
         }
       }
     },
@@ -1749,12 +1742,12 @@
       }
     },
     "Razor Snare": {
-      "name": "Razor Snare",
+      "name": "Razor Trampa",
       "description": "<p>Un alambre de afeitar delgado atrapa a una criatura, tirando de sus patas para derribarla.</p>",
       "disable": "<p>@Check[survival|dc:22] o @Check[thievery|dc:22] (entrenado) para cortar el cable sin quedar atrapado</p>",
       "items": {
         "action->Snag": {
-          "name": "Snag",
+          "name": "Golpe",
           "description": "<p><strong>Desencadenante</strong> Una criatura entra en la casilla con el alambre de la trampa</p>\n<hr /> <p><strong>Efecto</strong> La trampa hace un Golpe de trampa contra la criatura que la desencadenó.</p>"
         },
         "strike-melee->Snare": {
@@ -1795,7 +1788,7 @@
       }
     },
     "Redwood Leshy": {
-      "name": "Redwood Leshy",
+      "name": "Leshy de secuoya",
       "languages": "hablar con las plantas (sólo árboles)",
       "publicNotes": "<p>Guardianes de los bosques de crecimiento antiguo y los árboles más poderosos, los leshies de secuoya se comportan con el coraje y la seguridad de sí mismos que creen que se adecua a su legado. Rara vez se enseñorean de sus deberes sobre otros lechitos, en cambio creen que es su responsabilidad proteger, guiar y proveer para otros.</p>\n<hr /> <p>A pesar de sus apariencias lindas y sus pretensiones inofensivas, los lechitos pueden convertirse en una fuerza formidable cuando se les enfada. Además, los leshios pueden crecer más grandes, más fuertes y más agresivos en regiones ricas en energía primordial. A continuación se presentan varias amenazas de leshy de nivel superior que crecen en bosques primordiales.</p>",
       "saveDetails": "+2 por estatus a todas las salvaciones contra miedo",
@@ -1804,7 +1797,7 @@
           "name": "Hechizos innatos primordiales"
         },
         "spell->Speak with Plants (Constant, Trees Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]\nSpeak with Plants (Constant, Trees Only)"
+          "name": "Hablar con las plantas (constante, sólo árboles)"
         },
         "spell->Enlarge (Self Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.wzctak6BxOW8xvFV]\nEnlarge (Self Only)"
@@ -1820,7 +1813,7 @@
         },
         "action->Verdant Burst": {
           "name": "Explosión verde",
-          "description": "<p>When a redwood leshy dies, a burst of primal energy explodes from their body, restoring @Damage[5d8[healing]]{5d8 Hit Points} to each plant creature in a @Template[emanation|distance:30]. This area is filled with saplings, becoming difficult terrain. If the environment isn't a viable environment for these trees, they wither after 24 hours.</p>"
+          "description": "<p>Cuando muere un leshy de la secuoya, una explosión de energía primaria explota desde su cuerpo, restaurando @Damage[5d8[healing]]{5d8 Puntos de Golpe} a cada criatura planta en un @Template[emanation|distance:30]. Esta zona está llena de árboles, convirtiéndose en terreno difícil. Si el medio ambiente no es un ambiente viable para estos árboles, se marchitan después de 24 horas.</p>"
         },
         "action->Change Shape": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The redwood leshy can take the form of a Large tree, using the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
@@ -1836,7 +1829,7 @@
       }
     },
     "Rootridden": {
-      "name": "Rootridden",
+      "name": "Raíz",
       "hpDetails": "curación del vacío",
       "items": {
         "strike-melee->Jaws": {
@@ -1849,7 +1842,7 @@
           "name": "Escupitajo"
         },
         "action->Rooted": {
-          "name": "Rooted",
+          "name": "Enraizado",
           "description": "<p>Un rootridden está vinculado a una red raíz específica. Si está a más de 300 pies de esta red durante al menos 1 minuto, se convierte en @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2} hasta que vuelve a estar dentro de 300 pies de la red raíz durante al menos 1 minuto.</p>"
         },
         "action->Walk the Roots": {
@@ -1885,7 +1878,7 @@
           "description": "<p>Una criatura que Golpea a Ruzadoya con un arma cuerpo a cuerpo debe tener éxito en un salvación @Check[reflex|dc:31] o ser desarmada de ese arma. Si la criatura falla críticamente, el arma termina en el espacio de Ruzadoya. Una criatura que golpea a Ruzadoya con un ataque sin armas debe tener éxito en un salvación de @Check[reflex|dc:31] o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} por Ruzadoya hasta el final de su siguiente turno, Escape o Ruzadoya se mueva, lo que ocurra primero.</p>"
         },
         "action->Rejuvenation": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\nRejuvenation",
+          "name": "Rejuvenecimiento",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.ZIFaA4jDQjM0vq8q]\n<p>When Ruzadoya is destroyed, her armor rebuilds her body over the course of [[/gmr 1d10 #days]]{1d10 days}. If her body is destroyed before then, the process restarts.</p>\n<p>Ruzadoya can only be permanently destroyed by obliterating her armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Plane of Fire, or throwing it into the heart of a volcano.</p>"
         },
         "action->Sapping Aura": {
@@ -1901,14 +1894,14 @@
           "description": "<p>En un golpe crítico con un arma cuerpo a cuerpo o ataque desarmado, el objetivo de Ruzadoya es @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} para 1 asalto ( [[/act escape dc=31]] ) y @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} por el tiempo que dure la inmovilización.</p>"
         },
         "action->Ruinous Weapons": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.7jWANvnDmNcQvFve]\nRuinous Weapons",
+          "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.7jWANvnDmNcQvFve]\nArmas ruinosas",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.7jWANvnDmNcQvFve]\n<p>Any weapon or unarmed attack Ruzadoya uses gains the effects of the +1 greater striking and wounding weapon runes.</p>"
         },
         "action->Trample": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Medium or smaller, hoof, @Check[reflex|dc:31|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
         },
         "action->Weapon Master": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.6isn9nqnvfRrC1wW]\nWeapon Master"
+          "name": "Maestro de armas"
         },
         "action->Withering Blast": {
           "name": "Explosión de Withering",
@@ -1920,7 +1913,7 @@
       }
     },
     "Ruzadoya's Chosen": {
-      "name": "Ruzadoya's Chosen",
+      "name": "Elegido por Ruzadoya",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Hechizos innatos primordiales"
@@ -1929,7 +1922,7 @@
           "name": "Bastón"
         },
         "strike-ranged->Splinter Surge": {
-          "name": "Splinter Surge"
+          "name": "Juegos de Splinter Surge"
         },
         "action->Explosive End": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.edpED1d9NbvR2NmB]\nExplosive End",
@@ -1949,7 +1942,7 @@
       }
     },
     "Sarracenia's Ire": {
-      "name": "Sarracenia's Ire",
+      "name": "La ira de Sarracenia",
       "description": "<p>La ilusión se rompe, revelando que el bosque es una cicatriz sin vida y que los aparentemente pacíficos leñadores se arrastran sin rumbo por el claro, consumidos por la rabia y atacando a todo lo que se acerca.</p>",
       "disable": "<p>@Check[nature|dc:22] (entrenado) para domar la energía primordial, @Check[religion|dc:24] (entrenado) para suprimir el conjuro, @Check[diplomacy|dc:25] (entrenado) para consolar a la dríade; se requieren tres éxitos para desactivar el conjuro.</p>",
       "reset": "<p>A menos que Silene sea destruida, este fantasma puede recargarse después de 1 hora.</p>",
@@ -2002,13 +1995,13 @@
       "stealth": "<p>(experto)</p>",
       "items": {
         "action->Touch Down": {
-          "name": "Touch Down",
+          "name": "Tocar Abajo",
           "description": "<p><strong>Desencadenante</strong> Dos o más criaturas vivas entran en el área</p>\n<hr /> <p><strong>Efecto</strong> Una columna espiral de sombras y crepitante magia planar se reúne a 20 pies de distancia, convirtiéndose en un ciclón de oscuridad de 15 pies de ancho y 100 pies de alto. La trampa entonces lanza la iniciativa.</p>"
         }
       }
     },
     "Shadow Sage": {
-      "name": "Shadow Sage",
+      "name": "Sombra Sabio",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Conjuros ocultistas innatos"
@@ -2030,8 +2023,8 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL]\n<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
         },
         "action->Bear Empathy": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.iAXHLkxuuCUOwqkN]\nBear Empathy",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.iAXHLkxuuCUOwqkN]\n<p>The werebear can communicate with ursine creatures.</p>\n<hr />\n<p>The werecreature can ask questions of, receive answers from, and use the Diplomacy skill with animals of its general kind.</p>"
+          "name": "Empatía con los osos",
+          "description": "<p>El hombre oso se puede comunicar con las criaturas ursinas.</p>\n<hr />\n<p>El licántropo puede formular preguntas, recibir respuestas y usar la habilidad Diplomacia con animales de su tipo general.</p>"
         },
         "action->Change Shape": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.08egiRxOvMX97XTc]\nChange Shape",
@@ -2048,7 +2041,7 @@
       }
     },
     "Silene": {
-      "name": "Silene",
+      "name": "Sileno",
       "blurb": "Variante waldgeist",
       "hpDetails": "curación del vacío",
       "languages": "hablar con las plantas",
@@ -2064,7 +2057,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]\nSpeak with Plants (Constant)"
         },
         "spell->Entangle (At-Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.J6vNvrUT3b1hx2iA]\nEntangle (At-Will)"
+          "name": "Enmarañar (a voluntad)"
         },
         "spell->Tanglefoot": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]\nTanglefoot"
@@ -2112,7 +2105,7 @@
     },
     "Spitting Sawfly": {
       "name": "Escupiendo la mosca sierra",
-      "publicNotes": "<p>Spitting sawflies are enormous, bloated insects covered in tumor-like knots of spores. These ravenous pests sow disease and spores wherever they go, heralding the infestation of creeping cones.</p>\n<hr />\n<p>The Plane of Wood contains many unique ecosystems formed around species of wondrous trees; when Ayrzul's Blight mutates one of these trees rather than killing it, it can have a cascading effect on the tree's biome. Multiple species often mutate in tandem, becoming warped mockeries and a vector for Ayrzul's Blight. These \"blight bonded\" creature families are parasites and predators and typically form twisted symbiotic relationships.</p>",
+      "publicNotes": "<p>Las aserraderas escupidas son insectos enormes e hinchados cubiertos de esporas tumorales. Estas plagas voraces siembran enfermedades y esporas dondequiera que van, anunciando la infestación de conos rastreros.</p>\n<hr />\n<p>El Plano de Madera contiene muchos ecosistemas únicos formados alrededor de especies de árboles maravillosos; cuando La plaga de Ayrzul muta uno de estos árboles en lugar de matarlo, puede tener un efecto en cascada en el bioma del árbol. Múltiples especies a menudo mutan en tándem, convirtiéndose en burlas deformadas y un vector para La plaga de Ayrzul. Estas familias de criaturas \"encadenadas brillantemente\" son parásitos y depredadores y típicamente forman relaciones simbióticas retorcidas.</p>",
       "senses": "Aroma de madera (preciso) 30 pies",
       "items": {
         "strike-melee->Mandibles": {
@@ -2123,19 +2116,19 @@
         },
         "action->Wood Scent (Precise) 30 feet": {
           "name": "Aroma de madera (preciso) 30 pies",
-          "description": "<p>A spitting sawfly can smell plants and wood as a precise scent at the listed range.</p>"
+          "description": "<p>Una aserradera puede oler plantas y madera como un aroma preciso en el rango listado.</p>"
         },
         "action->Consume Essence": {
           "name": "Consume la esencia",
-          "description": "<p><strong>Frequency</strong> once per day;</p>\n<p><strong>Requirements</strong> The spitting sawfly is adjacent to a creature with the wood trait or to a coiled conifer</p>\n<hr />\n<p><strong>Effect</strong> The sawfly feasts upon the targeted creature or the coiled conifer's sap, regaining @Damage[5d6[healing]]{5d6 Hit Points}. A targeted creature must attempt a @Check[fortitude|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure).</p>"
+          "description": "<p><strong>Frequency</strong> once per day;</p>\n<p><strong>Requirements</strong> La mosca escupida es adyacente a una criatura con el rasgo de madera o a una conífera enrollada</p>\n<hr />\n<p><strong>Effect</strong> La mosca servida se deleita con la criatura objetivo o la savia de la conífera enrollada, recuperando @Damage[5d6[healing]]{5d6 Puntos de Golpe}. A targeted creature must attempt a @Check[fortitude|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} sobre una fallo crítico).</p>"
         },
         "action->Creeping Sprout": {
           "name": "Brote de Creeping",
-          "description": "<p>A creature afflicted with creeping sprout is treated by the spitting sawfly as if it has the wood trait</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:29];</p>\n<p><strong>Stage 1</strong> carrier with no ill effect ([[/gmr 1d4 #days]]{1d4 days})</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} ([[/gmr 1d4 #days]]{1d4 days});</p>\n<p><strong>Stage 3</strong> @Damage[12d6[acid]] damage, creeping cone swarm emerges (disease ends)</p>"
+          "description": "<p>Una criatura afligida por un brote de rastrero es tratada por la astilla escupida como si tuviera el rasgo de la madera</p>\n<p><strong>Tirada de salvación</strong> @Check[fortitude|dc:29];</p>\n<p><strong>Etapa 1</strong> portador sin efectos nocivos ([[/gmr 1d4 #days]]{1d4 días})</p>\n<p><strong>Etapa 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1} ([[/gmr 1d4 #days]]{1d4 días});</p>\n<p><strong>Etapa 3</strong> @Damage[12d6[acid]] daño, emerge enjambre de cono arrastrante (fines de la enfermedad)</p>"
         },
         "action->Plant Spores": {
           "name": "Esporas de plantas",
-          "description": "<p>The spitting sawfly plants spores in an adjacent creature that's @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, exposing it to creeping sprout disease.</p>"
+          "description": "<p>La mosca servida escupiendo planta esporas en una criatura adyacente que es @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralizado} o @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Inconsciente}, exponiéndolo a la enfermedad de brotes.</p>"
         },
         "action->Seizing Venom": {
           "name": "Apoderarse de Veneno",
@@ -2171,7 +2164,7 @@
       }
     },
     "Stormdrinker": {
-      "name": "Stormdrinker",
+      "name": "Bebedor de tormenta",
       "languages": "(No puedo hablar ningún idioma)",
       "skillSpecialStealth": {
         "0": {
@@ -2188,7 +2181,7 @@
         },
         "action->Lightning Blast": {
           "name": "Explosión de relámpago",
-          "description": "<p><strong>Requirements</strong> The stormdrinker is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} due to Absorb Shock</p>\n<hr />\n<p><strong>Effect</strong> The stormdrinker dismisses its Absorb Shock benefits to expel lightning in a @Template[line|distance:60], dealing @Damage[8d6[electricity]|options:area-damage] damage (@Check[reflex|dc:25|basic|options:area-effect] save).</p>"
+          "description": "<p><strong>Requisitos</strong> El bebedor de tormenta es @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Acelerado} debido a Absorber el choque</p>\n<hr />\n<p><strong>Efecto</strong> El bebedor de tormenta descarta sus Absorber el choque beneficios para expulsar el rayo en un @Template[line|distance:60], traficando @Damage[8d6[electricity]|options:area-damage] daño (@Check[reflex|dc:25|basic|options:area-effect] guardar).</p>"
         },
         "action->Ring Bell": {
           "name": "Campana",
@@ -2196,7 +2189,7 @@
         },
         "action->Vine Lash": {
           "name": "Latigazo de enredadera",
-          "description": "<p>The stormdrinker makes a vine Strike against each creature within reach. Its multiple attack penalty increases only after all the attacks.</p>"
+          "description": "<p>El bebedor hace una vid Golpe contra cada criatura al alcance de su mano. Su penalizador por ataques múltiples aumenta sólo después de todos los ataques.</p>"
         }
       }
     },
@@ -2232,11 +2225,8 @@
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Hechizos innatos primordiales"
         },
-        "spell->Reincarnate": {
-          "secondarycheck": "Occultism,  Religion"
-        },
         "spell->Augury (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]\nAugury (At Will)"
+          "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]\nAugurio (a voluntad)"
         },
         "spell->Speak with Animals (Constant, Insects Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.BBvV7qoXGdw09q1C]\nSpeak with Animals (Constant, Insects Only)"
@@ -2259,7 +2249,7 @@
           "description": "<p>El Bee-Man es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} por 1 asalto si comienza su turno en humo denso.</p>"
         },
         "action->Apitoxin": {
-          "name": "Apitoxin",
+          "name": "Apitoxina",
           "description": "<p><strong>Tirada de salvación</strong> @Check[fortitude|dc:25]</p>\n<p><strong>Duración máxima</strong> 6 asaltos</p>\n<p><strong>Etapa 1</strong> @Damage[2d6[poison]] daño, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} ( 1 asalto)</p>\n<p><strong>Etapa 2</strong> @Damage[3d6[poison]] daño y debilitado 1 ( 1 asalto)</p>\n<p><strong>Etapa 3</strong> @Damage[3d6[poison]] daño y @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} ( 1 asalto)</p>"
         },
         "action->Evasive Swarm": {
@@ -2284,20 +2274,20 @@
         },
         "action->Eviscerating Thorns": {
           "name": "Espinas de evisceración",
-          "description": "<p><strong>Trigger</strong> A creature that grabs a thrailorn or hits it with an unarmed Strike or non-reach melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The thrailorn's barbed thorns slice open their attacker's body, dealing @Damage[2d6[piercing]] damage to the triggering creature. If the thrailorn is grabbing or @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the triggering creature, it deals @Damage[1[bleed]] damage.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura que agarra un trialor o le golpea con un cuerpo armado Golpe o no alcanza Golpe</p>\n<hr />\n<p><strong>Efecto</strong> Las espinas de púas del thrailorn cortan el cuerpo de su atacante, traficando @Damage[2d6[piercing]] daño a la criatura desencadenante. Si el thrailorn está agarrando @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} por la criatura que desencadena, trata @Damage[1[bleed]] daño.</p>"
         },
         "action->Embed Thorn": {
           "name": "Incrustar a Thorn",
-          "description": "<p>If a thrailorn successfully deals persistent bleed damage with its thorn Strike or Eviscerating Thorns reaction and that creature was already taking persistent bleed damage, increase the persistent damage by 1. Each time a creature succeeds the flat check to end this persistent bleed damage, reduce the bleed damage by 1 instead of ending the condition. A critical success on the flat check ends the condition.</p>"
+          "description": "<p>Si un tiraorror trata con éxito la reacción persistente daño por sangrado con su espina Golpe o Espinas de evisceración y esa criatura ya estaba tomando persistente daño por sangrado, aumentar el daño persistente en 1. Cada vez que una criatura sucede el prueba plana para poner fin a esta persistencia daño por sangrado, reducir el daño por sangrado en 1 en lugar de terminar la condición. A éxito crítico en el prueba plana termina la condición.</p>"
         },
         "action->Pain-Fueled Flurry": {
           "name": "Flurry alimentado por el dolor",
-          "description": "<p>The thrailorn attacks a single foe in a wild, pain-fueled flurry. The thrailorn makes one jaws Strike and two thorn Strikes in any order. These attacks must target the same creature. These attacks count toward the thrailorn's multiple attack penalty, but the multiple attack penalty doesn't increase until after the thrailorn makes all their attacks.</p>"
+          "description": "<p>El trialorn ataca a un solo enemigo en una ráfaga salvaje, alimentada por el dolor. El trialorn hace una mandíbula Golpe y dos espinas Golpes en cualquier orden. Estos ataques deben apuntar a la misma criatura. Estos ataques cuentan hacia el trialorn penalizador por ataques múltiples pero el penalizador por ataques múltiples no aumenta hasta después de que el trialorn hace todos sus ataques.</p>"
         }
       }
     },
     "Timber Titan": {
-      "name": "Timber Titan",
+      "name": "¡Árbol va! Titan",
       "acDetails": "(22 cuando está rota); armadura de constructo",
       "blurb": "Variante gigante estatua animada",
       "publicNotes": "<p>Al igual que ocurre con las estatuas animadas humanoides de tamaño Mediano, las estatuas animadas gigantes se usan para custodiar lugares de importancia, pero su mayor tamaño y potencia las hacen más útiles en grandes cámaras del tesoro, salas espaciosas, o ubicaciones exteriores. Los objetos animados de semejante tamaño y fuerza son ideales para tareas y responsabilidades que normalmente realizan gólems y por tanto apenas se conocen objetos animados más poderosos.</p>\n<hr />\n<p>Dotados de un simulacro de vida mediante rituales u otras magias extrañas, los objetos animados tienen muchas formas y sirven para una gran variedad de usos. A continuación, se indican algunos ejemplos de objetos animados típicos. Muchas de estas criaturas hacen las veces de guardianes y sorprenden a los aventureros desprevenidos al cobrar vida y atacar. Otros sirven como divertimento para aquellos excepcionalmente ricos, simples sirvientes creados para ocuparse de tareas desagradables y similares.</p>",
@@ -2306,7 +2296,7 @@
           "name": "Puño de piedra"
         },
         "strike-ranged->Spar": {
-          "name": "Spar"
+          "name": "Espar"
         },
         "action->Construct Armor (Hardness 10)": {
           "name": "Armadura de constructo (Dureza 10)",
@@ -2318,12 +2308,12 @@
         },
         "action->Splinter": {
           "name": "Astillarse",
-          "description": "<p><strong>Trigger</strong> A creature critically hits a timber titan</p>\n<hr />\n<p><strong>Effect</strong> The timber titan makes a spar Strike against a creature within 30 feet. This attack ignores any reactions triggered by making ranged attacks.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura golpea críticamente a un titán de madera</p>\n<hr />\n<p><strong>Efecto</strong> El titán maderero hace una espar Golpe contra una criatura dentro de 30 pies. Este ataque ignora cualquier reacción desencadenada por realizar ataques a distancia.</p>"
         }
       }
     },
     "Timberweb": {
-      "name": "Timberweb",
+      "name": "Telaraña de madera",
       "publicNotes": "<p>En el Plano de Madera, las plantas carnívoras a veces crecen tan grandes que no pueden sostenerse con las presas locales. En lugar de morir de hambre, algunas partes de estas plantas a veces se liberan y cazan por sí mismas. Los elementales resultantes adoptan formas de araña y estrategias de caza.</p>\n<p>Las telarañas extruyen las vides cubiertas de pequeñas barbulas y savia pegajosa. Después de encontrar un territorio con suficiente presa, una red de madera a menudo utiliza estas vides para crear dosel sombrío en el que lanzar emboscadas.</p>\n<hr /> <p>Los elementales de madera son casi tan variados como la vida vegetal misma. Los siguientes son elementales particularmente poderosos formados cuando plantas inmensas experimentan estrés ambiental.</p>",
       "senses": "ven sin",
       "items": {
@@ -2341,19 +2331,19 @@
         },
         "action->Vine Sense": {
           "name": "Ven sin mí",
-          "description": "<p>The timberweb has imprecise tremorsense to detect the vibrations of creatures touching its spun vines.</p>"
+          "description": "<p>La tela de madera tiene temblores imprecisos para detectar las vibraciones de criaturas que tocan sus vides hiladas.</p>"
         },
         "action->Rappel": {
           "name": "Antecedentes",
-          "description": "<p>The timberweb moves straight down up to 60 feet on a spun vine. It can hang from the vine or drop off. The distance it descends doesn't count toward falling damage. A creature that successfully Strikes the vine (AC 36, Hardness 8, 30 HP) severs it, causing the timberweb to fall.</p>"
+          "description": "<p>La tela de madera se mueve directamente hacia abajo hasta 60 pies sobre una vid hilada. Puede colgarse de la vid o caerse. La distancia que desciende no cuenta para caer daño. Una criatura que con éxito Golpes la vid (CA 36, Dureza 8, 30 PG) la secciona, causando que la tela de madera caiga.</p>"
         },
         "action->Timberweb Toxin": {
-          "name": "Timberweb Toxin",
+          "name": "TimberwebToxix",
           "description": "<p><strong>Tirada de salvación</strong> @Check[fortitude|dc:34]</p>\n<p><strong>Duración máxima</strong> 6 asaltos</p>\n<p><strong>Etapa 1</strong> @Damage[5d6[poison]] daño y @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} ( 1 asalto)</p>\n<p><strong>Etapa 2</strong> @Damage[6d6[poison]] daño y @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2} ( 1 asalto)</p>\n<p><strong>Etapa 3</strong> @Damage[8d6[poison]] daño y torpe 2 ( 1 asalto)</p>"
         },
         "action->Tree Tether": {
           "name": "Tether de árbol",
-          "description": "<p>A creature hit by the timberweb's vine Strike becomes entangled by the sticky fibers, taking a –15-foot penalty to its Speeds for 1 minute or until it Escapes (DC 34) or is cut free (AC 36, Hardness 8, 30 HP). If the target is adjacent to a wooden object of its size or larger, the target is instead @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to that object until it Escapes or is cut free.</p>"
+          "description": "<p>Una criatura golpeada por la vid de la tela de madera Golpe se enreda por las fibras pegajosas, tomando un castigo –15 pies a sus Velocidades por 1 minuto o hasta que escape (CD 34) o se corte libre (CA 36, Dureza 8, 30 PG). Si el objetivo es adyacente a un objeto de madera de su tamaño o mayor, el objetivo es en su lugar @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} y pegado a ese objeto hasta que se escapa o se corta libre.</p>"
         }
       }
     },
@@ -2376,30 +2366,30 @@
       }
     },
     "Twigjack Bramble": {
-      "name": "Twigjack Bramble",
+      "name": "Ramitero Bramble",
       "hpDetails": "( 16 cuadrados) Umbrales 68 ( 3 segmentos), 34 ( 2 segmentos)",
       "publicNotes": "<p>Un solo twigjack es una criatura peligrosa e impredecible con una capacidad para la violencia repentina. Un grupo de twijjacks unidos por un propósito común es una fuerza sustancial para la destrucción. El ímpetu detrás de la formación de un grupo de twigjack, coloquialmente conocido como un \"zarzo\", puede ser casi cualquier cosa, aunque casi siempre se forman alrededor de un individuo particularmente carismático o demagógico. El fanatismo religioso es otro factor común; sin embargo, los rastrillos rara vez adoran a las deidades establecidas y en su lugar se dedican a extraños dioses nuevos de su propia imaginación que, inevitablemente, exigen que sus adoradores purguen el territorio de los rastrillos de aquellos cuya presencia les desagrada.</p>\n<h2>Vigilantes proactivos</h2>\n<p>Los Twigjacks frecuentemente justifican sus tendencias violentas y antisociales declarándose a sí mismos los guardianes de los bosques en los que habitan, y que su deber es mantener esas tierras protegidas libres de intrusos no-feos por cualquier medio necesario. Rara vez lo suficientemente pacientes como para esperar a que les lleguen las oportunidades, las zarzas errantes de los cortadores de ramas a menudo buscan lo que consideran conflictos inminentes entre la gente del bosque y las amenazas exteriores para imponer su \"asistencia\", casi siempre resultando en brutalidad y derramamiento de sangre que no beneficia a ninguno de los lados y solo sirve para escalar la situación.</p>",
       "speed": "movimiento de tropa",
       "items": {
         "action->Troop Defenses": {
           "name": "Defensas de tropas",
-          "description": "<p><strong>Thresholds</strong> 68 (3 segments), 34 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+          "description": "<p><strong>Umbrales</strong> 68 (3 segmentos), 34 (2 segmentos)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "action->Clear Cut": {
           "name": "Corte claro",
-          "description": "<p>The twigjack bramble swarms over any creatures in their path, shredding their foes with razor-sharp thorns. The bramble Forms Up and Strides twice, moving through the space of any Medium or smaller creatures. Each creature whose space the bramble moves through takes @Damage[4d6[slashing]] damage (@Check[reflex|dc:21|basic] save). On a critical failure, the creature is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+          "description": "<p>El zarzaguán se enjambre sobre cualquier criatura en su camino, destrozando a sus enemigos con espinas afiladas. El zarzaguán se forma y Zancadas dos veces, moviéndose por el espacio de cualquier criatura mediana o pequeña. Cada criatura cuyo espacio el zarzaguán se mueve a través de toma @Damage[4d6[slashing]] daño (@Check[reflex|dc:21|basic] salvación). En un fallo crítico, la criatura también es golpeada @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}.</p>"
         },
         "action->Mass Bramble Jump": {
           "name": "Salto de Bramble masivo",
-          "description": "<p>The twigjack bramble uses Form Up to redistribute its squares into any configuration wherein all squares are in undergrowth, then instantly teleports to another square within 60 feet, using Form Up again on the target square. The configuration of the second Form Up must also place all of the bramble's squares in undergrowth. This movement doesn't trigger reactions.</p>"
+          "description": "<p>La zarza de pandillero utiliza Ponerse en forma para redistribuir sus cuadrados en cualquier configuración en la que todos los cuadrados estén en maleza, luego teletransporta instantáneamente a otro cuadrado dentro de 60 pies, usando Ponerse en forma de nuevo en el cuadrado de destino. La configuración del segundo Ponerse en forma también debe colocar todos los cuadrados de braza en maleza. Este movimiento no desencadena reacciones.</p>"
         },
         "action->Rain of Splinters": {
           "name": "Lluvia de astillas",
-          "description": "<p>The twigjack bramble launches a volley of splinters and brambles in a @Template[burst|distance:10] within 30 feet that deals @Damage[4d6[piercing]|options:area-damage] damage (@Check[reflex|dc:21|basic|options:area-effect] save). When the bramble is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>"
+          "description": "<p>La zarza de panza lanza una volley de astillas y zarzas en un @Template[burst|distance:10] dentro de 30 pies que negocian @Damage[4d6[piercing]|options:area-damage] daño (@Check[reflex|dc:21|basic|options:area-effect] salvación). Cuando la zarza se reduce a 8 o menos cuadrados, esta área disminuye a un @Template[burst|distance:5].</p>"
         },
         "action->Troop Movement": {
           "name": "Movimiento de tropas",
-          "description": "<p>Whenever the twigjack bramble Strides, it first Forms Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to its Speed. This works just like a Gargantuan creature moving; for instance, if any square of the bramble enters difficult terrain, the extra movement cost applies to the whole group.</p>"
+          "description": "<p>Cada vez que el zarzalete de twigjack Zancadas, primero se forma como una acción libre para condensarse en un 20-pie por-20-pie área (menos cualquier cuadrado que falta), luego se mueve hasta su Velocidad. Esto funciona como una criatura Gargantuan en movimiento; por ejemplo, si cualquier cuadrado de la zarza entra en terreno difícil, el costo de movimiento adicional se aplica a todo el grupo.</p>"
         }
       }
     },
@@ -2513,7 +2503,7 @@
           "name": "Puño de piedra"
         },
         "strike-ranged->Flaming Coal": {
-          "name": "Flaming Coal"
+          "name": "Carbón inflamable"
         },
         "action->Construct Armor (Hardness 10)": {
           "name": "Armadura de constructo (Dureza 10)",
@@ -2528,7 +2518,7 @@
           "description": "<p>La estatua muele una criatura que tiene @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado} en las brasas de su brasero. El objetivo recibe @Damage[3d8[cold],1d8[persistent,cold]] de daño.</p>"
         },
         "action->Fey Fire": {
-          "name": "Fey Fire",
+          "name": "Fuego de Fey",
           "description": "<p>Las habilidades de Golpe, Brasero y Quema vivo a distancia de la construcción infligen daño de frío en lugar de daño de fuego, y no encienden materiales combustibles.</p>"
         }
       }
@@ -2536,7 +2526,7 @@
     "Verdant Swordkeeper": {
       "name": "Espadalero verde",
       "acDetails": "( 31 con la guardia levantada)",
-      "blurb": "Variant swordkeeper",
+      "blurb": "Variante espada",
       "publicNotes": "<p>Los coleccionistas que quieren proteger sus arsenales mágicos compran o construyen espadachines. Estos constructos son partes iguales de vitrina y sistema de seguridad, cada uno de los cuales contiene un solo arma dentro de su cuerpo y proyecta copias del arma que almacena para disuadir a los posibles ladrones.</p>",
       "items": {
         "weapon->Longsword": {
@@ -2577,13 +2567,13 @@
       }
     },
     "Wildwood Sentry": {
-      "name": "Wildwood Sentry",
+      "name": "Centinela de madera silvestre",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Hechizos innatos primordiales"
         },
         "spell->Speak with Animals (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.BBvV7qoXGdw09q1C]\nSpeak with Animals (At Will)"
+          "name": "Hablar con los animales (a voluntad)"
         },
         "strike-melee->Dagger": {
           "name": "Daga"
@@ -2637,7 +2627,7 @@
         },
         "action->Penetrating Bristles": {
           "name": "Cerdas de penetración",
-          "description": "<p>On a critical hit with a bristles Strike, a woodweave caterpillar's bristles lodge in the target's body, causing severe pain and blood loss. They deal @Damage[3d6[bleed]] damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} as long as the persistent damage continues.</p>"
+          "description": "<p>En un golpe crítico con una cerda Golpe, una oruga de madera se aloja en el cuerpo del objetivo, causando dolor intenso y pérdida de sangre. @Damage[3d6[bleed]] daño, y el objetivo es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} mientras el daño persistente continúe.</p>"
         },
         "action->Trample": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Medium or Smaller, foot, @Check[reflex|dc:32|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
@@ -2645,7 +2635,7 @@
       }
     },
     "Wraithvine": {
-      "name": "Wraithvine",
+      "name": "Espectros",
       "languages": "(No puede hablar ningún idioma); Telepatía 120 pies (Solo Wraithvines)",
       "items": {
         "strike-melee->Bite": {
@@ -2655,18 +2645,18 @@
           "name": "Tentáculo"
         },
         "action->Telepathy 120 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 120 feet"
+          "name": "Telepatía 120 pies (36 m)"
         },
         "action->Reactive Strike (Tentacle Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.W7SbTykXrNwxDzJc]\nReactive Strike (Tentacle Only)"
         },
         "action->Light Vulnerability": {
           "name": "Vulnerabilidad ligera",
-          "description": "<p>Whenever a wraithvine begins its turn in an area of magical light, it is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} on that turn.</p>"
+          "description": "<p>Cuando una espectro comienza su turno en un área de luz mágica, es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} En ese turno.</p>"
         },
         "action->Parasitic Rejuvenation": {
           "name": "Rejuvenecimiento parasitario",
-          "description": "<p><strong>Requirements</strong> A creature the wraithvine has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} took damage from wraithvine venom (either from itself, or from a wraithvine child's venom) on its last turn, and the wraithvine hasn't used any other actions this turn</p>\n<hr />\n<p><strong>Effect</strong> The wraithvine regains @Damage[3d8[healing]] HP and recovers from the @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} and slowed conditions. It reduces any @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled} value it has by 2.</p>"
+          "description": "<p><strong>Requisitos</strong> Una criatura que el espectro tiene @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} daño tomó de veneno de los espectros (ya sea de sí mismo, o del veneno de un niño de los espectros) en su última vuelta, y los espectros no han utilizado ningún otro Acciones este turno</p>\n<hr />\n<p><strong>Efecto</strong> La espectro recupera @Damage[3d8[healing]] PG y se recupera de la @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigado} y ralentizado Estados. Reduce cualquier @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Endebeed} valor que tiene por 2.</p>"
         },
         "action->Wraithvine Venom": {
           "name": "Veneno de Wraithvine",
@@ -2705,7 +2695,7 @@
         },
         "action->Vitality Drain": {
           "name": "Drenaje de vitalidad ",
-          "description": "<p><strong>Requirements</strong> The wraithvine offshoot has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The offshoot drains blood or ichor from the creature it has grabbed, dealing @Damage[2d6[untyped]] damage. If the creature has the plant trait, the offshoot gains temporary Hit Points equal to the damage dealt. A creature that has its vitality drained by an offshoot is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives healing of any kind or amount.</p>"
+          "description": "<p><strong>Requisitos</strong> El vástago de las Espectros tiene una criatura @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado}</p>\n<hr />\n<p><strong>Efecto</strong> La salida drena sangre o iclor de la criatura que ha tomado, traficando @Damage[2d6[untyped]] daño. Si la criatura tiene el rasgo vegetal, el vástago gana Puntos de Golpe temporales igual a la daño repartida. Una criatura que tiene su vitalidad drenada por un vástago es @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1} hasta que reciba curación de cualquier tipo o cantidad.</p>"
         },
         "action->Wraithvine Venom": {
           "name": "Veneno de Wraithvine",
@@ -2736,14 +2726,14 @@
           "description": "<p>La anaconda gigante da una Zancada, Trepa o Nada hasta la mitad de su Velocidad, arrastrando consigo a cualquier criatura a la que tiene @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrada}.</p>"
         },
         "action->Swallow Whole": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Large, @Damage[(1d10+7)[bludgeoning]], Rupture 21</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Grande, @Damage[(1d10+7)[bludgeoning]]{1d10+7 contundente}, Liberarse 21</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "action->Wrap in Coils": {
           "name": "Atrapar en los anillos",
           "description": "<p><strong>Requisitos</strong> Una criatura grande o pequeña está @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado} en las mandíbulas de la anaconda gigante.</p>\n<hr /> <p><strong>Efecto</strong> La anaconda gigante mueve a la criatura en sus bobinas, liberando sus mandíbulas para hacer ataques, luego usa Mayor Constricción contra la criatura. Las bobinas de la anaconda gigante pueden contener tantas criaturas como quepan en su espacio.</p>"
         },
         "action->Push 10 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]\nPush 10 feet"
+          "name": "Empujón 10 pies (3 m)"
         }
       }
     },
@@ -2771,7 +2761,7 @@
           "name": "Deseo",
           "cost": "cenizas finas, pigmentos mágicamente imbuidos y una gema de talla marquesa por valor de 100.000 po en total",
           "description": "<p> Tejes el entramado de la propia realidad para conceder el mayor deseo del objetivo, quien lo declara en voz alta al inicio del ritual y de nuevo al final. El deseo del objetivo puede ser cualquier cosa, desde sencilla como enormes riquezas o el lanzamiento de determinado conjuro o ritual, a deseos mayores, como la destrucción de todo un reino o la ascensión a la divinidad. El DJ podría decidir que un deseo atrae la atención de los dioses o de otras criaturas poderosas, lo que conduce a su interferencia con el ritual o a intentos de deshacerlo. El poder del ritual altera la realidad hasta el punto de que ni siquiera los dioses pueden deshacer directamente el deseo, pero pueden reaccionar al mismo enviando servidores para que, por ejemplo, se lleven las recién adquiridas riquezas. </p>\n <hr />\n <p> <strong> Éxito Crítico </strong> El deseo es concedido sin complicaciones ni inconvenientes. </p>\n <p> <strong> Éxito </strong> El deseo es concedido, pero acarrea consecuencias no previstas o efectos secundarios, como por ejemplo llevarse las riquezas de un delincuente muy conocido, agitar a la guerra a un reino dañado o irritar a dioses rivales. </p>\n <p> <strong> Fallo </strong> El deseo falla y no surte efecto alguno. En su lugar, el DJ puede hacer que resulte concedido parcialmente, pero en un grado tan menor que el objetivo quede eternamente insatisfecho. </p>\n <p> <strong> Fallo crítico </strong> El deseo se corrompe, y resulta en un cumplimiento cruel. El DJ es quien determina los resultados completos, pero el desenlace suele ser de alguna forma irónico, como por ejemplo quedar atrapado en una bóveda subterránea llena de riquezas, ser transportado al reino antes citado cuando se destruye o conseguir la divinidad en el interior de un semiplano inaccesible. </p>",
-          "primarycheck": "Arcana (legendary), Nature (legendary), Occultism (legendary), Religion (legendary)",
+          "primarycheck": "Arcano (legendario), Naturaleza (legendario), Ocultismo (legendario), Religión (legendario)",
           "secondarycheck": "Artesanía, Diplomacia",
           "target": "1 criatura"
         },

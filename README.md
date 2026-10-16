@@ -73,8 +73,37 @@ esa versión de Foundry.
 
 El workflow `crowdin.yml` actualiza diariamente los originales en `main` y ejecuta
 las pruebas antes de extraer. Los bestiarios de `translation/en/actors/` también
-se envían a Crowdin; se excluyen tres copias antiguas cuyo original vigente ya
-está en `translation/en/compendium/`.
+se envían a Crowdin. Los archivos ingleses y españoles deben reconciliarse después
+de cambiar los originales y antes de sincronizar las traducciones.
+
+### Alineación y nombres de archivo
+
+La colección de Foundry se identifica mediante `pf2e.<name>`, donde `name` es
+el ID de `packs` en el manifiesto oficial; no tiene por qué coincidir con su
+`path` físico. Babele busca `pf2e.<name>.json`. Por ejemplo, `packs/actions`
+corresponde a `pf2e.actionspf2e.json`, `packs/spells` a
+`pf2e.spells-srd.json` y `packs/standalone-adventures` a
+`pf2e.dawn-of-the-frogs.json`. Los nombres históricos de los originales de
+Crowdin se conservan mediante las reglas de `crowdin.yml`.
+
+[translation-map.json](docs/translation-map.json) registra el ID, la ruta física
+y la pareja inglés/español de cada compendio, además de las interfaces y módulos.
+Se contrasta con el manifiesto de la misma versión que `pf2e-source.json`.
+
+```sh
+npm run translations:align
+npm run translations:check
+npm run translations:audit
+```
+
+El alineado conserva el texto español disponible, recupera coincidencias de
+original exacto cuando no son ambiguas y replica las claves, tipos, arrays,
+IDs y mappings del original. Retira archivos sin correspondencia activa; el
+commit de partida queda registrado para recuperarlos desde Git. **No traduce**:
+los campos nuevos se completan inicialmente con el original inglés y deben
+traducirse en una segunda fase. La comprobación exige que repetir el alineado
+no produzca cambios. [translation-alignment.json](docs/translation-alignment.json)
+documenta la fase de alineación del lote actual.
 
 ## Archivos españoles y estado de revisión
 
@@ -89,22 +118,30 @@ Monster Core 2 y NPC Core usan `pf2e.pathfinder-monster-core-2.json` y
 Se conservan las claves originales de `entries`, los IDs y las rutas de
 `mapping`; se traducen los valores visibles. Los objetos y arrays deben mantener
 sus tipos e índices. Los comandos `@UUID`, `@Check`, `@Damage`, las fórmulas y
-las variables deben conservar su sintaxis. Los campos nuevos aún pendientes
-se omiten para que Foundry conserve el original.
+las variables deben conservar su sintaxis. El lote actual mantiene todas las
+claves del original, incluidas las que antes faltaban en español.
 
-La actualización a 8.6.0 incluye traducciones y correcciones de conjuros, dotes,
-acciones, equipo, NPC Core, Monster Core 2 y los compendios que faltaban.
-También incorpora una base automática con revisión editorial pendiente. Cada
+La reconciliación de 8.6.1 parte de `main` e incluye los 127 pares de archivos
+activos de Crowdin: sistema, interfaz, compendios de módulos y archivos de soporte.
+Primero se alinearon las estructuras y se recuperaron traducciones de original
+exacto; después se completaron las traducciones pendientes. Incorpora una base
+automática con revisión editorial pendiente. Cada
 campo de esa base está identificado en el
 [registro de revisión](docs/translation-review.json), con su archivo, JSON Pointer
 y huellas del original y del texto español. Los textos revisados completos se
 distinguen de la base automática y del español heredado.
 
-El [informe de revisión](docs/translation-status.md) cubre los 98 compendios y los
-9 archivos de interfaz registrados, y detalla los campos pendientes y las
-incidencias de los originales. Los borradores con errores detectados no se
-incorporan. La revisión editorial completa y la prueba de carga en Foundry siguen
-pendientes.
+El [informe de revisión](docs/translation-status.md) cubre los 98 compendios del
+sistema, los 9 archivos de interfaz registrados y los otros 20 archivos mapeados.
+Los nombres propios y términos compartidos conservados se clasifican expresamente;
+no se cuentan como traducciones ausentes. `translations:audit` comprueba la
+cobertura, la vigencia de las huellas y la preservación técnica de los campos
+traducidos en este lote. La revisión editorial completa y la prueba de carga en
+Foundry siguen pendientes.
+
+Una muestra posterior confirmó [errores de traducción y una omisión](docs/translation-known-issues.md)
+que siguen pendientes de corrección. La cobertura de campos no garantiza la
+integridad ni la calidad semántica de las traducciones.
 
 ## Nota
 
