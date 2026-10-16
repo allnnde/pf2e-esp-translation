@@ -76,17 +76,14 @@
       "publicNotes": "<p> Estas criaturas sigilosas y crueles se deleitan en sembrar miedo y atormentar a sus víctimas. Los osgos son los monstruos que acechan en el armario y se esconden debajo de la cama. Los osos insecto, que se alimentan de granjas remotas, revelan su presencia con golpes en la noche o crujidos de tablas, inspirando temor, sospecha y miedo en aquellos a quienes atormentan. </p>",
       "tokenName": "Bugbear merodeador",
       "items": {
-        "weapon->Longsword": {
-          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n <p> Las espadas largas pueden ser espadas de uno o dos filos. Sus hojas son pesadas y miden entre 3 y 4 pies de largo. </p>"
-        },
-        "strike-melee->Longsword": {
-          "name": "espada larga"
-        },
         "strike-melee->Fist": {
           "name": "Puño"
         },
         "strike-ranged->Javelin": {
           "name": "Jabalina"
+        },
+        "strike-melee->Longsword": {
+          "name": "espada larga"
         },
         "action->Bushwhack": {
           "name": "Emboscar",
@@ -95,6 +92,30 @@
         "action->Mauler": {
           "name": "Torturador",
           "description": "<p>El vagabundo bugeador gana un +3 bonificador por circunstancia a las tiradas de daño contra criaturas que tienen @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado}.</p>"
+        }
+      }
+    },
+    "Bugbear Tormentor (BB)": {
+      "name": "Tormentor (BB)",
+      "publicNotes": "<p>El torturador de bugeo busca intimidar a su presa tanto a través de la intimidación psicológica como a través del daño físico.</p>",
+      "tokenName": "Bugbear atormentador",
+      "items": {
+        "strike-ranged->Dagger": {
+          "name": "Daga"
+        },
+        "strike-melee->Dagger": {
+          "name": "Daga"
+        },
+        "strike-melee->Sickle": {
+          "name": "Hoz"
+        },
+        "action->Sneak Attack": {
+          "name": "Ataque furtivo",
+          "description": "<p>Los Golpes del atormentador de bugios infligen 1d6 p. de daño de precisión extra a @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} criaturas.</p>"
+        },
+        "action->Twin Feint": {
+          "name": "Finta gemela",
+          "description": "<p>El atormentador de bugbear hace una serie deslumbrante de ataques con dos armas, utilizando el primer ataque para lanzar a su enemigo @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} contra un segundo ataque en un ángulo diferente. Hacen un Golpe con cada una de sus dos armas cuerpo a cuerpo, ambas contra el mismo objetivo. El objetivo está automáticamente desprotegido contra el segundo ataque. El atormentador de bugeo aplica su penalizador por ataque múltiple a estos golpes normalmente.</p>"
         }
       }
     },
@@ -217,6 +238,24 @@
         }
       }
     },
+    "Crawling Hand (BB)": {
+      "name": "Mano de arrastre (BB)",
+      "publicNotes": "<p>Las manos arrastradas se forman cuando los apéndices cortados son dotados de una cruda sensibilidad por energías necromantes que los convierten en asesinos incansables.</p>",
+      "tokenName": "Mano reptante",
+      "items": {
+        "strike-melee->Claw": {
+          "name": "Garra"
+        },
+        "action->Lifesense": {
+          "name": "Sentido de la vida ",
+          "description": "<p>Una mano gateadora puede sentir la esencia vital de criaturas vivas y no muertas dentro de 30 pies. Este sentido puede distinguir entre la energía vital que anima a las criaturas vivas y la energía del vacío que anima a las criaturas no muertas, de la misma manera que la vista distingue el color. Sin embargo, una mano gateadora no puede ver, por lo que los efectos que dependen de la visión o la visión no funcionan en ella.</p>"
+        },
+        "action->Throat Grab": {
+          "name": "Agarrar garganta",
+          "description": "<p>Cuando la mano arrastrada tiene éxito en su ataque de garra contra una criatura mediana o más pequeña, puede usar esta acción inmediatamente después para intentar [[/act grapple]] el objetivo. Este Garfio no aplica ni cuenta para la penalizador por ataque múltiple de la mano arrastrada. Una criatura @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} de esta manera tiene dificultad para hablar y debe gastar una acción extra para realizar cualquier acción que requiera hablar, incluyendo lanzar conjuros.</p>"
+        }
+      }
+    },
     "Doppelganger (BB)": {
       "name": "Doble (BB)",
       "publicNotes": "<p> Los Doppelgangers pueden transformarse en copias perfectas de otras criaturas pero tienen formas indeterminadas en sus estados naturales. </p>",
@@ -328,7 +367,6 @@
       "name": "Cerradura envenenada (BB)",
       "description": "<p> Un lomo envenenado con resorte está escondido cerca del ojo de la cerradura de una cerradura. @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disabling} o romper la trampa no desactiva ni rompe el bloqueo. </p>",
       "disable": "<p> @Check[type:thievery|dc:17|traits:hazard|name:Disable the Spring Mechanism] en el mecanismo de resorte </p>",
-      "tokenName": "Cerradura envenenada",
       "items": {
         "action->Spring": {
           "name": "Primavera",
@@ -350,6 +388,37 @@
         },
         "strike-melee->Falling Block": {
           "name": "Bloque de caída"
+        }
+      }
+    },
+    "Falling Shelves": {
+      "name": "Cayendo los estantes",
+      "disable": "<p>Un héroe debe tener éxito en una verificación @Check[athletics|dc:18] o @Check[thievery|dc:18] para evitar que los estantes se derrumben.</p>",
+      "items": {
+        "action->Topple Over": {
+          "name": "Tupple Over",
+          "description": "<p>Cuando una criatura intenta tocar los estantes o tomar algo de ellos, se derrumban, enviando escombros por toda la habitación. La trampa hace un Golpe cuerpo a cuerpo contra cada criatura en la habitación.</p>"
+        },
+        "strike-melee->Falling Debris": {
+          "name": "Caída de escombros"
+        }
+      }
+    },
+    "Ferrous Butterfly (BB)": {
+      "name": "Mariposa Ferrosa (BB)",
+      "publicNotes": "<p>Hermosa pero mortal, la mariposa ferrosa es una criatura insecta del tamaño de un pavo que tiene docenas de brillantes hojas de filo de navaja. Considerados inofensivos por la mayoría de los habitantes del Plano de Metal, sin embargo, representan una amenaza significativa para las criaturas orgánicas, cuya sangre rica en hierro les resulta irresistible. Las hojas de las alas de estas mariposas tienden a romperse durante la alimentación y crecen de nuevo de forma natural. Estas escamas recuerdan a los fragmentos de metal y pueden servir como un arma improvisada sorprendentemente eficaz.</p>",
+      "tokenName": "Mariposa de hierro",
+      "items": {
+        "strike-melee->Wing": {
+          "name": "Ala"
+        },
+        "action->A Thousand Cuts": {
+          "name": "Mil cortes",
+          "description": "<p>Las alas de una mariposa ferrosa, como cuchillos, causan terribles laceraciones que continúan sangrando. Cualquier criatura con daño de sangrado persistente de un ataque de ala de mariposa férrea tiene debilidad 2 a cortar daño hasta que se detenga la sangría.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Eecbbol29eIP3zvf]{Efecto: A Thousand Cuts}</p>"
+        },
+        "action->Swoop": {
+          "name": "Picado",
+          "description": "<p>La mariposa férrea vuela hasta su velocidad y hace un golpe de ala en cualquier momento durante ese movimiento.</p>"
         }
       }
     },
@@ -491,6 +560,24 @@
         }
       }
     },
+    "Giant Fly (BB)": {
+      "name": "Mosca gigante (BB)",
+      "publicNotes": "<p>Las extremidades de esta mosca masiva parecen no dejar de moverse mientras se limpia constantemente y recoge cualquier cosa comestible en sus partes de la boca. Aunque son principalmente carnívoras, las moscas gigantes a veces se alimentan de ganado u otros animales que son demasiado lentos para escapar. Dejadas a su suerte, estas moscas pondrán docenas de huevos dentro de los cadáveres que se comen en su mayoría. Estos huevos pronto eclosionan en enormes gusanos que comienzan el ciclo de la recolección de nuevo.</p>",
+      "tokenName": "Mosca gigante",
+      "items": {
+        "strike-melee->Mandibles": {
+          "name": "Mandíbulas"
+        },
+        "action->Avoid the Swat": {
+          "name": "Evitar ser aplastada",
+          "description": "<p><strong>Desencadenante</strong> La mosca gigante es atacada con un ataque cuerpo a cuerpo o a distancia por un atacante que puede ver</p>\n<hr /> <p><strong>Efecto</strong> La mosca gigante gana un + 2 bonificador por circunstancia a CA contra el ataque que la desencadenó. Si el ataque falla, el insecto gigante puede volar hasta su velocidad de mosca.</p>"
+        },
+        "action->Fly Pox": {
+          "name": "Varicela",
+          "description": "<p>Una mosca gigante puede llevar cualquier enfermedad, pero la mayoría transmite una infección llamada varicela con su picadura. Un personaje que es golpeado por las mandíbulas de una mosca gigante debe tener éxito en un lanzamiento salvador de @Check[fortitude|dc:16|options:inflicts:enfeebled] o ser @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} por 1 día.</p>"
+        }
+      }
+    },
     "Giant Rat (BB)": {
       "name": "Rata gigante (BB)",
       "publicNotes": "<p> Las ratas gigantes son versiones enormes de las alimañas comunes. Por lo general, se encuentran en cantidades abundantes, pero como no caben en los rincones donde normalmente se esconden las ratas comunes, son mucho más fáciles de localizar y exterminar. De hecho, encontrar y matar una rata gigante es un rito de iniciación para muchos aventureros. Estas tareas se vuelven aburridas rápidamente, por lo que muchos veteranos subcontratan el exterminio a nuevos aventureros. </p>\n <p> Las ratas gigantes viven principalmente en alcantarillas donde pueden hurgar en la basuradesde las calles de arriba, pero algunas familias de ratas gigantes viven en lugares más remotos, como cuevas húmedas, bosques o colinas. Las ratas son supervivientes increíblemente hábiles y se pueden encontrar en casi cualquier parte del mundo, aunque tienden a preferir los climas templados o cálidos en lugar de las regiones frías. </p>\n <p> Aunque su mordedura por sí sola no es letal excepto para los muy débiles, algunas ratas gigantes son portadoras de una peligrosa enfermedad común a los roedores de todo el mundo: una pestilencia más que capaz de devastarcomunidades rurales. Las ratas son meros portadores sin riesgo de sucumbir a la enfermedad. </p>",
@@ -509,7 +596,6 @@
     "Giant Spider (BB)": {
       "name": "Araña gigante (BB)",
       "publicNotes": "<p> Pocas alimañas cotidianas inspiran tanto temor como la infame araña. Las arañas gigantes varían en tamaño. Las versiones de tamaño humano, a veces llamadas arañas cazadoras, son el tipo más común de araña gigante, aunque no las más grandes. </p>",
-      "tokenName": "Araña gigante",
       "items": {
         "strike-melee->Fangs": {
           "name": "colmillos"
@@ -575,11 +661,8 @@
       "publicNotes": "<p> Los Goblins encuentran el fuego totalmente fascinante. Hace luz. Es genial para cocinar. ¡Es un juguete divertido! Algunos duendes llevan la admiración de su gente por el fuego demasiado lejos y la llevan al reino de la obsesión mortal. </p>\n <p> Los duendes que centran su atención en la magia para aprender a hacer fuego de la nada se conocen como encendedores de duendes. Estos fanáticos de las llamas pueden ser de gran ayuda para una banda de asaltantes goblin ansiosos por quemar a sus enemigos y causar estragos. Más a menudo, sin embargo,su presencia es un arma de doble filo. En el calor del momento, los encendedores goblin a veces pierden de vista sus objetivos y simplemente prenden fuego a cualquier cosa que pueda arder, ¡incluidos sus propios aliados! </p>",
       "tokenName": "Pirómano Goblin",
       "items": {
-        "spellcastingEntry->Wizard Spells": {
-          "name": "Hechizos de mago"
-        },
-        "spell->Light": {
-          "target": "1 objeto de 1 volumen o menos, ya sea desatendido o poseído por ti o por un aliado dispuesto"
+        "spellcastingEntry->Spells": {
+          "name": "Conjuros"
         },
         "strike-melee->Torch": {
           "name": "Antorcha"
@@ -590,9 +673,6 @@
         },
         "lore->Fire Lore": {
           "name": "Conocimiento del fuego"
-        },
-        "spellcastingEntry->Spells": {
-          "name": "Conjuros"
         }
       }
     },
@@ -671,18 +751,39 @@
         }
       }
     },
+    "Hobgoblin Archer (BB)": {
+      "name": "Arquero Hobgoblin (BB)",
+      "publicNotes": "<p>Las bandas de soldados goblins suelen tener al menos un arquero entre sus filas. En grupos más pequeños, el arquero goblin también sirve como capitán de esa banda. Estos arqueros generalmente comandan a estos grupos desde una distancia o desde un terreno más alto y utilizan sus sentidos agudos para vigilar las aberturas estratégicas.</p>",
+      "tokenName": "Hobgoblin arquero",
+      "items": {
+        "strike-melee->Shortsword": {
+          "name": "Espada corta"
+        },
+        "strike-ranged->Crossbow": {
+          "name": "Ballesta"
+        },
+        "action->Formation": {
+          "name": "Formación",
+          "description": "<p>Cuando están adyacentes a al menos dos aliados, el arquero goblin gana un bonificador por circunstancia +1 a la CA y a los tiradas de salvación.</p>"
+        },
+        "action->Crossbow Precision": {
+          "name": "Precisión de ballesta",
+          "description": "<p>La primera vez que el arquero golpea con un ataque de ballesta en una asaltos, inflige 1d8 daño de precisión extra.</p>"
+        },
+        "action->Running Reload": {
+          "name": "Recarga a la carrera",
+          "description": "<p>El arquero da una Zancada, da un Paso o utiliza @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Movimiento furtivo}, y después Interactúa para recargar.</p>"
+        }
+      }
+    },
     "Hobgoblin Soldier (BB)": {
       "name": "Soldado Hobgoblin (BB)",
       "acDetails": "(20 con escudo levantado)",
       "publicNotes": "<p> Los hobgoblins son singularmente devotos de la guerra, y toda su civilización se basa en fomentar y mantener el conflicto y, al mismo tiempo, demostrar su superioridad en la batalla. Altamente organizados, trabajan eficiente y eficazmente en grupos, ya sea un pequeño grupo de asalto, una banda de guerra itinerante o un ejército completamente reglamentado. Físicamente, los hobgoblins son tan altos como los humanos y tienen la piel gris cenicienta. </p>",
       "tokenName": "Hobgoblin soldado",
       "items": {
-        "weapon->Longsword": {
-          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n <p> Las espadas largas pueden ser espadas de uno o dos filos. Sus hojas son pesadas y miden entre 3 y 4 pies de largo. </p>"
-        },
         "shield->Shield": {
-          "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\nBlindaje",
-          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\n <p> Un escudo tiene 20 puntos de vida. Si un escudo alguna vez recibe 10 daños o más, se convierte en @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Roto} . Un escudo roto no se puede usar para @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raise a Shield} o @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Shield Block} , pero aún puedes @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repair}. Si el escudo pierde los 20 puntos de vida, queda completamente destruido. </p>"
+          "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB]\nBlindaje"
         },
         "strike-melee->Longsword": {
           "name": "espada larga"
@@ -694,13 +795,13 @@
           "name": "Formación",
           "description": "<p>Cuando está adyacente a al menos dos aliados, el soldado goblin gana un bonificador por circunstancia +1 a CA y tiradas de salvación.</p>"
         },
-        "action->Shield Block": {
-          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.m4HQ2o5aPxjXf2kY]\n <p> Si @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raised a Shield} desde su último turno, el hobgoblin puede gastar su reacción para bloquear un Golpe. Reduce el daño en 5, pero el duende y el escudo reciben el daño restante, posiblemente @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Breaking} o destruyen el escudo. </p>"
-        },
         "action->Raise a Shield": {
           "name": "Alzar un escudo",
-          "selfEffect": "Efecto: levantar un escudo",
-          "description": "<p>El soldado goblin levanta su escudo para obtener un bonificador de +2 circunstancias a CA hasta el inicio de su siguiente turno.</p>"
+          "description": "<p>El soldado goblin levanta su escudo para obtener un bonificador de +2 circunstancias a CA hasta el inicio de su siguiente turno.</p>",
+          "selfEffect": "Efecto: levantar un escudo"
+        },
+        "action->Shield Block": {
+          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.m4HQ2o5aPxjXf2kY]\n <p> Si @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raised a Shield} desde su último turno, el hobgoblin puede gastar su reacción para bloquear un Golpe. Reduce el daño en 5, pero el duende y el escudo reciben el daño restante, posiblemente @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Breaking} o destruyen el escudo. </p>"
         }
       }
     },
@@ -985,6 +1086,59 @@
         }
       }
     },
+    "Lukahn": {
+      "name": "Lukahn",
+      "blurb": "Variante de sacerdote de la sombra",
+      "items": {
+        "spellcastingEntry->Occult Spontaneous Spells": {
+          "name": "Hechizos espontáneos ocultos"
+        },
+        "strike-melee->Shadow Hand": {
+          "name": "Mano de sombra"
+        },
+        "strike-ranged->Shadow Blast": {
+          "name": "Explosión de sombra"
+        },
+        "action->Incorporeal": {
+          "name": "Incorporal",
+          "description": "<p>Lukahn no tiene cuerpo y puede pasar a través de objetos físicos, aunque no puede terminar su turno dentro de uno. La mayoría de las prueba que usan fuerza y requieren un cuerpo, como @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Presa} y @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Empujar}, no funcionan contra Lukahn, y no puede usarlos.</p>"
+        },
+        "action->Light Vulnerability": {
+          "name": "Vulnerabilidad ligera",
+          "description": "<p>Los ataques contra Lukahn son tratados como mágicos si él o el arma que se usa contra él está en la luz.</p>"
+        },
+        "action->Shadow Veil": {
+          "name": "Velo de Sombra",
+          "description": "<p><strong>Desencadenante</strong> Lukahn es el objetivo de un ataque cuerpo a cuerpo</p>\n<hr /> <p><strong>Efecto</strong> Lukahn gana un +2 bonificador por circunstancia a CA contra el ataque que lo desencadenó.</p>"
+        }
+      }
+    },
+    "Magnetic Skink": {
+      "name": "Skink magnético",
+      "publicNotes": "<p>Las escamas de estos grandes lagartos son magnéticas, atrayendo restos de metal a sus cuerpos. Además de comer insectos y otras presas pequeñas, los skinks magnéticos también se alimentan de pequeñas cantidades de metal, por lo que se sabe que residen cerca de asentamientos con acceso a estos materiales.</p>",
+      "skillSpecialAthletics": {
+        "0": {
+          "label": "Escalar"
+        }
+      },
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Mandíbulas"
+        },
+        "action->Uncanny Climber": {
+          "name": "Escalador asombroso",
+          "description": "<p>Las patas de un skink magnético le permiten trepar prácticamente cualquier superficie, sin importar cuán resbaladiza o transparente sea. Si un skink intenta un chequeo de atletismo a [[/act climb]] y falla críticamente, obtiene un fallo en su lugar.</p>"
+        },
+        "action->Launch Metal": {
+          "name": "Metal de lanzamiento",
+          "description": "<p>El skink repele el metal adherido a su cuerpo en todas direcciones, infligiendo @Damage[2d6[bludgeoning]|options:area-damage] de daño ( @Check[reflex|dc:15|basic|options:area-effect] de salvación) a todas las criaturas adyacentes al skink. El skink no puede usar Metal de lanzamiento de nuevo por [[/gmr 1d4 #Recharge Launch Metal]]{1d4 asaltos}.</p>"
+        },
+        "action->Unsteadying Magnetism": {
+          "name": "Magnetismo desestabilizador",
+          "description": "<p>El skink amplifica su campo magnético e intenta alejar el metal de una criatura dentro de 20 pies. Si esa criatura lleva armadura de metal o sostiene un objeto de metal, debe intentar un salvación @Check[fortitude|dc:15]. En caso de fracaso, esa criatura está @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el comienzo del siguiente turno del skink.</p>"
+        }
+      }
+    },
     "Mermaid Fountain (BB)": {
       "name": "Fuente de la Sirena (BB)",
       "disable": "<p> @Check[type:thievery|dc:20|traits:complex,hazard|name:Disable Mechanism] en cada mecanismo de esquina (debe desactivar las tres esquinas de trabajo para desactivar la trampa) </p>\n <p> Cada mecanismo de esquina tiene dureza 8 y 15 HP </p>",
@@ -1049,9 +1203,6 @@
       "publicNotes": "<p> Los ogros encarnan la crueldad y la violencia brutal y amoral. Con 10 pies de altura y musculosos densos, los ogros son tan fuertes como crueles. Por lo general, disfrutan de la violencia despiadada en todas sus formas. Aunque prefieren desahogar sus impulsos violentos en humanoides más pequeños (cuanto más pequeños, mejores), los ogros prometen un destino horrible para cualquiera que tenga la mala suerte de caer dentro de sus carnosas garras. </p>\n <p> Siempre deseosos de caos y asesinato, los guerreros ogros se vuelven rápidamente contra sus parientes.cuando hay escasez de gente más pequeña a la que atormentar, aquellos que lideran a los ogros hacen todo lo posible para mantenerlos constantemente distraídos con nuevas oportunidades de ataques y ruina. Los déficits de paciencia e inteligencia de un ogro los hacen fáciles de engañar, dando a los astutos cautivos muchas maneras de sacar lo mejor de ellos. </p>",
       "tokenName": "guerrero ogro",
       "items": {
-        "weapon->Greataxe": {
-          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.8COlYvHe6hKCXY8x]\n <p> Esta gran hacha de batalla es demasiado pesada para manejarla con una sola mano. Muchas grandes hachas incorporan dos hojas y, a menudo, tienen \"barba\" y tienen un gancho en la parte inferior para aumentar la fuerza de su poder de corte. </p>"
-        },
         "strike-melee->Greataxe": {
           "name": "gran hacha"
         },
@@ -1107,9 +1258,6 @@
       "publicNotes": "<p> El típico soldado orco es un combatiente violento familiar para muchos aventureros. Los guerreros orcos luchan por sus fortalezas, por las riquezas y, quizás sobre todo, por la gloria. Demostrar su propia fuerza mejora su posición dentro de su fortaleza orca, por lo que la batalla es una parte crucial de la vida de cualquier orco que aspire algún día a liderar o pasar a la historia. </p>",
       "tokenName": "Orco veterano",
       "items": {
-        "armor->Breastplate": {
-          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.r0ifJfoz8aqf0mwk]\n <p> Aunque se la conoce como coraza, este tipo de armadura consta de varias piezas de armadura de placa o media placa que protegen el torso, el pecho, el cuello y, a veces, las caderas y la parte inferior de las piernas. Otorga estratégicamente parte de la protección de la placa al tiempo que permite una mayor flexibilidad y velocidad. </p>"
-        },
         "strike-melee->Battle Axe": {
           "name": "Hacha de batalla"
         },
@@ -1223,6 +1371,38 @@
         }
       }
     },
+    "Sea Hag (BB)": {
+      "name": "Sea Hag (BB)",
+      "publicNotes": "<p>Las brujas son depredadores malévolos que usan la magia y la manipulación para atraer a los niños y adultos jóvenes a sus garras. Buscan objetivos que sean infelices, inocentes o vulnerables, aprovechando sus debilidades antes de arrebatarlos. Una bruja de mar tiene la mitad superior de un humanoide y la mitad inferior de un pulpo, con piel translúcida y luces brillantes visibles debajo de su carne.</p>",
+      "saveDetails": "+1 por estatus a todas las salvaciones contra magia",
+      "tokenName": "Saga marina",
+      "items": {
+        "strike-melee->Claw": {
+          "name": "Garra"
+        },
+        "action->+1 Status to All Saves vs. Magic": {
+          "name": "+1 por estatus a todas las salvaciones contra la magia"
+        },
+        "action->Dread Gaze": {
+          "name": "Mirada fatal",
+          "description": "<p>La bruja mira a una criatura, afligiéndola con una sensación de muerte inminente, con un resultado que depende de su @Check[will|dc:20|options:inflicts:frightened,inflicts:slowed] salvación. El objetivo no necesita ser capaz de ver a la bruja del mar.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>\n<p><strong>Fallo</strong> La criatura está asustada 1 y es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} por 1 asalto.</p>\n<p><strong>Fallo crítico</strong> Como un fracaso, pero la criatura es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} y lentificada 1 por 1 minuto.</p>"
+        }
+      }
+    },
+    "Severed Head (BB)": {
+      "name": "Cabeza cortada (BB)",
+      "publicNotes": "<p>Las cabezas cortadas son las cabezas reanimadas de las víctimas de la decapitación. Estos no muertos sin mente vuelan por el aire o giran para atacar a sus presas. Además de atacar a los vivos como otros no muertos, las cabezas cortadas a veces pueden ser atraídas por cosas importantes para ellos en la vida. Los estudiosos argumentan que esto es probablemente debido a pensamientos particularmente poderosos que pueden irrumpir momentáneamente en lo que queda de la mente de una cabeza cortada. Desafortunadamente, su estado sin mente les impide reconocer su objetivo, y permanecen violentos incluso después de encontrar lo que buscan.</p>",
+      "tokenName": "Cabeza dañada",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Mandíbulas"
+        },
+        "action->Gnash": {
+          "name": "Rechinar",
+          "description": "<p>Cuando la cabeza cortada tiene éxito en su Golpe de Mandíbulas, puede usar esta acción inmediatamente después para hacer un segundo Golpe de Mandíbulas en el mismo objetivo mientras se sacude violentamente, tratando de arrancar un bocado de carne. En caso de éxito, el objetivo recibe 1d4 de daño de corte adicional y 1 de daño de sangrado persistente.</p>"
+        }
+      }
+    },
     "Sewer Ooze (BB)": {
       "name": "Lodo de alcantarillado (BB)",
       "publicNotes": "<p> Estas masas amorfas de aguas residuales y detritos se abren paso a través de sucias alcantarillas debajo de las ciudades. Algunos crecen hasta alcanzar tamaños enormes y tienen apetitos insaciables. </p>",
@@ -1262,10 +1442,6 @@
           "name": "Vulnerabilidad ligera",
           "description": "<p> Un arma con un hechizo @UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light} lanzado sobre ella obtiene el rasgo mágico cuando se usa para atacar la sombra. </p>"
         },
-        "action->Shadow Spawn": {
-          "name": "Engendro de sombras",
-          "description": "<p> Cuando Steal Shadow libera la sombra de una criatura, se convierte en un @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.XrmHgbKgcHDi4OnK]{Shadow Spawn} bajo el mando de la sombra que la creó. Este engendro de sombra no tiene Robar sombra y es perpetua e incurablemente @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2}. Si la criatura de la que se extrajo el engendro de la sombra muere, el engendro de la sombra se convierte en una sombra autónoma y de pleno derecho. Si la criatura se recupera de su @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeeblement} , su sombra regresa a ella y la sombra se genera.extinguido. </p>"
-        },
         "action->Slink in Shadows": {
           "name": "Escabullirse en las sombras",
           "description": "<p> La sombra puede @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} o terminar su @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} en la sombra de una criatura u objeto. </p>"
@@ -1273,6 +1449,118 @@
         "action->Steal Shadow": {
           "name": "Robar sombra",
           "description": "<p> Si la sombra golpea a una criatura viviente con un Golpe en su acción anterior, puede usar esta acción para atraer la sombra del objetivo, imponiendo una penalización de estado de -1 al Atletismo y a las tiradas de ataque y daño que usan Fuerza. La penalización aumenta cada vez que una sombra usa esta habilidad hasta un máximo de -4. La penalización disminuye en 1 cada hora. </p>"
+        }
+      }
+    },
+    "Shadow Bat": {
+      "name": "Murciélago de las sombras",
+      "publicNotes": "<p>Las energías mágicas sombrías relacionadas con algunas deidades malvadas, fuerzas del mal, o el plano sombrío de existencia llamado el Infierno a veces se manifiestan en forma de criaturas vivientes corruptas. El murciélago de las sombras tiene el físico de un murciélago gigante hecho de sombras con la capacidad mágica de crear poderosas ráfagas de viento.</p>",
+      "items": {
+        "strike-melee->Fangs": {
+          "name": "colmillos"
+        },
+        "strike-melee->Wing": {
+          "name": "Ala"
+        },
+        "action->Echolocation": {
+          "name": "Ecolocalización",
+          "description": "<p>El murciélago puede \"ver\" usando su audición en el rango indicado, lo que le permite funcionar igual de bien en la oscuridad.</p>"
+        },
+        "action->Screeching Gust": {
+          "name": "Gritando la ráfaga",
+          "description": "<p>El murciélago de las sombras agita sus alas y emite un poderoso chirrido, creando un cono de vientos desgarradores y sonido penetrante. Todas las criaturas en un @Template[type:cone|distance:15] reciben @Damage[3d6[sonic]|options:area-damage] de daño, con un lanzamiento salvador @Check[reflex|dc:16|basic|options:area-effect,forced-movement]. Las criaturas que fallan son empujadas hacia atrás 10 pies por el viento.</p>\n<p>Usar sus alas de esta manera agota al murciélago de las sombras, lo que hace que caiga inofensivo al suelo inmediatamente después de usar esta habilidad y lo impide tomar vuelo o usar Gritos de nuevo por [[/gmr 1d4 #Recharge Screeching Gust]]{1d4 asaltos}.</p>"
+        }
+      }
+    },
+    "Shadow Gargoyle": {
+      "name": "Gárgola de las Sombras",
+      "items": {
+        "strike-melee->Jaws": {
+          "name": "Mandíbulas"
+        },
+        "strike-melee->Claw": {
+          "name": "Garra"
+        },
+        "action->Clawed Feet": {
+          "name": "Pies con garras",
+          "description": "<p> Si la gárgola está volando y una criatura se mueve a un cuadrado adyacente debajo de ella, la gárgola puede usar su reacción para realizar un golpe de garra contra esa criatura. </p>"
+        }
+      }
+    },
+    "Shadow Priest": {
+      "name": "Sacerdote de las sombras",
+      "publicNotes": "<p>A veces, los seguidores de deidades profanas se transforman en sombras al morir, un regalo de sus patrones malvados.</p>",
+      "items": {
+        "strike-melee->Shadow Hand": {
+          "name": "Mano de sombra"
+        },
+        "strike-ranged->Shadow Blast": {
+          "name": "Explosión de sombra"
+        },
+        "action->Incorporeal": {
+          "name": "Incorporal",
+          "description": "<p>El sacerdote de las sombras no tiene cuerpo y puede pasar a través de objetos físicos, aunque no puede terminar su turno dentro de uno. La mayoría de las prueba que usan Fuerza y requieren un cuerpo, como @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Presa} y @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Empujar}, no funcionan contra el sacerdote de las sombras, y el sacerdote de las sombras no puede usarlos.</p>"
+        },
+        "action->Light Vulnerability": {
+          "name": "Vulnerabilidad ligera",
+          "description": "<p>Los ataques contra el sacerdote de las sombras son tratados como mágicos si el sacerdote de las sombras o el arma que se usa contra ellos está en la luz.</p>"
+        },
+        "action->Shadow Veil": {
+          "name": "Velo de Sombra",
+          "description": "<p>Si el sacerdote de las sombras es atacado por un ataque cuerpo a cuerpo, puede usar su reacción para ganar un bonificador por circunstancia +2 a CA contra el ataque que lo desencadenó.</p>"
+        }
+      }
+    },
+    "Shadow Twigjack": {
+      "name": "Twigjack de la sombra",
+      "publicNotes": "<p>Los «auténticos» ramiteros, tal y como se consideran a sí mismos, se encuentran en los bosques salvajes junto a las hadas a las que idealizan.</p>\n<hr />\n<p>Los ramiteros, unos inadaptados habitantes del bosque, se forman a partir de la combinación cruel y traviesa de las hadas y de los propios bosques en los que residen. El cuerpo del ramitero está hecho de zarzas espinosas entretejidas con lianas. Su cabeza está\ncoronada por una mata desdeñada y musgosa, no muy distinta del pelo. Su boca es un cañón de palos astillados y rotos que divide por la mitad su cara. Hojas y brotes de matas nuevas brotan al azar de su cuerpo. Muchos bosques densos de Golarion tienen por lo\nmenos un puñado de ramiteros viviendo entre la maleza.</p>\n<p>Si bien son truculentos y violentos, se preocupan mucho de lo que consideran que son sus bosques. Estas criaturas hostigan a los forasteros que se internan en sus dominios arbolados, haciendo retroceder incluso a los exploradores, forestales y viajeros más\ndeterminados, especialmente cuando los intrusos abren sendas que atraviesan el bosque. Sin embargo, no son terriblemente territoriales cuando se trata de otras criaturas del bosque. Cuando las criaturas silvanas, en especial las hadas, se unen contra una amenaza exterior, los ramiteros que hay en la zona acuden rápidamente a la lucha, incluso si no se les ha invitado.</p>",
+      "items": {
+        "strike-melee->Claw": {
+          "name": "Garra"
+        },
+        "strike-ranged->Splinter": {
+          "name": "Astillarse"
+        },
+        "action->Bramble Jump": {
+          "name": "Salto entre zarzas",
+          "description": "<p>Cuando el twigjack está en el matorral, puede teletransportarse instantáneamente a un cuadrado de matorral dentro de 60 pies. Este movimiento no desencadena reacciones.</p>"
+        },
+        "action->Splinter Spray": {
+          "name": "Rociada de astillas",
+          "description": "<p>El rastrillo lanza una lluvia de astillas y zarzas desde su cuerpo que inflige @Damage[3d6[piercing]|options:area-damage] de daño en un @Template[type:cone|distance:15]. Cada criatura en el área debe intentar un salvación @Check[reflex|dc:18|basic|options:area-effect]. El twigjack no puede usar Splinter Spray de nuevo por [[/gmr 1d4 #Recharge Splinter Spray]]{1d4 asaltos}.</p>"
+        }
+      }
+    },
+    "Shadow Walls": {
+      "name": "Muros de sombras",
+      "disable": "<p>@Check[arcana|dc:20], @Check[nature|dc:20], @Check[occultism|dc:20], o @Check[religion|dc:20] en cada una de las paredes de sombra (desactivar tres de las cuatro paredes termina el peligro), o activando el orrery con la <em> estrella no iluminada </em> como se observa en \"El Orrery de la Luz.\"</p>",
+      "hpDetails": "Muro PG 15",
+      "routine": "<p>Cada turno, los muros usan la acción 1. Lanza un [[/gmr 1d10 #Routine Result]]{d10} y busca el resultado en la siguiente lista para determinar qué acción usa el muro en esa asaltos.</p>\n<p><strong>1–4 Objetivo único</strong> Las paredes se lanzan contra un héroe al azar en la habitación. Tira un [[/gmr 1d4 #Random Hero]]{d4} y cuenta hasta el número que lanzaste, comenzando con el jugador a tu izquierda, para determinar qué héroe es atacado. El azote de las sombras es un Golpe a distancia con +10 para golpear. En un golpe, inflige @Damage[2d6[void]] de daño (doblado en un golpe crítico como de costumbre).</p>\n<p><strong>5–7 Barranco de Muro</strong> Los brazos de las sombras se lanzan desde sus respectivos muros, atacando a cualquiera cerca de un muro activo. Esto golpea a cualquier criatura dentro de 10 pies de un muro activo (dentro de 10 pies de una mano de sombra en el mapa), infligiendo @Damage[2d6[void]|options:area-damage] de daño. Cada héroe debe intentar un salvación @Check[reflex|dc:15|basic|options:area-effect], no recibiendo daño en un éxito crítico, medio daño en un éxito, daño completo en un fracaso, y doble daño en un fracaso crítico.</p>\n<p><strong>8–9 Asalto dividido</strong> Las sombras se lanzan contra una mitad de la habitación. Rollo [[/gmr 1d20 #Even Western Half, Odd Eastern Half]]{any die}. Si el resultado es igual, asaltan la mitad occidental; de lo contrario, asaltan la mitad oriental. Esto inflige @Damage[2d6[void]|options:area-damage] de daño a cada criatura en esa mitad de la habitación, y cada héroe debe intentar un @Check[reflex|dc:15|basic|options:area-effect] de salvación.</p>\n<p><strong>10 Asalto Abrumador</strong> Como el ataque de asalto dividido, pero apunta a todos en la habitación.</p>",
+      "items": {
+        "strike-ranged->Shadow Lash": {
+          "name": "Sombra de pestañas",
+          "description": "<p><em>Note: This Strike can only be used with the <strong>Single Target</strong> result of the Shadow Walls' routine.</em></p>"
+        }
+      }
+    },
+    "Shulzara": {
+      "name": "Shulzara",
+      "blurb": "Variante de la bruja del mar",
+      "publicNotes": "<p>Las brujas son depredadores malévolos que usan la magia y la manipulación para atraer a los niños y adultos jóvenes a sus garras. Buscan objetivos que sean infelices, inocentes o vulnerables, aprovechando sus debilidades antes de arrebatarlos. Una bruja de mar tiene la mitad superior de un humanoide y la mitad inferior de un pulpo, con piel translúcida y luces brillantes visibles debajo de su carne.</p>",
+      "saveDetails": "+1 por estatus a todas las salvaciones contra magia",
+      "items": {
+        "spellcastingEntry->Arcane Spontaneous Spells": {
+          "name": "Hechizos arcanos espontáneos"
+        },
+        "strike-melee->Claw": {
+          "name": "Garra"
+        },
+        "action->+1 Status to All Saves vs. Magic": {
+          "name": "+1 por estatus a todas las salvaciones contra la magia"
+        },
+        "action->Slithering Steps": {
+          "name": "Pasos de Slithering",
+          "description": "<p>Shulzara no se ve afectada por terrenos difíciles debido al agua.</p>"
         }
       }
     },
@@ -1370,6 +1658,120 @@
         }
       }
     },
+    "String Slime (BB)": {
+      "name": "Slime de cadena (BB)",
+      "skillSpecialAthletics": {
+        "0": {
+          "label": "a Empujar"
+        }
+      },
+      "tokenName": "Limo de cuerda",
+      "items": {
+        "strike-melee->Pseudopod": {
+          "name": "Seudópodo"
+        },
+        "action->Motion Sense": {
+          "name": "Sentir movimiento",
+          "description": "<p>Un limo de cuerda puede sentir los movimientos cercanos mediante la vibración y el movimiento del aire.</p>"
+        },
+        "action->Split": {
+          "name": "Dividir",
+          "description": "<p>Cuando un slime de cadena recibe daño de corte (si no fuera inmune) y tiene al menos 10 Puntos de Golpe, se divide en dos slimes idénticos con la mitad de los Puntos de Golpe del original. Una cuerda de slime está en el mismo espacio que la original, y la otra aparece en un espacio adyacente no ocupado. Si no hay espacios adyacentes libres, mueve criaturas y objetos más pequeños fuera del camino para hacer un espacio o la división se cancela a discreción del DJ.</p>"
+        },
+        "action->Tag Team": {
+          "name": "Etiqueta de equipo",
+          "description": "<p>El limo arquea el protoplasma ácido a otro hilo de limo dentro de 30 pies a lo largo de una línea recta. Cada criatura en esa línea recibe @Damage[3d6[acid]] de daño con un @Check[reflex|dc:16|basic|options:area-effect,inflicts:prone] de salvación. Una criatura que falla en su salvación también es golpeada @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}.</p>"
+        }
+      }
+    },
+    "Twigjack (BB)": {
+      "name": "Twigjack (BB)",
+      "publicNotes": "<p>Los «auténticos» ramiteros, tal y como se consideran a sí mismos, se encuentran en los bosques salvajes junto a las hadas a las que idealizan.</p>\n<hr />\n<p>Los ramiteros, unos inadaptados habitantes del bosque, se forman a partir de la combinación cruel y traviesa de las hadas y de los propios bosques en los que residen. El cuerpo del ramitero está hecho de zarzas espinosas entretejidas con lianas. Su cabeza está\ncoronada por una mata desdeñada y musgosa, no muy distinta del pelo. Su boca es un cañón de palos astillados y rotos que divide por la mitad su cara. Hojas y brotes de matas nuevas brotan al azar de su cuerpo. Muchos bosques densos de Golarion tienen por lo\nmenos un puñado de ramiteros viviendo entre la maleza.</p>\n<p>Si bien son truculentos y violentos, se preocupan mucho de lo que consideran que son sus bosques. Estas criaturas hostigan a los forasteros que se internan en sus dominios arbolados, haciendo retroceder incluso a los exploradores, forestales y viajeros más\ndeterminados, especialmente cuando los intrusos abren sendas que atraviesan el bosque. Sin embargo, no son terriblemente territoriales cuando se trata de otras criaturas del bosque. Cuando las criaturas silvanas, en especial las hadas, se unen contra una amenaza exterior, los ramiteros que hay en la zona acuden rápidamente a la lucha, incluso si no se les ha invitado.</p>",
+      "tokenName": "Ramitero",
+      "items": {
+        "strike-melee->Claw": {
+          "name": "Garra"
+        },
+        "strike-ranged->Splinter": {
+          "name": "Astillarse"
+        },
+        "action->Bramble Jump": {
+          "name": "Salto entre zarzas",
+          "description": "<p>Cuando el twigjack está en el matorral, puede teletransportarse instantáneamente a un cuadrado de matorral dentro de 60 pies. Este movimiento no desencadena reacciones.</p>"
+        },
+        "action->Splinter Spray": {
+          "name": "Rociada de astillas",
+          "description": "<p>El rastrillo lanza una lluvia de astillas y zarzas desde su cuerpo que inflige @Damage[4d6[piercing]|options:area-damage] de daño en un @Template[type:cone|distance:15]. Cada criatura en el área debe intentar un salvación @Check[reflex|dc:20|basic|options:area-effect]. El twigjack no puede usar Splinter Spray de nuevo por [[/gmr 1d4 #Recharge Splinter Spray]]{1d4 asaltos}.</p>"
+        }
+      }
+    },
+    "Umbral Gnome Rockwarden (BB)": {
+      "name": "Umbral Gnome Rockwarden (BB)",
+      "publicNotes": "<p>Un subgrupo notable de gnomos llamados gnomos umbral típicamente tienen piel gris o marrón con una textura pedregosa, y pelo delgado, pálido o calvo. Los gnomos umbral son más numerosos en las Tierras Oscuras, donde se les conoce como drathnelar. Si bien no son tan siniestros o despiadados como otros habitantes de Darklands, aquellos que buscan su ayuda deben recordar que no reciben a los extraños con los brazos abiertos.</p>\n<p>Los guardianes de rocas gnomos umbral siguen las enseñanzas druídicas y comulgan con las influencias elementales naturales y los habitantes de las Tierras Oscuras.</p>",
+      "tokenName": "Gnomo sombrío guardiapétreo",
+      "items": {
+        "spellcastingEntry->Spells": {
+          "name": "Conjuros"
+        },
+        "strike-ranged->Sling": {
+          "name": "Honda"
+        },
+        "strike-melee->Scythe": {
+          "name": "Guadaña"
+        }
+      }
+    },
+    "Umbral Gnome Scout (BB)": {
+      "name": "Umbral Gnome Scout (BB)",
+      "publicNotes": "<p>Los exploradores gnomos umbral patrullan los túneles que conducen a sus asentamientos. Hacen uso de la oscuridad de estos túneles para esconderse de cualquier intruso. Aunque los exploradores gnomo umbral prefieren usar su sigilo para el reconocimiento, no tienen miedo de atacar desde las sombras para enfrentarse a las amenazas. Son expertos en moverse entre áreas de oscuridad para tácticas de golpear y huir.</p>",
+      "skillSpecialStealth": {
+        "0": {
+          "label": "bajo tierra"
+        }
+      },
+      "tokenName": "Gnomo sombrío batidor",
+      "items": {
+        "spellcastingEntry->Spells": {
+          "name": "Conjuros"
+        },
+        "strike-ranged->Sling": {
+          "name": "Honda"
+        },
+        "strike-melee->Sickle": {
+          "name": "Hoz"
+        },
+        "action->Hidden Movement": {
+          "name": "Movimiento oculto",
+          "description": "<p>Si el explorador gnomo umbral comienza su turno @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{No detectado} o @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} a una criatura, esa criatura está @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} contra los ataques del explorador gnomo umbral hasta el final del turno.</p>"
+        }
+      }
+    },
+    "Umbral Gnome Warrior (BB)": {
+      "name": "Umbral Gnome Warrior (BB)",
+      "acDetails": "(20 con escudo levantado)",
+      "publicNotes": "<p>Los guerreros gnomos umbral son rápidos para cargar en la batalla, pero se centran en defender a su familia y sus hogares sobre tácticas más agresivas cuando una opción está disponible. Estos guerreros tienden a trabajar en grupos y usan sus escudos para interceptar ataques.</p>",
+      "tokenName": "Gnomo sombrío combatiente",
+      "items": {
+        "spellcastingEntry->Primal Innate Spells": {
+          "name": "Hechizos innatos primordiales"
+        },
+        "strike-melee->Spear": {
+          "name": "Lanza"
+        },
+        "strike-ranged->Heavy Crossbow": {
+          "name": "Ballesta pesada"
+        },
+        "action->Raise a Shield": {
+          "name": "Alzar un escudo",
+          "description": "<p>El guerrero gnomo umbral levanta su escudo para obtener un bonificador por circunstancia +2 a CA hasta el inicio de su próximo turno.</p>",
+          "selfEffect": "Efecto: levantar un escudo"
+        },
+        "action->Shield Block": {
+          "name": "Bloquear con el escudo",
+          "description": "<p>Si el guerrero gnomo umbral tiene su escudo levantado, puede gastar tu reacción para bloquear un ataque físico. Reduce la cantidad de daño en 5, pero entonces el guerrero gnomo umbral y su escudo reciben cualquier daño restante. Esto podría romper o destruir el escudo. El escudo tiene un máximo de 20 Puntos de Golpe.</p>"
+        }
+      }
+    },
     "Viper (BB)": {
       "name": "Víbora (BB)",
       "publicNotes": "<p> Cada miembro de esta familia de serpientes venenosas tiene colmillos largos y articulados que inyectan un potente veneno en sus presas. Diferentes víboras inyectan diferentes tipos de veneno, lo que puede provocar parálisis, dolor e hinchazón extremos, coagulación de la sangre o incluso la parada repentina del corazón de la víctima. </p>\n <p> Aunque es una amenaza física mucho menos imponente que una víbora gigante, una víbora común representa mucho más peligro de lo que sugiere su tamaño. Una víbora caza principalmente pequeños mamíferos olagartos pero atacará a un humanoide que perciba como una amenaza. </p>",
@@ -1415,6 +1817,31 @@
         },
         "action->Grab": {
           "description": "<p>When the warg succeeds at its jaws Strike, it can use this action immediately after to attempt to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} the target. This Grapple doesn't apply or count toward the warg's multiple attack penalty.</p>"
+        }
+      }
+    },
+    "Water Scamp (BB)": {
+      "name": "Agua Scamp (BB)",
+      "hpDetails": "curación rápida 2 (mientras está bajo el agua)",
+      "publicNotes": "<p>Los escamas elementales son criaturas parecidas a murciélagos marcadas por poderes elementales. Los scampi de agua se distinguen de otros scampi por su pelaje liso que atrapa una capa de agua junto a su piel. Aunque pueden volar como sus parientes y evocar suficiente agua para no secarse nunca, los escarabajos de agua solo abandonan el agua cuando deben hacerlo.</p>",
+      "tokenName": "Bribón de agua",
+      "items": {
+        "spellcastingEntry->Spells": {
+          "name": "Conjuros"
+        },
+        "strike-melee->Claw": {
+          "name": "Garra"
+        },
+        "action->Fast Healing 2 (While Underwater)": {
+          "name": "Sanación rápida 2 (Bajo el agua)"
+        },
+        "action->Acid Breath": {
+          "name": "Aliento ácido",
+          "description": "<p>El agua espumosa exhala ácido que inflige @Damage[2d6[acid]|options:area-damage] de daño en un @Template[type:cone|distance:15]. Cada criatura en el área debe intentar un salvación @Check[reflex|dc:17|basic|options:area-effect]. El agua no puede usar Respiración Ácida de nuevo por [[/gmr 1d4 #Recharge Acid Breath]]{1d4 asaltos}.</p>"
+        },
+        "action->Drench": {
+          "name": "Sofocar",
+          "description": "<p>El agua scamp sacude un suministro aparentemente interminable de agua de su piel para apagar todos los fuegos no mágicos dentro de 5 pies.</p>"
         }
       }
     },
@@ -1490,12 +1917,6 @@
       "publicNotes": "<p>Los líderes xulgath muestran mayor fuerza y más afinidad por la violencia que otros miembros de una comunidad xulgath.</p>",
       "tokenName": "Xulgath líder",
       "items": {
-        "weapon->Greataxe": {
-          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.8COlYvHe6hKCXY8x]\n <p> Esta gran hacha de batalla es demasiado pesada para manejarla con una sola mano. Muchas grandes hachas incorporan dos hojas y, a menudo, tienen \"barba\" y tienen un gancho en la parte inferior para aumentar la fuerza de su poder de corte. </p>"
-        },
-        "armor->Breastplate": {
-          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.r0ifJfoz8aqf0mwk]\n <p> Aunque se la conoce como coraza, este tipo de armadura consta de varias piezas de armadura de placa o media placa que protegen el torso, el pecho, el cuello y, a veces, las caderas y la parte inferior de las piernas. Otorga estratégicamente parte de la protección de la placa al tiempo que permite una mayor flexibilidad y velocidad. </p>"
-        },
         "strike-melee->Greataxe": {
           "name": "gran hacha"
         },
@@ -1575,454 +1996,11 @@
           "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]\n <p> Cuando el zombie golpea con su puño, puede usar esta acción para darle automáticamente al objetivo la condición @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} hasta el final de su siguiente turno. </p>"
         }
       }
-    },
-    "Bugbear Tormentor (BB)": {
-      "tokenName": "Bugbear atormentador",
-      "items": {
-        "strike-ranged->Dagger": {
-          "name": "Daga"
-        },
-        "strike-melee->Dagger": {
-          "name": "Daga"
-        },
-        "strike-melee->Sickle": {
-          "name": "Hoz"
-        },
-        "action->Sneak Attack": {
-          "name": "Ataque furtivo",
-          "description": "<p>Los Golpes del atormentador de bugios infligen 1d6 p. de daño de precisión extra a @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} criaturas.</p>"
-        },
-        "action->Twin Feint": {
-          "name": "Finta gemela",
-          "description": "<p>El atormentador de bugbear hace una serie deslumbrante de ataques con dos armas, utilizando el primer ataque para lanzar a su enemigo @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} contra un segundo ataque en un ángulo diferente. Hacen un Golpe con cada una de sus dos armas cuerpo a cuerpo, ambas contra el mismo objetivo. El objetivo está automáticamente desprotegido contra el segundo ataque. El atormentador de bugeo aplica su penalizador por ataque múltiple a estos golpes normalmente.</p>"
-        }
-      },
-      "name": "Tormentor (BB)",
-      "publicNotes": "<p>El torturador de bugeo busca intimidar a su presa tanto a través de la intimidación psicológica como a través del daño físico.</p>"
-    },
-    "Crawling Hand (BB)": {
-      "tokenName": "Mano reptante",
-      "items": {
-        "strike-melee->Claw": {
-          "name": "Garra"
-        },
-        "action->Lifesense": {
-          "name": "Sentido de la vida ",
-          "description": "<p>Una mano gateadora puede sentir la esencia vital de criaturas vivas y no muertas dentro de 30 pies. Este sentido puede distinguir entre la energía vital que anima a las criaturas vivas y la energía del vacío que anima a las criaturas no muertas, de la misma manera que la vista distingue el color. Sin embargo, una mano gateadora no puede ver, por lo que los efectos que dependen de la visión o la visión no funcionan en ella.</p>"
-        },
-        "action->Throat Grab": {
-          "name": "Agarrar garganta",
-          "description": "<p>Cuando la mano arrastrada tiene éxito en su ataque de garra contra una criatura mediana o más pequeña, puede usar esta acción inmediatamente después para intentar [[/act grapple]] el objetivo. Este Garfio no aplica ni cuenta para la penalizador por ataque múltiple de la mano arrastrada. Una criatura @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} de esta manera tiene dificultad para hablar y debe gastar una acción extra para realizar cualquier acción que requiera hablar, incluyendo lanzar conjuros.</p>"
-        }
-      },
-      "name": "Mano de arrastre (BB)",
-      "publicNotes": "<p>Las manos arrastradas se forman cuando los apéndices cortados son dotados de una cruda sensibilidad por energías necromantes que los convierten en asesinos incansables.</p>"
-    },
-    "Ferrous Butterfly (BB)": {
-      "items": {
-        "strike-melee->Wing": {
-          "name": "Ala"
-        },
-        "action->Swoop": {
-          "name": "Picado",
-          "description": "<p>La mariposa férrea vuela hasta su velocidad y hace un golpe de ala en cualquier momento durante ese movimiento.</p>"
-        },
-        "action->A Thousand Cuts": {
-          "name": "Mil cortes",
-          "description": "<p>Las alas de una mariposa ferrosa, como cuchillos, causan terribles laceraciones que continúan sangrando. Cualquier criatura con daño de sangrado persistente de un ataque de ala de mariposa férrea tiene debilidad 2 a cortar daño hasta que se detenga la sangría.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Eecbbol29eIP3zvf]{Efecto: A Thousand Cuts}</p>"
-        }
-      },
-      "name": "Mariposa Ferrosa (BB)",
-      "publicNotes": "<p>Hermosa pero mortal, la mariposa ferrosa es una criatura insecta del tamaño de un pavo que tiene docenas de brillantes hojas de filo de navaja. Considerados inofensivos por la mayoría de los habitantes del Plano de Metal, sin embargo, representan una amenaza significativa para las criaturas orgánicas, cuya sangre rica en hierro les resulta irresistible. Las hojas de las alas de estas mariposas tienden a romperse durante la alimentación y crecen de nuevo de forma natural. Estas escamas recuerdan a los fragmentos de metal y pueden servir como un arma improvisada sorprendentemente eficaz.</p>",
-      "tokenName": "Mariposa de hierro"
-    },
-    "Giant Fly (BB)": {
-      "tokenName": "Mosca gigante",
-      "items": {
-        "strike-melee->Mandibles": {
-          "name": "Mandíbulas"
-        },
-        "action->Avoid the Swat": {
-          "name": "Evitar ser aplastada",
-          "description": "<p><strong>Desencadenante</strong> La mosca gigante es atacada con un ataque cuerpo a cuerpo o a distancia por un atacante que puede ver</p>\n<hr /> <p><strong>Efecto</strong> La mosca gigante gana un + 2 bonificador por circunstancia a CA contra el ataque que la desencadenó. Si el ataque falla, el insecto gigante puede volar hasta su velocidad de mosca.</p>"
-        },
-        "action->Fly Pox": {
-          "name": "Varicela",
-          "description": "<p>Una mosca gigante puede llevar cualquier enfermedad, pero la mayoría transmite una infección llamada varicela con su picadura. Un personaje que es golpeado por las mandíbulas de una mosca gigante debe tener éxito en un lanzamiento salvador de @Check[fortitude|dc:16|options:inflicts:enfeebled] o ser @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} por 1 día.</p>"
-        }
-      },
-      "name": "Mosca gigante (BB)",
-      "publicNotes": "<p>Las extremidades de esta mosca masiva parecen no dejar de moverse mientras se limpia constantemente y recoge cualquier cosa comestible en sus partes de la boca. Aunque son principalmente carnívoras, las moscas gigantes a veces se alimentan de ganado u otros animales que son demasiado lentos para escapar. Dejadas a su suerte, estas moscas pondrán docenas de huevos dentro de los cadáveres que se comen en su mayoría. Estos huevos pronto eclosionan en enormes gusanos que comienzan el ciclo de la recolección de nuevo.</p>"
-    },
-    "Hobgoblin Archer (BB)": {
-      "tokenName": "Hobgoblin arquero",
-      "items": {
-        "strike-melee->Shortsword": {
-          "name": "Espada corta"
-        },
-        "strike-ranged->Crossbow": {
-          "name": "Ballesta"
-        },
-        "action->Formation": {
-          "name": "Formación",
-          "description": "<p>Cuando están adyacentes a al menos dos aliados, el arquero goblin gana un bonificador por circunstancia +1 a la CA y a los tiradas de salvación.</p>"
-        },
-        "action->Crossbow Precision": {
-          "name": "Precisión de ballesta",
-          "description": "<p>La primera vez que el arquero golpea con un ataque de ballesta en una asaltos, inflige 1d8 daño de precisión extra.</p>"
-        },
-        "action->Running Reload": {
-          "name": "Recarga a la carrera",
-          "description": "<p>El arquero da una Zancada, da un Paso o utiliza @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Movimiento furtivo}, y después Interactúa para recargar.</p>"
-        }
-      },
-      "name": "Arquero Hobgoblin (BB)",
-      "publicNotes": "<p>Las bandas de soldados goblins suelen tener al menos un arquero entre sus filas. En grupos más pequeños, el arquero goblin también sirve como capitán de esa banda. Estos arqueros generalmente comandan a estos grupos desde una distancia o desde un terreno más alto y utilizan sus sentidos agudos para vigilar las aberturas estratégicas.</p>"
-    },
-    "Lukahn": {
-      "items": {
-        "spellcastingEntry->Occult Spontaneous Spells": {
-          "name": "Hechizos espontáneos ocultos"
-        },
-        "strike-melee->Shadow Hand": {
-          "name": "Mano de sombra"
-        },
-        "strike-ranged->Shadow Blast": {
-          "name": "Explosión de sombra"
-        },
-        "action->Incorporeal": {
-          "name": "Incorporal",
-          "description": "<p>Lukahn no tiene cuerpo y puede pasar a través de objetos físicos, aunque no puede terminar su turno dentro de uno. La mayoría de las prueba que usan fuerza y requieren un cuerpo, como @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Presa} y @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Empujar}, no funcionan contra Lukahn, y no puede usarlos.</p>"
-        },
-        "action->Light Vulnerability": {
-          "name": "Vulnerabilidad ligera",
-          "description": "<p>Los ataques contra Lukahn son tratados como mágicos si él o el arma que se usa contra él está en la luz.</p>"
-        },
-        "action->Shadow Veil": {
-          "name": "Velo de Sombra",
-          "description": "<p><strong>Desencadenante</strong> Lukahn es el objetivo de un ataque cuerpo a cuerpo</p>\n<hr /> <p><strong>Efecto</strong> Lukahn gana un +2 bonificador por circunstancia a CA contra el ataque que lo desencadenó.</p>"
-        }
-      },
-      "blurb": "Variante de sacerdote de la sombra"
-    },
-    "Magnetic Skink": {
-      "skillSpecialAthletics": {
-        "0": {
-          "label": "Escalar"
-        }
-      },
-      "items": {
-        "strike-melee->Jaws": {
-          "name": "Mandíbulas"
-        },
-        "action->Uncanny Climber": {
-          "name": "Escalador asombroso",
-          "description": "<p>Las patas de un skink magnético le permiten trepar prácticamente cualquier superficie, sin importar cuán resbaladiza o transparente sea. Si un skink intenta un chequeo de atletismo a [[/act climb]] y falla críticamente, obtiene un fallo en su lugar.</p>"
-        },
-        "action->Launch Metal": {
-          "name": "Metal de lanzamiento",
-          "description": "<p>El skink repele el metal adherido a su cuerpo en todas direcciones, infligiendo @Damage[2d6[bludgeoning]|options:area-damage] de daño ( @Check[reflex|dc:15|basic|options:area-effect] de salvación) a todas las criaturas adyacentes al skink. El skink no puede usar Metal de lanzamiento de nuevo por [[/gmr 1d4 #Recharge Launch Metal]]{1d4 asaltos}.</p>"
-        },
-        "action->Unsteadying Magnetism": {
-          "name": "Magnetismo desestabilizador",
-          "description": "<p>El skink amplifica su campo magnético e intenta alejar el metal de una criatura dentro de 20 pies. Si esa criatura lleva armadura de metal o sostiene un objeto de metal, debe intentar un salvación @Check[fortitude|dc:15]. En caso de fracaso, esa criatura está @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el comienzo del siguiente turno del skink.</p>"
-        }
-      },
-      "name": "Skink magnético",
-      "publicNotes": "<p>Las escamas de estos grandes lagartos son magnéticas, atrayendo restos de metal a sus cuerpos. Además de comer insectos y otras presas pequeñas, los skinks magnéticos también se alimentan de pequeñas cantidades de metal, por lo que se sabe que residen cerca de asentamientos con acceso a estos materiales.</p>"
-    },
-    "Sea Hag (BB)": {
-      "saveDetails": "+1 por estatus a todas las salvaciones contra magia",
-      "tokenName": "Saga marina",
-      "items": {
-        "strike-melee->Claw": {
-          "name": "Garra"
-        },
-        "action->+1 Status to All Saves vs. Magic": {
-          "name": "+1 por estatus a todas las salvaciones contra la magia"
-        },
-        "action->Dread Gaze": {
-          "name": "Mirada fatal",
-          "description": "<p>La bruja mira a una criatura, afligiéndola con una sensación de muerte inminente, con un resultado que depende de su @Check[will|dc:20|options:inflicts:frightened,inflicts:slowed] salvación. El objetivo no necesita ser capaz de ver a la bruja del mar.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>\n<p><strong>Fallo</strong> La criatura está asustada 1 y es @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} por 1 asalto.</p>\n<p><strong>Fallo crítico</strong> Como un fracaso, pero la criatura es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} y lentificada 1 por 1 minuto.</p>"
-        }
-      },
-      "publicNotes": "<p>Las brujas son depredadores malévolos que usan la magia y la manipulación para atraer a los niños y adultos jóvenes a sus garras. Buscan objetivos que sean infelices, inocentes o vulnerables, aprovechando sus debilidades antes de arrebatarlos. Una bruja de mar tiene la mitad superior de un humanoide y la mitad inferior de un pulpo, con piel translúcida y luces brillantes visibles debajo de su carne.</p>"
-    },
-    "Severed Head (BB)": {
-      "tokenName": "Cabeza dañada",
-      "items": {
-        "strike-melee->Jaws": {
-          "name": "Mandíbulas"
-        },
-        "action->Gnash": {
-          "name": "Rechinar",
-          "description": "<p>Cuando la cabeza cortada tiene éxito en su Golpe de Mandíbulas, puede usar esta acción inmediatamente después para hacer un segundo Golpe de Mandíbulas en el mismo objetivo mientras se sacude violentamente, tratando de arrancar un bocado de carne. En caso de éxito, el objetivo recibe 1d4 de daño de corte adicional y 1 de daño de sangrado persistente.</p>"
-        }
-      },
-      "name": "Cabeza cortada (BB)",
-      "publicNotes": "<p>Las cabezas cortadas son las cabezas reanimadas de las víctimas de la decapitación. Estos no muertos sin mente vuelan por el aire o giran para atacar a sus presas. Además de atacar a los vivos como otros no muertos, las cabezas cortadas a veces pueden ser atraídas por cosas importantes para ellos en la vida. Los estudiosos argumentan que esto es probablemente debido a pensamientos particularmente poderosos que pueden irrumpir momentáneamente en lo que queda de la mente de una cabeza cortada. Desafortunadamente, su estado sin mente les impide reconocer su objetivo, y permanecen violentos incluso después de encontrar lo que buscan.</p>"
-    },
-    "Shadow Bat": {
-      "items": {
-        "strike-melee->Fangs": {
-          "name": "colmillos"
-        },
-        "strike-melee->Wing": {
-          "name": "Ala"
-        },
-        "action->Echolocation": {
-          "name": "Ecolocalización",
-          "description": "<p>El murciélago puede \"ver\" usando su audición en el rango indicado, lo que le permite funcionar igual de bien en la oscuridad.</p>"
-        },
-        "action->Screeching Gust": {
-          "name": "Gritando la ráfaga",
-          "description": "<p>El murciélago de las sombras agita sus alas y emite un poderoso chirrido, creando un cono de vientos desgarradores y sonido penetrante. Todas las criaturas en un @Template[type:cone|distance:15] reciben @Damage[3d6[sonic]|options:area-damage] de daño, con un lanzamiento salvador @Check[reflex|dc:16|basic|options:area-effect,forced-movement]. Las criaturas que fallan son empujadas hacia atrás 10 pies por el viento.</p>\n<p>Usar sus alas de esta manera agota al murciélago de las sombras, lo que hace que caiga inofensivo al suelo inmediatamente después de usar esta habilidad y lo impide tomar vuelo o usar Gritos de nuevo por [[/gmr 1d4 #Recharge Screeching Gust]]{1d4 asaltos}.</p>"
-        }
-      },
-      "name": "Murciélago de las sombras",
-      "publicNotes": "<p>Las energías mágicas sombrías relacionadas con algunas deidades malvadas, fuerzas del mal, o el plano sombrío de existencia llamado el Infierno a veces se manifiestan en forma de criaturas vivientes corruptas. El murciélago de las sombras tiene el físico de un murciélago gigante hecho de sombras con la capacidad mágica de crear poderosas ráfagas de viento.</p>"
-    },
-    "Shadow Gargoyle": {
-      "items": {
-        "strike-melee->Jaws": {
-          "name": "Mandíbulas"
-        },
-        "strike-melee->Claw": {
-          "name": "Garra"
-        },
-        "action->Clawed Feet": {
-          "name": "Pies con garras",
-          "description": "<p> Si la gárgola está volando y una criatura se mueve a un cuadrado adyacente debajo de ella, la gárgola puede usar su reacción para realizar un golpe de garra contra esa criatura. </p>"
-        }
-      },
-      "name": "Gárgola de las Sombras"
-    },
-    "Shadow Priest": {
-      "items": {
-        "strike-melee->Shadow Hand": {
-          "name": "Mano de sombra"
-        },
-        "strike-ranged->Shadow Blast": {
-          "name": "Explosión de sombra"
-        },
-        "action->Incorporeal": {
-          "name": "Incorporal",
-          "description": "<p>El sacerdote de las sombras no tiene cuerpo y puede pasar a través de objetos físicos, aunque no puede terminar su turno dentro de uno. La mayoría de las prueba que usan Fuerza y requieren un cuerpo, como @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Presa} y @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Empujar}, no funcionan contra el sacerdote de las sombras, y el sacerdote de las sombras no puede usarlos.</p>"
-        },
-        "action->Light Vulnerability": {
-          "name": "Vulnerabilidad ligera",
-          "description": "<p>Los ataques contra el sacerdote de las sombras son tratados como mágicos si el sacerdote de las sombras o el arma que se usa contra ellos está en la luz.</p>"
-        },
-        "action->Shadow Veil": {
-          "name": "Velo de Sombra",
-          "description": "<p>Si el sacerdote de las sombras es atacado por un ataque cuerpo a cuerpo, puede usar su reacción para ganar un bonificador por circunstancia +2 a CA contra el ataque que lo desencadenó.</p>"
-        }
-      },
-      "name": "Sacerdote de las sombras",
-      "publicNotes": "<p>A veces, los seguidores de deidades profanas se transforman en sombras al morir, un regalo de sus patrones malvados.</p>"
-    },
-    "Shadow Twigjack": {
-      "publicNotes": "<p>Los «auténticos» ramiteros, tal y como se consideran a sí mismos, se encuentran en los bosques salvajes junto a las hadas a las que idealizan.</p>\n<hr />\n<p>Los ramiteros, unos inadaptados habitantes del bosque, se forman a partir de la combinación cruel y traviesa de las hadas y de los propios bosques en los que residen. El cuerpo del ramitero está hecho de zarzas espinosas entretejidas con lianas. Su cabeza está\ncoronada por una mata desdeñada y musgosa, no muy distinta del pelo. Su boca es un cañón de palos astillados y rotos que divide por la mitad su cara. Hojas y brotes de matas nuevas brotan al azar de su cuerpo. Muchos bosques densos de Golarion tienen por lo\nmenos un puñado de ramiteros viviendo entre la maleza.</p>\n<p>Si bien son truculentos y violentos, se preocupan mucho de lo que consideran que son sus bosques. Estas criaturas hostigan a los forasteros que se internan en sus dominios arbolados, haciendo retroceder incluso a los exploradores, forestales y viajeros más\ndeterminados, especialmente cuando los intrusos abren sendas que atraviesan el bosque. Sin embargo, no son terriblemente territoriales cuando se trata de otras criaturas del bosque. Cuando las criaturas silvanas, en especial las hadas, se unen contra una amenaza exterior, los ramiteros que hay en la zona acuden rápidamente a la lucha, incluso si no se les ha invitado.</p>",
-      "items": {
-        "strike-melee->Claw": {
-          "name": "Garra"
-        },
-        "strike-ranged->Splinter": {
-          "name": "Astillarse"
-        },
-        "action->Bramble Jump": {
-          "name": "Salto entre zarzas",
-          "description": "<p>Cuando el twigjack está en el matorral, puede teletransportarse instantáneamente a un cuadrado de matorral dentro de 60 pies. Este movimiento no desencadena reacciones.</p>"
-        },
-        "action->Splinter Spray": {
-          "name": "Rociada de astillas",
-          "description": "<p>El rastrillo lanza una lluvia de astillas y zarzas desde su cuerpo que inflige @Damage[3d6[piercing]|options:area-damage] de daño en un @Template[type:cone|distance:15]. Cada criatura en el área debe intentar un salvación @Check[reflex|dc:18|basic|options:area-effect]. El twigjack no puede usar Splinter Spray de nuevo por [[/gmr 1d4 #Recharge Splinter Spray]]{1d4 asaltos}.</p>"
-        }
-      },
-      "name": "Twigjack de la sombra"
-    },
-    "Shulzara": {
-      "saveDetails": "+1 por estatus a todas las salvaciones contra magia",
-      "items": {
-        "spellcastingEntry->Arcane Spontaneous Spells": {
-          "name": "Hechizos arcanos espontáneos"
-        },
-        "strike-melee->Claw": {
-          "name": "Garra"
-        },
-        "action->+1 Status to All Saves vs. Magic": {
-          "name": "+1 por estatus a todas las salvaciones contra la magia"
-        },
-        "action->Slithering Steps": {
-          "name": "Pasos de Slithering",
-          "description": "<p>Shulzara no se ve afectada por terrenos difíciles debido al agua.</p>"
-        }
-      },
-      "blurb": "Variante de la bruja del mar",
-      "publicNotes": "<p>Las brujas son depredadores malévolos que usan la magia y la manipulación para atraer a los niños y adultos jóvenes a sus garras. Buscan objetivos que sean infelices, inocentes o vulnerables, aprovechando sus debilidades antes de arrebatarlos. Una bruja de mar tiene la mitad superior de un humanoide y la mitad inferior de un pulpo, con piel translúcida y luces brillantes visibles debajo de su carne.</p>"
-    },
-    "String Slime (BB)": {
-      "skillSpecialAthletics": {
-        "0": {
-          "label": "a Empujar"
-        }
-      },
-      "tokenName": "Limo de cuerda",
-      "items": {
-        "strike-melee->Pseudopod": {
-          "name": "Seudópodo"
-        },
-        "action->Motion Sense": {
-          "name": "Sentir movimiento",
-          "description": "<p>Un limo de cuerda puede sentir los movimientos cercanos mediante la vibración y el movimiento del aire.</p>"
-        },
-        "action->Split": {
-          "name": "Dividir",
-          "description": "<p>Cuando un slime de cadena recibe daño de corte (si no fuera inmune) y tiene al menos 10 Puntos de Golpe, se divide en dos slimes idénticos con la mitad de los Puntos de Golpe del original. Una cuerda de slime está en el mismo espacio que la original, y la otra aparece en un espacio adyacente no ocupado. Si no hay espacios adyacentes libres, mueve criaturas y objetos más pequeños fuera del camino para hacer un espacio o la división se cancela a discreción del DJ.</p>"
-        },
-        "action->Tag Team": {
-          "name": "Etiqueta de equipo",
-          "description": "<p>El limo arquea el protoplasma ácido a otro hilo de limo dentro de 30 pies a lo largo de una línea recta. Cada criatura en esa línea recibe @Damage[3d6[acid]] de daño con un @Check[reflex|dc:16|basic|options:area-effect,inflicts:prone] de salvación. Una criatura que falla en su salvación también es golpeada @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}.</p>"
-        }
-      },
-      "name": "Slime de cadena (BB)"
-    },
-    "Twigjack (BB)": {
-      "publicNotes": "<p>Los «auténticos» ramiteros, tal y como se consideran a sí mismos, se encuentran en los bosques salvajes junto a las hadas a las que idealizan.</p>\n<hr />\n<p>Los ramiteros, unos inadaptados habitantes del bosque, se forman a partir de la combinación cruel y traviesa de las hadas y de los propios bosques en los que residen. El cuerpo del ramitero está hecho de zarzas espinosas entretejidas con lianas. Su cabeza está\ncoronada por una mata desdeñada y musgosa, no muy distinta del pelo. Su boca es un cañón de palos astillados y rotos que divide por la mitad su cara. Hojas y brotes de matas nuevas brotan al azar de su cuerpo. Muchos bosques densos de Golarion tienen por lo\nmenos un puñado de ramiteros viviendo entre la maleza.</p>\n<p>Si bien son truculentos y violentos, se preocupan mucho de lo que consideran que son sus bosques. Estas criaturas hostigan a los forasteros que se internan en sus dominios arbolados, haciendo retroceder incluso a los exploradores, forestales y viajeros más\ndeterminados, especialmente cuando los intrusos abren sendas que atraviesan el bosque. Sin embargo, no son terriblemente territoriales cuando se trata de otras criaturas del bosque. Cuando las criaturas silvanas, en especial las hadas, se unen contra una amenaza exterior, los ramiteros que hay en la zona acuden rápidamente a la lucha, incluso si no se les ha invitado.</p>",
-      "tokenName": "Ramitero",
-      "items": {
-        "strike-melee->Claw": {
-          "name": "Garra"
-        },
-        "strike-ranged->Splinter": {
-          "name": "Astillarse"
-        },
-        "action->Bramble Jump": {
-          "name": "Salto entre zarzas",
-          "description": "<p>Cuando el twigjack está en el matorral, puede teletransportarse instantáneamente a un cuadrado de matorral dentro de 60 pies. Este movimiento no desencadena reacciones.</p>"
-        },
-        "action->Splinter Spray": {
-          "name": "Rociada de astillas",
-          "description": "<p>El rastrillo lanza una lluvia de astillas y zarzas desde su cuerpo que inflige @Damage[4d6[piercing]|options:area-damage] de daño en un @Template[type:cone|distance:15]. Cada criatura en el área debe intentar un salvación @Check[reflex|dc:20|basic|options:area-effect]. El twigjack no puede usar Splinter Spray de nuevo por [[/gmr 1d4 #Recharge Splinter Spray]]{1d4 asaltos}.</p>"
-        }
-      }
-    },
-    "Umbral Gnome Rockwarden (BB)": {
-      "tokenName": "Gnomo sombrío guardiapétreo",
-      "items": {
-        "spellcastingEntry->Spells": {
-          "name": "Conjuros"
-        },
-        "strike-ranged->Sling": {
-          "name": "Honda"
-        },
-        "strike-melee->Scythe": {
-          "name": "Guadaña"
-        }
-      },
-      "publicNotes": "<p>Un subgrupo notable de gnomos llamados gnomos umbral típicamente tienen piel gris o marrón con una textura pedregosa, y pelo delgado, pálido o calvo. Los gnomos umbral son más numerosos en las Tierras Oscuras, donde se les conoce como drathnelar. Si bien no son tan siniestros o despiadados como otros habitantes de Darklands, aquellos que buscan su ayuda deben recordar que no reciben a los extraños con los brazos abiertos.</p>\n<p>Los guardianes de rocas gnomos umbral siguen las enseñanzas druídicas y comulgan con las influencias elementales naturales y los habitantes de las Tierras Oscuras.</p>"
-    },
-    "Umbral Gnome Scout (BB)": {
-      "skillSpecialStealth": {
-        "0": {
-          "label": "bajo tierra"
-        }
-      },
-      "tokenName": "Gnomo sombrío batidor",
-      "items": {
-        "spellcastingEntry->Spells": {
-          "name": "Conjuros"
-        },
-        "strike-ranged->Sling": {
-          "name": "Honda"
-        },
-        "strike-melee->Sickle": {
-          "name": "Hoz"
-        },
-        "action->Hidden Movement": {
-          "name": "Movimiento oculto",
-          "description": "<p>Si el explorador gnomo umbral comienza su turno @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{No detectado} o @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} a una criatura, esa criatura está @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} contra los ataques del explorador gnomo umbral hasta el final del turno.</p>"
-        }
-      },
-      "publicNotes": "<p>Los exploradores gnomos umbral patrullan los túneles que conducen a sus asentamientos. Hacen uso de la oscuridad de estos túneles para esconderse de cualquier intruso. Aunque los exploradores gnomo umbral prefieren usar su sigilo para el reconocimiento, no tienen miedo de atacar desde las sombras para enfrentarse a las amenazas. Son expertos en moverse entre áreas de oscuridad para tácticas de golpear y huir.</p>"
-    },
-    "Umbral Gnome Warrior (BB)": {
-      "acDetails": "(20 con escudo levantado)",
-      "tokenName": "Gnomo sombrío combatiente",
-      "items": {
-        "spellcastingEntry->Primal Innate Spells": {
-          "name": "Hechizos innatos primordiales"
-        },
-        "strike-melee->Spear": {
-          "name": "Lanza"
-        },
-        "strike-ranged->Heavy Crossbow": {
-          "name": "Ballesta pesada"
-        },
-        "action->Raise a Shield": {
-          "name": "Alzar un escudo",
-          "selfEffect": "Efecto: levantar un escudo",
-          "description": "<p>El guerrero gnomo umbral levanta su escudo para obtener un bonificador por circunstancia +2 a CA hasta el inicio de su próximo turno.</p>"
-        },
-        "action->Shield Block": {
-          "name": "Bloquear con el escudo",
-          "description": "<p>Si el guerrero gnomo umbral tiene su escudo levantado, puede gastar tu reacción para bloquear un ataque físico. Reduce la cantidad de daño en 5, pero entonces el guerrero gnomo umbral y su escudo reciben cualquier daño restante. Esto podría romper o destruir el escudo. El escudo tiene un máximo de 20 Puntos de Golpe.</p>"
-        }
-      },
-      "publicNotes": "<p>Los guerreros gnomos umbral son rápidos para cargar en la batalla, pero se centran en defender a su familia y sus hogares sobre tácticas más agresivas cuando una opción está disponible. Estos guerreros tienden a trabajar en grupos y usan sus escudos para interceptar ataques.</p>"
-    },
-    "Water Scamp (BB)": {
-      "hpDetails": "curación rápida 2 (mientras está bajo el agua)",
-      "tokenName": "Bribón de agua",
-      "items": {
-        "spellcastingEntry->Spells": {
-          "name": "Conjuros"
-        },
-        "strike-melee->Claw": {
-          "name": "Garra"
-        },
-        "action->Acid Breath": {
-          "name": "Aliento ácido",
-          "description": "<p>El agua espumosa exhala ácido que inflige @Damage[2d6[acid]|options:area-damage] de daño en un @Template[type:cone|distance:15]. Cada criatura en el área debe intentar un salvación @Check[reflex|dc:17|basic|options:area-effect]. El agua no puede usar Respiración Ácida de nuevo por [[/gmr 1d4 #Recharge Acid Breath]]{1d4 asaltos}.</p>"
-        },
-        "action->Drench": {
-          "name": "Sofocar",
-          "description": "<p>El agua scamp sacude un suministro aparentemente interminable de agua de su piel para apagar todos los fuegos no mágicos dentro de 5 pies.</p>"
-        },
-        "action->Fast Healing 2 (While Underwater)": {
-          "name": "Sanación rápida 2 (Bajo el agua)"
-        }
-      },
-      "name": "Agua Scamp (BB)",
-      "publicNotes": "<p>Los escamas elementales son criaturas parecidas a murciélagos marcadas por poderes elementales. Los scampi de agua se distinguen de otros scampi por su pelaje liso que atrapa una capa de agua junto a su piel. Aunque pueden volar como sus parientes y evocar suficiente agua para no secarse nunca, los escarabajos de agua solo abandonan el agua cuando deben hacerlo.</p>"
-    },
-    "Falling Shelves": {
-      "items": {
-        "strike-melee->Falling Debris": {
-          "name": "Caída de escombros"
-        },
-        "action->Topple Over": {
-          "name": "Tupple Over",
-          "description": "<p>Cuando una criatura intenta tocar los estantes o tomar algo de ellos, se derrumban, enviando escombros por toda la habitación. La trampa hace un Golpe cuerpo a cuerpo contra cada criatura en la habitación.</p>"
-        }
-      },
-      "name": "Cayendo los estantes",
-      "disable": "<p>Un héroe debe tener éxito en una verificación @Check[athletics|dc:18] o @Check[thievery|dc:18] para evitar que los estantes se derrumben.</p>"
-    },
-    "Shadow Walls": {
-      "name": "Muros de sombras",
-      "disable": "<p>@Check[arcana|dc:20], @Check[nature|dc:20], @Check[occultism|dc:20], o @Check[religion|dc:20] en cada una de las paredes de sombra (desactivar tres de las cuatro paredes termina el peligro), o activando el orrery con la <em> estrella no iluminada </em> como se observa en \"El Orrery de la Luz.\"</p>",
-      "hpDetails": "Muro PG 15",
-      "routine": "<p>Cada turno, los muros usan la acción 1. Lanza un [[/gmr 1d10 #Routine Result]]{d10} y busca el resultado en la siguiente lista para determinar qué acción usa el muro en esa asaltos.</p>\n<p><strong>1–4 Objetivo único</strong> Las paredes se lanzan contra un héroe al azar en la habitación. Tira un [[/gmr 1d4 #Random Hero]]{d4} y cuenta hasta el número que lanzaste, comenzando con el jugador a tu izquierda, para determinar qué héroe es atacado. El azote de las sombras es un Golpe a distancia con +10 para golpear. En un golpe, inflige @Damage[2d6[void]] de daño (doblado en un golpe crítico como de costumbre).</p>\n<p><strong>5–7 Barranco de Muro</strong> Los brazos de las sombras se lanzan desde sus respectivos muros, atacando a cualquiera cerca de un muro activo. Esto golpea a cualquier criatura dentro de 10 pies de un muro activo (dentro de 10 pies de una mano de sombra en el mapa), infligiendo @Damage[2d6[void]|options:area-damage] de daño. Cada héroe debe intentar un salvación @Check[reflex|dc:15|basic|options:area-effect], no recibiendo daño en un éxito crítico, medio daño en un éxito, daño completo en un fracaso, y doble daño en un fracaso crítico.</p>\n<p><strong>8–9 Asalto dividido</strong> Las sombras se lanzan contra una mitad de la habitación. Rollo [[/gmr 1d20 #Even Western Half, Odd Eastern Half]]{any die}. Si el resultado es igual, asaltan la mitad occidental; de lo contrario, asaltan la mitad oriental. Esto inflige @Damage[2d6[void]|options:area-damage] de daño a cada criatura en esa mitad de la habitación, y cada héroe debe intentar un @Check[reflex|dc:15|basic|options:area-effect] de salvación.</p>\n<p><strong>10 Asalto Abrumador</strong> Como el ataque de asalto dividido, pero apunta a todos en la habitación.</p>",
-      "items": {
-        "strike-ranged->Shadow Lash": {
-          "name": "Sombra de pestañas"
-        }
-      }
     }
   },
   "mapping": {
     "acDetails": "system.attributes.ac.details",
+    "blurb": "system.details.blurb",
     "description": {
       "converter": "translateActorDescription",
       "path": "system.details.description"
@@ -2048,6 +2026,7 @@
     },
     "reset": "system.details.reset",
     "routine": "system.details.routine",
+    "saveDetails": "system.attributes.allSaves.value",
     "senses": "system.perception.details",
     "skillSpecialAthletics": {
       "converter": "translateSkillSpecial",
@@ -2077,9 +2056,7 @@
     "tokenName": {
       "converter": "translateTokenName",
       "path": "prototypeToken.name"
-    },
-    "blurb": "system.details.blurb",
-    "saveDetails": "system.attributes.allSaves.value"
+    }
   },
   "folders": {
     "Menace Under Otari": "Amenaza bajo Otari",
