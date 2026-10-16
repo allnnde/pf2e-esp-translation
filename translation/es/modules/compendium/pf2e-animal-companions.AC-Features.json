@@ -88,6 +88,10 @@
       "name": "Draconic Frenzy",
       "description": "<p>Your eidolon can make a furious assault, potentially recovering the use of their Breath Weapon. They gain the @Compendium[pf2e-animal-companions.AC-Features.HiVt4B5bE2hi0FWc]{Draconic Frenzy} activity.</p>"
     },
+    "Dragon Breath": {
+      "name": "Dragon Breath",
+      "description": "<p>Your eidolon exhales a blast of destructive energy that deals 1d6 damage to all creatures in an area with a basic Reflex save against your spell DC. Your eidolon then can't use Dragon Breath again for the next [[/r 1d4 #rounds]]{1d4 rounds}. At 3rd level and every 2 levels thereafter, the damage increases by 1d6.</p>\n<p>When the eidolon gains this ability, you choose the area—a @Template[type:line|distance:60] or a @Template[type:cone|distance:30]—as well as the damage type—acid, cold, electricity, fire, piercing, poison, or void. You can instead choose force if your eidolon has the arcane trait, spirit if they have the divine trait, or mental if they have the occult trait. If you model your eidolon after a specific type of dragon, your GM might allow you to choose from additional damage types.</p>\n<p>Dragon Breath has the tradition trait of your eidolon and the trait matching the damage type chosen (unless you choose piercing damage).</p>"
+    },
     "Drain Life": {
       "name": "Drain Life",
       "description": "<p>Your eidolon's link with you sustains it, but it still craves the life essence of the living, whether through blood or pure essence. It gains the @Compendium[pf2e-animal-companions.AC-Features.3Ns5BmFpAcoGQIY5]{Drain Life} activity.</p>"
@@ -182,6 +186,18 @@
       "name": "Elemental Maelstrom",
       "description": "<p>Your eidolon temporarily shifts its form into a swirling vortex of elemental matter and rampages through their foes. Your eidolon Strides. During their movement, they can attempt a Strike against each enemy that is within their reach. If an enemy comes within your eidolon's reach more than once, your eidolon makes only a single Strike against a given enemy. These attacks all count towards your eidolon's multiple attack penalty, but the penalty doesn't increase until after all the attacks. If your eidolon has the appropriate Speed, they can Climb, Fly, or Swim instead of Stride.</p>"
     },
+    "Empower Breath": {
+      "name": "Empower Breath",
+      "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> Your eidolon gathers the power of the mightiest archdragons to make their magical breath even more spectacular. If your eidolon's next action is to use Dragon Breath, both the number of damage dice and area of Dragon Breath are doubled.</p>"
+    },
+    "Energy Deflection": {
+      "name": "Energy Deflection",
+      "description": "<p><strong>Trigger</strong> The adept or an ally within 10 feet of the adept takes acid, cold, electricity, fire, force, mental, poison, sonic, spirit, vitality, or void damage</p>\n<hr />\n<p><strong>Effect</strong> The adept grants the creature resistance to the triggering damage equal to half your level. If the damage is one of the types the adept can deal with their energy blast Strikes, the creature instead gains resistance equal to your level. The creature is then immune to the adept's Energy Deflection for 1 minute.</p>"
+    },
+    "Energy Wave": {
+      "name": "Energy Wave",
+      "description": "<p>The adept unleashes a close-range blast that deals damage equal to their energy blast Strike to each creature in a @Template[type:cone|distance:15] or @Template[type:cone|distance:30] (@Check[type:reflex|against:energy-wave|basic:true]). The adept uses an expert DC using their Intelligence modifier. After using Energy Wave, the adept can't do so again for [[/gmr 1d6 #Recharge do so]]{1d6 rounds}.</p>"
+    },
     "Enraged Assassin": {
       "name": "Enraged Assassin",
       "description": "<p>Str 14, Dex 18, Con 16, Int 10, Wis 8, Cha 12; +1 AC (+4 Dex cap)</p>"
@@ -209,6 +225,10 @@
     "Fleet Beast": {
       "name": "Fleet Beast",
       "description": "<p>Str 14, Dex 18, Con 16, Int 8, Wis 12, Cha 10; +1 AC (+4 Dex cap)</p>"
+    },
+    "Flowing Engulf": {
+      "name": "Flowing Engulf",
+      "description": "<p>Your eidolon Strides up to double their Speed and can move through the spaces of any creatures in their path. Any creature of the eidolon's size or smaller whose space your eidolon moves through is engulfed unless it succeeds at a Reflex save against your spell DC. Your eidolon can attempt to engulf the same creature only once in a single use of Flowing Engulf, and they can contain as many creatures as can fit in their space.</p>\n<p>An engulfed creature is pulled into your eidolon's body. It is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}, and moves along with your eidolon as long as it is engulfed. It can get free by Escaping against your spell DC, moving to a space of its choice adjacent to your eidolon.</p>"
     },
     "Follower": {
       "name": "Follower",
@@ -254,6 +274,10 @@
       "description": "<p>Your follower is trained in this armor.</p>",
       "unidentifiedName": "Unusual Armor"
     },
+    "Maddening Whispers": {
+      "name": "Maddening Whispers",
+      "description": "<p>Your aberrant eidolon utters terrible secrets about the true nature of the universe. They can cast @UUID[Compendium.pf2e.spells-srd.Item.FmNDwqMEjeTEGPrY]{unfathomable song} once per day as an innate occult spell. Your eidolon can Sustain this spell as a free action if they spend at least one action Striding toward one of the targets.</p>"
+    },
     "Marauding Dragon": {
       "name": "Marauding Dragon",
       "description": "<p>Str 18, Dex 14, Con 16, Int 10, Wis 10, Cha 10; +2 AC (+3 Dex cap)</p>"
@@ -266,12 +290,12 @@
       "name": "Mindless Companion",
       "description": "<p>Some undead companions are mindless. The mindless trait makes them immune to all mental effects, as normal. The only skills in which a mindless companion is trained are Acrobatics and Athletics, and it can't become trained in other skills. Even if a mindless companion gains a limited ability to act in combat without being commanded, such as from the Mature Animal Companion feat, it can repeat only the last command; it can't take a new action on its own. A mindless companion can't take specializations that would raise its Intelligence or grant it benefits to skills other than Acrobatics or Athletics, and it can't use or benefit from feats or other options for animal companions that normally require a creature to have a mind, think, or make a decision. When in doubt, the GM determines what abilities a mindless companion can use.</p>"
     },
-    "Negative Essence": {
-      "name": "Negative Essence",
-      "description": "<p>Your undead eidolon has a link directly to your life force, which grants it a twilight state between living and undead. This renders it a living creature and therefore susceptible to many ailments that bother only the living, though it does possess some resistances to these effects. The eidolon has negative healing, meaning it heals from negative energy effects that heal undead and is damaged by positive energy effects that damage undead. It doesn't have an undead's normal immunities, but it does gain a +2 circumstance bonus to saving throws against death effects, disease, and poison effects, and non-damaging effects that target only undead. Additionally, its necrotic essence stanches its wounds easily. The flat check to remove persistent bleed damage from the eidolon is DC 10 (or DC 5 after receiving particularly effective aid).</p>"
-    },
     "Negative Healing": {
       "name": "Negative Healing"
+    },
+    "Ooze Physiology": {
+      "name": "Ooze Physiology",
+      "description": "<p>You and your ooze eidolon are directly connected in both body and mind, which renders your eidolon susceptible to effects that wouldn't normally bother an ooze. They don't have an ooze's normal immunities, but do gain resistance equal to half your level (minimum 1 resistance) against acid, critical hits, and precision damage and a +2 circumstance bonus to saving throws against mental effects. Additionally, their surface closes quickly after being wounded. The flat check to remove persistent bleed damage from the eidolon is DC 10 (or DC 5 after receiving particularly effective aid).</p>"
     },
     "Primal Roar": {
       "name": "Primal Roar",
@@ -303,6 +327,32 @@
     },
     "Primary (1d8, trip)": {
       "name": "Primary (1d8, trip)",
+      "unidentifiedName": "Unusual Weapon"
+    },
+    "Primary Attack": {
+      "name": "Primary Attack",
+      "rules": {
+        "1": {
+          "choices": {
+            "0": {
+              "label": "COMP.SpecificRule.Eidolon.Prompt.Strikes.Choices.D8"
+            },
+            "1": {
+              "label": "COMP.SpecificRule.Eidolon.Prompt.Strikes.Choices.D6Fatal"
+            },
+            "2": {
+              "label": "COMP.SpecificRule.Eidolon.Prompt.Strikes.Choices.D6ForcefulSweep"
+            },
+            "3": {
+              "label": "COMP.SpecificRule.Eidolon.Prompt.Strikes.Choices.D6DeadlyFinesse"
+            }
+          },
+          "prompt": "COMP.SpecificRule.Eidolon.Prompt.Strikes.Primary"
+        },
+        "3": {
+          "prompt": "COMP.SpecificRule.Eidolon.Prompt.Strikes.Damage"
+        }
+      },
       "unidentifiedName": "Unusual Weapon"
     },
     "Primordial Elemental": {
@@ -340,15 +390,25 @@
     },
     "Secondary Attack": {
       "name": "Secondary Attack",
+      "rules": {
+        "1": {
+          "prompt": "COMP.SpecificRule.Eidolon.Prompt.Strikes.Damage"
+        }
+      },
       "unidentifiedName": "Unusual Weapon"
     },
     "Seething Frenzy": {
       "name": "Seething Frenzy",
-      "description": "<p>Your eidolon can stoke itself into a frenzy. It gains the @Compendium[pf2e-animal-companions.AC-Features.7K6UJ3D3owmOQS03]{Seething Frenzy} action.</p>"
+      "description": "<p>Your eidolon can stoke itself into a frenzy. It gains the @Compendium[pf2e-animal-companions.AC-Features.7K6UJ3D3owmOQS03]{Seething Frenzy} action.</p>",
+      "selfEffect": "Effect: Seething Frenzy"
     },
     "Share the Pain": {
       "name": "Share the Pain",
       "description": "<p><strong>Trigger</strong> The berserker is critically hit by a creature that is within their reach</p>\n<hr />\n<p><strong>Effect</strong> The berserker makes a melee Strike against that creature.</p>"
+    },
+    "Shepherd's Touch": {
+      "name": "Shepherd's Touch",
+      "description": "<p>Your eidolon's attacks possess a psychopomp's ability to harm the living and the dead. Your eidolon's unarmed Strikes affect incorporeal creatures as though etched with a ghost touch property rune and deal an extra 1 void damage to living creatures and an extra 1 vitality damage to undead.</p>"
     },
     "Sickening Assault": {
       "name": "Sickening Assault",
@@ -370,13 +430,13 @@
       "name": "Soul Guardian",
       "description": "<p>Str 18, Dex 14, Con 16, Int 10, Wis 12, Cha 8; +2 AC (+3 Dex cap)</p>"
     },
+    "Spellshaped Blast": {
+      "name": "Spellshaped Blast",
+      "description": "<p>The adept gathers additional energy before making an energy blast Strike, granting the Strike two of the following benefits of their choice: the Strike gains the fatal d8 trait, the Strike's range increases to 120 feet, or the Strike deals splash damage equal to its damage dice.</p>"
+    },
     "Spirit Taker": {
       "name": "Spirit Taker",
       "description": "<p>Your eidolon is particularly capable when it comes to handling bodiless spirits and putting undead to their final rest. Your eidolon can see incorporeal creatures inside of solid objects and can attack them with Strikes without penalty; an incorporeal creature in a solid object that takes damage from your eidolon's Strike is expelled from the object to the nearest available space, moving closer to your eidolon if possible.</p>\n<p>Additionally, your eidolon can target or affect a creature projecting its consciousness (such as via project image) or possessing another creature, even if its body is elsewhere, though your eidolon must know about the possession or projection and choose to do so.</p>\n<p>Finally, the spirit of an undead destroyed by your eidolon's Strikes is sent directly to the Boneyard for judgment; an undead with an ability to avoid such a fate automatically, such as a ghost's rejuvenation, can attempt a counteract check against your spell DC to return via that ability as normal. In that case, it uses its Will save modifier as its counteract modifier.</p>"
-    },
-    "Spirit Touch": {
-      "name": "Spirit Touch",
-      "description": "<p>Your eidolon's attacks possess a psychopomp's ability to harm the living and the dead. Your eidolon's unarmed Strikes affect incorporeal creatures as though etched with a ghost touch property rune and deal an extra 1 void Damage to living creatures and an extra 1 vitality Damage to undead.</p>"
     },
     "Stalwart Guardian": {
       "name": "Stalwart Guardian",
@@ -389,9 +449,17 @@
     "Strength Boost": {
       "name": "Strength Boost"
     },
+    "Stretching Pseudopods": {
+      "name": "Stretching Pseudopods",
+      "description": "<p>Your eidolon's pseudopods can stretch farther. All your eidolon's melee unarmed attacks gain the reach trait.</p>"
+    },
     "Sudden Shift": {
       "name": "Sudden Shift",
       "description": "<p>Once per round, your eidolon can switch forms between condensed and dispersed as a free action, rather than a single action. In addition, your eidolon gains the @UUID[Compendium.pf2e-animal-companions.AC-Features.Item.8NK5Z7vLxkTB6pIV]{Redistribute} reaction.</p>"
+    },
+    "Surprising Anatomy": {
+      "name": "Surprising Anatomy",
+      "description": "<p><strong>Trigger</strong> An enemy adjacent to your eidolon deals damage to your eidolon</p>\n<hr />\n<p><strong>Effect</strong> Your eidolon's form shifts horribly to retaliate against the attacker. Your eidolon makes a melee unarmed Strike against the triggering enemy.</p>"
     },
     "Swarm Form": {
       "name": "Swarm Form",
@@ -442,9 +510,17 @@
       "name": "Undead Stalker",
       "description": "<p>Str 14, Dex 18, Con 16, Int 8, Wis 12, Cha 10</p>"
     },
+    "Unfathomable Mind": {
+      "name": "Unfathomable Mind",
+      "description": "<p>Those who try to touch your eidolon's mind find their own minds shattered. When your eidolon succeeds at a saving throw against a mental effect from a creature, that creature takes @Damage[4d6[mental]] damage with a basic Will save against your spell DC. A creature who fails this save is also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure). At 9th level and every 2 levels thereafter, the damage increases by 1d6.</p>"
+    },
     "Visions of Sin": {
       "name": "Visions of Sin",
       "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p>Your eidolon summons images of its sin into the mind of a target creature within 30 feet, tormenting and confusing the target. The target must attempt a Will save against your spell DC with the following effects. The effects last until the end of your next turn, but your eidolon can use a single action, which has the concentrate trait, to extend the effects until the end of your next turn (like Sustaining a Spell), to a maximum duration of 1 minute. If the target is evil, it takes a -2 circumstance penalty to its save. Regardless of whether it succeeds, the target becomes temporarily immune for 1 day.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target can't use reactions.</p>\n<p><strong>Failure</strong> The target is @Compendium[pf2e.conditionitems.Slowed]{Slowed 1} and can't use reactions.</p>\n<p><strong>Critical Failure</strong> As failure, and the target is also @Compendium[pf2e.conditionitems.Confused]{Confused} for 1 round. The confusion can't be extended, but the other effects can.</p>"
+    },
+    "Void Essence": {
+      "name": "Void Essence",
+      "description": "<p>Your undead eidolon has a link directly to your life force, which grants them a twilight state between living and undead. This renders them a living creature and therefore susceptible to many ailments that bother only the living, though they possess some resistances to these effects. The eidolon has void healing, meaning they heal from void effects that heal undead and are damaged by vitality effects that damage undead. They don't have an undead's normal immunities, but they do gain a +2 circumstance bonus to saving throws against death effects, disease, poison effects, and non-damaging effects that target only undead. Additionally, their necrotic essence stanches their wounds easily. The flat check to remove persistent bleed damage from the eidolon is DC 10 (or DC 5 after receiving particularly effective aid).</p>"
     },
     "Warrior Construct": {
       "name": "Warrior Construct",
