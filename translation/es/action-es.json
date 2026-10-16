@@ -383,24 +383,9 @@
       },
       "EncouragingWords": {
         "BadArgs": "Esta acción debe realizarse con al menos un personaje o PNJ.",
-        "Cancel": "Cancelar",
-        "ContentLabel1": "CD Diplomacia:",
-        "ContentLabel2": "Modificador CD:",
-        "ContentMain": "Selecciona un CD objetivo. Recuerda que no puedes intentar una curación por encima de tu competencia. Si lo intentas, la CD y la cantidad curada se reducirán al máximo que seas capaz de alcanzar.",
-        "ContentOption1": "Entrenado CD 15",
-        "ContentOption2": "Experto CD 20, +5 resistencia",
-        "ContentOption3": "Maestro CD 30, +15 de resistencia",
-        "ContentOption4": "CD legendario 40, +25 de resistencia",
+        "Content": "Selecciona una CD objetivo. Recuerda que no puedes intentar una curación por encima de tu rango de competencia. Si lo intentas, la CD y la cantidad recuperada se reducirán al máximo que puedas alcanzar.",
         "CritFailure": "Fallo crítico",
         "CritSuccess": "Éxito crítico",
-        "Damage": "Daño",
-        "Failure": "Fallo",
-        "NotTrained": "{name} no está entrenado en Diplomacia y no sabe cómo usar Palabras de aliento.",
-        "Recovery": "Recuperación de resistencia",
-        "StaminaNotEnabled": "La variante Resistencia no está habilitada.",
-        "Success": "Éxito",
-        "Title": "Palabras de aliento",
-        "Content": "Selecciona una CD objetivo. Recuerda que no puedes intentar una curación por encima de tu rango de competencia. Si lo intentas, la CD y la cantidad recuperada se reducirán al máximo que puedas alcanzar.",
         "DC": {
           "Expert": "Experto CD 20, +5 Resistencia",
           "Label": "CD de Diplomacia",
@@ -409,7 +394,13 @@
           "Mod": "Modificador de CD",
           "Trained": "Entrenado CD 15"
         },
-        "Description": "<p><strong>Prerrequisitos</strong> Entrenado en Diplomacia</p>\n<p><strong>Requisitos</strong> El aliado objetivo ha perdido Puntos de Resistencia durante el último asalto</p>\n<hr />\n<p>Diriges unas breves palabras de aliento a un aliado que está a un máximo de 30 pies (9 m), ayudándole a recuperarse. Haz una prueba de Diplomacia. La CD suele ser 15, aunque el DJ podría ajustarla según las circunstancias. Si tienes el rango experto en Diplomacia, puedes hacer una prueba CD 20 para aumentar en 5 los Puntos de Resistencia recuperados; si tienes el rango maestro, puedes hacer una prueba CD 30 para aumentarlos en 15; si tienes el rango legendario, puedes hacer una prueba CD 40 para aumentarlos en 25. Sea cual sea el resultado, el aliado queda temporalmente inmune a Palabras de aliento hasta que use @UUID[Compendium.pf2e.actionspf2e.Item.qc0VsZ0UesnurUUB]{Tomar un respiro} o descanse durante el día.</p>"
+        "Damage": "Daño",
+        "Description": "<p><strong>Prerrequisitos</strong> Entrenado en Diplomacia</p>\n<p><strong>Requisitos</strong> El aliado objetivo ha perdido Puntos de Resistencia durante el último asalto</p>\n<hr />\n<p>Diriges unas breves palabras de aliento a un aliado que está a un máximo de 30 pies (9 m), ayudándole a recuperarse. Haz una prueba de Diplomacia. La CD suele ser 15, aunque el DJ podría ajustarla según las circunstancias. Si tienes el rango experto en Diplomacia, puedes hacer una prueba CD 20 para aumentar en 5 los Puntos de Resistencia recuperados; si tienes el rango maestro, puedes hacer una prueba CD 30 para aumentarlos en 15; si tienes el rango legendario, puedes hacer una prueba CD 40 para aumentarlos en 25. Sea cual sea el resultado, el aliado queda temporalmente inmune a Palabras de aliento hasta que use @UUID[Compendium.pf2e.actionspf2e.Item.qc0VsZ0UesnurUUB]{Tomar un respiro} o descanse durante el día.</p>",
+        "Failure": "Fallo",
+        "NotTrained": "{name} no está entrenado en Diplomacia y no sabe cómo usar Palabras de aliento.",
+        "Recovery": "Recuperación de resistencia",
+        "Success": "Éxito",
+        "Title": "Palabras de aliento"
       },
       "EndCover": {
         "TowerShield": {
@@ -605,11 +596,11 @@
           "Description": "{actor} envaina su {weapon}.",
           "Title": "Envainar"
         },
-        "Title": "Interactuar",
         "Boost": {
           "Description": "{actor} potencia su {weapon}.",
           "Title": "Potenciar"
-        }
+        },
+        "Title": "Interactuar"
       },
       "Leap": {
         "Description": "<p>Das un salto corto horizontal o vertical. Saltar una distancia mayor requiere el uso de la habilidad Atletismo para un @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{Salto de altura} o un @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Salto de longitud}.</p><ul><li><strong>Horizontal</strong>  Saltas hasta 10 pies (3 m) en horizontal si tu Velocidad es por lo menos 15 pies (4,5 m) o hasta 15 pies (4,5 m) en horizontal si tu Velocidad es por lo menos 30 pies (9 m). Aterrizas en el espacio en el que acaba tu @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salto}, lo que significa que típicamente puedes salvar una brecha de 5 pies (1,5 m) o de 10 pies (3 m) si tu Velocidad es 30 pies (9 m) o más. No puedes dar un Salto en horizontal si tu Velocidad es menor de 15 pies (4,5 m).</li><li><strong>Vertical</strong> Saltas hasta 3 pies (90 cm) verticalmente y 5 pies (1,5 m) horizontalmente hasta una superficie elevada.</li></ul>",
@@ -783,14 +774,14 @@
         "BadArgs": "Esta acción debe realizarse con al menos un personaje o PNJ.",
         "Content": "{actor} alza su {shield}.",
         "Description": "<p> Colocas el escudo para que te proteja. Cuando has Alzado un escudo, obtienes el bonificador por circunstancia indicado a la CA. Tu escudo permanece alzado hasta el inicio de tu siguiente turno.</p>",
+        "LowerTitle": "Bajar el escudo",
         "NoShieldEquipped": "{actor} debe tener un escudo equipado.",
         "ReactionTitle": "Escudo reactivo",
         "ShieldIsBroken": "El {shield} de {actor} está roto.",
         "ShieldIsDestroyed": "El {shield} de {actor} está destruido.",
         "ShortTitle": "Alzar",
         "SingleActionTitle": "Alzar un escudo",
-        "Title": "Alzar un escudo",
-        "LowerTitle": "Bajar el escudo"
+        "Title": "Alzar un escudo"
       },
       "Ready": {
         "Description": "<p>Te preparas para utilizar una acción que tendrá lugar fuera de tu turno. Elige una acción individual o acción gratuita que puedes utilizar y designa un desencadenante. A continuación se acaba tu turno. Si el desencadenante designado se cumple antes del inicio de tu siguiente turno, puedes utilizar la acción elegida como una reacción (si aún cumples los requisitos para utilizarla). No puedes Preparar una acción gratuita que ya tiene desencadenante.</p>\n<p>Si tienes un penalizador por ataque múltiple y tu acción preparada es una acción de ataque, tu ataque preparado sufrirá el penalizador por ataque múltiple que correspondiera en el momento en el que utilizaste Preparar. Esta es una de las pocas veces en las que se aplica el penalizador por ataque múltiple cuando no es tu turno.</p>",
@@ -1159,6 +1150,7 @@
           "Mod": "Modificador de CD:",
           "Trained": "Entrenado CD 15"
         },
+        "Description": "<p><strong>Requisitos</strong> Llevas puesto o sostienes @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]{material de curas}.</p>\n<hr />\n<p>Dedicas 10 minutos a tratar a una criatura viva herida (puedes tratarte a ti mismo si lo deseas). El objetivo queda después temporalmente @UUID[Compendium.pf2e.feat-effects.Item.Lb4q2bBAgxamtix5]{inmune} a las acciones de Tratar heridas durante 1 hora, pero este intervalo se solapa con el tiempo que has pasado tratándolo (por lo que un paciente puede ser tratado una vez por hora, en lugar de una vez cada 70 minutos).</p>\n<p>La CD de la prueba de Medicina suele ser 15, aunque el DJ podría ajustarla según las circunstancias, como tratar a un paciente al aire libre durante una tormenta o tratar heridas malditas por medios mágicos. Si tienes el rango experto en Medicina, puedes hacer una prueba CD 20 para aumentar en 10 los Puntos de Golpe recuperados; si tienes el rango maestro, puedes hacer una prueba CD 30 para aumentarlos en 30; y si tienes el rango legendario, puedes hacer una prueba CD 40 para aumentarlos en 50. El daño infligido con un fallo crítico sigue siendo el mismo.</p>\n<p>Si tienes éxito en tu prueba, puedes continuar tratando al objetivo para concederle curación adicional. Si lo tratas durante un total de 1 hora, duplica los Puntos de Golpe que recupera con Tratar heridas.</p>\n<p>El resultado de tu prueba de Medicina determina cuántos Puntos de Golpe recupera el objetivo.</p>",
         "Error": "{name} no está entrenado en {skill}",
         "Feats": {
           "MortalHealing": "Curación mortal",
@@ -1170,8 +1162,7 @@
           "TreatWounds": "Tirada de curación: Tratar heridas",
           "TreatWoundsCriticalFailure": "Tirada de daño: Tratar heridas"
         },
-        "SkillSelect": "Habilidad para Tratar heridas",
-        "Description": "<p><strong>Requisitos</strong> Llevas puesto o sostienes @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]{material de curas}.</p>\n<hr />\n<p>Dedicas 10 minutos a tratar a una criatura viva herida (puedes tratarte a ti mismo si lo deseas). El objetivo queda después temporalmente @UUID[Compendium.pf2e.feat-effects.Item.Lb4q2bBAgxamtix5]{inmune} a las acciones de Tratar heridas durante 1 hora, pero este intervalo se solapa con el tiempo que has pasado tratándolo (por lo que un paciente puede ser tratado una vez por hora, en lugar de una vez cada 70 minutos).</p>\n<p>La CD de la prueba de Medicina suele ser 15, aunque el DJ podría ajustarla según las circunstancias, como tratar a un paciente al aire libre durante una tormenta o tratar heridas malditas por medios mágicos. Si tienes el rango experto en Medicina, puedes hacer una prueba CD 20 para aumentar en 10 los Puntos de Golpe recuperados; si tienes el rango maestro, puedes hacer una prueba CD 30 para aumentarlos en 30; y si tienes el rango legendario, puedes hacer una prueba CD 40 para aumentarlos en 50. El daño infligido con un fallo crítico sigue siendo el mismo.</p>\n<p>Si tienes éxito en tu prueba, puedes continuar tratando al objetivo para concederle curación adicional. Si lo tratas durante un total de 1 hora, duplica los Puntos de Golpe que recupera con Tratar heridas.</p>\n<p>El resultado de tu prueba de Medicina determina cuántos Puntos de Golpe recupera el objetivo.</p>"
+        "SkillSelect": "Habilidad para Tratar heridas"
       },
       "Trip": {
         "Description": "<p>Tratas de tirar al suelo a una criatura. Haz una prueba de Atletismo contra la CD de Reflejos del objetivo.</p><p><strong>Éxito crítico</strong> El objetivo cae al suelo, queda @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} y sufre @Damage[1d6[bludgeoning]]{1d6 daño contundente}.<br><strong>Éxito</strong> El objetivo cae y queda @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}.<br><strong>Fallo crítico</strong> Pierdes el equilibrio, caes y acabas @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}.</p>",
