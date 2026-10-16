@@ -234,9 +234,9 @@
         "weapon->Wax Stirring Stick": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FVjTuBCIefAgloUU]\nWax Stirring Stick"
         },
-        "equipment->Key to Basement": {
-          "name": "Key to Basement",
-          "description": "<p>The Key to the Basement</p>"
+        "equipment->Key": {
+          "name": "Clave",
+          "gmNote": "<p>La llave de Darius para el sótano.</p>"
         },
         "equipment->Singed Leather Apron and Clothing": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.ilbLQNy6TbBPW7sQ]\nSinged Leather Apron and Clothing"
@@ -261,10 +261,6 @@
         "action->Spray Hot Wax": {
           "name": "Cera caliente en aerosol",
           "description": "<p>Darius rocía cera caliente desde su pulverizador de cera improvisado en un @Template[cone|distance:15]. Todas las criaturas en el área deben intentar un salvación @Check[reflex|dc:20|options:area-effect,damaging-effect]. Los homonoculi de vela perfumada en el área no reciben daño, en cambio, sanan @Damage[2d6[healing]] de daño. Después de usar el cañón de cera caliente, Darius no puede usarlo de nuevo hasta que tome dos acciones de Interactuar mientras está adyacente al caldero de cera burbujeante para recargar el rociador.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no recibe daño.</p>\n<p><strong>Éxito</strong> La criatura recibe @Damage[2d6[fire]|options:area-damage] de daño.</p>\n<p><strong>Fallo</strong> La criatura toma @Damage[3d6[fire],1d6[persistent,fire]|options:area-damage]{3d6 fire damage plus 1d6 persistent fire damage}.</p>\n<p><strong>Fallo crítico</strong> La criatura toma @Damage[5d6[fire],2d6[persistent,fire]|options:area-damage]{5d6 fire damage plus 2d6 persistent fire damage}.</p>"
-        },
-        "equipment->Key": {
-          "name": "Clave",
-          "gmNote": "<p>La llave de Darius para el sótano.</p>"
         }
       }
     },
@@ -665,6 +661,27 @@
         }
       }
     },
+    "Ogden": {
+      "name": "Ogden",
+      "hpDetails": "curación del vacío",
+      "publicNotes": "<p>Los gigantes de tamaño Enorme y otras criaturas de grandes dimensiones dan lugar a esqueletos poderosos.</p>\n<hr />\n<p>Los corceles esqueléticos son usados a veces como montura por monstruos o por otros muertos vivientes.</p>",
+      "items": {
+        "strike-melee->Claw": {
+          "name": "Garra"
+        },
+        "action->Void Healing": {
+          "name": "Curación del vacío"
+        },
+        "action->Broad Swipe": {
+          "name": "Deslizamiento amplio",
+          "description": "<p>La mole esquelética da dos Golpes con sus garras contra sendos enemigos adyacentes, ambos dentro de su alcance. Los dos ataques cuentan contra el penalizador por ataque múltiple de la moile, pero el penalizador no se incrementa hasta después de realizados.</p>"
+        },
+        "action->Massive Rush": {
+          "name": "Acometida colosal",
+          "description": "<p>La mole da una Zancada y un Golpe de garra, con un bonificador +4 por circunstancia al daño. Si el Golpe impacta, la mole automáticamente empuja 10 pies (3 m) al objetivo.</p>"
+        }
+      }
+    },
     "Pairaka (One-Shot #4)": {
       "name": "Pairaka (One-Shot # 4 )",
       "languages": "telepatía 100 pies (30 m)",
@@ -718,6 +735,130 @@
         "action->Tormenting Dreams": {
           "name": "Sueños atormentados",
           "description": "<p><strong>Frecuencia</strong> una vez al día</p>\n<hr /> <p><strong>Efecto</strong> El pairaka atormenta a una criatura dormida dentro de 100 pies con visiones de traiciones por parte de seres queridos y amigos. El objetivo debe intentar un salvación @Check[will|dc:25], con los efectos del conjuro @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Pesadilla}.</p>"
+        }
+      }
+    },
+    "Phistophilus": {
+      "name": "Fistófiles",
+      "languages": "telepatía 100 pies (30 m), habla verdadera",
+      "publicNotes": "<p>Los diablos de los contratos son los administrativos, escribas y burócratas del Infierno. Raramente se les encuentra fuera de los tribunales infernales y, cuando eso sucede, casi siempre es en busca de contratos potenciales, tentando a los mortales para vender\nsu alma a cambio de obtener sus deseos mundanos. Si un objetivo es lo suficientemente deseable, un fistófiles puede ofrecer un contrato por un precio aparentemente menor que el alma, aunque en ese caso, el diablo manipula cuidadosamente el precio para conducir igualmente al firmante hacia las fuerzas del Infierno. Los diablos de los contratos son criaturas altas con tonos de piel que van de bronce a carmesí y grandes cuernos curvos que se extienden desde su cuerpo, sobre los cuales a menudo despliegan contratos favorables o importantes.</p>\n<hr />\n<p>Maestros de la corrupción y arquitectos de la conquista, los diablos ansían dos cosas: tentar a los mortales para que se unan a su ansia de llevar a cabo todo tipo de actos profanos y esparcir la tiranía por todos los mundos. Las tentaciones que ofrecen a los mortales van desde grandes poderes concedidos mediante la firma de un contrato infernal, hasta favores retorcidos después de susurrar un juramento a un patrón diabólico o cualquier cantidad de intercambios aún más sutiles. Quienes sucumben a dichas tentaciones se ven consignados a pasar la otra vida sometidos a tormentos inacabables en los fosos del Infierno, donde la única esperanza de huida está en la posibilidad de ser ascendido para convertirse en un diablo de las filas infernales.</p>\n<p>Cada diablo tiene un papel específico que interpretar en la implacable maquinaria burocrática que es el Infierno, desde los soldados y los eruditos hasta los inquisidores, abogados, jueces y verdugos. Los humildes orts llevan a cabo trabajos serviles para los diablos más poderosos y especializados, como los diablos de infantería y de los contratos, mientras que los más grandes de los nessaris están al mando de ejércitos infernales enteros.</p>\n<p>Asmodeo está en el ápice de la estructura que creó, pero las capas que tiene por debajo están marcadas por una lucha constante por la posición. La mayoría de planes diabólicos sirven tan solo para mejorar el lugar en la jerarquía de quien los traza.</p>",
+      "saveDetails": "+1 por estatus a todas las salvaciones contra magia",
+      "items": {
+        "spellcastingEntry->Divine Innate Spells": {
+          "name": "Conjuros divinos innatos"
+        },
+        "spell->Interplanar Teleport": {
+          "name": "Teletransporte interplanario",
+          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
+          "target": "hasta 8 criaturas voluntarias"
+        },
+        "spell->Scrying (At Will, See Infernal Investment)": {
+          "name": "Gritando (A voluntad, ver Inversión infernal)",
+          "description": "<p>Espías mágicamente a una criatura de tu elección. <em>Escudriñamiento</em> funciona como  @UUID[Compendium.pf2e.spells-srd.Item.zvKWclOZ7A53DObE]{Clarividencia}, excepto que la imagen que obtienes es menos precisa, insuficiente para <em>teletransporte</em> y conjuros similares. En lugar de crear un ojo en una ubicación fija a 500 pies (150 m) o menos, en su lugar puedes crear uno que se manifieste justo por encima del objetivo. Puedes elegir un objetivo o bien por su nombre o bien tocando una de sus posesiones o una parte de su cuerpo. Si no te has reunido con el objetivo en persona, la CD de  <em> escudriñamiento </em> es 2 menor y si no eres consciente de la identidad del objetivo (quizá porque hallaste el colmillo de una criatura desconocida en una escena del crimen), en su lugar la CD es 10 menor. </p> \n<p>El efecto de <em>escudriñamiento</em> depende de la salvación de Voluntad del objetivo.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El conjuro falla y el objetivo queda temporalmente inmune durante 1 semana. El objetivo también obtiene un atisbo de ti y averigua la distancia aproximada y la dirección entre ambos. </p> \n<p><strong>Éxito</strong> El conjuro falla y el objetivo queda temporalmente inmune durante 1 día. </p> \n<p><strong>Fallo</strong> El conjuro tiene éxito. </p> \n<p><strong>Fallo crítico</strong> El conjuro tiene éxito y el ojo sigue al objetivo si se mueve, moviéndose hasta 60 pies (18 m) por asalto. </p> ",
+          "target": "1 criatura"
+        },
+        "spell->Illusory Scene": {
+          "name": "Escena ilusoria",
+          "description": "<p> Creas una escena imaginaria que incluye hasta 10 criaturas individuales u objetos de diverso tamaño, todos los cuales deben estar en el área del conjuro. Dichos elementos generan los sonidos y los olores apropiados, y su tacto es el correcto. Los elementos de una @UUID[Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly]{Escena ilusoria} no pueden hablar. A diferencia del conjuro criatura ilusoria, las criaturas de tu escena carecen de aptitudes y estadísticas de combate. Tu escena no incluye cambios al entorno que la rodea, aunque puedes colocarla en el entorno ilusorio de un conjuro de @UUID[Compendium.pf2e.spells-srd.Item.HBJPsonQnWcC3qdX]{Espejismo}.</p> \n <p> Cuando creas la escena, puedes elegir que sea estática o que siga un programa. Aunque una escena estática es estacionaria, incluye movimiento natural básico. Por ejemplo, el viento soplando sobre un pedazo de papel ilusorio lo haría crujir. Un programa puede tener hasta 1 minuto de longitud y se repite cuando se acaba. Por ejemplo, podrías crear una escena con dos orcos luchando entre sí y la lucha se desarrollaría de la misma forma en cada repetición. Si creas un bucle, ambos combatientes acaban en el mismo lugar al inicio de la escena y al final de la misma, pero puedes refinar el programa para que sea difícil discernir cuándo empieza y cuándo acaba el bucle. Cualquiera que observe la escena más de unos pocos minutos, casi siempre se dará cuenta del bucle. Una vez has creado la ilusión, no puedes alterar el programa. </p> \n <p> Cualquier criatura que toque cualquier aparte de la imagen o utilice la acción de @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Buscar} para examinarla podrá hacer un intento de descreer tu ilusión. Si interacciona con una parte de la ilusión, sólo descree dicha parte. Tan sólo puede descreer la escena al completo con un éxito crítico. </p> \n <hr /> \n<p><strong>Potenciado (6.º)</strong> Las criaturas o los objetos de tu escena pueden hablar. Tienes que dictar las palabras específicas para cada actor al crear tu programa. El conjuro disfraza tu voz para cada actor.</p> \n<p><strong>Potenciado (8.º)</strong> Como la versión de 6.º rango, pero la duración es ilimitada. </p> "
+        },
+        "spell->Mind Probe": {
+          "name": "Sonda mental",
+          "description": "<p>Proyectas tus pensamientos a través de la mente de una criatura, en busca de información. Accedes a los recuerdos y conocimiento del objetivo a menos que éste te mantenga a raya mediante una salvación de Voluntad. </p> \n<p><strong>Éxito</strong> El objetivo no resulta afectado. </p> \n<p><strong>Fallo</strong> Cada asalto de duración del conjuro, puedes Mantener el conjuro para hacer una pregunta diferente e intentar descubrir la respuesta. Para cada pregunta, el objetivo puede hacer una prueba de Engaño contra tu CD de conjuro; si el objetivo tiene éxito, no averiguas la respuesta y, con un éxito crítico, el objetivo te da una respuesta falsa que tú crees que es verdadera. Una vez le has formulado al objetivo una pregunta determinada, hacerla de nuevo, incluso con un lanzamiento diferente de sonda mental, arroja el mismo resultado. </p> \n<p><strong>Fallo crítico</strong> Igual que fallo, y el objetivo sufre un penalizador -4 por circunstancia a las pruebas de Engaño contra tus preguntas.</p> ",
+          "target": "1 criatura"
+        },
+        "spell->Sending (At Will)": {
+          "name": "Enviar (a voluntad)",
+          "description": "<p>Envías a la criatura un mensaje mental de 25 palabras o menos, al que puede responder de inmediato con su propio mensaje de 25 palabras o menos.</p> ",
+          "target": "1 criatura a la que conoces bien"
+        },
+        "spell->Truespeech (Constant)": {
+          "name": "Truespeech (constante)",
+          "description": "<p>El objetivo puede entender todas las palabras, sea cual sea el idioma y también habla los idiomas de las demás criaturas. Cuando se encuentra en un grupo mixto de criaturas, cada vez que el objetivo habla puede elegir a una criatura y hablar en un idioma que ésta entiende, incluso si no sabe de qué idioma se trata.</p> \n<hr /> \n<p><strong>Potenciado (7.º)</strong> La duración es 8 horas.</p> ",
+          "target": "1 criatura"
+        },
+        "spell->Peaceful Bubble": {
+          "name": "Burbuja tranquila",
+          "description": "<p>Una concha opaca de runas flotantes e iridiscentes cubre el área, creando una burbuja. Puedes elegir que la explosión sea más pequeña, en incrementos de 10 pies (3 m). Las runas no impiden el paso, pero quienes están en el interior de la burbuja no pueden percibir a los del exterior, y viceversa. Los efectos de detección y de escudriñamiento están igualmente bloqueados.</p>\n<p>Las criaturas que duermen en el interior de la burbuja son inmunes a los sueños enviados por los conjuros. Quienes duermen 8 horas reducen en 2 en lugar de en 1 su estado @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{condenado}.</p>"
+        },
+        "spell->Translocate": {
+          "name": "Cambiar de sitio",
+          "description": "<p>Al instante te transportas a ti mismo y a cualquier objeto que estés usando y sosteniendo desde tu espacio actual a un espacio no ocupado dentro del rango que puedes ver. Si esto trae otra criatura contigo, incluso si la llevas en un contenedor extradimensional, el conjuro se pierde.</p>\n<hr /> <p><strong>Elevado ( 5.º )</strong> El alcance aumenta a 1 millas. No necesitas ver tu destino, siempre y cuando hayas estado allí en el pasado y conozcas su ubicación relativa y distancia de ti. Entonces eres temporalmente inmune por 1 hora.</p>"
+        },
+        "spell->Translocate (At Will)": {
+          "name": "Translocar (a voluntad)",
+          "description": "<p>Al instante te transportas a ti mismo y a cualquier objeto que estés usando y sosteniendo desde tu espacio actual a un espacio no ocupado dentro del rango que puedes ver. Si esto trae otra criatura contigo, incluso si la llevas en un contenedor extradimensional, el conjuro se pierde.</p>\n<hr /> <p><strong>Elevado ( 5.º )</strong> El alcance aumenta a 1 millas. No necesitas ver tu destino, siempre y cuando hayas estado allí en el pasado y conozcas su ubicación relativa y distancia de ti. Entonces eres temporalmente inmune por 1 hora.</p>"
+        },
+        "spell->Fireball": {
+          "name": "Bola de fuego",
+          "description": "<p>Una rugiente explosión de fuego explota en un lugar designado por ti, infligiendo 6d6 daño por fuego.</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 2d6.</p>"
+        },
+        "spell->Lightning Bolt": {
+          "name": "Relámpago",
+          "description": "<p>De tu mano surge un relámpago, que inflige 4d12 daño por electricidad, y los afectados tienen que hacer una salvación básica de Reflejos. </p> \n<hr /> \n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 1d12. </p> "
+        },
+        "spell->Locate (At Will)": {
+          "name": "Localizar (a voluntad)",
+          "description": "<p>Averiguas la dirección hasta el objetivo (si has seleccionado un objeto específico, como por ejemplo \"la espada de mi madre\") o el objetivo más próximo (si has seleccionado un tipo de objeto, como por ejemplo \"espadas\"). Si el objetivo es un objeto específico, tienes que haberlo observado directamente con tus propios sentidos. Si es un tipo de objeto, aun así has de tener una imagen mental precisa del tipo de objeto. Si hay plomo o agua corriente entre el objetivo y tú, este conjuro no puede localizarlo. Esto significa que podrías encontrar un tipo de objeto más lejos si el más cercano se encuentra detrás de plomo o agua corriente.</p> \n<hr /> \n<p><strong>Potenciado (5.º)</strong> Puedes apuntar a una criatura o ascendencia específica en lugar de a un objeto, pero debes haber conocido o visto de cerca a la criatura o ascendencia a la que deseas apuntar.</p> ",
+          "target": "1 objetivo específico o tipo de objeto"
+        },
+        "spell->Mind Reading (At Will)": {
+          "name": "Lectura de la mente (a voluntad)",
+          "description": "<p>Con un leve toque mental, tratas de leer la mente del objetivo, que tiene que hacer una salvación de Voluntad. A continuación, queda temporalmente inmune a tu lectura mental durante 1 hora.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo percibe vagos pensamientos superficiales de tu parte cuando Lanzas el conjuro.</p> \n<p><strong>Éxito</strong> Descubres si el modificador por Inteligencia del objetivo es superior, igual o inferior al tuyo.</p> \n<p><strong>Fallo</strong> Percibes vagos pensamientos superficiales del objetivo cuando Lanzas el conjuro y averiguas si su Inteligencia es superior, igual o inferior a la tuya. </p> \n<p><strong>Fallo crítico</strong> Igual que fallo, y mientras dura el conjuro puedes Mantenerlo para detectar de nuevo los pensamientos superficiales del objetivo. El objetivo no obtiene ninguna salvación adicional.</p> ",
+          "target": "1 criatura"
+        },
+        "spell->Silence": {
+          "name": "Silencio",
+          "description": " <p> El objetivo no emite sonido alguno, evitando que las criaturas lo detecten utilizando tan solo el oído. No puede utilizar ataques sónicos ni utilizar acciones auditivas. Esto impide también que el objetivo lance conjuros debido a las palabras mágicas implicadas en el lanzamiento, con la excepción de los conjuros disimulados. </p> \n<p>@UUID[Compendium.pf2e.spell-effects.Item.mmJNE57hC7G3SPae]{Efecto de conjuro: Silencio}</p> \n<hr /> \n<p><strong>Potenciado (4.º)</strong>  El conjuro crea una aura en una emanación de 10 pies \n(3 m) alrededor de la criatura tocada, silenciando todo sonido de su interior o que pasa a través de la misma. Mientras están en el interior del aura, las criaturas se ven sujetas a los mismos efectos que el objetivo. Dependiendo de la posición del efecto, una criatura podría darse cuenta de la falta de sonido que le llega (por ejemplo, bloqueando el ruido procedente de una fiesta). </p> ",
+          "target": "1 criatura dispuesta"
+        },
+        "spell->Detect Magic": {
+          "name": "Detectar magia",
+          "description": "<p>Envias un pulso que registra la presencia de magia. No recibes ninguna información más allá de la presencia o ausencia de magia. Puedes elegir ignorar la magia de la que eres plenamente consciente, como los objetos mágicos y los conjuros en curso de ti y tus aliados. Solo detectas magia de ilusión si el efecto de esa magia tiene un rango menor que el rango de tu conjuro <em> detect magic </em>. Sin embargo, los objetos que tienen un aura de ilusión pero no son engañosos en apariencia (como un @UUID[Compendium.pf2e.equipment-srd.Item.bikFUFRLwfdvX2x2]{Poción de invisibilidad} ) se detectan normalmente.</p>\n<hr /> <p><strong>Elevado ( 3.º )</strong> Aprendes el rango o nivel del efecto mágico más poderoso que el conjuro detecta, según lo determinado por el DJ.</p>\n<p><strong>Elevado ( 4.º )</strong> Como rango 3.º, pero también identificas la fuente de la magia de rango más alto. Como para un sentido impreciso, no se aprende la ubicación exacta, pero se puede reducir la fuente a dentro de un 5 -pie cúbico (o el más cercano si es más grande que eso).</p>"
+        },
+        "spell->Diabolic Pact": {
+          "name": "Pacto infernal",
+          "description": "<p>Usted hace una apelación a un poderoso demonio, pidiéndole que vincule a algunos de sus subordinados a su servicio. Si tienes éxito, el demonio te envía su elección de un demonio de nivel 2 o inferior, dos demonios de nivel 0 o inferior, o tres demonios de nivel –1 o inferior.</p>\n<hr /> <p><strong>Éxito crítico</strong> Los demonios son enviados a ti y te sirven por [[/gmr 1d4 #Weeks]]{1d4 weeks}.</p>\n<p><strong>Éxito</strong> Los demonios son enviados a ti y te sirven por [[/gmr 1d4 #Days]]{1d4 days}.</p>\n<p><strong>Fallo</strong> Su solicitud ha sido rechazada.</p>\n<p><strong>Fallo crítico</strong> No solo se niega tu petición, sino que el poderoso diablo envía a tu amo la palabra de su desagrado.</p>\n<hr /> <p><strong>Elevado (+1 )</strong> Aumenta el nivel del demonio enviado a ti por 1 para cada opción.</p>",
+          "primarycheck": "Religión (rango experto;  tienes que ser un diablo)"
+        },
+        "strike-melee->Binding Contract": {
+          "name": "Contrato vinculante"
+        },
+        "strike-melee->Horn": {
+          "name": "Cuerno"
+        },
+        "action->Greater Darkvision": {
+          "name": "Visión en la oscuridad mayor"
+        },
+        "action->Telepathy 100 feet": {
+          "name": "Telepatía 100 pies (30 m)"
+        },
+        "action->Constant Spells": {
+          "name": "Conjuros constantes"
+        },
+        "action->+1 Status to All Saves vs. Magic": {
+          "name": "+1 por estatus a todas las salvaciones contra la magia"
+        },
+        "action->Ward Contract": {
+          "name": "Custodiar contrato ",
+          "description": "<p>Un contrato firmado en manos de un diablo de los contratos vivo (incluyendo los que lleva enroscados en los cuernos) es inmune\nal daño de todas las criaturas excepto de dicho diablo de los contratos. Un diablo de los contratos es inmune a los efectos mentales que le obligarían a destruir, anular o alterar un contrato.</p>"
+        },
+        "action->Draft Contract": {
+          "name": "Redactar contrato",
+          "description": "<p>El diablo de los contratos redacta un contrato infernal para un único mortal vivo, que puede conceder una amplia variedad de aptitudes y efectos, similares al poder de un ritual de @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Deseo} pero a cumplir al pie de la letra por el diablo de los contratos. Para obtener cualquiera de dichos beneficios, el mortal debe firmar voluntariamente su nombre verdadero en el contrato. En ese momento, su alma queda vinculada al diablo de los contratos y al Infierno.</p>\n<p>Mientras el contrato está en vigor, la víctima no puede ser devuelta la vida excepto mediante <em>deseo</em> o magia similar. Si es devuelta a la vida por dichos medios, el diablo de los contratos sabe de quién se trata y puede localizar a la criatura o criaturas que le restablecieron durante 1 año, obteniendo los efectos de un conjuro de @UUID[Compendium.pf2e.spells-srd.Item.LQzlKbYjZSMFQawP]{Localizar} de alcance ilimitado. Evitar los términos de un contrato infernal es difícil y a menudo peligroso.</p>"
+        },
+        "action->Infernal Investment": {
+          "name": "Inversión infernal",
+          "description": "<p>Un diablo de los contratos puede lanzar a voluntad un conjuro innato de @UUID[Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj]{Escudriñamiento} de 10.º rango, pero solo puede designar como objetivo a una criatura con la que tiene un contrato.</p>\n<p>El objetivo falla críticamente su salvación de forma automática.</p>"
+        },
+        "action->Infernal Wound": {
+          "name": "Herida infernal",
+          "description": "<p>Las heridas de los Golpes de un diablo de los contratos se resisten a la curación.</p>\n<p>Para usar magia curativa sobre una criatura que sufre una herida infernal, el lanzador de conjuros o el objeto han de contrarrestar antes dicha aptitud (CD 29). Si no se contrarresta, la curación no surte efecto.</p>"
+        },
+        "action->Grab": {
+          "name": "Agarrón "
+        },
+        "lore->Legal Lore": {
+          "name": "Conocimiento legal"
         }
       }
     },
@@ -890,6 +1031,114 @@
         }
       }
     },
+    "Yrdris, Master of the Fanespire": {
+      "name": "Yrdris, Maestro de la Fanespire",
+      "acDetails": "(22 cuando está rota); armadura de constructo",
+      "publicNotes": "<p>Al igual que ocurre con las estatuas animadas humanoides de tamaño Mediano, las estatuas animadas gigantes se usan para custodiar lugares de importancia, pero su mayor tamaño y potencia las hacen más útiles en grandes cámaras del tesoro, salas espaciosas, o ubicaciones exteriores. Los objetos animados de semejante tamaño y fuerza son ideales para tareas y responsabilidades que normalmente realizan gólems y por tanto apenas se conocen objetos animados más poderosos.</p>\n<hr />\n<p>Dotados de un simulacro de vida mediante rituales u otras magias extrañas, los objetos animados tienen muchas formas y sirven para una gran variedad de usos. A continuación, se indican algunos ejemplos de objetos animados típicos. Muchas de estas criaturas hacen las veces de guardianes y sorprenden a los aventureros desprevenidos al cobrar vida y atacar. Otros sirven como divertimento para aquellos excepcionalmente ricos, simples sirvientes creados para ocuparse de tareas desagradables y similares.</p>",
+      "tokenName": "Yrdris",
+      "items": {
+        "spellcastingEntry->Arcane Prepared Spells": {
+          "name": "Hechizos arcanos preparados"
+        },
+        "spell->Clairvoyance": {
+          "name": "Clarividencia",
+          "description": "<p> Creas un ojo flotante @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} en un lugar dentro del alcance (incluso si está fuera de tu línea visual o de efecto). No se puede mover, pero tú puedes ver en todas direcciones desde dicho punto como si utilizaras tus sentidos visuales normales. </p>"
+        },
+        "spell->Dispelling Globe": {
+          "name": "Globo disipador",
+          "description": "<p>Creas un globo inmóvil a tu alrededor, que trata de contrarrestar cualquier conjuro del exterior del mismo cuya área u objetivos entren en él, como si el globo fuera un conjuro de @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} 1 rango inferior a su rango de conjuro real.</p>\n<p>Con un éxito, el globo sólo evita la parte del conjuro que hubiera entrado en el mismo (así que si el conjuro también tiene objetivos fuera del globo, o parte de su área de efecto esta más allá del mismo, dichos objetivos o dicha área se ven afectados con normalidad).</p>\n<p>Tienes que formar la esfera en un espacio abierto ininterrumpido de forma que sus bordes no atraviesen criatura u objeto alguno, o el conjuro se pierde (aunque las criaturas pueden entrar en el globo una vez lanzado el conjuro).</p>"
+        },
+        "spell->Wall of Fire": {
+          "name": "Muro de fuego",
+          "description": "<p>Alzas un muro ardiente que quema a las criaturas que lo atraviesan. Creas, o bien un muro de llamas de 5 pies (1,5 m) de grosor en una línea recta de hasta 60 pies (18 m) de longitud y 10 pies (3 m) de altura, o bien un anillo de llamas de 5 pies (1,5 m) de grosor y 10 pies (3 m) de radio y de la misma altura. En una u otra forma, el muro se alza en vertical; si quieres, puede ser más corto o más bajo. Todo lo que hay a cada lado del muro está @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} de las criaturas del lado opuesto. Cualquier criatura que cruza el muro u ocupa el área de éste al inicio de su turno sufre 4d6 daño por fuego.</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> El daño por fuego aumenta en 1d6.</p>"
+        },
+        "spell->Fireball": {
+          "name": "Bola de fuego",
+          "description": "<p>Una rugiente explosión de fuego explota en un lugar designado por ti, infligiendo 6d6 daño por fuego.</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 2d6.</p>"
+        },
+        "spell->Slow": {
+          "name": "Lentificar",
+          "description": "<p>Dilatas el flujo de tiempo alrededor del objetivo, lentificando sus acciones.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado</p> \n<p><strong>Éxito</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} durante 1 asalto.</p> \n<p><strong>Fallo</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} durante 1 minuto.</p> \n<p><strong>Fallo crítico</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 2} durante 1 minuto.</p> \n<hr /> \n<p><strong>Potenciado (6.º)</strong> Puedes designar como objetivo hasta a 10 criaturas.</p> ",
+          "target": "1 criatura"
+        },
+        "spell->Acid Grip": {
+          "name": "Presa ácida",
+          "description": "<p>Una mano efímera con garras aferra al objetivo y lo quema con ácido mágico. El objetivo sufre 2d8 de daño de ácido más @Damage[floor(@item.level/2)d6[persistent,acid]] de daño según su salvación de Reflejos. Una criatura que sufra daño persistente de este conjuro sufre un penalizador por estado de –10 pies a sus Velocidades. @UUID[Compendium.pf2e.spell-effects.Item.6TGcfVyzzVHEo7ke]{Efecto de conjuro: Presa ácida}</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura sufre la mitad del daño y ningún daño persistente, y la garra la mueve hasta 5 pies en una dirección que elijas.</p>\n<p><strong>Fallo</strong> La criatura sufre todo el daño y el daño persistente, y la garra la mueve hasta 10 pies en una dirección que elijas.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre el doble de daño y todo el daño persistente, y la garra la mueve hasta 20 pies en una dirección que elijas.</p>\n<hr />\n<p><strong>Potenciado (+2)</strong> El daño inicial aumenta en 2d8 y el daño de ácido persistente aumenta en 1d6.</p>",
+          "target": "1 criatura"
+        },
+        "spell->Blur": {
+          "name": "Difuminar",
+          "description": "<p> La forma del objetivo aparece borrosa. Se convierte en @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} . Como la naturaleza de este efecto aún deja obvia la ubicación del objetivo, el objetivo no puede usar esta ocultación para esconderse o escabullirse. </p>",
+          "target": "1 criatura"
+        },
+        "spell->Environmental Endurance": {
+          "name": "Aguante ambiental",
+          "description": "<p>Escudas al objetivo contra las temperaturas peligrosas. Elige entre frío o calor severos. El objetivo queda protegido de la temperatura que has elegido (pero no del frío o del calor extremos).</p>\n<hr />\n<p><strong>Potenciado (3.º)</strong> El objetivo queda protegido del frío y del calor severos.</p>\n<p><strong>Potenciado (5.º)</strong> El objetivo queda protegido del frío severo, del calor severo, del frío extremo y del calor extremo.</p>",
+          "target": "1 criatura dispuesta"
+        },
+        "spell->Laughing Fit": {
+          "name": "Ataque de risa",
+          "description": "<p>El objetivo se ve abrumado por una risa incontrolable. Tiene que hacer una salvación de Voluntad.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado.</p> \n<p><strong>Éxito</strong> El objetivo resulta afectado por una risa incontrolable. No puede utilizar reacciones.</p> \n<p><strong>Fallo</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} y no puede utilizar reacciones.</p> \n<p><strong>Fallo crítico</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} y no puede utilizar acciones o reacciones durante 1 asalto. A continuación sufre los efectos de un fallo.</p> ",
+          "target": "1 criatura viva"
+        },
+        "spell->See the Unseen": {
+          "name": "Ver invisibilidad",
+          "description": "<p>Tu mirada atraviesa las ilusiones y encuentra a las criaturas @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisibles} y a los espíritus. Puedes ver a las criaturas invisibles como si no lo fueran, aunque sus rasgos son borrosos, lo que hace que estén @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Ocultos} y sean difíciles de identificar. También puedes ver criaturas  incorporales como los fantasmas, atravesando un objeto desde 10 pies (3 m) o menos de la superficie del mismo como formas borrosas vistas a través de dichos objetos. Pistas más sutiles también te conceden un bonificador +2 por estatus a las pruebas que llevas a cabo para descreer ilusiones.</p> \n<hr /> \n<p><strong> Potenciado (5.º)</strong> Este conjuro tiene una duración de 8 horas.</p> \n<p>@UUID[Compendium.pf2e.spell-effects.Item.T5bk6UH7yuYog1Fp]{Efecto de conjuro: Ver lo invisible}</p> "
+        },
+        "spell->Caustic Blast": {
+          "name": "Explosión cáustica",
+          "description": "<p>Arrojas un gran pegote de ácido que detona inmediatamente, salpicando a las criaturas cercanas. Las criaturas en el área sufren 1d8 daño por ácido y tienen que hacer una salvación básica de Reflejos; con un fallo crítico, una criatura sufre también @Damage[(1+floor((@item.rank -1)/2))[persistent,acid]]{ daño persistente por ácido}.</p>\n<hr />\n<p><strong>Potenciado (+2)</strong> El daño inicial se incrementa en 1d8 y el daño persistente en un fallo crítico se incrementa en 1.</p>"
+        },
+        "spell->Daze": {
+          "name": "Aturdimiento",
+          "description": "<p>Te introduces en la mente del objetivo y lo aturdes con una sacudida mental. La sacudida inflige 1d6 daño mental con una salvación básica de Voluntad. Si el objetivo falla críticamente la salvación, queda también @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1}.</p>\n<hr />\n<p><strong>Potenciado (+2)</strong> El daño se incrementa en 1d6.</p>",
+          "target": "1 criatura"
+        },
+        "spell->Detect Magic": {
+          "name": "Detectar magia",
+          "description": "<p>Envias un pulso que registra la presencia de magia. No recibes ninguna información más allá de la presencia o ausencia de magia. Puedes elegir ignorar la magia de la que eres plenamente consciente, como los objetos mágicos y los conjuros en curso de ti y tus aliados. Solo detectas magia de ilusión si el efecto de esa magia tiene un rango menor que el rango de tu conjuro <em> detect magic </em>. Sin embargo, los objetos que tienen un aura de ilusión pero no son engañosos en apariencia (como una poción de invisibilidad <em> </em> ) se detectan normalmente.</p>\n<hr /> <p><strong>Elevado ( 3.º )</strong> Aprendes el rango o nivel del efecto mágico más poderoso que el conjuro detecta, según lo determinado por el DJ.</p>\n<p><strong>Elevado ( 4.º )</strong> Como rango 3.º, pero también identificas la fuente de la magia de rango más alto. Como para un sentido impreciso, no se aprende la ubicación exacta, pero se puede reducir la fuente a dentro de un 5 -pie cúbico (o el más cercano si es más grande que eso).</p>"
+        },
+        "spell->Fear": {
+          "name": "Miedo",
+          "description": "<p>Plantas miedo en el objetivo; debe intentar un Voluntad save.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no se ve afectado.</p>\n<p><strong>Éxito</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>\n<p><strong>Fallo</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2}.</p>\n<p><strong>Fallo crítico</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3} y @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} para 1 asalto.</p>\n<hr /> <p><strong>Elevado ( 3.º )</strong> Puedes seleccionar hasta cinco criaturas.</p>",
+          "target": "1 criatura"
+        },
+        "spell->Fleet Step": {
+          "name": "Pies ágiles",
+          "description": "<p>Obtienes una bonificación de estado de +30 pies a tu velocidad.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.ThFug45WHkQQXcoF]{Efecto de conjuro: Pies ágiles}</p>"
+        },
+        "spell->Frostbite": {
+          "name": "Congelación",
+          "description": "<p>Un orbe de frío polar se forma alrededor de tu objetivo, congelando su cuerpo. El objetivo sufre 2d4 daño por frío con una salvación básica de Fortaleza. Con un fallo crítico, el objetivo además sufre debilidad 1 a contundente hasta el inicio de tu siguiente turno.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.DdqWMj7cuf4S1bgr]{Efecto de conjuro: Congelación}</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 1d4 y la debilidad con un fallo crítico se incrementa en 1.</p>",
+          "target": "1 criatura"
+        },
+        "spell->Grease": {
+          "name": "Grasa",
+          "description": "<p> Conjuras grasa, eligiendo un área o un objetivo.</p>\n<ul> \n<li><strong>Area</strong><strong> [4 casillas contiguas de 5 pies (1,5 m) de lado]</strong> Todo el terreno sólido del área queda cubierto de grasa. Todas las criaturas que están de pie en la superficie recubierta de grasa deben tener éxito en una salvación de Reflejos o una prueba de Acrobacias contra tu CD de conjuros o caer @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{tumbadas}. Toda criatura que utilice una acción para moverse por la superficie grasa mientras dure el conjuro tendrá que hacer una salvación de Reflejos o una prueba de Acrobacias para @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Mantener el equilibrio}. Una criatura que da un Paso o Gatea no tiene que hacer prueba o salvación alguna.</li> \n<li><strong>Objetivo</strong><strong> [1 objeto de Impedimenta 1 o menos]</strong> Si Lanzas el conjuro sobre un objeto desatendido, quien intente hacerse con él deberá tener éxito en una prueba de Acrobacias o una salvación de Reflejos contra tu CD de conjuros para conseguirlo. Si designas como objetivo a un objeto atendido, el portador del objeto tiene que hacer una prueba de Acrobacias o una salvación de Reflejos. Con un fallo, quien lo tiene o lo empuña sufre un penalizador -2 por circunstancia a todas las pruebas que implican utilizarlo; con un fallo crítico, se le cae. El objeto aterriza en una casilla adyacente a elección del DJ. Si Lanzas este conjuro sobre un objeto puesto, el portador obtiene un bonificador +2 por circunstancia a las salvaciones de Fortaleza contra los intentos de apresarlo.</li> \n </ul> ",
+          "target": "1 objeto de Impedimenta 1 o menos"
+        },
+        "spell->Mending": {
+          "name": "Remendar",
+          "description": "<p>Reparas el objeto objetivo. Restableces 5 Puntos de Golpe por rango de conjuro al objetivo, eliminando potencialmente el estado de @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{roto} si lo reparas por encima del Umbral de rotura del objeto. No puedes reemplazar piezas perdidas ni reparar un objeto que ha sido completamente destruido.</p> \n<hr /> \n<p><strong>Potenciado (2.º)</strong> Puedes designar como objetivo a un objeto no mágico de Impedimenta 1 o menos.</p> \n<p><strong>Potenciado (3.º)</strong> Puedes designar como objetivo a un objeto no mágico de Impedimenta 2 o menos, o a un objeto mágico de Impedimenta 1 o menos.</p> ",
+          "target": "un objeto no mágico de Impedimenta ligera o menor"
+        },
+        "spell->Read Aura": {
+          "name": "Leer el aura",
+          "description": "<p>Te centras en el objeto objetivo, abriendo tu mente para percibir auras mágicas. Cuando el lanzamiento está completo, sabes si dicho objeto es mágico o no. Tú o cualquiera al que aconsejas acerca del aura obtiene un bonificador +2 por circunstancia a  @UUID[Compendium.pf2e.actionspf2e.Item.eReSHVEPCsdkSL4G]{Identificar magia} si el rango del efecto es menor que el de tu conjuro de <em>leer el aura</em>.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.J6OhRNSN23KzOPRL]{Efecto de conjuro: Leer el aura}</p> \n<hr /> \n<p><strong>Potenciado (3.º)</strong> Puedes designar como objetivo hasta a 10 objetos.</p> \n<p><strong>Potenciado (6.º)</strong> Puedes designar como objetivo a cualquier número \nde objetos.</p> ",
+          "target": "1 objeto"
+        },
+        "strike-melee->Stone Fist": {
+          "name": "Puño de piedra"
+        },
+        "action->Construct Armor (Hardness 10)": {
+          "name": "Armadura de constructo (Dureza 10)",
+          "description": "<p>Como los objetos normales, una estatua animada gigante tiene Dureza y todo el daño que sufre se reduce en una cantidad igual a dicha Dureza. En cuanto una estatua animada gigante se ve reducida a menos de la mitad de sus PG, o inmediatamente al ser dañada por un impacto crítico, su armadura de constructo se rompe y su Clase de armadura se reduce a 22.</p>"
+        },
+        "action->Grab": {
+          "name": "Agarrón "
+        }
+      }
+    },
     "Zikritrax": {
       "name": "Zikritrax",
       "blurb": "Variante adulto dragón adamantino",
@@ -967,256 +1216,6 @@
           "name": "Saber (minería)"
         }
       }
-    },
-    "Ogden": {
-      "hpDetails": "curación del vacío",
-      "publicNotes": "<p>Los gigantes de tamaño Enorme y otras criaturas de grandes dimensiones dan lugar a esqueletos poderosos.</p>\n<hr />\n<p>Los corceles esqueléticos son usados a veces como montura por monstruos o por otros muertos vivientes.</p>",
-      "items": {
-        "strike-melee->Claw": {
-          "name": "Garra"
-        },
-        "action->Void Healing": {
-          "name": "Curación del vacío"
-        },
-        "action->Broad Swipe": {
-          "name": "Deslizamiento amplio",
-          "description": "<p>La mole esquelética da dos Golpes con sus garras contra sendos enemigos adyacentes, ambos dentro de su alcance. Los dos ataques cuentan contra el penalizador por ataque múltiple de la moile, pero el penalizador no se incrementa hasta después de realizados.</p>"
-        },
-        "action->Massive Rush": {
-          "name": "Acometida colosal",
-          "description": "<p>La mole da una Zancada y un Golpe de garra, con un bonificador +4 por circunstancia al daño. Si el Golpe impacta, la mole automáticamente empuja 10 pies (3 m) al objetivo.</p>"
-        }
-      }
-    },
-    "Phistophilus": {
-      "name": "Fistófiles",
-      "languages": "telepatía 100 pies (30 m), habla verdadera",
-      "publicNotes": "<p>Los diablos de los contratos son los administrativos, escribas y burócratas del Infierno. Raramente se les encuentra fuera de los tribunales infernales y, cuando eso sucede, casi siempre es en busca de contratos potenciales, tentando a los mortales para vender\nsu alma a cambio de obtener sus deseos mundanos. Si un objetivo es lo suficientemente deseable, un fistófiles puede ofrecer un contrato por un precio aparentemente menor que el alma, aunque en ese caso, el diablo manipula cuidadosamente el precio para conducir igualmente al firmante hacia las fuerzas del Infierno. Los diablos de los contratos son criaturas altas con tonos de piel que van de bronce a carmesí y grandes cuernos curvos que se extienden desde su cuerpo, sobre los cuales a menudo despliegan contratos favorables o importantes.</p>\n<hr />\n<p>Maestros de la corrupción y arquitectos de la conquista, los diablos ansían dos cosas: tentar a los mortales para que se unan a su ansia de llevar a cabo todo tipo de actos profanos y esparcir la tiranía por todos los mundos. Las tentaciones que ofrecen a los mortales van desde grandes poderes concedidos mediante la firma de un contrato infernal, hasta favores retorcidos después de susurrar un juramento a un patrón diabólico o cualquier cantidad de intercambios aún más sutiles. Quienes sucumben a dichas tentaciones se ven consignados a pasar la otra vida sometidos a tormentos inacabables en los fosos del Infierno, donde la única esperanza de huida está en la posibilidad de ser ascendido para convertirse en un diablo de las filas infernales.</p>\n<p>Cada diablo tiene un papel específico que interpretar en la implacable maquinaria burocrática que es el Infierno, desde los soldados y los eruditos hasta los inquisidores, abogados, jueces y verdugos. Los humildes orts llevan a cabo trabajos serviles para los diablos más poderosos y especializados, como los diablos de infantería y de los contratos, mientras que los más grandes de los nessaris están al mando de ejércitos infernales enteros.</p>\n<p>Asmodeo está en el ápice de la estructura que creó, pero las capas que tiene por debajo están marcadas por una lucha constante por la posición. La mayoría de planes diabólicos sirven tan solo para mejorar el lugar en la jerarquía de quien los traza.</p>",
-      "saveDetails": "+1 por estatus a todas las salvaciones contra magia",
-      "items": {
-        "spellcastingEntry->Divine Innate Spells": {
-          "name": "Conjuros divinos innatos"
-        },
-        "spell->Interplanar Teleport": {
-          "name": "Teletransporte interplanario",
-          "target": "hasta 8 criaturas voluntarias"
-        },
-        "spell->Scrying (At Will, See Infernal Investment)": {
-          "description": "<p>Espías mágicamente a una criatura de tu elección. <em>Escudriñamiento</em> funciona como  @UUID[Compendium.pf2e.spells-srd.Item.zvKWclOZ7A53DObE]{Clarividencia}, excepto que la imagen que obtienes es menos precisa, insuficiente para <em>teletransporte</em> y conjuros similares. En lugar de crear un ojo en una ubicación fija a 500 pies (150 m) o menos, en su lugar puedes crear uno que se manifieste justo por encima del objetivo. Puedes elegir un objetivo o bien por su nombre o bien tocando una de sus posesiones o una parte de su cuerpo. Si no te has reunido con el objetivo en persona, la CD de  <em> escudriñamiento </em> es 2 menor y si no eres consciente de la identidad del objetivo (quizá porque hallaste el colmillo de una criatura desconocida en una escena del crimen), en su lugar la CD es 10 menor. </p> \n<p>El efecto de <em>escudriñamiento</em> depende de la salvación de Voluntad del objetivo.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El conjuro falla y el objetivo queda temporalmente inmune durante 1 semana. El objetivo también obtiene un atisbo de ti y averigua la distancia aproximada y la dirección entre ambos. </p> \n<p><strong>Éxito</strong> El conjuro falla y el objetivo queda temporalmente inmune durante 1 día. </p> \n<p><strong>Fallo</strong> El conjuro tiene éxito. </p> \n<p><strong>Fallo crítico</strong> El conjuro tiene éxito y el ojo sigue al objetivo si se mueve, moviéndose hasta 60 pies (18 m) por asalto. </p> ",
-          "target": "1 criatura",
-          "name": "Gritando (A voluntad, ver Inversión infernal)"
-        },
-        "spell->Illusory Scene": {
-          "name": "Escena ilusoria",
-          "description": "<p> Creas una escena imaginaria que incluye hasta 10 criaturas individuales u objetos de diverso tamaño, todos los cuales deben estar en el área del conjuro. Dichos elementos generan los sonidos y los olores apropiados, y su tacto es el correcto. Los elementos de una @UUID[Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly]{Escena ilusoria} no pueden hablar. A diferencia del conjuro criatura ilusoria, las criaturas de tu escena carecen de aptitudes y estadísticas de combate. Tu escena no incluye cambios al entorno que la rodea, aunque puedes colocarla en el entorno ilusorio de un conjuro de @UUID[Compendium.pf2e.spells-srd.Item.HBJPsonQnWcC3qdX]{Espejismo}.</p> \n <p> Cuando creas la escena, puedes elegir que sea estática o que siga un programa. Aunque una escena estática es estacionaria, incluye movimiento natural básico. Por ejemplo, el viento soplando sobre un pedazo de papel ilusorio lo haría crujir. Un programa puede tener hasta 1 minuto de longitud y se repite cuando se acaba. Por ejemplo, podrías crear una escena con dos orcos luchando entre sí y la lucha se desarrollaría de la misma forma en cada repetición. Si creas un bucle, ambos combatientes acaban en el mismo lugar al inicio de la escena y al final de la misma, pero puedes refinar el programa para que sea difícil discernir cuándo empieza y cuándo acaba el bucle. Cualquiera que observe la escena más de unos pocos minutos, casi siempre se dará cuenta del bucle. Una vez has creado la ilusión, no puedes alterar el programa. </p> \n <p> Cualquier criatura que toque cualquier aparte de la imagen o utilice la acción de @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Buscar} para examinarla podrá hacer un intento de descreer tu ilusión. Si interacciona con una parte de la ilusión, sólo descree dicha parte. Tan sólo puede descreer la escena al completo con un éxito crítico. </p> \n <hr /> \n<p><strong>Potenciado (6.º)</strong> Las criaturas o los objetos de tu escena pueden hablar. Tienes que dictar las palabras específicas para cada actor al crear tu programa. El conjuro disfraza tu voz para cada actor.</p> \n<p><strong>Potenciado (8.º)</strong> Como la versión de 6.º rango, pero la duración es ilimitada. </p> "
-        },
-        "spell->Mind Probe": {
-          "name": "Sonda mental",
-          "description": "<p>Proyectas tus pensamientos a través de la mente de una criatura, en busca de información. Accedes a los recuerdos y conocimiento del objetivo a menos que éste te mantenga a raya mediante una salvación de Voluntad. </p> \n<p><strong>Éxito</strong> El objetivo no resulta afectado. </p> \n<p><strong>Fallo</strong> Cada asalto de duración del conjuro, puedes Mantener el conjuro para hacer una pregunta diferente e intentar descubrir la respuesta. Para cada pregunta, el objetivo puede hacer una prueba de Engaño contra tu CD de conjuro; si el objetivo tiene éxito, no averiguas la respuesta y, con un éxito crítico, el objetivo te da una respuesta falsa que tú crees que es verdadera. Una vez le has formulado al objetivo una pregunta determinada, hacerla de nuevo, incluso con un lanzamiento diferente de sonda mental, arroja el mismo resultado. </p> \n<p><strong>Fallo crítico</strong> Igual que fallo, y el objetivo sufre un penalizador -4 por circunstancia a las pruebas de Engaño contra tus preguntas.</p> ",
-          "target": "1 criatura"
-        },
-        "spell->Sending (At Will)": {
-          "description": "<p>Envías a la criatura un mensaje mental de 25 palabras o menos, al que puede responder de inmediato con su propio mensaje de 25 palabras o menos.</p> ",
-          "target": "1 criatura a la que conoces bien",
-          "name": "Enviar (a voluntad)"
-        },
-        "spell->Truespeech (Constant)": {
-          "description": "<p>El objetivo puede entender todas las palabras, sea cual sea el idioma y también habla los idiomas de las demás criaturas. Cuando se encuentra en un grupo mixto de criaturas, cada vez que el objetivo habla puede elegir a una criatura y hablar en un idioma que ésta entiende, incluso si no sabe de qué idioma se trata.</p> \n<hr /> \n<p><strong>Potenciado (7.º)</strong> La duración es 8 horas.</p> ",
-          "target": "1 criatura",
-          "name": "Truespeech (constante)"
-        },
-        "spell->Peaceful Bubble": {
-          "name": "Burbuja tranquila",
-          "description": "<p>Una concha opaca de runas flotantes e iridiscentes cubre el área, creando una burbuja. Puedes elegir que la explosión sea más pequeña, en incrementos de 10 pies (3 m). Las runas no impiden el paso, pero quienes están en el interior de la burbuja no pueden percibir a los del exterior, y viceversa. Los efectos de detección y de escudriñamiento están igualmente bloqueados.</p>\n<p>Las criaturas que duermen en el interior de la burbuja son inmunes a los sueños enviados por los conjuros. Quienes duermen 8 horas reducen en 2 en lugar de en 1 su estado @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{condenado}.</p>"
-        },
-        "spell->Translocate": {
-          "name": "Cambiar de sitio",
-          "description": "<p>Al instante te transportas a ti mismo y a cualquier objeto que estés usando y sosteniendo desde tu espacio actual a un espacio no ocupado dentro del rango que puedes ver. Si esto trae otra criatura contigo, incluso si la llevas en un contenedor extradimensional, el conjuro se pierde.</p>\n<hr /> <p><strong>Elevado ( 5.º )</strong> El alcance aumenta a 1 millas. No necesitas ver tu destino, siempre y cuando hayas estado allí en el pasado y conozcas su ubicación relativa y distancia de ti. Entonces eres temporalmente inmune por 1 hora.</p>"
-        },
-        "spell->Fireball": {
-          "name": "Bola de fuego",
-          "description": "<p>Una rugiente explosión de fuego explota en un lugar designado por ti, infligiendo 6d6 daño por fuego.</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 2d6.</p>"
-        },
-        "spell->Lightning Bolt": {
-          "name": "Relámpago",
-          "description": "<p>De tu mano surge un relámpago, que inflige 4d12 daño por electricidad, y los afectados tienen que hacer una salvación básica de Reflejos. </p> \n<hr /> \n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 1d12. </p> "
-        },
-        "spell->Locate (At Will)": {
-          "description": "<p>Averiguas la dirección hasta el objetivo (si has seleccionado un objeto específico, como por ejemplo \"la espada de mi madre\") o el objetivo más próximo (si has seleccionado un tipo de objeto, como por ejemplo \"espadas\"). Si el objetivo es un objeto específico, tienes que haberlo observado directamente con tus propios sentidos. Si es un tipo de objeto, aun así has de tener una imagen mental precisa del tipo de objeto. Si hay plomo o agua corriente entre el objetivo y tú, este conjuro no puede localizarlo. Esto significa que podrías encontrar un tipo de objeto más lejos si el más cercano se encuentra detrás de plomo o agua corriente.</p> \n<hr /> \n<p><strong>Potenciado (5.º)</strong> Puedes apuntar a una criatura o ascendencia específica en lugar de a un objeto, pero debes haber conocido o visto de cerca a la criatura o ascendencia a la que deseas apuntar.</p> ",
-          "target": "1 objetivo específico o tipo de objeto",
-          "name": "Localizar (a voluntad)"
-        },
-        "spell->Mind Reading (At Will)": {
-          "description": "<p>Con un leve toque mental, tratas de leer la mente del objetivo, que tiene que hacer una salvación de Voluntad. A continuación, queda temporalmente inmune a tu lectura mental durante 1 hora.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo percibe vagos pensamientos superficiales de tu parte cuando Lanzas el conjuro.</p> \n<p><strong>Éxito</strong> Descubres si el modificador por Inteligencia del objetivo es superior, igual o inferior al tuyo.</p> \n<p><strong>Fallo</strong> Percibes vagos pensamientos superficiales del objetivo cuando Lanzas el conjuro y averiguas si su Inteligencia es superior, igual o inferior a la tuya. </p> \n<p><strong>Fallo crítico</strong> Igual que fallo, y mientras dura el conjuro puedes Mantenerlo para detectar de nuevo los pensamientos superficiales del objetivo. El objetivo no obtiene ninguna salvación adicional.</p> ",
-          "target": "1 criatura",
-          "name": "Lectura de la mente (a voluntad)"
-        },
-        "spell->Silence": {
-          "name": "Silencio",
-          "description": " <p> El objetivo no emite sonido alguno, evitando que las criaturas lo detecten utilizando tan solo el oído. No puede utilizar ataques sónicos ni utilizar acciones auditivas. Esto impide también que el objetivo lance conjuros debido a las palabras mágicas implicadas en el lanzamiento, con la excepción de los conjuros disimulados. </p> \n<p>@UUID[Compendium.pf2e.spell-effects.Item.mmJNE57hC7G3SPae]{Efecto de conjuro: Silencio}</p> \n<hr /> \n<p><strong>Potenciado (4.º)</strong>  El conjuro crea una aura en una emanación de 10 pies \n(3 m) alrededor de la criatura tocada, silenciando todo sonido de su interior o que pasa a través de la misma. Mientras están en el interior del aura, las criaturas se ven sujetas a los mismos efectos que el objetivo. Dependiendo de la posición del efecto, una criatura podría darse cuenta de la falta de sonido que le llega (por ejemplo, bloqueando el ruido procedente de una fiesta). </p> ",
-          "target": "1 criatura dispuesta"
-        },
-        "spell->Detect Magic": {
-          "name": "Detectar magia",
-          "description": "<p>Envias un pulso que registra la presencia de magia. No recibes ninguna información más allá de la presencia o ausencia de magia. Puedes elegir ignorar la magia de la que eres plenamente consciente, como los objetos mágicos y los conjuros en curso de ti y tus aliados. Solo detectas magia de ilusión si el efecto de esa magia tiene un rango menor que el rango de tu conjuro <em> detect magic </em>. Sin embargo, los objetos que tienen un aura de ilusión pero no son engañosos en apariencia (como un @UUID[Compendium.pf2e.equipment-srd.Item.bikFUFRLwfdvX2x2]{Poción de invisibilidad} ) se detectan normalmente.</p>\n<hr /> <p><strong>Elevado ( 3.º )</strong> Aprendes el rango o nivel del efecto mágico más poderoso que el conjuro detecta, según lo determinado por el DJ.</p>\n<p><strong>Elevado ( 4.º )</strong> Como rango 3.º, pero también identificas la fuente de la magia de rango más alto. Como para un sentido impreciso, no se aprende la ubicación exacta, pero se puede reducir la fuente a dentro de un 5 -pie cúbico (o el más cercano si es más grande que eso).</p>"
-        },
-        "spell->Diabolic Pact": {
-          "name": "Pacto infernal",
-          "primarycheck": "Religión (rango experto;  tienes que ser un diablo)",
-          "description": "<p>Usted hace una apelación a un poderoso demonio, pidiéndole que vincule a algunos de sus subordinados a su servicio. Si tienes éxito, el demonio te envía su elección de un demonio de nivel 2 o inferior, dos demonios de nivel 0 o inferior, o tres demonios de nivel –1 o inferior.</p>\n<hr /> <p><strong>Éxito crítico</strong> Los demonios son enviados a ti y te sirven por [[/gmr 1d4 #Weeks]]{1d4 weeks}.</p>\n<p><strong>Éxito</strong> Los demonios son enviados a ti y te sirven por [[/gmr 1d4 #Days]]{1d4 days}.</p>\n<p><strong>Fallo</strong> Su solicitud ha sido rechazada.</p>\n<p><strong>Fallo crítico</strong> No solo se niega tu petición, sino que el poderoso diablo envía a tu amo la palabra de su desagrado.</p>\n<hr /> <p><strong>Elevado (+1 )</strong> Aumenta el nivel del demonio enviado a ti por 1 para cada opción.</p>"
-        },
-        "strike-melee->Binding Contract": {
-          "name": "Contrato vinculante"
-        },
-        "strike-melee->Horn": {
-          "name": "Cuerno"
-        },
-        "action->Greater Darkvision": {
-          "name": "Visión en la oscuridad mayor"
-        },
-        "action->Telepathy 100 feet": {
-          "name": "Telepatía 100 pies (30 m)"
-        },
-        "action->Constant Spells": {
-          "name": "Conjuros constantes"
-        },
-        "action->+1 Status to All Saves vs. Magic": {
-          "name": "+1 por estatus a todas las salvaciones contra la magia"
-        },
-        "action->Ward Contract": {
-          "name": "Custodiar contrato ",
-          "description": "<p>Un contrato firmado en manos de un diablo de los contratos vivo (incluyendo los que lleva enroscados en los cuernos) es inmune\nal daño de todas las criaturas excepto de dicho diablo de los contratos. Un diablo de los contratos es inmune a los efectos mentales que le obligarían a destruir, anular o alterar un contrato.</p>"
-        },
-        "action->Draft Contract": {
-          "name": "Redactar contrato",
-          "description": "<p>El diablo de los contratos redacta un contrato infernal para un único mortal vivo, que puede conceder una amplia variedad de aptitudes y efectos, similares al poder de un ritual de @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Deseo} pero a cumplir al pie de la letra por el diablo de los contratos. Para obtener cualquiera de dichos beneficios, el mortal debe firmar voluntariamente su nombre verdadero en el contrato. En ese momento, su alma queda vinculada al diablo de los contratos y al Infierno.</p>\n<p>Mientras el contrato está en vigor, la víctima no puede ser devuelta la vida excepto mediante <em>deseo</em> o magia similar. Si es devuelta a la vida por dichos medios, el diablo de los contratos sabe de quién se trata y puede localizar a la criatura o criaturas que le restablecieron durante 1 año, obteniendo los efectos de un conjuro de @UUID[Compendium.pf2e.spells-srd.Item.LQzlKbYjZSMFQawP]{Localizar} de alcance ilimitado. Evitar los términos de un contrato infernal es difícil y a menudo peligroso.</p>"
-        },
-        "action->Infernal Investment": {
-          "name": "Inversión infernal",
-          "description": "<p>Un diablo de los contratos puede lanzar a voluntad un conjuro innato de @UUID[Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj]{Escudriñamiento} de 10.º rango, pero solo puede designar como objetivo a una criatura con la que tiene un contrato.</p>\n<p>El objetivo falla críticamente su salvación de forma automática.</p>"
-        },
-        "action->Infernal Wound": {
-          "name": "Herida infernal",
-          "description": "<p>Las heridas de los Golpes de un diablo de los contratos se resisten a la curación.</p>\n<p>Para usar magia curativa sobre una criatura que sufre una herida infernal, el lanzador de conjuros o el objeto han de contrarrestar antes dicha aptitud (CD 29). Si no se contrarresta, la curación no surte efecto.</p>"
-        },
-        "action->Grab": {
-          "name": "Agarrón "
-        },
-        "lore->Legal Lore": {
-          "name": "Conocimiento legal"
-        },
-        "spell->Translocate (At Will)": {
-          "description": "<p>Al instante te transportas a ti mismo y a cualquier objeto que estés usando y sosteniendo desde tu espacio actual a un espacio no ocupado dentro del rango que puedes ver. Si esto trae otra criatura contigo, incluso si la llevas en un contenedor extradimensional, el conjuro se pierde.</p>\n<hr /> <p><strong>Elevado ( 5.º )</strong> El alcance aumenta a 1 millas. No necesitas ver tu destino, siempre y cuando hayas estado allí en el pasado y conozcas su ubicación relativa y distancia de ti. Entonces eres temporalmente inmune por 1 hora.</p>",
-          "name": "Translocar (a voluntad)"
-        }
-      }
-    },
-    "Yrdris, Master of the Fanespire": {
-      "acDetails": "(22 cuando está rota); armadura de constructo",
-      "publicNotes": "<p>Al igual que ocurre con las estatuas animadas humanoides de tamaño Mediano, las estatuas animadas gigantes se usan para custodiar lugares de importancia, pero su mayor tamaño y potencia las hacen más útiles en grandes cámaras del tesoro, salas espaciosas, o ubicaciones exteriores. Los objetos animados de semejante tamaño y fuerza son ideales para tareas y responsabilidades que normalmente realizan gólems y por tanto apenas se conocen objetos animados más poderosos.</p>\n<hr />\n<p>Dotados de un simulacro de vida mediante rituales u otras magias extrañas, los objetos animados tienen muchas formas y sirven para una gran variedad de usos. A continuación, se indican algunos ejemplos de objetos animados típicos. Muchas de estas criaturas hacen las veces de guardianes y sorprenden a los aventureros desprevenidos al cobrar vida y atacar. Otros sirven como divertimento para aquellos excepcionalmente ricos, simples sirvientes creados para ocuparse de tareas desagradables y similares.</p>",
-      "items": {
-        "spellcastingEntry->Arcane Prepared Spells": {
-          "name": "Hechizos arcanos preparados"
-        },
-        "spell->Clairvoyance": {
-          "name": "Clarividencia",
-          "description": "<p> Creas un ojo flotante @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} en un lugar dentro del alcance (incluso si está fuera de tu línea visual o de efecto). No se puede mover, pero tú puedes ver en todas direcciones desde dicho punto como si utilizaras tus sentidos visuales normales. </p>"
-        },
-        "spell->Dispelling Globe": {
-          "name": "Globo disipador",
-          "description": "<p>Creas un globo inmóvil a tu alrededor, que trata de contrarrestar cualquier conjuro del exterior del mismo cuya área u objetivos entren en él, como si el globo fuera un conjuro de @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} 1 rango inferior a su rango de conjuro real.</p>\n<p>Con un éxito, el globo sólo evita la parte del conjuro que hubiera entrado en el mismo (así que si el conjuro también tiene objetivos fuera del globo, o parte de su área de efecto esta más allá del mismo, dichos objetivos o dicha área se ven afectados con normalidad).</p>\n<p>Tienes que formar la esfera en un espacio abierto ininterrumpido de forma que sus bordes no atraviesen criatura u objeto alguno, o el conjuro se pierde (aunque las criaturas pueden entrar en el globo una vez lanzado el conjuro).</p>"
-        },
-        "spell->Wall of Fire": {
-          "name": "Muro de fuego",
-          "description": "<p>Alzas un muro ardiente que quema a las criaturas que lo atraviesan. Creas, o bien un muro de llamas de 5 pies (1,5 m) de grosor en una línea recta de hasta 60 pies (18 m) de longitud y 10 pies (3 m) de altura, o bien un anillo de llamas de 5 pies (1,5 m) de grosor y 10 pies (3 m) de radio y de la misma altura. En una u otra forma, el muro se alza en vertical; si quieres, puede ser más corto o más bajo. Todo lo que hay a cada lado del muro está @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} de las criaturas del lado opuesto. Cualquier criatura que cruza el muro u ocupa el área de éste al inicio de su turno sufre 4d6 daño por fuego.</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> El daño por fuego aumenta en 1d6.</p>"
-        },
-        "spell->Fireball": {
-          "name": "Bola de fuego",
-          "description": "<p>Una rugiente explosión de fuego explota en un lugar designado por ti, infligiendo 6d6 daño por fuego.</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 2d6.</p>"
-        },
-        "spell->Slow": {
-          "name": "Lentificar",
-          "description": "<p>Dilatas el flujo de tiempo alrededor del objetivo, lentificando sus acciones.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado</p> \n<p><strong>Éxito</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} durante 1 asalto.</p> \n<p><strong>Fallo</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} durante 1 minuto.</p> \n<p><strong>Fallo crítico</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 2} durante 1 minuto.</p> \n<hr /> \n<p><strong>Potenciado (6.º)</strong> Puedes designar como objetivo hasta a 10 criaturas.</p> ",
-          "target": "1 criatura"
-        },
-        "spell->Acid Grip": {
-          "name": "Presa ácida",
-          "target": "1 criatura",
-          "description": "<p>Una mano efímera con garras aferra al objetivo y lo quema con ácido mágico. El objetivo sufre 2d8 de daño de ácido más @Damage[floor(@item.level/2)d6[persistent,acid]] de daño según su salvación de Reflejos. Una criatura que sufra daño persistente de este conjuro sufre un penalizador por estado de –10 pies a sus Velocidades. @UUID[Compendium.pf2e.spell-effects.Item.6TGcfVyzzVHEo7ke]{Efecto de conjuro: Presa ácida}</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura sufre la mitad del daño y ningún daño persistente, y la garra la mueve hasta 5 pies en una dirección que elijas.</p>\n<p><strong>Fallo</strong> La criatura sufre todo el daño y el daño persistente, y la garra la mueve hasta 10 pies en una dirección que elijas.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre el doble de daño y todo el daño persistente, y la garra la mueve hasta 20 pies en una dirección que elijas.</p>\n<hr />\n<p><strong>Potenciado (+2)</strong> El daño inicial aumenta en 2d8 y el daño de ácido persistente aumenta en 1d6.</p>"
-        },
-        "spell->Blur": {
-          "name": "Difuminar",
-          "description": "<p> La forma del objetivo aparece borrosa. Se convierte en @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} . Como la naturaleza de este efecto aún deja obvia la ubicación del objetivo, el objetivo no puede usar esta ocultación para esconderse o escabullirse. </p>",
-          "target": "1 criatura"
-        },
-        "spell->Environmental Endurance": {
-          "name": "Aguante ambiental",
-          "description": "<p>Escudas al objetivo contra las temperaturas peligrosas. Elige entre frío o calor severos. El objetivo queda protegido de la temperatura que has elegido (pero no del frío o del calor extremos).</p>\n<hr />\n<p><strong>Potenciado (3.º)</strong> El objetivo queda protegido del frío y del calor severos.</p>\n<p><strong>Potenciado (5.º)</strong> El objetivo queda protegido del frío severo, del calor severo, del frío extremo y del calor extremo.</p>",
-          "target": "1 criatura dispuesta"
-        },
-        "spell->Laughing Fit": {
-          "name": "Ataque de risa",
-          "description": "<p>El objetivo se ve abrumado por una risa incontrolable. Tiene que hacer una salvación de Voluntad.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado.</p> \n<p><strong>Éxito</strong> El objetivo resulta afectado por una risa incontrolable. No puede utilizar reacciones.</p> \n<p><strong>Fallo</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} y no puede utilizar reacciones.</p> \n<p><strong>Fallo crítico</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} y no puede utilizar acciones o reacciones durante 1 asalto. A continuación sufre los efectos de un fallo.</p> ",
-          "target": "1 criatura viva"
-        },
-        "spell->See the Unseen": {
-          "name": "Ver invisibilidad",
-          "description": "<p>Tu mirada atraviesa las ilusiones y encuentra a las criaturas @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisibles} y a los espíritus. Puedes ver a las criaturas invisibles como si no lo fueran, aunque sus rasgos son borrosos, lo que hace que estén @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Ocultos} y sean difíciles de identificar. También puedes ver criaturas  incorporales como los fantasmas, atravesando un objeto desde 10 pies (3 m) o menos de la superficie del mismo como formas borrosas vistas a través de dichos objetos. Pistas más sutiles también te conceden un bonificador +2 por estatus a las pruebas que llevas a cabo para descreer ilusiones.</p> \n<hr /> \n<p><strong> Potenciado (5.º)</strong> Este conjuro tiene una duración de 8 horas.</p> \n<p>@UUID[Compendium.pf2e.spell-effects.Item.T5bk6UH7yuYog1Fp]{Efecto de conjuro: Ver lo invisible}</p> "
-        },
-        "spell->Caustic Blast": {
-          "name": "Explosión cáustica",
-          "description": "<p>Arrojas un gran pegote de ácido que detona inmediatamente, salpicando a las criaturas cercanas. Las criaturas en el área sufren 1d8 daño por ácido y tienen que hacer una salvación básica de Reflejos; con un fallo crítico, una criatura sufre también @Damage[(1+floor((@item.rank -1)/2))[persistent,acid]]{ daño persistente por ácido}.</p>\n<hr />\n<p><strong>Potenciado (+2)</strong> El daño inicial se incrementa en 1d8 y el daño persistente en un fallo crítico se incrementa en 1.</p>"
-        },
-        "spell->Daze": {
-          "name": "Aturdimiento",
-          "description": "<p>Te introduces en la mente del objetivo y lo aturdes con una sacudida mental. La sacudida inflige 1d6 daño mental con una salvación básica de Voluntad. Si el objetivo falla críticamente la salvación, queda también @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1}.</p>\n<hr />\n<p><strong>Potenciado (+2)</strong> El daño se incrementa en 1d6.</p>",
-          "target": "1 criatura"
-        },
-        "spell->Detect Magic": {
-          "name": "Detectar magia",
-          "description": "<p>Envias un pulso que registra la presencia de magia. No recibes ninguna información más allá de la presencia o ausencia de magia. Puedes elegir ignorar la magia de la que eres plenamente consciente, como los objetos mágicos y los conjuros en curso de ti y tus aliados. Solo detectas magia de ilusión si el efecto de esa magia tiene un rango menor que el rango de tu conjuro <em> detect magic </em>. Sin embargo, los objetos que tienen un aura de ilusión pero no son engañosos en apariencia (como una poción de invisibilidad <em> </em> ) se detectan normalmente.</p>\n<hr /> <p><strong>Elevado ( 3.º )</strong> Aprendes el rango o nivel del efecto mágico más poderoso que el conjuro detecta, según lo determinado por el DJ.</p>\n<p><strong>Elevado ( 4.º )</strong> Como rango 3.º, pero también identificas la fuente de la magia de rango más alto. Como para un sentido impreciso, no se aprende la ubicación exacta, pero se puede reducir la fuente a dentro de un 5 -pie cúbico (o el más cercano si es más grande que eso).</p>"
-        },
-        "spell->Fear": {
-          "name": "Miedo",
-          "target": "1 criatura",
-          "description": "<p>Plantas miedo en el objetivo; debe intentar un Voluntad save.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no se ve afectado.</p>\n<p><strong>Éxito</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>\n<p><strong>Fallo</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2}.</p>\n<p><strong>Fallo crítico</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3} y @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} para 1 asalto.</p>\n<hr /> <p><strong>Elevado ( 3.º )</strong> Puedes seleccionar hasta cinco criaturas.</p>"
-        },
-        "spell->Fleet Step": {
-          "name": "Pies ágiles",
-          "description": "<p>Obtienes una bonificación de estado de +30 pies a tu velocidad.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.ThFug45WHkQQXcoF]{Efecto de conjuro: Pies ágiles}</p>"
-        },
-        "spell->Frostbite": {
-          "name": "Congelación",
-          "description": "<p>Un orbe de frío polar se forma alrededor de tu objetivo, congelando su cuerpo. El objetivo sufre 2d4 daño por frío con una salvación básica de Fortaleza. Con un fallo crítico, el objetivo además sufre debilidad 1 a contundente hasta el inicio de tu siguiente turno.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.DdqWMj7cuf4S1bgr]{Efecto de conjuro: Congelación}</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 1d4 y la debilidad con un fallo crítico se incrementa en 1.</p>",
-          "target": "1 criatura"
-        },
-        "spell->Grease": {
-          "name": "Grasa",
-          "description": "<p> Conjuras grasa, eligiendo un área o un objetivo.</p>\n<ul> \n<li><strong>Area</strong><strong> [4 casillas contiguas de 5 pies (1,5 m) de lado]</strong> Todo el terreno sólido del área queda cubierto de grasa. Todas las criaturas que están de pie en la superficie recubierta de grasa deben tener éxito en una salvación de Reflejos o una prueba de Acrobacias contra tu CD de conjuros o caer @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{tumbadas}. Toda criatura que utilice una acción para moverse por la superficie grasa mientras dure el conjuro tendrá que hacer una salvación de Reflejos o una prueba de Acrobacias para @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Mantener el equilibrio}. Una criatura que da un Paso o Gatea no tiene que hacer prueba o salvación alguna.</li> \n<li><strong>Objetivo</strong><strong> [1 objeto de Impedimenta 1 o menos]</strong> Si Lanzas el conjuro sobre un objeto desatendido, quien intente hacerse con él deberá tener éxito en una prueba de Acrobacias o una salvación de Reflejos contra tu CD de conjuros para conseguirlo. Si designas como objetivo a un objeto atendido, el portador del objeto tiene que hacer una prueba de Acrobacias o una salvación de Reflejos. Con un fallo, quien lo tiene o lo empuña sufre un penalizador -2 por circunstancia a todas las pruebas que implican utilizarlo; con un fallo crítico, se le cae. El objeto aterriza en una casilla adyacente a elección del DJ. Si Lanzas este conjuro sobre un objeto puesto, el portador obtiene un bonificador +2 por circunstancia a las salvaciones de Fortaleza contra los intentos de apresarlo.</li> \n </ul> ",
-          "target": "1 objeto de Impedimenta 1 o menos"
-        },
-        "spell->Mending": {
-          "name": "Remendar",
-          "description": "<p>Reparas el objeto objetivo. Restableces 5 Puntos de Golpe por rango de conjuro al objetivo, eliminando potencialmente el estado de @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{roto} si lo reparas por encima del Umbral de rotura del objeto. No puedes reemplazar piezas perdidas ni reparar un objeto que ha sido completamente destruido.</p> \n<hr /> \n<p><strong>Potenciado (2.º)</strong> Puedes designar como objetivo a un objeto no mágico de Impedimenta 1 o menos.</p> \n<p><strong>Potenciado (3.º)</strong> Puedes designar como objetivo a un objeto no mágico de Impedimenta 2 o menos, o a un objeto mágico de Impedimenta 1 o menos.</p> ",
-          "target": "un objeto no mágico de Impedimenta ligera o menor"
-        },
-        "spell->Read Aura": {
-          "name": "Leer el aura",
-          "description": "<p>Te centras en el objeto objetivo, abriendo tu mente para percibir auras mágicas. Cuando el lanzamiento está completo, sabes si dicho objeto es mágico o no. Tú o cualquiera al que aconsejas acerca del aura obtiene un bonificador +2 por circunstancia a  @UUID[Compendium.pf2e.actionspf2e.Item.eReSHVEPCsdkSL4G]{Identificar magia} si el rango del efecto es menor que el de tu conjuro de <em>leer el aura</em>.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.J6OhRNSN23KzOPRL]{Efecto de conjuro: Leer el aura}</p> \n<hr /> \n<p><strong>Potenciado (3.º)</strong> Puedes designar como objetivo hasta a 10 objetos.</p> \n<p><strong>Potenciado (6.º)</strong> Puedes designar como objetivo a cualquier número \nde objetos.</p> ",
-          "target": "1 objeto"
-        },
-        "strike-melee->Stone Fist": {
-          "name": "Puño de piedra"
-        },
-        "action->Construct Armor (Hardness 10)": {
-          "name": "Armadura de constructo (Dureza 10)",
-          "description": "<p>Como los objetos normales, una estatua animada gigante tiene Dureza y todo el daño que sufre se reduce en una cantidad igual a dicha Dureza. En cuanto una estatua animada gigante se ve reducida a menos de la mitad de sus PG, o inmediatamente al ser dañada por un impacto crítico, su armadura de constructo se rompe y su Clase de armadura se reduce a 22.</p>"
-        },
-        "action->Grab": {
-          "name": "Agarrón "
-        }
-      },
-      "name": "Yrdris, Maestro de la Fanespire"
     }
   },
   "mapping": {
@@ -1279,10 +1278,10 @@
     "Mark of the Mantis": "Marca de la Mantis",
     "Sundered Waves": "Olas de Sundered",
     "The Scourge of Sheerleaf": "El flagelo de Sheerleaf",
+    "Things Go to Hell": "Las cosas van al infierno",
     "A Few Flowers More": "Un par de flores Más",
     "A Fistful of Flowers": "Un puñado de flores",
     "Little Trouble in Big Absalom": "Pequeños problemas en el gran Absalón",
-    "The Great Toy Heist": "El gran robo de juguetes",
-    "Things Go to Hell": "Las cosas van al infierno"
+    "The Great Toy Heist": "El gran robo de juguetes"
   }
 }
