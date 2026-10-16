@@ -25,8 +25,8 @@
       "name": "(Decapitado) Sangrado",
       "description": "<p> El decapitado está cubierto de sangre viscosa. El objetivo de un Golpe exitoso queda salpicado de sangre y debe superar una salvación @Check[type:fortitude|dc:] o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} . </p>",
       "rules": {
-        "0": {
-          "text": "<div data-visibility='gm'> <p> <strong> {item|name} </strong> </p> {item|system.description.value} </div>"
+        "1": {
+          "text": "<p><strong>{item|name}</strong> {item|system.description.value}</p>"
         }
       }
     },
@@ -34,8 +34,8 @@
       "name": "(Decapitado) Enredando",
       "description": "<p> Cabello largo y fibroso se adhiere al cuero cabelludo del decapitado. Sus golpes obtienen la habilidad @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab}. </p>",
       "rules": {
-        "1": {
-          "text": "<div class='compact-text' data-visibility='gm'> <strong> {item|name} </strong> @Localize[PF2E.NPC.Abilities.Glossary.Grab] </div>"
+        "2": {
+          "text": "<div class='compact-text' data-visibility='gm'><strong>{item|name}</strong> @Localize[PF2E.NPC.Abilities.Glossary.Grab]</div>"
         }
       }
     },
@@ -81,7 +81,7 @@
     },
     "(Blight) Blight Domination": {
       "name": "(Blight) Dominación de la plaga",
-      "description": "<p>All blights can cast @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate} as an innate primal spell but can target only animals, beasts, fungi, oozes, or plants that are located inside their cursed domain. If a creature dominated by this spell leaves the cursed domain, the effects of <em>dominate</em> immediately end, but as long as the dominated creature remains in the cursed domain, the duration is unlimited. When a blight targets a mindless fungi, ooze, or plant, its <em>dominate</em> spell loses the mental trait.</p>"
+      "description": "<p>Todas las manchas pueden lanzar @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominar} como un conjuro primario innato, pero solo puede apuntar a animales, bestias, hongos, cienos o plantas que se encuentren dentro de su dominio maldito. Si una criatura dominada por este conjuro abandona el dominio maldito, los efectos de <em>dominar</em> termina inmediatamente, pero mientras la criatura dominada permanezca en el dominio maldito, la duración es ilimitada. Cuando una plaga se dirige a un hongo, un exudado o una planta sin sentido, su <em>dominar</em> el conjuro pierde el rasgo mental.</p>"
     },
     "(Blight) Cursed Domain": {
       "name": "(Plagas) Dominio maldito",
@@ -185,7 +185,7 @@
     },
     "(Cryptid, Experimental) Energy Wave": {
       "name": "(Cryptid, Experimental) Onda de energía",
-      "description": "<p> El críptido experimental desata un @Template[type:line|distance:30] de energía de un tipo específico del críptido experimental (normalmente electricidad o fuego). Las criaturas en el área toman @Damage[1d6[damagetype]]{1d6 damage per level of the cryptid} con una salvación @Check[type:reflex|dc:|basic:true]. El críptido experimental puede usar esta habilidad una vez cada [[/br 1d4 #Recharge Energy Wave]]{1d4 rounds} . Esta acción tiene el rasgo del tipo de daño. Si los experimentos que remodelaron a la criatura fueron mágicos, esta acción también tiene el rasgo de evocación y el rasgo que coincide con el mágico.tradición de los experimentos (arcana, divina, oculta o primordial). </p>"
+      "description": "<p> El críptido experimental desata un @Template[type:line|distance:30] de energía de un tipo específico del críptido experimental (normalmente electricidad o fuego). Las criaturas en el área toman @Damage[1d6[damagetype]]{1d6 daño por nivel del críptico} con una salvación @Check[type:reflex|dc:|basic:true]. El críptido experimental puede usar esta habilidad una vez cada [[/br 1d4 #Recharge Energy Wave]]{1d4 rounds} . Esta acción tiene el rasgo del tipo de daño. Si los experimentos que remodelaron a la criatura fueron mágicos, esta acción también tiene el rasgo de evocación y el rasgo que coincide con el mágico.tradición de los experimentos (arcana, divina, oculta o primordial). </p>"
     },
     "(Cryptid, Experimental) Operational Flaw": {
       "name": "(Cryptid, experimental) Defecto operativo",
@@ -197,7 +197,7 @@
     },
     "(Cryptid, Mutant) Explosive End": {
       "name": "(Críptido, Mutante) Final explosivo",
-      "description": "<p> La muerte del críptido mutante revela una última sorpresa cuando explota en llamas, ácido, una pila de sustancia tóxica o algo aún más extraño. Elija un tipo de daño apropiado para el críptido mutante. Cuando muere, explota, causando @Damage[1d6[damagetype]]{1d6 damage of the chosen type} a cada criatura en un @Template[type:emanation|distance:10] , con una salvación @Check[type:reflex|dc:|basic:true] contra una CD estándar del nivel de la criatura. El daño aumenta en 1d6 en el 3er nivel y en cada nivel impar posterior. </p>"
+      "description": "<p> La muerte del críptido mutante revela una última sorpresa cuando explota en llamas, ácido, una pila de sustancia tóxica o algo aún más extraño. Elija un tipo de daño apropiado para el críptido mutante. Cuando muere, explota, causando @Damage[1d6[damagetype]]{1d6 daño del tipo elegido} a cada criatura en un @Template[type:emanation|distance:10] , con una salvación @Check[type:reflex|dc:|basic:true] contra una CD estándar del nivel de la criatura. El daño aumenta en 1d6 en el 3er nivel y en cada nivel impar posterior. </p>"
     },
     "(Cryptid, Mutant) Marrowlance": {
       "name": "(Críptido, Mutante) Marrowlance",
@@ -364,7 +364,7 @@
       "description": "<p>20 pies. El agua fluye sin cesar desde una criatura inundada, haciendo resbaladiza la zona a su alrededor. El suelo en el aura es terreno difícil para todas las criaturas no inundadas.</p>"
     },
     "(Floodslain) Vomit Flotsam": {
-      "name": "(Floodslain) Vomit Flotsam",
+      "name": "(Floodslain) Vomit Flotsam (en inglés)",
       "description": "<p>El cuerpo de una criatura inundada está lleno de escombros de su horrible muerte, que pueden vomitar a sus enemigos. El floodslain vomita restos flotantes en un @Template[type:cone|distance:15]. Cualquier criatura en el área recibe @Damage[1d8[bludgeoning]|options:area-damage] de daño por nivel de la criatura inundada (mínimo 1d8 ) con un @Check[type:reflex|against:fortitude|basic|options:area-effect] de salvación contra la CD de Fortaleza de la inundada.</p>"
     },
     "(Fortune Dragon) Chimeric Nature": {
@@ -452,7 +452,7 @@
       "description": "<p>El fantasma intenta poseer a una criatura corpórea adyacente. Esto tiene el mismo efecto que el conjuro @UUID[Compendium.pf2e.spells-srd.Item.wU6hNzK8Yfqdmc8m]{Posesión}, excepto que como el fantasma no tiene cuerpo físico, no se ve afectado por esa restricción del conjuro.</p> \n<p>Para las CD, usa la CD del conjuro del nivel más alto del fantasma.</p>"
     },
     "(Ghost) Memento Mori": {
-      "name": "(Ghost) Memento Mori",
+      "name": "(Ghost) Memento mori",
       "description": "<p> El fantasma hace que una criatura dentro de un radio de 30 pies reviva la muerte del fantasma. </p>\n <p> El objetivo debe tener éxito en una salvación @Check[type:will|dc:] o ver y sentir lo que hizo el fantasma, tomando @Damage[1d4[persistent,mental]] por cada 2 niveles que tenga el fantasma. </p>\n <p> Todas las demás criaturas son @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} al objetivo hasta que finalice el daño persistente. </p>"
     },
     "(Ghost) Phantasmagoria": {
@@ -670,7 +670,7 @@
     },
     "(Leshy) Verdant Burst": {
       "name": "(Leshy) Explosión verde",
-      "description": "<p>When the leshy dies, a burst of primal energy explodes from their body, restoring Hit Points based on the leshy's level to each plant creature in a @Template[type:emanation|distance:30]. This area is filled with plants, becoming difficult terrain. If the terrain is not a viable environment for these plants, they wither after 24 hours.</p>\n<table border=\"1\" class=\"pf2e remaster\">\n<thead>\n<tr style=\"text-align:right\">\n<th>Level</th>\n<th>Healing</th>\n<th>Level</th>\n<th>Healing</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>-1—0</td>\n<td>1d4</td>\n<td>10—11</td>\n<td>6d8</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1d8</td>\n<td>12—13</td>\n<td>7d8</td>\n</tr>\n<tr>\n<td>2—3</td>\n<td>2d8</td>\n<td>14—15</td>\n<td>8d8</td>\n</tr>\n<tr>\n<td>4—5</td>\n<td>3d8</td>\n<td>16—17</td>\n<td>9d8</td>\n</tr>\n<tr>\n<td>6—7</td>\n<td>4d8</td>\n<td>18—19</td>\n<td>10d8</td>\n</tr>\n<tr>\n<td>8—9</td>\n<td>5d8</td>\n<td>20+</td>\n<td>11d8</td>\n</tr>\n</tbody>\n</table>"
+      "description": "<p>Cuando el leshy muere, una explosión de energía primaria explota de su cuerpo, restaurando los puntos de golpe según el nivel del leshy para cada criatura vegetal en un @Template[type:emanation|distance:30]. Esta zona se llena de plantas, convirtiéndose en un terreno difícil. Si el terreno no es un entorno viable para estas plantas, se marchitan al cabo de 24 horas.</p>\n<table border=\"1\" class=\"pf2e remaster\">\n<thead>\n<tr style=\"text-align:right\">\n<th>Level</th>\n<th>Healing</th>\n<th>Level</th>\n<th>Healing</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>-1—0</td>\n<td>1d4</td>\n<td>10—11</td>\n<td>6d8</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1d8</td>\n<td>12—13</td>\n<td>7d8</td>\n</tr>\n<tr>\n<td>2—3</td>\n<td>2d8</td>\n<td>14—15</td>\n<td>8d8</td>\n</tr>\n<tr>\n<td>4—5</td>\n<td>3d8</td>\n<td>16—17</td>\n<td>9d8</td>\n</tr>\n<tr>\n<td>6—7</td>\n<td>4d8</td>\n<td>18—19</td>\n<td>10d8</td>\n</tr>\n<tr>\n<td>8—9</td>\n<td>5d8</td>\n<td>20+</td>\n<td>11d8</td>\n</tr>\n</tbody>\n</table>"
     },
     "(Lich) Animate Cage": {
       "name": "(Lich) Animar jaula",
@@ -798,7 +798,7 @@
     },
     "(Martial Artist) Blazing Gate": {
       "name": "(Artista marcial) Puerta ardiente",
-      "description": "<p><strong>Requisitos</strong> El gran maestro tiene un objetivo @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado}</p>\n<hr /> <p><strong>Efecto</strong> El gran maestro lanza a su objetivo hacia arriba y lo electrocuta con un doble golpe de palma infundido con qi cuando aterrizan. El objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}, pierde la condición de agarrado o restringido, y toma @Damage[5d6[bludgeoning],2d8[persistent,electricity]]{5d6 bludgeoning damage and 2d8 persistent electricity damage} (@Check[fortitude|dc:38|basic] guardado).</p>"
+      "description": "<p><strong>Requisitos</strong> El gran maestro tiene un objetivo @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado}</p>\n<hr /> <p><strong>Efecto</strong> El gran maestro lanza a su objetivo hacia arriba y lo electrocuta con un doble golpe de palma infundido con qi cuando aterrizan. El objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}, pierde la condición de agarrado o restringido, y toma @Damage[5d6[bludgeoning],2d8[persistent,electricity]]{5d6 daño contundente y 2d8 persistentes daño de electricidad} (@Check[fortitude|dc:38|basic] guardado).</p>"
     },
     "(Martial Artist) Competitive Taunt": {
       "name": "(Artista marcial) Burla competitiva",
@@ -999,6 +999,10 @@
       "name": "(Mítico) Sin obstáculos",
       "description": "<p><strong>Coste</strong> 1 Punto mítico</p>\n<hr /> <p><strong>Efecto</strong> El atacante mítico termina automáticamente un efecto que le daría una penalizador de circunstancia a Velocidad. Cuando intenta @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Huir} un efecto que tiene @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado}, @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado}, automáticamente tiene éxito.</p>"
     },
+    "(Naval Crew) Pistol Salvo": {
+      "name": "(Tripulación naval) Pistola Salvo",
+      "description": "<p><strong>Frecuencia</strong> una vez cada 10 minutos</p>\n<hr /> <p><strong>Efecto</strong> La tripulación naval saca y dispara sus pistolas de piedra en un @Template[type:burst|distance:10] dentro de 40 pies, infligiendo @Damage[7d4[piercing]|options:area-damage] daño ( @Check[reflex|dc:23|basic|options:area-effect] salvación). Cada criatura usa la más débil de sus resistencias o inmunidades para perforar o golpear, y cualquiera que falla críticamente en su salvación recibe @Damage[10[piercing]|options:area-damage] de daño adicional después de duplicarse. Cuando la tripulación naval se reduce a 2 o menos segmentos, esta área disminuye a un @Template[type:burst|distance:5].</p>"
+    },
     "(Nemesis) Additional Damage": {
       "name": "(Némesis) Daño adicional",
       "description": "<p>Némesis inflige 1d6 p. de daño extra (seleccionado entre ácido, frío, electricidad, fuego, veneno o sonido) en todos los Golpes.</p>"
@@ -1097,7 +1101,7 @@
     },
     "(Phase Dragon) Dematerialize": {
       "name": "(Dragón de fase) Desmaterializar",
-      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The phase dragon becomes incorporeal, gaining the incorporeal trait, resistance to all damage (except force, ghost touch, and spirit) equal to half their level (double the resistance against non-magical damage), and immunity to precision damage. If the dragon attempts a Strike against a creature with any circumstance bonuses to AC (such as from a shield or cover), reduce that bonus by 2. This effect lasts for 1 minute or until the phase dragon Dismisses it.</p>",
+      "description": "<p><strong>Frecuencia</strong> una vez por hora</p>\n<hr />\n<p><strong>Efecto</strong> El dragón de fase se vuelve incorpóreo, ganando el rasgo incorpóreo, resistencia a todo daño (excepto fuerza, toque fantasma y espíritu) igual a la mitad de su nivel (el doble de resistencia contra daño no mágico) e inmunidad al daño de precisión. Si el dragón intenta un Golpe contra una criatura con bonificaciones a la CA por cualquier circunstancia (como por un escudo o cobertura), reduce esa bonificación en 2. Este efecto dura 1 minuto o hasta que el dragón de fase lo desestime.</p>",
       "selfEffect": "Efecto: Desmaterializar el cuerpo"
     },
     "(Phase Dragon) Second Glance": {
@@ -1110,7 +1114,7 @@
     },
     "(Protean) Warpwave": {
       "name": "(Proteica) Onda de disformidad",
-      "description": "<p> Muchos proteanos pueden someter a sus enemigos a alteraciones desorientadoras percibidas en el tiempo y el espacio creando ondas de realidad inestable en el entorno llamadas ondas warp. Cuando una criatura falla su tirada de salvación y se ve afectada por una onda de distorsión, tira [[/br 1d8 #Warpwave]]{1d8} y ​​consulta la siguiente tabla para conocer el efecto específico en esa criatura. A menos que se indique lo contrario, un efecto de onda de distorsión dura [[/br 1d4 #Duration Warpwave Effect]]{1d4 rounds} y ​​un nuevo efecto de onda de distorsión niega cualquier efecto de onda de distorsión anterior.ya está afectando a una criatura. </p>\n <table class=\"pf2e\">\n <thead>\n <tr>\n <th> [[/br 1d8 #Warpwave]]{1d8} </th>\n <th> Efecto de onda de deformación </th>\n </tr>\n </thead>\n <tbody>\n <tr>\n <td> 1 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2} ( @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 3} en una falla crítica) </td>\n </tr>\n <tr>\n <td> 2 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confuso} y ​​gana [[/r 4d6 #Temporary Hit Points]]{4d6 temporary Hit Points} </td>\n </tr>\n <tr>\n <td> 3 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} (permanente en caso de fallo crítico) </td>\n </tr>\n <tr>\n <td> 4 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} ( @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 3} en una falla crítica) </td>\n </tr>\n <tr>\n <td> 5 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} por filamentos de energía </td>\n </tr><tr>\n <td> 6 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Acelerado} (solo zancada, golpe o paso) </td>\n </tr>\n <tr>\n <td> 7 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} </td>\n </tr>\n <tr>\n <td> 8 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} ( @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 3} en una falla crítica) </td>\n </tr>\n </tbody>\n </table>"
+      "description": "<p> Muchos proteanos pueden someter a sus enemigos a alteraciones desorientadoras percibidas en el tiempo y el espacio creando ondas de realidad inestable en el entorno llamadas ondas warp. Cuando una criatura falla su tirada de salvación y se ve afectada por una onda de distorsión, tira [[/br 1d8 #Warpwave]]{1d8} y ​​consulta la siguiente tabla para conocer el efecto específico en esa criatura. A menos que se indique lo contrario, un efecto de onda de distorsión dura [[/br 1d4 #Duration Warpwave Effect]]{1d4 rounds} y ​​un nuevo efecto de onda de distorsión niega cualquier efecto de onda de distorsión anterior.ya está afectando a una criatura. </p>\n <table class=\"pf2e\">\n <thead>\n <tr>\n <th> [[/br 1d8 #Warpwave]]{1d8} </th>\n <th> Efecto de onda de deformación </th>\n </tr>\n </thead>\n <tbody>\n <tr>\n <td> 1 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2} ( @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 3} en una falla crítica) </td>\n </tr>\n <tr>\n <td> 2 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confuso} y ​​gana [[/r 4d6 #Temporary Hit Points]]{4d6 Puntos de Golpe temporales} </td>\n </tr>\n <tr>\n <td> 3 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} (permanente en caso de fallo crítico) </td>\n </tr>\n <tr>\n <td> 4 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} ( @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 3} en una falla crítica) </td>\n </tr>\n <tr>\n <td> 5 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} por filamentos de energía </td>\n </tr><tr>\n <td> 6 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Acelerado} (solo zancada, golpe o paso) </td>\n </tr>\n <tr>\n <td> 7 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} </td>\n </tr>\n <tr>\n <td> 8 </td>\n <td> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} ( @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 3} en una falla crítica) </td>\n </tr>\n </tbody>\n </table>"
     },
     "(Ravener) Consume Soul": {
       "name": "(Cuervo) Consumir alma",
@@ -1222,6 +1226,18 @@
       "name": "(Sociedad secreta) Equipo de etiqueta",
       "description": "<p> Un miembro de la sociedad secreta trabaja mejor con otros miembros de la misma sociedad (ya sea que tengan la adaptación de miembro de la sociedad secreta y esta habilidad o no). Cualquier criatura es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} contra los ataques cuerpo a cuerpo de un miembro de la sociedad secreta debido al flanqueo, siempre y cuando el enemigo esté dentro del alcance del miembro de la sociedad secreta y del alcance de una criatura aliada que sea miembro de la misma sociedad secreta. Contra una criatura al alcance de dos o más criaturas aliadas queson miembros de la misma sociedad secreta, los Ataques del miembro de la sociedad secreta infligen 1d6 de daño de precisión adicional. </p>"
     },
+    "(Shadowbound) Light Vulnerability": {
+      "name": "(Shadowbound) Vulnerabilidad a la luz",
+      "description": "<p>Los ataques contra la criatura de las sombras se tratan como mágicos si son hechos por una criatura que está en luz mágica o con un objeto que está en luz mágica (como el conjuro de luz).</p>"
+    },
+    "(Shadowbound) Shadow Form": {
+      "name": "(Ligado a las sombras) Forma de sombra",
+      "description": "<p>Una criatura en las sombras puede asumir una forma sombría. En este estado, la criatura adquiere el rasgo incorpóreo. Tiene resistencia 10 a todo daño (excepto fuerza, toque fantasmal, espíritu o vitalidad; doble resistencia vs. no mágica), es inmune al daño de precisión, y no puede usar ninguna acción con el ataque o manipular rasgo. Tiene una velocidad de vuelo de 15 pies y puede deslizarse a través de pequeñas grietas. La criatura encadenada a las sombras puede Desestimar este efecto para volver a solidificarse, pero si lo hace en un área de luz brillante, es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1} por 1 turno.</p>"
+    },
+    "(Shadowbound) Shadow Touch": {
+      "name": "(Shadowbound) Toque de sombra",
+      "description": "<p>Los Golpes de la criatura afectan a las criaturas incorpóreas con los efectos de una runa de propiedad de toque fantasmal.</p>"
+    },
     "(Siabrae) Blight Mastery": {
       "name": "(Siabrae) Dominio de la plaga",
       "description": "<p> Cualquiera de los hechizos o efectos de los siabrae que normalmente estarían restringidos a afectar a los animales también pueden afectar a los animales no muertos. Además, cualquier animal en el que los siabrae tomen la forma o convoquen parece estar enfermo, desnutrido o incluso muerto y podrido. (Esto no afecta sus estadísticas). </p>"
@@ -1284,7 +1300,7 @@
     },
     "(Skeleton) Frozen": {
       "name": "(Esqueleto) Congelado",
-      "description": "<p> Los huesos del esqueleto están cubiertos por una fina capa de hielo. El esqueleto gana inmunidad al frío y debilidad 5 al fuego y pierde resistencia al fuego. El esqueleto está rodeado por un aura de frío que causa [[/r (max(1,floor(@actor.level/2)))[cold]]]{cold damage equal to half the skeleton's level} a todas las criaturas adyacentes al comienzo del turno del esqueleto ( @Check[type:reflex|dc:|basic:true] salvo con una CD estándar para su nivel). </p>"
+      "description": "<p> Los huesos del esqueleto están cubiertos por una fina capa de hielo. El esqueleto gana inmunidad al frío y debilidad 5 al fuego y pierde resistencia al fuego. El esqueleto está rodeado por un aura de frío que causa [[/r (max(1,floor(@actor.level/2)))[cold]]]{daño de frío igual a la mitad del nivel del esqueleto} a todas las criaturas adyacentes al comienzo del turno del esqueleto ( @Check[type:reflex|dc:|basic:true] salvo con una CD estándar para su nivel). </p>"
     },
     "(Skeleton) Grave Eruption": {
       "name": "(Esqueleto) Erupción grave",
@@ -1294,9 +1310,6 @@
       "name": "(Esqueleto) Lacado",
       "description": "<p> Durante el proceso de creación del esqueleto, este fue cubierto con varias capas de una laca alquímica, dando a sus huesos un tono dorado y otorgándole protección adicional. El esqueleto obtiene resistencia al ácido 5 y una bonificación de estado de +2 a las salvaciones contra efectos que envejecen o erosionan al objetivo. </p>",
       "rules": {
-        "1": {
-          "label": "Contra efectos que envejecen o erosionan el objetivo"
-        },
         "2": {
           "label": "Contra efectos que envejecen o corroen el objetivo"
         }
@@ -1337,6 +1350,106 @@
     "(Spawning Soulrider) Monitor Escape": {
       "name": "(Spawning Soulrider) Monitor de escape",
       "description": "<p>La forma del jinete de almas se difumina mientras explota los vacíos en el multiverso. Se teletransporta a un espacio vacío dentro de 60 pies.</p>"
+    },
+    "(Special Forces Bond) Ambush Troop": {
+      "name": "(Fuerzas Especiales de la Unión)",
+      "description": "<p><strong>Prerrequisitos</strong> experto en sigilo</p>\n<hr /> <p>Has entrenado a tu tropa en varias técnicas que permiten a tu grupo permanecer sigiloso a pesar de tu número. Cada vez que tú y tu tropa necesiten intentar un chequeo de sigilo, solo lanzas una vez y usas el modificador de sigilo más alto. Este beneficio se aplica cuando exploras con tu tropa, como cuando usas la actividad de exploración [[/act avoid-notice]], no solo en un encuentro de escaramuza.</p>\n<p>Además, dejas que tu tropa tome ventaja de las criaturas que son @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} para ellas, aunque la mayoría de las tropas no pueden coordinar sus ataques con la precisión suficiente para hacerlo. Las criaturas que están desprevenido para tu tropa reciben una penalizador de circunstancia de –2 a los tiradas de salvación y CD salvadores contra las habilidades ofensivas de tu tropa.</p>"
+    },
+    "(Special Forces Bond) Combo Attack": {
+      "name": "(Fuerzas especiales) Combo Ataque",
+      "description": "<p><strong>Prerrequisito</strong> dominio experto de una o más armas o ataques desarmados</p>\n<hr /> <p>Puedes atacar en tándem con tu tropa, usando tus ataques para hacer aberturas para que tu tropa termine el trabajo. Cuando haces un Golpe en tu turno, cualquier criatura que golpees recibe una penalizador de estado de –1 a los lanzamientos de salvación contra cualquier habilidad ofensiva que tu tropa use este turno.</p>"
+    },
+    "(Special Forces Bond) Coordinated Casting": {
+      "name": "(Bond de Fuerzas Especiales) Casting coordinado",
+      "description": "<p><strong>Prerrequisitos</strong> Eres un lanzador de conjuros, y tu tropa tiene conjuros o una habilidad ofensiva con el rasgo arcano, divino, mágico, oculto o primordial.</p>\n<hr /> <p>Puedes lanzar conjuros en tándem con tu tropa. Cuando lanzas un conjuro en tu turno, cualquier criatura que golpees con un ataque de conjuro para el conjuro o que falla en su salvación contra tu conjuro recibe una penalizador de estado de –1 a CA, CD salvados y tiradas de salvación contra cualquier conjuro que tu tropa lance este turno o habilidad mágica que tu tropa use este turno.</p>"
+    },
+    "(Special Forces Bond) Desperate Fervor": {
+      "name": "(Lazo de Fuerzas Especiales) Fervor desesperado",
+      "description": "<p><strong>Prerrequisitos</strong> experto en diplomacia, intimidación o actuación</p>\n<hr /> <p>Cuando las fichas están bajas, tu tropa se vuelve más peligrosa. Mientras tu tropa tenga 3 o menos segmentos, gana un bonificador por estatus +1 a CA, CD salvaje y lanzamientos salvajes, y un bonificador por estatus a lanzamientos de daño igual a la mitad de tu nivel. El bonificador de daño aumenta a tu nivel completo si la tropa tiene solo 2 segmentos.</p>"
+    },
+    "(Special Forces Bond) Discipline": {
+      "name": "(Unión de Fuerzas Especiales) Disciplina",
+      "description": "<p><strong>Prerrequisitos</strong> experto en Salvar con voluntad</p>\n<hr /> <p>Tu tropa automáticamente tiene éxito crítico en las comprobaciones de desbandada. Si te golpean @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Inconsciente}, tu tropa todavía mejora su grado de éxito en las comprobaciones de desbandada en un paso hasta el final del encuentro, como lo hace una tropa con un líder.</p>"
+    },
+    "(Special Forces Bond) Inescapable Troop": {
+      "name": "(Fuerzas Especiales) Tropa ineludible",
+      "description": "<p><strong>Prerrequisitos</strong> Golpe reactivo</p>\n<hr /> <p>Tu tropa bloquea a las fuerzas enemigas, impidiéndoles reposicionarse en el campo de batalla. Tu tropa gana la reacción @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.Fp5JEjsmiMp25Ica]{Inescapable Onslaught}.</p>"
+    },
+    "(Special Forces Bond) Magical Defenses": {
+      "name": "(Lazo de Fuerzas Especiales) Defensa Mágica",
+      "description": "<p><strong>Prerrequisitos</strong> Eres un hechicero.</p>\n<hr /> <p>Desarrollas guardias mágicas para tus tropas. Tu tropa gana un bonificador de estatus +1 a todas las defensas contra magia.</p>"
+    },
+    "(Special Forces Bond) Mobile Troop": {
+      "name": "(Fuerzas Especiales de la Unión) Tropa Móvil",
+      "description": "<p><strong>Prerrequisitos</strong> experto en Acrobacias</p>\n<hr /> <p>Tus tropas pueden moverse por el campo de batalla con agilidad. Cuando tú y tu tropa os mováis, la unidad combinada gana un bonificador por estatus de +5 -pies a todas las Velocidades de movimiento. Además, si tú o tu tropa usa una acción especial, conjuro u otra habilidad que permite un tipo especial de movimiento, como Salto de pared, translocación o velocidad de vuelo, pueden moverse juntos incluso si normalmente no sería posible.</p>"
+    },
+    "(Special Forces Bond) Rage and Rule": {
+      "name": "(Fuerzas Especiales Bond) Rage y Regla",
+      "description": "<p><strong>Prerrequisitos</strong> Tienes la acción de ira.</p>\n<hr /> <p>Tu tropa aprende la increíble furia de la batalla. Cuando te enfureces, tu tropa gana la mitad de la cantidad de Puntos de Golpe temporales que tú ganas. Estos Puntos de Golpe temporales duran 1 minuto, y la tropa no puede ganar PS temporales de esta habilidad de nuevo durante 1 minuto.</p>"
+    },
+    "(Special Forces Bond) Shield Wall": {
+      "name": "(Fuerzas Especiales de la Unión)",
+      "description": "<p><strong>Prerrequisitos</strong> Bloque de escudo</p>\n<p><strong>Requisitos</strong> Estás empuñando un escudo.</p>\n<hr /> <p>Has equipado a tus tropas con escudos, y ellos los levantan a tu orden. Levantas tu Escudo, y tanto tú como tu tropa ganáis un bonificador por circunstancia +2 a los salvamentos de CA y Reflejo hasta el comienzo de tu siguiente turno.</p>"
+    },
+    "(Special Forces Bond) Troop Mascot": {
+      "name": "(Fuerzas Especiales Bond) Mascota de la tropa",
+      "description": "<p><strong>Prerrequisitos</strong> Tienes un compañero (como un animal de compañía, un ejodolón, un familiar o una mascota).</p>\n<hr /> <p>Tu tropa encuentra encantadora a tu criatura compañera, y los miembros de tu tropa se han unido a tu mascota. Tu compañero gana resistencia igual al nivel de tu tropa a todo daño. Si tienes un eidolon, cuando un efecto te daña a ambos, esta resistencia se aplica después de determinar la mayor cantidad de daño.</p>\n<p>Si tienes un animal de compañía, su beneficio de Apoyo se aplica a tu tropa y a ti.</p>"
+    },
+    "(Special Forces Bond) Under Command": {
+      "name": "(Bond de Fuerzas Especiales) Bajo Comando",
+      "description": "<p><strong>Prerrequisitos</strong> Tienes la función de clase táctica.</p>\n<hr /> <p>Dirigir tropas es tu segunda naturaleza, y las lecciones de tus tácticas se aplican a grupos enteros de aliados. Tu tropa cuenta como uno de tus compañeros de escuadrón y no cuenta para tu número máximo de compañeros de escuadrón.</p>\n<p>Además, las tropas que son tus compañeros de escuadrón pueden usar una habilidad ofensiva en lugar de un Golpe cuando uses una táctica que les permita Golpear. Si concedes específicamente un Golpe cuerpo a cuerpo, tienen que usar una habilidad de emanación; si concedes específicamente un Golpe a distancia, tienen que usar una habilidad de ráfaga. Deben usar la versión de acción 1 o 2 de la habilidad ofensiva. Estas habilidades ofensivas cuentan contra el número de Golpes que puedes conceder con tu táctica. Esto funciona con cualquier compañero de escuadrón, ya sea que los estés liderando o que lo esté un aliado.</p>"
+    },
+    "(Special Forces) Combat Medicine": {
+      "name": "(Fuerzas Especiales) Medicina de Combate",
+      "description": "<p><strong>Frecuencia</strong> una vez por hora</p>\n<hr /> <p><strong>Efecto</strong> La unidad de fuerzas especiales cuenta con muchos médicos de batalla entre sus efectivos. La tropa intenta un prueba @Check[warfare-lore|dc:40]. En caso de éxito, la tropa y su comandante recuperan @Damage[(2d8+30)[healing]] Puntos de Golpe. En un éxito crítico, esta sanación aumenta a @Damage[(4d8+50)[healing]] Puntos de Golpe.</p>"
+    },
+    "(Special Forces) Composite Bows": {
+      "name": "(Fuerzas Especiales) Arcos compuestos",
+      "description": "<p>La unidad de fuerzas especiales ha entrenado francotiradores en sus filas. Aumenta el alcance de su habilidad de Salvo corto a 120 pies y su daño a 5d10 daño perforante. Las tropas con estos arcos no pueden ser magos de guerra, no pueden tener escudos, y no pueden ser montadas.</p>"
+    },
+    "(Special Forces) Dirty Fighting": {
+      "name": "(Fuerzas especiales) Lucha sucia",
+      "description": "<p>La unidad de fuerzas especiales intenta interrumpir la capacidad del enemigo para luchar desarmando sus armas, pateando polvo en sus ojos, y así sucesivamente. Intenta un chequeo @Check[athletics|against:reflex] contra el CD Reflejo de cada enemigo dentro de un @Template[type:emanation|distance:5]. En caso de éxito, ese enemigo recibe una penalizador de circunstancia de –2 para lanzar ataques durante 1 asalto, o si afecta a una tropa, una penalizador de circunstancia de –2 para los CD de esa tropa por efectos de daño durante 1 asalto. En un éxito crítico, esta penalizador dura 2 asaltos.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.G62fNtluvSHPdRdI]{Efecto: Lucha sucia (éxito)}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.7Oet4xG6dzxRczer]{Efecto: Lucha sucia (éxito crítico)}</p>"
+    },
+    "(Special Forces) Inescapable Onslaught": {
+      "name": "(Fuerzas especiales) Asalto inevitable",
+      "description": "<p><strong>Desencadenante</strong> Una criatura adyacente a la tropa usa una acción de movimiento que causaría que ya no esté adyacente</p>\n<hr /> <p><strong>Efecto</strong> La tropa usa la versión de acción 2 de una de sus habilidades ofensivas que tiene una emanación, pero solo la criatura que la desencadenó se ve afectada. Además, si la criatura falla críticamente su lanzamiento de salvación, la acción de movimiento se interrumpe. Si la habilidad ofensiva solo se puede usar una vez por asaltos, esta reacción ignora ese límite.</p>"
+    },
+    "(Special Forces) Mounted Marauders": {
+      "name": "(Fuerzas especiales) Marauders montados",
+      "description": "<p>Estos soldados de fuerzas especiales están montados. Aumenta su velocidad a 40 pies. Mientras se mueve por tierra, esta tropa ignora el terreno difícil. Los efectos que solo apuntan a animales o humanoides podrían no funcionar en esta tropa, sujeto a la discreción del DJ. Las tropas montadas no pueden tener arcos compuestos.</p>"
+    },
+    "(Special Forces) No Retreat": {
+      "name": "(Fuerzas especiales) Sin retirada",
+      "description": "<p>Estos soldados han sido entrenados extensivamente para mantener su posición sin importar la situación. Si algún efecto obliga a la unidad de fuerzas especiales a moverse, reduce la distancia en 10 pies. Cada vez que se ve afectada por la condición @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo}, la unidad de fuerzas especiales es en su lugar @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 2} por la misma duración.</p>"
+    },
+    "(Special Forces) Planar Hunters": {
+      "name": "(Fuerzas especiales) Cazadores planares",
+      "description": "<p>La unidad de fuerzas especiales está entrenada para lidiar con amenazas planas externas. Ganan un bonificador de +4 circunstancias a los lanzamientos de daño de Salvo Corto y Hojas Cortadoras contra demonios, demonios y demonios.</p>"
+    },
+    "(Special Forces) Punitive Attack": {
+      "name": "(Fuerzas especiales) Ataque punitivo",
+      "description": "<p><strong>Desencadenante</strong> Un enemigo dentro de 5 pies de la unidad de fuerzas especiales usa una acción de manipulación o una acción de movimiento, hace un ataque a distancia, o deja una casilla durante una acción de movimiento que está usando</p>\n<hr /> <p><strong>Efecto</strong> Las tropas de las fuerzas especiales agitan sus armas. El enemigo que lo activa recibe @Damage[(5d6+10)[slashing]] de daño (@Check[reflex|dc:34|basic] de salvación). Si la criatura falla críticamente su lanzamiento de salvación y el disparador fue una acción de manipulación, la tropa interrumpe esa acción.</p>"
+    },
+    "(Special Forces) Quick Formation": {
+      "name": "(Fuerzas especiales) Formación rápida",
+      "description": "<p><strong>Frecuencia</strong> una vez por asaltos</p>\n<hr /> <p><strong>Efecto</strong> La unidad de fuerzas especiales usa @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.USyDPcSdzcm024zT]{Cambiar Formación}. Las unidades de fuerzas especiales suelen conocer las formaciones sueltas y de cuña. Si las tropas están protegidas, en su lugar conocen la concha de tortuga y las formaciones de cuña.</p>\n<hr /> <p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeFormation]</p>"
+    },
+    "(Special Forces) Shielded": {
+      "name": "(Fuerzas especiales) Escudo",
+      "description": "<p>La unidad de fuerzas especiales está equipada con escudos grandes y pesados. Esto permite a la tropa levantar sus escudos, dándole a ella y a su comandante un bonificador por circunstancia +2 a CA hasta el inicio de su siguiente turno. Además, esto da a la tropa la reacción @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.m4HQ2o5aPxjXf2kY]{Bloquear con el escudo}. Las tropas con escudo no pueden tener arcos o lanzas compuestos.</p>"
+    },
+    "(Special Forces) Sprinting Charge": {
+      "name": "(Fuerzas especiales) Carga de sprinting",
+      "description": "<p>La unidad de fuerzas especiales carga hacia adelante con ferocidad. Avanza hasta el doble de su velocidad. Al final de su movimiento, cada enemigo dentro de @Template[type:emanation|distance:5] recibe @Damage[(2d6+7)[slashing]|options:area-damage] de daño con un @Check[reflex|dc:34|basic|options:area-effect] de salvación.</p>"
+    },
+    "(Special Forces) Swords for Pikes": {
+      "name": "(Fuerzas Especiales) Espadas para Piqueros",
+      "description": "<p>La unidad de fuerzas especiales tiene lanzas alargadas como su arma principal. Cambiar el alcance de sus Hojas Cortadoras a @Template[type:emanation|distance:10] y cambiar el daño de cortar a perforar. Las tropas con lanzas no pueden tener escudos.</p>"
+    },
+    "(Special Forces) War Mages": {
+      "name": "(Fuerzas especiales) Magos de guerra",
+      "description": "<p>Esta unidad de fuerzas especiales tiene algunos magos de batalla entre sus efectivos. Los magos de guerra no pueden tener arcos compuestos. La unidad pierde su habilidad de Salvo corto, pero gana lo siguiente:</p>\n<p><strong>conjuros arcanos preparados</strong> CD 34, ataque +26</p>\n<p><strong>7.º</strong> @UUID[Compendium.pf2e.spells-srd.Item.0jadeyQIItIuRgeH]{Explosión de eclipse}, @UUID[Compendium.pf2e.spells-srd.Item.9igi8LcrNQKwljK7]{Respuesta de conjuro}</p>\n<p><strong>6.º</strong> @UUID[Compendium.pf2e.spells-srd.Item.7PnjDM52lb4LEqHR]{Salvo de flecha}, @UUID[Compendium.pf2e.spells-srd.Item.TDNlDWbYb58Y55Da]{Cadena de relámpagos}, @UUID[Compendium.pf2e.spells-srd.Item.7Iela4GgVeO3LfAo]{Muro de fuerza}</p>\n<p><strong>5.º</strong> @UUID[Compendium.pf2e.spells-srd.Item.AnWCohzPgK4L9GVl]{Detectar escudriñamiento}, @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Bola de fuego}, @UUID[Compendium.pf2e.spells-srd.Item.xFp4EwVcYwSG336t]{Culebrear}</p>\n<p><strong>Cantrips ( 8.º )</strong> @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detectar magia}, @UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Luz}, @UUID[Compendium.pf2e.spells-srd.Item.1Yoipc5jNcMehtEW]{Viento Cortante}</p>"
     },
     "(Sporeborn) Consume Biomatter": {
       "name": "(Nacidos con esporas) Consumir biomateria",
@@ -1434,9 +1547,6 @@
       "name": "(Ulgrem-Axaan) Lágrimas de cocodrilo",
       "description": "<p> Ulgrem-Axaan puede imitar el sonido de una presa herida intentando una prueba de Engaño para Mentir. Tiene un bonificador de circunstancia +4 a esta prueba. </p>",
       "rules": {
-        "0": {
-          "label": "Lagrimas de cocodrilo"
-        },
         "1": {
           "label": "Lágrimas de cocodrilo"
         }
@@ -1455,7 +1565,7 @@
       "description": "<p> Debajo de las placas de hueso y hielo de Ulgrem-Axaan fluyen los restos viscosos de sus fluidos vitales. Las criaturas que entren en contacto físico con este fluido deben superar una salvación @Check[type:fortitude|dc:22|name:Ichor Coating] o infectarse con @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.N7UV5CZXtcoxDxCF]{Ghoul Fever}. </p>"
     },
     "(Ulgrem-Axaan) Ichor Trail": {
-      "name": "(Ulgrem-Axaan) Ichor Trail",
+      "name": "(Ulgrem-Axaan) Rastro de icor",
       "description": "<p>Cualquier cuadrado en el que Ulgrem-Axaan se mueva se cubrirá con líquidos fundidos de su cuerpo y se convertirá en un terreno difícil. Después de una hora, el ichor se seca y el efecto termina.</p>"
     },
     "(Union Organizer) Solidarity": {
@@ -1578,9 +1688,13 @@
       "name": "(Vampiro, Nosferatu) Restauración de ataúdes plagados",
       "description": "<p> A diferencia de otros muertos vivientes, un nosferatu no se destruye con 0 HP. En cambio, se dispersan en una inmensa cantidad de ratas individuales que se dirigen en todas direcciones en un intento de regresar a su ataúd. Si una sola rata llega al ataúd, el nosferatu podrá recuperarse. Un nosferatu recupera sus fuerzas descansando en la tierra extraída de la tumba de una criatura que murió a causa de una plaga. Si su cuerpo descansa en su ataúd lleno de tierra durante 1 hora, el nosferatu gana 1 HP, después de lo cual su ayunola curación comienza a funcionar normalmente. Si el ataúd no contiene esta tierra de tumba plagada, deberán descansar en su ataúd durante 1 día antes de ganar 1 HP y recuperar su rápida curación. </p>"
     },
-    "(Vampire, Strigoi Progenitor) Create Spawn": {
-      "name": "(Vampiro, Progenitor Strigoi) Crear engendro",
-      "description": "<p> Si una criatura muere después de haber sido reducida a 0 HP por Drink Essence o Domain of Dusk, el vampiro puede convertir a esta víctima en vampiro donando algo de su propia sangre a la víctima y enterrándola en la tierra durante 3 noches. </p>\n <p> Si el nuevo vampiro tiene un nivel inferior al de su creador, está bajo el control del creador. Si un vampiro controla demasiados engendros a la vez (según lo determine el DJ), los engendros de voluntad fuerte pueden liberarse si tienen éxito en un @Check[type:will|dc:resolve(10+@actor.system.saves.will.value)|name:Escape Thralldom]tiro de salvación contra la Voluntad DC del vampiro. </p>\n <p> Una víctima de nivel 8 o superior se convierte en un sirviente strigoi, mientras que una víctima de nivel inferior se convierte en un vampiro moroi </p>"
+    "(Vampire, Strigoi Progenitor) Create Servitor": {
+      "name": "(Vampiro, progenitor de Strigoi) Crear Servidor",
+      "description": "<p>Si una criatura muere después de ser reducida a 0 PG por Dominio del Crepúsculo o Esencia de Bebida, los strigoi pueden convertir a esta víctima en un sirviente vampiro donando algo de su propia sangre a la víctima y enterrándola en la tierra durante 3 noches.</p>\n<p>Una víctima que es de nivel 8.º o superior se convierte en un sirviente strigoi, mientras que una víctima de nivel inferior se convierte en un vampiro moroi.</p>\n<p>Un sirviente vampírico está obligado a obedecer a su creador, pero si un vampiro controla demasiados sirvientes vampíricos a la vez (como lo determina el DJ), o si el sirviente es de un nivel más alto que el vampiro que lo creó, los sirvientes de voluntad fuerte pueden liberarse por tener éxito en un lanzamiento de salvación @Check[will|against:will] contra el CD de la voluntad del vampiro.</p>"
+    },
+    "(Vampire, Strigoi Progenitor) Domain of Dusk": {
+      "name": "(Vampiro, Progenitor de Strigoi) Dominio del Crepúsculo",
+      "description": "<p><strong>Frecuencia</strong> una vez por minuto</p>\n<hr /> <p><strong>Efecto</strong> Con un movimiento de su mano, los strigoi invocan una ruina vil desde las sombras circundantes, causando que bobinas de oscuridad y murciélagos sombríos, ratas y lobos ataquen a objetivos vivos en un @Template[type:emanation|distance:30]. Las criaturas vivas en esta área reciben @Damage[floor(1 + @actor.level/2)d6[void]|options:area-damage] daño +1d6 daño de vacío por 2 niveles poseídos por los strigoi con un @Check[fortitude|dc:|basic|options:area-effect,inflicts:dazzled,inflicts:blinded] salvación contra el CD del nivel de los strigoi. Una criatura que falla este salvación también es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} por la oscuridad durante 1 asalto (o @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} durante 1 asalto y luego deslumbrada durante 1 asalto en un fallo crítico).</p>"
     },
     "(Vampire, Strigoi Progenitor) Drink Essence": {
       "name": "(Vampiro, Progenitor Strigoi) Esencia de bebida",
@@ -1589,10 +1703,6 @@
     "(Vampire, Strigoi Progenitor) Shadow Escape": {
       "name": "(Vampiro, progenitor Strigoi) Escape de las sombras",
       "description": "<p> <strong> Disparador </strong> El strigoi se reduce a 0 HP </p>\n <hr />\n <p> <strong> Efecto </strong> El strigoi usa Forma de Sombra. Puede realizar acciones de movimiento para avanzar hacia su ataúd aunque tenga 0 HP. Mientras tiene 0 HP en esta forma, el strigoi no se ve afectado por más daños. Una vez que el strigoi llega a su ataúd, o si no lo ha hecho en 2 horas, automáticamente regresa a su forma física, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Inconsciente}. </p>"
-    },
-    "(Vampire, Strigoi) Domain of Dusk": {
-      "name": "(Vampiro, Strigoi) Dominio del anochecer",
-      "description": "<p> Con un movimiento de su mano, el strigoi invoca la cuarta ruina vil desde las sombras circundantes, provocando espirales de oscuridad y murciélagos, ratas y lobos sombríos que arremeten contra objetivos vivos en un @Template[type:emanation|distance:30]. Las criaturas vivientes en esta área reciben @Damage[1d6[void]] daño +1d6 por cada 2 niveles poseídos por el strigoi ( @Check[type:fortitude|dc:|basic:true] salvación contra la CD del nivel del strigoi). Una criatura que falla esta salvación también es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} durante 1 ronda (o @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} durante 1 ronda).y luego deslumbrado durante 1 ronda) </p>"
     },
     "(Vampire, Strigoi) Drink Essence": {
       "name": "(Vampiro, Strigoi) Bebida Esencia",
@@ -1674,9 +1784,6 @@
       "name": "(Vampiro, Maestro Vrykolakas) Cambiar de forma",
       "description": "<p> Un maestro vrykolakas puede transformarse en una forma parecida al cuerpo que tenía en vida, con los efectos de la forma humanoide pero con una duración ilimitada. Pierde sus colmillos y golpes de garra, pero obtiene un bonificador de circunstancia +2 a las pruebas de Engaño para @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} en esta forma. </p>",
       "rules": {
-        "0": {
-          "label": "Suplantando el cuerpo que tuvo en vida"
-        },
         "1": {
           "label": "Impersonando el cuerpo que tenía en vida"
         }
@@ -1764,7 +1871,7 @@
     },
     "(Whisper Dragon) Draft Contract": {
       "name": "(Dragón susurrante) Borrador de contrato",
-      "description": "<p>The dragon produces a contract for a single living mortal. This contract can grant a single boon or ability, the extent of which is dependent on the power of the dragon, in exchange for one piece of knowledge the mortal possesses. The mortal must willingly sign their true name to the contract, as well as the knowledge they wish to surrender. Upon signing, the mortal forgets the bartered information, which cannot be restored by any means short of a @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish} ritual; if they restore this knowledge, they lose the boon granted by the contract.</p>"
+      "description": "<p>El dragón produce un contrato para un solo mortal vivo. Este contrato puede otorgar una única bendición o habilidad, cuyo alcance depende del poder del dragón, a cambio de un conocimiento que posee el mortal. El mortal debe firmar voluntariamente el contrato con su verdadero nombre, así como con el conocimiento que desea entregar. Al firmar, el mortal olvida la información intercambiada, que no puede recuperarse por ningún medio salvo un @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Deseo} ritual; si restituyen este conocimiento, pierden el beneficio concedido por el contrato.</p>"
     },
     "(Whisper Dragon) Share Sight": {
       "name": "(Dragón susurrante) Compartir vista",
@@ -1784,7 +1891,7 @@
     },
     "(Woodblessed) Reactive Flare": {
       "name": "(Woodblessed) Luz reactiva",
-      "description": "<p><strong>Trigger</strong> The woodblessed is damaged by a creature within their reach</p>\n<hr />\n<p><strong>Effect</strong> Distracted by the pain, the woodblessed's concentration slips and splinters erupt from their body as they temporarily lose control of the planar energy within them. Both the triggering creature and the woodblessed take @Damage[1d6[piercing]] damage + 1d6 per 2 levels the woodblessed has, with a @Check[type:reflex|dc:|basic:true] save against the woodblessed's spell DC.</p>"
+      "description": "<p><strong>Trigger</strong> La madera bendecida es dañada por una criatura a su alcance</p>\n<hr />\n<p><strong>Effect</strong> Distraídos por el dolor, la concentración de los benditos de la madera se pierde y estallan astillas de su cuerpo mientras pierden temporalmente el control de la energía plana dentro de ellos. Tanto la criatura desencadenante como el bendecido con madera toman @Damage[1d6[piercing]] daño + 1d6 por 2 niveles que tiene la madera bendecida, con un @Check[type:reflex|dc:|basic:true] salvación contra el conjuro de los bendecidos CD.</p>"
     },
     "(Woodblessed) Tap Planar Gate": {
       "name": "(Woodblessed) Toca la Puerta Planar",
@@ -1865,99 +1972,6 @@
     "(Zombie, Shock) Lightning Rod": {
       "name": "(Zombie, Choque) Pararrayos",
       "description": "<p> <strong> Desencadenante </strong> Se usa un hechizo o habilidad con el rasgo de electricidad dentro de 30 pies del zombi de choque </p>\n <hr />\n <p> <strong> Efecto </strong> El zombi de choque intenta contrarrestar el hechizo o habilidad (contrarrestar rango 3, contrarrestar modificador [[/r 1d20+17 #Counteract]]{+17}), redirigiendo inofensivamente la electricidad a una de sus bobinas de electricidad. </p>"
-    },
-    "(Naval Crew) Pistol Salvo": {
-      "description": "<p><strong>Frecuencia</strong> una vez cada 10 minutos</p>\n<hr /> <p><strong>Efecto</strong> La tripulación naval saca y dispara sus pistolas de piedra en un @Template[type:burst|distance:10] dentro de 40 pies, infligiendo @Damage[7d4[piercing]|options:area-damage] daño ( @Check[reflex|dc:23|basic|options:area-effect] salvación). Cada criatura usa la más débil de sus resistencias o inmunidades para perforar o golpear, y cualquiera que falla críticamente en su salvación recibe @Damage[10[piercing]|options:area-damage] de daño adicional después de duplicarse. Cuando la tripulación naval se reduce a 2 o menos segmentos, esta área disminuye a un @Template[type:burst|distance:5].</p>"
-    },
-    "(Shadowbound) Light Vulnerability": {
-      "description": "<p>Los ataques contra la criatura de las sombras se tratan como mágicos si son hechos por una criatura que está en luz mágica o con un objeto que está en luz mágica (como el conjuro de luz).</p>"
-    },
-    "(Shadowbound) Shadow Form": {
-      "description": "<p>Una criatura en las sombras puede asumir una forma sombría. En este estado, la criatura adquiere el rasgo incorpóreo. Tiene resistencia 10 a todo daño (excepto fuerza, toque fantasmal, espíritu o vitalidad; doble resistencia vs. no mágica), es inmune al daño de precisión, y no puede usar ninguna acción con el ataque o manipular rasgo. Tiene una velocidad de vuelo de 15 pies y puede deslizarse a través de pequeñas grietas. La criatura encadenada a las sombras puede Desestimar este efecto para volver a solidificarse, pero si lo hace en un área de luz brillante, es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1} por 1 turno.</p>"
-    },
-    "(Shadowbound) Shadow Touch": {
-      "description": "<p>Los Golpes de la criatura afectan a las criaturas incorpóreas con los efectos de una runa de propiedad de toque fantasmal.</p>"
-    },
-    "(Special Forces Bond) Ambush Troop": {
-      "description": "<p><strong>Prerrequisitos</strong> experto en sigilo</p>\n<hr /> <p>Has entrenado a tu tropa en varias técnicas que permiten a tu grupo permanecer sigiloso a pesar de tu número. Cada vez que tú y tu tropa necesiten intentar un chequeo de sigilo, solo lanzas una vez y usas el modificador de sigilo más alto. Este beneficio se aplica cuando exploras con tu tropa, como cuando usas la actividad de exploración [[/act avoid-notice]], no solo en un encuentro de escaramuza.</p>\n<p>Además, dejas que tu tropa tome ventaja de las criaturas que son @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} para ellas, aunque la mayoría de las tropas no pueden coordinar sus ataques con la precisión suficiente para hacerlo. Las criaturas que están desprevenido para tu tropa reciben una penalizador de circunstancia de –2 a los tiradas de salvación y CD salvadores contra las habilidades ofensivas de tu tropa.</p>"
-    },
-    "(Special Forces Bond) Combo Attack": {
-      "description": "<p><strong>Prerrequisito</strong> dominio experto de una o más armas o ataques desarmados</p>\n<hr /> <p>Puedes atacar en tándem con tu tropa, usando tus ataques para hacer aberturas para que tu tropa termine el trabajo. Cuando haces un Golpe en tu turno, cualquier criatura que golpees recibe una penalizador de estado de –1 a los lanzamientos de salvación contra cualquier habilidad ofensiva que tu tropa use este turno.</p>"
-    },
-    "(Special Forces Bond) Coordinated Casting": {
-      "description": "<p><strong>Prerrequisitos</strong> Eres un lanzador de conjuros, y tu tropa tiene conjuros o una habilidad ofensiva con el rasgo arcano, divino, mágico, oculto o primordial.</p>\n<hr /> <p>Puedes lanzar conjuros en tándem con tu tropa. Cuando lanzas un conjuro en tu turno, cualquier criatura que golpees con un ataque de conjuro para el conjuro o que falla en su salvación contra tu conjuro recibe una penalizador de estado de –1 a CA, CD salvados y tiradas de salvación contra cualquier conjuro que tu tropa lance este turno o habilidad mágica que tu tropa use este turno.</p>"
-    },
-    "(Special Forces Bond) Desperate Fervor": {
-      "description": "<p><strong>Prerrequisitos</strong> experto en diplomacia, intimidación o actuación</p>\n<hr /> <p>Cuando las fichas están bajas, tu tropa se vuelve más peligrosa. Mientras tu tropa tenga 3 o menos segmentos, gana un bonificador por estatus +1 a CA, CD salvaje y lanzamientos salvajes, y un bonificador por estatus a lanzamientos de daño igual a la mitad de tu nivel. El bonificador de daño aumenta a tu nivel completo si la tropa tiene solo 2 segmentos.</p>"
-    },
-    "(Special Forces Bond) Discipline": {
-      "description": "<p><strong>Prerrequisitos</strong> experto en Salvar con voluntad</p>\n<hr /> <p>Tu tropa automáticamente tiene éxito crítico en las comprobaciones de desbandada. Si te golpean @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Inconsciente}, tu tropa todavía mejora su grado de éxito en las comprobaciones de desbandada en un paso hasta el final del encuentro, como lo hace una tropa con un líder.</p>"
-    },
-    "(Special Forces Bond) Inescapable Troop": {
-      "description": "<p><strong>Prerrequisitos</strong> Golpe reactivo</p>\n<hr /> <p>Tu tropa bloquea a las fuerzas enemigas, impidiéndoles reposicionarse en el campo de batalla. Tu tropa gana la reacción @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.Fp5JEjsmiMp25Ica]{Inescapable Onslaught}.</p>"
-    },
-    "(Special Forces Bond) Magical Defenses": {
-      "description": "<p><strong>Prerrequisitos</strong> Eres un hechicero.</p>\n<hr /> <p>Desarrollas guardias mágicas para tus tropas. Tu tropa gana un bonificador de estatus +1 a todas las defensas contra magia.</p>"
-    },
-    "(Special Forces Bond) Mobile Troop": {
-      "description": "<p><strong>Prerrequisitos</strong> experto en Acrobacias</p>\n<hr /> <p>Tus tropas pueden moverse por el campo de batalla con agilidad. Cuando tú y tu tropa os mováis, la unidad combinada gana un bonificador por estatus de +5 -pies a todas las Velocidades de movimiento. Además, si tú o tu tropa usa una acción especial, conjuro u otra habilidad que permite un tipo especial de movimiento, como Salto de pared, translocación o velocidad de vuelo, pueden moverse juntos incluso si normalmente no sería posible.</p>"
-    },
-    "(Special Forces Bond) Rage and Rule": {
-      "description": "<p><strong>Prerrequisitos</strong> Tienes la acción de ira.</p>\n<hr /> <p>Tu tropa aprende la increíble furia de la batalla. Cuando te enfureces, tu tropa gana la mitad de la cantidad de Puntos de Golpe temporales que tú ganas. Estos Puntos de Golpe temporales duran 1 minuto, y la tropa no puede ganar PS temporales de esta habilidad de nuevo durante 1 minuto.</p>"
-    },
-    "(Special Forces Bond) Shield Wall": {
-      "description": "<p><strong>Prerrequisitos</strong> Bloque de escudo</p>\n<p><strong>Requisitos</strong> Estás empuñando un escudo.</p>\n<hr /> <p>Has equipado a tus tropas con escudos, y ellos los levantan a tu orden. Levantas tu Escudo, y tanto tú como tu tropa ganáis un bonificador por circunstancia +2 a los salvamentos de CA y Reflejo hasta el comienzo de tu siguiente turno.</p>"
-    },
-    "(Special Forces Bond) Troop Mascot": {
-      "description": "<p><strong>Prerrequisitos</strong> Tienes un compañero (como un animal de compañía, un ejodolón, un familiar o una mascota).</p>\n<hr /> <p>Tu tropa encuentra encantadora a tu criatura compañera, y los miembros de tu tropa se han unido a tu mascota. Tu compañero gana resistencia igual al nivel de tu tropa a todo daño. Si tienes un eidolon, cuando un efecto te daña a ambos, esta resistencia se aplica después de determinar la mayor cantidad de daño.</p>\n<p>Si tienes un animal de compañía, su beneficio de Apoyo se aplica a tu tropa y a ti.</p>"
-    },
-    "(Special Forces Bond) Under Command": {
-      "description": "<p><strong>Prerrequisitos</strong> Tienes la función de clase táctica.</p>\n<hr /> <p>Dirigir tropas es tu segunda naturaleza, y las lecciones de tus tácticas se aplican a grupos enteros de aliados. Tu tropa cuenta como uno de tus compañeros de escuadrón y no cuenta para tu número máximo de compañeros de escuadrón.</p>\n<p>Además, las tropas que son tus compañeros de escuadrón pueden usar una habilidad ofensiva en lugar de un Golpe cuando uses una táctica que les permita Golpear. Si concedes específicamente un Golpe cuerpo a cuerpo, tienen que usar una habilidad de emanación; si concedes específicamente un Golpe a distancia, tienen que usar una habilidad de ráfaga. Deben usar la versión de acción 1 o 2 de la habilidad ofensiva. Estas habilidades ofensivas cuentan contra el número de Golpes que puedes conceder con tu táctica. Esto funciona con cualquier compañero de escuadrón, ya sea que los estés liderando o que lo esté un aliado.</p>"
-    },
-    "(Special Forces) Combat Medicine": {
-      "description": "<p><strong>Frecuencia</strong> una vez por hora</p>\n<hr /> <p><strong>Efecto</strong> La unidad de fuerzas especiales cuenta con muchos médicos de batalla entre sus efectivos. La tropa intenta un prueba @Check[warfare-lore|dc:40]. En caso de éxito, la tropa y su comandante recuperan @Damage[(2d8+30)[healing]] Puntos de Golpe. En un éxito crítico, esta sanación aumenta a @Damage[(4d8+50)[healing]] Puntos de Golpe.</p>"
-    },
-    "(Special Forces) Composite Bows": {
-      "description": "<p>La unidad de fuerzas especiales ha entrenado francotiradores en sus filas. Aumenta el alcance de su habilidad de Salvo corto a 120 pies y su daño a 5d10 daño perforante. Las tropas con estos arcos no pueden ser magos de guerra, no pueden tener escudos, y no pueden ser montadas.</p>"
-    },
-    "(Special Forces) Dirty Fighting": {
-      "description": "<p>La unidad de fuerzas especiales intenta interrumpir la capacidad del enemigo para luchar desarmando sus armas, pateando polvo en sus ojos, y así sucesivamente. Intenta un chequeo @Check[athletics|against:reflex] contra el CD Reflejo de cada enemigo dentro de un @Template[type:emanation|distance:5]. En caso de éxito, ese enemigo recibe una penalizador de circunstancia de –2 para lanzar ataques durante 1 asalto, o si afecta a una tropa, una penalizador de circunstancia de –2 para los CD de esa tropa por efectos de daño durante 1 asalto. En un éxito crítico, esta penalizador dura 2 asaltos.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.G62fNtluvSHPdRdI]{Efecto: Lucha sucia (éxito)}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.7Oet4xG6dzxRczer]{Efecto: Lucha sucia (éxito crítico)}</p>"
-    },
-    "(Special Forces) Inescapable Onslaught": {
-      "description": "<p><strong>Desencadenante</strong> Una criatura adyacente a la tropa usa una acción de movimiento que causaría que ya no esté adyacente</p>\n<hr /> <p><strong>Efecto</strong> La tropa usa la versión de acción 2 de una de sus habilidades ofensivas que tiene una emanación, pero solo la criatura que la desencadenó se ve afectada. Además, si la criatura falla críticamente su lanzamiento de salvación, la acción de movimiento se interrumpe. Si la habilidad ofensiva solo se puede usar una vez por asaltos, esta reacción ignora ese límite.</p>"
-    },
-    "(Special Forces) Mounted Marauders": {
-      "description": "<p>Estos soldados de fuerzas especiales están montados. Aumenta su velocidad a 40 pies. Mientras se mueve por tierra, esta tropa ignora el terreno difícil. Los efectos que solo apuntan a animales o humanoides podrían no funcionar en esta tropa, sujeto a la discreción del DJ. Las tropas montadas no pueden tener arcos compuestos.</p>"
-    },
-    "(Special Forces) No Retreat": {
-      "description": "<p>Estos soldados han sido entrenados extensivamente para mantener su posición sin importar la situación. Si algún efecto obliga a la unidad de fuerzas especiales a moverse, reduce la distancia en 10 pies. Cada vez que se ve afectada por la condición @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo}, la unidad de fuerzas especiales es en su lugar @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 2} por la misma duración.</p>"
-    },
-    "(Special Forces) Planar Hunters": {
-      "description": "<p>La unidad de fuerzas especiales está entrenada para lidiar con amenazas planas externas. Ganan un bonificador de +4 circunstancias a los lanzamientos de daño de Salvo Corto y Hojas Cortadoras contra demonios, demonios y demonios.</p>"
-    },
-    "(Special Forces) Punitive Attack": {
-      "description": "<p><strong>Desencadenante</strong> Un enemigo dentro de 5 pies de la unidad de fuerzas especiales usa una acción de manipulación o una acción de movimiento, hace un ataque a distancia, o deja una casilla durante una acción de movimiento que está usando</p>\n<hr /> <p><strong>Efecto</strong> Las tropas de las fuerzas especiales agitan sus armas. El enemigo que lo activa recibe @Damage[(5d6+10)[slashing]] de daño (@Check[reflex|dc:34|basic] de salvación). Si la criatura falla críticamente su lanzamiento de salvación y el disparador fue una acción de manipulación, la tropa interrumpe esa acción.</p>"
-    },
-    "(Special Forces) Quick Formation": {
-      "description": "<p><strong>Frecuencia</strong> una vez por asaltos</p>\n<hr /> <p><strong>Efecto</strong> La unidad de fuerzas especiales usa @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.USyDPcSdzcm024zT]{Cambiar Formación}. Las unidades de fuerzas especiales suelen conocer las formaciones sueltas y de cuña. Si las tropas están protegidas, en su lugar conocen la concha de tortuga y las formaciones de cuña.</p>\n<hr /> <p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeFormation]</p>"
-    },
-    "(Special Forces) Shielded": {
-      "description": "<p>La unidad de fuerzas especiales está equipada con escudos grandes y pesados. Esto permite a la tropa levantar sus escudos, dándole a ella y a su comandante un bonificador por circunstancia +2 a CA hasta el inicio de su siguiente turno. Además, esto da a la tropa la reacción @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.m4HQ2o5aPxjXf2kY]{Bloquear con el escudo}. Las tropas con escudo no pueden tener arcos o lanzas compuestos.</p>"
-    },
-    "(Special Forces) Sprinting Charge": {
-      "description": "<p>La unidad de fuerzas especiales carga hacia adelante con ferocidad. Avanza hasta el doble de su velocidad. Al final de su movimiento, cada enemigo dentro de @Template[type:emanation|distance:5] recibe @Damage[(2d6+7)[slashing]|options:area-damage] de daño con un @Check[reflex|dc:34|basic|options:area-effect] de salvación.</p>"
-    },
-    "(Special Forces) Swords for Pikes": {
-      "description": "<p>La unidad de fuerzas especiales tiene lanzas alargadas como su arma principal. Cambiar el alcance de sus Hojas Cortadoras a @Template[type:emanation|distance:10] y cambiar el daño de cortar a perforar. Las tropas con lanzas no pueden tener escudos.</p>"
-    },
-    "(Special Forces) War Mages": {
-      "description": "<p>Esta unidad de fuerzas especiales tiene algunos magos de batalla entre sus efectivos. Los magos de guerra no pueden tener arcos compuestos. La unidad pierde su habilidad de Salvo corto, pero gana lo siguiente:</p>\n<p><strong>conjuros arcanos preparados</strong> CD 34, ataque +26</p>\n<p><strong>7.º</strong> @UUID[Compendium.pf2e.spells-srd.Item.0jadeyQIItIuRgeH]{Explosión de eclipse}, @UUID[Compendium.pf2e.spells-srd.Item.9igi8LcrNQKwljK7]{Respuesta de conjuro}</p>\n<p><strong>6.º</strong> @UUID[Compendium.pf2e.spells-srd.Item.7PnjDM52lb4LEqHR]{Salvo de flecha}, @UUID[Compendium.pf2e.spells-srd.Item.TDNlDWbYb58Y55Da]{Cadena de relámpagos}, @UUID[Compendium.pf2e.spells-srd.Item.7Iela4GgVeO3LfAo]{Muro de fuerza}</p>\n<p><strong>5.º</strong> @UUID[Compendium.pf2e.spells-srd.Item.AnWCohzPgK4L9GVl]{Detectar escudriñamiento}, @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Bola de fuego}, @UUID[Compendium.pf2e.spells-srd.Item.xFp4EwVcYwSG336t]{Culebrear}</p>\n<p><strong>Cantrips ( 8.º )</strong> @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detectar magia}, @UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Luz}, @UUID[Compendium.pf2e.spells-srd.Item.1Yoipc5jNcMehtEW]{Viento Cortante}</p>"
-    },
-    "(Vampire, Strigoi Progenitor) Create Servitor": {
-      "description": "<p>Si una criatura muere después de ser reducida a 0 PG por Dominio del Crepúsculo o Esencia de Bebida, los strigoi pueden convertir a esta víctima en un sirviente vampiro donando algo de su propia sangre a la víctima y enterrándola en la tierra durante 3 noches.</p>\n<p>Una víctima que es de nivel 8.º o superior se convierte en un sirviente strigoi, mientras que una víctima de nivel inferior se convierte en un vampiro moroi.</p>\n<p>Un sirviente vampírico está obligado a obedecer a su creador, pero si un vampiro controla demasiados sirvientes vampíricos a la vez (como lo determina el DJ), o si el sirviente es de un nivel más alto que el vampiro que lo creó, los sirvientes de voluntad fuerte pueden liberarse por tener éxito en un lanzamiento de salvación @Check[will|against:will] contra el CD de la voluntad del vampiro.</p>"
-    },
-    "(Vampire, Strigoi Progenitor) Domain of Dusk": {
-      "description": "<p><strong>Frecuencia</strong> una vez por minuto</p>\n<hr /> <p><strong>Efecto</strong> Con un movimiento de su mano, los strigoi invocan una ruina vil desde las sombras circundantes, causando que bobinas de oscuridad y murciélagos sombríos, ratas y lobos ataquen a objetivos vivos en un @Template[type:emanation|distance:30]. Las criaturas vivas en esta área reciben @Damage[floor(1 + @actor.level/2)d6[void]|options:area-damage] daño +1d6 daño de vacío por 2 niveles poseídos por los strigoi con un @Check[fortitude|dc:|basic|options:area-effect,inflicts:dazzled,inflicts:blinded] salvación contra el CD del nivel de los strigoi. Una criatura que falla este salvación también es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} por la oscuridad durante 1 asalto (o @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} durante 1 asalto y luego deslumbrada durante 1 asalto en un fallo crítico).</p>"
     }
   },
   "mapping": {
@@ -1988,20 +2002,23 @@
     "Fortune Dragon": "Dragón de la fortuna",
     "Horned Dragon": "Dragón cornudo",
     "Mirage Dragon": "Dragón espejismo",
+    "Naval Crew": "Tripulación naval",
     "Omen Dragon": "Dragón presagio",
     "Phase Dragon": "Dragón de fase",
     "Planar Adaptations (Spawning Soulrider)": "Adaptaciones planas (Spawning Soulrider)",
     "Requiem Dragon": "Dragón de Requiem",
     "Resurrection Dragon": "Dragón de Resurrección",
     "Rune Dragon": "Dragón de Runas",
+    "Shadowbound": "Atada a la sombra",
     "Spawn of Rovagug": "Espantapájaros de Rovagug",
-    "Swarm Strider": "Swarm Strider",
+    "Special Forces": "Fuerzas especiales",
+    "Swarm Strider": "Plaga Zancudo",
     "Whisper Dragon": "Dragón de susurro",
     "Spring-Heeled Jack": "Jack de tacón de primavera",
     "Halfling": "Mediano",
-    "Blackfrost Dead": "Blackfrost Dead",
+    "Blackfrost Dead": "Blackfrost Dead (en inglés)",
     "Worm That Walks": "Gusano que camina",
-    "Path Maiden": "Path Maiden",
+    "Path Maiden": "Doncella del sendero",
     "Bulwark": "Baluarte",
     "Risen Nemesis": "Némesis resucitada",
     "Ravener": "Dragón devorador",
@@ -2017,13 +2034,13 @@
     "Valkyrie Tempest": "Tempestad de Valkyrie",
     "Secret Society": "Sociedad secreta",
     "Ghoul": "Gul",
-    "Ghast": "Ghast",
-    "Woodblessed": "Woodblessed",
+    "Ghast": "fantasmal",
+    "Woodblessed": "Leñosos",
     "Lich": "Liche",
     "Siabrae": "Siabrae",
     "Ghost": "Fantasma",
     "Stargut Hydra": "Hidra de tripa estelar",
-    "Union Organizer": "Union Organizer",
+    "Union Organizer": "Organizador de la Unión",
     "Zombie": "Zombi",
     "Vampire": "Vampiro",
     "Nymph Queen": "Reina de Ninfa",
@@ -2032,13 +2049,13 @@
     "Cryptid": "Criptid",
     "Martial Artist": "Artista marcial",
     "Graveknight": "Caballero sepulcral",
-    "Harrowkin": "Harrowkin",
+    "Harrowkin": "Vástago del presagio",
     "Retired": "Jubilados",
-    "Mana Wastes Mutant": "Mana Wastes Mutant",
-    "Floodslain": "Floodslain",
+    "Mana Wastes Mutant": "Mana Wastes Mutant (en inglés)",
+    "Floodslain": "Aluvión",
     "Failed Prophet": "Profeta fallido",
-    "Castrovelian": "Castrovelian",
-    "Nemesis": "Nemesis",
+    "Castrovelian": "Castroveliano",
+    "Nemesis": "Némesis",
     "Beheaded": "Decapitado",
     "Visitant": "Visitante",
     "Kallas Devil": "El diablo de Kallas",
@@ -2047,8 +2064,6 @@
     "Kuworsys": "Kuworsys",
     "Protean": "Proteico",
     "Dragon": "Dragón",
-    "Werecreature": "Licántropo",
-    "Naval Crew": "Tripulación naval",
-    "Special Forces": "Fuerzas especiales"
+    "Werecreature": "Licántropo"
   }
 }

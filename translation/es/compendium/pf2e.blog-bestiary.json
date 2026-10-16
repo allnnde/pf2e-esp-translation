@@ -1,59 +1,17 @@
 {
-  "mapping": {
-    "acDetails": "system.attributes.ac.details",
-    "blurb": "system.details.blurb",
-    "hpDetails": "system.attributes.hp.details",
-    "items": {
-      "converter": "translateActorItems",
-      "path": "items"
-    },
-    "languages": "system.details.languages.details",
-    "name": {
-      "converter": "translateDualLanguage",
-      "path": "name"
-    },
-    "portrait": {
-      "converter": "updateActorImage",
-      "path": "img"
-    },
-    "privateNotes": "system.details.privateNotes",
-    "publicNotes": {
-      "converter": "translateActorDescription",
-      "path": "system.details.publicNotes"
-    },
-    "saveDetails": "system.attributes.allSaves.value",
-    "senses": "system.perception.details",
-    "skillSpecialCrafting": {
-      "converter": "translateSkillSpecial",
-      "path": "system.skills.crafting.special"
-    },
-    "skillSpecialDeception": {
-      "converter": "translateSkillSpecial",
-      "path": "system.skills.deception.special"
-    },
-    "source": {
-      "converter": "translateSource",
-      "path": "system.details.publication.title"
-    },
-    "speed": "system.attributes.speed.details",
-    "tokenImage": {
-      "converter": "updateTokenImage",
-      "path": "prototypeToken.texture.src"
-    },
-    "tokenName": {
-      "converter": "translateTokenName",
-      "path": "prototypeToken.name"
-    }
-  },
+  "label": "Bestiario del blog",
   "entries": {
     "Ailuran": {
       "name": "Ailuran",
+      "publicNotes": "<p>Los ailuranos son hadas solitarias obsesionadas con la plata. Esta fijación los convierte en una molesta hoja para los mineros de plata y las criaturas por igual. Aunque las criaturas no necesariamente albergan ninguna mala voluntad hacia los demás y preferirían quedarse solas, los mineros las consideran plagas. Los ailuranos, a veces llamados buscadores de plata, son infames por entrar o romper en minas de plata para obtener el objeto de su afecto: la plata. Los mineros, que no quieren ser robados, se mantienen alerta por la actividad de ailuran. No está claro por qué los ailuranos tienen una animosidad hacia las criaturas, pero su obsesión con la plata les sirve bien en este sentido. Algunos ailuranes usan la plata que recogen para hacer armas de plata que utilizan para cazar a estos cambiaformas. Las criaturas conscientes de esta enemistad tienden a evitar las regiones donde viven los ailuranes. Los ailuranos viven en pequeños grupos en colinas y montañas boscosas aisladas, típicamente lugares en los que se puede encontrar plata en abundancia. Cuando no están atacando minas, los ailuranes se pueden encontrar en los árboles donde a menudo hacen sus hogares. Tienen una habilidad sobrenatural para sentir la presencia de plata y se sabe que se acercan a los viajeros y les cobran un peaje de plata para permitir el paso a través de sus tierras. Aunque no son amigables, muchos ailuranes están abiertos al comercio y intercambian con las criaturas que pasan por sus bosques. Sin embargo, si un visitante da una mala impresión, las criaturas a veces usan su magia ilusoria para crear falsos artículos de plata que usan para comerciar, dejando al viajero con las manos vacías una vez que la duración de la magia se agota.</p>",
+      "saveDetails": "+ 1 estado a todos vs. veneno",
+      "senses": "silversense (impreciso) 30 pies",
       "items": {
         "spellcastingEntry->Primal Innate Spells": {
           "name": "Conjuros innatos primigenios"
         },
         "spell->Passwall": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.115Xp9E38CJENhNS]\nPasswall"
+          "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.spells-srd.Item.115Xp9E38CJENhNS]\nMuro de paso"
         },
         "spell->Glitterdust": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]\nGlitterdust"
@@ -77,8 +35,16 @@
         "strike-ranged->Boomerang": {
           "name": "Bumerang"
         },
+        "action->Silversense": {
+          "name": "Sentido de la plata",
+          "description": "<p>Silversense permite al ailurian sentir la presencia de objetos plateados.</p>"
+        },
         "action->+1 Status to All Saves vs. Poison": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+1 Status to All Saves vs. Poison"
+        },
+        "action->Silver Sustenance": {
+          "name": "Sustento de plata",
+          "description": "<p>El ailuran come una cantidad de plata igual a 10 sp y recupera @Damage[1d6[healing]] Puntos de Golpe. Un ailuran puede subsistir consumiendo plata en lugar de comida normal.</p>"
         },
         "action->Returning Throw": {
           "name": "Lanzamiento de regreso",
@@ -87,19 +53,10 @@
         "action->Sneak Attack": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The ailuran deals 1d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
-        "action->Silversense": {
-          "description": "<p>Silversense permite al ailurian sentir la presencia de objetos plateados.</p>"
-        },
-        "action->Silver Sustenance": {
-          "description": "<p>El ailuran come una cantidad de plata igual a 10 sp y recupera @Damage[1d6[healing]] Puntos de Golpe. Un ailuran puede subsistir consumiendo plata en lugar de comida normal.</p>"
-        },
         "lore->Silver Lore": {
           "name": "Lore de plata"
         }
-      },
-      "publicNotes": "<p>Los ailuranos son hadas solitarias obsesionadas con la plata. Esta fijación los convierte en una molesta hoja para los mineros de plata y las criaturas por igual. Aunque las criaturas no necesariamente albergan ninguna mala voluntad hacia los demás y preferirían quedarse solas, los mineros las consideran plagas. Los ailuranos, a veces llamados buscadores de plata, son infames por entrar o romper en minas de plata para obtener el objeto de su afecto: la plata. Los mineros, que no quieren ser robados, se mantienen alerta por la actividad de ailuran. No está claro por qué los ailuranos tienen una animosidad hacia las criaturas, pero su obsesión con la plata les sirve bien en este sentido. Algunos ailuranes usan la plata que recogen para hacer armas de plata que utilizan para cazar a estos cambiaformas. Las criaturas conscientes de esta enemistad tienden a evitar las regiones donde viven los ailuranes. Los ailuranos viven en pequeños grupos en colinas y montañas boscosas aisladas, típicamente lugares en los que se puede encontrar plata en abundancia. Cuando no están atacando minas, los ailuranes se pueden encontrar en los árboles donde a menudo hacen sus hogares. Tienen una habilidad sobrenatural para sentir la presencia de plata y se sabe que se acercan a los viajeros y les cobran un peaje de plata para permitir el paso a través de sus tierras. Aunque no son amigables, muchos ailuranes están abiertos al comercio y intercambian con las criaturas que pasan por sus bosques. Sin embargo, si un visitante da una mala impresión, las criaturas a veces usan su magia ilusoria para crear falsos artículos de plata que usan para comerciar, dejando al viajero con las manos vacías una vez que la duración de la magia se agota.</p>",
-      "saveDetails": "+ 1 estado a todos vs. veneno",
-      "senses": "silversense (impreciso) 30 pies"
+      }
     },
     "Blarghest": {
       "name": "Blarghest",
@@ -122,30 +79,33 @@
           "description": "<p>El blarghest piensa en tomar la forma de un goblinoid (un goblin, hobgoblin, o bugbear) o un lobo, pero finalmente decide que hacerlo es demasiado trabajo.</p>"
         },
         "action->Placeholder": {
+          "name": "Marcador de posición",
           "description": "<p>El blarghest grita \"Blargh!\" para producir los efectos de cualquier truco que tenga un componente verbal. Esta acción gana los rasgos de ese conjuro</p>"
         }
       }
     },
     "Cacaodaemon": {
-      "name": "Cacaodaemon",
+      "name": "Cacaodaimon",
       "languages": "telepatía 100 pies (30 m)",
-      "items": {
-        "action->Telepathy 100 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
-        },
-        "strike-melee->Nib Teeth": {
-          "name": "Dientes de punta"
-        },
-        "action->Aromatic": {
-          "name": "Aromático"
-        },
-        "action->Bitter Heart": {
-          "name": "Corazón amargo"
-        }
-      },
       "skillSpecialDeception": {
         "0": {
           "label": "Para aparecer como un objeto inanimado"
+        }
+      },
+      "items": {
+        "strike-melee->Nib Teeth": {
+          "name": "Dientes de punta"
+        },
+        "action->Telepathy 100 feet": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
+        },
+        "action->Aromatic": {
+          "name": "Aromático",
+          "description": "<p>Cuando un cacaodaimon queda reducido a la mitad de sus PG, las roturas de su corteza desprenden un fragante aroma tropical. Las criaturas a 10 pies o menos del cacaodaimon sufren un penalizador por circunstancia de -1 a las tiradas de salvación de Voluntad hasta que el cacaodaimon muere o recupera más de la mitad de sus PG.</p>"
+        },
+        "action->Bitter Heart": {
+          "name": "Corazón amargo",
+          "description": "<p>El contraste entre el dulce aroma del cacaodaimon y su amargo interior drena el espíritu de la víctima</p>\n<p><strong>Tirada de salvación</strong> @Check[fortitude|dc:17]</p>\n<p><strong>Duración máxima</strong> 6 asaltos</p>\n<p><strong>Etapa 1</strong> @Damage[1d8[mental]] daño y @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} (1 asalto).</p>\n<p><strong>Etapa 2</strong> @Damage[1d8[mental]] daño y @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} (1 asalto)</p>\n<p><strong>Etapa 3</strong> @Damage[1d12[mental]] daño y @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} (1 asalto)</p>"
         }
       }
     },
@@ -162,7 +122,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.ZL8NTvB22NeEWhVG]\nKi Strike (Focus)"
         },
         "weapon->+1 Striking Handwraps of Mighty Blows": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO]\n+1 Striking Handwraps of Mighty Blows"
+          "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO]\n+1 Empuñaduras impactantes de golpes poderosos"
         },
         "strike-melee->Fist": {
           "name": "Puño"
@@ -197,45 +157,58 @@
           "name": "Tácticas de manada",
           "description": "<p>Si un enemigo está al alcance de Chea y al menos dos de sus aliados, ese enemigo es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} contra Chea.</p>"
         },
-        "lore->Lore": {
-          "name": "Saber"
-        },
         "action->Powerful Fists": {
           "name": "Puños poderosos",
           "description": "<p>Los golpes son tratados como hierro frío y plata y no se castigan cuando se realizan ataques letales.</p>"
+        },
+        "lore->Lore": {
+          "name": "Saber"
         }
       }
     },
     "Demom": {
       "name": "Demom",
+      "languages": "Telepatía 100 pies (sabe lo que estás pensando)",
       "items": {
-        "action->Telepathy 100 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
-        },
         "strike-melee->Hug": {
           "name": "Abrazo"
+        },
+        "strike-ranged->Stern Look": {
+          "name": "Mirada severa"
+        },
+        "action->Telepathy 100 feet": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
         },
         "action->Maternal Aura": {
           "name": "Aura materna",
           "description": "<p>50 pies. Todas las criaturas que tienen una trágica historia en la que han perdido a sus padres toman una penalización de - 4 a todos los salvamentos de Will, ya que de repente se ven superados por los sentimientos de amor materno.</p>"
         },
+        "action->Shut It": {
+          "name": "Cállate.",
+          "description": "<p><strong>Desencadenante</strong> Una criatura apunta al demonio con un conjuro hostil que tiene un componente verbal.</p>\n<hr />\n<p><strong>Efecto</strong> El demom dice: \"¡No me contestes!\". @Check[will|dc:18] ahorrar; ante un fracaso, rápidamente cierra la boca y mira al suelo contemplando que no se merece esto.</p>"
+        },
         "action->Ground Target": {
-          "name": "Objetivo de tierra"
+          "name": "Objetivo de tierra",
+          "description": "<p>El demonio entrecierra los ojos hacia un objetivo y declara \"¡Estás castigado!\" La criatura objetivo debe intentar un @Check[will|dc:18] ahorrar; en caso de fracaso, debe deponer las armas, levantar el campamento y sentarse en su tienda.</p>"
         },
         "action->There, There": {
-          "name": "Allí, allí"
+          "name": "Allí, allí",
+          "description": "<p><strong>Requisitos</strong> El demom tiene una criatura @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado}.</p>\n<hr />\n<p><strong>Efecto</strong> El demonio abraza a la criatura y le da palmaditas en la espalda con dulzura mientras le susurra palabras tranquilizadoras, devolviéndole la tranquilidad. @Damage[10[healing]] Puntos de Golpe a la criatura.</p>"
         }
-      },
-      "languages": "Telepatía 100 pies (sabe lo que estás pensando)"
+      }
     },
     "Divine Warden of Brigh": {
       "name": "Guardián divino de Brigh",
+      "publicNotes": "<p>Imbuidos de la energía divina de la diosa del reloj y la invención, los guardianes divinos de Brigh son prominentes en Alkenstar como guardianes del Templo de Brigh. La Dama de Bronce puede tener su mayor seguidor en esta metrópolis. Pero el ambiente de la ciudad en auge significa que la seguridad es una preocupación incluso en tierra santa. Los ciudadanos y visitantes de Alkenstar conocen sus centinelas de enrollado o aprenden rápidamente sobre ellos. La Alta Madre del Reloj, sacerdotisa principal del lugar sagrado de Brigh, mantiene guardianes divinos en la imagen de la diosa visible en el santuario y en los terrenos. Estos autómatas son tanto una advertencia para los posibles ladrones o alborotadores como una inspiración para los adoradores de Brigh. La mezcla de divino y arcano en estos construcciones tiene como objetivo mostrar la innovación y evocar el poder de Brigh sobre la tierra, el fuego, el metal y el humo.</p>\n<p>Mientras que los guardianes divinos de Brigh pueden tomar cualquier forma, la mayoría son relojes hechos a imagen de la diosa.</p>\n<hr /> <p>Creados a través de complejos rituales realizados por los seguidores de una fe, los guardianes divinos han sido imbuidos con una fracción del poder que corre a través de un campeón o clérigo de una deidad en particular. Esta chispa divina permite al guardián divino servir como el protector de un templo, santuario u otro lugar sagrado. Estos guardianes no están intrínsecamente vinculados a un lugar fijo, pero rara vez abandonan el templo o sitio sobre el que vigilan.</p>\n<p>La mayoría de los guardianes divinos han sido hechos de arcilla, piedra, madera o materiales similares y típicamente tienen características que se asemejan a una deidad o a un heraldo de una deidad. Los guardianes divinos a menudo tienen otras habilidades típicamente exhibidas por los constructos, como el revestimiento de armadura, la capacidad de disfrazarse de estatuas, u otros beneficios similares.</p>\n<p>Los fieles adoradores que elaboran guardianes divinos típicamente animan los construcciones usando un ritual especial en el que los seguidores suplican a su deidad para que empodere al guardián. El mandato divino que impregna a un guardia divino con poder también permite al centinela reconocer a los enemigos de su deidad y evita que el constructo ataque a otros miembros de la fe, a menos que estos patrones elijan atacarlo primero.</p>\n<p>En casos raros o en tiempos particularmente difíciles, una deidad podría crear un guardián divino animando directamente una estatua o ídolo existente para ayudar a los seguidores fieles. Estos guardianes divinos son más probables de encontrarse fuera de sus lugares originales, ayudando a las congregaciones desplazadas o persiguiendo a aquellos que podrían dañar a los fieles.</p>",
       "items": {
         "spellcastingEntry->Arcane Innate Spells": {
           "name": "Conjuros arcanos innatos"
         },
         "spellcastingEntry->Divine Innate Spells": {
           "name": "Conjuros divinos innatos"
+        },
+        "spellcastingEntry->Divine Domain Spells": {
+          "name": "conjuros de Dominio Divino"
         },
         "equipment->Clockwork Wand": {
           "name": "Varita mecánica"
@@ -258,11 +231,11 @@
           "description": "<p>El guardia divino usa una varita mecánica como foco para canalizar energía mágica. Esta varita está construida en el cofre del guardia divino, con solo el cristal en el extremo expuesto. El guardián puede Interactuar para quitar la varita, o alguien más puede quitarla con un prueba Thievery a [[/act disable-device skill=thievery dc=32]]. El guardia divino se vuelve incapaz de lanzar ningún conjuro excepto trucos mientras la varita es removida.</p>\n<p>Cuando se quita, la varita mecánica <em> </em> es una varita mágica que contiene el último conjuro innato de rango 2.º que lanzó el guardia divino (el DJ determina el conjuro al azar si el guardia divino no ha lanzado ningún conjuro elegible). Los conjuros se colocan dentro de la varita mientras se crea el guardia divino, y el creador puede sustituir otros conjuros arcanos del rango apropiado.</p>"
         },
         "action->Divine Destruction": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.jD0M3yV6gjkXafsJ]\nDivine Destruction",
+          "name": "Divine Destruction",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.jD0M3yV6gjkXafsJ]\n<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[emanation|distance:30], dealing @Damage[10d6[vitality]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|dc:29|options:area-effect,damaging-effect,inflicts:enfeebled,inflicts:stupefied] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by Brigh. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect with a counteract DC of 29.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
         },
         "action->Faith Bound": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.OPGu0WsUHpHSmu80]\nFaith Bound",
+          "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.OPGu0WsUHpHSmu80]\nObligado por la fe",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.OPGu0WsUHpHSmu80]\n<p>The divine warden can't attack a creature that openly wears or displays Brigh's religious symbol unless that creature uses a hostile action against the divine warden first.</p>"
         },
         "action->Energize Clockwork Wand": {
@@ -270,24 +243,29 @@
           "description": "<p><strong>Frecuencia</strong> una vez cada 10 minutos</p>\n<hr /> <p><strong>Efecto</strong> El guardia divino recupera un conjuro que ya lanzó ese día. Debe pasar 1 hora de su tiempo operativo, o 2 horas si el conjuro es de nivel 3.º o superior.</p>"
         },
         "action->Faithful Weapon": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.UlKGxPaKtRGWuq3V]\nFaithful Weapon",
+          "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.UlKGxPaKtRGWuq3V]\nArma fiel",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.UlKGxPaKtRGWuq3V]\n<p>light hammer, <em>striking</em> rune</p>\n<hr />\n<p>A divine warden always wields its patron deity's favored weapon. If the weapon is a ranged weapon, the divine warden automatically generates new ammunition with each attack. For a divine warden of 4th level or higher, the deity's favored weapon gains the effects of a <em>@UUID[Compendium.pf2e.equipment-srd.Item.DxCuJKynlnMQZHgp]{Striking}</em> rune while the divine warden wields it; at 12th level, these effects are of a <em>@UUID[Compendium.pf2e.equipment-srd.Item.KCQRFvUgbyclvOGi]{Greater Striking}</em> rune, and at 19th level, they're instead of a <em>@UUID[Compendium.pf2e.equipment-srd.Item.woxl2FrrgAcJDu0t]{Major Striking}</em> rune.</p>"
         },
         "action->Instrument of Faith": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.L80gn6WOWi9roJW3]\nInstrument of Faith",
+          "name": "Instrument of Faith",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.L80gn6WOWi9roJW3]\n<p>The divine warden is a beacon for Brigh's faith. A cleric of Brigh can channel a @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} spell through a divine warden of Brigh they can see within 60 feet. The cleric determines any targets or area for the spell as if they were standing in the divine warden's space.</p>"
-        },
-        "spellcastingEntry->Divine Domain Spells": {
-          "name": "conjuros de Dominio Divino"
         }
-      },
-      "publicNotes": "<p>Imbuidos de la energía divina de la diosa del reloj y la invención, los guardianes divinos de Brigh son prominentes en Alkenstar como guardianes del Templo de Brigh. La Dama de Bronce puede tener su mayor seguidor en esta metrópolis. Pero el ambiente de la ciudad en auge significa que la seguridad es una preocupación incluso en tierra santa. Los ciudadanos y visitantes de Alkenstar conocen sus centinelas de enrollado o aprenden rápidamente sobre ellos. La Alta Madre del Reloj, sacerdotisa principal del lugar sagrado de Brigh, mantiene guardianes divinos en la imagen de la diosa visible en el santuario y en los terrenos. Estos autómatas son tanto una advertencia para los posibles ladrones o alborotadores como una inspiración para los adoradores de Brigh. La mezcla de divino y arcano en estos construcciones tiene como objetivo mostrar la innovación y evocar el poder de Brigh sobre la tierra, el fuego, el metal y el humo.</p>\n<p>Mientras que los guardianes divinos de Brigh pueden tomar cualquier forma, la mayoría son relojes hechos a imagen de la diosa.</p>\n<hr /> <p>Creados a través de complejos rituales realizados por los seguidores de una fe, los guardianes divinos han sido imbuidos con una fracción del poder que corre a través de un campeón o clérigo de una deidad en particular. Esta chispa divina permite al guardián divino servir como el protector de un templo, santuario u otro lugar sagrado. Estos guardianes no están intrínsecamente vinculados a un lugar fijo, pero rara vez abandonan el templo o sitio sobre el que vigilan.</p>\n<p>La mayoría de los guardianes divinos han sido hechos de arcilla, piedra, madera o materiales similares y típicamente tienen características que se asemejan a una deidad o a un heraldo de una deidad. Los guardianes divinos a menudo tienen otras habilidades típicamente exhibidas por los constructos, como el revestimiento de armadura, la capacidad de disfrazarse de estatuas, u otros beneficios similares.</p>\n<p>Los fieles adoradores que elaboran guardianes divinos típicamente animan los construcciones usando un ritual especial en el que los seguidores suplican a su deidad para que empodere al guardián. El mandato divino que impregna a un guardia divino con poder también permite al centinela reconocer a los enemigos de su deidad y evita que el constructo ataque a otros miembros de la fe, a menos que estos patrones elijan atacarlo primero.</p>\n<p>En casos raros o en tiempos particularmente difíciles, una deidad podría crear un guardián divino animando directamente una estatua o ídolo existente para ayudar a los seguidores fieles. Estos guardianes divinos son más probables de encontrarse fuera de sus lugares originales, ayudando a las congregaciones desplazadas o persiguiendo a aquellos que podrían dañar a los fieles.</p>"
+      }
     },
     "Duhgik": {
       "name": "Duhgik",
       "items": {
         "weapon->+1 Sling": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.UCH4myuFnokGv0vF]\n+1 Sling"
+        },
+        "equipment->Snare Kit (Specialist)": {
+          "name": "Kit de caja (especialista)",
+          "description": "<p>Este kit contiene herramientas y materiales para crear cañas. Un kit de snare te permite fabricar snares usando la habilidad de Crafting. Un kit de snare especializado te da un + 1 bonificador por objeto al prueba.</p>",
+          "rules": {
+            "0": {
+              "label": "Kit de caja (Craft snares)"
+            }
+          }
         },
         "consumable->Biting Snare": [
           {
@@ -329,15 +307,6 @@
         },
         "lore->Lore": {
           "name": "Saber"
-        },
-        "equipment->Snare Kit (Specialist)": {
-          "name": "Kit de caja (especialista)",
-          "description": "<p>Este kit contiene herramientas y materiales para crear cañas. Un kit de snare te permite fabricar snares usando la habilidad de Crafting. Un kit de snare especializado te da un + 1 bonificador por objeto al prueba.</p>",
-          "rules": {
-            "0": {
-              "label": "Kit de caja (Craft snares)"
-            }
-          }
         }
       }
     },
@@ -350,7 +319,8 @@
           "description": "<p><strong>Desencadenante</strong> La iniciativa de los rollos de enjambre</p>\n<hr /> <p><strong>Efecto</strong> Los conejos de polvo se agitan, dando patadas a una nube en un @Template[type:burst|distance:15] centrado en el enjambre que dura 1 minuto. Las criaturas que entran o comienzan su turno en esta nube deben intentar un @Check[fortitude|dc:16] salvar o tomar una – 1 penalización de circunstancia a los controles de habilidad que tienen el rasgo de concentración y todos los controles de percepción como sus órganos sensoriales se ven afectados.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.pVd4mbG2u8Y1mqgL]{Effect: Cloud of Allergens}</p>"
         },
         "action->Dust to Dust": {
-          "name": "Polvo a polvo"
+          "name": "Polvo a polvo",
+          "description": "<p>Cuando un enjambre de conejo de polvo es destruido, se re-forma después [[/gmr 2d4 #days]]{2d4 días} en el área en la que fue destruido a menos que el lugar haya sido limpiado significativamente de todo polvo y escombros.</p>"
         },
         "action->Pummeling Dust": {
           "name": "Polvo de Pummeling",
@@ -360,6 +330,7 @@
     },
     "Edolpho Phinelli": {
       "name": "Edolpho Phinelli",
+      "blurb": "Charlatán de medio-elfo masculino",
       "items": {
         "spellcastingEntry->Occult Spontaneous Spells": {
           "name": "Conjuros ocultistas espontaneos"
@@ -374,7 +345,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]\nMage Hand"
         },
         "spell->Magic Aura": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.PRrZ7anETWPm90YY]\nMagic Aura",
+          "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.spells-srd.Item.PRrZ7anETWPm90YY]\nAura mágica",
           "target": "1 objeto de 3 bultos o menos"
         },
         "spell->Unseen Servant": {
@@ -406,11 +377,10 @@
         "lore->Lore": {
           "name": "Saber"
         }
-      },
-      "blurb": "Charlatán de medio-elfo masculino"
+      }
     },
     "Eleukas": {
-      "name": "Eleukas",
+      "name": "Eleucos",
       "items": {
         "weapon->Visperath": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.War0uyLBx1jA0Ge7]\nVisperath",
@@ -421,6 +391,9 @@
         },
         "consumable->Healing Potion (Minor)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao]\n<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
+        },
+        "strike-melee->Visperath": {
+          "name": "Visperath"
         },
         "strike-melee->Dagger": {
           "name": "Daga"
@@ -437,6 +410,7 @@
     "Firebrand Brass Dragon (Ancient)": {
       "name": "Dragón de latón Firebrand (anciano)",
       "languages": "hablar con los animales",
+      "publicNotes": "<p>Los dragones de latón son embaucadores caprichosos que disfrutan del humor y del juego. Les gusta especialmente conversar con humanos y otros humanoides civilizados, y se deleitan con las ingenuas costumbres de estas razas diminutas sin mostrarles altivez ni desprecio. Aunque puedan parecer simplemente curiosos, los dragones de latón entablan estas conversaciones para mantenerse al día de la política regional y poder anticipar futuros conflictos. En el proceso crean amplias redes de información que comienzan con sus propios aliados, pero se extienden por todos los estratos de la sociedad humanoide; después las utilizan para ayudar discretamente a los asentamientos cercanos a su guarida. A diferencia de las intrigas y manipulaciones de los dragones azules, los de latón utilizan sus redes de informadores para establecer justicia e igualdad.</p>\n<p>Estos dragones despreocupados valoran la independencia y consideran que todas las criaturas merecen vivir como les plazca, siempre que no dañen a otras. Son criaturas emotivas y suelen mantener la atención durante poco tiempo; en ocasiones caen en la depresión en sus últimos años. Para combatirla, algunos dragones de latón tienen mascotas y plantas de interior de las que pueden ocuparse.</p>\n<p>Aunque su curiosidad por los asuntos de los mortales pueda parecer infantil, la destreza de un dragón de latón en combate no es motivo de risa. Un dragón de latón cuyo territorio o aliados se vean amenazados es un enemigo verdaderamente aterrador, que abandona rápidamente su aspecto inocente para desatar su terrible poder sobre los malhechores.</p>\n<p>La mayoría de los dragones de latón viven en climas desérticos y, aunque mantienen ocultas sus guaridas, suelen construirlas cerca de asentamientos humanoides.</p>",
       "saveDetails": "+1 por estatus a todas las salvaciones contra magia",
       "items": {
         "spellcastingEntry->Arcane Innate Spells": {
@@ -485,8 +459,7 @@
           "name": "Impulso dracónico",
           "description": "<p>Cuando el dragón consigue un golpe crítico con un golpe, recarga Arma de aliento.</p>"
         }
-      },
-      "publicNotes": "<p>Los dragones de latón son embaucadores caprichosos que disfrutan del humor y del juego. Les gusta especialmente conversar con humanos y otros humanoides civilizados, y se deleitan con las ingenuas costumbres de estas razas diminutas sin mostrarles altivez ni desprecio. Aunque puedan parecer simplemente curiosos, los dragones de latón entablan estas conversaciones para mantenerse al día de la política regional y poder anticipar futuros conflictos. En el proceso crean amplias redes de información que comienzan con sus propios aliados, pero se extienden por todos los estratos de la sociedad humanoide; después las utilizan para ayudar discretamente a los asentamientos cercanos a su guarida. A diferencia de las intrigas y manipulaciones de los dragones azules, los de latón utilizan sus redes de informadores para establecer justicia e igualdad.</p>\n<p>Estos dragones despreocupados valoran la independencia y consideran que todas las criaturas merecen vivir como les plazca, siempre que no dañen a otras. Son criaturas emotivas y suelen mantener la atención durante poco tiempo; en ocasiones caen en la depresión en sus últimos años. Para combatirla, algunos dragones de latón tienen mascotas y plantas de interior de las que pueden ocuparse.</p>\n<p>Aunque su curiosidad por los asuntos de los mortales pueda parecer infantil, la destreza de un dragón de latón en combate no es motivo de risa. Un dragón de latón cuyo territorio o aliados se vean amenazados es un enemigo verdaderamente aterrador, que abandona rápidamente su aspecto inocente para desatar su terrible poder sobre los malhechores.</p>\n<p>La mayoría de los dragones de latón viven en climas desérticos y, aunque mantienen ocultas sus guaridas, suelen construirlas cerca de asentamientos humanoides.</p>"
+      }
     },
     "Floolf": {
       "name": "Floolf",
@@ -494,13 +467,13 @@
         "strike-melee->Jaws": {
           "name": "Mandíbulas"
         },
-        "action->Pack Attack": {
-          "name": "Ataque de manada",
-          "description": "<p>El ataque del floolf inflige 1d8 de daño extra a las criaturas dentro del alcance de al menos dos de los aliados de floolf.</p>"
-        },
         "action->Cute Aggression": {
           "name": "Agresión linda",
           "description": "<p>Los cachorros de Floolf son tan adorables que cualquier criatura que sea un mamífero, o tenga una Inteligencia superior a 3 que vea o toque a un cachorro de Floolf debe tener éxito en un @Check[will|dc:27] o defenderá al cachorro de Floolf con su vida. Este efecto termina cuando la criatura ya no es capaz de percibir al cachorro.</p>\n<p>Si la criatura puede hablar, cada vez que recuerda al cachorro floolf, siente una compulsión ( @Check[will|dc:15] save) para contar su historia del encuentro, invariablemente terminando con la frase, \"Yo moriría por ese floolf.\"</p>"
+        },
+        "action->Pack Attack": {
+          "name": "Ataque de manada",
+          "description": "<p>El ataque del floolf inflige 1d8 de daño extra a las criaturas dentro del alcance de al menos dos de los aliados de floolf.</p>"
         }
       }
     },
@@ -520,7 +493,8 @@
           "description": "<p>Cuando el zombi goblin se reduce a 0 Puntos de Golpe, un dispositivo alquímico atascado en su vientre se rompe. Rueda 1d4 y consulta lo siguiente para el efecto:</p>\n<table class=\"pf2e\"> <thead> <tr> <th> [[/gmr 1d4 #Alchemical Rupture]] </th>\n<th> Efecto alquímico </th>\n</tr>\n</thead> <tbody> <tr> <td> 1 </td>\n<td> criaturas en un @Template[emanation|distance:5] toman @Damage[1d3[persistent,acid]|options:area-damage] daño </td>\n</tr>\n<tr> <td> 2 </td>\n<td> criaturas en una emanación de 5 pies reciben @Damage[1d4[fire]|options:area-damage] daño ( @Check[reflex|dc:16|basic|options:area-effect] salvan) </td>\n</tr>\n<tr> <td> 3 </td>\n<td> criaturas en una emanación de 5 pies reciben @Damage[1d4[poison]|options:area-damage] daño ( @Check[fortitude|dc:16|basic|options:area-effect] salvan) </td>\n</tr>\n<tr> <td> 4 </td>\n<td> el humo se eleva en una emanación de 5 pies por 1 asalto (las criaturas en esa área son @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto}, y todas las demás criaturas están ocultas para ellas) </td>\n</tr>\n</tbody> </table>"
         },
         "action->Slow": {
-          "name": "Lento"
+          "name": "Lento",
+          "description": "<p>Un zombi duende es permanente @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} y no puede usar reacciones.</p>"
         }
       }
     },
@@ -544,6 +518,12 @@
         "strike-ranged->Dagger": {
           "name": "Daga"
         },
+        "strike-ranged->Lesser Alchemist's Fire": {
+          "name": "Fuego del Alquimista Menor"
+        },
+        "strike-ranged->Lesser Acid Flask": {
+          "name": "Frasco de ácido menor"
+        },
         "action->Infused Items": {
           "name": "Objetos infundidos",
           "description": "<p>Gristleburst lleva los siguientes objetos infundidos, que duran 24 horas o hasta la próxima vez que haga sus preparaciones diarias:</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.Item.M1k5QQc1qQLxzyCK]{Frasco de ácido (menor)} ( 2 )</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.Item.yd3kEK21YknZLlcT]{Fuego de alquimista (menor)} ( 4 )</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.Item.7Y2yOr4ltpP2tyuL]{Elixir de ojo de águila (menor)} ( 2 )</p>"
@@ -551,12 +531,6 @@
         "action->Quick Bomber": {
           "name": "Bombardero rápido",
           "description": "<p>Gristleburst saca una bomba alquímica con una acción de Interact y la lanza como un Golpe a distancia.</p>"
-        },
-        "strike-ranged->Lesser Alchemist's Fire": {
-          "name": "Fuego del Alquimista Menor"
-        },
-        "strike-ranged->Lesser Acid Flask": {
-          "name": "Frasco de ácido menor"
         },
         "action->Quick Smoke Bomb": {
           "name": "Bomba de humo rápida",
@@ -583,7 +557,7 @@
           "name": "Lanza"
         },
         "action->Trample": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Medium or smaller, hoof, @Check[reflex|dc:20|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n <p> Mediano o más pequeño, pezuña, @Check[type:reflex|dc:20|basic:true] </p>\n <hr />\n <p> @Localize[PF2E.NPC.Abilities.Glossary.Trample] </p>"
         }
       }
     },
@@ -607,7 +581,7 @@
       }
     },
     "Lisavet": {
-      "name": "Lisavet",
+      "name": "Información adicional",
       "items": {
         "spellcastingEntry->Divine Prepared Spells": {
           "name": "Conjuros divinos preparados"
@@ -622,7 +596,7 @@
           "target": "1 objeto de 1 de impedimenta o menos, ya sea desatendido o poseído por ti o por un aliado dispuesto"
         },
         "equipment->Religious Symbol of Sarenrae": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\nReligious Symbol of Sarenrae",
+          "name": "Religious Symbol of Sarenrae",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\n<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
         },
         "consumable->Healing Potion (Minor)": [
@@ -644,14 +618,15 @@
           "description": "<p>(a dos manos d8)</p>"
         },
         "action->Healing Hands": {
-          "name": "Manos curativas"
-        },
-        "lore->Lore": {
-          "name": "Saber"
+          "name": "Manos curativas",
+          "description": "<p>Cuando Lisavet funde @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Curar}, tira d10 en lugar de d8.</p>"
         },
         "action->Turn Undead": {
           "name": "Gira a los muertos vivientes",
           "description": "<p>Cuando Lisavet usa sanación para dañar a los no muertos, cada no muerto de nivel 2 o inferior que falla críticamente en su salvación gana la condición de huida durante 1 asalto.</p>"
+        },
+        "lore->Lore": {
+          "name": "Saber"
         }
       }
     },
@@ -669,9 +644,11 @@
           "description": "<p>El Mari Lwyd está fuera simplemente para disfrutar de la temporada. Los ataques de los Mari Lwyd tienen el rasgo no letal cuando atacan a criaturas, a menos que esas criaturas intenten una acción hostil en los Mari Lwyd primero.</p>"
         },
         "action->Persistent Wassailing": {
+          "name": "Persistente asolamiento",
           "description": "<p>El Mari Lwyd no puede ser interrumpido por medios comunes. Siempre sabe si un edificio está realmente desocupado o si los ocupantes pueden hablar y escuchar y simplemente se niegan a cantar, y es inmune a @UUID[Compendium.pf2e.spells-srd.Item.gIdDLrbswTV3OBJy]{Silencio} y efectos similares de hasta 5.º nivel.</p>"
         },
         "action->Festive Rampage": {
+          "name": "Festivo Frenesí destructivo",
           "description": "<p><strong>Requisitos</strong> El Mari Lwyd entra en un edificio después de ganar el Pwnco, y no se le dijo que se comportara y se le ofreció alcohol o queso</p>\n<hr /> <p><strong>Efecto</strong> El Mari Lwyd se lanza a un destructivo festín. Mientras el Mari Lwyd permanezca en el edificio, gana resistencia 10 a todo daño y sus golpes ignoran 10 Dureza. El Mari Lwyd pierde los beneficios de esta habilidad si ataca a una criatura viva, y por lo general rompe muebles en su lugar.</p>"
         },
         "action->Pwnco": {
@@ -682,6 +659,7 @@
     },
     "Morlibint": {
       "name": "Morlibint",
+      "blurb": "Asistente humano masculino",
       "items": {
         "spellcastingEntry->Arcane Prepared Spells": {
           "name": "Conjuros arcanos preparados"
@@ -721,16 +699,16 @@
         "consumable->Scroll of Knock (Level 2)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\nScroll of Knock (Level 2)",
           "consumableSpellName": "Llamar",
+          "consumableSpellDescription": "<p>Haces que el objetivo sea más fácil de abrir. Golpear otorga un bonificador por estatus + 4 a cualquier criatura que intente abrir la puerta, cerradura o contenedor objetivo con un prueba de atletismo o robo. Puedes intentar un chequeo de Thievery para abrir el objetivo como parte de lanzar un golpe, y agregas tu nivel incluso si no estás entrenado.</p>\n<p>Golpe contrarresta @UUID[Compendium.pf2e.spells-srd.Item.Azoh0BSoCASrA1lr]{Cerrar}.</p>",
           "consumableSpellTarget": "1 puerta, cerradura o recipiente",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\n<p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>",
-          "consumableSpellDescription": "<p>Haces que el objetivo sea más fácil de abrir. Golpear otorga un bonificador por estatus + 4 a cualquier criatura que intente abrir la puerta, cerradura o contenedor objetivo con un prueba de atletismo o robo. Puedes intentar un chequeo de Thievery para abrir el objetivo como parte de lanzar un golpe, y agregas tu nivel incluso si no estás entrenado.</p>\n<p>Golpe contrarresta @UUID[Compendium.pf2e.spells-srd.Item.Azoh0BSoCASrA1lr]{Cerrar}.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\n<p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>"
         },
         "consumable->Scroll of Invisibility (Level 2)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\nScroll of Invisibility (Level 2)",
           "consumableSpellName": "Invisibilidad",
+          "consumableSpellDescription": "<p>Envuelto en ilusión, el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}. Esto lo hace @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{No detectado} para todas las criaturas, aunque las criaturas pueden intentar encontrar el objetivo, haciéndolo @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} para ellos en su lugar. Si el objetivo usa una acción hostil, el conjuro termina después de que se complete esa acción hostil.</p>\n<hr /> <p><strong>Elevado ( 4.º )</strong> El conjuro dura 1 minuto, pero no termina si el objetivo usa una acción hostil.</p>",
           "consumableSpellTarget": "1 criatura",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\n<p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>",
-          "consumableSpellDescription": "<p>Envuelto en ilusión, el objetivo se convierte en @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}. Esto lo hace @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{No detectado} para todas las criaturas, aunque las criaturas pueden intentar encontrar el objetivo, haciéndolo @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} para ellos en su lugar. Si el objetivo usa una acción hostil, el conjuro termina después de que se complete esa acción hostil.</p>\n<hr /> <p><strong>Elevado ( 4.º )</strong> El conjuro dura 1 minuto, pero no termina si el objetivo usa una acción hostil.</p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx]\n<p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>"
         },
         "treasure->Scholarly Journal Compendium (Fictional Literature)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.G5WuYX1ghrZcJ1J1]\nScholarly Journal Compendium (Fictional Literature)"
@@ -738,19 +716,18 @@
         "strike-melee->Staff": {
           "name": "Bastón"
         },
+        "action->Call Bonded Item": {
+          "name": "Llamar a Bonded Item",
+          "description": "<p>Morlibint teletransporta su diario académico a su mano desde hasta 1 millas de distancia.</p>"
+        },
         "action->Drain Bonded Item": {
           "name": "Drenar objeto vinculado",
           "description": "<p><strong>Frecuencia</strong> dos veces al día</p>\n<p><strong>Requisitos</strong> Morlibint no ha actuado todavía en su turno</p>\n<hr /> <p><strong>Efecto</strong> Morlibint extrae parte del poder en su diario académico. Gana la habilidad de lanzar un conjuro que preparó hoy y ya lanzó, sin gastar un espacio de conjuro. Aún debe lanzar el conjuro y cumplir con los otros requisitos del conjuro.</p>"
         },
         "lore->Academia Lore": {
           "name": "Saber (académico)"
-        },
-        "action->Call Bonded Item": {
-          "name": "Llamar a Bonded Item",
-          "description": "<p>Morlibint teletransporta su diario académico a su mano desde hasta 1 millas de distancia.</p>"
         }
-      },
-      "blurb": "Asistente humano masculino"
+      }
     },
     "Nonsequitaur": {
       "name": "Nonsequitaur",
@@ -763,9 +740,6 @@
         },
         "strike-ranged->Spear": {
           "name": "Lanza"
-        },
-        "action->Trample": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Medium or smaller, Hoof, @Check[reflex|dc:18|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
         },
         "action->Centaur out of Nowhere": {
           "name": "Centaur de la nada",
@@ -780,32 +754,41 @@
           "description": "<p><strong>Desencadenante</strong> El nonsequitaur sale del campo de visión de todos los PJ</p>\n<hr /> <p><strong>Efecto</strong> El no sequitador se siente ignorado. ¡Usa MÁS! ¡CENTAURS! como reacción.</p>"
         },
         "action->You Should Have Paid Attention to the Centaur": {
-          "name": "Debería haber prestado atención al centauro"
+          "name": "Debería haber prestado atención al centauro",
+          "description": "<p><strong>Desencadenante</strong> Una criatura termina su turno sin atacar, lanzar conjuros, usar habilidades o reconocer de otra manera al no sequitauro.</p>\n<hr />\n<p><strong>Efecto</strong> El no sequitauro domina todas las formas de interacción. ¡Utiliza MÁS! ¡CENTAUROS! como reacción.</p>"
         },
         "action->MORE! CENTAURS!": {
           "name": "¡Más! ¡Centauros!",
           "description": "<p>El nonsequitaur decide que esto podría mejorarse con más centauros. Hace que otro nonsequitaur se forme espontáneamente en un espacio desocupado dentro de 60 pies.</p>\n<p>Antes de que preguntes, ¡SÍ este nonsequitaur invocado puede usar MÁS! CENTAURS! también, NO esto no es un descuido de diseño. Yo escribo el blog, ellos son los descansos.</p>"
+        },
+        "action->Trample": {
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]\n<p>Medium or smaller, Hoof, @Check[reflex|dc:18|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
         }
       }
     },
     "Nosferotter": {
-      "name": "Nosferotter",
+      "name": "Nose",
       "hpDetails": "curación del vacío",
       "items": {
         "strike-melee->Claw": {
           "name": "Garra"
         },
-        "action->Aquatic Ambush": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.HBrBrUzjfvj2gDXB]\n<p>30 feet</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
+        "strike-melee->Jaw": {
+          "name": "Mandíbula"
         },
         "strike-ranged->Throw Rock and/or Skull": {
           "name": "Lanza una roca y/o un cráneo"
         },
+        "action->Aquatic Ambush": {
+          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.HBrBrUzjfvj2gDXB]\n <p> 30 pies </p>\n <hr />\n <p> @Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush] </p>"
+        },
         "action->Dead Gaze": {
+          "name": "Gaze muerto",
           "description": "<p>Mira sus ojos pequeños y perlados. Ahora estás @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido} para 1 asalto a menos que hayas tenido éxito en un @Check[will|dc:20] salvado.</p>"
         },
         "action->Squeak of Doom": {
-          "name": "El Chirrido de la Muerte"
+          "name": "El Chirrido de la Muerte",
+          "description": "<p>El nosferotter deja escapar un chillido siniestro, pero lindo. Todas las criaturas dentro de 30 pies deben intentar un @Check[will|dc:20] - ¡Save!</p>\n<p>Entonces son temporalmente inmunes durante 1 día.</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura no puede hacer nada más que preguntarse si el nosferotter es lindo o aterrador durante 1 asalto.</p>\n<p><strong>Fallo</strong> La criatura está tan confundida que ataca a sus aliados por 1 asalto.</p>\n<p><strong>Fallo crítico</strong> Como un fracaso, pero permanentemente.</p>"
         }
       }
     },
@@ -831,12 +814,18 @@
       "name": "Pr'rall",
       "items": {
         "weapon->+1 Striking Temple Sword": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.NIsxR5zXtVa3PuyU]\n+1 Striking Temple Sword",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.NIsxR5zXtVa3PuyU]\n<p>This heavy blade is favored by guardians of religious sites. It has a distinctive, crescent-shaped blade that seems to be a mix of a sickle and sword. It often has holes drilled into the blade or the pommel so that bells or other holy trinkets can be affixed to the weapon as an aid for prayer or mediation.</p>"
+          "name": "+1 Striking Temple Sword",
+          "description": "<p>This heavy blade is favored by guardians of religious sites. It has a distinctive, crescent-shaped blade that seems to be a mix of a sickle and sword. It often has holes drilled into the blade or the pommel so that bells or other holy trinkets can be affixed to the weapon as an aid for prayer or mediation.</p>"
         },
         "weapon->+1 Temple Sword": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.NIsxR5zXtVa3PuyU]\n+1 Temple Sword",
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.NIsxR5zXtVa3PuyU]\n<p>This heavy blade is favored by guardians of religious sites. It has a distinctive, crescent-shaped blade that seems to be a mix of a sickle and sword. It often has holes drilled into the blade or the pommel so that bells or other holy trinkets can be affixed to the weapon as an aid for prayer or mediation.</p>"
+          "description": "<p>This heavy blade is favored by guardians of religious sites. It has a distinctive, crescent-shaped blade that seems to be a mix of a sickle and sword. It often has holes drilled into the blade or the pommel so that bells or other holy trinkets can be affixed to the weapon as an aid for prayer or mediation.</p>"
+        },
+        "strike-melee->+1 Striking Temple Sword": {
+          "name": "+ 1 Espada de templo de ataque"
+        },
+        "strike-melee->+1 Temple Sword": {
+          "name": "+ 1 Espada del templo"
         },
         "strike-ranged->Bola": {
           "name": "Boleadoras",
@@ -864,12 +853,6 @@
         },
         "lore->Hunting Lore": {
           "name": "Historia de la caza"
-        },
-        "strike-melee->+1 Striking Temple Sword": {
-          "name": "+ 1 Espada de templo de ataque"
-        },
-        "strike-melee->+1 Temple Sword": {
-          "name": "+ 1 Espada del templo"
         }
       }
     },
@@ -882,6 +865,10 @@
         "strike-melee->Claw": {
           "name": "Garra"
         },
+        "action->Dander": {
+          "name": "Caspa",
+          "description": "<p>30 pies. Cada vez que una criatura no felina dentro del aura intenta usar una acción que tiene el rasgo concentrado, debe intentar un prueba @Check[flat|dc:5]. En caso de fracaso, la acción se pierde ya que la criatura está demasiado distraída por los estornudos para actuar.</p>"
+        },
         "action->Pounce": {
           "name": "Abalanzarse",
           "description": "<p>El psstpsstmitl camina y hace un Golpe al final de ese movimiento. Si el psstpsstmitl inició esta acción @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido}, permanece oculto hasta después del Golpe de esta habilidad.</p>"
@@ -889,10 +876,8 @@
         "action->Sneak Attack": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The psstpsstmitl deals 2d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures</p>"
         },
-        "action->Dander": {
-          "description": "<p>30 pies. Cada vez que una criatura no felina dentro del aura intenta usar una acción que tiene el rasgo concentrado, debe intentar un prueba @Check[flat|dc:5]. En caso de fracaso, la acción se pierde ya que la criatura está demasiado distraída por los estornudos para actuar.</p>"
-        },
         "action->Topple": {
+          "name": "Tumbar",
           "description": "<p>El psstpsstmitl desliza una pata gigante a través del campo de batalla en un @Template[cone|distance:30]. Todas las criaturas en el cono deben intentar un salvación Reflejo.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no se ve afectado.</p>\n<p><strong>Éxito</strong> El objetivo es empujado 10 pies lejos del psstpsstmitl y es golpeado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}</p>\n<p><strong>Fallo</strong> El objetivo es empujado a 20 pies de distancia del psstpsstmitl y es golpeado de espaldas.</p>\n<p><strong>Fallo crítico</strong> Como fracaso, y el objetivo es @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 2}</p>"
         }
       }
@@ -900,12 +885,14 @@
     "Rt5rrmn": {
       "name": "Rt5rrmn",
       "languages": "(no puede hablar ningún idioma)",
+      "publicNotes": "<p>El rt5rrmn es una criatura felina que le encanta ronronear a aquellos que encuentran, convenciendo a otros para que los mimen en lugar de luchar. Prefiere ser amigos que enemigos, pero si se asusta, atacará violentamente a quien esté a su vista. Si no pueden hacer amigos, el rt5rrmn rápidamente se volverá defensivo y saldrá al ataque.</p>",
+      "privateNotes": "<p><em> Nota - Paizo no proporcionó un modificador de ataque para ninguno de los ataques. Utilizamos el Bonus de Ataque de Golpe moderado para el nivel de la criatura (DJ Core pg. 120 ). </em></p>",
       "items": {
-        "action->Rt5rrmn Yyumn": {
-          "description": "<p><strong>Salvación</strong> @Check[fortitude|dc:24]</p>\n<p><strong>Duración máxima</strong> 1 semana</p>\n<p><strong>Fase 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} (1 hora)</p>\n<p><strong>Fase 2</strong> Indispuesto 1, y la criatura no puede reducir su valor de Indispuesto por debajo de 1 (1 día)</p>\n<p><strong>Fase 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2}, y la criatura no puede reducir su valor de Indispuesto por debajo de 1 (1 día)</p>"
+        "strike-melee->b9000": {
+          "name": "b9000"
         },
-        "action->Yidsfh": {
-          "description": "<p>El rt5rrmn da una Zancada y luego realiza dos Golpes g7ujik contra un único objetivo. Ambos cuentan para su penalizador por ataques múltiples, pero el penalizador solo aumenta después de realizar ambos ataques. El rt5rrmn debe poder moverse al menos la mitad de su Velocidad para usar yidsfh.</p>"
+        "strike-melee->g7ujik": {
+          "name": "g7ujik"
         },
         "action->But I'm Adorable": {
           "name": "Pero soy adorable",
@@ -914,37 +901,47 @@
         "action->Extra Reverberation": {
           "name": "Extra Reverb",
           "description": "<p>Si el rt5rrmn es objetivo con una habilidad que restaura Puntos de Golpe, gana un uso adicional de Pero soy adorable que dura hasta el final de su siguiente turno.</p>"
+        },
+        "action->Rt5rrmn Yyumn": {
+          "name": "Rt5rrmn Yyumn",
+          "description": "<p><strong>Salvación</strong> @Check[fortitude|dc:24]</p>\n<p><strong>Duración máxima</strong> 1 semana</p>\n<p><strong>Fase 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} (1 hora)</p>\n<p><strong>Fase 2</strong> Indispuesto 1, y la criatura no puede reducir su valor de Indispuesto por debajo de 1 (1 día)</p>\n<p><strong>Fase 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2}, y la criatura no puede reducir su valor de Indispuesto por debajo de 1 (1 día)</p>"
+        },
+        "action->Yidsfh": {
+          "name": "Yidsfh",
+          "description": "<p>El rt5rrmn da una Zancada y luego realiza dos Golpes g7ujik contra un único objetivo. Ambos cuentan para su penalizador por ataques múltiples, pero el penalizador solo aumenta después de realizar ambos ataques. El rt5rrmn debe poder moverse al menos la mitad de su Velocidad para usar yidsfh.</p>"
         }
-      },
-      "publicNotes": "<p>El rt5rrmn es una criatura felina que le encanta ronronear a aquellos que encuentran, convenciendo a otros para que los mimen en lugar de luchar. Prefiere ser amigos que enemigos, pero si se asusta, atacará violentamente a quien esté a su vista. Si no pueden hacer amigos, el rt5rrmn rápidamente se volverá defensivo y saldrá al ataque.</p>",
-      "privateNotes": "<p><em> Nota - Paizo no proporcionó un modificador de ataque para ninguno de los ataques. Utilizamos el Bonus de Ataque de Golpe moderado para el nivel de la criatura (DJ Core pg. 120 ). </em></p>"
+      }
     },
     "Squirrelwind": {
-      "name": "Squirrelwind",
+      "name": "Viento de ardilla",
       "speed": "celeridad",
       "items": {
         "strike-melee->Gust": {
           "name": "Ráfaga"
         },
-        "action->Swiftness": {
-          "name": "Celeridad"
-        },
-        "action->Push 10 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]\nPush 10 feet"
-        },
         "strike-ranged->Squirrel": {
           "name": "Ardilla"
         },
         "action->Chittering": {
+          "name": "Parloteo",
           "description": "<p>60 pies. El chirrido de las ardillas golpeadas por el viento perturba los sentidos, haciendo que el aire y el suelo dentro de la emanación sean terrenos difíciles para todas las criaturas que escuchan el sonido.</p>"
         },
         "action->Squirrel Surge": {
-          "name": "Surge de ardilla"
+          "name": "Surge de ardilla",
+          "description": "<p>Cada enemigo dentro del aura chirriante del viento ardilla toma @Damage[1d8[slashing]] daño.</p>"
+        },
+        "action->Swiftness": {
+          "name": "Celeridad",
+          "description": "<p>El movimiento del viento ardilla no desencadena reacciones.</p>"
+        },
+        "action->Push 10 feet": {
+          "name": "Empujón 10 pies (3 m)"
         }
       }
     },
     "Urok": {
       "name": "Urok",
+      "blurb": "Infiltrador de kobold de aforita masculino",
       "items": {
         "weapon->+1 Striking Returning Dagger": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.rQWaJhI5Bko5x14Z]\n+1 Striking Returning Dagger"
@@ -955,8 +952,17 @@
         "strike-ranged->Dagger": {
           "name": "Daga"
         },
+        "action->Draconic Exemplar (Green Dragon)": {
+          "name": "Ejemplar draconiano (Dragón verde)",
+          "description": "<p>Urok obtiene poderes menores de su ejemplar draconiano verde. Esto determina el color de su escama y su apariencia, y los dragones a veces miran más favorablemente a aquellos kóboldos que se parecen a ellos, a discreción del DJ. Su ejemplar también determina detalles de otras habilidades:</p>\n<p><strong>Arma de aliento</strong> cono <strong>Tipo de daño</strong> veneno <strong>Lanzamiento salvador</strong> Fuerza</p>"
+        },
+        "action->Crystalline Dust": {
+          "name": "Polvo cristalino",
+          "description": "<p><strong>Frecuencia</strong> una vez al día</p>\n<hr /> <p><strong>Efecto</strong> Urok dispersa las manchas cristalinas que cubren su cuerpo como una neblina. Se convierte en @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto}, aunque no puede usar este ocultamiento para ocultar o esconderse. Las manchas permanecen a una pulgada de su piel, se mueven contigo y duran 4 asaltos.</p>"
+        },
         "action->Preemptive Reconfiguration": {
-          "name": "Reconfiguración preventiva"
+          "name": "Reconfiguración preventiva",
+          "description": "<p><strong>Frecuencia</strong> Una vez al día</p>\n<p><strong>Desencadenante</strong> Urok tomaría perforaciones, o daño cortante</p>\n<hr />\n<p><strong>Efecto</strong> El cuerpo de Urok anticipa el golpe y el área de impacto se reorganiza brevemente en una red de tejido fortalecida que amortigua el ataque. Obtiene resistencia 9 contra el tipo de daño desencadenante, que se aplica contra el daño desencadenante. Urok puede gastar su uso diario de Polvo Cristalino al usar esta reacción. Si lo hace, su uso diario no se gasta y puede usarlo por segunda vez.</p>"
         },
         "action->Kobold Breath": {
           "name": "Aliento de kóbold",
@@ -982,28 +988,19 @@
             "name": "Saber",
             "id": "XucAzPdyjIt2KtKJ"
           }
-        ],
-        "action->Draconic Exemplar (Green Dragon)": {
-          "name": "Ejemplar draconiano (Dragón verde)",
-          "description": "<p>Urok obtiene poderes menores de su ejemplar draconiano verde. Esto determina el color de su escama y su apariencia, y los dragones a veces miran más favorablemente a aquellos kóboldos que se parecen a ellos, a discreción del DJ. Su ejemplar también determina detalles de otras habilidades:</p>\n<p><strong>Arma de aliento</strong> cono <strong>Tipo de daño</strong> veneno <strong>Lanzamiento salvador</strong> Fuerza</p>"
-        },
-        "action->Crystalline Dust": {
-          "name": "Polvo cristalino",
-          "description": "<p><strong>Frecuencia</strong> una vez al día</p>\n<hr /> <p><strong>Efecto</strong> Urok dispersa las manchas cristalinas que cubren su cuerpo como una neblina. Se convierte en @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto}, aunque no puede usar este ocultamiento para ocultar o esconderse. Las manchas permanecen a una pulgada de su piel, se mueven contigo y duran 4 asaltos.</p>"
-        }
-      },
-      "blurb": "Infiltrador de kobold de aforita masculino"
+        ]
+      }
     },
     "Wendlyn": {
       "name": "Wendlyn",
       "items": {
         "weapon->Alchemist's Fire (Lesser)": [
           {
-            "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.yd3kEK21YknZLlcT]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 1d8 fire damage, 1 persistent fire damage, and 1 fire splash damage.</p>",
+            "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.yd3kEK21YknZLlcT]\n <p> <strong> Activar </strong> <span class=\"action-glyph\"> Un </span> Golpe </p>\n <p> El fuego del alquimista es una combinación de líquidos volátiles que se encienden cuando se exponen al aire. El fuego del alquimista inflige 1d8 de daño por fuego, 1 de daño por fuego persistente y 1 de daño por salpicadura de fuego. </p>",
             "id": "7tbBugk6A0Qo30qZ"
           },
           {
-            "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.yd3kEK21YknZLlcT]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 1d8 fire damage, 1 persistent fire damage, and 1 fire splash damage.</p>",
+            "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.yd3kEK21YknZLlcT]\n <p> <strong> Activar </strong> <span class=\"action-glyph\"> Un </span> Golpe </p>\n <p> El fuego del alquimista es una combinación de líquidos volátiles que se encienden cuando se exponen al aire. El fuego del alquimista inflige 1d8 de daño por fuego, 1 de daño por fuego persistente y 1 de daño por salpicadura de fuego. </p>",
             "id": "7cNLpFxybJh0J4uA"
           }
         ],
@@ -1016,6 +1013,9 @@
         },
         "strike-ranged->Shortbow": {
           "name": "Arco corto"
+        },
+        "strike-ranged->Lesser Alchemist's Fire": {
+          "name": "Fuego del Alquimista Menor"
         },
         "action->Mobility": {
           "name": "Movilidad",
@@ -1032,19 +1032,21 @@
           "name": "Ataque sorpresa",
           "description": "<p>En la primera asaltos de combate, si Wendlyn lanza Deception o Stealth para iniciativa, las criaturas que aún no han actuado son @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} para ella.</p>"
         },
-        "strike-ranged->Lesser Alchemist's Fire": {
-          "name": "Fuego del Alquimista Menor"
-        },
         "lore->Otari Lore": {
           "name": "Otari Saber"
         }
       }
     },
     "Weredigo": {
-      "name": "Weredigo",
+      "name": "Veredicto",
+      "languages": "Telepatía 1 milla",
+      "senses": "Haresight",
       "items": {
         "strike-melee->Jaws": {
           "name": "Mandíbulas"
+        },
+        "strike-melee->Fork": {
+          "name": "Tenedor"
         },
         "strike-melee->Knife": {
           "name": "Cuchillo"
@@ -1055,10 +1057,8 @@
         "action->Coven": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.52CdldlWMiVTZk1F]\n<p>A weredigo adds @UUID[Compendium.pf2e.spells-srd.Item.Mt6ZzkVX8Q4xigFq]{Create Food}, @UUID[Compendium.pf2e.spells-srd.Item.rdTEF1hfAWbN58NE]{Enhance Victuals}, and @UUID[Compendium.pf2e.spells-srd.Item.JhRuR7Jj3ViShpq7]{Ghoulish Cravings} to its coven's spells.</p>\n<p>In addition, a weredigo, wendigo, and hoodigo coven can perform a unique ritual to enter the dreams of a creature responsible for hosting an upcoming party and curse them incurable planning indecision.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Coven]</p>"
         },
-        "strike-melee->Fork": {
-          "name": "Tenedor"
-        },
         "action->Hungersight": {
+          "name": "Hambresight",
           "description": "<p>Un weredigo puede detectar con precisión a las criaturas hambrientas.</p>"
         },
         "action->Reduce Options": {
@@ -1066,13 +1066,13 @@
           "description": "<p><strong>Requisitos</strong> El weredigo está adyacente a dos criaturas que no pueden decidir dónde comer.</p>\n<hr /> <p><strong>Efecto</strong> El weredigo hace dos Golpes de tenedor y dos Golpes de cuchillo contra una de las criaturas adyacentes. Estos ataques no cuentan para la penalizador por ataque múltiple del weredigo.</p>"
         },
         "action->Weredigo Torment": {
+          "name": "Weredigo Tormento",
           "description": "<p>Una criatura afectada por el tormento de weredigo no puede recuperarse más allá del stage 1 hasta que haya sido restaurada a todos sus PG.</p>\n<p><strong>Tirada de salvación</strong> @Check[will|dc:35]</p>\n<p><strong>Etapa 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 4} (1 día)</p>\n<p><strong>Etapa 2</strong> Como etapa 1 ( 1 día)</p>\n<p><strong>Etapa 3</strong> La criatura se vuelve permanentemente afectada por la parálisis de análisis, incapaz de tomar incluso las decisiones más simples de la comida, sorbe distraídamente su agua cada vez que se le pide su orden.</p>"
         },
         "lore->Restaurant Lore": {
           "name": "Restaurant Saber"
         }
-      },
-      "languages": "Telepatía 1 milla"
+      }
     },
     "Whispering Way Medusa": {
       "name": "Medusa de la Vía Susurrante",
@@ -1114,6 +1114,9 @@
     },
     "Wordsmith": {
       "name": "Maestro de la palabra",
+      "languages": "Habla verdadera",
+      "publicNotes": "<p>Con cada golpe del martillo de un herrero de palabras, se forma una nueva onomatopeya. Rápidamente agarran la palabra mientras vuela fuera del yunque antes de clavarla en las páginas de nuestros cómics favoritos. ¡POW! ¡Wham! ¡Splat! El martillo elabora cada sonido. El humilde herrero de palabras es a menudo pasado por alto por sus compañeros artesanos, cuyas imágenes son el foco principal de los lectores. Sin embargo, muchos no se dan cuenta de que mientras que las imágenes se pueden enviar a la imprenta, los sonidos no se capturan tan fácilmente en la página y deben ser martillados en su lugar por un experto en palabras.</p>\n<p>Mientras que la mayoría de los escritores se contentan con forjar sus palabras fuera de la vista del público, son feroces defensores de su trabajo y se apresuran a luchar contra cualquiera que lo menosprecie. Saben que la pluma es más poderosa que la espada, pero el martillo es el más poderoso de todos, y lo usan sin piedad para aplastar a sus enemigos.</p>\n<p>Aunque muchos de los herreros de palabras son enanos, vienen de todo tipo de orígenes, cada uno trayendo sus propios sonidos y ruidos únicos de su cultura. Los oradores Tengu favorecen especialmente las onomatopeas similares a los gritos de los pájaros como caw para cuervos u okalee para mirlos de alas rojas. Mientras tanto, los leshy wordsmiths favorecen sonidos inaudibles para la mayoría de las criaturas no vegetales, como el tr-tr-tr que refleja el sonido de una planta creciendo.</p>",
+      "senses": "Audición (precisa) 60 pies",
       "items": {
         "spellcastingEntry->Occult Innate Spells": {
           "name": "Conjuros ocultistas innatos"
@@ -1135,19 +1138,25 @@
         "strike-melee->Hammer": {
           "name": "Martillo"
         },
-        "lore->Scribing Lore": {
-          "name": "Saber (escritura)"
-        },
         "strike-ranged->TWANG!": {
           "name": "¡TWANG!"
         },
+        "action->Word Warp": {
+          "name": "Warp de palabras",
+          "description": "<p><strong>Desencadenante</strong> El wordsmith es el blanco de un efecto lingüístico</p>\n<hr />\n<p><strong>Efecto</strong> El creador de palabras tuerce las palabras e intenta contrarrestar las declaraciones de su enemigo con su martillo (contrarrestar [[/gmr 1d20+16 #Counteract]]{+16}, 3 primer rango).</p>"
+        },
+        "action->Forge Onomatopoeia": {
+          "name": "Fragua Onomatopeya",
+          "description": "<p>¡El creador de palabras golpea con su martillo a una criatura, creando una onomatopeya visual como CRACK! o ¡APLASTAR! que sale volando en el lugar del impacto. El objetivo del ataque debe intentar un @Check[will|dc:24] - ¡Save!</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} para 1 asalto.</p>\n<p><strong>Fallo</strong> La criatura es estupefacta 1 durante 1 minuto.</p>\n<p><strong>Fallo crítico</strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} y gana debilidad 1 a daño sónico durante 1 minuto.</p>"
+        },
         "action->Mightier than the Sword": {
-          "name": "Más fuerte que la espada"
+          "name": "Más fuerte que la espada",
+          "description": "<p>Cualquier martillo obtiene el rasgo contundente, no se puede desarmar y se convierte en un martillo de golpe +1 mientras el Wordsmith lo empuña.</p>"
+        },
+        "lore->Scribing Lore": {
+          "name": "Saber (escritura)"
         }
-      },
-      "languages": "Habla verdadera",
-      "publicNotes": "<p>Con cada golpe del martillo de un herrero de palabras, se forma una nueva onomatopeya. Rápidamente agarran la palabra mientras vuela fuera del yunque antes de clavarla en las páginas de nuestros cómics favoritos. ¡POW! ¡Wham! ¡Splat! El martillo elabora cada sonido. El humilde herrero de palabras es a menudo pasado por alto por sus compañeros artesanos, cuyas imágenes son el foco principal de los lectores. Sin embargo, muchos no se dan cuenta de que mientras que las imágenes se pueden enviar a la imprenta, los sonidos no se capturan tan fácilmente en la página y deben ser martillados en su lugar por un experto en palabras.</p>\n<p>Mientras que la mayoría de los escritores se contentan con forjar sus palabras fuera de la vista del público, son feroces defensores de su trabajo y se apresuran a luchar contra cualquiera que lo menosprecie. Saben que la pluma es más poderosa que la espada, pero el martillo es el más poderoso de todos, y lo usan sin piedad para aplastar a sus enemigos.</p>\n<p>Aunque muchos de los herreros de palabras son enanos, vienen de todo tipo de orígenes, cada uno trayendo sus propios sonidos y ruidos únicos de su cultura. Los oradores Tengu favorecen especialmente las onomatopeas similares a los gritos de los pájaros como caw para cuervos u okalee para mirlos de alas rojas. Mientras tanto, los leshy wordsmiths favorecen sonidos inaudibles para la mayoría de las criaturas no vegetales, como el tr-tr-tr que refleja el sonido de una planta creciendo.</p>",
-      "senses": "Audición (precisa) 60 pies"
+      }
     },
     "Zhang Yong": {
       "name": "Zhang Yong",
@@ -1166,14 +1175,6 @@
         "weapon->Ghost Charge (Greater)": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.28osNZINXLWzqzUL]\n<p><strong>Usage</strong> held in 1 hand</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<hr />\n<p>These spring-loaded metal canisters contain a mixture of chemicals and salts that drain and disintegrate nearby undead creatures.</p>\n<p>A ghost charge gives a +2 item bonus to attack rolls, deals 3d8 vitality damage and 3 vitality splash damage, though as usual for vitality damage, this damage harms only undead and creatures with void healing. A primary target that takes damage from a ghost charge becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the start of your next turn.</p>\n<p>Ghost charges are designed to explode even on contact with a spiritual substance, making them ideal for damaging incorporeal undead.</p>"
         },
-        "action->Disrupting Strikes": {
-          "name": "Huelgas disruptivas",
-          "description": "<p>Zhang Yong invoca la energía vital desde dentro para ayudarle a destruir a los muertos vivientes. Sus armas y golpes desarmados ganan los efectos de una runa de propiedad perturbadora mayor hasta el comienzo de su próximo turno.</p>\n<hr /> <p>Un arma de mayor perturbación pulsa con energía de vitalidad, infligiendo un daño de vitalidad adicional de 2d6 a los no muertos. En un golpe crítico, en lugar de ser debilitado 1, la criatura no muerta debe intentar un salvación @Check[fortitude|dc:31 |name:Disruptiva superior] con los siguientes efectos. Este es un efecto de incapacitación.</p>\n<hr /> <p><strong>Éxito crítico</strong> Es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} hasta el final de tu siguiente turno.</p>\n<p><strong>Éxito</strong> Es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} hasta el final de tu siguiente turno.</p>\n<p><strong>Fallo</strong> Es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 3} hasta el final de tu siguiente turno.</p>\n<p><strong>Fallo crítico</strong> Está destruido.</p>"
-        },
-        "action->Reach Beyond": {
-          "name": "Llegar más allá",
-          "description": "<p>Zhang Yong ha aprendido a mover su energía espiritual más allá de sí mismo para atacar espíritus donde otros no pueden. Puede hacer Golpes cuerpo a cuerpo contra criaturas incorpóreas que están dentro de objetos sólidos siempre y cuando el objeto esté dentro de su alcance. Una criatura incorpóreo dentro de un objeto sólido está escondida, requiriendo que él tenga éxito en un prueba @Check[flat|dc:11|name:Atacar a una criatura incorporal dentro de un objeto] cuando él lo apunta. Puede pasar una acción, que tiene el rasgo concentrar, para enfocarse en una criatura dentro de un objeto sólido. Si lo hace, el siguiente Golpe cuerpo a cuerpo que haga este turno requiere que tenga éxito en solo un prueba @Check[flat|dc:6|name:Ataque concentrado contra una criatura incorporal] para afectar a la criatura.</p>"
-        },
         "strike-melee->Soul Strike": {
           "name": "Soul Golpe"
         },
@@ -1183,6 +1184,14 @@
         "action->Grit Teeth": {
           "name": "Dientes de Grit",
           "description": "<p>Zhang Yong falla o falla críticamente un lanzamiento salvador contra un efecto de encantamiento o miedo Efecto Zhang Yong tiene éxito en el lanzamiento salvador y recibe @Damage[2d6[mental]] de daño. Si fallaba de forma crítica en el lanzamiento salvador que lo desencadenó, también toma @Damage[2d6[persistent,mental]] y no puede usar esta habilidad de nuevo mientras recibe daño mental persistente.</p>"
+        },
+        "action->Disrupting Strikes": {
+          "name": "Huelgas disruptivas",
+          "description": "<p>Zhang Yong invoca la energía vital desde dentro para ayudarle a destruir a los muertos vivientes. Sus armas y golpes desarmados ganan los efectos de una runa de propiedad perturbadora mayor hasta el comienzo de su próximo turno.</p>\n<hr /> <p>Un arma de mayor perturbación pulsa con energía de vitalidad, infligiendo un daño de vitalidad adicional de 2d6 a los no muertos. En un golpe crítico, en lugar de ser debilitado 1, la criatura no muerta debe intentar un salvación @Check[fortitude|dc:31 |name:Disruptiva superior] con los siguientes efectos. Este es un efecto de incapacitación.</p>\n<hr /> <p><strong>Éxito crítico</strong> Es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1} hasta el final de tu siguiente turno.</p>\n<p><strong>Éxito</strong> Es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} hasta el final de tu siguiente turno.</p>\n<p><strong>Fallo</strong> Es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 3} hasta el final de tu siguiente turno.</p>\n<p><strong>Fallo crítico</strong> Está destruido.</p>"
+        },
+        "action->Reach Beyond": {
+          "name": "Llegar más allá",
+          "description": "<p>Zhang Yong ha aprendido a mover su energía espiritual más allá de sí mismo para atacar espíritus donde otros no pueden. Puede hacer Golpes cuerpo a cuerpo contra criaturas incorpóreas que están dentro de objetos sólidos siempre y cuando el objeto esté dentro de su alcance. Una criatura incorpóreo dentro de un objeto sólido está escondida, requiriendo que él tenga éxito en un prueba @Check[flat|dc:11|name:Atacar a una criatura incorporal dentro de un objeto] cuando él lo apunta. Puede pasar una acción, que tiene el rasgo concentrar, para enfocarse en una criatura dentro de un objeto sólido. Si lo hace, el siguiente Golpe cuerpo a cuerpo que haga este turno requiere que tenga éxito en solo un prueba @Check[flat|dc:6|name:Ataque concentrado contra una criatura incorporal] para afectar a la criatura.</p>"
         },
         "action->Soul Dance Stance": {
           "name": "Pose de baile del alma",
@@ -1194,7 +1203,52 @@
       }
     }
   },
-  "label": "Bestiario del blog",
+  "mapping": {
+    "acDetails": "system.attributes.ac.details",
+    "blurb": "system.details.blurb",
+    "hpDetails": "system.attributes.hp.details",
+    "items": {
+      "converter": "translateActorItems",
+      "path": "items"
+    },
+    "languages": "system.details.languages.details",
+    "name": {
+      "converter": "translateDualLanguage",
+      "path": "name"
+    },
+    "portrait": {
+      "converter": "updateActorImage",
+      "path": "img"
+    },
+    "privateNotes": "system.details.privateNotes",
+    "publicNotes": {
+      "converter": "translateActorDescription",
+      "path": "system.details.publicNotes"
+    },
+    "saveDetails": "system.attributes.allSaves.value",
+    "senses": "system.perception.details",
+    "skillSpecialCrafting": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.crafting.special"
+    },
+    "skillSpecialDeception": {
+      "converter": "translateSkillSpecial",
+      "path": "system.skills.deception.special"
+    },
+    "source": {
+      "converter": "translateSource",
+      "path": "system.details.publication.title"
+    },
+    "speed": "system.attributes.speed.details",
+    "tokenImage": {
+      "converter": "updateTokenImage",
+      "path": "prototypeToken.texture.src"
+    },
+    "tokenName": {
+      "converter": "translateTokenName",
+      "path": "prototypeToken.name"
+    }
+  },
   "folders": {
     "Foolish Housekeeping and Other Articles": "Limpieza de casa y otros artículos"
   }
