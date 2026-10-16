@@ -646,10 +646,6 @@
         "ammo->Storm Arrow": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.RpvH9EDquO0jS3Jz]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>The head of this arrow is made from gleaming copper.</p>\n<p>When an activated <em>storm arrow</em> hits a target, it is buffeted by raging winds and struck by a bolt of lightning that deals @Damage[3d12[electricity]] damage and the target must attempt a @Check[reflex|dc:25] saving throw.</p>\n<p>If this arrow is shot from a weapon with a <em>shock</em> property rune, the save DC increases to 27, though the attack doesn't benefit from the <em>shock</em> property rune itself.</p>\n<hr />\n<p><strong>Critical Success</strong> The foe is unaffected.</p>\n<p><strong>Success</strong> The foe takes half damage and isn't affected by the wind.</p>\n<p><strong>Failure</strong> The foe takes full damage and is buffeted by winds for 1 round, taking a -2 circumstance penalty to ranged attack rolls and a –10-foot circumstance penalty to its fly Speed.</p>\n<p><strong>Critical Failure</strong> As failure, but the foe takes double damage.</p>"
         },
-        "ammo->Arrows": {
-          "name": "Arrows",
-          "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
-        },
         "strike-ranged->Club": {
           "name": "Clavas"
         },
@@ -690,10 +686,6 @@
       "items": {
         "ammo->Storm Arrow": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.RpvH9EDquO0jS3Jz]\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>The head of this arrow is made from gleaming copper.</p>\n<p>When an activated <em>storm arrow</em> hits a target, it is buffeted by raging winds and struck by a bolt of lightning that deals @Damage[3d12[electricity]] damage and the target must attempt a @Check[reflex|dc:25] saving throw.</p>\n<p>If this arrow is shot from a weapon with a <em>shock</em> property rune, the save DC increases to 27, though the attack doesn't benefit from the <em>shock</em> property rune itself.</p>\n<hr />\n<p><strong>Critical Success</strong> The foe is unaffected.</p>\n<p><strong>Success</strong> The foe takes half damage and isn't affected by the wind.</p>\n<p><strong>Failure</strong> The foe takes full damage and is buffeted by winds for 1 round, taking a -2 circumstance penalty to ranged attack rolls and a –10-foot circumstance penalty to its fly Speed.</p>\n<p><strong>Critical Failure</strong> As failure, but the foe takes double damage.</p>"
-        },
-        "ammo->Arrows": {
-          "name": "Arrows",
-          "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
         },
         "strike-ranged->Club": {
           "name": "Clavas"
@@ -1105,10 +1097,6 @@
         "armor->+2 Resilient Hellknight Plate": {
           "name": "+2 Resilient Hellknight Plate",
           "description": "<p>Few armors in the Inner Sea region are as memorable as the iconic Hellknight plate. While each order has its own flourishes, Hellknight plate is instantly recognizable to any who know of the Hellknights. Hellknights go to extreme measures to punish non-Hellknights who get their hands on Hellknight plate, and the reward is not usually worth the risk, since for non-Hellknights, the armor is functionally similar to @UUID[Compendium.pf2e.equipment-srd.Item.Gq1cZWSKOtJhKd2p]{Full Plate}.</p>"
-        },
-        "ammo->Bolts": {
-          "name": "Bolts",
-          "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
         },
         "strike-melee->Scourge": {
           "name": "Azotar",
@@ -2091,6 +2079,7 @@
       "name": "Tanque del globo ocular",
       "description": "<p>Una tina de vidrio grueso se levanta 10 pies de altura y está llena de limo verde y globos oculares del tamaño de un puño.</p>",
       "disable": "<p>@Check[thievery|dc:38|name:Acidificar el limo|traits:action:disable-a-device] (maestro) o @Check[crafting|dc:34|name:Acidificar el limo] (experto) para acidificar el limo dentro del tanque, destruyendo los globos oculares.</p>",
+      "reset": "<p>La trampa se puede restablecer añadiendo 100 nuevos globos oculares al tanque y permitiéndoles crecer en el slime durante 1 semana.</p>",
       "routine": "<p>(3 acciones) Cada asaltos, el tanque utiliza sus tres acciones para disparar rayos de ojo aleatorios a cualquier criatura viva (excepto Ixusoth) en el rango.</p>",
       "stealth": "<p>(maestro)</p>",
       "items": {
@@ -2102,8 +2091,9 @@
           "name": "Ray de la desesperación",
           "description": "<p>El objetivo es sometido a un conjuro @UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Crushing Despair} ( @Check[will|dc:33|options:item:magical|traits:concentrate,emotion,manipulate,mental] )</p>"
         },
-        "strike-melee->Feeblemind Ray": {
-          "name": "Feeblemind Ray"
+        "strike-ranged->Feeblemind Ray": {
+          "name": "Ray de Feeblemind",
+          "description": "<p>El objetivo es sometido a un conjuro @UUID[Compendium.pf2e.spells-srd.Item.5BbU1V6wGSGbrmRD]{Feeblemind} ( @Check[will|dc:36|options:item:magical|traits:concentrate,curse,incapacitation,manipulate,mental] )</p>"
         },
         "strike-ranged->Spirit Blast Ray": {
           "name": "Rayo de Explosión Espiritual",
@@ -2112,13 +2102,8 @@
         "action->Spill Eyeballs": {
           "name": "Juega a Eyeballs",
           "description": "<p><strong>Trigger</strong> The tank reaches its Broken Threshold</p>\n<hr />\n<p><strong>Effect</strong> The glass shatters, spilling eyeballs onto the floor in a @Template[emanation|distance:15]{15-foot radius} and casting <em>grease</em> (DC 33) on the affected area. The eyeball tank is permanently destroyed and can't be reset.<strong>Reset</strong> The trap can be reset by adding 100 new eyeballs to the tank and allowing them to grow in the slime for 1 week.</p>"
-        },
-        "strike-ranged->Feeblemind Ray": {
-          "name": "Ray de Feeblemind",
-          "description": "<p>El objetivo es sometido a un conjuro @UUID[Compendium.pf2e.spells-srd.Item.5BbU1V6wGSGbrmRD]{Feeblemind} ( @Check[will|dc:36|options:item:magical|traits:concentrate,curse,incapacitation,manipulate,mental] )</p>"
         }
-      },
-      "reset": "<p>La trampa se puede restablecer añadiendo 100 nuevos globos oculares al tanque y permitiéndoles crecer en el slime durante 1 semana.</p>"
+      }
     },
     "False Door Trap": {
       "name": "Trampa de puerta falsa",
@@ -2444,10 +2429,6 @@
         },
         "equipment->Garrote Bolts": {
           "name": "Garrote Bolts"
-        },
-        "ammo->Bolts": {
-          "name": "Bolts",
-          "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
         },
         "strike-melee->Dagger": {
           "name": "Daga"
@@ -2855,10 +2836,6 @@
         },
         "equipment->Tinted Goggles": {
           "name": "Gafas de sol tintadas"
-        },
-        "ammo->Bolts": {
-          "name": "Bolts",
-          "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
         },
         "strike-melee->Longsword": {
           "name": "Espada larga"
@@ -3571,10 +3548,12 @@
           "description": "<p> Esta pieza de madera o plata está adornada con una imagen que representa un dios. Algunos lanzadores de conjuros divinos, como los clérigos, pueden utilizar un símbolo religioso de su dios como foco divino para utilizar ciertas habilidades y lanzar algunos conjuros. Se debe sostener un símbolo religioso en una mano para usarlo. </p>"
         },
         "strike-melee->Dagger": {
-          "name": "Daga"
+          "name": "Daga",
+          "description": "<p>Plus @UUID[Compendium.pf2e.spells-srd.Item.3x6eUCm17n6ROzUa]{Crisis of Faith}</p>"
         },
         "strike-ranged->Dagger": {
-          "name": "Daga"
+          "name": "Daga",
+          "description": "<p>Plus @UUID[Compendium.pf2e.spells-srd.Item.3x6eUCm17n6ROzUa]{Crisis of Faith}</p>"
         },
         "action->Call Toxins": {
           "name": "Llama a Toxinas",
@@ -3626,10 +3605,6 @@
         },
         "weapon->+2 Striking Staff": {
           "name": "+2 Striking Staff"
-        },
-        "equipment->Bracers of Armor II": {
-          "name": "Bracers of Armor II",
-          "description": "<p>These stiff leather armguards grant you a +2 item bonus to AC and saving throws, and a maximum Dexterity modifier of +5. You can affix talismans to <em>bracers of armor</em> as though they were light armor.</p>"
         },
         "equipment->Disguise Kit (Elite)": {
           "description": "<p>This small wooden box contains cosmetics, false facial hair, spirit gum, and a few simple wigs. You usually need a disguise kit to set up a disguise in order to Impersonate someone using the Deception skill. An elite disguise kit adds a +1 item bonus to relevant checks. If you've crafted a large number of disguises, you can replenish your cosmetics supply with replacement cosmetics suitable for the type of your disguise kit.</p>"
@@ -4524,11 +4499,11 @@
         "spell->Dispel Magic (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]\nDispel Magic (At Will)"
         },
-        "spell->Mask of Terror (Constant) (See Tainted Backlash)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.O6VQC1Bs4aSYDa6R]\nMask of Terror (Constant) (See Tainted Backlash)"
-        },
         "spell->Mind Blank": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.C2w3YfBKjIRS07DP]\nMind Blank"
+        },
+        "spell->Mask of Terror (Constant) (See Tainted Backlash)": {
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.O6VQC1Bs4aSYDa6R]\nMask of Terror (Constant) (See Tainted Backlash)"
         },
         "spell->Fear (At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]\nFear (At Will)"
@@ -5005,10 +4980,6 @@
         "equipment->Religious Symbol (norgorber)": {
           "name": "Religious Symbol (norgorber)",
           "description": "<p> Esta pieza de madera o plata está adornada con una imagen que representa un dios. Algunos lanzadores de conjuros divinos, como los clérigos, pueden utilizar un símbolo religioso de su dios como foco divino para utilizar ciertas habilidades y lanzar algunos conjuros. Se debe sostener un símbolo religioso en una mano para usarlo. </p>"
-        },
-        "ammo->Arrows": {
-          "name": "Arrows",
-          "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
         },
         "ammo->Arrows With Shadow Essence": {
           "name": "Flechas con esencia de sombra",
@@ -5607,12 +5578,7 @@
           "description": "<p>El daño mental ignora la dureza de un fragmento de asedio.</p>\n<p>Además, demostrar que el conflicto generativo del fragmento de asedio ha terminado con la actividad @UUID[Compendium.pf2e.adventure-specific-actions.Item.QW2gYIKce3W31xXf]{demostrar la paz} devuelve a la criatura a piedra ordinaria.</p>"
         },
         "action->Hardness 5": {
-          "name": "Dureza de la piedra 5",
-          "rules": {
-            "0": {
-              "label": "Broken"
-            }
-          }
+          "name": "Dureza de la piedra 5"
         },
         "action->Surreptitious Siege": {
           "name": "Sitio de Surreptitious",
@@ -5787,10 +5753,6 @@
         "equipment->Badge": {
           "name": "Insignia"
         },
-        "ammo->Arrows": {
-          "name": "Arrows",
-          "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
-        },
         "strike-melee->Temple Sword": {
           "name": "Espada del templo"
         },
@@ -5880,10 +5842,6 @@
         },
         "equipment->Tinted Goggles": {
           "name": "Gafas de sol tintadas"
-        },
-        "ammo->Bolts": {
-          "name": "Bolts",
-          "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
         },
         "strike-melee->Longsword": {
           "name": "Espada larga"
@@ -6779,8 +6737,9 @@
         "weapon->Modified Spiked Chain": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.zi9ovfoRp2fMhfpO]\nModified Spiked Chain"
         },
-        "equipment->Key to the Skinsaw Sanctum Vault": {
-          "name": "Key to the Skinsaw Sanctum Vault"
+        "equipment->Key": {
+          "name": "Clave",
+          "gmNote": "<p>Llave de Wrent para el santuario de Skinsaw.</p>"
         },
         "strike-melee->Cleaver": {
           "name": "Cuchilla"
@@ -6807,10 +6766,6 @@
         "action->Hook and Flay": {
           "name": "Gancho y flecha",
           "description": "<p><strong>Requisitos</strong> El Skinner tiene una criatura @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} con su cadena de espinas</p>\n<hr /> <p><strong>Efecto</strong> El Despellejador arrastra a la criatura al cuadrado adyacente abierto más cercano y hace un Golpe de cuchillo contra la criatura.</p>"
-        },
-        "equipment->Key": {
-          "name": "Clave",
-          "gmNote": "<p>Llave de Wrent para el santuario de Skinsaw.</p>"
         }
       }
     },
@@ -6913,10 +6868,6 @@
         },
         "armor->Breastplate": {
           "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
-        },
-        "ammo->Sling Bullets": {
-          "name": "Sling Bullets",
-          "description": "<p>These are small metal balls, typically either iron or lead, designed to be used as ammunition in slings.</p>"
         },
         "strike-melee->Morningstar": {
           "name": "Maza de armas"
