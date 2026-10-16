@@ -28,8 +28,8 @@
         "strike-melee->Longsword": {
           "name": "Espada larga"
         },
-        "strike-melee->Crossbow": {
-          "name": "Crossbow"
+        "strike-ranged->Crossbow": {
+          "name": "Ballesta"
         },
         "action->+1 Status to All Saves vs. Disease": {
           "name": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+1 a todas las salvaciones contra enfermedades",
@@ -42,9 +42,6 @@
         "action->Glimpse of Redemption": {
           "name": "Atisbo De Redención",
           "description": "<p><strong>Disparador</strong> Un enemigo hiere a uno de los aliados del vástago celestial. Tanto el enemigo como el aliado deben estar a 15 pies o menos del vástago celestial.</p>\n<hr />\n<p><strong>Efecto</strong> El vástago celestial hace que su enemigo dude bajo el peso de sus pecados mientras visiones de una posible redención se representan en su mente. El enemigo elige una de dos opciones:</p>\n<ul>\n<li>El aliado no sufre ningún daño del efecto desencadenante.</li>\n<li>El aliado obtiene resistencia 7 a todo el daño del efecto desencadenante. Después de que se resuelva el efecto dañino, el enemigo queda @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} hasta el final de su siguiente turno.</li>\n</ul>\n"
-        },
-        "strike-ranged->Crossbow": {
-          "name": "Ballesta"
         }
       }
     },
@@ -295,46 +292,6 @@
         "action->Whip Reposition": {
           "name": "Reposición del látigo",
           "description": "<p>Cuando un balor @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} golpea a una criatura con un látigo, puede mover a la criatura a cualquier espacio al alcance del látigo. El balor puede moverse sin terminar el agarre mientras la criatura permanezca dentro del alcance del látigo, y el balor puede mover la criatura a cualquier otro espacio dentro del alcance del látigo con una acción de Interactuar.</p>"
-        }
-      }
-    },
-    "Baomal": {
-      "name": "Baomal",
-      "acDetails": "all-around vision",
-      "publicNotes": "<p>Few sea monsters are as dreaded and feared as the two-headed baomal. These massive predatory beasts typically dwell in the deepest waters and compete with krakens and other monsters for food. They feed on whales and other large sea creatures, sometimes following them to the water's surface. Near the surface, baomals that encounter ships quickly learn that they contain a variety of tasty morsels. The creatures use their devastating spikes to rip open the ships' hulls, then leisurely feed on the helpless sailors.</p>",
-      "items": {
-        "strike-melee->Jaws": {
-          "name": "Jaws"
-        },
-        "strike-melee->Tsunami Jet": {
-          "name": "Tsunami Jet"
-        },
-        "action->Double Opportunity": {
-          "name": "Double Opportunity",
-          "description": "<p>A baomal gains an extra reaction each round that it can use only to make an Attack of Opportunity. It must use a different head for each one it attempts, and it can't make more than one Attack of Opportunity for the same triggering action.</p>"
-        },
-        "action->Psychic Static Aura": {
-          "name": "Psychic Static Aura",
-          "description": "<p>120 feet. All creatures, except aberrations, that begin their turn in the area take @Damage[5d6[mental]] damage.</p>"
-        },
-        "action->Two Heads": {
-          "name": "Two Heads",
-          "description": "<p>Any ability that would sever a baomal's head (such as a critical hit with a <em>@UUID[Compendium.pf2e.equipment-srd.Item.6xaxxKfvXED6LfIY]{Vorpal}</em> weapon) severs one head at random. Losing one head doesn't kill a baomal, but it does prevent the baomal from making Strikes with the lost head and from using Double Opportunity or Two-Headed Strike.</p>"
-        },
-        "action->Breath of the Sea": {
-          "name": "Breath of the Sea",
-          "description": "<p>A baomal can inhale tremendous amounts of water, drawing everything in the sea nearby closer. All creatures and objects in the water within @Template[emanation|distance:60]{60 feet} of the baomal (including ships) are pulled toward it. Creatures must succeed at a @Check[athletics|dc:42] check or be pulled up to 20 feet toward the baomal (40 feet on a critical failure). For ships, use the captain's Sailing Lore in place of Athletics. Unattended objects are automatically pulled.</p>"
-        },
-        "action->Shell Rake": {
-          "name": "Shell Rake",
-          "description": "<p>The baomal Swims or Strides alongside a creature or the hull of a vessel, dealing damage with the strong spikes on its shell. Each creature or ship the baomal is adjacent to at any point during its movement takes @Damage[(6d6+10)[slashing],(6d6+10)[piercing]]{6d6+10 slashing and piercing damage} (@Check[reflex|dc:42|basic] save). Against vessels, Shell Rake ignores the first 5 Hardness and creates an explosion of splinters that deals @Damage[(3d6+5)[untyped]|options:area-damage] damage to every creature within @Template[burst|distance:10]{10 feet} of the deck's edge (@Check[reflex|dc:42|basic|options:area-effect] save).</p>"
-        },
-        "action->Two-Headed Strike": {
-          "name": "Two-Headed Strike",
-          "description": "<p>The baomal makes a Strike with each set of jaws, each against a different creature. These Strikes count as one attack for the baomal's multiple attack penalty, and the penalty doesn't increase until after both attacks.</p>"
-        },
-        "action->Push 40 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]\nPush 40 feet"
         }
       }
     },
@@ -924,7 +881,6 @@
       "name": "Ancient Blue Dragon",
       "publicNotes": "<p>Los dragones azules son los cosmopolitas elegantes y equilibrados de los dragones cromáticos. Su marca de maldad es organizada, manipuladora y real. Los dragones azules a menudo acechan cerca o dentro de las ciudades y se proponen doblegar a la población a su voluntad y reunir hordas de sirvientes. Estos dragones aman tejer telarañas de conspiración. Los lacayos de un dragón azul por lo general ni siquiera se dan cuenta de que sirven a un dragón, sino que piensan que el dinero de protección, los aranceles o los impuestos que están acumulando son tesoros para un cruel pero legítimo amo. De alguna manera, los dragones azules incluso ven a sus sirvientes como un tesoro vivo y los valoran como tesoro. Estos dragones han sido conocidos por usar estas tácticas incluso con sus propios primos cromáticos.</p>\n<p>No todos los dragones azules trabajan clandestinamente. Algunos señorean sobre las tribus del desierto y los pueblos de las colinas como dioses vengadores, exigiendo tributo y adoración. No importa cómo los dragones azules manejen a sus subordinados, su comportamiento es real y sus guaridas palaciegas; son universalmente intolerantes a la insubordinación, la incompetencia y el malversación, y castigan a los perpetradores con una eficiencia asesina.</p>\n<p>Los dragones azules también son conocidos por su uso y dominio de la magia de ilusión. Hacen uso de ilusiones para aumentar sus manipulaciones y confundir a sus enemigos en batalla. Los dragones azules también tienen cierto control sobre el agua, pero usan esta habilidad para destruir el agua, algo bastante peligroso para aquellos que los encuentran en sus guaridas del desierto.</p>\n<p>La guarida ideal para un dragón azul contiene múltiples pasajes, habitaciones y cámaras secretas. Como criaturas sociales, los dragones azules prefieren recibir invitados en la comodidad, pero sus viviendas no deben ser tan públicas que cualquiera pueda venir a llamar. Una fuerza de guardias mantiene a los intrusos fuera, y las ilusiones inteligentes ocultan el edificio de las miradas indiscretas. En lugar de un montón de monedas o gemas, el verdadero tesoro de un dragón azul es el rico mobiliario de su ciudadela: arte costoso, muebles ornamentados y maravillas arquitectónicas.</p>\n<hr /> <p>Aunque hay muchos tipos de dragones, desde los poderosos dragones planares hasta los extraños dragones esotéricos, pocas variedades de dragones son tan conocidas y temida con razón como los dragones cromáticos. Diferenciados por el tono de sus escamas, cada color de dragón desata su propio sabor de crueldad asesina, ya sea por garra, diente o aliento, y a diferencia de la mayoría de las criaturas, los dragones solo se vuelven más poderosos a medida que envejecen. Su ansia por el tesoro, la comida, el derramamiento de sangre y el control son legendarios. Físicamente poderosos con egos a la par, estos dragones a menudo son moralmente depravados y actúan como mentes criminales, tiranos viciosos o asaltantes vorazes.</p>",
       "saveDetails": "+1 por estatus a todas las salvaciones contra magia",
-      "tokenName": "Ancient Blue Dragon",
       "items": {
         "spellcastingEntry->Arcane Innate Spells": {
           "name": "Hechizos arcanos innatos"
@@ -2668,8 +2624,8 @@
         "strike-melee->Fist": {
           "name": "Puño"
         },
-        "strike-melee->Crashing Wind": {
-          "name": "Crashing Wind"
+        "strike-ranged->Crashing Wind": {
+          "name": "Viento que se estrella"
         },
         "action->Whirlwind": {
           "name": "Torbellino",
@@ -2678,9 +2634,6 @@
         "action->Hurricane Blast": {
           "name": "Explosión de huracán ",
           "description": "<p><strong>Frecuencia</strong> Una vez por asaltos.</p>\n<hr /> <p><strong>Efecto</strong> El djinni empuja a todas las criaturas en su torbellino hacia atrás 20 pies, o obliga a todas las criaturas en el aura a moverse 20 pies en el sentido de las agujas del reloj o en sentido contrario. Cada criatura debe intentar un @Check[fortitude|dc:21] de salvación. En caso de éxito, evita ser movido, y en caso de un fallo crítico cae @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} además de ser movido. Las criaturas con el rasgo aire son inmunes.</p>"
-        },
-        "strike-ranged->Crashing Wind": {
-          "name": "Viento que se estrella"
         }
       }
     },
@@ -2773,11 +2726,11 @@
         "strike-melee->Fangs": {
           "name": "Colmillos"
         },
-        "strike-melee->Composite Longbow": {
-          "name": "Composite Longbow"
+        "strike-ranged->Composite Longbow": {
+          "name": "Arco largo compuesto"
         },
-        "strike-melee->Web": {
-          "name": "Web"
+        "strike-ranged->Web": {
+          "name": "Red"
         },
         "action->Drider Venom": {
           "name": "Veneno de draña",
@@ -2786,12 +2739,6 @@
         "action->Web Trap": {
           "name": "Trampa de telaraña",
           "description": "<p>Una criatura impactada por el ataque de telaraña de una draña queda @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizada} y pegada a la superficie más cercana (Huir CD 21).</p>"
-        },
-        "strike-ranged->Composite Longbow": {
-          "name": "Arco largo compuesto"
-        },
-        "strike-ranged->Web": {
-          "name": "Red"
         }
       }
     },
@@ -2822,8 +2769,8 @@
         "strike-melee->Main-Gauche": {
           "name": "Daga de parada"
         },
-        "strike-melee->Hand Crossbow": {
-          "name": "Hand Crossbow"
+        "strike-ranged->Hand Crossbow": {
+          "name": "Ballesta de mano"
         },
         "action->+2 Status to All Saves vs. Mental": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Mental"
@@ -2835,9 +2782,6 @@
         "action->Skewer": {
           "name": "Brocheta",
           "description": "<p>The drow fighter Strikes with its rapier, and gains a +1 circumstance bonus to the attack roll. A creature damaged by the attack takes @Damage[1d6[bleed]].</p>"
-        },
-        "strike-ranged->Hand Crossbow": {
-          "name": "Ballesta de mano"
         }
       }
     },
@@ -2881,14 +2825,11 @@
         "strike-melee->Rapier": {
           "name": "Espada ropera"
         },
-        "strike-melee->Hand Crossbow": {
-          "name": "Hand Crossbow"
+        "strike-ranged->Hand Crossbow": {
+          "name": "Ballesta de mano"
         },
         "action->+2 Status to All Saves vs. Mental": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Mental"
-        },
-        "strike-ranged->Hand Crossbow": {
-          "name": "Ballesta de mano"
         }
       }
     },
@@ -2916,8 +2857,8 @@
         "strike-melee->Shortsword": {
           "name": "Espada corta"
         },
-        "strike-melee->Hand Crossbow": {
-          "name": "Hand Crossbow"
+        "strike-ranged->Hand Crossbow": {
+          "name": "Ballesta de mano"
         },
         "action->+2 Status to All Saves vs. Mental": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc]\n+2 Status to All Saves vs. Mental"
@@ -2932,9 +2873,6 @@
         },
         "action->Sneak Attack": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.AWvNPE4U0kEJSL1T]\n<p>The drow rogue deals 1d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-        },
-        "strike-ranged->Hand Crossbow": {
-          "name": "Ballesta de mano"
         }
       }
     },
@@ -3009,103 +2947,6 @@
         "action->Combat Grab": {
           "name": "Agarrón de combate",
           "description": "<p><strong>Requisitos</strong> El efreeti tiene una mano libre.</p>\n<hr /> <p><strong>Efecto</strong> El efreeti hace un Golpe cuerpo a cuerpo mientras mantiene una mano libre. Si el Golpe golpea, el objetivo está @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} en la mano libre del efreeti.</p>"
-        }
-      }
-    },
-    "Erinys": {
-      "name": "Erinia",
-      "languages": "telepatía 100 pies (30 m)",
-      "publicNotes": "<p>Las erinias cobran venganza y justicia sangrienta por los crímenes de otras criaturas, torturando y castigando a sus víctimas de forma irónica antes de concederles el reposo de la muerte. Aunque tienen apariencia de ángeles caídos y las primeras erinias tenían ese origen, ahora se crean de muchas formas distintas, algunas ascendidas desde diablos menores y otras moldeadas a partir de lémures nacidos de almas de fiscales y verdugos. El origen de las erinias está ligado a Eiseth, quien también es un ángel caído y una de las semidiosas más poderosas del Infierno. Las primeras erinias eran consideradas hijas metafóricas de Eiseth, pero las que han sido formadas después de esa época no están ya limitadas al sexo femenino.</p>\n<hr />\n<p>Maestros de la corrupción y arquitectos de la conquista, los diablos ansían dos cosas: tentar a los mortales para que se entreguen a actos profanos y esparcir la tiranía por todos los mundos. Las tentaciones que ofrecen a los mortales van desde grandes poderes otorgados al firmar un contrato infernal hasta favores viles tras un susurrar un juramento a un patrón diabólico, o intercambios aún más sutiles. Quienes sucumben a estas tentaciones se ven relegados a una eternidad de tormentos en los fosos del Infierno, donde la única oportunidad de escapar yace en la posibilidad de ser ascendido a diablo y unirse a las filas infernales. Cada diablo tiene un rol específico que cumplir en la implacable maquinaria burocrática que es el Infierno, desde soldados y estudiosos a inquisidores, abogados, jueces y verdugos. Los humildes lémures y diablillos realizan trabajos serviles para diablos más poderosos y especializados, como los diablos de los contratos y las erinias, mientras que los diablos de la sima mayores dirigen ejércitos infernales enteros.</p>",
-      "saveDetails": "+1 por estatus a las salvaciones contra la magia",
-      "items": {
-        "spellcastingEntry->Divine Innate Spells": {
-          "name": "Conjuros divinos innatos"
-        },
-        "spell->True Seeing (Constant)": {
-          "name": "Visión verdadera (constante)"
-        },
-        "spell->Dimension Door": {
-          "name": "Puerta dimensional"
-        },
-        "spell->Dimension Door (At Will)": {
-          "name": "Puerta dimensional (a voluntad)"
-        },
-        "spell->Fear (At Will)": {
-          "name": "Miedo (a voluntad)"
-        },
-        "spell->Illusory Disguise (At Will)": {
-          "name": "Disfraz ilusorio (a voluntad)"
-        },
-        "spell->Infernal Pact": {
-          "name": "Pacto infernal"
-        },
-        "weapon->Longsword": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]\n<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
-        },
-        "armor->Breastplate": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.r0ifJfoz8aqf0mwk]\n<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
-        },
-        "equipment->100 feet of Erinys-Hair Rope": {
-          "name": "100 pies (30 m) de cuerda hecha con cabello de erinia",
-          "description": "<p>100 pies (30 m) de cuerda<.</p>"
-        },
-        "strike-melee->Flaming Longsword": {
-          "name": "Espada larga flamígera"
-        },
-        "strike-melee->Flaming Composite Longbow": {
-          "name": "Flaming Composite Longbow"
-        },
-        "strike-melee->Rope": {
-          "name": "Rope"
-        },
-        "action->Telepathy 100 feet": {
-          "name": "Telepatía 100 pies (30 m)"
-        },
-        "action->Flames of Fury": {
-          "name": "Llamas de la furia",
-          "description": "<p>Cualquier arma gana los efectos de una runa <em>@UUID[Compendium.pf2e.equipment-srd.Item.XszNvxnymWYRaoTp]{Flamígera}</em> mientras la empuña una erinia.</p>"
-        },
-        "action->Furious Fusillade": {
-          "name": "Bombardeo furioso",
-          "description": "<p>La erinia flota allí donde se encuentra si está volando y dispara una flecha contra cualquier número de criaturas en un @Template[cone|distance:30]{cono de 30 pies (9 m)}. Cada ataque se tira por separado. Esto cuenta como un solo ataque a efectos del penalizador por ataques múltiples de la erinia.</p>"
-        },
-        "action->Rope Snare": {
-          "name": "Atrapar con cuerda",
-          "description": "<p>Una erinia lleva siempre una cuerda trenzada a partir de su propio cabello (usa las estadísticas de una @UUID[Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS]{cuerda} normal) que se anima cuando la empuña.</p>\n<p>Cuando una criatura es impactada por la cuerda de la erinia, un segmento de la cuerda se desprende y se enrosca alrededor de la criatura, imponiéndole un penalizador de -10 pies (-3 m) por circunstancia de a su velocidad. La pieza que se desprende tiene 10 pies (3 m) de longitud para una criatura Mediana o más pequeña y dobla su longitud por cada tamaño por encima de Mediano.</p>\n<p>Cuando una criatura @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Huye} del efecto (CD 26), el segmento separado de cuerda se marchita y se descompone en un lodo negro inservible.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.o0zqsH5kYopRanav]{Efecto: Atrapar con cuerda}</p>"
-        },
-        "strike-ranged->Rope": {
-          "name": "Soga"
-        },
-        "strike-ranged->Flaming Composite Longbow": {
-          "name": "Arco largo compuesto flameante"
-        }
-      }
-    },
-    "Ether Spider": {
-      "name": "Ether Spider",
-      "publicNotes": "<p>Ether spiders are deadly predators from the Ethereal Plane resembling giant arachnids. Rather than building webs of silk, ether spiders shape the raw essence of the Ethereal Plane, weaving it in complex patterns that drift through the misty void. From these ethereal nests, whole families of ether spiders can scout the adjacent Material Plane, watching for easy prey in dark or remote corners of the land of mortals. Once an ether spider has spotted a meal, it anchors its nest and waits on the Ethereal Plane for its prey to draw near. As soon as its victim is within reach, the ether spider shifts to the Material Plane, clamps its fangs onto its prey, then shifts back to the Ethereal Plane to wait as its venom works through the creature's system. Ether spiders move between the planes with ease, making them extremely dangerous to those who cannot see or attack ethereal enemies.</p>\n<p>Ether spiders are not mindless or evil-they are simply hungry. If a prospective meal can sate an ether spider's incredible appetite through other means, they might be able to bargain for their life. Ether spiders are especially interested in items, information, or allies who can help them against their enemies.</p>\n<p>As many as half a dozen ether spiders might dwell in the same ether web. Although ether spiders enjoy one another's company, they don't form the same bonds as most humanoids, and they are more likely to feast on the corpse of a fallen sibling than save one from certain doom.</p>\n<p>Ether spiders dwell in vast nests adrift in the Ghost World, where they are more likely to let down their guard. Travelers who find a floating ether spider commune should have an easier time of making peaceful contact to trade with or even befriend these strange arachnids. The nests drift on metaphysical currents and are rarely seen in the same vicinity twice. Sometimes a point of interest on the neighboring Material Plane compels them to tether their nest to an area, creating a semipermanent home, and those who learn its location can return to it repeatedly.</p>",
-      "items": {
-        "strike-melee->Fangs": {
-          "name": "Fangs"
-        },
-        "strike-melee->Web": {
-          "name": "Web"
-        },
-        "action->Ether Spider Venom": {
-          "name": "Ether Spider Venom",
-          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[3d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} (1 round)</p>"
-        },
-        "action->Ethereal Step": {
-          "name": "Ethereal Step",
-          "description": "<p>The ether spider shifts to either the Ethereal Plane or the Material Plane. The ether spider can remain on the Ethereal Plane indefinitely without ill effect. While there, it can see clearly onto the Material Plane with a range of 60 feet. On its first round in an encounter, the ether spider can use this ability once as a free action.</p>"
-        },
-        "action->Ethereal Web Trap": {
-          "name": "Ethereal Web Trap",
-          "description": "<p>A creature hit by the ether spider's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface ([[/act escape dc=22]]).</p>"
-        },
-        "action->Web Burst": {
-          "name": "Web Burst",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The ether spider flings a gout of stored webs in a @Template[cone|distance:30]. These webs can pass between the Material Plane and the Ethereal Plane. Each creature in the area is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, as ethereal web trap, unless it succeeds at a @Check[reflex|dc:22] save.</p>"
         }
       }
     },
@@ -3312,8 +3153,8 @@
         "strike-melee->Holy Greatsword": {
           "name": "Gran Espada sagrada"
         },
-        "strike-melee->Light Ray": {
-          "name": "Light Ray"
+        "strike-ranged->Light Ray": {
+          "name": "Rayos de luz"
         },
         "action->Free Blade": {
           "name": "Hoja libre",
@@ -3337,9 +3178,6 @@
         },
         "lore->Warfare Lore": {
           "name": "Historia de la guerra"
-        },
-        "strike-ranged->Light Ray": {
-          "name": "Rayos de luz"
         }
       }
     },
@@ -3436,8 +3274,8 @@
         "strike-melee->Jaws": {
           "name": "Mandíbulas"
         },
-        "strike-melee->Spittle": {
-          "name": "Spittle"
+        "strike-ranged->Spittle": {
+          "name": "Spitle"
         },
         "action->Gibbering": {
           "name": "Barbotar",
@@ -3457,9 +3295,6 @@
         "action->Ground Manipulation": {
           "name": "Manipular el suelo",
           "description": "<p>El bocón barbotante provoca que la tierra y la piedra bajo su cuerpo se vuelvan blandos y cenagosos y permanezcan así durante 1 minuto después de que el bocón cambie de sitio. Un bocón barbotante puede moverse por dichas áreas con facilidad, pero las demás criaturas las consideran terreno difícil.</p>"
-        },
-        "strike-ranged->Spittle": {
-          "name": "Spitle"
         }
       }
     },
@@ -4045,7 +3880,6 @@
       "publicNotes": "<p>Los dragones verdes son los más contemplativos de los dragones cromáticos, así como los más accesibles. La clave para entender a los dragones verdes es entender su obsesión por el conocimiento y la autodisciplina. Cualquier enfoque cuidadoso que aproveche las fijaciones de un dragón verde puede terminar en un resultado diplomático, pero cualquier paso en falso o descuido puede provocar un ataque salvaje. Como la mayoría de los dragones cromáticos, los dragones verdes no sufren tonterías, y el umbral para lo que consideran tonterías es muy bajo.</p>\n<p>Aunque más abiertos que sus primos cromáticos para tratar con otras criaturas y dragones, los dragones verdes prefieren una vida aislada y tranquila. Tienden a acampar en las partes más prohibidas de un bosque, rodeados de matorrales enredados, o en el corazón de algún desgarrador barranco. Si el terreno es adecuado, algunos dragones verdes hacen su hogar en cuevas naturales, que expanden para satisfacer sus necesidades.</p>\n<p>El orgullo de los dragones verdes los lleva a cuidar la preservación de sus hogares forestales. Ellos sienten que un bosque verde y exuberante es algo que solo ellos han cultivado. Esto lleva a algunos dragones verdes a seguir el camino del druidismo, aunque la mayoría prefiere estudiar las artes arcanas y la ciencia oculta. La mayoría de ellos se adentran profundamente en un campo de estudio particular, y se corresponden con otros estudiosos en el campo adoptando un nombre de pluma que oculta su verdadera naturaleza. Independientemente de su enfoque elegido, los dragones verdes buscan mejorarse a sí mismos, y su deseo de conocimiento los hace más propensos a tratar diplomáticamente con otras criaturas con el fin de obtener nueva información.</p>\n<p>Sus tesoros están normalmente bien guardados, organizados y llenos de tomos de conocimientos y pergaminos de magia junto con antigüedades que coleccionan por sus propias razones inescrutables. Muchos de estos tesoros provienen de todo el mundo, y muchos aventureros han sobrevivido a un encuentro con un dragón verde acariciandolo y llenándolo de artefactos raros o conocimientos perdidos de culturas antiguas.</p>\n<hr /> <p>Aunque hay muchos tipos de dragones, desde los poderosos dragones planares hasta los extraños dragones esotéricos, pocas variedades de dragones son tan conocidas y temida con razón como los dragones cromáticos. Diferenciados por el tono de sus escamas, cada color de dragón desata su propio sabor de crueldad asesina, ya sea por garra, diente o aliento, y a diferencia de la mayoría de las criaturas, los dragones solo se vuelven más poderosos a medida que envejecen. Su ansia por el tesoro, la comida, el derramamiento de sangre y el control son legendarios. Físicamente poderosos con egos a la par, estos dragones a menudo son moralmente depravados y actúan como mentes criminales, tiranos viciosos o asaltantes vorazes.</p>",
       "saveDetails": "+1 por estatus a todas las salvaciones contra magia",
       "speed": "Paso sin pistas, paso de bosque",
-      "tokenName": "Ancient Green Dragon",
       "items": {
         "spellcastingEntry->Arcane Innate Spells": {
           "name": "Hechizos arcanos innatos"
@@ -4387,15 +4221,12 @@
         "strike-melee->Fist": {
           "name": "Puño"
         },
-        "strike-melee->Dissonant Note": {
-          "name": "Dissonant Note"
+        "strike-ranged->Dissonant Note": {
+          "name": "Nota disonante"
         },
         "action->Fiddle": {
           "name": "Violín",
           "description": "<p>Un grig puede frotar sus patas entre sí para crear una melodía pegadiza que parece tocada por un pequeño violín y que insta a bailar a quienes la oyen y están a @Template[emanation|distance:30]{30 pies (9 m)} o menos, con efectos que dependen de una salvación de @Check[will|dc:18]. Quien tiene éxito en la salvación queda inmune durante 10 minutos, pero de lo contrario el grig puede seguir tocando cada asalto para mantener los efectos sin derecho a más tiradas de salvación.</p>\n<hr />\n<p><strong>Éxito</strong> Sin efecto</p>\n<p><strong>Fallo</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} y penalizador -10 pies (-3 m) por estatus a las Velocidades</p>\n<p><strong>Fallo crítico</strong> Como un fallo y además @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wJsOZsYI2ZUVcGxc]{Efecto: Violín}</p>"
-        },
-        "strike-ranged->Dissonant Note": {
-          "name": "Nota disonante"
         }
       }
     },
@@ -4447,8 +4278,8 @@
         "strike-melee->Fangs": {
           "name": "colmillos"
         },
-        "strike-melee->Spit": {
-          "name": "Spit"
+        "strike-ranged->Spit": {
+          "name": "Escupitajo"
         },
         "action->Guardian Naga Venom": {
           "name": "Guardian Naga Venom",
@@ -4456,37 +4287,6 @@
         },
         "lore->Heaven Lore": {
           "name": " Saber (Cielo)"
-        },
-        "strike-ranged->Spit": {
-          "name": "Escupitajo"
-        }
-      }
-    },
-    "Gug": {
-      "name": "Gug",
-      "publicNotes": "<p>El rasgo más horrendo de un gug es su cabeza cilíndrica que se divide verticalmente para revelar numerosas hileras de dientes afilados y amarillentos y una garganta abierta. Sus ojos a ambos lados de esta cabeza-boca son pequeños pero agudos. Protuberancias óseas protegen sus ojos de los desesperados aspavientos de sus presas, pues prefiere alimentarse de carne cruda y aún viva antes que de hongos y musgo. Atrapa dichas presas con sus fuertes brazos que se dividen a partir del codo en un par de antebrazos, lo cual le proporciona cuatro manos con garras. Estos monstruos brutales están recubiertos de pelaje negro, a menudo apelmazado por sangre y vísceras.</p>\n<p>Aunque los gugs tienen una apariencia bestial, disponen de un intelecto agudo y cruel. Establecen sus guaridas muy por debajo de la tierra, pero a veces salen a cazar a la superficie durante noches oscuras, ya sea en solitario o en grupos pequeños. Como tienen apetitos voraces, la mayoría de gugs consumen al momento a las criaturas que atrapan, pero algunos prefieren llevarse a sus víctimas y retirarse bajo tierra, dejando sólo un hedor residual y extrañas huellas de garras. Los prisioneros son arrastrados hasta rancias madrigueras marcadas con runas desconocidas y sacrificados a los viles dioses de la sangre, las tinieblas y las pesadillas que adoran los gugs. Hay rumores sobre ciudades gugs carentes de luz y fabricadas a partir de bloques de piedra titánicos en las entrañas de la tierra, donde poderosos líderes gugs predican sus viles doctrinas ante muchedumbres aullantes.</p>\n<p>Los gugs tienen una extraña relación con los guls, que parece provenir de su origen compartido en un lejano mundo subterráneo. Los gugs viven atemorizados por los guls, a pesar de superarlos en fuerza y tamaño; sin embargo, este extraño miedo no se aplica a los ghasts, a los que consumen con la misma voracidad que al resto de criaturas. Los gugs suelen medir unos 16 pies (4,8 m) de altura y pesar 2.000 libras (900 kg), aunque tienen un caminar extraño y grácil que no se corresponde con su tamaño inmenso. Su paso ligero y su capacidad de escurrirse por espacios pequeños hace que los gugs se usen como hombres del saco en cuentos sobre extrañas desapariciones o sangrientas masacres.</p>\n<p>Algunos gugs especialmente sanguinarios obtienen poderes atroces como dones de sus ignotos patrones. Estos monstruos se conocen como prodigios, nunca tienen menos de nivel 12 y obtienen varios conjuros ocultistas innatos. Aunque la combinación de conjuros concreta varía de un prodigio a otro, normalmente esos poderes otorgan invisibilidad, el poder de manipular la roca, o el de invocar energías destructivas sobre la carne de los seres vivos.</p>",
-      "skillSpecialAcrobatics": {
-        "0": {
-          "label": "a Escurrirse"
-        }
-      },
-      "items": {
-        "strike-melee->Jaws": {
-          "name": "Mandibulas"
-        },
-        "strike-melee->Claw": {
-          "name": "Garra"
-        },
-        "action->Eerie Flexibility": {
-          "name": "Flexibilidad inquietante",
-          "description": "<p>A pesar de su tamaño, las articulaciones adicionales del gug le permiten caber en espacios estrechos como si fuera una criatura Mediana. Mientras se @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Escurre}, puede moverse a su velocidad total.</p>"
-        },
-        "action->Furious Claws": {
-          "name": "Garras furiosas",
-          "description": "<p>El gug da hasta cuatro Golpes de garra, cada uno contra un objetivo distinto. Estos ataques cuentan para el penalizador por ataques múltiples del gug, pero el penalizador sólo aumenta tras todos los ataques.</p>"
-        },
-        "action->Rend": {
-          "description": "<p>Garra</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
         }
       }
     },
@@ -4506,42 +4306,12 @@
         "strike-melee->Fist": {
           "name": "Puño"
         },
-        "strike-melee->Rock": {
-          "name": "Rock"
+        "strike-ranged->Rock": {
+          "name": "Roca"
         },
         "action->Wide Swing": {
           "name": "Barrido ancho",
           "description": "<p>The hill giant makes a single greatclub Strike and compares the attack roll result to the ACs of up to two foes within its reach.</p>\n<p>This counts as two attacks for the hill giant's multiple attack penalty.</p>"
-        },
-        "strike-ranged->Rock": {
-          "name": "Roca"
-        }
-      }
-    },
-    "Hive Mother": {
-      "name": "Hive Mother",
-      "publicNotes": "<p>Ankhrav hive mothers are fearsome predators that one can easily distinguish from the typical ankhrav not only by their greater size, but the presence of a large pair of razor-sharp, mantis-like arms.</p>\n<hr />\n<p>Ankhravs are immense, burrowing, and insectile predators, considered by inhabitants of the rural areas of the world to be an all-too-common plague.</p>",
-      "items": {
-        "strike-melee->Mandibles": {
-          "name": "Mandibles"
-        },
-        "strike-melee->Acid Spit": {
-          "name": "Acid Spit"
-        },
-        "action->Tremorsense (Imprecise) 90 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense (Imprecise) 90 feet"
-        },
-        "action->Armor-Rending Bite": {
-          "name": "Armor-Rending Bite",
-          "description": "<p>The hive mother makes a mandibles Strike; if the Strike hits, the target's armor takes the damage and the acid damage bypasses the armor's Hardness.</p>"
-        },
-        "action->Frenzy Pheromone": {
-          "name": "Frenzy Pheromone",
-          "description": "<p>The hive mother unleashes a pheromone that causes all other ankhravs within a @Template[emanation|distance:100] to become @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1} until the start of the hive mother's next turn, and they can use the extra action only for Burrow, Stride, or Strike actions.</p>\n<p>The hive mother can't unleash the pheromone again for [[/gmr 1d4 #Recharge Frenzy Pheromone]]{1d4 rounds}.</p>"
-        },
-        "action->Spray Acid": {
-          "name": "Spray Acid",
-          "description": "<p>The hive mother spews acid in a @Template[cone|distance:60], dealing @Damage[8d6[acid],1d6[persistent,acid]|options:area-damage]{8d6 acid damage and 1d6 persistent acid damage} (@Check[reflex|dc:26|basic|options:area-effect] save).</p>\n<p>It can't spew acid again for [[/gmr 1d4 #Recharge Spray Acid]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -4578,8 +4348,8 @@
         "strike-melee->Horn": {
           "name": "Cuerno"
         },
-        "strike-melee->Composite Longbow": {
-          "name": "Composite Longbow"
+        "strike-ranged->Composite Longbow": {
+          "name": "Arco largo compuesto"
         },
         "action->Menacing Guardian": {
           "name": "Guardián amenazante",
@@ -4596,9 +4366,6 @@
         "action->Touch of Charity": {
           "name": "Toque de caridad",
           "description": "<p>A horned archon can touch another creature to take on that creature's wounds, transferring up to 30 of the horned archon's HP to the touched creature. The horned archon can't transfer more HP than it currently has.</p>"
-        },
-        "strike-ranged->Composite Longbow": {
-          "name": "Arco largo compuesto"
         }
       }
     },
@@ -4653,8 +4420,8 @@
         "strike-melee->Fist": {
           "name": "Puño"
         },
-        "strike-melee->Composite Shortbow": {
-          "name": "Composite Shortbow"
+        "strike-ranged->Composite Shortbow": {
+          "name": "Arco corto compuesto"
         },
         "action->Telepathy 100 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA]\nTelepathy 100 feet"
@@ -4666,9 +4433,6 @@
         "action->Change Size": {
           "name": "Cambiar tamaño de imagen",
           "description": "<p><strong>Frecuencia</strong> Una vez al día.</p>\n<hr /> <p><strong>Efecto</strong> El janni cambia el tamaño de una criatura. Esto funciona como un conjuro de rango 4.º @UUID[Compendium.pf2e.spells-srd.Item.wzctak6BxOW8xvFV]{Agrandar} o @UUID[Compendium.pf2e.spells-srd.Item.PjhUmyKnq6K5uDby]{Encoger} pero puede apuntar a una criatura reacia (@Check[fortitude|dc:21] salva las negaciones).</p>"
-        },
-        "strike-ranged->Composite Shortbow": {
-          "name": "Arco corto compuesto"
         }
       }
     },
@@ -4948,8 +4712,8 @@
         "spell->Light": {
           "target": "1 objeto de 1 volumen o menos, ya sea desatendido o poseído por ti o por un aliado dispuesto"
         },
-        "strike-melee->Light Ray": {
-          "name": "Light Ray"
+        "strike-ranged->Light Ray": {
+          "name": "Rayos de luz"
         },
         "action->Retributive Strike": {
           "name": "Golpe retributivo",
@@ -4962,9 +4726,6 @@
         "action->Lantern of Hope": {
           "name": "Linterna de la Esperanza",
           "description": "<p>El arconte de la linterna brilla como un faro de esperanza.</p>\n<p>Los buenos aliados dentro de @Template[emanation|distance:30]{30 pies} obtienen un bonificador de estatus +1 a los lanzamientos de daño y a los lanzamientos de salvación contra @UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Ola de desesperación}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.37wbBpPBi5eBtNqM]{Efecto: Linterna de la Esperanza}</p>"
-        },
-        "strike-ranged->Light Ray": {
-          "name": "Rayos de luz"
         }
       }
     },
@@ -4986,8 +4747,11 @@
         "strike-melee->Flame of Justice": {
           "name": "Llama de la justicia"
         },
-        "strike-melee->Light Ray": {
-          "name": "Light Ray"
+        "strike-ranged->Light Ray": {
+          "name": "Rayos de luz"
+        },
+        "strike-ranged->Flame of Justice": {
+          "name": "Llama de la justicia"
         },
         "action->Retributive Strike": {
           "name": "Golpe retributivo",
@@ -5000,12 +4764,6 @@
         "action->Lantern of Hope": {
           "name": "Linterna de la Esperanza",
           "description": "<p>El arconte de la linterna brilla como un faro de esperanza.</p>\n<p>Los buenos aliados dentro de @Template[emanation|distance:30]{30 pies} obtienen un bonificador de estatus +3 a los lanzamientos de daño y a los lanzamientos de salvación contra @UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Ola de desesperación}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.hdsl0XexqEL2emE3]{Efecto: Linterna de la Esperanza (Gestalt)}</p>"
-        },
-        "strike-ranged->Flame of Justice": {
-          "name": "Llama de la justicia"
-        },
-        "strike-ranged->Light Ray": {
-          "name": "Rayos de luz"
         }
       }
     },
@@ -5036,6 +4794,9 @@
         "strike-melee->Flame Of Justice": {
           "name": "Llama de la justicia"
         },
+        "strike-ranged->Flame Of Justice": {
+          "name": "Llama de la justicia"
+        },
         "action->Menacing Guardian": {
           "name": "Guardián amenazante",
           "description": "<p>30 pies. Los enemigos que comienzan su turno en el área o entran en ella deben intentar un salvación @Check[will|dc:23].</p>\n<p>En caso de fracaso, reciben una penalizador de estado de -1 para lanzar lanzamientos de ataque, lanzamientos de conjuros y lanzamientos de daño contra cualquier otro objetivo mientras están en el aura durante 24 horas o hasta que dañen al arconte, lo que ocurra primero. En caso de un fracaso crítico, no pueden usar acciones hostiles contra ningún otro objetivo mientras estén en el área durante 24 horas o hasta que dañen al arconte, lo que ocurra primero.</p>\n<p>Independientemente del resultado, una criatura es temporalmente inmune a más auras guardianas amenazadoras durante 24 horas.</p>"
@@ -5051,9 +4812,6 @@
         "action->Flame of Justice": {
           "name": "Llama de la justicia",
           "description": "<p>El espíritu de justicia de una legión de arcontes se manifiesta en sus manos como una poderosa espada de dos manos llamada la llama de la justicia.</p>\n<p>Un arconte de legión puede lanzar su llama de justicia como arma a distancia. Si se desarma o se lanza, la llama de la justicia desaparece después de aterrizar o causar daño y reaparece en las manos del arconte de la legión de nuevo instantáneamente.</p>\n<p>En un golpe crítico, el daño de fuego de la llama de la justicia inflige el daño máximo (@Damage[6[fire]]{6} en el d6) antes de ser duplicado por el golpe crítico, y el objetivo recibe @Damage[1d10[persistent,fire]] de daño.</p>"
-        },
-        "strike-ranged->Flame Of Justice": {
-          "name": "Llama de la justicia"
         }
       }
     },
@@ -5196,30 +4954,6 @@
         }
       }
     },
-    "Mimic": {
-      "name": "Mimeto",
-      "publicNotes": "<p>Manufacturados, son el resultado de un experimento fallido para animar objetos o una siniestra creación de los alghollthu. Se trata de voraces depredadores de emboscada, que sorprenden a sus presas mediante su inquietante capacidad de hacerse pasar por muebles comunes y objetos varios. Permanecen disfrazados hasta que se acercan unos aventureros desprevenidos y entonces saltan al ataque.</p>\n<p>Los mimetos tienen una compleja mentalidad alienígena y, aunque suelen ser crueles y egocéntricos, de vez en cuando disfrutan conversando con sus presas. Por motivos desconocidos, están especialmente interesados en los humanoides. Los mimetos sienten un fuerte rechazo hacia otros de su especie y suelen vivir solos. Un mimeto puede mantener su forma alternativa durante un periodo de tiempo extremadamente largo, y a veces pasa décadas disfrazado en una habitación subterránea. Sin importar el tiempo que lleve\nesperando, un mimeto siempre está alerta y vigilante y listo para atacar en cualquier momento.</p>",
-      "items": {
-        "strike-melee->Pseudopod": {
-          "name": "Seudópodo"
-        },
-        "action->Adhesive": {
-          "name": "Adhesivo",
-          "description": "<p>El mimeto está cubierto de un limo adhesivo. Cualquier criatura que impacte al mimeto, sea impactada por el mimeto, o toque al mimeto de otra forma deberá tener éxito en una salvación de @Check[reflex|dc:23] o quedar @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrada} (Huir CD 23). Un arma que impacta al\nmimeto se queda pegada al mismo y puede arrancarse teniendo éxito en una prueba de @Check[athletics|dc:23] (como una sola acción).</p>\n<p>Un mimeto puede tener cualquier número de objetos o criaturas pegados mismo a la vez. El mimeto puede liberar una criatura u objeto adherido usando una sola acción y el adhesivo se disuelve 1 minuto después de que muere el mimeto, liberando todos los objetos y criaturas adheridos.</p>"
-        },
-        "action->Object Lesson": {
-          "name": "Lección práctica",
-          "description": "<p><strong>Desencadenante</strong> Una criatura toca o interactúa físicamente con el mimeto mientras está transformado usando Imitar objeto.</p>\n<hr />\n<p><strong>Efecto</strong> La criatura desencadenante queda pegada automáticamente por el adhesivo del mimeto (sin posibilidad de salvación). Entonces el mimeto da un Golpe de seudópodo contra cualquier criatura que tiene adyacente.</p>\n<p>Lección práctica no puede volver a usarse hasta que el mimeto escapa y adopta un nuevo disfraz.</p>"
-        },
-        "action->Mimic Object": {
-          "name": "Imitar objeto",
-          "description": "<p>El mimeto adopta la forma de cualquier objeto Mediano. Esto no cambia la textura ni el tamaño general del mimeto, pero puede alterar su coloración y su apariencia visual. Tiene un resultado automático de 28 en las pruebas de Engaño y CD para hacerse pasar por el objeto al que imita.</p>"
-        },
-        "lore->Dwelling Lore (applies only to the dungeon it lives in)": {
-          "name": "Saber (morada) (sólo se aplica a la estructura en la que vive)"
-        }
-      }
-    },
     "Mu Spore": {
       "name": "Mu Spore",
       "hpDetails": "Regeneración 50 (desactivada por sonic)",
@@ -5272,67 +5006,6 @@
         },
         "action->Swallow Whole": {
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu]\n<p>Gargantuan, @Damage[(20d6+9)[acid]] damage, Rupture 37.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
-        }
-      }
-    },
-    "Naunet": {
-      "name": "Naunet",
-      "hpDetails": "fast healing 2",
-      "publicNotes": "<p>Pugnacious and powerfully muscled, naunets serve as scouts and rank-and-file troops of protean armies. Resembling a thick salamander with a wide head, a powerful tail, and tentacles tipped with snapping jaws in place of rear legs, naunets are the most bestial of the proteans and occupy one of their lowest castes. Naunets are 12 feet long and weigh 900 pounds.</p>\n<p>All proteans are prone to unpredictable fits and unexpected action, but compared to most others, naunets are much more bestial. Always ready for a fight, naunets pride themselves in acting swiftly and striking before unpleasant distractions like diplomacy can blunt a combat's beginning.</p>\n<hr />\n<p>Guardians of disorder and natives of the primal plane of chaos known as the Maelstrom, proteans consider it their calling to spread bedlam and hasten entropic ends. The most powerful proteans are demigods known collectively as the protean lords, although they are mysterious entities whose cults on the Material Plane tend to be obscure and secretive.</p>\n<p>Proteans divide themselves into a loose caste system and possess a dizzying variety of powers. Most proteans have a serpentine body with the head of a primeval beast. Scholars have long been intrigued by this fact-that scions of dissolution and disorder would share so many features-pointing out that even in the purest chaos there is some semblance of order. Others note that the serpentine form is one of the most primeval shapes, perhaps suggesting that in a reality at the dawn of time, such shapes were all that could exist. The proteans themselves have little to say on the matter, which, perhaps ironically, only adds to the confusion and lack of consensus surrounding their kind. After all, if even chaos cannot be trusted to be chaotic, would that not be the purest form of entropy?</p>",
-      "saveDetails": "+1 status to all saves vs. magic",
-      "senses": "entropy sense (imprecise) 30 feet",
-      "speed": "freedom of movement",
-      "items": {
-        "spellcastingEntry->Divine Innate Spells": {
-          "name": "Divine Innate Spells"
-        },
-        "spell->Dimension Door": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nDimension Door"
-        },
-        "spell->Freedom of Movement (Constant)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]\nFreedom of Movement (Constant)"
-        },
-        "spell->Obscuring Mist (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.9XHmC2JgTUIQ1CCm]\nObscuring Mist (At Will)"
-        },
-        "spell->Shatter (At Will)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.1xbFBQDRs0hT5xZ9]\nShatter (At Will)"
-        },
-        "spell->Detect Alignment (At Will) (Lawful Only)": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]\nDetect Alignment (At Will) (Lawful Only)"
-        },
-        "strike-melee->Jaws": {
-          "name": "Jaws"
-        },
-        "strike-melee->Tail": {
-          "name": "Tail"
-        },
-        "strike-melee->Tentacle": {
-          "name": "Tentacle"
-        },
-        "action->Entropy Sense (Imprecise) 30 feet": {
-          "name": "Entropy Sense (Imprecise) 30 feet",
-          "description": "<p>A naunet can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants it the ability to sense creatures within the listed range. A creature under the effects of @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Veil of Privacy} or that is otherwise shielded from divinations and predictions cannot be noticed via entropy sense.</p>"
-        },
-        "action->Fast Healing 2": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ]\nFast Healing 2"
-        },
-        "action->Protean Anatomy 10": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.IOk0MRs3f9FrarKL]\nProtean Anatomy 10"
-        },
-        "action->Adaptive Strike": {
-          "name": "Adaptive Strike",
-          "description": "<p>The naunet chooses adamantine, cold iron, or silver; its melee Strikes count as that type for 1 minute or until it uses Adaptive Strike again.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.361dIAAhiZE0wg8v]{Effect: Adaptive Strike}</p>"
-        },
-        "action->Change Shape": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97]\n<p>The naunet can take the appearance of any Small, Medium, or Large animal, beast, or humanoid. This doesn't change its Speed or its attack and damage bonuses with its Strikes but might change the damage type its Strikes deal.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
-        },
-        "action->Confounding Slam": {
-          "name": "Confounding Slam",
-          "description": "<p>A creature hit by the naunet's tentacle Strike is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for [[/gmr 1d4 #rounds]]{1d4 rounds} (@Check[will|dc:24] negates). If the creature was already stupefied in this way, the duration extends by 1 round instead. A chaotic creature is only @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} instead.</p>"
-        },
-        "action->Constrict": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(1d8+8)[bludgeoning]] damage, @Check[fortitude|dc:26|basic] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         }
       }
     },
@@ -6512,38 +6185,6 @@
         }
       }
     },
-    "Shoggoth": {
-      "name": "Shoggoth",
-      "acDetails": "all-around vision",
-      "hpDetails": "fast healing 20",
-      "publicNotes": "<p>Although even raving fanatics and doom-saying prophets desperately claim the monstrous shoggoth is nothing more than a drug-induced vision or a thankfully unreal nightmare, the truth is altogether more dire. Shoggoths exist, yet they tend keep to the deepest of ocean trenches or the most remote of caverns and ruins, emerging to spread chaos and destruction in their slimy wakes.</p>\n<p>The first shoggoths were created by an alien species to serve as mindless beasts of burden. Their vast bulk, incredible strength, and amorphous nature made them useful slave labor, and their ability to spontaneously form whatever new eyes, mouths, limbs, and other organs they might need made them incredibly versatile. Eventually, the shoggoths developed enough intelligence to rebel against their masters, and now they lurk, patient but potent, in the lightless deeps.</p>\n<p>A shoggoth has goals and methods unknowable to humanoid beings. They remember their eons of servitude and, compared to their mysterious masters, humans, elves, dwarves and other intelligent beings are mere specks which crawl upon the surface of the world, indistinguishable from animals. When a shoggoth rolls its immense, hideous body over a band of explorers, engulfing them in a gelatinous press of flesh and gnawing teeth, it is not so much evil as uncaring.</p>\n<p>Shoggoths can become the object of worship for humanoid cults dedicated to chaos and entropy. The shoggoth does not respond to this worship, but it can be counted on to consume any hapless victim the cult can capture and sacrifice to it. Rumors of shoggoths that have developed even greater intellects are, one would hope, just that, for the damage a shoggoth capable of reasoning could wreak upon a world is unsettling to say the least.</p>",
-      "saveDetails": "+1 status to all saves vs. magic",
-      "items": {
-        "strike-melee->Pseudopod": {
-          "name": "Pseudopod"
-        },
-        "action->Tremorsense (Imprecise) 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense (Imprecise) 60 feet"
-        },
-        "action->Fast Healing 20": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ]\nFast Healing 20"
-        },
-        "action->Maddening Cacophony": {
-          "name": "Maddening Cacophony",
-          "description": "<p>60 feet. A shoggoth constantly voices syllables and mutterings that mortals were not meant to hear. A creature entering the aura or starting its turn in the aura must succeed at a @Check[will|dc:38] save or become confused for 1 round ([[/br 2d4 #rounds]]{2d4 rounds} on a critical failure). A creature that successfully saves is temporarily immune for 24 hours.</p>"
-        },
-        "action->Constrict": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(2d10+15)[bludgeoning]], @Check[fortitude|dc:40|basic]</p>\n<hr />\n<p><em>Note: A DC was not provided for this ability by Paizo. The DC present here is a moderate DC for the creature level according to the Gamemastery Guide creature building Tables.</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
-        },
-        "action->Eat Away": {
-          "name": "Eat Away",
-          "description": "<p>A creature that begins its turn inside the shoggoth takes @Damage[9d6[acid]] damage.</p>"
-        },
-        "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:40|traits:damaging-effect], @Damage[6d6[acid]] damage, [[/act escape dc=40]], Rupture 40</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
-        }
-      }
-    },
     "Silver Dragon (Adult)": {
       "name": "Adult Silver Dragon",
       "publicNotes": "<p>Los dragones plateados son los más caballerosos de todos los dragones; manejan el hielo y el frío como armas, pueden caminar sobre nubes y habitan en las cimas nevadas de las montañas o en los profundos valles nebulosos. Aunque suelen hacer sus guaridas entre las tierras altas, la búsqueda de la justicia lleva a los dragones plateados a viajar lejos y a menudo hasta el corazón de los reinos invadidos por el mal. Estos ejemplos de rectitud no cesan en su determinación de ayudar a los débiles, difundir el honor y erradicar el mal.</p>\n<p>Los dragones plateados son elegantes y sinuosos. Sus pieles no se parecen a nada más que a un traje de armadura brillante, dando más credibilidad al mito popular de que los dragones plateados son los paladines de la especie draconiana. El celo con el que buscan, enfrentan y derrotan al mal no tiene rival, incluso entre sus primos metálicos, y se adhieren a estrictos códigos de honor que generalmente se transmiten de padre a hijo. En ocasiones, en lugar de eso, aprenden estos códigos de mentores de confianza, generalmente otros dragones plateados o dragones dorados. A medida que envejecen, se vuelven aún más dedicados a sus códigos, a menudo agregando nuevas y aún más restrictivas cláusulas a los sistemas que guían su comportamiento.</p>\n<p>Los dragones plateados son increíblemente altruistas y se asocian regularmente con los ciudadanos de las sociedades buenas, de las que se consideran protectores y guías. Además de responder a las amenazas del mal, los dragones plateados trabajan para evitar que el mal arraigue en primer lugar, y se aseguran de que los mortales bajo su cuidado estén bien alimentados, educados y tratados con dignidad. Aunque los dragones plateados pueden parecer demasiado celosos o incluso ansiosos por unirse a la lucha contra el mal, saben que la mejor manera de librar al mundo de la corrupción es eliminar la lucha y la desilusión en su origen, no sentarse pasivamente y ver cómo se convierte en un problema insoluble. Los dragones plateados pueden ser vengativos, pero también pueden ser perdonadores; para los malhechores que buscan expiar sus pecados y dar vuelta una hoja nueva, el apoyo de un dragón plateado es inquebrantable e invaluable.</p>\n<p>Muchos dragones plateados también se sienten atraídos por los esfuerzos religiosos, venerando a deidades como Iomedae, Sarenrae y otras deidades relacionadas con la justicia, la virtud y la redención.</p>\n<hr /> <p>Paradojas de virtud, nobleza y gracia, los dragones metálicos son entidades benévolas veneradas como seres míticos similares a los dioses en su poder y majestad. Pocos han visto nunca un dragón metálico de primera mano, pero las historias de su intervención en las vidas de los mortales -y de su fallecimiento- siempre se han extendido por todas partes. Nombrados así por la forma en que sus escamas se asemejan a los metales brillantes que los humanoides usan en el comercio, la guerra y la industria, estos inmensos seres son diversos en sus intereses y habilidades, y no parece que les importe estar asociados con materiales tan mundanos. Después de todo, comparar un dragón de oro con una moneda de oro es como comparar un océano con un vaso de agua, aunque puedan parecer similares a primera vista, el poder bruto, la amplitud y la grandeza de uno simplemente abruma al otro.</p>\n<p>Además de los dragones metálicos y sus contrapartes cromáticas, otros tipos de dragones vagan por el mundo y el resto del multiverso. En las legendarias tierras de Tian Xia, al otro lado del globo, se encuentran los dragones imperiales, seres serpentinos que protegen el equilibrio cósmico y defienden su antigua patria. Fuera del Plano Material, los dragones primordiales como el dominante dragón de salmuera y el solitario dragón de nube dan forma a la naturaleza y a los acontecimientos de los Planos Elementales. Sin duda existen innumerables otros tipos de dragones, incluyendo dragones en planos distantes de existencia y, se rumorea, dragones primordiales que se elevan entre las estrellas.</p>",
@@ -6965,8 +6606,8 @@
         "strike-melee->Tail": {
           "name": "Cola"
         },
-        "strike-melee->Glaring Ray": {
-          "name": "Glaring Ray"
+        "strike-ranged->Glaring Ray": {
+          "name": "Rayo de Glaring"
         },
         "action->Aura of Peace": {
           "name": "Aura de paz",
@@ -6979,9 +6620,6 @@
         "action->Radiant Feathers": {
           "name": "Plumas radiantes",
           "description": "<p><strong>Frecuencia</strong> Una vez al día</p>\n<hr /> <p><strong>Efecto</strong> El simurgh extiende sus brillantes plumas de cola y lanza a sus enemigos con un @Template[cone|distance:100] de luz radiante. Aparte del tamaño del cono, este efecto es idéntico a @UUID[Compendium.pf2e.spells-srd.Item.d6o52BnjViNz7Gub]{Rociada Prismática} (CD 42 ).</p>"
-        },
-        "strike-ranged->Glaring Ray": {
-          "name": "Rayo de Glaring"
         }
       }
     },
@@ -7276,8 +6914,8 @@
         "strike-melee->Fist": {
           "name": "Puño"
         },
-        "strike-melee->Rock": {
-          "name": "Rock"
+        "strike-ranged->Rock": {
+          "name": "Roca"
         },
         "action->Lightning Blade": {
           "name": "Hoja de rayo",
@@ -7286,9 +6924,6 @@
         "action->Wide Swing": {
           "name": "Barrido ancho",
           "description": "<p>El gigante de la tormenta lanza un solo Golpe de espada grande y compara el resultado de la tirada de ataque con los CA de hasta dos enemigos dentro de su alcance. Esto cuenta como dos ataques para la penalizador por ataque múltiple del gigante.</p>"
-        },
-        "strike-ranged->Rock": {
-          "name": "Roca"
         }
       }
     },
@@ -7300,8 +6935,8 @@
         "strike-melee->Gust": {
           "name": "Ráfaga"
         },
-        "strike-melee->Lightning Lash": {
-          "name": "Lightning Lash"
+        "strike-ranged->Lightning Lash": {
+          "name": "Latigazo relámpago"
         },
         "action->Disperse": {
           "name": "Dispersarse",
@@ -7317,9 +6952,6 @@
         },
         "action->Push 5 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]\nPush 5 feet"
-        },
-        "strike-ranged->Lightning Lash": {
-          "name": "Latigazo relámpago"
         }
       }
     },
@@ -7410,8 +7042,8 @@
         "strike-melee->Claw": {
           "name": "Garra"
         },
-        "strike-melee->Debris": {
-          "name": "Debris"
+        "strike-ranged->Debris": {
+          "name": "Desechos"
         },
         "action->High Winds": {
           "name": "Fuertes vientos",
@@ -7428,9 +7060,6 @@
         "action->Whirlwind Form": {
           "name": "Forma de Torbellino",
           "description": "<p>El uthul se transforma en un vórtice de tormenta y furia de 10 pies de ancho y hasta 40 pies de alto. Se mantiene en esta forma durante 3 asaltos o hasta que Desecha el efecto. Mientras está en esta forma, el uthul gana resistencia 10 al daño físico y puede moverse a través de otras criaturas.</p>\n<p>Su aura permanece activa, pero no puede hacer golpes de escombros ni usar Choque de rayos. En cambio, cualquier criatura a través de la cual se mueva el uthul recibe @Damage[4d6[bludgeoning],2d12[electricity]] de daño. Una criatura puede recibir este daño solo una vez por turno. Una criatura grande o pequeña también debe tener éxito en un @Check[reflex|dc:32] o ser recogida y mantenida suspendida dentro del vórtice. Las criaturas suspendidas se mueven con el uthul. Una criatura puede intentar escapar gastando una acción para intentar un @Check[reflex|dc:32] de salvación (o un [[/act maneuver-in-flight dc=32]]{Acrobacias} de prueba para maniobrar en vuelo si tiene una Velocidad de vuelo). Al escapar, o cuando el uthul se transforma de nuevo en su forma de nube de tormenta, una criatura suspendida es lanzada [[/gmr 1d4*10]]{1d4 x 10 pies} en una dirección aleatoria, luego cae a menos que pueda volar o permanecer en el aire.</p>\n<p>Después de volver a su forma normal, el uthul debe esperar 1 minuto antes de poder usar la Forma Torbellino de nuevo.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.rpxdrOlzY2SOtMWB]{Efecto: Forma de torbellino}</p>"
-        },
-        "strike-ranged->Debris": {
-          "name": "Desechos"
         }
       }
     },
@@ -7547,37 +7176,6 @@
         "action->Web Trap": {
           "name": "Trampa de telaraña",
           "description": "<p>Una criatura impactada por el ataque de telaraña del tejeterror queda inmovilizada y pegada a la superficie más cercana hasta que @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Huya} (@Check[acrobatics|dc:20|traits:action:escape]).</p>"
-        }
-      }
-    },
-    "Wemmuth": {
-      "name": "Wemmuth",
-      "hpDetails": "blood leech",
-      "languages": "(can't speak any language)",
-      "publicNotes": "<p>Fertilized by large quantities of spilled blood, such as that found on bloodstained battlefields or in the war-torn regions surrounding besieged cities, wemmuths are vile swaths of vines that draw sustenance from mortal suffering, lapping up blood like water. Possessing a rudimentary intelligence and an unquenchable thirst for blood, wemmuths lie in wait for most of their lives, growing to incredible size in the bloody soil of their grisly homes. Though the vines that comprise a wemmuth's body are scarcely thicker than rope, a single adult wemmuth system consists of 6 tons of vines, enough to stretch for 6,000 feet if stretched from end to end in a single straight line. Wemmuths never orient themselves this way, however, instead preferring to wrap themselves into massive mounds approximately 15 feet across and equally thick. Although wemmuths are often spotted lazing about, the scent of blood is enough to whip one into a violent frenzy. The creature condenses its entire mass into a sphere of sharp thorns and lashing vines, resembling a hateful tumbleweed the size of an elephant. Wemmuths commonly dig up massive boulders or entire trees from the ground and incorporate them into their rolling mass, using these objects to bolster their defense against many forms of attack or hurling them at faraway foes with terrifying precision.</p>\n<p>Some speculate that wemmuths are a form of diabolical corruption let loose upon Golarion by House Thrune of Cheliax, perhaps as a scorched earth tactic against their rivals. Influential nobles from Nirmathas and Molthune both point fingers at one another for the wemmuth's creation, Nirmathas citing Molthune's close ties to Infernal Cheliax and Molthune blaming the primal magic commonly employed by Nirmathas's many druids and rangers. Several Varisian tales describe creatures closely matching the wemmuth's description attempting to apprehend a famous folk trickster, while crusaders from Mendev adhere to the belief that the wemmuths were a blight unleashed upon Golarion by Deskari, former demon lord of locusts, before his defeat at the hands of mortal heroes.</p>",
-      "items": {
-        "strike-melee->Pummel": {
-          "name": "Pummel"
-        },
-        "strike-melee->Boulder": {
-          "name": "Boulder"
-        },
-        "action->Tremorsense (Imprecise) 60 feet": {
-          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense (Imprecise) 60 feet"
-        },
-        "action->Blood Leech": {
-          "name": "Blood Leech",
-          "description": "<p><strong>Trigger</strong> The wemmuth deals damage to a creature with Constrict.</p>\n<hr />\n<p><strong>Effect</strong> The wemmuth heals a number of Hit Points equal to half the total damage dealt by Constrict.</p>"
-        },
-        "action->Constrict": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV]\n<p>@Damage[(2d12+10)[bludgeoning]] damage, @Check[fortitude|dc:37|basic] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
-        },
-        "action->Engulf": {
-          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]\n<p>@Check[reflex|dc:37|traits:damaging-effect], @Damage[4d8[bludgeoning]] damage, [[/act escape dc=35]], Rupture 36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
-        },
-        "action->Thorny Mass": {
-          "name": "Thorny Mass",
-          "description": "<p>Whenever a creature within 10 feet attempts a melee attack against a wemmuth or uses Acrobatics to @UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{Tumble Through} its space, that creature takes @Damage[(1d12+10)[piercing]] damage.</p>"
         }
       }
     },
@@ -8121,8 +7719,8 @@
         "strike-melee->Fist": {
           "name": "Puño"
         },
-        "strike-melee->Rock Or Metal Debris": {
-          "name": "Rock Or Metal Debris"
+        "strike-ranged->Rock Or Metal Debris": {
+          "name": "Roca o desechos de metal"
         },
         "action->Tremorsense (Imprecise) 60 feet": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]\nTremorsense (Imprecise) 60 feet"
@@ -8145,9 +7743,6 @@
         "action->Sandblast": {
           "name": "Sandblast",
           "description": "<p>El zaramuun rocía una ráfaga de arena que inflige @Damage[11d10[slashing]|options:area-damage] de daño a todas las criaturas en un @Template[line|distance:60] ( @Check[reflex|dc:38|options:area-effect,damaging-effect,inflicts:blinded] ).</p>\n<p>No puede usar Sandblast de nuevo por [[/gmr 1d4 #Recharge Sandblast]]{1d4 asaltos}.</p>\n<hr /> <p><strong>Éxito crítico</strong> Sin efecto.</p>\n<p><strong>Éxito</strong> Daño medio.</p>\n<p><strong>Fallo</strong> Daño total.</p>\n<p><strong>Fallo crítico</strong> Daño completo y @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} por 1 asalto.</p>"
-        },
-        "strike-ranged->Rock Or Metal Debris": {
-          "name": "Roca o desechos de metal"
         }
       }
     }
@@ -8174,10 +7769,6 @@
     },
     "saveDetails": "system.attributes.allSaves.value",
     "senses": "system.perception.details",
-    "skillSpecialAcrobatics": {
-      "converter": "translateSkillSpecial",
-      "path": "system.skills.acrobatics.special"
-    },
     "skillSpecialAthletics": {
       "converter": "translateSkillSpecial",
       "path": "system.skills.athletics.special"
