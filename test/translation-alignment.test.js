@@ -58,7 +58,23 @@ test("translation memory distinguishes context roles and refuses ambiguous meani
 });
 
 test("a UI section called token is translated while actor token image metadata stays technical", () => {
-    const source = { settings: { token: { title: 'Token HUD' } }, entries: { Actor: { token: 'systems/pf2e/tokens/actor.webp' } } };
-    const target = { settings: { token: { title: 'Panel de la ficha' } }, entries: { Actor: { token: 'imagen-incorrecta.webp' } } };
-    assert.deepEqual(alignJson(source, target), { settings: { token: { title: 'Panel de la ficha' } }, entries: { Actor: { token: 'systems/pf2e/tokens/actor.webp' } } });
+    const source = { settings: { token: { title: 'Token HUD' } }, avatar: { src: { token: 'Use Token Image' } }, entries: { Actor: { token: 'systems/pf2e/tokens/actor.webp' } } };
+    const target = { settings: { token: { title: 'Panel de la ficha' } }, avatar: { src: { token: 'Usar imagen de la ficha' } }, entries: { Actor: { token: 'imagen-incorrecta.webp' } } };
+    assert.deepEqual(alignJson(source, target), { settings: { token: { title: 'Panel de la ficha' } }, avatar: { src: { token: 'Usar imagen de la ficha' } }, entries: { Actor: { token: 'systems/pf2e/tokens/actor.webp' } } });
+});
+
+test("compendium inheritance sentinels survive alignment and translation memory", () => {
+    const sentinel = "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.example]";
+    const source = { entries: { Spell: { name: sentinel, description: sentinel + "\n<p>Fallback text</p>" } } };
+    const spanish = { entries: { Spell: { name: "La etiqueta se reemplazará", description: "<Compendium> se sustituye por el texto" } } };
+    assert.deepEqual(alignJson(source, spanish, [], () => "Traducción previa incorrecta"), source);
+    assert.equal(alignJson("<Compendium> Additional text", "<Compendium> Texto adicional"), "<Compendium> Texto adicional");
+});
+
+test("alignment does not replace an existing shared term with another context's translation", () => {
+    const source = { entries: { Deity: { name: "Set" }, Missing: { name: "New entry" } } };
+    const target = { entries: { Deity: { name: "Set" } } };
+    const aligned = alignJson(source, target, [], value => value === "Set" ? "Colocar" : "Entrada nueva");
+    assert.equal(aligned.entries.Deity.name, "Set");
+    assert.equal(aligned.entries.Missing.name, "Entrada nueva");
 });

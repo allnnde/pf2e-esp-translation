@@ -1,3 +1,5 @@
+import { isCompendiumPlaceholder } from "./translation-maintenance.js";
+
 export function numericTokens(text) {
     text = text.replace(/[\u2013\u2014\u2212](?=\d)/g, "-")
         .replace(/\b(\d+)(?:st|nd|rd|th)\b/gi, "$1").replace(/(\d+)\.?(?:º|ª)/g, "$1");
@@ -72,6 +74,7 @@ export function looksEnglish(text) {
 }
 
 export function isLiteralText(text) {
+    if (isCompendiumPlaceholder(text)) return true;
     const stripped = partitionText(text).filter(p => !p.literal).map(p => p.source).join("").trim();
     return !/[A-Za-zÀ-ž]/.test(stripped) || /^[\d\s+\-*/().,dD]+$/.test(stripped) || /^(?:PF2E\.[\w.]+|Compendium\.[\w.-]+|(?=[A-Za-z0-9]*\d)[A-Za-z0-9]{16})$/.test(stripped);
 }

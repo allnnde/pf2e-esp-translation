@@ -1,6 +1,11 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { partitionText, numericTokens, protectedTokens, validateNaturalTranslation } from "../src/translation-text.js";
+import { partitionText, numericTokens, protectedTokens, validateNaturalTranslation, isLiteralText } from "../src/translation-text.js";
+
+test("inheritance sentinels are technical while compendium extensions remain translatable", () => {
+    assert.equal(isLiteralText("<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.test.Item.example]"), true);
+    assert.equal(isLiteralText("<Compendium> Additional natural language"), false);
+});
 
 test("translation partitions preserve HTML, nested Foundry commands, rolls and variables exactly", () => {
     const source = '<p>You take @Damage[2d6[fire]] damage. Use @UUID[Compendium.pf2e.actions.Item.abc123]{Treat Wounds} with {actor|name}. <span class="action-glyph">R</span> [[/r 1d20+5]] &amp;</p>';

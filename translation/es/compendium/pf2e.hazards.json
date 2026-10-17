@@ -42,7 +42,7 @@
     "Bottomless Pit": {
       "name": "Pozo sin fondo",
       "description": "<p>Una trampilla de hierro cubre un foso de 10 pies (3 m) cuadrados de profundidad infinita.</p>",
-      "disable": "<p>@Check[type:thievery|dc:28|name:Quitar trampilla|traits:action:disable-a-device] (entrenado) para quitar la trampilla.</p>",
+      "disable": "<p>@Check[thievery|dc:28|name:Quitar trampilla|traits:action:disable-a-device] (entrenado) para quitar la trampilla.</p>",
       "reset": "<p>La trampa sigue provocando que las criaturas caigan para siempre si caen dentro, pero la trampilla tiene que rearmarse manualmente para que la trampa vuelva a estar escondida.</p>",
       "stealth": "<p>(0 si la trampilla está inutilizada o rota) o <em>detectar magia</em></p>",
       "items": {
@@ -100,7 +100,7 @@
     "Drowning Pit": {
       "name": "Foso de ahogamiento",
       "description": "<p>Una trampilla cubre un foso de 10 pies (3 m) cuadrados que mide 30 pies (9 m) de profundidad y tiene 5 pies (1,5 m) de agua en el fondo. Cuatro surtidores de agua en las paredes conectan con depósitos de agua escondidos. Cada surtidor de agua sale de una pared diferente, a 6 pulgadas (15 cm) de la parte superior del foso.</p>",
-      "disable": "<p>@Check[type:thievery|dc:18] (entrenado) para sellar cada surtidor de agua, Latrocinio CD 22 (entrenado) para abrir la trampilla o Atletismo CD 22 para Abrir por la fuerza la trampilla.</p>",
+      "disable": "<p>@Check[thievery|dc:18] (entrenado) para sellar cada surtidor de agua, @Check[thievery|dc:22] (entrenado) para abrir la trampilla, o @Check[athletics|dc:22] para @UUID[Compendium.pf2e.action-macros.Macro.yMTKMnaYSGtDz4wk]{Abrir por la fuerza: Atletismo} la trampilla</p>",
       "hpDetails": "Dureza del surtidor 8, surtidor PG 32 (UR 16)",
       "reset": "<p>La trampa se puede rearmar si la puerta se vuelve a abrir manualmente y se rellenan los depósitos de agua; se puede rearmar sin vaciar el foso, pero al hacerlo pierde eficacia.</p>",
       "routine": "<p>(4 acciones) La trampa pierde 1 acción cada turno por cada surtidor de agua inutilizado. En cada una de las acciones de la trampa, un surtidor vierte agua, aumentando la profundidad del agua en 5 pies (1,5 m). Una vez el foso está lleno de agua, deja de usar acciones, pero las criaturas en su interior empiezan a ahogarse.</p>",
@@ -216,7 +216,7 @@
     "Green Slime": {
       "name": "Limo verde",
       "description": "<p>Una película cáustica verde se adhiere al techo, esperando que sus presas pasen por debajo.</p>",
-      "disable": "<p>@Check[type:survival|dc:33|name:Despegar cuidadosamente el limo verde] (experto) para despegar cuidadosamente el limo del techo sin tocarlo.</p>",
+      "disable": "<p>@Check[survival|dc:33|name:Despegar cuidadosamente el limo verde] (experto) para despegar cuidadosamente el limo del techo sin tocarlo.</p>",
       "reset": "<p>1 hora, mientras que el limo se da un festín y después se arrastra lentamente de vuelta al techo.</p>",
       "stealth": "<p>(experto)</p>",
       "items": {
@@ -229,7 +229,7 @@
     "Hallucination Powder Trap": {
       "name": "Trampa de polvo alucinógeno",
       "description": "<p>Un tubo de polvo alucinógeno armado con un explosivo en miniatura está conectado al pomo de una puerta o a un pestillo similar.</p>",
-      "disable": "<p>@Check[type:thievery|dc:26|name:Desactivar martillo|traits:action:disable-a-device] (experto) para desactivar el martillo que golpea la cápsula fulminante.</p>",
+      "disable": "<p>@Check[thievery|dc:26|name:Desactivar martillo|traits:action:disable-a-device] (experto) para desactivar el martillo que golpea la cápsula fulminante.</p>",
       "stealth": "<p>(experto)</p>",
       "items": {
         "action->Powder Burst": {
@@ -241,7 +241,7 @@
     "Hammer Of Forbiddance": {
       "name": "Martillo de interdicción",
       "description": "<p>Un enorme martillo a la entrada de un edificio desciende en un intento de dañar a una criatura que entra en la zona, empujarla hacia atrás e impedir que siga avanzando.</p>",
-      "disable": "<p>@Check[type:thievery|dc:28|name:Evitar que el martillo descienda|traits:action:disable-a-device] (experto) una vez en el propio martillo y una vez en su bisagra para evitar que el martillo descienda.</p>",
+      "disable": "<p>@Check[thievery|dc:28|name:Evitar que el martillo descienda|traits:action:disable-a-device] (experto) una vez en el propio martillo y una vez en su bisagra para evitar que el martillo descienda.</p>",
       "hpDetails": "Dureza de la bisagra: 16, PG de la bisagra: 64 (UR 32)",
       "reset": "<p>La trampa se rearma en el transcurso del asalto y está lista para volver a activarse al cabo de 1 asalto.</p>",
       "stealth": "<p>(experto)</p>",
@@ -264,7 +264,7 @@
       "items": {
         "action->Ensnare": {
           "name": "Enredar",
-          "description": "<p><strong>Desencadenante</strong> Una criatura que no es una araña entra en la telaraña.</p>\n<hr />\n<p><strong>Efecto</strong> La telaraña envuelve el cuerpo de la criatura desencadenante, pegándose a sus extremidades. La criatura desencadenante ha de tener éxito en una salvación de @Check[reflex|dc:20] o se le impone un penalizador por circunstancia de -10 pies (3 m) a todas sus Velocidades hasta que @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Huye} de la telaraña (CD 20). En caso de fallo crítico, la telaraña también se adhiere a la cara de la criatura, dejándola @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesta 1}, y no puede reducir este estado hasta que Huye de la telaraña.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura que no es una araña entra en la telaraña.</p>\n<hr />\n<p><strong>Efecto</strong> La telaraña envuelve el cuerpo de la criatura desencadenante, pegándose a sus extremidades. La criatura desencadenante ha de tener éxito en una salvación de @Check[reflex|dc:20] o se le impone un penalizador por circunstancia de -10 pies (3 m) a todas sus Velocidades hasta que @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapar} de la telaraña (CD 20). En caso de fallo crítico, la telaraña también se adhiere a la cara de la criatura, dejándola @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesta 1}, y no puede reducir este estado hasta que Huye de la telaraña.</p>"
         }
       }
     },
@@ -342,7 +342,7 @@
       "name": "Inundación repentina peligrosa",
       "description": "<p> Ya sea compuesta por agua que corre por las calles y arrastra escombros peligrosos a lo largo del camino o por una sustancia menos natural que se libera de su recipiente, esta implacable inundación azota todo a su paso. </p>",
       "disable": "<p> Tres @Check[type:athletics|dc:35|name:Move Barricade] , @Check[type:crafting|dc:35|name:Construct Barricade] o @Check[type:survival|dc:35|name:Construct Barricade] controles para mover o construir barricadas lo suficientemente fuertes como para crear un refugio contra la inundación. Si bien esto crea un lugar seguro para permanecer, las criaturas fuera del área barricada aún pueden estar en peligro dependiendo de la naturaleza y el origen de la inundación. </p>",
-      "routine": "<p> (1 acción) La inundación avanza 60 pies, chocando contra todas las criaturas dentro de su área. Cada criatura debe intentar una salvación @Check[type:fortitude|dc:30] mientras las aguas las golpean y las arrastran río abajo. La cantidad y el tipo de daño causado se basan en la naturaleza de la inundación, y ciertos tipos de inundaciones imponen efectos adicionales. Las aguas turbulentas significan que las criaturas dentro del área de la inundación deben intentar una prueba @Check[type:athletics|dc:20|name:Swim|traits:action:swim] de Nadar para poder moverse, y aquellas que no tienen éxito en unamarque Nadar en cada ronda puede ahogarse. </p>\n <hr>\n <p> <strong> Éxito crítico </strong> La criatura no recibe daño. </p>\n <p> <strong> Éxito </strong> La criatura sufre la mitad del daño. </p>\n <p> <strong> Fallo </strong> La criatura sufre todo el daño y se mueve 10 pies junto con el agua. </p>\n <p> <strong> Fallo crítico </strong> La criatura sufre el doble de daño y se mueve 20pies junto con el agua. </p>\n <hr>\n <ul>\n <li> <strong> Escorrentía ácida </strong> Esta inundación cáustica disuelve la carne a medida que se mueve, causando @Damage[1d12[bludgeoning] ,(1d12+8)[ácido]]{1d12 daño contundente y 1d12+8 daño de ácido} . Además, causa @Damage[2d6[persistent,acid]] daño a las criaturas que fallan críticamente en sus salvaciones de Fortaleza. </li>\n <li> <strong> Olas azotadoras </strong> Esta inundación de agua corriendo causa @Damage[(2d12+10)[bludgeoning]] de daño. </li>\n <li> <strong>Rechazo repulsivo </strong> Esta inundación ha recogido objetos contaminados o plagados de enfermedades, como escorrentías de alcantarillado o comida podrida. Inflige @Damage[(2d12+8)[bludgeoning]] de daño. Cada criatura expuesta a la inundación debe intentar una salvación @Check[type:fortitude|dc:29], convirtiéndose en @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} en caso de fallo o @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2} en caso de fallo crítico. Además, las criaturas que entran en contacto con las aguas de la inundación están expuestas a la fiebre de la inmundicia ( @Check[type:fortitude|dc:20] ). </li>\n <li> <strong> Escombros afilados</strong> Las aguas han recogido diversos objetos, algunos de ellos especialmente punzantes. La inundación causa @Damage[1d12[bludgeoning]] de daño y @Damage[(1d12+12)[piercing]] de daño. </li>\n <li> <strong> Sticky Goo </strong> La sustancia es particularmente pegajosa. Inflige @Damage[(2d12+6)[bludgeoning]] de daño. Además, cada criatura en la inundación debe intentar una salvación @Check[type:reflex|dc:29] al comienzo de su turno en cada ronda. En un tiro de salvación fallido, reciben una penalización de circunstancia de -10 pies a todos susVelocidades para 1 ronda. En caso de fallo crítico, son @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} durante 1 ronda. </li>\n </ul>",
+      "routine": "<p> (1 acción) La inundación avanza 60 pies, chocando contra todas las criaturas dentro de su área. Cada criatura debe intentar una salvación @Check[fortitude|dc:30] mientras las aguas las golpean y las arrastran río abajo. La cantidad y el tipo de daño causado se basan en la naturaleza de la inundación, y ciertos tipos de inundaciones imponen efectos adicionales. Las aguas turbulentas significan que las criaturas dentro del área de la inundación deben intentar una prueba @Check[athletics|dc:20|name:Swim|traits:action:swim] de Nadar para poder moverse, y aquellas que no tienen éxito en una prueba de Nadar cada asalto pueden ahogarse. </p>\n <hr>\n <p> <strong> Éxito crítico </strong> La criatura no recibe daño. </p>\n <p> <strong> Éxito </strong> La criatura sufre la mitad del daño. </p>\n <p> <strong> Fallo </strong> La criatura sufre todo el daño y se mueve 10 pies junto con el agua. </p>\n <p> <strong> Fallo crítico </strong> La criatura sufre el doble de daño y se mueve 20 pies junto con el agua. </p>\n <hr>\n <ul>\n <li> <strong> Escorrentía ácida </strong> Esta inundación cáustica disuelve la carne a medida que se mueve, causando @Damage[1d12[bludgeoning],(1d12+8)[acid]]{1d12 daño contundente y 1d12+8 daño de ácido} . Además, causa @Damage[2d6[persistent,acid]] daño a las criaturas que fallan críticamente en sus salvaciones de Fortaleza. </li>\n <li> <strong> Olas azotadoras </strong> Esta inundación de agua corriendo causa @Damage[(2d12+10)[bludgeoning]] de daño. </li>\n <li> <strong>Residuos repulsivos </strong> Esta inundación ha recogido objetos contaminados o plagados de enfermedades, como escorrentías de alcantarillado o comida podrida. Inflige @Damage[(2d12+8)[bludgeoning]] de daño. Cada criatura expuesta a la inundación debe intentar una salvación @Check[fortitude|dc:29], convirtiéndose en @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} en caso de fallo o @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2} en caso de fallo crítico. Además, las criaturas que entran en contacto con las aguas de la inundación están expuestas a la fiebre de la inmundicia ( @Check[fortitude|dc:20] ). </li>\n <li> <strong> Escombros afilados</strong> Las aguas han recogido diversos objetos, algunos de ellos especialmente punzantes. La inundación causa @Damage[1d12[bludgeoning]] de daño y @Damage[(1d12+12)[piercing]] de daño. </li>\n <li> <strong> Lodo pegajoso </strong> La sustancia es particularmente pegajosa. Inflige @Damage[(2d12+6)[bludgeoning]] de daño. Además, cada criatura en la inundación debe intentar una salvación @Check[reflex|dc:29] al comienzo de su turno en cada asalto. En una salvación fallida, reciben una penalización de circunstancia de -10 pies a todas sus Velocidades durante 1 asalto. En caso de fallo crítico, son @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} durante 1 asalto. </li>\n </ul>",
       "stealth": "<p> (experto) </p>",
       "items": {
         "action->Burst Free": {
@@ -371,7 +371,7 @@
     "Planar Rift": {
       "name": "Grieta planaria",
       "description": "<p>Una grieta intenta atraer criaturas a otro plano (el DJ elige el plano específico).</p>",
-      "disable": "<p>@Check[type:thievery|dc:33|name:Crear un sello de grieta|traits:action:disable-a-device] (maestro) para sellar la grieta usando objetos fuertemente conectados a tu Plano, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (7.º rango; contrarrestar CD 31) para contrarrestar la grieta.</p>",
+      "disable": "<p>@Check[thievery|dc:33|name:Crear un sello de grieta|traits:action:disable-a-device] (maestro) para construir un sello de grieta utilizando objetos firmemente vinculados a tu plano, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (7.º rango; CD 31 para contrarrestar) para contrarrestar la grieta.</p>",
       "stealth": "<p>(entrenado)</p>",
       "items": {
         "action->Into the Great Beyond": {
@@ -535,7 +535,7 @@
       "items": {
         "action->Slam Shut": {
           "name": "Cerrarse de un portazo",
-          "description": "<p><strong>Desencadenante</strong> Se ejerce presión sobre cualquier losa del suelo.</p>\n<hr />\n<p><strong>Efecto</strong>La puerta cae, cerrando el pasillo. La losa inflige @Damage[3d8[bludgeoning]]{3d8 daño contundente} a cualquiera que está debajo o adyacente a la misma cuando cae y lo saca de su espacio de un empujón en una dirección aleatoria. Una criatura que tenga éxito en una salvación de @Check[reflex|dc:17|traits:damaging-effect] no sufrirá daño y saldrá rodando en una dirección aleatoria.</p>\n<p>Con un éxito crítico, podrá elegir la dirección. Levantar la losa caída requiere una prueba de @Check[athletics|dc:25|name:Levantar la losa|showDC:all] con éxito.</p>\n<p>Golpear los paneles del suelo dispara la trampa. La losa usa la misma CA y salvaciones que la trampa, pero tiene Dureza 12, PG 48 (UR 24)</p>"
+          "description": "<p><strong>Desencadenante</strong> Se ejerce presión sobre cualquier baldosa del suelo.</p>\n<hr />\n<p><strong>Efecto</strong> La puerta cae y cierra el pasillo. La losa de piedra inflige @Damage[3d8[bludgeoning]] de daño a cualquiera situado debajo o junto a ella cuando cae y lo empuja fuera de su espacio en una dirección aleatoria. Una criatura que supera una salvación de @Check[reflex|dc:17|traits:damaging-effect] no sufre daño y sale rodando en una dirección aleatoria. Con un éxito crítico, puede elegir la dirección.</p>\n<p>Levantar la losa caída requiere superar una prueba de @Check[athletics|dc:25|name:Lift a Slab Athletics|showDC:all].</p>\n<p>Golpear los paneles del suelo activa la trampa. La losa utiliza la misma CA y salvaciones que la trampa, pero tiene Dureza 12, PG 48 (UR 24).</p>"
         }
       }
     },
@@ -613,7 +613,7 @@
       }
     },
     "Sportlebore": {
-      "name": "Deporte",
+      "name": "Sportlebore",
       "description": "<p> Un sportlebore se esconde entre las víveres en un plato de comida o dentro de un paquete de raciones de sendero. </p>",
       "disable": "<p> Una criatura que nota el léboro deportivo puede sacarlo de la comida en la que está escondido automáticamente como una acción de Interactuar. </p>",
       "stealth": "<p> (experto) </p>",
@@ -636,14 +636,14 @@
       "items": {
         "action->Steam Blast": {
           "name": "Explosión de vapor",
-          "description": "<p> <strong> Gatillo </strong> El cable trampa se tira o se corta, normalmente porque una criatura atravesó el cuadrado con el cable trampa </p>\n <hr />\n <p> <strong> Efecto </strong> El vapor brota de las tuberías, causando @Damage[3d6[bludgeoning] ,3d6[fuego]]{3d6 daño contundente y 3d6 daño de fuego} ( @Check[type:reflex|dc:24|basic:true|name:Avoid the erupting steam|traits:mechanical,trap,hazard] ) a todas las criaturas en un radio de 15 pies. Las criaturas que fallan críticamente en su salvación son noqueadas @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} . </p>"
+          "description": "<p><strong>Desencadenante</strong> Se tira del cable trampa o se corta, normalmente porque una criatura atraviesa su casilla.</p><hr /><p><strong>Efecto</strong> El vapor sale violentamente de las tuberías e inflige @Damage[3d6[bludgeoning],3d6[fire]]{3d6 de daño contundente y 3d6 de daño de fuego} (@Check[reflex|dc:24|basic|name:Avoid the erupting steam|traits:mechanical,trap,hazard]) a todas las criaturas a 15 pies o menos. Las criaturas que obtengan un fallo crítico en su salvación quedan @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbadas}.</p>"
         }
       }
     },
     "Summoning Rune": {
       "name": "Runa de Convocación",
       "description": "<p>Una nube de sensores mágicos invisibles en un radio de 10 pies (3 m) rodea una runa invisible en la pared o el suelo del tamaño de la criatura a convocar.</p>",
-      "disable": "<p>@Check[type:acrobatics|dc:15|name:Acercarse a la runa] para acercarse sin desencadenar la trampa seguido de @Check[thievery|dc:17|name:Borrar la runa|traits:action:disable-a-device] (entrenado) para borrar la runa o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (1.º rango; contrarrestar CD 15) para contrarrestar la runa.</p>",
+      "disable": "<p>@Check[acrobatics|dc:15|name:Acercarse a la runa] para acercarse sin desencadenar la trampa seguido de @Check[thievery|dc:17|name:Borrar la runa|traits:action:disable-a-device] (entrenado) para borrar la runa o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (1.º rango; CD 15 para contrarrestar) para contrarrestar la runa.</p>",
       "reset": "<p>La trampa se rearma cada día al amanecer.</p>",
       "stealth": "<p>(entrenado)</p>",
       "items": {
@@ -710,7 +710,7 @@
     "Vorpal Executioner": {
       "name": "Ejecutor vorpalino",
       "description": "<p>Una hoja de sierra endiabladamente afilada desciende y recorre unas ranuras en un complejo camino por toda la sala, intentando decapitar a todo el que se encuentra dentro.</p>",
-      "disable": "<p>@Check[type:thievery|dc:41|name:Atascar hoja de sierra|traits:action:disable-a-device] (experto) en cuatro intersecciones diferentes para atascar todos los caminos posibles de la hoja de sierra, impidiendo que recorra la sala.</p>",
+      "disable": "<p>@Check[thievery|dc:41|name:Atascar hoja de sierra|traits:action:disable-a-device] (experto) en cuatro intersecciones diferentes para atascar todos los caminos posibles de la hoja de sierra, impidiendo que recorra la sala.</p>",
       "hpDetails": "por intersección",
       "reset": "<p>La trampa se rearma en el transcurso del asalto y puede activarse de nuevo al cabo de 1 asalto.</p>",
       "stealth": "<p>(experto)</p>",
@@ -773,7 +773,7 @@
     "Yellow Mold": {
       "name": "Moho amarillo",
       "description": "<p>Las esporas venenosas del moho atacan a las criaturas cercanas.</p>",
-      "disable": "<p>@Check[type:survival|dc:26|name:Eliminar el moho] (experto) para eliminar el moho sin desperdigar las esporas</p>",
+      "disable": "<p>@Check[survival|dc:26|name:Eliminar el moho] (experto) para eliminar el moho sin desperdigar las esporas</p>",
       "stealth": "<p>(entrenado)</p>",
       "items": {
         "action->Spore Explosion": {
