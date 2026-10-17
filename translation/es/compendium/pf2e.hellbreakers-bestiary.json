@@ -32,12 +32,12 @@
           "description": "<p>Un adiutor se recarga mágicamente conjurando asaltos de fuego infernal creadas en las Ciudadelas de Avernus. Sus Golpes con sus mosquetes de piedra son mágicos e infligen 2d6 daño de fuego adicional.</p>"
         },
         "action->Fiendish Reload": {
-          "name": "Juegos de Fiendish Reload",
+          "name": "Recarga infernal",
           "description": "<p>Cuando el adiutor recarga su mosquete, puede lanzar @UUID[Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR]{Escudo} como parte de la misma acción.</p>"
         },
         "action->Punish the Wayward": {
           "name": "Castigar al malvado",
-          "description": "<p>El adiutor hace un ataque cuerpo a cuerpo o a distancia. Si este Golpe tiene éxito, la criatura objetivo recibe el daño normal y debe intentar un salvación @Check[will|dc:22] adicional.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no sufre efectos adicionales.</p>\n<p><strong>Éxito</strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>\n<p><strong>Fallo</strong> La criatura está asustada 1. Mientras que puede ver al adiutor, no puede reducir su condición asustada.</p>\n<p><strong>Fallo crítico</strong> Como fracaso, pero la criatura también es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} para el adiutor mientras está asustada.</p>"
+          "description": "<p>El adiutor hace un ataque cuerpo a cuerpo o a distancia. Si este Golpe tiene éxito, la criatura objetivo recibe el daño normal y debe intentar una salvación @Check[will|dc:22] adicional.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no sufre efectos adicionales.</p>\n<p><strong>Éxito</strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>\n<p><strong>Fallo</strong> La criatura está asustada 1. Mientras que puede ver al adiutor, no puede reducir su condición asustada.</p>\n<p><strong>Fallo crítico</strong> Como fracaso, pero la criatura también es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} para el adiutor mientras está asustada.</p>"
         }
       }
     },
@@ -59,7 +59,7 @@
         },
         "action->Pinning Strike": {
           "name": "Pinning Golpe",
-          "description": "<p>El ayudante armiger Hellknight realiza un ataque con alabarda. En caso de éxito, el objetivo también es @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} hasta el comienzo del siguiente turno del ayudante, hasta que el ayudante se aleje más de 10 pies del objetivo, o el ayudante realice otro Golpe con alabarda, lo que ocurra primero. El objetivo también puede intentar [[/act escape dc=18]].</p>"
+          "description": "<p>El armígero ayudante de los Caballeros Infernales realiza un Golpe de alabarda. Con un éxito, el objetivo también adquiere el estado @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado} hasta el inicio del siguiente turno del ayudante, hasta que este se aleje más de 10 pies del objetivo o hasta que realice otro Golpe de alabarda, lo que ocurra primero. El objetivo también puede intentar [[/act escape dc=18]].</p>"
         },
         "lore->Hell Lore": {
           "name": "Saber (Infierno)"
@@ -90,7 +90,7 @@
         },
         "action->Defy Devils!": {
           "name": "¡Defiende a los demonios!",
-          "description": "<p><strong>Desencadenante</strong> Una criatura dentro de 30 pies falla críticamente un lanzamiento salvador o un control de habilidad contra un demonio, o una criatura que adora a los demonios o tiene un contrato mágico con un demonio</p>\n<hr /> <p><strong>Efecto</strong> La criatura que desencadenó la acción vuelve a lanzar la jaqueta y debe tomar el nuevo resultado. Luego se vuelve temporalmente inmune a ¡Defiende a los demonios! durante 24 horas.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura a 30 pies o menos obtiene un fallo crítico en una salvación o prueba de habilidad contra un diablo, o contra una criatura que adore a los diablos o tenga un contrato mágico con uno.</p>\n<hr />\n<p><strong>Efecto</strong> La criatura desencadenante repite la prueba y debe usar el nuevo resultado. Después es temporalmente inmune a ¡Desafiad a los diablos! durante 24 horas.</p>"
         },
         "action->Divine Weapon of Milani": {
           "name": "Arma divina de Milani",
@@ -117,21 +117,21 @@
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.xS8ybzuqPSi3Jb8k]\n<p>24 hours, [[/act disable-device dc=24]], standby</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.WindUp]</p>"
         },
         "action->Explosive End": {
-          "name": "Explosivos",
+          "name": "Final explosivo",
           "description": "<p><strong>Desencadenante</strong> El aurocan cae a 0 PG</p>\n<hr /> <p><strong>Efecto</strong> El aurocan detona. Cada criatura en un @Template[type:emanation|distance:30] recibe @Damage[3d12[bludgeoning],3d8[fire]|options:area-damage] de daño (@Check[reflex|dc:23|basic] de salvación). En un fracaso crítico, una criatura también es golpeada @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}.</p>"
         },
         "action->Blistering Touch": {
-          "name": "Blistering Tocar",
+          "name": "Toque abrasador",
           "description": "<p>El aurocan canaliza parte del vapor que lo alimenta hacia su cuerpo, calentando su estructura metálica. Durante el siguiente minuto, sus Golpes cuerpo a cuerpo infligen 1d6 de daño de Fuego adicional.</p>",
           "selfEffect": "Efecto: Toque de ampolla"
         },
         "action->Head of Steam": {
           "name": "Jefe de Steam",
-          "description": "<p><strong>Requisitos</strong> El aurocan ha usado Toque de Ampolla en las últimas 2 asaltos, y su cabeza está unida</p>\n<hr /> <p><strong>Efecto</strong> El aurocán expulsa una nube de vapor cuando su cabeza se desprende. La cabeza ocupa un 5 -pie cuadrado y tiene una velocidad de vuelo de 15 pies. Como parte de esta acción, y cada vez que el aurocan lo sostiene en una asaltos posterior, la cabeza puede volar hasta su velocidad, lanzando vapor directamente hacia abajo mientras se mueve. Cada criatura cuyo espacio no pase más de 5 pies arriba durante su vuelo recibe @Damage[4d6[fire]] de daño (@Check[reflex|dc:26|basic] salvación). En un salvación fallido, una criatura también está @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} por el vapor durante 1 asalto (o @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} en un fracaso crítico).</p>\n<p>Mientras su cabeza está desprendida, el aurocan no puede hacer golpes de cuerno, pero puede realizar todas las demás acciones normalmente. La cabeza tiene un CA de 27, Dureza 10, y los mismos tiradas de salvación, inmunidades, debilidades y resistencias que el aurocan. Si la cabeza recibe 20 de daño en un solo ataque, cae al suelo rota, y el aurocan es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} por 1 asalto. Si la cabeza vuelve a entrar en el espacio del aurocan, se vuelve a unir.</p>"
+          "description": "<p><strong>Requisitos</strong> El aurocan ha usado Toque de Ampolla en las últimas 2 asaltos, y su cabeza está unida</p>\n<hr /> <p><strong>Efecto</strong> El aurocán expulsa una nube de vapor cuando su cabeza se desprende. La cabeza ocupa un 5 -pie cuadrado y tiene una velocidad de vuelo de 15 pies. Como parte de esta acción, y cada vez que el aurocan lo sostiene en una asaltos posterior, la cabeza puede volar hasta su velocidad, lanzando vapor directamente hacia abajo mientras se mueve. Cada criatura cuyo espacio no pase más de 5 pies arriba durante su vuelo recibe @Damage[4d6[fire]] de daño (@Check[reflex|dc:26|basic] salvación). En una salvación fallido, una criatura también está @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} por el vapor durante 1 asalto (o @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} en un fracaso crítico).</p>\n<p>Mientras su cabeza está desprendida, el aurocan no puede hacer golpes de cuerno, pero puede realizar todas las demás acciones normalmente. La cabeza tiene un CA de 27, Dureza 10, y los mismos tiradas de salvación, inmunidades, debilidades y resistencias que el aurocan. Si la cabeza recibe 20 de daño en un solo ataque, cae al suelo rota, y el aurocan es @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} por 1 asalto. Si la cabeza vuelve a entrar en el espacio del aurocan, se vuelve a unir.</p>"
         },
         "action->Trample": {
           "name": "Pisotear",
-          "description": "<p>Grande o más pequeño, pezuña, @Check[reflex|dc:26|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+          "description": "<p>Grande o menor, pezuña, @Check[reflex|dc:26|basic] @Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
         }
       }
     },
@@ -164,7 +164,7 @@
         },
         "action->Correcting Veil": {
           "name": "Velo de Corrección",
-          "description": "<p>100 pies. La presencia telepática del instillo monitorea constantemente las perspectivas y moldea el pensamiento hacia una claridad infernal. Las criaturas dentro del aura obtienen la hazaña de habilidad @UUID[Compendium.pf2e.feats-srd.Item.1Bt7uCW2WI4sM84P]{Conocimiento dudoso} pero no son conscientes de este efecto. El instillo es instantáneamente consciente cuando cualquier criatura dentro del aura falla una comprobación de Recall Knowledge e influye en la información errónea que la criatura obtiene.</p>"
+          "description": "<p>100 pies. La presencia telepática del instillo vigila constantemente los puntos de vista y moldea el pensamiento hacia una claridad infernal. Las criaturas dentro del aura obtienen la dote de habilidad @UUID[Compendium.pf2e.feats-srd.Item.1Bt7uCW2WI4sM84P]{Conocimiento dudoso}, pero no son conscientes de este efecto. El instillo se da cuenta inmediatamente cuando cualquier criatura dentro del aura falla una prueba de Recordar conocimiento e influye en la información errónea que obtiene esa criatura.</p>"
         },
         "action->Nod of the Tongue": {
           "name": "El Acuerdo de la Lengua",
@@ -192,12 +192,12 @@
       "items": {
         "action->No Orphans Allowed": {
           "name": "No se permiten huérfanos",
-          "description": "<p><strong>Desencadenante</strong> La puerta se abre</p>\n<hr /> <p><strong>Efecto</strong> El polvo se rocía en una ráfaga que llena el cuadrado delante de la puerta y todos los cuadrados adyacentes en el dormitorio de los huérfanos. Cualquier criatura en el área debe intentar un salvación @Check[reflex|dc:21].</p>\n<hr /> <p><strong>Éxito</strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} para 1 asalto.</p>\n<p><strong>Fallo</strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} para 1 asalto.</p>\n<p><strong>Fallo crítico</strong> La criatura queda cegada durante 1 minuto.</p>"
+          "description": "<p><strong>Desencadenante</strong> La puerta se abre</p>\n<hr /> <p><strong>Efecto</strong> El polvo se rocía en una ráfaga que llena el cuadrado delante de la puerta y todos los cuadrados adyacentes en el dormitorio de los huérfanos. Cualquier criatura en el área debe intentar una salvación @Check[reflex|dc:21].</p>\n<hr /> <p><strong>Éxito</strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrado} para 1 asalto.</p>\n<p><strong>Fallo</strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} para 1 asalto.</p>\n<p><strong>Fallo crítico</strong> La criatura queda cegada durante 1 minuto.</p>"
         }
       }
     },
     "Brakknap": {
-      "name": "Botón de bloqueo",
+      "name": "Brakknap",
       "blurb": "Oráculo de goblin masculino",
       "items": {
         "spellcastingEntry->Divine Spontaneous Spells": {
@@ -215,7 +215,7 @@
         },
         "action->Evoke Fault": {
           "name": "Evoque Fault",
-          "description": "<p>Los espíritus de sus antepasados ​​le avisan a Brakknap de la debilidad de un enemigo a menos de 30 pies. Hasta el final de su turno, Brakknap obtiene una bonificación de estado de +1 a la tirada de ataque de su próximo Golpe contra ese objetivo, y ese Golpe inflige 1d6 de daño de precisión adicional. Al final de su turno, Brakknap se convierte en @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} durante 1 minuto. Si Brakknap usa Evocar fallo mientras es torpe, aumenta el valor de su condición de torpeza en 1, hasta un máximo de @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 3}.</p>",
+          "description": "<p>Los espíritus de sus ancestros revelan a Brakknap una debilidad de un enemigo a un máximo de 30 pies. Hasta el final de su turno, obtiene un bonificador por estado de +1 a la tirada de ataque de su siguiente Golpe contra ese objetivo, y ese Golpe inflige 1d6 de daño de precisión adicional. Al final de su turno, Brakknap adquiere el estado @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} durante 1 minuto. Si usa Evocar debilidad mientras está torpe, aumenta en 1 su valor de torpe, hasta un máximo de @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 3}.</p>",
           "selfEffect": "Efecto: Evocar falla"
         },
         "action->Vision of Goblins' Fall": {
@@ -244,7 +244,7 @@
         },
         "action->Branch Grab": {
           "name": "Agarre de rama",
-          "description": "<p>Si el matorral sin aliento golpea a una criatura con sus hojas, esa criatura se convierte en @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} A diferencia de una Agarra normal, la criatura no es @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado}, pero no puede moverse más allá del alcance de las hojas del matorral. Una criatura puede cortar una rama golpeando contra CA 18 y causando al menos @Damage[12[slashing]] daño. Una rama no tiene la Dureza del matorral, y dañarla no causa daño al matorral ([[/act escape dc=26]]).</p>"
+          "description": "<p>Si el matorral sin aliento impacta en una criatura con sus hojas, esta adquiere el estado @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} por el matorral. A diferencia de los efectos normales de Agarrar, no tiene el estado @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado}, pero no puede moverse más allá del alcance de las hojas. Una criatura puede cortar una rama dando un Golpe contra CA 18 e infligiendo al menos @Damage[12[slashing]] de daño. La rama no tiene la Dureza del matorral, y dañarla no inflige daño al matorral ([[/act escape dc=26]]).</p>"
         },
         "action->Suffocate": {
           "name": "Asfixiar",
@@ -279,7 +279,7 @@
         },
         "action->Steel Command": {
           "name": "Comando de acero",
-          "description": "<p><strong>Desencadenante</strong> Una criatura en el aura de Caeto le daña</p>\n<hr /> <p><strong>Efecto</strong> Caeto ordena a su enemigo arrodillarse en súplica. La criatura que dispara debe intentar un salvación @Check[will|dc:30]. Luego se vuelven inmunes a Comando de Acero durante 1 minuto.</p>\n<hr /> <p><strong>Éxito</strong> La criatura debe elegir entre soltar @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} como acción libre o recibir @Damage[3d6[mental],1d8[persistent,spirit]] de daño.</p>\n<p><strong>Fallo</strong> La criatura debe elegir caer en posición de caída como acción libre y ser @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} o recibir @Damage[6d6[mental],2d8[persistent,spirit]] de daño.</p>\n<p><strong>Fallo crítico</strong> La criatura cae tumbada, se ralentiza 1, y recibe @Damage[12d6[mental],2d8[persistent,spirit]] de daño</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura en el aura de Caeto le daña</p>\n<hr /> <p><strong>Efecto</strong> Caeto ordena a su enemigo arrodillarse en súplica. La criatura que dispara debe intentar una salvación @Check[will|dc:30]. Luego se vuelven inmunes a Comando de Acero durante 1 minuto.</p>\n<hr /> <p><strong>Éxito</strong> La criatura debe elegir entre soltar @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} como acción libre o recibir @Damage[3d6[mental],1d8[persistent,spirit]] de daño.</p>\n<p><strong>Fallo</strong> La criatura debe elegir caer en posición de caída como acción libre y ser @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} o recibir @Damage[6d6[mental],2d8[persistent,spirit]] de daño.</p>\n<p><strong>Fallo crítico</strong> La criatura cae tumbada, se ralentiza 1, y recibe @Damage[12d6[mental],2d8[persistent,spirit]] de daño</p>"
         },
         "action->Hand of the Avenger": {
           "name": "Mano del Vengador",
@@ -294,8 +294,8 @@
           "description": "<p>Caeto usa su postura para afirmar su dominio sobre las masas. Intenta un chequeo de Intimidación a [[/act demoralize]] todas las criaturas no aliadas dentro de 60 pies. No toma una penalización contra los objetivos que no entienden su idioma. En un éxito crítico, ese objetivo no se vuelve temporalmente inmune a los otros intentos de Caeto de desmoralizarlo.</p>"
         },
         "action->Subdue Fugitive": {
-          "name": "Sometido fugitivo",
-          "description": "<p><strong>Frecuencia</strong> una vez por minuto</p>\n<p><strong>Requisitos</strong> Caeto está blandiendo su espada larga</p>\n<hr />\n<p><strong>Efecto</strong> Caeto usa el arma cambiante de su runa cambiante para transformar su espada en un mayal y realiza un ataque cuerpo a cuerpo con ella. Si el Golpe impacta y causa daño, puede intentar una prueba de Atletismo como acción gratuita para @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Desarmar} o @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Viaje} el objetivo de la huelga. Este intento no se aplica ni cuenta para la penalización por ataque múltiple de Caeto.</p>",
+          "name": "Someter al fugitivo",
+          "description": "<p><strong>Frecuencia</strong> una vez por minuto</p>\n<p><strong>Requisitos</strong> Caeto está empuñando su espada larga</p>\n<hr />\n<p><strong>Efecto</strong> Caeto utiliza Cambiar arma de su runa cambiante para transformar su espada en un mayal y da un Golpe cuerpo a cuerpo con él. Si impacta e inflige daño, puede realizar una prueba de Atletismo como acción gratuita para @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Desarmar} o @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Derribar} al objetivo del Golpe. Este intento no aplica el penalizador por ataque múltiple de Caeto ni cuenta para determinarlo.</p>",
           "rules": {
             "1": {
               "label": "Espada larga de desplazamiento"
@@ -344,7 +344,7 @@
           "name": "Puño"
         },
         "action->Captain's Edge": {
-          "name": "Capitán es Edge",
+          "name": "Ventaja de la capitana",
           "description": "<p>Lamperia inflige 1d8 daño de precisión adicional con Golpes cuando está a bordo de su nave.</p>"
         },
         "action->Hell's Glare": {
@@ -374,7 +374,7 @@
         },
         "action->Gang Determination": {
           "name": "Determinación de pandillas",
-          "description": "<p>Cuando un leal chelaxiano está adyacente a al menos otro aliado, gana un bonificador por circunstancia + 1 a los salvamentos de Will.</p>"
+          "description": "<p>Cuando un lealista chelaxiano está adyacente al menos a otro aliado, obtiene un bonificador por circunstancia de +1 a las salvaciones de Voluntad.</p>"
         }
       }
     },
@@ -393,7 +393,7 @@
         },
         "action->Gang Determination": {
           "name": "Determinación de pandillas",
-          "description": "<p>Cuando un leal chelaxiano está adyacente a al menos otro aliado, gana un bonificador por circunstancia + 1 a los salvamentos de Will.</p>"
+          "description": "<p>Cuando un lealista chelaxiano está adyacente al menos a otro aliado, obtiene un bonificador por circunstancia de +1 a las salvaciones de Voluntad.</p>"
         },
         "action->For Cheliax!": {
           "name": "¡Por Cheliax!",
@@ -416,7 +416,7 @@
         },
         "action->Punish the Fallen": {
           "name": "Castigar a los caídos",
-          "description": "<p><strong>Requisitos</strong> La última acción del recluta Chelaxiano fue un éxito @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Derribar} contra un enemigo</p>\n<hr /> <p><strong>Efecto</strong> El recluta chelaxiano realiza un Golpe de guisarme contra el enemigo @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}. Este ataque tiene la misma penalizador por ataque múltiple que el Trip, pero aumentan su penalizador por ataque múltiple como de costumbre después de que el Golpe se haya resuelto.</p>"
+          "description": "<p><strong>Requisitos</strong> La última acción del recluta Chelaxiano fue un éxito @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Derribar} contra un enemigo</p>\n<hr /> <p><strong>Efecto</strong> El recluta chelaxiano realiza un Golpe de guisarme contra el enemigo @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}. Este ataque tiene el mismo penalizador por ataque múltiple que el Trip, pero aumentan su penalizador por ataque múltiple como de costumbre después de que el Golpe se haya resuelto.</p>"
         }
       }
     },
@@ -434,7 +434,7 @@
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]\nTruespeech (Constant)"
         },
         "spell->Translocate (At Will)": {
-          "name": "Cambiar de sitio (a voluntad)"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nTranslocate (At Will)"
         },
         "strike-melee->Wing": {
           "name": "Ala"
@@ -466,7 +466,7 @@
         },
         "action->Despairing Shriek": {
           "name": "Grito desesperante",
-          "description": "<p>El coarti emite un terrible grito, infligiendo @Damage[4d6[sonic]|options:area-damage] de daño a todas las criaturas en un @Template[emanation|distance:30] con un @Check[will|dc:25|basic|options:area-effect] de salvación. Las criaturas sagradas que fallan en este salvación también son @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2}; este efecto añadido tiene la emoción, el miedo y los rasgos mentales.</p>\n<p>El coarti no puede usar Grito desesperado de nuevo por [[/gmr 1d4 #Recharge Despairing Shriek]]{1d4 asaltos}.</p>"
+          "description": "<p>El coarti emite un terrible grito, infligiendo @Damage[4d6[sonic]|options:area-damage] de daño a todas las criaturas en un @Template[emanation|distance:30] con un @Check[will|dc:25|basic|options:area-effect] de salvación. Las criaturas sagradas que fallan en esta salvación también son @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2}; este efecto añadido tiene la emoción, el miedo y los rasgos mentales.</p>\n<p>El coarti no puede usar Grito desesperado de nuevo por [[/gmr 1d4 #Recharge Despairing Shriek]]{1d4 asaltos}.</p>"
         },
         "action->Sneak Attack": {
           "name": "Ataque furtivo",
@@ -488,7 +488,7 @@
       "routine": "<p>( 1 acción) Los murciélagos y ratas muerden a todas las criaturas en la habitación, haciendo @Damage[(2d8+3)[piercing]] daño ( @Check[reflex|dc:24|basic] salvación). En caso de fracaso, la criatura también recibe @Damage[3[persistent,bleed]] de daño.</p>",
       "items": {
         "action->Infest": {
-          "name": "Infestación",
+          "name": "Infestar",
           "description": "<p><strong>Desencadenante</strong> Ezio convoca a los enjambres</p>\n<hr /> <p><strong>Efecto</strong> Los enjambres se fusionan de una manera nauseabunda. Cada criatura en la habitación debe tener éxito en un @Check[fortitude|dc:24] salvar o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2} en un fracaso crítico). El peligro entonces lanza la iniciativa.</p>"
         }
       }
@@ -505,7 +505,7 @@
           "name": "Conjuros de dominio de clérigo"
         },
         "equipment->Religious Symbol of Urgathoa": {
-          "name": "Símbolo religioso de Urgathoa",
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\nReligious Symbol of Urgathoa",
           "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]\n<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
         },
         "strike-melee->Scythe": {
@@ -567,7 +567,7 @@
           "description": "<p>El cuerpo de un fumecrux consiste en vapores infernales infundidos con energía del vacío. Cuando una criatura que está aguantando el aliento mientras ha sido Tragada entera por un fumecrux ataca o lanza un conjuro en un turno, la criatura pierde 3 asaltos de aire en lugar de 2.</p>"
         },
         "action->Spit Up": {
-          "name": "Escupitajo Arriba",
+          "name": "Regurgitar",
           "description": "<p><strong>Requisitos</strong> El fumecrux draconiano tiene una criatura llamada \"El fumecrux draconiano\".</p>\n<hr /> <p><strong>Efecto</strong> El fumecrux draconiano escupe la criatura tragada, lanzándola por el aire hasta 40 pies de distancia. La criatura recibe daño de golpe igual a la distancia que recorrió y aterriza @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}. Si cae en el mismo espacio que otra criatura, la otra criatura es empujada 5 pies y recibe @Damage[(3d8+4)[bludgeoning]] de daño ( @Check[reflex|dc:25|basic] salvación). El fumecrux no puede escupir más de una criatura a la vez sin importar su tamaño, y la criatura más recientemente tragada es escupida primero.</p>"
         },
         "action->Swallow Whole": {
@@ -612,13 +612,13 @@
           "description": "<p>El druida toma la apariencia de un animal pequeño u objeto inanimado. Esto no afecta a sus estadísticas, pero podría cambiar el tipo de daño de sus Golpes mientras estén en forma animal.</p>\n<hr /> <p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
         },
         "action->Haunting Echoes": {
-          "name": "Echoes embrujados",
+          "name": "Ecos inquietantes",
           "description": "<p>El drude elige como objetivo a una criatura que pueda ver a 30 pies o menos y la asalta con ilusiones de fantasmas y terrores nocturnos. La criatura debe intentar una salvación @Check[will|dc:18].</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no se ve afectada y es temporalmente inmune durante 24 horas.</p>\n<p><strong>Éxito</strong> La criatura sufre @Damage[1d6[mental]] de daño.</p>\n<p><strong>Fallo</strong> La criatura sufre @Damage[1d6[mental]] de daño y queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 1}.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre @Damage[2d6[mental]] de daño y queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 2}.</p>"
         }
       }
     },
     "Drunken Isgeri Slayer": {
-      "name": "Cazadora de Isgeri borracha",
+      "name": "Matador isgeri borracho",
       "blurb": "Borracho humano masculino",
       "items": {
         "strike-ranged->Shortbow": {
@@ -634,7 +634,7 @@
           "name": "Puño"
         },
         "action->Drunken Stumble": {
-          "name": "Ebrio Stumble",
+          "name": "Traspié de borracho",
           "description": "<p><strong>Desencadenante</strong> El asesino de Isgeri borracho es golpeado con un ataque que inflige daño físico.</p>\n<hr /> <p><strong>Efecto</strong> El asesino borracho se aleja tropezando del golpe. Ganan resistencia 2 al daño del ataque que los desencadenó y pueden pasar a la siguiente fase. También toman una penalización de circunstancia – 1 a CA por 1 asalto.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.QVLX06QevxTcuZxU]{Efecto: Tropezadero borracho}</p>",
           "selfEffect": "Efecto: Tropezadero borracho"
         },
@@ -656,7 +656,7 @@
         },
         "action->Fiendish Order": {
           "name": "Orden de demonios",
-          "description": "<p>30 pies. Un ort de élite es lo suficientemente maduro como para ser transformado en otro demonio más poderoso y exuda un aura de superioridad. Cada aliado en el aura gana un bonificador por circunstancia de +1 a los lanzamientos de ataque y daño.</p>"
+          "description": "<p>30 pies. Un ort de élite ha madurado lo suficiente para transformarse en otro diablo más poderoso y emana un aura de superioridad. Cada ort aliado dentro del aura obtiene un bonificador por circunstancia de +1 a las tiradas de ataque y daño.</p>"
         },
         "action->Subservience": {
           "name": "Servilismo",
@@ -665,7 +665,7 @@
       }
     },
     "Erinys Sister Wight": {
-      "name": "Erinia Hermana Criatura",
+      "name": "Tumularia hermana de la Erinia",
       "blurb": "Criatura",
       "hpDetails": "alimentado por el rencor, curación del vacío",
       "publicNotes": "<p>Los wights son muertos vivientes inteligentes generados mediante inevitables ciclos de rencor. Este rencor podría proceder de su propia voluntad maligna en vida o haber sido instilado por rituales nigrománticos, que típicamente implican la profanación de los lugares de enterramiento. Suelen acechar en los camposantos, las catacumbas u otros lugares destinados a los muertos. Su hambre se dirige hacia los vivos, cuyos corazones batientes y su rubicundo calor les inspiran un odio visceral.</p>\n<p>Existen tantos tipos como tipos de gente a partir de la que podrían haberse creado. Enormes brutos, escurridizos bribones y astutos pensadores acaban formando wights diferentes con sus propias especialidades. El entorno juega también un papel a la hora de determinar las aptitudes especiales y las defensas de uno de ellos. Los wights de la escarcha, por ejemplo, se pueden encontrar en las partes del mundo donde morir de frío es habitual y el resentimiento de haber sido abandonado en el yermo es una fuente común de rencor. Duraderos y mantenidos por la energía del vacío, pueden existir en los entornos rigurosos sin descomponerse en la forma en que lo hacen algunos muertos vivientes menores.</p>\n<p>Un solo wight puede causar grandes estragos si se ve obligado a alzarse de su tumba. Como quiera que las criaturas muertas a manos de uno de ellos también se pueden convertir en wights, solo hace falta uno y un puñado de desafortunados visitantes a un cementerio para crear una verdadera horda de estos muertos vivientes. Así pues, los sacerdotes astutos y los aventureros saben que la mejor solución para un problema de wights es exterminarlos de forma rápida y total. Sin embargo, hay que tener cuidado en destruir a los engendros antes de tratar de destruir a su progenitor, puesto que un engendro sin amo obtiene la aptitud de crear engendros propios.</p>",
@@ -736,10 +736,10 @@
         },
         "action->Hypnotic Gaze": {
           "name": "Mirada hipnótica",
-          "description": "<p>30 pies. Incluso cuando no intenta dominar a una criatura, Ezio usa su poder sobre las mentes de los demás para confundirlos sutilmente, ayudando a habilitar sus planes. Las criaturas en el aura reciben una penalización de estado de – 1 a Percepción, que se verifica a @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Averiguar intenciones} y CD de Percepción contra Ezio. Cuando una criatura termina su turno en el aura de Ezio, debe intentar un salvación @Check[will|dc:22]. En caso de fallo, se convierte en @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} para 1 asalto (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} para 1 asalto en caso de fallo crítico).</p>"
+          "description": "<p>30 pies. Incluso cuando no intenta dominar a una criatura, Ezio usa su poder sobre las mentes de los demás para confundirlos sutilmente, ayudando a habilitar sus planes. Las criaturas en el aura reciben una penalización de estado de – 1 a Percepción, que se verifica a @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Averiguar intenciones} y CD de Percepción contra Ezio. Cuando una criatura termina su turno en el aura de Ezio, debe intentar una salvación @Check[will|dc:22]. En caso de fallo, se convierte en @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} para 1 asalto (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} para 1 asalto en caso de fallo crítico).</p>"
         },
         "action->Vampire Vulnerabilities": {
-          "name": "Vulnerabilidades de Vampire",
+          "name": "Vulnerabilidades del vampiro",
           "description": "<p>Todos los vampiros poseen las siguientes vulnerabilidades.</p>\n<ul>\n<li><strong>Compulsiones</strong> Los vampiros son criaturas con compulsiones extrañas e indescifrables. Un vampiro típico no puede cruzar voluntariamente agua corriente si no es transportado mientras se oculta en su ataúd, ni entrar en un domicilio privado si no le invita alguien con la autoridad suficiente para hacerlo. A discreción tuya, los vampiros pueden tener compulsiones diferentes: un vampiro pirata podría no ser capaz de poner el pie en tierra firme sin ser invitado, por ejemplo. Se puede obligar a un vampiro a hacer estas cosas, y podría ser capaz de sobreponerse a su compulsión igual que se sobrepone a su revulsión.</li>\n<li><strong>Revulsion</strong> Un vampiro no puede acercarse voluntariamente a menos de 10 pies (3 m) a los ajos si alguien los empuña o a un símbolo religioso empuñado de un dios con una opción de santificación sagrada. Para empuñar ajo o un símbolo religioso, una criatura tiene que Interactuar, y permanece empuñado durante 1 asalto (de forma parecida a Alzar un escudo). Si el vampiro se acerca involuntariamente a 10 pies (3 m) o menos de un objeto de su revulsión, sufre el estado @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo}, corriendo para alejarse del objeto de su repulsión hasta acabar una acción más allá de 10 pies (3 m). Al cabo de 1 asalto de verse expuesto al motivo de su revulsión, un vampiro puede hacer una salvación de @Check[will|dc:25] como una acción individual, que tiene el rasgo concentrar. Con un éxito, supera su revulsión durante [[/gmr 1d6 #rounds]]{1d6 asaltos} (o 1 hora con un éxito crítico).</li>\n<li><strong>Estaca</strong> Una estaca de madera clavada en el corazón de un vampiro lo reduce a 0 PG y evita que se cure por encima de 0, incluso en su ataúd. Clavarle una estaca requiere 3 acciones y solo funciona si está @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Inconsciente}. Si se le quita, el vampiro puede curarse de nuevo por encima de 0 PG y, si está en su ataúd, el período de descanso de 1 hora empieza una vez se le quita. Si la cabeza del vampiro se cercena y se unge con agua bendita mientras la estaca está clavada, el vampiro queda destruido.</li>\n<li><strong>Luz solar</strong> Si se expone a la luz solar directa, un vampiro queda inmediatamente @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1}. El valor de lentificado se incrementa en 1 cada vez que acaba su turno expuesto a la luz solar y el estado se acaba cuando ya no lo está. Si el vampiro pierde de esta forma todas sus acciones, queda destruido. Debido a su aversión sobrenatural a la luz, los vampiros no proyectan sombras ni se reflejan en los espejos.</li>\n</ul>"
         },
         "action->Void Healing": {
@@ -809,7 +809,7 @@
         },
         "action->Block the Path": {
           "name": "Bloquear el camino",
-          "description": "<p>El falso Hellbreaker se prepara para acosar a cualquiera que intente pasar junto a ellos. Si golpea a una criatura con un Golpe Reactivo desencadenado por una acción de movimiento, la criatura desencadenante trata cualquier casilla dentro del alcance del guardia del mayordomo como terreno difícil hasta el comienzo del siguiente turno del falso Hellbreaker.</p>"
+          "description": "<p>El falso rompeinfiernos se prepara para hostigar a cualquiera que intente pasar junto a él. Si impacta en una criatura con un Golpe reactivo desencadenado por una acción de movimiento, esa criatura trata todas las casillas dentro del alcance del guardia del mayordomo como terreno difícil hasta el inicio del siguiente turno del falso rompeinfiernos.</p>"
         },
         "lore->Legal Lore": {
           "name": "Saber (legal)"
@@ -817,7 +817,7 @@
       }
     },
     "Fiendish Viro Ahala": {
-      "name": "Demonio Estonia",
+      "name": "Viro Ahala infernal",
       "blurb": "Guerrero del diablo masculino",
       "languages": "telepatía 100 pies (30 m)",
       "saveDetails": "+ 1 estado a todos los salvados vs magia; + 16 Ref vs efectos de área",
@@ -826,13 +826,13 @@
           "name": "Conjuros divinos innatos"
         },
         "spell->Translocate (At Will)": {
-          "name": "Cambiar de sitio (a voluntad)"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nTranslocate (At Will)"
         },
         "spell->Invisibility (Self Only, At Will)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (Self Only, At Will)"
         },
         "spell->Fear (At Will)": {
-          "name": "Miedo (a voluntad)"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]\nFear (At Will)"
         },
         "strike-melee->Longsword": {
           "name": "Espada larga"
@@ -841,7 +841,7 @@
           "name": "Guantelete"
         },
         "strike-ranged->Flaming Gaze": {
-          "name": "Mirador de fuego"
+          "name": "Mirada llameante"
         },
         "action->At-Will Spells": {
           "name": "Conjuros a voluntad"
@@ -936,7 +936,7 @@
       }
     },
     "Godclaw Hellcrown": {
-      "name": "Godclaw corona del infierno",
+      "name": "Corona infernal de la Garra Divina",
       "hpDetails": "curación del vacío",
       "publicNotes": "<p>Las coronas infernales son un peligro conocido cuando se lucha contra cualquier orden de caballeros infernales, especialmente cuando esos caballeros provienen de la Orden de la Garra Divina. Estos infernales parecen tener un mejor conocimiento de la necromancia que se entrelaza a través de su existencia y se ha informado de que forman armas espectrales de sus cuerpos fantasmales que pueden lanzar a sus enemigos en un instante. Estos son algunos de los más peligrosos Hellcrowns que uno puede encontrar.</p>\n<hr /> <p>Aquellos que están bien versados en el arte de luchar contra los Caballeros del Infierno advierten a sus compañeros que eviten decapitar a sus enemigos. Esto se debe a que la lealtad sobrenatural de un Caballero del Infierno a veces puede impregnar su casco con energía vacía, lo que resulta en un espíritu inquieto llamado corona infernal. Los Hellcrowns flotan en el aire, sus cuerpos fantasmales se asemejan a las apariciones humeantes de la armadura que una vez llevaron en vida, y aunque conservan su lealtad retorcida a su causa, queda poco de su antigua humanidad y sentido de sí mismo.</p>\n<p>Los Hellcrowns no se unen a sus contrapartes vivientes en ejércitos o regimientos, prefiriendo atormentar los sangrientos lugares de batalla donde originalmente cayeron. La fuerza de una corona infernal varía dependiendo del poder del soldado vivo que cayó y el poder de su enemistad hacia la causa de su muerte. En algunos casos, los Hellcrowns particularmente poderosos tienen acceso a conjuros e incluso forman enjambres fantasmales para vengarse de cualquiera que consideren responsable de sus muertes.</p>",
       "items": {
@@ -944,7 +944,7 @@
           "name": "Conjuros divinos innatos"
         },
         "spell->Command (At Will)": {
-          "name": "Command (At Will)"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]\nCommand (At Will)"
         },
         "strike-melee->Spectral Lash": {
           "name": "Lash espectral"
@@ -957,11 +957,11 @@
         },
         "action->Agony Lash": {
           "name": "Lazo de la agonía",
-          "description": "<p>Una criatura dañada por el azote espectral Golpe del Godclaw Hellcrown debe intentar un salvación @Check[fortitude|dc:23]. En caso de fracaso, la punta del látigo se incrusta en la criatura, infligiendo @Damage[1d6[persistent,bleed]] de daño e impartiendo una penalización de estado de – 5 -pie a las Velocidades del objetivo durante 1 minuto. Cada punta adicional aumenta el daño de sangrado en 1 y la penalización de Velocidad en 5 pies. Una criatura puede quitar una punta con una acción de Interact para reducir la cantidad de daño de sangrado y la penalización a Velocidad. Sacar la última punta elimina ambas condiciones.</p>"
+          "description": "<p>Una criatura dañada por el azote espectral Golpe del Godclaw Hellcrown debe intentar una salvación @Check[fortitude|dc:23]. En caso de fracaso, la punta del látigo se incrusta en la criatura, infligiendo @Damage[1d6[persistent,bleed]] de daño e impartiendo una penalización de estado de – 5 -pie a las Velocidades del objetivo durante 1 minuto. Cada punta adicional aumenta el daño de sangrado en 1 y la penalización de Velocidad en 5 pies. Una criatura puede quitar una punta con una acción de Interact para reducir la cantidad de daño de sangrado y la penalización a Velocidad. Sacar la última punta elimina ambas condiciones.</p>"
         },
         "action->Forbidding Stare": {
           "name": "Prohibiendo la mirada",
-          "description": "<p>Todas las criaturas que pueden ver la corona infernal y que están afectadas por azote de agonía deben intentar un lanzamiento salvador de @Check[will|dc:25]. Una criatura que falla es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}, y en un fallo crítico, se convierte en @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} mientras esté asustada. Independientemente del resultado, la criatura es temporalmente inmune a Mirada prohibida durante 10 minutos.</p>"
+          "description": "<p>Todas las criaturas que puedan ver a la corona infernal y estén afectadas por su Azote de agonía deben intentar una salvación de @Check[will|dc:25]. Una criatura que falle queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustada 1} y, con un fallo crítico, también queda @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} mientras esté Asustada. Sea cual sea el resultado, la criatura es temporalmente inmune a Mirada intimidatoria durante 10 minutos.</p>"
         }
       }
     },
@@ -980,7 +980,7 @@
         },
         "armor->Robes": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB]\nRobes",
-          "description": "La etiqueta <Compendium> se reemplazará con el texto de la entrada del compendio @UUID[Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB]\n <p> La ropa del explorador es lo suficientemente resistente como para reforzarla para protegerte, aunque no sea una armadura. Viene en muchas formas, aunque las más comunes parecen vestimentas clericales, vestimentas de monje o túnicas de mago, ya que es probable que los miembros de las tres clases eviten usar armadura. </p>"
+          "description": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB]\n<p>Explorer's clothing is sturdy enough that it can be reinforced to protect you, even though it isn't a suit of armor. It comes in many forms, though the most common sorts look like clerical vestments, monk's garments, or wizard's robes, as members of all three classes are likely to avoid wearing armor.</p>"
         },
         "equipment->Fiendish Hypotheses and Protections from Same (Spellbook)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE]\nFiendish Hypotheses and Protections from Same (Spellbook)"
@@ -996,7 +996,7 @@
         },
         "action->Diabolic Certitude": {
           "name": "Certeza diabólica",
-          "description": "<p>Algunos signifers están tan seguros de su poder para controlar a los demonios que a veces llegan demasiado lejos. Cuando Gredress se compromete públicamente con la superioridad del Infierno, gana un + 1 de bonificación de estado a los chequeos de habilidad, CA, y se guarda por 1 día. Estos bonus no se aplican contra demonios. Al final del día, Gredress debe intentar un @Check[will|dc:20] salvación o recibir una penalización de estado de - 1 para chequeos de habilidad, CA y salvamentos contra demonios por 1 día (o - 2 en un fracaso crítico).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.6bGS19fnwbv4E7mn]{Effect: Diabolic Certitude}</p>"
+          "description": "<p>Algunos signíferos están tan seguros de su poder para controlar diablos que a veces van demasiado lejos. Cuando Gredress proclama públicamente la superioridad del Infierno, obtiene un bonificador por estado de +1 a las pruebas de habilidad, la CA y las salvaciones durante 1 día. Estos bonificadores no se aplican contra diablos. Al final del día, Gredress debe superar una salvación de @Check[will|dc:20] o sufrir un penalizador por estado de –1 a las pruebas de habilidad, la CA y las salvaciones contra diablos durante 1 día (o de –2 con un fallo crítico).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.6bGS19fnwbv4E7mn]{Efecto: Certeza diabólica}</p>"
         },
         "action->Breach the Pit": {
           "name": "Romper el pozo",
@@ -1062,7 +1062,7 @@
       }
     },
     "Hedvend VI": {
-      "name": "Hedwig VI de Dinamarca",
+      "name": "Hedvend VI",
       "blurb": "Vampiro masculino",
       "hpDetails": "Curación rápida 5, curación de vacío",
       "items": {
@@ -1076,7 +1076,7 @@
           "name": "curación rápida 5"
         },
         "action->Vampire Vulnerabilities": {
-          "name": "Vulnerabilidades de Vampire",
+          "name": "Vulnerabilidades del vampiro",
           "description": "<p>Todos los vampiros poseen las siguientes vulnerabilidades.</p>\n<ul>\n<li><strong>Compulsiones</strong> Los vampiros son criaturas con compulsiones extrañas e indescifrables. Un vampiro típico no puede cruzar voluntariamente agua corriente si no es transportado mientras se oculta en su ataúd, ni entrar en un domicilio privado si no le invita alguien con la autoridad suficiente para hacerlo. A discreción tuya, los vampiros pueden tener compulsiones diferentes: un vampiro pirata podría no ser capaz de poner el pie en tierra firme sin ser invitado, por ejemplo. Se puede obligar a un vampiro a hacer estas cosas, y podría ser capaz de sobreponerse a su compulsión igual que se sobrepone a su revulsión.</li>\n<li><strong>Revulsion</strong> Un vampiro no puede acercarse voluntariamente a menos de 10 pies (3 m) a los ajos si alguien los empuña o a un símbolo religioso empuñado de un dios con una opción de santificación sagrada. Para empuñar ajo o un símbolo religioso, una criatura tiene que Interactuar, y permanece empuñado durante 1 asalto (de forma parecida a Alzar un escudo). Si el vampiro se acerca involuntariamente a 10 pies (3 m) o menos de un objeto de su revulsión, sufre el estado @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo}, corriendo para alejarse del objeto de su repulsión hasta acabar una acción más allá de 10 pies (3 m). Al cabo de 1 asalto de verse expuesto al motivo de su revulsión, un vampiro puede hacer una salvación de @Check[will|dc:25] como una acción individual, que tiene el rasgo concentrar. Con un éxito, supera su revulsión durante [[/gmr 1d6 #rounds]]{1d6 asaltos} (o 1 hora con un éxito crítico).</li>\n<li><strong>Estaca</strong> Una estaca de madera clavada en el corazón de un vampiro lo reduce a 0 PG y evita que se cure por encima de 0, incluso en su ataúd. Clavarle una estaca requiere 3 acciones y solo funciona si está @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Inconsciente}. Si se le quita, el vampiro puede curarse de nuevo por encima de 0 PG y, si está en su ataúd, el período de descanso de 1 hora empieza una vez se le quita. Si la cabeza del vampiro se cercena y se unge con agua bendita mientras la estaca está clavada, el vampiro queda destruido.</li>\n<li><strong>Luz solar</strong> Si se expone a la luz solar directa, un vampiro queda inmediatamente @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1}. El valor de lentificado se incrementa en 1 cada vez que acaba su turno expuesto a la luz solar y el estado se acaba cuando ya no lo está. Si el vampiro pierde de esta forma todas sus acciones, queda destruido. Debido a su aversión sobrenatural a la luz, los vampiros no proyectan sombras ni se reflejan en los espejos.</li>\n</ul>"
         },
         "action->Void Healing": {
@@ -1091,8 +1091,8 @@
           "description": "<p><strong>Requisito</strong> Una @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralizado}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Inconsciente}, o criatura dispuesta está dentro del alcance del vampiro.</p>\n<hr /> <p><strong>Efecto</strong> El vampiro hunde sus colmillos en esa criatura para beber su sangre. Esto requiere una verificación @Check[athletics|defense:fortitude] contra el CD de Fortitude de la víctima si la víctima es agarrada y es automático para cualquiera de las otras condiciones.</p>\n<p>La víctima es @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1} y el vampiro recupera @Damage[10[healing]] PG, ganando cualquier exceso de PG como Puntos de Golpe temporales. Beber Sangre de una criatura que ya está drenada no restaura ningún PG al vampiro pero aumenta el valor drenado de la víctima por 1, matando a la víctima cuando llega a drenar 5. Un vampiro también puede consumir sangre que se ha vaciado en un recipiente para el sustento, pero no gana ningún PG al hacerlo.</p>\n<p>La condición de drenaje de una víctima disminuye en 1 por semana. Una transfusión de sangre, que requiere un @Check[medicine|dc:20|name:Transfusión de sangre] control y suficiente sangre o un donante de sangre, reduce el drenaje en 1 después de 10 minutos.</p>"
         },
         "action->Spellstrike": {
-          "name": "Golpe de hechizo",
-          "description": "<p><strong>Frecuencia</strong> hasta que se recargue</p>\n<hr /> <p><strong>Efecto</strong> Hedvend VI canaliza un conjuro en su garra Golpe para lanzar un ataque combinado. Lanza un conjuro que requiere una tirada de ataque de conjuro. Los efectos del conjuro no ocurren inmediatamente, sino que se impregnan en su ataque. Intenta un Golpe de garra cuerpo a cuerpo, con el lanzamiento de ataque determinando los efectos tanto del Golpe como del conjuro. Esto cuenta como dos ataques para su penalizador por ataque múltiple, pero no aplica la penalizador hasta después de completar el Spellstrike. La infusión de energía mágica otorga a su Golpe el rasgo arcano, haciéndolo mágico. Después de usar Spellstrike, no puede volver a hacerlo hasta que recargue su Spellstrike como una acción única, que tiene el rasgo concentrado. También recarga su Spellstrike cuando bebe sangre.</p>"
+          "name": "Impacto de conjuro",
+          "description": "<p><strong>Frecuencia</strong> Hasta que se recargue.</p><hr /><p><strong>Efecto</strong> Hedvend VI canaliza un conjuro en su Golpe de garra para efectuar un ataque combinado. Lanza un conjuro que requiere una tirada de ataque de conjuro. Sus efectos no ocurren de inmediato, sino que impregnan su ataque. Efectúa un Golpe cuerpo a cuerpo de garra y usa el resultado para determinar los efectos del Golpe y del conjuro. Cuenta como dos ataques para su penalizador por ataques múltiples, pero este no se aplica hasta después de completar Impacto de conjuro. La energía del conjuro concede al Golpe el rasgo arcano y lo vuelve mágico. Tras usarlo, no puede repetirlo hasta recargarlo con una acción que tiene el rasgo concentración. También recarga Impacto de conjuro al Beber sangre.</p>"
         },
         "action->Grab": {
           "name": "Agarrar"
@@ -1133,15 +1133,15 @@
         },
         "action->Intimidating Strike": {
           "name": "Golpe intimidante",
-          "description": "<p>El invasor de campo Hellknight realiza un ataque cuerpo a cuerpo. Si golpea y causa daño, el objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}o @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} en un golpe crítico.</p>"
+          "description": "<p>El caballero infernal maralictor de campaña realiza un Golpe cuerpo a cuerpo. Si impacta e inflige daño, el objetivo adquiere el estado @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}, o @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} con un impacto crítico.</p>"
         },
         "action->Maralictor's Command": {
           "name": "Comando de Maralictor",
-          "description": "<p>El guerrero de campo Hellknight grita una orden a un aliado de su elección. Ese aliado puede gastar una reacción a Stride y Strike. El aliado se vuelve inmune a la orden de Maralictor durante 24 horas.</p>"
+          "description": "<p>El caballero infernal maralictor de campaña grita una orden a un aliado de su elección. Ese aliado puede gastar una reacción para dar una Zancada y un Golpe. Después es inmune a Orden del maralictor durante 24 horas.</p>"
         },
         "action->Warding Shift": {
           "name": "Desplazamiento protector",
-          "description": "<p><strong>Requisitos</strong> El maralictor de campo de Hellknight es adyacente a un aliado dispuesto</p>\n<hr />\n<p><strong>Efecto</strong> El invasor de campo Hellknight mueve a un aliado dispuesto adyacente 5 pies en cualquier dirección y puede entrar en el espacio que el aliado dejó libre.</p>"
+          "description": "<p><strong>Requisitos</strong> El caballero infernal maralictor de campaña está adyacente a un aliado dispuesto.</p>\n<p><strong>Efecto</strong> El maralictor mueve a un aliado dispuesto adyacente 5 pies en cualquier dirección y puede dar un Paso al espacio que este deje libre.</p>"
         },
         "lore->Warfare Lore": {
           "name": "Saber (guerra)"
@@ -1197,7 +1197,7 @@
       "name": "Illcayna Alonnor",
       "blurb": "Hija de Urgathoa",
       "hpDetails": "curación del vacío",
-      "saveDetails": "+ 1 Bonificación de estado a todos los efectos guardados vs. efectos sagrados",
+      "saveDetails": "+1 por estatus a todas las salvaciones contra efectos sagrados",
       "items": {
         "spellcastingEntry->Divine Prepared Spells": {
           "name": "Conjuros divinos preparados"
@@ -1225,7 +1225,7 @@
           "name": "Toque pálido"
         },
         "strike-melee->Warshard-Tipped Entrail": {
-          "name": "Entrada de punta dura"
+          "name": "Entraña rematada con un fragmento de guerra"
         },
         "action->Bleeding Heart of Urgathoa": {
           "name": "Corazón Sangriento de Urgathoa",
@@ -1236,11 +1236,11 @@
           "description": "<p>Illcayna se fusiona con Suspiro del segador, otorgándole un + 4 bonificador por circunstancia a su CD Reflejo contra intentos de @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Desarmar} la guadaña. Esta bonificación se reduce a + 2 por 1 asalto después de que ella sea golpeada críticamente con un arma cortante.</p>"
         },
         "action->+1 Status to All Saves vs. Holy Effects": {
-          "name": "+ 1 Estado de Todos los Guardados vs. Efectos de Holy"
+          "name": "+1 por estatus a todas las salvaciones contra efectos sagrados"
         },
         "action->Field of Unholy Undeath": {
           "name": "Campo de la Muerte Eterna",
-          "description": "<p>40 pies. Los aliados muertos vivientes dentro del aura obtienen un bonus de estatus + 1 a lanzamientos de ataque y lanzamientos de salvación. Si el aliado tiene sanación de vacío, también gana sanación rápida 5. Una criatura viva que no adora a Urgathoa recibe @Damage[6d6[void]] de daño ( @Check[fortitude|dc:26|basic] de salvación) cuando entra o comienza su turno en el aura. Independientemente del resultado del lanzamiento salvador, esa criatura se vuelve temporalmente inmune al aura durante 1 día.</p>"
+          "description": "<p>40 pies. Los aliados muertos vivientes dentro del aura obtienen un bonificador por estatus de +1 a las tiradas de ataque y las salvaciones. Si el aliado tiene curación de vacío, también obtiene curación rápida 5. Una criatura viva que no adore a Urgathoa sufre @Damage[6d6[void]] de daño de vacío (salvación básica de @Check[fortitude|dc:26|basic]) cuando entra en el aura o comienza su turno en ella. Sea cual sea el resultado de la salvación, esa criatura se vuelve temporalmente inmune al aura durante 1 día.</p>"
         },
         "action->Life to Unlife": {
           "name": "De la vida a la muerte",
@@ -1255,11 +1255,11 @@
         },
         "action->Pallid Plague": {
           "name": "Plaga pálida",
-          "description": "<p><strong>Tirada de salvación</strong> @Check[fortitude|dc:27]</p>\n<hr /> <p><strong>Etapa 1</strong> portador ( 3 días)</p>\n<p><strong>Etapa 2</strong> @Damage[3d8[void]] daño y @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Condenado 1} ( 1 día)</p>\n<p><strong>Estadio 3</strong> @Damage[3d8[void]] daño, condenado 1, y @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1} ( 1 día)</p>\n<p><strong>Estadio 4</strong> @Damage[4d8[void]] daño, @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Condenado 2}, y drenado 1 ( 1 día)</p>\n<p><strong>Estadio 5</strong> @Damage[4d8[void]] daño, @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Condenado 3}, y @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 2} ( 1 día)</p>\n<p><strong>Etapa 6</strong> muerto.</p>\n<p>Una criatura que muere mientras está infectada con plaga pálida se eleva como @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.DBTbqI9QQRtlJwWh]{Criatura}.</p>"
+          "description": "<p><strong>Tirada de salvación</strong> @Check[fortitude|dc:27]</p>\n<p><strong>Etapa 1</strong> portador (3 días)</p>\n<p><strong>Etapa 2</strong> @Damage[3d8[void]] de daño y @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Condenado 1} (1 día)</p>\n<p><strong>Etapa 3</strong> @Damage[3d8[void]] de daño, Condenado 1 y @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1} (1 día)</p>\n<p><strong>Etapa 4</strong> @Damage[4d8[void]] de daño, @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Condenado 2} y Drenado 1 (1 día)</p>\n<p><strong>Etapa 5</strong> @Damage[4d8[void]] de daño, @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Condenado 3} y @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 2} (1 día)</p>\n<p><strong>Etapa 6</strong> muerte. Una criatura que muera infectada con plaga pálida se alza como un @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.DBTbqI9QQRtlJwWh]{Tumulario}.</p>"
         },
         "action->Reap": {
           "name": "Segar",
-          "description": "<p>Illcayna realiza un Golpe de Suspiro de Reaper y compara el resultado de la tirada de ataque con los CA de dos enemigos que deben estar dentro de su alcance cuerpo a cuerpo. Lanza daño solo una vez y aplícalo a cada criatura golpeada. Cosecha cuenta como dos ataques para la penalizador por ataque múltiple de Illcayna.</p>"
+          "description": "<p>Illcayna realiza un Golpe de Suspiro de Reaper y compara el resultado de la tirada de ataque con los CA de dos enemigos que deben estar dentro de su alcance cuerpo a cuerpo. Lanza daño solo una vez y aplícalo a cada criatura golpeada. Cosecha cuenta como dos ataques para el penalizador por ataque múltiple de Illcayna.</p>"
         },
         "action->Wake the Dead": {
           "name": "Despertar a los muertos ",
@@ -1350,7 +1350,7 @@
         },
         "action->Correcting Veil": {
           "name": "Velo de Corrección",
-          "description": "<p>100 pies. La presencia telepática del instillo monitorea constantemente las perspectivas y moldea el pensamiento hacia una claridad infernal. Las criaturas dentro del aura obtienen la hazaña de habilidad @UUID[Compendium.pf2e.feats-srd.Item.1Bt7uCW2WI4sM84P]{Conocimiento dudoso} pero no son conscientes de este efecto. El instillo es instantáneamente consciente cuando cualquier criatura dentro del aura falla una comprobación de Recall Knowledge e influye en la información errónea que la criatura obtiene.</p>"
+          "description": "<p>100 pies. La presencia telepática del instillo vigila constantemente los puntos de vista y moldea el pensamiento hacia una claridad infernal. Las criaturas dentro del aura obtienen la dote de habilidad @UUID[Compendium.pf2e.feats-srd.Item.1Bt7uCW2WI4sM84P]{Conocimiento dudoso}, pero no son conscientes de este efecto. El instillo se da cuenta inmediatamente cuando cualquier criatura dentro del aura falla una prueba de Recordar conocimiento e influye en la información errónea que obtiene esa criatura.</p>"
         },
         "action->Nod of the Tongue": {
           "name": "El Acuerdo de la Lengua",
@@ -1412,7 +1412,7 @@
         },
         "action->Bravery": {
           "name": "Valentía",
-          "description": "<p>Cuando Jordis lanza un éxito en un salvación de voluntad contra un efecto de miedo, obtiene un éxito crítico en su lugar. Cada vez que adquieran la condición de asustado, reduce su valor en 1.</p>"
+          "description": "<p>Cuando Jordis lanza un éxito en una salvación de voluntad contra un efecto de miedo, obtiene un éxito crítico en su lugar. Cada vez que adquieran la condición de asustado, reduce su valor en 1.</p>"
         },
         "action->Reactive Strike": {
           "name": "Golpe reactivo"
@@ -1426,7 +1426,7 @@
         },
         "action->Shielded Advance": {
           "name": "Avance blindado",
-          "description": "<p><strong>Requisitos</strong> Jordis tiene su escudo levantado</p>\n<hr /> <p><strong>Efecto</strong> Jordis presiona hacia adelante, usando su escudo para empujar a los enemigos. Jordis Strides y Shoves, en cualquier orden. La penalizador por ataque múltiple no se aplica a este @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Empujar}, aunque el Shove cuenta para la penalizador por ataque múltiple de Jordis.</p>"
+          "description": "<p><strong>Requisitos</strong> Jordis tiene su escudo levantado</p>\n<hr /> <p><strong>Efecto</strong> Jordis presiona hacia adelante, usando su escudo para empujar a los enemigos. Jordis Strides y Shoves, en cualquier orden. El penalizador por ataque múltiple no se aplica a este @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Empujar}, aunque el Shove cuenta para el penalizador por ataque múltiple de Jordis.</p>"
         },
         "lore->Legal Lore": {
           "name": "Saber (legal)"
@@ -1510,7 +1510,7 @@
         },
         "action->False Flag": {
           "name": "Bandera falsa",
-          "description": "<p>60 pies. La bandera falsa de Lefranek crea pánico y confusión. Los Hellbreakers en el área reciben una penalización de circunstancia de – 1 a los lanzamientos de salvación y DCs contra efectos que dan la condición @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado} o @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confundido}. Añade 1d8 al prueba del peligro Gala Crowd para determinar su acción durante su rutina.</p>"
+          "description": "<p>60 pies. La bandera falsa de Lefranek crea pánico y confusión. Los Hellbreakers en el área reciben una penalización de circunstancia de – 1 a los lanzamientos de salvación y DCs contra efectos que dan la condición @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado} o @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confundido}. Añade 1d8 a la prueba del peligro Gala Crowd para determinar su acción durante su rutina.</p>"
         }
       }
     },
@@ -1519,7 +1519,7 @@
       "description": "<p>Parches de oscuridad envuelven las camas tambaleantes de esta habitación, desde la que se pueden escuchar los sonidos de los ronquidos suaves de los niños.</p>",
       "disable": "<p>@Check[occultism|dc:18] (entrenado) para alejar la oscuridad o @Check[deception|dc:19] o @Check[performance|dc:19] (entrenado) para fingir estar dormido; se requieren dos éxitos totales para desactivar el espectáculo</p>",
       "reset": "<p>El espectáculo se desactiva 1 minuto después de que todas las criaturas vivas dejen la habitación, pero se reinicia inmediatamente después. Si está desactivado, el refugio se restablece después de 1 día. El espectáculo es destruido permanentemente cuando el susurro del ático aquí es destruido.</p>",
-      "routine": "<p>( 1 acción; oscuridad, oculto) El fantasma elige al azar 1 criatura viva que no había sido engullida en la oscuridad en la asaltos anterior. La oscuridad sobrenatural se cierne sobre esa criatura, que debe intentar un salvación @Check[will|dc:18]. En caso de fracaso, esa criatura es absorbida por un @Template[type:emanation|distance:5] de oscuridad centrado en ella y es @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} por 1 turnos. Cualquier criatura en la emanación debe intentar salvar su propia Voluntad o quedar cegada también. Cualquier fuente de luz no mágica y luz mágica de rango 1.º o inferior que la criatura primaria esté sosteniendo o usando deja de emitir luz durante ese tiempo.</p>",
+      "routine": "<p>( 1 acción; oscuridad, oculto) El fantasma elige al azar 1 criatura viva que no había sido engullida en la oscuridad en la asaltos anterior. La oscuridad sobrenatural se cierne sobre esa criatura, que debe intentar una salvación @Check[will|dc:18]. En caso de fracaso, esa criatura es absorbida por un @Template[type:emanation|distance:5] de oscuridad centrado en ella y es @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Cegado} por 1 turnos. Cualquier criatura en la emanación debe intentar salvar su propia Voluntad o quedar cegada también. Cualquier fuente de luz no mágica y luz mágica de rango 1.º o inferior que la criatura primaria esté sosteniendo o usando deja de emitir luz durante ese tiempo.</p>",
       "stealth": "<p>(entrenado)</p>",
       "items": {
         "action->Lullaby and Good Night": {
@@ -1533,12 +1533,12 @@
       "description": "<p>Al principio, el árbol parece pequeño. Entonces el espacio alrededor de él se distorsiona para dar la impresión de que es un árbol de tamaño normal visto a distancia.</p>",
       "disable": "<p>@Check[nature|dc:20] o @Check[occultism|dc:20] dos veces para dispersar la magia deformada alrededor del árbol, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (2.º rango; contrarrestar CD 19 ) para contrarrestar la magia deformada</p>",
       "reset": "<p>Si la trampa no está deshabilitada, se vuelve inactiva durante 10 minutos si no hay criaturas dentro de 60 pies de ella al comienzo de su turno.</p>",
-      "routine": "<p>(1 acción) La trampa apunta a una criatura aleatoria dentro de 60 pies para tratar de reducirla a su tamaño. Esa criatura debe intentar un salvación @Check[will|dc:20]. En caso de fracaso, la criatura se vuelve Pequeña en tamaño hasta el comienzo de su siguiente turno. El equipo de una criatura afectada se reduce con él, pero vuelve a su tamaño original si se quita. El alcance de la criatura cambia a 0 pies. Este es un efecto polimorfo que no tiene efecto sobre una criatura Tiny. En un fracaso crítico, la criatura también es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} por la misma duración.</p>",
+      "routine": "<p>(1 acción) La trampa apunta a una criatura aleatoria dentro de 60 pies para tratar de reducirla a su tamaño. Esa criatura debe intentar una salvación @Check[will|dc:20]. En caso de fracaso, la criatura se vuelve Pequeña en tamaño hasta el comienzo de su siguiente turno. El equipo de una criatura afectada se reduce con él, pero vuelve a su tamaño original si se quita. El alcance de la criatura cambia a 0 pies. Este es un efecto polimorfo que no tiene efecto sobre una criatura Tiny. En un fracaso crítico, la criatura también es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2} por la misma duración.</p>",
       "stealth": "<p>(entrenado)</p>",
       "items": {
         "action->Action": {
           "name": "Acción",
-          "description": "<p><strong>Desencadenante</strong> Una criatura se acerca a 30 pies del árbol</p>\n<hr /> <p><strong>Efecto</strong> El árbol parece crecer y encogerse simultáneamente. Cada criatura dentro de @Template[type:emanation|distance:30] debe intentar un lanzamiento salvador de @Check[will|dc:21]. La trampa entonces lanza la iniciativa.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura está @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenido} hasta el final de su siguiente turno de la desorientación.</p>\n<p><strong>Fallo</strong> La criatura está @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} como si no estuviera segura de la distancia entre los lugares.</p>\n<p><strong>Fallo crítico</strong> Como fracaso, pero @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 2}.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura se acerca a 30 pies o menos del árbol.</p><hr /><p><strong>Efecto</strong> El árbol parece crecer y encogerse a la vez. Cada criatura en una @Template[type:emanation|distance:30] debe intentar una salvación de @Check[will|dc:21]. Después, la trampa tira iniciativa.</p><hr /><p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p><p><strong>Éxito</strong> Queda @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Desprevenida} hasta el final de su siguiente turno por la desorientación.</p><p><strong>Fallo</strong> Queda @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificada 1}, como si no estuviera segura de las distancias.</p><p><strong>Fallo crítico</strong> Como el fallo, pero queda @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificada 2}.</p>"
         }
       }
     },
@@ -1663,13 +1663,13 @@
           "name": "Conjuros a voluntad"
         },
         "action->-1 Status to All Saves vs. Emotion Effects": {
-          "name": "- 1 Estado de Todos los Guardados vs. Efectos de emoción"
+          "name": "-1 por estatus a todas las salvaciones contra efectos de emoción"
         },
         "action->+1 Status to All Saves vs. Magic": {
           "name": "+1 por estatus a todas las salvaciones contra la magia"
         },
         "action->Purge Records": {
-          "name": "Purga Records",
+          "name": "Purgar registros",
           "description": "<p><strong>Desencadenante</strong> Una criatura que los odvolos pueden ver o escuchar a menos de 15 pies de distancia. Lanza un conjuro desde un pergamino o activa un grimoire.</p>\n<hr /> <p><strong>Efecto</strong> El odvolos da pasos hacia la criatura y hace un Golpe de lanza larga. Si el ataque es un golpe crítico, la acción que lo desencadenó se interrumpe.</p>"
         },
         "action->Shroud of Burning Pages": {
@@ -1708,11 +1708,11 @@
         },
         "action->Banner Bearer": {
           "name": "Portador de banderas",
-          "description": "<p>30 pies. Cuando Phoebe muestra la bandera de la Liga Hellbreakers, todos los aliados en el área obtienen un + 1 bonificador por estatus a los salvamentos y DCs contra demonios y Hellknights.</p>"
+          "description": "<p>30 pies. Mientras Phoebe exhibe el estandarte de la Liga Rompeinfiernos, todos los aliados del área obtienen un bonificador por estado de +1 a las salvaciones y las CD contra diablos y Caballeros Infernales.</p>"
         },
         "action->Commander's Orders": {
           "name": "Órdenes del Comandante",
-          "description": "<p><strong>Frecuencia</strong> una vez por asalto</p>\n<hr />\n<p><strong>Efecto</strong> Phoebe grita una de las siguientes órdenes a todos sus aliados en el aura del estandarte de la Hellbreakers League, permitiéndoles tomar inmediatamente la acción asociada como reacción.</p>\n<ul>\n<li><strong>En guardia!</strong> El aliado puede Levantar un Escudo, posicionar defensivamente un arma con el rasgo de parada, o @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{Ponerse a cubierto}. Si el aliado no se beneficia de la cobertura o no está cerca de una característica que le permita ponerse a cubierto, puede caer. @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} como parte de la reacción.</li>\n<li><strong>Envíalos de vuelta al infierno</strong> Un aliado que está flanqueando a un demonio, una criatura que adora a los demonios o una criatura que tiene un contrato mágico con un demonio puede intentar un Golpe inmediatamente.</li>\n<li><strong>¡A mí!</strong> El aliado puede dar zancadas pero debe finalizar su movimiento en el aura. El aliado puede excavar, escalar, volar o nadar en lugar de caminar si tiene el tipo de movimiento correspondiente.</li>\n</ul>"
+          "description": "<p><strong>Frecuencia</strong> una vez por asalto</p>\n<p><strong>Efecto</strong> Phoebe da una de las siguientes órdenes a todos sus aliados en el aura de su estandarte de la Liga Hellbreakers y les permite realizar inmediatamente la acción asociada como reacción.</p>\n<p><strong>¡En guardia!</strong> El aliado puede Alzar un escudo, colocar defensivamente un arma con el rasgo parada o @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{Ponerse a cubierto}. Si no se beneficia de cobertura ni está cerca de un elemento que le permita Ponerse a cubierto, puede adquirir el estado @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} como parte de la reacción.</p>\n<p><strong>¡Devolvedlos al Infierno!</strong> Un aliado que esté flanqueando a un diablo, a una criatura que adore a los diablos o a una criatura con un contrato mágico con un diablo puede intentar inmediatamente un Golpe.</p>\n<p><strong>¡A mí!</strong> El aliado puede dar una Zancada, pero debe terminar su movimiento en el aura. Puede Excavar, Trepar, Volar o Nadar en lugar de dar la Zancada si tiene el tipo de movimiento correspondiente.</p>"
         },
         "action->Sense Heartbond": {
           "name": "Sin el Heartbond",
@@ -1738,7 +1738,7 @@
       "items": {
         "action->Terrifying Toy Box": {
           "name": "Caja de juguete terrorífica",
-          "description": "<p><strong>Desencadenante</strong> Una criatura se acerca a menos de 10 pies de la caja de juguetes</p>\n<hr /> <p><strong>Efecto</strong> La tapa de la caja de juguetes se abre lentamente con un gemido, revelando un abismo bostezando hacia la nada. Cada criatura que pueda ver la caja de juguetes debe intentar un salvación @Check[will|dc:23]. El espectáculo entonces tira la iniciativa.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>\n<p><strong>Fallo</strong> La criatura está @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} y no puede reducir su estado asustado por debajo de 1 mientras el espectáculo está activo.</p>\n<p><strong>Fallo crítico</strong> Como fracaso, pero @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 4}.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura se acerca a menos de 10 pies de la caja de juguetes</p>\n<hr /> <p><strong>Efecto</strong> La tapa de la caja de juguetes se abre lentamente con un gemido, revelando un abismo bostezando hacia la nada. Cada criatura que pueda ver la caja de juguetes debe intentar una salvación @Check[will|dc:23]. El espectáculo entonces tira la iniciativa.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no se ve afectada.</p>\n<p><strong>Éxito</strong> La criatura es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>\n<p><strong>Fallo</strong> La criatura está @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2} y no puede reducir su estado asustado por debajo de 1 mientras el espectáculo está activo.</p>\n<p><strong>Fallo crítico</strong> Como fracaso, pero @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 4}.</p>"
         }
       }
     },
@@ -1755,13 +1755,13 @@
       }
     },
     "Prison Break": {
-      "name": "Descanso de la prisión",
+      "name": "Fuga de prisión",
       "description": "<p>Una turba de la cárcel hace un descanso por la libertad, pisoteando todo lo que se le interponga en el camino.</p>",
       "disable": "<p>@Check[athletics|dc:27] para detener a los prisioneros en sus caminos, @Check[diplomacy|dc:30] para razonar con la multitud, o @Check[intimidation|dc:27] para obligarlos a calmarse</p>",
       "routine": "<p>(1 acción) Los prisioneros pisotean hacia la salida, infligiendo @Damage[(2d10+9)[bludgeoning]|options:area-damage] de daño a cada criatura viviente en el área <strong>K9</strong> y el pasillo al norte de ella (@Check[reflex|dc:25|basic] salva). En un fracaso crítico, el agarre de la criatura sobre cualquier cosa que esté llevando se debilita como si el peligro tuviera éxito en un intento @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Desarmar}. Si su agarre ya estaba debilitado, dejan caer el objeto.</p>\n<p><strong>Especial</strong> Si los PJ no han derrotado el peligro después de 4 asaltos, termina automáticamente cuando todos los prisioneros escapan.</p>",
       "items": {
         "action->Rush to Freedom": {
-          "name": "Embestir a Libertad",
+          "name": "Carrera hacia la libertad",
           "description": "<p><strong>Desencadenante</strong> La puerta de la celda B se abre</p>\n<hr /> <p><strong>Efecto</strong> El peligro agarra las armas de cualquier criatura dentro de 20 pies de la puerta, intentando @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Desarmar} con un modificador + 19, y luego lanza iniciativa.</p>"
         }
       }
@@ -1771,12 +1771,12 @@
       "description": "<p>Un agujero aparentemente ordinario en el suelo del bosque ejerce una gravedad extraña sobre las criaturas que se acercan.</p>",
       "disable": "<p>@Check[nature|dc:23] o @Check[occultism|dc:23] (experto) tres veces para dispersar la energía inusual que rodea el agujero, o @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Disipar magia} (3.º rango; contrarrestar CD 22 ) para contrarrestar la magia de absorción</p>",
       "reset": "<p>Si la trampa no está deshabilitada, se vuelve inactiva durante 10 minutos si no hay criaturas dentro de 20 pies de ella al comienzo de su turno.</p>",
-      "routine": "<p>(2 acciones) Para cada acción, el pozo elige una criatura diferente dentro de un @Template[type:emanation|distance:20] para intentar tragar. Esa criatura debe intentar un salvación @Check[fortitude|dc:22]. En un fracaso, la criatura es arrastrada 5 pies más cerca del agujero (10 pies en un fracaso crítico). Si esto arrastra a la criatura al pozo, esa criatura puede intentar @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Agarrarse a un saliente} como reacción (CD 22 ). Una criatura que cae en el pozo desaparece en un espacio extradimensional que se siente como estar enterrado vivo. Una criatura recibe @Damage[(2d8+7)[bludgeoning]] de daño ( @Check[fortitude|dc:20|basic] de salvación) al final de cada turno en el espacio extradimensional. Una criatura en este espacio extradimensional es @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} y @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1}; pueden @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Huir} este espacio extradimensional con un éxito @Check[athletics|dc:22], Naturaleza, o Supervivencia prueba. Si tienen éxito, aparecen en un lugar al azar no más de 10 pies del agujero como si hubieran arrancado su camino de la tierra.</p>\n<p>Mientras esta trampa está activa, todas las criaturas tratan el movimiento lejos del pozo como terreno difícil.</p>",
+      "routine": "<p>(2 acciones) Para cada acción, el pozo elige una criatura diferente dentro de un @Template[type:emanation|distance:20] para intentar tragar. Esa criatura debe intentar una salvación @Check[fortitude|dc:22]. En un fracaso, la criatura es arrastrada 5 pies más cerca del agujero (10 pies en un fracaso crítico). Si esto arrastra a la criatura al pozo, esa criatura puede intentar @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Agarrarse a un saliente} como reacción (CD 22 ). Una criatura que cae en el pozo desaparece en un espacio extradimensional que se siente como estar enterrado vivo. Una criatura recibe @Damage[(2d8+7)[bludgeoning]] de daño ( @Check[fortitude|dc:20|basic] de salvación) al final de cada turno en el espacio extradimensional. Una criatura en este espacio extradimensional es @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} y @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1}; pueden @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapar} este espacio extradimensional con un éxito @Check[athletics|dc:22], Naturaleza, o Supervivencia prueba. Si tienen éxito, aparecen en un lugar al azar no más de 10 pies del agujero como si hubieran arrancado su camino de la tierra.</p>\n<p>Mientras esta trampa está activa, todas las criaturas tratan el movimiento lejos del pozo como terreno difícil.</p>",
       "stealth": "<p>(experto)</p>",
       "items": {
         "action->Deadly Inhale": {
           "name": "Inhalación mortal",
-          "description": "<p><strong>Desencadenante</strong> Una criatura se acerca a 15 pies del agujero</p>\n<hr />\n<p><strong>Efecto</strong> El voraz pozo parece \"inhalar\", intentando atraer criaturas hacia sí mismo. Cada criatura dentro de 15 pies debe intentar un @Check[fortitude|dc:24] ahorrar. En caso de fallo, la criatura se acerca 5 pies más al agujero (10 pies en caso de fallo crítico). El foso luego tira la iniciativa.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura se acerca a un máximo de 15 pies del agujero.</p>\n<p><strong>Efecto</strong> El foso voraz parece «inhalar» e intenta atraer a las criaturas hacia sí. Cada criatura a un máximo de 15 pies debe hacer una salvación de @Check[fortitude|dc:24]. Con un fallo, es arrastrada 5 pies hacia el agujero (10 pies con un fallo crítico). A continuación, el foso tira iniciativa.</p>"
         }
       }
     },
@@ -1818,11 +1818,11 @@
         },
         "action->Red Drip": {
           "name": "Goteo rojo",
-          "description": "<p>Cada vez que el gorro rojo golpea a una criatura, esa criatura debe intentar un salvación de Fortaleza contra esta infección fúngica debilitante que consume lentamente una extremidad.</p>\n<p><strong>Tirada de salvación</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Etapa 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} (1 día)</p>\n<p><strong>Etapa 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2}, y usando la extremidad infectada inflige @Damage[3d6[persistent,bleed]] daño ( 1 día)</p>\n<p><strong>Etapa 3</strong> torpe 2, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2}, y la extremidad infectada es inutilizable ( 1 día)</p>\n<p><strong>Etapa 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 3}, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 3}, y la extremidad infectada es permanentemente inutilizable ( 1 día)</p>\n<p><strong>Etapa 5</strong> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confundido}, y el daño no termina la condición confusa ( 1 día)</p>\n<p><strong>Etapa 6</strong> muerte</p>"
+          "description": "<p>Cada vez que el gorro rojo golpea a una criatura, esa criatura debe intentar una salvación de Fortaleza contra esta infección fúngica debilitante que consume lentamente una extremidad.</p>\n<p><strong>Tirada de salvación</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Etapa 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 1} (1 día)</p>\n<p><strong>Etapa 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2}, y usando la extremidad infectada inflige @Damage[3d6[persistent,bleed]] daño ( 1 día)</p>\n<p><strong>Etapa 3</strong> torpe 2, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2}, y la extremidad infectada es inutilizable ( 1 día)</p>\n<p><strong>Etapa 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 3}, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 3}, y la extremidad infectada es permanentemente inutilizable ( 1 día)</p>\n<p><strong>Etapa 5</strong> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confundido}, y el daño no termina la condición confusa ( 1 día)</p>\n<p><strong>Etapa 6</strong> muerte</p>"
         },
         "action->Stomp": {
           "name": "Pisar",
-          "description": "<p>El Gorro rojo camina hasta la mitad de su velocidad y hace un golpe de bota en cualquier momento durante ese movimiento. Si el Golpe de botas golpea a una criatura @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}, otorga un @Damage[2d6[bleed]] extra.</p>"
+          "description": "<p>El gorro rojo da una Zancada de hasta la mitad de su Velocidad y realiza un Golpe de bota en cualquier momento de ese movimiento. Si impacta a una criatura @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbada}, inflige @Damage[2d6[bleed]] adicional.</p>"
         }
       }
     },
@@ -1869,7 +1869,7 @@
         },
         "action->Aura of Blight": {
           "name": "Aura de la Muerte",
-          "description": "<p>15 pies. El sarcófago está rodeado por un miasma de infección. Un enemigo que entra o termina su turno en el aura debe intentar un salvación @Check[fortitude|dc:19].</p>\n<hr /> <p><strong>Éxito</strong> La criatura no se ve afectada y se vuelve temporalmente inmune al aura durante 1 minuto.</p>\n<p><strong>Fallo</strong> Hasta el final de su siguiente turno, la criatura recibe una penalización de circunstancia de – 1 para salvarse contra efectos de enfermedad.</p>\n<p><strong>Fallo crítico</strong> Hasta el final de su siguiente turno, la criatura recibe un – 2 bonificador por circunstancia contra efectos de enfermedad y es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1}.</p>"
+          "description": "<p>15 pies. El sarcófago está rodeado por un miasma de infección. Un enemigo que entra o termina su turno en el aura debe intentar una salvación @Check[fortitude|dc:19].</p>\n<hr /> <p><strong>Éxito</strong> La criatura no se ve afectada y se vuelve temporalmente inmune al aura durante 1 minuto.</p>\n<p><strong>Fallo</strong> Hasta el final de su siguiente turno, la criatura recibe una penalización de circunstancia de – 1 para salvarse contra efectos de enfermedad.</p>\n<p><strong>Fallo crítico</strong> Hasta el final de su siguiente turno, la criatura recibe un – 2 bonificador por circunstancia contra efectos de enfermedad y es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 1}.</p>"
         },
         "action->Befouled Body": {
           "name": "Cuerpo ensuciado",
@@ -1913,7 +1913,7 @@
         },
         "action->Aura of Blight": {
           "name": "Aura de la Muerte",
-          "description": "<p>15 pies. El sarcófago está rodeado por un miasma de infección. Un enemigo que entra o termina su turno en el aura debe intentar un salvación @Check[fortitude|dc:25].</p>\n<hr /> <p><strong>Éxito</strong> La criatura no se ve afectada y se vuelve temporalmente inmune al aura durante 1 minuto.</p>\n<p><strong>Fallo</strong> Hasta el final de su siguiente turno, la criatura recibe una penalización de circunstancia de – 1 para salvarse contra efectos de enfermedad.</p>\n<p><strong>Fallo crítico</strong> Hasta el final de su siguiente turno, la criatura recibe un – 2 bonificador por circunstancia contra efectos de enfermedad y es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2}.</p>"
+          "description": "<p>15 pies. El sarcófago está rodeado por un miasma de infección. Un enemigo que entra o termina su turno en el aura debe intentar una salvación @Check[fortitude|dc:25].</p>\n<hr /> <p><strong>Éxito</strong> La criatura no se ve afectada y se vuelve temporalmente inmune al aura durante 1 minuto.</p>\n<p><strong>Fallo</strong> Hasta el final de su siguiente turno, la criatura recibe una penalización de circunstancia de – 1 para salvarse contra efectos de enfermedad.</p>\n<p><strong>Fallo crítico</strong> Hasta el final de su siguiente turno, la criatura recibe un – 2 bonificador por circunstancia contra efectos de enfermedad y es @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Debilitado 2}.</p>"
         },
         "action->Droning Waste": {
           "name": "Dronning Waste",
@@ -1930,7 +1930,7 @@
       }
     },
     "Sephone Haugini": {
-      "name": "Teléfono Haugini",
+      "name": "Sephone Haugini",
       "blurb": "Diabolista humano femenino",
       "items": {
         "spellcastingEntry->Arcane Prepared Spells": {
@@ -2057,21 +2057,21 @@
         },
         "action->Call to Arms": {
           "name": "Llamar a las armas",
-          "description": "<p>El esquelético cantor de huesos Hellknight golpea su caja torácica tres veces, creando un ruido fuerte y siniestro. Todos los esqueletos sin sentido en un @Template[type:emanation|distance:30] debe utilizar su reacción a Zancada más cerca del deshuesante.</p>"
+          "description": "<p>El caballero infernal esquelético cantor de huesos golpea su caja torácica tres veces y produce un estrépito fuerte y ominoso. Todos los esqueletos sin mente en una @Template[type:emanation|distance:30] deben usar su reacción para dar una Zancada que los acerque al cantor de huesos.</p>"
         },
         "action->For the Cause": {
           "name": "Por la causa",
-          "description": "<p><strong>Frecuencia</strong> Una vez al día</p>\n<p><strong>Requisitos</strong> Al esquelético Hellknight Bonesinger le quedan menos de la mitad de sus puntos de golpe.</p>\n<hr />\n<p><strong>Efecto</strong> El cantor de huesos se extiende a través de la magia nigromántica que anima a los muertos a su alrededor y los atrae hacia sí. El cantor de huesos elige hasta tres esqueletos sin sentido con el rasgo de minion que controlan dentro de un @Template[type:emanation|distance:10] y los destruye. El deshuesador recupera @Damage[2d6[healing,void]|shortLabel] Puntos de Golpe por cada esqueleto destruido.</p>"
+          "description": "<p><strong>Frecuencia</strong> una vez al día</p>\n<p><strong>Requisitos</strong> Al caballero infernal esquelético cantor de huesos le quedan menos de la mitad de sus Puntos de Golpe.</p>\n<p><strong>Efecto</strong> El cantor alcanza la magia nigromántica que anima a los muertos de su alrededor y la atrae hacia sí. Elige hasta tres esqueletos sin mente con el rasgo esbirro que controle dentro de una @Template[type:emanation|distance:10] y los destruye. Recupera @Damage[2d6[healing,void]|shortLabel] Puntos de Golpe por cada esqueleto destruido.</p>"
         },
         "action->Invoke Reckoning": {
           "name": "Invocar el Redentor",
-          "description": "<p><strong>Frecuencia</strong> una vez por asalto</p>\n<p><strong>Requisitos</strong> La última acción del esquelético Hellknight Bonesinger fue dañar a un enemigo con un golpe cuerpo a cuerpo.</p>\n<hr />\n<p><strong>Efecto</strong> El cantor de huesos tira de los huesos de la criatura que acaba de dañar, liberando un pulso de energía del vacío. esa criatura toma @Damage[4d8[void]] daño y debe intentar un @Check[fortitude|dc:23] - ¡Save!</p>\n<hr />\n<p><strong>Éxito crítico</strong> La criatura no toma daño.</p>\n<p><strong>Éxito</strong> La criatura toma la mitad daño.</p>\n<p><strong>Fallo</strong> La criatura se lleva todo daño.</p>\n<p><strong>Fallo crítico</strong> La criatura toma lleno daño y es @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}.</p>"
+          "description": "<p><strong>Frecuencia</strong> una vez por asalto</p>\n<p><strong>Requisitos</strong> La última acción del caballero infernal esquelético cantor de huesos fue dañar a un enemigo con un Golpe cuerpo a cuerpo.</p>\n<p><strong>Efecto</strong> El cantor tira de los huesos de la criatura a la que acaba de dañar y libera un pulso de energía de vacío. Esta sufre @Damage[4d8[void]] de daño y debe hacer una salvación de @Check[fortitude|dc:23].</p>\n<p><strong>Éxito crítico</strong> La criatura no sufre daño.</p>\n<p><strong>Éxito</strong> La criatura sufre la mitad del daño.</p>\n<p><strong>Fallo</strong> La criatura sufre todo el daño.</p>\n<p><strong>Fallo crítico</strong> La criatura sufre todo el daño y adquiere el estado @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}.</p>"
         }
       }
     },
     "Skirmancer Mage": {
       "name": "Mago de la Guerra",
-      "blurb": "Vigilancia de la variante",
+      "blurb": "Variante de mago vigilante",
       "publicNotes": "<p>Un mago de la guardia usa una combinación de magia y entrenamiento marcial para hacer cumplir la ley. Detecta mágicamente a delincuentes invisibles, localiza bienes robados y contrarresta conjuros ilegales.</p>\n<hr />\n<p>Las sociedades más grandes dependen de quienes tienen la autoridad y la capacidad de interpretar y hacer cumplir las leyes. Algunos desempeñan estos deberes con justicia, pero otros son duros y crueles, e imponen castigos severos a cualquiera que no pueda pagar por la clemencia.</p>",
       "items": {
         "spellcastingEntry->Arcane Prepared Spells": {
@@ -2091,7 +2091,7 @@
           "name": "Arco corto"
         },
         "action->Arcane Watch": {
-          "name": "Reloj de Arcane",
+          "name": "Reloj arcano",
           "description": "<p>El mago de la guardia puede @UUID[Compendium.pf2e.actionspf2e.Item.EwgTZBWsc8qKaViP]{Investigar} o @UUID[Compendium.pf2e.actionspf2e.Item.TiNDYUGlMmxzxBYU]{Buscar} mientras usa la actividad de exploración @UUID[Compendium.pf2e.actionspf2e.Item.Yb0C1uLzeHrVLl7a]{Detectar magia}.</p>"
         },
         "action->Counter Escape": {
@@ -2119,7 +2119,7 @@
       "items": {
         "action->Slash": {
           "name": "Barra diagonal",
-          "description": "<p><strong>Desencadenante</strong> Una criatura intenta un prueba de robo para recoger la cerradura</p>\n<hr /> <p><strong>Efecto</strong> Los cuchillos de fuerza infligen @Damage[(4d8+18)[slashing]] puntos de daño a la criatura que los dispara ( @Check[reflex|dc:25|basic] salva). En caso de fracaso, la criatura también recibe una penalización de – 1 a las habilidades basadas en Dex durante 1 hour.</p>"
+          "description": "<p><strong>Desencadenante</strong> Una criatura intenta una prueba de robo para recoger la cerradura</p>\n<hr /> <p><strong>Efecto</strong> Los cuchillos de fuerza infligen @Damage[(4d8+18)[slashing]] puntos de daño a la criatura que los dispara ( @Check[reflex|dc:25|basic] salva). En caso de fracaso, la criatura también recibe una penalización de – 1 a las habilidades basadas en Dex durante 1 hour.</p>"
         }
       }
     },
@@ -2132,8 +2132,8 @@
       "stealth": "<p>(entrenado)</p>",
       "items": {
         "action->Planar Ripple": {
-          "name": "Ripple Planar",
-          "description": "<p><strong>Desencadenante</strong> Dos o más criaturas no vegetales entran en el estanque de musgo</p>\n<hr /> <p><strong>Efecto</strong> El estanque de musgo se ondula extrañamente a medida que su conexión con el Plano de Madera se intensifica. Cada criatura en el estanque debe tener éxito en un @Check[reflex|dc:17|options:area-effect,damaging-effect,inflicts:prone] salvación o ser golpeada @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}. Una criatura que falla críticamente en el salvación también recibe @Damage[1d6[bludgeoning]|options:area-damage] de daño por la caída. El estanque entonces rueda la iniciativa.</p>"
+          "name": "Ondulación planar",
+          "description": "<p><strong>Desencadenante</strong> Dos o más criaturas no vegetales entran en el estanque de musgo</p>\n<hr /> <p><strong>Efecto</strong> El estanque de musgo se ondula extrañamente a medida que su conexión con el Plano de Madera se intensifica. Cada criatura en el estanque debe tener éxito en un @Check[reflex|dc:17|options:area-effect,damaging-effect,inflicts:prone] salvación o ser golpeada @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado}. Una criatura que falla críticamente en la salvación también recibe @Damage[1d6[bludgeoning]|options:area-damage] de daño por la caída. El estanque entonces rueda la iniciativa.</p>"
         },
         "strike-melee->Spore Spear": {
           "name": "Lanza de esporas",
@@ -2156,7 +2156,7 @@
     },
     "Spring's Crown": {
       "name": "Corona de Primavera",
-      "blurb": "Agender katroome ocupante",
+      "blurb": "Ocupante katroome agénero",
       "hpDetails": "regeneración 10 (desactivada por el hierro)",
       "skillSpecialAthletics": {
         "0": {
@@ -2173,7 +2173,7 @@
           "name": "Conjuros innatos primigenios"
         },
         "spell->Translocate (At Will)": {
-          "name": "Cambiar de sitio (a voluntad)"
+          "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]\nTranslocate (At Will)"
         },
         "spell->Invisibility (Self Only)": {
           "name": "<Compendium> tag will get replaced with text from compendium entry @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]\nInvisibility (Self Only)"
@@ -2195,7 +2195,7 @@
         },
         "action->Pacify Fey": {
           "name": "Apaciguar a los feéricos",
-          "description": "<p>40 pies. Todas las criaturas con el rasgo de hada que entren o comiencen su turno en el aura deben intentar un salvación @Check[will|dc:26]. Independientemente del resultado del lanzamiento salvador, la criatura se vuelve inmune al aura durante 1 día. En caso de fracaso, la criatura no puede tomar acciones hostiles contra el katroome.</p>"
+          "description": "<p>40 pies. Todas las criaturas con el rasgo feérico que entren en el aura o comiencen su turno en ella deben realizar una salvación de @Check[will|dc:26]. Independientemente del resultado, la criatura queda inmune al aura durante 1 día. Con un fallo, no puede realizar acciones hostiles contra el katroome.</p>"
         },
         "action->Enveloping Web": {
           "name": "Envolviendo la Web",
@@ -2266,7 +2266,7 @@
           "name": "Movimiento de tropa"
         },
         "action->Rush and Steal": {
-          "name": "Rush y robar",
+          "name": "Correr y Sustraer",
           "description": "<p>Rápidamente, con sus manos apretadas, los saboteadores de guerra de Stumpfield toman lo que pueden. Los saboteadores avanzan hasta el doble de su velocidad. Durante este movimiento, los saboteadores Interactúan para recoger un objeto desatendido no mayor que 2 Impedimenta o intentan @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Sustraer} un item de una criatura adyacente; los goblins pueden recoger o Robar tantos objetos como segmentos que les queden en cualquier combinación.</p>"
         },
         "action->Slapstick Traps": {
@@ -2294,16 +2294,16 @@
           "name": "Movimiento de tropa"
         },
         "action->Longbow Volley": {
-          "name": "Arco largo Volley",
-          "description": "<p>El clero de Swiftrun saca sus arcos largos y luego lanza un ataque a distancia en forma de descarga. Esta volea es una @Template[type:burst|distance:10] dentro de 60 pies que negocian @Damage[3d6[piercing]|options:area-damage] daño con una @Check[reflex|dc:21|basic|options:area-effect] salvación. Cuando el regimiento se reduce a 2 segmentos, esta área disminuye a un @Template[type:burst|distance:5].</p>"
+          "name": "Andanada de arcos largos",
+          "description": "<p>El clero de Swiftrun saca sus arcos largos y realiza un ataque a distancia en forma de andanada. Esta es una @Template[type:burst|distance:10] a un máximo de 60 pies que inflige @Damage[3d6[piercing]|options:area-damage] de daño, con una salvación básica de @Check[reflex|dc:21|basic|options:area-effect]. Cuando el regimiento queda reducido a 2 segmentos, esta área disminuye a una @Template[type:burst|distance:5].</p>"
         },
         "action->Swift Daggers": {
-          "name": "Dagas de Swift",
+          "name": "Dagas veloces",
           "description": "<p><strong>Frecuencia</strong> una vez por asaltos</p>\n<hr /> <p><strong>Efecto</strong> El clero de Correr Rápido golpea rápidamente con sus dagas a cada enemigo en un @Template[type:emanation|distance:5], con un @Check[reflex|dc:21|basic|options:area-effect] salvación. El daño infligido depende del número de acciones.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d4+1)[piercing]|options:area-damage] daño</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d4+7)[piercing]|options:area-damage] daño</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d4+10)[piercing]|options:area-damage] daño</p>"
         },
         "action->Troop Spellcasting": {
           "name": "Lanzamiento de conjuros de la tropa",
-          "description": "<p>Cuando el clero de Swiftrun lanza un conjuro, sus miembros combinan sus esfuerzos para lanzar una versión más poderosa del conjuro que la que cualquier miembro podría lograr por sí solo. Al lanzar un conjuro que tiene un área de explosión, cono o línea y no tiene duración, aumenta el área de ese conjuro. Agregue 5 pies al radio de una ráfaga que normalmente tiene un radio de al menos 10 pies (una ráfaga con un radio más pequeño no se ve afectada). Agregue 5 pies a la longitud de un cono o línea que normalmente tiene 15 pies de largo o menos, y agregue 10 pies a la longitud de un cono o línea más grande.</p>"
+          "description": "<p>Cuando el clero de Swiftrun Lanza un conjuro, sus integrantes combinan sus esfuerzos para lanzar una versión más poderosa que la que cualquiera de ellos podría lograr por separado. Al Lanzar un conjuro con un área de explosión, cono o línea y sin duración, aumenta su área. Añade 5 pies al radio de una explosión cuyo radio normal sea de al menos 10 pies (las explosiones de radio menor no se ven afectadas). Añade 5 pies a la longitud de un cono o línea cuya longitud normal sea de 15 pies o menos, y 10 pies a la longitud de un cono o línea mayor.</p>"
         }
       }
     },
@@ -2316,7 +2316,7 @@
       "items": {
         "action->Crack": {
           "name": "Agrietar",
-          "description": "<p><strong>Desencadenante</strong> Dos o más criaturas pisen el hielo en el área <strong>M8</strong></p>\n<hr /> <p><strong>Efecto</strong> El hielo debajo de la fiesta se agrieta. Todas las criaturas en el área <strong>M8</strong> deben intentar un @Check[reflex|dc:30] salvación. Si falla, cae en el agua helada, por lo que debe tener éxito con un salvación básico @Check[fortitude|dc:30] contra @Damage[(4d10+22)[cold]] de daño. En un fallo crítico, la criatura debe comenzar a contener la respiración o arriesgarse a ahogarse cuando sus músculos se bloquean y comienzan a hundirse. Una criatura debe gastar una acción para Nadar a la orilla y luego debe tener éxito en una prueba @Check[athletics|dc:30] para Escalar fuera del agua.</p>"
+          "description": "<p><strong>Desencadenante</strong> Dos o más criaturas pisen el hielo en el área <strong>M8</strong></p>\n<hr /> <p><strong>Efecto</strong> El hielo debajo de la fiesta se agrieta. Todas las criaturas en el área <strong>M8</strong> deben intentar un @Check[reflex|dc:30] salvación. Si falla, cae en el agua helada, por lo que debe tener éxito con una salvación básico @Check[fortitude|dc:30] contra @Damage[(4d10+22)[cold]] de daño. En un fallo crítico, la criatura debe comenzar a contener la respiración o arriesgarse a ahogarse cuando sus músculos se bloquean y comienzan a hundirse. Una criatura debe gastar una acción para Nadar a la orilla y luego debe tener éxito en una prueba @Check[athletics|dc:30] para Escalar fuera del agua.</p>"
         }
       }
     },
@@ -2380,7 +2380,7 @@
         },
         "action->Shadow Blending": {
           "name": "Mezcla de sombras",
-          "description": "<p><strong>Frecuencia</strong> una vez por minuto</p>\n<p><strong>Desencadenante</strong> Una criatura intenta un chequeo plano para atacar a Varlario mientras está @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} o @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} debido a la luz tenue u oscuridad</p>\n<hr /> <p><strong>Efecto</strong> Sombras envuelven la forma de Varlario. El CD de la verificación plana aumenta por 2.</p>"
+          "description": "<p><strong>Frecuencia</strong> una vez por minuto</p>\n<p><strong>Desencadenante</strong> Una criatura realiza una prueba plana para elegir como objetivo a Varlario mientras está @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} o @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} debido a la luz tenue o la oscuridad</p>\n<hr />\n<p><strong>Efecto</strong> Las sombras envuelven la figura de Varlario. La CD de la prueba plana aumenta en 2.</p>"
         },
         "action->Void Healing": {
           "name": "Curación del vacío"
@@ -2390,7 +2390,7 @@
           "description": "<p>Varlario tiene @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Escondido} su familiaridad con el murciélago a través del conjuro @UUID[Compendium.pf2e.spells-srd.Item.F1nlmqOIucch3Cmt]{Refugio para mascotas}. Mantienen al murciélago contenido excepto cuando usan espíritu de desmenuzamiento.</p>"
         },
         "action->Shred Spirit": {
-          "name": "Trituración Espíritu",
+          "name": "Desgarrar el espíritu",
           "description": "<p><strong>Frecuencia</strong> una vez por minuto</p>\n<hr /> <p><strong>Efecto</strong> Varlario envía a su murciélago familiar como un conducto fantasmal para arrancar el alma de una criatura dentro de 30 pies. La criatura objetivo debe tener éxito en un @Check[will|dc:26|basic] de salvación o recibir @Damage[9d6[spirit]] de daño. Varlario recupera Puntos de Golpe iguales a la mitad del daño infligido.</p>"
         },
         "lore->Undead Lore": {
@@ -2475,7 +2475,7 @@
       }
     },
     "Warshard Wight": {
-      "name": "Warshard Criatura",
+      "name": "Tumulario del fragmento de guerra",
       "blurb": "Peso de la variante",
       "hpDetails": "alimentado por el rencor, curación del vacío",
       "publicNotes": "<p>Los wights son muertos vivientes inteligentes generados mediante inevitables ciclos de rencor. Este rencor podría proceder de su propia voluntad maligna en vida o haber sido instilado por rituales nigrománticos, que típicamente implican la profanación de los lugares de enterramiento. Suelen acechar en los camposantos, las catacumbas u otros lugares destinados a los muertos. Su hambre se dirige hacia los vivos, cuyos corazones batientes y su rubicundo calor les inspiran un odio visceral.</p>\n<p>Existen tantos tipos como tipos de gente a partir de la que podrían haberse creado. Enormes brutos, escurridizos bribones y astutos pensadores acaban formando wights diferentes con sus propias especialidades. El entorno juega también un papel a la hora de determinar las aptitudes especiales y las defensas de uno de ellos. Los wights de la escarcha, por ejemplo, se pueden encontrar en las partes del mundo donde morir de frío es habitual y el resentimiento de haber sido abandonado en el yermo es una fuente común de rencor. Duraderos y mantenidos por la energía del vacío, pueden existir en los entornos rigurosos sin descomponerse en la forma en que lo hacen algunos muertos vivientes menores.</p>\n<p>Un solo wight puede causar grandes estragos si se ve obligado a alzarse de su tumba. Como quiera que las criaturas muertas a manos de uno de ellos también se pueden convertir en wights, solo hace falta uno y un puñado de desafortunados visitantes a un cementerio para crear una verdadera horda de estos muertos vivientes. Así pues, los sacerdotes astutos y los aventureros saben que la mejor solución para un problema de wights es exterminarlos de forma rápida y total. Sin embargo, hay que tener cuidado en destruir a los engendros antes de tratar de destruir a su progenitor, puesto que un engendro sin amo obtiene la aptitud de crear engendros propios.</p>",
@@ -2498,22 +2498,22 @@
           "name": "Curación del vacío"
         },
         "action->Bloody Wail": {
-          "name": "Sangriento Wail",
+          "name": "Lamento sangriento",
           "description": "<p>El guerrero grita en un grito sobrenatural. Las criaturas vivientes dentro de 50 pies deben intentar un @Check[fortitude|dc:23] salvación. El guerrero no puede hacer otro lamento sangriento por [[/br 1d4 #rounds]]{1d4 asaltos}.</p>\n<hr /> <p><strong>Éxito crítico</strong> La criatura no se ve afectada y se vuelve temporalmente inmune durante 1 minuto.</p>\n<p><strong>Éxito</strong> La criatura sangra de sus orejas y se vuelve @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} por 1 redonda.</p>\n<p><strong>Fallo</strong> La criatura sangra de sus orejas y se vuelve @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 2} por 1 redonda.</p>\n<p><strong>Fallo crítico</strong> Como fracaso, y la criatura recibe una penalización de – 2 estado a los lanzamientos de salvación contra vida de drenaje.</p>"
         },
         "action->Drain Life": {
-          "name": "Drenar la vida",
+          "name": "Drenar vida",
           "description": "<p>Cuando el guerrero duro daña a una criatura viva con un Golpe cuerpo a cuerpo usando un ataque desarmado o su arma encuaderrada, el guerrero duro gana 5 Puntos de Golpe temporales y la criatura debe tener éxito en un @Check[fortitude|dc:20|options:inflicts:drained] salvar o convertirse en @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drenado 1}. El daño adicional infligido por el guerrero aumenta el valor de la condición drenada en 1 en un salvado fallido, hasta un máximo de drenada 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Efecto: Drenar la vida}</p>"
         },
         "action->Warshard Wight Spawn": {
-          "name": "Warshard Spawn de Wight",
+          "name": "Engendro de tumulario del fragmento de guerra",
           "description": "<p>Un humanoide vivo asesinado por la espada o garra de un guerrero wight Golpe se levanta como un wight generado después de [[/br 1d4 #rounds]]{1d4 asaltos}. Este wight generado está bajo el mando del warshard wight que lo mató. No tiene vida de drenaje ni generación de Warshard y es @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Torpe 2} mientras sea un wight generado. Si su creador muere, el wight generado se convierte en un wight warshard autónomo y completo; recupera su libre albedrío, gana vida de drenaje y generación de wight warshard, y ya no es torpe.</p>"
         }
       }
     },
     "Zombie Giant Bat": {
       "name": "Murciélago gigante zombi",
-      "blurb": "Variante murciélago gigante",
+      "blurb": "Variante de murciélago gigante",
       "hpDetails": "curación del vacío",
       "publicNotes": "<p>Mientras que los murciélagos grandes no son infrecuentes en cuevas oscuras y ruinas abandonadas y pueden infundir miedo en los espeleólogos, el llamado murciélago gigante es un verdadero monstruo, pesando más de 100 libras y teniendo una envergadura de casi 15 pies. Se alimenta principalmente de frutas e insectos, pero puede ser inducido a la violencia por el miedo o el hambre. Los ataques de murciélagos gigantes pueden dar lugar rápidamente a rumores de monstruos más peligrosos, muchos confunden a estos animales masivos con algún tipo de demonio o monstruo vampírico. Pero como otros murciélagos, los murciélagos gigantes son simplemente mamíferos sociales e inteligentes. A veces son utilizados como monturas por humanoides más pequeños, comúnmente aquellos que provienen o habitan en regiones montañosas o subterráneas.</p>\n<hr /> <p>Una amplia variedad de murciélagos habitan en todo el mundo. La mayoría de estos animales nocturnos son insectívoros inofensivos, pero las razas mortales de murciélagos vampiros y murciélagos de gran tamaño del tamaño de caballos representan amenazas mucho más significativas para los aventureros.</p>",
       "items": {
@@ -2528,7 +2528,7 @@
           "description": "<p> Un zombi es permanentemente @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} y ​​no puede usar reacciones. </p>"
         },
         "action->Clumsy Flier": {
-          "name": "Torpe Volador",
+          "name": "Volador torpe",
           "description": "<p>Si bien un murciélago gigante zombi puede volar, sus alas apenas pueden mantenerlo en el aire. Si está en el aire cuando recibe un golpe crítico o cualquier cantidad de daño cortante, cae y no puede volar en su siguiente turno.</p>"
         },
         "action->Void Healing": {

@@ -35,7 +35,13 @@ export function expandCrowdinFiles(config, files, language = "es") {
 }
 
 export function isTechnicalPath(keys) {
-    return keys[0] === "mapping" || ["id", "_id", "img", "portrait", "token"].includes(keys.at(-1));
+    return keys[0] === "mapping" ||
+        ((keys.length === 1 || keys[0] === "entries") && ["id", "_id", "img", "portrait", "token"].includes(keys.at(-1)));
+}
+
+/** The runtime translator deletes these fields to inherit the compendium value. */
+export function isCompendiumPlaceholder(value) {
+    return typeof value === "string" && value.startsWith("<Compendium> tag will get replaced");
 }
 
 /** Build exactly the source structure. Missing prose stays English until the separate translation phase. */
@@ -46,8 +52,9 @@ export function alignJson(source, target, keys = [], recover = () => undefined) 
         return Object.fromEntries(Object.entries(source).map(([key, value]) => [key, alignJson(value, target?.[key], [...keys, key], recover)]));
     }
     if (typeof source === "string") {
-        if (typeof target === "string" && (target.trim() || !source.trim()) && target !== source) return target;
-        return recover(source, keys) ?? (typeof target === "string" && target.trim() ? target : source);
+        if (isCompendiumPlaceholder(source)) return source;
+        if (typeof target === "string" && (target.trim() || !source.trim())) return target;
+        return recover(source, keys) ?? source;
     }
     return source;
 }
