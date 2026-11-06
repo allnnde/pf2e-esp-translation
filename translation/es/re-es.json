@@ -209,6 +209,7 @@
         "Leg": "Pierna",
         "LightningLash": "Latigazo relámpago",
         "LittleClaw": "Garra pequeña",
+        "LurkerClaw": "Lurker Claw",
         "Mandibles": "Mandíbulas",
         "MetalShard": "fragmento de metal",
         "Moonbeam": "Rayo de luna",
@@ -216,6 +217,7 @@
         "PhasicBlade": "Hoja fásica",
         "PiercingHymn": "Himno penetrante",
         "Pincer": "Pinza",
+        "PricklyVine": "Prickly Vine",
         "Pseudopod": "Seudópodo",
         "Proboscis": "Probóscide",
         "ProjectileVomit": "Vómito proyectado",
@@ -967,6 +969,7 @@
         "PersistentAcid": "ácido persistente",
         "PersistentFire": "fuego persistente",
         "PersistentPoison": "veneno persistente",
+        "PersistentWassailing": "persistent wassailing",
         "PhysicalRangedAttacks": "ataques físicos a distancia",
         "PhysicalWeaponsOnly": "físico (solo armas)",
         "PrimalSpells": "conjuros primigenios",
@@ -990,6 +993,21 @@
     "Mutagens": {
       "BestialMutagen": {
         "FeralPrompt": "¿Aumentar la penalización a la CA para aumentar el tamaño de los dados de daño?"
+      },
+      "MartialMayhemMutagen": {
+        "Major": {
+          "CriticalSuccessNote": "When you critically succeed at a melee attack roll, the target is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the beginning of your next turn."
+        },
+        "FailureNote": "When you fail at a melee attack roll, you are @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the end of your next turn.",
+        "SuccessNote": "When you succeed at a melee attack roll, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to your next attack roll against it before the start of your next turn."
+      },
+      "MegaphoneMutagen": {
+        "RangeNote": {
+          "Greater": "The range of your actions and spells with the auditory trait increases by 20 feet.",
+          "Lesser": "The range of your actions and spells with the auditory trait increases by 10 feet.",
+          "Major": "The range of your actions and spells with the auditory trait increases by 40 feet.",
+          "Moderate": "The range of your actions and spells with the auditory trait increases by 15 feet."
+        }
       },
       "SanguineMutagen": {
         "DamageNote": "Cada vez que recibes daño perforante o cortante, sufres @Damage[1d6[bleed]].",
@@ -1247,7 +1265,10 @@
               "Raven": "Cuervo",
               "Scorpion": "Escorpión",
               "Shark": "Tiburón",
+              "Snake": "Snake",
               "Spider": "Araña",
+              "Squirrel": "Squirrel",
+              "SquirrelFlyingGiant": "Flying Giant Squirrel",
               "Tiger": "Tigre",
               "Toad": "Sapo",
               "Wolf": "Lobo",
@@ -1309,6 +1330,11 @@
               "Elemental": "Elemental de madera",
               "Medium": "Elemental de madera mediano",
               "Small": "Elemental de madera pequeño"
+            }
+          },
+          "Fey": {
+            "Ujdavipr": {
+              "Scout": "Scout"
             }
           },
           "Genie": {
@@ -2344,6 +2370,7 @@
           "Name": "Movilidad mítica"
         },
         "MythicPower": {
+          "Addendum": "The creature has a pool of 3 Mythic Points, and can spend those Mythic Points to use this action.",
           "Name": "Poder mítico"
         },
         "MythicResilience": {
@@ -2568,6 +2595,14 @@
         "SingleAttackLabel": "Tormenta telequinética: objetivo único",
         "SingleTarget": "Único objetivo"
       },
+      "Poludnica": {
+        "NoondayDemon": {
+          "CompleteDarkness": "In Complete Darkness"
+        },
+        "SunstrokeHaze": {
+          "Zenith": "Sun is at its zenith"
+        }
+      },
       "Protean": {
         "ProteanAnatomy": {
           "Name": "anatomía proteica"
@@ -2791,6 +2826,11 @@
           "Name": "Equipo de relevos"
         }
       },
+      "SedacthyWarband": {
+        "FrenziedFeast": {
+          "Label": "Frenzied Feast — Number of Enemies Damaged"
+        }
+      },
       "Seugathi": {
         "MindfogSuppression": "Desactivar el aura de niebla mental"
       },
@@ -2803,6 +2843,14 @@
           "ResistanceToggle": "Defensa equitativa — Resistencia a golpe crítico"
         },
         "LawbringerSpeedLabel": "Portador de la ley — Moviéndose hacia el objetivo"
+      },
+      "Shivver": {
+        "Gibbering": {
+          "Name": "Gibbering"
+        },
+        "Horned": {
+          "Name": "Horned"
+        }
       },
       "ShockerLizard": {
         "ShockingBurst": {
@@ -3265,6 +3313,11 @@
         },
         "Weakness": {
           "Name": "Debilidad"
+        }
+      },
+      "VatNeedler": {
+        "GenerateBomb": {
+          "Note": "The target and and all creatures in the splash radius must roll a @Check[fortitude|dc:26|options:area-effect,inflicts:sickened] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure); creatures hit by only the splash receive a +2 circumstance bonus to their Fortitude saves."
         }
       },
       "Visitant": {
@@ -6200,6 +6253,12 @@
         "Fearcutter": {
           "Note": "Cuando logras un impacto crítico con <em>Cortamiedo</em> contra una criatura con el rasgo sacrílego, el objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}."
         },
+        "Fetters": {
+          "Note": "You must succeed at a @Check[flat|dc:11|name:Fetters|showDC:all] any time you use a manipulate action or else that action fails."
+        },
+        "FiendishTeleportation": {
+          "RollOptionLabel": "Fiendish Teleportation — Defending against a reaction triggered by your movement"
+        },
         "FightersFork": {
           "FluidLengthLabel": "Tridente del guerrero — Longitud variable"
         },
@@ -6369,6 +6428,13 @@
         },
         "UnholyWater": {
           "Note": "Sólo puede dañar a criaturas con el rasgo sagrado."
+        },
+        "Variety": {
+          "Greater": "Greater",
+          "Lesser": "Lesser",
+          "Major": "Major",
+          "Moderate": "Moderate",
+          "Normal": "Normal"
         },
         "WalkingCauldron": {
           "ToggleLabel": "Caldero andante — Animado"
@@ -7656,6 +7722,7 @@
         "HandCrossbowGauntletBow": "Ballesta de mano y arco de guantelete",
         "HellknightBreastplate": "Coraza de Caballero Infernal",
         "HellknightPlates": "Armadura de semiplacas y armadura de placas de Caballero Infernal",
+        "Grenades": "Grenades",
         "MarineCombat": "Combate marino",
         "MartialAthamaruWeapons": "Armas marciales de Athamaru",
         "MartialAzarketiWeapons": "Armas marciales Azarketi",
@@ -7708,6 +7775,7 @@
         "MartialStudentOfArchery": "Arma marcial de Estudiante de arquería",
         "MartialSurkiWeapons": "Armas marciales de surki",
         "MartialTalphiWeapons": "Armas marciales de Talphi",
+        "MartialTechWeapons": "Martial Tech Weapons",
         "MartialTenguWeapons": "Armas marciales tengu",
         "MartialTripkeeWeapons": "Armas marciales de tripkee",
         "MartialTwoHandedMeleeWeapons": "Armas de cuerpo a cuerpo marciales a dos manos",
@@ -9441,6 +9509,7 @@
           "Impaling": "Empalador",
           "Label": "Remate",
           "Lethal": "Letal",
+          "LethalDamage": "Finisher — Lethal Finisher Damage",
           "Mobile": "Móvil",
           "Perfect": "Perfecto",
           "PreciseNote": "Con un fallo, aplicas tu @Damage[((@actor.flags.system.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{daño completo de Golpe preciso} en lugar de la mitad.",
@@ -10859,6 +10928,9 @@
         },
         "SuppressingFire": {
           "Note": "Si realizas un ataque con un arma que tiene la característica de área, los enemigos en el área afectada que fallan su salvación contra tu ataque se convierten en @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suprimidos} hasta el inicio de tu próximo turno."
+        },
+        "WhirlingSwipe": {
+          "DCUpgradeLabel": "Backswing or Sweep weapon"
         }
       },
       "Spellshape": {
