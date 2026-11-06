@@ -31,7 +31,7 @@
         }
       },
       "EscalationAmmunition": {
-        "Text": "The target must attempt a @Check[fortitude|dc:30] save. On a failure, the target rolls the next saving throw it attempts within the next minute against a spell or magical effect twice and takes the worse result.",
+        "Text": "On a hit, the target must attempt a @Check[fortitude|dc:30|name:Escalation Ammunition] save. On a failure, the target rolls the next saving throw it attempts within the next minute against a spell or magical effect twice and takes the worse result. @UUID[Compendium.pf2e.equipment-effects.Item.qMqygrD5lJyd5UYM]{Effect: Escalation Ammunition}",
         "Title": "Escalation Ammunition"
       },
       "ExsanguinatingAmmunition": {
@@ -209,6 +209,7 @@
         "Leg": "Leg",
         "LightningLash": "Lightning Lash",
         "LittleClaw": "Little Claw",
+        "LurkerClaw": "Lurker Claw",
         "Mandibles": "Mandibles",
         "MetalShard": "Metal Shard",
         "Moonbeam": "Moonbeam",
@@ -216,6 +217,7 @@
         "PhasicBlade": "Phasic Blade",
         "PiercingHymn": "Piercing Hymn",
         "Pincer": "Pincer",
+        "PricklyVine": "Prickly Vine",
         "Pseudopod": "Pseudopod",
         "Proboscis": "Proboscis",
         "ProjectileVomit": "Projectile Vomit",
@@ -967,6 +969,7 @@
         "PersistentAcid": "persistent acid",
         "PersistentFire": "persistent fire",
         "PersistentPoison": "persistent poison",
+        "PersistentWassailing": "persistent wassailing",
         "PhysicalRangedAttacks": "physical ranged attacks",
         "PhysicalWeaponsOnly": "physical (weapons only)",
         "PrimalSpells": "primal spells",
@@ -990,6 +993,21 @@
     "Mutagens": {
       "BestialMutagen": {
         "FeralPrompt": "Increase penalty to AC to increase damage dice size?"
+      },
+      "MartialMayhemMutagen": {
+        "Major": {
+          "CriticalSuccessNote": "When you critically succeed at a melee attack roll, the target is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the beginning of your next turn."
+        },
+        "FailureNote": "When you fail at a melee attack roll, you are @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the end of your next turn.",
+        "SuccessNote": "When you succeed at a melee attack roll, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to your next attack roll against it before the start of your next turn."
+      },
+      "MegaphoneMutagen": {
+        "RangeNote": {
+          "Greater": "The range of your actions and spells with the auditory trait increases by 20 feet.",
+          "Lesser": "The range of your actions and spells with the auditory trait increases by 10 feet.",
+          "Major": "The range of your actions and spells with the auditory trait increases by 40 feet.",
+          "Moderate": "The range of your actions and spells with the auditory trait increases by 15 feet."
+        }
       },
       "SanguineMutagen": {
         "DamageNote": "Whenever you take piercing or slashing damage, you take @Damage[1d6[bleed]].",
@@ -1247,7 +1265,10 @@
               "Raven": "Raven",
               "Scorpion": "Scorpion",
               "Shark": "Shark",
+              "Snake": "Snake",
               "Spider": "Spider",
+              "Squirrel": "Squirrel",
+              "SquirrelFlyingGiant": "Flying Giant Squirrel",
               "Tiger": "Tiger",
               "Toad": "Toad",
               "Wolf": "Wolf",
@@ -1309,6 +1330,11 @@
               "Elemental": "Wood Elemental",
               "Medium": "Medium Wood Elemental",
               "Small": "Small Wood Elemental"
+            }
+          },
+          "Fey": {
+            "Ujdavipr": {
+              "Scout": "Scout"
             }
           },
           "Genie": {
@@ -2344,6 +2370,7 @@
           "Name": "Mythic Mobility"
         },
         "MythicPower": {
+          "Addendum": "The creature has a pool of 3 Mythic Points, and can spend those Mythic Points to use this action.",
           "Name": "Mythic Power"
         },
         "MythicResilience": {
@@ -2568,6 +2595,14 @@
         "SingleAttackLabel": "Telekinetic Storm — Single Target",
         "SingleTarget": "Single Target"
       },
+      "Poludnica": {
+        "NoondayDemon": {
+          "CompleteDarkness": "In Complete Darkness"
+        },
+        "SunstrokeHaze": {
+          "Zenith": "Sun is at its zenith"
+        }
+      },
       "Protean": {
         "ProteanAnatomy": {
           "Name": "Protean Anatomy"
@@ -2791,6 +2826,11 @@
           "Name": "Tag Team"
         }
       },
+      "SedacthyWarband": {
+        "FrenziedFeast": {
+          "Label": "Frenzied Feast — Number of Enemies Damaged"
+        }
+      },
       "Seugathi": {
         "MindfogSuppression": "Suppress Mindfog Aura"
       },
@@ -2803,6 +2843,14 @@
           "ResistanceToggle": "Equitable Defense — Critical Hit Resistance"
         },
         "LawbringerSpeedLabel": "Lawbringer — Moving Toward Target"
+      },
+      "Shivver": {
+        "Gibbering": {
+          "Name": "Gibbering"
+        },
+        "Horned": {
+          "Name": "Horned"
+        }
       },
       "ShockerLizard": {
         "ShockingBurst": {
@@ -3265,6 +3313,11 @@
         },
         "Weakness": {
           "Name": "Weakness"
+        }
+      },
+      "VatNeedler": {
+        "GenerateBomb": {
+          "Note": "The target and and all creatures in the splash radius must roll a @Check[fortitude|dc:26|options:area-effect,inflicts:sickened] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure); creatures hit by only the splash receive a +2 circumstance bonus to their Fortitude saves."
         }
       },
       "Visitant": {
@@ -6200,6 +6253,12 @@
         "Fearcutter": {
           "Note": "When you critically hit a creature with the unholy trait with <em>Fearcutter</em>, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}."
         },
+        "Fetters": {
+          "Note": "You must succeed at a @Check[flat|dc:11|name:Fetters|showDC:all] any time you use a manipulate action or else that action fails."
+        },
+        "FiendishTeleportation": {
+          "RollOptionLabel": "Fiendish Teleportation — Defending against a reaction triggered by your movement"
+        },
         "FightersFork": {
           "FluidLengthLabel": "Fighter's Fork — Fluid Length"
         },
@@ -6369,6 +6428,13 @@
         },
         "UnholyWater": {
           "Note": "Can damage only creatures with the holy trait."
+        },
+        "Variety": {
+          "Greater": "Greater",
+          "Lesser": "Lesser",
+          "Major": "Major",
+          "Moderate": "Moderate",
+          "Normal": "Normal"
         },
         "WalkingCauldron": {
           "ToggleLabel": "Walking Cauldron — Animated"
@@ -7656,6 +7722,7 @@
         "HandCrossbowGauntletBow": "Hand Crossbow & Gauntlet Bow",
         "HellknightBreastplate": "Hellknight Breastplate",
         "HellknightPlates": "Hellknight Half-Plate & Hellknight Plate",
+        "Grenades": "Grenades",
         "MarineCombat": "Marine Combat",
         "MartialAthamaruWeapons": "Martial Athamaru Weapons",
         "MartialAzarketiWeapons": "Martial Azarketi Weapons",
@@ -7708,6 +7775,7 @@
         "MartialStudentOfArchery": "Martial Student of Archery Weapon",
         "MartialSurkiWeapons": "Martial Surki Weapons",
         "MartialTalphiWeapons": "Martial Talphi Weapons",
+        "MartialTechWeapons": "Martial Tech Weapons",
         "MartialTenguWeapons": "Martial Tengu Weapons",
         "MartialTripkeeWeapons": "Martial Tripkee Weapons",
         "MartialTwoHandedMeleeWeapons": "Martial Two-Handed Melee Weapons",
@@ -9441,6 +9509,7 @@
           "Impaling": "Impaling",
           "Label": "Finisher",
           "Lethal": "Lethal",
+          "LethalDamage": "Finisher — Lethal Finisher Damage",
           "Mobile": "Mobile",
           "Perfect": "Perfect",
           "PreciseNote": "On a failure, you apply your @Damage[((@actor.flags.system.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{full precise strike damage} instead of half.",
@@ -10859,6 +10928,9 @@
         },
         "SuppressingFire": {
           "Note": "If you make an attack with a weapon that has the area trait, enemies in the affected area who fail their save against your attack become @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the start of your next turn."
+        },
+        "WhirlingSwipe": {
+          "DCUpgradeLabel": "Backswing or Sweep weapon"
         }
       },
       "Spellshape": {

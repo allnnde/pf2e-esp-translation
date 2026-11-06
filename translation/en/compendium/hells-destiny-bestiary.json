@@ -757,7 +757,7 @@
         },
         "action->Ruinous Weapons": {
           "name": "Ruinous Weapons",
-          "description": "<p>Any weapon the graveknight wields or unarmed attack the graveknight uses gains the effects of the <em>greater fearsome</em> weapon rune, deals an additional 1d6 mental damage, and functions as a +1 striking weapon rune.</p>"
+          "description": "<p>Any weapon the graveknight wields or unarmed attack the graveknight uses gains the effects of the <em>greater fearsome</em> weapon rune, deals an additional 1d6 mental damage, and functions as a <em>+1 striking</em> weapon rune.</p>"
         },
         "action->Weapon Master": {
           "name": "Weapon Master",
@@ -2282,7 +2282,7 @@
         },
         "action->Chill of Cocytus": {
           "name": "Chill of Cocytus",
-          "description": "<p>Meliar's unarmed attacks and mace gain the +2 greater striking decaying frost runes when used by him, and his Strikes gain the death trait.</p>"
+          "description": "<p>Meliar's unarmed attacks and mace gain the <em>+2 greater striking decaying frost</em> runes when used by him, and his Strikes gain the death trait.</p>"
         },
         "lore->Hell Lore": {
           "name": "Hell Lore"
@@ -3070,11 +3070,11 @@
         },
         "action->Frenzied Feast": {
           "name": "Frenzied Feast",
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The warband launches a frenzy of attacks against each enemy in a @Template[type:emanation|distance:5] with a @Check[reflex|dc:26|basic] save. The damage depends on the number of actions. For each enemy damaged by this attack, the damage of the attack increases by 1d4 piercing for all targets (up to a maximum of 3d4 additional damage).</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+3)[piercing]|options:area-damage] damage plus @Damage[1d4[persistent,bleed]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+6)[piercing]|options:area-damage] damage plus @Damage[1d6[persistent,bleed]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+9)[piercing]|options:area-damage] damage plus @Damage[1d8[persistent,bleed]|options:area-damage] damage</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The warband launches a frenzy of attacks against each enemy in a @Template[type:emanation|distance:5] with a @Check[reflex|dc:26|basic|options:area-effect] save. The damage depends on the number of actions. For each enemy damaged by this attack, the damage of the attack increases by 1d4 piercing for all targets (up to a maximum of 3d4 additional damage).</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+3)[piercing],1d4[bleed]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+6)[piercing],1d6[bleed]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+9)[piercing],1d8[bleed]|options:area-damage] damage</p>"
         },
         "action->War Shriek": {
           "name": "War Shriek",
-          "description": "<p>The warband unleashes a chorus of terrifying battle cries. Each enemy in a @Template[type:emanation|distance:30] must attempt a @Check[will|dc:29] save. Regardless of the results, creatures are temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
+          "description": "<p>The warband unleashes a chorus of terrifying battle cries. Each enemy in a @Template[type:emanation|distance:30] must attempt a @Check[will|dc:29|options:area-effect,inflicts:frightened,inflicts:immobilized] save. Regardless of the results, creatures are temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
         }
       }
     },
@@ -3690,11 +3690,11 @@
         },
         "action->Claw and Trident": {
           "name": "Claw and Trident",
-          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The ulat-kini kidnappers engages in a coordinated attack with its wide array of melee weapons against each enemy in a @Template[type:emanation|distance:5] with a @Check[reflex|dc:25|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[piercing]|options:area-damage], or @Damage[(1d8+2)[slashing]|options:area-damage]{slashing}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+4)[piercing]|options:area-damage], or @Damage[(3d8+4)[slashing]|options:area-damage]{slashing}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+6)[piercing]|options:area-damage], or @Damage[(4d8+6)[slashing]|options:area-damage]{slashing}</p>"
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The ulat-kini kidnappers engages in a coordinated attack with its wide array of melee weapons against each enemy in a @Template[type:emanation|distance:5] with a @Check[reflex|dc:25|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[untyped]|options:area-damage]</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+4)[untyped]|options:area-damage]</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+6)[untyped]|options:area-damage]</p>"
         },
         "action->Ready... Fire!": {
           "name": "Ready... Fire!",
-          "description": "<p>The ulat-kini kidnappers draws or reloads their bows, crossbows, and slings, then launches a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 120 feet that deals @Damage[(2d8+4)[piercing]|options:area-damage] or @Damage[(2d8+4)[bludgeoning]|options:area-damage]{bludgeoning} damage with a @Check[reflex|dc:25|basic|options:area-effect] save. When the ulat-kini kidnappers is reduced to 2 or fewer segments, this area decreases to a @Template[type:burst|distance:5].</p>"
+          "description": "<p>The ulat-kini kidnappers draws or reloads their bows, crossbows, and slings, then launches a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 120 feet that deals @Damage[(2d8+4)[untyped]|options:area-damage] damage with a @Check[reflex|dc:25|basic|options:area-effect] save. When the ulat-kini kidnappers is reduced to 2 or fewer segments, this area decreases to a @Template[type:burst|distance:5].</p>"
         },
         "action->Spoils of War": {
           "name": "Spoils of War",
@@ -3711,8 +3711,8 @@
         "strike-melee->Ranseur": {
           "name": "Ranseur"
         },
-        "strike-melee->Claws": {
-          "name": "Claws"
+        "strike-melee->Claw": {
+          "name": "Claw"
         },
         "strike-melee->Fangs": {
           "name": "Fangs"
@@ -3723,7 +3723,7 @@
         },
         "action->Blood in the Water": {
           "name": "Blood in the Water",
-          "description": "<p><strong>Requirements</strong> The ulat-kini scout begins their turn within 30 feet of a creature taking persistent bleed damage</p>\n<hr />\n<p><strong>Effect</strong> Until the beginning of their next turn, the ulat-kini gains 9 temporary Hit Points and a +4 status bonus to their Strikes' damage rolls.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.gnD8X7SpMaHet941]{Effect: Blood in the Water}</p>",
+          "description": "<p><strong>Requirements</strong> The ulat-kini scout begins their turn within 30 feet of a creature taking persistent bleed damage</p>\n<hr />\n<p><strong>Effect</strong> Until the beginning of their next turn, the ulat-kini gains 9 temporary Hit Points and a +4 status bonus to their Strikes' damage rolls.</p>",
           "selfEffect": "Effect: Blood in the Water"
         }
       }
@@ -3781,7 +3781,7 @@
         },
         "action->Break Bottle": {
           "name": "Break Bottle",
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> Urdun shatters a bottle and uses it to brawl. For the next 1 minute when he makes a fist Strike, he can choose for the Strike to lose the unarmed trait, gain the versatile P trait, and deal @Damage[1d6[persistent,bleed]] damage on critical hits.</p>"
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> Urdun shatters a bottle and uses it to brawl. For the next 1 minute when he makes a fist Strike, he can choose for the Strike to lose the unarmed trait, gain the versatile P trait, and deal 1d6 persistent bleed damage on critical hits.</p>"
         },
         "action->Ruse Drinker": {
           "name": "Ruse Drinker",
@@ -3797,7 +3797,7 @@
         },
         "action->Soused Blow": {
           "name": "Soused Blow",
-          "description": "<p><strong>Requirements</strong> Urdun's Soused Ruse is active</p>\n<hr />\n<p><strong>Effect</strong> Urdun pretends to stumble while preparing a punch. He Feints then makes a melee Strike.</p>"
+          "description": "<p><strong>Requirements</strong> Urdun's Soused Ruse is active</p>\n<hr />\n<p><strong>Effect</strong> Urdun pretends to stumble while preparing a punch. He [[/act feint]]{Feints} then makes a melee Strike.</p>"
         },
         "lore->Favored City Lore": {
           "name": "Favored City Lore"

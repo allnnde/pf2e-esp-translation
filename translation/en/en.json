@@ -1155,6 +1155,11 @@
         "Rarities": "Rarities",
         "Sizes": "Sizes",
         "Source": "Sources",
+        "Spells": {
+          "Defense": {
+            "BasicOnly": "Basic Saves Only"
+          }
+        },
         "Traditions": "Traditions",
         "WeaponFilters": "Weapon Filters",
         "SearchPlaceholder": "Search Text",
@@ -1237,6 +1242,7 @@
     "ConditionTypeFleeing": "Fleeing",
     "ConditionTypeFriendly": "Friendly",
     "ConditionTypeFrightened": "Frightened",
+    "ConditionTypeGlitching": "Glitching",
     "ConditionTypeGrabbed": "Grabbed",
     "ConditionTypeHelpful": "Helpful",
     "ConditionTypeHidden": "Hidden",
@@ -1258,10 +1264,12 @@
     "ConditionTypeSlowed": "Slowed",
     "ConditionTypeStunned": "Stunned",
     "ConditionTypeStupefied": "Stupefied",
+    "ConditionTypeSuppressed": "Suppressed",
     "ConditionTypeUnconscious": "Unconscious",
     "ConditionTypeUndetected": "Undetected",
     "ConditionTypeUnfriendly": "Unfriendly",
     "ConditionTypeUnnoticed": "Unnoticed",
+    "ConditionTypeUntethered": "Untethered",
     "ConditionTypeWounded": "Wounded",
     "ConditionsLabel": "Conditions",
     "ConsumableMessage": {
@@ -4993,8 +5001,10 @@
     "TraitDescriptionExploration": "An activity with this trait takes more than a turn to use, and can usually be used only during exploration mode.",
     "TraitDescriptionExposed": "This armor doesn't come with environmental protections. All armor from Pathfinder has the exposed trait.",
     "TraitDescriptionExtradimensional": "This effect or item creates an extradimensional space. An extradimensional effect placed inside another extradimensional space ceases to function until it is removed.",
+    "TraitDescriptionFadrim": "A creature with this trait has the fadrim versatile heritage. Fadrims are influenced by the magic of the First World, and possess fey-like physical features or magic. An ability with this trait can be used or selected only by fadrims.",
     "TraitDescriptionFatal": "The fatal trait includes a die size. On a critical hit, the weapon's damage die increases to that die size instead of the normal die size, and the weapon adds one additional damage die of the listed size.",
     "TraitDescriptionFatalAim": "It's possible to hold the stock of this weapon under one arm so you can fire it with a single hand as long as the other hand isn't holding a weapon, shield, or anything else you would need to move and position, to ensure the weapon doesn't slip out from under your arm. However, if you use both hands, the weapon can make fatal attacks. When you wield the weapon in two hands, it gains the fatal trait with the listed damage die. Holding the weapon underarm stably enough to fire is significantly more complicated than just releasing one hand from the weapon, so to switch between the two grips, you must do so with an Interact action rather than Releasing or as part of reloading.",
+    "TraitDescriptionFaun": "A creature with this trait is a member of the faun ancestry. Fauns are fun-loving, goatlike people who pursue art and whimsy. They typically have low-light vision. An ability with this trait can be used or selected only by fauns ancestry.",
     "TraitDescriptionFear": "Fear effects evoke the emotion of fear. Effects with this trait always have the mental and emotion traits as well.",
     "TraitDescriptionFetchling": "A creature with this trait is a member of the fetchling ancestry. Fetchlings were once human, but generations of life in the Netherworld have transformed them.",
     "TraitDescriptionFey": "Creatures of the First World are called the fey.",
@@ -5251,6 +5261,7 @@
     "TraitDescriptionShisk": "Secretive humanoids covered in bony plumage that reside underground.",
     "TraitDescriptionShoony": "A creature with this trait is a member of the shoony ancestry.",
     "TraitDescriptionShove": "You can use this weapon to Shove with the Athletics skill even if you don't have a free hand. This uses the weapon's reach (if different from your own) and adds the weapon's item bonus to attack rolls as an item bonus to the Athletics check. If you critically fail a check to Shove using the weapon, you can drop the weapon to take the effects of a failure instead of a critical failure.",
+    "TraitDescriptionShroud": "<p>Patterned with morbid designs, shrouds give their wearers a small say in what happens to them at the moment of death.</p><p> When you invest a shroud, you mentally prepare for death and designate your next of kin, a sentient creature you define by name or by precisely describing their relation to you (such as parent, eldest child, or spouse's sibling). For as long as you wear the shroud, your designated next of kin knows the value of your dying condition and whether you're alive or dead, even if you're on different planes. You can change your designated next of kin while making your daily preparations.</p>",
     "TraitDescriptionSkeleton": "This undead is made by animating a dead creature's skeleton with void energy. An ability with this trait can be used or selected only by skeletons.",
     "TraitDescriptionSkelm": "These creatures are monstrous, wrathful misanthropes who seek to control others through anger and spite.",
     "TraitDescriptionSkill": "A general feat with the skill trait improves your skills and their actions or gives you new actions for a skill. A feat with this trait can be selected when a class grants a skill feat or general feat. Archetype feats with the skill trait can be selected in place of a skill feat if you have that archetype's dedication feat.",
@@ -5451,6 +5462,7 @@
     "TraitExploration": "Exploration",
     "TraitExposed": "Exposed",
     "TraitExtradimensional": "Extradimensional",
+    "TraitFadrim": "Fadrim",
     "TraitFatal": "Fatal",
     "TraitFatalAim": "Fatal Aim",
     "TraitFatalAimD10": "Fatal Aim d10",
@@ -5458,6 +5470,7 @@
     "TraitFatalD10": "Fatal d10",
     "TraitFatalD12": "Fatal d12",
     "TraitFatalD8": "Fatal d8",
+    "TraitFaun": "Faun",
     "TraitFear": "Fear",
     "TraitFetchling": "Fetchling",
     "TraitFey": "Fey",
@@ -5828,6 +5841,7 @@
     "TraitShobhad": "Shobhad",
     "TraitShoony": "Shoony",
     "TraitShove": "Shove",
+    "TraitShroud": "Shroud",
     "TraitSiktempora": "Siktempora",
     "TraitSkeleton": "Skeleton",
     "TraitSkelm": "Skelm",
@@ -6654,7 +6668,10 @@
         "Name": "Energizing"
       },
       "energyVulnerability": {
-        "Name": "Energy Vulnerability"
+        "Name": "Energy Vulnerability",
+        "Note": {
+          "criticalSuccess": "On a critical hit, the target gains weakness 5 to the chosen energy type until the end of your next turn. This weakness isn't cumulative with any weakness to that energy type the target already has and doesn't affect a creature with immunity or resistance to that energy type. @UUID[Compendium.pf2e.equipment-effects.Item.HVPeVb3WOGpKAI6A]{Effect: Energy Vulnerability}"
+        }
       },
       "extending": {
         "Name": "Extending"
@@ -6755,7 +6772,10 @@
         }
       },
       "greaterEnergyVulnerability": {
-        "Name": "Greater Energy Vulnerability"
+        "Name": "Greater Energy Vulnerability",
+        "Note": {
+          "criticalSuccess": "On a critical hit, the target gains weakness 10 to the chosen energy type until the end of your next turn. This weakness isn't cumulative with any weakness to that energy type the target already has and doesn't affect a creature with immunity or resistance to that energy type. @UUID[Compendium.pf2e.equipment-effects.Item.HVPeVb3WOGpKAI6A]{Effect: Energy Vulnerability}"
+        }
       },
       "greaterExtending": {
         "Name": "Greater Extending"
@@ -7189,6 +7209,11 @@
         "rules": "<p>You're gripped by fear and struggle to control your nerves. The frightened condition always includes a value. You take a status penalty equal to this value to all your checks and DCs. Unless specified otherwise, at the end of each of your turns, the value of your frightened condition decreases by 1.</p>",
         "summary": "Fear makes you less capable of attacking and defending."
       },
+      "glitching": {
+        "name": "Glitching",
+        "rules": "<p>A glitching creature, hazard, or object with the tech trait experiences a combination of debilitating effects and moments of seizing up. The glitching condition always includes a value. If you have glitching equipment and take any action involving that equipment, you must attempt a flat check to see what occurs. If you have the glitching condition, you must attempt this @Check[flat|dc:resolve(5 + @item.badge.value)|showDC:all] at the beginning of each of your turns. The DC of the flat check equals 5 plus your condition value or the item's condition value.</p><hr /><p><strong>Critical Success</strong> Reduce your glitching value by 1.</p>\n<p><strong>Success</strong> You act as normal or use your equipment as normal.</p>\n<p><strong>Failure</strong> You take an item penalty to all your checks and DCs equal to your glitching value or the glitching value of the item you're attempting to use, including saving throws, attack modifiers, and the DCs of abilities, effects, and spells you use.</p>\n<p><strong>Critical Failure</strong> A glitching object you tried to use doesn't function, and you lose the actions you took to attempt to use it. A glitching creature uses the same effect as a failure and is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. A glitching hazard uses the same effect as a failure.</p>",
+        "summary": "Your tech is malfunctioning and might seize up."
+      },
       "grabbed": {
         "name": "Grabbed",
         "note": "If you attempt a manipulate action while grabbed, you must succeed at a @Check[flat|dc:5|name:Grabbed|showDC:all] or it is lost.",
@@ -7289,6 +7314,11 @@
         "rules": "<p>Your thoughts and instincts are clouded. Stupefied always includes a value. You take a status penalty equal to this value on Intelligence-, Wisdom-, and Charisma-based checks and DCs, including Will saving throws, spell attack rolls, spell DCs, and skill checks that use these attribute modifiers. Any time you attempt to Cast a Spell while stupefied, the spell is disrupted unless you succeed at a flat check with a DC equal to 5 + your stupefied value.</p>",
         "summary": "You can't access your full mental faculties, and you have trouble casting spells."
       },
+      "suppressed": {
+        "name": "Suppressed",
+        "rules": "<p>You've been affected by a high volume of incoming fire or a particularly dangerous attack that forces you to act less efficiently for your own safety. You take a –1 circumstance penalty to attack rolls and a –10-foot status penalty to all your Speeds.</p>",
+        "summary": "Incoming fire forces you to act less efficiently for your own safety."
+      },
       "unconscious": {
         "name": "Unconscious",
         "rules": "<p>You're sleeping, or you've been knocked out. You can't act. You take a -4 status penalty to AC, Perception, and Reflex saves, and you have the blinded and off-guard conditions. When you gain this condition, you fall prone and drop items you are wielding or holding unless the effect states otherwise or the GM determines you're in a position in which you wouldn't.</p>\n<p>If you're unconscious because you're dying, you can't wake up while you have 0 Hit Points. If you are restored to 1 Hit Point or more via healing, you lose the dying and unconscious conditions and can act normally on your next turn.</p>\n<p>If you are unconscious and at 0 Hit Points, but not dying, you naturally return to 1 Hit Point and awaken after sufficient time passes. The GM determines how long you remain unconscious, from a minimum of 10 minutes to several hours. If you receive healing during this time, you lose the unconscious condition and can act normally on your next turn.</p>\n<p>If you're unconscious and have more than 1 Hit Point (typically because you are asleep or unconscious due to an effect), you wake up in one of the following ways. Each causes you to lose the unconscious condition.</p><ul><li>You take damage, provided the damage doesn't reduce you to 0 Hit Points. If the damage reduces you to 0 Hit Points, you remain unconscious and gain the dying condition as normal.</li><li>You receive healing, other than the natural healing you get from resting.</li><li>Someone shakes you awake with an Interact action.</li><li>There's loud noise going on around you-though this isn't automatic. At the start of your turn, you automatically attempt a Perception check against the noise's DC (or the lowest DC if there is more than one noise), waking up if you succeed. If creatures are attempting to stay quiet around you, this Perception check uses their Stealth DCs. Some magical effects make you sleep so deeply that they don't allow you to attempt this Perception check.</li><li>If you are simply asleep, the GM decides you wake up either because you have had a restful night's sleep or something disrupted that rest.</ul>",
@@ -7308,6 +7338,11 @@
         "name": "Unnoticed",
         "rules": "<p>If you are unnoticed by a creature, that creature has no idea you are present at all. When you're unnoticed, you're also undetected by the creature. This condition matters for abilities that can be used only against targets totally unaware of your presence.</p>",
         "summary": "A creature is entirely unaware you're present."
+      },
+      "untethered": {
+        "name": "Untethered",
+        "rules": "<p>You're in a zero gravity (or similar) environment without a means of movement and float without support. You can't take move actions unless they specify they can be used in your current environment. At the end of your turn, you move 5 feet in the last direction you moved. You can take the Push Off action to change directions and the distance moved. Once you gain a means of moving in your environment, you lose this condition. Typically, a creature with the untethered condition in zero-gravity also gains the @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] conditions while untethered.</p>",
+        "summary": "You're floating without support in zero gravity."
       },
       "wounded": {
         "name": "Wounded",
