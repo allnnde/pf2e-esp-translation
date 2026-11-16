@@ -26,6 +26,10 @@
       "name": "Bear Hug",
       "description": "<p><strong>Requirements</strong> The bear's last action was a successful claw Strike.</p>\n<hr />\n<p>The bear makes another claw Strike against the same target. If this Strike hits, the target is also @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, as if the bear had successfully @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grappled} the target.</p>"
     },
+    "Bellowing Croak": {
+      "name": "Bellowing Croak",
+      "description": "<p>Your regal toad lets loose an ear-bleeding croak. All creatures in a @Template[type:emanation|distance:15] take @Damage[floor(@actor.level/2)d6[sonic]|options:area-damage] damage for every 2 levels the toad has (@Check[type:fortitude|against:bellowing-croak|basic:true]). This uses a trained DC using the regal toad's Constitution modifier or an expert DC if the toad is specialized.</p>"
+    },
     "Blood Feast": {
       "name": "Blood Feast",
       "description": "<p>Your vampiric animal companion attacks a bleeding foe and drinks its blood. Your companion attempts a Strike against a creature currently taking persistent bleed damage. The Strike deals 2d8 additional damage. If the Strike hits and deals damage, your vampiric animal companion gains temporary Hit Points equal to half your level that last for up to 1 minute.</p>\n<p>@UUID[Compendium.pf2e-animal-companions.AC-effects.Item.q6fSAYeFEf1B5Bu7]{Effect: Blood Feast}</p>"
@@ -53,6 +57,10 @@
     "Bucking Frenzy": {
       "name": "Bucking Frenzy",
       "description": "<p>The war pig transforms any fear it feels into fury before kicking wildly. Reduce the war pig's @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL] value by 1 (minimum 0). The war pig then makes hoof Strikes against up to three different foes within its reach. These Strikes each take a –2 penalty to their attack rolls unless the war pig began its turn with the frightened condition. Each attack counts toward the war pig's multiple attack penalty, but the penalty only increases after all the attacks have been made.</p>"
+    },
+    "Bucking Trample": {
+      "name": "Bucking Trample",
+      "description": "<p>The yzobu Strides up to its Speed. During this movement, it can Strike up to two times. Each of these Strikes can be made at any point during its movement, but they must be made against different targets.</p>"
     },
     "Burrowing Ambush": {
       "name": "Burrowing Ambush",
@@ -211,7 +219,7 @@
     },
     "Hair Barrage": {
       "name": "Hair Barrage",
-      "description": "<p>The tarantula flicks its legs, flinging spiky hairs in a @Template[type:cone|distance:15]. This deals @Damage[(4 + max(0,floor((@actor.level - 6) / 4)))d6[piercing]] damage with a @Check[type:reflex|against:hair-barrage|basic:true]. This uses a trained DC using the tarantula's Dexterity modifier or an expert DC if the tarantula is specialized. This damage increases by an additional 1d6 for every 4 levels you have beyond 6th.</p>"
+      "description": "<p>The tarantula flicks its legs, flinging spiky hairs in a @Template[type:cone|distance:15]. This deals @Damage[(4 + max(0,floor((@actor.level - 6) / 4)))d6[piercing]|options:area-damage] damage with a @Check[type:reflex|against:hair-barrage|basic:true]. This uses a trained DC using the tarantula's Dexterity modifier or an expert DC if the tarantula is specialized. This damage increases by an additional 1d6 for every 4 levels you have beyond 6th.</p>"
     },
     "Hellfire Gaze": {
       "name": "Hellfire Gaze",
@@ -277,6 +285,10 @@
       "name": "Raging Stampede",
       "description": "<p>The yzobu Strides and then makes a horn Strike. If the Strike hits, the target is pushed 10 feet.</p>"
     },
+    "Regurgitate Soil": {
+      "name": "Regurgitate Soil",
+      "description": "<p>Your knurled worm violently regurgitates a @Template[type:cone|distance:30] of dirt and soil, dealing @Damage[floor(@actor.level/2)d6[bludgeoning]|options:area-damage] damage for every 2 levels the worm has to all creatures in the area (@Check[type:reflex|against:regurgitate-soil|basic:true]). This uses a trained DC using the worm's Constitution modifier or an expert DC if the worm is specialized.</p>"
+    },
     "Rhinoceros Charge": {
       "name": "Rhinoceros Charge",
       "description": "<p>The rhino Strides and makes a horn Strike at the end of its Stride. As long as the rhino moved at least 20 feet, the horn Strike deals 1d8 additional piercing damage, or 2d8 additional damage if your rhino is nimble or savage.</p>"
@@ -313,6 +325,10 @@
     "Shred": {
       "name": "Shred",
       "description": "<p>The shark viciously rips into the wound. The target of the shark's Strike takes 2d8 slashing damage (3d8 for a specialized companion).</p>"
+    },
+    "Slobbering Bite": {
+      "name": "Slobbering Bite",
+      "description": "<p>Your goblin dog makes a jaws Strike. If the Strike hits, the target is covered in viscous saliva and can't use reactions until it Interacts to wipe away the drool.</p>"
     },
     "Snatch": {
       "name": "Snatch",
@@ -408,6 +424,10 @@
     "Unnerving Screech": {
       "name": "Unnerving Screech",
       "description": "<p>Your skeletal bird of prey makes an earsplitting, unnatural screech, deafening and startling an enemy within 30 feet. The target must attempt a @Check[fortitude] save. The target is then temporarily immune for 1 hour. The frightened condition is a mental, emotion, and fear effect, but the creature can still be @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} if it's immune to these.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is deafened for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is deafened for 1 minute and frightened 1.</p>\n<p><strong>Critical Failure</strong> The target is deafened for 10 minutes and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
+    },
+    "Unsettling Stridulation": {
+      "name": "Unsettling Stridulation",
+      "description": "<p>The Thorngrip shuffler rubs its legs together, creating a dissonant creak. It attempts to [[/act demoralize]] a creature within 30 feet; this attempt gains the auditory trait, and the shuffler doesn't take a penalty to the check for not sharing a language with the target. While frightened by this ability, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to your Thorngrip shuffler.</p>"
     },
     "Weighted Kick": {
       "name": "Weighted Kick",
