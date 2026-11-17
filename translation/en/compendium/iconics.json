@@ -1471,16 +1471,6 @@
         "spellcastingEntry->Focus Spells": {
           "name": "Focus Spells"
         },
-        "spell->Heal": {
-          "name": "Heal",
-          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> (concentrate) The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> (concentrate) You disperse vital energy in a @Template[emanation|distance:30]. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
-          "target": "1 willing living creature or 1 undead"
-        },
-        "spell->Fire Ray": {
-          "name": "Fire Ray",
-          "description": "<p>A blazing band of fire arcs through the air, lighting your opponent and the ground they stand upon on fire. Make a spell attack roll against the target's AC. The ray deals 2d6 fire damage on a hit (or double damage on a critical hit). On any result other than a critical failure, the ground in the target's space catches fire, dealing @Damage[(@item.rank)d6[fire]] damage to each creature that ends its turn in one of the squares.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The ray's initial damage increases by 2d6, and the fire damage dealt by the burning space increases by 1d6.</p>",
-          "target": "1 creature"
-        },
         "consumable->Wand of Mending (Rank 1)": {
           "name": "Wand of Mending (Rank 1)",
           "consumableSpellName": "Mending",
@@ -1580,70 +1570,6 @@
           "name": "Battle Medicine",
           "description": "<p><strong>Requirements</strong> You're holding or wearing a healer's toolkit.</p>\n<hr />\n<p>You can patch up wounds, even in combat. Attempt a Medicine check with the same DC as for @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds} and restore the corresponding amount of HP; this doesn't remove the wounded condition. As with Treat Wounds, you can attempt checks against higher DCs if you have the minimum proficiency rank. The target is then @UUID[Compendium.pf2e.feat-effects.Item.2XEYQNZTCGpdkyR6]{immune} to your Battle Medicine for 1 day. This does not make them immune to, or otherwise count as, Treat Wounds.</p>"
         },
-        "spell->Daze": {
-          "name": "Daze",
-          "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
-          "target": "1 creature"
-        },
-        "spell->Divine Lance": {
-          "name": "Divine Lance",
-          "description": "<p>You unleash a beam of divine energy. Make a ranged spell attack against the target's AC. On a hit, the target takes 2d4 spirit damage (double damage on a critical hit).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
-          "target": "1 creature"
-        },
-        "spell->Guidance": {
-          "name": "Guidance",
-          "description": "<p>You ask for the guidance of supernatural entities, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.3qHKBDF7lrHw8jFK]{Spell Effect: Guidance}</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.3LyOkV25p7wA181H]{Effect: Guidance Immunity}</p>",
-          "target": "1 creature"
-        },
-        "spell->Light": {
-          "name": "Light",
-          "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.cVVZXNbV0nElVOPZ]{Spell Effect: Light}</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>"
-        },
-        "spell->Stabilize": {
-          "name": "Stabilize",
-          "description": "<p>Life energy shuts death's door. The target loses the @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} condition, though it remains @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} at 0 Hit Points.</p>",
-          "target": "1 dying creature"
-        },
-        "spell->Bless": {
-          "name": "Bless",
-          "description": "<p>Blessings from beyond help your companions strike true. You and your allies gain a +1 status bonus to attack rolls while within the emanation. Once per round on subsequent turns, you can Sustain the spell to increase the emanation's radius by 10 feet.</p>\n<p>Bless can counteract @UUID[Compendium.pf2e.spells-srd.Item.7ZinJNzxq0XF0oMx]{Bane}.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Gqy7K6FnbLtwGpud]{Spell Effect: Bless}</p>",
-          "target": "you and allies in the area"
-        },
-        "spell->Sanctuary": {
-          "name": "Sanctuary",
-          "description": "<p>You ward a creature with protective energy that deters attacks. Creatures attempting to attack the target must attempt a Will save each time. If the target uses a hostile action, the spell ends.</p>\n<hr />\n<p><strong>Critical Success</strong> <em>Sanctuary</em> ends.</p>\n<p><strong>Success</strong> The creature can attempt its attack and any other attacks against the target this turn.</p>\n<p><strong>Failure</strong> The creature can't attack the target and wastes the action. It can't attempt further attacks against the target this turn.</p>\n<p><strong>Critical Failure</strong> The creature wastes the action and can't attempt to attack the target for the rest of <em>sanctuary</em>'s duration.</p>",
-          "target": "1 creature"
-        },
-        "spell->Spirit Link": {
-          "name": "Spirit Link",
-          "description": "<p>You form a spiritual link with another creature, taking in its pain. When you Cast this Spell and at the start of each of your turns, if the target is below maximum Hit Points, it regains 2 Hit Points (or the difference between its current and maximum Hit Points, if that's lower). You lose as many Hit Points as the target regained.</p>\n<p>This is a spiritual transfer, so no effects apply that would increase the Hit Points the target regains or decrease the Hit Points you lose. This transfer also ignores any temporary Hit Points you or the target have. Since this effect doesn't involve vitality or void energy, <em>spirit link</em> works even if you or the target is undead. While the duration persists, you gain no benefit from regeneration or fast healing. You can Dismiss this spell, and if you're ever at 0 Hit Points, <em>spirit link</em> ends automatically.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The number of Hit Points transferred each time increases by 2.</p>",
-          "target": "1 willing creature"
-        },
-        "spell->Cleanse Affliction": {
-          "name": "Cleanse Affliction",
-          "description": "<p>Gentle restorative magic pushes back the effects of toxins and more complex maladies. Choose an affliction on the target, such as a curse, disease, or poison. If it has advanced past stage one, reduce the stage by one. This reduction can be applied only once to a given case of an affliction, with the case ending when it's completely cured. Although the reduction can't occur again, heightened versions of this spell attempt to counteract with each casting.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> Attempt to counteract the affliction if it is a disease or poison.</p>\n<p><strong>Heightened (4th)</strong> Attempt to counteract the affliction if it is a curse, disease, or poison.</p>",
-          "target": "1 willing creature"
-        },
-        "spell->Dispel Magic": {
-          "name": "Dispel Magic",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-          "target": "1 spell effect or unattended magic item"
-        },
-        "spell->Spiritual Armament": {
-          "name": "Spiritual Armament",
-          "description": "<p>You create a ghostly, magical echo of one weapon you're wielding or wearing and fling it. Attempt a spell attack roll against the target's AC, dealing 2d8 damage on a hit (or double damage on a critical hit). The damage type is the same as the chosen weapon (or any of its types for a versatile weapon). The attack deals spirit damage instead if that would be more detrimental to the creature (as determined by the GM). This attack uses and contributes to your multiple attack penalty. After the attack, the weapon returns to your side. If you sanctify the spell, the attacks are sanctified as well. Each time you Sustain the spell, you can repeat the attack against any creature within 120 feet.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d8.</p>",
-          "target": "1 creature"
-        },
-        "spell->Heroism": {
-          "name": "Heroism",
-          "description": "<p>You unlock the target's inner heroism, granting it a +1 status bonus to attack rolls, Perception checks, saving throws, and skill checks.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The status bonus increases to +2.</p>\n<p><strong>Heightened (9th)</strong> The status bonus increases to +3.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.l9HRQggofFGIxEse]{Spell Effect: Heroism}</p>",
-          "target": "1 creature"
-        },
-        "spell->Holy Light": {
-          "name": "Holy Light",
-          "description": "<p>You shine a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals 5d6 fire damage. If the target has the unholy trait, you deal an extra 5d6 spirit damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, holy light attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 2d6, and the spirit damage against unholy creatures increases by 2d6.</p>",
-          "target": "1 creature"
-        },
         "consumable->Scroll of Clear Mind (Rank 2)": {
           "name": "Scroll of Clear Mind (Rank 2)",
           "consumableSpellName": "Clear Mind",
@@ -1677,21 +1603,6 @@
           "consumableSpellDescription": "<p>A shield of elemental energy protects a creature against one type of energy damage. Choose acid, cold, electricity, fire, or sonic damage. The target and its gear gain resistance 5 against the damage type you chose.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.con2Hzt47JjpuUej]{Spell Effect: Resist Energy}</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The resistance increases to 10, and you can target up to two creatures.</p>\n<p><strong>Heightened (7th)</strong> The resistance increases to 15, and you can target up to five creatures.</p>",
           "consumableSpellTarget": "1 creature",
           "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.Fr58LDSrbndgld9n]{Resist Energy}</p>\n<hr />\n<p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of the spell at the listed rank.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
-        },
-        "spell->Planar Tether": {
-          "name": "Planar Tether",
-          "description": "<p>You stitch the target to its current plane. While the target is affected by <em>planar tether</em>, the spell attempts to counteract any teleportation effect that would move the target, or any effect that would transport it to a different plane. <em>Planar tether</em>'s duration is determined by the target's Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The effect's duration is 1 minute.</p>\n<p><strong>Failure</strong> The effect's duration is 10 minutes.</p>\n<p><strong>Critical Failure</strong> The effect's duration is 1 hour.</p>",
-          "target": "1 creature"
-        },
-        "spell->Unfettered Movement": {
-          "name": "Unfettered Movement",
-          "description": "<p>You repel effects that would hinder a creature or slow its movement. While under this spell's effect, the target ignores effects that would give them a circumstance penalty to Speed. When they attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} an effect that has them @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, they automatically succeed unless the effect is magical and of a higher rank than the <em>unfettered movement</em> spell.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.CdAyAiMGESvgNQtz]{Spell Effect: Unfettered Movement}</p>",
-          "target": "1 creature touched"
-        },
-        "spell->Crisis of Faith": {
-          "name": "Crisis of Faith",
-          "description": "<p>You assault the target's faith, riddling the creature with doubt and mental turmoil that deal 6d6 mental damage, or 6d8 mental damage if it can cast divine spells. The effects are determined by its Will save.</p>\n<p>To many deities, casting this spell on a follower of your own deity without significant cause is anathema.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage; if the target can cast divine spells, it's @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round, and can't cast divine spells for 1 round.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6 (or by 2d8 if the target is a divine spellcaster).</p>",
-          "target": "1 creature"
         }
       }
     },
@@ -1805,47 +1716,6 @@
         "spellcastingEntry->Occult Focus Spells": {
           "name": "Occult Focus Spells"
         },
-        "spell->Daze": {
-          "name": "Daze",
-          "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
-          "target": "1 creature"
-        },
-        "spell->Courageous Anthem": {
-          "name": "Courageous Anthem",
-          "description": "<p>You inspire yourself and your allies with words or tunes of encouragement. You and all allies in the area gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.beReeFroAx24hj83]{Spell Effect: Courageous Anthem}</p>"
-        },
-        "spell->Light": {
-          "name": "Light",
-          "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.cVVZXNbV0nElVOPZ]{Spell Effect: Light}</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>"
-        },
-        "spell->Prestidigitation": {
-          "name": "Prestidigitation",
-          "description": "<p>The simplest magic does your bidding. You can perform simple magical effects for as long as you Sustain the spell. Each time you Sustain the spell, you can choose one of four options.</p>\n<ul>\n<li><strong>Cook</strong> Cool, warm, or flavor 1 pound of nonliving material.</li>\n<li><strong>Lift</strong> Slowly lift an unattended object of light Bulk or less 1 foot off the ground.</li>\n<li><strong>Make</strong> Create a temporary object of negligible Bulk, made of congealed magical substance. The object looks crude and artificial and is extremely fragile-it can't be used as a tool, weapon, or locus or cost for a spell.</li>\n<li><strong>Tidy</strong> Color, clean, or soil an object of light Bulk or less. You can affect an object of 1 Bulk with 10 rounds of concentration, and a larger object a 1 minute per Bulk.</li>\n</ul>\n<p><em>Prestidigitation</em> can't deal damage or cause adverse conditions. Any actual change to an object (beyond what is noted above) persists only as long as you Sustain the spell.</p>",
-          "target": "1 object (cook, lift, or tidy only)"
-        },
-        "spell->Telekinetic Projectile": {
-          "name": "Telekinetic Projectile",
-          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal 2d6 bludgeoning, piercing, or slashing damage—as appropriate for the object you hurled. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
-          "target": "1 creature"
-        },
-        "spell->Charm": {
-          "name": "Charm",
-          "description": "<p>To the target, your words are honey and your visage seems bathed in a dreamy haze. It must attempt a Will save, with a +4 circumstance bonus if you or your allies recently threatened it or used hostile actions against it.</p>\n<p>You can Dismiss the spell. If you use hostile actions against the target, the spell ends. When the spell ends, the target doesn't necessarily realize it was charmed unless its friendship with you or the actions you convinced it to take clash with its expectations, meaning you could potentially convince the target to continue being your friend via mundane means.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and aware you tried to charm it.</p>\n<p><strong>Success</strong> The target is unaffected but thinks your spell was something harmless instead of charm, unless it identifies the spell.</p>\n<p><strong>Failure</strong> The target's attitude becomes @UUID[Compendium.pf2e.conditionitems.Item.v66R7FdOf11l94im]{Friendly} toward you. If it was Friendly, it becomes @UUID[Compendium.pf2e.conditionitems.Item.v44P3WUcU1j0115l]{Helpful}. It can't use hostile actions against you.</p>\n<p><strong>Critical Failure</strong> The target's attitude becomes Helpful toward you, and it can't use hostile actions against you.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The duration lasts until the next time you make your daily preparations.</p>\n<p><strong>Heightened (8th)</strong> The duration lasts until the next time you make your daily preparations, and you can target up to 10 creatures.</p>",
-          "target": "1 creature"
-        },
-        "spell->Fear": {
-          "name": "Fear",
-          "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
-          "target": "1 creature"
-        },
-        "spell->Counter Performance": {
-          "name": "Counter Performance",
-          "description": "<p><strong>Trigger</strong> You or an ally within 60 feet rolls a saving throw against an auditory or visual effect.</p>\n<hr />\n<p>Your performance protects you and your allies. Roll a Performance check for a type you know—it must be an auditory performance if the trigger was auditory or a visual one for a visual trigger, and this action gains the traits for the type of performance. You and allies in the area can use the better result between your Performance check and the saving throw.</p>"
-        },
-        "spell->Lingering Composition": {
-          "name": "Lingering Composition",
-          "description": "<p>You add a flourish to your composition to extend its benefits. If your next action is to cast a cantrip composition with a duration of 1 round, attempt a @Check[performance] check. The DC is usually a standard-difficulty DC of a level equal to the highest-level target of your composition, but the GM can assign a different DC based on the circumstances. The effect depends on the result of your check.</p>\n<hr />\n<p><strong>Critical Success</strong> The composition lasts 4 rounds.</p>\n<p><strong>Success</strong> The composition lasts 3 rounds.</p>\n<p><strong>Failure</strong> The composition lasts 1 round, but you don't spend the Focus Point for casting this spell.</p>"
-        },
         "feat->Breath Control": {
           "name": "Breath Control",
           "description": "<p>You can breathe even in hazardous or sparse air. You can hold your breath for 25 times as long as usual before suffocating. You gain a +1 circumstance bonus to saving throws against inhaled threats, such as inhaled poisons, and if you roll a success on such a saving throw, you get a critical success instead.</p>",
@@ -1854,35 +1724,6 @@
               "text": "If you roll a success on a saving throw against an inhaled threat, you get a critical success instead."
             }
           }
-        },
-        "spell->Rallying Anthem": {
-          "name": "Rallying Anthem",
-          "description": "<p>Your song moves allies to protect themselves more effectively. You and all allies in the area gain a +1 status bonus to AC and saving throws, as well as resistance equal to half the spell's rank to physical damage.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.DLwTvjjnqs2sNGuG]{Spell Effect: Rallying Anthem}</p>"
-        },
-        "spell->Uplifting Overture": {
-          "name": "Uplifting Overture",
-          "description": "<p>Your performance makes allies feel they can succeed at anything. This counts as having prepared to Aid your ally on a skill check of your choice. When you later use the Aid reaction, you can roll Performance instead of the normal skill check, and if you roll a failure, you get a success instead. If you are legendary in Performance, you automatically critically succeed.</p>\n<p>The GM might rule that you can't use this ability if the act of encouraging your ally would interfere with the skill check (such as a check to @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} quietly or maintain a disguise).</p>",
-          "target": "1 ally"
-        },
-        "spell->Laughing Fit": {
-          "name": "Laughing Fit",
-          "description": "<p>The target is overtaken with uncontrollable laughter. It must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is plagued with uncontrollable laughter. It can't use reactions.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>\n<p><strong>Critical Failure</strong> The target falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and can't use actions or reactions for 1 round. It then takes the effects of a failure.</p>",
-          "target": "1 living creature"
-        },
-        "spell->Haste": {
-          "name": "Haste",
-          "description": "<p>Magic empowers the target to act faster. It gains the @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} condition and can use the extra action each round only for Strike and Stride actions.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 6 creatures.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.ElkXovNrHB0Doi6O]{Spell Effect: Haste}</p>",
-          "target": "1 creature"
-        },
-        "spell->Slow": {
-          "name": "Slow",
-          "description": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>",
-          "target": "1 creature"
-        },
-        "spell->Soothe": {
-          "name": "Soothe",
-          "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.nkk4O5fyzrC0057i]{Spell Effect: Soothe}</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
-          "target": "1 willing creature"
         },
         "class->Bard": {
           "name": "Bard",
@@ -1956,24 +1797,6 @@
           "name": "Virtuosic Performer (Winds)",
           "description": "<p>You have exceptional talent with one type of performance. You gain a +1 circumstance bonus when making a certain type of performance. If you are a master in Performance, this bonus increases to +2. Select one of the following specialties and apply the bonus when attempting Performance checks of that type. If it's unclear whether the specialty applies, the GM decides.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Specialty</th>\n<th>Examples</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Acting</td>\n<td>Drama, pantomime, puppetry</td>\n</tr>\n<tr>\n<td>Comedy</td>\n<td>Buffoonery, joke telling, limericks</td>\n</tr>\n<tr>\n<td>Dance</td>\n<td>Ballet, huara, jig, macru</td>\n</tr>\n<tr>\n<td>Keyboards</td>\n<td>Harpsichord, organ, piano</td>\n</tr>\n<tr>\n<td>Oratory</td>\n<td>Epic, ode, poetry, storytelling</td>\n</tr>\n<tr>\n<td>Percussion</td>\n<td>Chimes, drum, gong, xylophone</td>\n</tr>\n<tr>\n<td>Singing</td>\n<td>Ballad, chant, melody, rhyming</td>\n</tr>\n<tr>\n<td>Strings</td>\n<td>Fiddle, harp, lute, viol</td>\n</tr>\n<tr>\n<td>Winds</td>\n<td>Bagpipe, flute, recorder, trumpet</td>\n</tr>\n</tbody>\n</table>"
         },
-        "spell->Figment": {
-          "name": "Figment",
-          "description": "<p>You create a simple illusory sound or vision. A sound adds the auditory trait to the spell and the sound can't include intelligible words or elaborate music. A vision adds the visual trait, can be no larger than a 5-foot cube, and is clearly crude and undetailed if viewed from within 15 feet. When you Cast or Sustain the Spell, you can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Create a Diversion} with the illusion, gaining a +2 circumstance bonus to your Deception check. If the attempt fails against a creature, that creature disbelieves the <em>figment</em>.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.2Hg3a06gZCSnUgSA]{Spell Effect: Figment}</p>"
-        },
-        "spell->Phantom Pain": {
-          "name": "Phantom Pain",
-          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and @Damage[(@item.level)d4[persistent,mental]] damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>",
-          "target": "1 creature"
-        },
-        "spell->Dispel Magic": {
-          "name": "Dispel Magic",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-          "target": "1 spell effect or unattended magic item"
-        },
-        "spell->Revealing Light": {
-          "name": "Revealing Light",
-          "description": "<p>A wave of magical light washes over the area. You choose the appearance of the light, such as colorful, heatless flames or sparkling motes. A creature affected by <em>revealing light</em> is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}. If the creature was @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}, it becomes @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} instead. If the creature was already concealed for any other reason, it is no longer concealed.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The light affects the creature for 2 rounds.</p>\n<p><strong>Failure</strong> The light affects the creature for 1 minute.</p>\n<p><strong>Critical Failure</strong> The light affects the creature for 10 minutes.</p>"
-        },
         "equipment->Maestro's Instrument (Lesser) (flute)": {
           "name": "Maestro's Instrument (Lesser) (flute)",
           "description": "<p>A <em>maestro's instrument</em> can be crafted in the form of any variety of handheld musical instruments. A <em>maestro's instrument</em> grants you a +1 item bonus to Performance checks while playing music with the instrument.</p>\n<hr />\n<p><strong>Activate—Charming Performance</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You play the instrument, causing it to cast a DC 17 @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</p>\n<hr />\n<p><strong>Craft Requirements</strong> You must supply a casting of <em>charm</em> of the appropriate rank.</p>"
@@ -1981,24 +1804,6 @@
         "feat->Expert Spellcaster": {
           "name": "Expert Spellcaster",
           "description": "<p><strong>Animist</strong> The magic of the spirits flows freely through you. Your proficiency ranks for spell attack modifier and spell DC increase to expert.</p>\n<p><strong>Bard</strong> Your magical techniques grow stronger. Your proficiency ranks for spell attack modifiers and spell DCs increase to expert.</p>\n<p><strong>Druid</strong> Your command of primal forces has deepened, empowering your spells. Your proficiency ranks for spell attack modifier and spell DC increase to expert.</p>\n<p><strong>Magus</strong> Your fundamental understanding of magic improves, making your spells harder to resist. Your proficiency ranks for your spell attack modifier and spell DC increase to expert.</p>\n<p><strong>Oracle</strong> The intricacy of your divine power has grown clearer over time. Your proficiency ranks for divine spell attack rolls and spell DCs increase to expert.</p>\n<p><strong>Psychic</strong> Self-reflection has brought you greater knowledge of yourself and, with it, psychic power. Your proficiency ranks for spell attack modifier and spell DC increase to expert.</p>\n<p><strong>Sorcerer</strong> Your inherent magic responds easily and powerfully to your command. Your proficiency ranks for spell attack modifier and spell DC for spells of your bloodline's tradition increase to expert.</p>\n<p><strong>Summoner</strong> As your connection to your eidolon deepens, the power of your spells increases. Your proficiency ranks for the spell attack modifier and spell DC statistics increase to expert.</p>\n<p><strong>Witch</strong> You've learned to better control the power your patron has granted you. Your proficiency ranks for spell attack modifier and spell DC increase to expert.</p>\n<p><strong>Wizard</strong> Extended practice of the arcane has improved your capabilities. Your proficiency ranks for spell attack modifier and spell DC increase to expert.</p>"
-        },
-        "spell->Honeyed Words": {
-          "name": "Honeyed Words",
-          "description": "<p>Falsehoods pass your lips as smoothly as silk. You gain a +4 status bonus to Deception checks to @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie} and against Perception checks to discern if you are telling the truth, and you add your level even if untrained. If the implausibility of your lies prompts a circumstance penalty or a DC increase, reduce that penalty by half or increase it by half.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.6vodhSeI3ClMfOGd]{Spell Effect: Honeyed Words}</p>"
-        },
-        "spell->Suggestion": {
-          "name": "Suggestion",
-          "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
-          "target": "1 creature"
-        },
-        "spell->Dirge of Doom": {
-          "name": "Dirge of Doom",
-          "description": "<p>Enemies within the area are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. They can't reduce their frightened value below 1 while they remain in the area.</p>"
-        },
-        "spell->Heroism": {
-          "name": "Heroism",
-          "description": "<p>You unlock the target's inner heroism, granting it a +1 status bonus to attack rolls, Perception checks, saving throws, and skill checks.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The status bonus increases to +2.</p>\n<p><strong>Heightened (9th)</strong> The status bonus increases to +3.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.l9HRQggofFGIxEse]{Spell Effect: Heroism}</p>",
-          "target": "1 creature"
         },
         "feat->Dirge of Doom": {
           "name": "Dirge of Doom",
@@ -2802,10 +2607,6 @@
         "feat->Perception Expertise": {
           "name": "Perception Expertise",
           "description": "<p>You remain alert to threats around you. Your proficiency rank for Perception increases to expert.</p>"
-        },
-        "spell->Qi Rush": {
-          "name": "Qi Rush",
-          "description": "<p>Accelerated by your qi, you move with such speed you become a blur. Move two times: two Strides, two Steps, or one Stride and one Step (in either order).</p>\n<p>You gain the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition during this movement and until the start of your next turn.</p>"
         },
         "feat->Natural Ambition": {
           "name": "Natural Ambition",
