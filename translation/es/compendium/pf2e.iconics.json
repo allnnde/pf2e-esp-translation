@@ -1471,16 +1471,6 @@
         "spellcastingEntry->Focus Spells": {
           "name": "Conjuros de Foco"
         },
-        "spell->Heal": {
-          "name": "Sanar",
-          "description": "<p>Canalizas energía vital para curar a los vivos o dañar a los muertos vivientes. Si el objetivo es una criatura viva voluntaria, le restableces 1d8 Puntos de Golpe. Si el objetivo es un muerto viviente, le infliges esa cantidad de daño de vitalidad y puede intentar una salvación básica de Fortaleza. El número de acciones que gastas al Lanzar este conjuro determina sus objetivos, alcance, área y demás parámetros.</p>\n<p><span class=\"action-glyph\">1</span> El conjuro tiene alcance de toque.</p>\n<p><span class=\"action-glyph\">2</span> (concentrar) El conjuro tiene un alcance de 30 pies. Si estás curando a una criatura viva, aumenta en 8 los Puntos de Golpe restablecidos.</p>\n<p><span class=\"action-glyph\">3</span> (concentrar) Dispersas energía vital en una @Template[emanation|distance:30]. Esto afecta a todas las criaturas vivas y muertas vivientes de la explosión.</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> La cantidad de curación o daño aumenta en 1d8, y la curación adicional de la versión de 2 acciones aumenta en 8.</p>",
-          "target": "1 criatura viva o 1 criatura muerta viviente"
-        },
-        "spell->Fire Ray": {
-          "name": "Rayo de fuego",
-          "description": "<p>Una banda de fuego ardiente se arquea por el aire, prendiendo fuego a tu oponente y al terreno que pisa. Haz una tirada de ataque con conjuro contra la CA del objetivo. El rayo inflige 2d6 de daño por fuego con un impacto (o el doble de daño con un impacto crítico). Con cualquier resultado distinto de un fallo crítico, el terreno del espacio del objetivo se incendia e inflige @Damage[(@item.rank)d6[fire]] de daño a cada criatura que termine su turno en una de las casillas.</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> El daño inicial del rayo aumenta en 2d6 y el daño por fuego del espacio ardiente aumenta en 1d6.</p>",
-          "target": "1 criatura"
-        },
         "consumable->Wand of Mending (Rank 1)": {
           "name": "Varita de la Reparación (Ranking 1 )",
           "consumableSpellName": "Remendar",
@@ -1580,70 +1570,6 @@
           "name": "Medicina de guerra",
           "description": "<p><strong>Requisitos</strong> Estás sosteniendo o usando un kit de herramientas de sanador.</p>\n<hr /> <p>Puedes reparar heridas, incluso en combate. Intenta un chequeo de medicina con el mismo CD que para @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Tratar heridas} y restaura la cantidad correspondiente de PG; esto no elimina la condición de herido. Al igual que con Tratar heridas, puedes intentar prueba contra DCs más altos si tienes el rango de habilidad mínimo. El objetivo es entonces @UUID[Compendium.pf2e.feat-effects.Item.2XEYQNZTCGpdkyR6]{immune} a tu Medicina de Batalla durante 1 día. Esto no los hace inmunes a, o de otra manera cuentan como, Tratar Heridas.</p>"
         },
-        "spell->Daze": {
-          "name": "Aturdimiento",
-          "description": "<p>Te introduces en la mente del objetivo y lo aturdes con una sacudida mental. La sacudida inflige 1d6 daño mental con una salvación básica de Voluntad. Si el objetivo falla críticamente la salvación, queda también @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1}.</p>\n<hr />\n<p><strong>Potenciado (+2)</strong> El daño se incrementa en 1d6.</p>",
-          "target": "1 criatura"
-        },
-        "spell->Divine Lance": {
-          "name": "Lanza divina",
-          "description": "<p>Desatas un rayo de energía divina. Haz un ataque de conjuro a distancia contra la CA del objetivo. Con un impacto, este sufre 2d4 daño espiritual (doble daño con un impacto crítico).</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 1d4.</p>",
-          "target": "1 criatura"
-        },
-        "spell->Guidance": {
-          "name": "Orientación",
-          "description": " <p>Imploras la guía de seres sobrenaturales, lo que concede al objetivo un bonificador +1 por estatus a una tirada de ataque, prueba de Percepción, tirada de salvación o prueba de habilidad. El objetivo elige a qué tirada aplica el bonificador antes de tirar. Si el objetivo lo utiliza, el conjuro acaba. De una u otra forma, a continuación el objetivo queda temporalmente inmune durante 1 hora.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.3qHKBDF7lrHw8jFK]{Efecto de conjuro: Orientación}</p> \n<p>@UUID[Compendium.pf2e.spell-effects.Item.3LyOkV25p7wA181H]{Efecto de conjuro: Inmunidad a orientación}</p>",
-          "target": "1 criatura"
-        },
-        "spell->Light": {
-          "name": "Luz",
-          "description": "<p>Creas un orbe de luz que emite luz brillante en un radio de 20 pies (y luz tenue en los siguientes 20 pies) de un color elegido por ti. Si creas la luz en el mismo espacio que una criatura voluntaria, puedes fijársela, haciendo que flote cerca de ella mientras se mueve. Puedes Sostener el conjuro para mover la luz hasta 60 pies; puedes fijarla a una criatura o soltarla como parte de este movimiento.</p>\n<p>Puedes Despedir el conjuro. Si Lanzas el conjuro cuando ya tienes cuatro conjuros de <em>luz</em> activos, debes elegir uno de los existentes para que termine.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.cVVZXNbV0nElVOPZ]{Efecto de conjuro: Luz}</p>\n<hr />\n<p><strong>Potenciado (4.º)</strong> El orbe emite luz en un radio de 60 pies (y luz tenue en los siguientes 60 pies).</p>"
-        },
-        "spell->Stabilize": {
-          "name": "Estabilizar",
-          "description": "<p>La energía vital cierra la puerta de la muerte. El objetivo pierde el estado @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{moribundo}, aunque permanece @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{inconsciente} y a 0 Puntos de Golpe.</p> ",
-          "target": "1 criatura moribunda"
-        },
-        "spell->Bless": {
-          "name": "Bendición",
-          "description": "<p>Las bendiciones del más allá ayudan a tus compañeros a golpear con acierto. Tus aliados y tú obtenéis un bonificador +1 por estatus a las tiradas de ataque mientras permanecéis en el interior de la emanación. Una vez por asalto en turnos subsiguientes, puedes Mantener el conjuro para incrementar en 10 pies (3 m) el radio de la emanación.</p>\n <p> @UUID[Compendium.pf2e.spells-srd.Item.XSujb7EsSwKl19Uu]{Bendición} puede contrarrestar @UUID[Compendium.pf2e.spells-srd.Item.7ZinJNzxq0XF0oMx]{Azote}. </p>\n <p> @UUID[Compendium.pf2e.spell-effects.Item.RfCEHpMoEAZvB9IZ]{Aura: Bendición} </p>",
-          "target": "usted y sus aliados en el área"
-        },
-        "spell->Sanctuary": {
-          "name": "Santuario",
-          "description": "<p>Custodias a una criatura con energía protectora que disuade los ataques. Las criaturas que quieren atacar al objetivo tienen que hacer una salvación de Voluntad cada vez. Si el objetivo utiliza una acción hostil, el conjuro se acaba. </p> \n<hr /> \n<p><strong>Éxito crítico</strong> <em>Santuario</em> se acaba.</p> \n<p><strong>Éxito</strong> La criatura puede hacer su ataque y cualquier otro contra el objetivo en este turno.</p> \n<p><strong>Fallo</strong> La criatura no puede atacar al objetivo y malgasta la acción. \nNo puede hacer ataques posteriores con el objetivo este turno.</p> \n<p><strong>Fallo crítico</strong> La criatura malgasta la acción y no puede atacar al objetivo el resto de la duración de <em>Santuario</em>.</p> ",
-          "target": "1 criatura"
-        },
-        "spell->Spirit Link": {
-          "name": "Vínculo espiritual",
-          "description": "<p>Formas un vínculo espiritual con otra criatura, absorbiendo su dolor. Cuando Lanzas este conjuro y al inicio de cada uno de tus turnos, si el objetivo se encuentra por debajo de sus Puntos de Golpe máximos, recupera 2 (o la diferencia entre sus Puntos de Golpe máximos y los actuales si es menor). Pierdes tantos como recupera el objetivo.</p>\n<p>Esta es una transferencia espiritual, por lo que no se aplicará efecto alguno que pueda incrementar los Puntos de Golpe que recupera el objetivo ni disminuir los que tú pierdes. Esta transferencia también ignora cualquier Punto de Golpe temporal de que pudierais disponer el objetivo o tú. Como este efecto no implica ni vitalidad ni energía del vacío, <em>Vínculo Espiritual</em> funciona incluso si el objetivo o tú sois muertos vivientes. Mientras persiste la duración, no obtienes beneficio alguno, ni de regeneración, ni de curación rápida. Puedes Disipar este conjuro, y si en algún momento llegas a 0 Puntos de Golpe, <em>Vínculo Espiritual</em> se acaba automáticamente.</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> El número de Puntos de Golpe transferidos cada vez se incrementa en 2.</p>",
-          "target": "1 criatura dispuesta"
-        },
-        "spell->Cleanse Affliction": {
-          "name": "Limpiar aflicción",
-          "description": "<p>La magia restauradora suave hace retroceder los efectos de las toxinas y enfermedades más complejas. Elige una aflicción en el objetivo, como una maldición, enfermedad o veneno. Si ha avanzado más allá de la etapa uno, reduce la etapa por uno. Esta reducción solo puede aplicarse una vez a un caso dado de una aflicción, y el caso termina cuando se cura completamente. Aunque la reducción no puede ocurrir de nuevo, las versiones mejoradas de este conjuro intentan contrarrestar con cada lanzamiento.</p>\n<hr /> <p><strong>Elevado ( 3.º )</strong> Intenta contrarrestar la aflicción si es una enfermedad o veneno.</p>\n<p><strong>Elevado ( 4.º )</strong> Intenta contrarrestar la aflicción si es una maldición, enfermedad o veneno.</p>",
-          "target": "1 criatura dispuesta"
-        },
-        "spell->Dispel Magic": {
-          "name": "Disipar magia",
-          "description": "<p>Descoses la magia que hay tras un conjuro o efecto. Haz una prueba de contrarrestar contra el objetivo. Si contrarrestas con éxito un objeto mágico, se convierte en un objeto mundano de su tipo durante 10 minutos. Esto no cambia las propiedades no mágicas del objeto Si el objetivo es un artefacto u objeto similar, fallas automáticamente. </p>",
-          "target": "1 efecto de conjuro u objeto mágico desatendido"
-        },
-        "spell->Spiritual Armament": {
-          "name": "Armamento espiritual",
-          "description": "<p>Creas un eco mágico y fantasmal de un arma que empuñas o llevas puesta y lo arrojas. Haz una tirada de ataque de conjuro contra la CA del objetivo, que inflige 2d8 de daño con un impacto (o el doble con un impacto crítico). El tipo de daño es el mismo que el del arma elegida (o cualquiera de sus tipos, si es un arma versátil). En su lugar, el ataque inflige daño espiritual si eso perjudica más a la criatura (a determinar por el DJ). Este ataque usa tu penalizador por ataque múltiple y contribuye a él. Después del ataque, el arma regresa a tu lado. Si santificas el conjuro, los ataques también están santificados. Cada vez que Mantienes el conjuro, puedes repetir el ataque contra cualquier criatura a 120 pies o menos.</p>\n<hr />\n<p><strong>Potenciado (+2)</strong> El daño aumenta en 1d8.</p>",
-          "target": "1 criatura"
-        },
-        "spell->Heroism": {
-          "name": "Heroísmo",
-          "description": "<p>Liberas el heroísmo interior del objetivo, concediéndole un bonificador +1 por estatus a las tiradas de ataque, pruebas de Percepción, tiradas de salvación y pruebas de habilidad.</p> \n<hr /> \n<p><strong>Potenciado (6.º)</strong> El bonificador por estatus se incrementa a +2.</p> \n<p><strong>Potenciado (9.º)</strong> El bonificador por estatus se incrementa a +3.</p> \n<p>@UUID[Compendium.pf2e.spell-effects.Item.l9HRQggofFGIxEse]{Efecto de conjuro: Heroísmo}</p> ",
-          "target": "1 criatura"
-        },
-        "spell->Holy Light": {
-          "name": "Luz sagrada",
-          "description": "<p>Brillan un rayo ardiente de luz teñido con energía sagrada. Haz un ataque de conjuros a distancia. El rayo inflige 5d6 p. de daño de fuego. Si el objetivo tiene el rasgo de impío, infliges 5d6 de daño espiritual adicional.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo recibe el doble de daño.</p>\n<p><strong>Éxito</strong> El objetivo recibe daño completo.</p>\n<p>Si la luz pasa a través de un área de oscuridad mágica o apunta a una criatura afectada por la oscuridad mágica, la luz sagrada intenta contrarrestar la oscuridad. Si necesitas determinar si la luz pasa a través de un área de oscuridad, dibuja una línea entre tú y el objetivo del conjuro.</p>\n<hr /> <p><strong>Elevado (+1 )</strong> El daño de fuego aumenta en 2d6, y el daño espiritual contra criaturas profanas aumenta en 2d6.</p>",
-          "target": "1 criatura"
-        },
         "consumable->Scroll of Clear Mind (Rank 2)": {
           "name": "Pergamino de la mente clara (Ranking 2 )",
           "consumableSpellName": "Despejar la mente",
@@ -1677,21 +1603,6 @@
           "consumableSpellDescription": "<p>Un escudo de energía elemental protege a una criatura contra un tipo de daño de energía. Elige ácido, frío, electricidad, fuego o daño sónico. El objetivo y su equipo ganan resistencia 5 contra el tipo de daño que elijas.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.con2Hzt47JjpuUej]{Efecto de conjuro: Resistir energía}</p>\n<hr /> <p><strong>Elevado ( 4.º )</strong> La resistencia aumenta a 10, y puedes apuntar hasta dos criaturas.</p>\n<p><strong>Elevado ( 7.º )</strong> La resistencia aumenta a 15, y puedes apuntar hasta cinco criaturas.</p>",
           "consumableSpellTarget": "1 criatura",
           "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.Fr58LDSrbndgld9n]{Resistir energía}</p>\n<hr />\n<p>Este bastón mide aproximadamente un pie de largo y contiene un solo conjuro. La apariencia normalmente se relaciona con el conjuro interior.</p>\n<p><strong>Activar</strong> Lanzar un conjuro</p>\n<p><strong>Frecuencia</strong> una vez al día, más sobrecarga</p>\n<hr />\n<p><strong>Efecto</strong> Lanzas el conjuro en el rango indicado.</p>\n<p><strong>Requisitos de Fabricación</strong> Suministrar un lanzamiento del conjuro en el rango listado.</p>\n<hr />\n<p><em>Nota: Para crear un pergamino o varita de un conjuro específico, arrastra el conjuro desde el compendio o navegador de compendio al inventario de un PJ, PNJ o actor de botín.</em></p>"
-        },
-        "spell->Planar Tether": {
-          "name": "Atadura planar",
-          "description": "<p>Amarras al objetivo a su plano actual. Mientras el objetivo está afectado por <em>atadura planaria</em>, el conjuro intenta contrarrestar cualquier efecto de teletransporte que lo movería o cualquier efecto que lo transportaría a otro plano. La duración de <em>atadura planaria</em> viene determinada por la salvación de Voluntad del objetivo.</p>\n<hr />\n<p><strong>Éxito crítico</strong> El objetivo no se ve afectado.</p>\n<p><strong>Éxito</strong> La duración del efecto es de 1 minuto.</p>\n<p><strong>Fallo</strong> La duración del efecto es de 10 minutos.</p>\n<p><strong>Fallo crítico</strong> La duración del efecto es de 1 hora.</p>",
-          "target": "1 criatura"
-        },
-        "spell->Unfettered Movement": {
-          "name": "Movimiento sin restricciones",
-          "description": "<p>Repeles los efectos que dificultarían el movimiento de una criatura o lo ralentizarían. Mientras está bajo el efecto de este conjuro, el objetivo ignora los efectos que le impondrían un penalizador por circunstancia a la Velocidad. Cuando intenta @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapar} de un efecto que lo tiene @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Inmovilizado}, @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Agarrado} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Neutralizado}, tiene éxito automáticamente, salvo que el efecto sea mágico y de un rango superior al del conjuro de <em>movimiento sin restricciones</em>.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.CdAyAiMGESvgNQtz]{Efecto de conjuro: Movimiento sin restricciones}</p>",
-          "target": "1 criatura tocada"
-        },
-        "spell->Crisis of Faith": {
-          "name": "Crisis de fe",
-          "description": "<p>Ataca la fe del objetivo, inundando a la criatura con duda y confusión mental que infligen 6d6 p. de daño mental, o 6d8 p. de daño mental si puede lanzar conjuros divinos. Los efectos están determinados por su voluntad de salvar.</p>\n<p>Para muchas deidades, lanzar este conjuro sobre un seguidor de tu propia deidad sin causa significativa es anatema.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no se ve afectado.</p>\n<p><strong>Éxito</strong> El objetivo recibe la mitad de daño.</p>\n<p><strong>Fallo</strong> El objetivo recibe daño completo; si el objetivo puede lanzar conjuros divinos, es @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} para 1 asalto.</p>\n<p><strong>Fallo crítico</strong> El objetivo recibe daño doble, es @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Anonadado 1} durante 1 asalto, y no puede lanzar conjuros divinos durante 1 asalto.</p>\n<hr /> <p><strong>Elevado (+1 )</strong> El daño aumenta en 2d6 (o en 2d8 si el objetivo es un lanzador de conjuros divino).</p>",
-          "target": "1 criatura"
         }
       }
     },
@@ -1805,47 +1716,6 @@
         "spellcastingEntry->Occult Focus Spells": {
           "name": "Hechizos de foco oculto"
         },
-        "spell->Daze": {
-          "name": "Aturdimiento",
-          "description": "<p>Te introduces en la mente del objetivo y lo aturdes con una sacudida mental. La sacudida inflige 1d6 daño mental con una salvación básica de Voluntad. Si el objetivo falla críticamente la salvación, queda también @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Aturdido 1}.</p>\n<hr />\n<p><strong>Potenciado (+2)</strong> El daño se incrementa en 1d6.</p>",
-          "target": "1 criatura"
-        },
-        "spell->Courageous Anthem": {
-          "name": "Himno valeroso",
-          "description": "<p>Te inspiras a ti mismo y a tus aliados con palabras o canciones de ánimo. Tú y todos tus aliados en el área obtenéis un bonificador +1 por estatus a las tiradas de ataque, tiradas de daño y salvaciones contra los efectos de miedo.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.beReeFroAx24hj83]{Efecto de conjuro: Himno valeroso}</p>"
-        },
-        "spell->Light": {
-          "name": "Luz",
-          "description": "<p>Creas un orbe de luz que emite luz brillante en un radio de 20 pies (y luz tenue en los siguientes 20 pies) de un color elegido por ti. Si creas la luz en el mismo espacio que una criatura voluntaria, puedes fijársela, haciendo que flote cerca de ella mientras se mueve. Puedes Sostener el conjuro para mover la luz hasta 60 pies; puedes fijarla a una criatura o soltarla como parte de este movimiento.</p>\n<p>Puedes Despedir el conjuro. Si Lanzas el conjuro cuando ya tienes cuatro conjuros de <em>luz</em> activos, debes elegir uno de los existentes para que termine.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.cVVZXNbV0nElVOPZ]{Efecto de conjuro: Luz}</p>\n<hr />\n<p><strong>Potenciado (4.º)</strong> El orbe emite luz en un radio de 60 pies (y luz tenue en los siguientes 60 pies).</p>"
-        },
-        "spell->Prestidigitation": {
-          "name": "Prestidigitación",
-          "description": "<p>La magia más simple hace su oferta. Puedes realizar efectos mágicos simples mientras mantengas el conjuro. Cada vez que mantengas el conjuro, puedes elegir una de las cuatro opciones.</p>\n<ul>\n<li><strong>Cocinero</strong> Enfriar, calentar o dar sabor 1 libra de material no vivo.</li>\n<li><strong>Levantar</strong> Levante lentamente un objeto desatendido de Impedimenta ligero o menos 1 pies del suelo.</li>\n<li><strong>Hacer</strong> Crea un objeto temporal de Impedimenta insignificante, hecho de sustancia mágica congelada. El objeto se ve crudo y artificial y es extremadamente frágil, no puede ser usado como herramienta, arma, o locus o costo para un conjuro.</li>\n<li><strong>Ordenado</strong> Colorear, limpiar o ensuciar un objeto de Impedimenta ligero o menos. Puedes afectar a un objeto de 1 Impedimenta con 10 asaltos de concentración, y a un objeto más grande con 1 minuto por Impedimenta.</li>\n</ul> <p><em> Prestidigitation </em> no puede causar daño ni condiciones adversas. Cualquier cambio real en un objeto (más allá de lo que se ha indicado anteriormente) solo persiste mientras mantengas el conjuro.</p>",
-          "target": "1 objeto (sólo cocinar, elevar o limpiar)"
-        },
-        "spell->Telekinetic Projectile": {
-          "name": "Proyectil Telecinético",
-          "description": "<p>Lanzas contra el objetivo un objeto suelto y desatendido que está dentro del alcance y que tiene Impedimenta 1 o menos. Haz una tirada de ataque con conjuro contra la CA del objetivo. Si aciertas, infliges 2d6 daño contundente, perforante o cortante, según el objeto arrojado. Ningún rasgo específico o propiedad mágica del objeto arrojado afecta al ataque ni al daño.</p>\n<hr />\n<p><strong>Éxito crítico</strong> Infliges doble daño.</p>\n<p><strong>Éxito</strong> Infliges daño completo.</p>\n<hr />\n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 1d6.</p>",
-          "target": "1 criatura"
-        },
-        "spell->Charm": {
-          "name": "Hechizar",
-          "description": "<p>Para el objetivo, tus palabras son melifluas y tu rostro parece bañado en una bruma onírica. Tiene que hacer una salvación de Voluntad, con un bonificador +4 por circunstancia si tus aliados o tú lo habéis amenazado recientemente o utilizado acciones hostiles en su contra.</p>\n<p>Puedes Disipar el conjuro. Si utilizas acciones hostiles contra el objetivo, el conjuro se acaba. Si ello sucede, el objetivo no se da cuenta necesariamente de que estaba hechizado a menos que su amistad contigo o las acciones que le has convencido de llevar a cabo choquen con sus expectativas, lo que significa que podrías potencialmente convencerle de continuar siendo tu amigo por medios mundanos.</p>\n<hr />\n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado pero es consciente de que \nhas intentado hechizarlo.</p>\n<p><strong>Éxito</strong> El objetivo no resulta afectado pero cree que tu conjuro era algo \ninofensivo en lugar de hechizar, si no identifica el conjuro.</p>\n<p><strong>Fallo</strong> La actitud del objetivo se vuelve @UUID[Compendium.pf2e.conditionitems.Item.v66R7FdOf11l94im]{amistosa} hacia ti. Si ya era amistosa, se vuelve @UUID[Compendium.pf2e.conditionitems.Item.v44P3WUcU1j0115l]{solícita}. No puede utilizar acciones hostiles contra ti.</p>\n<p><strong>Fallo crítico</strong> La actitud del objetivo se vuelve solícita hacia ti, y no puede utilizar acciones hostiles contra ti.</p>\n<hr />\n<p><strong>Potenciado (4.º)</strong> La duración es hasta tus siguientes preparativos diarios.</p>\n<p><strong>Potenciado (8.º)</strong> La duración es hasta tus siguientes preparativos diarios y puedes designar como objetivo hasta 10 criaturas.</p>",
-          "target": "1 criatura"
-        },
-        "spell->Fear": {
-          "name": "Miedo",
-          "description": "<p>Plantas miedo en el objetivo; debe intentar un Voluntad save.</p>\n<hr /> <p><strong>Éxito crítico</strong> El objetivo no se ve afectado.</p>\n<p><strong>Éxito</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 1}.</p>\n<p><strong>Fallo</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 2}.</p>\n<p><strong>Fallo crítico</strong> El objetivo es @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustado 3} y @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Huyendo} para 1 asalto.</p>\n<hr /> <p><strong>Elevado ( 3.º )</strong> Puedes seleccionar hasta cinco criaturas.</p>",
-          "target": "1 criatura"
-        },
-        "spell->Counter Performance": {
-          "name": "Contrarrestar interpretación",
-          "description": "<p><strong>Desencadenante</strong> Tú o un aliado a 60 pies o menos hacéis una salvación contra un efecto auditivo o visual.</p>\n<hr />\n<p>Tu actuación os protege a ti y a tus aliados. Haz una prueba de Interpretación de un tipo que conozcas: debe ser una actuación auditiva si el desencadenante era auditivo, o visual si era visual; esta acción obtiene los rasgos del tipo de actuación. Tú y los aliados del área podéis usar el mejor resultado entre tu prueba de Interpretación y la salvación.</p>"
-        },
-        "spell->Lingering Composition": {
-          "name": "Composición persistente",
-          "description": "<p>Añades una floritura a tu composición para prolongar sus beneficios. Si tu siguiente acción es lanzar un truco de composición con una duración de 1 asalto, haz una prueba de @Check[performance]. La CD suele ser una dificultad estándar de un nivel igual al objetivo de mayor nivel de tu composición, pero el DJ puede asignar una diferente basada en las circunstancias. El efecto depende del resultado de la prueba.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> La composición dura 4 asaltos.</p> \n<p><strong>Éxito</strong> La composición dura 3 asaltos. </p> \n<p><strong>Fallo</strong> La composición dura 1 asalto, pero no gastas el Punto de Foco al lanzar este conjuro.</p> "
-        },
         "feat->Breath Control": {
           "name": "Control de la respiración",
           "description": "<p>Puedes respirar incluso cuando el aire es peligroso o escaso. Puedes contener el aliento 25 veces más de lo normal antes de ahogarte. Obtienes un bonificador +1 por circunstancia a las tiradas de salvación contra las amenazas inhaladas, del tipo venenos que se transmiten por vía aérea y, si consigues un éxito en dicha tirada de salvación, en su lugar obtienes un éxito crítico.</p>",
@@ -1854,35 +1724,6 @@
               "text": "Si obtienes un éxito en una tirada de salvación contra una amenaza inhalada, obtendrás un éxito crítico."
             }
           }
-        },
-        "spell->Rallying Anthem": {
-          "name": "Himno de reagrupamiento",
-          "description": "<p>Tu canción anima a tus aliados a protegerse de forma más efectiva. Tú y todos tus aliados en el área obtenéis un bonificador +1 por estado a la CA y a las tiradas de salvación, así como una resistencia al daño físico igual a la mitad del rango del conjuro.</p> \n<p>@UUID[Compendium.pf2e.spell-effects.Item.DLwTvjjnqs2sNGuG]{Efecto de conjuro: Himno de reagrupamiento}</p> "
-        },
-        "spell->Uplifting Overture": {
-          "name": "Obertura estimulante",
-          "description": "<p>Tu actuación hace que los aliados sientan que pueden tener éxito en cualquier cosa. Esto cuenta como haber preparado para ayudar a tu aliado en una comprobación de habilidad de tu elección. Cuando más tarde uses la reacción de ayuda, puedes lanzar Interpretación en lugar de la verificación de habilidad normal, y si lanzas un fracaso, obtendrás un éxito en su lugar. Si eres legendario en rendimiento, automáticamente tienes éxito de manera crítica.</p>\n<p>El DJ puede decidir que no puedes usar esta habilidad si el acto de animar a tu aliado interfiere con el chequeo de habilidad (como un chequeo a @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Movimiento furtivo} silenciosamente o mantener un disfraz).</p>",
-          "target": "1 aliado"
-        },
-        "spell->Laughing Fit": {
-          "name": "Ataque de risa",
-          "description": "<p>El objetivo se ve abrumado por una risa incontrolable. Tiene que hacer una salvación de Voluntad.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado.</p> \n<p><strong>Éxito</strong> El objetivo resulta afectado por una risa incontrolable. No puede utilizar reacciones.</p> \n<p><strong>Fallo</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} y no puede utilizar reacciones.</p> \n<p><strong>Fallo crítico</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Tumbado} y no puede utilizar acciones o reacciones durante 1 asalto. A continuación sufre los efectos de un fallo.</p> ",
-          "target": "1 criatura viva"
-        },
-        "spell->Haste": {
-          "name": "Acelerar",
-          "description": "<p>La magia permite al objetivo actuar más deprisa. Obtiene el estado @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Acelerado} y solo puede utilizar la acción adicional de cada asalto para dar un Golpe o Avanzar.</p>\n<hr />\n<p><strong>Potenciado (7.º)</strong> Puedes designar hasta 6 criaturas como objetivos.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.ElkXovNrHB0Doi6O]{Efecto de conjuro: Acelerar}</p>",
-          "target": "1 criatura"
-        },
-        "spell->Slow": {
-          "name": "Lentificar",
-          "description": "<p>Dilatas el flujo de tiempo alrededor del objetivo, lentificando sus acciones.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado</p> \n<p><strong>Éxito</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} durante 1 asalto.</p> \n<p><strong>Fallo</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 1} durante 1 minuto.</p> \n<p><strong>Fallo crítico</strong> El objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Lentificado 2} durante 1 minuto.</p> \n<hr /> \n<p><strong>Potenciado (6.º)</strong> Puedes designar como objetivo hasta a 10 criaturas.</p> ",
-          "target": "1 criatura"
-        },
-        "spell->Soothe": {
-          "name": "Reconfortar",
-          "description": "<p>Bendices la mente del objetivo, reforzando sus defensas mentales y curando sus heridas. El objetivo recupera 1d10+4 Puntos de Golpe cuando Lanzas el conjuro y obtiene un bonificador +2 por estatus a las salvaciones contra los efectos mentales mientras dura éste.</p> \n<p>@UUID[Compendium.pf2e.spell-effects.Item.nkk4O5fyzrC0057i]{Efecto de conjuro: Amansar}</p> \n<hr /> \n<p><strong>Potenciado (+1)</strong> La cantidad de curación se incrementa en 1d10+4.</p> ",
-          "target": "1 criatura dispuesta"
         },
         "class->Bard": {
           "name": "Bardo",
@@ -1956,24 +1797,6 @@
           "name": "Intérprete virtuoso (vientos)",
           "description": "<p>Tienes un talento excepcional con un tipo de interpretación. Obtienes una bonificación de circunstancia +1 al realizar un determinado tipo de interpretación. Si eres un maestro en Interpretación, este bono aumenta a +2. Selecciona una de las siguientes especialidades y aplica la bonificación cuando intentes pruebas de Interpretación de ese tipo. Si no está claro si se aplica la especialidad, el DJ decide.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Especialidad</th>\n<th>Ejemplos</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Actuación</td>\n<td>Drama, pantomima, títeres</td>\n</tr>\n<tr>\n<td>Comedia</td>\n<td>Bufonadas, contar chistes, limericks</td>\n</tr>\n<tr>\n<td>Danza</td>\n<td>Ballet, huara, giga, macru</td>\n</tr>\n<tr>\n<td>Teclados</td>\n<td>Clavicémbalo, órgano, piano</td>\n</tr>\n<tr>\n<td>Oratoria</td>\n<td>Épica, oda, poesía, narración</td>\n</tr>\n<tr>\n<td>Percusión</td>\n<td>Campanillas, tambor, gong, xilofón</td>\n</tr>\n<tr>\n<td>Canto</td>\n<td>Balada, canto, melodía, rima</td>\n</tr>\n<tr>\n<td>Instrumentos de cuerda</td>\n<td>Violín, arpa, laúd, viola</td>\n</tr>\n<tr>\n<td>Viento</td>\n<td>Gaita, flauta, flauta dulce, trompeta</td>\n</tr>\n</tbody>\n</table>"
         },
-        "spell->Figment": {
-          "name": "Producto",
-          "description": "<p>Creas un sonido o una visión ilusoria sencilla. Un sonido añade el rasgo auditivo al conjuro y no puede incluir palabras inteligibles o música elaborada. Una visión añade el rasgo visual, no puede ser mayor que un cubo de 5 pies (1,5 m) de lado y es claramente tosca y poco detallada si se contempla desde 15 pies (4,5 m) o menos. Cuando Lanzas o Mantienes el conjuro, puedes hacer una prueba para @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Crear una distracción} con la ilusión, obteniendo un bonificador +2 por circunstancia a tu prueba de Engaño. Si la prueba falla contra una criatura, ésta descree la <em>fantasía</em>.</p><p>@UUID[Compendium.pf2e.spell-effects.Item.2Hg3a06gZCSnUgSA]{Efecto de conjuro: Fantasía}</p>"
-        },
-        "spell->Phantom Pain": {
-          "name": "Dolor fantasmal",
-          "description": "<p>Un dolor ilusorio azota al objetivo, infligiendo 2d4 daño mental y @Damage[(@item.level)d4[persistent,mental]] de daño persistente. El objetivo tiene que hacer una salvación de Voluntad.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado.</p> \n<p><strong>Éxito</strong> El objetivo sufre el daño inicial completo pero no el daño persistente, y el conjuro se acaba de inmediato.</p> \n<p><strong>Fallo</strong> El objetivo sufre el daño inicial y el daño persistente completos, y queda  @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 1}. Si se recupera del estado Indispuesto, el daño persistente se acaba y el conjuro también.</p> \n<p><strong>Fallo crítico</strong> Como fallo, pero el objetivo queda @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Indispuesto 2}.</p> \n<hr /> \n<p><strong>Potenciado (+1)</strong> El daño se incrementa en 2d4 y el daño persistente en 1d4.</p> ",
-          "target": "1 criatura"
-        },
-        "spell->Dispel Magic": {
-          "name": "Disipar magia",
-          "description": "<p>Descoses la magia que hay tras un conjuro o efecto. Haz una prueba de contrarrestar contra el objetivo. Si contrarrestas con éxito un objeto mágico, se convierte en un objeto mundano de su tipo durante 10 minutos. Esto no cambia las propiedades no mágicas del objeto Si el objetivo es un artefacto u objeto similar, fallas automáticamente. </p>",
-          "target": "1 efecto de conjuro u objeto mágico desatendido"
-        },
-        "spell->Revealing Light": {
-          "name": "Luz reveladora",
-          "description": "<p>Una oleada de luz mágica baña el área. Tú eres quien elige la apariencia de esta, por ejemplo unas llamas coloridas exentas de calor o unas motas brillantes. Una criatura afectada por <em>luz reveladora</em> queda @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Deslumbrada}. Si la criatura era @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}, en su lugar queda @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculta}. Si la criatura ya estaba oculta por cualquier otro motivo, ya no está oculta.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado.</p> \n<p><strong>Éxito</strong> La luz afecta a la criatura durante 2 asaltos.</p> \n<p><strong>Fallo</strong> La luz afecta a la criatura durante 1 minuto.</p> \n<p><strong>Fallo crítico</strong> La luz afecta a la criatura durante 10 minutos.</p> "
-        },
         "equipment->Maestro's Instrument (Lesser) (flute)": {
           "name": "Instrumento del Maestro (Menor) (flauta)",
           "description": "<p>Un <em> instrumento de maestro </em> puede ser fabricado en la forma de cualquier variedad de instrumentos musicales de mano. Un <em> instrumento de maestro </em> te otorga un +1 bonificador por objeto a las comprobaciones de rendimiento mientras tocas música con el instrumento.</p>\n<hr /> <p><strong>Activar—Actuación encantadora</strong> <span class=\"action-glyph\">2</span> (manipular)</p>\n<p><strong>Frecuencia</strong> una vez al día</p>\n<p><strong>Efecto</strong> Tocas el instrumento, lo que hace que lance un conjuro CD 17 @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Hechizar}.</p>\n<hr /> <p><strong>Requisitos de fabricación</strong> Debes suministrar una fundición de <em> encantamiento </em> del rango apropiado.</p>"
@@ -1981,24 +1804,6 @@
         "feat->Expert Spellcaster": {
           "name": "Lanzador de conjuros experto",
           "description": "<p><strong>Animista</strong> La magia de los espíritus fluye libremente a través de ti. Tus rangos de competencia en el modificador de ataque de conjuros y la CD de conjuros aumentan a experto.</p><p><strong>Bardo</strong> Tus técnicas mágicas se fortalecen. Tus rangos de competencia en los modificadores de ataque de conjuros y las CD de conjuros aumentan a experto.</p><p><strong>Druida</strong> Tu dominio de las fuerzas primigenias se ha profundizado y potencia tus conjuros. Tus rangos de competencia en el modificador de ataque de conjuros y la CD de conjuros aumentan a experto.</p><p><strong>Magus</strong> Tu comprensión fundamental de la magia mejora, lo que hace más difícil resistir tus conjuros. Tus rangos de competencia en el modificador de ataque de conjuros y la CD de conjuros aumentan a experto.</p><p><strong>Oráculo</strong> La complejidad de tu poder divino se ha ido aclarando con el tiempo. Tus rangos de competencia en las tiradas de ataque de conjuros divinos y las CD de conjuros aumentan a experto.</p><p><strong>Psíquico</strong> La introspección te ha permitido conocerte mejor y, con ello, obtener poder psíquico. Tus rangos de competencia en el modificador de ataque de conjuros y la CD de conjuros aumentan a experto.</p><p><strong>Hechicero</strong> Tu magia innata responde a tus órdenes con facilidad y poder. Tus rangos de competencia en el modificador de ataque de conjuros y la CD de conjuros de la tradición de tu linaje aumentan a experto.</p><p><strong>Convocador</strong> A medida que tu vínculo con tu eidolón se profundiza, tus conjuros se vuelven más poderosos. Tus rangos de competencia en las estadísticas del modificador de ataque de conjuros y la CD de conjuros aumentan a experto.</p><p><strong>Brujo</strong> Has aprendido a controlar mejor el poder que te ha concedido tu patrono. Tus rangos de competencia en el modificador de ataque de conjuros y la CD de conjuros aumentan a experto.</p><p><strong>Mago</strong> La práctica prolongada de lo arcano ha mejorado tus capacidades. Tus rangos de competencia en el modificador de ataque de conjuros y la CD de conjuros aumentan a experto.</p>"
-        },
-        "spell->Honeyed Words": {
-          "name": "Palabras almibaradas",
-          "description": "<p>Las falsedades salen de tus labios tan suavemente como la seda. Obtienes un bonificador +4 por estado a las pruebas de Engaño para @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Mentir} y contra las pruebas de Percepción para determinar si dices la verdad, y añades tu nivel incluso si no estás entrenado. Si la inverosimilitud de tus mentiras causa un penalizador por circunstancia o un aumento de la CD, reduce a la mitad ese penalizador o aumenta la CD solo en la mitad.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.6vodhSeI3ClMfOGd]{Efecto de conjuro: Palabras melosas}</p>"
-        },
-        "spell->Suggestion": {
-          "name": "Sugerencia",
-          "description": "<p>Tus palabras almibaradas son difíciles de resistir por parte de las criaturas. Sugieres un curso de acción al objetivo, que debe estar formulado de manera que le parezca lógico y no puede ser autodestructivo ni ir obviamente en contra de sus propios intereses. El objetivo tiene que llevar a cabo una salvación de Voluntad.</p> \n<hr /> \n<p><strong>Éxito crítico</strong> El objetivo no resulta afectado y sabe que intentaste controlarlo.</p> \n<p><strong>Éxito</strong> El objetivo no resulta afectado. </p> \n<p><strong>Fallo</strong> El objetivo sigue de inmediato tu sugerencia. El efecto tiene una duración de 1 minuto, o hasta que el objetivo ha completado una sugerencia finita, o se vuelve autodestructiva o tiene otros efectos negativos obvios.</p> \n<p><strong>Fallo crítico</strong> Igual que fallo, pero la duración es 1 hora.</p> \n<hr /> \n<p><strong>Potenciado (8.º)</strong> Puedes designar como objetivo hasta 10 criaturas.</p> ",
-          "target": "1 criatura"
-        },
-        "spell->Dirge of Doom": {
-          "name": "Endecha de perdición",
-          "description": "<p>Los enemigos en el interior del área quedan @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Asustados 1}. No pueden reducir su valor de asustado por debajo de 1 mientras permanecen en el área.</p>"
-        },
-        "spell->Heroism": {
-          "name": "Heroísmo",
-          "description": "<p>Liberas el heroísmo interior del objetivo, concediéndole un bonificador +1 por estatus a las tiradas de ataque, pruebas de Percepción, tiradas de salvación y pruebas de habilidad.</p> \n<hr /> \n<p><strong>Potenciado (6.º)</strong> El bonificador por estatus se incrementa a +2.</p> \n<p><strong>Potenciado (9.º)</strong> El bonificador por estatus se incrementa a +3.</p> \n<p>@UUID[Compendium.pf2e.spell-effects.Item.l9HRQggofFGIxEse]{Efecto de conjuro: Heroísmo}</p> ",
-          "target": "1 criatura"
         },
         "feat->Dirge of Doom": {
           "name": "Endecha de perdición",
@@ -2802,10 +2607,6 @@
         "feat->Perception Expertise": {
           "name": "Experiencia en Percepción",
           "description": "<p>Permaneces alerta a las amenazas que te rodean. Tu rango de competencia para Percepción se incrementa a experto.</p>"
-        },
-        "spell->Qi Rush": {
-          "name": "Embestida de qi",
-          "description": "<p>Acelerado por tu qi, te mueves tan deprisa que te conviertes en un borrón. Muévete dos veces: dos acciones de Avanzar, dos de Dar un paso o una de cada (en cualquier orden).</p>\n<p>Obtienes el estado @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Oculto} durante este movimiento y hasta el comienzo de tu siguiente turno.</p>"
         },
         "feat->Natural Ambition": {
           "name": "Ambición natural",
