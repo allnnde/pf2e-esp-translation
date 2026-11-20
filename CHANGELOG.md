@@ -1,3 +1,12 @@
+# [6.53.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.52.0...v6.53.0) (2026-11-20)
+
+
+### Features
+
+* update translation sources from stable PF2e release ([2e6352b](https://github.com/allnnde/pf2e-esp-translation/commit/2e6352b9af8ab652623d2486715259fcde6c5c74))
+
+
+
 # [6.52.0](https://github.com/allnnde/pf2e-esp-translation/compare/v6.51.0...v6.52.0) (2026-11-16)
 
 
@@ -27,10 +36,6 @@
 ### Features
 
 * update translation sources from stable PF2e release ([9f105f7](https://github.com/allnnde/pf2e-esp-translation/commit/9f105f72eef5619b071930c8aaa8d1f307b972c2))
-
-
-
-## [6.49.1](https://github.com/allnnde/pf2e-esp-translation/compare/v6.49.0...v6.49.1) (2026-10-17)
 
 
 
